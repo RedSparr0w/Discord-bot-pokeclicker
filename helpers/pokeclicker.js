@@ -30,7 +30,8 @@ let getRouteTypes = () => {
     });
     return regionRoutes;
 }
-copy(`module.exports = ${JSON.stringify({
+
+let pokeclickerData = {
   RouteShardTypes: getRouteTypes(),
   PokemonLocationType,
   PokemonType,
@@ -43,7 +44,9 @@ copy(`module.exports = ${JSON.stringify({
     return p;
   }),
   GameConstants
-}, null, 2)}`)
+};
+
+copy(`module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`)
 
 */
 
@@ -1516,7 +1519,6 @@ module.exports = {
           'evolvedPokemon': 'Charmeleon',
           'type': 0,
           'level': 16,
-          'triggered': true,
         },
       ],
       'base': {
@@ -1548,7 +1550,6 @@ module.exports = {
           'evolvedPokemon': 'Charizard',
           'type': 0,
           'level': 36,
-          'triggered': false,
         },
       ],
       'base': {
@@ -1566,7 +1567,6 @@ module.exports = {
           'evolvedPokemon': 'Charmeleon',
           'type': 0,
           'level': 16,
-          'triggered': true,
         },
       },
       'catchRatePercent': 17,
@@ -1598,7 +1598,6 @@ module.exports = {
           'evolvedPokemon': 'Charizard',
           'type': 0,
           'level': 36,
-          'triggered': false,
         },
       },
       'catchRatePercent': 17,
@@ -1713,7 +1712,6 @@ module.exports = {
           'evolvedPokemon': 'Metapod',
           'type': 0,
           'level': 7,
-          'triggered': true,
         },
       ],
       'base': {
@@ -1759,7 +1757,6 @@ module.exports = {
           'evolvedPokemon': 'Butterfree',
           'type': 0,
           'level': 10,
-          'triggered': true,
         },
       ],
       'base': {
@@ -1792,7 +1789,6 @@ module.exports = {
           'evolvedPokemon': 'Metapod',
           'type': 0,
           'level': 7,
-          'triggered': true,
         },
       },
       'catchRatePercent': 36,
@@ -1828,7 +1824,6 @@ module.exports = {
           'evolvedPokemon': 'Butterfree',
           'type': 0,
           'level': 10,
-          'triggered': true,
         },
       },
       'catchRatePercent': 17,
@@ -1851,7 +1846,6 @@ module.exports = {
           'evolvedPokemon': 'Kakuna',
           'type': 0,
           'level': 7,
-          'triggered': true,
         },
       ],
       'base': {
@@ -1900,7 +1894,6 @@ module.exports = {
           'evolvedPokemon': 'Beedrill',
           'type': 0,
           'level': 10,
-          'triggered': true,
         },
       ],
       'base': {
@@ -1933,7 +1926,6 @@ module.exports = {
           'evolvedPokemon': 'Kakuna',
           'type': 0,
           'level': 7,
-          'triggered': true,
         },
       },
       'catchRatePercent': 36,
@@ -1969,7 +1961,6 @@ module.exports = {
           'evolvedPokemon': 'Beedrill',
           'type': 0,
           'level': 10,
-          'triggered': true,
         },
       },
       'catchRatePercent': 17,
@@ -1992,7 +1983,6 @@ module.exports = {
           'evolvedPokemon': 'Pidgeotto',
           'type': 0,
           'level': 18,
-          'triggered': true,
         },
       ],
       'base': {
@@ -2053,7 +2043,6 @@ module.exports = {
           'evolvedPokemon': 'Pidgeot',
           'type': 0,
           'level': 36,
-          'triggered': false,
         },
       ],
       'base': {
@@ -2095,7 +2084,6 @@ module.exports = {
           'evolvedPokemon': 'Pidgeotto',
           'type': 0,
           'level': 18,
-          'triggered': true,
         },
       },
       'catchRatePercent': 36,
@@ -2127,7 +2115,6 @@ module.exports = {
           'evolvedPokemon': 'Pidgeot',
           'type': 0,
           'level': 36,
-          'triggered': false,
         },
       },
       'catchRatePercent': 17,
@@ -2147,7 +2134,6 @@ module.exports = {
           'evolvedPokemon': 'Raticate',
           'type': 0,
           'level': 20,
-          'triggered': true,
         },
       ],
       'base': {
@@ -2247,7 +2233,6 @@ module.exports = {
           'evolvedPokemon': 'Raticate',
           'type': 0,
           'level': 20,
-          'triggered': true,
         },
       },
       'catchRatePercent': 37,
@@ -2270,7 +2255,6 @@ module.exports = {
           'evolvedPokemon': 'Fearow',
           'type': 0,
           'level': 20,
-          'triggered': true,
         },
       ],
       'base': {
@@ -2349,7 +2333,6 @@ module.exports = {
           'evolvedPokemon': 'Fearow',
           'type': 0,
           'level': 20,
-          'triggered': true,
         },
       },
       'catchRatePercent': 29,
@@ -2520,7 +2503,6 @@ module.exports = {
           'evolvedPokemon': 'Sandslash',
           'type': 0,
           'level': 22,
-          'triggered': true,
         },
       ],
       'base': {
@@ -2584,7 +2566,6 @@ module.exports = {
           'evolvedPokemon': 'Sandslash',
           'type': 0,
           'level': 22,
-          'triggered': true,
         },
       },
       'catchRatePercent': 29,
@@ -2604,7 +2585,6 @@ module.exports = {
           'evolvedPokemon': 'Nidorina',
           'type': 0,
           'level': 16,
-          'triggered': true,
         },
       ],
       'base': {
@@ -2671,7 +2651,6 @@ module.exports = {
           'evolvedPokemon': 'Nidorina',
           'type': 0,
           'level': 16,
-          'triggered': true,
         },
         '10': '6.02%',
       },
@@ -2723,7 +2702,6 @@ module.exports = {
           'evolvedPokemon': 'Nidorino',
           'type': 0,
           'level': 16,
-          'triggered': true,
         },
       ],
       'base': {
@@ -2790,7 +2768,6 @@ module.exports = {
           'evolvedPokemon': 'Nidorino',
           'type': 0,
           'level': 16,
-          'triggered': true,
         },
         '10': '6.02%',
       },
@@ -3688,7 +3665,6 @@ module.exports = {
           'evolvedPokemon': 'Primeape',
           'type': 0,
           'level': 28,
-          'triggered': true,
         },
       ],
       'base': {
@@ -3745,7 +3721,6 @@ module.exports = {
           'evolvedPokemon': 'Primeape',
           'type': 0,
           'level': 28,
-          'triggered': true,
         },
       },
       'catchRatePercent': 25,
