@@ -21,12 +21,10 @@ module.exports = {
     if (!pokemon) return;
 
     const embed = new MessageEmbed()
-      // Replace type names with their icons
       .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}\n${pokemonTypeIcons[PokemonType[pokemon.type[0]]]}${pokemon.type[1] ? ` ${pokemonTypeIcons[PokemonType[pokemon.type[1]]]}` : ''}`)
       .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter('Data is up to date as of v0.4.12')
-      //.addField('❯ Types', ``, true)
       .addField('<:xAttackSmall:733974450864652380> Attack', `${pokemon.attack}`,true)
       .addField('\u200b', '\u200b', true) // Spacing
       .addField('<:Pokeball:733980790718988348> Catch Rate', `${pokemon.catchRatePercent}%`, true)
@@ -102,12 +100,3 @@ module.exports = {
     msg.channel.send({ embed });
   },
 };
-
-// .addField(
-//   '❯ Information',
-//   `**❯ Attack:** ${pokemon.attack}
-// **❯ Catch Rate:** ${pokemon.catchRatePercent}
-// **❯ Egg Steps:** ${pokemon.eggSteps}
-// **❯ Level Speed:** ${LevelType[pokemon.levelType]}
-// **❯ Types:** ${PokemonType[pokemon.type[0]]}${pokemon.type[1] ? ` ${PokemonType[pokemon.type[1]]}` : ''}`
-// )
