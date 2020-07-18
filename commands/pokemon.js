@@ -5,21 +5,26 @@ module.exports = {
   name        : 'pokemon',
   aliases     : ['p', 'poke', 'pinfo', 'pokeinfo'],
   description : 'Short description',
-  args        : ['id/name'],
+  args        : ['id/name', 'shiny?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
 
-    const id = args.join(' ');
-    const pokemon = pokemonList.find(p => p.id == +id || p.name.toLowerCase() == id.toLowerCase()) || pokemonList.find(p => p.id == 0);
+    let id = args.join(' ').toLowerCase().trim();
+    let shiny = false;
+    if (id.endsWith(' shiny')) {
+      id = id.slice(0, id.length - 6);
+      shiny = true;
+    }
+    const pokemon = pokemonList.find(p => p.id == +id || p.name.toLowerCase() == id) || pokemonList.find(p => p.id == 0);
     if (!pokemon) return;
 
     const embed = new MessageEmbed()
       // Replace type names with their icons
       .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}\n${pokemonTypeIcons[PokemonType[pokemon.type[0]]]}${pokemon.type[1] ? ` ${pokemonTypeIcons[PokemonType[pokemon.type[1]]]}` : ''}`)
-      .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/pokemon/${pokemon.id}.png`)
+      .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter('Data is up to date as of v0.4.12')
       //.addField('❯ Types', ``, true)
