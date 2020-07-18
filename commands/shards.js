@@ -13,7 +13,7 @@ module.exports = {
   execute     : async (msg, args) => {
     let [type] = args;
     type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
-    if (!PokemonType.hasOwnProperty(type)) return msg.reply(`Invalid type: \`${type}\``);
+    if (!(PokemonType[type] >= 0)) return msg.reply(`Invalid type: \`${type}\``);
 
     const embed = new MessageEmbed()
       .setTitle(`${pokemonTypeIcons[type]} ${type} Shard Routes`)
