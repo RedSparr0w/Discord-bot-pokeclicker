@@ -1,25 +1,25 @@
 const { MessageEmbed } = require('discord.js');
-const { pokemonList, LevelType, PokemonType, GameConstants, PokemonLocationType } = require('../helpers.js');
+const { pokemonList, LevelType, PokemonType, GameConstants, PokemonLocationType, pokemonTypeIcons } = require('../helpers.js');
 
 module.exports = {
   name        : 'pokemon',
-  aliases     : ['p', 'poke'],
+  aliases     : ['p', 'poke', 'pinfo', 'pokeinfo'],
   description : 'Short description',
-  args        : ['ID'],
+  args        : ['id/name'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
-  userperms   : ['MANAGE_CHANNELS', 'MANAGE_MESSAGES'],
+  userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
 
-    const [ id ] = args;
+    const id = args.join(' ');
     const pokemon = pokemonList.find(p => p.id == +id || p.name.toLowerCase() == id.toLowerCase()) || pokemonList.find(p => p.id == 0);
     if (!pokemon) return;
 
     const embed = new MessageEmbed()
       // Replace type names with their icons
-      .setTitle(`#${pokemon.id.toString().padStart(3, 0)} ${pokemon.name.toUpperCase()}\n${PokemonType[pokemon.type[0]]}${pokemon.type[1] ? ` ${PokemonType[pokemon.type[1]]}` : ''}`)
-      .setThumbnail(`https://img.pokemondb.net/sprites/black-white/normal/${pokemon.name.toLowerCase()}.png`)
+      .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}\n${pokemonTypeIcons[PokemonType[pokemon.type[0]]]}${pokemon.type[1] ? ` ${pokemonTypeIcons[PokemonType[pokemon.type[1]]]}` : ''}`)
+      .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter('Data is up to date as of v0.4.12')
       //.addField('❯ Types', ``, true)
