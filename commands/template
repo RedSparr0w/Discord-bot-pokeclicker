@@ -1,0 +1,13 @@
+module.exports = {
+  name        : 'command',
+  aliases     : [],
+  description : 'Short description',
+  args        : [],
+  guildOnly   : false,
+  cooldown    : 3,
+  botperms    : ['SEND_MESSAGES'],
+  userperms   : ['MANAGE_CHANNELS', 'MANAGE_MESSAGES'],
+  execute     : async (msg, args) => {
+    return
+  },
+};

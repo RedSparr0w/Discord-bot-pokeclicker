@@ -1,0 +1,39 @@
+parserOptions:
+  ecmaVersion: 9
+
+env:
+  node: true
+  es6: true
+
+extends:
+  - 'eslint:recommended'
+
+rules:
+  # Disable some rules from eslint:recommended.
+  no-console: 'off'
+  no-empty: ['error', { 'allowEmptyCatch': true }]
+
+  # Allow unused parameters. In callbacks, removing them seems to obscure what the functions are doing.
+  no-unused-vars: ['error', {'args': 'none'}]
+
+  # Use semicolons. (may change later)
+  semi: ['error', 'always']
+
+  # Preferences
+  arrow-body-style: ['error', 'as-needed']
+  func-style: ['error', 'declaration', { 'allowArrowFunctions': true }]
+  no-var: 'error'
+  quotes: ['error', 'single', { 'avoidEscape': true }]
+  no-useless-concat: 'error'
+  prefer-const: ['error', {'destructuring': 'all'}]
+  prefer-template: 'error'
+  template-curly-spacing: ['error', 'never']
+  brace-style: 'error'
+  comma-dangle: ['error', { 'arrays': 'always-multiline', 'objects': 'always-multiline', 'imports': 'always-multiline', 'exports': 'always-multiline' }]
+
+  # Keep whitespace cleaned up.
+  no-trailing-spaces: ['error', { 'skipBlankLines': true }]
+  eol-last: 'error'
+  indent: ['error', 2, { 'SwitchCase': 1 }]
+  no-tabs: 'error'
+  array-bracket-newline: ['error', { 'multiline': true }]
