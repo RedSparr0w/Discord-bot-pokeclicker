@@ -1,3 +1,4 @@
+// copy(`module.exports = ${JSON.stringify({PokemonType, LevelType, levelRequirements, pokemonList: pokemonList.map(p => { p.locations = PokemonHelper.getPokemonLocations(p.name); return p; }), GameConstants}, null, 2)}`)
 module.exports = {
   'PokemonType': {
     '0': 'Normal',
@@ -702,6 +703,9 @@ module.exports = {
         'speed': 45,
       },
       'attack': 53,
+      'locations': {
+        '6': ['Grass'],
+      },
     },
     {
       'id': 2,
@@ -731,6 +735,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 85,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bulbasaur',
+          'evolvedPokemon': 'Ivysaur',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 3,
@@ -752,6 +764,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 141,
+      'locations': {
+        '4': {
+          'basePokemon': 'Ivysaur',
+          'evolvedPokemon': 'Venusaur',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 4,
@@ -779,6 +799,9 @@ module.exports = {
         'speed': 65,
       },
       'attack': 46,
+      'locations': {
+        '6': ['Fire'],
+      },
     },
     {
       'id': 5,
@@ -806,6 +829,15 @@ module.exports = {
         'speed': 80,
       },
       'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Charmander',
+          'evolvedPokemon': 'Charmeleon',
+          'type': 0,
+          'level': 16,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 6,
@@ -827,6 +859,15 @@ module.exports = {
         'speed': 100,
       },
       'attack': 142,
+      'locations': {
+        '4': {
+          'basePokemon': 'Charmeleon',
+          'evolvedPokemon': 'Charizard',
+          'type': 0,
+          'level': 36,
+          'triggered': false,
+        },
+      },
     },
     {
       'id': 7,
@@ -853,6 +894,9 @@ module.exports = {
         'speed': 43,
       },
       'attack': 50,
+      'locations': {
+        '6': ['Water'],
+      },
     },
     {
       'id': 8,
@@ -879,6 +923,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Squirtle',
+          'evolvedPokemon': 'Wartortle',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 9,
@@ -897,6 +949,14 @@ module.exports = {
         'speed': 78,
       },
       'attack': 139,
+      'locations': {
+        '4': {
+          'basePokemon': 'Wartortle',
+          'evolvedPokemon': 'Blastoise',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 10,
@@ -924,6 +984,23 @@ module.exports = {
         'speed': 45,
       },
       'attack': 19,
+      'locations': {
+        '0': {
+          '0': [
+            '2',
+            '24',
+            '25',
+          ],
+          '1': [
+            '30',
+            '31',
+          ],
+        },
+        '2': [
+          'Viridian Forest',
+          'Ilex Forest',
+        ],
+      },
     },
     {
       'id': 11,
@@ -951,6 +1028,30 @@ module.exports = {
         'speed': 30,
       },
       'attack': 20,
+      'locations': {
+        '0': {
+          '0': [
+            '24',
+            '25',
+          ],
+          '1': [
+            '30',
+            '31',
+            '47',
+          ],
+        },
+        '2': [
+          'Viridian Forest',
+          'Ilex Forest',
+        ],
+        '4': {
+          'basePokemon': 'Caterpie',
+          'evolvedPokemon': 'Metapod',
+          'type': 0,
+          'level': 7,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 12,
@@ -972,6 +1073,19 @@ module.exports = {
         'speed': 70,
       },
       'attack': 75,
+      'locations': {
+        '0': {
+          '1': ['47'],
+        },
+        '3': ['Ilex Forest'],
+        '4': {
+          'basePokemon': 'Metapod',
+          'evolvedPokemon': 'Butterfree',
+          'type': 0,
+          'level': 10,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 13,
@@ -1002,6 +1116,23 @@ module.exports = {
         'speed': 50,
       },
       'attack': 19,
+      'locations': {
+        '0': {
+          '0': [
+            '2',
+            '24',
+            '25',
+          ],
+          '1': [
+            '30',
+            '31',
+          ],
+        },
+        '2': [
+          'Viridian Forest',
+          'Ilex Forest',
+        ],
+      },
     },
     {
       'id': 14,
@@ -1032,6 +1163,30 @@ module.exports = {
         'speed': 35,
       },
       'attack': 21,
+      'locations': {
+        '0': {
+          '0': [
+            '24',
+            '25',
+          ],
+          '1': [
+            '30',
+            '31',
+            '47',
+          ],
+        },
+        '2': [
+          'Viridian Forest',
+          'Ilex Forest',
+        ],
+        '4': {
+          'basePokemon': 'Weedle',
+          'evolvedPokemon': 'Kakuna',
+          'type': 0,
+          'level': 7,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 15,
@@ -1053,6 +1208,19 @@ module.exports = {
         'speed': 75,
       },
       'attack': 74,
+      'locations': {
+        '0': {
+          '1': ['47'],
+        },
+        '3': ['Ilex Forest'],
+        '4': {
+          'basePokemon': 'Kakuna',
+          'evolvedPokemon': 'Beedrill',
+          'type': 0,
+          'level': 10,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 16,
@@ -1083,6 +1251,35 @@ module.exports = {
         'speed': 56,
       },
       'attack': 31,
+      'locations': {
+        '0': {
+          '0': [
+            '1',
+            '3',
+            '5',
+            '6',
+            '7',
+            '8',
+            '11',
+            '12',
+            '13',
+            '14',
+            '15',
+            '21',
+            '24',
+            '25',
+          ],
+          '1': [
+            '29',
+            '30',
+            '31',
+            '35',
+            '36',
+            '37',
+          ],
+        },
+        '2': ['Viridian Forest'],
+      },
     },
     {
       'id': 17,
@@ -1113,6 +1310,39 @@ module.exports = {
         'speed': 71,
       },
       'attack': 62,
+      'locations': {
+        '0': {
+          '0': [
+            '5',
+            '6',
+            '7',
+            '8',
+            '11',
+            '12',
+            '13',
+            '14',
+            '15',
+            '21',
+            '24',
+            '25',
+          ],
+          '1': [
+            '37',
+            '43',
+          ],
+        },
+        '2': [
+          'Viridian Forest',
+          'Mt. Moon',
+        ],
+        '4': {
+          'basePokemon': 'Pidgey',
+          'evolvedPokemon': 'Pidgeotto',
+          'type': 0,
+          'level': 18,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 18,
@@ -1134,6 +1364,15 @@ module.exports = {
         'speed': 101,
       },
       'attack': 112,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pidgeotto',
+          'evolvedPokemon': 'Pidgeot',
+          'type': 0,
+          'level': 36,
+          'triggered': false,
+        },
+      },
     },
     {
       'id': 19,
@@ -1161,6 +1400,45 @@ module.exports = {
         'speed': 72,
       },
       'attack': 26,
+      'locations': {
+        '0': {
+          '0': [
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+            '11',
+            '16',
+            '18',
+            '21',
+            '22',
+          ],
+          '1': [
+            '29',
+            '30',
+            '31',
+            '32',
+            '33',
+            '34',
+            '38',
+            '39',
+            '46',
+          ],
+        },
+        '2': [
+          'Sprout Tower',
+          'Union Cave',
+          'Burned Tower',
+          'Tin Tower',
+          'Mt Mortar',
+        ],
+      },
     },
     {
       'id': 20,
@@ -1179,6 +1457,38 @@ module.exports = {
         'speed': 97,
       },
       'attack': 75,
+      'locations': {
+        '0': {
+          '0': [
+            '9',
+            '10',
+            '11',
+            '16',
+            '17',
+            '18',
+            '21',
+          ],
+          '1': [
+            '26',
+            '27',
+            '38',
+            '39',
+            '47',
+          ],
+        },
+        '2': [
+          'Burned Tower',
+          'Mt Mortar',
+        ],
+        '3': ['Tin Tower'],
+        '4': {
+          'basePokemon': 'Rattata',
+          'evolvedPokemon': 'Raticate',
+          'type': 0,
+          'level': 20,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 21,
@@ -1209,6 +1519,31 @@ module.exports = {
         'speed': 70,
       },
       'attack': 32,
+      'locations': {
+        '0': {
+          '0': [
+            '3',
+            '4',
+            '9',
+            '10',
+            '11',
+            '16',
+            '17',
+            '18',
+            '22',
+            '23',
+          ],
+          '1': [
+            '31',
+            '33',
+            '42',
+            '44',
+            '45',
+            '46',
+            '47',
+          ],
+        },
+      },
     },
     {
       'id': 22,
@@ -1230,6 +1565,28 @@ module.exports = {
         'speed': 100,
       },
       'attack': 92,
+      'locations': {
+        '0': {
+          '0': [
+            '9',
+            '16',
+            '17',
+            '18',
+            '23',
+          ],
+          '1': [
+            '47',
+            '48',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Spearow',
+          'evolvedPokemon': 'Fearow',
+          'type': 0,
+          'level': 20,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 23,
@@ -1256,6 +1613,22 @@ module.exports = {
         'speed': 55,
       },
       'attack': 39,
+      'locations': {
+        '0': {
+          '0': [
+            '4',
+            '8',
+            '9',
+            '10',
+            '11',
+            '23',
+          ],
+          '1': [
+            '32',
+            '33',
+          ],
+        },
+      },
     },
     {
       'id': 24,
@@ -1274,6 +1647,22 @@ module.exports = {
         'speed': 80,
       },
       'attack': 99,
+      'locations': {
+        '0': {
+          '0': ['23'],
+          '1': [
+            '26',
+            '27',
+          ],
+        },
+        '2': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Ekans',
+          'evolvedPokemon': 'Arbok',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 25,
@@ -1300,6 +1689,17 @@ module.exports = {
         'speed': 90,
       },
       'attack': 43,
+      'locations': {
+        '2': ['Power Plant'],
+        '3': ['Viridian Forest'],
+        '4': {
+          'basePokemon': 'Pichu',
+          'evolvedPokemon': 'Pikachu',
+          'type': 0,
+          'level': 100,
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 26,
@@ -1318,6 +1718,18 @@ module.exports = {
         'speed': 110,
       },
       'attack': 108,
+      'locations': {
+        '2': [
+          'Power Plant',
+          'Cerulean Cave',
+        ],
+        '5': {
+          'basePokemon': 'Pikachu',
+          'evolvedPokemon': 'Raichu',
+          'type': 0,
+          'stone': 2,
+        },
+      },
     },
     {
       'id': 27,
@@ -1345,6 +1757,24 @@ module.exports = {
         'speed': 40,
       },
       'attack': 38,
+      'locations': {
+        '0': {
+          '0': [
+            '3',
+            '4',
+            '8',
+            '9',
+            '10',
+            '11',
+            '23',
+          ],
+          '2': ['111'],
+        },
+        '2': [
+          'Mt. Moon',
+          'Union Cave',
+        ],
+      },
     },
     {
       'id': 28,
@@ -1363,6 +1793,23 @@ module.exports = {
         'speed': 65,
       },
       'attack': 96,
+      'locations': {
+        '0': {
+          '0': ['23'],
+          '1': [
+            '26',
+            '27',
+          ],
+        },
+        '2': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Sandshrew',
+          'evolvedPokemon': 'Sandslash',
+          'type': 0,
+          'level': 22,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 29,
@@ -1390,6 +1837,21 @@ module.exports = {
         'speed': 41,
       },
       'attack': 51,
+      'locations': {
+        '0': {
+          '0': [
+            '2',
+            '9',
+            '10',
+            '22',
+          ],
+          '1': [
+            '35',
+            '36',
+          ],
+        },
+        '10': '9.04%',
+      },
     },
     {
       'id': 30,
@@ -1416,6 +1878,22 @@ module.exports = {
         'speed': 56,
       },
       'attack': 72,
+      'locations': {
+        '0': {
+          '0': [
+            '9',
+            '23',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Nidoran(F)',
+          'evolvedPokemon': 'Nidorina',
+          'type': 0,
+          'level': 16,
+          'triggered': true,
+        },
+        '10': '6.02%',
+      },
     },
     {
       'id': 31,
@@ -1437,6 +1915,14 @@ module.exports = {
         'speed': 76,
       },
       'attack': 136,
+      'locations': {
+        '5': {
+          'basePokemon': 'Nidorina',
+          'evolvedPokemon': 'Nidoqueen',
+          'type': 0,
+          'stone': 4,
+        },
+      },
     },
     {
       'id': 32,
@@ -1464,6 +1950,21 @@ module.exports = {
         'speed': 50,
       },
       'attack': 40,
+      'locations': {
+        '0': {
+          '0': [
+            '2',
+            '9',
+            '10',
+            '22',
+          ],
+          '1': [
+            '35',
+            '36',
+          ],
+        },
+        '10': '15.06%',
+      },
     },
     {
       'id': 33,
@@ -1490,6 +1991,22 @@ module.exports = {
         'speed': 65,
       },
       'attack': 70,
+      'locations': {
+        '0': {
+          '0': [
+            '9',
+            '23',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Nidoran(M)',
+          'evolvedPokemon': 'Nidorino',
+          'type': 0,
+          'level': 16,
+          'triggered': true,
+        },
+        '10': '6.02%',
+      },
     },
     {
       'id': 34,
@@ -1511,6 +2028,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 135,
+      'locations': {
+        '5': {
+          'basePokemon': 'Nidorino',
+          'evolvedPokemon': 'Nidoking',
+          'type': 0,
+          'stone': 4,
+        },
+      },
     },
     {
       'id': 35,
@@ -1537,6 +2062,15 @@ module.exports = {
         'speed': 35,
       },
       'attack': 61,
+      'locations': {
+        '2': ['Mt. Moon'],
+        '4': {
+          'basePokemon': 'Cleffa',
+          'evolvedPokemon': 'Clefairy',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 36,
@@ -1555,6 +2089,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 130,
+      'locations': {
+        '5': {
+          'basePokemon': 'Clefairy',
+          'evolvedPokemon': 'Clefable',
+          'type': 0,
+          'stone': 4,
+        },
+      },
     },
     {
       'id': 37,
@@ -1581,6 +2123,24 @@ module.exports = {
         'speed': 65,
       },
       'attack': 40,
+      'locations': {
+        '0': {
+          '0': [
+            '7',
+            '8',
+          ],
+          '1': [
+            '36',
+            '37',
+            '48',
+          ],
+        },
+        '2': [
+          'Pokemon Mansion',
+          'Mt. Pyre',
+        ],
+        '6': ['Fire'],
+      },
     },
     {
       'id': 38,
@@ -1599,6 +2159,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 118,
+      'locations': {
+        '5': {
+          'basePokemon': 'Vulpix',
+          'evolvedPokemon': 'Ninetales',
+          'type': 0,
+          'stone': 0,
+        },
+      },
     },
     {
       'id': 39,
@@ -1628,6 +2196,24 @@ module.exports = {
         'speed': 20,
       },
       'attack': 43,
+      'locations': {
+        '0': {
+          '0': [
+            '3',
+            '5',
+            '6',
+            '7',
+            '8',
+          ],
+          '2': ['115'],
+        },
+        '4': {
+          'basePokemon': 'Igglybuff',
+          'evolvedPokemon': 'Jigglypuff',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 40,
@@ -1649,6 +2235,15 @@ module.exports = {
         'speed': 45,
       },
       'attack': 116,
+      'locations': {
+        '2': ['Cerulean Cave'],
+        '5': {
+          'basePokemon': 'Jigglypuff',
+          'evolvedPokemon': 'Wigglytuff',
+          'type': 0,
+          'stone': 4,
+        },
+      },
     },
     {
       'id': 41,
@@ -1678,6 +2273,38 @@ module.exports = {
         'speed': 55,
       },
       'attack': 29,
+      'locations': {
+        '0': {
+          '1': [
+            '30',
+            '31',
+            '32',
+            '33',
+            '42',
+          ],
+        },
+        '2': [
+          'Mt. Moon',
+          'Rock Tunnel',
+          'Seafoam Islands',
+          'Victory Road',
+          'Union Cave',
+          'Slowpoke Well',
+          'Ilex Forest',
+          'Burned Tower',
+          'Whirl Islands',
+          'Mt Mortar',
+          'Ice Path',
+          'Dark Cave',
+          'Granite Cave',
+          'Meteor Falls',
+          'Mt. Chimney',
+          'Shoal Cave',
+          'Cave of Origin',
+          'Seafloor Cavern',
+          'Victory Road Hoenn',
+        ],
+      },
     },
     {
       'id': 42,
@@ -1707,6 +2334,29 @@ module.exports = {
         'speed': 90,
       },
       'attack': 102,
+      'locations': {
+        '2': [
+          'Seafoam Islands',
+          'Victory Road',
+          'Cerulean Cave',
+          'Whirl Islands',
+          'Mt Mortar',
+          'Dark Cave',
+          'Meteor Falls',
+          'Shoal Cave',
+          'Cave of Origin',
+          'Seafloor Cavern',
+          'Sky Pillar',
+          'Victory Road Hoenn',
+        ],
+        '3': ['Burned Tower'],
+        '4': {
+          'basePokemon': 'Zubat',
+          'evolvedPokemon': 'Golbat',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 43,
@@ -1736,6 +2386,31 @@ module.exports = {
         'speed': 30,
       },
       'attack': 57,
+      'locations': {
+        '0': {
+          '0': [
+            '5',
+            '6',
+            '7',
+            '12',
+            '13',
+            '14',
+            '15',
+            '24',
+            '25',
+          ],
+          '2': [
+            '110',
+            '117',
+            '119',
+            '120',
+            '121',
+            '123',
+          ],
+        },
+        '2': ['Ilex Forest'],
+        '6': ['Grass'],
+      },
     },
     {
       'id': 44,
@@ -1771,6 +2446,30 @@ module.exports = {
         'speed': 40,
       },
       'attack': 89,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+            '14',
+            '15',
+          ],
+          '1': [
+            '47',
+            '48',
+          ],
+          '2': [
+            '121',
+            '123',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Oddish',
+          'evolvedPokemon': 'Gloom',
+          'type': 0,
+          'level': 21,
+        },
+      },
     },
     {
       'id': 45,
@@ -1792,6 +2491,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 136,
+      'locations': {
+        '5': {
+          'basePokemon': 'Gloom',
+          'evolvedPokemon': 'Vileplume',
+          'type': 0,
+          'stone': 3,
+        },
+      },
     },
     {
       'id': 46,
@@ -1821,6 +2528,13 @@ module.exports = {
         'speed': 25,
       },
       'attack': 44,
+      'locations': {
+        '2': [
+          'Mt. Moon',
+          'Ilex Forest',
+        ],
+        '10': '3.01%',
+      },
     },
     {
       'id': 47,
@@ -1842,6 +2556,16 @@ module.exports = {
         'speed': 30,
       },
       'attack': 92,
+      'locations': {
+        '2': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Paras',
+          'evolvedPokemon': 'Parasect',
+          'type': 0,
+          'level': 24,
+        },
+        '10': '9.04%',
+      },
     },
     {
       'id': 48,
@@ -1871,6 +2595,19 @@ module.exports = {
         'speed': 45,
       },
       'attack': 51,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+            '14',
+            '15',
+            '24',
+            '25',
+          ],
+          '1': ['43'],
+        },
+      },
     },
     {
       'id': 49,
@@ -1892,6 +2629,24 @@ module.exports = {
         'speed': 90,
       },
       'attack': 101,
+      'locations': {
+        '0': {
+          '0': [
+            '14',
+            '15',
+          ],
+        },
+        '2': [
+          'Victory Road',
+          'Cerulean Cave',
+        ],
+        '4': {
+          'basePokemon': 'Venonat',
+          'evolvedPokemon': 'Venomoth',
+          'type': 0,
+          'level': 31,
+        },
+      },
     },
     {
       'id': 50,
@@ -1918,6 +2673,12 @@ module.exports = {
         'speed': 95,
       },
       'attack': 17,
+      'locations': {
+        '0': {
+          '1': ['48'],
+        },
+        '2': ['Digletts Cave'],
+      },
     },
     {
       'id': 51,
@@ -1936,6 +2697,15 @@ module.exports = {
         'speed': 120,
       },
       'attack': 64,
+      'locations': {
+        '3': ['Digletts Cave'],
+        '4': {
+          'basePokemon': 'Diglett',
+          'evolvedPokemon': 'Dugtrio',
+          'type': 0,
+          'level': 26,
+        },
+      },
     },
     {
       'id': 52,
@@ -1962,6 +2732,20 @@ module.exports = {
         'speed': 90,
       },
       'attack': 36,
+      'locations': {
+        '0': {
+          '0': [
+            '5',
+            '6',
+            '7',
+            '8',
+          ],
+          '1': [
+            '38',
+            '39',
+          ],
+        },
+      },
     },
     {
       'id': 53,
@@ -1980,6 +2764,14 @@ module.exports = {
         'speed': 115,
       },
       'attack': 85,
+      'locations': {
+        '4': {
+          'basePokemon': 'Meowth',
+          'evolvedPokemon': 'Persian',
+          'type': 0,
+          'level': 28,
+        },
+      },
     },
     {
       'id': 54,
@@ -2006,6 +2798,18 @@ module.exports = {
         'speed': 55,
       },
       'attack': 55,
+      'locations': {
+        '0': {
+          '0': [
+            '4',
+            '24',
+            '25',
+          ],
+          '1': ['35'],
+        },
+        '2': ['Seafoam Islands'],
+        '6': ['Water'],
+      },
     },
     {
       'id': 55,
@@ -2024,6 +2828,18 @@ module.exports = {
         'speed': 85,
       },
       'attack': 130,
+      'locations': {
+        '0': {
+          '1': ['35'],
+        },
+        '2': ['Seafoam Islands'],
+        '4': {
+          'basePokemon': 'Psyduck',
+          'evolvedPokemon': 'Golduck',
+          'type': 0,
+          'level': 33,
+        },
+      },
     },
     {
       'id': 56,
@@ -2039,6 +2855,7 @@ module.exports = {
           'evolvedPokemon': 'Primeape',
           'type': 0,
           'level': 28,
+          'triggered': true,
         },
       ],
       'base': {
@@ -2050,6 +2867,22 @@ module.exports = {
         'speed': 70,
       },
       'attack': 42,
+      'locations': {
+        '0': {
+          '0': [
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '22',
+            '23',
+          ],
+          '1': ['42'],
+        },
+        '6': ['Fighting'],
+      },
     },
     {
       'id': 57,
@@ -2068,6 +2901,18 @@ module.exports = {
         'speed': 95,
       },
       'attack': 99,
+      'locations': {
+        '0': {
+          '0': ['23'],
+        },
+        '4': {
+          'basePokemon': 'Mankey',
+          'evolvedPokemon': 'Primeape',
+          'type': 0,
+          'level': 28,
+          'triggered': true,
+        },
+      },
     },
     {
       'id': 58,
@@ -2094,6 +2939,21 @@ module.exports = {
         'speed': 60,
       },
       'attack': 68,
+      'locations': {
+        '0': {
+          '0': [
+            '7',
+            '8',
+          ],
+          '1': [
+            '36',
+            '37',
+            '48',
+          ],
+        },
+        '2': ['Pokemon Mansion'],
+        '6': ['Fire'],
+      },
     },
     {
       'id': 59,
@@ -2112,6 +2972,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 165,
+      'locations': {
+        '5': {
+          'basePokemon': 'Growlithe',
+          'evolvedPokemon': 'Arcanine',
+          'type': 0,
+          'stone': 0,
+        },
+      },
     },
     {
       'id': 60,
@@ -2138,6 +3006,38 @@ module.exports = {
         'speed': 90,
       },
       'attack': 38,
+      'locations': {
+        '0': {
+          '0': [
+            '4',
+            '6',
+            '10',
+            '11',
+            '12',
+            '13',
+            '14',
+            '17',
+            '18',
+            '19',
+            '20',
+            '21',
+            '22',
+            '23',
+            '24',
+            '25',
+          ],
+          '1': [
+            '28',
+            '30',
+            '31',
+            '35',
+            '43',
+            '44',
+            '45',
+          ],
+        },
+        '2': ['Ruins of Alph'],
+      },
     },
     {
       'id': 61,
@@ -2170,6 +3070,28 @@ module.exports = {
         'speed': 90,
       },
       'attack': 69,
+      'locations': {
+        '0': {
+          '0': [
+            '10',
+            '22',
+            '23',
+          ],
+          '1': [
+            '28',
+            '30',
+            '31',
+            '44',
+          ],
+        },
+        '2': ['Ruins of Alph'],
+        '4': {
+          'basePokemon': 'Poliwag',
+          'evolvedPokemon': 'Poliwhirl',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 62,
@@ -2191,6 +3113,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 137,
+      'locations': {
+        '5': {
+          'basePokemon': 'Poliwhirl',
+          'evolvedPokemon': 'Poliwrath',
+          'type': 0,
+          'stone': 1,
+        },
+      },
     },
     {
       'id': 63,
@@ -2217,6 +3147,24 @@ module.exports = {
         'speed': 90,
       },
       'attack': 27,
+      'locations': {
+        '0': {
+          '0': [
+            '5',
+            '6',
+            '7',
+            '8',
+            '24',
+            '25',
+          ],
+          '1': [
+            '34',
+            '35',
+          ],
+          '2': ['116'],
+        },
+        '2': ['Granite Cave'],
+      },
     },
     {
       'id': 64,
@@ -2243,6 +3191,18 @@ module.exports = {
         'speed': 105,
       },
       'attack': 56,
+      'locations': {
+        '0': {
+          '0': ['8'],
+        },
+        '2': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Abra',
+          'evolvedPokemon': 'Kadabra',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 65,
@@ -2261,6 +3221,14 @@ module.exports = {
         'speed': 120,
       },
       'attack': 96,
+      'locations': {
+        '5': {
+          'basePokemon': 'Kadabra',
+          'evolvedPokemon': 'Alakazam',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 66,
@@ -2287,6 +3255,19 @@ module.exports = {
         'speed': 35,
       },
       'attack': 54,
+      'locations': {
+        '0': {
+          '0': ['10'],
+        },
+        '2': [
+          'Rock Tunnel',
+          'Victory Road',
+          'Fiery Path',
+          'Jagged Pass',
+        ],
+        '3': ['Jagged Pass'],
+        '6': ['Fighting'],
+      },
     },
     {
       'id': 67,
@@ -2313,6 +3294,15 @@ module.exports = {
         'speed': 45,
       },
       'attack': 93,
+      'locations': {
+        '3': ['Victory Road'],
+        '4': {
+          'basePokemon': 'Machop',
+          'evolvedPokemon': 'Machoke',
+          'type': 0,
+          'level': 28,
+        },
+      },
     },
     {
       'id': 68,
@@ -2331,6 +3321,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 142,
+      'locations': {
+        '5': {
+          'basePokemon': 'Machoke',
+          'evolvedPokemon': 'Machamp',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 69,
@@ -2360,6 +3358,28 @@ module.exports = {
         'speed': 40,
       },
       'attack': 55,
+      'locations': {
+        '0': {
+          '0': [
+            '5',
+            '6',
+            '7',
+            '12',
+            '13',
+            '14',
+            '15',
+            '24',
+            '25',
+          ],
+          '1': [
+            '31',
+            '32',
+            '44',
+          ],
+        },
+        '3': ['Sprout Tower'],
+        '6': ['Grass'],
+      },
     },
     {
       'id': 70,
@@ -2389,6 +3409,23 @@ module.exports = {
         'speed': 55,
       },
       'attack': 90,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+            '14',
+            '15',
+          ],
+          '1': ['44'],
+        },
+        '4': {
+          'basePokemon': 'Bellsprout',
+          'evolvedPokemon': 'Weepinbell',
+          'type': 0,
+          'level': 21,
+        },
+      },
     },
     {
       'id': 71,
@@ -2410,6 +3447,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 138,
+      'locations': {
+        '5': {
+          'basePokemon': 'Weepinbell',
+          'evolvedPokemon': 'Victreebel',
+          'type': 0,
+          'stone': 3,
+        },
+      },
     },
     {
       'id': 72,
@@ -2439,6 +3484,58 @@ module.exports = {
         'speed': 70,
       },
       'attack': 44,
+      'locations': {
+        '0': {
+          '0': [
+            '11',
+            '12',
+            '13',
+            '17',
+            '18',
+            '19',
+            '20',
+          ],
+          '1': [
+            '26',
+            '27',
+            '32',
+            '34',
+            '40',
+            '41',
+            '47',
+          ],
+          '2': [
+            '103',
+            '105',
+            '106',
+            '107',
+            '108',
+            '109',
+            '110',
+            '115',
+            '118',
+            '119',
+            '121',
+            '122',
+            '123',
+            '124',
+            '125',
+            '126',
+            '127',
+            '128',
+            '129',
+            '130',
+            '131',
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '2': [
+          'Shoal Cave',
+          'Seafloor Cavern',
+        ],
+      },
     },
     {
       'id': 73,
@@ -2460,6 +3557,29 @@ module.exports = {
         'speed': 100,
       },
       'attack': 120,
+      'locations': {
+        '0': {
+          '0': [
+            '19',
+            '20',
+            '21',
+          ],
+          '1': [
+            '26',
+            '27',
+            '32',
+            '34',
+            '40',
+            '41',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Tentacool',
+          'evolvedPokemon': 'Tentacruel',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 74,
@@ -2489,6 +3609,28 @@ module.exports = {
         'speed': 20,
       },
       'attack': 41,
+      'locations': {
+        '0': {
+          '1': [
+            '45',
+            '46',
+          ],
+          '2': [
+            '111',
+            '114',
+          ],
+        },
+        '2': [
+          'Mt. Moon',
+          'Rock Tunnel',
+          'Victory Road',
+          'Union Cave',
+          'Mt Mortar',
+          'Dark Cave',
+          'Granite Cave',
+          'Victory Road Hoenn',
+        ],
+      },
     },
     {
       'id': 75,
@@ -2518,6 +3660,23 @@ module.exports = {
         'speed': 35,
       },
       'attack': 74,
+      'locations': {
+        '0': {
+          '1': ['45'],
+        },
+        '2': [
+          'Victory Road',
+          'Mt Mortar',
+          'Dark Cave',
+        ],
+        '3': ['Victory Road Hoenn'],
+        '4': {
+          'basePokemon': 'Geodude',
+          'evolvedPokemon': 'Graveler',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 76,
@@ -2539,6 +3698,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 125,
+      'locations': {
+        '5': {
+          'basePokemon': 'Graveler',
+          'evolvedPokemon': 'Golem',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 77,
@@ -2565,6 +3732,18 @@ module.exports = {
         'speed': 90,
       },
       'attack': 78,
+      'locations': {
+        '0': {
+          '0': ['17'],
+          '1': [
+            '26',
+            '27',
+            '28',
+          ],
+        },
+        '2': ['Mt Silver'],
+        '6': ['Fire'],
+      },
     },
     {
       'id': 78,
@@ -2583,6 +3762,17 @@ module.exports = {
         'speed': 105,
       },
       'attack': 118,
+      'locations': {
+        '0': {
+          '1': ['28'],
+        },
+        '4': {
+          'basePokemon': 'Ponyta',
+          'evolvedPokemon': 'Rapidash',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 79,
@@ -2618,6 +3808,15 @@ module.exports = {
         'speed': 15,
       },
       'attack': 61,
+      'locations': {
+        '0': {
+          '0': ['10'],
+        },
+        '2': [
+          'Seafoam Islands',
+          'Slowpoke Well',
+        ],
+      },
     },
     {
       'id': 80,
@@ -2639,6 +3838,23 @@ module.exports = {
         'speed': 30,
       },
       'attack': 142,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+            '23',
+          ],
+        },
+        '2': ['Seafoam Islands'],
+        '3': ['Slowpoke Well'],
+        '4': {
+          'basePokemon': 'Slowpoke',
+          'evolvedPokemon': 'Slowbro',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 81,
@@ -2668,6 +3884,20 @@ module.exports = {
         'speed': 45,
       },
       'attack': 42,
+      'locations': {
+        '0': {
+          '0': ['10'],
+          '1': [
+            '38',
+            '39',
+          ],
+        },
+        '2': [
+          'Power Plant',
+          'New Mauville',
+        ],
+        '6': ['Electric'],
+      },
     },
     {
       'id': 82,
@@ -2689,6 +3919,19 @@ module.exports = {
         'speed': 70,
       },
       'attack': 99,
+      'locations': {
+        '2': [
+          'Power Plant',
+          'Cerulean Cave',
+        ],
+        '3': ['New Mauville'],
+        '4': {
+          'basePokemon': 'Magnemite',
+          'evolvedPokemon': 'Magneton',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 83,
@@ -2710,6 +3953,20 @@ module.exports = {
         'speed': 60,
       },
       'attack': 74,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+          ],
+          '1': [
+            '38',
+            '39',
+            '47',
+            '48',
+          ],
+        },
+      },
     },
     {
       'id': 84,
@@ -2739,6 +3996,21 @@ module.exports = {
         'speed': 75,
       },
       'attack': 41,
+      'locations': {
+        '0': {
+          '0': [
+            '16',
+            '17',
+            '18',
+          ],
+          '1': [
+            '26',
+            '27',
+            '28',
+          ],
+        },
+        '2': ['Mt Silver'],
+      },
     },
     {
       'id': 85,
@@ -2760,6 +4032,23 @@ module.exports = {
         'speed': 110,
       },
       'attack': 98,
+      'locations': {
+        '0': {
+          '0': ['17'],
+          '1': [
+            '26',
+            '27',
+            '28',
+          ],
+        },
+        '2': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Doduo',
+          'evolvedPokemon': 'Dodrio',
+          'type': 0,
+          'level': 31,
+        },
+      },
     },
     {
       'id': 86,
@@ -2786,6 +4075,13 @@ module.exports = {
         'speed': 45,
       },
       'attack': 55,
+      'locations': {
+        '0': {
+          '1': ['47'],
+        },
+        '2': ['Whirl Islands'],
+        '3': ['Seafoam Islands'],
+      },
     },
     {
       'id': 87,
@@ -2807,6 +4103,15 @@ module.exports = {
         'speed': 70,
       },
       'attack': 116,
+      'locations': {
+        '3': ['Whirl Islands'],
+        '4': {
+          'basePokemon': 'Seel',
+          'evolvedPokemon': 'Dewgong',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 88,
@@ -2833,6 +4138,13 @@ module.exports = {
         'speed': 25,
       },
       'attack': 65,
+      'locations': {
+        '2': [
+          'Power Plant',
+          'Pokemon Mansion',
+          'Fiery Path',
+        ],
+      },
     },
     {
       'id': 89,
@@ -2851,6 +4163,18 @@ module.exports = {
         'speed': 50,
       },
       'attack': 143,
+      'locations': {
+        '2': [
+          'Power Plant',
+          'Pokemon Mansion',
+        ],
+        '4': {
+          'basePokemon': 'Grimer',
+          'evolvedPokemon': 'Muk',
+          'type': 0,
+          'level': 38,
+        },
+      },
     },
     {
       'id': 90,
@@ -2877,6 +4201,26 @@ module.exports = {
         'speed': 40,
       },
       'attack': 39,
+      'locations': {
+        '0': {
+          '0': [
+            '6',
+            '11',
+            '17',
+            '18',
+            '19',
+            '20',
+            '21',
+          ],
+          '1': [
+            '26',
+            '27',
+            '41',
+            '47',
+          ],
+        },
+        '2': ['Seafoam Islands'],
+      },
     },
     {
       'id': 91,
@@ -2898,6 +4242,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 109,
+      'locations': {
+        '5': {
+          'basePokemon': 'Shellder',
+          'evolvedPokemon': 'Cloyster',
+          'type': 0,
+          'stone': 1,
+        },
+      },
     },
     {
       'id': 92,
@@ -2927,6 +4279,13 @@ module.exports = {
         'speed': 80,
       },
       'attack': 38,
+      'locations': {
+        '2': [
+          'Pokemon Tower',
+          'Sprout Tower',
+          'Tin Tower',
+        ],
+      },
     },
     {
       'id': 93,
@@ -2956,6 +4315,16 @@ module.exports = {
         'speed': 95,
       },
       'attack': 70,
+      'locations': {
+        '2': ['Pokemon Tower'],
+        '3': ['Tin Tower'],
+        '4': {
+          'basePokemon': 'Gastly',
+          'evolvedPokemon': 'Haunter',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 94,
@@ -2977,6 +4346,14 @@ module.exports = {
         'speed': 110,
       },
       'attack': 111,
+      'locations': {
+        '5': {
+          'basePokemon': 'Haunter',
+          'evolvedPokemon': 'Gengar',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 95,
@@ -3006,6 +4383,13 @@ module.exports = {
         'speed': 70,
       },
       'attack': 41,
+      'locations': {
+        '2': [
+          'Victory Road',
+          'Union Cave',
+        ],
+        '3': ['Rock Tunnel'],
+      },
     },
     {
       'id': 96,
@@ -3032,6 +4416,15 @@ module.exports = {
         'speed': 42,
       },
       'attack': 53,
+      'locations': {
+        '0': {
+          '0': ['11'],
+          '1': [
+            '34',
+            '35',
+          ],
+        },
+      },
     },
     {
       'id': 97,
@@ -3050,6 +4443,15 @@ module.exports = {
         'speed': 67,
       },
       'attack': 118,
+      'locations': {
+        '2': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Drowzee',
+          'evolvedPokemon': 'Hypno',
+          'type': 0,
+          'level': 26,
+        },
+      },
     },
     {
       'id': 98,
@@ -3076,6 +4478,30 @@ module.exports = {
         'speed': 50,
       },
       'attack': 37,
+      'locations': {
+        '0': {
+          '0': [
+            '4',
+            '6',
+            '10',
+            '11',
+            '12',
+            '13',
+            '17',
+            '18',
+            '24',
+            '25',
+          ],
+          '1': [
+            '34',
+            '40',
+          ],
+        },
+        '2': [
+          'Seafoam Islands',
+          'Whirl Islands',
+        ],
+      },
     },
     {
       'id': 99,
@@ -3094,6 +4520,25 @@ module.exports = {
         'speed': 75,
       },
       'attack': 96,
+      'locations': {
+        '0': {
+          '0': [
+            '10',
+            '23',
+          ],
+          '1': [
+            '34',
+            '40',
+          ],
+        },
+        '3': ['Whirl Islands'],
+        '4': {
+          'basePokemon': 'Krabby',
+          'evolvedPokemon': 'Kingler',
+          'type': 0,
+          'level': 28,
+        },
+      },
     },
     {
       'id': 100,
@@ -3120,6 +4565,13 @@ module.exports = {
         'speed': 100,
       },
       'attack': 40,
+      'locations': {
+        '0': {
+          '0': ['10'],
+        },
+        '2': ['New Mauville'],
+        '6': ['Electric'],
+      },
     },
     {
       'id': 101,
@@ -3138,6 +4590,19 @@ module.exports = {
         'speed': 150,
       },
       'attack': 86,
+      'locations': {
+        '2': [
+          'Power Plant',
+          'Cerulean Cave',
+        ],
+        '3': ['New Mauville'],
+        '4': {
+          'basePokemon': 'Voltorb',
+          'evolvedPokemon': 'Electrode',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 102,
@@ -3167,6 +4632,28 @@ module.exports = {
         'speed': 40,
       },
       'attack': 55,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '29',
+            '30',
+            '31',
+            '32',
+            '34',
+            '35',
+            '36',
+            '37',
+            '38',
+            '39',
+            '43',
+            '47',
+            '48',
+          ],
+        },
+        '10': '12.05%',
+      },
     },
     {
       'id': 103,
@@ -3188,6 +4675,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 168,
+      'locations': {
+        '5': {
+          'basePokemon': 'Exeggcute',
+          'evolvedPokemon': 'Exeggutor',
+          'type': 0,
+          'stone': 3,
+        },
+      },
     },
     {
       'id': 104,
@@ -3214,6 +4709,10 @@ module.exports = {
         'speed': 35,
       },
       'attack': 49,
+      'locations': {
+        '2': ['Pokemon Tower'],
+        '10': '6.02%',
+      },
     },
     {
       'id': 105,
@@ -3232,6 +4731,20 @@ module.exports = {
         'speed': 45,
       },
       'attack': 87,
+      'locations': {
+        '2': [
+          'Victory Road',
+          'Cerulean Cave',
+        ],
+        '3': ['Pokemon Tower'],
+        '4': {
+          'basePokemon': 'Cubone',
+          'evolvedPokemon': 'Marowak',
+          'type': 0,
+          'level': 28,
+        },
+        '10': '3.01%',
+      },
     },
     {
       'id': 106,
@@ -3250,6 +4763,15 @@ module.exports = {
         'speed': 87,
       },
       'attack': 77,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tyrogue',
+          'evolvedPokemon': 'Hitmonlee',
+          'type': 0,
+          'level': 20,
+        },
+        '6': ['Fighting'],
+      },
     },
     {
       'id': 107,
@@ -3268,6 +4790,15 @@ module.exports = {
         'speed': 76,
       },
       'attack': 78,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tyrogue',
+          'evolvedPokemon': 'Hitmonchan',
+          'type': 0,
+          'level': 20,
+        },
+        '6': ['Fighting'],
+      },
     },
     {
       'id': 108,
@@ -3286,6 +4817,12 @@ module.exports = {
         'speed': 30,
       },
       'attack': 85,
+      'locations': {
+        '0': {
+          '1': ['44'],
+        },
+        '8': ['Celadon City'],
+      },
     },
     {
       'id': 109,
@@ -3312,6 +4849,13 @@ module.exports = {
         'speed': 35,
       },
       'attack': 57,
+      'locations': {
+        '2': [
+          'Pokemon Mansion',
+          'Burned Tower',
+          'Fiery Path',
+        ],
+      },
     },
     {
       'id': 110,
@@ -3330,6 +4874,16 @@ module.exports = {
         'speed': 60,
       },
       'attack': 121,
+      'locations': {
+        '2': ['Pokemon Mansion'],
+        '3': ['Burned Tower'],
+        '4': {
+          'basePokemon': 'Koffing',
+          'evolvedPokemon': 'Weezing',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 111,
@@ -3359,6 +4913,9 @@ module.exports = {
         'speed': 25,
       },
       'attack': 59,
+      'locations': {
+        '10': '6.02%',
+      },
     },
     {
       'id': 112,
@@ -3380,6 +4937,15 @@ module.exports = {
         'speed': 40,
       },
       'attack': 121,
+      'locations': {
+        '3': ['Cerulean Cave'],
+        '4': {
+          'basePokemon': 'Rhyhorn',
+          'evolvedPokemon': 'Rhydon',
+          'type': 0,
+          'level': 42,
+        },
+      },
     },
     {
       'id': 113,
@@ -3406,6 +4972,16 @@ module.exports = {
         'speed': 50,
       },
       'attack': 27,
+      'locations': {
+        '2': ['Cerulean Cave'],
+        '5': {
+          'basePokemon': 'Happiny',
+          'evolvedPokemon': 'Chansey',
+          'type': 0,
+          'stone': -1,
+        },
+        '10': '2.41%',
+      },
     },
     {
       'id': 114,
@@ -3424,6 +5000,18 @@ module.exports = {
         'speed': 60,
       },
       'attack': 92,
+      'locations': {
+        '0': {
+          '0': ['21'],
+          '1': [
+            '28',
+            '44',
+          ],
+        },
+        '2': ['Mt Silver'],
+        '6': ['Grass'],
+        '10': '2.41%',
+      },
     },
     {
       'id': 115,
@@ -3442,6 +5030,9 @@ module.exports = {
         'speed': 90,
       },
       'attack': 109,
+      'locations': {
+        '10': '9.04%',
+      },
     },
     {
       'id': 116,
@@ -3468,6 +5059,28 @@ module.exports = {
         'speed': 60,
       },
       'attack': 37,
+      'locations': {
+        '0': {
+          '0': [
+            '10',
+            '11',
+            '12',
+            '13',
+            '19',
+            '20',
+            '21',
+          ],
+          '2': [
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '2': [
+          'Seafoam Islands',
+          'Whirl Islands',
+        ],
+      },
     },
     {
       'id': 117,
@@ -3494,6 +5107,21 @@ module.exports = {
         'speed': 85,
       },
       'attack': 90,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+            '23',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Horsea',
+          'evolvedPokemon': 'Seadra',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 118,
@@ -3520,6 +5148,41 @@ module.exports = {
         'speed': 63,
       },
       'attack': 47,
+      'locations': {
+        '0': {
+          '0': [
+            '4',
+            '6',
+            '10',
+            '11',
+            '12',
+            '13',
+            '14',
+            '17',
+            '18',
+            '19',
+            '20',
+            '21',
+            '22',
+            '23',
+            '24',
+            '25',
+          ],
+          '1': ['42'],
+          '2': [
+            '102',
+            '111',
+            '114',
+            '117',
+            '120',
+          ],
+        },
+        '2': [
+          'Union Cave',
+          'Meteor Falls',
+          'Victory Road Hoenn',
+        ],
+      },
     },
     {
       'id': 119,
@@ -3538,6 +5201,22 @@ module.exports = {
         'speed': 68,
       },
       'attack': 110,
+      'locations': {
+        '0': {
+          '0': [
+            '4',
+            '23',
+            '24',
+          ],
+          '1': ['42'],
+        },
+        '4': {
+          'basePokemon': 'Goldeen',
+          'evolvedPokemon': 'Seaking',
+          'type': 0,
+          'level': 33,
+        },
+      },
     },
     {
       'id': 120,
@@ -3564,6 +5243,22 @@ module.exports = {
         'speed': 85,
       },
       'attack': 45,
+      'locations': {
+        '0': {
+          '0': [
+            '19',
+            '20',
+            '21',
+          ],
+          '1': [
+            '34',
+            '40',
+            '47',
+          ],
+        },
+        '2': ['Seafoam Islands'],
+        '6': ['Water'],
+      },
     },
     {
       'id': 121,
@@ -3585,6 +5280,14 @@ module.exports = {
         'speed': 115,
       },
       'attack': 117,
+      'locations': {
+        '5': {
+          'basePokemon': 'Staryu',
+          'evolvedPokemon': 'Starmie',
+          'type': 0,
+          'stone': 1,
+        },
+      },
     },
     {
       'id': 122,
@@ -3606,6 +5309,15 @@ module.exports = {
         'speed': 90,
       },
       'attack': 77,
+      'locations': {
+        '5': {
+          'basePokemon': 'Mime Jr.',
+          'evolvedPokemon': 'Mr. Mime',
+          'type': 0,
+          'stone': -1,
+        },
+        '8': ['Celadon City'],
+      },
     },
     {
       'id': 123,
@@ -3635,6 +5347,9 @@ module.exports = {
         'speed': 105,
       },
       'attack': 111,
+      'locations': {
+        '10': '2.41%',
+      },
     },
     {
       'id': 124,
@@ -3656,6 +5371,16 @@ module.exports = {
         'speed': 95,
       },
       'attack': 90,
+      'locations': {
+        '2': ['Ice Path'],
+        '4': {
+          'basePokemon': 'Smoochum',
+          'evolvedPokemon': 'Jynx',
+          'type': 0,
+          'level': 30,
+        },
+        '8': ['Celadon City'],
+      },
     },
     {
       'id': 125,
@@ -3682,6 +5407,16 @@ module.exports = {
         'speed': 105,
       },
       'attack': 114,
+      'locations': {
+        '3': ['Power Plant'],
+        '4': {
+          'basePokemon': 'Elekid',
+          'evolvedPokemon': 'Electabuzz',
+          'type': 0,
+          'level': 30,
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 126,
@@ -3708,6 +5443,15 @@ module.exports = {
         'speed': 93,
       },
       'attack': 122,
+      'locations': {
+        '3': ['Pokemon Mansion'],
+        '4': {
+          'basePokemon': 'Magby',
+          'evolvedPokemon': 'Magmar',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 127,
@@ -3726,6 +5470,9 @@ module.exports = {
         'speed': 85,
       },
       'attack': 114,
+      'locations': {
+        '10': '2.41%',
+      },
     },
     {
       'id': 128,
@@ -3744,6 +5491,16 @@ module.exports = {
         'speed': 110,
       },
       'attack': 98,
+      'locations': {
+        '0': {
+          '1': [
+            '38',
+            '39',
+            '48',
+          ],
+        },
+        '10': '6.02%',
+      },
     },
     {
       'id': 129,
@@ -3770,6 +5527,74 @@ module.exports = {
         'speed': 80,
       },
       'attack': 10,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '13',
+            '19',
+            '20',
+            '21',
+          ],
+          '1': [
+            '26',
+            '27',
+            '28',
+            '30',
+            '31',
+            '32',
+            '34',
+            '35',
+            '40',
+            '41',
+            '42',
+            '43',
+            '44',
+            '45',
+            '47',
+          ],
+          '2': [
+            '102',
+            '103',
+            '104',
+            '105',
+            '106',
+            '107',
+            '108',
+            '109',
+            '110',
+            '111',
+            '114',
+            '115',
+            '117',
+            '118',
+            '119',
+            '120',
+            '121',
+            '122',
+            '123',
+            '124',
+            '125',
+            '126',
+            '127',
+            '128',
+            '129',
+            '130',
+            '131',
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '2': [
+          'Ruins of Alph',
+          'Union Cave',
+          'Meteor Falls',
+          'Shoal Cave',
+          'Seafloor Cavern',
+          'Victory Road Hoenn',
+        ],
+      },
     },
     {
       'id': 130,
@@ -3791,6 +5616,14 @@ module.exports = {
         'speed': 81,
       },
       'attack': 148,
+      'locations': {
+        '4': {
+          'basePokemon': 'Magikarp',
+          'evolvedPokemon': 'Gyarados',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 131,
@@ -3812,6 +5645,9 @@ module.exports = {
         'speed': 60,
       },
       'attack': 165,
+      'locations': {
+        '6': ['Water'],
+      },
     },
     {
       'id': 132,
@@ -3830,6 +5666,22 @@ module.exports = {
         'speed': 48,
       },
       'attack': 45,
+      'locations': {
+        '0': {
+          '0': [
+            '13',
+            '14',
+            '15',
+            '23',
+          ],
+          '1': [
+            '34',
+            '35',
+            '47',
+          ],
+        },
+        '2': ['Cerulean Cave'],
+      },
     },
     {
       'id': 133,
@@ -3880,6 +5732,9 @@ module.exports = {
         'speed': 55,
       },
       'attack': 54,
+      'locations': {
+        '8': ['Celadon City'],
+      },
     },
     {
       'id': 134,
@@ -3898,6 +5753,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 155,
+      'locations': {
+        '5': {
+          'basePokemon': 'Eevee',
+          'evolvedPokemon': 'Vaporeon',
+          'type': 0,
+          'stone': 1,
+        },
+      },
     },
     {
       'id': 135,
@@ -3916,6 +5779,14 @@ module.exports = {
         'speed': 130,
       },
       'attack': 115,
+      'locations': {
+        '5': {
+          'basePokemon': 'Eevee',
+          'evolvedPokemon': 'Jolteon',
+          'type': 0,
+          'stone': 2,
+        },
+      },
     },
     {
       'id': 136,
@@ -3934,6 +5805,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 144,
+      'locations': {
+        '5': {
+          'basePokemon': 'Eevee',
+          'evolvedPokemon': 'Flareon',
+          'type': 0,
+          'stone': 0,
+        },
+      },
     },
     {
       'id': 137,
@@ -3960,6 +5839,9 @@ module.exports = {
         'speed': 40,
       },
       'attack': 89,
+      'locations': {
+        '8': ['Celadon City'],
+      },
     },
     {
       'id': 138,
@@ -3989,6 +5871,10 @@ module.exports = {
         'speed': 35,
       },
       'attack': 55,
+      'locations': {
+        '3': ['Mt. Moon'],
+        '9': ['Helix Fossil'],
+      },
     },
     {
       'id': 139,
@@ -4010,6 +5896,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 121,
+      'locations': {
+        '4': {
+          'basePokemon': 'Omanyte',
+          'evolvedPokemon': 'Omastar',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 140,
@@ -4039,6 +5933,10 @@ module.exports = {
         'speed': 55,
       },
       'attack': 54,
+      'locations': {
+        '3': ['Mt. Moon'],
+        '9': ['Dome Fossil'],
+      },
     },
     {
       'id': 141,
@@ -4060,6 +5958,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 114,
+      'locations': {
+        '4': {
+          'basePokemon': 'Kabuto',
+          'evolvedPokemon': 'Kabutops',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 142,
@@ -4081,6 +5987,9 @@ module.exports = {
         'speed': 130,
       },
       'attack': 117,
+      'locations': {
+        '9': ['Old Amber'],
+      },
     },
     {
       'id': 143,
@@ -4099,6 +6008,20 @@ module.exports = {
         'speed': 30,
       },
       'attack': 172,
+      'locations': {
+        '0': {
+          '0': [
+            '12',
+            '16',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Munchlax',
+          'evolvedPokemon': 'Snorlax',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 144,
@@ -4120,6 +6043,9 @@ module.exports = {
         'speed': 85,
       },
       'attack': 165,
+      'locations': {
+        '3': ['Seafoam Islands'],
+      },
     },
     {
       'id': 145,
@@ -4141,6 +6067,9 @@ module.exports = {
         'speed': 100,
       },
       'attack': 173,
+      'locations': {
+        '3': ['Power Plant'],
+      },
     },
     {
       'id': 146,
@@ -4162,6 +6091,9 @@ module.exports = {
         'speed': 90,
       },
       'attack': 180,
+      'locations': {
+        '3': ['Victory Road'],
+      },
     },
     {
       'id': 147,
@@ -4188,6 +6120,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 48,
+      'locations': {
+        '6': ['Dragon'],
+      },
     },
     {
       'id': 148,
@@ -4214,6 +6149,15 @@ module.exports = {
         'speed': 70,
       },
       'attack': 92,
+      'locations': {
+        '4': {
+          'basePokemon': 'Dratini',
+          'evolvedPokemon': 'Dragonair',
+          'type': 0,
+          'level': 30,
+        },
+        '6': ['Dragon'],
+      },
     },
     {
       'id': 149,
@@ -4235,6 +6179,15 @@ module.exports = {
         'speed': 80,
       },
       'attack': 196,
+      'locations': {
+        '4': {
+          'basePokemon': 'Dragonair',
+          'evolvedPokemon': 'Dragonite',
+          'type': 0,
+          'level': 55,
+        },
+        '6': ['Dragon'],
+      },
     },
     {
       'id': 150,
@@ -4253,6 +6206,9 @@ module.exports = {
         'speed': 130,
       },
       'attack': 235,
+      'locations': {
+        '3': ['Cerulean Cave'],
+      },
     },
     {
       'id': 151,
@@ -4271,6 +6227,9 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'locations': {
+        '1': ['0'],
+      },
     },
     {
       'id': 152,
@@ -4297,6 +6256,9 @@ module.exports = {
         'speed': 45,
       },
       'attack': 51,
+      'locations': {
+        '6': ['Grass'],
+      },
     },
     {
       'id': 153,
@@ -4323,6 +6285,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Chikorita',
+          'evolvedPokemon': 'Bayleef',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 154,
@@ -4341,6 +6311,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 135,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bayleef',
+          'evolvedPokemon': 'Meganium',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 155,
@@ -4367,6 +6345,9 @@ module.exports = {
         'speed': 65,
       },
       'attack': 46,
+      'locations': {
+        '6': ['Fire'],
+      },
     },
     {
       'id': 156,
@@ -4393,6 +6374,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cyndaquil',
+          'evolvedPokemon': 'Quilava',
+          'type': 0,
+          'level': 14,
+        },
+      },
     },
     {
       'id': 157,
@@ -4411,6 +6400,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 142,
+      'locations': {
+        '4': {
+          'basePokemon': 'Quilava',
+          'evolvedPokemon': 'Typhlosion',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 158,
@@ -4437,6 +6434,9 @@ module.exports = {
         'speed': 43,
       },
       'attack': 53,
+      'locations': {
+        '6': ['Water'],
+      },
     },
     {
       'id': 159,
@@ -4463,6 +6463,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 87,
+      'locations': {
+        '4': {
+          'basePokemon': 'Totodile',
+          'evolvedPokemon': 'Croconaw',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 160,
@@ -4481,6 +6489,14 @@ module.exports = {
         'speed': 78,
       },
       'attack': 147,
+      'locations': {
+        '4': {
+          'basePokemon': 'Croconaw',
+          'evolvedPokemon': 'Feraligatr',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 161,
@@ -4507,6 +6523,11 @@ module.exports = {
         'speed': 20,
       },
       'attack': 28,
+      'locations': {
+        '0': {
+          '1': ['29'],
+        },
+      },
     },
     {
       'id': 162,
@@ -4525,6 +6546,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Sentret',
+          'evolvedPokemon': 'Furret',
+          'type': 0,
+          'level': 15,
+        },
+      },
     },
     {
       'id': 163,
@@ -4554,6 +6583,31 @@ module.exports = {
         'speed': 50,
       },
       'attack': 34,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '29',
+            '30',
+            '31',
+            '32',
+            '34',
+            '35',
+            '36',
+            '37',
+            '38',
+            '39',
+            '43',
+            '47',
+            '48',
+          ],
+        },
+        '2': [
+          'Sprout Tower',
+          'Ilex Forest',
+        ],
+      },
     },
     {
       'id': 164,
@@ -4575,6 +6629,21 @@ module.exports = {
         'speed': 70,
       },
       'attack': 104,
+      'locations': {
+        '0': {
+          '1': [
+            '43',
+            '47',
+          ],
+        },
+        '3': ['Ilex Forest'],
+        '4': {
+          'basePokemon': 'Hoothoot',
+          'evolvedPokemon': 'Noctowl',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 165,
@@ -4604,6 +6673,25 @@ module.exports = {
         'speed': 55,
       },
       'attack': 27,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '29',
+            '30',
+            '31',
+            '34',
+            '35',
+            '36',
+            '37',
+            '38',
+            '39',
+            '47',
+            '48',
+          ],
+        },
+      },
     },
     {
       'id': 166,
@@ -4625,6 +6713,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 57,
+      'locations': {
+        '4': {
+          'basePokemon': 'Ledyba',
+          'evolvedPokemon': 'Ledian',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 167,
@@ -4654,6 +6750,25 @@ module.exports = {
         'speed': 30,
       },
       'attack': 36,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '29',
+            '30',
+            '31',
+            '34',
+            '35',
+            '36',
+            '37',
+            '38',
+            '39',
+            '47',
+            '48',
+          ],
+        },
+      },
     },
     {
       'id': 168,
@@ -4675,6 +6790,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 93,
+      'locations': {
+        '4': {
+          'basePokemon': 'Spinarak',
+          'evolvedPokemon': 'Ariados',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 169,
@@ -4696,6 +6819,14 @@ module.exports = {
         'speed': 130,
       },
       'attack': 128,
+      'locations': {
+        '4': {
+          'basePokemon': 'Golbat',
+          'evolvedPokemon': 'Crobat',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 170,
@@ -4725,6 +6856,17 @@ module.exports = {
         'speed': 67,
       },
       'attack': 54,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '41',
+            '47',
+          ],
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 171,
@@ -4746,6 +6888,21 @@ module.exports = {
         'speed': 67,
       },
       'attack': 116,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '47',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Chinchou',
+          'evolvedPokemon': 'Lanturn',
+          'type': 0,
+          'level': 27,
+        },
+      },
     },
     {
       'id': 172,
@@ -4773,6 +6930,9 @@ module.exports = {
         'speed': 60,
       },
       'attack': 17,
+      'locations': {
+        '7': ['Pikachu'],
+      },
     },
     {
       'id': 173,
@@ -4800,6 +6960,9 @@ module.exports = {
         'speed': 15,
       },
       'attack': 27,
+      'locations': {
+        '7': ['Clefairy'],
+      },
     },
     {
       'id': 174,
@@ -4830,6 +6993,9 @@ module.exports = {
         'speed': 15,
       },
       'attack': 27,
+      'locations': {
+        '7': ['Jigglypuff'],
+      },
     },
     {
       'id': 175,
@@ -4856,6 +7022,9 @@ module.exports = {
         'speed': 20,
       },
       'attack': 25,
+      'locations': {
+        '8': ['Violet City'],
+      },
     },
     {
       'id': 176,
@@ -4877,6 +7046,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 75,
+      'locations': {
+        '4': {
+          'basePokemon': 'Togepi',
+          'evolvedPokemon': 'Togetic',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 177,
@@ -4906,6 +7083,12 @@ module.exports = {
         'speed': 70,
       },
       'attack': 50,
+      'locations': {
+        '0': {
+          '1': ['28'],
+        },
+        '2': ['Ruins of Alph'],
+      },
     },
     {
       'id': 178,
@@ -4927,6 +7110,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 108,
+      'locations': {
+        '4': {
+          'basePokemon': 'Natu',
+          'evolvedPokemon': 'Xatu',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 179,
@@ -4953,6 +7144,16 @@ module.exports = {
         'speed': 35,
       },
       'attack': 46,
+      'locations': {
+        '0': {
+          '1': [
+            '32',
+            '42',
+            '43',
+          ],
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 180,
@@ -4979,6 +7180,20 @@ module.exports = {
         'speed': 45,
       },
       'attack': 78,
+      'locations': {
+        '0': {
+          '1': [
+            '42',
+            '43',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Mareep',
+          'evolvedPokemon': 'Flaaffy',
+          'type': 0,
+          'level': 15,
+        },
+      },
     },
     {
       'id': 181,
@@ -4997,6 +7212,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 147,
+      'locations': {
+        '4': {
+          'basePokemon': 'Flaaffy',
+          'evolvedPokemon': 'Ampharos',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 182,
@@ -5015,6 +7238,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 130,
+      'locations': {
+        '5': {
+          'basePokemon': 'Gloom',
+          'evolvedPokemon': 'Bellossom',
+          'type': 0,
+          'stone': 5,
+        },
+      },
     },
     {
       'id': 183,
@@ -5044,6 +7275,27 @@ module.exports = {
         'speed': 40,
       },
       'attack': 26,
+      'locations': {
+        '0': {
+          '2': [
+            '102',
+            '104',
+            '111',
+            '112',
+            '114',
+            '117',
+            '120',
+          ],
+        },
+        '2': ['Mt Mortar'],
+        '4': {
+          'basePokemon': 'Azurill',
+          'evolvedPokemon': 'Marill',
+          'type': 0,
+          'level': 100,
+        },
+        '6': ['Water'],
+      },
     },
     {
       'id': 184,
@@ -5065,6 +7317,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 92,
+      'locations': {
+        '4': {
+          'basePokemon': 'Marill',
+          'evolvedPokemon': 'Azumarill',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 185,
@@ -5083,6 +7343,17 @@ module.exports = {
         'speed': 30,
       },
       'attack': 77,
+      'locations': {
+        '0': {
+          '1': ['36'],
+        },
+        '5': {
+          'basePokemon': 'Bonsly',
+          'evolvedPokemon': 'Sudowoodo',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 186,
@@ -5101,6 +7372,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 134,
+      'locations': {
+        '5': {
+          'basePokemon': 'Poliwhirl',
+          'evolvedPokemon': 'Politoed',
+          'type': 0,
+          'stone': 9,
+        },
+      },
     },
     {
       'id': 187,
@@ -5130,6 +7409,16 @@ module.exports = {
         'speed': 50,
       },
       'attack': 29,
+      'locations': {
+        '0': {
+          '1': [
+            '32',
+            '33',
+            '48',
+          ],
+        },
+        '6': ['Grass'],
+      },
     },
     {
       'id': 188,
@@ -5159,6 +7448,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 52,
+      'locations': {
+        '4': {
+          'basePokemon': 'Hoppip',
+          'evolvedPokemon': 'Skiploom',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 189,
@@ -5180,6 +7477,14 @@ module.exports = {
         'speed': 110,
       },
       'attack': 86,
+      'locations': {
+        '4': {
+          'basePokemon': 'Skiploom',
+          'evolvedPokemon': 'Jumpluff',
+          'type': 0,
+          'level': 27,
+        },
+      },
     },
     {
       'id': 190,
@@ -5198,6 +7503,19 @@ module.exports = {
         'speed': 85,
       },
       'attack': 58,
+      'locations': {
+        '0': {
+          '1': [
+            '28',
+            '31',
+            '33',
+            '42',
+            '44',
+            '45',
+            '46',
+          ],
+        },
+      },
     },
     {
       'id': 191,
@@ -5224,6 +7542,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 18,
+      'locations': {
+        '6': ['Grass'],
+      },
     },
     {
       'id': 192,
@@ -5242,6 +7563,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 112,
+      'locations': {
+        '5': {
+          'basePokemon': 'Sunkern',
+          'evolvedPokemon': 'Sunflora',
+          'type': 0,
+          'stone': 5,
+        },
+      },
     },
     {
       'id': 193,
@@ -5263,6 +7592,11 @@ module.exports = {
         'speed': 95,
       },
       'attack': 76,
+      'locations': {
+        '0': {
+          '1': ['35'],
+        },
+      },
     },
     {
       'id': 194,
@@ -5292,6 +7626,14 @@ module.exports = {
         'speed': 15,
       },
       'attack': 26,
+      'locations': {
+        '0': {
+          '1': ['32'],
+        },
+        '2': ['Ruins of Alph'],
+        '3': ['Union Cave'],
+        '6': ['Water'],
+      },
     },
     {
       'id': 195,
@@ -5313,6 +7655,25 @@ module.exports = {
         'speed': 35,
       },
       'attack': 111,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '32',
+          ],
+        },
+        '2': [
+          'Ruins of Alph',
+          'Mt Silver',
+        ],
+        '4': {
+          'basePokemon': 'Wooper',
+          'evolvedPokemon': 'Quagsire',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 196,
@@ -5331,6 +7692,14 @@ module.exports = {
         'speed': 110,
       },
       'attack': 122,
+      'locations': {
+        '5': {
+          'basePokemon': 'Eevee',
+          'evolvedPokemon': 'Espeon',
+          'type': 0,
+          'stone': 11,
+        },
+      },
     },
     {
       'id': 197,
@@ -5349,6 +7718,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 125,
+      'locations': {
+        '5': {
+          'basePokemon': 'Eevee',
+          'evolvedPokemon': 'Umbreon',
+          'type': 0,
+          'stone': 11,
+        },
+      },
     },
     {
       'id': 198,
@@ -5370,6 +7747,11 @@ module.exports = {
         'speed': 91,
       },
       'attack': 84,
+      'locations': {
+        '0': {
+          '1': ['28'],
+        },
+      },
     },
     {
       'id': 199,
@@ -5391,6 +7773,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 142,
+      'locations': {
+        '5': {
+          'basePokemon': 'Slowpoke',
+          'evolvedPokemon': 'Slowking',
+          'type': 0,
+          'stone': 9,
+        },
+      },
     },
     {
       'id': 200,
@@ -5409,6 +7799,9 @@ module.exports = {
         'speed': 85,
       },
       'attack': 90,
+      'locations': {
+        '2': ['Mt Silver'],
+      },
     },
     {
       'id': 201,
@@ -5427,6 +7820,9 @@ module.exports = {
         'speed': 48,
       },
       'attack': 64,
+      'locations': {
+        '3': ['Ruins of Alph'],
+      },
     },
     {
       'id': 202,
@@ -5445,6 +7841,15 @@ module.exports = {
         'speed': 33,
       },
       'attack': 68,
+      'locations': {
+        '2': ['Dark Cave'],
+        '4': {
+          'basePokemon': 'Wynaut',
+          'evolvedPokemon': 'Wobbuffet',
+          'type': 0,
+          'level': 15,
+        },
+      },
     },
     {
       'id': 203,
@@ -5466,6 +7871,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 108,
+      'locations': {
+        '0': {
+          '1': [
+            '43',
+            '48',
+          ],
+        },
+      },
     },
     {
       'id': 204,
@@ -5492,6 +7905,27 @@ module.exports = {
         'speed': 15,
       },
       'attack': 45,
+      'locations': {
+        '0': {
+          '1': [
+            '26',
+            '27',
+            '29',
+            '30',
+            '31',
+            '32',
+            '34',
+            '35',
+            '36',
+            '37',
+            '38',
+            '39',
+            '43',
+            '47',
+            '48',
+          ],
+        },
+      },
     },
     {
       'id': 205,
@@ -5513,6 +7947,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 109,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pineco',
+          'evolvedPokemon': 'Forretress',
+          'type': 0,
+          'level': 31,
+        },
+      },
     },
     {
       'id': 206,
@@ -5531,6 +7973,9 @@ module.exports = {
         'speed': 45,
       },
       'attack': 101,
+      'locations': {
+        '3': ['Dark Cave'],
+      },
     },
     {
       'id': 207,
@@ -5552,6 +7997,11 @@ module.exports = {
         'speed': 85,
       },
       'attack': 74,
+      'locations': {
+        '0': {
+          '1': ['45'],
+        },
+      },
     },
     {
       'id': 208,
@@ -5573,6 +8023,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 111,
+      'locations': {
+        '5': {
+          'basePokemon': 'Onix',
+          'evolvedPokemon': 'Steelix',
+          'type': 0,
+          'stone': 8,
+        },
+      },
     },
     {
       'id': 209,
@@ -5599,6 +8057,11 @@ module.exports = {
         'speed': 30,
       },
       'attack': 54,
+      'locations': {
+        '0': {
+          '1': ['38'],
+        },
+      },
     },
     {
       'id': 210,
@@ -5617,6 +8080,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 120,
+      'locations': {
+        '4': {
+          'basePokemon': 'Snubbull',
+          'evolvedPokemon': 'Granbull',
+          'type': 0,
+          'level': 23,
+        },
+      },
     },
     {
       'id': 211,
@@ -5638,6 +8109,12 @@ module.exports = {
         'speed': 85,
       },
       'attack': 93,
+      'locations': {
+        '0': {
+          '1': ['32'],
+        },
+        '6': ['Water'],
+      },
     },
     {
       'id': 212,
@@ -5659,6 +8136,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 123,
+      'locations': {
+        '5': {
+          'basePokemon': 'Scyther',
+          'evolvedPokemon': 'Scizor',
+          'type': 0,
+          'stone': 8,
+        },
+      },
     },
     {
       'id': 213,
@@ -5680,6 +8165,9 @@ module.exports = {
         'speed': 5,
       },
       'attack': 13,
+      'locations': {
+        '3': ['Burned Tower'],
+      },
     },
     {
       'id': 214,
@@ -5701,6 +8189,20 @@ module.exports = {
         'speed': 85,
       },
       'attack': 110,
+      'locations': {
+        '0': {
+          '1': [
+            '28',
+            '31',
+            '33',
+            '42',
+            '44',
+            '45',
+            '46',
+            '47',
+          ],
+        },
+      },
     },
     {
       'id': 215,
@@ -5722,6 +8224,12 @@ module.exports = {
         'speed': 115,
       },
       'attack': 69,
+      'locations': {
+        '0': {
+          '1': ['28'],
+        },
+        '2': ['Mt Silver'],
+      },
     },
     {
       'id': 216,
@@ -5748,6 +8256,12 @@ module.exports = {
         'speed': 40,
       },
       'attack': 64,
+      'locations': {
+        '0': {
+          '1': ['45'],
+        },
+        '2': ['Mt Silver'],
+      },
     },
     {
       'id': 217,
@@ -5766,6 +8280,18 @@ module.exports = {
         'speed': 55,
       },
       'attack': 145,
+      'locations': {
+        '0': {
+          '1': ['28'],
+        },
+        '2': ['Mt Silver'],
+        '4': {
+          'basePokemon': 'Teddiursa',
+          'evolvedPokemon': 'Ursaring',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 218,
@@ -5792,6 +8318,13 @@ module.exports = {
         'speed': 20,
       },
       'attack': 38,
+      'locations': {
+        '0': {
+          '2': ['113'],
+        },
+        '2': ['Fiery Path'],
+        '6': ['Fire'],
+      },
     },
     {
       'id': 219,
@@ -5813,6 +8346,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 91,
+      'locations': {
+        '4': {
+          'basePokemon': 'Slugma',
+          'evolvedPokemon': 'Magcargo',
+          'type': 0,
+          'level': 38,
+        },
+      },
     },
     {
       'id': 220,
@@ -5842,6 +8383,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 33,
+      'locations': {
+        '2': ['Ice Path'],
+      },
     },
     {
       'id': 221,
@@ -5863,6 +8407,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 118,
+      'locations': {
+        '4': {
+          'basePokemon': 'Swinub',
+          'evolvedPokemon': 'Piloswine',
+          'type': 0,
+          'level': 33,
+        },
+      },
     },
     {
       'id': 222,
@@ -5884,6 +8436,15 @@ module.exports = {
         'speed': 35,
       },
       'attack': 85,
+      'locations': {
+        '0': {
+          '1': [
+            '34',
+            '40',
+          ],
+          '2': ['128'],
+        },
+      },
     },
     {
       'id': 223,
@@ -5910,6 +8471,11 @@ module.exports = {
         'speed': 65,
       },
       'attack': 45,
+      'locations': {
+        '0': {
+          '1': ['44'],
+        },
+      },
     },
     {
       'id': 224,
@@ -5928,6 +8494,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 140,
+      'locations': {
+        '4': {
+          'basePokemon': 'Remoraid',
+          'evolvedPokemon': 'Octillery',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 225,
@@ -5949,6 +8523,9 @@ module.exports = {
         'speed': 75,
       },
       'attack': 53,
+      'locations': {
+        '3': ['Ice Path'],
+      },
     },
     {
       'id': 226,
@@ -5970,6 +8547,17 @@ module.exports = {
         'speed': 70,
       },
       'attack': 99,
+      'locations': {
+        '0': {
+          '1': ['41'],
+        },
+        '5': {
+          'basePokemon': 'Mantyke',
+          'evolvedPokemon': 'Mantine',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 227,
@@ -5991,6 +8579,12 @@ module.exports = {
         'speed': 70,
       },
       'attack': 86,
+      'locations': {
+        '0': {
+          '1': ['45'],
+          '2': ['113'],
+        },
+      },
     },
     {
       'id': 228,
@@ -6020,6 +8614,9 @@ module.exports = {
         'speed': 65,
       },
       'attack': 56,
+      'locations': {
+        '6': ['Fire'],
+      },
     },
     {
       'id': 229,
@@ -6041,6 +8638,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 129,
+      'locations': {
+        '4': {
+          'basePokemon': 'Houndour',
+          'evolvedPokemon': 'Houndoom',
+          'type': 0,
+          'level': 24,
+        },
+      },
     },
     {
       'id': 230,
@@ -6062,6 +8667,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 146,
+      'locations': {
+        '5': {
+          'basePokemon': 'Seadra',
+          'evolvedPokemon': 'Kingdra',
+          'type': 0,
+          'stone': 7,
+        },
+      },
     },
     {
       'id': 231,
@@ -6088,6 +8701,12 @@ module.exports = {
         'speed': 40,
       },
       'attack': 61,
+      'locations': {
+        '0': {
+          '1': ['45'],
+        },
+        '2': ['Mt Silver'],
+      },
     },
     {
       'id': 232,
@@ -6106,6 +8725,18 @@ module.exports = {
         'speed': 50,
       },
       'attack': 133,
+      'locations': {
+        '0': {
+          '1': ['28'],
+        },
+        '2': ['Mt Silver'],
+        '4': {
+          'basePokemon': 'Phanpy',
+          'evolvedPokemon': 'Donphan',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 233,
@@ -6124,6 +8755,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 146,
+      'locations': {
+        '5': {
+          'basePokemon': 'Porygon',
+          'evolvedPokemon': 'Porygon2',
+          'type': 0,
+          'stone': 10,
+        },
+      },
     },
     {
       'id': 234,
@@ -6142,6 +8781,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 115,
+      'locations': {
+        '0': {
+          '1': [
+            '36',
+            '37',
+          ],
+        },
+      },
     },
     {
       'id': 235,
@@ -6160,6 +8807,9 @@ module.exports = {
         'speed': 75,
       },
       'attack': 23,
+      'locations': {
+        '2': ['Ruins of Alph'],
+      },
     },
     {
       'id': 236,
@@ -6199,6 +8849,15 @@ module.exports = {
         'speed': 35,
       },
       'attack': 24,
+      'locations': {
+        '3': ['Mt Mortar'],
+        '6': ['Fighting'],
+        '7': [
+          'Hitmonlee',
+          'Hitmonchan',
+          'Hitmontop',
+        ],
+      },
     },
     {
       'id': 237,
@@ -6217,6 +8876,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 78,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tyrogue',
+          'evolvedPokemon': 'Hitmontop',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 238,
@@ -6247,6 +8914,9 @@ module.exports = {
         'speed': 65,
       },
       'attack': 39,
+      'locations': {
+        '7': ['Jynx'],
+      },
     },
     {
       'id': 239,
@@ -6274,6 +8944,10 @@ module.exports = {
         'speed': 95,
       },
       'attack': 58,
+      'locations': {
+        '6': ['Electric'],
+        '7': ['Electabuzz'],
+      },
     },
     {
       'id': 240,
@@ -6301,6 +8975,10 @@ module.exports = {
         'speed': 83,
       },
       'attack': 64,
+      'locations': {
+        '6': ['Fire'],
+        '7': ['Magmar'],
+      },
     },
     {
       'id': 241,
@@ -6319,6 +8997,15 @@ module.exports = {
         'speed': 100,
       },
       'attack': 102,
+      'locations': {
+        '0': {
+          '1': [
+            '38',
+            '39',
+            '47',
+          ],
+        },
+      },
     },
     {
       'id': 242,
@@ -6337,6 +9024,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 59,
+      'locations': {
+        '4': {
+          'basePokemon': 'Chansey',
+          'evolvedPokemon': 'Blissey',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 243,
@@ -6355,6 +9050,9 @@ module.exports = {
         'speed': 115,
       },
       'attack': 164,
+      'locations': {
+        '1': ['1'],
+      },
     },
     {
       'id': 244,
@@ -6373,6 +9071,9 @@ module.exports = {
         'speed': 100,
       },
       'attack': 182,
+      'locations': {
+        '1': ['1'],
+      },
     },
     {
       'id': 245,
@@ -6391,6 +9092,9 @@ module.exports = {
         'speed': 85,
       },
       'attack': 162,
+      'locations': {
+        '1': ['1'],
+      },
     },
     {
       'id': 246,
@@ -6420,6 +9124,9 @@ module.exports = {
         'speed': 41,
       },
       'attack': 50,
+      'locations': {
+        '3': ['Mt Silver'],
+      },
     },
     {
       'id': 247,
@@ -6449,6 +9156,14 @@ module.exports = {
         'speed': 51,
       },
       'attack': 95,
+      'locations': {
+        '4': {
+          'basePokemon': 'Larvitar',
+          'evolvedPokemon': 'Pupitar',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 248,
@@ -6470,6 +9185,14 @@ module.exports = {
         'speed': 61,
       },
       'attack': 205,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pupitar',
+          'evolvedPokemon': 'Tyranitar',
+          'type': 0,
+          'level': 55,
+        },
+      },
     },
     {
       'id': 249,
@@ -6491,6 +9214,9 @@ module.exports = {
         'speed': 110,
       },
       'attack': 203,
+      'locations': {
+        '3': ['Whirl Islands'],
+      },
     },
     {
       'id': 250,
@@ -6512,6 +9238,9 @@ module.exports = {
         'speed': 90,
       },
       'attack': 239,
+      'locations': {
+        '3': ['Tin Tower'],
+      },
     },
     {
       'id': 251,
@@ -6533,6 +9262,9 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'locations': {
+        '3': ['Ilex Forest'],
+      },
     },
     {
       'id': 252,
@@ -6559,6 +9291,9 @@ module.exports = {
         'speed': 70,
       },
       'attack': 45,
+      'locations': {
+        '6': ['Grass'],
+      },
     },
     {
       'id': 253,
@@ -6585,6 +9320,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 76,
+      'locations': {
+        '4': {
+          'basePokemon': 'Treecko',
+          'evolvedPokemon': 'Grovyle',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 254,
@@ -6603,6 +9346,14 @@ module.exports = {
         'speed': 120,
       },
       'attack': 129,
+      'locations': {
+        '4': {
+          'basePokemon': 'Grovyle',
+          'evolvedPokemon': 'Sceptile',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 255,
@@ -6629,6 +9380,9 @@ module.exports = {
         'speed': 45,
       },
       'attack': 55,
+      'locations': {
+        '6': ['Fire'],
+      },
     },
     {
       'id': 256,
@@ -6658,6 +9412,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 93,
+      'locations': {
+        '4': {
+          'basePokemon': 'Torchic',
+          'evolvedPokemon': 'Combusken',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 257,
@@ -6679,6 +9441,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 157,
+      'locations': {
+        '4': {
+          'basePokemon': 'Combusken',
+          'evolvedPokemon': 'Blaziken',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 258,
@@ -6705,6 +9475,9 @@ module.exports = {
         'speed': 40,
       },
       'attack': 55,
+      'locations': {
+        '6': ['Water'],
+      },
     },
     {
       'id': 259,
@@ -6734,6 +9507,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 91,
+      'locations': {
+        '4': {
+          'basePokemon': 'Mudkip',
+          'evolvedPokemon': 'Marshtomp',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 260,
@@ -6755,6 +9536,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 164,
+      'locations': {
+        '4': {
+          'basePokemon': 'Marshtomp',
+          'evolvedPokemon': 'Swampert',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 261,
@@ -6781,6 +9570,26 @@ module.exports = {
         'speed': 35,
       },
       'attack': 27,
+      'locations': {
+        '0': {
+          '2': [
+            '101',
+            '102',
+            '103',
+            '104',
+            '110',
+            '116',
+            '117',
+            '120',
+            '121',
+            '123',
+          ],
+        },
+        '2': [
+          'Petalburg Woods',
+          'Mt. Chimney',
+        ],
+      },
     },
     {
       'id': 262,
@@ -6799,6 +9608,21 @@ module.exports = {
         'speed': 70,
       },
       'attack': 93,
+      'locations': {
+        '0': {
+          '2': [
+            '120',
+            '121',
+            '123',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Poochyena',
+          'evolvedPokemon': 'Mightyena',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 263,
@@ -6825,6 +9649,18 @@ module.exports = {
         'speed': 60,
       },
       'attack': 26,
+      'locations': {
+        '0': {
+          '2': [
+            '101',
+            '102',
+            '103',
+            '118',
+            '119',
+          ],
+        },
+        '2': ['Petalburg Woods'],
+      },
     },
     {
       'id': 264,
@@ -6843,6 +9679,20 @@ module.exports = {
         'speed': 100,
       },
       'attack': 82,
+      'locations': {
+        '0': {
+          '2': [
+            '118',
+            '119',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Zigzagoon',
+          'evolvedPokemon': 'Linoone',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 265,
@@ -6875,6 +9725,16 @@ module.exports = {
         'speed': 20,
       },
       'attack': 22,
+      'locations': {
+        '0': {
+          '2': [
+            '101',
+            '102',
+            '104',
+          ],
+        },
+        '2': ['Petalburg Woods'],
+      },
     },
     {
       'id': 266,
@@ -6901,6 +9761,15 @@ module.exports = {
         'speed': 15,
       },
       'attack': 23,
+      'locations': {
+        '2': ['Petalburg Woods'],
+        '4': {
+          'basePokemon': 'Wurmple',
+          'evolvedPokemon': 'Silcoon',
+          'type': 0,
+          'level': 7,
+        },
+      },
     },
     {
       'id': 267,
@@ -6922,6 +9791,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 86,
+      'locations': {
+        '4': {
+          'basePokemon': 'Silcoon',
+          'evolvedPokemon': 'Beautifly',
+          'type': 0,
+          'level': 10,
+        },
+      },
     },
     {
       'id': 268,
@@ -6948,6 +9825,15 @@ module.exports = {
         'speed': 15,
       },
       'attack': 23,
+      'locations': {
+        '2': ['Petalburg Woods'],
+        '4': {
+          'basePokemon': 'Wurmple',
+          'evolvedPokemon': 'Cascoon',
+          'type': 0,
+          'level': 7,
+        },
+      },
     },
     {
       'id': 269,
@@ -6969,6 +9855,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 67,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cascoon',
+          'evolvedPokemon': 'Dustox',
+          'type': 0,
+          'level': 10,
+        },
+      },
     },
     {
       'id': 270,
@@ -6998,6 +9892,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 26,
+      'locations': {
+        '0': {
+          '2': [
+            '102',
+            '114',
+          ],
+        },
+      },
     },
     {
       'id': 271,
@@ -7027,6 +9929,17 @@ module.exports = {
         'speed': 50,
       },
       'attack': 62,
+      'locations': {
+        '0': {
+          '2': ['114'],
+        },
+        '4': {
+          'basePokemon': 'Lotad',
+          'evolvedPokemon': 'Lombre',
+          'type': 0,
+          'level': 14,
+        },
+      },
     },
     {
       'id': 272,
@@ -7048,6 +9961,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 120,
+      'locations': {
+        '5': {
+          'basePokemon': 'Lombre',
+          'evolvedPokemon': 'Ludicolo',
+          'type': 0,
+          'stone': 1,
+        },
+      },
     },
     {
       'id': 273,
@@ -7074,6 +9995,15 @@ module.exports = {
         'speed': 30,
       },
       'attack': 26,
+      'locations': {
+        '0': {
+          '2': [
+            '102',
+            '117',
+            '120',
+          ],
+        },
+      },
     },
     {
       'id': 274,
@@ -7103,6 +10033,17 @@ module.exports = {
         'speed': 60,
       },
       'attack': 67,
+      'locations': {
+        '0': {
+          '2': ['114'],
+        },
+        '4': {
+          'basePokemon': 'Seedot',
+          'evolvedPokemon': 'Nuzleaf',
+          'type': 0,
+          'level': 14,
+        },
+      },
     },
     {
       'id': 275,
@@ -7124,6 +10065,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 131,
+      'locations': {
+        '5': {
+          'basePokemon': 'Nuzleaf',
+          'evolvedPokemon': 'Shiftry',
+          'type': 0,
+          'stone': 3,
+        },
+      },
     },
     {
       'id': 276,
@@ -7153,6 +10102,16 @@ module.exports = {
         'speed': 85,
       },
       'attack': 31,
+      'locations': {
+        '0': {
+          '2': [
+            '104',
+            '115',
+            '116',
+          ],
+        },
+        '2': ['Petalburg Woods'],
+      },
     },
     {
       'id': 277,
@@ -7174,6 +10133,17 @@ module.exports = {
         'speed': 125,
       },
       'attack': 91,
+      'locations': {
+        '0': {
+          '2': ['115'],
+        },
+        '4': {
+          'basePokemon': 'Taillow',
+          'evolvedPokemon': 'Swellow',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 278,
@@ -7203,6 +10173,38 @@ module.exports = {
         'speed': 85,
       },
       'attack': 31,
+      'locations': {
+        '0': {
+          '2': [
+            '103',
+            '104',
+            '105',
+            '106',
+            '107',
+            '108',
+            '109',
+            '110',
+            '115',
+            '118',
+            '119',
+            '121',
+            '122',
+            '123',
+            '124',
+            '125',
+            '126',
+            '127',
+            '128',
+            '129',
+            '130',
+            '131',
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '2': ['Mt. Pyre'],
+      },
     },
     {
       'id': 279,
@@ -7224,6 +10226,43 @@ module.exports = {
         'speed': 65,
       },
       'attack': 91,
+      'locations': {
+        '0': {
+          '2': [
+            '103',
+            '104',
+            '105',
+            '106',
+            '107',
+            '108',
+            '109',
+            '110',
+            '115',
+            '118',
+            '119',
+            '121',
+            '122',
+            '123',
+            '124',
+            '125',
+            '126',
+            '127',
+            '128',
+            '129',
+            '130',
+            '131',
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Wingull',
+          'evolvedPokemon': 'Pelipper',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 280,
@@ -7253,6 +10292,11 @@ module.exports = {
         'speed': 40,
       },
       'attack': 20,
+      'locations': {
+        '0': {
+          '2': ['102'],
+        },
+      },
     },
     {
       'id': 281,
@@ -7282,6 +10326,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 38,
+      'locations': {
+        '4': {
+          'basePokemon': 'Ralts',
+          'evolvedPokemon': 'Kirlia',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 282,
@@ -7303,6 +10355,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 127,
+      'locations': {
+        '4': {
+          'basePokemon': 'Kirlia',
+          'evolvedPokemon': 'Gardevoir',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 283,
@@ -7332,6 +10392,16 @@ module.exports = {
         'speed': 65,
       },
       'attack': 33,
+      'locations': {
+        '0': {
+          '2': [
+            '102',
+            '114',
+            '117',
+            '120',
+          ],
+        },
+      },
     },
     {
       'id': 284,
@@ -7353,6 +10423,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 102,
+      'locations': {
+        '4': {
+          'basePokemon': 'Surskit',
+          'evolvedPokemon': 'Masquerain',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 285,
@@ -7379,6 +10457,9 @@ module.exports = {
         'speed': 35,
       },
       'attack': 46,
+      'locations': {
+        '2': ['Petalburg Woods'],
+      },
     },
     {
       'id': 286,
@@ -7400,6 +10481,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 106,
+      'locations': {
+        '4': {
+          'basePokemon': 'Shroomish',
+          'evolvedPokemon': 'Breloom',
+          'type': 0,
+          'level': 23,
+        },
+      },
     },
     {
       'id': 287,
@@ -7426,6 +10515,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 45,
+      'locations': {
+        '3': ['Petalburg Woods'],
+      },
     },
     {
       'id': 288,
@@ -7452,6 +10544,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 94,
+      'locations': {
+        '4': {
+          'basePokemon': 'Slakoth',
+          'evolvedPokemon': 'Vigoroth',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 289,
@@ -7470,6 +10570,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 248,
+      'locations': {
+        '4': {
+          'basePokemon': 'Vigoroth',
+          'evolvedPokemon': 'Slaking',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 290,
@@ -7505,6 +10613,11 @@ module.exports = {
         'speed': 40,
       },
       'attack': 29,
+      'locations': {
+        '0': {
+          '2': ['116'],
+        },
+      },
     },
     {
       'id': 291,
@@ -7526,6 +10639,14 @@ module.exports = {
         'speed': 160,
       },
       'attack': 77,
+      'locations': {
+        '4': {
+          'basePokemon': 'Nincada',
+          'evolvedPokemon': 'Ninjask',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 292,
@@ -7547,6 +10668,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 10,
+      'locations': {
+        '4': {
+          'basePokemon': 'Nincada',
+          'evolvedPokemon': 'Shedinja',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 293,
@@ -7573,6 +10702,16 @@ module.exports = {
         'speed': 28,
       },
       'attack': 37,
+      'locations': {
+        '0': {
+          '2': ['116'],
+        },
+        '2': [
+          'Rusturf Tunnel',
+          'Victory Road Hoenn',
+        ],
+        '3': ['Rusturf Tunnel'],
+      },
     },
     {
       'id': 294,
@@ -7599,6 +10738,15 @@ module.exports = {
         'speed': 48,
       },
       'attack': 80,
+      'locations': {
+        '2': ['Victory Road Hoenn'],
+        '4': {
+          'basePokemon': 'Whismur',
+          'evolvedPokemon': 'Loudred',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 295,
@@ -7617,6 +10765,14 @@ module.exports = {
         'speed': 68,
       },
       'attack': 140,
+      'locations': {
+        '4': {
+          'basePokemon': 'Loudred',
+          'evolvedPokemon': 'Exploud',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 296,
@@ -7643,6 +10799,13 @@ module.exports = {
         'speed': 25,
       },
       'attack': 32,
+      'locations': {
+        '2': [
+          'Granite Cave',
+          'Victory Road Hoenn',
+        ],
+        '6': ['Fighting'],
+      },
     },
     {
       'id': 297,
@@ -7661,6 +10824,15 @@ module.exports = {
         'speed': 50,
       },
       'attack': 119,
+      'locations': {
+        '3': ['Victory Road Hoenn'],
+        '4': {
+          'basePokemon': 'Makuhita',
+          'evolvedPokemon': 'Hariyama',
+          'type': 0,
+          'level': 24,
+        },
+      },
     },
     {
       'id': 298,
@@ -7691,6 +10863,9 @@ module.exports = {
         'speed': 20,
       },
       'attack': 18,
+      'locations': {
+        '7': ['Marill'],
+      },
     },
     {
       'id': 299,
@@ -7709,6 +10884,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 47,
+      'locations': {
+        '3': ['Granite Cave'],
+      },
     },
     {
       'id': 300,
@@ -7735,6 +10913,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 36,
+      'locations': {
+        '0': {
+          '2': ['116'],
+        },
+      },
     },
     {
       'id': 301,
@@ -7753,6 +10936,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 76,
+      'locations': {
+        '5': {
+          'basePokemon': 'Skitty',
+          'evolvedPokemon': 'Delcatty',
+          'type': 0,
+          'stone': 4,
+        },
+      },
     },
     {
       'id': 302,
@@ -7774,6 +10965,13 @@ module.exports = {
         'speed': 50,
       },
       'attack': 76,
+      'locations': {
+        '2': [
+          'Granite Cave',
+          'Cave of Origin',
+          'Sky Pillar',
+        ],
+      },
     },
     {
       'id': 303,
@@ -7795,6 +10993,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 73,
+      'locations': {
+        '2': [
+          'Cave of Origin',
+          'Sky Pillar',
+          'Victory Road Hoenn',
+        ],
+        '3': ['Granite Cave'],
+      },
     },
     {
       'id': 304,
@@ -7824,6 +11030,12 @@ module.exports = {
         'speed': 30,
       },
       'attack': 54,
+      'locations': {
+        '2': [
+          'Granite Cave',
+          'Victory Road Hoenn',
+        ],
+      },
     },
     {
       'id': 305,
@@ -7853,6 +11065,15 @@ module.exports = {
         'speed': 40,
       },
       'attack': 85,
+      'locations': {
+        '3': ['Victory Road Hoenn'],
+        '4': {
+          'basePokemon': 'Aron',
+          'evolvedPokemon': 'Lairon',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 306,
@@ -7874,6 +11095,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 124,
+      'locations': {
+        '4': {
+          'basePokemon': 'Lairon',
+          'evolvedPokemon': 'Aggron',
+          'type': 0,
+          'level': 42,
+        },
+      },
     },
     {
       'id': 307,
@@ -7903,6 +11132,13 @@ module.exports = {
         'speed': 60,
       },
       'attack': 33,
+      'locations': {
+        '2': [
+          'Mt. Pyre',
+          'Victory Road Hoenn',
+        ],
+        '6': ['Fighting'],
+      },
     },
     {
       'id': 308,
@@ -7924,6 +11160,15 @@ module.exports = {
         'speed': 80,
       },
       'attack': 78,
+      'locations': {
+        '3': ['Victory Road Hoenn'],
+        '4': {
+          'basePokemon': 'Meditite',
+          'evolvedPokemon': 'Medicham',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 309,
@@ -7950,6 +11195,15 @@ module.exports = {
         'speed': 65,
       },
       'attack': 43,
+      'locations': {
+        '0': {
+          '2': [
+            '110',
+            '118',
+          ],
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 310,
@@ -7968,6 +11222,17 @@ module.exports = {
         'speed': 105,
       },
       'attack': 110,
+      'locations': {
+        '0': {
+          '2': ['118'],
+        },
+        '4': {
+          'basePokemon': 'Electrike',
+          'evolvedPokemon': 'Manectric',
+          'type': 0,
+          'level': 26,
+        },
+      },
     },
     {
       'id': 311,
@@ -7986,6 +11251,12 @@ module.exports = {
         'speed': 95,
       },
       'attack': 74,
+      'locations': {
+        '0': {
+          '2': ['110'],
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 312,
@@ -8004,6 +11275,12 @@ module.exports = {
         'speed': 95,
       },
       'attack': 69,
+      'locations': {
+        '0': {
+          '2': ['110'],
+        },
+        '6': ['Electric'],
+      },
     },
     {
       'id': 313,
@@ -8022,6 +11299,11 @@ module.exports = {
         'speed': 85,
       },
       'attack': 82,
+      'locations': {
+        '0': {
+          '2': ['117'],
+        },
+      },
     },
     {
       'id': 314,
@@ -8040,6 +11322,11 @@ module.exports = {
         'speed': 85,
       },
       'attack': 82,
+      'locations': {
+        '0': {
+          '2': ['117'],
+        },
+      },
     },
     {
       'id': 315,
@@ -8061,6 +11348,15 @@ module.exports = {
         'speed': 65,
       },
       'attack': 80,
+      'locations': {
+        '4': {
+          'basePokemon': 'Budew',
+          'evolvedPokemon': 'Roselia',
+          'type': 0,
+          'level': 100,
+        },
+        '6': ['Grass'],
+      },
     },
     {
       'id': 316,
@@ -8087,6 +11383,11 @@ module.exports = {
         'speed': 40,
       },
       'attack': 50,
+      'locations': {
+        '0': {
+          '2': ['110'],
+        },
+      },
     },
     {
       'id': 317,
@@ -8105,6 +11406,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 121,
+      'locations': {
+        '4': {
+          'basePokemon': 'Gulpin',
+          'evolvedPokemon': 'Swalot',
+          'type': 0,
+          'level': 26,
+        },
+      },
     },
     {
       'id': 318,
@@ -8134,6 +11443,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 48,
+      'locations': {
+        '0': {
+          '2': [
+            '118',
+            '119',
+          ],
+        },
+      },
     },
     {
       'id': 319,
@@ -8155,6 +11472,31 @@ module.exports = {
         'speed': 95,
       },
       'attack': 110,
+      'locations': {
+        '0': {
+          '2': [
+            '103',
+            '118',
+            '122',
+            '124',
+            '125',
+            '126',
+            '127',
+            '129',
+            '130',
+            '131',
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '4': {
+          'basePokemon': 'Carvanha',
+          'evolvedPokemon': 'Sharpedo',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 320,
@@ -8181,6 +11523,39 @@ module.exports = {
         'speed': 60,
       },
       'attack': 93,
+      'locations': {
+        '0': {
+          '2': [
+            '103',
+            '105',
+            '106',
+            '107',
+            '108',
+            '109',
+            '110',
+            '115',
+            '121',
+            '122',
+            '123',
+            '124',
+            '125',
+            '126',
+            '127',
+            '128',
+            '129',
+            '130',
+            '131',
+            '132',
+            '133',
+            '134',
+          ],
+        },
+        '2': [
+          'Shoal Cave',
+          'Seafloor Cavern',
+        ],
+        '3': ['Seafloor Cavern'],
+      },
     },
     {
       'id': 321,
@@ -8199,6 +11574,17 @@ module.exports = {
         'speed': 60,
       },
       'attack': 148,
+      'locations': {
+        '0': {
+          '2': ['129'],
+        },
+        '4': {
+          'basePokemon': 'Wailmer',
+          'evolvedPokemon': 'Wailord',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 322,
@@ -8228,6 +11614,19 @@ module.exports = {
         'speed': 35,
       },
       'attack': 58,
+      'locations': {
+        '0': {
+          '2': ['112'],
+        },
+        '2': [
+          'Fiery Path',
+          'Jagged Pass',
+        ],
+        '3': [
+          'Mt. Chimney',
+          'Jagged Pass',
+        ],
+      },
     },
     {
       'id': 323,
@@ -8249,6 +11648,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 129,
+      'locations': {
+        '4': {
+          'basePokemon': 'Numel',
+          'evolvedPokemon': 'Camerupt',
+          'type': 0,
+          'level': 33,
+        },
+      },
     },
     {
       'id': 324,
@@ -8267,6 +11674,9 @@ module.exports = {
         'speed': 20,
       },
       'attack': 120,
+      'locations': {
+        '3': ['Fiery Path'],
+      },
     },
     {
       'id': 325,
@@ -8293,6 +11703,10 @@ module.exports = {
         'speed': 60,
       },
       'attack': 48,
+      'locations': {
+        '2': ['Jagged Pass'],
+        '3': ['Jagged Pass'],
+      },
     },
     {
       'id': 326,
@@ -8311,6 +11725,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 101,
+      'locations': {
+        '4': {
+          'basePokemon': 'Spoink',
+          'evolvedPokemon': 'Grumpig',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 327,
@@ -8329,6 +11751,11 @@ module.exports = {
         'speed': 60,
       },
       'attack': 69,
+      'locations': {
+        '0': {
+          '2': ['113'],
+        },
+      },
     },
     {
       'id': 328,
@@ -8355,6 +11782,11 @@ module.exports = {
         'speed': 10,
       },
       'attack': 52,
+      'locations': {
+        '0': {
+          '2': ['111'],
+        },
+      },
     },
     {
       'id': 329,
@@ -8384,6 +11816,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 58,
+      'locations': {
+        '4': {
+          'basePokemon': 'Trapinch',
+          'evolvedPokemon': 'Vibrava',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 330,
@@ -8405,6 +11845,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 134,
+      'locations': {
+        '4': {
+          'basePokemon': 'Vibrava',
+          'evolvedPokemon': 'Flygon',
+          'type': 0,
+          'level': 45,
+        },
+      },
     },
     {
       'id': 331,
@@ -8431,6 +11879,11 @@ module.exports = {
         'speed': 35,
       },
       'attack': 69,
+      'locations': {
+        '0': {
+          '2': ['111'],
+        },
+      },
     },
     {
       'id': 332,
@@ -8452,6 +11905,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 133,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cacnea',
+          'evolvedPokemon': 'Cacturne',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 333,
@@ -8481,6 +11942,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 43,
+      'locations': {
+        '0': {
+          '2': [
+            '114',
+            '115',
+          ],
+        },
+      },
     },
     {
       'id': 334,
@@ -8502,6 +11971,15 @@ module.exports = {
         'speed': 80,
       },
       'attack': 112,
+      'locations': {
+        '2': ['Sky Pillar'],
+        '4': {
+          'basePokemon': 'Swablu',
+          'evolvedPokemon': 'Altaria',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 335,
@@ -8520,6 +11998,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 105,
+      'locations': {
+        '0': {
+          '2': ['114'],
+        },
+      },
     },
     {
       'id': 336,
@@ -8538,6 +12021,11 @@ module.exports = {
         'speed': 65,
       },
       'attack': 121,
+      'locations': {
+        '0': {
+          '2': ['114'],
+        },
+      },
     },
     {
       'id': 337,
@@ -8559,6 +12047,9 @@ module.exports = {
         'speed': 70,
       },
       'attack': 112,
+      'locations': {
+        '3': ['Meteor Falls'],
+      },
     },
     {
       'id': 338,
@@ -8580,6 +12071,9 @@ module.exports = {
         'speed': 70,
       },
       'attack': 112,
+      'locations': {
+        '3': ['Meteor Falls'],
+      },
     },
     {
       'id': 339,
@@ -8609,6 +12103,19 @@ module.exports = {
         'speed': 60,
       },
       'attack': 44,
+      'locations': {
+        '0': {
+          '2': [
+            '111',
+            '114',
+            '120',
+          ],
+        },
+        '2': [
+          'Meteor Falls',
+          'Victory Road Hoenn',
+        ],
+      },
     },
     {
       'id': 340,
@@ -8630,6 +12137,15 @@ module.exports = {
         'speed': 60,
       },
       'attack': 127,
+      'locations': {
+        '2': ['Victory Road Hoenn'],
+        '4': {
+          'basePokemon': 'Barboach',
+          'evolvedPokemon': 'Whiscash',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 341,
@@ -8656,6 +12172,14 @@ module.exports = {
         'speed': 35,
       },
       'attack': 53,
+      'locations': {
+        '0': {
+          '2': [
+            '102',
+            '117',
+          ],
+        },
+      },
     },
     {
       'id': 342,
@@ -8677,6 +12201,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 122,
+      'locations': {
+        '4': {
+          'basePokemon': 'Corphish',
+          'evolvedPokemon': 'Crawdaunt',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 343,
@@ -8706,6 +12238,11 @@ module.exports = {
         'speed': 55,
       },
       'attack': 39,
+      'locations': {
+        '0': {
+          '2': ['111'],
+        },
+      },
     },
     {
       'id': 344,
@@ -8727,6 +12264,15 @@ module.exports = {
         'speed': 75,
       },
       'attack': 107,
+      'locations': {
+        '2': ['Sky Pillar'],
+        '4': {
+          'basePokemon': 'Baltoy',
+          'evolvedPokemon': 'Claydol',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 345,
@@ -8756,6 +12302,9 @@ module.exports = {
         'speed': 23,
       },
       'attack': 66,
+      'locations': {
+        '9': ['Root Fossil'],
+      },
     },
     {
       'id': 346,
@@ -8777,6 +12326,14 @@ module.exports = {
         'speed': 43,
       },
       'attack': 135,
+      'locations': {
+        '4': {
+          'basePokemon': 'Lileep',
+          'evolvedPokemon': 'Cradily',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 347,
@@ -8806,6 +12363,9 @@ module.exports = {
         'speed': 75,
       },
       'attack': 57,
+      'locations': {
+        '9': ['Claw Fossil'],
+      },
     },
     {
       'id': 348,
@@ -8827,6 +12387,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 135,
+      'locations': {
+        '4': {
+          'basePokemon': 'Anorith',
+          'evolvedPokemon': 'Armaldo',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 349,
@@ -8853,6 +12421,9 @@ module.exports = {
         'speed': 80,
       },
       'attack': 10,
+      'locations': {
+        '6': ['Water'],
+      },
     },
     {
       'id': 350,
@@ -8871,6 +12442,14 @@ module.exports = {
         'speed': 81,
       },
       'attack': 139,
+      'locations': {
+        '5': {
+          'basePokemon': 'Feebas',
+          'evolvedPokemon': 'Milotic',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 351,
@@ -8889,6 +12468,11 @@ module.exports = {
         'speed': 70,
       },
       'attack': 92,
+      'locations': {
+        '0': {
+          '2': ['119'],
+        },
+      },
     },
     {
       'id': 352,
@@ -8907,6 +12491,17 @@ module.exports = {
         'speed': 40,
       },
       'attack': 98,
+      'locations': {
+        '0': {
+          '2': [
+            '118',
+            '119',
+            '120',
+            '121',
+            '123',
+          ],
+        },
+      },
     },
     {
       'id': 353,
@@ -8933,6 +12528,16 @@ module.exports = {
         'speed': 45,
       },
       'attack': 50,
+      'locations': {
+        '0': {
+          '2': [
+            '121',
+            '123',
+          ],
+        },
+        '2': ['Mt. Pyre'],
+        '3': ['Mt. Pyre'],
+      },
     },
     {
       'id': 354,
@@ -8951,6 +12556,15 @@ module.exports = {
         'speed': 65,
       },
       'attack': 115,
+      'locations': {
+        '2': ['Sky Pillar'],
+        '4': {
+          'basePokemon': 'Shuppet',
+          'evolvedPokemon': 'Banette',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 355,
@@ -8977,6 +12591,10 @@ module.exports = {
         'speed': 25,
       },
       'attack': 27,
+      'locations': {
+        '2': ['Mt. Pyre'],
+        '3': ['Mt. Pyre'],
+      },
     },
     {
       'id': 356,
@@ -8995,6 +12613,15 @@ module.exports = {
         'speed': 25,
       },
       'attack': 82,
+      'locations': {
+        '3': ['Sky Pillar'],
+        '4': {
+          'basePokemon': 'Duskull',
+          'evolvedPokemon': 'Dusclops',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 357,
@@ -9016,6 +12643,12 @@ module.exports = {
         'speed': 51,
       },
       'attack': 117,
+      'locations': {
+        '0': {
+          '2': ['119'],
+        },
+        '6': ['Grass'],
+      },
     },
     {
       'id': 358,
@@ -9034,6 +12667,15 @@ module.exports = {
         'speed': 65,
       },
       'attack': 102,
+      'locations': {
+        '3': ['Mt. Pyre'],
+        '4': {
+          'basePokemon': 'Chingling',
+          'evolvedPokemon': 'Chimecho',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 359,
@@ -9052,6 +12694,11 @@ module.exports = {
         'speed': 75,
       },
       'attack': 114,
+      'locations': {
+        '0': {
+          '2': ['120'],
+        },
+      },
     },
     {
       'id': 360,
@@ -9079,6 +12726,12 @@ module.exports = {
         'speed': 23,
       },
       'attack': 31,
+      'locations': {
+        '0': {
+          '2': ['130'],
+        },
+        '7': ['Wobbuffet'],
+      },
     },
     {
       'id': 361,
@@ -9105,6 +12758,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 48,
+      'locations': {
+        '3': ['Shoal Cave'],
+      },
     },
     {
       'id': 362,
@@ -9123,6 +12779,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'locations': {
+        '4': {
+          'basePokemon': 'Snorunt',
+          'evolvedPokemon': 'Glalie',
+          'type': 0,
+          'level': 42,
+        },
+      },
     },
     {
       'id': 363,
@@ -9152,6 +12816,9 @@ module.exports = {
         'speed': 25,
       },
       'attack': 51,
+      'locations': {
+        '2': ['Shoal Cave'],
+      },
     },
     {
       'id': 364,
@@ -9181,6 +12848,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 98,
+      'locations': {
+        '4': {
+          'basePokemon': 'Spheal',
+          'evolvedPokemon': 'Sealeo',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 365,
@@ -9202,6 +12877,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 157,
+      'locations': {
+        '4': {
+          'basePokemon': 'Sealeo',
+          'evolvedPokemon': 'Walrein',
+          'type': 0,
+          'level': 44,
+        },
+      },
     },
     {
       'id': 366,
@@ -9234,6 +12917,15 @@ module.exports = {
         'speed': 32,
       },
       'attack': 60,
+      'locations': {
+        '0': {
+          '2': [
+            '124',
+            '126',
+          ],
+        },
+        '6': ['Water'],
+      },
     },
     {
       'id': 367,
@@ -9252,6 +12944,14 @@ module.exports = {
         'speed': 52,
       },
       'attack': 123,
+      'locations': {
+        '5': {
+          'basePokemon': 'Clamperl',
+          'evolvedPokemon': 'Huntail',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 368,
@@ -9270,6 +12970,14 @@ module.exports = {
         'speed': 52,
       },
       'attack': 122,
+      'locations': {
+        '5': {
+          'basePokemon': 'Clamperl',
+          'evolvedPokemon': 'Gorebyss',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 369,
@@ -9291,6 +12999,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 113,
+      'locations': {
+        '0': {
+          '2': [
+            '124',
+            '126',
+          ],
+        },
+      },
     },
     {
       'id': 370,
@@ -9309,6 +13025,11 @@ module.exports = {
         'speed': 97,
       },
       'attack': 38,
+      'locations': {
+        '0': {
+          '2': ['128'],
+        },
+      },
     },
     {
       'id': 371,
@@ -9335,6 +13056,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 46,
+      'locations': {
+        '6': ['Dragon'],
+      },
     },
     {
       'id': 372,
@@ -9361,6 +13085,15 @@ module.exports = {
         'speed': 50,
       },
       'attack': 94,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bagon',
+          'evolvedPokemon': 'Shelgon',
+          'type': 0,
+          'level': 30,
+        },
+        '6': ['Dragon'],
+      },
     },
     {
       'id': 373,
@@ -9382,6 +13115,15 @@ module.exports = {
         'speed': 100,
       },
       'attack': 195,
+      'locations': {
+        '4': {
+          'basePokemon': 'Shelgon',
+          'evolvedPokemon': 'Salamence',
+          'type': 0,
+          'level': 50,
+        },
+        '6': ['Dragon'],
+      },
     },
     {
       'id': 374,
@@ -9411,6 +13153,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 42,
+      'locations': {
+        '8': ['Mossdeep City'],
+      },
     },
     {
       'id': 375,
@@ -9440,6 +13185,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 86,
+      'locations': {
+        '4': {
+          'basePokemon': 'Beldum',
+          'evolvedPokemon': 'Metang',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 376,
@@ -9461,6 +13214,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 188,
+      'locations': {
+        '4': {
+          'basePokemon': 'Metang',
+          'evolvedPokemon': 'Metagross',
+          'type': 0,
+          'level': 45,
+        },
+      },
     },
     {
       'id': 377,
@@ -9479,6 +13240,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 135,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 378,
@@ -9497,6 +13261,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 135,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 379,
@@ -9515,6 +13282,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 147,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 380,
@@ -9536,6 +13306,9 @@ module.exports = {
         'speed': 110,
       },
       'attack': 162,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 381,
@@ -9557,6 +13330,9 @@ module.exports = {
         'speed': 110,
       },
       'attack': 173,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 382,
@@ -9575,6 +13351,9 @@ module.exports = {
         'speed': 90,
       },
       'attack': 233,
+      'locations': {
+        '3': ['Cave of Origin'],
+      },
     },
     {
       'id': 383,
@@ -9593,6 +13372,9 @@ module.exports = {
         'speed': 90,
       },
       'attack': 233,
+      'locations': {
+        '3': ['Cave of Origin'],
+      },
     },
     {
       'id': 384,
@@ -9614,6 +13396,9 @@ module.exports = {
         'speed': 95,
       },
       'attack': 262,
+      'locations': {
+        '3': ['Sky Pillar'],
+      },
     },
     {
       'id': 385,
@@ -9635,6 +13420,9 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 386,
@@ -9653,6 +13441,9 @@ module.exports = {
         'speed': 150,
       },
       'attack': 144,
+      'locations': {
+        '1': ['2'],
+      },
     },
     {
       'id': 387,
@@ -9679,6 +13470,7 @@ module.exports = {
         'speed': 31,
       },
       'attack': 58,
+      'locations': {},
     },
     {
       'id': 388,
@@ -9705,6 +13497,14 @@ module.exports = {
         'speed': 36,
       },
       'attack': 94,
+      'locations': {
+        '4': {
+          'basePokemon': 'Turtwig',
+          'evolvedPokemon': 'Grotle',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 389,
@@ -9726,6 +13526,14 @@ module.exports = {
         'speed': 56,
       },
       'attack': 154,
+      'locations': {
+        '4': {
+          'basePokemon': 'Grotle',
+          'evolvedPokemon': 'Torterra',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 390,
@@ -9752,6 +13560,7 @@ module.exports = {
         'speed': 61,
       },
       'attack': 50,
+      'locations': {},
     },
     {
       'id': 391,
@@ -9781,6 +13590,14 @@ module.exports = {
         'speed': 81,
       },
       'attack': 86,
+      'locations': {
+        '4': {
+          'basePokemon': 'Chimchar',
+          'evolvedPokemon': 'Monferno',
+          'type': 0,
+          'level': 14,
+        },
+      },
     },
     {
       'id': 392,
@@ -9802,6 +13619,14 @@ module.exports = {
         'speed': 108,
       },
       'attack': 143,
+      'locations': {
+        '4': {
+          'basePokemon': 'Monferno',
+          'evolvedPokemon': 'Infernape',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 393,
@@ -9828,6 +13653,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 56,
+      'locations': {},
     },
     {
       'id': 394,
@@ -9854,6 +13680,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 91,
+      'locations': {
+        '4': {
+          'basePokemon': 'Piplup',
+          'evolvedPokemon': 'Prinplup',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 395,
@@ -9875,6 +13709,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 155,
+      'locations': {
+        '4': {
+          'basePokemon': 'Prinplup',
+          'evolvedPokemon': 'Empoleon',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 396,
@@ -9904,6 +13746,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 29,
+      'locations': {},
     },
     {
       'id': 397,
@@ -9933,6 +13776,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 55,
+      'locations': {
+        '4': {
+          'basePokemon': 'Starly',
+          'evolvedPokemon': 'Staravia',
+          'type': 0,
+          'level': 14,
+        },
+      },
     },
     {
       'id': 398,
@@ -9954,6 +13805,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 111,
+      'locations': {
+        '4': {
+          'basePokemon': 'Staravia',
+          'evolvedPokemon': 'Staraptor',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 399,
@@ -9980,6 +13839,7 @@ module.exports = {
         'speed': 31,
       },
       'attack': 37,
+      'locations': {},
     },
     {
       'id': 400,
@@ -10001,6 +13861,14 @@ module.exports = {
         'speed': 71,
       },
       'attack': 90,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bidoof',
+          'evolvedPokemon': 'Bibarel',
+          'type': 0,
+          'level': 15,
+        },
+      },
     },
     {
       'id': 401,
@@ -10027,6 +13895,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 19,
+      'locations': {},
     },
     {
       'id': 402,
@@ -10045,6 +13914,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Kricketot',
+          'evolvedPokemon': 'Kricketune',
+          'type': 0,
+          'level': 10,
+        },
+      },
     },
     {
       'id': 403,
@@ -10071,6 +13948,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 39,
+      'locations': {},
     },
     {
       'id': 404,
@@ -10097,6 +13975,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 73,
+      'locations': {
+        '4': {
+          'basePokemon': 'Shinx',
+          'evolvedPokemon': 'Luxio',
+          'type': 0,
+          'level': 15,
+        },
+      },
     },
     {
       'id': 405,
@@ -10115,6 +14001,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 153,
+      'locations': {
+        '4': {
+          'basePokemon': 'Luxio',
+          'evolvedPokemon': 'Luxray',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 406,
@@ -10145,6 +14039,9 @@ module.exports = {
         'speed': 55,
       },
       'attack': 35,
+      'locations': {
+        '7': ['Roselia'],
+      },
     },
     {
       'id': 407,
@@ -10166,6 +14063,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 122,
+      'locations': {},
     },
     {
       'id': 408,
@@ -10192,6 +14090,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 58,
+      'locations': {},
     },
     {
       'id': 409,
@@ -10210,6 +14109,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 137,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cranidos',
+          'evolvedPokemon': 'Rampardos',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 410,
@@ -10239,6 +14146,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 42,
+      'locations': {},
     },
     {
       'id': 411,
@@ -10260,6 +14168,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 85,
+      'locations': {
+        '4': {
+          'basePokemon': 'Shieldon',
+          'evolvedPokemon': 'Bastiodon',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 412,
@@ -10286,6 +14202,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 25,
+      'locations': {},
     },
     {
       'id': 413,
@@ -10307,6 +14224,14 @@ module.exports = {
         'speed': 36,
       },
       'attack': 91,
+      'locations': {
+        '4': {
+          'basePokemon': 'Burmy',
+          'evolvedPokemon': 'Wormadam',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 414,
@@ -10328,6 +14253,7 @@ module.exports = {
         'speed': 66,
       },
       'attack': 103,
+      'locations': {},
     },
     {
       'id': 415,
@@ -10357,6 +14283,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 23,
+      'locations': {},
     },
     {
       'id': 416,
@@ -10378,6 +14305,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 119,
+      'locations': {
+        '4': {
+          'basePokemon': 'Combee',
+          'evolvedPokemon': 'Vespiquen',
+          'type': 0,
+          'level': 21,
+        },
+      },
     },
     {
       'id': 417,
@@ -10396,6 +14331,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 64,
+      'locations': {},
     },
     {
       'id': 418,
@@ -10422,6 +14358,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 55,
+      'locations': {},
     },
     {
       'id': 419,
@@ -10440,6 +14377,14 @@ module.exports = {
         'speed': 115,
       },
       'attack': 122,
+      'locations': {
+        '4': {
+          'basePokemon': 'Buizel',
+          'evolvedPokemon': 'Floatzel',
+          'type': 0,
+          'level': 26,
+        },
+      },
     },
     {
       'id': 420,
@@ -10466,6 +14411,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 41,
+      'locations': {},
     },
     {
       'id': 421,
@@ -10484,6 +14430,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 98,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cherubi',
+          'evolvedPokemon': 'Cherrim',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 422,
@@ -10510,6 +14464,7 @@ module.exports = {
         'speed': 34,
       },
       'attack': 62,
+      'locations': {},
     },
     {
       'id': 423,
@@ -10531,6 +14486,14 @@ module.exports = {
         'speed': 39,
       },
       'attack': 142,
+      'locations': {
+        '4': {
+          'basePokemon': 'Shellos',
+          'evolvedPokemon': 'Gastrodon',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 424,
@@ -10549,6 +14512,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 106,
+      'locations': {},
     },
     {
       'id': 425,
@@ -10578,6 +14542,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 65,
+      'locations': {},
     },
     {
       'id': 426,
@@ -10599,6 +14564,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 140,
+      'locations': {
+        '4': {
+          'basePokemon': 'Drifloon',
+          'evolvedPokemon': 'Drifblim',
+          'type': 0,
+          'level': 28,
+        },
+      },
     },
     {
       'id': 427,
@@ -10625,6 +14598,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 57,
+      'locations': {},
     },
     {
       'id': 428,
@@ -10643,6 +14617,14 @@ module.exports = {
         'speed': 105,
       },
       'attack': 95,
+      'locations': {
+        '4': {
+          'basePokemon': 'Buneary',
+          'evolvedPokemon': 'Lopunny',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 429,
@@ -10661,6 +14643,7 @@ module.exports = {
         'speed': 105,
       },
       'attack': 105,
+      'locations': {},
     },
     {
       'id': 430,
@@ -10682,6 +14665,7 @@ module.exports = {
         'speed': 71,
       },
       'attack': 152,
+      'locations': {},
     },
     {
       'id': 431,
@@ -10708,6 +14692,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 44,
+      'locations': {},
     },
     {
       'id': 432,
@@ -10726,6 +14711,14 @@ module.exports = {
         'speed': 112,
       },
       'attack': 94,
+      'locations': {
+        '4': {
+          'basePokemon': 'Glameow',
+          'evolvedPokemon': 'Purugly',
+          'type': 0,
+          'level': 38,
+        },
+      },
     },
     {
       'id': 433,
@@ -10753,6 +14746,9 @@ module.exports = {
         'speed': 45,
       },
       'attack': 41,
+      'locations': {
+        '7': ['Chimecho'],
+      },
     },
     {
       'id': 434,
@@ -10782,6 +14778,7 @@ module.exports = {
         'speed': 74,
       },
       'attack': 54,
+      'locations': {},
     },
     {
       'id': 435,
@@ -10803,6 +14800,14 @@ module.exports = {
         'speed': 84,
       },
       'attack': 124,
+      'locations': {
+        '4': {
+          'basePokemon': 'Stunky',
+          'evolvedPokemon': 'Skuntank',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 436,
@@ -10832,6 +14837,7 @@ module.exports = {
         'speed': 23,
       },
       'attack': 33,
+      'locations': {},
     },
     {
       'id': 437,
@@ -10853,6 +14859,14 @@ module.exports = {
         'speed': 33,
       },
       'attack': 130,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bronzor',
+          'evolvedPokemon': 'Bronzong',
+          'type': 0,
+          'level': 33,
+        },
+      },
     },
     {
       'id': 438,
@@ -10880,6 +14894,9 @@ module.exports = {
         'speed': 10,
       },
       'attack': 29,
+      'locations': {
+        '7': ['Sudowoodo'],
+      },
     },
     {
       'id': 439,
@@ -10910,6 +14927,9 @@ module.exports = {
         'speed': 60,
       },
       'attack': 30,
+      'locations': {
+        '7': ['Mr. Mime'],
+      },
     },
     {
       'id': 440,
@@ -10937,6 +14957,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 10,
+      'locations': {
+        '7': ['Chansey'],
+      },
     },
     {
       'id': 441,
@@ -10958,6 +14981,7 @@ module.exports = {
         'speed': 91,
       },
       'attack': 88,
+      'locations': {},
     },
     {
       'id': 442,
@@ -10979,6 +15003,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 118,
+      'locations': {},
     },
     {
       'id': 443,
@@ -11008,6 +15033,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 444,
@@ -11037,6 +15063,14 @@ module.exports = {
         'speed': 82,
       },
       'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Gible',
+          'evolvedPokemon': 'Gabite',
+          'type': 0,
+          'level': 24,
+        },
+      },
     },
     {
       'id': 445,
@@ -11058,6 +15092,14 @@ module.exports = {
         'speed': 102,
       },
       'attack': 186,
+      'locations': {
+        '4': {
+          'basePokemon': 'Gabite',
+          'evolvedPokemon': 'Garchomp',
+          'type': 0,
+          'level': 48,
+        },
+      },
     },
     {
       'id': 446,
@@ -11085,6 +15127,9 @@ module.exports = {
         'speed': 5,
       },
       'attack': 88,
+      'locations': {
+        '7': ['Snorlax'],
+      },
     },
     {
       'id': 447,
@@ -11111,6 +15156,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 39,
+      'locations': {},
     },
     {
       'id': 448,
@@ -11132,6 +15178,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 145,
+      'locations': {
+        '4': {
+          'basePokemon': 'Riolu',
+          'evolvedPokemon': 'Lucario',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 449,
@@ -11158,6 +15212,7 @@ module.exports = {
         'speed': 32,
       },
       'attack': 60,
+      'locations': {},
     },
     {
       'id': 450,
@@ -11176,6 +15231,14 @@ module.exports = {
         'speed': 47,
       },
       'attack': 155,
+      'locations': {
+        '4': {
+          'basePokemon': 'Hippopotas',
+          'evolvedPokemon': 'Hippowdon',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 451,
@@ -11205,6 +15268,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 42,
+      'locations': {},
     },
     {
       'id': 452,
@@ -11226,6 +15290,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 111,
+      'locations': {
+        '4': {
+          'basePokemon': 'Skorupi',
+          'evolvedPokemon': 'Drapion',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 453,
@@ -11255,6 +15327,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 454,
@@ -11276,6 +15349,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 131,
+      'locations': {
+        '4': {
+          'basePokemon': 'Croagunk',
+          'evolvedPokemon': 'Toxicroak',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 455,
@@ -11294,6 +15375,7 @@ module.exports = {
         'speed': 46,
       },
       'attack': 124,
+      'locations': {},
     },
     {
       'id': 456,
@@ -11320,6 +15402,7 @@ module.exports = {
         'speed': 66,
       },
       'attack': 52,
+      'locations': {},
     },
     {
       'id': 457,
@@ -11338,6 +15421,14 @@ module.exports = {
         'speed': 91,
       },
       'attack': 99,
+      'locations': {
+        '4': {
+          'basePokemon': 'Finneon',
+          'evolvedPokemon': 'Lumineon',
+          'type': 0,
+          'level': 31,
+        },
+      },
     },
     {
       'id': 458,
@@ -11368,6 +15459,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 41,
+      'locations': {
+        '7': ['Mantine'],
+      },
     },
     {
       'id': 459,
@@ -11397,6 +15491,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 65,
+      'locations': {},
     },
     {
       'id': 460,
@@ -11418,6 +15513,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 142,
+      'locations': {
+        '4': {
+          'basePokemon': 'Snover',
+          'evolvedPokemon': 'Abomasnow',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 461,
@@ -11439,6 +15542,7 @@ module.exports = {
         'speed': 125,
       },
       'attack': 105,
+      'locations': {},
     },
     {
       'id': 462,
@@ -11460,6 +15564,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 143,
+      'locations': {},
     },
     {
       'id': 463,
@@ -11478,6 +15583,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 152,
+      'locations': {},
     },
     {
       'id': 464,
@@ -11499,6 +15605,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 153,
+      'locations': {},
     },
     {
       'id': 465,
@@ -11517,6 +15624,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 166,
+      'locations': {},
     },
     {
       'id': 466,
@@ -11535,6 +15643,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 150,
+      'locations': {
+        '5': {
+          'basePokemon': 'Electabuzz',
+          'evolvedPokemon': 'Electivire',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 467,
@@ -11553,6 +15669,14 @@ module.exports = {
         'speed': 83,
       },
       'attack': 154,
+      'locations': {
+        '5': {
+          'basePokemon': 'Magmar',
+          'evolvedPokemon': 'Magmortar',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 468,
@@ -11574,6 +15698,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 134,
+      'locations': {},
     },
     {
       'id': 469,
@@ -11595,6 +15720,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 137,
+      'locations': {},
     },
     {
       'id': 470,
@@ -11613,6 +15739,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 118,
+      'locations': {},
     },
     {
       'id': 471,
@@ -11631,6 +15758,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 129,
+      'locations': {},
     },
     {
       'id': 472,
@@ -11652,6 +15780,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 107,
+      'locations': {},
     },
     {
       'id': 473,
@@ -11673,6 +15802,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 154,
+      'locations': {},
     },
     {
       'id': 474,
@@ -11691,6 +15821,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 150,
+      'locations': {},
     },
     {
       'id': 475,
@@ -11712,6 +15843,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 127,
+      'locations': {},
     },
     {
       'id': 476,
@@ -11733,6 +15865,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 109,
+      'locations': {},
     },
     {
       'id': 477,
@@ -11751,6 +15884,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 111,
+      'locations': {},
     },
     {
       'id': 478,
@@ -11772,6 +15906,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 107,
+      'locations': {},
     },
     {
       'id': 479,
@@ -11793,6 +15928,7 @@ module.exports = {
         'speed': 91,
       },
       'attack': 82,
+      'locations': {},
     },
     {
       'id': 480,
@@ -11811,6 +15947,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 139,
+      'locations': {},
     },
     {
       'id': 481,
@@ -11829,6 +15966,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 174,
+      'locations': {},
     },
     {
       'id': 482,
@@ -11847,6 +15985,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 169,
+      'locations': {},
     },
     {
       'id': 483,
@@ -11868,6 +16007,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 251,
+      'locations': {},
     },
     {
       'id': 484,
@@ -11889,6 +16029,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 239,
+      'locations': {},
     },
     {
       'id': 485,
@@ -11910,6 +16051,7 @@ module.exports = {
         'speed': 77,
       },
       'attack': 191,
+      'locations': {},
     },
     {
       'id': 486,
@@ -11928,6 +16070,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 226,
+      'locations': {},
     },
     {
       'id': 487,
@@ -11949,6 +16092,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 242,
+      'locations': {},
     },
     {
       'id': 488,
@@ -11967,6 +16111,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 166,
+      'locations': {},
     },
     {
       'id': 489,
@@ -11985,6 +16130,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'locations': {},
     },
     {
       'id': 490,
@@ -12003,6 +16149,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'locations': {},
     },
     {
       'id': 491,
@@ -12021,6 +16168,7 @@ module.exports = {
         'speed': 125,
       },
       'attack': 162,
+      'locations': {},
     },
     {
       'id': 492,
@@ -12039,6 +16187,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'locations': {},
     },
     {
       'id': 493,
@@ -12057,6 +16206,7 @@ module.exports = {
         'speed': 120,
       },
       'attack': 262,
+      'locations': {},
     },
     {
       'id': 494,
@@ -12078,6 +16228,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'locations': {},
     },
     {
       'id': 495,
@@ -12104,6 +16255,7 @@ module.exports = {
         'speed': 63,
       },
       'attack': 45,
+      'locations': {},
     },
     {
       'id': 496,
@@ -12130,6 +16282,14 @@ module.exports = {
         'speed': 83,
       },
       'attack': 78,
+      'locations': {
+        '4': {
+          'basePokemon': 'Snivy',
+          'evolvedPokemon': 'Servine',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 497,
@@ -12148,6 +16308,14 @@ module.exports = {
         'speed': 113,
       },
       'attack': 122,
+      'locations': {
+        '4': {
+          'basePokemon': 'Servine',
+          'evolvedPokemon': 'Serperior',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 498,
@@ -12174,6 +16342,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 55,
+      'locations': {},
     },
     {
       'id': 499,
@@ -12203,6 +16372,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 105,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tepig',
+          'evolvedPokemon': 'Pignite',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 500,
@@ -12224,6 +16401,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 170,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pignite',
+          'evolvedPokemon': 'Emboar',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 501,
@@ -12250,6 +16435,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 56,
+      'locations': {},
     },
     {
       'id': 502,
@@ -12276,6 +16462,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 99,
+      'locations': {
+        '4': {
+          'basePokemon': 'Oshawott',
+          'evolvedPokemon': 'Dewott',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 503,
@@ -12294,6 +16488,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 161,
+      'locations': {
+        '4': {
+          'basePokemon': 'Dewott',
+          'evolvedPokemon': 'Samurott',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 504,
@@ -12320,6 +16522,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 36,
+      'locations': {},
     },
     {
       'id': 505,
@@ -12338,6 +16541,14 @@ module.exports = {
         'speed': 77,
       },
       'attack': 87,
+      'locations': {
+        '4': {
+          'basePokemon': 'Patrat',
+          'evolvedPokemon': 'Watchog',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 506,
@@ -12364,6 +16575,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 35,
+      'locations': {},
     },
     {
       'id': 507,
@@ -12390,6 +16602,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 67,
+      'locations': {
+        '4': {
+          'basePokemon': 'Lillipup',
+          'evolvedPokemon': 'Herdier',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 508,
@@ -12408,6 +16628,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 115,
+      'locations': {
+        '4': {
+          'basePokemon': 'Herdier',
+          'evolvedPokemon': 'Stoutland',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 509,
@@ -12434,6 +16662,7 @@ module.exports = {
         'speed': 66,
       },
       'attack': 39,
+      'locations': {},
     },
     {
       'id': 510,
@@ -12452,6 +16681,14 @@ module.exports = {
         'speed': 106,
       },
       'attack': 97,
+      'locations': {
+        '4': {
+          'basePokemon': 'Purrloin',
+          'evolvedPokemon': 'Liepard',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 511,
@@ -12478,6 +16715,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 512,
@@ -12496,6 +16734,14 @@ module.exports = {
         'speed': 101,
       },
       'attack': 127,
+      'locations': {
+        '5': {
+          'basePokemon': 'Pansage',
+          'evolvedPokemon': 'Simisage',
+          'type': 0,
+          'stone': 3,
+        },
+      },
     },
     {
       'id': 513,
@@ -12522,6 +16768,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 514,
@@ -12540,6 +16787,14 @@ module.exports = {
         'speed': 101,
       },
       'attack': 127,
+      'locations': {
+        '5': {
+          'basePokemon': 'Pansear',
+          'evolvedPokemon': 'Simisear',
+          'type': 0,
+          'stone': 0,
+        },
+      },
     },
     {
       'id': 515,
@@ -12566,6 +16821,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 516,
@@ -12584,6 +16840,14 @@ module.exports = {
         'speed': 101,
       },
       'attack': 127,
+      'locations': {
+        '5': {
+          'basePokemon': 'Panpour',
+          'evolvedPokemon': 'Simipour',
+          'type': 0,
+          'stone': 1,
+        },
+      },
     },
     {
       'id': 517,
@@ -12610,6 +16874,7 @@ module.exports = {
         'speed': 24,
       },
       'attack': 47,
+      'locations': {},
     },
     {
       'id': 518,
@@ -12628,6 +16893,14 @@ module.exports = {
         'speed': 29,
       },
       'attack': 137,
+      'locations': {
+        '5': {
+          'basePokemon': 'Munna',
+          'evolvedPokemon': 'Musharna',
+          'type': 0,
+          'stone': 4,
+        },
+      },
     },
     {
       'id': 519,
@@ -12657,6 +16930,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 38,
+      'locations': {},
     },
     {
       'id': 520,
@@ -12686,6 +16960,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 67,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pidove',
+          'evolvedPokemon': 'Tranquill',
+          'type': 0,
+          'level': 21,
+        },
+      },
     },
     {
       'id': 521,
@@ -12707,6 +16989,14 @@ module.exports = {
         'speed': 93,
       },
       'attack': 119,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tranquill',
+          'evolvedPokemon': 'Unfezant',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 522,
@@ -12733,6 +17023,7 @@ module.exports = {
         'speed': 76,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': 523,
@@ -12751,6 +17042,14 @@ module.exports = {
         'speed': 116,
       },
       'attack': 119,
+      'locations': {
+        '4': {
+          'basePokemon': 'Blitzle',
+          'evolvedPokemon': 'Zebstrika',
+          'type': 0,
+          'level': 27,
+        },
+      },
     },
     {
       'id': 524,
@@ -12777,6 +17076,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 39,
+      'locations': {},
     },
     {
       'id': 525,
@@ -12803,6 +17103,14 @@ module.exports = {
         'speed': 20,
       },
       'attack': 85,
+      'locations': {
+        '4': {
+          'basePokemon': 'Roggenrola',
+          'evolvedPokemon': 'Boldore',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 526,
@@ -12821,6 +17129,14 @@ module.exports = {
         'speed': 25,
       },
       'attack': 144,
+      'locations': {
+        '5': {
+          'basePokemon': 'Boldore',
+          'evolvedPokemon': 'Gigalith',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 527,
@@ -12850,6 +17166,7 @@ module.exports = {
         'speed': 72,
       },
       'attack': 53,
+      'locations': {},
     },
     {
       'id': 528,
@@ -12871,6 +17188,14 @@ module.exports = {
         'speed': 114,
       },
       'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Woobat',
+          'evolvedPokemon': 'Swoobat',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 529,
@@ -12897,6 +17222,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 52,
+      'locations': {},
     },
     {
       'id': 530,
@@ -12918,6 +17244,14 @@ module.exports = {
         'speed': 88,
       },
       'attack': 130,
+      'locations': {
+        '4': {
+          'basePokemon': 'Drilbur',
+          'evolvedPokemon': 'Excadrill',
+          'type': 0,
+          'level': 31,
+        },
+      },
     },
     {
       'id': 531,
@@ -12936,6 +17270,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 104,
+      'locations': {},
     },
     {
       'id': 532,
@@ -12962,6 +17297,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 49,
+      'locations': {},
     },
     {
       'id': 533,
@@ -12988,6 +17324,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 88,
+      'locations': {
+        '4': {
+          'basePokemon': 'Timburr',
+          'evolvedPokemon': 'Gurdurr',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 534,
@@ -13006,6 +17350,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 142,
+      'locations': {
+        '5': {
+          'basePokemon': 'Gurdurr',
+          'evolvedPokemon': 'Conkeldurr',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 535,
@@ -13032,6 +17384,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 45,
+      'locations': {},
     },
     {
       'id': 536,
@@ -13061,6 +17414,14 @@ module.exports = {
         'speed': 69,
       },
       'attack': 80,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tympole',
+          'evolvedPokemon': 'Palpitoad',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 537,
@@ -13082,6 +17443,14 @@ module.exports = {
         'speed': 74,
       },
       'attack': 147,
+      'locations': {
+        '4': {
+          'basePokemon': 'Palpitoad',
+          'evolvedPokemon': 'Seismitoad',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 538,
@@ -13100,6 +17469,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 102,
+      'locations': {},
     },
     {
       'id': 539,
@@ -13118,6 +17488,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 88,
+      'locations': {},
     },
     {
       'id': 540,
@@ -13147,6 +17518,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 47,
+      'locations': {},
     },
     {
       'id': 541,
@@ -13176,6 +17548,14 @@ module.exports = {
         'speed': 42,
       },
       'attack': 71,
+      'locations': {
+        '4': {
+          'basePokemon': 'Sewaddle',
+          'evolvedPokemon': 'Swadloon',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 542,
@@ -13197,6 +17577,14 @@ module.exports = {
         'speed': 92,
       },
       'attack': 124,
+      'locations': {
+        '4': {
+          'basePokemon': 'Swadloon',
+          'evolvedPokemon': 'Leavanny',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 543,
@@ -13226,6 +17614,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 28,
+      'locations': {},
     },
     {
       'id': 544,
@@ -13255,6 +17644,14 @@ module.exports = {
         'speed': 47,
       },
       'attack': 53,
+      'locations': {
+        '4': {
+          'basePokemon': 'Venipede',
+          'evolvedPokemon': 'Whirlipede',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 545,
@@ -13276,6 +17673,14 @@ module.exports = {
         'speed': 112,
       },
       'attack': 99,
+      'locations': {
+        '4': {
+          'basePokemon': 'Whirlipede',
+          'evolvedPokemon': 'Scolipede',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 546,
@@ -13305,6 +17710,7 @@ module.exports = {
         'speed': 66,
       },
       'attack': 32,
+      'locations': {},
     },
     {
       'id': 547,
@@ -13326,6 +17732,14 @@ module.exports = {
         'speed': 116,
       },
       'attack': 98,
+      'locations': {
+        '5': {
+          'basePokemon': 'Cottonee',
+          'evolvedPokemon': 'Whimsicott',
+          'type': 0,
+          'stone': 5,
+        },
+      },
     },
     {
       'id': 548,
@@ -13352,6 +17766,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': 549,
@@ -13370,6 +17785,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 111,
+      'locations': {
+        '5': {
+          'basePokemon': 'Petilil',
+          'evolvedPokemon': 'Lilligant',
+          'type': 0,
+          'stone': 5,
+        },
+      },
     },
     {
       'id': 550,
@@ -13388,6 +17811,7 @@ module.exports = {
         'speed': 98,
       },
       'attack': 107,
+      'locations': {},
     },
     {
       'id': 551,
@@ -13417,6 +17841,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': 552,
@@ -13446,6 +17871,14 @@ module.exports = {
         'speed': 74,
       },
       'attack': 62,
+      'locations': {
+        '4': {
+          'basePokemon': 'Sandile',
+          'evolvedPokemon': 'Krokorok',
+          'type': 0,
+          'level': 29,
+        },
+      },
     },
     {
       'id': 553,
@@ -13467,6 +17900,14 @@ module.exports = {
         'speed': 92,
       },
       'attack': 138,
+      'locations': {
+        '4': {
+          'basePokemon': 'Krokorok',
+          'evolvedPokemon': 'Krookodile',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 554,
@@ -13493,6 +17934,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 42,
+      'locations': {},
     },
     {
       'id': 555,
@@ -13511,6 +17953,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 99,
+      'locations': {
+        '4': {
+          'basePokemon': 'Darumaka',
+          'evolvedPokemon': 'Darmanitan',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 556,
@@ -13529,6 +17979,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 123,
+      'locations': {},
     },
     {
       'id': 557,
@@ -13558,6 +18009,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 48,
+      'locations': {},
     },
     {
       'id': 558,
@@ -13579,6 +18031,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 121,
+      'locations': {
+        '4': {
+          'basePokemon': 'Dwebble',
+          'evolvedPokemon': 'Crustle',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 559,
@@ -13608,6 +18068,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 57,
+      'locations': {},
     },
     {
       'id': 560,
@@ -13629,6 +18090,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 101,
+      'locations': {
+        '4': {
+          'basePokemon': 'Scraggy',
+          'evolvedPokemon': 'Scrafty',
+          'type': 0,
+          'level': 39,
+        },
+      },
     },
     {
       'id': 561,
@@ -13650,6 +18119,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 112,
+      'locations': {},
     },
     {
       'id': 562,
@@ -13676,6 +18146,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 40,
+      'locations': {},
     },
     {
       'id': 563,
@@ -13694,6 +18165,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 102,
+      'locations': {
+        '4': {
+          'basePokemon': 'Yamask',
+          'evolvedPokemon': 'Cofagrigus',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 564,
@@ -13723,6 +18202,7 @@ module.exports = {
         'speed': 22,
       },
       'attack': 69,
+      'locations': {},
     },
     {
       'id': 565,
@@ -13744,6 +18224,14 @@ module.exports = {
         'speed': 32,
       },
       'attack': 136,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tirtouga',
+          'evolvedPokemon': 'Carracosta',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 566,
@@ -13773,6 +18261,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 85,
+      'locations': {},
     },
     {
       'id': 567,
@@ -13794,6 +18283,14 @@ module.exports = {
         'speed': 110,
       },
       'attack': 163,
+      'locations': {
+        '4': {
+          'basePokemon': 'Archen',
+          'evolvedPokemon': 'Archeops',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 568,
@@ -13820,6 +18317,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 50,
+      'locations': {},
     },
     {
       'id': 569,
@@ -13838,6 +18336,14 @@ module.exports = {
         'speed': 75,
       },
       'attack': 114,
+      'locations': {
+        '4': {
+          'basePokemon': 'Trubbish',
+          'evolvedPokemon': 'Garbodor',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 570,
@@ -13864,6 +18370,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 56,
+      'locations': {},
     },
     {
       'id': 571,
@@ -13882,6 +18389,14 @@ module.exports = {
         'speed': 105,
       },
       'attack': 126,
+      'locations': {
+        '4': {
+          'basePokemon': 'Zorua',
+          'evolvedPokemon': 'Zoroark',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 572,
@@ -13908,6 +18423,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 44,
+      'locations': {},
     },
     {
       'id': 573,
@@ -13926,6 +18442,14 @@ module.exports = {
         'speed': 115,
       },
       'attack': 103,
+      'locations': {
+        '5': {
+          'basePokemon': 'Minccino',
+          'evolvedPokemon': 'Cinccino',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 574,
@@ -13952,6 +18476,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 40,
+      'locations': {},
     },
     {
       'id': 575,
@@ -13978,6 +18503,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 75,
+      'locations': {
+        '4': {
+          'basePokemon': 'Gothita',
+          'evolvedPokemon': 'Gothorita',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 576,
@@ -13996,6 +18529,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 112,
+      'locations': {
+        '4': {
+          'basePokemon': 'Gothorita',
+          'evolvedPokemon': 'Gothitelle',
+          'type': 0,
+          'level': 41,
+        },
+      },
     },
     {
       'id': 577,
@@ -14022,6 +18563,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 45,
+      'locations': {},
     },
     {
       'id': 578,
@@ -14048,6 +18590,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 75,
+      'locations': {
+        '4': {
+          'basePokemon': 'Solosis',
+          'evolvedPokemon': 'Duosion',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 579,
@@ -14066,6 +18616,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 148,
+      'locations': {
+        '4': {
+          'basePokemon': 'Duosion',
+          'evolvedPokemon': 'Reuniclus',
+          'type': 0,
+          'level': 41,
+        },
+      },
     },
     {
       'id': 580,
@@ -14095,6 +18653,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 48,
+      'locations': {},
     },
     {
       'id': 581,
@@ -14116,6 +18675,14 @@ module.exports = {
         'speed': 98,
       },
       'attack': 114,
+      'locations': {
+        '4': {
+          'basePokemon': 'Ducklett',
+          'evolvedPokemon': 'Swanna',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 582,
@@ -14142,6 +18709,7 @@ module.exports = {
         'speed': 44,
       },
       'attack': 47,
+      'locations': {},
     },
     {
       'id': 583,
@@ -14168,6 +18736,14 @@ module.exports = {
         'speed': 59,
       },
       'attack': 80,
+      'locations': {
+        '4': {
+          'basePokemon': 'Vanillite',
+          'evolvedPokemon': 'Vanillish',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 584,
@@ -14186,6 +18762,14 @@ module.exports = {
         'speed': 79,
       },
       'attack': 148,
+      'locations': {
+        '4': {
+          'basePokemon': 'Vanillish',
+          'evolvedPokemon': 'Vanilluxe',
+          'type': 0,
+          'level': 47,
+        },
+      },
     },
     {
       'id': 585,
@@ -14215,6 +18799,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 55,
+      'locations': {},
     },
     {
       'id': 586,
@@ -14236,6 +18821,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 111,
+      'locations': {
+        '4': {
+          'basePokemon': 'Deerling',
+          'evolvedPokemon': 'Sawsbuck',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 587,
@@ -14257,6 +18850,7 @@ module.exports = {
         'speed': 103,
       },
       'attack': 84,
+      'locations': {},
     },
     {
       'id': 588,
@@ -14283,6 +18877,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 589,
@@ -14304,6 +18899,14 @@ module.exports = {
         'speed': 20,
       },
       'attack': 131,
+      'locations': {
+        '5': {
+          'basePokemon': 'Karrablast',
+          'evolvedPokemon': 'Escavalier',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 590,
@@ -14333,6 +18936,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 57,
+      'locations': {},
     },
     {
       'id': 591,
@@ -14354,6 +18958,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 137,
+      'locations': {
+        '4': {
+          'basePokemon': 'Foongus',
+          'evolvedPokemon': 'Amoonguss',
+          'type': 0,
+          'level': 39,
+        },
+      },
     },
     {
       'id': 592,
@@ -14383,6 +18995,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 57,
+      'locations': {},
     },
     {
       'id': 593,
@@ -14404,6 +19017,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 121,
+      'locations': {
+        '4': {
+          'basePokemon': 'Frillish',
+          'evolvedPokemon': 'Jellicent',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 594,
@@ -14422,6 +19043,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 106,
+      'locations': {},
     },
     {
       'id': 595,
@@ -14451,6 +19073,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 596,
@@ -14472,6 +19095,14 @@ module.exports = {
         'speed': 108,
       },
       'attack': 108,
+      'locations': {
+        '4': {
+          'basePokemon': 'Joltik',
+          'evolvedPokemon': 'Galvantula',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 597,
@@ -14501,6 +19132,7 @@ module.exports = {
         'speed': 10,
       },
       'attack': 38,
+      'locations': {},
     },
     {
       'id': 598,
@@ -14522,6 +19154,14 @@ module.exports = {
         'speed': 20,
       },
       'attack': 118,
+      'locations': {
+        '4': {
+          'basePokemon': 'Ferroseed',
+          'evolvedPokemon': 'Ferrothorn',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 599,
@@ -14548,6 +19188,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 46,
+      'locations': {},
     },
     {
       'id': 600,
@@ -14574,6 +19215,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 100,
+      'locations': {
+        '4': {
+          'basePokemon': 'Klink',
+          'evolvedPokemon': 'Klang',
+          'type': 0,
+          'level': 38,
+        },
+      },
     },
     {
       'id': 601,
@@ -14592,6 +19241,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 119,
+      'locations': {
+        '4': {
+          'basePokemon': 'Klang',
+          'evolvedPokemon': 'Klinklang',
+          'type': 0,
+          'level': 49,
+        },
+      },
     },
     {
       'id': 602,
@@ -14618,6 +19275,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 37,
+      'locations': {},
     },
     {
       'id': 603,
@@ -14644,6 +19302,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 96,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tynamo',
+          'evolvedPokemon': 'Eelektrik',
+          'type': 0,
+          'level': 39,
+        },
+      },
     },
     {
       'id': 604,
@@ -14662,6 +19328,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 160,
+      'locations': {
+        '5': {
+          'basePokemon': 'Eelektrik',
+          'evolvedPokemon': 'Eelektross',
+          'type': 0,
+          'stone': 2,
+        },
+      },
     },
     {
       'id': 605,
@@ -14688,6 +19362,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 68,
+      'locations': {},
     },
     {
       'id': 606,
@@ -14706,6 +19381,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 136,
+      'locations': {
+        '4': {
+          'basePokemon': 'Elgyem',
+          'evolvedPokemon': 'Beheeyem',
+          'type': 0,
+          'level': 42,
+        },
+      },
     },
     {
       'id': 607,
@@ -14735,6 +19418,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 42,
+      'locations': {},
     },
     {
       'id': 608,
@@ -14764,6 +19448,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 69,
+      'locations': {
+        '4': {
+          'basePokemon': 'Litwick',
+          'evolvedPokemon': 'Lampent',
+          'type': 0,
+          'level': 41,
+        },
+      },
     },
     {
       'id': 609,
@@ -14785,6 +19477,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'locations': {
+        '5': {
+          'basePokemon': 'Lampent',
+          'evolvedPokemon': 'Chandelure',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 610,
@@ -14811,6 +19511,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 48,
+      'locations': {},
     },
     {
       'id': 611,
@@ -14837,6 +19538,14 @@ module.exports = {
         'speed': 67,
       },
       'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Axew',
+          'evolvedPokemon': 'Fraxure',
+          'type': 0,
+          'level': 38,
+        },
+      },
     },
     {
       'id': 612,
@@ -14855,6 +19564,14 @@ module.exports = {
         'speed': 97,
       },
       'attack': 136,
+      'locations': {
+        '4': {
+          'basePokemon': 'Fraxure',
+          'evolvedPokemon': 'Haxorus',
+          'type': 0,
+          'level': 48,
+        },
+      },
     },
     {
       'id': 613,
@@ -14881,6 +19598,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 57,
+      'locations': {},
     },
     {
       'id': 614,
@@ -14899,6 +19617,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 148,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cubchoo',
+          'evolvedPokemon': 'Beartic',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 615,
@@ -14917,6 +19643,7 @@ module.exports = {
         'speed': 105,
       },
       'attack': 108,
+      'locations': {},
     },
     {
       'id': 616,
@@ -14943,6 +19670,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 45,
+      'locations': {},
     },
     {
       'id': 617,
@@ -14961,6 +19689,14 @@ module.exports = {
         'speed': 145,
       },
       'attack': 107,
+      'locations': {
+        '5': {
+          'basePokemon': 'Shelmet',
+          'evolvedPokemon': 'Accelgor',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 618,
@@ -14982,6 +19718,7 @@ module.exports = {
         'speed': 32,
       },
       'attack': 129,
+      'locations': {},
     },
     {
       'id': 619,
@@ -15008,6 +19745,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 62,
+      'locations': {},
     },
     {
       'id': 620,
@@ -15026,6 +19764,14 @@ module.exports = {
         'speed': 105,
       },
       'attack': 128,
+      'locations': {
+        '4': {
+          'basePokemon': 'Mienfoo',
+          'evolvedPokemon': 'Mienshao',
+          'type': 0,
+          'level': 50,
+        },
+      },
     },
     {
       'id': 621,
@@ -15044,6 +19790,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 127,
+      'locations': {},
     },
     {
       'id': 622,
@@ -15073,6 +19820,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 52,
+      'locations': {},
     },
     {
       'id': 623,
@@ -15094,6 +19842,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 126,
+      'locations': {
+        '4': {
+          'basePokemon': 'Golett',
+          'evolvedPokemon': 'Golurk',
+          'type': 0,
+          'level': 43,
+        },
+      },
     },
     {
       'id': 624,
@@ -15123,6 +19879,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 55,
+      'locations': {},
     },
     {
       'id': 625,
@@ -15144,6 +19901,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 117,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pawniard',
+          'evolvedPokemon': 'Bisharp',
+          'type': 0,
+          'level': 52,
+        },
+      },
     },
     {
       'id': 626,
@@ -15162,6 +19927,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 116,
+      'locations': {},
     },
     {
       'id': 627,
@@ -15191,6 +19957,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 64,
+      'locations': {},
     },
     {
       'id': 628,
@@ -15212,6 +19979,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 136,
+      'locations': {
+        '4': {
+          'basePokemon': 'Rufflet',
+          'evolvedPokemon': 'Braviary',
+          'type': 0,
+          'level': 54,
+        },
+      },
     },
     {
       'id': 629,
@@ -15241,6 +20016,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 67,
+      'locations': {},
     },
     {
       'id': 630,
@@ -15262,6 +20038,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'locations': {
+        '4': {
+          'basePokemon': 'Vullaby',
+          'evolvedPokemon': 'Mandibuzz',
+          'type': 0,
+          'level': 54,
+        },
+      },
     },
     {
       'id': 631,
@@ -15280,6 +20064,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 138,
+      'locations': {},
     },
     {
       'id': 632,
@@ -15301,6 +20086,7 @@ module.exports = {
         'speed': 109,
       },
       'attack': 92,
+      'locations': {},
     },
     {
       'id': 633,
@@ -15330,6 +20116,7 @@ module.exports = {
         'speed': 38,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 634,
@@ -15359,6 +20146,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 98,
+      'locations': {
+        '4': {
+          'basePokemon': 'Deino',
+          'evolvedPokemon': 'Zweilous',
+          'type': 0,
+          'level': 50,
+        },
+      },
     },
     {
       'id': 635,
@@ -15380,6 +20175,14 @@ module.exports = {
         'speed': 98,
       },
       'attack': 190,
+      'locations': {
+        '4': {
+          'basePokemon': 'Zweilous',
+          'evolvedPokemon': 'Hydreigon',
+          'type': 0,
+          'level': 64,
+        },
+      },
     },
     {
       'id': 636,
@@ -15409,6 +20212,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 68,
+      'locations': {},
     },
     {
       'id': 637,
@@ -15430,6 +20234,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 142,
+      'locations': {
+        '4': {
+          'basePokemon': 'Larvesta',
+          'evolvedPokemon': 'Volcarona',
+          'type': 0,
+          'level': 59,
+        },
+      },
     },
     {
       'id': 638,
@@ -15451,6 +20263,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 157,
+      'locations': {},
     },
     {
       'id': 639,
@@ -15472,6 +20285,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 163,
+      'locations': {},
     },
     {
       'id': 640,
@@ -15493,6 +20307,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 157,
+      'locations': {},
     },
     {
       'id': 641,
@@ -15511,6 +20326,7 @@ module.exports = {
         'speed': 111,
       },
       'attack': 170,
+      'locations': {},
     },
     {
       'id': 642,
@@ -15532,6 +20348,7 @@ module.exports = {
         'speed': 111,
       },
       'attack': 170,
+      'locations': {},
     },
     {
       'id': 643,
@@ -15553,6 +20370,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 251,
+      'locations': {},
     },
     {
       'id': 644,
@@ -15574,6 +20392,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 251,
+      'locations': {},
     },
     {
       'id': 645,
@@ -15595,6 +20414,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 204,
+      'locations': {},
     },
     {
       'id': 646,
@@ -15616,6 +20436,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 250,
+      'locations': {},
     },
     {
       'id': 647,
@@ -15637,6 +20458,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 163,
+      'locations': {},
     },
     {
       'id': 648,
@@ -15658,6 +20480,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 182,
+      'locations': {},
     },
     {
       'id': 649,
@@ -15679,6 +20502,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 179,
+      'locations': {},
     },
     {
       'id': 650,
@@ -15705,6 +20529,7 @@ module.exports = {
         'speed': 38,
       },
       'attack': 55,
+      'locations': {},
     },
     {
       'id': 651,
@@ -15731,6 +20556,14 @@ module.exports = {
         'speed': 57,
       },
       'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Chespin',
+          'evolvedPokemon': 'Quilladin',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 652,
@@ -15752,6 +20585,14 @@ module.exports = {
         'speed': 64,
       },
       'attack': 148,
+      'locations': {
+        '4': {
+          'basePokemon': 'Quilladin',
+          'evolvedPokemon': 'Chesnaught',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 653,
@@ -15778,6 +20619,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 46,
+      'locations': {},
     },
     {
       'id': 654,
@@ -15804,6 +20646,14 @@ module.exports = {
         'speed': 73,
       },
       'attack': 84,
+      'locations': {
+        '4': {
+          'basePokemon': 'Fennekin',
+          'evolvedPokemon': 'Braixen',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 655,
@@ -15825,6 +20675,14 @@ module.exports = {
         'speed': 104,
       },
       'attack': 133,
+      'locations': {
+        '4': {
+          'basePokemon': 'Braixen',
+          'evolvedPokemon': 'Delphox',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 656,
@@ -15851,6 +20709,7 @@ module.exports = {
         'speed': 71,
       },
       'attack': 48,
+      'locations': {},
     },
     {
       'id': 657,
@@ -15877,6 +20736,14 @@ module.exports = {
         'speed': 97,
       },
       'attack': 77,
+      'locations': {
+        '4': {
+          'basePokemon': 'Froakie',
+          'evolvedPokemon': 'Frogadier',
+          'type': 0,
+          'level': 16,
+        },
+      },
     },
     {
       'id': 658,
@@ -15898,6 +20765,14 @@ module.exports = {
         'speed': 122,
       },
       'attack': 133,
+      'locations': {
+        '4': {
+          'basePokemon': 'Frogadier',
+          'evolvedPokemon': 'Greninja',
+          'type': 0,
+          'level': 36,
+        },
+      },
     },
     {
       'id': 659,
@@ -15924,6 +20799,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 27,
+      'locations': {},
     },
     {
       'id': 660,
@@ -15945,6 +20821,14 @@ module.exports = {
         'speed': 78,
       },
       'attack': 84,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bunnelby',
+          'evolvedPokemon': 'Diggersby',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 661,
@@ -15974,6 +20858,7 @@ module.exports = {
         'speed': 62,
       },
       'attack': 39,
+      'locations': {},
     },
     {
       'id': 662,
@@ -16003,6 +20888,14 @@ module.exports = {
         'speed': 84,
       },
       'attack': 72,
+      'locations': {
+        '4': {
+          'basePokemon': 'Fletchling',
+          'evolvedPokemon': 'Fletchinder',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 663,
@@ -16024,6 +20917,14 @@ module.exports = {
         'speed': 126,
       },
       'attack': 113,
+      'locations': {
+        '4': {
+          'basePokemon': 'Fletchinder',
+          'evolvedPokemon': 'Talonflame',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 664,
@@ -16050,6 +20951,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 22,
+      'locations': {},
     },
     {
       'id': 665,
@@ -16076,6 +20978,14 @@ module.exports = {
         'speed': 29,
       },
       'attack': 22,
+      'locations': {
+        '4': {
+          'basePokemon': 'Scatterbug',
+          'evolvedPokemon': 'Spewpa',
+          'type': 0,
+          'level': 9,
+        },
+      },
     },
     {
       'id': 666,
@@ -16097,6 +21007,14 @@ module.exports = {
         'speed': 89,
       },
       'attack': 85,
+      'locations': {
+        '4': {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon',
+          'type': 0,
+          'level': 12,
+        },
+      },
     },
     {
       'id': 667,
@@ -16126,6 +21044,7 @@ module.exports = {
         'speed': 72,
       },
       'attack': 69,
+      'locations': {},
     },
     {
       'id': 668,
@@ -16147,6 +21066,14 @@ module.exports = {
         'speed': 106,
       },
       'attack': 126,
+      'locations': {
+        '4': {
+          'basePokemon': 'Litleo',
+          'evolvedPokemon': 'Pyroar',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 669,
@@ -16173,6 +21100,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 45,
+      'locations': {},
     },
     {
       'id': 670,
@@ -16199,6 +21127,14 @@ module.exports = {
         'speed': 52,
       },
       'attack': 66,
+      'locations': {
+        '4': {
+          'basePokemon': 'Flabébé',
+          'evolvedPokemon': 'Floette',
+          'type': 0,
+          'level': 19,
+        },
+      },
     },
     {
       'id': 671,
@@ -16217,6 +21153,14 @@ module.exports = {
         'speed': 75,
       },
       'attack': 139,
+      'locations': {
+        '5': {
+          'basePokemon': 'Floette',
+          'evolvedPokemon': 'Florges',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 672,
@@ -16243,6 +21187,7 @@ module.exports = {
         'speed': 52,
       },
       'attack': 71,
+      'locations': {},
     },
     {
       'id': 673,
@@ -16261,6 +21206,14 @@ module.exports = {
         'speed': 68,
       },
       'attack': 168,
+      'locations': {
+        '4': {
+          'basePokemon': 'Skiddo',
+          'evolvedPokemon': 'Gogoat',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 674,
@@ -16287,6 +21240,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 69,
+      'locations': {},
     },
     {
       'id': 675,
@@ -16308,6 +21262,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 141,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pancham',
+          'evolvedPokemon': 'Pangoro',
+          'type': 0,
+          'level': 32,
+        },
+      },
     },
     {
       'id': 676,
@@ -16326,6 +21288,7 @@ module.exports = {
         'speed': 102,
       },
       'attack': 104,
+      'locations': {},
     },
     {
       'id': 677,
@@ -16352,6 +21315,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 63,
+      'locations': {},
     },
     {
       'id': 678,
@@ -16370,6 +21334,14 @@ module.exports = {
         'speed': 104,
       },
       'attack': 94,
+      'locations': {
+        '4': {
+          'basePokemon': 'Espurr',
+          'evolvedPokemon': 'Meowstic',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 679,
@@ -16399,6 +21371,7 @@ module.exports = {
         'speed': 28,
       },
       'attack': 50,
+      'locations': {},
     },
     {
       'id': 680,
@@ -16428,6 +21401,14 @@ module.exports = {
         'speed': 35,
       },
       'attack': 89,
+      'locations': {
+        '4': {
+          'basePokemon': 'Honedge',
+          'evolvedPokemon': 'Doublade',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 681,
@@ -16449,6 +21430,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 87,
+      'locations': {
+        '5': {
+          'basePokemon': 'Doublade',
+          'evolvedPokemon': 'Aegislash',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 682,
@@ -16475,6 +21464,7 @@ module.exports = {
         'speed': 23,
       },
       'attack': 71,
+      'locations': {},
     },
     {
       'id': 683,
@@ -16493,6 +21483,14 @@ module.exports = {
         'speed': 29,
       },
       'attack': 133,
+      'locations': {
+        '5': {
+          'basePokemon': 'Spritzee',
+          'evolvedPokemon': 'Aromatisse',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 684,
@@ -16519,6 +21517,7 @@ module.exports = {
         'speed': 49,
       },
       'attack': 62,
+      'locations': {},
     },
     {
       'id': 685,
@@ -16537,6 +21536,14 @@ module.exports = {
         'speed': 72,
       },
       'attack': 124,
+      'locations': {
+        '5': {
+          'basePokemon': 'Swirlix',
+          'evolvedPokemon': 'Slurpuff',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 686,
@@ -16566,6 +21573,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 44,
+      'locations': {},
     },
     {
       'id': 687,
@@ -16587,6 +21595,14 @@ module.exports = {
         'speed': 73,
       },
       'attack': 123,
+      'locations': {
+        '4': {
+          'basePokemon': 'Inkay',
+          'evolvedPokemon': 'Malamar',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 688,
@@ -16616,6 +21632,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 44,
+      'locations': {},
     },
     {
       'id': 689,
@@ -16637,6 +21654,14 @@ module.exports = {
         'speed': 68,
       },
       'attack': 118,
+      'locations': {
+        '4': {
+          'basePokemon': 'Binacle',
+          'evolvedPokemon': 'Barbaracle',
+          'type': 0,
+          'level': 39,
+        },
+      },
     },
     {
       'id': 690,
@@ -16666,6 +21691,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 59,
+      'locations': {},
     },
     {
       'id': 691,
@@ -16687,6 +21713,14 @@ module.exports = {
         'speed': 44,
       },
       'attack': 125,
+      'locations': {
+        '4': {
+          'basePokemon': 'Skrelp',
+          'evolvedPokemon': 'Dragalge',
+          'type': 0,
+          'level': 48,
+        },
+      },
     },
     {
       'id': 692,
@@ -16713,6 +21747,7 @@ module.exports = {
         'speed': 44,
       },
       'attack': 58,
+      'locations': {},
     },
     {
       'id': 693,
@@ -16731,6 +21766,14 @@ module.exports = {
         'speed': 59,
       },
       'attack': 133,
+      'locations': {
+        '4': {
+          'basePokemon': 'Clauncher',
+          'evolvedPokemon': 'Clawitzer',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 694,
@@ -16760,6 +21803,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 41,
+      'locations': {},
     },
     {
       'id': 695,
@@ -16781,6 +21825,14 @@ module.exports = {
         'speed': 109,
       },
       'attack': 99,
+      'locations': {
+        '5': {
+          'basePokemon': 'Helioptile',
+          'evolvedPokemon': 'Heliolisk',
+          'type': 0,
+          'stone': 5,
+        },
+      },
     },
     {
       'id': 696,
@@ -16810,6 +21862,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 69,
+      'locations': {},
     },
     {
       'id': 697,
@@ -16831,6 +21884,14 @@ module.exports = {
         'speed': 71,
       },
       'attack': 138,
+      'locations': {
+        '4': {
+          'basePokemon': 'Tyrunt',
+          'evolvedPokemon': 'Tyrantrum',
+          'type': 0,
+          'level': 39,
+        },
+      },
     },
     {
       'id': 698,
@@ -16860,6 +21921,7 @@ module.exports = {
         'speed': 46,
       },
       'attack': 78,
+      'locations': {},
     },
     {
       'id': 699,
@@ -16881,6 +21943,14 @@ module.exports = {
         'speed': 58,
       },
       'attack': 159,
+      'locations': {
+        '4': {
+          'basePokemon': 'Amaura',
+          'evolvedPokemon': 'Aurorus',
+          'type': 0,
+          'level': 39,
+        },
+      },
     },
     {
       'id': 700,
@@ -16899,6 +21969,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 143,
+      'locations': {},
     },
     {
       'id': 701,
@@ -16920,6 +21991,7 @@ module.exports = {
         'speed': 118,
       },
       'attack': 117,
+      'locations': {},
     },
     {
       'id': 702,
@@ -16941,6 +22013,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 87,
+      'locations': {},
     },
     {
       'id': 703,
@@ -16962,6 +22035,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 80,
+      'locations': {},
     },
     {
       'id': 704,
@@ -16988,6 +22062,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 48,
+      'locations': {},
     },
     {
       'id': 705,
@@ -17014,6 +22089,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 105,
+      'locations': {
+        '4': {
+          'basePokemon': 'Goomy',
+          'evolvedPokemon': 'Sliggoo',
+          'type': 0,
+          'level': 40,
+        },
+      },
     },
     {
       'id': 706,
@@ -17032,6 +22115,14 @@ module.exports = {
         'speed': 80,
       },
       'attack': 182,
+      'locations': {
+        '4': {
+          'basePokemon': 'Sliggoo',
+          'evolvedPokemon': 'Goodra',
+          'type': 0,
+          'level': 50,
+        },
+      },
     },
     {
       'id': 707,
@@ -17053,6 +22144,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 106,
+      'locations': {},
     },
     {
       'id': 708,
@@ -17082,6 +22174,7 @@ module.exports = {
         'speed': 38,
       },
       'attack': 52,
+      'locations': {},
     },
     {
       'id': 709,
@@ -17103,6 +22196,14 @@ module.exports = {
         'speed': 56,
       },
       'attack': 125,
+      'locations': {
+        '5': {
+          'basePokemon': 'Phantump',
+          'evolvedPokemon': 'Trevenant',
+          'type': 0,
+          'stone': 6,
+        },
+      },
     },
     {
       'id': 710,
@@ -17124,6 +22225,7 @@ module.exports = {
         'speed': 56,
       },
       'attack': 54,
+      'locations': {},
     },
     {
       'id': 711,
@@ -17145,6 +22247,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 97,
+      'locations': {},
     },
     {
       'id': 712,
@@ -17171,6 +22274,7 @@ module.exports = {
         'speed': 28,
       },
       'attack': 47,
+      'locations': {},
     },
     {
       'id': 713,
@@ -17189,6 +22293,14 @@ module.exports = {
         'speed': 28,
       },
       'attack': 118,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bergmite',
+          'evolvedPokemon': 'Avalugg',
+          'type': 0,
+          'level': 37,
+        },
+      },
     },
     {
       'id': 714,
@@ -17218,6 +22330,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 29,
+      'locations': {},
     },
     {
       'id': 715,
@@ -17239,6 +22352,14 @@ module.exports = {
         'speed': 123,
       },
       'attack': 130,
+      'locations': {
+        '4': {
+          'basePokemon': 'Noibat',
+          'evolvedPokemon': 'Noivern',
+          'type': 0,
+          'level': 48,
+        },
+      },
     },
     {
       'id': 716,
@@ -17257,6 +22378,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 260,
+      'locations': {},
     },
     {
       'id': 717,
@@ -17278,6 +22400,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 260,
+      'locations': {},
     },
     {
       'id': 718,
@@ -17299,6 +22422,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 179,
+      'locations': {},
     },
     {
       'id': 719,
@@ -17320,6 +22444,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 151,
+      'locations': {},
     },
     {
       'id': 720,
@@ -17341,6 +22466,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 193,
+      'locations': {},
     },
     {
       'id': 721,
@@ -17362,6 +22488,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 193,
+      'locations': {},
     },
     {
       'id': 722,
@@ -17391,6 +22518,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 59,
+      'locations': {},
     },
     {
       'id': 723,
@@ -17420,6 +22548,14 @@ module.exports = {
         'speed': 52,
       },
       'attack': 101,
+      'locations': {
+        '4': {
+          'basePokemon': 'Rowlet',
+          'evolvedPokemon': 'Dartrix',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 724,
@@ -17441,6 +22577,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 154,
+      'locations': {
+        '4': {
+          'basePokemon': 'Dartrix',
+          'evolvedPokemon': 'Decidueye',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 725,
@@ -17467,6 +22611,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 52,
+      'locations': {},
     },
     {
       'id': 726,
@@ -17493,6 +22638,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 91,
+      'locations': {
+        '4': {
+          'basePokemon': 'Litten',
+          'evolvedPokemon': 'Torracat',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 727,
@@ -17514,6 +22667,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 160,
+      'locations': {
+        '4': {
+          'basePokemon': 'Torracat',
+          'evolvedPokemon': 'Incineroar',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 728,
@@ -17540,6 +22701,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 58,
+      'locations': {},
     },
     {
       'id': 729,
@@ -17566,6 +22728,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 96,
+      'locations': {
+        '4': {
+          'basePokemon': 'Popplio',
+          'evolvedPokemon': 'Brionne',
+          'type': 0,
+          'level': 17,
+        },
+      },
     },
     {
       'id': 730,
@@ -17587,6 +22757,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 148,
+      'locations': {
+        '4': {
+          'basePokemon': 'Brionne',
+          'evolvedPokemon': 'Primarina',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 731,
@@ -17616,6 +22794,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 32,
+      'locations': {},
     },
     {
       'id': 732,
@@ -17645,6 +22824,14 @@ module.exports = {
         'speed': 75,
       },
       'attack': 61,
+      'locations': {
+        '4': {
+          'basePokemon': 'Pikipek',
+          'evolvedPokemon': 'Trumbeak',
+          'type': 0,
+          'level': 14,
+        },
+      },
     },
     {
       'id': 733,
@@ -17666,6 +22853,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 134,
+      'locations': {
+        '4': {
+          'basePokemon': 'Trumbeak',
+          'evolvedPokemon': 'Toucannon',
+          'type': 0,
+          'level': 28,
+        },
+      },
     },
     {
       'id': 734,
@@ -17692,6 +22887,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 35,
+      'locations': {},
     },
     {
       'id': 735,
@@ -17710,6 +22906,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 103,
+      'locations': {
+        '4': {
+          'basePokemon': 'Yungoos',
+          'evolvedPokemon': 'Gumshoos',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 736,
@@ -17736,6 +22940,7 @@ module.exports = {
         'speed': 46,
       },
       'attack': 51,
+      'locations': {},
     },
     {
       'id': 737,
@@ -17765,6 +22970,14 @@ module.exports = {
         'speed': 36,
       },
       'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Grubbin',
+          'evolvedPokemon': 'Charjabug',
+          'type': 0,
+          'level': 20,
+        },
+      },
     },
     {
       'id': 738,
@@ -17786,6 +22999,14 @@ module.exports = {
         'speed': 43,
       },
       'attack': 141,
+      'locations': {
+        '5': {
+          'basePokemon': 'Charjabug',
+          'evolvedPokemon': 'Vikavolt',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 739,
@@ -17812,6 +23033,7 @@ module.exports = {
         'speed': 63,
       },
       'attack': 56,
+      'locations': {},
     },
     {
       'id': 740,
@@ -17833,6 +23055,14 @@ module.exports = {
         'speed': 43,
       },
       'attack': 134,
+      'locations': {
+        '5': {
+          'basePokemon': 'Crabrawler',
+          'evolvedPokemon': 'Crabominable',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 741,
@@ -17854,6 +23084,7 @@ module.exports = {
         'speed': 93,
       },
       'attack': 114,
+      'locations': {},
     },
     {
       'id': 742,
@@ -17883,6 +23114,7 @@ module.exports = {
         'speed': 84,
       },
       'attack': 41,
+      'locations': {},
     },
     {
       'id': 743,
@@ -17904,6 +23136,14 @@ module.exports = {
         'speed': 124,
       },
       'attack': 89,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cutiefly',
+          'evolvedPokemon': 'Ribombee',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 744,
@@ -17930,6 +23170,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 38,
+      'locations': {},
     },
     {
       'id': 745,
@@ -17948,6 +23189,14 @@ module.exports = {
         'speed': 112,
       },
       'attack': 108,
+      'locations': {
+        '4': {
+          'basePokemon': 'Rockruff',
+          'evolvedPokemon': 'Lycanroc',
+          'type': 0,
+          'level': 25,
+        },
+      },
     },
     {
       'id': 746,
@@ -17966,6 +23215,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 16,
+      'locations': {},
     },
     {
       'id': 747,
@@ -17995,6 +23245,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 48,
+      'locations': {},
     },
     {
       'id': 748,
@@ -18016,6 +23267,14 @@ module.exports = {
         'speed': 35,
       },
       'attack': 89,
+      'locations': {
+        '4': {
+          'basePokemon': 'Mareanie',
+          'evolvedPokemon': 'Toxapex',
+          'type': 0,
+          'level': 38,
+        },
+      },
     },
     {
       'id': 749,
@@ -18042,6 +23301,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 82,
+      'locations': {},
     },
     {
       'id': 750,
@@ -18060,6 +23320,14 @@ module.exports = {
         'speed': 35,
       },
       'attack': 140,
+      'locations': {
+        '4': {
+          'basePokemon': 'Mudbray',
+          'evolvedPokemon': 'Mudsdale',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 751,
@@ -18089,6 +23357,7 @@ module.exports = {
         'speed': 27,
       },
       'attack': 36,
+      'locations': {},
     },
     {
       'id': 752,
@@ -18110,6 +23379,14 @@ module.exports = {
         'speed': 42,
       },
       'attack': 94,
+      'locations': {
+        '4': {
+          'basePokemon': 'Dewpider',
+          'evolvedPokemon': 'Araquanid',
+          'type': 0,
+          'level': 22,
+        },
+      },
     },
     {
       'id': 753,
@@ -18136,6 +23413,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 37,
+      'locations': {},
     },
     {
       'id': 754,
@@ -18154,6 +23432,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 129,
+      'locations': {
+        '4': {
+          'basePokemon': 'Fomantis',
+          'evolvedPokemon': 'Lurantis',
+          'type': 0,
+          'level': 34,
+        },
+      },
     },
     {
       'id': 755,
@@ -18183,6 +23469,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': 756,
@@ -18204,6 +23491,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Morelull',
+          'evolvedPokemon': 'Shiinotic',
+          'type': 0,
+          'level': 24,
+        },
+      },
     },
     {
       'id': 757,
@@ -18233,6 +23528,7 @@ module.exports = {
         'speed': 77,
       },
       'attack': 50,
+      'locations': {},
     },
     {
       'id': 758,
@@ -18254,6 +23550,14 @@ module.exports = {
         'speed': 117,
       },
       'attack': 105,
+      'locations': {
+        '4': {
+          'basePokemon': 'Salandit',
+          'evolvedPokemon': 'Salazzle',
+          'type': 0,
+          'level': 33,
+        },
+      },
     },
     {
       'id': 759,
@@ -18283,6 +23587,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 65,
+      'locations': {},
     },
     {
       'id': 760,
@@ -18304,6 +23609,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 139,
+      'locations': {
+        '4': {
+          'basePokemon': 'Stufful',
+          'evolvedPokemon': 'Bewear',
+          'type': 0,
+          'level': 27,
+        },
+      },
     },
     {
       'id': 761,
@@ -18330,6 +23643,7 @@ module.exports = {
         'speed': 32,
       },
       'attack': 24,
+      'locations': {},
     },
     {
       'id': 762,
@@ -18356,6 +23670,14 @@ module.exports = {
         'speed': 62,
       },
       'attack': 41,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bounsweet',
+          'evolvedPokemon': 'Steenee',
+          'type': 0,
+          'level': 18,
+        },
+      },
     },
     {
       'id': 763,
@@ -18374,6 +23696,14 @@ module.exports = {
         'speed': 72,
       },
       'attack': 120,
+      'locations': {
+        '5': {
+          'basePokemon': 'Steenee',
+          'evolvedPokemon': 'Tsareena',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 764,
@@ -18392,6 +23722,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 89,
+      'locations': {},
     },
     {
       'id': 765,
@@ -18413,6 +23744,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 124,
+      'locations': {},
     },
     {
       'id': 766,
@@ -18431,6 +23763,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 113,
+      'locations': {},
     },
     {
       'id': 767,
@@ -18460,6 +23793,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 18,
+      'locations': {},
     },
     {
       'id': 768,
@@ -18481,6 +23815,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 140,
+      'locations': {
+        '4': {
+          'basePokemon': 'Wimpod',
+          'evolvedPokemon': 'Golisopod',
+          'type': 0,
+          'level': 30,
+        },
+      },
     },
     {
       'id': 769,
@@ -18510,6 +23852,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 62,
+      'locations': {},
     },
     {
       'id': 770,
@@ -18531,6 +23874,14 @@ module.exports = {
         'speed': 35,
       },
       'attack': 135,
+      'locations': {
+        '4': {
+          'basePokemon': 'Sandygast',
+          'evolvedPokemon': 'Palossand',
+          'type': 0,
+          'level': 42,
+        },
+      },
     },
     {
       'id': 771,
@@ -18549,6 +23900,7 @@ module.exports = {
         'speed': 5,
       },
       'attack': 61,
+      'locations': {},
     },
     {
       'id': 772,
@@ -18575,6 +23927,7 @@ module.exports = {
         'speed': 59,
       },
       'attack': 163,
+      'locations': {},
     },
     {
       'id': 773,
@@ -18593,6 +23946,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 167,
+      'locations': {
+        '4': {
+          'basePokemon': 'Type: Null',
+          'evolvedPokemon': 'Silvally',
+          'type': 0,
+          'level': 100,
+        },
+      },
     },
     {
       'id': 774,
@@ -18614,6 +23975,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 87,
+      'locations': {},
     },
     {
       'id': 775,
@@ -18632,6 +23994,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 121,
+      'locations': {},
     },
     {
       'id': 776,
@@ -18653,6 +24016,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 118,
+      'locations': {},
     },
     {
       'id': 777,
@@ -18674,6 +24038,7 @@ module.exports = {
         'speed': 96,
       },
       'attack': 82,
+      'locations': {},
     },
     {
       'id': 778,
@@ -18695,6 +24060,7 @@ module.exports = {
         'speed': 96,
       },
       'attack': 91,
+      'locations': {},
     },
     {
       'id': 779,
@@ -18716,6 +24082,7 @@ module.exports = {
         'speed': 92,
       },
       'attack': 112,
+      'locations': {},
     },
     {
       'id': 780,
@@ -18737,6 +24104,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 131,
+      'locations': {},
     },
     {
       'id': 781,
@@ -18758,6 +24126,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 150,
+      'locations': {},
     },
     {
       'id': 782,
@@ -18784,6 +24153,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 46,
+      'locations': {},
     },
     {
       'id': 783,
@@ -18813,6 +24183,14 @@ module.exports = {
         'speed': 65,
       },
       'attack': 86,
+      'locations': {
+        '4': {
+          'basePokemon': 'Jangmo-o',
+          'evolvedPokemon': 'Hakamo-o',
+          'type': 0,
+          'level': 35,
+        },
+      },
     },
     {
       'id': 784,
@@ -18834,6 +24212,14 @@ module.exports = {
         'speed': 85,
       },
       'attack': 175,
+      'locations': {
+        '4': {
+          'basePokemon': 'Hakamo-o',
+          'evolvedPokemon': 'Kommo-o',
+          'type': 0,
+          'level': 45,
+        },
+      },
     },
     {
       'id': 785,
@@ -18855,6 +24241,7 @@ module.exports = {
         'speed': 130,
       },
       'attack': 148,
+      'locations': {},
     },
     {
       'id': 786,
@@ -18876,6 +24263,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 156,
+      'locations': {},
     },
     {
       'id': 787,
@@ -18897,6 +24285,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 162,
+      'locations': {},
     },
     {
       'id': 788,
@@ -18918,6 +24307,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 144,
+      'locations': {},
     },
     {
       'id': 789,
@@ -18944,6 +24334,7 @@ module.exports = {
         'speed': 37,
       },
       'attack': 22,
+      'locations': {},
     },
     {
       'id': 790,
@@ -18970,6 +24361,14 @@ module.exports = {
         'speed': 37,
       },
       'attack': 42,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cosmog',
+          'evolvedPokemon': 'Cosmoem',
+          'type': 0,
+          'level': 43,
+        },
+      },
     },
     {
       'id': 791,
@@ -18991,6 +24390,14 @@ module.exports = {
         'speed': 97,
       },
       'attack': 259,
+      'locations': {
+        '4': {
+          'basePokemon': 'Cosmoem',
+          'evolvedPokemon': 'Solgaleo',
+          'type': 0,
+          'level': 53,
+        },
+      },
     },
     {
       'id': 792,
@@ -19012,6 +24419,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 259,
+      'locations': {},
     },
     {
       'id': 793,
@@ -19033,6 +24441,7 @@ module.exports = {
         'speed': 103,
       },
       'attack': 144,
+      'locations': {},
     },
     {
       'id': 794,
@@ -19054,6 +24463,7 @@ module.exports = {
         'speed': 79,
       },
       'attack': 153,
+      'locations': {},
     },
     {
       'id': 795,
@@ -19075,6 +24485,7 @@ module.exports = {
         'speed': 151,
       },
       'attack': 140,
+      'locations': {},
     },
     {
       'id': 796,
@@ -19093,6 +24504,7 @@ module.exports = {
         'speed': 83,
       },
       'attack': 173,
+      'locations': {},
     },
     {
       'id': 797,
@@ -19114,6 +24526,7 @@ module.exports = {
         'speed': 61,
       },
       'attack': 185,
+      'locations': {},
     },
     {
       'id': 798,
@@ -19135,6 +24548,7 @@ module.exports = {
         'speed': 109,
       },
       'attack': 120,
+      'locations': {},
     },
     {
       'id': 799,
@@ -19156,6 +24570,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 196,
+      'locations': {},
     },
     {
       'id': 800,
@@ -19174,6 +24589,7 @@ module.exports = {
         'speed': 79,
       },
       'attack': 200,
+      'locations': {},
     },
     {
       'id': 801,
@@ -19195,6 +24611,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 188,
+      'locations': {},
     },
     {
       'id': 802,
@@ -19216,6 +24633,7 @@ module.exports = {
         'speed': 125,
       },
       'attack': 174,
+      'locations': {},
     },
     {
       'id': 803,
@@ -19242,6 +24660,7 @@ module.exports = {
         'speed': 73,
       },
       'attack': 93,
+      'locations': {},
     },
     {
       'id': 804,
@@ -19263,6 +24682,14 @@ module.exports = {
         'speed': 121,
       },
       'attack': 134,
+      'locations': {
+        '5': {
+          'basePokemon': 'Poipole',
+          'evolvedPokemon': 'Naganadel',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 805,
@@ -19284,6 +24711,7 @@ module.exports = {
         'speed': 13,
       },
       'attack': 133,
+      'locations': {},
     },
     {
       'id': 806,
@@ -19305,6 +24733,7 @@ module.exports = {
         'speed': 107,
       },
       'attack': 150,
+      'locations': {},
     },
     {
       'id': 807,
@@ -19323,6 +24752,7 @@ module.exports = {
         'speed': 143,
       },
       'attack': 168,
+      'locations': {},
     },
     {
       'id': 808,
@@ -19349,6 +24779,7 @@ module.exports = {
         'speed': 34,
       },
       'attack': 52,
+      'locations': {},
     },
     {
       'id': 809,
@@ -19367,6 +24798,14 @@ module.exports = {
         'speed': 34,
       },
       'attack': 212,
+      'locations': {
+        '5': {
+          'basePokemon': 'Meltan',
+          'evolvedPokemon': 'Melmetal',
+          'type': 0,
+          'stone': -1,
+        },
+      },
     },
     {
       'id': 0,
@@ -19396,6 +24835,7 @@ module.exports = {
         'speed': 0,
       },
       'attack': 17,
+      'locations': {},
     },
     {
       'id': -1,
@@ -19417,6 +24857,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': -2,
@@ -19438,6 +24879,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': -3,
@@ -19456,6 +24898,7 @@ module.exports = {
         'speed': 130,
       },
       'attack': 246,
+      'locations': {},
     },
     {
       'id': -4,
@@ -19477,6 +24920,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 196,
+      'locations': {},
     },
     {
       'id': -5,
@@ -19495,6 +24939,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 28,
+      'locations': {},
     },
     {
       'id': -6,
@@ -19516,6 +24961,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 53,
+      'locations': {},
     },
     {
       'id': -7,
@@ -19534,6 +24980,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': -8,
@@ -19552,6 +24999,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 43,
+      'locations': {},
     },
     {
       'id': -9,
@@ -19570,6 +25018,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 54,
+      'locations': {},
     },
     {
       'id': -100,
@@ -19591,6 +25040,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 194,
+      'locations': {},
     },
     {
       'id': -101,
@@ -19612,6 +25062,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 204,
+      'locations': {},
     },
     {
       'id': -111,
@@ -19633,6 +25084,7 @@ module.exports = {
         'speed': 81,
       },
       'attack': 199,
+      'locations': {},
     },
     {
       'id': -115,
@@ -19654,6 +25106,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 329,
+      'locations': {},
     },
   ],
   'GameConstants': {
