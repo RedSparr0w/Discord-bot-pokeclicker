@@ -2,6 +2,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix, token } = require('./config.json');
 const {
+  log,
   info,
   warn,
   error,
@@ -22,6 +23,8 @@ const cooldowns = new Discord.Collection();
 
 client.once('ready', async() => {
   info(`Logged in as ${client.user.tag}!`);
+  log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot`);
+  // Check the database is setup
   await setupDB();
 });
 
