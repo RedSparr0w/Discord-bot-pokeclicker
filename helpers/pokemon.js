@@ -1,4 +1,23 @@
-// copy(`module.exports = ${JSON.stringify({PokemonLocationType, PokemonType, LevelType, levelRequirements, pokemonList: pokemonList.map(p => { p.locations = PokemonHelper.getPokemonLocations(p.name); return p; }), GameConstants}, null, 2)}`)
+/*
+ * To get data from game:
+ *
+
+copy(`module.exports = ${JSON.stringify({
+  PokemonLocationType,
+  PokemonType,
+  LevelType,
+  levelRequirements,
+  pokemonList: pokemonList.map(p => {
+    p.locations = PokemonHelper.getPokemonLocations(p.name);
+    p.catchRatePercent = PokemonFactory.catchRateHelper(p.catchRate, true);
+    p.eggSteps = App.game.breeding.getSteps(p.eggCycles);
+    return p;
+  }),
+  GameConstants
+}, null, 2)}`)
+
+*/
+
 module.exports = {
   'PokemonLocationType': {
     '0': 'Route',
@@ -730,6 +749,8 @@ module.exports = {
       'locations': {
         '6': ['Grass'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 2,
@@ -767,6 +788,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 3,
@@ -796,6 +819,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 4,
@@ -826,6 +851,8 @@ module.exports = {
       'locations': {
         '6': ['Fire'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 5,
@@ -862,6 +889,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 6,
@@ -892,6 +921,8 @@ module.exports = {
           'triggered': false,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 7,
@@ -921,6 +952,8 @@ module.exports = {
       'locations': {
         '6': ['Water'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 8,
@@ -955,6 +988,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 9,
@@ -981,6 +1016,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 10,
@@ -1025,6 +1062,8 @@ module.exports = {
           'Ilex Forest',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 11,
@@ -1076,6 +1115,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 12,
@@ -1110,6 +1151,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 13,
@@ -1157,6 +1200,8 @@ module.exports = {
           'Ilex Forest',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 14,
@@ -1211,6 +1256,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 15,
@@ -1245,6 +1292,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 16,
@@ -1304,6 +1353,8 @@ module.exports = {
         },
         '2': ['Viridian Forest'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 17,
@@ -1367,6 +1418,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 18,
@@ -1397,6 +1450,8 @@ module.exports = {
           'triggered': false,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 19,
@@ -1463,6 +1518,8 @@ module.exports = {
           'Mt Mortar',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 20,
@@ -1513,6 +1570,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
     },
     {
       'id': 21,
@@ -1568,6 +1627,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 22,
@@ -1611,6 +1672,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 23,
@@ -1653,6 +1716,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 24,
@@ -1687,6 +1752,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 25,
@@ -1724,6 +1791,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
     },
     {
       'id': 26,
@@ -1754,6 +1823,8 @@ module.exports = {
           'stone': 2,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 400,
     },
     {
       'id': 27,
@@ -1799,6 +1870,8 @@ module.exports = {
           'Union Cave',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 28,
@@ -1834,6 +1907,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 29,
@@ -1876,6 +1951,8 @@ module.exports = {
         },
         '10': '9.04%',
       },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 30,
@@ -1918,6 +1995,8 @@ module.exports = {
         },
         '10': '6.02%',
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 31,
@@ -1947,6 +2026,8 @@ module.exports = {
           'stone': 4,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 32,
@@ -1989,6 +2070,8 @@ module.exports = {
         },
         '10': '15.06%',
       },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 33,
@@ -2031,6 +2114,8 @@ module.exports = {
         },
         '10': '6.02%',
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 34,
@@ -2060,6 +2145,8 @@ module.exports = {
           'stone': 4,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 35,
@@ -2095,6 +2182,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 42,
+      'eggSteps': 400,
     },
     {
       'id': 36,
@@ -2121,6 +2210,8 @@ module.exports = {
           'stone': 4,
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 400,
     },
     {
       'id': 37,
@@ -2165,6 +2256,8 @@ module.exports = {
         ],
         '6': ['Fire'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 38,
@@ -2191,6 +2284,8 @@ module.exports = {
           'stone': 0,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 39,
@@ -2238,6 +2333,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 47,
+      'eggSteps': 400,
     },
     {
       'id': 40,
@@ -2268,6 +2365,8 @@ module.exports = {
           'stone': 4,
         },
       },
+      'catchRatePercent': 18,
+      'eggSteps': 400,
     },
     {
       'id': 41,
@@ -2329,6 +2428,8 @@ module.exports = {
           'Victory Road Hoenn',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 42,
@@ -2381,6 +2482,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 43,
@@ -2435,6 +2538,8 @@ module.exports = {
         '2': ['Ilex Forest'],
         '6': ['Grass'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 44,
@@ -2494,6 +2599,8 @@ module.exports = {
           'level': 21,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 45,
@@ -2523,6 +2630,8 @@ module.exports = {
           'stone': 3,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 46,
@@ -2559,6 +2668,8 @@ module.exports = {
         ],
         '10': '3.01%',
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 47,
@@ -2590,6 +2701,8 @@ module.exports = {
         },
         '10': '9.04%',
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 48,
@@ -2632,6 +2745,8 @@ module.exports = {
           '1': ['43'],
         },
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 49,
@@ -2671,6 +2786,8 @@ module.exports = {
           'level': 31,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 50,
@@ -2703,6 +2820,8 @@ module.exports = {
         },
         '2': ['Digletts Cave'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 51,
@@ -2730,6 +2849,8 @@ module.exports = {
           'level': 26,
         },
       },
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': 52,
@@ -2770,6 +2891,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 53,
@@ -2796,6 +2919,8 @@ module.exports = {
           'level': 28,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 54,
@@ -2834,6 +2959,8 @@ module.exports = {
         '2': ['Seafoam Islands'],
         '6': ['Water'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 55,
@@ -2864,6 +2991,8 @@ module.exports = {
           'level': 33,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 56,
@@ -2907,6 +3036,8 @@ module.exports = {
         },
         '6': ['Fighting'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 57,
@@ -2937,6 +3068,8 @@ module.exports = {
           'triggered': true,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 58,
@@ -2978,6 +3111,8 @@ module.exports = {
         '2': ['Pokemon Mansion'],
         '6': ['Fire'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 59,
@@ -3004,6 +3139,8 @@ module.exports = {
           'stone': 0,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 60,
@@ -3062,6 +3199,8 @@ module.exports = {
         },
         '2': ['Ruins of Alph'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 61,
@@ -3116,6 +3255,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 62,
@@ -3145,6 +3286,8 @@ module.exports = {
           'stone': 1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 63,
@@ -3189,6 +3332,8 @@ module.exports = {
         },
         '2': ['Granite Cave'],
       },
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 64,
@@ -3227,6 +3372,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 31,
+      'eggSteps': 800,
     },
     {
       'id': 65,
@@ -3253,6 +3400,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': 66,
@@ -3292,6 +3441,8 @@ module.exports = {
         '3': ['Jagged Pass'],
         '6': ['Fighting'],
       },
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 67,
@@ -3327,6 +3478,8 @@ module.exports = {
           'level': 28,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 68,
@@ -3353,6 +3506,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 69,
@@ -3404,6 +3559,8 @@ module.exports = {
         '3': ['Sprout Tower'],
         '6': ['Grass'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 70,
@@ -3450,6 +3607,8 @@ module.exports = {
           'level': 21,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 71,
@@ -3479,6 +3638,8 @@ module.exports = {
           'stone': 3,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 72,
@@ -3560,6 +3721,8 @@ module.exports = {
           'Seafloor Cavern',
         ],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 73,
@@ -3604,6 +3767,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 74,
@@ -3655,6 +3820,8 @@ module.exports = {
           'Victory Road Hoenn',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 75,
@@ -3701,6 +3868,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 76,
@@ -3730,6 +3899,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 77,
@@ -3768,6 +3939,8 @@ module.exports = {
         '2': ['Mt Silver'],
         '6': ['Fire'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 78,
@@ -3797,6 +3970,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 79,
@@ -3841,6 +4016,8 @@ module.exports = {
           'Slowpoke Well',
         ],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 80,
@@ -3879,6 +4056,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 81,
@@ -3922,6 +4101,8 @@ module.exports = {
         ],
         '6': ['Electric'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 82,
@@ -3956,6 +4137,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 83,
@@ -3991,6 +4174,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 84,
@@ -4035,6 +4220,8 @@ module.exports = {
         },
         '2': ['Mt Silver'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 85,
@@ -4073,6 +4260,8 @@ module.exports = {
           'level': 31,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 86,
@@ -4106,6 +4295,8 @@ module.exports = {
         '2': ['Whirl Islands'],
         '3': ['Seafoam Islands'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 87,
@@ -4136,6 +4327,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 88,
@@ -4169,6 +4362,8 @@ module.exports = {
           'Fiery Path',
         ],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 89,
@@ -4199,6 +4394,8 @@ module.exports = {
           'level': 38,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 90,
@@ -4245,6 +4442,8 @@ module.exports = {
         },
         '2': ['Seafoam Islands'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 91,
@@ -4274,6 +4473,8 @@ module.exports = {
           'stone': 1,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 92,
@@ -4310,6 +4511,8 @@ module.exports = {
           'Tin Tower',
         ],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 93,
@@ -4349,6 +4552,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 94,
@@ -4378,6 +4583,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 95,
@@ -4414,6 +4621,8 @@ module.exports = {
         ],
         '3': ['Rock Tunnel'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 96,
@@ -4449,6 +4658,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 97,
@@ -4476,6 +4687,8 @@ module.exports = {
           'level': 26,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 98,
@@ -4526,6 +4739,8 @@ module.exports = {
           'Whirl Islands',
         ],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 99,
@@ -4563,6 +4778,8 @@ module.exports = {
           'level': 28,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 100,
@@ -4596,6 +4813,8 @@ module.exports = {
         '2': ['New Mauville'],
         '6': ['Electric'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 101,
@@ -4627,6 +4846,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 102,
@@ -4678,6 +4899,8 @@ module.exports = {
         },
         '10': '12.05%',
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 103,
@@ -4707,6 +4930,8 @@ module.exports = {
           'stone': 3,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 104,
@@ -4737,6 +4962,8 @@ module.exports = {
         '2': ['Pokemon Tower'],
         '10': '6.02%',
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 105,
@@ -4769,6 +4996,8 @@ module.exports = {
         },
         '10': '3.01%',
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 106,
@@ -4796,6 +5025,8 @@ module.exports = {
         },
         '6': ['Fighting'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 107,
@@ -4823,6 +5054,8 @@ module.exports = {
         },
         '6': ['Fighting'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 108,
@@ -4847,6 +5080,8 @@ module.exports = {
         },
         '8': ['Celadon City'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 109,
@@ -4880,6 +5115,8 @@ module.exports = {
           'Fiery Path',
         ],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 110,
@@ -4908,6 +5145,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 111,
@@ -4940,6 +5179,8 @@ module.exports = {
       'locations': {
         '10': '6.02%',
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 112,
@@ -4970,6 +5211,8 @@ module.exports = {
           'level': 42,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 113,
@@ -5006,6 +5249,8 @@ module.exports = {
         },
         '10': '2.41%',
       },
+      'catchRatePercent': 12,
+      'eggSteps': 1600,
     },
     {
       'id': 114,
@@ -5036,6 +5281,8 @@ module.exports = {
         '6': ['Grass'],
         '10': '2.41%',
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 115,
@@ -5057,6 +5304,8 @@ module.exports = {
       'locations': {
         '10': '9.04%',
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 116,
@@ -5105,6 +5354,8 @@ module.exports = {
           'Whirl Islands',
         ],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 117,
@@ -5146,6 +5397,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 118,
@@ -5207,6 +5460,8 @@ module.exports = {
           'Victory Road Hoenn',
         ],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 119,
@@ -5241,6 +5496,8 @@ module.exports = {
           'level': 33,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 120,
@@ -5283,6 +5540,8 @@ module.exports = {
         '2': ['Seafoam Islands'],
         '6': ['Water'],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 121,
@@ -5312,6 +5571,8 @@ module.exports = {
           'stone': 1,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 122,
@@ -5342,6 +5603,8 @@ module.exports = {
         },
         '8': ['Celadon City'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 123,
@@ -5374,6 +5637,8 @@ module.exports = {
       'locations': {
         '10': '2.41%',
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 124,
@@ -5405,6 +5670,8 @@ module.exports = {
         },
         '8': ['Celadon City'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 125,
@@ -5441,6 +5708,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 126,
@@ -5476,6 +5745,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 127,
@@ -5497,6 +5768,8 @@ module.exports = {
       'locations': {
         '10': '2.41%',
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 128,
@@ -5525,6 +5798,8 @@ module.exports = {
         },
         '10': '6.02%',
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 129,
@@ -5619,6 +5894,8 @@ module.exports = {
           'Victory Road Hoenn',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 200,
     },
     {
       'id': 130,
@@ -5648,6 +5925,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 200,
     },
     {
       'id': 131,
@@ -5672,6 +5951,8 @@ module.exports = {
       'locations': {
         '6': ['Water'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 132,
@@ -5706,6 +5987,8 @@ module.exports = {
         },
         '2': ['Cerulean Cave'],
       },
+      'catchRatePercent': 14,
+      'eggSteps': 800,
     },
     {
       'id': 133,
@@ -5759,6 +6042,8 @@ module.exports = {
       'locations': {
         '8': ['Celadon City'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 1400,
     },
     {
       'id': 134,
@@ -5785,6 +6070,8 @@ module.exports = {
           'stone': 1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 135,
@@ -5811,6 +6098,8 @@ module.exports = {
           'stone': 2,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 136,
@@ -5837,6 +6126,8 @@ module.exports = {
           'stone': 0,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 137,
@@ -5866,6 +6157,8 @@ module.exports = {
       'locations': {
         '8': ['Celadon City'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 138,
@@ -5899,6 +6192,8 @@ module.exports = {
         '3': ['Mt. Moon'],
         '9': ['Helix Fossil'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 139,
@@ -5928,6 +6223,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 140,
@@ -5961,6 +6258,8 @@ module.exports = {
         '3': ['Mt. Moon'],
         '9': ['Dome Fossil'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 141,
@@ -5990,6 +6289,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 142,
@@ -6014,6 +6315,8 @@ module.exports = {
       'locations': {
         '9': ['Old Amber'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 143,
@@ -6046,6 +6349,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1600,
     },
     {
       'id': 144,
@@ -6070,6 +6375,8 @@ module.exports = {
       'locations': {
         '3': ['Seafoam Islands'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 145,
@@ -6094,6 +6401,8 @@ module.exports = {
       'locations': {
         '3': ['Power Plant'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 146,
@@ -6118,6 +6427,8 @@ module.exports = {
       'locations': {
         '3': ['Victory Road'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 147,
@@ -6147,6 +6458,8 @@ module.exports = {
       'locations': {
         '6': ['Dragon'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 148,
@@ -6182,6 +6495,8 @@ module.exports = {
         },
         '6': ['Dragon'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 149,
@@ -6212,6 +6527,8 @@ module.exports = {
         },
         '6': ['Dragon'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 150,
@@ -6233,6 +6550,8 @@ module.exports = {
       'locations': {
         '3': ['Cerulean Cave'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 151,
@@ -6254,6 +6573,8 @@ module.exports = {
       'locations': {
         '1': ['0'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 152,
@@ -6283,6 +6604,8 @@ module.exports = {
       'locations': {
         '6': ['Grass'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 153,
@@ -6317,6 +6640,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 154,
@@ -6343,6 +6668,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 155,
@@ -6372,6 +6699,8 @@ module.exports = {
       'locations': {
         '6': ['Fire'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 156,
@@ -6406,6 +6735,8 @@ module.exports = {
           'level': 14,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 157,
@@ -6432,6 +6763,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 158,
@@ -6461,6 +6794,8 @@ module.exports = {
       'locations': {
         '6': ['Water'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 159,
@@ -6495,6 +6830,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 160,
@@ -6521,6 +6858,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 161,
@@ -6552,6 +6891,8 @@ module.exports = {
           '1': ['29'],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 162,
@@ -6578,6 +6919,8 @@ module.exports = {
           'level': 15,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 163,
@@ -6632,6 +6975,8 @@ module.exports = {
           'Ilex Forest',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 164,
@@ -6668,6 +7013,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 165,
@@ -6716,6 +7063,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 166,
@@ -6745,6 +7094,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 167,
@@ -6793,6 +7144,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 168,
@@ -6822,6 +7175,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 169,
@@ -6851,6 +7206,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 170,
@@ -6891,6 +7248,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 171,
@@ -6927,6 +7286,8 @@ module.exports = {
           'level': 27,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 172,
@@ -6957,6 +7318,8 @@ module.exports = {
       'locations': {
         '7': ['Pikachu'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
     },
     {
       'id': 173,
@@ -6987,6 +7350,8 @@ module.exports = {
       'locations': {
         '7': ['Clefairy'],
       },
+      'catchRatePercent': 42,
+      'eggSteps': 400,
     },
     {
       'id': 174,
@@ -7020,6 +7385,8 @@ module.exports = {
       'locations': {
         '7': ['Jigglypuff'],
       },
+      'catchRatePercent': 47,
+      'eggSteps': 400,
     },
     {
       'id': 175,
@@ -7049,6 +7416,8 @@ module.exports = {
       'locations': {
         '8': ['Violet City'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
     },
     {
       'id': 176,
@@ -7078,6 +7447,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 400,
     },
     {
       'id': 177,
@@ -7113,6 +7484,8 @@ module.exports = {
         },
         '2': ['Ruins of Alph'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 178,
@@ -7142,6 +7515,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 179,
@@ -7178,6 +7553,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 180,
@@ -7218,6 +7595,8 @@ module.exports = {
           'level': 15,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 181,
@@ -7244,6 +7623,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 182,
@@ -7270,6 +7651,8 @@ module.exports = {
           'stone': 5,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 183,
@@ -7320,6 +7703,8 @@ module.exports = {
         },
         '6': ['Water'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
     },
     {
       'id': 184,
@@ -7349,6 +7734,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 400,
     },
     {
       'id': 185,
@@ -7378,6 +7765,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 22,
+      'eggSteps': 800,
     },
     {
       'id': 186,
@@ -7404,6 +7793,8 @@ module.exports = {
           'stone': 9,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 187,
@@ -7443,6 +7834,8 @@ module.exports = {
         },
         '6': ['Grass'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 188,
@@ -7480,6 +7873,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 189,
@@ -7509,6 +7904,8 @@ module.exports = {
           'level': 27,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 190,
@@ -7540,6 +7937,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 191,
@@ -7569,6 +7968,8 @@ module.exports = {
       'locations': {
         '6': ['Grass'],
       },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 192,
@@ -7595,6 +7996,8 @@ module.exports = {
           'stone': 5,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 193,
@@ -7621,6 +8024,8 @@ module.exports = {
           '1': ['35'],
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 194,
@@ -7658,6 +8063,8 @@ module.exports = {
         '3': ['Union Cave'],
         '6': ['Water'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 195,
@@ -7698,6 +8105,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 196,
@@ -7724,6 +8133,8 @@ module.exports = {
           'stone': 11,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 197,
@@ -7750,6 +8161,8 @@ module.exports = {
           'stone': 11,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 198,
@@ -7776,6 +8189,8 @@ module.exports = {
           '1': ['28'],
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 199,
@@ -7805,6 +8220,8 @@ module.exports = {
           'stone': 9,
         },
       },
+      'catchRatePercent': 24,
+      'eggSteps': 800,
     },
     {
       'id': 200,
@@ -7826,6 +8243,8 @@ module.exports = {
       'locations': {
         '2': ['Mt Silver'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 201,
@@ -7847,6 +8266,8 @@ module.exports = {
       'locations': {
         '3': ['Ruins of Alph'],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
     },
     {
       'id': 202,
@@ -7874,6 +8295,8 @@ module.exports = {
           'level': 15,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 203,
@@ -7903,6 +8326,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 204,
@@ -7950,6 +8375,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 205,
@@ -7979,6 +8406,8 @@ module.exports = {
           'level': 31,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 206,
@@ -8000,6 +8429,8 @@ module.exports = {
       'locations': {
         '3': ['Dark Cave'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 207,
@@ -8026,6 +8457,8 @@ module.exports = {
           '1': ['45'],
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 208,
@@ -8055,6 +8488,8 @@ module.exports = {
           'stone': 8,
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 209,
@@ -8086,6 +8521,8 @@ module.exports = {
           '1': ['38'],
         },
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 210,
@@ -8112,6 +8549,8 @@ module.exports = {
           'level': 23,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 211,
@@ -8139,6 +8578,8 @@ module.exports = {
         },
         '6': ['Water'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 212,
@@ -8168,6 +8609,8 @@ module.exports = {
           'stone': 8,
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 213,
@@ -8192,6 +8635,8 @@ module.exports = {
       'locations': {
         '3': ['Burned Tower'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 214,
@@ -8227,6 +8672,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 215,
@@ -8254,6 +8701,8 @@ module.exports = {
         },
         '2': ['Mt Silver'],
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 216,
@@ -8286,6 +8735,8 @@ module.exports = {
         },
         '2': ['Mt Silver'],
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 217,
@@ -8316,6 +8767,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 218,
@@ -8349,6 +8802,8 @@ module.exports = {
         '2': ['Fiery Path'],
         '6': ['Fire'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 219,
@@ -8378,6 +8833,8 @@ module.exports = {
           'level': 38,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 220,
@@ -8410,6 +8867,8 @@ module.exports = {
       'locations': {
         '2': ['Ice Path'],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 221,
@@ -8439,6 +8898,8 @@ module.exports = {
           'level': 33,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 222,
@@ -8469,6 +8930,8 @@ module.exports = {
           '2': ['128'],
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 223,
@@ -8500,6 +8963,8 @@ module.exports = {
           '1': ['44'],
         },
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 224,
@@ -8526,6 +8991,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 225,
@@ -8550,6 +9017,8 @@ module.exports = {
       'locations': {
         '3': ['Ice Path'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 226,
@@ -8582,6 +9051,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 227,
@@ -8609,6 +9080,8 @@ module.exports = {
           '2': ['113'],
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 228,
@@ -8641,6 +9114,8 @@ module.exports = {
       'locations': {
         '6': ['Fire'],
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 229,
@@ -8670,6 +9145,8 @@ module.exports = {
           'level': 24,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 230,
@@ -8699,6 +9176,8 @@ module.exports = {
           'stone': 7,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 231,
@@ -8731,6 +9210,8 @@ module.exports = {
         },
         '2': ['Mt Silver'],
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 232,
@@ -8761,6 +9242,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 233,
@@ -8787,6 +9270,8 @@ module.exports = {
           'stone': 10,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 234,
@@ -8813,6 +9298,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 235,
@@ -8834,6 +9321,8 @@ module.exports = {
       'locations': {
         '2': ['Ruins of Alph'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 236,
@@ -8882,6 +9371,8 @@ module.exports = {
           'Hitmontop',
         ],
       },
+      'catchRatePercent': 25,
+      'eggSteps': 1000,
     },
     {
       'id': 237,
@@ -8908,6 +9399,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 238,
@@ -8941,6 +9434,8 @@ module.exports = {
       'locations': {
         '7': ['Jynx'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 239,
@@ -8972,6 +9467,8 @@ module.exports = {
         '6': ['Electric'],
         '7': ['Electabuzz'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 240,
@@ -9003,6 +9500,8 @@ module.exports = {
         '6': ['Fire'],
         '7': ['Magmar'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 241,
@@ -9030,6 +9529,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 242,
@@ -9056,6 +9557,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 1600,
     },
     {
       'id': 243,
@@ -9077,6 +9580,8 @@ module.exports = {
       'locations': {
         '1': ['1'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 244,
@@ -9098,6 +9603,8 @@ module.exports = {
       'locations': {
         '1': ['1'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 245,
@@ -9119,6 +9626,8 @@ module.exports = {
       'locations': {
         '1': ['1'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 246,
@@ -9151,6 +9660,8 @@ module.exports = {
       'locations': {
         '3': ['Mt Silver'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 247,
@@ -9188,6 +9699,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 248,
@@ -9217,6 +9730,8 @@ module.exports = {
           'level': 55,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 249,
@@ -9241,6 +9756,8 @@ module.exports = {
       'locations': {
         '3': ['Whirl Islands'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 250,
@@ -9265,6 +9782,8 @@ module.exports = {
       'locations': {
         '3': ['Tin Tower'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 251,
@@ -9289,6 +9808,8 @@ module.exports = {
       'locations': {
         '3': ['Ilex Forest'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 252,
@@ -9318,6 +9839,8 @@ module.exports = {
       'locations': {
         '6': ['Grass'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 253,
@@ -9352,6 +9875,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 254,
@@ -9378,6 +9903,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 255,
@@ -9407,6 +9934,8 @@ module.exports = {
       'locations': {
         '6': ['Fire'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 256,
@@ -9444,6 +9973,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 257,
@@ -9473,6 +10004,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 258,
@@ -9502,6 +10035,8 @@ module.exports = {
       'locations': {
         '6': ['Water'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 259,
@@ -9539,6 +10074,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 260,
@@ -9568,6 +10105,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 261,
@@ -9614,6 +10153,8 @@ module.exports = {
           'Mt. Chimney',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 262,
@@ -9647,6 +10188,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
     },
     {
       'id': 263,
@@ -9685,6 +10228,8 @@ module.exports = {
         },
         '2': ['Petalburg Woods'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 264,
@@ -9717,6 +10262,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 265,
@@ -9759,6 +10306,8 @@ module.exports = {
         },
         '2': ['Petalburg Woods'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 266,
@@ -9794,6 +10343,8 @@ module.exports = {
           'level': 7,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 267,
@@ -9823,6 +10374,8 @@ module.exports = {
           'level': 10,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 268,
@@ -9858,6 +10411,8 @@ module.exports = {
           'level': 7,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 269,
@@ -9887,6 +10442,8 @@ module.exports = {
           'level': 10,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 270,
@@ -9924,6 +10481,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 271,
@@ -9964,6 +10523,8 @@ module.exports = {
           'level': 14,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 272,
@@ -9993,6 +10554,8 @@ module.exports = {
           'stone': 1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 273,
@@ -10028,6 +10591,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 274,
@@ -10068,6 +10633,8 @@ module.exports = {
           'level': 14,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 275,
@@ -10097,6 +10664,8 @@ module.exports = {
           'stone': 3,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 276,
@@ -10136,6 +10705,8 @@ module.exports = {
         },
         '2': ['Petalburg Woods'],
       },
+      'catchRatePercent': 53,
+      'eggSteps': 600,
     },
     {
       'id': 277,
@@ -10168,6 +10739,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 278,
@@ -10229,6 +10802,8 @@ module.exports = {
         },
         '2': ['Mt. Pyre'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 279,
@@ -10287,6 +10862,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 280,
@@ -10321,6 +10898,8 @@ module.exports = {
           '2': ['102'],
         },
       },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 281,
@@ -10358,6 +10937,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 282,
@@ -10387,6 +10968,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 283,
@@ -10426,6 +11009,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 53,
+      'eggSteps': 600,
     },
     {
       'id': 284,
@@ -10455,6 +11040,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 600,
     },
     {
       'id': 285,
@@ -10484,6 +11071,8 @@ module.exports = {
       'locations': {
         '2': ['Petalburg Woods'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 286,
@@ -10513,6 +11102,8 @@ module.exports = {
           'level': 23,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 287,
@@ -10542,6 +11133,8 @@ module.exports = {
       'locations': {
         '3': ['Petalburg Woods'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 288,
@@ -10576,6 +11169,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 289,
@@ -10602,6 +11197,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 290,
@@ -10642,6 +11239,8 @@ module.exports = {
           '2': ['116'],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 291,
@@ -10671,6 +11270,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 292,
@@ -10700,6 +11301,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 293,
@@ -10736,6 +11339,8 @@ module.exports = {
         ],
         '3': ['Rusturf Tunnel'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 294,
@@ -10771,6 +11376,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 295,
@@ -10797,6 +11404,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 296,
@@ -10830,6 +11439,8 @@ module.exports = {
         ],
         '6': ['Fighting'],
       },
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 297,
@@ -10857,6 +11468,8 @@ module.exports = {
           'level': 24,
         },
       },
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 298,
@@ -10890,6 +11503,8 @@ module.exports = {
       'locations': {
         '7': ['Marill'],
       },
+      'catchRatePercent': 42,
+      'eggSteps': 400,
     },
     {
       'id': 299,
@@ -10911,6 +11526,8 @@ module.exports = {
       'locations': {
         '3': ['Granite Cave'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 300,
@@ -10942,6 +11559,8 @@ module.exports = {
           '2': ['116'],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 301,
@@ -10968,6 +11587,8 @@ module.exports = {
           'stone': 4,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 600,
     },
     {
       'id': 302,
@@ -10996,6 +11617,8 @@ module.exports = {
           'Sky Pillar',
         ],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 303,
@@ -11025,6 +11648,8 @@ module.exports = {
         ],
         '3': ['Granite Cave'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 304,
@@ -11060,6 +11685,8 @@ module.exports = {
           'Victory Road Hoenn',
         ],
       },
+      'catchRatePercent': 49,
+      'eggSteps': 1400,
     },
     {
       'id': 305,
@@ -11098,6 +11725,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 1400,
     },
     {
       'id': 306,
@@ -11127,6 +11756,8 @@ module.exports = {
           'level': 42,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 307,
@@ -11163,6 +11794,8 @@ module.exports = {
         ],
         '6': ['Fighting'],
       },
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 308,
@@ -11193,6 +11826,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 309,
@@ -11228,6 +11863,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 310,
@@ -11257,6 +11894,8 @@ module.exports = {
           'level': 26,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 311,
@@ -11281,6 +11920,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 312,
@@ -11305,6 +11946,8 @@ module.exports = {
         },
         '6': ['Electric'],
       },
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 313,
@@ -11328,6 +11971,8 @@ module.exports = {
           '2': ['117'],
         },
       },
+      'catchRatePercent': 42,
+      'eggSteps': 600,
     },
     {
       'id': 314,
@@ -11351,6 +11996,8 @@ module.exports = {
           '2': ['117'],
         },
       },
+      'catchRatePercent': 42,
+      'eggSteps': 600,
     },
     {
       'id': 315,
@@ -11381,6 +12028,8 @@ module.exports = {
         },
         '6': ['Grass'],
       },
+      'catchRatePercent': 42,
+      'eggSteps': 800,
     },
     {
       'id': 316,
@@ -11412,6 +12061,8 @@ module.exports = {
           '2': ['110'],
         },
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 317,
@@ -11438,6 +12089,8 @@ module.exports = {
           'level': 26,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 318,
@@ -11475,6 +12128,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 319,
@@ -11521,6 +12176,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 320,
@@ -11580,6 +12237,8 @@ module.exports = {
         ],
         '3': ['Seafloor Cavern'],
       },
+      'catchRatePercent': 37,
+      'eggSteps': 1600,
     },
     {
       'id': 321,
@@ -11609,6 +12268,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 1600,
     },
     {
       'id': 322,
@@ -11651,6 +12312,8 @@ module.exports = {
           'Jagged Pass',
         ],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 323,
@@ -11680,6 +12343,8 @@ module.exports = {
           'level': 33,
         },
       },
+      'catchRatePercent': 42,
+      'eggSteps': 800,
     },
     {
       'id': 324,
@@ -11701,6 +12366,8 @@ module.exports = {
       'locations': {
         '3': ['Fiery Path'],
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 325,
@@ -11731,6 +12398,8 @@ module.exports = {
         '2': ['Jagged Pass'],
         '3': ['Jagged Pass'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 326,
@@ -11757,6 +12426,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 327,
@@ -11780,6 +12451,8 @@ module.exports = {
           '2': ['113'],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 328,
@@ -11811,6 +12484,8 @@ module.exports = {
           '2': ['111'],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 329,
@@ -11848,6 +12523,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 330,
@@ -11877,6 +12554,8 @@ module.exports = {
           'level': 45,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 331,
@@ -11908,6 +12587,8 @@ module.exports = {
           '2': ['111'],
         },
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 332,
@@ -11937,6 +12618,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 333,
@@ -11974,6 +12657,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 334,
@@ -12004,6 +12689,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 335,
@@ -12027,6 +12714,8 @@ module.exports = {
           '2': ['114'],
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 336,
@@ -12050,6 +12739,8 @@ module.exports = {
           '2': ['114'],
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 337,
@@ -12074,6 +12765,8 @@ module.exports = {
       'locations': {
         '3': ['Meteor Falls'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 338,
@@ -12098,6 +12791,8 @@ module.exports = {
       'locations': {
         '3': ['Meteor Falls'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 339,
@@ -12140,6 +12835,8 @@ module.exports = {
           'Victory Road Hoenn',
         ],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 340,
@@ -12170,6 +12867,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 341,
@@ -12204,6 +12903,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 54,
+      'eggSteps': 600,
     },
     {
       'id': 342,
@@ -12233,6 +12934,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 43,
+      'eggSteps': 600,
     },
     {
       'id': 343,
@@ -12267,6 +12970,8 @@ module.exports = {
           '2': ['111'],
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 344,
@@ -12297,6 +13002,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 345,
@@ -12329,6 +13036,8 @@ module.exports = {
       'locations': {
         '9': ['Root Fossil'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 346,
@@ -12358,6 +13067,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 347,
@@ -12390,6 +13101,8 @@ module.exports = {
       'locations': {
         '9': ['Claw Fossil'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 348,
@@ -12419,6 +13132,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 349,
@@ -12448,6 +13163,8 @@ module.exports = {
       'locations': {
         '6': ['Water'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 350,
@@ -12474,6 +13191,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 351,
@@ -12497,6 +13216,8 @@ module.exports = {
           '2': ['119'],
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 352,
@@ -12526,6 +13247,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 353,
@@ -12562,6 +13285,8 @@ module.exports = {
         '2': ['Mt. Pyre'],
         '3': ['Mt. Pyre'],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 1000,
     },
     {
       'id': 354,
@@ -12589,6 +13314,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 355,
@@ -12619,6 +13346,8 @@ module.exports = {
         '2': ['Mt. Pyre'],
         '3': ['Mt. Pyre'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 1000,
     },
     {
       'id': 356,
@@ -12646,6 +13375,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 1000,
     },
     {
       'id': 357,
@@ -12673,6 +13404,8 @@ module.exports = {
         },
         '6': ['Grass'],
       },
+      'catchRatePercent': 53,
+      'eggSteps': 1000,
     },
     {
       'id': 358,
@@ -12700,6 +13433,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 359,
@@ -12723,6 +13458,8 @@ module.exports = {
           '2': ['120'],
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
     },
     {
       'id': 360,
@@ -12756,6 +13493,8 @@ module.exports = {
         },
         '7': ['Wobbuffet'],
       },
+      'catchRatePercent': 37,
+      'eggSteps': 800,
     },
     {
       'id': 361,
@@ -12785,6 +13524,8 @@ module.exports = {
       'locations': {
         '3': ['Shoal Cave'],
       },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 362,
@@ -12811,6 +13552,8 @@ module.exports = {
           'level': 42,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 363,
@@ -12843,6 +13586,8 @@ module.exports = {
       'locations': {
         '2': ['Shoal Cave'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 364,
@@ -12880,6 +13625,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 365,
@@ -12909,6 +13656,8 @@ module.exports = {
           'level': 44,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 366,
@@ -12950,6 +13699,8 @@ module.exports = {
         },
         '6': ['Water'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 367,
@@ -12976,6 +13727,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 368,
@@ -13002,6 +13755,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 369,
@@ -13031,6 +13786,8 @@ module.exports = {
           ],
         },
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1600,
     },
     {
       'id': 370,
@@ -13054,6 +13811,8 @@ module.exports = {
           '2': ['128'],
         },
       },
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 371,
@@ -13083,6 +13842,8 @@ module.exports = {
       'locations': {
         '6': ['Dragon'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 372,
@@ -13118,6 +13879,8 @@ module.exports = {
         },
         '6': ['Dragon'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 373,
@@ -13148,6 +13911,8 @@ module.exports = {
         },
         '6': ['Dragon'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 374,
@@ -13180,6 +13945,8 @@ module.exports = {
       'locations': {
         '8': ['Mossdeep City'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 1600,
     },
     {
       'id': 375,
@@ -13217,6 +13984,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 2,
+      'eggSteps': 1600,
     },
     {
       'id': 376,
@@ -13246,6 +14015,8 @@ module.exports = {
           'level': 45,
         },
       },
+      'catchRatePercent': 2,
+      'eggSteps': 1600,
     },
     {
       'id': 377,
@@ -13267,6 +14038,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 378,
@@ -13288,6 +14061,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 379,
@@ -13309,6 +14084,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 380,
@@ -13333,6 +14110,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 381,
@@ -13357,6 +14136,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 382,
@@ -13378,6 +14159,8 @@ module.exports = {
       'locations': {
         '3': ['Cave of Origin'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 383,
@@ -13399,6 +14182,8 @@ module.exports = {
       'locations': {
         '3': ['Cave of Origin'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 384,
@@ -13423,6 +14208,8 @@ module.exports = {
       'locations': {
         '3': ['Sky Pillar'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 385,
@@ -13447,6 +14234,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 386,
@@ -13468,6 +14257,8 @@ module.exports = {
       'locations': {
         '1': ['2'],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 387,
@@ -13495,6 +14286,8 @@ module.exports = {
       },
       'attack': 58,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 388,
@@ -13529,6 +14322,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 389,
@@ -13558,6 +14353,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 390,
@@ -13585,6 +14382,8 @@ module.exports = {
       },
       'attack': 50,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 391,
@@ -13622,6 +14421,8 @@ module.exports = {
           'level': 14,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 392,
@@ -13651,6 +14452,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 393,
@@ -13678,6 +14481,8 @@ module.exports = {
       },
       'attack': 56,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 394,
@@ -13712,6 +14517,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 395,
@@ -13741,6 +14548,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 396,
@@ -13771,6 +14580,8 @@ module.exports = {
       },
       'attack': 29,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 397,
@@ -13808,6 +14619,8 @@ module.exports = {
           'level': 14,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 398,
@@ -13837,6 +14650,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 399,
@@ -13864,6 +14679,8 @@ module.exports = {
       },
       'attack': 37,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 400,
@@ -13893,6 +14710,8 @@ module.exports = {
           'level': 15,
         },
       },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
     },
     {
       'id': 401,
@@ -13920,6 +14739,8 @@ module.exports = {
       },
       'attack': 19,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 402,
@@ -13946,6 +14767,8 @@ module.exports = {
           'level': 10,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 403,
@@ -13973,6 +14796,8 @@ module.exports = {
       },
       'attack': 39,
       'locations': {},
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 404,
@@ -14007,6 +14832,8 @@ module.exports = {
           'level': 15,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 405,
@@ -14033,6 +14860,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 406,
@@ -14066,6 +14895,8 @@ module.exports = {
       'locations': {
         '7': ['Roselia'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 407,
@@ -14088,6 +14919,8 @@ module.exports = {
       },
       'attack': 122,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 408,
@@ -14115,6 +14948,8 @@ module.exports = {
       },
       'attack': 58,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 409,
@@ -14141,6 +14976,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 410,
@@ -14171,6 +15008,8 @@ module.exports = {
       },
       'attack': 42,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 411,
@@ -14200,6 +15039,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 412,
@@ -14227,6 +15068,8 @@ module.exports = {
       },
       'attack': 25,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 413,
@@ -14256,6 +15099,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 414,
@@ -14278,6 +15123,8 @@ module.exports = {
       },
       'attack': 103,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 415,
@@ -14308,6 +15155,8 @@ module.exports = {
       },
       'attack': 23,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 416,
@@ -14337,6 +15186,8 @@ module.exports = {
           'level': 21,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 417,
@@ -14356,6 +15207,8 @@ module.exports = {
       },
       'attack': 64,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 400,
     },
     {
       'id': 418,
@@ -14383,6 +15236,8 @@ module.exports = {
       },
       'attack': 55,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 419,
@@ -14409,6 +15264,8 @@ module.exports = {
           'level': 26,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 420,
@@ -14436,6 +15293,8 @@ module.exports = {
       },
       'attack': 41,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 421,
@@ -14462,6 +15321,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 422,
@@ -14489,6 +15350,8 @@ module.exports = {
       },
       'attack': 62,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 423,
@@ -14518,6 +15381,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 424,
@@ -14537,6 +15402,8 @@ module.exports = {
       },
       'attack': 106,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 425,
@@ -14567,6 +15434,8 @@ module.exports = {
       },
       'attack': 65,
       'locations': {},
+      'catchRatePercent': 37,
+      'eggSteps': 1200,
     },
     {
       'id': 426,
@@ -14596,6 +15465,8 @@ module.exports = {
           'level': 28,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 1200,
     },
     {
       'id': 427,
@@ -14623,6 +15494,8 @@ module.exports = {
       },
       'attack': 57,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 428,
@@ -14649,6 +15522,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 429,
@@ -14668,6 +15543,8 @@ module.exports = {
       },
       'attack': 105,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 430,
@@ -14690,6 +15567,8 @@ module.exports = {
       },
       'attack': 152,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 431,
@@ -14717,6 +15596,8 @@ module.exports = {
       },
       'attack': 44,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 432,
@@ -14743,6 +15624,8 @@ module.exports = {
           'level': 38,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 433,
@@ -14773,6 +15656,8 @@ module.exports = {
       'locations': {
         '7': ['Chimecho'],
       },
+      'catchRatePercent': 36,
+      'eggSteps': 1000,
     },
     {
       'id': 434,
@@ -14803,6 +15688,8 @@ module.exports = {
       },
       'attack': 54,
       'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 435,
@@ -14832,6 +15719,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 436,
@@ -14862,6 +15751,8 @@ module.exports = {
       },
       'attack': 33,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 437,
@@ -14891,6 +15782,8 @@ module.exports = {
           'level': 33,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 438,
@@ -14921,6 +15814,8 @@ module.exports = {
       'locations': {
         '7': ['Sudowoodo'],
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 439,
@@ -14954,6 +15849,8 @@ module.exports = {
       'locations': {
         '7': ['Mr. Mime'],
       },
+      'catchRatePercent': 41,
+      'eggSteps': 1000,
     },
     {
       'id': 440,
@@ -14984,6 +15881,8 @@ module.exports = {
       'locations': {
         '7': ['Chansey'],
       },
+      'catchRatePercent': 38,
+      'eggSteps': 1600,
     },
     {
       'id': 441,
@@ -15006,6 +15905,8 @@ module.exports = {
       },
       'attack': 88,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 442,
@@ -15028,6 +15929,8 @@ module.exports = {
       },
       'attack': 118,
       'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 1200,
     },
     {
       'id': 443,
@@ -15058,6 +15961,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 444,
@@ -15095,6 +16000,8 @@ module.exports = {
           'level': 24,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 445,
@@ -15124,6 +16031,8 @@ module.exports = {
           'level': 48,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 446,
@@ -15154,6 +16063,8 @@ module.exports = {
       'locations': {
         '7': ['Snorlax'],
       },
+      'catchRatePercent': 18,
+      'eggSteps': 1600,
     },
     {
       'id': 447,
@@ -15181,6 +16092,8 @@ module.exports = {
       },
       'attack': 39,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 1000,
     },
     {
       'id': 448,
@@ -15210,6 +16123,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 449,
@@ -15237,6 +16152,8 @@ module.exports = {
       },
       'attack': 60,
       'locations': {},
+      'catchRatePercent': 40,
+      'eggSteps': 1200,
     },
     {
       'id': 450,
@@ -15263,6 +16180,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 1200,
     },
     {
       'id': 451,
@@ -15293,6 +16212,8 @@ module.exports = {
       },
       'attack': 42,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 452,
@@ -15322,6 +16243,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 453,
@@ -15352,6 +16275,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 40,
+      'eggSteps': 400,
     },
     {
       'id': 454,
@@ -15381,6 +16306,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 455,
@@ -15400,6 +16327,8 @@ module.exports = {
       },
       'attack': 124,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 1000,
     },
     {
       'id': 456,
@@ -15427,6 +16356,8 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 457,
@@ -15453,6 +16384,8 @@ module.exports = {
           'level': 31,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 458,
@@ -15486,6 +16419,8 @@ module.exports = {
       'locations': {
         '7': ['Mantine'],
       },
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 459,
@@ -15516,6 +16451,8 @@ module.exports = {
       },
       'attack': 65,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 460,
@@ -15545,6 +16482,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 461,
@@ -15567,6 +16506,8 @@ module.exports = {
       },
       'attack': 105,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 462,
@@ -15589,6 +16530,8 @@ module.exports = {
       },
       'attack': 143,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 463,
@@ -15608,6 +16551,8 @@ module.exports = {
       },
       'attack': 152,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 464,
@@ -15630,6 +16575,8 @@ module.exports = {
       },
       'attack': 153,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 465,
@@ -15649,6 +16596,8 @@ module.exports = {
       },
       'attack': 166,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 466,
@@ -15675,6 +16624,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
     },
     {
       'id': 467,
@@ -15701,6 +16652,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
     },
     {
       'id': 468,
@@ -15723,6 +16676,8 @@ module.exports = {
       },
       'attack': 134,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 400,
     },
     {
       'id': 469,
@@ -15745,6 +16700,8 @@ module.exports = {
       },
       'attack': 137,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 470,
@@ -15764,6 +16721,8 @@ module.exports = {
       },
       'attack': 118,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 471,
@@ -15783,6 +16742,8 @@ module.exports = {
       },
       'attack': 129,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 472,
@@ -15805,6 +16766,8 @@ module.exports = {
       },
       'attack': 107,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 473,
@@ -15827,6 +16790,8 @@ module.exports = {
       },
       'attack': 154,
       'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': 474,
@@ -15846,6 +16811,8 @@ module.exports = {
       },
       'attack': 150,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 475,
@@ -15868,6 +16835,8 @@ module.exports = {
       },
       'attack': 127,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 476,
@@ -15890,6 +16859,8 @@ module.exports = {
       },
       'attack': 109,
       'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 477,
@@ -15909,6 +16880,8 @@ module.exports = {
       },
       'attack': 111,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 478,
@@ -15931,6 +16904,8 @@ module.exports = {
       },
       'attack': 107,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 479,
@@ -15953,6 +16928,8 @@ module.exports = {
       },
       'attack': 82,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 480,
@@ -15972,6 +16949,8 @@ module.exports = {
       },
       'attack': 139,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 481,
@@ -15991,6 +16970,8 @@ module.exports = {
       },
       'attack': 174,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 482,
@@ -16010,6 +16991,8 @@ module.exports = {
       },
       'attack': 169,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 483,
@@ -16032,6 +17015,8 @@ module.exports = {
       },
       'attack': 251,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 484,
@@ -16054,6 +17039,8 @@ module.exports = {
       },
       'attack': 239,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 485,
@@ -16076,6 +17063,8 @@ module.exports = {
       },
       'attack': 191,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 400,
     },
     {
       'id': 486,
@@ -16095,6 +17084,8 @@ module.exports = {
       },
       'attack': 226,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 487,
@@ -16117,6 +17108,8 @@ module.exports = {
       },
       'attack': 242,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 488,
@@ -16136,6 +17129,8 @@ module.exports = {
       },
       'attack': 166,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 489,
@@ -16155,6 +17150,8 @@ module.exports = {
       },
       'attack': 120,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 1600,
     },
     {
       'id': 490,
@@ -16174,6 +17171,8 @@ module.exports = {
       },
       'attack': 184,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 400,
     },
     {
       'id': 491,
@@ -16193,6 +17192,8 @@ module.exports = {
       },
       'attack': 162,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 492,
@@ -16212,6 +17213,8 @@ module.exports = {
       },
       'attack': 184,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 493,
@@ -16231,6 +17234,8 @@ module.exports = {
       },
       'attack': 262,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 494,
@@ -16253,6 +17258,8 @@ module.exports = {
       },
       'attack': 184,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 495,
@@ -16280,6 +17287,8 @@ module.exports = {
       },
       'attack': 45,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 496,
@@ -16314,6 +17323,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 497,
@@ -16340,6 +17351,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 498,
@@ -16367,6 +17380,8 @@ module.exports = {
       },
       'attack': 55,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 499,
@@ -16404,6 +17419,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 500,
@@ -16433,6 +17450,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 501,
@@ -16460,6 +17479,8 @@ module.exports = {
       },
       'attack': 56,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 502,
@@ -16494,6 +17515,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 503,
@@ -16520,6 +17543,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 504,
@@ -16547,6 +17572,8 @@ module.exports = {
       },
       'attack': 36,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 505,
@@ -16573,6 +17600,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 506,
@@ -16600,6 +17629,8 @@ module.exports = {
       },
       'attack': 35,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 507,
@@ -16634,6 +17665,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 508,
@@ -16660,6 +17693,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 509,
@@ -16687,6 +17722,8 @@ module.exports = {
       },
       'attack': 39,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 510,
@@ -16713,6 +17750,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 511,
@@ -16740,6 +17779,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 512,
@@ -16766,6 +17807,8 @@ module.exports = {
           'stone': 3,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 513,
@@ -16793,6 +17836,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 514,
@@ -16819,6 +17864,8 @@ module.exports = {
           'stone': 0,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 515,
@@ -16846,6 +17893,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 516,
@@ -16872,6 +17921,8 @@ module.exports = {
           'stone': 1,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 517,
@@ -16899,6 +17950,8 @@ module.exports = {
       },
       'attack': 47,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 400,
     },
     {
       'id': 518,
@@ -16925,6 +17978,8 @@ module.exports = {
           'stone': 4,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 400,
     },
     {
       'id': 519,
@@ -16955,6 +18010,8 @@ module.exports = {
       },
       'attack': 38,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 520,
@@ -16992,6 +18049,8 @@ module.exports = {
           'level': 21,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 521,
@@ -17021,6 +18080,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 522,
@@ -17048,6 +18109,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 523,
@@ -17074,6 +18137,8 @@ module.exports = {
           'level': 27,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 524,
@@ -17101,6 +18166,8 @@ module.exports = {
       },
       'attack': 39,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 525,
@@ -17135,6 +18202,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 526,
@@ -17161,6 +18230,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 527,
@@ -17191,6 +18262,8 @@ module.exports = {
       },
       'attack': 53,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 600,
     },
     {
       'id': 528,
@@ -17220,6 +18293,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 529,
@@ -17247,6 +18322,8 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 530,
@@ -17276,6 +18353,8 @@ module.exports = {
           'level': 31,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 531,
@@ -17295,6 +18374,8 @@ module.exports = {
       },
       'attack': 104,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 532,
@@ -17322,6 +18403,8 @@ module.exports = {
       },
       'attack': 49,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 533,
@@ -17356,6 +18439,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 534,
@@ -17382,6 +18467,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 535,
@@ -17409,6 +18496,8 @@ module.exports = {
       },
       'attack': 45,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 536,
@@ -17446,6 +18535,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 537,
@@ -17475,6 +18566,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 538,
@@ -17494,6 +18587,8 @@ module.exports = {
       },
       'attack': 102,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 539,
@@ -17513,6 +18608,8 @@ module.exports = {
       },
       'attack': 88,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 540,
@@ -17543,6 +18640,8 @@ module.exports = {
       },
       'attack': 47,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 541,
@@ -17580,6 +18679,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 542,
@@ -17609,6 +18710,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 543,
@@ -17639,6 +18742,8 @@ module.exports = {
       },
       'attack': 28,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 544,
@@ -17676,6 +18781,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 545,
@@ -17705,6 +18812,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 546,
@@ -17735,6 +18844,8 @@ module.exports = {
       },
       'attack': 32,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 547,
@@ -17764,6 +18875,8 @@ module.exports = {
           'stone': 5,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 548,
@@ -17791,6 +18904,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 549,
@@ -17817,6 +18932,8 @@ module.exports = {
           'stone': 5,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 550,
@@ -17836,6 +18953,8 @@ module.exports = {
       },
       'attack': 107,
       'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 1600,
     },
     {
       'id': 551,
@@ -17866,6 +18985,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 552,
@@ -17903,6 +19024,8 @@ module.exports = {
           'level': 29,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 553,
@@ -17932,6 +19055,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 554,
@@ -17959,6 +19084,8 @@ module.exports = {
       },
       'attack': 42,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 555,
@@ -17985,6 +19112,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 556,
@@ -18004,6 +19133,8 @@ module.exports = {
       },
       'attack': 123,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 557,
@@ -18034,6 +19165,8 @@ module.exports = {
       },
       'attack': 48,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 558,
@@ -18063,6 +19196,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 559,
@@ -18093,6 +19228,8 @@ module.exports = {
       },
       'attack': 57,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 600,
     },
     {
       'id': 560,
@@ -18122,6 +19259,8 @@ module.exports = {
           'level': 39,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 561,
@@ -18144,6 +19283,8 @@ module.exports = {
       },
       'attack': 112,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 562,
@@ -18171,6 +19312,8 @@ module.exports = {
       },
       'attack': 40,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 1000,
     },
     {
       'id': 563,
@@ -18197,6 +19340,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 1000,
     },
     {
       'id': 564,
@@ -18227,6 +19372,8 @@ module.exports = {
       },
       'attack': 69,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 565,
@@ -18256,6 +19403,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 566,
@@ -18286,6 +19435,8 @@ module.exports = {
       },
       'attack': 85,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 567,
@@ -18315,6 +19466,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 568,
@@ -18342,6 +19495,8 @@ module.exports = {
       },
       'attack': 50,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 569,
@@ -18368,6 +19523,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 570,
@@ -18395,6 +19552,8 @@ module.exports = {
       },
       'attack': 56,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 1000,
     },
     {
       'id': 571,
@@ -18421,6 +19580,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 572,
@@ -18448,6 +19609,8 @@ module.exports = {
       },
       'attack': 44,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 573,
@@ -18474,6 +19637,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 600,
     },
     {
       'id': 574,
@@ -18501,6 +19666,8 @@ module.exports = {
       },
       'attack': 40,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 575,
@@ -18535,6 +19702,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 31,
+      'eggSteps': 800,
     },
     {
       'id': 576,
@@ -18561,6 +19730,8 @@ module.exports = {
           'level': 41,
         },
       },
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': 577,
@@ -18588,6 +19759,8 @@ module.exports = {
       },
       'attack': 45,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 578,
@@ -18622,6 +19795,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 31,
+      'eggSteps': 800,
     },
     {
       'id': 579,
@@ -18648,6 +19823,8 @@ module.exports = {
           'level': 41,
         },
       },
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': 580,
@@ -18678,6 +19855,8 @@ module.exports = {
       },
       'attack': 48,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 581,
@@ -18707,6 +19886,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 582,
@@ -18734,6 +19915,8 @@ module.exports = {
       },
       'attack': 47,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 583,
@@ -18768,6 +19951,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 584,
@@ -18794,6 +19979,8 @@ module.exports = {
           'level': 47,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 585,
@@ -18824,6 +20011,8 @@ module.exports = {
       },
       'attack': 55,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 586,
@@ -18853,6 +20042,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 587,
@@ -18875,6 +20066,8 @@ module.exports = {
       },
       'attack': 84,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 588,
@@ -18902,6 +20095,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 600,
     },
     {
       'id': 589,
@@ -18931,6 +20126,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 600,
     },
     {
       'id': 590,
@@ -18961,6 +20158,8 @@ module.exports = {
       },
       'attack': 57,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 591,
@@ -18990,6 +20189,8 @@ module.exports = {
           'level': 39,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 592,
@@ -19020,6 +20221,8 @@ module.exports = {
       },
       'attack': 57,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 593,
@@ -19049,6 +20252,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 594,
@@ -19068,6 +20273,8 @@ module.exports = {
       },
       'attack': 106,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 1600,
     },
     {
       'id': 595,
@@ -19098,6 +20305,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 596,
@@ -19127,6 +20336,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 597,
@@ -19157,6 +20368,8 @@ module.exports = {
       },
       'attack': 38,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 598,
@@ -19186,6 +20399,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 599,
@@ -19213,6 +20428,8 @@ module.exports = {
       },
       'attack': 46,
       'locations': {},
+      'catchRatePercent': 38,
+      'eggSteps': 800,
     },
     {
       'id': 600,
@@ -19247,6 +20464,8 @@ module.exports = {
           'level': 38,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 601,
@@ -19273,6 +20492,8 @@ module.exports = {
           'level': 49,
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 602,
@@ -19300,6 +20521,8 @@ module.exports = {
       },
       'attack': 37,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 603,
@@ -19334,6 +20557,8 @@ module.exports = {
           'level': 39,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 604,
@@ -19360,6 +20585,8 @@ module.exports = {
           'stone': 2,
         },
       },
+      'catchRatePercent': 12,
+      'eggSteps': 800,
     },
     {
       'id': 605,
@@ -19387,6 +20614,8 @@ module.exports = {
       },
       'attack': 68,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
     },
     {
       'id': 606,
@@ -19413,6 +20642,8 @@ module.exports = {
           'level': 42,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 607,
@@ -19443,6 +20674,8 @@ module.exports = {
       },
       'attack': 42,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 608,
@@ -19480,6 +20713,8 @@ module.exports = {
           'level': 41,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 609,
@@ -19509,6 +20744,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 610,
@@ -19536,6 +20773,8 @@ module.exports = {
       },
       'attack': 48,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 1600,
     },
     {
       'id': 611,
@@ -19570,6 +20809,8 @@ module.exports = {
           'level': 38,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 1600,
     },
     {
       'id': 612,
@@ -19596,6 +20837,8 @@ module.exports = {
           'level': 48,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 613,
@@ -19623,6 +20866,8 @@ module.exports = {
       },
       'attack': 57,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 614,
@@ -19649,6 +20894,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 615,
@@ -19668,6 +20915,8 @@ module.exports = {
       },
       'attack': 108,
       'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 616,
@@ -19695,6 +20944,8 @@ module.exports = {
       },
       'attack': 45,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 600,
     },
     {
       'id': 617,
@@ -19721,6 +20972,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 600,
     },
     {
       'id': 618,
@@ -19743,6 +20996,8 @@ module.exports = {
       },
       'attack': 129,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 619,
@@ -19770,6 +21025,8 @@ module.exports = {
       },
       'attack': 62,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 1000,
     },
     {
       'id': 620,
@@ -19796,6 +21053,8 @@ module.exports = {
           'level': 50,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
     },
     {
       'id': 621,
@@ -19815,6 +21074,8 @@ module.exports = {
       },
       'attack': 127,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 622,
@@ -19845,6 +21106,8 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 1000,
     },
     {
       'id': 623,
@@ -19874,6 +21137,8 @@ module.exports = {
           'level': 43,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 1000,
     },
     {
       'id': 624,
@@ -19904,6 +21169,8 @@ module.exports = {
       },
       'attack': 55,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 625,
@@ -19933,6 +21200,8 @@ module.exports = {
           'level': 52,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 626,
@@ -19952,6 +21221,8 @@ module.exports = {
       },
       'attack': 116,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 627,
@@ -19982,6 +21253,8 @@ module.exports = {
       },
       'attack': 64,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 628,
@@ -20011,6 +21284,8 @@ module.exports = {
           'level': 54,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 629,
@@ -20041,6 +21316,8 @@ module.exports = {
       },
       'attack': 67,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 630,
@@ -20070,6 +21347,8 @@ module.exports = {
           'level': 54,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 631,
@@ -20089,6 +21368,8 @@ module.exports = {
       },
       'attack': 138,
       'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 632,
@@ -20111,6 +21392,8 @@ module.exports = {
       },
       'attack': 92,
       'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 633,
@@ -20141,6 +21424,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 634,
@@ -20178,6 +21463,8 @@ module.exports = {
           'level': 50,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 635,
@@ -20207,6 +21494,8 @@ module.exports = {
           'level': 64,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 636,
@@ -20237,6 +21526,8 @@ module.exports = {
       },
       'attack': 68,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 637,
@@ -20266,6 +21557,8 @@ module.exports = {
           'level': 59,
         },
       },
+      'catchRatePercent': 7,
+      'eggSteps': 1600,
     },
     {
       'id': 638,
@@ -20288,6 +21581,8 @@ module.exports = {
       },
       'attack': 157,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 639,
@@ -20310,6 +21605,8 @@ module.exports = {
       },
       'attack': 163,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 640,
@@ -20332,6 +21629,8 @@ module.exports = {
       },
       'attack': 157,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 641,
@@ -20351,6 +21650,8 @@ module.exports = {
       },
       'attack': 170,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 642,
@@ -20373,6 +21674,8 @@ module.exports = {
       },
       'attack': 170,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 643,
@@ -20395,6 +21698,8 @@ module.exports = {
       },
       'attack': 251,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 644,
@@ -20417,6 +21722,8 @@ module.exports = {
       },
       'attack': 251,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 645,
@@ -20439,6 +21746,8 @@ module.exports = {
       },
       'attack': 204,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 646,
@@ -20461,6 +21770,8 @@ module.exports = {
       },
       'attack': 250,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 647,
@@ -20483,6 +21794,8 @@ module.exports = {
       },
       'attack': 163,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 3200,
     },
     {
       'id': 648,
@@ -20505,6 +21818,8 @@ module.exports = {
       },
       'attack': 182,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 649,
@@ -20527,6 +21842,8 @@ module.exports = {
       },
       'attack': 179,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 650,
@@ -20554,6 +21871,8 @@ module.exports = {
       },
       'attack': 55,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 651,
@@ -20588,6 +21907,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 652,
@@ -20617,6 +21938,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 653,
@@ -20644,6 +21967,8 @@ module.exports = {
       },
       'attack': 46,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 654,
@@ -20678,6 +22003,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 655,
@@ -20707,6 +22034,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 656,
@@ -20734,6 +22063,8 @@ module.exports = {
       },
       'attack': 48,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 657,
@@ -20768,6 +22099,8 @@ module.exports = {
           'level': 16,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 658,
@@ -20797,6 +22130,8 @@ module.exports = {
           'level': 36,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 659,
@@ -20824,6 +22159,8 @@ module.exports = {
       },
       'attack': 27,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 660,
@@ -20853,6 +22190,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
     },
     {
       'id': 661,
@@ -20883,6 +22222,8 @@ module.exports = {
       },
       'attack': 39,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 662,
@@ -20920,6 +22261,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 663,
@@ -20949,6 +22292,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 664,
@@ -20976,6 +22321,8 @@ module.exports = {
       },
       'attack': 22,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 665,
@@ -21010,6 +22357,8 @@ module.exports = {
           'level': 9,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 666,
@@ -21039,6 +22388,8 @@ module.exports = {
           'level': 12,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 667,
@@ -21069,6 +22420,8 @@ module.exports = {
       },
       'attack': 69,
       'locations': {},
+      'catchRatePercent': 57,
+      'eggSteps': 800,
     },
     {
       'id': 668,
@@ -21098,6 +22451,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 22,
+      'eggSteps': 800,
     },
     {
       'id': 669,
@@ -21125,6 +22480,8 @@ module.exports = {
       },
       'attack': 45,
       'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 670,
@@ -21159,6 +22516,8 @@ module.exports = {
           'level': 19,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 671,
@@ -21185,6 +22544,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 672,
@@ -21212,6 +22573,8 @@ module.exports = {
       },
       'attack': 71,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 673,
@@ -21238,6 +22601,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 674,
@@ -21265,6 +22630,8 @@ module.exports = {
       },
       'attack': 69,
       'locations': {},
+      'catchRatePercent': 57,
+      'eggSteps': 1000,
     },
     {
       'id': 675,
@@ -21294,6 +22661,8 @@ module.exports = {
           'level': 32,
         },
       },
+      'catchRatePercent': 22,
+      'eggSteps': 1000,
     },
     {
       'id': 676,
@@ -21313,6 +22682,8 @@ module.exports = {
       },
       'attack': 104,
       'locations': {},
+      'catchRatePercent': 44,
+      'eggSteps': 800,
     },
     {
       'id': 677,
@@ -21340,6 +22711,8 @@ module.exports = {
       },
       'attack': 63,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 678,
@@ -21366,6 +22739,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 679,
@@ -21396,6 +22771,8 @@ module.exports = {
       },
       'attack': 50,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 680,
@@ -21433,6 +22810,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 681,
@@ -21462,6 +22841,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 682,
@@ -21489,6 +22870,8 @@ module.exports = {
       },
       'attack': 71,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 683,
@@ -21515,6 +22898,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 40,
+      'eggSteps': 800,
     },
     {
       'id': 684,
@@ -21542,6 +22927,8 @@ module.exports = {
       },
       'attack': 62,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
     },
     {
       'id': 685,
@@ -21568,6 +22955,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 40,
+      'eggSteps': 800,
     },
     {
       'id': 686,
@@ -21598,6 +22987,8 @@ module.exports = {
       },
       'attack': 44,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 687,
@@ -21627,6 +23018,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 26,
+      'eggSteps': 800,
     },
     {
       'id': 688,
@@ -21657,6 +23050,8 @@ module.exports = {
       },
       'attack': 44,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 689,
@@ -21686,6 +23081,8 @@ module.exports = {
           'level': 39,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 690,
@@ -21716,6 +23113,8 @@ module.exports = {
       },
       'attack': 59,
       'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 691,
@@ -21745,6 +23144,8 @@ module.exports = {
           'level': 48,
         },
       },
+      'catchRatePercent': 20,
+      'eggSteps': 800,
     },
     {
       'id': 692,
@@ -21772,6 +23173,8 @@ module.exports = {
       },
       'attack': 58,
       'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 600,
     },
     {
       'id': 693,
@@ -21798,6 +23201,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 20,
+      'eggSteps': 600,
     },
     {
       'id': 694,
@@ -21828,6 +23233,8 @@ module.exports = {
       },
       'attack': 41,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 695,
@@ -21857,6 +23264,8 @@ module.exports = {
           'stone': 5,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 696,
@@ -21887,6 +23296,8 @@ module.exports = {
       },
       'attack': 69,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 697,
@@ -21916,6 +23327,8 @@ module.exports = {
           'level': 39,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 698,
@@ -21946,6 +23359,8 @@ module.exports = {
       },
       'attack': 78,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 699,
@@ -21975,6 +23390,8 @@ module.exports = {
           'level': 39,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
     },
     {
       'id': 700,
@@ -21994,6 +23411,8 @@ module.exports = {
       },
       'attack': 143,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
     },
     {
       'id': 701,
@@ -22016,6 +23435,8 @@ module.exports = {
       },
       'attack': 117,
       'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
     },
     {
       'id': 702,
@@ -22038,6 +23459,8 @@ module.exports = {
       },
       'attack': 87,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 800,
     },
     {
       'id': 703,
@@ -22060,6 +23483,8 @@ module.exports = {
       },
       'attack': 80,
       'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 1000,
     },
     {
       'id': 704,
@@ -22087,6 +23512,8 @@ module.exports = {
       },
       'attack': 48,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 705,
@@ -22121,6 +23548,8 @@ module.exports = {
           'level': 40,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 706,
@@ -22147,6 +23576,8 @@ module.exports = {
           'level': 50,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 707,
@@ -22169,6 +23600,8 @@ module.exports = {
       },
       'attack': 106,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 708,
@@ -22199,6 +23632,8 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 709,
@@ -22228,6 +23663,8 @@ module.exports = {
           'stone': 6,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 710,
@@ -22250,6 +23687,8 @@ module.exports = {
       },
       'attack': 54,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 711,
@@ -22272,6 +23711,8 @@ module.exports = {
       },
       'attack': 97,
       'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 712,
@@ -22299,6 +23740,8 @@ module.exports = {
       },
       'attack': 47,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 713,
@@ -22325,6 +23768,8 @@ module.exports = {
           'level': 37,
         },
       },
+      'catchRatePercent': 20,
+      'eggSteps': 800,
     },
     {
       'id': 714,
@@ -22355,6 +23800,8 @@ module.exports = {
       },
       'attack': 29,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 715,
@@ -22384,6 +23831,8 @@ module.exports = {
           'level': 48,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 716,
@@ -22403,6 +23852,8 @@ module.exports = {
       },
       'attack': 260,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 717,
@@ -22425,6 +23876,8 @@ module.exports = {
       },
       'attack': 260,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 718,
@@ -22447,6 +23900,8 @@ module.exports = {
       },
       'attack': 179,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 719,
@@ -22469,6 +23924,8 @@ module.exports = {
       },
       'attack': 151,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 1000,
     },
     {
       'id': 720,
@@ -22491,6 +23948,8 @@ module.exports = {
       },
       'attack': 193,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 721,
@@ -22513,6 +23972,8 @@ module.exports = {
       },
       'attack': 193,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 722,
@@ -22543,6 +24004,8 @@ module.exports = {
       },
       'attack': 59,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 723,
@@ -22580,6 +24043,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 724,
@@ -22609,6 +24074,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 725,
@@ -22636,6 +24103,8 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 726,
@@ -22670,6 +24139,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 727,
@@ -22699,6 +24170,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 728,
@@ -22726,6 +24199,8 @@ module.exports = {
       },
       'attack': 58,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 729,
@@ -22760,6 +24235,8 @@ module.exports = {
           'level': 17,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 730,
@@ -22789,6 +24266,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 731,
@@ -22819,6 +24298,8 @@ module.exports = {
       },
       'attack': 32,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 732,
@@ -22856,6 +24337,8 @@ module.exports = {
           'level': 14,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 733,
@@ -22885,6 +24368,8 @@ module.exports = {
           'level': 28,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 734,
@@ -22912,6 +24397,8 @@ module.exports = {
       },
       'attack': 35,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 735,
@@ -22938,6 +24425,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
     },
     {
       'id': 736,
@@ -22965,6 +24454,8 @@ module.exports = {
       },
       'attack': 51,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
     },
     {
       'id': 737,
@@ -23002,6 +24493,8 @@ module.exports = {
           'level': 20,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
     },
     {
       'id': 738,
@@ -23031,6 +24524,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 739,
@@ -23058,6 +24553,8 @@ module.exports = {
       },
       'attack': 56,
       'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 800,
     },
     {
       'id': 740,
@@ -23087,6 +24584,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 741,
@@ -23109,6 +24608,8 @@ module.exports = {
       },
       'attack': 114,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 742,
@@ -23139,6 +24640,8 @@ module.exports = {
       },
       'attack': 41,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 743,
@@ -23168,6 +24671,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 744,
@@ -23195,6 +24700,8 @@ module.exports = {
       },
       'attack': 38,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 600,
     },
     {
       'id': 745,
@@ -23221,6 +24728,8 @@ module.exports = {
           'level': 25,
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 600,
     },
     {
       'id': 746,
@@ -23240,6 +24749,8 @@ module.exports = {
       },
       'attack': 16,
       'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 600,
     },
     {
       'id': 747,
@@ -23270,6 +24781,8 @@ module.exports = {
       },
       'attack': 48,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 748,
@@ -23299,6 +24812,8 @@ module.exports = {
           'level': 38,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 749,
@@ -23326,6 +24841,8 @@ module.exports = {
       },
       'attack': 82,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 750,
@@ -23352,6 +24869,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 751,
@@ -23382,6 +24901,8 @@ module.exports = {
       },
       'attack': 36,
       'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 600,
     },
     {
       'id': 752,
@@ -23411,6 +24932,8 @@ module.exports = {
           'level': 22,
         },
       },
+      'catchRatePercent': 31,
+      'eggSteps': 600,
     },
     {
       'id': 753,
@@ -23438,6 +24961,8 @@ module.exports = {
       },
       'attack': 37,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 754,
@@ -23464,6 +24989,8 @@ module.exports = {
           'level': 34,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 755,
@@ -23494,6 +25021,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
     },
     {
       'id': 756,
@@ -23523,6 +25052,8 @@ module.exports = {
           'level': 24,
         },
       },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 757,
@@ -23553,6 +25084,8 @@ module.exports = {
       },
       'attack': 50,
       'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 758,
@@ -23582,6 +25115,8 @@ module.exports = {
           'level': 33,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 759,
@@ -23612,6 +25147,8 @@ module.exports = {
       },
       'attack': 65,
       'locations': {},
+      'catchRatePercent': 40,
+      'eggSteps': 600,
     },
     {
       'id': 760,
@@ -23641,6 +25178,8 @@ module.exports = {
           'level': 27,
         },
       },
+      'catchRatePercent': 24,
+      'eggSteps': 600,
     },
     {
       'id': 761,
@@ -23668,6 +25207,8 @@ module.exports = {
       },
       'attack': 24,
       'locations': {},
+      'catchRatePercent': 60,
+      'eggSteps': 800,
     },
     {
       'id': 762,
@@ -23702,6 +25243,8 @@ module.exports = {
           'level': 18,
         },
       },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
     },
     {
       'id': 763,
@@ -23728,6 +25271,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 764,
@@ -23747,6 +25292,8 @@ module.exports = {
       },
       'attack': 89,
       'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 800,
     },
     {
       'id': 765,
@@ -23769,6 +25316,8 @@ module.exports = {
       },
       'attack': 124,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 766,
@@ -23788,6 +25337,8 @@ module.exports = {
       },
       'attack': 113,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 767,
@@ -23818,6 +25369,8 @@ module.exports = {
       },
       'attack': 18,
       'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 800,
     },
     {
       'id': 768,
@@ -23847,6 +25400,8 @@ module.exports = {
           'level': 30,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 769,
@@ -23877,6 +25432,8 @@ module.exports = {
       },
       'attack': 62,
       'locations': {},
+      'catchRatePercent': 40,
+      'eggSteps': 600,
     },
     {
       'id': 770,
@@ -23906,6 +25463,8 @@ module.exports = {
           'level': 42,
         },
       },
+      'catchRatePercent': 21,
+      'eggSteps': 600,
     },
     {
       'id': 771,
@@ -23925,6 +25484,8 @@ module.exports = {
       },
       'attack': 61,
       'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 600,
     },
     {
       'id': 772,
@@ -23952,6 +25513,8 @@ module.exports = {
       },
       'attack': 163,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 773,
@@ -23978,6 +25541,8 @@ module.exports = {
           'level': 100,
         },
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 774,
@@ -24000,6 +25565,8 @@ module.exports = {
       },
       'attack': 87,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
     },
     {
       'id': 775,
@@ -24019,6 +25586,8 @@ module.exports = {
       },
       'attack': 121,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 776,
@@ -24041,6 +25610,8 @@ module.exports = {
       },
       'attack': 118,
       'locations': {},
+      'catchRatePercent': 24,
+      'eggSteps': 800,
     },
     {
       'id': 777,
@@ -24063,6 +25634,8 @@ module.exports = {
       },
       'attack': 82,
       'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 400,
     },
     {
       'id': 778,
@@ -24085,6 +25658,8 @@ module.exports = {
       },
       'attack': 91,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 779,
@@ -24107,6 +25682,8 @@ module.exports = {
       },
       'attack': 112,
       'locations': {},
+      'catchRatePercent': 26,
+      'eggSteps': 600,
     },
     {
       'id': 780,
@@ -24129,6 +25706,8 @@ module.exports = {
       },
       'attack': 131,
       'locations': {},
+      'catchRatePercent': 24,
+      'eggSteps': 800,
     },
     {
       'id': 781,
@@ -24151,6 +25730,8 @@ module.exports = {
       },
       'attack': 150,
       'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 1000,
     },
     {
       'id': 782,
@@ -24178,6 +25759,8 @@ module.exports = {
       },
       'attack': 46,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 783,
@@ -24215,6 +25798,8 @@ module.exports = {
           'level': 35,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 784,
@@ -24244,6 +25829,8 @@ module.exports = {
           'level': 45,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 785,
@@ -24266,6 +25853,8 @@ module.exports = {
       },
       'attack': 148,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 600,
     },
     {
       'id': 786,
@@ -24288,6 +25877,8 @@ module.exports = {
       },
       'attack': 156,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 600,
     },
     {
       'id': 787,
@@ -24310,6 +25901,8 @@ module.exports = {
       },
       'attack': 162,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 600,
     },
     {
       'id': 788,
@@ -24332,6 +25925,8 @@ module.exports = {
       },
       'attack': 144,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 600,
     },
     {
       'id': 789,
@@ -24359,6 +25954,8 @@ module.exports = {
       },
       'attack': 22,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 790,
@@ -24393,6 +25990,8 @@ module.exports = {
           'level': 43,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 791,
@@ -24422,6 +26021,8 @@ module.exports = {
           'level': 53,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 792,
@@ -24444,6 +26045,8 @@ module.exports = {
       },
       'attack': 259,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 793,
@@ -24466,6 +26069,8 @@ module.exports = {
       },
       'attack': 144,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 794,
@@ -24488,6 +26093,8 @@ module.exports = {
       },
       'attack': 153,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 795,
@@ -24510,6 +26117,8 @@ module.exports = {
       },
       'attack': 140,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 796,
@@ -24529,6 +26138,8 @@ module.exports = {
       },
       'attack': 173,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 797,
@@ -24551,6 +26162,8 @@ module.exports = {
       },
       'attack': 185,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 798,
@@ -24573,6 +26186,8 @@ module.exports = {
       },
       'attack': 120,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 799,
@@ -24595,6 +26210,8 @@ module.exports = {
       },
       'attack': 196,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 800,
@@ -24614,6 +26231,8 @@ module.exports = {
       },
       'attack': 200,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 4800,
     },
     {
       'id': 801,
@@ -24636,6 +26255,8 @@ module.exports = {
       },
       'attack': 188,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 802,
@@ -24658,6 +26279,8 @@ module.exports = {
       },
       'attack': 174,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 803,
@@ -24685,6 +26308,8 @@ module.exports = {
       },
       'attack': 93,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 804,
@@ -24714,6 +26339,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
     },
     {
       'id': 805,
@@ -24736,6 +26363,8 @@ module.exports = {
       },
       'attack': 133,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 4800,
     },
     {
       'id': 806,
@@ -24758,6 +26387,8 @@ module.exports = {
       },
       'attack': 150,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 4800,
     },
     {
       'id': 807,
@@ -24777,6 +26408,8 @@ module.exports = {
       },
       'attack': 168,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 808,
@@ -24804,6 +26437,8 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 809,
@@ -24830,6 +26465,8 @@ module.exports = {
           'stone': -1,
         },
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
     },
     {
       'id': 0,
@@ -24860,6 +26497,8 @@ module.exports = {
       },
       'attack': 17,
       'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': -1,
@@ -24882,6 +26521,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': -2,
@@ -24904,6 +26545,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': -3,
@@ -24923,6 +26566,8 @@ module.exports = {
       },
       'attack': 246,
       'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
     },
     {
       'id': -4,
@@ -24945,6 +26590,8 @@ module.exports = {
       },
       'attack': 196,
       'locations': {},
+      'catchRatePercent': 9,
+      'eggSteps': 1600,
     },
     {
       'id': -5,
@@ -24964,6 +26611,8 @@ module.exports = {
       },
       'attack': 28,
       'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 400,
     },
     {
       'id': -6,
@@ -24986,6 +26635,8 @@ module.exports = {
       },
       'attack': 53,
       'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 800,
     },
     {
       'id': -7,
@@ -25005,6 +26656,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': -8,
@@ -25024,6 +26677,8 @@ module.exports = {
       },
       'attack': 43,
       'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': -9,
@@ -25043,6 +26698,8 @@ module.exports = {
       },
       'attack': 54,
       'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 1400,
     },
     {
       'id': -100,
@@ -25065,6 +26722,8 @@ module.exports = {
       },
       'attack': 194,
       'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 4800,
     },
     {
       'id': -101,
@@ -25087,6 +26746,8 @@ module.exports = {
       },
       'attack': 204,
       'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 4800,
     },
     {
       'id': -111,
@@ -25109,6 +26770,8 @@ module.exports = {
       },
       'attack': 199,
       'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 4800,
     },
     {
       'id': -115,
@@ -25131,6 +26794,8 @@ module.exports = {
       },
       'attack': 329,
       'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
     },
   ],
   'GameConstants': {
