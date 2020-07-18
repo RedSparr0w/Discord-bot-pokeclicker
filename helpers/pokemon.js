@@ -1,5 +1,29 @@
-// copy(`module.exports = ${JSON.stringify({PokemonType, LevelType, levelRequirements, pokemonList: pokemonList.map(p => { p.locations = PokemonHelper.getPokemonLocations(p.name); return p; }), GameConstants}, null, 2)}`)
+// copy(`module.exports = ${JSON.stringify({PokemonLocationType, PokemonType, LevelType, levelRequirements, pokemonList: pokemonList.map(p => { p.locations = PokemonHelper.getPokemonLocations(p.name); return p; }), GameConstants}, null, 2)}`)
 module.exports = {
+  'PokemonLocationType': {
+    '0': 'Route',
+    '1': 'Roaming',
+    '2': 'Dungeon',
+    '3': 'DungeonBoss',
+    '4': 'LevelEvolution',
+    '5': 'StoneEvolution',
+    '6': 'Egg',
+    '7': 'Baby',
+    '8': 'Shop',
+    '9': 'Fossil',
+    '10': 'Safari',
+    'Route': 0,
+    'Roaming': 1,
+    'Dungeon': 2,
+    'DungeonBoss': 3,
+    'LevelEvolution': 4,
+    'StoneEvolution': 5,
+    'Egg': 6,
+    'Baby': 7,
+    'Shop': 8,
+    'Fossil': 9,
+    'Safari': 10,
+  },
   'PokemonType': {
     '0': 'Normal',
     '1': 'Fire',
