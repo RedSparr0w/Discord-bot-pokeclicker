@@ -4,14 +4,13 @@ const { pokemonList, LevelType, PokemonType, GameConstants, PokemonLocationType,
 module.exports = {
   name        : 'pokemon',
   aliases     : ['p', 'poke', 'pinfo', 'pokeinfo'],
-  description : 'Short description',
+  description : 'Get PokéClicker game info about a specific Pokémon',
   args        : ['id/name', 'shiny?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-
     let id = args.join(' ').toLowerCase().trim();
     let shiny = false;
     if (id.endsWith(' shiny')) {

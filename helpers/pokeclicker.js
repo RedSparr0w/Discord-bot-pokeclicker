@@ -31,7 +31,7 @@ let getRouteTypes = () => {
     return regionRoutes;
 }
 copy(`module.exports = ${JSON.stringify({
-  RouteTypes: getRouteTypes(),
+  RouteShardTypes: getRouteTypes(),
   PokemonLocationType,
   PokemonType,
   LevelType,
@@ -48,7 +48,7 @@ copy(`module.exports = ${JSON.stringify({
 */
 
 module.exports = {
-  'RouteTypes': {
+  'RouteShardTypes': {
     '0': {
       '1': {
         '0': 100,

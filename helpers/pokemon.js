@@ -19,6 +19,36 @@ const pokemonTypeIcons = {
   'Fairy': '<:fairy_icon:733983301244813362>',
 };
 
+const findShardBestRoute = (RouteShardTypes, type, onlyRegion = -1) => {
+  let highestPercent = 0;
+  let bestRoute = 0;
+  Object.entries(RouteShardTypes).forEach(([region, routes]) => {
+    if (onlyRegion >= 0 && onlyRegion != region) return;
+    Object.entries(routes).forEach(([route, types]) => {
+      if (types[type] && types[type] > highestPercent) {
+        bestRoute = route;
+        highestPercent = types[type];
+      }
+    });
+  });
+  return { route: bestRoute, chance: highestPercent };
+};
+
+const findShardRoutes = (RouteShardTypes, type) => {
+  const regions = {};
+  Object.entries(RouteShardTypes).forEach(([region, routes]) => {
+    regions[region] = {};
+    Object.entries(routes).forEach(([route, types]) => {
+      if (types[type] > 0) {
+        regions[region][route] = types[type];
+      }
+    });
+  });
+  return regions;
+};
+
 module.exports = {
   pokemonTypeIcons,
+  findShardBestRoute,
+  findShardRoutes,
 };
