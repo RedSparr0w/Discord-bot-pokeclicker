@@ -8,12 +8,19 @@ module.exports = {
   name        : 'dailydeal',
   aliases     : ['dd', 'daily', 'deal', 'deals', 'dailydeals', 'ug', 'underground'],
   description : 'Get a list of daily deals for the next 5 days',
-  args        : [],
+  args        : ['from date(2020-12-31)?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
+    let [date] = args;
+    if (date) {
+      if (!/\d{4}-\d{2}-\d{2}/.test(date)) return msg.reply(`Invalid date specified: \`${date}\`\nMust be \`YYYY-MM-DD\` format`);
+      date = date.split('-');
+      date[1]--;
+    }
+
     const embed = new MessageEmbed()
       .setTitle('Upcoming Daily Deals')
       //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
@@ -24,8 +31,13 @@ module.exports = {
     const allItemsLength = UndergroundItem.list.map(item => item.name.length);
     const padding = Math.max(...allItemsLength);
 
-    const today = new Date();
-    const dateToCheck = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours() - 13);
+    let dateToCheck;
+    if (date) {
+      dateToCheck = new Date(date[0], date[1], date[2]);
+    } else {
+      const today = new Date();
+      dateToCheck = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours() - 13);
+    }
 
     const calculateProfitString = (deal) => {
       if (deal.item1.value >= 100 || deal.item1.value <= 1) deal.item1.value = 0;
