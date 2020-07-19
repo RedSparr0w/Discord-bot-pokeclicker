@@ -37,9 +37,6 @@ module.exports = {
       dateToCheck.setDate(dateToCheck.getDate() + 1);
     }
 
-    // Spacing for the footer
-    embed.addField('\u200b', '\u200b');
-
     msg.channel.send({ embed });
   },
 };

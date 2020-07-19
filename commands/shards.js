@@ -43,9 +43,6 @@ module.exports = {
       embed.addField(`❯ ${GameConstants.Region[region].toUpperCase()}`, `\`\`\`ini\n${description.join('\n')}\n\`\`\``, true);
     });
 
-    // Spacing for the footer
-    embed.addField('\u200b', '\u200b');
-
     msg.channel.send({ embed });
   },
 };
