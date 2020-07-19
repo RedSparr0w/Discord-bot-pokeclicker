@@ -21,7 +21,7 @@ module.exports = {
       .setColor('#3498db')
       .setFooter('Data is up to date as of v0.4.12');
 
-    const pokemon = pokemonList.map(p=>({ id: p.id, name: p.name, attack: p.attack, apc: (p.attack / p.eggCycles).toFixed(1)}));
+    const pokemon = pokemonList.map(p=>({ id: p.id, name: p.name, attack: p.attack, apc: +(p.attack / p.eggCycles).toFixed(1)}));
 
     const kantoPokemon = pokemon.filter(p => p.id >= 1 && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto]);
     const johtoPokemon = pokemon.filter(p => p.id > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto] && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto]);
