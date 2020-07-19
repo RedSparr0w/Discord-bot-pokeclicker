@@ -27,15 +27,18 @@ module.exports = {
     const today = new Date();
     const dateToCheck = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
 
-    const calculateProfit = (deal) => {
+    const calculateProfitString = (deal) => {
       if (deal.item1.value >= 100 || deal.item1.value <= 1) deal.item1.value = 0;
       if (deal.item2.value >= 100 || deal.item2.value <= 1) deal.item2.value = 0;
-      return (deal.item2.value * deal.amount2) - (deal.item1.value * deal.amount1);
-    };
-
-    const calculateProfitString = (deal) => {
-      const profit = calculateProfit(deal);
-      return profit == 0 ? '---' : profit > 0 ? `+${profit.toString().padEnd(2, ' ')}💎` : `${profit.toString().padEnd(3, ' ')}💎`;
+      if (deal.item1.value || deal.item2.value) {
+        // An item is worth diamonds
+        const profit = (deal.item2.value * deal.amount2) - (deal.item1.value * deal.amount1);
+        return profit == 0 ? '---' : profit > 0 ? `+${profit.toString().padEnd(2, ' ')}💎` : `${profit.toString().padEnd(3, ' ')}💎`;
+      } else {
+        // Neither item is worth diamonds
+        const profit = deal.amount2 - deal.amount1;
+        return profit == 0 ? '---' : profit > 0 ? `+${profit.toString().padEnd(2, ' ')}📦` : `${profit.toString().padEnd(3, ' ')}📦`;
+      }
     };
 
     for (let i = 0; i < 5; i++) {
