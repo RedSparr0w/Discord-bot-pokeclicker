@@ -25,7 +25,7 @@ module.exports = {
     const padding = Math.max(...allItemsLength);
 
     const today = new Date();
-    const dateToCheck = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+    const dateToCheck = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours() - 13);
 
     const calculateProfitString = (deal) => {
       if (deal.item1.value >= 100 || deal.item1.value <= 1) deal.item1.value = 0;
