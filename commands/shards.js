@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { PokemonType, GameConstants, pokemonTypeIcons, RouteShardTypes, findShardRoutes, findShardBestRoute } = require('../helpers.js');
+const { PokemonType, GameConstants, pokemonTypeIcons, RouteShardTypes, findShardRoutes, findShardBestRoute, stringDistance } = require('../helpers.js');
 
 module.exports = {
   name        : 'shards',
@@ -13,7 +13,19 @@ module.exports = {
   execute     : async (msg, args) => {
     let [type, order] = args;
     type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
-    if (!(PokemonType[type] >= 0)) return msg.reply(`Invalid type: \`${type}\``);
+    if (!(PokemonType[type] >= 0)) {
+      let newType = '';
+      let newDistance = 10;
+      Object.keys(PokemonType).forEach(typ => {
+        const distance = stringDistance(type.toLowerCase(), typ.toLowerCase());
+        if (isNaN(typ) && PokemonType[typ] >= 0 && distance <= Math.ceil(typ.length / 2) && (distance < newDistance || typ.startsWith(type))) {
+          newDistance = distance;
+          newType = typ;
+        }
+      });
+      if (!newType) return msg.reply(`Invalid type: \`${type}\``);
+      type = newType;
+    }
     
     const sortFunc = order == 'chance' ? (a, b) => b[1] - a[1] : (a, b) => a[0] - b[0];
 
