@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
-const { PokemonType, GameConstants, pokemonTypeIcons, RouteShardTypes, findShardRoutes, findShardBestRoute, stringDistance } = require('../helpers.js');
+const FuzzySet = require('fuzzyset');
+const { PokemonType, GameConstants, pokemonTypeIcons, RouteShardTypes, findShardRoutes, findShardBestRoute } = require('../helpers.js');
 
 module.exports = {
   name        : 'shards',
@@ -14,17 +15,12 @@ module.exports = {
     let [type, order] = args;
     type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
     if (!(PokemonType[type] >= 0)) {
-      let newType = '';
-      let newDistance = 10;
-      Object.keys(PokemonType).forEach(typ => {
-        const distance = stringDistance(type.toLowerCase(), typ.toLowerCase());
-        if (isNaN(typ) && PokemonType[typ] >= 0 && distance <= Math.ceil(typ.length / 2) && (distance < newDistance || typ.startsWith(type))) {
-          newDistance = distance;
-          newType = typ;
-        }
-      });
+      
+      const fuzzy = FuzzySet(Object.keys(PokemonType).filter(isNaN).filter(t => t != 'None'));
+
+      const newType = fuzzy.get(type);
       if (!newType) return msg.reply(`Invalid type: \`${type}\``);
-      type = newType;
+      type = newType[0][1];
     }
     
     const sortFunc = order == 'chance' ? (a, b) => b[1] - a[1] : (a, b) => a[0] - b[0];

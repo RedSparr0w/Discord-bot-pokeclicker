@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
-const { pokemonList, LevelType, PokemonType, GameConstants, PokemonLocationType, pokemonTypeIcons, stringDistance } = require('../helpers.js');
+const FuzzySet = require('fuzzyset');
+const { pokemonList, LevelType, PokemonType, GameConstants, PokemonLocationType, pokemonTypeIcons } = require('../helpers.js');
 
 module.exports = {
   name        : 'pokemon',
@@ -17,19 +18,15 @@ module.exports = {
       id = id.slice(0, id.length - 6);
       shiny = true;
     }
+
     let pokemon = pokemonList.find(p => p.id == +id || p.name.toLowerCase() == id);
     if (!pokemon && isNaN(id)) {
-      let newPokemon;
-      let newDistance = 10;
-      pokemonList.forEach(p => {
-        if (!p.name) return;
-        const distance = stringDistance(p.name.toLowerCase(), id);
-        if (distance < newDistance && distance <= p.name.length / 2) {
-          newDistance = distance;
-          newPokemon = p;
-        }
-      });
-      pokemon = newPokemon;
+      const fuzzy = FuzzySet(pokemonList.map(p => p.name.toLowerCase()));
+
+      const newNames = fuzzy.get(id);
+      if (newNames) {
+        pokemon = pokemonList.find(p => p.name.toLowerCase() == newNames[0][1]);
+      }
     }
     if (!pokemon) pokemon = pokemonList.find(p => p.id == 0);
     if (!pokemon) return;

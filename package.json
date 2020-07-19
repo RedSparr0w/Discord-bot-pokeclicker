@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.0.1",
+    "fuzzyset": "^1.0.5",
     "sqlite": "^3.0.3"
   },
   "devDependencies": {
