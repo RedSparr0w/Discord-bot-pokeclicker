@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const {
   DailyDeal,
   UndergroundItem,
+  dateToString,
 } = require('../helpers.js');
 
 module.exports = {
@@ -153,10 +154,10 @@ module.exports = {
       description.push(`Profit per 1 of initial investment \`💎 ${+calcChainProfit(deals).toFixed(1)}\``);
       description.push('```ini');
       deals.forEach((deal, i) => {
-        description.push(`[${deal.date.getFullYear()}-${(deal.date.getMonth() + 1).toString().padStart(2, 0)}-${deal.date.getDate().toString().padStart(2, 0)}] [${deal.amount1}] ${deal.item1.name.padEnd(padding, ' ')} → [${deal.amount2}] ${deal.item2.name}`);
+        description.push(`[${dateToString(deal.date)}] [${deal.amount1}] ${deal.item1.name.padEnd(padding, ' ')} → [${deal.amount2}] ${deal.item2.name}`);
       });
       description.push('```');
-      const title = `❯ ${deals[0].date.getFullYear()}-${(deals[0].date.getMonth() + 1).toString().padStart(2, 0)}-${deals[0].date.getDate().toString().padStart(2, 0)} → ${deals[deals.length - 1].date.getFullYear()}-${(deals[deals.length - 1].date.getMonth() + 1).toString().padStart(2, 0)}-${deals[deals.length - 1].date.getDate().toString().padStart(2, 0)}`;
+      const title = `❯ ${dateToString(deals[0].date)} → ${dateToString(deals[deals.length - 1].date)}`;
       description = description.join('\n');
       if (embed.length + title.length + description.length >= 6000) {
         return tooLong = true;

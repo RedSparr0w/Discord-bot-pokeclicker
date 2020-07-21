@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const {
   DailyDeal,
   UndergroundItem,
+  dateToString,
 } = require('../helpers.js');
 
 module.exports = {
@@ -63,8 +64,8 @@ module.exports = {
       });
       description.push('```');
       profit.push('```');
+      embed.addField(`❯ ${dateToString(dateToCheck)}`, description.join('\n'), true);
       embed.addField('Profit', profit.join('\n'), true);
-      embed.addField(`❯ ${dateToCheck.getFullYear()}-${(dateToCheck.getMonth() + 1).toString().padStart(2, 0)}-${dateToCheck.getDate().toString().padStart(2, 0)}`, description.join('\n'), true);
       embed.addField('\u200b', '\u200b', true); // To take up the third row
       dateToCheck.setDate(dateToCheck.getDate() + 1);
     }
