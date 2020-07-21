@@ -3,7 +3,6 @@ const {
   DailyDeal,
   UndergroundItem,
 } = require('../helpers.js');
-const { description } = require('./dailydeal.js');
 
 module.exports = {
   name        : 'dailychain',
@@ -108,7 +107,7 @@ module.exports = {
         }));
       }
       return dealsList;
-    }
+    };
 
     const dailyDeals = getDealsList(fromDate, days, maxSlots);
 
@@ -149,11 +148,12 @@ module.exports = {
 
     let tooLong = false;
     chainList.filter(i => i.length > 0 && calcChainProfit(i) > 0).sort((a, b) => calcChainProfit(b) - calcChainProfit(a)).slice(0, 20).forEach((deals, index) => {
+      if (tooLong) return;
       let description = [];
       description.push(`Profit per 1 of initial investment \`💎 ${+calcChainProfit(deals).toFixed(1)}\``);
       description.push('```ini');
       deals.forEach((deal, i) => {
-        description.push(`[${deal.date.getFullYear()}-${(deal.date.getMonth() + 1).toString().padStart(2, 0)}-${deal.date.getDate().toString().padStart(2, 0)}] [${deal.amount1}] ${deal.item1.name.padEnd(12, ' ')} → [${deal.amount2}] ${deal.item2.name}`);
+        description.push(`[${deal.date.getFullYear()}-${(deal.date.getMonth() + 1).toString().padStart(2, 0)}-${deal.date.getDate().toString().padStart(2, 0)}] [${deal.amount1}] ${deal.item1.name.padEnd(padding, ' ')} → [${deal.amount2}] ${deal.item2.name}`);
       });
       description.push('```');
       const title = `❯ ${deals[0].date.getFullYear()}-${(deals[0].date.getMonth() + 1).toString().padStart(2, 0)}-${deals[0].date.getDate().toString().padStart(2, 0)} → ${deals[deals.length - 1].date.getFullYear()}-${(deals[deals.length - 1].date.getMonth() + 1).toString().padStart(2, 0)}-${deals[deals.length - 1].date.getDate().toString().padStart(2, 0)}`;
