@@ -14,12 +14,10 @@ module.exports = {
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-    const shiny = !Math.floor(Math.random() * 512);
     const embed = new MessageEmbed()
       .setTitle('Top ranked Pokémon')
-      //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/130.png`)
       .setColor('#3498db')
-      .setFooter('Data is up to date as of v0.4.12');
+      .setFooter('Data is up to date as of v0.4.14');
 
     const pokemon = pokemonList.map(p=>({ id: p.id, name: p.name, attack: p.attack, apc: +(p.attack / p.eggCycles).toFixed(1)}));
 
