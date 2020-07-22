@@ -21,7 +21,7 @@ module.exports = {
       if (route) route = route[1];
     });
 
-    if (!route) return msg.reply(`Invalid route number: \`${routeNumber}\``);
+    if (!route) return msg.reply(`Route \`${routeNumber}\` not found..`);
 
     let pokemon = Object.values(route).flat();
     pokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
