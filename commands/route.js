@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { pokemonsPerRoute, pokemonList } = require('../helpers.js');
+const { pokemonsPerRoute, pokemonList, RouteShardTypes, PokemonType, pokemonTypeIcons } = require('../helpers.js');
 
 module.exports = {
   name        : 'route',
@@ -43,8 +43,33 @@ module.exports = {
       desc.push('```prolog');
       pokemon.forEach(p => desc.push(p));
       desc.push('```');
-      embed.addField(`❯ ${type.toUpperCase()}`, desc.join('\n'));
+      embed.addField(`❯ ${type.toUpperCase()}`, desc.join('\n'), true);
     });
+
+    embed.addField('\u200b', '\u200b', false);
+
+    // Shards:
+    let shardsInfo;
+    Object.entries(RouteShardTypes).forEach(([region, routes]) => {
+      if (routes[routeNumber]) shardsInfo = routes[routeNumber];
+    });
+    if (shardsInfo) {
+      const descIcon = [];
+      const descType = [];
+      const descChance = [];
+      descType.push('```prolog');
+      descChance.push('```prolog');
+      Object.entries(shardsInfo).forEach(([type, chance]) => {
+        descIcon.push(pokemonTypeIcons[PokemonType[type]]);
+        descType.push(PokemonType[type].padEnd(10, ' '));
+        descChance.push(`${chance.toFixed(1).padStart(4, ' ')}%`);
+      });
+      descType.push('```');
+      descChance.push('```');
+      //embed.addField('\u200b', descIcon.join('\n'), true);
+      embed.addField('❯ SHARDS', descType.join('\n'), true);
+      embed.addField('\u200b', descChance.join('\n'), true);
+    }
 
     msg.channel.send({ embed });
   },
