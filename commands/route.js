@@ -36,7 +36,7 @@ module.exports = {
       .setColor('#3498db')
       .setFooter('Data is up to date as of v0.4.14');
 
-
+    //embed.addField('❯ Pokemon', '\u200b');
     Object.entries(route).forEach(([type, pokemon]) => {
       if (!pokemon.length) return;
       const desc = [];
@@ -59,16 +59,17 @@ module.exports = {
       const descChance = [];
       descType.push('```prolog');
       descChance.push('```prolog');
-      Object.entries(shardsInfo).forEach(([type, chance]) => {
-        descIcon.push(pokemonTypeIcons[PokemonType[type]]);
-        descType.push(PokemonType[type].padEnd(10, ' '));
-        descChance.push(`${chance.toFixed(1).padStart(4, ' ')}%`);
+      Object.entries(shardsInfo).sort(([,a], [,b]) => b - a).forEach(([type, chance]) => {
+        // descIcon.push(pokemonTypeIcons[PokemonType[type]]);
+        // descType.push(PokemonType[type].padEnd(10, ' '));
+        // descChance.push(`${chance.toFixed(1).padStart(4, ' ')}%`);
+        descIcon.push(`${pokemonTypeIcons[PokemonType[type]]} **\`${PokemonType[type].padEnd(10, ' ')} ${chance.toFixed(1).padStart(4, ' ')}%\`**`);
       });
       descType.push('```');
       descChance.push('```');
       //embed.addField('\u200b', descIcon.join('\n'), true);
-      embed.addField('❯ SHARDS', descType.join('\n'), true);
-      embed.addField('\u200b', descChance.join('\n'), true);
+      embed.addField('❯ SHARDS', descIcon.join('\n'), true);
+      //embed.addField('\u200b', descChance.join('\n'), true);
     }
 
     msg.channel.send({ embed });
