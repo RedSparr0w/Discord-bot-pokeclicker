@@ -26,6 +26,8 @@ client.once('ready', async() => {
   log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot`);
   // Check the database is setup
   await setupDB();
+
+  client.user.setActivity(`PokéClicker v${process.env.npm_package_version || '?.?.?'}`);
 });
 
 client.on('error', e => error('Client error thrown:', e))
