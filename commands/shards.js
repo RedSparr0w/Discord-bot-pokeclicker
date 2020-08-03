@@ -1,6 +1,14 @@
 const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
-const { PokemonType, GameConstants, pokemonTypeIcons, RouteShardTypes, findShardRoutes, findShardBestRoute } = require('../helpers.js');
+const {
+  PokemonType,
+  GameConstants,
+  pokemonTypeIcons,
+  RouteShardTypes,
+  findShardRoutes,
+  findShardBestRoute,
+  gameVersion,
+} = require('../helpers.js');
 
 module.exports = {
   name        : 'shards',
@@ -29,7 +37,7 @@ module.exports = {
       .setTitle(`${pokemonTypeIcons[type]} ${type} Shard Routes`)
       //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${process.env.npm_package_version || '?.?.?'}`);
+      .setFooter(`Data is up to date as of v${gameVersion}`);
 
     const shardRoutes = findShardRoutes(RouteShardTypes, PokemonType[type]);
     Object.entries(shardRoutes).forEach(([region, routes]) => {

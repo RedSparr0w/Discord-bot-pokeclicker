@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const {
   GameConstants,
   pokemonList,
+  gameVersion,
 } = require('../helpers.js');
 
 module.exports = {
@@ -17,7 +18,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle('Top ranked Pokémon')
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${process.env.npm_package_version || '?.?.?'}`);
+      .setFooter(`Data is up to date as of v${gameVersion}`);
 
     const pokemon = pokemonList.map(p=>({ id: p.id, name: p.name, attack: p.attack, apc: +(p.attack / p.eggCycles).toFixed(1)}));
 

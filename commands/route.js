@@ -1,5 +1,12 @@
 const { MessageEmbed } = require('discord.js');
-const { pokemonsPerRoute, pokemonList, RouteShardTypes, PokemonType, pokemonTypeIcons } = require('../helpers.js');
+const {
+  pokemonsPerRoute,
+  pokemonList,
+  RouteShardTypes,
+  PokemonType,
+  pokemonTypeIcons,
+  gameVersion,
+} = require('../helpers.js');
 
 module.exports = {
   name        : 'route',
@@ -34,7 +41,7 @@ module.exports = {
       .setTitle(`Route #${routeNumber}`)
       .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${process.env.npm_package_version || '?.?.?'}`);
+      .setFooter(`Data is up to date as of v${gameVersion}`);
 
     //embed.addField('❯ Pokemon', '\u200b');
     Object.entries(route).forEach(([type, pokemon]) => {

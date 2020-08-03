@@ -3,6 +3,7 @@ const {
   DailyDeal,
   UndergroundItem,
   dateToString,
+  gameVersion,
 } = require('../helpers.js');
 
 module.exports = {
@@ -43,7 +44,7 @@ module.exports = {
       .setTitle(`Upcoming Daily Deals (${maxSlots} slots - ${days} days)`)
       //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${process.env.npm_package_version || '?.?.?'}`);
+      .setFooter(`Data is up to date as of v${gameVersion}`);
 
     // Calculate name padding
     const allItemsLength = UndergroundItem.list.map(item => item.name.length);

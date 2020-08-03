@@ -32,7 +32,7 @@ let getRouteTypes = () => {
 }
 
 let pokeclickerData = {
-  version: App.game.update.version,
+  gameVersion: App.game.update.version,
   pokemonsPerRoute,
   RouteShardTypes: getRouteTypes(),
   PokemonLocationType,
@@ -53,7 +53,7 @@ copy(`module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`)
 */
 
 module.exports = {
-  'version': '0.4.16',
+  'gameVersion': '0.4.16',
   'pokemonsPerRoute': {
     '0': {
       '1': {
