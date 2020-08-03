@@ -43,7 +43,7 @@ module.exports = {
       .setTitle(`Upcoming Daily Deals (${maxSlots} slots - ${days} days)`)
       //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
-      .setFooter('Data is up to date as of v0.4.14');
+      .setFooter(`Data is up to date as of v${process.env.npm_package_version || '?.?.?'}`);
 
     // Calculate name padding
     const allItemsLength = UndergroundItem.list.map(item => item.name.length);

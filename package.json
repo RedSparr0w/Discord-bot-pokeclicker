@@ -1,6 +1,6 @@
 {
-  "name": "discord-bot-template",
-  "version": "1.4.0",
+  "name": "discord-bot-pokeclicker",
+  "version": "0.4.16",
   "description": "",
   "scripts": {
     "start": "node index",
