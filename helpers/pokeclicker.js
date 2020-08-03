@@ -32,6 +32,7 @@ let getRouteTypes = () => {
 }
 
 let pokeclickerData = {
+  version: App.game.update.version,
   pokemonsPerRoute,
   RouteShardTypes: getRouteTypes(),
   PokemonLocationType,
@@ -52,6 +53,7 @@ copy(`module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`)
 */
 
 module.exports = {
+  'version': '0.4.16',
   'pokemonsPerRoute': {
     '0': {
       '1': {
@@ -28545,14 +28547,6 @@ module.exports = {
       'levelType': 3,
       'exp': 64,
       'eggCycles': 20,
-      'evolutions': [
-        {
-          'basePokemon': 'Bulbasaur',
-          'evolvedPokemon': 'Ivysaur',
-          'type': 0,
-          'level': 16,
-        },
-      ],
       'base': {
         'hitpoints': 178,
         'attack': 19,
@@ -28768,6 +28762,300 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
+      'id': -10,
+      'name': 'Bulbasaur (clone)',
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 64,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Bulbasaur (clone)',
+          'evolvedPokemon': 'Ivysaur (clone)',
+          'type': 0,
+          'level': 16,
+        },
+      ],
+      'base': {
+        'hitpoints': 45,
+        'attack': 49,
+        'specialAttack': 65,
+        'defense': 49,
+        'specialDefense': 65,
+        'speed': 45,
+      },
+      'attack': 53,
+      'locations': {
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -11,
+      'name': 'Ivysaur (clone)',
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 142,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Ivysaur (clone)',
+          'evolvedPokemon': 'Venusaur (clone)',
+          'type': 0,
+          'level': 32,
+        },
+      ],
+      'base': {
+        'hitpoints': 60,
+        'attack': 62,
+        'specialAttack': 80,
+        'defense': 63,
+        'specialDefense': 80,
+        'speed': 60,
+      },
+      'attack': 85,
+      'locations': {
+        '4': {
+          'basePokemon': 'Bulbasaur (clone)',
+          'evolvedPokemon': 'Ivysaur (clone)',
+          'type': 0,
+          'level': 16,
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -12,
+      'name': 'Venusaur (clone)',
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 236,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 80,
+        'attack': 82,
+        'specialAttack': 100,
+        'defense': 83,
+        'specialDefense': 100,
+        'speed': 80,
+      },
+      'attack': 141,
+      'locations': {
+        '4': {
+          'basePokemon': 'Ivysaur (clone)',
+          'evolvedPokemon': 'Venusaur (clone)',
+          'type': 0,
+          'level': 32,
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -13,
+      'name': 'Charmander (clone)',
+      'catchRate': 45,
+      'type': [1],
+      'levelType': 3,
+      'exp': 62,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Charmander (clone)',
+          'evolvedPokemon': 'Charmeleon (clone)',
+          'type': 0,
+          'level': 16,
+        },
+      ],
+      'base': {
+        'hitpoints': 39,
+        'attack': 52,
+        'specialAttack': 60,
+        'defense': 43,
+        'specialDefense': 50,
+        'speed': 65,
+      },
+      'attack': 46,
+      'locations': {
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -14,
+      'name': 'Charmeleon (clone)',
+      'catchRate': 45,
+      'type': [1],
+      'levelType': 3,
+      'exp': 142,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Charmeleon (clone)',
+          'evolvedPokemon': 'Charizard (clone)',
+          'type': 0,
+          'level': 36,
+        },
+      ],
+      'base': {
+        'hitpoints': 58,
+        'attack': 64,
+        'specialAttack': 80,
+        'defense': 58,
+        'specialDefense': 65,
+        'speed': 80,
+      },
+      'attack': 81,
+      'locations': {
+        '4': {
+          'basePokemon': 'Charmander (clone)',
+          'evolvedPokemon': 'Charmeleon (clone)',
+          'type': 0,
+          'level': 16,
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -15,
+      'name': 'Charizard (clone)',
+      'catchRate': 45,
+      'type': [
+        1,
+        9,
+      ],
+      'levelType': 3,
+      'exp': 240,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 78,
+        'attack': 84,
+        'specialAttack': 109,
+        'defense': 78,
+        'specialDefense': 85,
+        'speed': 100,
+      },
+      'attack': 142,
+      'locations': {
+        '4': {
+          'basePokemon': 'Charmeleon (clone)',
+          'evolvedPokemon': 'Charizard (clone)',
+          'type': 0,
+          'level': 36,
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -16,
+      'name': 'Squirtle (clone)',
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 63,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Squirtle (clone)',
+          'evolvedPokemon': 'Wartortle (clone)',
+          'type': 0,
+          'level': 16,
+        },
+      ],
+      'base': {
+        'hitpoints': 44,
+        'attack': 48,
+        'specialAttack': 50,
+        'defense': 65,
+        'specialDefense': 64,
+        'speed': 43,
+      },
+      'attack': 50,
+      'locations': {
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -17,
+      'name': 'Wartortle (clone)',
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 142,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Wartortle (clone)',
+          'evolvedPokemon': 'Blastoise (clone)',
+          'type': 0,
+          'level': 36,
+        },
+      ],
+      'base': {
+        'hitpoints': 59,
+        'attack': 63,
+        'specialAttack': 65,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 58,
+      },
+      'attack': 83,
+      'locations': {
+        '4': {
+          'basePokemon': 'Squirtle (clone)',
+          'evolvedPokemon': 'Wartortle (clone)',
+          'type': 0,
+          'level': 16,
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': -18,
+      'name': 'Blastoise (clone)',
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 239,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 79,
+        'attack': 83,
+        'specialAttack': 85,
+        'defense': 100,
+        'specialDefense': 105,
+        'speed': 78,
+      },
+      'attack': 139,
+      'locations': {
+        '4': {
+          'basePokemon': 'Wartortle (clone)',
+          'evolvedPokemon': 'Blastoise (clone)',
+          'type': 0,
+          'level': 36,
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
       'id': -100,
       'name': 'Mega Venusaur',
       'type': [
@@ -28877,7 +29165,7 @@ module.exports = {
     'GYM_TICK': 10,
     'ACHIEVEMENT_TICK': 1000,
     'MIN_LOAD_TIME': 500,
-    'MAX_LOAD_TIME': 15000,
+    'MAX_LOAD_TIME': 20000,
     'MAX_AVAILABLE_REGION': 2,
     'TotalPokemonsPerRegion': [
       151,
@@ -29372,7 +29660,7 @@ module.exports = {
     'BattleItemType': {
       'xAttack': 'xAttack',
       'xClick': 'xClick',
-      'xExp': 'xExp',
+      'Lucky_egg': 'Lucky_egg',
       'Token_collector': 'Token_collector',
       'Item_magnet': 'Item_magnet',
       'Lucky_incense': 'Lucky_incense',
@@ -29462,11 +29750,11 @@ module.exports = {
       'Claw Fossil': 'Anorith',
     },
     'PokemonToFossil': {
-      'Omanyte': 'helix',
-      'Kabuto': 'dome',
-      'Aerodactyl': 'amber',
-      'Lileep': 'root',
-      'Anorith': 'claw',
+      'Omanyte': 'Helix Fossil',
+      'Kabuto': 'Dome Fossil',
+      'Aerodactyl': 'Old Amber',
+      'Lileep': 'Root Fossil',
+      'Anorith': 'Claw Fossil',
     },
     'KantoGyms': [
       'Pewter City',
