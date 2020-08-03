@@ -6,6 +6,7 @@ const {
   info,
   warn,
   error,
+  gameVersion,
 } = require('./helpers.js');
 const { setupDB } = require('./database.js');
 
@@ -27,7 +28,7 @@ client.once('ready', async() => {
   // Check the database is setup
   await setupDB();
 
-  client.user.setActivity(`PokéClicker v${process.env.npm_package_version || '?.?.?'}`);
+  client.user.setActivity(`PokéClicker v${gameVersion}`);
 });
 
 client.on('error', e => error('Client error thrown:', e))
