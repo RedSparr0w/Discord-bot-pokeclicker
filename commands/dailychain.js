@@ -126,12 +126,22 @@ module.exports = {
 
     const chainList = [];
 
-    const createDealsChain = (itemName, date, currentChain = []) => {
+    const createDealsChain = (itemName, date, currentChain = [], chainValue = 1) => {
       if (possibleTradesGet[itemName]) {
         const nextDeals = possibleTradesGet[itemName].filter(nDeal => nDeal.date <= date);
         if (nextDeals.length) {
           nextDeals.forEach(deal => {
-            createDealsChain(deal.item1.name, deal.date, [deal, ...currentChain]);
+            // If we would be better off selling item1 of this deal,
+            // then we shouldn't suggest feeding it into the chain
+            const newChainValue = chainValue * deal.amount2 / deal.amount1;
+            const potentialProfit = newChainValue - (deal.amount1 * deal.item1.value);
+
+            // If we wouldn't get diamonds from selling item1, we only stand to gain
+            const notDia = deal.amount1 >= 100 || deal.amount1 < 0;
+
+            if (notDia || potentialProfit > 0) {
+              createDealsChain(deal.item1.name, deal.date, [deal, ...currentChain], newChainValue);
+            }
           });
         } else {
           chainList.push(currentChain);
@@ -144,7 +154,10 @@ module.exports = {
     diamondItemNamesByValue.forEach(item => {
       if (!possibleTradesGet[item]) return;
       possibleTradesGet[item].forEach(deal => {
-        if (deal.profit.amount > 0) createDealsChain(deal.item1.name, deal.date, [deal]);
+        if (deal.profit.amount > 0) {
+          const profitMult = deal.item2.value * deal.amount2 / deal.amount1;
+          createDealsChain(deal.item1.name, deal.date, [deal], profitMult);
+        }
       });
     });
 
