@@ -34,10 +34,10 @@ module.exports = {
       fromDate = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours() - 13);
     }
 
-    if (isNaN(days) || days <= 0 || days > 100) {
+    if (isNaN(days) || days <= 0) {
       days = 14;
     } else {
-      days;
+      days = Math.min(365, days);
     }
 
     const embed = new MessageEmbed()
