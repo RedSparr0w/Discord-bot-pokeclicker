@@ -37,7 +37,7 @@ module.exports = {
     if (isNaN(days) || days <= 0) {
       days = 14;
     } else {
-      days = Math.min(365, days);
+      days = Math.min(120, days);
     }
 
     const embed = new MessageEmbed()
