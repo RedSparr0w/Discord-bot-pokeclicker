@@ -37,7 +37,7 @@ module.exports = {
     if (isNaN(days) || days <= 0) {
       days = 14;
     } else {
-      days = Math.min(120, days);
+      days = Math.min(150, days);
     }
 
     const embed = new MessageEmbed()
@@ -125,6 +125,21 @@ module.exports = {
     });
 
     const chainList = [];
+    let worstProfitInList = 0;
+    const maxChains = 20;
+
+    const addChain = (dealList) => {
+      const profit = calcChainProfit(dealList);
+      if (profit > worstProfitInList) {
+        chainList.push({profit: profit, deals: dealList});
+        chainList.sort((a,b) => (b.profit - a.profit));
+
+        if (chainList.length > maxChains) {
+          chainList.pop();
+          worstProfitInList = chainList[chainList.length - 1].profit;
+        }
+      }
+    };
 
     const createDealsChain = (itemName, date, currentChain = [], chainValue = 1) => {
       if (possibleTradesGet[itemName]) {
@@ -144,10 +159,10 @@ module.exports = {
             }
           });
         } else {
-          chainList.push(currentChain);
+          addChain(currentChain);
         }
       } else {
-        chainList.push(currentChain);
+        addChain(currentChain);
       }
     };
 
@@ -162,10 +177,11 @@ module.exports = {
     });
 
     let tooLong = false;
-    chainList.filter(i => i.length > 0 && calcChainProfit(i) > 0).sort((a, b) => calcChainProfit(b) - calcChainProfit(a)).slice(0, 20).forEach((deals, index) => {
+    chainList.filter(i => i.deals.length > 0).forEach((chain, index) => {
       if (tooLong) return;
       let description = [];
-      description.push(`Profit per 1 of initial investment \`💎 ${+calcChainProfit(deals).toFixed(1)}\``);
+      const deals = chain.deals;
+      description.push(`Profit per 1 of initial investment \`💎 ${+chain.profit.toFixed(1)}\``);
       description.push('```ini');
       deals.forEach((deal, i) => {
         description.push(`[${dateToString(deal.date)}] [${deal.amount1}] ${deal.item1.name.padEnd(padding, ' ')} → [${deal.amount2}] ${deal.item2.name}`);
