@@ -17,7 +17,7 @@ module.exports = {
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['MANAGE_GUILD'],
   execute     : async (msg, args) => {
-    if(msg.author.id !== config.ownerID) return;
+    if(!config.ownerID || msg.author.id !== config.ownerID) return;
     try {
       let script = (msg.content.match(/```js\r?\n(.+|\r?\n)+\r?\n```$/) || [''])[0];
       script = script ? script.substr(6, script.length - 10) : args.join(' ');
