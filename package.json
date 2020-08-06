@@ -4,13 +4,15 @@
   "description": "",
   "scripts": {
     "start": "node index",
-    "test": "eslint ./"
+    "test": "eslint ./",
+    "build": "node updateData"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.0.1",
     "fuzzyset": "^1.0.5",
+    "puppeteer": "^5.2.1",
     "sqlite": "^3.0.3"
   },
   "devDependencies": {

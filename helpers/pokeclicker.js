@@ -1,57 +1,3 @@
-/*
- * To get data from game:
- *
-
-let getRouteTypes = () => {
-    let regionRoutes = {};
-    Object.entries(pokemonsPerRoute).forEach(([region, routes]) => {
-        regionRoutes[region] = {};
-        Object.entries(routes).forEach(([route, encounterType]) => {
-            regionRoutes[region][route] = {};
-            Object.values(encounterType).flat().forEach(pName => {
-                const pokemon = pokemonMap[pName];
-                if (!pokemon || pokemon.id <= 0) return;
-                if (!regionRoutes[region][route][pokemon.type[0]]) {
-                    regionRoutes[region][route][pokemon.type[0]] = 0;
-                }
-                regionRoutes[region][route][pokemon.type[0]]++;
-                if (pokemon.type[1]) {
-                    if (!regionRoutes[region][route][pokemon.type[1]]) {
-                        regionRoutes[region][route][pokemon.type[1]] = 0;
-                    }
-                    regionRoutes[region][route][pokemon.type[1]]++;
-                }
-            });
-            totalPokemon = Object.values(encounterType).flat().length;
-            Object.entries(regionRoutes[region][route]).forEach(([type, amount]) => {
-                regionRoutes[region][route][type] = +((amount / totalPokemon) * 100).toFixed(2)
-            });
-        });
-    });
-    return regionRoutes;
-}
-
-let pokeclickerData = {
-  gameVersion: App.game.update.version,
-  pokemonsPerRoute,
-  RouteShardTypes: getRouteTypes(),
-  PokemonLocationType,
-  PokemonType,
-  LevelType,
-  levelRequirements,
-  pokemonList: pokemonList.map(p => {
-    p.locations = PokemonHelper.getPokemonLocations(p.name);
-    p.catchRatePercent = PokemonFactory.catchRateHelper(p.catchRate, true);
-    p.eggSteps = App.game.breeding.getSteps(p.eggCycles);
-    return p;
-  }),
-  GameConstants
-};
-
-copy(`module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`)
-
-*/
-
 module.exports = {
   'gameVersion': '0.4.16',
   'pokemonsPerRoute': {
@@ -28789,8 +28735,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 53,
-      'locations': {
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -28889,8 +28834,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 46,
-      'locations': {
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -28986,8 +28930,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 50,
-      'locations': {
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
