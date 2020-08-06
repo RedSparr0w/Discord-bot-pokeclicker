@@ -184,40 +184,38 @@ module.exports = {
       // Our data
       const deals = chain.deals;
       const profit = +chain.profit.toFixed(1);
-      // Initial field
+      // Title
       const title = `❯ ${dateToString(deals[0].date)} → ${dateToString(deals[deals.length - 1].date)}`;
       const description = `Profit per 1 of initial investment \`💎 ${profit.toLocaleString('en-US')}\``;
-      // Output
-      let dates = [];
-      let deal_output1 = [];
-      let deal_output2 = [];
-      dates.push('```ini');
-      deal_output1.push('```ini');
-      deal_output2.push('```ini');
+      if (embed.length + title.length + description.length >= 6000) {
+        return tooLong = true;
+      }
+      embed.addField(title, description);
+
+      // Deals Output
+      const dates = [];
+      const deal_output1 = [];
+      const deal_output2 = [];
       deals.forEach(deal => {
         dates.push(`[${dateToString(deal.date)}]`);
         deal_output1.push(`[${deal.amount1}] ${deal.item1.name.padEnd(padding, ' ')}`);
         deal_output2.push(`[${deal.amount2}] ${deal.item2.name}`);
       });
-      dates.push('```');
-      deal_output1.push('```');
-      deal_output2.push('```');
-      dates = dates.join('\n');
-      deal_output1 = deal_output1.join('\n');
-      deal_output2 = deal_output2.join('\n');
-      
-      if (deal_output1.length > 1024) {
-        deal_output1 = `${deal_output1.substr(0, 1000).replace(/\r?\n.+$/, '')}\n...chain too long...\n\`\`\``;
-        deal_output2 = `${deal_output2.split('\n').slice(0,deal_output1.split('\n').length - 2).join('\n')}\n...chain too long...\n\`\`\``;
-        dates = `${dates.split('\n').slice(0,deal_output1.split('\n').length - 1).join('\n')}\n\`\`\``;
+
+      while (deals.length) {
+        const max_size = Math.floor(1024 / (`${deal_output1[2]}\n`).length) - 1;
+        deals.splice(0, max_size);
+        const date_str = ['```ini', ...dates.splice(0, max_size), '```'].join('\n');
+        const deal_1_str = ['```ini', ...deal_output1.splice(0, max_size), '```'].join('\n');
+        const deal_2_str = ['```ini', ...deal_output2.splice(0, max_size), '```'].join('\n');
+        if (embed.length + date_str.length + deal_1_str.length + deal_2_str.length + 50 /* account for title + too long message lengths */ >= 6000) {
+          embed.addField('...chain length too long...', '\u200b', false);
+          return tooLong = true;
+        }
+        embed.addField('Date', date_str, true);
+        embed.addField('Give', deal_1_str, true);
+        embed.addField('Receive', deal_2_str, true);
       }
-      if (embed.length + title.length + deal_output1.length + deal_output2.length + dates.length >= 5950) {
-        return tooLong = true;
-      }
-      embed.addField(title, description);
-      embed.addField('Date', dates, true);
-      embed.addField('Give', deal_output1, true);
-      embed.addField('Receive', deal_output2, true);
     });
 
 
