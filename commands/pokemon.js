@@ -4,6 +4,7 @@ const {
   pokemonList,
   LevelType,
   PokemonType,
+  EvolutionType,
   GameConstants,
   PokemonLocationType,
   pokemonTypeIcons,
@@ -77,14 +78,19 @@ module.exports = {
         const description = pokemon.locations[PokemonLocationType.DungeonBoss].join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
-      // Egg
-      if (pokemon.locations[PokemonLocationType.LevelEvolution] || pokemon.locations[PokemonLocationType.StoneEvolution]) {
-        let description = '';
-        let e = pokemon.locations[PokemonLocationType.LevelEvolution];
-        description += e ? `${e.basePokemon} @ level ${e.level}` : '';
-        e = pokemon.locations[PokemonLocationType.StoneEvolution];
-        description += e ? `${e.basePokemon} with ${GameConstants.StoneType[e.stone].replace(/_/g, ' ')}` : '';
-        embed.addField('❯ Evolves From', description);
+      // Evolutions
+      if (pokemon.locations[PokemonLocationType.Evolution]) {
+        const descriptions = [];
+        pokemon.locations[PokemonLocationType.Evolution].forEach(evolution => {
+          let description = `\`${evolution.basePokemon.toUpperCase()}:\``;
+          description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
+          description += evolution.type.includes(EvolutionType.Level) ? `\n<:RareCandy:733974449774133299> Above level ${evolution.level}` : '';
+          description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:740790300100001863> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
+          description += evolution.type.includes(EvolutionType.Other) ? '\n🍍 With unknown requirement' : '';
+
+          descriptions.push(description);
+        });
+        embed.addField('❯ Evolves From', descriptions.join('\n\n'));
       }
       // Egg
       if (pokemon.locations[PokemonLocationType.Egg]) {
