@@ -6,7 +6,7 @@ module.exports = {
   guildOnly   : false,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
-  userperms   : ['MANAGE_CHANNELS', 'MANAGE_MESSAGES'],
+  userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     const createdTime = Date.now();
     return msg.channel.send([
