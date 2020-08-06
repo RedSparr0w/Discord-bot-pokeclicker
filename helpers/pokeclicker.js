@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.4.16',
+  'gameVersion': '0.4.17',
   'pokemonsPerRoute': {
     '0': {
       '1': {
@@ -2063,24 +2063,22 @@ module.exports = {
     '1': 'Roaming',
     '2': 'Dungeon',
     '3': 'DungeonBoss',
-    '4': 'LevelEvolution',
-    '5': 'StoneEvolution',
-    '6': 'Egg',
-    '7': 'Baby',
-    '8': 'Shop',
-    '9': 'Fossil',
-    '10': 'Safari',
+    '4': 'Evolution',
+    '5': 'Egg',
+    '6': 'Baby',
+    '7': 'Shop',
+    '8': 'Fossil',
+    '9': 'Safari',
     'Route': 0,
     'Roaming': 1,
     'Dungeon': 2,
     'DungeonBoss': 3,
-    'LevelEvolution': 4,
-    'StoneEvolution': 5,
-    'Egg': 6,
-    'Baby': 7,
-    'Shop': 8,
-    'Fossil': 9,
-    'Safari': 10,
+    'Evolution': 4,
+    'Egg': 5,
+    'Baby': 6,
+    'Shop': 7,
+    'Fossil': 8,
+    'Safari': 9,
   },
   'PokemonType': {
     '0': 'Normal',
@@ -2756,6 +2754,16 @@ module.exports = {
       9007199254740991,
     ],
   ],
+  'EvolutionType': {
+    '0': 'Level',
+    '1': 'Stone',
+    '2': 'Timed',
+    '3': 'Other',
+    'Level': 0,
+    'Stone': 1,
+    'Timed': 2,
+    'Other': 3,
+  },
   'pokemonList': [
     {
       'id': 1,
@@ -2771,8 +2779,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bulbasaur',
+          'type': [0],
           'evolvedPokemon': 'Ivysaur',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -2786,7 +2794,7 @@ module.exports = {
       },
       'attack': 53,
       'locations': {
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -2805,8 +2813,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ivysaur',
+          'type': [0],
           'evolvedPokemon': 'Venusaur',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -2820,12 +2828,14 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': {
-          'basePokemon': 'Bulbasaur',
-          'evolvedPokemon': 'Ivysaur',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bulbasaur',
+            'type': [0],
+            'evolvedPokemon': 'Ivysaur',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -2851,12 +2861,14 @@ module.exports = {
       },
       'attack': 141,
       'locations': {
-        '4': {
-          'basePokemon': 'Ivysaur',
-          'evolvedPokemon': 'Venusaur',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ivysaur',
+            'type': [0],
+            'evolvedPokemon': 'Venusaur',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -2872,8 +2884,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Charmander',
+          'type': [0],
           'evolvedPokemon': 'Charmeleon',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -2887,7 +2899,7 @@ module.exports = {
       },
       'attack': 46,
       'locations': {
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -2903,8 +2915,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Charmeleon',
+          'type': [0],
           'evolvedPokemon': 'Charizard',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -2918,12 +2930,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Charmander',
-          'evolvedPokemon': 'Charmeleon',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Charmander',
+            'type': [0],
+            'evolvedPokemon': 'Charmeleon',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -2949,12 +2963,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': {
-          'basePokemon': 'Charmeleon',
-          'evolvedPokemon': 'Charizard',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Charmeleon',
+            'type': [0],
+            'evolvedPokemon': 'Charizard',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -2970,8 +2986,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Squirtle',
+          'type': [0],
           'evolvedPokemon': 'Wartortle',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -2985,7 +3001,7 @@ module.exports = {
       },
       'attack': 50,
       'locations': {
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -3001,8 +3017,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wartortle',
+          'type': [0],
           'evolvedPokemon': 'Blastoise',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -3016,12 +3032,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Squirtle',
-          'evolvedPokemon': 'Wartortle',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Squirtle',
+            'type': [0],
+            'evolvedPokemon': 'Wartortle',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -3044,12 +3062,14 @@ module.exports = {
       },
       'attack': 139,
       'locations': {
-        '4': {
-          'basePokemon': 'Wartortle',
-          'evolvedPokemon': 'Blastoise',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wartortle',
+            'type': [0],
+            'evolvedPokemon': 'Blastoise',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -3065,8 +3085,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Caterpie',
+          'type': [0],
           'evolvedPokemon': 'Metapod',
-          'type': 0,
           'level': 7,
         },
       ],
@@ -3110,8 +3130,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Metapod',
+          'type': [0],
           'evolvedPokemon': 'Butterfree',
-          'type': 0,
           'level': 10,
         },
       ],
@@ -3140,12 +3160,14 @@ module.exports = {
           'Viridian Forest',
           'Ilex Forest',
         ],
-        '4': {
-          'basePokemon': 'Caterpie',
-          'evolvedPokemon': 'Metapod',
-          'type': 0,
-          'level': 7,
-        },
+        '4': [
+          {
+            'basePokemon': 'Caterpie',
+            'type': [0],
+            'evolvedPokemon': 'Metapod',
+            'level': 7,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -3175,12 +3197,14 @@ module.exports = {
           '1': ['47'],
         },
         '3': ['Ilex Forest'],
-        '4': {
-          'basePokemon': 'Metapod',
-          'evolvedPokemon': 'Butterfree',
-          'type': 0,
-          'level': 10,
-        },
+        '4': [
+          {
+            'basePokemon': 'Metapod',
+            'type': [0],
+            'evolvedPokemon': 'Butterfree',
+            'level': 10,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -3199,8 +3223,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Weedle',
+          'type': [0],
           'evolvedPokemon': 'Kakuna',
-          'type': 0,
           'level': 7,
         },
       ],
@@ -3247,8 +3271,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Kakuna',
+          'type': [0],
           'evolvedPokemon': 'Beedrill',
-          'type': 0,
           'level': 10,
         },
       ],
@@ -3277,12 +3301,14 @@ module.exports = {
           'Viridian Forest',
           'Ilex Forest',
         ],
-        '4': {
-          'basePokemon': 'Weedle',
-          'evolvedPokemon': 'Kakuna',
-          'type': 0,
-          'level': 7,
-        },
+        '4': [
+          {
+            'basePokemon': 'Weedle',
+            'type': [0],
+            'evolvedPokemon': 'Kakuna',
+            'level': 7,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -3312,12 +3338,14 @@ module.exports = {
           '1': ['47'],
         },
         '3': ['Ilex Forest'],
-        '4': {
-          'basePokemon': 'Kakuna',
-          'evolvedPokemon': 'Beedrill',
-          'type': 0,
-          'level': 10,
-        },
+        '4': [
+          {
+            'basePokemon': 'Kakuna',
+            'type': [0],
+            'evolvedPokemon': 'Beedrill',
+            'level': 10,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -3336,8 +3364,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pidgey',
+          'type': [0],
           'evolvedPokemon': 'Pidgeotto',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -3396,8 +3424,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pidgeotto',
+          'type': [0],
           'evolvedPokemon': 'Pidgeot',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -3435,12 +3463,14 @@ module.exports = {
           'Viridian Forest',
           'Mt. Moon',
         ],
-        '4': {
-          'basePokemon': 'Pidgey',
-          'evolvedPokemon': 'Pidgeotto',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pidgey',
+            'type': [0],
+            'evolvedPokemon': 'Pidgeotto',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -3466,12 +3496,14 @@ module.exports = {
       },
       'attack': 112,
       'locations': {
-        '4': {
-          'basePokemon': 'Pidgeotto',
-          'evolvedPokemon': 'Pidgeot',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pidgeotto',
+            'type': [0],
+            'evolvedPokemon': 'Pidgeot',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -3487,8 +3519,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Rattata',
+          'type': [0],
           'evolvedPokemon': 'Raticate',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -3584,12 +3616,14 @@ module.exports = {
           'Mt Mortar',
         ],
         '3': ['Tin Tower'],
-        '4': {
-          'basePokemon': 'Rattata',
-          'evolvedPokemon': 'Raticate',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Rattata',
+            'type': [0],
+            'evolvedPokemon': 'Raticate',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 600,
@@ -3608,8 +3642,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Spearow',
+          'type': [0],
           'evolvedPokemon': 'Fearow',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -3684,12 +3718,14 @@ module.exports = {
             '48',
           ],
         },
-        '4': {
-          'basePokemon': 'Spearow',
-          'evolvedPokemon': 'Fearow',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Spearow',
+            'type': [0],
+            'evolvedPokemon': 'Fearow',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -3705,8 +3741,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ekans',
+          'type': [0],
           'evolvedPokemon': 'Arbok',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -3764,12 +3800,14 @@ module.exports = {
           ],
         },
         '2': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Ekans',
-          'evolvedPokemon': 'Arbok',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ekans',
+            'type': [0],
+            'evolvedPokemon': 'Arbok',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -3785,9 +3823,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pikachu',
-          'evolvedPokemon': 'Raichu',
-          'type': 0,
+          'type': [1],
           'stone': 2,
+          'evolvedPokemon': 'Raichu',
         },
       ],
       'base': {
@@ -3802,13 +3840,15 @@ module.exports = {
       'locations': {
         '2': ['Power Plant'],
         '3': ['Viridian Forest'],
-        '4': {
-          'basePokemon': 'Pichu',
-          'evolvedPokemon': 'Pikachu',
-          'type': 0,
-          'level': 100,
-        },
-        '6': ['Electric'],
+        '4': [
+          {
+            'basePokemon': 'Pichu',
+            'type': [0],
+            'evolvedPokemon': 'Pikachu',
+            'level': 100,
+          },
+        ],
+        '5': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -3835,12 +3875,14 @@ module.exports = {
           'Power Plant',
           'Cerulean Cave',
         ],
-        '5': {
-          'basePokemon': 'Pikachu',
-          'evolvedPokemon': 'Raichu',
-          'type': 0,
-          'stone': 2,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pikachu',
+            'type': [1],
+            'stone': 2,
+            'evolvedPokemon': 'Raichu',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 400,
@@ -3856,8 +3898,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sandshrew',
+          'type': [0],
           'evolvedPokemon': 'Sandslash',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -3917,12 +3959,14 @@ module.exports = {
           ],
         },
         '2': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Sandshrew',
-          'evolvedPokemon': 'Sandslash',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sandshrew',
+            'type': [0],
+            'evolvedPokemon': 'Sandslash',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -3938,8 +3982,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Nidoran(F)',
+          'type': [0],
           'evolvedPokemon': 'Nidorina',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -3965,7 +4009,7 @@ module.exports = {
             '36',
           ],
         },
-        '10': '9.04%',
+        '9': '9.04%',
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -3981,9 +4025,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Nidorina',
-          'evolvedPokemon': 'Nidoqueen',
-          'type': 0,
+          'type': [1],
           'stone': 4,
+          'evolvedPokemon': 'Nidoqueen',
         },
       ],
       'base': {
@@ -4002,13 +4046,15 @@ module.exports = {
             '23',
           ],
         },
-        '4': {
-          'basePokemon': 'Nidoran(F)',
-          'evolvedPokemon': 'Nidorina',
-          'type': 0,
-          'level': 16,
-        },
-        '10': '6.02%',
+        '4': [
+          {
+            'basePokemon': 'Nidoran(F)',
+            'type': [0],
+            'evolvedPokemon': 'Nidorina',
+            'level': 16,
+          },
+        ],
+        '9': '6.02%',
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -4034,12 +4080,14 @@ module.exports = {
       },
       'attack': 136,
       'locations': {
-        '5': {
-          'basePokemon': 'Nidorina',
-          'evolvedPokemon': 'Nidoqueen',
-          'type': 0,
-          'stone': 4,
-        },
+        '4': [
+          {
+            'basePokemon': 'Nidorina',
+            'type': [1],
+            'stone': 4,
+            'evolvedPokemon': 'Nidoqueen',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -4055,8 +4103,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Nidoran(M)',
+          'type': [0],
           'evolvedPokemon': 'Nidorino',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -4082,7 +4130,7 @@ module.exports = {
             '36',
           ],
         },
-        '10': '15.06%',
+        '9': '15.06%',
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -4098,9 +4146,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Nidorino',
-          'evolvedPokemon': 'Nidoking',
-          'type': 0,
+          'type': [1],
           'stone': 4,
+          'evolvedPokemon': 'Nidoking',
         },
       ],
       'base': {
@@ -4119,13 +4167,15 @@ module.exports = {
             '23',
           ],
         },
-        '4': {
-          'basePokemon': 'Nidoran(M)',
-          'evolvedPokemon': 'Nidorino',
-          'type': 0,
-          'level': 16,
-        },
-        '10': '6.02%',
+        '4': [
+          {
+            'basePokemon': 'Nidoran(M)',
+            'type': [0],
+            'evolvedPokemon': 'Nidorino',
+            'level': 16,
+          },
+        ],
+        '9': '6.02%',
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -4151,12 +4201,14 @@ module.exports = {
       },
       'attack': 135,
       'locations': {
-        '5': {
-          'basePokemon': 'Nidorino',
-          'evolvedPokemon': 'Nidoking',
-          'type': 0,
-          'stone': 4,
-        },
+        '4': [
+          {
+            'basePokemon': 'Nidorino',
+            'type': [1],
+            'stone': 4,
+            'evolvedPokemon': 'Nidoking',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -4172,9 +4224,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Clefairy',
-          'evolvedPokemon': 'Clefable',
-          'type': 0,
+          'type': [1],
           'stone': 4,
+          'evolvedPokemon': 'Clefable',
         },
       ],
       'base': {
@@ -4188,12 +4240,14 @@ module.exports = {
       'attack': 61,
       'locations': {
         '2': ['Mt. Moon'],
-        '4': {
-          'basePokemon': 'Cleffa',
-          'evolvedPokemon': 'Clefairy',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cleffa',
+            'type': [0],
+            'evolvedPokemon': 'Clefairy',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 42,
       'eggSteps': 400,
@@ -4216,12 +4270,14 @@ module.exports = {
       },
       'attack': 130,
       'locations': {
-        '5': {
-          'basePokemon': 'Clefairy',
-          'evolvedPokemon': 'Clefable',
-          'type': 0,
-          'stone': 4,
-        },
+        '4': [
+          {
+            'basePokemon': 'Clefairy',
+            'type': [1],
+            'stone': 4,
+            'evolvedPokemon': 'Clefable',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 400,
@@ -4237,9 +4293,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Vulpix',
-          'evolvedPokemon': 'Ninetales',
-          'type': 0,
+          'type': [1],
           'stone': 0,
+          'evolvedPokemon': 'Ninetales',
         },
       ],
       'base': {
@@ -4267,7 +4323,7 @@ module.exports = {
           'Pokemon Mansion',
           'Mt. Pyre',
         ],
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -4290,12 +4346,14 @@ module.exports = {
       },
       'attack': 118,
       'locations': {
-        '5': {
-          'basePokemon': 'Vulpix',
-          'evolvedPokemon': 'Ninetales',
-          'type': 0,
-          'stone': 0,
-        },
+        '4': [
+          {
+            'basePokemon': 'Vulpix',
+            'type': [1],
+            'stone': 0,
+            'evolvedPokemon': 'Ninetales',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -4314,9 +4372,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Jigglypuff',
-          'evolvedPokemon': 'Wigglytuff',
-          'type': 0,
+          'type': [1],
           'stone': 4,
+          'evolvedPokemon': 'Wigglytuff',
         },
       ],
       'base': {
@@ -4339,12 +4397,14 @@ module.exports = {
           ],
           '2': ['115'],
         },
-        '4': {
-          'basePokemon': 'Igglybuff',
-          'evolvedPokemon': 'Jigglypuff',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Igglybuff',
+            'type': [0],
+            'evolvedPokemon': 'Jigglypuff',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 47,
       'eggSteps': 400,
@@ -4371,12 +4431,14 @@ module.exports = {
       'attack': 116,
       'locations': {
         '2': ['Cerulean Cave'],
-        '5': {
-          'basePokemon': 'Jigglypuff',
-          'evolvedPokemon': 'Wigglytuff',
-          'type': 0,
-          'stone': 4,
-        },
+        '4': [
+          {
+            'basePokemon': 'Jigglypuff',
+            'type': [1],
+            'stone': 4,
+            'evolvedPokemon': 'Wigglytuff',
+          },
+        ],
       },
       'catchRatePercent': 18,
       'eggSteps': 400,
@@ -4395,8 +4457,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Zubat',
+          'type': [0],
           'evolvedPokemon': 'Golbat',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -4458,8 +4520,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Golbat',
+          'type': [0],
           'evolvedPokemon': 'Crobat',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -4488,12 +4550,14 @@ module.exports = {
           'Victory Road Hoenn',
         ],
         '3': ['Burned Tower'],
-        '4': {
-          'basePokemon': 'Zubat',
-          'evolvedPokemon': 'Golbat',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Zubat',
+            'type': [0],
+            'evolvedPokemon': 'Golbat',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -4512,8 +4576,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Oddish',
+          'type': [0],
           'evolvedPokemon': 'Gloom',
-          'type': 0,
           'level': 21,
         },
       ],
@@ -4549,7 +4613,7 @@ module.exports = {
           ],
         },
         '2': ['Ilex Forest'],
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -4568,15 +4632,15 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gloom',
-          'evolvedPokemon': 'Vileplume',
-          'type': 0,
+          'type': [1],
           'stone': 3,
+          'evolvedPokemon': 'Vileplume',
         },
         {
           'basePokemon': 'Gloom',
-          'evolvedPokemon': 'Bellossom',
-          'type': 0,
+          'type': [1],
           'stone': 5,
+          'evolvedPokemon': 'Bellossom',
         },
       ],
       'base': {
@@ -4605,12 +4669,14 @@ module.exports = {
             '123',
           ],
         },
-        '4': {
-          'basePokemon': 'Oddish',
-          'evolvedPokemon': 'Gloom',
-          'type': 0,
-          'level': 21,
-        },
+        '4': [
+          {
+            'basePokemon': 'Oddish',
+            'type': [0],
+            'evolvedPokemon': 'Gloom',
+            'level': 21,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -4636,12 +4702,14 @@ module.exports = {
       },
       'attack': 136,
       'locations': {
-        '5': {
-          'basePokemon': 'Gloom',
-          'evolvedPokemon': 'Vileplume',
-          'type': 0,
-          'stone': 3,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gloom',
+            'type': [1],
+            'stone': 3,
+            'evolvedPokemon': 'Vileplume',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -4660,8 +4728,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Paras',
+          'type': [0],
           'evolvedPokemon': 'Parasect',
-          'type': 0,
           'level': 24,
         },
       ],
@@ -4679,7 +4747,7 @@ module.exports = {
           'Mt. Moon',
           'Ilex Forest',
         ],
-        '10': '3.01%',
+        '9': '3.01%',
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -4706,13 +4774,15 @@ module.exports = {
       'attack': 92,
       'locations': {
         '2': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Paras',
-          'evolvedPokemon': 'Parasect',
-          'type': 0,
-          'level': 24,
-        },
-        '10': '9.04%',
+        '4': [
+          {
+            'basePokemon': 'Paras',
+            'type': [0],
+            'evolvedPokemon': 'Parasect',
+            'level': 24,
+          },
+        ],
+        '9': '9.04%',
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -4731,8 +4801,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Venonat',
+          'type': [0],
           'evolvedPokemon': 'Venomoth',
-          'type': 0,
           'level': 31,
         },
       ],
@@ -4792,12 +4862,14 @@ module.exports = {
           'Victory Road',
           'Cerulean Cave',
         ],
-        '4': {
-          'basePokemon': 'Venonat',
-          'evolvedPokemon': 'Venomoth',
-          'type': 0,
-          'level': 31,
-        },
+        '4': [
+          {
+            'basePokemon': 'Venonat',
+            'type': [0],
+            'evolvedPokemon': 'Venomoth',
+            'level': 31,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -4813,8 +4885,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Diglett',
+          'type': [0],
           'evolvedPokemon': 'Dugtrio',
-          'type': 0,
           'level': 26,
         },
       ],
@@ -4855,12 +4927,14 @@ module.exports = {
       'attack': 64,
       'locations': {
         '3': ['Digletts Cave'],
-        '4': {
-          'basePokemon': 'Diglett',
-          'evolvedPokemon': 'Dugtrio',
-          'type': 0,
-          'level': 26,
-        },
+        '4': [
+          {
+            'basePokemon': 'Diglett',
+            'type': [0],
+            'evolvedPokemon': 'Dugtrio',
+            'level': 26,
+          },
+        ],
       },
       'catchRatePercent': 18,
       'eggSteps': 800,
@@ -4876,8 +4950,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Meowth',
+          'type': [0],
           'evolvedPokemon': 'Persian',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -4925,12 +4999,14 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': {
-          'basePokemon': 'Meowth',
-          'evolvedPokemon': 'Persian',
-          'type': 0,
-          'level': 28,
-        },
+        '4': [
+          {
+            'basePokemon': 'Meowth',
+            'type': [0],
+            'evolvedPokemon': 'Persian',
+            'level': 28,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -4946,8 +5022,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Psyduck',
+          'type': [0],
           'evolvedPokemon': 'Golduck',
-          'type': 0,
           'level': 33,
         },
       ],
@@ -4970,7 +5046,7 @@ module.exports = {
           '1': ['35'],
         },
         '2': ['Seafoam Islands'],
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -4997,12 +5073,14 @@ module.exports = {
           '1': ['35'],
         },
         '2': ['Seafoam Islands'],
-        '4': {
-          'basePokemon': 'Psyduck',
-          'evolvedPokemon': 'Golduck',
-          'type': 0,
-          'level': 33,
-        },
+        '4': [
+          {
+            'basePokemon': 'Psyduck',
+            'type': [0],
+            'evolvedPokemon': 'Golduck',
+            'level': 33,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -5018,8 +5096,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mankey',
+          'type': [0],
           'evolvedPokemon': 'Primeape',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -5046,7 +5124,7 @@ module.exports = {
           ],
           '1': ['42'],
         },
-        '6': ['Fighting'],
+        '5': ['Fighting'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -5072,12 +5150,14 @@ module.exports = {
         '0': {
           '0': ['23'],
         },
-        '4': {
-          'basePokemon': 'Mankey',
-          'evolvedPokemon': 'Primeape',
-          'type': 0,
-          'level': 28,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mankey',
+            'type': [0],
+            'evolvedPokemon': 'Primeape',
+            'level': 28,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -5093,9 +5173,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Growlithe',
-          'evolvedPokemon': 'Arcanine',
-          'type': 0,
+          'type': [1],
           'stone': 0,
+          'evolvedPokemon': 'Arcanine',
         },
       ],
       'base': {
@@ -5120,7 +5200,7 @@ module.exports = {
           ],
         },
         '2': ['Pokemon Mansion'],
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -5143,12 +5223,14 @@ module.exports = {
       },
       'attack': 165,
       'locations': {
-        '5': {
-          'basePokemon': 'Growlithe',
-          'evolvedPokemon': 'Arcanine',
-          'type': 0,
-          'stone': 0,
-        },
+        '4': [
+          {
+            'basePokemon': 'Growlithe',
+            'type': [1],
+            'stone': 0,
+            'evolvedPokemon': 'Arcanine',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -5164,8 +5246,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Poliwag',
+          'type': [0],
           'evolvedPokemon': 'Poliwhirl',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -5224,15 +5306,15 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Poliwhirl',
-          'evolvedPokemon': 'Poliwrath',
-          'type': 0,
+          'type': [1],
           'stone': 1,
+          'evolvedPokemon': 'Poliwrath',
         },
         {
           'basePokemon': 'Poliwhirl',
-          'evolvedPokemon': 'Politoed',
-          'type': 0,
+          'type': [1],
           'stone': 9,
+          'evolvedPokemon': 'Politoed',
         },
       ],
       'base': {
@@ -5259,12 +5341,14 @@ module.exports = {
           ],
         },
         '2': ['Ruins of Alph'],
-        '4': {
-          'basePokemon': 'Poliwag',
-          'evolvedPokemon': 'Poliwhirl',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Poliwag',
+            'type': [0],
+            'evolvedPokemon': 'Poliwhirl',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -5290,12 +5374,14 @@ module.exports = {
       },
       'attack': 137,
       'locations': {
-        '5': {
-          'basePokemon': 'Poliwhirl',
-          'evolvedPokemon': 'Poliwrath',
-          'type': 0,
-          'stone': 1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Poliwhirl',
+            'type': [1],
+            'stone': 1,
+            'evolvedPokemon': 'Poliwrath',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -5311,8 +5397,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Abra',
+          'type': [0],
           'evolvedPokemon': 'Kadabra',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -5357,9 +5443,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Kadabra',
-          'evolvedPokemon': 'Alakazam',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Alakazam',
         },
       ],
       'base': {
@@ -5376,12 +5462,14 @@ module.exports = {
           '0': ['8'],
         },
         '2': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Abra',
-          'evolvedPokemon': 'Kadabra',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Abra',
+            'type': [0],
+            'evolvedPokemon': 'Kadabra',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 31,
       'eggSteps': 800,
@@ -5404,12 +5492,14 @@ module.exports = {
       },
       'attack': 96,
       'locations': {
-        '5': {
-          'basePokemon': 'Kadabra',
-          'evolvedPokemon': 'Alakazam',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Kadabra',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Alakazam',
+          },
+        ],
       },
       'catchRatePercent': 18,
       'eggSteps': 800,
@@ -5425,8 +5515,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Machop',
+          'type': [0],
           'evolvedPokemon': 'Machoke',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -5450,7 +5540,7 @@ module.exports = {
           'Jagged Pass',
         ],
         '3': ['Jagged Pass'],
-        '6': ['Fighting'],
+        '5': ['Fighting'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -5466,9 +5556,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Machoke',
-          'evolvedPokemon': 'Machamp',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Machamp',
         },
       ],
       'base': {
@@ -5482,12 +5572,14 @@ module.exports = {
       'attack': 93,
       'locations': {
         '3': ['Victory Road'],
-        '4': {
-          'basePokemon': 'Machop',
-          'evolvedPokemon': 'Machoke',
-          'type': 0,
-          'level': 28,
-        },
+        '4': [
+          {
+            'basePokemon': 'Machop',
+            'type': [0],
+            'evolvedPokemon': 'Machoke',
+            'level': 28,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -5510,12 +5602,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '5': {
-          'basePokemon': 'Machoke',
-          'evolvedPokemon': 'Machamp',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Machoke',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Machamp',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -5534,8 +5628,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bellsprout',
+          'type': [0],
           'evolvedPokemon': 'Weepinbell',
-          'type': 0,
           'level': 21,
         },
       ],
@@ -5568,7 +5662,7 @@ module.exports = {
           ],
         },
         '3': ['Sprout Tower'],
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -5587,9 +5681,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Weepinbell',
-          'evolvedPokemon': 'Victreebel',
-          'type': 0,
+          'type': [1],
           'stone': 3,
+          'evolvedPokemon': 'Victreebel',
         },
       ],
       'base': {
@@ -5611,12 +5705,14 @@ module.exports = {
           ],
           '1': ['44'],
         },
-        '4': {
-          'basePokemon': 'Bellsprout',
-          'evolvedPokemon': 'Weepinbell',
-          'type': 0,
-          'level': 21,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bellsprout',
+            'type': [0],
+            'evolvedPokemon': 'Weepinbell',
+            'level': 21,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -5642,12 +5738,14 @@ module.exports = {
       },
       'attack': 138,
       'locations': {
-        '5': {
-          'basePokemon': 'Weepinbell',
-          'evolvedPokemon': 'Victreebel',
-          'type': 0,
-          'stone': 3,
-        },
+        '4': [
+          {
+            'basePokemon': 'Weepinbell',
+            'type': [1],
+            'stone': 3,
+            'evolvedPokemon': 'Victreebel',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -5666,8 +5764,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tentacool',
+          'type': [0],
           'evolvedPokemon': 'Tentacruel',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -5771,12 +5869,14 @@ module.exports = {
             '41',
           ],
         },
-        '4': {
-          'basePokemon': 'Tentacool',
-          'evolvedPokemon': 'Tentacruel',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tentacool',
+            'type': [0],
+            'evolvedPokemon': 'Tentacruel',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -5795,8 +5895,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Geodude',
+          'type': [0],
           'evolvedPokemon': 'Graveler',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -5848,9 +5948,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Graveler',
-          'evolvedPokemon': 'Golem',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Golem',
         },
       ],
       'base': {
@@ -5872,12 +5972,14 @@ module.exports = {
           'Dark Cave',
         ],
         '3': ['Victory Road Hoenn'],
-        '4': {
-          'basePokemon': 'Geodude',
-          'evolvedPokemon': 'Graveler',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Geodude',
+            'type': [0],
+            'evolvedPokemon': 'Graveler',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -5903,12 +6005,14 @@ module.exports = {
       },
       'attack': 125,
       'locations': {
-        '5': {
-          'basePokemon': 'Graveler',
-          'evolvedPokemon': 'Golem',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Graveler',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Golem',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -5924,8 +6028,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ponyta',
+          'type': [0],
           'evolvedPokemon': 'Rapidash',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -5948,7 +6052,7 @@ module.exports = {
           ],
         },
         '2': ['Mt Silver'],
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -5974,12 +6078,14 @@ module.exports = {
         '0': {
           '1': ['28'],
         },
-        '4': {
-          'basePokemon': 'Ponyta',
-          'evolvedPokemon': 'Rapidash',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ponyta',
+            'type': [0],
+            'evolvedPokemon': 'Rapidash',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -5998,15 +6104,15 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Slowpoke',
+          'type': [0],
           'evolvedPokemon': 'Slowbro',
-          'type': 0,
           'level': 37,
         },
         {
           'basePokemon': 'Slowpoke',
-          'evolvedPokemon': 'Slowking',
-          'type': 0,
+          'type': [1],
           'stone': 9,
+          'evolvedPokemon': 'Slowking',
         },
       ],
       'base': {
@@ -6060,12 +6166,14 @@ module.exports = {
         },
         '2': ['Seafoam Islands'],
         '3': ['Slowpoke Well'],
-        '4': {
-          'basePokemon': 'Slowpoke',
-          'evolvedPokemon': 'Slowbro',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Slowpoke',
+            'type': [0],
+            'evolvedPokemon': 'Slowbro',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -6084,8 +6192,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Magnemite',
+          'type': [0],
           'evolvedPokemon': 'Magneton',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -6110,7 +6218,7 @@ module.exports = {
           'Power Plant',
           'New Mauville',
         ],
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -6141,12 +6249,14 @@ module.exports = {
           'Cerulean Cave',
         ],
         '3': ['New Mauville'],
-        '4': {
-          'basePokemon': 'Magnemite',
-          'evolvedPokemon': 'Magneton',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Magnemite',
+            'type': [0],
+            'evolvedPokemon': 'Magneton',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -6202,8 +6312,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Doduo',
+          'type': [0],
           'evolvedPokemon': 'Dodrio',
-          'type': 0,
           'level': 31,
         },
       ],
@@ -6264,12 +6374,14 @@ module.exports = {
           ],
         },
         '2': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Doduo',
-          'evolvedPokemon': 'Dodrio',
-          'type': 0,
-          'level': 31,
-        },
+        '4': [
+          {
+            'basePokemon': 'Doduo',
+            'type': [0],
+            'evolvedPokemon': 'Dodrio',
+            'level': 31,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -6285,8 +6397,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Seel',
+          'type': [0],
           'evolvedPokemon': 'Dewgong',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -6331,12 +6443,14 @@ module.exports = {
       'attack': 116,
       'locations': {
         '3': ['Whirl Islands'],
-        '4': {
-          'basePokemon': 'Seel',
-          'evolvedPokemon': 'Dewgong',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Seel',
+            'type': [0],
+            'evolvedPokemon': 'Dewgong',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -6352,8 +6466,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Grimer',
+          'type': [0],
           'evolvedPokemon': 'Muk',
-          'type': 0,
           'level': 38,
         },
       ],
@@ -6398,12 +6512,14 @@ module.exports = {
           'Power Plant',
           'Pokemon Mansion',
         ],
-        '4': {
-          'basePokemon': 'Grimer',
-          'evolvedPokemon': 'Muk',
-          'type': 0,
-          'level': 38,
-        },
+        '4': [
+          {
+            'basePokemon': 'Grimer',
+            'type': [0],
+            'evolvedPokemon': 'Muk',
+            'level': 38,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -6419,9 +6535,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shellder',
-          'evolvedPokemon': 'Cloyster',
-          'type': 0,
+          'type': [1],
           'stone': 1,
+          'evolvedPokemon': 'Cloyster',
         },
       ],
       'base': {
@@ -6477,12 +6593,14 @@ module.exports = {
       },
       'attack': 109,
       'locations': {
-        '5': {
-          'basePokemon': 'Shellder',
-          'evolvedPokemon': 'Cloyster',
-          'type': 0,
-          'stone': 1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shellder',
+            'type': [1],
+            'stone': 1,
+            'evolvedPokemon': 'Cloyster',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -6501,8 +6619,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gastly',
+          'type': [0],
           'evolvedPokemon': 'Haunter',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -6539,9 +6657,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Haunter',
-          'evolvedPokemon': 'Gengar',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Gengar',
         },
       ],
       'base': {
@@ -6556,12 +6674,14 @@ module.exports = {
       'locations': {
         '2': ['Pokemon Tower'],
         '3': ['Tin Tower'],
-        '4': {
-          'basePokemon': 'Gastly',
-          'evolvedPokemon': 'Haunter',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gastly',
+            'type': [0],
+            'evolvedPokemon': 'Haunter',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -6587,12 +6707,14 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '5': {
-          'basePokemon': 'Haunter',
-          'evolvedPokemon': 'Gengar',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Haunter',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Gengar',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -6611,9 +6733,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Onix',
-          'evolvedPokemon': 'Steelix',
-          'type': 0,
+          'type': [1],
           'stone': 8,
+          'evolvedPokemon': 'Steelix',
         },
       ],
       'base': {
@@ -6646,8 +6768,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Drowzee',
+          'type': [0],
           'evolvedPokemon': 'Hypno',
-          'type': 0,
           'level': 26,
         },
       ],
@@ -6691,12 +6813,14 @@ module.exports = {
       'attack': 118,
       'locations': {
         '2': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Drowzee',
-          'evolvedPokemon': 'Hypno',
-          'type': 0,
-          'level': 26,
-        },
+        '4': [
+          {
+            'basePokemon': 'Drowzee',
+            'type': [0],
+            'evolvedPokemon': 'Hypno',
+            'level': 26,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -6712,8 +6836,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Krabby',
+          'type': [0],
           'evolvedPokemon': 'Kingler',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -6782,12 +6906,14 @@ module.exports = {
           ],
         },
         '3': ['Whirl Islands'],
-        '4': {
-          'basePokemon': 'Krabby',
-          'evolvedPokemon': 'Kingler',
-          'type': 0,
-          'level': 28,
-        },
+        '4': [
+          {
+            'basePokemon': 'Krabby',
+            'type': [0],
+            'evolvedPokemon': 'Kingler',
+            'level': 28,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -6803,8 +6929,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Voltorb',
+          'type': [0],
           'evolvedPokemon': 'Electrode',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -6822,7 +6948,7 @@ module.exports = {
           '0': ['10'],
         },
         '2': ['New Mauville'],
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -6850,12 +6976,14 @@ module.exports = {
           'Cerulean Cave',
         ],
         '3': ['New Mauville'],
-        '4': {
-          'basePokemon': 'Voltorb',
-          'evolvedPokemon': 'Electrode',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Voltorb',
+            'type': [0],
+            'evolvedPokemon': 'Electrode',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -6874,9 +7002,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Exeggcute',
-          'evolvedPokemon': 'Exeggutor',
-          'type': 0,
+          'type': [1],
           'stone': 3,
+          'evolvedPokemon': 'Exeggutor',
         },
       ],
       'base': {
@@ -6908,7 +7036,7 @@ module.exports = {
             '48',
           ],
         },
-        '10': '12.05%',
+        '9': '12.05%',
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -6934,12 +7062,14 @@ module.exports = {
       },
       'attack': 168,
       'locations': {
-        '5': {
-          'basePokemon': 'Exeggcute',
-          'evolvedPokemon': 'Exeggutor',
-          'type': 0,
-          'stone': 3,
-        },
+        '4': [
+          {
+            'basePokemon': 'Exeggcute',
+            'type': [1],
+            'stone': 3,
+            'evolvedPokemon': 'Exeggutor',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -6955,8 +7085,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cubone',
+          'type': [0],
           'evolvedPokemon': 'Marowak',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -6971,7 +7101,7 @@ module.exports = {
       'attack': 49,
       'locations': {
         '2': ['Pokemon Tower'],
-        '10': '6.02%',
+        '9': '6.02%',
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -6999,13 +7129,15 @@ module.exports = {
           'Cerulean Cave',
         ],
         '3': ['Pokemon Tower'],
-        '4': {
-          'basePokemon': 'Cubone',
-          'evolvedPokemon': 'Marowak',
-          'type': 0,
-          'level': 28,
-        },
-        '10': '3.01%',
+        '4': [
+          {
+            'basePokemon': 'Cubone',
+            'type': [0],
+            'evolvedPokemon': 'Marowak',
+            'level': 28,
+          },
+        ],
+        '9': '3.01%',
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -7028,13 +7160,15 @@ module.exports = {
       },
       'attack': 77,
       'locations': {
-        '4': {
-          'basePokemon': 'Tyrogue',
-          'evolvedPokemon': 'Hitmonlee',
-          'type': 0,
-          'level': 20,
-        },
-        '6': ['Fighting'],
+        '4': [
+          {
+            'basePokemon': 'Tyrogue',
+            'type': [0],
+            'evolvedPokemon': 'Hitmonlee',
+            'level': 20,
+          },
+        ],
+        '5': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7057,13 +7191,15 @@ module.exports = {
       },
       'attack': 78,
       'locations': {
-        '4': {
-          'basePokemon': 'Tyrogue',
-          'evolvedPokemon': 'Hitmonchan',
-          'type': 0,
-          'level': 20,
-        },
-        '6': ['Fighting'],
+        '4': [
+          {
+            'basePokemon': 'Tyrogue',
+            'type': [0],
+            'evolvedPokemon': 'Hitmonchan',
+            'level': 20,
+          },
+        ],
+        '5': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7089,7 +7225,7 @@ module.exports = {
         '0': {
           '1': ['44'],
         },
-        '8': ['Celadon City'],
+        '7': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -7105,8 +7241,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Koffing',
+          'type': [0],
           'evolvedPokemon': 'Weezing',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -7149,12 +7285,14 @@ module.exports = {
       'locations': {
         '2': ['Pokemon Mansion'],
         '3': ['Burned Tower'],
-        '4': {
-          'basePokemon': 'Koffing',
-          'evolvedPokemon': 'Weezing',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Koffing',
+            'type': [0],
+            'evolvedPokemon': 'Weezing',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -7173,8 +7311,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Rhyhorn',
+          'type': [0],
           'evolvedPokemon': 'Rhydon',
-          'type': 0,
           'level': 42,
         },
       ],
@@ -7188,7 +7326,7 @@ module.exports = {
       },
       'attack': 59,
       'locations': {
-        '10': '6.02%',
+        '9': '6.02%',
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -7215,12 +7353,14 @@ module.exports = {
       'attack': 121,
       'locations': {
         '3': ['Cerulean Cave'],
-        '4': {
-          'basePokemon': 'Rhyhorn',
-          'evolvedPokemon': 'Rhydon',
-          'type': 0,
-          'level': 42,
-        },
+        '4': [
+          {
+            'basePokemon': 'Rhyhorn',
+            'type': [0],
+            'evolvedPokemon': 'Rhydon',
+            'level': 42,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -7236,8 +7376,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chansey',
+          'type': [0],
           'evolvedPokemon': 'Blissey',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -7252,13 +7392,15 @@ module.exports = {
       'attack': 27,
       'locations': {
         '2': ['Cerulean Cave'],
-        '5': {
-          'basePokemon': 'Happiny',
-          'evolvedPokemon': 'Chansey',
-          'type': 0,
-          'stone': -1,
-        },
-        '10': '2.41%',
+        '4': [
+          {
+            'basePokemon': 'Happiny',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Chansey',
+          },
+        ],
+        '9': '2.41%',
       },
       'catchRatePercent': 12,
       'eggSteps': 1600,
@@ -7289,8 +7431,8 @@ module.exports = {
           ],
         },
         '2': ['Mt Silver'],
-        '6': ['Grass'],
-        '10': '2.41%',
+        '5': ['Grass'],
+        '9': '2.41%',
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -7313,7 +7455,7 @@ module.exports = {
       },
       'attack': 109,
       'locations': {
-        '10': '9.04%',
+        '9': '9.04%',
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -7329,8 +7471,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Horsea',
+          'type': [0],
           'evolvedPokemon': 'Seadra',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -7379,9 +7521,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Seadra',
-          'evolvedPokemon': 'Kingdra',
-          'type': 0,
+          'type': [1],
           'stone': 7,
+          'evolvedPokemon': 'Kingdra',
         },
       ],
       'base': {
@@ -7401,12 +7543,14 @@ module.exports = {
             '23',
           ],
         },
-        '4': {
-          'basePokemon': 'Horsea',
-          'evolvedPokemon': 'Seadra',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Horsea',
+            'type': [0],
+            'evolvedPokemon': 'Seadra',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -7422,8 +7566,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Goldeen',
+          'type': [0],
           'evolvedPokemon': 'Seaking',
-          'type': 0,
           'level': 33,
         },
       ],
@@ -7500,12 +7644,14 @@ module.exports = {
           ],
           '1': ['42'],
         },
-        '4': {
-          'basePokemon': 'Goldeen',
-          'evolvedPokemon': 'Seaking',
-          'type': 0,
-          'level': 33,
-        },
+        '4': [
+          {
+            'basePokemon': 'Goldeen',
+            'type': [0],
+            'evolvedPokemon': 'Seaking',
+            'level': 33,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -7521,9 +7667,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Staryu',
-          'evolvedPokemon': 'Starmie',
-          'type': 0,
+          'type': [1],
           'stone': 1,
+          'evolvedPokemon': 'Starmie',
         },
       ],
       'base': {
@@ -7549,7 +7695,7 @@ module.exports = {
           ],
         },
         '2': ['Seafoam Islands'],
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -7575,12 +7721,14 @@ module.exports = {
       },
       'attack': 117,
       'locations': {
-        '5': {
-          'basePokemon': 'Staryu',
-          'evolvedPokemon': 'Starmie',
-          'type': 0,
-          'stone': 1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Staryu',
+            'type': [1],
+            'stone': 1,
+            'evolvedPokemon': 'Starmie',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -7606,13 +7754,15 @@ module.exports = {
       },
       'attack': 77,
       'locations': {
-        '5': {
-          'basePokemon': 'Mime Jr.',
-          'evolvedPokemon': 'Mr. Mime',
-          'type': 0,
-          'stone': -1,
-        },
-        '8': ['Celadon City'],
+        '4': [
+          {
+            'basePokemon': 'Mime Jr.',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Mr. Mime',
+          },
+        ],
+        '7': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7631,9 +7781,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Scyther',
-          'evolvedPokemon': 'Scizor',
-          'type': 0,
+          'type': [1],
           'stone': 8,
+          'evolvedPokemon': 'Scizor',
         },
       ],
       'base': {
@@ -7646,7 +7796,7 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '10': '2.41%',
+        '9': '2.41%',
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7673,13 +7823,15 @@ module.exports = {
       'attack': 90,
       'locations': {
         '2': ['Ice Path'],
-        '4': {
-          'basePokemon': 'Smoochum',
-          'evolvedPokemon': 'Jynx',
-          'type': 0,
-          'level': 30,
-        },
-        '8': ['Celadon City'],
+        '4': [
+          {
+            'basePokemon': 'Smoochum',
+            'type': [0],
+            'evolvedPokemon': 'Jynx',
+            'level': 30,
+          },
+        ],
+        '7': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7695,9 +7847,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Electabuzz',
-          'evolvedPokemon': 'Electivire',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Electivire',
         },
       ],
       'base': {
@@ -7711,13 +7863,15 @@ module.exports = {
       'attack': 114,
       'locations': {
         '3': ['Power Plant'],
-        '4': {
-          'basePokemon': 'Elekid',
-          'evolvedPokemon': 'Electabuzz',
-          'type': 0,
-          'level': 30,
-        },
-        '6': ['Electric'],
+        '4': [
+          {
+            'basePokemon': 'Elekid',
+            'type': [0],
+            'evolvedPokemon': 'Electabuzz',
+            'level': 30,
+          },
+        ],
+        '5': ['Electric'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7733,9 +7887,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Magmar',
-          'evolvedPokemon': 'Magmortar',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Magmortar',
         },
       ],
       'base': {
@@ -7749,12 +7903,14 @@ module.exports = {
       'attack': 122,
       'locations': {
         '3': ['Pokemon Mansion'],
-        '4': {
-          'basePokemon': 'Magby',
-          'evolvedPokemon': 'Magmar',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Magby',
+            'type': [0],
+            'evolvedPokemon': 'Magmar',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7777,7 +7933,7 @@ module.exports = {
       },
       'attack': 114,
       'locations': {
-        '10': '2.41%',
+        '9': '2.41%',
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -7807,7 +7963,7 @@ module.exports = {
             '48',
           ],
         },
-        '10': '6.02%',
+        '9': '6.02%',
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -7823,8 +7979,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Magikarp',
+          'type': [0],
           'evolvedPokemon': 'Gyarados',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -7929,12 +8085,14 @@ module.exports = {
       },
       'attack': 148,
       'locations': {
-        '4': {
-          'basePokemon': 'Magikarp',
-          'evolvedPokemon': 'Gyarados',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Magikarp',
+            'type': [0],
+            'evolvedPokemon': 'Gyarados',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 200,
@@ -7960,7 +8118,7 @@ module.exports = {
       },
       'attack': 165,
       'locations': {
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -8012,33 +8170,43 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Vaporeon',
-          'type': 0,
+          'type': [1],
           'stone': 1,
+          'evolvedPokemon': 'Vaporeon',
         },
         {
           'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Jolteon',
-          'type': 0,
+          'type': [1],
           'stone': 2,
+          'evolvedPokemon': 'Jolteon',
         },
         {
           'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Flareon',
-          'type': 0,
+          'type': [1],
           'stone': 0,
+          'evolvedPokemon': 'Flareon',
         },
         {
           'basePokemon': 'Eevee',
+          'type': [
+            1,
+            2,
+          ],
+          'stone': 11,
           'evolvedPokemon': 'Espeon',
-          'type': 0,
-          'stone': 11,
+          'startHour': 6,
+          'endHour': 18,
         },
         {
           'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Umbreon',
-          'type': 0,
+          'type': [
+            1,
+            2,
+          ],
           'stone': 11,
+          'evolvedPokemon': 'Umbreon',
+          'startHour': 18,
+          'endHour': 6,
         },
       ],
       'base': {
@@ -8051,7 +8219,7 @@ module.exports = {
       },
       'attack': 54,
       'locations': {
-        '8': ['Celadon City'],
+        '7': ['Celadon City'],
       },
       'catchRatePercent': 63,
       'eggSteps': 1400,
@@ -8074,12 +8242,14 @@ module.exports = {
       },
       'attack': 155,
       'locations': {
-        '5': {
-          'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Vaporeon',
-          'type': 0,
-          'stone': 1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [1],
+            'stone': 1,
+            'evolvedPokemon': 'Vaporeon',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -8102,12 +8272,14 @@ module.exports = {
       },
       'attack': 115,
       'locations': {
-        '5': {
-          'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Jolteon',
-          'type': 0,
-          'stone': 2,
-        },
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [1],
+            'stone': 2,
+            'evolvedPokemon': 'Jolteon',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -8130,12 +8302,14 @@ module.exports = {
       },
       'attack': 144,
       'locations': {
-        '5': {
-          'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Flareon',
-          'type': 0,
-          'stone': 0,
-        },
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [1],
+            'stone': 0,
+            'evolvedPokemon': 'Flareon',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -8151,9 +8325,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Porygon',
-          'evolvedPokemon': 'Porygon2',
-          'type': 0,
+          'type': [1],
           'stone': 10,
+          'evolvedPokemon': 'Porygon2',
         },
       ],
       'base': {
@@ -8166,7 +8340,7 @@ module.exports = {
       },
       'attack': 89,
       'locations': {
-        '8': ['Celadon City'],
+        '7': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8185,8 +8359,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Omanyte',
+          'type': [0],
           'evolvedPokemon': 'Omastar',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -8201,7 +8375,7 @@ module.exports = {
       'attack': 55,
       'locations': {
         '3': ['Mt. Moon'],
-        '9': ['Helix Fossil'],
+        '8': ['Helix Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -8227,12 +8401,14 @@ module.exports = {
       },
       'attack': 121,
       'locations': {
-        '4': {
-          'basePokemon': 'Omanyte',
-          'evolvedPokemon': 'Omastar',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Omanyte',
+            'type': [0],
+            'evolvedPokemon': 'Omastar',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -8251,8 +8427,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Kabuto',
+          'type': [0],
           'evolvedPokemon': 'Kabutops',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -8267,7 +8443,7 @@ module.exports = {
       'attack': 54,
       'locations': {
         '3': ['Mt. Moon'],
-        '9': ['Dome Fossil'],
+        '8': ['Dome Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -8293,12 +8469,14 @@ module.exports = {
       },
       'attack': 114,
       'locations': {
-        '4': {
-          'basePokemon': 'Kabuto',
-          'evolvedPokemon': 'Kabutops',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Kabuto',
+            'type': [0],
+            'evolvedPokemon': 'Kabutops',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -8324,7 +8502,7 @@ module.exports = {
       },
       'attack': 117,
       'locations': {
-        '9': ['Old Amber'],
+        '8': ['Old Amber'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -8353,12 +8531,14 @@ module.exports = {
             '16',
           ],
         },
-        '4': {
-          'basePokemon': 'Munchlax',
-          'evolvedPokemon': 'Snorlax',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Munchlax',
+            'type': [0],
+            'evolvedPokemon': 'Snorlax',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1600,
@@ -8452,8 +8632,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Dratini',
+          'type': [0],
           'evolvedPokemon': 'Dragonair',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -8470,7 +8650,7 @@ module.exports = {
         '0': {
           '1': ['45'],
         },
-        '6': ['Dragon'],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -8486,8 +8666,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Dragonair',
+          'type': [0],
           'evolvedPokemon': 'Dragonite',
-          'type': 0,
           'level': 55,
         },
       ],
@@ -8501,13 +8681,15 @@ module.exports = {
       },
       'attack': 92,
       'locations': {
-        '4': {
-          'basePokemon': 'Dratini',
-          'evolvedPokemon': 'Dragonair',
-          'type': 0,
-          'level': 30,
-        },
-        '6': ['Dragon'],
+        '4': [
+          {
+            'basePokemon': 'Dratini',
+            'type': [0],
+            'evolvedPokemon': 'Dragonair',
+            'level': 30,
+          },
+        ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -8533,13 +8715,15 @@ module.exports = {
       },
       'attack': 196,
       'locations': {
-        '4': {
-          'basePokemon': 'Dragonair',
-          'evolvedPokemon': 'Dragonite',
-          'type': 0,
-          'level': 55,
-        },
-        '6': ['Dragon'],
+        '4': [
+          {
+            'basePokemon': 'Dragonair',
+            'type': [0],
+            'evolvedPokemon': 'Dragonite',
+            'level': 55,
+          },
+        ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -8601,8 +8785,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chikorita',
+          'type': [0],
           'evolvedPokemon': 'Bayleef',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -8616,7 +8800,7 @@ module.exports = {
       },
       'attack': 51,
       'locations': {
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8632,8 +8816,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bayleef',
+          'type': [0],
           'evolvedPokemon': 'Meganium',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -8647,12 +8831,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Chikorita',
-          'evolvedPokemon': 'Bayleef',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Chikorita',
+            'type': [0],
+            'evolvedPokemon': 'Bayleef',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8675,12 +8861,14 @@ module.exports = {
       },
       'attack': 135,
       'locations': {
-        '4': {
-          'basePokemon': 'Bayleef',
-          'evolvedPokemon': 'Meganium',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bayleef',
+            'type': [0],
+            'evolvedPokemon': 'Meganium',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8696,8 +8884,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cyndaquil',
+          'type': [0],
           'evolvedPokemon': 'Quilava',
-          'type': 0,
           'level': 14,
         },
       ],
@@ -8711,7 +8899,7 @@ module.exports = {
       },
       'attack': 46,
       'locations': {
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8727,8 +8915,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Quilava',
+          'type': [0],
           'evolvedPokemon': 'Typhlosion',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -8742,12 +8930,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Cyndaquil',
-          'evolvedPokemon': 'Quilava',
-          'type': 0,
-          'level': 14,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cyndaquil',
+            'type': [0],
+            'evolvedPokemon': 'Quilava',
+            'level': 14,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8770,12 +8960,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': {
-          'basePokemon': 'Quilava',
-          'evolvedPokemon': 'Typhlosion',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Quilava',
+            'type': [0],
+            'evolvedPokemon': 'Typhlosion',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8791,8 +8983,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Totodile',
+          'type': [0],
           'evolvedPokemon': 'Croconaw',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -8806,7 +8998,7 @@ module.exports = {
       },
       'attack': 53,
       'locations': {
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8822,8 +9014,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Croconaw',
+          'type': [0],
           'evolvedPokemon': 'Feraligatr',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -8837,12 +9029,14 @@ module.exports = {
       },
       'attack': 87,
       'locations': {
-        '4': {
-          'basePokemon': 'Totodile',
-          'evolvedPokemon': 'Croconaw',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Totodile',
+            'type': [0],
+            'evolvedPokemon': 'Croconaw',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8865,12 +9059,14 @@ module.exports = {
       },
       'attack': 147,
       'locations': {
-        '4': {
-          'basePokemon': 'Croconaw',
-          'evolvedPokemon': 'Feraligatr',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Croconaw',
+            'type': [0],
+            'evolvedPokemon': 'Feraligatr',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -8886,8 +9082,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sentret',
+          'type': [0],
           'evolvedPokemon': 'Furret',
-          'type': 0,
           'level': 15,
         },
       ],
@@ -8926,12 +9122,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Sentret',
-          'evolvedPokemon': 'Furret',
-          'type': 0,
-          'level': 15,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sentret',
+            'type': [0],
+            'evolvedPokemon': 'Furret',
+            'level': 15,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -8950,8 +9148,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Hoothoot',
+          'type': [0],
           'evolvedPokemon': 'Noctowl',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -9020,12 +9218,14 @@ module.exports = {
           ],
         },
         '3': ['Ilex Forest'],
-        '4': {
-          'basePokemon': 'Hoothoot',
-          'evolvedPokemon': 'Noctowl',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Hoothoot',
+            'type': [0],
+            'evolvedPokemon': 'Noctowl',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -9044,8 +9244,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ledyba',
+          'type': [0],
           'evolvedPokemon': 'Ledian',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -9101,12 +9301,14 @@ module.exports = {
       },
       'attack': 57,
       'locations': {
-        '4': {
-          'basePokemon': 'Ledyba',
-          'evolvedPokemon': 'Ledian',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ledyba',
+            'type': [0],
+            'evolvedPokemon': 'Ledian',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -9125,8 +9327,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Spinarak',
+          'type': [0],
           'evolvedPokemon': 'Ariados',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -9182,12 +9384,14 @@ module.exports = {
       },
       'attack': 93,
       'locations': {
-        '4': {
-          'basePokemon': 'Spinarak',
-          'evolvedPokemon': 'Ariados',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Spinarak',
+            'type': [0],
+            'evolvedPokemon': 'Ariados',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -9213,12 +9417,14 @@ module.exports = {
       },
       'attack': 128,
       'locations': {
-        '4': {
-          'basePokemon': 'Golbat',
-          'evolvedPokemon': 'Crobat',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Golbat',
+            'type': [0],
+            'evolvedPokemon': 'Crobat',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -9237,8 +9443,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chinchou',
+          'type': [0],
           'evolvedPokemon': 'Lanturn',
-          'type': 0,
           'level': 27,
         },
       ],
@@ -9260,7 +9466,7 @@ module.exports = {
             '47',
           ],
         },
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -9293,12 +9499,14 @@ module.exports = {
             '47',
           ],
         },
-        '4': {
-          'basePokemon': 'Chinchou',
-          'evolvedPokemon': 'Lanturn',
-          'type': 0,
-          'level': 27,
-        },
+        '4': [
+          {
+            'basePokemon': 'Chinchou',
+            'type': [0],
+            'evolvedPokemon': 'Lanturn',
+            'level': 27,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -9314,8 +9522,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pichu',
+          'type': [0],
           'evolvedPokemon': 'Pikachu',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -9330,7 +9538,7 @@ module.exports = {
       },
       'attack': 17,
       'locations': {
-        '7': ['Pikachu'],
+        '6': ['Pikachu'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -9346,8 +9554,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cleffa',
+          'type': [0],
           'evolvedPokemon': 'Clefairy',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -9362,7 +9570,7 @@ module.exports = {
       },
       'attack': 27,
       'locations': {
-        '7': ['Clefairy'],
+        '6': ['Clefairy'],
       },
       'catchRatePercent': 42,
       'eggSteps': 400,
@@ -9381,8 +9589,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Igglybuff',
+          'type': [0],
           'evolvedPokemon': 'Jigglypuff',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -9397,7 +9605,7 @@ module.exports = {
       },
       'attack': 27,
       'locations': {
-        '7': ['Jigglypuff'],
+        '6': ['Jigglypuff'],
       },
       'catchRatePercent': 47,
       'eggSteps': 400,
@@ -9413,8 +9621,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Togepi',
+          'type': [0],
           'evolvedPokemon': 'Togetic',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -9428,7 +9636,7 @@ module.exports = {
       },
       'attack': 25,
       'locations': {
-        '8': ['Violet City'],
+        '7': ['Violet City'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -9454,12 +9662,14 @@ module.exports = {
       },
       'attack': 75,
       'locations': {
-        '4': {
-          'basePokemon': 'Togepi',
-          'evolvedPokemon': 'Togetic',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Togepi',
+            'type': [0],
+            'evolvedPokemon': 'Togetic',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 400,
@@ -9478,8 +9688,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Natu',
+          'type': [0],
           'evolvedPokemon': 'Xatu',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -9522,12 +9732,14 @@ module.exports = {
       },
       'attack': 108,
       'locations': {
-        '4': {
-          'basePokemon': 'Natu',
-          'evolvedPokemon': 'Xatu',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Natu',
+            'type': [0],
+            'evolvedPokemon': 'Xatu',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -9543,8 +9755,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mareep',
+          'type': [0],
           'evolvedPokemon': 'Flaaffy',
-          'type': 0,
           'level': 15,
         },
       ],
@@ -9565,7 +9777,7 @@ module.exports = {
             '43',
           ],
         },
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -9581,8 +9793,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Flaaffy',
+          'type': [0],
           'evolvedPokemon': 'Ampharos',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -9602,12 +9814,14 @@ module.exports = {
             '43',
           ],
         },
-        '4': {
-          'basePokemon': 'Mareep',
-          'evolvedPokemon': 'Flaaffy',
-          'type': 0,
-          'level': 15,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mareep',
+            'type': [0],
+            'evolvedPokemon': 'Flaaffy',
+            'level': 15,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -9630,12 +9844,14 @@ module.exports = {
       },
       'attack': 147,
       'locations': {
-        '4': {
-          'basePokemon': 'Flaaffy',
-          'evolvedPokemon': 'Ampharos',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Flaaffy',
+            'type': [0],
+            'evolvedPokemon': 'Ampharos',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -9658,12 +9874,14 @@ module.exports = {
       },
       'attack': 130,
       'locations': {
-        '5': {
-          'basePokemon': 'Gloom',
-          'evolvedPokemon': 'Bellossom',
-          'type': 0,
-          'stone': 5,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gloom',
+            'type': [1],
+            'stone': 5,
+            'evolvedPokemon': 'Bellossom',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -9682,8 +9900,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Marill',
+          'type': [0],
           'evolvedPokemon': 'Azumarill',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -9709,13 +9927,15 @@ module.exports = {
           ],
         },
         '2': ['Mt Mortar'],
-        '4': {
-          'basePokemon': 'Azurill',
-          'evolvedPokemon': 'Marill',
-          'type': 0,
-          'level': 100,
-        },
-        '6': ['Water'],
+        '4': [
+          {
+            'basePokemon': 'Azurill',
+            'type': [0],
+            'evolvedPokemon': 'Marill',
+            'level': 100,
+          },
+        ],
+        '5': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -9741,12 +9961,14 @@ module.exports = {
       },
       'attack': 92,
       'locations': {
-        '4': {
-          'basePokemon': 'Marill',
-          'evolvedPokemon': 'Azumarill',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Marill',
+            'type': [0],
+            'evolvedPokemon': 'Azumarill',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 400,
@@ -9772,12 +9994,14 @@ module.exports = {
         '0': {
           '1': ['36'],
         },
-        '5': {
-          'basePokemon': 'Bonsly',
-          'evolvedPokemon': 'Sudowoodo',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bonsly',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Sudowoodo',
+          },
+        ],
       },
       'catchRatePercent': 22,
       'eggSteps': 800,
@@ -9800,12 +10024,14 @@ module.exports = {
       },
       'attack': 134,
       'locations': {
-        '5': {
-          'basePokemon': 'Poliwhirl',
-          'evolvedPokemon': 'Politoed',
-          'type': 0,
-          'stone': 9,
-        },
+        '4': [
+          {
+            'basePokemon': 'Poliwhirl',
+            'type': [1],
+            'stone': 9,
+            'evolvedPokemon': 'Politoed',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -9824,8 +10050,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Hoppip',
+          'type': [0],
           'evolvedPokemon': 'Skiploom',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -9846,7 +10072,7 @@ module.exports = {
             '48',
           ],
         },
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -9865,8 +10091,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Skiploom',
+          'type': [0],
           'evolvedPokemon': 'Jumpluff',
-          'type': 0,
           'level': 27,
         },
       ],
@@ -9880,12 +10106,14 @@ module.exports = {
       },
       'attack': 52,
       'locations': {
-        '4': {
-          'basePokemon': 'Hoppip',
-          'evolvedPokemon': 'Skiploom',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Hoppip',
+            'type': [0],
+            'evolvedPokemon': 'Skiploom',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -9911,12 +10139,14 @@ module.exports = {
       },
       'attack': 86,
       'locations': {
-        '4': {
-          'basePokemon': 'Skiploom',
-          'evolvedPokemon': 'Jumpluff',
-          'type': 0,
-          'level': 27,
-        },
+        '4': [
+          {
+            'basePokemon': 'Skiploom',
+            'type': [0],
+            'evolvedPokemon': 'Jumpluff',
+            'level': 27,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -9965,9 +10195,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sunkern',
-          'evolvedPokemon': 'Sunflora',
-          'type': 0,
+          'type': [1],
           'stone': 5,
+          'evolvedPokemon': 'Sunflora',
         },
       ],
       'base': {
@@ -9980,7 +10210,7 @@ module.exports = {
       },
       'attack': 18,
       'locations': {
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -10003,12 +10233,14 @@ module.exports = {
       },
       'attack': 112,
       'locations': {
-        '5': {
-          'basePokemon': 'Sunkern',
-          'evolvedPokemon': 'Sunflora',
-          'type': 0,
-          'stone': 5,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sunkern',
+            'type': [1],
+            'stone': 5,
+            'evolvedPokemon': 'Sunflora',
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -10055,8 +10287,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wooper',
+          'type': [0],
           'evolvedPokemon': 'Quagsire',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -10075,7 +10307,7 @@ module.exports = {
         },
         '2': ['Ruins of Alph'],
         '3': ['Union Cave'],
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -10112,12 +10344,14 @@ module.exports = {
           'Ruins of Alph',
           'Mt Silver',
         ],
-        '4': {
-          'basePokemon': 'Wooper',
-          'evolvedPokemon': 'Quagsire',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wooper',
+            'type': [0],
+            'evolvedPokemon': 'Quagsire',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -10140,12 +10374,19 @@ module.exports = {
       },
       'attack': 122,
       'locations': {
-        '5': {
-          'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Espeon',
-          'type': 0,
-          'stone': 11,
-        },
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [
+              1,
+              2,
+            ],
+            'stone': 11,
+            'evolvedPokemon': 'Espeon',
+            'startHour': 6,
+            'endHour': 18,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -10168,12 +10409,19 @@ module.exports = {
       },
       'attack': 125,
       'locations': {
-        '5': {
-          'basePokemon': 'Eevee',
-          'evolvedPokemon': 'Umbreon',
-          'type': 0,
-          'stone': 11,
-        },
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [
+              1,
+              2,
+            ],
+            'stone': 11,
+            'evolvedPokemon': 'Umbreon',
+            'startHour': 18,
+            'endHour': 6,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -10227,12 +10475,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '5': {
-          'basePokemon': 'Slowpoke',
-          'evolvedPokemon': 'Slowking',
-          'type': 0,
-          'stone': 9,
-        },
+        '4': [
+          {
+            'basePokemon': 'Slowpoke',
+            'type': [1],
+            'stone': 9,
+            'evolvedPokemon': 'Slowking',
+          },
+        ],
       },
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -10302,12 +10552,14 @@ module.exports = {
       'attack': 68,
       'locations': {
         '2': ['Dark Cave'],
-        '4': {
-          'basePokemon': 'Wynaut',
-          'evolvedPokemon': 'Wobbuffet',
-          'type': 0,
-          'level': 15,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wynaut',
+            'type': [0],
+            'evolvedPokemon': 'Wobbuffet',
+            'level': 15,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -10354,8 +10606,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pineco',
+          'type': [0],
           'evolvedPokemon': 'Forretress',
-          'type': 0,
           'level': 31,
         },
       ],
@@ -10413,12 +10665,14 @@ module.exports = {
       },
       'attack': 109,
       'locations': {
-        '4': {
-          'basePokemon': 'Pineco',
-          'evolvedPokemon': 'Forretress',
-          'type': 0,
-          'level': 31,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pineco',
+            'type': [0],
+            'evolvedPokemon': 'Forretress',
+            'level': 31,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -10495,12 +10749,14 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '5': {
-          'basePokemon': 'Onix',
-          'evolvedPokemon': 'Steelix',
-          'type': 0,
-          'stone': 8,
-        },
+        '4': [
+          {
+            'basePokemon': 'Onix',
+            'type': [1],
+            'stone': 8,
+            'evolvedPokemon': 'Steelix',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -10516,8 +10772,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Snubbull',
+          'type': [0],
           'evolvedPokemon': 'Granbull',
-          'type': 0,
           'level': 23,
         },
       ],
@@ -10556,12 +10812,14 @@ module.exports = {
       },
       'attack': 120,
       'locations': {
-        '4': {
-          'basePokemon': 'Snubbull',
-          'evolvedPokemon': 'Granbull',
-          'type': 0,
-          'level': 23,
-        },
+        '4': [
+          {
+            'basePokemon': 'Snubbull',
+            'type': [0],
+            'evolvedPokemon': 'Granbull',
+            'level': 23,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -10590,7 +10848,7 @@ module.exports = {
         '0': {
           '1': ['32'],
         },
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -10616,12 +10874,14 @@ module.exports = {
       },
       'attack': 123,
       'locations': {
-        '5': {
-          'basePokemon': 'Scyther',
-          'evolvedPokemon': 'Scizor',
-          'type': 0,
-          'stone': 8,
-        },
+        '4': [
+          {
+            'basePokemon': 'Scyther',
+            'type': [1],
+            'stone': 8,
+            'evolvedPokemon': 'Scizor',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -10700,6 +10960,19 @@ module.exports = {
       'levelType': 3,
       'exp': 86,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Sneasel',
+          'type': [
+            0,
+            2,
+          ],
+          'evolvedPokemon': 'Weavile',
+          'level': 100,
+          'startHour': 18,
+          'endHour': 6,
+        },
+      ],
       'base': {
         'hitpoints': 55,
         'attack': 95,
@@ -10729,8 +11002,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Teddiursa',
+          'type': [0],
           'evolvedPokemon': 'Ursaring',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -10774,12 +11047,14 @@ module.exports = {
           '1': ['28'],
         },
         '2': ['Mt Silver'],
-        '4': {
-          'basePokemon': 'Teddiursa',
-          'evolvedPokemon': 'Ursaring',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Teddiursa',
+            'type': [0],
+            'evolvedPokemon': 'Ursaring',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -10795,8 +11070,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Slugma',
+          'type': [0],
           'evolvedPokemon': 'Magcargo',
-          'type': 0,
           'level': 38,
         },
       ],
@@ -10814,7 +11089,7 @@ module.exports = {
           '2': ['113'],
         },
         '2': ['Fiery Path'],
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -10840,12 +11115,14 @@ module.exports = {
       },
       'attack': 91,
       'locations': {
-        '4': {
-          'basePokemon': 'Slugma',
-          'evolvedPokemon': 'Magcargo',
-          'type': 0,
-          'level': 38,
-        },
+        '4': [
+          {
+            'basePokemon': 'Slugma',
+            'type': [0],
+            'evolvedPokemon': 'Magcargo',
+            'level': 38,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -10864,8 +11141,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Swinub',
+          'type': [0],
           'evolvedPokemon': 'Piloswine',
-          'type': 0,
           'level': 33,
         },
       ],
@@ -10905,12 +11182,14 @@ module.exports = {
       },
       'attack': 118,
       'locations': {
-        '4': {
-          'basePokemon': 'Swinub',
-          'evolvedPokemon': 'Piloswine',
-          'type': 0,
-          'level': 33,
-        },
+        '4': [
+          {
+            'basePokemon': 'Swinub',
+            'type': [0],
+            'evolvedPokemon': 'Piloswine',
+            'level': 33,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -10958,8 +11237,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Remoraid',
+          'type': [0],
           'evolvedPokemon': 'Octillery',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -10998,12 +11277,14 @@ module.exports = {
       },
       'attack': 140,
       'locations': {
-        '4': {
-          'basePokemon': 'Remoraid',
-          'evolvedPokemon': 'Octillery',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Remoraid',
+            'type': [0],
+            'evolvedPokemon': 'Octillery',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -11058,12 +11339,14 @@ module.exports = {
         '0': {
           '1': ['41'],
         },
-        '5': {
-          'basePokemon': 'Mantyke',
-          'evolvedPokemon': 'Mantine',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mantyke',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Mantine',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -11111,8 +11394,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Houndour',
+          'type': [0],
           'evolvedPokemon': 'Houndoom',
-          'type': 0,
           'level': 24,
         },
       ],
@@ -11126,7 +11409,7 @@ module.exports = {
       },
       'attack': 56,
       'locations': {
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -11152,12 +11435,14 @@ module.exports = {
       },
       'attack': 129,
       'locations': {
-        '4': {
-          'basePokemon': 'Houndour',
-          'evolvedPokemon': 'Houndoom',
-          'type': 0,
-          'level': 24,
-        },
+        '4': [
+          {
+            'basePokemon': 'Houndour',
+            'type': [0],
+            'evolvedPokemon': 'Houndoom',
+            'level': 24,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11183,12 +11468,14 @@ module.exports = {
       },
       'attack': 146,
       'locations': {
-        '5': {
-          'basePokemon': 'Seadra',
-          'evolvedPokemon': 'Kingdra',
-          'type': 0,
-          'stone': 7,
-        },
+        '4': [
+          {
+            'basePokemon': 'Seadra',
+            'type': [1],
+            'stone': 7,
+            'evolvedPokemon': 'Kingdra',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11204,8 +11491,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Phanpy',
+          'type': [0],
           'evolvedPokemon': 'Donphan',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -11249,12 +11536,14 @@ module.exports = {
           '1': ['28'],
         },
         '2': ['Mt Silver'],
-        '4': {
-          'basePokemon': 'Phanpy',
-          'evolvedPokemon': 'Donphan',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Phanpy',
+            'type': [0],
+            'evolvedPokemon': 'Donphan',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -11277,12 +11566,14 @@ module.exports = {
       },
       'attack': 146,
       'locations': {
-        '5': {
-          'basePokemon': 'Porygon',
-          'evolvedPokemon': 'Porygon2',
-          'type': 0,
-          'stone': 10,
-        },
+        '4': [
+          {
+            'basePokemon': 'Porygon',
+            'type': [1],
+            'stone': 10,
+            'evolvedPokemon': 'Porygon2',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11349,20 +11640,20 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tyrogue',
+          'type': [0],
           'evolvedPokemon': 'Hitmonlee',
-          'type': 0,
           'level': 20,
         },
         {
           'basePokemon': 'Tyrogue',
+          'type': [0],
           'evolvedPokemon': 'Hitmonchan',
-          'type': 0,
           'level': 20,
         },
         {
           'basePokemon': 'Tyrogue',
+          'type': [0],
           'evolvedPokemon': 'Hitmontop',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -11378,8 +11669,8 @@ module.exports = {
       'attack': 24,
       'locations': {
         '3': ['Mt Mortar'],
-        '6': ['Fighting'],
-        '7': [
+        '5': ['Fighting'],
+        '6': [
           'Hitmonlee',
           'Hitmonchan',
           'Hitmontop',
@@ -11406,12 +11697,14 @@ module.exports = {
       },
       'attack': 78,
       'locations': {
-        '4': {
-          'basePokemon': 'Tyrogue',
-          'evolvedPokemon': 'Hitmontop',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tyrogue',
+            'type': [0],
+            'evolvedPokemon': 'Hitmontop',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -11430,8 +11723,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Smoochum',
+          'type': [0],
           'evolvedPokemon': 'Jynx',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -11446,7 +11739,7 @@ module.exports = {
       },
       'attack': 39,
       'locations': {
-        '7': ['Jynx'],
+        '6': ['Jynx'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -11462,8 +11755,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Elekid',
+          'type': [0],
           'evolvedPokemon': 'Electabuzz',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -11478,8 +11771,8 @@ module.exports = {
       },
       'attack': 58,
       'locations': {
-        '6': ['Electric'],
-        '7': ['Electabuzz'],
+        '5': ['Electric'],
+        '6': ['Electabuzz'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -11495,8 +11788,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Magby',
+          'type': [0],
           'evolvedPokemon': 'Magmar',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -11511,8 +11804,8 @@ module.exports = {
       },
       'attack': 64,
       'locations': {
-        '6': ['Fire'],
-        '7': ['Magmar'],
+        '5': ['Fire'],
+        '6': ['Magmar'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -11564,12 +11857,14 @@ module.exports = {
       },
       'attack': 59,
       'locations': {
-        '4': {
-          'basePokemon': 'Chansey',
-          'evolvedPokemon': 'Blissey',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Chansey',
+            'type': [0],
+            'evolvedPokemon': 'Blissey',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1600,
@@ -11657,8 +11952,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Larvitar',
+          'type': [0],
           'evolvedPokemon': 'Pupitar',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -11691,8 +11986,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pupitar',
+          'type': [0],
           'evolvedPokemon': 'Tyranitar',
-          'type': 0,
           'level': 55,
         },
       ],
@@ -11706,12 +12001,14 @@ module.exports = {
       },
       'attack': 95,
       'locations': {
-        '4': {
-          'basePokemon': 'Larvitar',
-          'evolvedPokemon': 'Pupitar',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Larvitar',
+            'type': [0],
+            'evolvedPokemon': 'Pupitar',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -11737,12 +12034,14 @@ module.exports = {
       },
       'attack': 205,
       'locations': {
-        '4': {
-          'basePokemon': 'Pupitar',
-          'evolvedPokemon': 'Tyranitar',
-          'type': 0,
-          'level': 55,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pupitar',
+            'type': [0],
+            'evolvedPokemon': 'Tyranitar',
+            'level': 55,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -11836,8 +12135,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Treecko',
+          'type': [0],
           'evolvedPokemon': 'Grovyle',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -11851,7 +12150,7 @@ module.exports = {
       },
       'attack': 45,
       'locations': {
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11867,8 +12166,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Grovyle',
+          'type': [0],
           'evolvedPokemon': 'Sceptile',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -11882,12 +12181,14 @@ module.exports = {
       },
       'attack': 76,
       'locations': {
-        '4': {
-          'basePokemon': 'Treecko',
-          'evolvedPokemon': 'Grovyle',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Treecko',
+            'type': [0],
+            'evolvedPokemon': 'Grovyle',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11910,12 +12211,14 @@ module.exports = {
       },
       'attack': 129,
       'locations': {
-        '4': {
-          'basePokemon': 'Grovyle',
-          'evolvedPokemon': 'Sceptile',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Grovyle',
+            'type': [0],
+            'evolvedPokemon': 'Sceptile',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11931,8 +12234,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Torchic',
+          'type': [0],
           'evolvedPokemon': 'Combusken',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -11946,7 +12249,7 @@ module.exports = {
       },
       'attack': 55,
       'locations': {
-        '6': ['Fire'],
+        '5': ['Fire'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -11965,8 +12268,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Combusken',
+          'type': [0],
           'evolvedPokemon': 'Blaziken',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -11980,12 +12283,14 @@ module.exports = {
       },
       'attack': 93,
       'locations': {
-        '4': {
-          'basePokemon': 'Torchic',
-          'evolvedPokemon': 'Combusken',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Torchic',
+            'type': [0],
+            'evolvedPokemon': 'Combusken',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12011,12 +12316,14 @@ module.exports = {
       },
       'attack': 157,
       'locations': {
-        '4': {
-          'basePokemon': 'Combusken',
-          'evolvedPokemon': 'Blaziken',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Combusken',
+            'type': [0],
+            'evolvedPokemon': 'Blaziken',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12032,8 +12339,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mudkip',
+          'type': [0],
           'evolvedPokemon': 'Marshtomp',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -12047,7 +12354,7 @@ module.exports = {
       },
       'attack': 55,
       'locations': {
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12066,8 +12373,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Marshtomp',
+          'type': [0],
           'evolvedPokemon': 'Swampert',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -12081,12 +12388,14 @@ module.exports = {
       },
       'attack': 91,
       'locations': {
-        '4': {
-          'basePokemon': 'Mudkip',
-          'evolvedPokemon': 'Marshtomp',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mudkip',
+            'type': [0],
+            'evolvedPokemon': 'Marshtomp',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12112,12 +12421,14 @@ module.exports = {
       },
       'attack': 164,
       'locations': {
-        '4': {
-          'basePokemon': 'Marshtomp',
-          'evolvedPokemon': 'Swampert',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Marshtomp',
+            'type': [0],
+            'evolvedPokemon': 'Swampert',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12133,8 +12444,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Poochyena',
+          'type': [0],
           'evolvedPokemon': 'Mightyena',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -12195,12 +12506,14 @@ module.exports = {
             '123',
           ],
         },
-        '4': {
-          'basePokemon': 'Poochyena',
-          'evolvedPokemon': 'Mightyena',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Poochyena',
+            'type': [0],
+            'evolvedPokemon': 'Mightyena',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 600,
@@ -12216,8 +12529,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Zigzagoon',
+          'type': [0],
           'evolvedPokemon': 'Linoone',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -12269,12 +12582,14 @@ module.exports = {
             '119',
           ],
         },
-        '4': {
-          'basePokemon': 'Zigzagoon',
-          'evolvedPokemon': 'Linoone',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Zigzagoon',
+            'type': [0],
+            'evolvedPokemon': 'Linoone',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -12290,14 +12605,14 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wurmple',
+          'type': [0],
           'evolvedPokemon': 'Silcoon',
-          'type': 0,
           'level': 7,
         },
         {
           'basePokemon': 'Wurmple',
+          'type': [0],
           'evolvedPokemon': 'Cascoon',
-          'type': 0,
           'level': 7,
         },
       ],
@@ -12334,8 +12649,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Silcoon',
+          'type': [0],
           'evolvedPokemon': 'Beautifly',
-          'type': 0,
           'level': 10,
         },
       ],
@@ -12350,12 +12665,14 @@ module.exports = {
       'attack': 23,
       'locations': {
         '2': ['Petalburg Woods'],
-        '4': {
-          'basePokemon': 'Wurmple',
-          'evolvedPokemon': 'Silcoon',
-          'type': 0,
-          'level': 7,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wurmple',
+            'type': [0],
+            'evolvedPokemon': 'Silcoon',
+            'level': 7,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -12381,12 +12698,14 @@ module.exports = {
       },
       'attack': 86,
       'locations': {
-        '4': {
-          'basePokemon': 'Silcoon',
-          'evolvedPokemon': 'Beautifly',
-          'type': 0,
-          'level': 10,
-        },
+        '4': [
+          {
+            'basePokemon': 'Silcoon',
+            'type': [0],
+            'evolvedPokemon': 'Beautifly',
+            'level': 10,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -12402,8 +12721,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cascoon',
+          'type': [0],
           'evolvedPokemon': 'Dustox',
-          'type': 0,
           'level': 10,
         },
       ],
@@ -12418,12 +12737,14 @@ module.exports = {
       'attack': 23,
       'locations': {
         '2': ['Petalburg Woods'],
-        '4': {
-          'basePokemon': 'Wurmple',
-          'evolvedPokemon': 'Cascoon',
-          'type': 0,
-          'level': 7,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wurmple',
+            'type': [0],
+            'evolvedPokemon': 'Cascoon',
+            'level': 7,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -12449,12 +12770,14 @@ module.exports = {
       },
       'attack': 67,
       'locations': {
-        '4': {
-          'basePokemon': 'Cascoon',
-          'evolvedPokemon': 'Dustox',
-          'type': 0,
-          'level': 10,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cascoon',
+            'type': [0],
+            'evolvedPokemon': 'Dustox',
+            'level': 10,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -12473,8 +12796,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Lotad',
+          'type': [0],
           'evolvedPokemon': 'Lombre',
-          'type': 0,
           'level': 14,
         },
       ],
@@ -12512,9 +12835,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Lombre',
-          'evolvedPokemon': 'Ludicolo',
-          'type': 0,
+          'type': [1],
           'stone': 1,
+          'evolvedPokemon': 'Ludicolo',
         },
       ],
       'base': {
@@ -12530,12 +12853,14 @@ module.exports = {
         '0': {
           '2': ['114'],
         },
-        '4': {
-          'basePokemon': 'Lotad',
-          'evolvedPokemon': 'Lombre',
-          'type': 0,
-          'level': 14,
-        },
+        '4': [
+          {
+            'basePokemon': 'Lotad',
+            'type': [0],
+            'evolvedPokemon': 'Lombre',
+            'level': 14,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -12561,12 +12886,14 @@ module.exports = {
       },
       'attack': 120,
       'locations': {
-        '5': {
-          'basePokemon': 'Lombre',
-          'evolvedPokemon': 'Ludicolo',
-          'type': 0,
-          'stone': 1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Lombre',
+            'type': [1],
+            'stone': 1,
+            'evolvedPokemon': 'Ludicolo',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -12582,8 +12909,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Seedot',
+          'type': [0],
           'evolvedPokemon': 'Nuzleaf',
-          'type': 0,
           'level': 14,
         },
       ],
@@ -12622,9 +12949,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Nuzleaf',
-          'evolvedPokemon': 'Shiftry',
-          'type': 0,
+          'type': [1],
           'stone': 3,
+          'evolvedPokemon': 'Shiftry',
         },
       ],
       'base': {
@@ -12640,12 +12967,14 @@ module.exports = {
         '0': {
           '2': ['114'],
         },
-        '4': {
-          'basePokemon': 'Seedot',
-          'evolvedPokemon': 'Nuzleaf',
-          'type': 0,
-          'level': 14,
-        },
+        '4': [
+          {
+            'basePokemon': 'Seedot',
+            'type': [0],
+            'evolvedPokemon': 'Nuzleaf',
+            'level': 14,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -12671,12 +13000,14 @@ module.exports = {
       },
       'attack': 131,
       'locations': {
-        '5': {
-          'basePokemon': 'Nuzleaf',
-          'evolvedPokemon': 'Shiftry',
-          'type': 0,
-          'stone': 3,
-        },
+        '4': [
+          {
+            'basePokemon': 'Nuzleaf',
+            'type': [1],
+            'stone': 3,
+            'evolvedPokemon': 'Shiftry',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -12695,8 +13026,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Taillow',
+          'type': [0],
           'evolvedPokemon': 'Swellow',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -12746,12 +13077,14 @@ module.exports = {
         '0': {
           '2': ['115'],
         },
-        '4': {
-          'basePokemon': 'Taillow',
-          'evolvedPokemon': 'Swellow',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Taillow',
+            'type': [0],
+            'evolvedPokemon': 'Swellow',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -12770,8 +13103,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wingull',
+          'type': [0],
           'evolvedPokemon': 'Pelipper',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -12869,12 +13202,14 @@ module.exports = {
             '134',
           ],
         },
-        '4': {
-          'basePokemon': 'Wingull',
-          'evolvedPokemon': 'Pelipper',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wingull',
+            'type': [0],
+            'evolvedPokemon': 'Pelipper',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12893,8 +13228,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ralts',
+          'type': [0],
           'evolvedPokemon': 'Kirlia',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -12929,8 +13264,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Kirlia',
+          'type': [0],
           'evolvedPokemon': 'Gardevoir',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -12944,12 +13279,14 @@ module.exports = {
       },
       'attack': 38,
       'locations': {
-        '4': {
-          'basePokemon': 'Ralts',
-          'evolvedPokemon': 'Kirlia',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ralts',
+            'type': [0],
+            'evolvedPokemon': 'Kirlia',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -12975,12 +13312,14 @@ module.exports = {
       },
       'attack': 127,
       'locations': {
-        '4': {
-          'basePokemon': 'Kirlia',
-          'evolvedPokemon': 'Gardevoir',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Kirlia',
+            'type': [0],
+            'evolvedPokemon': 'Gardevoir',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -12999,8 +13338,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Surskit',
+          'type': [0],
           'evolvedPokemon': 'Masquerain',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -13047,12 +13386,14 @@ module.exports = {
       },
       'attack': 102,
       'locations': {
-        '4': {
-          'basePokemon': 'Surskit',
-          'evolvedPokemon': 'Masquerain',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Surskit',
+            'type': [0],
+            'evolvedPokemon': 'Masquerain',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 600,
@@ -13068,8 +13409,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shroomish',
+          'type': [0],
           'evolvedPokemon': 'Breloom',
-          'type': 0,
           'level': 23,
         },
       ],
@@ -13109,12 +13450,14 @@ module.exports = {
       },
       'attack': 106,
       'locations': {
-        '4': {
-          'basePokemon': 'Shroomish',
-          'evolvedPokemon': 'Breloom',
-          'type': 0,
-          'level': 23,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shroomish',
+            'type': [0],
+            'evolvedPokemon': 'Breloom',
+            'level': 23,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -13130,8 +13473,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Slakoth',
+          'type': [0],
           'evolvedPokemon': 'Vigoroth',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -13161,8 +13504,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Vigoroth',
+          'type': [0],
           'evolvedPokemon': 'Slaking',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -13176,12 +13519,14 @@ module.exports = {
       },
       'attack': 94,
       'locations': {
-        '4': {
-          'basePokemon': 'Slakoth',
-          'evolvedPokemon': 'Vigoroth',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Slakoth',
+            'type': [0],
+            'evolvedPokemon': 'Vigoroth',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -13204,12 +13549,14 @@ module.exports = {
       },
       'attack': 248,
       'locations': {
-        '4': {
-          'basePokemon': 'Vigoroth',
-          'evolvedPokemon': 'Slaking',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Vigoroth',
+            'type': [0],
+            'evolvedPokemon': 'Slaking',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -13228,14 +13575,14 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Nincada',
+          'type': [0],
           'evolvedPokemon': 'Ninjask',
-          'type': 0,
           'level': 20,
         },
         {
           'basePokemon': 'Nincada',
+          'type': [0],
           'evolvedPokemon': 'Shedinja',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -13277,12 +13624,14 @@ module.exports = {
       },
       'attack': 77,
       'locations': {
-        '4': {
-          'basePokemon': 'Nincada',
-          'evolvedPokemon': 'Ninjask',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Nincada',
+            'type': [0],
+            'evolvedPokemon': 'Ninjask',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -13308,12 +13657,14 @@ module.exports = {
       },
       'attack': 10,
       'locations': {
-        '4': {
-          'basePokemon': 'Nincada',
-          'evolvedPokemon': 'Shedinja',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Nincada',
+            'type': [0],
+            'evolvedPokemon': 'Shedinja',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -13329,8 +13680,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Whismur',
+          'type': [0],
           'evolvedPokemon': 'Loudred',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -13367,8 +13718,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Loudred',
+          'type': [0],
           'evolvedPokemon': 'Exploud',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -13383,12 +13734,14 @@ module.exports = {
       'attack': 80,
       'locations': {
         '2': ['Victory Road Hoenn'],
-        '4': {
-          'basePokemon': 'Whismur',
-          'evolvedPokemon': 'Loudred',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Whismur',
+            'type': [0],
+            'evolvedPokemon': 'Loudred',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -13411,12 +13764,14 @@ module.exports = {
       },
       'attack': 140,
       'locations': {
-        '4': {
-          'basePokemon': 'Loudred',
-          'evolvedPokemon': 'Exploud',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Loudred',
+            'type': [0],
+            'evolvedPokemon': 'Exploud',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -13432,8 +13787,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Makuhita',
+          'type': [0],
           'evolvedPokemon': 'Hariyama',
-          'type': 0,
           'level': 24,
         },
       ],
@@ -13451,7 +13806,7 @@ module.exports = {
           'Granite Cave',
           'Victory Road Hoenn',
         ],
-        '6': ['Fighting'],
+        '5': ['Fighting'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -13475,12 +13830,14 @@ module.exports = {
       'attack': 119,
       'locations': {
         '3': ['Victory Road Hoenn'],
-        '4': {
-          'basePokemon': 'Makuhita',
-          'evolvedPokemon': 'Hariyama',
-          'type': 0,
-          'level': 24,
-        },
+        '4': [
+          {
+            'basePokemon': 'Makuhita',
+            'type': [0],
+            'evolvedPokemon': 'Hariyama',
+            'level': 24,
+          },
+        ],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -13499,8 +13856,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Azurill',
+          'type': [0],
           'evolvedPokemon': 'Marill',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -13515,7 +13872,7 @@ module.exports = {
       },
       'attack': 18,
       'locations': {
-        '7': ['Marill'],
+        '6': ['Marill'],
       },
       'catchRatePercent': 42,
       'eggSteps': 400,
@@ -13554,9 +13911,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Skitty',
-          'evolvedPokemon': 'Delcatty',
-          'type': 0,
+          'type': [1],
           'stone': 4,
+          'evolvedPokemon': 'Delcatty',
         },
       ],
       'base': {
@@ -13594,12 +13951,14 @@ module.exports = {
       },
       'attack': 76,
       'locations': {
-        '5': {
-          'basePokemon': 'Skitty',
-          'evolvedPokemon': 'Delcatty',
-          'type': 0,
-          'stone': 4,
-        },
+        '4': [
+          {
+            'basePokemon': 'Skitty',
+            'type': [1],
+            'stone': 4,
+            'evolvedPokemon': 'Delcatty',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 600,
@@ -13679,8 +14038,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Aron',
+          'type': [0],
           'evolvedPokemon': 'Lairon',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -13716,8 +14075,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Lairon',
+          'type': [0],
           'evolvedPokemon': 'Aggron',
-          'type': 0,
           'level': 42,
         },
       ],
@@ -13732,12 +14091,14 @@ module.exports = {
       'attack': 85,
       'locations': {
         '3': ['Victory Road Hoenn'],
-        '4': {
-          'basePokemon': 'Aron',
-          'evolvedPokemon': 'Lairon',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Aron',
+            'type': [0],
+            'evolvedPokemon': 'Lairon',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 1400,
@@ -13763,12 +14124,14 @@ module.exports = {
       },
       'attack': 124,
       'locations': {
-        '4': {
-          'basePokemon': 'Lairon',
-          'evolvedPokemon': 'Aggron',
-          'type': 0,
-          'level': 42,
-        },
+        '4': [
+          {
+            'basePokemon': 'Lairon',
+            'type': [0],
+            'evolvedPokemon': 'Aggron',
+            'level': 42,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -13787,8 +14150,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Meditite',
+          'type': [0],
           'evolvedPokemon': 'Medicham',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -13806,7 +14169,7 @@ module.exports = {
           'Mt. Pyre',
           'Victory Road Hoenn',
         ],
-        '6': ['Fighting'],
+        '5': ['Fighting'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -13833,12 +14196,14 @@ module.exports = {
       'attack': 78,
       'locations': {
         '3': ['Victory Road Hoenn'],
-        '4': {
-          'basePokemon': 'Meditite',
-          'evolvedPokemon': 'Medicham',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Meditite',
+            'type': [0],
+            'evolvedPokemon': 'Medicham',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -13854,8 +14219,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Electrike',
+          'type': [0],
           'evolvedPokemon': 'Manectric',
-          'type': 0,
           'level': 26,
         },
       ],
@@ -13875,7 +14240,7 @@ module.exports = {
             '118',
           ],
         },
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -13901,12 +14266,14 @@ module.exports = {
         '0': {
           '2': ['118'],
         },
-        '4': {
-          'basePokemon': 'Electrike',
-          'evolvedPokemon': 'Manectric',
-          'type': 0,
-          'level': 26,
-        },
+        '4': [
+          {
+            'basePokemon': 'Electrike',
+            'type': [0],
+            'evolvedPokemon': 'Manectric',
+            'level': 26,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -13932,7 +14299,7 @@ module.exports = {
         '0': {
           '2': ['110'],
         },
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -13958,7 +14325,7 @@ module.exports = {
         '0': {
           '2': ['110'],
         },
-        '6': ['Electric'],
+        '5': ['Electric'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -14034,13 +14401,20 @@ module.exports = {
       },
       'attack': 80,
       'locations': {
-        '4': {
-          'basePokemon': 'Budew',
-          'evolvedPokemon': 'Roselia',
-          'type': 0,
-          'level': 100,
-        },
-        '6': ['Grass'],
+        '4': [
+          {
+            'basePokemon': 'Budew',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Roselia',
+            'level': 100,
+            'startHour': 6,
+            'endHour': 18,
+          },
+        ],
+        '5': ['Grass'],
       },
       'catchRatePercent': 42,
       'eggSteps': 800,
@@ -14056,8 +14430,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gulpin',
+          'type': [0],
           'evolvedPokemon': 'Swalot',
-          'type': 0,
           'level': 26,
         },
       ],
@@ -14096,12 +14470,14 @@ module.exports = {
       },
       'attack': 121,
       'locations': {
-        '4': {
-          'basePokemon': 'Gulpin',
-          'evolvedPokemon': 'Swalot',
-          'type': 0,
-          'level': 26,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gulpin',
+            'type': [0],
+            'evolvedPokemon': 'Swalot',
+            'level': 26,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -14120,8 +14496,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Carvanha',
+          'type': [0],
           'evolvedPokemon': 'Sharpedo',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -14183,12 +14559,14 @@ module.exports = {
             '134',
           ],
         },
-        '4': {
-          'basePokemon': 'Carvanha',
-          'evolvedPokemon': 'Sharpedo',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Carvanha',
+            'type': [0],
+            'evolvedPokemon': 'Sharpedo',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -14204,8 +14582,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wailmer',
+          'type': [0],
           'evolvedPokemon': 'Wailord',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -14275,12 +14653,14 @@ module.exports = {
         '0': {
           '2': ['129'],
         },
-        '4': {
-          'basePokemon': 'Wailmer',
-          'evolvedPokemon': 'Wailord',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wailmer',
+            'type': [0],
+            'evolvedPokemon': 'Wailord',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 1600,
@@ -14299,8 +14679,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Numel',
+          'type': [0],
           'evolvedPokemon': 'Camerupt',
-          'type': 0,
           'level': 33,
         },
       ],
@@ -14350,12 +14730,14 @@ module.exports = {
       },
       'attack': 129,
       'locations': {
-        '4': {
-          'basePokemon': 'Numel',
-          'evolvedPokemon': 'Camerupt',
-          'type': 0,
-          'level': 33,
-        },
+        '4': [
+          {
+            'basePokemon': 'Numel',
+            'type': [0],
+            'evolvedPokemon': 'Camerupt',
+            'level': 33,
+          },
+        ],
       },
       'catchRatePercent': 42,
       'eggSteps': 800,
@@ -14394,8 +14776,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Spoink',
+          'type': [0],
           'evolvedPokemon': 'Grumpig',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -14433,12 +14815,14 @@ module.exports = {
       },
       'attack': 101,
       'locations': {
-        '4': {
-          'basePokemon': 'Spoink',
-          'evolvedPokemon': 'Grumpig',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Spoink',
+            'type': [0],
+            'evolvedPokemon': 'Grumpig',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -14479,8 +14863,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Trapinch',
+          'type': [0],
           'evolvedPokemon': 'Vibrava',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -14515,8 +14899,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Vibrava',
+          'type': [0],
           'evolvedPokemon': 'Flygon',
-          'type': 0,
           'level': 45,
         },
       ],
@@ -14530,12 +14914,14 @@ module.exports = {
       },
       'attack': 58,
       'locations': {
-        '4': {
-          'basePokemon': 'Trapinch',
-          'evolvedPokemon': 'Vibrava',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Trapinch',
+            'type': [0],
+            'evolvedPokemon': 'Vibrava',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -14561,12 +14947,14 @@ module.exports = {
       },
       'attack': 134,
       'locations': {
-        '4': {
-          'basePokemon': 'Vibrava',
-          'evolvedPokemon': 'Flygon',
-          'type': 0,
-          'level': 45,
-        },
+        '4': [
+          {
+            'basePokemon': 'Vibrava',
+            'type': [0],
+            'evolvedPokemon': 'Flygon',
+            'level': 45,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -14582,8 +14970,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cacnea',
+          'type': [0],
           'evolvedPokemon': 'Cacturne',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -14625,12 +15013,14 @@ module.exports = {
       },
       'attack': 133,
       'locations': {
-        '4': {
-          'basePokemon': 'Cacnea',
-          'evolvedPokemon': 'Cacturne',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cacnea',
+            'type': [0],
+            'evolvedPokemon': 'Cacturne',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -14649,8 +15039,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Swablu',
+          'type': [0],
           'evolvedPokemon': 'Altaria',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -14696,12 +15086,14 @@ module.exports = {
       'attack': 112,
       'locations': {
         '2': ['Sky Pillar'],
-        '4': {
-          'basePokemon': 'Swablu',
-          'evolvedPokemon': 'Altaria',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Swablu',
+            'type': [0],
+            'evolvedPokemon': 'Altaria',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -14822,8 +15214,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Barboach',
+          'type': [0],
           'evolvedPokemon': 'Whiscash',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -14874,12 +15266,14 @@ module.exports = {
       'attack': 127,
       'locations': {
         '2': ['Victory Road Hoenn'],
-        '4': {
-          'basePokemon': 'Barboach',
-          'evolvedPokemon': 'Whiscash',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Barboach',
+            'type': [0],
+            'evolvedPokemon': 'Whiscash',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -14895,8 +15289,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Corphish',
+          'type': [0],
           'evolvedPokemon': 'Crawdaunt',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -14941,12 +15335,14 @@ module.exports = {
       },
       'attack': 122,
       'locations': {
-        '4': {
-          'basePokemon': 'Corphish',
-          'evolvedPokemon': 'Crawdaunt',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Corphish',
+            'type': [0],
+            'evolvedPokemon': 'Crawdaunt',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 43,
       'eggSteps': 600,
@@ -14965,8 +15361,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Baltoy',
+          'type': [0],
           'evolvedPokemon': 'Claydol',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -15009,12 +15405,14 @@ module.exports = {
       'attack': 107,
       'locations': {
         '2': ['Sky Pillar'],
-        '4': {
-          'basePokemon': 'Baltoy',
-          'evolvedPokemon': 'Claydol',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Baltoy',
+            'type': [0],
+            'evolvedPokemon': 'Claydol',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -15033,8 +15431,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Lileep',
+          'type': [0],
           'evolvedPokemon': 'Cradily',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -15048,7 +15446,7 @@ module.exports = {
       },
       'attack': 66,
       'locations': {
-        '9': ['Root Fossil'],
+        '8': ['Root Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -15074,12 +15472,14 @@ module.exports = {
       },
       'attack': 135,
       'locations': {
-        '4': {
-          'basePokemon': 'Lileep',
-          'evolvedPokemon': 'Cradily',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Lileep',
+            'type': [0],
+            'evolvedPokemon': 'Cradily',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -15098,8 +15498,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Anorith',
+          'type': [0],
           'evolvedPokemon': 'Armaldo',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -15113,7 +15513,7 @@ module.exports = {
       },
       'attack': 57,
       'locations': {
-        '9': ['Claw Fossil'],
+        '8': ['Claw Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -15139,12 +15539,14 @@ module.exports = {
       },
       'attack': 135,
       'locations': {
-        '4': {
-          'basePokemon': 'Anorith',
-          'evolvedPokemon': 'Armaldo',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Anorith',
+            'type': [0],
+            'evolvedPokemon': 'Armaldo',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -15160,9 +15562,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Feebas',
-          'evolvedPokemon': 'Milotic',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Milotic',
         },
       ],
       'base': {
@@ -15175,7 +15577,7 @@ module.exports = {
       },
       'attack': 10,
       'locations': {
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -15198,12 +15600,14 @@ module.exports = {
       },
       'attack': 139,
       'locations': {
-        '5': {
-          'basePokemon': 'Feebas',
-          'evolvedPokemon': 'Milotic',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Feebas',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Milotic',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -15275,8 +15679,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shuppet',
+          'type': [0],
           'evolvedPokemon': 'Banette',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -15321,12 +15725,14 @@ module.exports = {
       'attack': 115,
       'locations': {
         '2': ['Sky Pillar'],
-        '4': {
-          'basePokemon': 'Shuppet',
-          'evolvedPokemon': 'Banette',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shuppet',
+            'type': [0],
+            'evolvedPokemon': 'Banette',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -15342,8 +15748,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Duskull',
+          'type': [0],
           'evolvedPokemon': 'Dusclops',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -15382,12 +15788,14 @@ module.exports = {
       'attack': 82,
       'locations': {
         '3': ['Sky Pillar'],
-        '4': {
-          'basePokemon': 'Duskull',
-          'evolvedPokemon': 'Dusclops',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Duskull',
+            'type': [0],
+            'evolvedPokemon': 'Dusclops',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 1000,
@@ -15416,7 +15824,7 @@ module.exports = {
         '0': {
           '2': ['119'],
         },
-        '6': ['Grass'],
+        '5': ['Grass'],
       },
       'catchRatePercent': 53,
       'eggSteps': 1000,
@@ -15440,12 +15848,14 @@ module.exports = {
       'attack': 102,
       'locations': {
         '3': ['Mt. Pyre'],
-        '4': {
-          'basePokemon': 'Chingling',
-          'evolvedPokemon': 'Chimecho',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Chingling',
+            'type': [0],
+            'evolvedPokemon': 'Chimecho',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -15486,8 +15896,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wynaut',
+          'type': [0],
           'evolvedPokemon': 'Wobbuffet',
-          'type': 0,
           'level': 15,
         },
       ],
@@ -15505,7 +15915,7 @@ module.exports = {
         '0': {
           '2': ['130'],
         },
-        '7': ['Wobbuffet'],
+        '6': ['Wobbuffet'],
       },
       'catchRatePercent': 37,
       'eggSteps': 800,
@@ -15521,8 +15931,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Snorunt',
+          'type': [0],
           'evolvedPokemon': 'Glalie',
-          'type': 0,
           'level': 42,
         },
       ],
@@ -15559,12 +15969,14 @@ module.exports = {
       },
       'attack': 120,
       'locations': {
-        '4': {
-          'basePokemon': 'Snorunt',
-          'evolvedPokemon': 'Glalie',
-          'type': 0,
-          'level': 42,
-        },
+        '4': [
+          {
+            'basePokemon': 'Snorunt',
+            'type': [0],
+            'evolvedPokemon': 'Glalie',
+            'level': 42,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -15583,8 +15995,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Spheal',
+          'type': [0],
           'evolvedPokemon': 'Sealeo',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -15617,8 +16029,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sealeo',
+          'type': [0],
           'evolvedPokemon': 'Walrein',
-          'type': 0,
           'level': 44,
         },
       ],
@@ -15632,12 +16044,14 @@ module.exports = {
       },
       'attack': 98,
       'locations': {
-        '4': {
-          'basePokemon': 'Spheal',
-          'evolvedPokemon': 'Sealeo',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Spheal',
+            'type': [0],
+            'evolvedPokemon': 'Sealeo',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -15663,12 +16077,14 @@ module.exports = {
       },
       'attack': 157,
       'locations': {
-        '4': {
-          'basePokemon': 'Sealeo',
-          'evolvedPokemon': 'Walrein',
-          'type': 0,
-          'level': 44,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sealeo',
+            'type': [0],
+            'evolvedPokemon': 'Walrein',
+            'level': 44,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -15684,15 +16100,15 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Clamperl',
-          'evolvedPokemon': 'Huntail',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Huntail',
         },
         {
           'basePokemon': 'Clamperl',
-          'evolvedPokemon': 'Gorebyss',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Gorebyss',
         },
       ],
       'base': {
@@ -15711,7 +16127,7 @@ module.exports = {
             '126',
           ],
         },
-        '6': ['Water'],
+        '5': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -15734,12 +16150,14 @@ module.exports = {
       },
       'attack': 123,
       'locations': {
-        '5': {
-          'basePokemon': 'Clamperl',
-          'evolvedPokemon': 'Huntail',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Clamperl',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Huntail',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -15762,12 +16180,14 @@ module.exports = {
       },
       'attack': 122,
       'locations': {
-        '5': {
-          'basePokemon': 'Clamperl',
-          'evolvedPokemon': 'Gorebyss',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Clamperl',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Gorebyss',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -15839,8 +16259,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bagon',
+          'type': [0],
           'evolvedPokemon': 'Shelgon',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -15854,7 +16274,7 @@ module.exports = {
       },
       'attack': 46,
       'locations': {
-        '6': ['Dragon'],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -15870,8 +16290,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shelgon',
+          'type': [0],
           'evolvedPokemon': 'Salamence',
-          'type': 0,
           'level': 50,
         },
       ],
@@ -15885,13 +16305,15 @@ module.exports = {
       },
       'attack': 94,
       'locations': {
-        '4': {
-          'basePokemon': 'Bagon',
-          'evolvedPokemon': 'Shelgon',
-          'type': 0,
-          'level': 30,
-        },
-        '6': ['Dragon'],
+        '4': [
+          {
+            'basePokemon': 'Bagon',
+            'type': [0],
+            'evolvedPokemon': 'Shelgon',
+            'level': 30,
+          },
+        ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -15917,13 +16339,15 @@ module.exports = {
       },
       'attack': 195,
       'locations': {
-        '4': {
-          'basePokemon': 'Shelgon',
-          'evolvedPokemon': 'Salamence',
-          'type': 0,
-          'level': 50,
-        },
-        '6': ['Dragon'],
+        '4': [
+          {
+            'basePokemon': 'Shelgon',
+            'type': [0],
+            'evolvedPokemon': 'Salamence',
+            'level': 50,
+          },
+        ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -15942,8 +16366,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Beldum',
+          'type': [0],
           'evolvedPokemon': 'Metang',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -15957,7 +16381,7 @@ module.exports = {
       },
       'attack': 42,
       'locations': {
-        '8': ['Mossdeep City'],
+        '7': ['Mossdeep City'],
       },
       'catchRatePercent': 2,
       'eggSteps': 1600,
@@ -15976,8 +16400,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Metang',
+          'type': [0],
           'evolvedPokemon': 'Metagross',
-          'type': 0,
           'level': 45,
         },
       ],
@@ -15991,12 +16415,14 @@ module.exports = {
       },
       'attack': 86,
       'locations': {
-        '4': {
-          'basePokemon': 'Beldum',
-          'evolvedPokemon': 'Metang',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Beldum',
+            'type': [0],
+            'evolvedPokemon': 'Metang',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 1600,
@@ -16022,12 +16448,14 @@ module.exports = {
       },
       'attack': 188,
       'locations': {
-        '4': {
-          'basePokemon': 'Metang',
-          'evolvedPokemon': 'Metagross',
-          'type': 0,
-          'level': 45,
-        },
+        '4': [
+          {
+            'basePokemon': 'Metang',
+            'type': [0],
+            'evolvedPokemon': 'Metagross',
+            'level': 45,
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 1600,
@@ -16285,8 +16713,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Turtwig',
+          'type': [0],
           'evolvedPokemon': 'Grotle',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -16314,8 +16742,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Grotle',
+          'type': [0],
           'evolvedPokemon': 'Torterra',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -16329,12 +16757,14 @@ module.exports = {
       },
       'attack': 94,
       'locations': {
-        '4': {
-          'basePokemon': 'Turtwig',
-          'evolvedPokemon': 'Grotle',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Turtwig',
+            'type': [0],
+            'evolvedPokemon': 'Grotle',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16360,12 +16790,14 @@ module.exports = {
       },
       'attack': 154,
       'locations': {
-        '4': {
-          'basePokemon': 'Grotle',
-          'evolvedPokemon': 'Torterra',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Grotle',
+            'type': [0],
+            'evolvedPokemon': 'Torterra',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16381,8 +16813,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chimchar',
+          'type': [0],
           'evolvedPokemon': 'Monferno',
-          'type': 0,
           'level': 14,
         },
       ],
@@ -16413,8 +16845,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Monferno',
+          'type': [0],
           'evolvedPokemon': 'Infernape',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -16428,12 +16860,14 @@ module.exports = {
       },
       'attack': 86,
       'locations': {
-        '4': {
-          'basePokemon': 'Chimchar',
-          'evolvedPokemon': 'Monferno',
-          'type': 0,
-          'level': 14,
-        },
+        '4': [
+          {
+            'basePokemon': 'Chimchar',
+            'type': [0],
+            'evolvedPokemon': 'Monferno',
+            'level': 14,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16459,12 +16893,14 @@ module.exports = {
       },
       'attack': 143,
       'locations': {
-        '4': {
-          'basePokemon': 'Monferno',
-          'evolvedPokemon': 'Infernape',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Monferno',
+            'type': [0],
+            'evolvedPokemon': 'Infernape',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16480,8 +16916,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Piplup',
+          'type': [0],
           'evolvedPokemon': 'Prinplup',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -16509,8 +16945,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Prinplup',
+          'type': [0],
           'evolvedPokemon': 'Empoleon',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -16524,12 +16960,14 @@ module.exports = {
       },
       'attack': 91,
       'locations': {
-        '4': {
-          'basePokemon': 'Piplup',
-          'evolvedPokemon': 'Prinplup',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Piplup',
+            'type': [0],
+            'evolvedPokemon': 'Prinplup',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16555,12 +16993,14 @@ module.exports = {
       },
       'attack': 155,
       'locations': {
-        '4': {
-          'basePokemon': 'Prinplup',
-          'evolvedPokemon': 'Empoleon',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Prinplup',
+            'type': [0],
+            'evolvedPokemon': 'Empoleon',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16579,8 +17019,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Starly',
+          'type': [0],
           'evolvedPokemon': 'Staravia',
-          'type': 0,
           'level': 14,
         },
       ],
@@ -16611,8 +17051,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Staravia',
+          'type': [0],
           'evolvedPokemon': 'Staraptor',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -16626,12 +17066,14 @@ module.exports = {
       },
       'attack': 55,
       'locations': {
-        '4': {
-          'basePokemon': 'Starly',
-          'evolvedPokemon': 'Staravia',
-          'type': 0,
-          'level': 14,
-        },
+        '4': [
+          {
+            'basePokemon': 'Starly',
+            'type': [0],
+            'evolvedPokemon': 'Staravia',
+            'level': 14,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -16657,12 +17099,14 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '4': {
-          'basePokemon': 'Staravia',
-          'evolvedPokemon': 'Staraptor',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Staravia',
+            'type': [0],
+            'evolvedPokemon': 'Staraptor',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -16678,8 +17122,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bidoof',
+          'type': [0],
           'evolvedPokemon': 'Bibarel',
-          'type': 0,
           'level': 15,
         },
       ],
@@ -16717,12 +17161,14 @@ module.exports = {
       },
       'attack': 90,
       'locations': {
-        '4': {
-          'basePokemon': 'Bidoof',
-          'evolvedPokemon': 'Bibarel',
-          'type': 0,
-          'level': 15,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bidoof',
+            'type': [0],
+            'evolvedPokemon': 'Bibarel',
+            'level': 15,
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 600,
@@ -16738,8 +17184,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Kricketot',
+          'type': [0],
           'evolvedPokemon': 'Kricketune',
-          'type': 0,
           'level': 10,
         },
       ],
@@ -16774,12 +17220,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Kricketot',
-          'evolvedPokemon': 'Kricketune',
-          'type': 0,
-          'level': 10,
-        },
+        '4': [
+          {
+            'basePokemon': 'Kricketot',
+            'type': [0],
+            'evolvedPokemon': 'Kricketune',
+            'level': 10,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -16795,8 +17243,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shinx',
+          'type': [0],
           'evolvedPokemon': 'Luxio',
-          'type': 0,
           'level': 15,
         },
       ],
@@ -16824,8 +17272,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Luxio',
+          'type': [0],
           'evolvedPokemon': 'Luxray',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -16839,12 +17287,14 @@ module.exports = {
       },
       'attack': 73,
       'locations': {
-        '4': {
-          'basePokemon': 'Shinx',
-          'evolvedPokemon': 'Luxio',
-          'type': 0,
-          'level': 15,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shinx',
+            'type': [0],
+            'evolvedPokemon': 'Luxio',
+            'level': 15,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -16867,12 +17317,14 @@ module.exports = {
       },
       'attack': 153,
       'locations': {
-        '4': {
-          'basePokemon': 'Luxio',
-          'evolvedPokemon': 'Luxray',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Luxio',
+            'type': [0],
+            'evolvedPokemon': 'Luxray',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -16891,9 +17343,14 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Budew',
+          'type': [
+            0,
+            2,
+          ],
           'evolvedPokemon': 'Roselia',
-          'type': 0,
           'level': 100,
+          'startHour': 6,
+          'endHour': 18,
         },
       ],
       'baby': true,
@@ -16907,7 +17364,7 @@ module.exports = {
       },
       'attack': 35,
       'locations': {
-        '7': ['Roselia'],
+        '6': ['Roselia'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -16947,8 +17404,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cranidos',
+          'type': [0],
           'evolvedPokemon': 'Rampardos',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -16983,12 +17440,14 @@ module.exports = {
       },
       'attack': 137,
       'locations': {
-        '4': {
-          'basePokemon': 'Cranidos',
-          'evolvedPokemon': 'Rampardos',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cranidos',
+            'type': [0],
+            'evolvedPokemon': 'Rampardos',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -17007,8 +17466,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shieldon',
+          'type': [0],
           'evolvedPokemon': 'Bastiodon',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -17046,12 +17505,14 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': {
-          'basePokemon': 'Shieldon',
-          'evolvedPokemon': 'Bastiodon',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shieldon',
+            'type': [0],
+            'evolvedPokemon': 'Bastiodon',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -17067,8 +17528,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Burmy',
+          'type': [0],
           'evolvedPokemon': 'Wormadam',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -17106,12 +17567,14 @@ module.exports = {
       },
       'attack': 91,
       'locations': {
-        '4': {
-          'basePokemon': 'Burmy',
-          'evolvedPokemon': 'Wormadam',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Burmy',
+            'type': [0],
+            'evolvedPokemon': 'Wormadam',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -17154,8 +17617,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Combee',
+          'type': [0],
           'evolvedPokemon': 'Vespiquen',
-          'type': 0,
           'level': 21,
         },
       ],
@@ -17193,12 +17656,14 @@ module.exports = {
       },
       'attack': 119,
       'locations': {
-        '4': {
-          'basePokemon': 'Combee',
-          'evolvedPokemon': 'Vespiquen',
-          'type': 0,
-          'level': 21,
-        },
+        '4': [
+          {
+            'basePokemon': 'Combee',
+            'type': [0],
+            'evolvedPokemon': 'Vespiquen',
+            'level': 21,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -17235,8 +17700,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Buizel',
+          'type': [0],
           'evolvedPokemon': 'Floatzel',
-          'type': 0,
           'level': 26,
         },
       ],
@@ -17271,12 +17736,14 @@ module.exports = {
       },
       'attack': 122,
       'locations': {
-        '4': {
-          'basePokemon': 'Buizel',
-          'evolvedPokemon': 'Floatzel',
-          'type': 0,
-          'level': 26,
-        },
+        '4': [
+          {
+            'basePokemon': 'Buizel',
+            'type': [0],
+            'evolvedPokemon': 'Floatzel',
+            'level': 26,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -17292,8 +17759,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cherubi',
+          'type': [0],
           'evolvedPokemon': 'Cherrim',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -17328,12 +17795,14 @@ module.exports = {
       },
       'attack': 98,
       'locations': {
-        '4': {
-          'basePokemon': 'Cherubi',
-          'evolvedPokemon': 'Cherrim',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cherubi',
+            'type': [0],
+            'evolvedPokemon': 'Cherrim',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -17349,8 +17818,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shellos',
+          'type': [0],
           'evolvedPokemon': 'Gastrodon',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -17388,12 +17857,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': {
-          'basePokemon': 'Shellos',
-          'evolvedPokemon': 'Gastrodon',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shellos',
+            'type': [0],
+            'evolvedPokemon': 'Gastrodon',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -17433,8 +17904,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Drifloon',
+          'type': [0],
           'evolvedPokemon': 'Drifblim',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -17472,12 +17943,14 @@ module.exports = {
       },
       'attack': 140,
       'locations': {
-        '4': {
-          'basePokemon': 'Drifloon',
-          'evolvedPokemon': 'Drifblim',
-          'type': 0,
-          'level': 28,
-        },
+        '4': [
+          {
+            'basePokemon': 'Drifloon',
+            'type': [0],
+            'evolvedPokemon': 'Drifblim',
+            'level': 28,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 1200,
@@ -17493,8 +17966,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Buneary',
+          'type': [0],
           'evolvedPokemon': 'Lopunny',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -17529,12 +18002,14 @@ module.exports = {
       },
       'attack': 95,
       'locations': {
-        '4': {
-          'basePokemon': 'Buneary',
-          'evolvedPokemon': 'Lopunny',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Buneary',
+            'type': [0],
+            'evolvedPokemon': 'Lopunny',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -17595,8 +18070,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Glameow',
+          'type': [0],
           'evolvedPokemon': 'Purugly',
-          'type': 0,
           'level': 38,
         },
       ],
@@ -17631,12 +18106,14 @@ module.exports = {
       },
       'attack': 94,
       'locations': {
-        '4': {
-          'basePokemon': 'Glameow',
-          'evolvedPokemon': 'Purugly',
-          'type': 0,
-          'level': 38,
-        },
+        '4': [
+          {
+            'basePokemon': 'Glameow',
+            'type': [0],
+            'evolvedPokemon': 'Purugly',
+            'level': 38,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -17652,8 +18129,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chingling',
+          'type': [0],
           'evolvedPokemon': 'Chimecho',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -17668,7 +18145,7 @@ module.exports = {
       },
       'attack': 41,
       'locations': {
-        '7': ['Chimecho'],
+        '6': ['Chimecho'],
       },
       'catchRatePercent': 36,
       'eggSteps': 1000,
@@ -17687,8 +18164,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Stunky',
+          'type': [0],
           'evolvedPokemon': 'Skuntank',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -17726,12 +18203,14 @@ module.exports = {
       },
       'attack': 124,
       'locations': {
-        '4': {
-          'basePokemon': 'Stunky',
-          'evolvedPokemon': 'Skuntank',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Stunky',
+            'type': [0],
+            'evolvedPokemon': 'Skuntank',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -17750,8 +18229,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bronzor',
+          'type': [0],
           'evolvedPokemon': 'Bronzong',
-          'type': 0,
           'level': 33,
         },
       ],
@@ -17789,12 +18268,14 @@ module.exports = {
       },
       'attack': 130,
       'locations': {
-        '4': {
-          'basePokemon': 'Bronzor',
-          'evolvedPokemon': 'Bronzong',
-          'type': 0,
-          'level': 33,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bronzor',
+            'type': [0],
+            'evolvedPokemon': 'Bronzong',
+            'level': 33,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -17810,9 +18291,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bonsly',
-          'evolvedPokemon': 'Sudowoodo',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Sudowoodo',
         },
       ],
       'baby': true,
@@ -17826,7 +18307,7 @@ module.exports = {
       },
       'attack': 29,
       'locations': {
-        '7': ['Sudowoodo'],
+        '6': ['Sudowoodo'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -17845,9 +18326,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mime Jr.',
-          'evolvedPokemon': 'Mr. Mime',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Mr. Mime',
         },
       ],
       'baby': true,
@@ -17861,7 +18342,7 @@ module.exports = {
       },
       'attack': 30,
       'locations': {
-        '7': ['Mr. Mime'],
+        '6': ['Mr. Mime'],
       },
       'catchRatePercent': 41,
       'eggSteps': 1000,
@@ -17877,9 +18358,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Happiny',
-          'evolvedPokemon': 'Chansey',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Chansey',
         },
       ],
       'baby': true,
@@ -17893,7 +18374,7 @@ module.exports = {
       },
       'attack': 10,
       'locations': {
-        '7': ['Chansey'],
+        '6': ['Chansey'],
       },
       'catchRatePercent': 38,
       'eggSteps': 1600,
@@ -17960,8 +18441,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gible',
+          'type': [0],
           'evolvedPokemon': 'Gabite',
-          'type': 0,
           'level': 24,
         },
       ],
@@ -17992,8 +18473,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gabite',
+          'type': [0],
           'evolvedPokemon': 'Garchomp',
-          'type': 0,
           'level': 48,
         },
       ],
@@ -18007,12 +18488,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Gible',
-          'evolvedPokemon': 'Gabite',
-          'type': 0,
-          'level': 24,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gible',
+            'type': [0],
+            'evolvedPokemon': 'Gabite',
+            'level': 24,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -18038,12 +18521,14 @@ module.exports = {
       },
       'attack': 186,
       'locations': {
-        '4': {
-          'basePokemon': 'Gabite',
-          'evolvedPokemon': 'Garchomp',
-          'type': 0,
-          'level': 48,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gabite',
+            'type': [0],
+            'evolvedPokemon': 'Garchomp',
+            'level': 48,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -18059,8 +18544,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Munchlax',
+          'type': [0],
           'evolvedPokemon': 'Snorlax',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -18075,7 +18560,7 @@ module.exports = {
       },
       'attack': 88,
       'locations': {
-        '7': ['Snorlax'],
+        '6': ['Snorlax'],
       },
       'catchRatePercent': 18,
       'eggSteps': 1600,
@@ -18091,8 +18576,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Riolu',
+          'type': [0],
           'evolvedPokemon': 'Lucario',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -18130,12 +18615,14 @@ module.exports = {
       },
       'attack': 145,
       'locations': {
-        '4': {
-          'basePokemon': 'Riolu',
-          'evolvedPokemon': 'Lucario',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Riolu',
+            'type': [0],
+            'evolvedPokemon': 'Lucario',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -18151,8 +18638,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Hippopotas',
+          'type': [0],
           'evolvedPokemon': 'Hippowdon',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -18187,12 +18674,14 @@ module.exports = {
       },
       'attack': 155,
       'locations': {
-        '4': {
-          'basePokemon': 'Hippopotas',
-          'evolvedPokemon': 'Hippowdon',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Hippopotas',
+            'type': [0],
+            'evolvedPokemon': 'Hippowdon',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 1200,
@@ -18211,8 +18700,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Skorupi',
+          'type': [0],
           'evolvedPokemon': 'Drapion',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -18250,12 +18739,14 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '4': {
-          'basePokemon': 'Skorupi',
-          'evolvedPokemon': 'Drapion',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Skorupi',
+            'type': [0],
+            'evolvedPokemon': 'Drapion',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -18274,8 +18765,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Croagunk',
+          'type': [0],
           'evolvedPokemon': 'Toxicroak',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -18313,12 +18804,14 @@ module.exports = {
       },
       'attack': 131,
       'locations': {
-        '4': {
-          'basePokemon': 'Croagunk',
-          'evolvedPokemon': 'Toxicroak',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Croagunk',
+            'type': [0],
+            'evolvedPokemon': 'Toxicroak',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -18355,8 +18848,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Finneon',
+          'type': [0],
           'evolvedPokemon': 'Lumineon',
-          'type': 0,
           'level': 31,
         },
       ],
@@ -18391,12 +18884,14 @@ module.exports = {
       },
       'attack': 99,
       'locations': {
-        '4': {
-          'basePokemon': 'Finneon',
-          'evolvedPokemon': 'Lumineon',
-          'type': 0,
-          'level': 31,
-        },
+        '4': [
+          {
+            'basePokemon': 'Finneon',
+            'type': [0],
+            'evolvedPokemon': 'Lumineon',
+            'level': 31,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -18415,9 +18910,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mantyke',
-          'evolvedPokemon': 'Mantine',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Mantine',
         },
       ],
       'baby': true,
@@ -18431,7 +18926,7 @@ module.exports = {
       },
       'attack': 41,
       'locations': {
-        '7': ['Mantine'],
+        '6': ['Mantine'],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -18450,8 +18945,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Snover',
+          'type': [0],
           'evolvedPokemon': 'Abomasnow',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -18489,12 +18984,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': {
-          'basePokemon': 'Snover',
-          'evolvedPokemon': 'Abomasnow',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Snover',
+            'type': [0],
+            'evolvedPokemon': 'Abomasnow',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -18519,7 +19016,21 @@ module.exports = {
         'speed': 125,
       },
       'attack': 105,
-      'locations': {},
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Sneasel',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Weavile',
+            'level': 100,
+            'startHour': 18,
+            'endHour': 6,
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -18631,12 +19142,14 @@ module.exports = {
       },
       'attack': 150,
       'locations': {
-        '5': {
-          'basePokemon': 'Electabuzz',
-          'evolvedPokemon': 'Electivire',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Electabuzz',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Electivire',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -18659,12 +19172,14 @@ module.exports = {
       },
       'attack': 154,
       'locations': {
-        '5': {
-          'basePokemon': 'Magmar',
-          'evolvedPokemon': 'Magmortar',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Magmar',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Magmortar',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -19286,8 +19801,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Snivy',
+          'type': [0],
           'evolvedPokemon': 'Servine',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -19315,8 +19830,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Servine',
+          'type': [0],
           'evolvedPokemon': 'Serperior',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -19330,12 +19845,14 @@ module.exports = {
       },
       'attack': 78,
       'locations': {
-        '4': {
-          'basePokemon': 'Snivy',
-          'evolvedPokemon': 'Servine',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Snivy',
+            'type': [0],
+            'evolvedPokemon': 'Servine',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19358,12 +19875,14 @@ module.exports = {
       },
       'attack': 122,
       'locations': {
-        '4': {
-          'basePokemon': 'Servine',
-          'evolvedPokemon': 'Serperior',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Servine',
+            'type': [0],
+            'evolvedPokemon': 'Serperior',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19379,8 +19898,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tepig',
+          'type': [0],
           'evolvedPokemon': 'Pignite',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -19411,8 +19930,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pignite',
+          'type': [0],
           'evolvedPokemon': 'Emboar',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -19426,12 +19945,14 @@ module.exports = {
       },
       'attack': 105,
       'locations': {
-        '4': {
-          'basePokemon': 'Tepig',
-          'evolvedPokemon': 'Pignite',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tepig',
+            'type': [0],
+            'evolvedPokemon': 'Pignite',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19457,12 +19978,14 @@ module.exports = {
       },
       'attack': 170,
       'locations': {
-        '4': {
-          'basePokemon': 'Pignite',
-          'evolvedPokemon': 'Emboar',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pignite',
+            'type': [0],
+            'evolvedPokemon': 'Emboar',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19478,8 +20001,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Oshawott',
+          'type': [0],
           'evolvedPokemon': 'Dewott',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -19507,8 +20030,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Dewott',
+          'type': [0],
           'evolvedPokemon': 'Samurott',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -19522,12 +20045,14 @@ module.exports = {
       },
       'attack': 99,
       'locations': {
-        '4': {
-          'basePokemon': 'Oshawott',
-          'evolvedPokemon': 'Dewott',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Oshawott',
+            'type': [0],
+            'evolvedPokemon': 'Dewott',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19550,12 +20075,14 @@ module.exports = {
       },
       'attack': 161,
       'locations': {
-        '4': {
-          'basePokemon': 'Dewott',
-          'evolvedPokemon': 'Samurott',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Dewott',
+            'type': [0],
+            'evolvedPokemon': 'Samurott',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19571,8 +20098,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Patrat',
+          'type': [0],
           'evolvedPokemon': 'Watchog',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -19607,12 +20134,14 @@ module.exports = {
       },
       'attack': 87,
       'locations': {
-        '4': {
-          'basePokemon': 'Patrat',
-          'evolvedPokemon': 'Watchog',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Patrat',
+            'type': [0],
+            'evolvedPokemon': 'Watchog',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -19628,8 +20157,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Lillipup',
+          'type': [0],
           'evolvedPokemon': 'Herdier',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -19657,8 +20186,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Herdier',
+          'type': [0],
           'evolvedPokemon': 'Stoutland',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -19672,12 +20201,14 @@ module.exports = {
       },
       'attack': 67,
       'locations': {
-        '4': {
-          'basePokemon': 'Lillipup',
-          'evolvedPokemon': 'Herdier',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Lillipup',
+            'type': [0],
+            'evolvedPokemon': 'Herdier',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -19700,12 +20231,14 @@ module.exports = {
       },
       'attack': 115,
       'locations': {
-        '4': {
-          'basePokemon': 'Herdier',
-          'evolvedPokemon': 'Stoutland',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Herdier',
+            'type': [0],
+            'evolvedPokemon': 'Stoutland',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -19721,8 +20254,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Purrloin',
+          'type': [0],
           'evolvedPokemon': 'Liepard',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -19757,12 +20290,14 @@ module.exports = {
       },
       'attack': 97,
       'locations': {
-        '4': {
-          'basePokemon': 'Purrloin',
-          'evolvedPokemon': 'Liepard',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Purrloin',
+            'type': [0],
+            'evolvedPokemon': 'Liepard',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -19778,9 +20313,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pansage',
-          'evolvedPokemon': 'Simisage',
-          'type': 0,
+          'type': [1],
           'stone': 3,
+          'evolvedPokemon': 'Simisage',
         },
       ],
       'base': {
@@ -19814,12 +20349,14 @@ module.exports = {
       },
       'attack': 127,
       'locations': {
-        '5': {
-          'basePokemon': 'Pansage',
-          'evolvedPokemon': 'Simisage',
-          'type': 0,
-          'stone': 3,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pansage',
+            'type': [1],
+            'stone': 3,
+            'evolvedPokemon': 'Simisage',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -19835,9 +20372,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pansear',
-          'evolvedPokemon': 'Simisear',
-          'type': 0,
+          'type': [1],
           'stone': 0,
+          'evolvedPokemon': 'Simisear',
         },
       ],
       'base': {
@@ -19871,12 +20408,14 @@ module.exports = {
       },
       'attack': 127,
       'locations': {
-        '5': {
-          'basePokemon': 'Pansear',
-          'evolvedPokemon': 'Simisear',
-          'type': 0,
-          'stone': 0,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pansear',
+            'type': [1],
+            'stone': 0,
+            'evolvedPokemon': 'Simisear',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -19892,9 +20431,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Panpour',
-          'evolvedPokemon': 'Simipour',
-          'type': 0,
+          'type': [1],
           'stone': 1,
+          'evolvedPokemon': 'Simipour',
         },
       ],
       'base': {
@@ -19928,12 +20467,14 @@ module.exports = {
       },
       'attack': 127,
       'locations': {
-        '5': {
-          'basePokemon': 'Panpour',
-          'evolvedPokemon': 'Simipour',
-          'type': 0,
-          'stone': 1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Panpour',
+            'type': [1],
+            'stone': 1,
+            'evolvedPokemon': 'Simipour',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -19949,9 +20490,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Munna',
-          'evolvedPokemon': 'Musharna',
-          'type': 0,
+          'type': [1],
           'stone': 4,
+          'evolvedPokemon': 'Musharna',
         },
       ],
       'base': {
@@ -19985,12 +20526,14 @@ module.exports = {
       },
       'attack': 137,
       'locations': {
-        '5': {
-          'basePokemon': 'Munna',
-          'evolvedPokemon': 'Musharna',
-          'type': 0,
-          'stone': 4,
-        },
+        '4': [
+          {
+            'basePokemon': 'Munna',
+            'type': [1],
+            'stone': 4,
+            'evolvedPokemon': 'Musharna',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 400,
@@ -20009,8 +20552,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pidove',
+          'type': [0],
           'evolvedPokemon': 'Tranquill',
-          'type': 0,
           'level': 21,
         },
       ],
@@ -20041,8 +20584,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tranquill',
+          'type': [0],
           'evolvedPokemon': 'Unfezant',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -20056,12 +20599,14 @@ module.exports = {
       },
       'attack': 67,
       'locations': {
-        '4': {
-          'basePokemon': 'Pidove',
-          'evolvedPokemon': 'Tranquill',
-          'type': 0,
-          'level': 21,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pidove',
+            'type': [0],
+            'evolvedPokemon': 'Tranquill',
+            'level': 21,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -20087,12 +20632,14 @@ module.exports = {
       },
       'attack': 119,
       'locations': {
-        '4': {
-          'basePokemon': 'Tranquill',
-          'evolvedPokemon': 'Unfezant',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tranquill',
+            'type': [0],
+            'evolvedPokemon': 'Unfezant',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -20108,8 +20655,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Blitzle',
+          'type': [0],
           'evolvedPokemon': 'Zebstrika',
-          'type': 0,
           'level': 27,
         },
       ],
@@ -20144,12 +20691,14 @@ module.exports = {
       },
       'attack': 119,
       'locations': {
-        '4': {
-          'basePokemon': 'Blitzle',
-          'evolvedPokemon': 'Zebstrika',
-          'type': 0,
-          'level': 27,
-        },
+        '4': [
+          {
+            'basePokemon': 'Blitzle',
+            'type': [0],
+            'evolvedPokemon': 'Zebstrika',
+            'level': 27,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -20165,8 +20714,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Roggenrola',
+          'type': [0],
           'evolvedPokemon': 'Boldore',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -20194,9 +20743,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Boldore',
-          'evolvedPokemon': 'Gigalith',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Gigalith',
         },
       ],
       'base': {
@@ -20209,12 +20758,14 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': {
-          'basePokemon': 'Roggenrola',
-          'evolvedPokemon': 'Boldore',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Roggenrola',
+            'type': [0],
+            'evolvedPokemon': 'Boldore',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -20237,12 +20788,14 @@ module.exports = {
       },
       'attack': 144,
       'locations': {
-        '5': {
-          'basePokemon': 'Boldore',
-          'evolvedPokemon': 'Gigalith',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Boldore',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Gigalith',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -20261,8 +20814,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Woobat',
+          'type': [0],
           'evolvedPokemon': 'Swoobat',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -20300,12 +20853,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Woobat',
-          'evolvedPokemon': 'Swoobat',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Woobat',
+            'type': [0],
+            'evolvedPokemon': 'Swoobat',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -20321,8 +20876,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Drilbur',
+          'type': [0],
           'evolvedPokemon': 'Excadrill',
-          'type': 0,
           'level': 31,
         },
       ],
@@ -20360,12 +20915,14 @@ module.exports = {
       },
       'attack': 130,
       'locations': {
-        '4': {
-          'basePokemon': 'Drilbur',
-          'evolvedPokemon': 'Excadrill',
-          'type': 0,
-          'level': 31,
-        },
+        '4': [
+          {
+            'basePokemon': 'Drilbur',
+            'type': [0],
+            'evolvedPokemon': 'Excadrill',
+            'level': 31,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -20402,8 +20959,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Timburr',
+          'type': [0],
           'evolvedPokemon': 'Gurdurr',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -20431,9 +20988,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gurdurr',
-          'evolvedPokemon': 'Conkeldurr',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Conkeldurr',
         },
       ],
       'base': {
@@ -20446,12 +21003,14 @@ module.exports = {
       },
       'attack': 88,
       'locations': {
-        '4': {
-          'basePokemon': 'Timburr',
-          'evolvedPokemon': 'Gurdurr',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Timburr',
+            'type': [0],
+            'evolvedPokemon': 'Gurdurr',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -20474,12 +21033,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '5': {
-          'basePokemon': 'Gurdurr',
-          'evolvedPokemon': 'Conkeldurr',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gurdurr',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Conkeldurr',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -20495,8 +21056,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tympole',
+          'type': [0],
           'evolvedPokemon': 'Palpitoad',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -20527,8 +21088,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Palpitoad',
+          'type': [0],
           'evolvedPokemon': 'Seismitoad',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -20542,12 +21103,14 @@ module.exports = {
       },
       'attack': 80,
       'locations': {
-        '4': {
-          'basePokemon': 'Tympole',
-          'evolvedPokemon': 'Palpitoad',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tympole',
+            'type': [0],
+            'evolvedPokemon': 'Palpitoad',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -20573,12 +21136,14 @@ module.exports = {
       },
       'attack': 147,
       'locations': {
-        '4': {
-          'basePokemon': 'Palpitoad',
-          'evolvedPokemon': 'Seismitoad',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Palpitoad',
+            'type': [0],
+            'evolvedPokemon': 'Seismitoad',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -20639,8 +21204,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sewaddle',
+          'type': [0],
           'evolvedPokemon': 'Swadloon',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -20671,8 +21236,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Swadloon',
+          'type': [0],
           'evolvedPokemon': 'Leavanny',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -20686,12 +21251,14 @@ module.exports = {
       },
       'attack': 71,
       'locations': {
-        '4': {
-          'basePokemon': 'Sewaddle',
-          'evolvedPokemon': 'Swadloon',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sewaddle',
+            'type': [0],
+            'evolvedPokemon': 'Swadloon',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -20717,12 +21284,14 @@ module.exports = {
       },
       'attack': 124,
       'locations': {
-        '4': {
-          'basePokemon': 'Swadloon',
-          'evolvedPokemon': 'Leavanny',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Swadloon',
+            'type': [0],
+            'evolvedPokemon': 'Leavanny',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -20741,8 +21310,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Venipede',
+          'type': [0],
           'evolvedPokemon': 'Whirlipede',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -20773,8 +21342,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Whirlipede',
+          'type': [0],
           'evolvedPokemon': 'Scolipede',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -20788,12 +21357,14 @@ module.exports = {
       },
       'attack': 53,
       'locations': {
-        '4': {
-          'basePokemon': 'Venipede',
-          'evolvedPokemon': 'Whirlipede',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Venipede',
+            'type': [0],
+            'evolvedPokemon': 'Whirlipede',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -20819,12 +21390,14 @@ module.exports = {
       },
       'attack': 99,
       'locations': {
-        '4': {
-          'basePokemon': 'Whirlipede',
-          'evolvedPokemon': 'Scolipede',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Whirlipede',
+            'type': [0],
+            'evolvedPokemon': 'Scolipede',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -20843,9 +21416,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cottonee',
-          'evolvedPokemon': 'Whimsicott',
-          'type': 0,
+          'type': [1],
           'stone': 5,
+          'evolvedPokemon': 'Whimsicott',
         },
       ],
       'base': {
@@ -20882,12 +21455,14 @@ module.exports = {
       },
       'attack': 98,
       'locations': {
-        '5': {
-          'basePokemon': 'Cottonee',
-          'evolvedPokemon': 'Whimsicott',
-          'type': 0,
-          'stone': 5,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cottonee',
+            'type': [1],
+            'stone': 5,
+            'evolvedPokemon': 'Whimsicott',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -20903,9 +21478,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Petilil',
-          'evolvedPokemon': 'Lilligant',
-          'type': 0,
+          'type': [1],
           'stone': 5,
+          'evolvedPokemon': 'Lilligant',
         },
       ],
       'base': {
@@ -20939,12 +21514,14 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '5': {
-          'basePokemon': 'Petilil',
-          'evolvedPokemon': 'Lilligant',
-          'type': 0,
-          'stone': 5,
-        },
+        '4': [
+          {
+            'basePokemon': 'Petilil',
+            'type': [1],
+            'stone': 5,
+            'evolvedPokemon': 'Lilligant',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -20984,8 +21561,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sandile',
+          'type': [0],
           'evolvedPokemon': 'Krokorok',
-          'type': 0,
           'level': 29,
         },
       ],
@@ -21016,8 +21593,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Krokorok',
+          'type': [0],
           'evolvedPokemon': 'Krookodile',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -21031,12 +21608,14 @@ module.exports = {
       },
       'attack': 62,
       'locations': {
-        '4': {
-          'basePokemon': 'Sandile',
-          'evolvedPokemon': 'Krokorok',
-          'type': 0,
-          'level': 29,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sandile',
+            'type': [0],
+            'evolvedPokemon': 'Krokorok',
+            'level': 29,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -21062,12 +21641,14 @@ module.exports = {
       },
       'attack': 138,
       'locations': {
-        '4': {
-          'basePokemon': 'Krokorok',
-          'evolvedPokemon': 'Krookodile',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Krokorok',
+            'type': [0],
+            'evolvedPokemon': 'Krookodile',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -21083,8 +21664,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Darumaka',
+          'type': [0],
           'evolvedPokemon': 'Darmanitan',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -21119,12 +21700,14 @@ module.exports = {
       },
       'attack': 99,
       'locations': {
-        '4': {
-          'basePokemon': 'Darumaka',
-          'evolvedPokemon': 'Darmanitan',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Darumaka',
+            'type': [0],
+            'evolvedPokemon': 'Darmanitan',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -21164,8 +21747,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Dwebble',
+          'type': [0],
           'evolvedPokemon': 'Crustle',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -21203,12 +21786,14 @@ module.exports = {
       },
       'attack': 121,
       'locations': {
-        '4': {
-          'basePokemon': 'Dwebble',
-          'evolvedPokemon': 'Crustle',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Dwebble',
+            'type': [0],
+            'evolvedPokemon': 'Crustle',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -21227,8 +21812,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Scraggy',
+          'type': [0],
           'evolvedPokemon': 'Scrafty',
-          'type': 0,
           'level': 39,
         },
       ],
@@ -21266,12 +21851,14 @@ module.exports = {
       },
       'attack': 101,
       'locations': {
-        '4': {
-          'basePokemon': 'Scraggy',
-          'evolvedPokemon': 'Scrafty',
-          'type': 0,
-          'level': 39,
-        },
+        '4': [
+          {
+            'basePokemon': 'Scraggy',
+            'type': [0],
+            'evolvedPokemon': 'Scrafty',
+            'level': 39,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -21311,8 +21898,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Yamask',
+          'type': [0],
           'evolvedPokemon': 'Cofagrigus',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -21347,12 +21934,14 @@ module.exports = {
       },
       'attack': 102,
       'locations': {
-        '4': {
-          'basePokemon': 'Yamask',
-          'evolvedPokemon': 'Cofagrigus',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Yamask',
+            'type': [0],
+            'evolvedPokemon': 'Cofagrigus',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 1000,
@@ -21371,8 +21960,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tirtouga',
+          'type': [0],
           'evolvedPokemon': 'Carracosta',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -21410,12 +21999,14 @@ module.exports = {
       },
       'attack': 136,
       'locations': {
-        '4': {
-          'basePokemon': 'Tirtouga',
-          'evolvedPokemon': 'Carracosta',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tirtouga',
+            'type': [0],
+            'evolvedPokemon': 'Carracosta',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -21434,8 +22025,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Archen',
+          'type': [0],
           'evolvedPokemon': 'Archeops',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -21473,12 +22064,14 @@ module.exports = {
       },
       'attack': 163,
       'locations': {
-        '4': {
-          'basePokemon': 'Archen',
-          'evolvedPokemon': 'Archeops',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Archen',
+            'type': [0],
+            'evolvedPokemon': 'Archeops',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -21494,8 +22087,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Trubbish',
+          'type': [0],
           'evolvedPokemon': 'Garbodor',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -21530,12 +22123,14 @@ module.exports = {
       },
       'attack': 114,
       'locations': {
-        '4': {
-          'basePokemon': 'Trubbish',
-          'evolvedPokemon': 'Garbodor',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Trubbish',
+            'type': [0],
+            'evolvedPokemon': 'Garbodor',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -21551,8 +22146,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Zorua',
+          'type': [0],
           'evolvedPokemon': 'Zoroark',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -21587,12 +22182,14 @@ module.exports = {
       },
       'attack': 126,
       'locations': {
-        '4': {
-          'basePokemon': 'Zorua',
-          'evolvedPokemon': 'Zoroark',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Zorua',
+            'type': [0],
+            'evolvedPokemon': 'Zoroark',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -21608,9 +22205,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Minccino',
-          'evolvedPokemon': 'Cinccino',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Cinccino',
         },
       ],
       'base': {
@@ -21644,12 +22241,14 @@ module.exports = {
       },
       'attack': 103,
       'locations': {
-        '5': {
-          'basePokemon': 'Minccino',
-          'evolvedPokemon': 'Cinccino',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Minccino',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Cinccino',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 600,
@@ -21665,8 +22264,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gothita',
+          'type': [0],
           'evolvedPokemon': 'Gothorita',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -21694,8 +22293,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Gothorita',
+          'type': [0],
           'evolvedPokemon': 'Gothitelle',
-          'type': 0,
           'level': 41,
         },
       ],
@@ -21709,12 +22308,14 @@ module.exports = {
       },
       'attack': 75,
       'locations': {
-        '4': {
-          'basePokemon': 'Gothita',
-          'evolvedPokemon': 'Gothorita',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gothita',
+            'type': [0],
+            'evolvedPokemon': 'Gothorita',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 31,
       'eggSteps': 800,
@@ -21737,12 +22338,14 @@ module.exports = {
       },
       'attack': 112,
       'locations': {
-        '4': {
-          'basePokemon': 'Gothorita',
-          'evolvedPokemon': 'Gothitelle',
-          'type': 0,
-          'level': 41,
-        },
+        '4': [
+          {
+            'basePokemon': 'Gothorita',
+            'type': [0],
+            'evolvedPokemon': 'Gothitelle',
+            'level': 41,
+          },
+        ],
       },
       'catchRatePercent': 18,
       'eggSteps': 800,
@@ -21758,8 +22361,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Solosis',
+          'type': [0],
           'evolvedPokemon': 'Duosion',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -21787,8 +22390,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Duosion',
+          'type': [0],
           'evolvedPokemon': 'Reuniclus',
-          'type': 0,
           'level': 41,
         },
       ],
@@ -21802,12 +22405,14 @@ module.exports = {
       },
       'attack': 75,
       'locations': {
-        '4': {
-          'basePokemon': 'Solosis',
-          'evolvedPokemon': 'Duosion',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Solosis',
+            'type': [0],
+            'evolvedPokemon': 'Duosion',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 31,
       'eggSteps': 800,
@@ -21830,12 +22435,14 @@ module.exports = {
       },
       'attack': 148,
       'locations': {
-        '4': {
-          'basePokemon': 'Duosion',
-          'evolvedPokemon': 'Reuniclus',
-          'type': 0,
-          'level': 41,
-        },
+        '4': [
+          {
+            'basePokemon': 'Duosion',
+            'type': [0],
+            'evolvedPokemon': 'Reuniclus',
+            'level': 41,
+          },
+        ],
       },
       'catchRatePercent': 18,
       'eggSteps': 800,
@@ -21854,8 +22461,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ducklett',
+          'type': [0],
           'evolvedPokemon': 'Swanna',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -21893,12 +22500,14 @@ module.exports = {
       },
       'attack': 114,
       'locations': {
-        '4': {
-          'basePokemon': 'Ducklett',
-          'evolvedPokemon': 'Swanna',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ducklett',
+            'type': [0],
+            'evolvedPokemon': 'Swanna',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -21914,8 +22523,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Vanillite',
+          'type': [0],
           'evolvedPokemon': 'Vanillish',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -21943,8 +22552,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Vanillish',
+          'type': [0],
           'evolvedPokemon': 'Vanilluxe',
-          'type': 0,
           'level': 47,
         },
       ],
@@ -21958,12 +22567,14 @@ module.exports = {
       },
       'attack': 80,
       'locations': {
-        '4': {
-          'basePokemon': 'Vanillite',
-          'evolvedPokemon': 'Vanillish',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Vanillite',
+            'type': [0],
+            'evolvedPokemon': 'Vanillish',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -21986,12 +22597,14 @@ module.exports = {
       },
       'attack': 148,
       'locations': {
-        '4': {
-          'basePokemon': 'Vanillish',
-          'evolvedPokemon': 'Vanilluxe',
-          'type': 0,
-          'level': 47,
-        },
+        '4': [
+          {
+            'basePokemon': 'Vanillish',
+            'type': [0],
+            'evolvedPokemon': 'Vanilluxe',
+            'level': 47,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -22010,8 +22623,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Deerling',
+          'type': [0],
           'evolvedPokemon': 'Sawsbuck',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -22049,12 +22662,14 @@ module.exports = {
       },
       'attack': 111,
       'locations': {
-        '4': {
-          'basePokemon': 'Deerling',
-          'evolvedPokemon': 'Sawsbuck',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Deerling',
+            'type': [0],
+            'evolvedPokemon': 'Sawsbuck',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -22094,9 +22709,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Karrablast',
-          'evolvedPokemon': 'Escavalier',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Escavalier',
         },
       ],
       'base': {
@@ -22133,12 +22748,14 @@ module.exports = {
       },
       'attack': 131,
       'locations': {
-        '5': {
-          'basePokemon': 'Karrablast',
-          'evolvedPokemon': 'Escavalier',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Karrablast',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Escavalier',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 600,
@@ -22157,8 +22774,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Foongus',
+          'type': [0],
           'evolvedPokemon': 'Amoonguss',
-          'type': 0,
           'level': 39,
         },
       ],
@@ -22196,12 +22813,14 @@ module.exports = {
       },
       'attack': 137,
       'locations': {
-        '4': {
-          'basePokemon': 'Foongus',
-          'evolvedPokemon': 'Amoonguss',
-          'type': 0,
-          'level': 39,
-        },
+        '4': [
+          {
+            'basePokemon': 'Foongus',
+            'type': [0],
+            'evolvedPokemon': 'Amoonguss',
+            'level': 39,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -22220,8 +22839,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Frillish',
+          'type': [0],
           'evolvedPokemon': 'Jellicent',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -22259,12 +22878,14 @@ module.exports = {
       },
       'attack': 121,
       'locations': {
-        '4': {
-          'basePokemon': 'Frillish',
-          'evolvedPokemon': 'Jellicent',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Frillish',
+            'type': [0],
+            'evolvedPokemon': 'Jellicent',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -22304,8 +22925,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Joltik',
+          'type': [0],
           'evolvedPokemon': 'Galvantula',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -22343,12 +22964,14 @@ module.exports = {
       },
       'attack': 108,
       'locations': {
-        '4': {
-          'basePokemon': 'Joltik',
-          'evolvedPokemon': 'Galvantula',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Joltik',
+            'type': [0],
+            'evolvedPokemon': 'Galvantula',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -22367,8 +22990,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ferroseed',
+          'type': [0],
           'evolvedPokemon': 'Ferrothorn',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -22406,12 +23029,14 @@ module.exports = {
       },
       'attack': 118,
       'locations': {
-        '4': {
-          'basePokemon': 'Ferroseed',
-          'evolvedPokemon': 'Ferrothorn',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ferroseed',
+            'type': [0],
+            'evolvedPokemon': 'Ferrothorn',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -22427,8 +23052,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Klink',
+          'type': [0],
           'evolvedPokemon': 'Klang',
-          'type': 0,
           'level': 38,
         },
       ],
@@ -22456,8 +23081,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Klang',
+          'type': [0],
           'evolvedPokemon': 'Klinklang',
-          'type': 0,
           'level': 49,
         },
       ],
@@ -22471,12 +23096,14 @@ module.exports = {
       },
       'attack': 100,
       'locations': {
-        '4': {
-          'basePokemon': 'Klink',
-          'evolvedPokemon': 'Klang',
-          'type': 0,
-          'level': 38,
-        },
+        '4': [
+          {
+            'basePokemon': 'Klink',
+            'type': [0],
+            'evolvedPokemon': 'Klang',
+            'level': 38,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -22499,12 +23126,14 @@ module.exports = {
       },
       'attack': 119,
       'locations': {
-        '4': {
-          'basePokemon': 'Klang',
-          'evolvedPokemon': 'Klinklang',
-          'type': 0,
-          'level': 49,
-        },
+        '4': [
+          {
+            'basePokemon': 'Klang',
+            'type': [0],
+            'evolvedPokemon': 'Klinklang',
+            'level': 49,
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 800,
@@ -22520,8 +23149,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tynamo',
+          'type': [0],
           'evolvedPokemon': 'Eelektrik',
-          'type': 0,
           'level': 39,
         },
       ],
@@ -22549,9 +23178,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Eelektrik',
-          'evolvedPokemon': 'Eelektross',
-          'type': 0,
+          'type': [1],
           'stone': 2,
+          'evolvedPokemon': 'Eelektross',
         },
       ],
       'base': {
@@ -22564,12 +23193,14 @@ module.exports = {
       },
       'attack': 96,
       'locations': {
-        '4': {
-          'basePokemon': 'Tynamo',
-          'evolvedPokemon': 'Eelektrik',
-          'type': 0,
-          'level': 39,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tynamo',
+            'type': [0],
+            'evolvedPokemon': 'Eelektrik',
+            'level': 39,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -22592,12 +23223,14 @@ module.exports = {
       },
       'attack': 160,
       'locations': {
-        '5': {
-          'basePokemon': 'Eelektrik',
-          'evolvedPokemon': 'Eelektross',
-          'type': 0,
-          'stone': 2,
-        },
+        '4': [
+          {
+            'basePokemon': 'Eelektrik',
+            'type': [1],
+            'stone': 2,
+            'evolvedPokemon': 'Eelektross',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 800,
@@ -22613,8 +23246,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Elgyem',
+          'type': [0],
           'evolvedPokemon': 'Beheeyem',
-          'type': 0,
           'level': 42,
         },
       ],
@@ -22649,12 +23282,14 @@ module.exports = {
       },
       'attack': 136,
       'locations': {
-        '4': {
-          'basePokemon': 'Elgyem',
-          'evolvedPokemon': 'Beheeyem',
-          'type': 0,
-          'level': 42,
-        },
+        '4': [
+          {
+            'basePokemon': 'Elgyem',
+            'type': [0],
+            'evolvedPokemon': 'Beheeyem',
+            'level': 42,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -22673,8 +23308,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Litwick',
+          'type': [0],
           'evolvedPokemon': 'Lampent',
-          'type': 0,
           'level': 41,
         },
       ],
@@ -22705,9 +23340,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Lampent',
-          'evolvedPokemon': 'Chandelure',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Chandelure',
         },
       ],
       'base': {
@@ -22720,12 +23355,14 @@ module.exports = {
       },
       'attack': 69,
       'locations': {
-        '4': {
-          'basePokemon': 'Litwick',
-          'evolvedPokemon': 'Lampent',
-          'type': 0,
-          'level': 41,
-        },
+        '4': [
+          {
+            'basePokemon': 'Litwick',
+            'type': [0],
+            'evolvedPokemon': 'Lampent',
+            'level': 41,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -22751,12 +23388,14 @@ module.exports = {
       },
       'attack': 120,
       'locations': {
-        '5': {
-          'basePokemon': 'Lampent',
-          'evolvedPokemon': 'Chandelure',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Lampent',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Chandelure',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -22772,8 +23411,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Axew',
+          'type': [0],
           'evolvedPokemon': 'Fraxure',
-          'type': 0,
           'level': 38,
         },
       ],
@@ -22801,8 +23440,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Fraxure',
+          'type': [0],
           'evolvedPokemon': 'Haxorus',
-          'type': 0,
           'level': 48,
         },
       ],
@@ -22816,12 +23455,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Axew',
-          'evolvedPokemon': 'Fraxure',
-          'type': 0,
-          'level': 38,
-        },
+        '4': [
+          {
+            'basePokemon': 'Axew',
+            'type': [0],
+            'evolvedPokemon': 'Fraxure',
+            'level': 38,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 1600,
@@ -22844,12 +23485,14 @@ module.exports = {
       },
       'attack': 136,
       'locations': {
-        '4': {
-          'basePokemon': 'Fraxure',
-          'evolvedPokemon': 'Haxorus',
-          'type': 0,
-          'level': 48,
-        },
+        '4': [
+          {
+            'basePokemon': 'Fraxure',
+            'type': [0],
+            'evolvedPokemon': 'Haxorus',
+            'level': 48,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -22865,8 +23508,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cubchoo',
+          'type': [0],
           'evolvedPokemon': 'Beartic',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -22901,12 +23544,14 @@ module.exports = {
       },
       'attack': 148,
       'locations': {
-        '4': {
-          'basePokemon': 'Cubchoo',
-          'evolvedPokemon': 'Beartic',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cubchoo',
+            'type': [0],
+            'evolvedPokemon': 'Beartic',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -22943,9 +23588,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Shelmet',
-          'evolvedPokemon': 'Accelgor',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Accelgor',
         },
       ],
       'base': {
@@ -22979,12 +23624,14 @@ module.exports = {
       },
       'attack': 107,
       'locations': {
-        '5': {
-          'basePokemon': 'Shelmet',
-          'evolvedPokemon': 'Accelgor',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Shelmet',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Accelgor',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 600,
@@ -23024,8 +23671,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mienfoo',
+          'type': [0],
           'evolvedPokemon': 'Mienshao',
-          'type': 0,
           'level': 50,
         },
       ],
@@ -23060,12 +23707,14 @@ module.exports = {
       },
       'attack': 128,
       'locations': {
-        '4': {
-          'basePokemon': 'Mienfoo',
-          'evolvedPokemon': 'Mienshao',
-          'type': 0,
-          'level': 50,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mienfoo',
+            'type': [0],
+            'evolvedPokemon': 'Mienshao',
+            'level': 50,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -23105,8 +23754,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Golett',
+          'type': [0],
           'evolvedPokemon': 'Golurk',
-          'type': 0,
           'level': 43,
         },
       ],
@@ -23144,12 +23793,14 @@ module.exports = {
       },
       'attack': 126,
       'locations': {
-        '4': {
-          'basePokemon': 'Golett',
-          'evolvedPokemon': 'Golurk',
-          'type': 0,
-          'level': 43,
-        },
+        '4': [
+          {
+            'basePokemon': 'Golett',
+            'type': [0],
+            'evolvedPokemon': 'Golurk',
+            'level': 43,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 1000,
@@ -23168,8 +23819,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pawniard',
+          'type': [0],
           'evolvedPokemon': 'Bisharp',
-          'type': 0,
           'level': 52,
         },
       ],
@@ -23207,12 +23858,14 @@ module.exports = {
       },
       'attack': 117,
       'locations': {
-        '4': {
-          'basePokemon': 'Pawniard',
-          'evolvedPokemon': 'Bisharp',
-          'type': 0,
-          'level': 52,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pawniard',
+            'type': [0],
+            'evolvedPokemon': 'Bisharp',
+            'level': 52,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -23252,8 +23905,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Rufflet',
+          'type': [0],
           'evolvedPokemon': 'Braviary',
-          'type': 0,
           'level': 54,
         },
       ],
@@ -23291,12 +23944,14 @@ module.exports = {
       },
       'attack': 136,
       'locations': {
-        '4': {
-          'basePokemon': 'Rufflet',
-          'evolvedPokemon': 'Braviary',
-          'type': 0,
-          'level': 54,
-        },
+        '4': [
+          {
+            'basePokemon': 'Rufflet',
+            'type': [0],
+            'evolvedPokemon': 'Braviary',
+            'level': 54,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -23315,8 +23970,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Vullaby',
+          'type': [0],
           'evolvedPokemon': 'Mandibuzz',
-          'type': 0,
           'level': 54,
         },
       ],
@@ -23354,12 +24009,14 @@ module.exports = {
       },
       'attack': 120,
       'locations': {
-        '4': {
-          'basePokemon': 'Vullaby',
-          'evolvedPokemon': 'Mandibuzz',
-          'type': 0,
-          'level': 54,
-        },
+        '4': [
+          {
+            'basePokemon': 'Vullaby',
+            'type': [0],
+            'evolvedPokemon': 'Mandibuzz',
+            'level': 54,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -23423,8 +24080,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Deino',
+          'type': [0],
           'evolvedPokemon': 'Zweilous',
-          'type': 0,
           'level': 50,
         },
       ],
@@ -23455,8 +24112,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Zweilous',
+          'type': [0],
           'evolvedPokemon': 'Hydreigon',
-          'type': 0,
           'level': 64,
         },
       ],
@@ -23470,12 +24127,14 @@ module.exports = {
       },
       'attack': 98,
       'locations': {
-        '4': {
-          'basePokemon': 'Deino',
-          'evolvedPokemon': 'Zweilous',
-          'type': 0,
-          'level': 50,
-        },
+        '4': [
+          {
+            'basePokemon': 'Deino',
+            'type': [0],
+            'evolvedPokemon': 'Zweilous',
+            'level': 50,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -23501,12 +24160,14 @@ module.exports = {
       },
       'attack': 190,
       'locations': {
-        '4': {
-          'basePokemon': 'Zweilous',
-          'evolvedPokemon': 'Hydreigon',
-          'type': 0,
-          'level': 64,
-        },
+        '4': [
+          {
+            'basePokemon': 'Zweilous',
+            'type': [0],
+            'evolvedPokemon': 'Hydreigon',
+            'level': 64,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -23525,8 +24186,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Larvesta',
+          'type': [0],
           'evolvedPokemon': 'Volcarona',
-          'type': 0,
           'level': 59,
         },
       ],
@@ -23564,12 +24225,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': {
-          'basePokemon': 'Larvesta',
-          'evolvedPokemon': 'Volcarona',
-          'type': 0,
-          'level': 59,
-        },
+        '4': [
+          {
+            'basePokemon': 'Larvesta',
+            'type': [0],
+            'evolvedPokemon': 'Volcarona',
+            'level': 59,
+          },
+        ],
       },
       'catchRatePercent': 7,
       'eggSteps': 1600,
@@ -23870,8 +24533,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chespin',
+          'type': [0],
           'evolvedPokemon': 'Quilladin',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -23899,8 +24562,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Quilladin',
+          'type': [0],
           'evolvedPokemon': 'Chesnaught',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -23914,12 +24577,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Chespin',
-          'evolvedPokemon': 'Quilladin',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Chespin',
+            'type': [0],
+            'evolvedPokemon': 'Quilladin',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -23945,12 +24610,14 @@ module.exports = {
       },
       'attack': 148,
       'locations': {
-        '4': {
-          'basePokemon': 'Quilladin',
-          'evolvedPokemon': 'Chesnaught',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Quilladin',
+            'type': [0],
+            'evolvedPokemon': 'Chesnaught',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -23966,8 +24633,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Fennekin',
+          'type': [0],
           'evolvedPokemon': 'Braixen',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -23995,8 +24662,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Braixen',
+          'type': [0],
           'evolvedPokemon': 'Delphox',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -24010,12 +24677,14 @@ module.exports = {
       },
       'attack': 84,
       'locations': {
-        '4': {
-          'basePokemon': 'Fennekin',
-          'evolvedPokemon': 'Braixen',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Fennekin',
+            'type': [0],
+            'evolvedPokemon': 'Braixen',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24041,12 +24710,14 @@ module.exports = {
       },
       'attack': 133,
       'locations': {
-        '4': {
-          'basePokemon': 'Braixen',
-          'evolvedPokemon': 'Delphox',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Braixen',
+            'type': [0],
+            'evolvedPokemon': 'Delphox',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24062,8 +24733,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Froakie',
+          'type': [0],
           'evolvedPokemon': 'Frogadier',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -24091,8 +24762,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Frogadier',
+          'type': [0],
           'evolvedPokemon': 'Greninja',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -24106,12 +24777,14 @@ module.exports = {
       },
       'attack': 77,
       'locations': {
-        '4': {
-          'basePokemon': 'Froakie',
-          'evolvedPokemon': 'Frogadier',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Froakie',
+            'type': [0],
+            'evolvedPokemon': 'Frogadier',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24137,12 +24810,14 @@ module.exports = {
       },
       'attack': 133,
       'locations': {
-        '4': {
-          'basePokemon': 'Frogadier',
-          'evolvedPokemon': 'Greninja',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Frogadier',
+            'type': [0],
+            'evolvedPokemon': 'Greninja',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24158,8 +24833,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bunnelby',
+          'type': [0],
           'evolvedPokemon': 'Diggersby',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -24197,12 +24872,14 @@ module.exports = {
       },
       'attack': 84,
       'locations': {
-        '4': {
-          'basePokemon': 'Bunnelby',
-          'evolvedPokemon': 'Diggersby',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bunnelby',
+            'type': [0],
+            'evolvedPokemon': 'Diggersby',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 600,
@@ -24221,8 +24898,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Fletchling',
+          'type': [0],
           'evolvedPokemon': 'Fletchinder',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -24253,8 +24930,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Fletchinder',
+          'type': [0],
           'evolvedPokemon': 'Talonflame',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -24268,12 +24945,14 @@ module.exports = {
       },
       'attack': 72,
       'locations': {
-        '4': {
-          'basePokemon': 'Fletchling',
-          'evolvedPokemon': 'Fletchinder',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Fletchling',
+            'type': [0],
+            'evolvedPokemon': 'Fletchinder',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -24299,12 +24978,14 @@ module.exports = {
       },
       'attack': 113,
       'locations': {
-        '4': {
-          'basePokemon': 'Fletchinder',
-          'evolvedPokemon': 'Talonflame',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Fletchinder',
+            'type': [0],
+            'evolvedPokemon': 'Talonflame',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -24320,8 +25001,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Scatterbug',
+          'type': [0],
           'evolvedPokemon': 'Spewpa',
-          'type': 0,
           'level': 9,
         },
       ],
@@ -24349,8 +25030,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Spewpa',
+          'type': [0],
           'evolvedPokemon': 'Vivillon',
-          'type': 0,
           'level': 12,
         },
       ],
@@ -24364,12 +25045,14 @@ module.exports = {
       },
       'attack': 22,
       'locations': {
-        '4': {
-          'basePokemon': 'Scatterbug',
-          'evolvedPokemon': 'Spewpa',
-          'type': 0,
-          'level': 9,
-        },
+        '4': [
+          {
+            'basePokemon': 'Scatterbug',
+            'type': [0],
+            'evolvedPokemon': 'Spewpa',
+            'level': 9,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -24395,12 +25078,14 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': {
-          'basePokemon': 'Spewpa',
-          'evolvedPokemon': 'Vivillon',
-          'type': 0,
-          'level': 12,
-        },
+        '4': [
+          {
+            'basePokemon': 'Spewpa',
+            'type': [0],
+            'evolvedPokemon': 'Vivillon',
+            'level': 12,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -24419,8 +25104,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Litleo',
+          'type': [0],
           'evolvedPokemon': 'Pyroar',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -24458,12 +25143,14 @@ module.exports = {
       },
       'attack': 126,
       'locations': {
-        '4': {
-          'basePokemon': 'Litleo',
-          'evolvedPokemon': 'Pyroar',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Litleo',
+            'type': [0],
+            'evolvedPokemon': 'Pyroar',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 22,
       'eggSteps': 800,
@@ -24479,8 +25166,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Flabébé',
+          'type': [0],
           'evolvedPokemon': 'Floette',
-          'type': 0,
           'level': 19,
         },
       ],
@@ -24508,9 +25195,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Floette',
-          'evolvedPokemon': 'Florges',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Florges',
         },
       ],
       'base': {
@@ -24523,12 +25210,14 @@ module.exports = {
       },
       'attack': 66,
       'locations': {
-        '4': {
-          'basePokemon': 'Flabébé',
-          'evolvedPokemon': 'Floette',
-          'type': 0,
-          'level': 19,
-        },
+        '4': [
+          {
+            'basePokemon': 'Flabébé',
+            'type': [0],
+            'evolvedPokemon': 'Floette',
+            'level': 19,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -24551,12 +25240,14 @@ module.exports = {
       },
       'attack': 139,
       'locations': {
-        '5': {
-          'basePokemon': 'Floette',
-          'evolvedPokemon': 'Florges',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Floette',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Florges',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24572,8 +25263,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Skiddo',
+          'type': [0],
           'evolvedPokemon': 'Gogoat',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -24608,12 +25299,14 @@ module.exports = {
       },
       'attack': 168,
       'locations': {
-        '4': {
-          'basePokemon': 'Skiddo',
-          'evolvedPokemon': 'Gogoat',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Skiddo',
+            'type': [0],
+            'evolvedPokemon': 'Gogoat',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24629,8 +25322,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pancham',
+          'type': [0],
           'evolvedPokemon': 'Pangoro',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -24668,12 +25361,14 @@ module.exports = {
       },
       'attack': 141,
       'locations': {
-        '4': {
-          'basePokemon': 'Pancham',
-          'evolvedPokemon': 'Pangoro',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pancham',
+            'type': [0],
+            'evolvedPokemon': 'Pangoro',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 22,
       'eggSteps': 1000,
@@ -24710,8 +25405,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Espurr',
+          'type': [0],
           'evolvedPokemon': 'Meowstic',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -24746,12 +25441,14 @@ module.exports = {
       },
       'attack': 94,
       'locations': {
-        '4': {
-          'basePokemon': 'Espurr',
-          'evolvedPokemon': 'Meowstic',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Espurr',
+            'type': [0],
+            'evolvedPokemon': 'Meowstic',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -24770,8 +25467,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Honedge',
+          'type': [0],
           'evolvedPokemon': 'Doublade',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -24802,9 +25499,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Doublade',
-          'evolvedPokemon': 'Aegislash',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Aegislash',
         },
       ],
       'base': {
@@ -24817,12 +25514,14 @@ module.exports = {
       },
       'attack': 89,
       'locations': {
-        '4': {
-          'basePokemon': 'Honedge',
-          'evolvedPokemon': 'Doublade',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Honedge',
+            'type': [0],
+            'evolvedPokemon': 'Doublade',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -24848,12 +25547,14 @@ module.exports = {
       },
       'attack': 87,
       'locations': {
-        '5': {
-          'basePokemon': 'Doublade',
-          'evolvedPokemon': 'Aegislash',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Doublade',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Aegislash',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24869,9 +25570,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Spritzee',
-          'evolvedPokemon': 'Aromatisse',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Aromatisse',
         },
       ],
       'base': {
@@ -24905,12 +25606,14 @@ module.exports = {
       },
       'attack': 133,
       'locations': {
-        '5': {
-          'basePokemon': 'Spritzee',
-          'evolvedPokemon': 'Aromatisse',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Spritzee',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Aromatisse',
+          },
+        ],
       },
       'catchRatePercent': 40,
       'eggSteps': 800,
@@ -24926,9 +25629,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Swirlix',
-          'evolvedPokemon': 'Slurpuff',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Slurpuff',
         },
       ],
       'base': {
@@ -24962,12 +25665,14 @@ module.exports = {
       },
       'attack': 124,
       'locations': {
-        '5': {
-          'basePokemon': 'Swirlix',
-          'evolvedPokemon': 'Slurpuff',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Swirlix',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Slurpuff',
+          },
+        ],
       },
       'catchRatePercent': 40,
       'eggSteps': 800,
@@ -24986,8 +25691,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Inkay',
+          'type': [0],
           'evolvedPokemon': 'Malamar',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -25025,12 +25730,14 @@ module.exports = {
       },
       'attack': 123,
       'locations': {
-        '4': {
-          'basePokemon': 'Inkay',
-          'evolvedPokemon': 'Malamar',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Inkay',
+            'type': [0],
+            'evolvedPokemon': 'Malamar',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 26,
       'eggSteps': 800,
@@ -25049,8 +25756,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Binacle',
+          'type': [0],
           'evolvedPokemon': 'Barbaracle',
-          'type': 0,
           'level': 39,
         },
       ],
@@ -25088,12 +25795,14 @@ module.exports = {
       },
       'attack': 118,
       'locations': {
-        '4': {
-          'basePokemon': 'Binacle',
-          'evolvedPokemon': 'Barbaracle',
-          'type': 0,
-          'level': 39,
-        },
+        '4': [
+          {
+            'basePokemon': 'Binacle',
+            'type': [0],
+            'evolvedPokemon': 'Barbaracle',
+            'level': 39,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -25112,8 +25821,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Skrelp',
+          'type': [0],
           'evolvedPokemon': 'Dragalge',
-          'type': 0,
           'level': 48,
         },
       ],
@@ -25151,12 +25860,14 @@ module.exports = {
       },
       'attack': 125,
       'locations': {
-        '4': {
-          'basePokemon': 'Skrelp',
-          'evolvedPokemon': 'Dragalge',
-          'type': 0,
-          'level': 48,
-        },
+        '4': [
+          {
+            'basePokemon': 'Skrelp',
+            'type': [0],
+            'evolvedPokemon': 'Dragalge',
+            'level': 48,
+          },
+        ],
       },
       'catchRatePercent': 20,
       'eggSteps': 800,
@@ -25172,8 +25883,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Clauncher',
+          'type': [0],
           'evolvedPokemon': 'Clawitzer',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -25208,12 +25919,14 @@ module.exports = {
       },
       'attack': 133,
       'locations': {
-        '4': {
-          'basePokemon': 'Clauncher',
-          'evolvedPokemon': 'Clawitzer',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Clauncher',
+            'type': [0],
+            'evolvedPokemon': 'Clawitzer',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 20,
       'eggSteps': 600,
@@ -25232,9 +25945,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Helioptile',
-          'evolvedPokemon': 'Heliolisk',
-          'type': 0,
+          'type': [1],
           'stone': 5,
+          'evolvedPokemon': 'Heliolisk',
         },
       ],
       'base': {
@@ -25271,12 +25984,14 @@ module.exports = {
       },
       'attack': 99,
       'locations': {
-        '5': {
-          'basePokemon': 'Helioptile',
-          'evolvedPokemon': 'Heliolisk',
-          'type': 0,
-          'stone': 5,
-        },
+        '4': [
+          {
+            'basePokemon': 'Helioptile',
+            'type': [1],
+            'stone': 5,
+            'evolvedPokemon': 'Heliolisk',
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -25295,8 +26010,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Tyrunt',
+          'type': [0],
           'evolvedPokemon': 'Tyrantrum',
-          'type': 0,
           'level': 39,
         },
       ],
@@ -25334,12 +26049,14 @@ module.exports = {
       },
       'attack': 138,
       'locations': {
-        '4': {
-          'basePokemon': 'Tyrunt',
-          'evolvedPokemon': 'Tyrantrum',
-          'type': 0,
-          'level': 39,
-        },
+        '4': [
+          {
+            'basePokemon': 'Tyrunt',
+            'type': [0],
+            'evolvedPokemon': 'Tyrantrum',
+            'level': 39,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -25358,8 +26075,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Amaura',
+          'type': [0],
           'evolvedPokemon': 'Aurorus',
-          'type': 0,
           'level': 39,
         },
       ],
@@ -25397,12 +26114,14 @@ module.exports = {
       },
       'attack': 159,
       'locations': {
-        '4': {
-          'basePokemon': 'Amaura',
-          'evolvedPokemon': 'Aurorus',
-          'type': 0,
-          'level': 39,
-        },
+        '4': [
+          {
+            'basePokemon': 'Amaura',
+            'type': [0],
+            'evolvedPokemon': 'Aurorus',
+            'level': 39,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -25511,8 +26230,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Goomy',
+          'type': [0],
           'evolvedPokemon': 'Sliggoo',
-          'type': 0,
           'level': 40,
         },
       ],
@@ -25540,8 +26259,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sliggoo',
+          'type': [0],
           'evolvedPokemon': 'Goodra',
-          'type': 0,
           'level': 50,
         },
       ],
@@ -25555,12 +26274,14 @@ module.exports = {
       },
       'attack': 105,
       'locations': {
-        '4': {
-          'basePokemon': 'Goomy',
-          'evolvedPokemon': 'Sliggoo',
-          'type': 0,
-          'level': 40,
-        },
+        '4': [
+          {
+            'basePokemon': 'Goomy',
+            'type': [0],
+            'evolvedPokemon': 'Sliggoo',
+            'level': 40,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -25583,12 +26304,14 @@ module.exports = {
       },
       'attack': 182,
       'locations': {
-        '4': {
-          'basePokemon': 'Sliggoo',
-          'evolvedPokemon': 'Goodra',
-          'type': 0,
-          'level': 50,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sliggoo',
+            'type': [0],
+            'evolvedPokemon': 'Goodra',
+            'level': 50,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -25631,9 +26354,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Phantump',
-          'evolvedPokemon': 'Trevenant',
-          'type': 0,
+          'type': [1],
           'stone': 6,
+          'evolvedPokemon': 'Trevenant',
         },
       ],
       'base': {
@@ -25670,12 +26393,14 @@ module.exports = {
       },
       'attack': 125,
       'locations': {
-        '5': {
-          'basePokemon': 'Phantump',
-          'evolvedPokemon': 'Trevenant',
-          'type': 0,
-          'stone': 6,
-        },
+        '4': [
+          {
+            'basePokemon': 'Phantump',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Trevenant',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -25739,8 +26464,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bergmite',
+          'type': [0],
           'evolvedPokemon': 'Avalugg',
-          'type': 0,
           'level': 37,
         },
       ],
@@ -25775,12 +26500,14 @@ module.exports = {
       },
       'attack': 118,
       'locations': {
-        '4': {
-          'basePokemon': 'Bergmite',
-          'evolvedPokemon': 'Avalugg',
-          'type': 0,
-          'level': 37,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bergmite',
+            'type': [0],
+            'evolvedPokemon': 'Avalugg',
+            'level': 37,
+          },
+        ],
       },
       'catchRatePercent': 20,
       'eggSteps': 800,
@@ -25799,8 +26526,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Noibat',
+          'type': [0],
           'evolvedPokemon': 'Noivern',
-          'type': 0,
           'level': 48,
         },
       ],
@@ -25838,12 +26565,14 @@ module.exports = {
       },
       'attack': 130,
       'locations': {
-        '4': {
-          'basePokemon': 'Noibat',
-          'evolvedPokemon': 'Noivern',
-          'type': 0,
-          'level': 48,
-        },
+        '4': [
+          {
+            'basePokemon': 'Noibat',
+            'type': [0],
+            'evolvedPokemon': 'Noivern',
+            'level': 48,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -26003,8 +26732,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Rowlet',
+          'type': [0],
           'evolvedPokemon': 'Dartrix',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -26035,8 +26764,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Dartrix',
+          'type': [0],
           'evolvedPokemon': 'Decidueye',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -26050,12 +26779,14 @@ module.exports = {
       },
       'attack': 101,
       'locations': {
-        '4': {
-          'basePokemon': 'Rowlet',
-          'evolvedPokemon': 'Dartrix',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Rowlet',
+            'type': [0],
+            'evolvedPokemon': 'Dartrix',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26081,12 +26812,14 @@ module.exports = {
       },
       'attack': 154,
       'locations': {
-        '4': {
-          'basePokemon': 'Dartrix',
-          'evolvedPokemon': 'Decidueye',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Dartrix',
+            'type': [0],
+            'evolvedPokemon': 'Decidueye',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26102,8 +26835,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Litten',
+          'type': [0],
           'evolvedPokemon': 'Torracat',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -26131,8 +26864,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Torracat',
+          'type': [0],
           'evolvedPokemon': 'Incineroar',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -26146,12 +26879,14 @@ module.exports = {
       },
       'attack': 91,
       'locations': {
-        '4': {
-          'basePokemon': 'Litten',
-          'evolvedPokemon': 'Torracat',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Litten',
+            'type': [0],
+            'evolvedPokemon': 'Torracat',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26177,12 +26912,14 @@ module.exports = {
       },
       'attack': 160,
       'locations': {
-        '4': {
-          'basePokemon': 'Torracat',
-          'evolvedPokemon': 'Incineroar',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Torracat',
+            'type': [0],
+            'evolvedPokemon': 'Incineroar',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26198,8 +26935,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Popplio',
+          'type': [0],
           'evolvedPokemon': 'Brionne',
-          'type': 0,
           'level': 17,
         },
       ],
@@ -26227,8 +26964,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Brionne',
+          'type': [0],
           'evolvedPokemon': 'Primarina',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -26242,12 +26979,14 @@ module.exports = {
       },
       'attack': 96,
       'locations': {
-        '4': {
-          'basePokemon': 'Popplio',
-          'evolvedPokemon': 'Brionne',
-          'type': 0,
-          'level': 17,
-        },
+        '4': [
+          {
+            'basePokemon': 'Popplio',
+            'type': [0],
+            'evolvedPokemon': 'Brionne',
+            'level': 17,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26273,12 +27012,14 @@ module.exports = {
       },
       'attack': 148,
       'locations': {
-        '4': {
-          'basePokemon': 'Brionne',
-          'evolvedPokemon': 'Primarina',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Brionne',
+            'type': [0],
+            'evolvedPokemon': 'Primarina',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26297,8 +27038,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pikipek',
+          'type': [0],
           'evolvedPokemon': 'Trumbeak',
-          'type': 0,
           'level': 14,
         },
       ],
@@ -26329,8 +27070,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Trumbeak',
+          'type': [0],
           'evolvedPokemon': 'Toucannon',
-          'type': 0,
           'level': 28,
         },
       ],
@@ -26344,12 +27085,14 @@ module.exports = {
       },
       'attack': 61,
       'locations': {
-        '4': {
-          'basePokemon': 'Pikipek',
-          'evolvedPokemon': 'Trumbeak',
-          'type': 0,
-          'level': 14,
-        },
+        '4': [
+          {
+            'basePokemon': 'Pikipek',
+            'type': [0],
+            'evolvedPokemon': 'Trumbeak',
+            'level': 14,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -26375,12 +27118,14 @@ module.exports = {
       },
       'attack': 134,
       'locations': {
-        '4': {
-          'basePokemon': 'Trumbeak',
-          'evolvedPokemon': 'Toucannon',
-          'type': 0,
-          'level': 28,
-        },
+        '4': [
+          {
+            'basePokemon': 'Trumbeak',
+            'type': [0],
+            'evolvedPokemon': 'Toucannon',
+            'level': 28,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26396,8 +27141,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Yungoos',
+          'type': [0],
           'evolvedPokemon': 'Gumshoos',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -26432,12 +27177,14 @@ module.exports = {
       },
       'attack': 103,
       'locations': {
-        '4': {
-          'basePokemon': 'Yungoos',
-          'evolvedPokemon': 'Gumshoos',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Yungoos',
+            'type': [0],
+            'evolvedPokemon': 'Gumshoos',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 600,
@@ -26453,8 +27200,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Grubbin',
+          'type': [0],
           'evolvedPokemon': 'Charjabug',
-          'type': 0,
           'level': 20,
         },
       ],
@@ -26485,9 +27232,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Charjabug',
-          'evolvedPokemon': 'Vikavolt',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Vikavolt',
         },
       ],
       'base': {
@@ -26500,12 +27247,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Grubbin',
-          'evolvedPokemon': 'Charjabug',
-          'type': 0,
-          'level': 20,
-        },
+        '4': [
+          {
+            'basePokemon': 'Grubbin',
+            'type': [0],
+            'evolvedPokemon': 'Charjabug',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -26531,12 +27280,14 @@ module.exports = {
       },
       'attack': 141,
       'locations': {
-        '5': {
-          'basePokemon': 'Charjabug',
-          'evolvedPokemon': 'Vikavolt',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Charjabug',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Vikavolt',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26552,9 +27303,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Crabrawler',
-          'evolvedPokemon': 'Crabominable',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Crabominable',
         },
       ],
       'base': {
@@ -26591,12 +27342,14 @@ module.exports = {
       },
       'attack': 134,
       'locations': {
-        '5': {
-          'basePokemon': 'Crabrawler',
-          'evolvedPokemon': 'Crabominable',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Crabrawler',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Crabominable',
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -26639,8 +27392,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cutiefly',
+          'type': [0],
           'evolvedPokemon': 'Ribombee',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -26678,12 +27431,14 @@ module.exports = {
       },
       'attack': 89,
       'locations': {
-        '4': {
-          'basePokemon': 'Cutiefly',
-          'evolvedPokemon': 'Ribombee',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cutiefly',
+            'type': [0],
+            'evolvedPokemon': 'Ribombee',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -26699,8 +27454,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Rockruff',
+          'type': [0],
           'evolvedPokemon': 'Lycanroc',
-          'type': 0,
           'level': 25,
         },
       ],
@@ -26735,12 +27490,14 @@ module.exports = {
       },
       'attack': 108,
       'locations': {
-        '4': {
-          'basePokemon': 'Rockruff',
-          'evolvedPokemon': 'Lycanroc',
-          'type': 0,
-          'level': 25,
-        },
+        '4': [
+          {
+            'basePokemon': 'Rockruff',
+            'type': [0],
+            'evolvedPokemon': 'Lycanroc',
+            'level': 25,
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 600,
@@ -26780,8 +27537,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mareanie',
+          'type': [0],
           'evolvedPokemon': 'Toxapex',
-          'type': 0,
           'level': 38,
         },
       ],
@@ -26819,12 +27576,14 @@ module.exports = {
       },
       'attack': 89,
       'locations': {
-        '4': {
-          'basePokemon': 'Mareanie',
-          'evolvedPokemon': 'Toxapex',
-          'type': 0,
-          'level': 38,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mareanie',
+            'type': [0],
+            'evolvedPokemon': 'Toxapex',
+            'level': 38,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -26840,8 +27599,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mudbray',
+          'type': [0],
           'evolvedPokemon': 'Mudsdale',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -26876,12 +27635,14 @@ module.exports = {
       },
       'attack': 140,
       'locations': {
-        '4': {
-          'basePokemon': 'Mudbray',
-          'evolvedPokemon': 'Mudsdale',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Mudbray',
+            'type': [0],
+            'evolvedPokemon': 'Mudsdale',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -26900,8 +27661,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Dewpider',
+          'type': [0],
           'evolvedPokemon': 'Araquanid',
-          'type': 0,
           'level': 22,
         },
       ],
@@ -26939,12 +27700,14 @@ module.exports = {
       },
       'attack': 94,
       'locations': {
-        '4': {
-          'basePokemon': 'Dewpider',
-          'evolvedPokemon': 'Araquanid',
-          'type': 0,
-          'level': 22,
-        },
+        '4': [
+          {
+            'basePokemon': 'Dewpider',
+            'type': [0],
+            'evolvedPokemon': 'Araquanid',
+            'level': 22,
+          },
+        ],
       },
       'catchRatePercent': 31,
       'eggSteps': 600,
@@ -26960,8 +27723,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Fomantis',
+          'type': [0],
           'evolvedPokemon': 'Lurantis',
-          'type': 0,
           'level': 34,
         },
       ],
@@ -26996,12 +27759,14 @@ module.exports = {
       },
       'attack': 129,
       'locations': {
-        '4': {
-          'basePokemon': 'Fomantis',
-          'evolvedPokemon': 'Lurantis',
-          'type': 0,
-          'level': 34,
-        },
+        '4': [
+          {
+            'basePokemon': 'Fomantis',
+            'type': [0],
+            'evolvedPokemon': 'Lurantis',
+            'level': 34,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -27020,8 +27785,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Morelull',
+          'type': [0],
           'evolvedPokemon': 'Shiinotic',
-          'type': 0,
           'level': 24,
         },
       ],
@@ -27059,12 +27824,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Morelull',
-          'evolvedPokemon': 'Shiinotic',
-          'type': 0,
-          'level': 24,
-        },
+        '4': [
+          {
+            'basePokemon': 'Morelull',
+            'type': [0],
+            'evolvedPokemon': 'Shiinotic',
+            'level': 24,
+          },
+        ],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -27083,8 +27850,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Salandit',
+          'type': [0],
           'evolvedPokemon': 'Salazzle',
-          'type': 0,
           'level': 33,
         },
       ],
@@ -27122,12 +27889,14 @@ module.exports = {
       },
       'attack': 105,
       'locations': {
-        '4': {
-          'basePokemon': 'Salandit',
-          'evolvedPokemon': 'Salazzle',
-          'type': 0,
-          'level': 33,
-        },
+        '4': [
+          {
+            'basePokemon': 'Salandit',
+            'type': [0],
+            'evolvedPokemon': 'Salazzle',
+            'level': 33,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -27146,8 +27915,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Stufful',
+          'type': [0],
           'evolvedPokemon': 'Bewear',
-          'type': 0,
           'level': 27,
         },
       ],
@@ -27185,12 +27954,14 @@ module.exports = {
       },
       'attack': 139,
       'locations': {
-        '4': {
-          'basePokemon': 'Stufful',
-          'evolvedPokemon': 'Bewear',
-          'type': 0,
-          'level': 27,
-        },
+        '4': [
+          {
+            'basePokemon': 'Stufful',
+            'type': [0],
+            'evolvedPokemon': 'Bewear',
+            'level': 27,
+          },
+        ],
       },
       'catchRatePercent': 24,
       'eggSteps': 600,
@@ -27206,8 +27977,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bounsweet',
+          'type': [0],
           'evolvedPokemon': 'Steenee',
-          'type': 0,
           'level': 18,
         },
       ],
@@ -27235,9 +28006,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Steenee',
-          'evolvedPokemon': 'Tsareena',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Tsareena',
         },
       ],
       'base': {
@@ -27250,12 +28021,14 @@ module.exports = {
       },
       'attack': 41,
       'locations': {
-        '4': {
-          'basePokemon': 'Bounsweet',
-          'evolvedPokemon': 'Steenee',
-          'type': 0,
-          'level': 18,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bounsweet',
+            'type': [0],
+            'evolvedPokemon': 'Steenee',
+            'level': 18,
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -27278,12 +28051,14 @@ module.exports = {
       },
       'attack': 120,
       'locations': {
-        '5': {
-          'basePokemon': 'Steenee',
-          'evolvedPokemon': 'Tsareena',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Steenee',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Tsareena',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -27368,8 +28143,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wimpod',
+          'type': [0],
           'evolvedPokemon': 'Golisopod',
-          'type': 0,
           'level': 30,
         },
       ],
@@ -27407,12 +28182,14 @@ module.exports = {
       },
       'attack': 140,
       'locations': {
-        '4': {
-          'basePokemon': 'Wimpod',
-          'evolvedPokemon': 'Golisopod',
-          'type': 0,
-          'level': 30,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wimpod',
+            'type': [0],
+            'evolvedPokemon': 'Golisopod',
+            'level': 30,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -27431,8 +28208,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sandygast',
+          'type': [0],
           'evolvedPokemon': 'Palossand',
-          'type': 0,
           'level': 42,
         },
       ],
@@ -27470,12 +28247,14 @@ module.exports = {
       },
       'attack': 135,
       'locations': {
-        '4': {
-          'basePokemon': 'Sandygast',
-          'evolvedPokemon': 'Palossand',
-          'type': 0,
-          'level': 42,
-        },
+        '4': [
+          {
+            'basePokemon': 'Sandygast',
+            'type': [0],
+            'evolvedPokemon': 'Palossand',
+            'level': 42,
+          },
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 600,
@@ -27512,8 +28291,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Type: Null',
+          'type': [0],
           'evolvedPokemon': 'Silvally',
-          'type': 0,
           'level': 100,
         },
       ],
@@ -27548,12 +28327,14 @@ module.exports = {
       },
       'attack': 167,
       'locations': {
-        '4': {
-          'basePokemon': 'Type: Null',
-          'evolvedPokemon': 'Silvally',
-          'type': 0,
-          'level': 100,
-        },
+        '4': [
+          {
+            'basePokemon': 'Type: Null',
+            'type': [0],
+            'evolvedPokemon': 'Silvally',
+            'level': 100,
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -27758,8 +28539,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Jangmo-o',
+          'type': [0],
           'evolvedPokemon': 'Hakamo-o',
-          'type': 0,
           'level': 35,
         },
       ],
@@ -27790,8 +28571,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Hakamo-o',
+          'type': [0],
           'evolvedPokemon': 'Kommo-o',
-          'type': 0,
           'level': 45,
         },
       ],
@@ -27805,12 +28586,14 @@ module.exports = {
       },
       'attack': 86,
       'locations': {
-        '4': {
-          'basePokemon': 'Jangmo-o',
-          'evolvedPokemon': 'Hakamo-o',
-          'type': 0,
-          'level': 35,
-        },
+        '4': [
+          {
+            'basePokemon': 'Jangmo-o',
+            'type': [0],
+            'evolvedPokemon': 'Hakamo-o',
+            'level': 35,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -27836,12 +28619,14 @@ module.exports = {
       },
       'attack': 175,
       'locations': {
-        '4': {
-          'basePokemon': 'Hakamo-o',
-          'evolvedPokemon': 'Kommo-o',
-          'type': 0,
-          'level': 45,
-        },
+        '4': [
+          {
+            'basePokemon': 'Hakamo-o',
+            'type': [0],
+            'evolvedPokemon': 'Kommo-o',
+            'level': 45,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -27953,8 +28738,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cosmog',
+          'type': [0],
           'evolvedPokemon': 'Cosmoem',
-          'type': 0,
           'level': 43,
         },
       ],
@@ -27982,8 +28767,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cosmoem',
+          'type': [0],
           'evolvedPokemon': 'Solgaleo',
-          'type': 0,
           'level': 53,
         },
       ],
@@ -27997,12 +28782,14 @@ module.exports = {
       },
       'attack': 42,
       'locations': {
-        '4': {
-          'basePokemon': 'Cosmog',
-          'evolvedPokemon': 'Cosmoem',
-          'type': 0,
-          'level': 43,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cosmog',
+            'type': [0],
+            'evolvedPokemon': 'Cosmoem',
+            'level': 43,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28028,12 +28815,14 @@ module.exports = {
       },
       'attack': 259,
       'locations': {
-        '4': {
-          'basePokemon': 'Cosmoem',
-          'evolvedPokemon': 'Solgaleo',
-          'type': 0,
-          'level': 53,
-        },
+        '4': [
+          {
+            'basePokemon': 'Cosmoem',
+            'type': [0],
+            'evolvedPokemon': 'Solgaleo',
+            'level': 53,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28307,9 +29096,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Poipole',
-          'evolvedPokemon': 'Naganadel',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Naganadel',
         },
       ],
       'base': {
@@ -28346,12 +29135,14 @@ module.exports = {
       },
       'attack': 134,
       'locations': {
-        '5': {
-          'basePokemon': 'Poipole',
-          'evolvedPokemon': 'Naganadel',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Poipole',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Naganadel',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28436,9 +29227,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Meltan',
-          'evolvedPokemon': 'Melmetal',
-          'type': 0,
+          'type': [1],
           'stone': -1,
+          'evolvedPokemon': 'Melmetal',
         },
       ],
       'base': {
@@ -28472,12 +29263,14 @@ module.exports = {
       },
       'attack': 212,
       'locations': {
-        '5': {
-          'basePokemon': 'Meltan',
-          'evolvedPokemon': 'Melmetal',
-          'type': 0,
-          'stone': -1,
-        },
+        '4': [
+          {
+            'basePokemon': 'Meltan',
+            'type': [1],
+            'stone': -1,
+            'evolvedPokemon': 'Melmetal',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -28485,6 +29278,7 @@ module.exports = {
     {
       'id': 0,
       'name': 'MissingNo.',
+      'nativeRegion': -1,
       'catchRate': 45,
       'type': [
         9,
@@ -28509,6 +29303,7 @@ module.exports = {
     {
       'id': -1,
       'name': 'Flying Pikachu',
+      'nativeRegion': 0,
       'catchRate': 50,
       'type': [
         3,
@@ -28533,6 +29328,7 @@ module.exports = {
     {
       'id': -2,
       'name': 'Surfing Pikachu',
+      'nativeRegion': 0,
       'catchRate': 50,
       'type': [
         3,
@@ -28557,6 +29353,7 @@ module.exports = {
     {
       'id': -3,
       'name': 'Armored Mewtwo',
+      'nativeRegion': 0,
       'catchRate': 2,
       'type': [10],
       'levelType': 4,
@@ -28578,6 +29375,7 @@ module.exports = {
     {
       'id': -4,
       'name': 'Santa Dragonite',
+      'nativeRegion': 0,
       'catchRate': 20,
       'type': [
         14,
@@ -28602,6 +29400,7 @@ module.exports = {
     {
       'id': -5,
       'name': 'Spooky Togepi',
+      'nativeRegion': 1,
       'catchRate': 30,
       'type': [17],
       'levelType': 1,
@@ -28623,6 +29422,7 @@ module.exports = {
     {
       'id': -6,
       'name': 'Spooky Bulbasaur',
+      'nativeRegion': 0,
       'catchRate': 25,
       'type': [
         4,
@@ -28647,6 +29447,7 @@ module.exports = {
     {
       'id': -7,
       'name': 'Pikachu (Gengar)',
+      'nativeRegion': 0,
       'catchRate': 50,
       'type': [3],
       'levelType': 2,
@@ -28668,6 +29469,7 @@ module.exports = {
     {
       'id': -8,
       'name': 'Lets go Pikachu',
+      'nativeRegion': 0,
       'catchRate': 50,
       'type': [3],
       'levelType': 2,
@@ -28689,6 +29491,7 @@ module.exports = {
     {
       'id': -9,
       'name': 'Lets go Eevee',
+      'nativeRegion': 0,
       'catchRate': 255,
       'type': [0],
       'levelType': 2,
@@ -28710,6 +29513,7 @@ module.exports = {
     {
       'id': -10,
       'name': 'Bulbasaur (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [
         4,
@@ -28721,8 +29525,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bulbasaur (clone)',
+          'type': [0],
           'evolvedPokemon': 'Ivysaur (clone)',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -28742,6 +29546,7 @@ module.exports = {
     {
       'id': -11,
       'name': 'Ivysaur (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [
         4,
@@ -28753,8 +29558,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Ivysaur (clone)',
+          'type': [0],
           'evolvedPokemon': 'Venusaur (clone)',
-          'type': 0,
           'level': 32,
         },
       ],
@@ -28768,12 +29573,14 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': {
-          'basePokemon': 'Bulbasaur (clone)',
-          'evolvedPokemon': 'Ivysaur (clone)',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Bulbasaur (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Ivysaur (clone)',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28781,6 +29588,7 @@ module.exports = {
     {
       'id': -12,
       'name': 'Venusaur (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [
         4,
@@ -28799,12 +29607,14 @@ module.exports = {
       },
       'attack': 141,
       'locations': {
-        '4': {
-          'basePokemon': 'Ivysaur (clone)',
-          'evolvedPokemon': 'Venusaur (clone)',
-          'type': 0,
-          'level': 32,
-        },
+        '4': [
+          {
+            'basePokemon': 'Ivysaur (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Venusaur (clone)',
+            'level': 32,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28812,6 +29622,7 @@ module.exports = {
     {
       'id': -13,
       'name': 'Charmander (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [1],
       'levelType': 3,
@@ -28820,8 +29631,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Charmander (clone)',
+          'type': [0],
           'evolvedPokemon': 'Charmeleon (clone)',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -28841,6 +29652,7 @@ module.exports = {
     {
       'id': -14,
       'name': 'Charmeleon (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [1],
       'levelType': 3,
@@ -28849,8 +29661,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Charmeleon (clone)',
+          'type': [0],
           'evolvedPokemon': 'Charizard (clone)',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -28864,12 +29676,14 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': {
-          'basePokemon': 'Charmander (clone)',
-          'evolvedPokemon': 'Charmeleon (clone)',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Charmander (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Charmeleon (clone)',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28877,6 +29691,7 @@ module.exports = {
     {
       'id': -15,
       'name': 'Charizard (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [
         1,
@@ -28895,12 +29710,14 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': {
-          'basePokemon': 'Charmeleon (clone)',
-          'evolvedPokemon': 'Charizard (clone)',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Charmeleon (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Charizard (clone)',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28908,6 +29725,7 @@ module.exports = {
     {
       'id': -16,
       'name': 'Squirtle (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [2],
       'levelType': 3,
@@ -28916,8 +29734,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Squirtle (clone)',
+          'type': [0],
           'evolvedPokemon': 'Wartortle (clone)',
-          'type': 0,
           'level': 16,
         },
       ],
@@ -28937,6 +29755,7 @@ module.exports = {
     {
       'id': -17,
       'name': 'Wartortle (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [2],
       'levelType': 3,
@@ -28945,8 +29764,8 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Wartortle (clone)',
+          'type': [0],
           'evolvedPokemon': 'Blastoise (clone)',
-          'type': 0,
           'level': 36,
         },
       ],
@@ -28960,12 +29779,14 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': {
-          'basePokemon': 'Squirtle (clone)',
-          'evolvedPokemon': 'Wartortle (clone)',
-          'type': 0,
-          'level': 16,
-        },
+        '4': [
+          {
+            'basePokemon': 'Squirtle (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Wartortle (clone)',
+            'level': 16,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28973,6 +29794,7 @@ module.exports = {
     {
       'id': -18,
       'name': 'Blastoise (clone)',
+      'nativeRegion': 0,
       'catchRate': 45,
       'type': [2],
       'levelType': 3,
@@ -28988,12 +29810,14 @@ module.exports = {
       },
       'attack': 139,
       'locations': {
-        '4': {
-          'basePokemon': 'Wartortle (clone)',
-          'evolvedPokemon': 'Blastoise (clone)',
-          'type': 0,
-          'level': 36,
-        },
+        '4': [
+          {
+            'basePokemon': 'Wartortle (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Blastoise (clone)',
+            'level': 36,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -29001,6 +29825,7 @@ module.exports = {
     {
       'id': -100,
       'name': 'Mega Venusaur',
+      'nativeRegion': 0,
       'type': [
         4,
         7,
@@ -29025,6 +29850,7 @@ module.exports = {
     {
       'id': -101,
       'name': 'Mega Charizard X',
+      'nativeRegion': 0,
       'type': [
         1,
         14,
@@ -29049,6 +29875,7 @@ module.exports = {
     {
       'id': -111,
       'name': 'Mega Gyarados',
+      'nativeRegion': 0,
       'type': [
         2,
         15,
@@ -29073,6 +29900,7 @@ module.exports = {
     {
       'id': -115,
       'name': 'Mega Rayquaza',
+      'nativeRegion': 2,
       'type': [
         14,
         9,
@@ -29190,6 +30018,165 @@ module.exports = {
       'secondary': 5,
       'dark': 6,
       'light': 7,
+    },
+    'NotificationSound': {
+      'ready_to_hatch': {
+        'name': 'Egg ready to hatch',
+      },
+      'shiny_long': {
+        'name': 'Shiny Pokemon encountered/hatched',
+      },
+      'new_catch': {
+        'name': 'New pokemon/shiny captured',
+      },
+      'achievement': {
+        'name': 'New achievement earned',
+      },
+      'battle_item_timer': {
+        'name': 'Battle item about to wear off',
+      },
+      'quest_ready_to_complete': {
+        'name': 'Quest is ready to be completed',
+      },
+      'quest_level_increased': {
+        'name': 'Quest level increased',
+      },
+      'underground_energy_full': {
+        'name': 'Mining energy reached maximum capacity',
+      },
+      'ready_to_harvest': {
+        'name': 'Farm ready to harvest',
+      },
+    },
+    'NotificationSetting': {
+      'ready_to_hatch': {
+        'name': 'notification.ready_to_hatch',
+        'displayName': 'Egg ready to hatch',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'route_item_found': {
+        'name': 'notification.route_item_found',
+        'displayName': 'Item found during route battle',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'dungeon_item_found': {
+        'name': 'notification.dungeon_item_found',
+        'displayName': 'Item found in dungeon chest',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'battle_item_timer': {
+        'name': 'notification.battle_item_timer',
+        'displayName': 'Battle item about to wear off',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'encountered_shiny': {
+        'name': 'notification.encountered_shiny',
+        'displayName': 'Encountered a shiny Pokemon',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'quest_ready_to_complete': {
+        'name': 'notification.quest_ready_to_complete',
+        'displayName': 'Quest is ready to be completed',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'underground_energy_full': {
+        'name': 'notification.underground_energy_full',
+        'displayName': 'Mining energy reached maximum capacity',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'event_start_end': {
+        'name': 'notification.event_start_end',
+        'displayName': 'Event start/end information',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
     },
     'DungeonTile': {
       '0': 'empty',
@@ -29322,6 +30309,8 @@ module.exports = {
       '5': 'kalos',
       '6': 'alola',
       '7': 'galar',
+      'none': -1,
+      '-1': 'none',
       'kanto': 0,
       'johto': 1,
       'hoenn': 2,

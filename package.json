@@ -1,6 +1,6 @@
 {
   "name": "discord-bot-pokeclicker",
-  "version": "0.4.16",
+  "version": "0.4.17",
   "description": "",
   "scripts": {
     "start": "node index",

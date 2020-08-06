@@ -49,6 +49,7 @@ const fs = require('fs');
       PokemonType,
       LevelType,
       levelRequirements,
+      EvolutionType,
       pokemonList: pokemonList.map(p => {
         p.locations = PokemonHelper.getPokemonLocations(p.name);
         p.catchRatePercent = PokemonFactory.catchRateHelper(p.catchRate, true);
