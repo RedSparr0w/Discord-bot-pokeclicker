@@ -1,5 +1,6 @@
 {
   "prefix": "!",
   "token": "YOUR_BOTS_TOKEN_HERE",
-  "ownerID": "YOUR_DISCORD_USER_ID (optional)"
+  "ownerID": "YOUR_DISCORD_USER_ID (optional)",
+  "autorole": "ROLE_ID_HERE (optional)"
 }
