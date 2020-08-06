@@ -60,7 +60,7 @@ const fs = require('fs');
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
 
-
+  // Tidy up the result data with our eslint rules
   const CLIEngine = require('eslint').CLIEngine;
 
   const cli = new CLIEngine({
@@ -68,7 +68,11 @@ const fs = require('fs');
   });
 
   const report = cli.executeOnText(result, './helpers/pokeclicker.js');
-  output = report.results[0].output;
+
+  // Get the output after running through eslint
+  const output = report.results[0].output;
+
+  // Save the data
   await fs.writeFileSync('./helpers/pokeclicker.js', output);
 
   console.log({ fileSise: output.length, errorCount: report.errorCount, warningCount: report.warningCount });
