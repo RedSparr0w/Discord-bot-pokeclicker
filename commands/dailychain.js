@@ -192,6 +192,9 @@ module.exports = {
       description.push('```');
       const title = `❯ ${dateToString(deals[0].date)} → ${dateToString(deals[deals.length - 1].date)}`;
       description = description.join('\n');
+      if (description.length > 1024) {
+        description = `${description.substr(0, 1000).replace(/\r?\n.+$/, '')}\n...chain too long...\n\`\`\``;
+      }
       if (embed.length + title.length + description.length >= 6000) {
         return tooLong = true;
       }
