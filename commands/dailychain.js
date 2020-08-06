@@ -183,8 +183,8 @@ module.exports = {
       if (tooLong) return;
       let description = [];
       const deals = chain.deals;
-      const profit = +chain.profit.toFixed(1).toLocaleString('en-us');
-      description.push(`Profit per 1 of initial investment \`💎 ${profit}\``);
+      const profit = +chain.profit.toFixed(1);
+      description.push(`Profit per 1 of initial investment \`💎 ${profit.toLocaleString('en-US')}\``);
       description.push('```ini');
       deals.forEach(deal => {
         description.push(`[${dateToString(deal.date)}] [${deal.amount1}] ${deal.item1.name.padEnd(padding, ' ')} → [${deal.amount2}] ${deal.item2.name}`);
