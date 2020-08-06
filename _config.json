@@ -1,4 +1,5 @@
 {
   "prefix": "!",
-  "token": "YOUR_BOTS_TOKEN_HERE"
+  "token": "YOUR_BOTS_TOKEN_HERE",
+  "ownerID": "YOUR_DISCORD_USER_ID"
 }
