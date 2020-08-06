@@ -54,6 +54,10 @@ client.on('error', e => error('Client error thrown:', e))
           addReaction(reaction, resolve);
         })), Promise.resolve());
       }
+      //soon™
+      if (/(when).+(release|version|update)/i.test(message.content)) {
+        message.channel.send('soon™');
+      }
       return;
     }
 
