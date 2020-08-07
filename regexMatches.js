@@ -33,6 +33,13 @@ module.exports = [
       message.channel.send('soon™');
     },
   },
+  
+  {
+    regex: /(release|version|update).+(when)/i,
+    execute: (message, client) => {
+      message.channel.send('soon™');
+    },
+  },
   // FAQ
   {
     regex: /(how|where).+(catch|find|get|evolve|buy)/i,
