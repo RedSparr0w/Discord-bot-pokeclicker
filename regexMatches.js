@@ -35,7 +35,7 @@ module.exports = [
   },
   // FAQ
   {
-    regex: /(how|where).+(catch|find|evolve)/i,
+    regex: /(how|where).+(catch|find|get|evolve|buy)/i,
     execute: (message, client) => {
       let text = '';
       const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
