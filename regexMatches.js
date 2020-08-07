@@ -33,4 +33,18 @@ module.exports = [
       message.channel.send('soon™');
     },
   },
+  // FAQ
+  {
+    regex: /(how|where).+(catch|find|evolve)/i,
+    execute: (message, client) => {
+      let text = '';
+      const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
+      if (faq) text += `\nYou might be able to find the answer you are looking for in the ${faq}.`;
+
+      const botCommands = message.guild.channels.cache.find(channel => channel.name == 'bot-commands');
+      if (botCommands) text += `\nThere may be a command available in ${botCommands}.`;
+
+      if (text.length) message.reply(text);
+    },
+  },
 ];
