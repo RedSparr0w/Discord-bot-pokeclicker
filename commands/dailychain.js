@@ -212,9 +212,9 @@ module.exports = {
           embed.addField('...chain length too long...', '\u200b', false);
           return tooLong = true;
         }
-        embed.addField('Date', date_str, true);
-        embed.addField('Give', deal_1_str, true);
-        embed.addField('Receive', deal_2_str, true);
+        embed.addField('_Date_', date_str, true);
+        embed.addField('_Give_', deal_1_str, true);
+        embed.addField('_Receive_', deal_2_str, true);
       }
     });
 
