@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.4.17',
+  'gameVersion': '0.4.18',
   'pokemonsPerRoute': {
     '0': {
       '1': {
@@ -6155,6 +6155,7 @@ module.exports = {
         'specialDefense': 80,
         'speed': 30,
       },
+      'heldItem': 'Kings_rock',
       'attack': 142,
       'locations': {
         '0': {
@@ -8645,6 +8646,7 @@ module.exports = {
         'specialDefense': 50,
         'speed': 50,
       },
+      'heldItem': 'Dragon_scale',
       'attack': 48,
       'locations': {
         '0': {
@@ -11370,6 +11372,7 @@ module.exports = {
         'specialDefense': 70,
         'speed': 70,
       },
+      'heldItem': 'Metal_coat',
       'attack': 86,
       'locations': {
         '0': {
@@ -16696,9 +16699,7 @@ module.exports = {
         'speed': 150,
       },
       'attack': 144,
-      'locations': {
-        '1': ['2'],
-      },
+      'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -29967,7 +29968,6 @@ module.exports = {
         'Regirock',
         'Registeel',
         'Jirachi',
-        'Deoxys',
       ],
     },
     'SHINY_CHANCE_BATTLE': 8192,
@@ -30177,6 +30177,22 @@ module.exports = {
         'defaultValue': true,
         'value': true,
       },
+      'dropped_item': {
+        'name': 'notification.dropped_item',
+        'displayName': 'Enemy pokemon dropped an item',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
     },
     'DungeonTile': {
       '0': 'empty',
@@ -30188,6 +30204,8 @@ module.exports = {
       'chest': 2,
       'boss': 3,
     },
+    'ROUTE_HELD_ITEM_CHANCE': 512,
+    'DUNGEON_HELD_ITEM_CHANCE': 128,
     'DUNGEON_SHARDS': 3,
     'DUNGEON_BOSS_SHARDS': 20,
     'GYM_SHARDS': 5,
