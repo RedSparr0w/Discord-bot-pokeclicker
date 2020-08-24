@@ -1,7 +1,7 @@
 const sqlite = require('sqlite');
 
 async function getDB(){
-  return await sqlite.open('./database.sqlite');
+  return await sqlite.open('./db/database.sqlite');
 }
 
 async function setupDB(){
