@@ -1,8 +1,10 @@
 module.exports = {
-  'gameVersion': '0.4.18',
-  'pokemonsPerRoute': {
-    '0': {
-      '1': {
+  'gameVersion': '0.5.0',
+  'regionRoutes': [
+    {
+      'region': 0,
+      'number': 1,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Rattata',
@@ -10,7 +12,13 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '2': {
+      'requirements': [],
+      'orderNumber': 1,
+    },
+    {
+      'region': 0,
+      'number': 2,
+      'pokemon': {
         'land': [
           'Caterpie',
           'Weedle',
@@ -21,7 +29,19 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '3': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 1,
+        },
+      ],
+      'orderNumber': 2,
+    },
+    {
+      'region': 0,
+      'number': 3,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Rattata',
@@ -33,7 +53,24 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '4': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 2,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 1,
+        },
+      ],
+      'orderNumber': 3,
+    },
+    {
+      'region': 0,
+      'number': 4,
+      'pokemon': {
         'land': [
           'Rattata',
           'Spearow',
@@ -50,7 +87,92 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '5': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 3,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 2,
+        },
+      ],
+      'orderNumber': 4,
+    },
+    {
+      'region': 0,
+      'number': 24,
+      'pokemon': {
+        'land': [
+          'Caterpie',
+          'Metapod',
+          'Weedle',
+          'Kakuna',
+          'Pidgey',
+          'Pidgey',
+          'Pidgeotto',
+          'Oddish',
+          'Venonat',
+          'Abra',
+          'Bellsprout',
+        ],
+        'water': [
+          'Poliwag',
+          'Goldeen',
+          'Psyduck',
+          'Krabby',
+          'Seaking',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 4,
+        },
+      ],
+      'orderNumber': 4.1,
+    },
+    {
+      'region': 0,
+      'number': 25,
+      'pokemon': {
+        'land': [
+          'Caterpie',
+          'Metapod',
+          'Weedle',
+          'Kakuna',
+          'Pidgey',
+          'Pidgeotto',
+          'Oddish',
+          'Venonat',
+          'Abra',
+          'Bellsprout',
+        ],
+        'water': [
+          'Poliwag',
+          'Goldeen',
+          'Psyduck',
+          'Krabby',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 24,
+        },
+      ],
+      'orderNumber': 4.2,
+    },
+    {
+      'region': 0,
+      'number': 5,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -65,7 +187,19 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '6': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 25,
+        },
+      ],
+      'orderNumber': 5,
+    },
+    {
+      'region': 0,
+      'number': 6,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -85,42 +219,52 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '7': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 5,
+        },
+      ],
+      'orderNumber': 6,
+    },
+    {
+      'region': 0,
+      'number': 11,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
+          'Raticate',
           'Rattata',
-          'Vulpix',
-          'Jigglypuff',
-          'Oddish',
-          'Meowth',
-          'Mankey',
-          'Growlithe',
-          'Abra',
-          'Bellsprout',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      '8': {
-        'land': [
-          'Pidgey',
-          'Pidgeotto',
-          'Rattata',
+          'Spearow',
           'Ekans',
           'Sandshrew',
-          'Vulpix',
-          'Jigglypuff',
-          'Meowth',
-          'Mankey',
-          'Growlithe',
-          'Abra',
-          'Kadabra',
+          'Drowzee',
         ],
-        'water': [],
+        'water': [
+          'Poliwag',
+          'Goldeen',
+          'Tentacool',
+          'Shellder',
+          'Krabby',
+          'Horsea',
+        ],
         'headbutt': [],
       },
-      '9': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 6,
+        },
+      ],
+      'orderNumber': 6.1,
+    },
+    {
+      'region': 0,
+      'number': 9,
+      'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
@@ -136,7 +280,24 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '10': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 6,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 2,
+        },
+      ],
+      'orderNumber': 9,
+    },
+    {
+      'region': 0,
+      'number': 10,
+      'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
@@ -160,28 +321,83 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '11': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 9,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 3,
+        },
+      ],
+      'orderNumber': 10,
+    },
+    {
+      'region': 0,
+      'number': 7,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
-          'Raticate',
           'Rattata',
-          'Spearow',
-          'Ekans',
-          'Sandshrew',
-          'Drowzee',
+          'Vulpix',
+          'Jigglypuff',
+          'Oddish',
+          'Meowth',
+          'Mankey',
+          'Growlithe',
+          'Abra',
+          'Bellsprout',
         ],
-        'water': [
-          'Poliwag',
-          'Goldeen',
-          'Tentacool',
-          'Shellder',
-          'Krabby',
-          'Horsea',
-        ],
+        'water': [],
         'headbutt': [],
       },
-      '12': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 10,
+        },
+      ],
+      'orderNumber': 10.1,
+    },
+    {
+      'region': 0,
+      'number': 8,
+      'pokemon': {
+        'land': [
+          'Pidgey',
+          'Pidgeotto',
+          'Rattata',
+          'Ekans',
+          'Sandshrew',
+          'Vulpix',
+          'Jigglypuff',
+          'Meowth',
+          'Mankey',
+          'Growlithe',
+          'Abra',
+          'Kadabra',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 7,
+        },
+      ],
+      'orderNumber': 10.2,
+    },
+    {
+      'region': 0,
+      'number': 12,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -205,7 +421,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '13': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 5,
+        },
+      ],
+      'orderNumber': 12,
+    },
+    {
+      'region': 0,
+      'number': 13,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -229,7 +457,28 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '14': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 12,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 14,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 13,
+    },
+    {
+      'region': 0,
+      'number': 14,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -247,7 +496,28 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '15': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 13,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 15,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 14,
+    },
+    {
+      'region': 0,
+      'number': 15,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -262,7 +532,28 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '16': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 18,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 14,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 15,
+    },
+    {
+      'region': 0,
+      'number': 16,
+      'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
@@ -274,7 +565,19 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '17': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 5,
+        },
+      ],
+      'orderNumber': 16,
+    },
+    {
+      'region': 0,
+      'number': 17,
+      'pokemon': {
         'land': [
           'Raticate',
           'Spearow',
@@ -292,7 +595,28 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '18': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 16,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 18,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 17,
+    },
+    {
+      'region': 0,
+      'number': 18,
+      'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
@@ -309,7 +633,28 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '19': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 17,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 15,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 18,
+    },
+    {
+      'region': 0,
+      'number': 19,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -323,7 +668,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '20': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 5,
+        },
+      ],
+      'orderNumber': 19,
+    },
+    {
+      'region': 0,
+      'number': 20,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -337,7 +694,28 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '21': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 21,
+            },
+            {
+              'requiredValue': 1,
+              'type': 2,
+              'dungeonIndex': 6,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 20,
+    },
+    {
+      'region': 0,
+      'number': 21,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -356,7 +734,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '22': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 5,
+        },
+      ],
+      'orderNumber': 21,
+    },
+    {
+      'region': 0,
+      'number': 22,
+      'pokemon': {
         'land': [
           'Rattata',
           'Spearow',
@@ -371,7 +761,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '23': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 8,
+        },
+      ],
+      'orderNumber': 22,
+    },
+    {
+      'region': 0,
+      'number': 23,
+      'pokemon': {
         'land': [
           'Spearow',
           'Fearow',
@@ -396,128 +798,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '24': {
-        'land': [
-          'Caterpie',
-          'Metapod',
-          'Weedle',
-          'Kakuna',
-          'Pidgey',
-          'Pidgey',
-          'Pidgeotto',
-          'Oddish',
-          'Venonat',
-          'Abra',
-          'Bellsprout',
-        ],
-        'water': [
-          'Poliwag',
-          'Goldeen',
-          'Psyduck',
-          'Krabby',
-          'Seaking',
-        ],
-        'headbutt': [],
-      },
-      '25': {
-        'land': [
-          'Caterpie',
-          'Metapod',
-          'Weedle',
-          'Kakuna',
-          'Pidgey',
-          'Pidgeotto',
-          'Oddish',
-          'Venonat',
-          'Abra',
-          'Bellsprout',
-        ],
-        'water': [
-          'Poliwag',
-          'Goldeen',
-          'Psyduck',
-          'Krabby',
-        ],
-        'headbutt': [],
-      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 22,
+        },
+      ],
+      'orderNumber': 23,
     },
-    '1': {
-      '26': {
-        'land': [
-          'Raticate',
-          'Arbok',
-          'Sandslash',
-          'Ponyta',
-          'Doduo',
-          'Dodrio',
-          'Quagsire',
-        ],
-        'water': [
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Shellder',
-          'Chinchou',
-          'Lanturn',
-        ],
-        'headbutt': [
-          'Exeggcute',
-          'Hoothoot',
-          'Ledyba',
-          'Spinarak',
-          'Pineco',
-        ],
-      },
-      '27': {
-        'land': [
-          'Raticate',
-          'Arbok',
-          'Sandslash',
-          'Ponyta',
-          'Doduo',
-          'Dodrio',
-          'Quagsire',
-        ],
-        'water': [
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Shellder',
-          'Chinchou',
-          'Lanturn',
-        ],
-        'headbutt': [
-          'Exeggcute',
-          'Hoothoot',
-          'Ledyba',
-          'Spinarak',
-          'Pineco',
-        ],
-      },
-      '28': {
-        'land': [
-          'Ponyta',
-          'Tangela',
-          'Donphan',
-          'Ursaring',
-          'Rapidash',
-          'Doduo',
-          'Dodrio',
-          'Sneasel',
-          'Murkrow',
-        ],
-        'water': [
-          'Poliwag',
-          'Poliwhirl',
-          'Magikarp',
-        ],
-        'headbutt': [
-          'Natu',
-          'Aipom',
-          'Heracross',
-        ],
-      },
-      '29': {
+    {
+      'region': 1,
+      'number': 29,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Rattata',
@@ -533,7 +826,44 @@ module.exports = {
           'Pineco',
         ],
       },
-      '30': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 13,
+        },
+      ],
+      'orderNumber': 29,
+    },
+    {
+      'region': 1,
+      'number': 46,
+      'pokemon': {
+        'land': [
+          'Spearow',
+          'Rattata',
+          'Geodude',
+        ],
+        'water': [],
+        'headbutt': [
+          'Spearow',
+          'Aipom',
+          'Heracross',
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 29,
+        },
+      ],
+      'orderNumber': 29.1,
+    },
+    {
+      'region': 1,
+      'number': 30,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Rattata',
@@ -559,7 +889,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '31': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 29,
+        },
+      ],
+      'orderNumber': 30,
+    },
+    {
+      'region': 1,
+      'number': 31,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Rattata',
@@ -590,7 +932,19 @@ module.exports = {
           'Heracross',
         ],
       },
-      '32': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 30,
+        },
+      ],
+      'orderNumber': 31,
+    },
+    {
+      'region': 1,
+      'number': 32,
+      'pokemon': {
         'land': [
           'Rattata',
           'Ekans',
@@ -613,7 +967,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '33': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 14,
+        },
+      ],
+      'orderNumber': 32,
+    },
+    {
+      'region': 1,
+      'number': 33,
+      'pokemon': {
         'land': [
           'Spearow',
           'Rattata',
@@ -628,7 +994,19 @@ module.exports = {
           'Heracross',
         ],
       },
-      '34': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 12,
+        },
+      ],
+      'orderNumber': 33,
+    },
+    {
+      'region': 1,
+      'number': 34,
+      'pokemon': {
         'land': [
           'Rattata',
           'Abra',
@@ -652,7 +1030,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '35': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 14,
+        },
+      ],
+      'orderNumber': 34,
+    },
+    {
+      'region': 1,
+      'number': 35,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Nidoran(F)',
@@ -677,7 +1067,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '36': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 34,
+        },
+      ],
+      'orderNumber': 35,
+    },
+    {
+      'region': 1,
+      'number': 36,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Nidoran(M)',
@@ -697,7 +1099,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '37': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 16,
+        },
+      ],
+      'orderNumber': 36,
+    },
+    {
+      'region': 1,
+      'number': 37,
+      'pokemon': {
         'land': [
           'Pidgey',
           'Pidgeotto',
@@ -717,7 +1131,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '38': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 36,
+        },
+      ],
+      'orderNumber': 37,
+    },
+    {
+      'region': 1,
+      'number': 38,
+      'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
@@ -737,7 +1163,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '39': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 37,
+        },
+      ],
+      'orderNumber': 38,
+    },
+    {
+      'region': 1,
+      'number': 39,
+      'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
@@ -756,7 +1194,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '40': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 38,
+        },
+      ],
+      'orderNumber': 39,
+    },
+    {
+      'region': 1,
+      'number': 40,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -769,7 +1219,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '41': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 17,
+        },
+      ],
+      'orderNumber': 40,
+    },
+    {
+      'region': 1,
+      'number': 41,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -781,7 +1243,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '42': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 40,
+        },
+      ],
+      'orderNumber': 41,
+    },
+    {
+      'region': 1,
+      'number': 42,
+      'pokemon': {
         'land': [
           'Spearow',
           'Zubat',
@@ -800,7 +1274,19 @@ module.exports = {
           'Heracross',
         ],
       },
-      '43': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 17,
+        },
+      ],
+      'orderNumber': 42,
+    },
+    {
+      'region': 1,
+      'number': 43,
+      'pokemon': {
         'land': [
           'Pidgeotto',
           'Venonat',
@@ -820,7 +1306,19 @@ module.exports = {
           'Pineco',
         ],
       },
-      '44': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 42,
+        },
+      ],
+      'orderNumber': 43,
+    },
+    {
+      'region': 1,
+      'number': 44,
+      'pokemon': {
         'land': [
           'Bellsprout',
           'Weepinbell',
@@ -839,7 +1337,24 @@ module.exports = {
           'Heracross',
         ],
       },
-      '45': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 19,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 20,
+        },
+      ],
+      'orderNumber': 44,
+    },
+    {
+      'region': 1,
+      'number': 45,
+      'pokemon': {
         'land': [
           'Geodude',
           'Graveler',
@@ -859,20 +1374,19 @@ module.exports = {
           'Heracross',
         ],
       },
-      '46': {
-        'land': [
-          'Spearow',
-          'Rattata',
-          'Geodude',
-        ],
-        'water': [],
-        'headbutt': [
-          'Spearow',
-          'Aipom',
-          'Heracross',
-        ],
-      },
-      '47': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 19,
+        },
+      ],
+      'orderNumber': 45,
+    },
+    {
+      'region': 1,
+      'number': 47,
+      'pokemon': {
         'land': [
           'Raticate',
           'Spearow',
@@ -905,7 +1419,19 @@ module.exports = {
           'Heracross',
         ],
       },
-      '48': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 19,
+        },
+      ],
+      'orderNumber': 47,
+    },
+    {
+      'region': 1,
+      'number': 48,
+      'pokemon': {
         'land': [
           'Fearow',
           'Vulpix',
@@ -926,9 +1452,130 @@ module.exports = {
           'Pineco',
         ],
       },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 47,
+        },
+      ],
+      'orderNumber': 48,
     },
-    '2': {
-      '101': {
+    {
+      'region': 1,
+      'number': 27,
+      'pokemon': {
+        'land': [
+          'Raticate',
+          'Arbok',
+          'Sandslash',
+          'Ponyta',
+          'Doduo',
+          'Dodrio',
+          'Quagsire',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Shellder',
+          'Chinchou',
+          'Lanturn',
+        ],
+        'headbutt': [
+          'Exeggcute',
+          'Hoothoot',
+          'Ledyba',
+          'Spinarak',
+          'Pineco',
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 21,
+        },
+      ],
+      'orderNumber': 49,
+    },
+    {
+      'region': 1,
+      'number': 26,
+      'pokemon': {
+        'land': [
+          'Raticate',
+          'Arbok',
+          'Sandslash',
+          'Ponyta',
+          'Doduo',
+          'Dodrio',
+          'Quagsire',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Shellder',
+          'Chinchou',
+          'Lanturn',
+        ],
+        'headbutt': [
+          'Exeggcute',
+          'Hoothoot',
+          'Ledyba',
+          'Spinarak',
+          'Pineco',
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 27,
+        },
+      ],
+      'orderNumber': 50,
+    },
+    {
+      'region': 1,
+      'number': 28,
+      'pokemon': {
+        'land': [
+          'Ponyta',
+          'Tangela',
+          'Donphan',
+          'Ursaring',
+          'Rapidash',
+          'Doduo',
+          'Dodrio',
+          'Sneasel',
+          'Murkrow',
+        ],
+        'water': [
+          'Poliwag',
+          'Poliwhirl',
+          'Magikarp',
+        ],
+        'headbutt': [
+          'Natu',
+          'Aipom',
+          'Heracross',
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 26,
+        },
+      ],
+      'orderNumber': 51,
+    },
+    {
+      'region': 2,
+      'number': 101,
+      'pokemon': {
         'land': [
           'Wurmple',
           'Poochyena',
@@ -937,7 +1584,47 @@ module.exports = {
         'water': [],
         'headbutt': [],
       },
-      '102': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 26,
+        },
+      ],
+      'orderNumber': 101,
+    },
+    {
+      'region': 2,
+      'number': 103,
+      'pokemon': {
+        'land': [
+          'Poochyena',
+          'Wingull',
+          'Zigzagoon',
+        ],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+          'Sharpedo',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 101,
+        },
+      ],
+      'orderNumber': 101.1,
+    },
+    {
+      'region': 2,
+      'number': 102,
+      'pokemon': {
         'land': [
           'Surskit',
           'Poochyena',
@@ -955,23 +1642,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '103': {
-        'land': [
-          'Poochyena',
-          'Wingull',
-          'Zigzagoon',
-        ],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-          'Sharpedo',
-        ],
-        'headbutt': [],
-      },
-      '104': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 101,
+        },
+      ],
+      'orderNumber': 102,
+    },
+    {
+      'region': 2,
+      'number': 104,
+      'pokemon': {
         'land': [
           'Poochyena',
           'Wurmple',
@@ -986,62 +1669,43 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '105': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 102,
+        },
+      ],
+      'orderNumber': 104,
+    },
+    {
+      'region': 2,
+      'number': 116,
+      'pokemon': {
+        'land': [
+          'Poochyena',
+          'Whismur',
+          'Nincada',
+          'Abra',
+          'Taillow',
+          'Skitty',
         ],
+        'water': [],
         'headbutt': [],
       },
-      '106': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-        ],
-        'headbutt': [],
-      },
-      '107': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-        ],
-        'headbutt': [],
-      },
-      '108': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-        ],
-        'headbutt': [],
-      },
-      '109': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-        ],
-        'headbutt': [],
-      },
-      '110': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 34,
+        },
+      ],
+      'orderNumber': 104.1,
+    },
+    {
+      'region': 2,
+      'number': 110,
+      'pokemon': {
         'land': [
           'Poochyena',
           'Electrike',
@@ -1060,86 +1724,24 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '111': {
-        'land': [
-          'Sandshrew',
-          'Trapinch',
-          'Baltoy',
-          'Cacnea',
-        ],
-        'water': [
-          'Marill',
-          'Goldeen',
-          'Magikarp',
-          'Barboach',
-        ],
-        'headbutt': ['Geodude'],
-      },
-      '112': {
-        'land': [
-          'Numel',
-          'Marill',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      '113': {
-        'land': [
-          'Spinda',
-          'Slugma',
-          'Skarmory',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      '114': {
-        'land': [
-          'Zangoose',
-          'Surskit',
-          'Swablu',
-          'Lotad',
-          'Lombre',
-          'Seviper',
-          'Nuzleaf',
-        ],
-        'water': [
-          'Marill',
-          'Goldeen',
-          'Magikarp',
-          'Barboach',
-        ],
-        'headbutt': ['Geodude'],
-      },
-      '115': {
-        'land': [
-          'Swablu',
-          'Taillow',
-          'Swellow',
-          'Jigglypuff',
-          'Wingull',
-        ],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-        ],
-        'headbutt': [],
-      },
-      '116': {
-        'land': [
-          'Poochyena',
-          'Whismur',
-          'Nincada',
-          'Abra',
-          'Taillow',
-          'Skitty',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      '117': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 23,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 28,
+        },
+      ],
+      'orderNumber': 110,
+    },
+    {
+      'region': 2,
+      'number': 117,
+      'pokemon': {
         'land': [
           'Surskit',
           'Poochyena',
@@ -1157,7 +1759,288 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '118': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 110,
+        },
+      ],
+      'orderNumber': 110.1,
+    },
+    {
+      'region': 2,
+      'number': 111,
+      'pokemon': {
+        'land': [
+          'Sandshrew',
+          'Trapinch',
+          'Baltoy',
+          'Cacnea',
+        ],
+        'water': [
+          'Marill',
+          'Goldeen',
+          'Magikarp',
+          'Barboach',
+        ],
+        'headbutt': ['Geodude'],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 29,
+        },
+      ],
+      'orderNumber': 111,
+    },
+    {
+      'region': 2,
+      'number': 112,
+      'pokemon': {
+        'land': [
+          'Numel',
+          'Marill',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 111,
+        },
+      ],
+      'orderNumber': 112,
+    },
+    {
+      'region': 2,
+      'number': 113,
+      'pokemon': {
+        'land': [
+          'Spinda',
+          'Slugma',
+          'Skarmory',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 25,
+        },
+      ],
+      'orderNumber': 113,
+    },
+    {
+      'region': 2,
+      'number': 114,
+      'pokemon': {
+        'land': [
+          'Zangoose',
+          'Surskit',
+          'Swablu',
+          'Lotad',
+          'Lombre',
+          'Seviper',
+          'Nuzleaf',
+        ],
+        'water': [
+          'Marill',
+          'Goldeen',
+          'Magikarp',
+          'Barboach',
+        ],
+        'headbutt': ['Geodude'],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 113,
+        },
+      ],
+      'orderNumber': 114,
+    },
+    {
+      'region': 2,
+      'number': 115,
+      'pokemon': {
+        'land': [
+          'Swablu',
+          'Taillow',
+          'Swellow',
+          'Jigglypuff',
+          'Wingull',
+        ],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 27,
+        },
+      ],
+      'orderNumber': 115,
+    },
+    {
+      'region': 2,
+      'number': 105,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 31,
+        },
+      ],
+      'orderNumber': 115.1,
+    },
+    {
+      'region': 2,
+      'number': 106,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 105,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 107,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 115.2,
+    },
+    {
+      'region': 2,
+      'number': 107,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 106,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 108,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 115.3,
+    },
+    {
+      'region': 2,
+      'number': 108,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 107,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 109,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 115.4,
+    },
+    {
+      'region': 2,
+      'number': 109,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 31,
+        },
+      ],
+      'orderNumber': 115.5,
+    },
+    {
+      'region': 2,
+      'number': 118,
+      'pokemon': {
         'land': [
           'Zigzagoon',
           'Electrike',
@@ -1176,7 +2059,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '119': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 31,
+        },
+      ],
+      'orderNumber': 118,
+    },
+    {
+      'region': 2,
+      'number': 119,
+      'pokemon': {
         'land': [
           'Zigzagoon',
           'Linoone',
@@ -1184,6 +2079,9 @@ module.exports = {
           'Tropius',
           'Kecleon',
           'Castform',
+          'Castform (sunny)',
+          'Castform (rainy)',
+          'Castform (snowy)',
         ],
         'water': [
           'Tentacool',
@@ -1194,7 +2092,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '120': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 118,
+        },
+      ],
+      'orderNumber': 119,
+    },
+    {
+      'region': 2,
+      'number': 120,
+      'pokemon': {
         'land': [
           'Surskit',
           'Poochyena',
@@ -1213,7 +2123,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '121': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 119,
+        },
+      ],
+      'orderNumber': 120,
+    },
+    {
+      'region': 2,
+      'number': 121,
+      'pokemon': {
         'land': [
           'Poochyena',
           'Shuppet',
@@ -1232,7 +2154,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '122': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 120,
+        },
+      ],
+      'orderNumber': 121,
+    },
+    {
+      'region': 2,
+      'number': 122,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1244,7 +2178,24 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '123': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 121,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 32,
+        },
+      ],
+      'orderNumber': 122,
+    },
+    {
+      'region': 2,
+      'number': 123,
+      'pokemon': {
         'land': [
           'Poochyena',
           'Shuppet',
@@ -1263,7 +2214,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '124': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 122,
+        },
+      ],
+      'orderNumber': 123,
+    },
+    {
+      'region': 2,
+      'number': 124,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1277,7 +2240,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '125': {
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 28,
+        },
+      ],
+      'orderNumber': 124,
+    },
+    {
+      'region': 2,
+      'number': 125,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1289,7 +2264,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '126': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 124,
+        },
+      ],
+      'orderNumber': 125,
+    },
+    {
+      'region': 2,
+      'number': 126,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1303,7 +2290,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '127': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 124,
+        },
+      ],
+      'orderNumber': 126,
+    },
+    {
+      'region': 2,
+      'number': 127,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1315,7 +2314,28 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '128': {
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 125,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'route': 126,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 127,
+    },
+    {
+      'region': 2,
+      'number': 128,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1328,7 +2348,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '129': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 127,
+        },
+      ],
+      'orderNumber': 128,
+    },
+    {
+      'region': 2,
+      'number': 129,
+      'pokemon': {
         'land': [],
         'water': [
           'Tentacool',
@@ -1341,7 +2373,19 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '130': {
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 128,
+        },
+      ],
+      'orderNumber': 129,
+    },
+    {
+      'region': 2,
+      'number': 130,
+      'pokemon': {
         'land': ['Wynaut'],
         'water': [
           'Tentacool',
@@ -1353,59 +2397,1154 @@ module.exports = {
         ],
         'headbutt': [],
       },
-      '131': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-          'Sharpedo',
-        ],
-        'headbutt': [],
-      },
-      '132': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-          'Sharpedo',
-          'Horsea',
-        ],
-        'headbutt': [],
-      },
-      '133': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-          'Sharpedo',
-          'Horsea',
-        ],
-        'headbutt': [],
-      },
-      '134': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Wingull',
-          'Pelipper',
-          'Magikarp',
-          'Wailmer',
-          'Sharpedo',
-          'Horsea',
-        ],
-        'headbutt': [],
-      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 129,
+        },
+      ],
+      'orderNumber': 130,
     },
-  },
+    {
+      'region': 2,
+      'number': 131,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+          'Sharpedo',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 130,
+        },
+      ],
+      'orderNumber': 131,
+    },
+    {
+      'region': 2,
+      'number': 132,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+          'Sharpedo',
+          'Horsea',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 131,
+        },
+      ],
+      'orderNumber': 132,
+    },
+    {
+      'region': 2,
+      'number': 133,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+          'Sharpedo',
+          'Horsea',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 132,
+        },
+      ],
+      'orderNumber': 133,
+    },
+    {
+      'region': 2,
+      'number': 134,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Wailmer',
+          'Sharpedo',
+          'Horsea',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 133,
+        },
+      ],
+      'orderNumber': 134,
+    },
+    {
+      'region': 3,
+      'number': 201,
+      'pokemon': {
+        'land': [
+          'Starly',
+          'Bidoof',
+          'Kricketot',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 39,
+        },
+      ],
+      'orderNumber': 201,
+    },
+    {
+      'region': 3,
+      'number': 202,
+      'pokemon': {
+        'land': [
+          'Starly',
+          'Bidoof',
+          'Kricketot',
+          'Shinx',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 201,
+        },
+      ],
+      'orderNumber': 202,
+    },
+    {
+      'region': 3,
+      'number': 203,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Abra',
+          'Starly',
+          'Bidoof',
+          'Kricketot',
+          'Shinx',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Seaking',
+          'Gyarados',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 202,
+        },
+      ],
+      'orderNumber': 203,
+    },
+    {
+      'region': 3,
+      'number': 204,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Wurmple',
+          'Starly',
+          'Bidoof',
+          'Kricketot',
+          'Shinx',
+          'Budew',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Seaking',
+          'Gyarados',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 202,
+        },
+      ],
+      'orderNumber': 204,
+    },
+    {
+      'region': 3,
+      'number': 205,
+      'pokemon': {
+        'land': [
+          'Bidoof',
+          'Hoothoot',
+          'Wurmple',
+          'Silcoon',
+          'Beautifly',
+          'Cascoon',
+          'Dustox',
+          'Kricketot',
+          'Budew',
+          'Drifloon',
+        ],
+        'water': [
+          'Wingull',
+          'Pelipper',
+          'Buizel',
+          'Tentacool',
+          'Tentacruel',
+          'Shellos (west)',
+          'Gastrodon (west)',
+          'Magikarp',
+          'Finneon',
+          'Shellder',
+          'Gyarados',
+          'Lumineon',
+          'Psyduck',
+          'Golduck',
+          'Barboach',
+          'Whiscash',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 204,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 37,
+        },
+      ],
+      'orderNumber': 205,
+    },
+    {
+      'region': 3,
+      'number': 206,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machop',
+          'Geodude',
+          'Ponyta',
+          'Gligar',
+          'Kricketot',
+          'Kricketune',
+          'Stunky',
+          'Bronzor',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 205,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 41,
+        },
+      ],
+      'orderNumber': 206,
+    },
+    {
+      'region': 3,
+      'number': 207,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machop',
+          'Geodude',
+          'Ponyta',
+          'Kricketot',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 206,
+        },
+      ],
+      'orderNumber': 207,
+    },
+    {
+      'region': 3,
+      'number': 208,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machop',
+          'Ralts',
+          'Meditite',
+          'Roselia',
+          'Bidoof',
+          'Bibarel',
+          'Budew',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Barboach',
+          'Gyarados',
+          'Whiscash',
+          'Seaking',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 207,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 41,
+        },
+      ],
+      'orderNumber': 208,
+    },
+    {
+      'region': 3,
+      'number': 209,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Gastly',
+          'Chansey',
+          'Ralts',
+          'Roselia',
+          'Duskull',
+          'Starly',
+          'Staravia',
+          'Bibarel',
+          'Bonsly',
+          'Mime Jr.',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Seaking',
+          'Gyarados',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 208,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 42,
+        },
+      ],
+      'orderNumber': 209,
+    },
+    {
+      'region': 3,
+      'number': 210,
+      'pokemon': {
+        'land': [
+          'Geodude',
+          'Ponyta',
+          'Chansey',
+          'Scyther',
+          'Hoothoot',
+          'Noctowl',
+          'Roselia',
+          'Staravia',
+          'Kricketune',
+          'Bonsly',
+          'Mime jr.',
+          'Machop',
+          'Machoke',
+          'Meditite',
+          'Swablu',
+          'Bibarel',
+          'Hippopotas',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Barboach',
+          'Whiscash',
+          'Gyarados',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 209,
+        },
+      ],
+      'orderNumber': 210,
+    },
+    {
+      'region': 3,
+      'number': 211,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machop',
+          'Geodude',
+          'Ponyta',
+          'Hoothoot',
+          'Meditite',
+          'Bidoof',
+          'Machoke',
+          'Graveler',
+          'Noctowl',
+          'Chingling',
+          'Bronzor',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 213,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 44,
+        },
+      ],
+      'orderNumber': 211,
+    },
+    {
+      'region': 3,
+      'number': 212,
+      'pokemon': {
+        'land': [
+          'Ralts',
+          'Kirlia',
+          'Roselia',
+          'Starly',
+          'Staravia',
+          'Kricketune',
+          'Budew',
+        ],
+        'water': [
+          'Marill',
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Gyarados',
+          'Seaking',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 213,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 44,
+        },
+      ],
+      'orderNumber': 212,
+    },
+    {
+      'region': 3,
+      'number': 213,
+      'pokemon': {
+        'land': ['Chatot'],
+        'water': [
+          'Buizel',
+          'Floatzel',
+          'Tentacool',
+          'Tentacruel',
+          'Wingull',
+          'Pelipper',
+          'Shellos (east)',
+          'Gastrodon (east)',
+          'Magikarp',
+          'Remoraid',
+          'Gyarados',
+          'Octillery',
+          'Sharpedo',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 214,
+        },
+      ],
+      'orderNumber': 213,
+    },
+    {
+      'region': 3,
+      'number': 214,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Geodude',
+          'Graveler',
+          'Ponyta',
+          'Rhyhorn',
+          'Sudowoodo',
+          'Girafarig',
+          'Houndour',
+          'kricketune',
+          'Stunky',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Seaking',
+          'Gyarados',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 215,
+        },
+      ],
+      'orderNumber': 214,
+    },
+    {
+      'region': 3,
+      'number': 215,
+      'pokemon': {
+        'land': [
+          'Abra',
+          'Kadabra',
+          'Geodude',
+          'Ponyta',
+          'Lickitung',
+          'Scyther',
+          'Staravia',
+          'Kricketune',
+          'Marill',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 210,
+        },
+      ],
+      'orderNumber': 215,
+    },
+    {
+      'region': 3,
+      'number': 216,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machoke',
+          'Graveler',
+          'Noctowl',
+          'Sneasel',
+          'Meditite',
+          'Snorunt',
+          'Snover',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 218,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 43,
+        },
+      ],
+      'orderNumber': 216,
+    },
+    {
+      'region': 3,
+      'number': 217,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machoke',
+          'Noctowl',
+          'Sneasel',
+          'Swinub',
+          'Meditite',
+          'Medicham',
+          'Snorunt',
+          'Snover',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 216,
+        },
+      ],
+      'orderNumber': 217,
+    },
+    {
+      'region': 3,
+      'number': 218,
+      'pokemon': {
+        'land': [
+          'Mr. Mime',
+          'Glameow',
+          'Chatot',
+        ],
+        'water': [
+          'Wingull',
+          'Floatzel',
+          'Shellos (west)',
+          'Gastrodon (west)',
+          'Tentacool',
+          'Tentacruel',
+          'Pelipper',
+          'Magikarp',
+          'Finneon',
+          'Gyarados',
+          'Lumineon',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 213,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 44,
+        },
+      ],
+      'orderNumber': 218,
+    },
+    {
+      'region': 3,
+      'number': 219,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Finneon',
+          'Lumineon',
+          'Gyarados',
+          'Clamperl',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 213,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 44,
+        },
+      ],
+      'orderNumber': 219,
+    },
+    {
+      'region': 3,
+      'number': 220,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Wingull',
+          'Pelipper',
+          'Magikarp',
+          'Finneon',
+          'Lumineon',
+          'Gyarados',
+          'Chinchou',
+          'Lanturn',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 219,
+        },
+      ],
+      'orderNumber': 220,
+    },
+    {
+      'region': 3,
+      'number': 221,
+      'pokemon': {
+        'land': [
+          'Sudowoodo',
+          'Girafarig',
+          'Roselia',
+          'Stunky',
+          'Skuntank',
+        ],
+        'water': [
+          'Wingull',
+          'Floatzel',
+          'Shellos (west)',
+          'Gastrodon (west)',
+          'Tentacool',
+          'Tentacruel',
+          'Pelipper',
+          'Magikarp',
+          'Finneon',
+          'Lumineon',
+          'Gyarados',
+          'Clamperl',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 220,
+        },
+      ],
+      'orderNumber': 221,
+    },
+    {
+      'region': 3,
+      'number': 222,
+      'pokemon': {
+        'land': [
+          'Magnemite',
+          'Magneton',
+          'Mr. Mime',
+          'Electabuzz',
+          'Luxio',
+          'Glameow',
+          'Purugly',
+          'Chatot',
+        ],
+        'water': [
+          'Wingull',
+          'Pelipper',
+          'Floatzel',
+          'Gastrodon (east)',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Remoraid',
+          'Gyarados',
+          'Octillery',
+          'Sharpedo',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 217,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 47,
+        },
+      ],
+      'orderNumber': 222,
+    },
+    {
+      'region': 3,
+      'number': 223,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacruel',
+          'Pelipper',
+          'Mantyke',
+          'Magikarp',
+          'Remoraid',
+          'Octillery',
+          'Gyarados',
+          'Wailmer',
+          'Wailord',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 222,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 47,
+        },
+      ],
+      'orderNumber': 223,
+    },
+    {
+      'region': 3,
+      'number': 224,
+      'pokemon': {
+        'land': [
+          'Oddish',
+          'Gloom',
+          'Bellsprout',
+          'Weepinbell',
+          'Beautifly',
+          'Dustox',
+          'Roselia',
+          'Chatot',
+        ],
+        'water': [
+          'Pelipper',
+          'Buizel',
+          'Floatzel',
+          'Shellos (east)',
+          'Gastrodon (east)',
+          'Tentacruel',
+          'Magikarp',
+          'Remoraid',
+          'Gyarados',
+          'Octillery',
+          'Luvdisc',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 223,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 48,
+        },
+      ],
+      'orderNumber': 224,
+    },
+    {
+      'region': 3,
+      'number': 225,
+      'pokemon': {
+        'land': [
+          'Rattata',
+          'Raticate',
+          'Spearow',
+          'Fearow',
+          'Machoke',
+          'Graveler',
+          'Roselia',
+          'Skuntank',
+          'Banette',
+        ],
+        'water': [
+          'Psyduck',
+          'Golduck',
+          'Poliwhirl',
+          'Magikarp',
+          'Barboach',
+          'Gyarados',
+          'Whiscash',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 224,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 52,
+        },
+      ],
+      'orderNumber': 225,
+    },
+    {
+      'region': 3,
+      'number': 226,
+      'pokemon': {
+        'land': [
+          'Rattata',
+          'Raticate',
+          'Spearow',
+          'Fearow',
+          'Machoke',
+          'Graveler',
+          'Banette',
+        ],
+        'water': [
+          'Golduck',
+          'Tentacruel',
+          'Seel',
+          'Dewgong',
+          'Wingull',
+          'Pelipper',
+          'Spheal',
+          'Sealeo',
+          'Magikarp',
+          'Horsea',
+          'Seadra',
+          'Gyarados',
+          'Relicanth',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 225,
+        },
+      ],
+      'orderNumber': 226,
+    },
+    {
+      'region': 3,
+      'number': 227,
+      'pokemon': {
+        'land': [
+          'Fearow',
+          'Golbat',
+          'Graveler',
+          'Weezing',
+          'Rhyhorn',
+          'Rhydon',
+          'Skarmory',
+          'Numel',
+          'Camerupt',
+          'Banette',
+        ],
+        'water': [
+          'Poliwag',
+          'Poliwhirl',
+          'Magikarp',
+          'Barboach',
+          'Gyarados',
+          'Whiscash',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 226,
+        },
+      ],
+      'orderNumber': 227,
+    },
+    {
+      'region': 3,
+      'number': 228,
+      'pokemon': {
+        'land': [
+          'Diglett',
+          'Dugtrio',
+          'Rhydon',
+          'Cacnea',
+          'Cacturne',
+          'Hippowdon',
+        ],
+        'water': [
+          'Poliwag',
+          'Poliwhirl',
+          'Magikarp',
+          'Barboach',
+          'Whiscash',
+          'Gyarados',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 226,
+        },
+      ],
+      'orderNumber': 228,
+    },
+    {
+      'region': 3,
+      'number': 229,
+      'pokemon': {
+        'land': [
+          'Pidgey',
+          'Oddish',
+          'Gloom',
+          'Bellsprout',
+          'Weepinbell',
+          'Scyther',
+          'Pinsir',
+          'Ledian',
+          'Ariados',
+          'Beautifly',
+          'Dustox',
+          'Volbeat',
+          'Illumise',
+          'Roselia',
+          'Purugly',
+        ],
+        'water': [
+          'Wingull',
+          'Pelipper',
+          'Surskit',
+          'Masquerain',
+          'Magikarp',
+          'Goldeen',
+          'Gyarados',
+          'Seaking',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 228,
+        },
+      ],
+      'orderNumber': 229,
+    },
+    {
+      'region': 3,
+      'number': 230,
+      'pokemon': {
+        'land': [
+          'Oddish',
+          'Gloom',
+          'Bellsprout',
+          'Weepinbell',
+          'Beautifly',
+          'Dustox',
+          'Roselia',
+        ],
+        'water': [
+          'Golduck',
+          'Wingull',
+          'Pelipper',
+          'Floatzel',
+          'Gastrodon (east)',
+          'Tentacruel',
+          'Seel',
+          'Dewgong',
+          'Spheal',
+          'Sealeo',
+          'Magikarp',
+          'Remoraid',
+          'Gyarados',
+          'Octillery',
+          'Wailmer',
+          'Wailord',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 229,
+        },
+      ],
+      'orderNumber': 230,
+    },
+  ],
   'RouteShardTypes': {
     '0': {
       '1': {
@@ -1946,12 +4085,14 @@ module.exports = {
         '15': 16.67,
       },
       '119': {
-        '0': 36.36,
-        '2': 45.45,
-        '4': 18.18,
-        '7': 18.18,
-        '9': 27.27,
-        '15': 9.09,
+        '0': 28.57,
+        '1': 7.14,
+        '2': 42.86,
+        '4': 14.29,
+        '5': 7.14,
+        '7': 14.29,
+        '9': 21.43,
+        '15': 7.14,
       },
       '120': {
         '0': 8.33,
@@ -2055,6 +4196,295 @@ module.exports = {
         '7': 14.29,
         '9': 28.57,
         '15': 14.29,
+      },
+    },
+    '3': {
+      '201': {
+        '0': 66.67,
+        '9': 33.33,
+        '11': 33.33,
+      },
+      '202': {
+        '0': 50,
+        '3': 25,
+        '9': 25,
+        '11': 25,
+      },
+      '203': {
+        '0': 16.67,
+        '2': 50,
+        '3': 8.33,
+        '7': 8.33,
+        '9': 25,
+        '10': 8.33,
+        '11': 8.33,
+      },
+      '204': {
+        '0': 15.38,
+        '2': 46.15,
+        '3': 7.69,
+        '4': 7.69,
+        '7': 15.38,
+        '9': 23.08,
+        '11': 15.38,
+      },
+      '205': {
+        '0': 7.69,
+        '2': 61.54,
+        '4': 3.85,
+        '7': 15.38,
+        '8': 11.54,
+        '9': 23.08,
+        '11': 23.08,
+        '13': 3.85,
+      },
+      '206': {
+        '1': 11.11,
+        '6': 11.11,
+        '7': 22.22,
+        '8': 22.22,
+        '9': 22.22,
+        '10': 11.11,
+        '11': 22.22,
+        '12': 11.11,
+        '15': 11.11,
+        '16': 11.11,
+      },
+      '207': {
+        '1': 20,
+        '6': 20,
+        '7': 20,
+        '8': 20,
+        '9': 20,
+        '11': 20,
+        '12': 20,
+      },
+      '208': {
+        '0': 12.5,
+        '2': 56.25,
+        '4': 12.5,
+        '6': 12.5,
+        '7': 18.75,
+        '8': 12.5,
+        '9': 12.5,
+        '10': 12.5,
+        '17': 6.25,
+      },
+      '209': {
+        '0': 23.53,
+        '2': 41.18,
+        '4': 5.88,
+        '7': 17.65,
+        '9': 23.53,
+        '10': 11.76,
+        '12': 5.88,
+        '13': 11.76,
+        '17': 11.76,
+      },
+      '210': {
+        '0': 26.09,
+        '1': 4.35,
+        '2': 30.43,
+        '4': 4.35,
+        '6': 13.04,
+        '7': 4.35,
+        '8': 17.39,
+        '9': 26.09,
+        '10': 8.7,
+        '11': 8.7,
+        '12': 8.7,
+        '17': 4.35,
+      },
+      '211': {
+        '0': 25,
+        '1': 8.33,
+        '6': 25,
+        '7': 8.33,
+        '8': 16.67,
+        '9': 25,
+        '10': 25,
+        '12': 16.67,
+        '16': 8.33,
+      },
+      '212': {
+        '0': 14.29,
+        '2': 50,
+        '4': 14.29,
+        '7': 14.29,
+        '9': 21.43,
+        '10': 14.29,
+        '11': 7.14,
+        '17': 21.43,
+      },
+      '213': {
+        '0': 7.14,
+        '2': 92.86,
+        '7': 14.29,
+        '8': 7.14,
+        '9': 28.57,
+        '15': 7.14,
+      },
+      '214': {
+        '0': 6.25,
+        '1': 12.5,
+        '2': 37.5,
+        '7': 12.5,
+        '8': 18.75,
+        '9': 12.5,
+        '10': 6.25,
+        '11': 6.25,
+        '12': 25,
+        '15': 12.5,
+      },
+      '215': {
+        '0': 22.22,
+        '1': 11.11,
+        '2': 11.11,
+        '8': 11.11,
+        '9': 22.22,
+        '10': 22.22,
+        '11': 22.22,
+        '12': 11.11,
+        '17': 11.11,
+      },
+      '216': {
+        '0': 12.5,
+        '4': 12.5,
+        '5': 37.5,
+        '6': 25,
+        '7': 12.5,
+        '8': 12.5,
+        '9': 25,
+        '10': 12.5,
+        '12': 12.5,
+        '15': 12.5,
+      },
+      '217': {
+        '0': 11.11,
+        '4': 11.11,
+        '5': 44.44,
+        '6': 33.33,
+        '7': 11.11,
+        '8': 11.11,
+        '9': 22.22,
+        '10': 22.22,
+        '15': 11.11,
+      },
+      '218': {
+        '0': 14.29,
+        '2': 78.57,
+        '7': 14.29,
+        '8': 7.14,
+        '9': 28.57,
+        '10': 7.14,
+        '17': 7.14,
+      },
+      '219': {
+        '2': 100,
+        '7': 22.22,
+        '9': 33.33,
+      },
+      '220': {
+        '2': 100,
+        '3': 20,
+        '7': 20,
+        '9': 30,
+      },
+      '221': {
+        '0': 5.88,
+        '2': 70.59,
+        '4': 5.88,
+        '7': 29.41,
+        '8': 5.88,
+        '9': 17.65,
+        '10': 5.88,
+        '12': 5.88,
+        '15': 11.76,
+      },
+      '222': {
+        '0': 15.79,
+        '2': 57.89,
+        '3': 21.05,
+        '7': 10.53,
+        '8': 5.26,
+        '9': 21.05,
+        '10': 5.26,
+        '15': 5.26,
+        '16': 10.53,
+        '17': 5.26,
+      },
+      '223': {
+        '2': 100,
+        '7': 11.11,
+        '9': 33.33,
+      },
+      '224': {
+        '0': 5.26,
+        '2': 57.89,
+        '4': 26.32,
+        '7': 36.84,
+        '8': 5.26,
+        '9': 21.05,
+        '11': 10.53,
+      },
+      '225': {
+        '0': 25,
+        '2': 43.75,
+        '4': 6.25,
+        '6': 6.25,
+        '7': 12.5,
+        '8': 18.75,
+        '9': 18.75,
+        '12': 6.25,
+        '13': 6.25,
+        '15': 6.25,
+      },
+      '226': {
+        '0': 20,
+        '2': 65,
+        '5': 15,
+        '6': 5,
+        '7': 5,
+        '8': 5,
+        '9': 25,
+        '12': 10,
+        '13': 5,
+      },
+      '227': {
+        '0': 6.25,
+        '1': 12.5,
+        '2': 37.5,
+        '7': 12.5,
+        '8': 43.75,
+        '9': 25,
+        '12': 18.75,
+        '13': 6.25,
+        '16': 6.25,
+      },
+      '228': {
+        '2': 50,
+        '4': 16.67,
+        '8': 50,
+        '9': 8.33,
+        '12': 8.33,
+        '15': 8.33,
+      },
+      '229': {
+        '0': 8.7,
+        '2': 30.43,
+        '4': 21.74,
+        '7': 30.43,
+        '9': 34.78,
+        '11': 43.48,
+      },
+      '230': {
+        '2': 69.57,
+        '4': 21.74,
+        '5': 13.04,
+        '7': 30.43,
+        '8': 4.35,
+        '9': 17.39,
+        '11': 8.7,
       },
     },
   },
@@ -2758,11 +5188,13 @@ module.exports = {
     '0': 'Level',
     '1': 'Stone',
     '2': 'Timed',
-    '3': 'Other',
+    '3': 'Location',
+    '4': 'Other',
     'Level': 0,
     'Stone': 1,
     'Timed': 2,
-    'Other': 3,
+    'Location': 3,
+    'Other': 4,
   },
   'pokemonList': [
     {
@@ -2793,6 +5225,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 53,
+      'nativeRegion': 0,
       'locations': {
         '5': ['Grass'],
       },
@@ -2827,6 +5260,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 85,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -2860,7 +5294,9 @@ module.exports = {
         'speed': 80,
       },
       'attack': 141,
+      'nativeRegion': 0,
       'locations': {
+        '3': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Ivysaur',
@@ -2898,6 +5334,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 46,
+      'nativeRegion': 0,
       'locations': {
         '5': ['Fire'],
       },
@@ -2929,6 +5366,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 81,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -2962,6 +5400,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 142,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -3000,6 +5439,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 50,
+      'nativeRegion': 0,
       'locations': {
         '5': ['Water'],
       },
@@ -3031,6 +5471,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 83,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -3061,6 +5502,7 @@ module.exports = {
         'speed': 78,
       },
       'attack': 139,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -3099,16 +5541,17 @@ module.exports = {
         'speed': 45,
       },
       'attack': 19,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '2',
-            '24',
-            '25',
+            2,
+            24,
+            25,
           ],
           '1': [
-            '30',
-            '31',
+            30,
+            31,
           ],
         },
         '2': [
@@ -3144,16 +5587,17 @@ module.exports = {
         'speed': 30,
       },
       'attack': 20,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '24',
-            '25',
+            24,
+            25,
           ],
           '1': [
-            '30',
-            '31',
-            '47',
+            30,
+            31,
+            47,
           ],
         },
         '2': [
@@ -3192,9 +5636,10 @@ module.exports = {
         'speed': 70,
       },
       'attack': 75,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['47'],
+          '1': [47],
         },
         '3': ['Ilex Forest'],
         '4': [
@@ -3237,16 +5682,17 @@ module.exports = {
         'speed': 50,
       },
       'attack': 19,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '2',
-            '24',
-            '25',
+            2,
+            24,
+            25,
           ],
           '1': [
-            '30',
-            '31',
+            30,
+            31,
           ],
         },
         '2': [
@@ -3285,16 +5731,17 @@ module.exports = {
         'speed': 35,
       },
       'attack': 21,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '24',
-            '25',
+            24,
+            25,
           ],
           '1': [
-            '30',
-            '31',
-            '47',
+            30,
+            31,
+            47,
           ],
         },
         '2': [
@@ -3333,9 +5780,10 @@ module.exports = {
         'speed': 75,
       },
       'attack': 74,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['47'],
+          '1': [47],
         },
         '3': ['Ilex Forest'],
         '4': [
@@ -3378,32 +5826,34 @@ module.exports = {
         'speed': 56,
       },
       'attack': 31,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '1',
-            '3',
-            '5',
-            '6',
-            '7',
-            '8',
-            '11',
-            '12',
-            '13',
-            '14',
-            '15',
-            '21',
-            '24',
-            '25',
+            1,
+            3,
+            24,
+            25,
+            5,
+            6,
+            11,
+            7,
+            8,
+            12,
+            13,
+            14,
+            15,
+            21,
           ],
           '1': [
-            '29',
-            '30',
-            '31',
-            '35',
-            '36',
-            '37',
+            29,
+            30,
+            31,
+            35,
+            36,
+            37,
           ],
+          '3': [229],
         },
         '2': ['Viridian Forest'],
       },
@@ -3438,25 +5888,26 @@ module.exports = {
         'speed': 71,
       },
       'attack': 62,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '5',
-            '6',
-            '7',
-            '8',
-            '11',
-            '12',
-            '13',
-            '14',
-            '15',
-            '21',
-            '24',
-            '25',
+            24,
+            25,
+            5,
+            6,
+            11,
+            7,
+            8,
+            12,
+            13,
+            14,
+            15,
+            21,
           ],
           '1': [
-            '37',
-            '43',
+            37,
+            43,
           ],
         },
         '2': [
@@ -3495,6 +5946,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 112,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -3533,35 +5985,40 @@ module.exports = {
         'speed': 72,
       },
       'attack': 26,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '1',
-            '2',
-            '3',
-            '4',
-            '5',
-            '6',
-            '7',
-            '8',
-            '9',
-            '10',
-            '11',
-            '16',
-            '18',
-            '21',
-            '22',
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            11,
+            9,
+            10,
+            7,
+            8,
+            16,
+            18,
+            21,
+            22,
           ],
           '1': [
-            '29',
-            '30',
-            '31',
-            '32',
-            '33',
-            '34',
-            '38',
-            '39',
-            '46',
+            29,
+            46,
+            30,
+            31,
+            32,
+            33,
+            34,
+            38,
+            39,
+          ],
+          '3': [
+            225,
+            226,
           ],
         },
         '2': [
@@ -3592,23 +6049,28 @@ module.exports = {
         'speed': 97,
       },
       'attack': 75,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '9',
-            '10',
-            '11',
-            '16',
-            '17',
-            '18',
-            '21',
+            11,
+            9,
+            10,
+            16,
+            17,
+            18,
+            21,
           ],
           '1': [
-            '26',
-            '27',
-            '38',
-            '39',
-            '47',
+            38,
+            39,
+            47,
+            27,
+            26,
+          ],
+          '3': [
+            225,
+            226,
           ],
         },
         '2': [
@@ -3656,30 +6118,39 @@ module.exports = {
         'speed': 70,
       },
       'attack': 32,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '3',
-            '4',
-            '9',
-            '10',
-            '11',
-            '16',
-            '17',
-            '18',
-            '22',
-            '23',
+            3,
+            4,
+            11,
+            9,
+            10,
+            16,
+            17,
+            18,
+            22,
+            23,
           ],
           '1': [
-            '31',
-            '33',
-            '42',
-            '44',
-            '45',
-            '46',
-            '47',
+            46,
+            46,
+            31,
+            33,
+            33,
+            42,
+            42,
+            44,
+            45,
+            47,
+          ],
+          '3': [
+            225,
+            226,
           ],
         },
+        '2': ['Hall of Origin'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -3704,20 +6175,27 @@ module.exports = {
         'speed': 100,
       },
       'attack': 92,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '9',
-            '16',
-            '17',
-            '18',
-            '23',
+            9,
+            16,
+            17,
+            18,
+            23,
           ],
           '1': [
-            '47',
-            '48',
+            47,
+            48,
+          ],
+          '3': [
+            225,
+            226,
+            227,
           ],
         },
+        '2': ['Stark Mountain'],
         '4': [
           {
             'basePokemon': 'Spearow',
@@ -3755,19 +6233,20 @@ module.exports = {
         'speed': 55,
       },
       'attack': 39,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '4',
-            '8',
-            '9',
-            '10',
-            '11',
-            '23',
+            4,
+            11,
+            9,
+            10,
+            8,
+            23,
           ],
           '1': [
-            '32',
-            '33',
+            32,
+            33,
           ],
         },
       },
@@ -3791,12 +6270,13 @@ module.exports = {
         'speed': 80,
       },
       'attack': 99,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['23'],
+          '0': [23],
           '1': [
-            '26',
-            '27',
+            27,
+            26,
           ],
         },
         '2': ['Cerulean Cave'],
@@ -3837,15 +6317,16 @@ module.exports = {
         'speed': 90,
       },
       'attack': 43,
+      'nativeRegion': 0,
       'locations': {
         '2': ['Power Plant'],
         '3': ['Viridian Forest'],
         '4': [
           {
             'basePokemon': 'Pichu',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Pikachu',
-            'level': 100,
           },
         ],
         '5': ['Electric'],
@@ -3870,6 +6351,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 108,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Power Plant',
@@ -3912,18 +6394,19 @@ module.exports = {
         'speed': 40,
       },
       'attack': 38,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '3',
-            '4',
-            '8',
-            '9',
-            '10',
-            '11',
-            '23',
+            3,
+            4,
+            11,
+            9,
+            10,
+            8,
+            23,
           ],
-          '2': ['111'],
+          '2': [111],
         },
         '2': [
           'Mt. Moon',
@@ -3950,12 +6433,13 @@ module.exports = {
         'speed': 65,
       },
       'attack': 96,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['23'],
+          '0': [23],
           '1': [
-            '26',
-            '27',
+            27,
+            26,
           ],
         },
         '2': ['Cerulean Cave'],
@@ -3996,17 +6480,18 @@ module.exports = {
         'speed': 41,
       },
       'attack': 51,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '2',
-            '9',
-            '10',
-            '22',
+            2,
+            9,
+            10,
+            22,
           ],
           '1': [
-            '35',
-            '36',
+            35,
+            36,
           ],
         },
         '9': '9.04%',
@@ -4039,11 +6524,12 @@ module.exports = {
         'speed': 56,
       },
       'attack': 72,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '9',
-            '23',
+            9,
+            23,
           ],
         },
         '4': [
@@ -4079,6 +6565,7 @@ module.exports = {
         'speed': 76,
       },
       'attack': 136,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -4117,17 +6604,18 @@ module.exports = {
         'speed': 50,
       },
       'attack': 40,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '2',
-            '9',
-            '10',
-            '22',
+            2,
+            9,
+            10,
+            22,
           ],
           '1': [
-            '35',
-            '36',
+            35,
+            36,
           ],
         },
         '9': '15.06%',
@@ -4160,11 +6648,12 @@ module.exports = {
         'speed': 65,
       },
       'attack': 70,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '9',
-            '23',
+            9,
+            23,
           ],
         },
         '4': [
@@ -4200,6 +6689,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 135,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -4238,14 +6728,19 @@ module.exports = {
         'speed': 35,
       },
       'attack': 61,
+      'nativeRegion': 0,
       'locations': {
-        '2': ['Mt. Moon'],
+        '2': [
+          'Mt. Moon',
+          'Mt. Coronet South',
+          'Mt. Coronet North',
+        ],
         '4': [
           {
             'basePokemon': 'Cleffa',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Clefairy',
-            'level': 100,
           },
         ],
       },
@@ -4269,6 +6764,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 130,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -4307,16 +6803,17 @@ module.exports = {
         'speed': 65,
       },
       'attack': 40,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '7',
-            '8',
+            7,
+            8,
           ],
           '1': [
-            '36',
-            '37',
-            '48',
+            36,
+            37,
+            48,
           ],
         },
         '2': [
@@ -4345,6 +6842,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 118,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -4386,23 +6884,24 @@ module.exports = {
         'speed': 20,
       },
       'attack': 43,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '3',
-            '5',
-            '6',
-            '7',
-            '8',
+            3,
+            5,
+            6,
+            7,
+            8,
           ],
-          '2': ['115'],
+          '2': [115],
         },
         '4': [
           {
             'basePokemon': 'Igglybuff',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Jigglypuff',
-            'level': 100,
           },
         ],
       },
@@ -4429,6 +6928,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 116,
+      'nativeRegion': 0,
       'locations': {
         '2': ['Cerulean Cave'],
         '4': [
@@ -4471,14 +6971,27 @@ module.exports = {
         'speed': 55,
       },
       'attack': 29,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '1': [
-            '30',
-            '31',
-            '32',
-            '33',
-            '42',
+            30,
+            31,
+            32,
+            33,
+            42,
+          ],
+          '3': [
+            203,
+            204,
+            206,
+            207,
+            208,
+            209,
+            211,
+            214,
+            216,
+            217,
           ],
         },
         '2': [
@@ -4501,6 +7014,12 @@ module.exports = {
           'Cave of Origin',
           'Seafloor Cavern',
           'Victory Road Hoenn',
+          'Oreburgh Gate',
+          'Ravaged Path',
+          'Wayward Cave',
+          'Mt. Coronet South',
+          'Iron Island',
+          'Mt. Coronet North',
         ],
       },
       'catchRatePercent': 63,
@@ -4520,9 +7039,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Golbat',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Crobat',
-          'level': 100,
         },
       ],
       'base': {
@@ -4534,7 +7053,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 102,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [227],
+        },
         '2': [
           'Seafoam Islands',
           'Victory Road',
@@ -4548,6 +7071,12 @@ module.exports = {
           'Seafloor Cavern',
           'Sky Pillar',
           'Victory Road Hoenn',
+          'Iron Island',
+          'Distortion World',
+          'Victory Road Sinnoh',
+          'Spear Pillar',
+          'Snowpoint Temple',
+          'Stark Mountain',
         ],
         '3': ['Burned Tower'],
         '4': [
@@ -4590,26 +7119,32 @@ module.exports = {
         'speed': 30,
       },
       'attack': 57,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '5',
-            '6',
-            '7',
-            '12',
-            '13',
-            '14',
-            '15',
-            '24',
-            '25',
+            24,
+            25,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15,
           ],
           '2': [
-            '110',
-            '117',
-            '119',
-            '120',
-            '121',
-            '123',
+            110,
+            117,
+            119,
+            120,
+            121,
+            123,
+          ],
+          '3': [
+            224,
+            229,
+            230,
           ],
         },
         '2': ['Ilex Forest'],
@@ -4652,21 +7187,27 @@ module.exports = {
         'speed': 40,
       },
       'attack': 89,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
-            '14',
-            '15',
+            12,
+            13,
+            14,
+            15,
           ],
           '1': [
-            '47',
-            '48',
+            47,
+            48,
           ],
           '2': [
-            '121',
-            '123',
+            121,
+            123,
+          ],
+          '3': [
+            224,
+            229,
+            230,
           ],
         },
         '4': [
@@ -4701,7 +7242,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 136,
+      'nativeRegion': 0,
       'locations': {
+        '2': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Gloom',
@@ -4742,6 +7285,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 44,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Mt. Moon',
@@ -4772,6 +7316,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 92,
+      'nativeRegion': 0,
       'locations': {
         '2': ['Cerulean Cave'],
         '4': [
@@ -4815,17 +7360,21 @@ module.exports = {
         'speed': 45,
       },
       'attack': 51,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
-            '14',
-            '15',
-            '24',
-            '25',
+            24,
+            25,
+            12,
+            13,
+            14,
+            15,
           ],
-          '1': ['43'],
+          '1': [
+            43,
+            43,
+          ],
         },
       },
       'catchRatePercent': 51,
@@ -4851,11 +7400,12 @@ module.exports = {
         'speed': 90,
       },
       'attack': 101,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '14',
-            '15',
+            14,
+            15,
           ],
         },
         '2': [
@@ -4899,9 +7449,11 @@ module.exports = {
         'speed': 95,
       },
       'attack': 17,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['48'],
+          '1': [48],
+          '3': [228],
         },
         '2': ['Digletts Cave'],
       },
@@ -4925,7 +7477,11 @@ module.exports = {
         'speed': 120,
       },
       'attack': 64,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [228],
+        },
         '3': ['Digletts Cave'],
         '4': [
           {
@@ -4964,17 +7520,18 @@ module.exports = {
         'speed': 90,
       },
       'attack': 36,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '5',
-            '6',
-            '7',
-            '8',
+            5,
+            6,
+            7,
+            8,
           ],
           '1': [
-            '38',
-            '39',
+            38,
+            39,
           ],
         },
       },
@@ -4998,6 +7555,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 85,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -5036,16 +7594,35 @@ module.exports = {
         'speed': 55,
       },
       'attack': 55,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '4',
-            '24',
-            '25',
+            4,
+            24,
+            25,
           ],
-          '1': ['35'],
+          '1': [35],
+          '3': [
+            203,
+            204,
+            205,
+            208,
+            209,
+            210,
+            212,
+            214,
+            225,
+          ],
         },
-        '2': ['Seafoam Islands'],
+        '2': [
+          'Seafoam Islands',
+          'Oreburgh Gate',
+          'Ravaged Path',
+          'Lake Verity',
+          'Lake Valor',
+          'Lake Acuity',
+        ],
         '5': ['Water'],
       },
       'catchRatePercent': 51,
@@ -5068,11 +7645,32 @@ module.exports = {
         'speed': 85,
       },
       'attack': 130,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['35'],
+          '1': [35],
+          '3': [
+            203,
+            204,
+            205,
+            208,
+            209,
+            210,
+            212,
+            214,
+            225,
+            226,
+            230,
+          ],
         },
-        '2': ['Seafoam Islands'],
+        '2': [
+          'Seafoam Islands',
+          'Oreburgh Gate',
+          'Ravaged Path',
+          'Lake Verity',
+          'Lake Valor',
+          'Lake Acuity',
+        ],
         '4': [
           {
             'basePokemon': 'Psyduck',
@@ -5110,19 +7708,20 @@ module.exports = {
         'speed': 70,
       },
       'attack': 42,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '3',
-            '4',
-            '5',
-            '6',
-            '7',
-            '8',
-            '22',
-            '23',
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            22,
+            23,
           ],
-          '1': ['42'],
+          '1': [42],
         },
         '5': ['Fighting'],
       },
@@ -5146,9 +7745,10 @@ module.exports = {
         'speed': 95,
       },
       'attack': 99,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['23'],
+          '0': [23],
         },
         '4': [
           {
@@ -5187,16 +7787,17 @@ module.exports = {
         'speed': 60,
       },
       'attack': 68,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '7',
-            '8',
+            7,
+            8,
           ],
           '1': [
-            '36',
-            '37',
-            '48',
+            36,
+            37,
+            48,
           ],
         },
         '2': ['Pokemon Mansion'],
@@ -5222,6 +7823,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 165,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -5260,34 +7862,40 @@ module.exports = {
         'speed': 90,
       },
       'attack': 38,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '4',
-            '6',
-            '10',
-            '11',
-            '12',
-            '13',
-            '14',
-            '17',
-            '18',
-            '19',
-            '20',
-            '21',
-            '22',
-            '23',
-            '24',
-            '25',
+            4,
+            24,
+            25,
+            6,
+            11,
+            10,
+            12,
+            13,
+            14,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
           ],
           '1': [
-            '28',
-            '30',
-            '31',
-            '35',
-            '43',
-            '44',
-            '45',
+            30,
+            31,
+            31,
+            35,
+            43,
+            44,
+            45,
+            28,
+          ],
+          '3': [
+            227,
+            228,
           ],
         },
         '2': ['Ruins of Alph'],
@@ -5326,18 +7934,24 @@ module.exports = {
         'speed': 90,
       },
       'attack': 69,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '10',
-            '22',
-            '23',
+            10,
+            22,
+            23,
           ],
           '1': [
-            '28',
-            '30',
-            '31',
-            '44',
+            30,
+            31,
+            44,
+            28,
+          ],
+          '3': [
+            225,
+            227,
+            228,
           ],
         },
         '2': ['Ruins of Alph'],
@@ -5373,6 +7987,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 137,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -5411,21 +8026,26 @@ module.exports = {
         'speed': 90,
       },
       'attack': 27,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '5',
-            '6',
-            '7',
-            '8',
-            '24',
-            '25',
+            24,
+            25,
+            5,
+            6,
+            7,
+            8,
           ],
           '1': [
-            '34',
-            '35',
+            34,
+            35,
           ],
-          '2': ['116'],
+          '2': [116],
+          '3': [
+            203,
+            215,
+          ],
         },
         '2': ['Granite Cave'],
       },
@@ -5457,9 +8077,11 @@ module.exports = {
         'speed': 105,
       },
       'attack': 56,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['8'],
+          '0': [8],
+          '3': [215],
         },
         '2': ['Cerulean Cave'],
         '4': [
@@ -5491,6 +8113,7 @@ module.exports = {
         'speed': 120,
       },
       'attack': 96,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -5529,15 +8152,25 @@ module.exports = {
         'speed': 35,
       },
       'attack': 54,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['10'],
+          '0': [10],
+          '3': [
+            206,
+            207,
+            208,
+            210,
+            211,
+          ],
         },
         '2': [
           'Rock Tunnel',
           'Victory Road',
           'Fiery Path',
           'Jagged Pass',
+          'Mt. Coronet South',
+          'Mt. Coronet North',
         ],
         '3': ['Jagged Pass'],
         '5': ['Fighting'],
@@ -5570,8 +8203,22 @@ module.exports = {
         'speed': 45,
       },
       'attack': 93,
+      'nativeRegion': 0,
       'locations': {
-        '3': ['Victory Road'],
+        '0': {
+          '3': [
+            210,
+            211,
+            216,
+            217,
+            225,
+            226,
+          ],
+        },
+        '3': [
+          'Victory Road',
+          'Mt. Coronet South',
+        ],
         '4': [
           {
             'basePokemon': 'Machop',
@@ -5601,6 +8248,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 142,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -5642,25 +8290,32 @@ module.exports = {
         'speed': 40,
       },
       'attack': 55,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '5',
-            '6',
-            '7',
-            '12',
-            '13',
-            '14',
-            '15',
-            '24',
-            '25',
+            24,
+            25,
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            15,
           ],
           '1': [
-            '31',
-            '32',
-            '44',
+            31,
+            32,
+            44,
+          ],
+          '3': [
+            224,
+            229,
+            230,
           ],
         },
+        '2': ['Flower Paradise'],
         '3': ['Sprout Tower'],
         '5': ['Grass'],
       },
@@ -5695,15 +8350,21 @@ module.exports = {
         'speed': 55,
       },
       'attack': 90,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
-            '14',
-            '15',
+            12,
+            13,
+            14,
+            15,
           ],
-          '1': ['44'],
+          '1': [44],
+          '3': [
+            224,
+            229,
+            230,
+          ],
         },
         '4': [
           {
@@ -5737,6 +8398,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 138,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -5778,56 +8440,67 @@ module.exports = {
         'speed': 70,
       },
       'attack': 44,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '11',
-            '12',
-            '13',
-            '17',
-            '18',
-            '19',
-            '20',
+            11,
+            12,
+            13,
+            17,
+            18,
+            19,
+            20,
           ],
           '1': [
-            '26',
-            '27',
-            '32',
-            '34',
-            '40',
-            '41',
-            '47',
+            32,
+            34,
+            40,
+            41,
+            47,
+            27,
+            26,
           ],
           '2': [
-            '103',
-            '105',
-            '106',
-            '107',
-            '108',
-            '109',
-            '110',
-            '115',
-            '118',
-            '119',
-            '121',
-            '122',
-            '123',
-            '124',
-            '125',
-            '126',
-            '127',
-            '128',
-            '129',
-            '130',
-            '131',
-            '132',
-            '133',
-            '134',
+            103,
+            110,
+            115,
+            105,
+            106,
+            107,
+            108,
+            109,
+            118,
+            119,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+          ],
+          '3': [
+            205,
+            213,
+            218,
+            219,
+            220,
+            221,
+            222,
           ],
         },
         '2': [
           'Shoal Cave',
           'Seafloor Cavern',
+          'Iron Island',
         ],
       },
       'catchRatePercent': 51,
@@ -5853,22 +8526,37 @@ module.exports = {
         'speed': 100,
       },
       'attack': 120,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '19',
-            '20',
-            '21',
+            19,
+            20,
+            21,
           ],
           '1': [
-            '26',
-            '27',
-            '32',
-            '34',
-            '40',
-            '41',
+            32,
+            34,
+            40,
+            41,
+            27,
+            26,
+          ],
+          '3': [
+            205,
+            213,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            226,
+            230,
           ],
         },
+        '2': ['Iron Island'],
         '4': [
           {
             'basePokemon': 'Tentacool',
@@ -5909,15 +8597,24 @@ module.exports = {
         'speed': 20,
       },
       'attack': 41,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '1': [
-            '45',
-            '46',
+            46,
+            45,
           ],
           '2': [
-            '111',
-            '114',
+            111,
+            114,
+          ],
+          '3': [
+            206,
+            207,
+            210,
+            211,
+            214,
+            215,
           ],
         },
         '2': [
@@ -5929,6 +8626,11 @@ module.exports = {
           'Dark Cave',
           'Granite Cave',
           'Victory Road Hoenn',
+          'Oreburgh Gate',
+          'Wayward Cave',
+          'Mt. Coronet South',
+          'Iron Island',
+          'Mt. Coronet North',
         ],
       },
       'catchRatePercent': 63,
@@ -5962,16 +8664,31 @@ module.exports = {
         'speed': 35,
       },
       'attack': 74,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['45'],
+          '1': [45],
+          '3': [
+            211,
+            214,
+            216,
+            225,
+            226,
+            227,
+          ],
         },
         '2': [
           'Victory Road',
           'Mt Mortar',
           'Dark Cave',
+          'Iron Island',
+          'Victory Road Sinnoh',
+          'Stark Mountain',
         ],
-        '3': ['Victory Road Hoenn'],
+        '3': [
+          'Victory Road Hoenn',
+          'Mt. Coronet North',
+        ],
         '4': [
           {
             'basePokemon': 'Geodude',
@@ -6004,6 +8721,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 125,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -6042,13 +8760,22 @@ module.exports = {
         'speed': 90,
       },
       'attack': 78,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['17'],
+          '0': [17],
           '1': [
-            '26',
-            '27',
-            '28',
+            27,
+            26,
+            28,
+          ],
+          '3': [
+            206,
+            207,
+            210,
+            211,
+            214,
+            215,
           ],
         },
         '2': ['Mt Silver'],
@@ -6074,9 +8801,10 @@ module.exports = {
         'speed': 105,
       },
       'attack': 118,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['28'],
+          '1': [28],
         },
         '4': [
           {
@@ -6124,13 +8852,15 @@ module.exports = {
         'speed': 15,
       },
       'attack': 61,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['10'],
+          '0': [10],
         },
         '2': [
           'Seafoam Islands',
           'Slowpoke Well',
+          'Hall of Origin',
         ],
       },
       'catchRatePercent': 51,
@@ -6157,12 +8887,13 @@ module.exports = {
       },
       'heldItem': 'Kings_rock',
       'attack': 142,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
-            '23',
+            12,
+            13,
+            23,
           ],
         },
         '2': ['Seafoam Islands'],
@@ -6207,13 +8938,15 @@ module.exports = {
         'speed': 45,
       },
       'attack': 42,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['10'],
+          '0': [10],
           '1': [
-            '38',
-            '39',
+            38,
+            39,
           ],
+          '3': [222],
         },
         '2': [
           'Power Plant',
@@ -6235,6 +8968,28 @@ module.exports = {
       'levelType': 2,
       'exp': 163,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Magneton',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Magnezone',
+          'level': 20,
+          'dungeon': 'Mt. Coronet North',
+        },
+        {
+          'basePokemon': 'Magneton',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Magnezone',
+          'level': 20,
+          'dungeon': 'Mt. Coronet South',
+        },
+      ],
       'base': {
         'hitpoints': 50,
         'attack': 60,
@@ -6244,10 +8999,15 @@ module.exports = {
         'speed': 70,
       },
       'attack': 99,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [222],
+        },
         '2': [
           'Power Plant',
           'Cerulean Cave',
+          'Victory Road Sinnoh',
         ],
         '3': ['New Mauville'],
         '4': [
@@ -6282,17 +9042,18 @@ module.exports = {
         'speed': 60,
       },
       'attack': 74,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
+            12,
+            13,
           ],
           '1': [
-            '38',
-            '39',
-            '47',
-            '48',
+            38,
+            39,
+            47,
+            48,
           ],
         },
       },
@@ -6327,17 +9088,18 @@ module.exports = {
         'speed': 75,
       },
       'attack': 41,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '16',
-            '17',
-            '18',
+            16,
+            17,
+            18,
           ],
           '1': [
-            '26',
-            '27',
-            '28',
+            27,
+            26,
+            28,
           ],
         },
         '2': ['Mt Silver'],
@@ -6365,13 +9127,14 @@ module.exports = {
         'speed': 110,
       },
       'attack': 98,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['17'],
+          '0': [17],
           '1': [
-            '26',
-            '27',
-            '28',
+            27,
+            26,
+            28,
           ],
         },
         '2': ['Cerulean Cave'],
@@ -6412,9 +9175,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 55,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['47'],
+          '1': [47],
+          '3': [
+            226,
+            230,
+          ],
         },
         '2': ['Whirl Islands'],
         '3': ['Seafoam Islands'],
@@ -6442,7 +9210,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 116,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            226,
+            230,
+          ],
+        },
         '3': ['Whirl Islands'],
         '4': [
           {
@@ -6481,6 +9256,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 65,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Power Plant',
@@ -6508,6 +9284,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 143,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Power Plant',
@@ -6550,23 +9327,25 @@ module.exports = {
         'speed': 40,
       },
       'attack': 39,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '6',
-            '11',
-            '17',
-            '18',
-            '19',
-            '20',
-            '21',
+            6,
+            11,
+            17,
+            18,
+            19,
+            20,
+            21,
           ],
           '1': [
-            '26',
-            '27',
-            '41',
-            '47',
+            41,
+            47,
+            27,
+            26,
           ],
+          '3': [205],
         },
         '2': ['Seafoam Islands'],
       },
@@ -6593,6 +9372,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 109,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -6634,11 +9414,18 @@ module.exports = {
         'speed': 80,
       },
       'attack': 38,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [209],
+        },
         '2': [
           'Pokemon Tower',
           'Sprout Tower',
           'Tin Tower',
+          'Eterna Forest',
+          'Old Chateau',
+          'Distortion World',
         ],
       },
       'catchRatePercent': 51,
@@ -6672,8 +9459,13 @@ module.exports = {
         'speed': 95,
       },
       'attack': 70,
+      'nativeRegion': 0,
       'locations': {
-        '2': ['Pokemon Tower'],
+        '2': [
+          'Pokemon Tower',
+          'Old Chateau',
+          'Distortion World',
+        ],
         '3': ['Tin Tower'],
         '4': [
           {
@@ -6707,7 +9499,9 @@ module.exports = {
         'speed': 110,
       },
       'attack': 111,
+      'nativeRegion': 0,
       'locations': {
+        '2': ['Old Chateau'],
         '4': [
           {
             'basePokemon': 'Haunter',
@@ -6748,10 +9542,14 @@ module.exports = {
         'speed': 70,
       },
       'attack': 41,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Victory Road',
           'Union Cave',
+          'Wayward Cave',
+          'Iron Island',
+          'Victory Road Sinnoh',
         ],
         '3': ['Rock Tunnel'],
       },
@@ -6783,12 +9581,13 @@ module.exports = {
         'speed': 42,
       },
       'attack': 53,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['11'],
+          '0': [11],
           '1': [
-            '34',
-            '35',
+            34,
+            35,
           ],
         },
       },
@@ -6812,6 +9611,7 @@ module.exports = {
         'speed': 67,
       },
       'attack': 118,
+      'nativeRegion': 0,
       'locations': {
         '2': ['Cerulean Cave'],
         '4': [
@@ -6851,23 +9651,24 @@ module.exports = {
         'speed': 50,
       },
       'attack': 37,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '4',
-            '6',
-            '10',
-            '11',
-            '12',
-            '13',
-            '17',
-            '18',
-            '24',
-            '25',
+            4,
+            24,
+            25,
+            6,
+            11,
+            10,
+            12,
+            13,
+            17,
+            18,
           ],
           '1': [
-            '34',
-            '40',
+            34,
+            40,
           ],
         },
         '2': [
@@ -6895,15 +9696,16 @@ module.exports = {
         'speed': 75,
       },
       'attack': 96,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '10',
-            '23',
+            10,
+            23,
           ],
           '1': [
-            '34',
-            '40',
+            34,
+            40,
           ],
         },
         '3': ['Whirl Islands'],
@@ -6944,9 +9746,10 @@ module.exports = {
         'speed': 100,
       },
       'attack': 40,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['10'],
+          '0': [10],
         },
         '2': ['New Mauville'],
         '5': ['Electric'],
@@ -6971,6 +9774,7 @@ module.exports = {
         'speed': 150,
       },
       'attack': 86,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Power Plant',
@@ -7017,24 +9821,25 @@ module.exports = {
         'speed': 40,
       },
       'attack': 55,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '29',
-            '30',
-            '31',
-            '32',
-            '34',
-            '35',
-            '36',
-            '37',
-            '38',
-            '39',
-            '43',
-            '47',
-            '48',
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            43,
+            47,
+            48,
+            27,
+            26,
           ],
         },
         '9': '12.05%',
@@ -7062,7 +9867,9 @@ module.exports = {
         'speed': 55,
       },
       'attack': 168,
+      'nativeRegion': 0,
       'locations': {
+        '2': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Exeggcute',
@@ -7100,6 +9907,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 49,
+      'nativeRegion': 0,
       'locations': {
         '2': ['Pokemon Tower'],
         '9': '6.02%',
@@ -7124,6 +9932,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 87,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Victory Road',
@@ -7160,6 +9969,7 @@ module.exports = {
         'speed': 87,
       },
       'attack': 77,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -7191,6 +10001,7 @@ module.exports = {
         'speed': 76,
       },
       'attack': 78,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -7212,6 +10023,14 @@ module.exports = {
       'type': [0],
       'levelType': 2,
       'exp': 77,
+      'evolutions': [
+        {
+          'basePokemon': 'Lickitung',
+          'type': [0],
+          'evolvedPokemon': 'Lickilicky',
+          'level': 33,
+        },
+      ],
       'eggCycles': 20,
       'base': {
         'hitpoints': 90,
@@ -7222,9 +10041,11 @@ module.exports = {
         'speed': 30,
       },
       'attack': 85,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['44'],
+          '1': [44],
+          '3': [215],
         },
         '7': ['Celadon City'],
       },
@@ -7256,6 +10077,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 57,
+      'nativeRegion': 0,
       'locations': {
         '2': [
           'Pokemon Mansion',
@@ -7283,8 +10105,15 @@ module.exports = {
         'speed': 60,
       },
       'attack': 121,
+      'nativeRegion': 0,
       'locations': {
-        '2': ['Pokemon Mansion'],
+        '0': {
+          '3': [227],
+        },
+        '2': [
+          'Pokemon Mansion',
+          'Stark Mountain',
+        ],
         '3': ['Burned Tower'],
         '4': [
           {
@@ -7326,7 +10155,18 @@ module.exports = {
         'speed': 25,
       },
       'attack': 59,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            214,
+            227,
+          ],
+        },
+        '2': [
+          'Victory Road Sinnoh',
+          'Stark Mountain',
+        ],
         '9': '6.02%',
       },
       'catchRatePercent': 36,
@@ -7343,6 +10183,14 @@ module.exports = {
       'levelType': 4,
       'exp': 170,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Rhydon',
+          'type': [1],
+          'stone': 20,
+          'evolvedPokemon': 'Rhyperior',
+        },
+      ],
       'base': {
         'hitpoints': 105,
         'attack': 130,
@@ -7352,8 +10200,19 @@ module.exports = {
         'speed': 40,
       },
       'attack': 121,
+      'nativeRegion': 0,
       'locations': {
-        '3': ['Cerulean Cave'],
+        '0': {
+          '3': [
+            227,
+            228,
+          ],
+        },
+        '2': ['Stark Mountain'],
+        '3': [
+          'Cerulean Cave',
+          'Victory Road Sinnoh',
+        ],
         '4': [
           {
             'basePokemon': 'Rhyhorn',
@@ -7377,9 +10236,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chansey',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Blissey',
-          'level': 100,
         },
       ],
       'base': {
@@ -7391,7 +10250,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 27,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            209,
+            210,
+          ],
+        },
         '2': ['Cerulean Cave'],
         '4': [
           {
@@ -7414,6 +10280,14 @@ module.exports = {
       'levelType': 2,
       'exp': 87,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Tangela',
+          'type': [0],
+          'evolvedPokemon': 'Tangrowth',
+          'level': 33,
+        },
+      ],
       'base': {
         'hitpoints': 65,
         'attack': 55,
@@ -7423,12 +10297,13 @@ module.exports = {
         'speed': 60,
       },
       'attack': 92,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': ['21'],
+          '0': [21],
           '1': [
-            '28',
-            '44',
+            44,
+            28,
           ],
         },
         '2': ['Mt Silver'],
@@ -7455,6 +10330,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 109,
+      'nativeRegion': 0,
       'locations': {
         '9': '9.04%',
       },
@@ -7486,22 +10362,24 @@ module.exports = {
         'speed': 60,
       },
       'attack': 37,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '10',
-            '11',
-            '12',
-            '13',
-            '19',
-            '20',
-            '21',
+            11,
+            10,
+            12,
+            13,
+            19,
+            20,
+            21,
           ],
           '2': [
-            '132',
-            '133',
-            '134',
+            132,
+            133,
+            134,
           ],
+          '3': [226],
         },
         '2': [
           'Seafoam Islands',
@@ -7536,13 +10414,15 @@ module.exports = {
         'speed': 85,
       },
       'attack': 90,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
-            '23',
+            12,
+            13,
+            23,
           ],
+          '3': [226],
         },
         '4': [
           {
@@ -7581,39 +10461,52 @@ module.exports = {
         'speed': 63,
       },
       'attack': 47,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '4',
-            '6',
-            '10',
-            '11',
-            '12',
-            '13',
-            '14',
-            '17',
-            '18',
-            '19',
-            '20',
-            '21',
-            '22',
-            '23',
-            '24',
-            '25',
+            4,
+            24,
+            25,
+            6,
+            11,
+            10,
+            12,
+            13,
+            14,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
           ],
-          '1': ['42'],
+          '1': [42],
           '2': [
-            '102',
-            '111',
-            '114',
-            '117',
-            '120',
+            102,
+            117,
+            111,
+            114,
+            120,
+          ],
+          '3': [
+            203,
+            204,
+            208,
+            209,
+            212,
+            214,
+            229,
           ],
         },
         '2': [
           'Union Cave',
           'Meteor Falls',
           'Victory Road Hoenn',
+          'Lake Verity',
+          'Lake Valor',
+          'Lake Acuity',
         ],
       },
       'catchRatePercent': 58,
@@ -7636,15 +10529,26 @@ module.exports = {
         'speed': 68,
       },
       'attack': 110,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '4',
-            '23',
-            '24',
+            4,
+            24,
+            23,
           ],
-          '1': ['42'],
+          '1': [42],
+          '3': [
+            203,
+            204,
+            208,
+            209,
+            212,
+            214,
+            229,
+          ],
         },
+        '3': ['Lake Verity'],
         '4': [
           {
             'basePokemon': 'Goldeen',
@@ -7682,17 +10586,18 @@ module.exports = {
         'speed': 85,
       },
       'attack': 45,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '19',
-            '20',
-            '21',
+            19,
+            20,
+            21,
           ],
           '1': [
-            '34',
-            '40',
-            '47',
+            34,
+            40,
+            47,
           ],
         },
         '2': ['Seafoam Islands'],
@@ -7721,6 +10626,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 117,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -7754,7 +10660,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 77,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            218,
+            222,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Mime Jr.',
@@ -7796,7 +10709,15 @@ module.exports = {
         'speed': 105,
       },
       'attack': 111,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            210,
+            215,
+            229,
+          ],
+        },
         '9': '2.41%',
       },
       'catchRatePercent': 17,
@@ -7822,8 +10743,10 @@ module.exports = {
         'speed': 95,
       },
       'attack': 90,
+      'nativeRegion': 0,
       'locations': {
         '2': ['Ice Path'],
+        '3': ['Snowpoint Temple'],
         '4': [
           {
             'basePokemon': 'Smoochum',
@@ -7849,7 +10772,7 @@ module.exports = {
         {
           'basePokemon': 'Electabuzz',
           'type': [1],
-          'stone': 6,
+          'stone': 18,
           'evolvedPokemon': 'Electivire',
         },
       ],
@@ -7862,7 +10785,11 @@ module.exports = {
         'speed': 105,
       },
       'attack': 114,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [222],
+        },
         '3': ['Power Plant'],
         '4': [
           {
@@ -7889,7 +10816,7 @@ module.exports = {
         {
           'basePokemon': 'Magmar',
           'type': [1],
-          'stone': 6,
+          'stone': 19,
           'evolvedPokemon': 'Magmortar',
         },
       ],
@@ -7902,6 +10829,7 @@ module.exports = {
         'speed': 93,
       },
       'attack': 122,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Pokemon Mansion'],
         '4': [
@@ -7933,7 +10861,11 @@ module.exports = {
         'speed': 85,
       },
       'attack': 114,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [229],
+        },
         '9': '2.41%',
       },
       'catchRatePercent': 17,
@@ -7956,12 +10888,13 @@ module.exports = {
         'speed': 110,
       },
       'attack': 98,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '1': [
-            '38',
-            '39',
-            '48',
+            38,
+            39,
+            48,
           ],
         },
         '9': '6.02%',
@@ -7994,63 +10927,88 @@ module.exports = {
         'speed': 80,
       },
       'attack': 10,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '13',
-            '19',
-            '20',
-            '21',
+            12,
+            13,
+            19,
+            20,
+            21,
           ],
           '1': [
-            '26',
-            '27',
-            '28',
-            '30',
-            '31',
-            '32',
-            '34',
-            '35',
-            '40',
-            '41',
-            '42',
-            '43',
-            '44',
-            '45',
-            '47',
+            30,
+            31,
+            32,
+            34,
+            35,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            47,
+            27,
+            26,
+            28,
           ],
           '2': [
-            '102',
-            '103',
-            '104',
-            '105',
-            '106',
-            '107',
-            '108',
-            '109',
-            '110',
-            '111',
-            '114',
-            '115',
-            '117',
-            '118',
-            '119',
-            '120',
-            '121',
-            '122',
-            '123',
-            '124',
-            '125',
-            '126',
-            '127',
-            '128',
-            '129',
-            '130',
-            '131',
-            '132',
-            '133',
-            '134',
+            103,
+            102,
+            104,
+            110,
+            117,
+            111,
+            114,
+            115,
+            105,
+            106,
+            107,
+            108,
+            109,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+          ],
+          '3': [
+            203,
+            204,
+            205,
+            208,
+            209,
+            210,
+            212,
+            213,
+            214,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
           ],
         },
         '2': [
@@ -8060,6 +11018,13 @@ module.exports = {
           'Shoal Cave',
           'Seafloor Cavern',
           'Victory Road Hoenn',
+          'Oreburgh Gate',
+          'Ravaged Path',
+          'Mt. Coronet South',
+          'Mt. Coronet North',
+          'Lake Verity',
+          'Lake Valor',
+          'Lake Acuity',
         ],
       },
       'catchRatePercent': 63,
@@ -8085,7 +11050,39 @@ module.exports = {
         'speed': 81,
       },
       'attack': 148,
+      'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            203,
+            204,
+            205,
+            208,
+            209,
+            210,
+            212,
+            213,
+            214,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+          ],
+        },
+        '3': [
+          'Oreburgh Gate',
+          'Ravaged Path',
+          'Lake Acuity',
+        ],
         '4': [
           {
             'basePokemon': 'Magikarp',
@@ -8118,6 +11115,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 165,
+      'nativeRegion': 0,
       'locations': {
         '5': ['Water'],
       },
@@ -8141,18 +11139,19 @@ module.exports = {
         'speed': 48,
       },
       'attack': 45,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '13',
-            '14',
-            '15',
-            '23',
+            13,
+            14,
+            15,
+            23,
           ],
           '1': [
-            '34',
-            '35',
-            '47',
+            34,
+            35,
+            47,
           ],
         },
         '2': ['Cerulean Cave'],
@@ -8209,6 +11208,26 @@ module.exports = {
           'startHour': 18,
           'endHour': 6,
         },
+        {
+          'basePokemon': 'Eevee',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Glaceon',
+          'level': 20,
+          'dungeon': 'Lake Acuity',
+        },
+        {
+          'basePokemon': 'Eevee',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Leafeon',
+          'level': 20,
+          'dungeon': 'Eterna Forest',
+        },
       ],
       'base': {
         'hitpoints': 55,
@@ -8219,7 +11238,9 @@ module.exports = {
         'speed': 55,
       },
       'attack': 54,
+      'nativeRegion': 0,
       'locations': {
+        '2': ['Hall of Origin'],
         '7': ['Celadon City'],
       },
       'catchRatePercent': 63,
@@ -8242,6 +11263,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 155,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8272,6 +11294,7 @@ module.exports = {
         'speed': 130,
       },
       'attack': 115,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8302,6 +11325,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 144,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8340,6 +11364,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 89,
+      'nativeRegion': 0,
       'locations': {
         '7': ['Celadon City'],
       },
@@ -8374,6 +11399,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 55,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Mt. Moon'],
         '8': ['Helix Fossil'],
@@ -8401,6 +11427,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 121,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8442,6 +11469,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 54,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Mt. Moon'],
         '8': ['Dome Fossil'],
@@ -8469,6 +11497,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 114,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8502,6 +11531,7 @@ module.exports = {
         'speed': 130,
       },
       'attack': 117,
+      'nativeRegion': 0,
       'locations': {
         '8': ['Old Amber'],
       },
@@ -8525,19 +11555,21 @@ module.exports = {
         'speed': 30,
       },
       'attack': 172,
+      'nativeRegion': 0,
       'locations': {
         '0': {
           '0': [
-            '12',
-            '16',
+            12,
+            16,
           ],
         },
+        '3': ['Hall of Origin'],
         '4': [
           {
             'basePokemon': 'Munchlax',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Snorlax',
-            'level': 100,
           },
         ],
       },
@@ -8564,6 +11596,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 165,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Seafoam Islands'],
       },
@@ -8590,6 +11623,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 173,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Power Plant'],
       },
@@ -8616,6 +11650,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 180,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Victory Road'],
       },
@@ -8648,9 +11683,10 @@ module.exports = {
       },
       'heldItem': 'Dragon_scale',
       'attack': 48,
+      'nativeRegion': 0,
       'locations': {
         '0': {
-          '1': ['45'],
+          '1': [45],
         },
         '5': ['Dragon'],
       },
@@ -8682,6 +11718,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 92,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8716,6 +11753,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 196,
+      'nativeRegion': 0,
       'locations': {
         '4': [
           {
@@ -8747,6 +11785,7 @@ module.exports = {
         'speed': 130,
       },
       'attack': 235,
+      'nativeRegion': 0,
       'locations': {
         '3': ['Cerulean Cave'],
       },
@@ -8770,6 +11809,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'nativeRegion': 0,
       'locations': {
         '1': ['0'],
       },
@@ -8801,6 +11841,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 51,
+      'nativeRegion': 1,
       'locations': {
         '5': ['Grass'],
       },
@@ -8832,6 +11873,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 81,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -8862,7 +11904,9 @@ module.exports = {
         'speed': 80,
       },
       'attack': 135,
+      'nativeRegion': 1,
       'locations': {
+        '3': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Bayleef',
@@ -8900,6 +11944,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 46,
+      'nativeRegion': 1,
       'locations': {
         '5': ['Fire'],
       },
@@ -8931,6 +11976,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 81,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -8961,6 +12007,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 142,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -8999,6 +12046,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 53,
+      'nativeRegion': 1,
       'locations': {
         '5': ['Water'],
       },
@@ -9030,6 +12078,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 87,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -9060,6 +12109,7 @@ module.exports = {
         'speed': 78,
       },
       'attack': 147,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -9098,9 +12148,10 @@ module.exports = {
         'speed': 20,
       },
       'attack': 28,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['29'],
+          '1': [29],
         },
       },
       'catchRatePercent': 63,
@@ -9123,6 +12174,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 83,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -9164,29 +12216,42 @@ module.exports = {
         'speed': 50,
       },
       'attack': 34,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '29',
-            '30',
-            '31',
-            '32',
-            '34',
-            '35',
-            '36',
-            '37',
-            '38',
-            '39',
-            '43',
-            '47',
-            '48',
+            29,
+            29,
+            30,
+            30,
+            31,
+            31,
+            32,
+            34,
+            35,
+            35,
+            36,
+            36,
+            37,
+            37,
+            38,
+            39,
+            43,
+            47,
+            48,
+            27,
+            26,
+          ],
+          '3': [
+            205,
+            210,
+            211,
           ],
         },
         '2': [
           'Sprout Tower',
           'Ilex Forest',
+          'Eterna Forest',
         ],
       },
       'catchRatePercent': 63,
@@ -9212,14 +12277,28 @@ module.exports = {
         'speed': 70,
       },
       'attack': 104,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '43',
-            '47',
+            43,
+            47,
+          ],
+          '3': [
+            210,
+            211,
+            216,
+            217,
           ],
         },
-        '3': ['Ilex Forest'],
+        '2': [
+          'Mt. Coronet South',
+          'Mt. Coronet North',
+        ],
+        '3': [
+          'Ilex Forest',
+          'Lake Valor',
+        ],
         '4': [
           {
             'basePokemon': 'Hoothoot',
@@ -9260,22 +12339,26 @@ module.exports = {
         'speed': 55,
       },
       'attack': 27,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '29',
-            '30',
-            '31',
-            '34',
-            '35',
-            '36',
-            '37',
-            '38',
-            '39',
-            '47',
-            '48',
+            29,
+            30,
+            30,
+            31,
+            31,
+            34,
+            35,
+            36,
+            37,
+            37,
+            38,
+            39,
+            47,
+            48,
+            27,
+            26,
           ],
         },
       },
@@ -9302,7 +12385,11 @@ module.exports = {
         'speed': 85,
       },
       'attack': 57,
+      'nativeRegion': 1,
       'locations': {
+        '0': {
+          '3': [229],
+        },
         '4': [
           {
             'basePokemon': 'Ledyba',
@@ -9343,22 +12430,26 @@ module.exports = {
         'speed': 30,
       },
       'attack': 36,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '29',
-            '30',
-            '31',
-            '34',
-            '35',
-            '36',
-            '37',
-            '38',
-            '39',
-            '47',
-            '48',
+            29,
+            30,
+            30,
+            31,
+            31,
+            34,
+            35,
+            36,
+            37,
+            37,
+            38,
+            39,
+            47,
+            48,
+            27,
+            26,
           ],
         },
       },
@@ -9385,7 +12476,11 @@ module.exports = {
         'speed': 40,
       },
       'attack': 93,
+      'nativeRegion': 1,
       'locations': {
+        '0': {
+          '3': [229],
+        },
         '4': [
           {
             'basePokemon': 'Spinarak',
@@ -9418,13 +12513,14 @@ module.exports = {
         'speed': 130,
       },
       'attack': 128,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
             'basePokemon': 'Golbat',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Crobat',
-            'level': 100,
           },
         ],
       },
@@ -9459,14 +12555,16 @@ module.exports = {
         'speed': 67,
       },
       'attack': 54,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '41',
-            '47',
+            41,
+            47,
+            27,
+            26,
           ],
+          '3': [220],
         },
         '5': ['Electric'],
       },
@@ -9493,13 +12591,15 @@ module.exports = {
         'speed': 67,
       },
       'attack': 116,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '47',
+            47,
+            27,
+            26,
           ],
+          '3': [220],
         },
         '4': [
           {
@@ -9524,9 +12624,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Pichu',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Pikachu',
-          'level': 100,
         },
       ],
       'baby': true,
@@ -9539,6 +12639,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 17,
+      'nativeRegion': 1,
       'locations': {
         '6': ['Pikachu'],
       },
@@ -9556,9 +12657,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Cleffa',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Clefairy',
-          'level': 100,
         },
       ],
       'baby': true,
@@ -9571,6 +12672,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 27,
+      'nativeRegion': 1,
       'locations': {
         '6': ['Clefairy'],
       },
@@ -9591,9 +12693,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Igglybuff',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Jigglypuff',
-          'level': 100,
         },
       ],
       'baby': true,
@@ -9606,6 +12708,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 27,
+      'nativeRegion': 1,
       'locations': {
         '6': ['Jigglypuff'],
       },
@@ -9623,9 +12726,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Togepi',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Togetic',
-          'level': 100,
         },
       ],
       'base': {
@@ -9637,6 +12740,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 25,
+      'nativeRegion': 1,
       'locations': {
         '7': ['Violet City'],
       },
@@ -9654,6 +12758,14 @@ module.exports = {
       'levelType': 1,
       'exp': 142,
       'eggCycles': 10,
+      'evolutions': [
+        {
+          'basePokemon': 'Togetic',
+          'type': [1],
+          'stone': 16,
+          'evolvedPokemon': 'Togekiss',
+        },
+      ],
       'base': {
         'hitpoints': 55,
         'attack': 40,
@@ -9663,13 +12775,14 @@ module.exports = {
         'speed': 40,
       },
       'attack': 75,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
             'basePokemon': 'Togepi',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Togetic',
-            'level': 100,
           },
         ],
       },
@@ -9704,9 +12817,10 @@ module.exports = {
         'speed': 70,
       },
       'attack': 50,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['28'],
+          '1': [28],
         },
         '2': ['Ruins of Alph'],
       },
@@ -9733,6 +12847,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 108,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -9771,12 +12886,13 @@ module.exports = {
         'speed': 35,
       },
       'attack': 46,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '32',
-            '42',
-            '43',
+            32,
+            42,
+            43,
           ],
         },
         '5': ['Electric'],
@@ -9809,11 +12925,12 @@ module.exports = {
         'speed': 45,
       },
       'attack': 78,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '42',
-            '43',
+            42,
+            43,
           ],
         },
         '4': [
@@ -9845,6 +12962,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 147,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -9875,7 +12993,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 130,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Gloom',
@@ -9916,25 +13036,32 @@ module.exports = {
         'speed': 40,
       },
       'attack': 26,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '2': [
-            '102',
-            '104',
-            '111',
-            '112',
-            '114',
-            '117',
-            '120',
+            102,
+            104,
+            117,
+            117,
+            111,
+            112,
+            114,
+            120,
+            120,
+          ],
+          '3': [
+            212,
+            215,
           ],
         },
         '2': ['Mt Mortar'],
         '4': [
           {
             'basePokemon': 'Azurill',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Marill',
-            'level': 100,
           },
         ],
         '5': ['Water'],
@@ -9962,7 +13089,9 @@ module.exports = {
         'speed': 50,
       },
       'attack': 92,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Victory Road Sinnoh'],
         '4': [
           {
             'basePokemon': 'Marill',
@@ -9992,9 +13121,14 @@ module.exports = {
         'speed': 30,
       },
       'attack': 77,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['36'],
+          '1': [36],
+          '3': [
+            214,
+            221,
+          ],
         },
         '4': [
           {
@@ -10025,6 +13159,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 134,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -10066,12 +13201,13 @@ module.exports = {
         'speed': 50,
       },
       'attack': 29,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '32',
-            '33',
-            '48',
+            32,
+            33,
+            48,
           ],
         },
         '5': ['Grass'],
@@ -10107,7 +13243,9 @@ module.exports = {
         'speed': 80,
       },
       'attack': 52,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Hoppip',
@@ -10140,6 +13278,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 86,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -10159,6 +13298,14 @@ module.exports = {
       'catchRate': 45,
       'type': [0],
       'levelType': 1,
+      'evolutions': [
+        {
+          'basePokemon': 'Aipom',
+          'type': [0],
+          'evolvedPokemon': 'Ambipom',
+          'level': 32,
+        },
+      ],
       'exp': 72,
       'eggCycles': 20,
       'base': {
@@ -10170,16 +13317,17 @@ module.exports = {
         'speed': 85,
       },
       'attack': 58,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '28',
-            '31',
-            '33',
-            '42',
-            '44',
-            '45',
-            '46',
+            46,
+            31,
+            33,
+            42,
+            44,
+            45,
+            28,
           ],
         },
       },
@@ -10211,6 +13359,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 18,
+      'nativeRegion': 1,
       'locations': {
         '5': ['Grass'],
       },
@@ -10234,7 +13383,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 112,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Sunkern',
@@ -10258,6 +13409,14 @@ module.exports = {
       'levelType': 2,
       'exp': 78,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Yanma',
+          'type': [0],
+          'evolvedPokemon': 'Yanmega',
+          'level': 33,
+        },
+      ],
       'base': {
         'hitpoints': 65,
         'attack': 65,
@@ -10267,9 +13426,10 @@ module.exports = {
         'speed': 95,
       },
       'attack': 76,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['35'],
+          '1': [35],
         },
       },
       'catchRatePercent': 25,
@@ -10303,9 +13463,10 @@ module.exports = {
         'speed': 15,
       },
       'attack': 26,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['32'],
+          '1': [32],
         },
         '2': ['Ruins of Alph'],
         '3': ['Union Cave'],
@@ -10334,12 +13495,13 @@ module.exports = {
         'speed': 35,
       },
       'attack': 111,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '32',
+            32,
+            27,
+            26,
           ],
         },
         '2': [
@@ -10375,7 +13537,9 @@ module.exports = {
         'speed': 110,
       },
       'attack': 122,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Fullmoon Island'],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -10410,7 +13574,9 @@ module.exports = {
         'speed': 65,
       },
       'attack': 125,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Newmoon Island'],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -10439,6 +13605,14 @@ module.exports = {
       'levelType': 3,
       'exp': 81,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Murkrow',
+          'type': [1],
+          'stone': 15,
+          'evolvedPokemon': 'Honchkrow',
+        },
+      ],
       'base': {
         'hitpoints': 60,
         'attack': 85,
@@ -10448,9 +13622,10 @@ module.exports = {
         'speed': 91,
       },
       'attack': 84,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['28'],
+          '1': [28],
         },
       },
       'catchRatePercent': 12,
@@ -10476,6 +13651,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 142,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -10497,6 +13673,14 @@ module.exports = {
       'levelType': 1,
       'exp': 87,
       'eggCycles': 25,
+      'evolutions': [
+        {
+          'basePokemon': 'Misdreavus',
+          'type': [1],
+          'stone': 15,
+          'evolvedPokemon': 'Mismagius',
+        },
+      ],
       'base': {
         'hitpoints': 60,
         'attack': 60,
@@ -10506,6 +13690,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 90,
+      'nativeRegion': 1,
       'locations': {
         '2': ['Mt Silver'],
       },
@@ -10514,7 +13699,7 @@ module.exports = {
     },
     {
       'id': 201,
-      'name': 'Unown',
+      'name': 'Unown (A)',
       'catchRate': 225,
       'type': [10],
       'levelType': 2,
@@ -10529,9 +13714,610 @@ module.exports = {
         'speed': 48,
       },
       'attack': 64,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Ruins of Alph'],
       },
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.01,
+      'name': 'Unown (B)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.02,
+      'name': 'Unown (C)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.03,
+      'name': 'Unown (D)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.04,
+      'name': 'Unown (E)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.05,
+      'name': 'Unown (F)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.06,
+      'name': 'Unown (G)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.07,
+      'name': 'Unown (H)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {
+        '3': ['Ruins of Alph'],
+      },
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.08,
+      'name': 'Unown (I)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.09,
+      'name': 'Unown (J)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.1,
+      'name': 'Unown (K)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.11,
+      'name': 'Unown (L)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {
+        '3': ['Ruins of Alph'],
+      },
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.12,
+      'name': 'Unown (M)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.13,
+      'name': 'Unown (N)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.14,
+      'name': 'Unown (O)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.15,
+      'name': 'Unown (P)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {
+        '3': ['Ruins of Alph'],
+      },
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.16,
+      'name': 'Unown (Q)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.17,
+      'name': 'Unown (R)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.18,
+      'name': 'Unown (S)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.19,
+      'name': 'Unown (T)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.2,
+      'name': 'Unown (U)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.21,
+      'name': 'Unown (V)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.22,
+      'name': 'Unown (W)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.23,
+      'name': 'Unown (X)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.24,
+      'name': 'Unown (Y)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.25,
+      'name': 'Unown (Z)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.26,
+      'name': 'Unown (!)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
+      'catchRatePercent': 58,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 201.27,
+      'name': 'Unown (?)',
+      'catchRate': 225,
+      'type': [10],
+      'levelType': 2,
+      'exp': 118,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 48,
+        'attack': 72,
+        'specialAttack': 72,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 48,
+      },
+      'attack': 64,
+      'nativeRegion': 1,
+      'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -10552,6 +14338,7 @@ module.exports = {
         'speed': 33,
       },
       'attack': 68,
+      'nativeRegion': 1,
       'locations': {
         '2': ['Dark Cave'],
         '4': [
@@ -10586,11 +14373,16 @@ module.exports = {
         'speed': 85,
       },
       'attack': 108,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '43',
-            '48',
+            43,
+            48,
+          ],
+          '3': [
+            214,
+            221,
           ],
         },
       },
@@ -10622,24 +14414,25 @@ module.exports = {
         'speed': 15,
       },
       'attack': 45,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '26',
-            '27',
-            '29',
-            '30',
-            '31',
-            '32',
-            '34',
-            '35',
-            '36',
-            '37',
-            '38',
-            '39',
-            '43',
-            '47',
-            '48',
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            43,
+            47,
+            48,
+            27,
+            26,
           ],
         },
       },
@@ -10666,6 +14459,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 109,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -10696,6 +14490,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 101,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Dark Cave'],
       },
@@ -10713,6 +14508,14 @@ module.exports = {
       'levelType': 3,
       'exp': 86,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Gligar',
+          'type': [1],
+          'stone': 23,
+          'evolvedPokemon': 'Gliscor',
+        },
+      ],
       'base': {
         'hitpoints': 65,
         'attack': 75,
@@ -10722,9 +14525,11 @@ module.exports = {
         'speed': 85,
       },
       'attack': 74,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['45'],
+          '1': [45],
+          '3': [206],
         },
       },
       'catchRatePercent': 21,
@@ -10750,7 +14555,12 @@ module.exports = {
         'speed': 30,
       },
       'attack': 111,
+      'nativeRegion': 1,
       'locations': {
+        '3': [
+          'Iron Island',
+          'Victory Road Sinnoh',
+        ],
         '4': [
           {
             'basePokemon': 'Onix',
@@ -10788,9 +14598,10 @@ module.exports = {
         'speed': 30,
       },
       'attack': 54,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['38'],
+          '1': [38],
         },
       },
       'catchRatePercent': 51,
@@ -10813,6 +14624,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 120,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -10846,9 +14658,10 @@ module.exports = {
         'speed': 85,
       },
       'attack': 93,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['32'],
+          '1': [32],
         },
         '5': ['Water'],
       },
@@ -10875,6 +14688,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 123,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -10908,8 +14722,12 @@ module.exports = {
         'speed': 5,
       },
       'attack': 13,
+      'nativeRegion': 1,
       'locations': {
-        '3': ['Burned Tower'],
+        '3': [
+          'Burned Tower',
+          'Hall of Origin',
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -10934,17 +14752,18 @@ module.exports = {
         'speed': 85,
       },
       'attack': 110,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '28',
-            '31',
-            '33',
-            '42',
-            '44',
-            '45',
-            '46',
-            '47',
+            46,
+            31,
+            33,
+            42,
+            44,
+            45,
+            47,
+            28,
           ],
         },
       },
@@ -10965,14 +14784,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sneasel',
-          'type': [
-            0,
-            2,
-          ],
+          'type': [1],
+          'stone': 22,
           'evolvedPokemon': 'Weavile',
-          'level': 100,
-          'startHour': 18,
-          'endHour': 6,
         },
       ],
       'base': {
@@ -10984,11 +14798,20 @@ module.exports = {
         'speed': 115,
       },
       'attack': 69,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['28'],
+          '1': [28],
+          '3': [
+            216,
+            217,
+          ],
         },
-        '2': ['Mt Silver'],
+        '2': [
+          'Mt Silver',
+          'Lake Acuity',
+          'Snowpoint Temple',
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -11018,9 +14841,10 @@ module.exports = {
         'speed': 40,
       },
       'attack': 64,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['45'],
+          '1': [45],
         },
         '2': ['Mt Silver'],
       },
@@ -11044,9 +14868,10 @@ module.exports = {
         'speed': 55,
       },
       'attack': 145,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['28'],
+          '1': [28],
         },
         '2': ['Mt Silver'],
         '4': [
@@ -11086,11 +14911,15 @@ module.exports = {
         'speed': 20,
       },
       'attack': 38,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '2': ['113'],
+          '2': [113],
         },
-        '2': ['Fiery Path'],
+        '2': [
+          'Fiery Path',
+          'Stark Mountain',
+        ],
         '5': ['Fire'],
       },
       'catchRatePercent': 51,
@@ -11116,7 +14945,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 91,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Stark Mountain'],
         '4': [
           {
             'basePokemon': 'Slugma',
@@ -11157,7 +14988,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 33,
+      'nativeRegion': 1,
       'locations': {
+        '0': {
+          '3': [217],
+        },
         '2': ['Ice Path'],
       },
       'catchRatePercent': 58,
@@ -11174,6 +15009,14 @@ module.exports = {
       'levelType': 4,
       'exp': 158,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Piloswine',
+          'type': [0],
+          'evolvedPokemon': 'Mamoswine',
+          'level': 53,
+        },
+      ],
       'base': {
         'hitpoints': 100,
         'attack': 100,
@@ -11183,6 +15026,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 118,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -11216,13 +15060,14 @@ module.exports = {
         'speed': 35,
       },
       'attack': 85,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '34',
-            '40',
+            34,
+            40,
           ],
-          '2': ['128'],
+          '2': [128],
         },
       },
       'catchRatePercent': 21,
@@ -11253,9 +15098,17 @@ module.exports = {
         'speed': 65,
       },
       'attack': 45,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['44'],
+          '1': [44],
+          '3': [
+            213,
+            222,
+            223,
+            224,
+            230,
+          ],
         },
       },
       'catchRatePercent': 51,
@@ -11278,7 +15131,17 @@ module.exports = {
         'speed': 45,
       },
       'attack': 140,
+      'nativeRegion': 1,
       'locations': {
+        '0': {
+          '3': [
+            213,
+            222,
+            223,
+            224,
+            230,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Remoraid',
@@ -11311,6 +15174,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 53,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Ice Path'],
       },
@@ -11337,9 +15201,10 @@ module.exports = {
         'speed': 70,
       },
       'attack': 99,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['41'],
+          '1': [41],
         },
         '4': [
           {
@@ -11374,11 +15239,14 @@ module.exports = {
       },
       'heldItem': 'Metal_coat',
       'attack': 86,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['45'],
-          '2': ['113'],
+          '1': [45],
+          '2': [113],
+          '3': [227],
         },
+        '3': ['Stark Mountain'],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -11411,7 +15279,11 @@ module.exports = {
         'speed': 65,
       },
       'attack': 56,
+      'nativeRegion': 1,
       'locations': {
+        '0': {
+          '3': [214],
+        },
         '5': ['Fire'],
       },
       'catchRatePercent': 36,
@@ -11437,6 +15309,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 129,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -11470,6 +15343,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 146,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -11508,9 +15382,10 @@ module.exports = {
         'speed': 40,
       },
       'attack': 61,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['45'],
+          '1': [45],
         },
         '2': ['Mt Silver'],
       },
@@ -11534,9 +15409,10 @@ module.exports = {
         'speed': 50,
       },
       'attack': 133,
+      'nativeRegion': 1,
       'locations': {
         '0': {
-          '1': ['28'],
+          '1': [28],
         },
         '2': ['Mt Silver'],
         '4': [
@@ -11559,6 +15435,14 @@ module.exports = {
       'levelType': 2,
       'exp': 180,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Porygon2',
+          'type': [1],
+          'stone': 17,
+          'evolvedPokemon': 'Porygon-Z',
+        },
+      ],
       'base': {
         'hitpoints': 85,
         'attack': 80,
@@ -11568,6 +15452,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 146,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -11598,11 +15483,12 @@ module.exports = {
         'speed': 85,
       },
       'attack': 115,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '36',
-            '37',
+            36,
+            37,
           ],
         },
       },
@@ -11626,6 +15512,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 23,
+      'nativeRegion': 1,
       'locations': {
         '2': ['Ruins of Alph'],
       },
@@ -11670,6 +15557,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 24,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Mt Mortar'],
         '5': ['Fighting'],
@@ -11699,6 +15587,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 78,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -11741,7 +15630,9 @@ module.exports = {
         'speed': 65,
       },
       'attack': 39,
+      'nativeRegion': 1,
       'locations': {
+        '2': ['Snowpoint Temple'],
         '6': ['Jynx'],
       },
       'catchRatePercent': 17,
@@ -11773,6 +15664,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 58,
+      'nativeRegion': 1,
       'locations': {
         '5': ['Electric'],
         '6': ['Electabuzz'],
@@ -11806,6 +15698,7 @@ module.exports = {
         'speed': 83,
       },
       'attack': 64,
+      'nativeRegion': 1,
       'locations': {
         '5': ['Fire'],
         '6': ['Magmar'],
@@ -11830,12 +15723,13 @@ module.exports = {
         'speed': 100,
       },
       'attack': 102,
+      'nativeRegion': 1,
       'locations': {
         '0': {
           '1': [
-            '38',
-            '39',
-            '47',
+            38,
+            39,
+            47,
           ],
         },
       },
@@ -11859,13 +15753,15 @@ module.exports = {
         'speed': 55,
       },
       'attack': 59,
+      'nativeRegion': 1,
       'locations': {
+        '3': ['Hall of Origin'],
         '4': [
           {
             'basePokemon': 'Chansey',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Blissey',
-            'level': 100,
           },
         ],
       },
@@ -11889,6 +15785,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 164,
+      'nativeRegion': 1,
       'locations': {
         '1': ['1'],
       },
@@ -11912,6 +15809,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 182,
+      'nativeRegion': 1,
       'locations': {
         '1': ['1'],
       },
@@ -11935,6 +15833,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 162,
+      'nativeRegion': 1,
       'locations': {
         '1': ['1'],
       },
@@ -11969,6 +15868,7 @@ module.exports = {
         'speed': 41,
       },
       'attack': 50,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Mt Silver'],
       },
@@ -12003,6 +15903,7 @@ module.exports = {
         'speed': 51,
       },
       'attack': 95,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -12036,6 +15937,7 @@ module.exports = {
         'speed': 61,
       },
       'attack': 205,
+      'nativeRegion': 1,
       'locations': {
         '4': [
           {
@@ -12069,6 +15971,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 203,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Whirl Islands'],
       },
@@ -12095,6 +15998,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 239,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Tin Tower'],
       },
@@ -12121,6 +16025,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'nativeRegion': 1,
       'locations': {
         '3': ['Ilex Forest'],
       },
@@ -12152,6 +16057,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 45,
+      'nativeRegion': 2,
       'locations': {
         '5': ['Grass'],
       },
@@ -12183,6 +16089,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 76,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12213,6 +16120,7 @@ module.exports = {
         'speed': 120,
       },
       'attack': 129,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12251,6 +16159,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 55,
+      'nativeRegion': 2,
       'locations': {
         '5': ['Fire'],
       },
@@ -12285,6 +16194,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 93,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12318,6 +16228,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 157,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12356,6 +16267,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 55,
+      'nativeRegion': 2,
       'locations': {
         '5': ['Water'],
       },
@@ -12390,6 +16302,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 91,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12423,6 +16336,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 164,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12461,19 +16375,20 @@ module.exports = {
         'speed': 35,
       },
       'attack': 27,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '101',
-            '102',
-            '103',
-            '104',
-            '110',
-            '116',
-            '117',
-            '120',
-            '121',
-            '123',
+            101,
+            103,
+            102,
+            104,
+            116,
+            110,
+            117,
+            120,
+            121,
+            123,
           ],
         },
         '2': [
@@ -12501,12 +16416,13 @@ module.exports = {
         'speed': 70,
       },
       'attack': 93,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '120',
-            '121',
-            '123',
+            120,
+            121,
+            123,
           ],
         },
         '4': [
@@ -12546,14 +16462,15 @@ module.exports = {
         'speed': 60,
       },
       'attack': 26,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '101',
-            '102',
-            '103',
-            '118',
-            '119',
+            101,
+            103,
+            102,
+            118,
+            119,
           ],
         },
         '2': ['Petalburg Woods'],
@@ -12578,11 +16495,12 @@ module.exports = {
         'speed': 100,
       },
       'attack': 82,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '118',
-            '119',
+            118,
+            119,
           ],
         },
         '4': [
@@ -12628,15 +16546,23 @@ module.exports = {
         'speed': 20,
       },
       'attack': 22,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '101',
-            '102',
-            '104',
+            101,
+            102,
+            104,
+          ],
+          '3': [
+            204,
+            205,
           ],
         },
-        '2': ['Petalburg Woods'],
+        '2': [
+          'Petalburg Woods',
+          'Eterna Forest',
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -12666,8 +16592,15 @@ module.exports = {
         'speed': 15,
       },
       'attack': 23,
+      'nativeRegion': 2,
       'locations': {
-        '2': ['Petalburg Woods'],
+        '0': {
+          '3': [205],
+        },
+        '2': [
+          'Petalburg Woods',
+          'Eterna Forest',
+        ],
         '4': [
           {
             'basePokemon': 'Wurmple',
@@ -12700,7 +16633,17 @@ module.exports = {
         'speed': 65,
       },
       'attack': 86,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            205,
+            224,
+            229,
+            230,
+          ],
+        },
+        '3': ['Eterna Forest'],
         '4': [
           {
             'basePokemon': 'Silcoon',
@@ -12738,8 +16681,15 @@ module.exports = {
         'speed': 15,
       },
       'attack': 23,
+      'nativeRegion': 2,
       'locations': {
-        '2': ['Petalburg Woods'],
+        '0': {
+          '3': [205],
+        },
+        '2': [
+          'Petalburg Woods',
+          'Eterna Forest',
+        ],
         '4': [
           {
             'basePokemon': 'Wurmple',
@@ -12772,7 +16722,17 @@ module.exports = {
         'speed': 65,
       },
       'attack': 67,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            205,
+            224,
+            229,
+            230,
+          ],
+        },
+        '3': ['Eterna Forest'],
         '4': [
           {
             'basePokemon': 'Cascoon',
@@ -12813,11 +16773,12 @@ module.exports = {
         'speed': 30,
       },
       'attack': 26,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '102',
-            '114',
+            102,
+            114,
           ],
         },
       },
@@ -12852,9 +16813,10 @@ module.exports = {
         'speed': 50,
       },
       'attack': 62,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['114'],
+          '2': [114],
         },
         '4': [
           {
@@ -12888,6 +16850,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 120,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -12926,12 +16889,13 @@ module.exports = {
         'speed': 30,
       },
       'attack': 26,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '102',
-            '117',
-            '120',
+            102,
+            117,
+            120,
           ],
         },
       },
@@ -12966,9 +16930,10 @@ module.exports = {
         'speed': 60,
       },
       'attack': 67,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['114'],
+          '2': [114],
         },
         '4': [
           {
@@ -13002,6 +16967,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 131,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13043,12 +17009,13 @@ module.exports = {
         'speed': 85,
       },
       'attack': 31,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '104',
-            '115',
-            '116',
+            104,
+            116,
+            115,
           ],
         },
         '2': ['Petalburg Woods'],
@@ -13076,9 +17043,10 @@ module.exports = {
         'speed': 125,
       },
       'attack': 91,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['115'],
+          '2': [115],
         },
         '4': [
           {
@@ -13120,37 +17088,60 @@ module.exports = {
         'speed': 85,
       },
       'attack': 31,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '103',
-            '104',
-            '105',
-            '106',
-            '107',
-            '108',
-            '109',
-            '110',
-            '115',
-            '118',
-            '119',
-            '121',
-            '122',
-            '123',
-            '124',
-            '125',
-            '126',
-            '127',
-            '128',
-            '129',
-            '130',
-            '131',
-            '132',
-            '133',
-            '134',
+            103,
+            103,
+            104,
+            104,
+            110,
+            110,
+            115,
+            115,
+            105,
+            106,
+            107,
+            108,
+            109,
+            118,
+            118,
+            119,
+            121,
+            121,
+            122,
+            123,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+          ],
+          '3': [
+            205,
+            213,
+            218,
+            219,
+            220,
+            221,
+            222,
+            226,
+            229,
+            230,
           ],
         },
-        '2': ['Mt. Pyre'],
+        '2': [
+          'Mt. Pyre',
+          'Iron Island',
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -13175,36 +17166,52 @@ module.exports = {
         'speed': 65,
       },
       'attack': 91,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '103',
-            '104',
-            '105',
-            '106',
-            '107',
-            '108',
-            '109',
-            '110',
-            '115',
-            '118',
-            '119',
-            '121',
-            '122',
-            '123',
-            '124',
-            '125',
-            '126',
-            '127',
-            '128',
-            '129',
-            '130',
-            '131',
-            '132',
-            '133',
-            '134',
+            103,
+            104,
+            110,
+            115,
+            105,
+            106,
+            107,
+            108,
+            109,
+            118,
+            119,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+          ],
+          '3': [
+            205,
+            213,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            226,
+            229,
+            230,
           ],
         },
+        '2': ['Iron Island'],
         '4': [
           {
             'basePokemon': 'Wingull',
@@ -13245,9 +17252,15 @@ module.exports = {
         'speed': 40,
       },
       'attack': 20,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['102'],
+          '2': [102],
+          '3': [
+            208,
+            209,
+            212,
+          ],
         },
       },
       'catchRatePercent': 60,
@@ -13271,6 +17284,12 @@ module.exports = {
           'evolvedPokemon': 'Gardevoir',
           'level': 30,
         },
+        {
+          'basePokemon': 'Kirlia',
+          'type': [1],
+          'stone': 14,
+          'evolvedPokemon': 'Gallade',
+        },
       ],
       'base': {
         'hitpoints': 38,
@@ -13281,7 +17300,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 38,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [212],
+        },
         '4': [
           {
             'basePokemon': 'Ralts',
@@ -13314,6 +17337,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 127,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13355,14 +17379,16 @@ module.exports = {
         'speed': 65,
       },
       'attack': 33,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '102',
-            '114',
-            '117',
-            '120',
+            102,
+            117,
+            114,
+            120,
           ],
+          '3': [229],
         },
       },
       'catchRatePercent': 53,
@@ -13388,7 +17414,11 @@ module.exports = {
         'speed': 80,
       },
       'attack': 102,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [229],
+        },
         '4': [
           {
             'basePokemon': 'Surskit',
@@ -13426,6 +17456,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 46,
+      'nativeRegion': 2,
       'locations': {
         '2': ['Petalburg Woods'],
       },
@@ -13452,7 +17483,9 @@ module.exports = {
         'speed': 70,
       },
       'attack': 106,
+      'nativeRegion': 2,
       'locations': {
+        '2': ['Hall of Origin'],
         '4': [
           {
             'basePokemon': 'Shroomish',
@@ -13490,7 +17523,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 45,
+      'nativeRegion': 2,
       'locations': {
+        '2': ['Hall of Origin'],
         '3': ['Petalburg Woods'],
       },
       'catchRatePercent': 63,
@@ -13521,6 +17556,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 94,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13551,7 +17587,9 @@ module.exports = {
         'speed': 100,
       },
       'attack': 248,
+      'nativeRegion': 2,
       'locations': {
+        '3': ['Hall of Origin'],
         '4': [
           {
             'basePokemon': 'Vigoroth',
@@ -13598,9 +17636,10 @@ module.exports = {
         'speed': 40,
       },
       'attack': 29,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['116'],
+          '2': [116],
         },
       },
       'catchRatePercent': 63,
@@ -13626,6 +17665,7 @@ module.exports = {
         'speed': 160,
       },
       'attack': 77,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13659,6 +17699,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 10,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13697,9 +17738,10 @@ module.exports = {
         'speed': 28,
       },
       'attack': 37,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['116'],
+          '2': [116],
         },
         '2': [
           'Rusturf Tunnel',
@@ -13735,6 +17777,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 80,
+      'nativeRegion': 2,
       'locations': {
         '2': ['Victory Road Hoenn'],
         '4': [
@@ -13766,6 +17809,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 140,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13804,6 +17848,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 32,
+      'nativeRegion': 2,
       'locations': {
         '2': [
           'Granite Cave',
@@ -13831,6 +17876,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 119,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Victory Road Hoenn'],
         '4': [
@@ -13859,9 +17905,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Azurill',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Marill',
-          'level': 100,
         },
       ],
       'baby': true,
@@ -13874,6 +17920,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 18,
+      'nativeRegion': 2,
       'locations': {
         '6': ['Marill'],
       },
@@ -13888,6 +17935,28 @@ module.exports = {
       'levelType': 2,
       'exp': 75,
       'catchRate': 255,
+      'evolutions': [
+        {
+          'basePokemon': 'Nosepass',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Probopass',
+          'level': 20,
+          'dungeon': 'Mt. Coronet North',
+        },
+        {
+          'basePokemon': 'Nosepass',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Probopass',
+          'level': 20,
+          'dungeon': 'Mt. Coronet South',
+        },
+      ],
       'base': {
         'hitpoints': 30,
         'attack': 45,
@@ -13897,7 +17966,9 @@ module.exports = {
         'speed': 30,
       },
       'attack': 47,
+      'nativeRegion': 2,
       'locations': {
+        '2': ['Mt. Coronet South'],
         '3': ['Granite Cave'],
       },
       'catchRatePercent': 63,
@@ -13928,9 +17999,10 @@ module.exports = {
         'speed': 50,
       },
       'attack': 36,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['116'],
+          '2': [116],
         },
       },
       'catchRatePercent': 63,
@@ -13953,6 +18025,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 76,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -13986,6 +18059,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 76,
+      'nativeRegion': 2,
       'locations': {
         '2': [
           'Granite Cave',
@@ -14016,6 +18090,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 73,
+      'nativeRegion': 2,
       'locations': {
         '2': [
           'Cave of Origin',
@@ -14055,6 +18130,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 54,
+      'nativeRegion': 2,
       'locations': {
         '2': [
           'Granite Cave',
@@ -14092,6 +18168,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 85,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Victory Road Hoenn'],
         '4': [
@@ -14126,6 +18203,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 124,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -14167,10 +18245,22 @@ module.exports = {
         'speed': 60,
       },
       'attack': 33,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            208,
+            210,
+            211,
+            216,
+            217,
+          ],
+        },
         '2': [
           'Mt. Pyre',
           'Victory Road Hoenn',
+          'Mt. Coronet South',
+          'Mt. Coronet North',
         ],
         '5': ['Fighting'],
       },
@@ -14197,8 +18287,15 @@ module.exports = {
         'speed': 80,
       },
       'attack': 78,
+      'nativeRegion': 2,
       'locations': {
-        '3': ['Victory Road Hoenn'],
+        '0': {
+          '3': [217],
+        },
+        '3': [
+          'Victory Road Hoenn',
+          'Mt. Coronet North',
+        ],
         '4': [
           {
             'basePokemon': 'Meditite',
@@ -14236,11 +18333,12 @@ module.exports = {
         'speed': 65,
       },
       'attack': 43,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '110',
-            '118',
+            110,
+            118,
           ],
         },
         '5': ['Electric'],
@@ -14265,9 +18363,10 @@ module.exports = {
         'speed': 105,
       },
       'attack': 110,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['118'],
+          '2': [118],
         },
         '4': [
           {
@@ -14298,10 +18397,12 @@ module.exports = {
         'speed': 95,
       },
       'attack': 74,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['110'],
+          '2': [110],
         },
+        '2': ['Newmoon Island'],
         '5': ['Electric'],
       },
       'catchRatePercent': 53,
@@ -14324,10 +18425,12 @@ module.exports = {
         'speed': 95,
       },
       'attack': 69,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['110'],
+          '2': [110],
         },
+        '2': ['Fullmoon Island'],
         '5': ['Electric'],
       },
       'catchRatePercent': 53,
@@ -14350,10 +18453,13 @@ module.exports = {
         'speed': 85,
       },
       'attack': 82,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['117'],
+          '2': [117],
+          '3': [229],
         },
+        '2': ['Newmoon Island'],
       },
       'catchRatePercent': 42,
       'eggSteps': 600,
@@ -14375,10 +18481,13 @@ module.exports = {
         'speed': 85,
       },
       'attack': 82,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['117'],
+          '2': [117],
+          '3': [229],
         },
+        '2': ['Fullmoon Island'],
       },
       'catchRatePercent': 42,
       'eggSteps': 600,
@@ -14394,6 +18503,14 @@ module.exports = {
       'levelType': 3,
       'exp': 140,
       'catchRate': 150,
+      'evolutions': [
+        {
+          'basePokemon': 'Roselia',
+          'type': [1],
+          'stone': 16,
+          'evolvedPokemon': 'Roserade',
+        },
+      ],
       'base': {
         'hitpoints': 50,
         'attack': 60,
@@ -14403,16 +18520,31 @@ module.exports = {
         'speed': 65,
       },
       'attack': 80,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            208,
+            209,
+            210,
+            212,
+            221,
+            224,
+            225,
+            229,
+            230,
+          ],
+        },
+        '2': ['Flower Paradise'],
         '4': [
           {
             'basePokemon': 'Budew',
             'type': [
-              0,
+              1,
               2,
             ],
+            'stone': 11,
             'evolvedPokemon': 'Roselia',
-            'level': 100,
             'startHour': 6,
             'endHour': 18,
           },
@@ -14447,9 +18579,10 @@ module.exports = {
         'speed': 40,
       },
       'attack': 50,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['110'],
+          '2': [110],
         },
       },
       'catchRatePercent': 58,
@@ -14472,6 +18605,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 121,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -14513,11 +18647,12 @@ module.exports = {
         'speed': 65,
       },
       'attack': 48,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '118',
-            '119',
+            118,
+            119,
           ],
         },
       },
@@ -14544,22 +18679,27 @@ module.exports = {
         'speed': 95,
       },
       'attack': 110,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '103',
-            '118',
-            '122',
-            '124',
-            '125',
-            '126',
-            '127',
-            '129',
-            '130',
-            '131',
-            '132',
-            '133',
-            '134',
+            103,
+            118,
+            122,
+            124,
+            125,
+            126,
+            127,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+          ],
+          '3': [
+            213,
+            222,
           ],
         },
         '4': [
@@ -14599,31 +18739,36 @@ module.exports = {
         'speed': 60,
       },
       'attack': 93,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '103',
-            '105',
-            '106',
-            '107',
-            '108',
-            '109',
-            '110',
-            '115',
-            '121',
-            '122',
-            '123',
-            '124',
-            '125',
-            '126',
-            '127',
-            '128',
-            '129',
-            '130',
-            '131',
-            '132',
-            '133',
-            '134',
+            103,
+            110,
+            115,
+            105,
+            106,
+            107,
+            108,
+            109,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+          ],
+          '3': [
+            223,
+            230,
           ],
         },
         '2': [
@@ -14652,9 +18797,14 @@ module.exports = {
         'speed': 60,
       },
       'attack': 148,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['129'],
+          '2': [129],
+          '3': [
+            223,
+            230,
+          ],
         },
         '4': [
           {
@@ -14696,13 +18846,16 @@ module.exports = {
         'speed': 35,
       },
       'attack': 58,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['112'],
+          '2': [112],
+          '3': [227],
         },
         '2': [
           'Fiery Path',
           'Jagged Pass',
+          'Stark Mountain',
         ],
         '3': [
           'Mt. Chimney',
@@ -14732,7 +18885,12 @@ module.exports = {
         'speed': 40,
       },
       'attack': 129,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [227],
+        },
+        '2': ['Stark Mountain'],
         '4': [
           {
             'basePokemon': 'Numel',
@@ -14762,6 +18920,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 120,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Fiery Path'],
       },
@@ -14793,6 +18952,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 48,
+      'nativeRegion': 2,
       'locations': {
         '2': ['Jagged Pass'],
         '3': ['Jagged Pass'],
@@ -14817,6 +18977,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 101,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -14847,9 +19008,10 @@ module.exports = {
         'speed': 60,
       },
       'attack': 69,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['113'],
+          '2': [113],
         },
       },
       'catchRatePercent': 63,
@@ -14880,9 +19042,10 @@ module.exports = {
         'speed': 10,
       },
       'attack': 52,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['111'],
+          '2': [111],
         },
       },
       'catchRatePercent': 63,
@@ -14916,6 +19079,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 58,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -14949,6 +19113,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 134,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -14987,9 +19152,11 @@ module.exports = {
         'speed': 35,
       },
       'attack': 69,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['111'],
+          '2': [111],
+          '3': [228],
         },
       },
       'catchRatePercent': 51,
@@ -15015,7 +19182,11 @@ module.exports = {
         'speed': 55,
       },
       'attack': 133,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [228],
+        },
         '4': [
           {
             'basePokemon': 'Cacnea',
@@ -15056,12 +19227,14 @@ module.exports = {
         'speed': 50,
       },
       'attack': 43,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '114',
-            '115',
+            114,
+            115,
           ],
+          '3': [210],
         },
       },
       'catchRatePercent': 63,
@@ -15087,6 +19260,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 112,
+      'nativeRegion': 2,
       'locations': {
         '2': ['Sky Pillar'],
         '4': [
@@ -15118,9 +19292,10 @@ module.exports = {
         'speed': 90,
       },
       'attack': 105,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['114'],
+          '2': [114],
         },
       },
       'catchRatePercent': 29,
@@ -15143,9 +19318,10 @@ module.exports = {
         'speed': 65,
       },
       'attack': 121,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['114'],
+          '2': [114],
         },
       },
       'catchRatePercent': 29,
@@ -15171,6 +19347,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 112,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Meteor Falls'],
       },
@@ -15197,6 +19374,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 112,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Meteor Falls'],
       },
@@ -15231,17 +19409,30 @@ module.exports = {
         'speed': 60,
       },
       'attack': 44,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '111',
-            '114',
-            '120',
+            111,
+            114,
+            120,
+          ],
+          '3': [
+            205,
+            208,
+            210,
+            225,
+            227,
+            228,
           ],
         },
         '2': [
           'Meteor Falls',
           'Victory Road Hoenn',
+          'Oreburgh Gate',
+          'Ravaged Path',
+          'Mt. Coronet South',
+          'Mt. Coronet North',
         ],
       },
       'catchRatePercent': 51,
@@ -15267,8 +19458,23 @@ module.exports = {
         'speed': 60,
       },
       'attack': 127,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            205,
+            208,
+            210,
+            225,
+            227,
+            228,
+          ],
+        },
         '2': ['Victory Road Hoenn'],
+        '3': [
+          'Oreburgh Gate',
+          'Ravaged Path',
+        ],
         '4': [
           {
             'basePokemon': 'Barboach',
@@ -15306,11 +19512,12 @@ module.exports = {
         'speed': 35,
       },
       'attack': 53,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '102',
-            '117',
+            102,
+            117,
           ],
         },
       },
@@ -15337,6 +19544,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 122,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -15378,9 +19586,10 @@ module.exports = {
         'speed': 55,
       },
       'attack': 39,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['111'],
+          '2': [111],
         },
       },
       'catchRatePercent': 63,
@@ -15406,6 +19615,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 107,
+      'nativeRegion': 2,
       'locations': {
         '2': ['Sky Pillar'],
         '4': [
@@ -15448,6 +19658,7 @@ module.exports = {
         'speed': 23,
       },
       'attack': 66,
+      'nativeRegion': 2,
       'locations': {
         '8': ['Root Fossil'],
       },
@@ -15474,6 +19685,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 135,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -15515,6 +19727,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 57,
+      'nativeRegion': 2,
       'locations': {
         '8': ['Claw Fossil'],
       },
@@ -15541,6 +19754,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 135,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -15566,7 +19780,7 @@ module.exports = {
         {
           'basePokemon': 'Feebas',
           'type': [1],
-          'stone': 6,
+          'stone': 24,
           'evolvedPokemon': 'Milotic',
         },
       ],
@@ -15579,7 +19793,9 @@ module.exports = {
         'speed': 80,
       },
       'attack': 10,
+      'nativeRegion': 2,
       'locations': {
+        '3': ['Mt. Coronet North'],
         '5': ['Water'],
       },
       'catchRatePercent': 63,
@@ -15602,12 +19818,13 @@ module.exports = {
         'speed': 81,
       },
       'attack': 139,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
             'basePokemon': 'Feebas',
             'type': [1],
-            'stone': 6,
+            'stone': 24,
             'evolvedPokemon': 'Milotic',
           },
         ],
@@ -15632,9 +19849,88 @@ module.exports = {
         'speed': 70,
       },
       'attack': 92,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['119'],
+          '2': [119],
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 351.1,
+      'name': 'Castform (sunny)',
+      'type': [1],
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 147,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 70,
+        'attack': 70,
+        'specialAttack': 70,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 70,
+      },
+      'attack': 92,
+      'nativeRegion': 2,
+      'locations': {
+        '0': {
+          '2': [119],
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 351.2,
+      'name': 'Castform (rainy)',
+      'type': [2],
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 147,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 70,
+        'attack': 70,
+        'specialAttack': 70,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 70,
+      },
+      'attack': 92,
+      'nativeRegion': 2,
+      'locations': {
+        '0': {
+          '2': [119],
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 351.3,
+      'name': 'Castform (snowy)',
+      'type': [5],
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 147,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 70,
+        'attack': 70,
+        'specialAttack': 70,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 70,
+      },
+      'attack': 92,
+      'nativeRegion': 2,
+      'locations': {
+        '0': {
+          '2': [119],
         },
       },
       'catchRatePercent': 17,
@@ -15657,14 +19953,15 @@ module.exports = {
         'speed': 40,
       },
       'attack': 98,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '118',
-            '119',
-            '120',
-            '121',
-            '123',
+            118,
+            119,
+            120,
+            121,
+            123,
           ],
         },
       },
@@ -15696,11 +19993,12 @@ module.exports = {
         'speed': 45,
       },
       'attack': 50,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '121',
-            '123',
+            121,
+            123,
           ],
         },
         '2': ['Mt. Pyre'],
@@ -15726,7 +20024,15 @@ module.exports = {
         'speed': 65,
       },
       'attack': 115,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            225,
+            226,
+            227,
+          ],
+        },
         '2': ['Sky Pillar'],
         '4': [
           {
@@ -15765,8 +20071,15 @@ module.exports = {
         'speed': 25,
       },
       'attack': 27,
+      'nativeRegion': 2,
       'locations': {
-        '2': ['Mt. Pyre'],
+        '0': {
+          '3': [209],
+        },
+        '2': [
+          'Mt. Pyre',
+          'Distortion World',
+        ],
         '3': ['Mt. Pyre'],
       },
       'catchRatePercent': 51,
@@ -15780,6 +20093,14 @@ module.exports = {
       'levelType': 1,
       'exp': 159,
       'catchRate': 90,
+      'evolutions': [
+        {
+          'basePokemon': 'Dusclops',
+          'type': [1],
+          'stone': 21,
+          'evolvedPokemon': 'Dusknoir',
+        },
+      ],
       'base': {
         'hitpoints': 40,
         'attack': 70,
@@ -15789,8 +20110,12 @@ module.exports = {
         'speed': 25,
       },
       'attack': 82,
+      'nativeRegion': 2,
       'locations': {
-        '3': ['Sky Pillar'],
+        '3': [
+          'Sky Pillar',
+          'Distortion World',
+        ],
         '4': [
           {
             'basePokemon': 'Duskull',
@@ -15823,9 +20148,10 @@ module.exports = {
         'speed': 51,
       },
       'attack': 117,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['119'],
+          '2': [119],
         },
         '5': ['Grass'],
       },
@@ -15849,14 +20175,21 @@ module.exports = {
         'speed': 65,
       },
       'attack': 102,
+      'nativeRegion': 2,
       'locations': {
+        '2': ['Distortion World'],
         '3': ['Mt. Pyre'],
         '4': [
           {
             'basePokemon': 'Chingling',
-            'type': [0],
+            'type': [
+              1,
+              2,
+            ],
+            'stone': 11,
             'evolvedPokemon': 'Chimecho',
-            'level': 100,
+            'startHour': 18,
+            'endHour': 6,
           },
         ],
       },
@@ -15880,10 +20213,13 @@ module.exports = {
         'speed': 75,
       },
       'attack': 114,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['120'],
+          '2': [120],
         },
+        '2': ['Hall of Origin'],
+        '3': ['Mt. Coronet South'],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -15914,9 +20250,10 @@ module.exports = {
         'speed': 23,
       },
       'attack': 31,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['130'],
+          '2': [130],
         },
         '6': ['Wobbuffet'],
       },
@@ -15938,6 +20275,12 @@ module.exports = {
           'evolvedPokemon': 'Glalie',
           'level': 42,
         },
+        {
+          'basePokemon': 'Snorunt',
+          'type': [1],
+          'stone': 14,
+          'evolvedPokemon': 'Froslass',
+        },
       ],
       'base': {
         'hitpoints': 50,
@@ -15948,7 +20291,15 @@ module.exports = {
         'speed': 50,
       },
       'attack': 48,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            216,
+            217,
+          ],
+        },
+        '2': ['Lake Acuity'],
         '3': ['Shoal Cave'],
       },
       'catchRatePercent': 51,
@@ -15971,6 +20322,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -16012,7 +20364,14 @@ module.exports = {
         'speed': 25,
       },
       'attack': 51,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            226,
+            230,
+          ],
+        },
         '2': ['Shoal Cave'],
       },
       'catchRatePercent': 63,
@@ -16046,7 +20405,14 @@ module.exports = {
         'speed': 45,
       },
       'attack': 98,
+      'nativeRegion': 2,
       'locations': {
+        '0': {
+          '3': [
+            226,
+            230,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Spheal',
@@ -16079,6 +20445,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 157,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -16104,13 +20471,13 @@ module.exports = {
         {
           'basePokemon': 'Clamperl',
           'type': [1],
-          'stone': 6,
+          'stone': 12,
           'evolvedPokemon': 'Huntail',
         },
         {
           'basePokemon': 'Clamperl',
           'type': [1],
-          'stone': 6,
+          'stone': 13,
           'evolvedPokemon': 'Gorebyss',
         },
       ],
@@ -16123,11 +20490,16 @@ module.exports = {
         'speed': 32,
       },
       'attack': 60,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '124',
-            '126',
+            124,
+            126,
+          ],
+          '3': [
+            219,
+            221,
           ],
         },
         '5': ['Water'],
@@ -16152,12 +20524,13 @@ module.exports = {
         'speed': 52,
       },
       'attack': 123,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
             'basePokemon': 'Clamperl',
             'type': [1],
-            'stone': 6,
+            'stone': 12,
             'evolvedPokemon': 'Huntail',
           },
         ],
@@ -16182,12 +20555,13 @@ module.exports = {
         'speed': 52,
       },
       'attack': 122,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
             'basePokemon': 'Clamperl',
             'type': [1],
-            'stone': 6,
+            'stone': 13,
             'evolvedPokemon': 'Gorebyss',
           },
         ],
@@ -16215,12 +20589,14 @@ module.exports = {
         'speed': 55,
       },
       'attack': 113,
+      'nativeRegion': 2,
       'locations': {
         '0': {
           '2': [
-            '124',
-            '126',
+            124,
+            126,
           ],
+          '3': [226],
         },
       },
       'catchRatePercent': 11,
@@ -16243,10 +20619,16 @@ module.exports = {
         'speed': 97,
       },
       'attack': 38,
+      'nativeRegion': 2,
       'locations': {
         '0': {
-          '2': ['128'],
+          '2': [128],
+          '3': [224],
         },
+        '2': [
+          'Fullmoon Island',
+          'Newmoon Island',
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -16276,6 +20658,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 46,
+      'nativeRegion': 2,
       'locations': {
         '5': ['Dragon'],
       },
@@ -16307,6 +20690,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 94,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -16341,6 +20725,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 195,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -16383,6 +20768,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 42,
+      'nativeRegion': 2,
       'locations': {
         '7': ['Mossdeep City'],
       },
@@ -16417,6 +20803,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 86,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -16450,6 +20837,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 188,
+      'nativeRegion': 2,
       'locations': {
         '4': [
           {
@@ -16480,6 +20868,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 135,
+      'nativeRegion': 2,
       'locations': {
         '1': ['2'],
       },
@@ -16503,6 +20892,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 135,
+      'nativeRegion': 2,
       'locations': {
         '1': ['2'],
       },
@@ -16526,6 +20916,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 147,
+      'nativeRegion': 2,
       'locations': {
         '1': ['2'],
       },
@@ -16552,6 +20943,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 162,
+      'nativeRegion': 2,
       'locations': {
         '1': ['2'],
       },
@@ -16578,6 +20970,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 173,
+      'nativeRegion': 2,
       'locations': {
         '1': ['2'],
       },
@@ -16601,6 +20994,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 233,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Cave of Origin'],
       },
@@ -16624,6 +21018,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 233,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Cave of Origin'],
       },
@@ -16650,6 +21045,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 262,
+      'nativeRegion': 2,
       'locations': {
         '3': ['Sky Pillar'],
       },
@@ -16676,6 +21072,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'nativeRegion': 2,
       'locations': {
         '1': ['2'],
       },
@@ -16699,6 +21096,73 @@ module.exports = {
         'speed': 150,
       },
       'attack': 144,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 386.1,
+      'name': 'Deoxys (attack)',
+      'type': [10],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 50,
+        'attack': 180,
+        'specialAttack': 180,
+        'defense': 20,
+        'specialDefense': 20,
+        'speed': 150,
+      },
+      'attack': 122,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 386.2,
+      'name': 'Deoxys (defense)',
+      'type': [10],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 50,
+        'attack': 70,
+        'specialAttack': 70,
+        'defense': 160,
+        'specialDefense': 160,
+        'speed': 90,
+      },
+      'attack': 116,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 386.3,
+      'name': 'Deoxys (speed)',
+      'type': [10],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 50,
+        'attack': 95,
+        'specialAttack': 95,
+        'defense': 90,
+        'specialDefense': 90,
+        'speed': 180,
+      },
+      'attack': 124,
+      'nativeRegion': 3,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -16728,7 +21192,10 @@ module.exports = {
         'speed': 31,
       },
       'attack': 58,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Grass'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -16757,6 +21224,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 94,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -16790,6 +21258,7 @@ module.exports = {
         'speed': 56,
       },
       'attack': 154,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -16828,7 +21297,10 @@ module.exports = {
         'speed': 61,
       },
       'attack': 50,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Fire'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -16860,6 +21332,7 @@ module.exports = {
         'speed': 81,
       },
       'attack': 86,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -16893,6 +21366,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 143,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -16931,7 +21405,10 @@ module.exports = {
         'speed': 40,
       },
       'attack': 56,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Water'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -16960,6 +21437,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 91,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -16993,6 +21471,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 155,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17034,7 +21513,20 @@ module.exports = {
         'speed': 60,
       },
       'attack': 29,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            201,
+            202,
+            203,
+            204,
+            209,
+            212,
+          ],
+        },
+        '2': ['Lake Verity'],
+      },
       'catchRatePercent': 63,
       'eggSteps': 600,
     },
@@ -17066,7 +21558,17 @@ module.exports = {
         'speed': 80,
       },
       'attack': 55,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            209,
+            210,
+            212,
+            215,
+          ],
+        },
+        '2': ['Lake Valor'],
         '4': [
           {
             'basePokemon': 'Starly',
@@ -17099,6 +21601,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 111,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17137,7 +21640,24 @@ module.exports = {
         'speed': 31,
       },
       'attack': 37,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            201,
+            202,
+            203,
+            204,
+            205,
+            208,
+            211,
+          ],
+        },
+        '2': [
+          'Eterna Forest',
+          'Lake Verity',
+        ],
+      },
       'catchRatePercent': 63,
       'eggSteps': 600,
     },
@@ -17161,7 +21681,19 @@ module.exports = {
         'speed': 71,
       },
       'attack': 90,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            208,
+            209,
+            210,
+          ],
+        },
+        '2': [
+          'Lake Valor',
+          'Lake Acuity',
+        ],
         '4': [
           {
             'basePokemon': 'Bidoof',
@@ -17199,7 +21731,21 @@ module.exports = {
         'speed': 25,
       },
       'attack': 19,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+          ],
+        },
+        '2': ['Eterna Forest'],
+      },
       'catchRatePercent': 63,
       'eggSteps': 600,
     },
@@ -17220,7 +21766,16 @@ module.exports = {
         'speed': 65,
       },
       'attack': 81,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            206,
+            210,
+            212,
+            215,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Kricketot',
@@ -17258,7 +21813,16 @@ module.exports = {
         'speed': 45,
       },
       'attack': 39,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            202,
+            203,
+            204,
+          ],
+        },
+      },
       'catchRatePercent': 60,
       'eggSteps': 800,
     },
@@ -17287,7 +21851,11 @@ module.exports = {
         'speed': 60,
       },
       'attack': 73,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [222],
+        },
         '4': [
           {
             'basePokemon': 'Shinx',
@@ -17317,6 +21885,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 153,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17345,11 +21914,11 @@ module.exports = {
         {
           'basePokemon': 'Budew',
           'type': [
-            0,
+            1,
             2,
           ],
+          'stone': 11,
           'evolvedPokemon': 'Roselia',
-          'level': 100,
           'startHour': 6,
           'endHour': 18,
         },
@@ -17364,7 +21933,17 @@ module.exports = {
         'speed': 55,
       },
       'attack': 35,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            204,
+            205,
+            208,
+            212,
+          ],
+        },
+        '2': ['Eterna Forest'],
         '6': ['Roselia'],
       },
       'catchRatePercent': 63,
@@ -17390,7 +21969,17 @@ module.exports = {
         'speed': 90,
       },
       'attack': 122,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Roselia',
+            'type': [1],
+            'stone': 16,
+            'evolvedPokemon': 'Roserade',
+          },
+        ],
+      },
       'catchRatePercent': 25,
       'eggSteps': 800,
     },
@@ -17419,7 +22008,10 @@ module.exports = {
         'speed': 58,
       },
       'attack': 58,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '8': ['Skull Fossil'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1200,
     },
@@ -17440,6 +22032,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 137,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17481,7 +22074,10 @@ module.exports = {
         'speed': 30,
       },
       'attack': 42,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '8': ['Armor Fossil'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1200,
     },
@@ -17505,6 +22101,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 85,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17520,7 +22117,7 @@ module.exports = {
     },
     {
       'id': 412,
-      'name': 'Burmy',
+      'name': 'Burmy (plant)',
       'type': [11],
       'eggCycles': 15,
       'levelType': 2,
@@ -17528,9 +22125,15 @@ module.exports = {
       'catchRate': 120,
       'evolutions': [
         {
-          'basePokemon': 'Burmy',
+          'basePokemon': 'Burmy (plant)',
           'type': [0],
-          'evolvedPokemon': 'Wormadam',
+          'evolvedPokemon': 'Wormadam (plant)',
+          'level': 20,
+        },
+        {
+          'basePokemon': 'Burmy (plant)',
+          'type': [0],
+          'evolvedPokemon': 'Mothim',
           'level': 20,
         },
       ],
@@ -17543,13 +22146,88 @@ module.exports = {
         'speed': 36,
       },
       'attack': 25,
+      'nativeRegion': 3,
+      'locations': {
+        '7': ['Pal Park'],
+      },
+      'catchRatePercent': 36,
+      'eggSteps': 600,
+    },
+    {
+      'id': 412.1,
+      'name': 'Burmy (sand)',
+      'type': [11],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 45,
+      'catchRate': 120,
+      'evolutions': [
+        {
+          'basePokemon': 'Burmy (sand)',
+          'type': [0],
+          'evolvedPokemon': 'Wormadam (sand)',
+          'level': 20,
+        },
+        {
+          'basePokemon': 'Burmy (sand)',
+          'type': [0],
+          'evolvedPokemon': 'Mothim',
+          'level': 20,
+        },
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 29,
+        'specialAttack': 29,
+        'defense': 45,
+        'specialDefense': 45,
+        'speed': 36,
+      },
+      'attack': 25,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 600,
+    },
+    {
+      'id': 412.2,
+      'name': 'Burmy (trash)',
+      'type': [11],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 45,
+      'catchRate': 120,
+      'evolutions': [
+        {
+          'basePokemon': 'Burmy (trash)',
+          'type': [0],
+          'evolvedPokemon': 'Wormadam (trash)',
+          'level': 20,
+        },
+        {
+          'basePokemon': 'Burmy (trash)',
+          'type': [0],
+          'evolvedPokemon': 'Mothim',
+          'level': 20,
+        },
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 29,
+        'specialAttack': 29,
+        'defense': 45,
+        'specialDefense': 45,
+        'speed': 36,
+      },
+      'attack': 25,
+      'nativeRegion': 3,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 600,
     },
     {
       'id': 413,
-      'name': 'Wormadam',
+      'name': 'Wormadam (plant)',
       'type': [
         11,
         4,
@@ -17567,12 +22245,81 @@ module.exports = {
         'speed': 36,
       },
       'attack': 91,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
-            'basePokemon': 'Burmy',
+            'basePokemon': 'Burmy (plant)',
             'type': [0],
-            'evolvedPokemon': 'Wormadam',
+            'evolvedPokemon': 'Wormadam (plant)',
+            'level': 20,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 413.1,
+      'name': 'Wormadam (sand)',
+      'type': [
+        11,
+        8,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 148,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 60,
+        'attack': 79,
+        'specialAttack': 59,
+        'defense': 105,
+        'specialDefense': 85,
+        'speed': 36,
+      },
+      'attack': 91,
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Burmy (sand)',
+            'type': [0],
+            'evolvedPokemon': 'Wormadam (sand)',
+            'level': 20,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 413.2,
+      'name': 'Wormadam (trash)',
+      'type': [
+        11,
+        16,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 148,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 60,
+        'attack': 69,
+        'specialAttack': 69,
+        'defense': 95,
+        'specialDefense': 95,
+        'speed': 36,
+      },
+      'attack': 93,
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Burmy (trash)',
+            'type': [0],
+            'evolvedPokemon': 'Wormadam (trash)',
             'level': 20,
           },
         ],
@@ -17600,7 +22347,29 @@ module.exports = {
         'speed': 66,
       },
       'attack': 103,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Burmy (plant)',
+            'type': [0],
+            'evolvedPokemon': 'Mothim',
+            'level': 20,
+          },
+          {
+            'basePokemon': 'Burmy (sand)',
+            'type': [0],
+            'evolvedPokemon': 'Mothim',
+            'level': 20,
+          },
+          {
+            'basePokemon': 'Burmy (trash)',
+            'type': [0],
+            'evolvedPokemon': 'Mothim',
+            'level': 20,
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 600,
     },
@@ -17632,7 +22401,10 @@ module.exports = {
         'speed': 70,
       },
       'attack': 23,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '7': ['Pal Park'],
+      },
       'catchRatePercent': 36,
       'eggSteps': 600,
     },
@@ -17656,6 +22428,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 119,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17686,7 +22459,10 @@ module.exports = {
         'speed': 95,
       },
       'attack': 64,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Electric'],
+      },
       'catchRatePercent': 53,
       'eggSteps': 400,
     },
@@ -17715,7 +22491,16 @@ module.exports = {
         'speed': 85,
       },
       'attack': 55,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            205,
+            213,
+            224,
+          ],
+        },
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -17736,7 +22521,19 @@ module.exports = {
         'speed': 115,
       },
       'attack': 122,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            213,
+            218,
+            221,
+            222,
+            224,
+            230,
+          ],
+        },
+        '2': ['Victory Road Sinnoh'],
         '4': [
           {
             'basePokemon': 'Buizel',
@@ -17761,7 +22558,13 @@ module.exports = {
         {
           'basePokemon': 'Cherubi',
           'type': [0],
-          'evolvedPokemon': 'Cherrim',
+          'evolvedPokemon': 'Cherrim (overcast)',
+          'level': 25,
+        },
+        {
+          'basePokemon': 'Cherubi',
+          'type': [0],
+          'evolvedPokemon': 'Cherrim (sunshine)',
           'level': 25,
         },
       ],
@@ -17774,13 +22577,16 @@ module.exports = {
         'speed': 35,
       },
       'attack': 41,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '7': ['Pal Park'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
     {
       'id': 421,
-      'name': 'Cherrim',
+      'name': 'Cherrim (overcast)',
       'type': [4],
       'eggCycles': 20,
       'levelType': 2,
@@ -17795,12 +22601,44 @@ module.exports = {
         'speed': 85,
       },
       'attack': 98,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
             'basePokemon': 'Cherubi',
             'type': [0],
-            'evolvedPokemon': 'Cherrim',
+            'evolvedPokemon': 'Cherrim (overcast)',
+            'level': 25,
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 421.1,
+      'name': 'Cherrim (sunshine)',
+      'type': [4],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 158,
+      'catchRate': 75,
+      'base': {
+        'hitpoints': 70,
+        'attack': 60,
+        'specialAttack': 87,
+        'defense': 70,
+        'specialDefense': 78,
+        'speed': 85,
+      },
+      'attack': 98,
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Cherubi',
+            'type': [0],
+            'evolvedPokemon': 'Cherrim (sunshine)',
             'level': 25,
           },
         ],
@@ -17810,7 +22648,7 @@ module.exports = {
     },
     {
       'id': 422,
-      'name': 'Shellos',
+      'name': 'Shellos (west)',
       'type': [2],
       'eggCycles': 20,
       'levelType': 2,
@@ -17818,9 +22656,9 @@ module.exports = {
       'catchRate': 190,
       'evolutions': [
         {
-          'basePokemon': 'Shellos',
+          'basePokemon': 'Shellos (west)',
           'type': [0],
-          'evolvedPokemon': 'Gastrodon',
+          'evolvedPokemon': 'Gastrodon (west)',
           'level': 30,
         },
       ],
@@ -17833,13 +22671,59 @@ module.exports = {
         'speed': 34,
       },
       'attack': 62,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            205,
+            218,
+            221,
+          ],
+        },
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 422.1,
+      'name': 'Shellos (east)',
+      'type': [2],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 65,
+      'catchRate': 190,
+      'evolutions': [
+        {
+          'basePokemon': 'Shellos (east)',
+          'type': [0],
+          'evolvedPokemon': 'Gastrodon (east)',
+          'level': 30,
+        },
+      ],
+      'base': {
+        'hitpoints': 76,
+        'attack': 48,
+        'specialAttack': 57,
+        'defense': 48,
+        'specialDefense': 62,
+        'speed': 34,
+      },
+      'attack': 62,
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            213,
+            224,
+          ],
+        },
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
     {
       'id': 423,
-      'name': 'Gastrodon',
+      'name': 'Gastrodon (west)',
       'type': [
         2,
         8,
@@ -17857,12 +22741,62 @@ module.exports = {
         'speed': 39,
       },
       'attack': 142,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            205,
+            218,
+            221,
+          ],
+        },
         '4': [
           {
-            'basePokemon': 'Shellos',
+            'basePokemon': 'Shellos (west)',
             'type': [0],
-            'evolvedPokemon': 'Gastrodon',
+            'evolvedPokemon': 'Gastrodon (west)',
+            'level': 30,
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 423.1,
+      'name': 'Gastrodon (east)',
+      'type': [
+        2,
+        8,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 166,
+      'catchRate': 75,
+      'base': {
+        'hitpoints': 111,
+        'attack': 83,
+        'specialAttack': 92,
+        'defense': 68,
+        'specialDefense': 82,
+        'speed': 39,
+      },
+      'attack': 142,
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            213,
+            222,
+            224,
+            230,
+          ],
+        },
+        '4': [
+          {
+            'basePokemon': 'Shellos (east)',
+            'type': [0],
+            'evolvedPokemon': 'Gastrodon (east)',
             'level': 30,
           },
         ],
@@ -17887,7 +22821,17 @@ module.exports = {
         'speed': 115,
       },
       'attack': 106,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Aipom',
+            'type': [0],
+            'evolvedPokemon': 'Ambipom',
+            'level': 32,
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -17919,7 +22863,12 @@ module.exports = {
         'speed': 70,
       },
       'attack': 65,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [205],
+        },
+      },
       'catchRatePercent': 37,
       'eggSteps': 1200,
     },
@@ -17943,6 +22892,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 140,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -17967,9 +22917,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Buneary',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Lopunny',
-          'level': 100,
         },
       ],
       'base': {
@@ -17981,7 +22931,10 @@ module.exports = {
         'speed': 85,
       },
       'attack': 57,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '2': ['Eterna Forest'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -18002,13 +22955,14 @@ module.exports = {
         'speed': 105,
       },
       'attack': 95,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
             'basePokemon': 'Buneary',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Lopunny',
-            'level': 100,
           },
         ],
       },
@@ -18032,7 +22986,17 @@ module.exports = {
         'speed': 105,
       },
       'attack': 105,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Misdreavus',
+            'type': [1],
+            'stone': 15,
+            'evolvedPokemon': 'Mismagius',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
@@ -18056,7 +23020,17 @@ module.exports = {
         'speed': 71,
       },
       'attack': 152,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Murkrow',
+            'type': [1],
+            'stone': 15,
+            'evolvedPokemon': 'Honchkrow',
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -18085,7 +23059,16 @@ module.exports = {
         'speed': 85,
       },
       'attack': 44,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            218,
+            222,
+          ],
+        },
+        '2': ['Spear Pillar'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -18106,7 +23089,14 @@ module.exports = {
         'speed': 112,
       },
       'attack': 94,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            222,
+            229,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Glameow',
@@ -18130,9 +23120,14 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Chingling',
-          'type': [0],
+          'type': [
+            1,
+            2,
+          ],
+          'stone': 11,
           'evolvedPokemon': 'Chimecho',
-          'level': 100,
+          'startHour': 18,
+          'endHour': 6,
         },
       ],
       'baby': true,
@@ -18145,7 +23140,16 @@ module.exports = {
         'speed': 45,
       },
       'attack': 41,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [211],
+        },
+        '2': [
+          'Mt. Coronet South',
+          'Mt. Coronet North',
+          'Distortion World',
+        ],
         '6': ['Chimecho'],
       },
       'catchRatePercent': 36,
@@ -18179,7 +23183,17 @@ module.exports = {
         'speed': 74,
       },
       'attack': 54,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            206,
+            214,
+            221,
+          ],
+        },
+        '2': ['Spear Pillar'],
+      },
       'catchRatePercent': 58,
       'eggSteps': 800,
     },
@@ -18203,7 +23217,14 @@ module.exports = {
         'speed': 84,
       },
       'attack': 124,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            221,
+            225,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Stunky',
@@ -18244,7 +23265,22 @@ module.exports = {
         'speed': 23,
       },
       'attack': 33,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            206,
+            211,
+          ],
+        },
+        '2': [
+          'Mt. Coronet South',
+          'Mt. Coronet North',
+          'Distortion World',
+          'Spear Pillar',
+        ],
+        '3': ['Wayward Cave'],
+      },
       'catchRatePercent': 63,
       'eggSteps': 800,
     },
@@ -18268,7 +23304,12 @@ module.exports = {
         'speed': 33,
       },
       'attack': 130,
+      'nativeRegion': 3,
       'locations': {
+        '3': [
+          'Mt. Coronet South',
+          'Distortion World',
+        ],
         '4': [
           {
             'basePokemon': 'Bronzor',
@@ -18307,7 +23348,14 @@ module.exports = {
         'speed': 10,
       },
       'attack': 29,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            209,
+            210,
+          ],
+        },
         '6': ['Sudowoodo'],
       },
       'catchRatePercent': 63,
@@ -18342,7 +23390,11 @@ module.exports = {
         'speed': 60,
       },
       'attack': 30,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [209],
+        },
         '6': ['Mr. Mime'],
       },
       'catchRatePercent': 41,
@@ -18374,6 +23426,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 10,
+      'nativeRegion': 3,
       'locations': {
         '6': ['Chansey'],
       },
@@ -18400,7 +23453,17 @@ module.exports = {
         'speed': 91,
       },
       'attack': 88,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            213,
+            218,
+            222,
+            224,
+          ],
+        },
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -18424,7 +23487,10 @@ module.exports = {
         'speed': 35,
       },
       'attack': 118,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '7': ['Solaceon Town'],
+      },
       'catchRatePercent': 31,
       'eggSteps': 1200,
     },
@@ -18456,7 +23522,10 @@ module.exports = {
         'speed': 42,
       },
       'attack': 51,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Dragon'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1600,
     },
@@ -18488,7 +23557,9 @@ module.exports = {
         'speed': 82,
       },
       'attack': 83,
+      'nativeRegion': 3,
       'locations': {
+        '3': ['Victory Road Sinnoh'],
         '4': [
           {
             'basePokemon': 'Gible',
@@ -18497,6 +23568,7 @@ module.exports = {
             'level': 24,
           },
         ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -18521,7 +23593,9 @@ module.exports = {
         'speed': 102,
       },
       'attack': 186,
+      'nativeRegion': 3,
       'locations': {
+        '2': ['Hall of Origin'],
         '4': [
           {
             'basePokemon': 'Gabite',
@@ -18530,6 +23604,7 @@ module.exports = {
             'level': 48,
           },
         ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -18545,9 +23620,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Munchlax',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Snorlax',
-          'level': 100,
         },
       ],
       'baby': true,
@@ -18560,6 +23635,7 @@ module.exports = {
         'speed': 5,
       },
       'attack': 88,
+      'nativeRegion': 3,
       'locations': {
         '6': ['Snorlax'],
       },
@@ -18577,9 +23653,14 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Riolu',
-          'type': [0],
+          'type': [
+            1,
+            2,
+          ],
+          'stone': 11,
           'evolvedPokemon': 'Lucario',
-          'level': 100,
+          'startHour': 6,
+          'endHour': 18,
         },
       ],
       'base': {
@@ -18591,7 +23672,10 @@ module.exports = {
         'speed': 60,
       },
       'attack': 39,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Fighting'],
+      },
       'catchRatePercent': 25,
       'eggSteps': 1000,
     },
@@ -18615,13 +23699,19 @@ module.exports = {
         'speed': 90,
       },
       'attack': 145,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
             'basePokemon': 'Riolu',
-            'type': [0],
+            'type': [
+              1,
+              2,
+            ],
+            'stone': 11,
             'evolvedPokemon': 'Lucario',
-            'level': 100,
+            'startHour': 6,
+            'endHour': 18,
           },
         ],
       },
@@ -18653,7 +23743,12 @@ module.exports = {
         'speed': 32,
       },
       'attack': 60,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [210],
+        },
+      },
       'catchRatePercent': 40,
       'eggSteps': 1200,
     },
@@ -18674,7 +23769,11 @@ module.exports = {
         'speed': 47,
       },
       'attack': 155,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [228],
+        },
         '4': [
           {
             'basePokemon': 'Hippopotas',
@@ -18715,7 +23814,10 @@ module.exports = {
         'speed': 65,
       },
       'attack': 42,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '7': ['Pastoria City'],
+      },
       'catchRatePercent': 36,
       'eggSteps': 800,
     },
@@ -18739,6 +23841,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 111,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -18780,7 +23883,10 @@ module.exports = {
         'speed': 50,
       },
       'attack': 51,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '2': ['Spear Pillar'],
+      },
       'catchRatePercent': 40,
       'eggSteps': 400,
     },
@@ -18804,6 +23910,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 131,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -18834,7 +23941,10 @@ module.exports = {
         'speed': 46,
       },
       'attack': 124,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '5': ['Grass'],
+      },
       'catchRatePercent': 53,
       'eggSteps': 1000,
     },
@@ -18863,7 +23973,20 @@ module.exports = {
         'speed': 66,
       },
       'attack': 52,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            205,
+            218,
+            219,
+            220,
+            221,
+          ],
+        },
+        '2': ['Iron Island'],
+        '5': ['Water'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -18884,7 +24007,17 @@ module.exports = {
         'speed': 91,
       },
       'attack': 99,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            205,
+            218,
+            219,
+            220,
+            221,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Finneon',
@@ -18926,7 +24059,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 41,
+      'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [223],
+        },
         '6': ['Mantine'],
       },
       'catchRatePercent': 11,
@@ -18960,7 +24097,19 @@ module.exports = {
         'speed': 40,
       },
       'attack': 65,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            216,
+            217,
+          ],
+        },
+        '2': [
+          'Mt. Coronet North',
+          'Lake Acuity',
+        ],
+      },
       'catchRatePercent': 36,
       'eggSteps': 800,
     },
@@ -18984,6 +24133,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 142,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
@@ -19017,18 +24167,14 @@ module.exports = {
         'speed': 125,
       },
       'attack': 105,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
             'basePokemon': 'Sneasel',
-            'type': [
-              0,
-              2,
-            ],
+            'type': [1],
+            'stone': 22,
             'evolvedPokemon': 'Weavile',
-            'level': 100,
-            'startHour': 18,
-            'endHour': 6,
           },
         ],
       },
@@ -19055,7 +24201,31 @@ module.exports = {
         'speed': 60,
       },
       'attack': 143,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Magneton',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Magnezone',
+            'level': 20,
+            'dungeon': 'Mt. Coronet North',
+          },
+          {
+            'basePokemon': 'Magneton',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Magnezone',
+            'level': 20,
+            'dungeon': 'Mt. Coronet South',
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19076,7 +24246,17 @@ module.exports = {
         'speed': 50,
       },
       'attack': 152,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Lickitung',
+            'type': [0],
+            'evolvedPokemon': 'Lickilicky',
+            'level': 33,
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19100,7 +24280,17 @@ module.exports = {
         'speed': 40,
       },
       'attack': 153,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Rhydon',
+            'type': [1],
+            'stone': 20,
+            'evolvedPokemon': 'Rhyperior',
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19121,7 +24311,17 @@ module.exports = {
         'speed': 50,
       },
       'attack': 166,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Tangela',
+            'type': [0],
+            'evolvedPokemon': 'Tangrowth',
+            'level': 33,
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19142,12 +24342,13 @@ module.exports = {
         'speed': 95,
       },
       'attack': 150,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
             'basePokemon': 'Electabuzz',
             'type': [1],
-            'stone': 6,
+            'stone': 18,
             'evolvedPokemon': 'Electivire',
           },
         ],
@@ -19172,12 +24373,13 @@ module.exports = {
         'speed': 83,
       },
       'attack': 154,
+      'nativeRegion': 3,
       'locations': {
         '4': [
           {
             'basePokemon': 'Magmar',
             'type': [1],
-            'stone': 6,
+            'stone': 19,
             'evolvedPokemon': 'Magmortar',
           },
         ],
@@ -19205,7 +24407,17 @@ module.exports = {
         'speed': 80,
       },
       'attack': 134,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Togetic',
+            'type': [1],
+            'stone': 16,
+            'evolvedPokemon': 'Togekiss',
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 400,
     },
@@ -19229,7 +24441,17 @@ module.exports = {
         'speed': 95,
       },
       'attack': 137,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Yanma',
+            'type': [0],
+            'evolvedPokemon': 'Yanmega',
+            'level': 33,
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19250,7 +24472,21 @@ module.exports = {
         'speed': 95,
       },
       'attack': 118,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Leafeon',
+            'level': 20,
+            'dungeon': 'Eterna Forest',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1400,
     },
@@ -19271,7 +24507,21 @@ module.exports = {
         'speed': 65,
       },
       'attack': 129,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Glaceon',
+            'level': 20,
+            'dungeon': 'Lake Acuity',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1400,
     },
@@ -19295,7 +24545,17 @@ module.exports = {
         'speed': 95,
       },
       'attack': 107,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Gligar',
+            'type': [1],
+            'stone': 23,
+            'evolvedPokemon': 'Gliscor',
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19319,7 +24579,17 @@ module.exports = {
         'speed': 80,
       },
       'attack': 154,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Piloswine',
+            'type': [0],
+            'evolvedPokemon': 'Mamoswine',
+            'level': 53,
+          },
+        ],
+      },
       'catchRatePercent': 18,
       'eggSteps': 800,
     },
@@ -19340,7 +24610,17 @@ module.exports = {
         'speed': 90,
       },
       'attack': 150,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Porygon2',
+            'type': [1],
+            'stone': 17,
+            'evolvedPokemon': 'Porygon-Z',
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 800,
     },
@@ -19364,7 +24644,17 @@ module.exports = {
         'speed': 80,
       },
       'attack': 127,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Kirlia',
+            'type': [1],
+            'stone': 14,
+            'evolvedPokemon': 'Gallade',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -19388,7 +24678,31 @@ module.exports = {
         'speed': 40,
       },
       'attack': 109,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Nosepass',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Probopass',
+            'level': 20,
+            'dungeon': 'Mt. Coronet North',
+          },
+          {
+            'basePokemon': 'Nosepass',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Probopass',
+            'level': 20,
+            'dungeon': 'Mt. Coronet South',
+          },
+        ],
+      },
       'catchRatePercent': 21,
       'eggSteps': 800,
     },
@@ -19409,7 +24723,17 @@ module.exports = {
         'speed': 45,
       },
       'attack': 111,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Dusclops',
+            'type': [1],
+            'stone': 21,
+            'evolvedPokemon': 'Dusknoir',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
@@ -19433,7 +24757,17 @@ module.exports = {
         'speed': 110,
       },
       'attack': 107,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Snorunt',
+            'type': [1],
+            'stone': 14,
+            'evolvedPokemon': 'Froslass',
+          },
+        ],
+      },
       'catchRatePercent': 25,
       'eggSteps': 800,
     },
@@ -19457,6 +24791,134 @@ module.exports = {
         'speed': 91,
       },
       'attack': 82,
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Old Chateau'],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 479.1,
+      'name': 'Rotom (heat)',
+      'type': [
+        3,
+        1,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 105,
+        'defense': 107,
+        'specialDefense': 107,
+        'speed': 86,
+      },
+      'attack': 112,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 479.2,
+      'name': 'Rotom (wash)',
+      'type': [
+        3,
+        2,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 105,
+        'defense': 107,
+        'specialDefense': 107,
+        'speed': 86,
+      },
+      'attack': 112,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 479.3,
+      'name': 'Rotom (frost)',
+      'type': [
+        3,
+        5,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 105,
+        'defense': 107,
+        'specialDefense': 107,
+        'speed': 86,
+      },
+      'attack': 112,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 479.4,
+      'name': 'Rotom (fan)',
+      'type': [
+        3,
+        9,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 105,
+        'defense': 107,
+        'specialDefense': 107,
+        'speed': 86,
+      },
+      'attack': 112,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 479.5,
+      'name': 'Rotom (mow)',
+      'type': [
+        3,
+        4,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 105,
+        'defense': 107,
+        'specialDefense': 107,
+        'speed': 86,
+      },
+      'attack': 112,
+      'nativeRegion': 3,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19478,7 +24940,10 @@ module.exports = {
         'speed': 95,
       },
       'attack': 139,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Lake Acuity'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 3200,
     },
@@ -19499,7 +24964,10 @@ module.exports = {
         'speed': 80,
       },
       'attack': 174,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Lake Verity'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 3200,
     },
@@ -19520,7 +24988,10 @@ module.exports = {
         'speed': 115,
       },
       'attack': 169,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Lake Valor'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 3200,
     },
@@ -19544,7 +25015,10 @@ module.exports = {
         'speed': 90,
       },
       'attack': 251,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Spear Pillar'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -19568,7 +25042,10 @@ module.exports = {
         'speed': 100,
       },
       'attack': 239,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Spear Pillar'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -19592,7 +25069,10 @@ module.exports = {
         'speed': 77,
       },
       'attack': 191,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Stark Mountain'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 400,
     },
@@ -19613,13 +25093,16 @@ module.exports = {
         'speed': 100,
       },
       'attack': 226,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Snowpoint Temple'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
       'id': 487,
-      'name': 'Giratina',
+      'name': 'Giratina (altered)',
       'type': [
         13,
         14,
@@ -19637,6 +25120,34 @@ module.exports = {
         'speed': 90,
       },
       'attack': 242,
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Distortion World'],
+      },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 487.1,
+      'name': 'Giratina (origin)',
+      'type': [
+        13,
+        14,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 306,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 150,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 100,
+        'specialDefense': 100,
+        'speed': 90,
+      },
+      'attack': 263,
+      'nativeRegion': 3,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -19658,7 +25169,10 @@ module.exports = {
         'speed': 85,
       },
       'attack': 166,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Fullmoon Island'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -19679,7 +25193,17 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Manaphy',
+            'type': [0],
+            'evolvedPokemon': 'Phione',
+            'level': 100,
+          },
+        ],
+      },
       'catchRatePercent': 12,
       'eggSteps': 1600,
     },
@@ -19690,6 +25214,14 @@ module.exports = {
       'eggCycles': 10,
       'levelType': 4,
       'exp': 270,
+      'evolutions': [
+        {
+          'basePokemon': 'Manaphy',
+          'type': [0],
+          'evolvedPokemon': 'Phione',
+          'level': 100,
+        },
+      ],
       'catchRate': 3,
       'base': {
         'hitpoints': 100,
@@ -19700,7 +25232,10 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '1': ['3'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 400,
     },
@@ -19721,13 +25256,16 @@ module.exports = {
         'speed': 125,
       },
       'attack': 162,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Newmoon Island'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
       'id': 492,
-      'name': 'Shaymin',
+      'name': 'Shaymin (land)',
       'type': [4],
       'eggCycles': 120,
       'levelType': 3,
@@ -19742,13 +25280,40 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
-      'locations': {},
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Flower Paradise'],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 492.1,
+      'name': 'Shaymin (sky)',
+      'type': [4],
+      'eggCycles': 120,
+      'levelType': 3,
+      'exp': 270,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 100,
+        'attack': 103,
+        'specialAttack': 120,
+        'defense': 75,
+        'specialDefense': 75,
+        'speed': 127,
+      },
+      'attack': 181,
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Flower Paradise'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 4800,
     },
     {
       'id': 493,
-      'name': 'Arceus',
+      'name': 'Arceus (normal)',
       'type': [0],
       'eggCycles': 120,
       'levelType': 4,
@@ -19763,6 +25328,383 @@ module.exports = {
         'speed': 120,
       },
       'attack': 262,
+      'nativeRegion': 3,
+      'locations': {
+        '3': ['Hall of Origin'],
+      },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.01,
+      'name': 'Arceus (fire)',
+      'type': [1],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.02,
+      'name': 'Arceus (water)',
+      'type': [2],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.03,
+      'name': 'Arceus (electric)',
+      'type': [3],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.04,
+      'name': 'Arceus (grass)',
+      'type': [4],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.05,
+      'name': 'Arceus (ice)',
+      'type': [5],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.06,
+      'name': 'Arceus (fighting)',
+      'type': [6],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.07,
+      'name': 'Arceus (poison)',
+      'type': [7],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.08,
+      'name': 'Arceus (ground)',
+      'type': [8],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.09,
+      'name': 'Arceus (flying)',
+      'type': [9],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.1,
+      'name': 'Arceus (psychic)',
+      'type': [10],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.11,
+      'name': 'Arceus (bug)',
+      'type': [11],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.12,
+      'name': 'Arceus (rock)',
+      'type': [12],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.13,
+      'name': 'Arceus (ghost)',
+      'type': [13],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.14,
+      'name': 'Arceus (dragon)',
+      'type': [14],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.15,
+      'name': 'Arceus (dark)',
+      'type': [15],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.16,
+      'name': 'Arceus (steel)',
+      'type': [16],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 493.17,
+      'name': 'Arceus (fairy)',
+      'type': [17],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 324,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 120,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 120,
+        'specialDefense': 120,
+        'speed': 120,
+      },
+      'attack': 262,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -19787,6 +25729,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 184,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -19816,6 +25759,7 @@ module.exports = {
         'speed': 63,
       },
       'attack': 45,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19845,6 +25789,7 @@ module.exports = {
         'speed': 83,
       },
       'attack': 78,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -19875,6 +25820,7 @@ module.exports = {
         'speed': 113,
       },
       'attack': 122,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -19913,6 +25859,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 55,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -19945,6 +25892,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 105,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -19978,6 +25926,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 170,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20016,6 +25965,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 56,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -20045,6 +25995,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 99,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20075,6 +26026,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 161,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20113,6 +26065,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 36,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -20134,6 +26087,7 @@ module.exports = {
         'speed': 77,
       },
       'attack': 87,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20172,6 +26126,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 35,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -20201,6 +26156,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 67,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20231,6 +26187,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 115,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20269,6 +26226,7 @@ module.exports = {
         'speed': 66,
       },
       'attack': 39,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -20290,6 +26248,7 @@ module.exports = {
         'speed': 106,
       },
       'attack': 97,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20328,6 +26287,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 51,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20349,6 +26309,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 127,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20387,6 +26348,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 51,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20408,6 +26370,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 127,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20446,6 +26409,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 51,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20467,6 +26431,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 127,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20505,6 +26470,7 @@ module.exports = {
         'speed': 24,
       },
       'attack': 47,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -20526,6 +26492,7 @@ module.exports = {
         'speed': 29,
       },
       'attack': 137,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20567,6 +26534,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 38,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -20599,6 +26567,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 67,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20632,6 +26601,7 @@ module.exports = {
         'speed': 93,
       },
       'attack': 119,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20670,6 +26640,7 @@ module.exports = {
         'speed': 76,
       },
       'attack': 43,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20691,6 +26662,7 @@ module.exports = {
         'speed': 116,
       },
       'attack': 119,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20729,6 +26701,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 39,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -20758,6 +26731,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 85,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20788,6 +26762,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 144,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20815,9 +26790,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Woobat',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Swoobat',
-          'level': 100,
         },
       ],
       'base': {
@@ -20829,6 +26804,7 @@ module.exports = {
         'speed': 72,
       },
       'attack': 53,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 600,
@@ -20853,13 +26829,14 @@ module.exports = {
         'speed': 114,
       },
       'attack': 81,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
             'basePokemon': 'Woobat',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Swoobat',
-            'level': 100,
           },
         ],
       },
@@ -20891,6 +26868,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 52,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -20915,6 +26893,7 @@ module.exports = {
         'speed': 88,
       },
       'attack': 130,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -20945,6 +26924,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 104,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -20974,6 +26954,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 49,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -21003,6 +26984,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 88,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21033,6 +27015,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 142,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21071,6 +27054,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 45,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -21103,6 +27087,7 @@ module.exports = {
         'speed': 69,
       },
       'attack': 80,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21136,6 +27121,7 @@ module.exports = {
         'speed': 74,
       },
       'attack': 147,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21166,6 +27152,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 102,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -21187,6 +27174,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 88,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -21219,6 +27207,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 47,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -21237,9 +27226,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Swadloon',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Leavanny',
-          'level': 100,
         },
       ],
       'base': {
@@ -21251,6 +27240,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 71,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21284,13 +27274,14 @@ module.exports = {
         'speed': 92,
       },
       'attack': 124,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
             'basePokemon': 'Swadloon',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Leavanny',
-            'level': 100,
           },
         ],
       },
@@ -21325,6 +27316,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 28,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -21357,6 +27349,7 @@ module.exports = {
         'speed': 47,
       },
       'attack': 53,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21390,6 +27383,7 @@ module.exports = {
         'speed': 112,
       },
       'attack': 99,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21431,6 +27425,7 @@ module.exports = {
         'speed': 66,
       },
       'attack': 32,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -21455,6 +27450,7 @@ module.exports = {
         'speed': 116,
       },
       'attack': 98,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21493,6 +27489,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 43,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -21514,6 +27511,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 111,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21544,6 +27542,7 @@ module.exports = {
         'speed': 98,
       },
       'attack': 107,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 11,
       'eggSteps': 1600,
@@ -21576,6 +27575,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 43,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -21608,6 +27608,7 @@ module.exports = {
         'speed': 74,
       },
       'attack': 62,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21641,6 +27642,7 @@ module.exports = {
         'speed': 92,
       },
       'attack': 138,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21679,6 +27681,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 42,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -21700,6 +27703,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 99,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21730,6 +27734,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 123,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -21762,6 +27767,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 48,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -21786,6 +27792,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 121,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21827,6 +27834,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 57,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 600,
@@ -21851,6 +27859,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 101,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21884,6 +27893,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 112,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -21913,6 +27923,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 40,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 1000,
@@ -21934,6 +27945,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 102,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -21975,6 +27987,7 @@ module.exports = {
         'speed': 22,
       },
       'attack': 69,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -21999,6 +28012,7 @@ module.exports = {
         'speed': 32,
       },
       'attack': 136,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22040,6 +28054,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 85,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -22064,6 +28079,7 @@ module.exports = {
         'speed': 110,
       },
       'attack': 163,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22102,6 +28118,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 50,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22123,6 +28140,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 114,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22161,6 +28179,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 56,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 1000,
@@ -22182,6 +28201,7 @@ module.exports = {
         'speed': 105,
       },
       'attack': 126,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22220,6 +28240,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 44,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -22241,6 +28262,7 @@ module.exports = {
         'speed': 115,
       },
       'attack': 103,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22279,6 +28301,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 40,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -22308,6 +28331,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 75,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22338,6 +28362,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 112,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22376,6 +28401,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 45,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -22405,6 +28431,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 75,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22435,6 +28462,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 148,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22476,6 +28504,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 48,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22500,6 +28529,7 @@ module.exports = {
         'speed': 98,
       },
       'attack': 114,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22538,6 +28568,7 @@ module.exports = {
         'speed': 44,
       },
       'attack': 47,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -22567,6 +28598,7 @@ module.exports = {
         'speed': 59,
       },
       'attack': 80,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22597,6 +28629,7 @@ module.exports = {
         'speed': 79,
       },
       'attack': 148,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22638,6 +28671,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 55,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22662,6 +28696,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 111,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22695,6 +28730,7 @@ module.exports = {
         'speed': 103,
       },
       'attack': 84,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -22724,6 +28760,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 51,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 600,
@@ -22748,6 +28785,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 131,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22789,6 +28827,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 57,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22813,6 +28852,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 137,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22854,6 +28894,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 57,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22878,6 +28919,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 121,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -22908,6 +28950,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 106,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 1600,
@@ -22940,6 +28983,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 51,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22964,6 +29008,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 108,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23005,6 +29050,7 @@ module.exports = {
         'speed': 10,
       },
       'attack': 38,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -23029,6 +29075,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 118,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23067,6 +29114,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 46,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 38,
       'eggSteps': 800,
@@ -23096,6 +29144,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 100,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23126,6 +29175,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 119,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23164,6 +29214,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 37,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -23193,6 +29244,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 96,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23223,6 +29275,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 160,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23261,6 +29314,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 68,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -23282,6 +29336,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 136,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23323,6 +29378,7 @@ module.exports = {
         'speed': 20,
       },
       'attack': 42,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -23355,6 +29411,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 69,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23388,6 +29445,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23426,6 +29484,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 48,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 1600,
@@ -23455,6 +29514,7 @@ module.exports = {
         'speed': 67,
       },
       'attack': 81,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23485,6 +29545,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 136,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23523,6 +29584,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 57,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -23544,6 +29606,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 148,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23574,6 +29637,7 @@ module.exports = {
         'speed': 105,
       },
       'attack': 108,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -23603,6 +29667,7 @@ module.exports = {
         'speed': 25,
       },
       'attack': 45,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 600,
@@ -23624,6 +29689,7 @@ module.exports = {
         'speed': 145,
       },
       'attack': 107,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23657,6 +29723,7 @@ module.exports = {
         'speed': 32,
       },
       'attack': 129,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -23686,6 +29753,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 62,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 1000,
@@ -23707,6 +29775,7 @@ module.exports = {
         'speed': 105,
       },
       'attack': 128,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23737,6 +29806,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 127,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -23769,6 +29839,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 52,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 1000,
@@ -23793,6 +29864,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 126,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23834,6 +29906,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 55,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -23858,6 +29931,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 117,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23888,6 +29962,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 116,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -23920,6 +29995,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 64,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -23944,6 +30020,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 136,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -23985,6 +30062,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 67,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -24009,6 +30087,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 120,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -24039,6 +30118,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 138,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -24063,6 +30143,7 @@ module.exports = {
         'speed': 109,
       },
       'attack': 92,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -24095,6 +30176,7 @@ module.exports = {
         'speed': 38,
       },
       'attack': 51,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -24127,6 +30209,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 98,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -24160,6 +30243,7 @@ module.exports = {
         'speed': 98,
       },
       'attack': 190,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -24201,6 +30285,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 68,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -24225,6 +30310,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 142,
+      'nativeRegion': 4,
       'locations': {
         '4': [
           {
@@ -24258,6 +30344,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 157,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -24282,6 +30369,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 163,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -24306,6 +30394,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 157,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -24327,6 +30416,7 @@ module.exports = {
         'speed': 111,
       },
       'attack': 170,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24351,6 +30441,7 @@ module.exports = {
         'speed': 111,
       },
       'attack': 170,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24375,6 +30466,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 251,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24399,6 +30491,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 251,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24423,6 +30516,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 204,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24447,6 +30541,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 250,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24471,6 +30566,7 @@ module.exports = {
         'speed': 108,
       },
       'attack': 163,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -24495,6 +30591,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 182,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24519,6 +30616,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 179,
+      'nativeRegion': 4,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -24548,6 +30646,7 @@ module.exports = {
         'speed': 38,
       },
       'attack': 55,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24577,6 +30676,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 83,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24610,6 +30710,7 @@ module.exports = {
         'speed': 64,
       },
       'attack': 148,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24648,6 +30749,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 46,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24677,6 +30779,7 @@ module.exports = {
         'speed': 73,
       },
       'attack': 84,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24710,6 +30813,7 @@ module.exports = {
         'speed': 104,
       },
       'attack': 133,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24748,6 +30852,7 @@ module.exports = {
         'speed': 71,
       },
       'attack': 48,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24777,6 +30882,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 77,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24810,6 +30916,7 @@ module.exports = {
         'speed': 122,
       },
       'attack': 133,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24848,6 +30955,7 @@ module.exports = {
         'speed': 57,
       },
       'attack': 27,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -24872,6 +30980,7 @@ module.exports = {
         'speed': 78,
       },
       'attack': 84,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24913,6 +31022,7 @@ module.exports = {
         'speed': 62,
       },
       'attack': 39,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -24945,6 +31055,7 @@ module.exports = {
         'speed': 84,
       },
       'attack': 72,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -24978,6 +31089,7 @@ module.exports = {
         'speed': 126,
       },
       'attack': 113,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25016,6 +31128,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 22,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -25045,6 +31158,7 @@ module.exports = {
         'speed': 29,
       },
       'attack': 22,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25078,6 +31192,7 @@ module.exports = {
         'speed': 89,
       },
       'attack': 85,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25119,6 +31234,7 @@ module.exports = {
         'speed': 72,
       },
       'attack': 69,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 57,
       'eggSteps': 800,
@@ -25143,6 +31259,7 @@ module.exports = {
         'speed': 106,
       },
       'attack': 126,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25181,6 +31298,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 45,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -25210,6 +31328,7 @@ module.exports = {
         'speed': 52,
       },
       'attack': 66,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25240,6 +31359,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 139,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25278,6 +31398,7 @@ module.exports = {
         'speed': 52,
       },
       'attack': 71,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -25299,6 +31420,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 168,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25337,6 +31459,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 69,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 57,
       'eggSteps': 1000,
@@ -25361,6 +31484,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 141,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25391,6 +31515,7 @@ module.exports = {
         'speed': 102,
       },
       'attack': 104,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -25420,6 +31545,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 63,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -25441,6 +31567,7 @@ module.exports = {
         'speed': 104,
       },
       'attack': 94,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25482,6 +31609,7 @@ module.exports = {
         'speed': 28,
       },
       'attack': 50,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -25514,6 +31642,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 89,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25547,6 +31676,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 87,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25585,6 +31715,7 @@ module.exports = {
         'speed': 23,
       },
       'attack': 71,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -25606,6 +31737,7 @@ module.exports = {
         'speed': 29,
       },
       'attack': 133,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25644,6 +31776,7 @@ module.exports = {
         'speed': 49,
       },
       'attack': 62,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -25665,6 +31798,7 @@ module.exports = {
         'speed': 72,
       },
       'attack': 124,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25706,6 +31840,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 44,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -25730,6 +31865,7 @@ module.exports = {
         'speed': 73,
       },
       'attack': 123,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25771,6 +31907,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 44,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -25795,6 +31932,7 @@ module.exports = {
         'speed': 68,
       },
       'attack': 118,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25836,6 +31974,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 59,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -25860,6 +31999,7 @@ module.exports = {
         'speed': 44,
       },
       'attack': 125,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25898,6 +32038,7 @@ module.exports = {
         'speed': 44,
       },
       'attack': 58,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 600,
@@ -25919,6 +32060,7 @@ module.exports = {
         'speed': 59,
       },
       'attack': 133,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -25960,6 +32102,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 41,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -25984,6 +32127,7 @@ module.exports = {
         'speed': 109,
       },
       'attack': 99,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26025,6 +32169,7 @@ module.exports = {
         'speed': 48,
       },
       'attack': 69,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -26049,6 +32194,7 @@ module.exports = {
         'speed': 71,
       },
       'attack': 138,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26090,6 +32236,7 @@ module.exports = {
         'speed': 46,
       },
       'attack': 78,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -26114,6 +32261,7 @@ module.exports = {
         'speed': 58,
       },
       'attack': 159,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26144,6 +32292,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 143,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -26168,6 +32317,7 @@ module.exports = {
         'speed': 118,
       },
       'attack': 117,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 31,
       'eggSteps': 800,
@@ -26192,6 +32342,7 @@ module.exports = {
         'speed': 101,
       },
       'attack': 87,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -26216,6 +32367,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 80,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 1000,
@@ -26245,6 +32397,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 48,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -26274,6 +32427,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 105,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26304,6 +32458,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 182,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26337,6 +32492,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 106,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -26369,6 +32525,7 @@ module.exports = {
         'speed': 38,
       },
       'attack': 52,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -26393,6 +32550,7 @@ module.exports = {
         'speed': 56,
       },
       'attack': 125,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26426,6 +32584,7 @@ module.exports = {
         'speed': 56,
       },
       'attack': 54,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -26450,6 +32609,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 97,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -26479,6 +32639,7 @@ module.exports = {
         'speed': 28,
       },
       'attack': 47,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -26500,6 +32661,7 @@ module.exports = {
         'speed': 28,
       },
       'attack': 118,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26541,6 +32703,7 @@ module.exports = {
         'speed': 55,
       },
       'attack': 29,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -26565,6 +32728,7 @@ module.exports = {
         'speed': 123,
       },
       'attack': 130,
+      'nativeRegion': 5,
       'locations': {
         '4': [
           {
@@ -26595,6 +32759,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 260,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -26619,6 +32784,7 @@ module.exports = {
         'speed': 99,
       },
       'attack': 260,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -26643,6 +32809,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 179,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -26667,6 +32834,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 151,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 1000,
@@ -26691,6 +32859,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 193,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -26715,6 +32884,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 193,
+      'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -26747,6 +32917,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 59,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26779,6 +32950,7 @@ module.exports = {
         'speed': 52,
       },
       'attack': 101,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -26812,6 +32984,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 154,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -26850,6 +33023,7 @@ module.exports = {
         'speed': 70,
       },
       'attack': 52,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26879,6 +33053,7 @@ module.exports = {
         'speed': 90,
       },
       'attack': 91,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -26912,6 +33087,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 160,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -26950,6 +33126,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 58,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -26979,6 +33156,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 96,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27012,6 +33190,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 148,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27053,6 +33232,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 32,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -27085,6 +33265,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 61,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27118,6 +33299,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 134,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27156,6 +33338,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 35,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -27177,6 +33360,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 103,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27215,6 +33399,7 @@ module.exports = {
         'speed': 46,
       },
       'attack': 51,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -27247,6 +33432,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 83,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27280,6 +33466,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 141,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27318,6 +33505,7 @@ module.exports = {
         'speed': 63,
       },
       'attack': 56,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -27342,6 +33530,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 134,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27375,6 +33564,7 @@ module.exports = {
         'speed': 93,
       },
       'attack': 114,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -27407,6 +33597,7 @@ module.exports = {
         'speed': 84,
       },
       'attack': 41,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -27431,6 +33622,7 @@ module.exports = {
         'speed': 124,
       },
       'attack': 89,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27469,6 +33661,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 38,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 600,
@@ -27490,6 +33683,7 @@ module.exports = {
         'speed': 112,
       },
       'attack': 108,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27520,6 +33714,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 16,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 600,
@@ -27552,6 +33747,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 48,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -27576,6 +33772,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 89,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27614,6 +33811,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 82,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -27635,6 +33833,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 140,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27676,6 +33875,7 @@ module.exports = {
         'speed': 27,
       },
       'attack': 36,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 53,
       'eggSteps': 600,
@@ -27700,6 +33900,7 @@ module.exports = {
         'speed': 42,
       },
       'attack': 94,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27738,6 +33939,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 37,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -27759,6 +33961,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 129,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27800,6 +34003,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 43,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -27824,6 +34028,7 @@ module.exports = {
         'speed': 30,
       },
       'attack': 83,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27865,6 +34070,7 @@ module.exports = {
         'speed': 77,
       },
       'attack': 50,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -27889,6 +34095,7 @@ module.exports = {
         'speed': 117,
       },
       'attack': 105,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27930,6 +34137,7 @@ module.exports = {
         'speed': 50,
       },
       'attack': 65,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 40,
       'eggSteps': 600,
@@ -27954,6 +34162,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 139,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -27992,6 +34201,7 @@ module.exports = {
         'speed': 32,
       },
       'attack': 24,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -28021,6 +34231,7 @@ module.exports = {
         'speed': 62,
       },
       'attack': 41,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28051,6 +34262,7 @@ module.exports = {
         'speed': 72,
       },
       'attack': 120,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28081,6 +34293,7 @@ module.exports = {
         'speed': 100,
       },
       'attack': 89,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -28105,6 +34318,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 124,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28126,6 +34340,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 113,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28158,6 +34373,7 @@ module.exports = {
         'speed': 80,
       },
       'attack': 18,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -28182,6 +34398,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 140,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28223,6 +34440,7 @@ module.exports = {
         'speed': 15,
       },
       'attack': 62,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 40,
       'eggSteps': 600,
@@ -28247,6 +34465,7 @@ module.exports = {
         'speed': 35,
       },
       'attack': 135,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28277,6 +34496,7 @@ module.exports = {
         'speed': 5,
       },
       'attack': 61,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 600,
@@ -28292,9 +34512,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Type: Null',
-          'type': [0],
+          'type': [1],
+          'stone': 11,
           'evolvedPokemon': 'Silvally',
-          'level': 100,
         },
       ],
       'base': {
@@ -28306,6 +34526,7 @@ module.exports = {
         'speed': 59,
       },
       'attack': 163,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -28327,13 +34548,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 167,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
             'basePokemon': 'Type: Null',
-            'type': [0],
+            'type': [1],
+            'stone': 11,
             'evolvedPokemon': 'Silvally',
-            'level': 100,
           },
         ],
       },
@@ -28360,6 +34582,7 @@ module.exports = {
         'speed': 60,
       },
       'attack': 87,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -28381,6 +34604,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 121,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28405,6 +34629,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 118,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -28429,6 +34654,7 @@ module.exports = {
         'speed': 96,
       },
       'attack': 82,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 49,
       'eggSteps': 400,
@@ -28453,6 +34679,7 @@ module.exports = {
         'speed': 96,
       },
       'attack': 91,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28477,6 +34704,7 @@ module.exports = {
         'speed': 92,
       },
       'attack': 112,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 26,
       'eggSteps': 600,
@@ -28501,6 +34729,7 @@ module.exports = {
         'speed': 36,
       },
       'attack': 131,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -28525,6 +34754,7 @@ module.exports = {
         'speed': 40,
       },
       'attack': 150,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -28554,6 +34784,7 @@ module.exports = {
         'speed': 45,
       },
       'attack': 46,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -28586,6 +34817,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 86,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28619,6 +34851,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 175,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28652,6 +34885,7 @@ module.exports = {
         'speed': 130,
       },
       'attack': 148,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 600,
@@ -28676,6 +34910,7 @@ module.exports = {
         'speed': 95,
       },
       'attack': 156,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 600,
@@ -28700,6 +34935,7 @@ module.exports = {
         'speed': 75,
       },
       'attack': 162,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 600,
@@ -28724,6 +34960,7 @@ module.exports = {
         'speed': 85,
       },
       'attack': 144,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 600,
@@ -28753,6 +34990,7 @@ module.exports = {
         'speed': 37,
       },
       'attack': 22,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28782,6 +35020,7 @@ module.exports = {
         'speed': 37,
       },
       'attack': 42,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28815,6 +35054,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 259,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -28848,6 +35088,7 @@ module.exports = {
         'speed': 97,
       },
       'attack': 259,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28872,6 +35113,7 @@ module.exports = {
         'speed': 103,
       },
       'attack': 144,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28896,6 +35138,7 @@ module.exports = {
         'speed': 79,
       },
       'attack': 153,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28920,6 +35163,7 @@ module.exports = {
         'speed': 151,
       },
       'attack': 140,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28941,6 +35185,7 @@ module.exports = {
         'speed': 83,
       },
       'attack': 173,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28965,6 +35210,7 @@ module.exports = {
         'speed': 61,
       },
       'attack': 185,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28989,6 +35235,7 @@ module.exports = {
         'speed': 109,
       },
       'attack': 120,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -29013,6 +35260,7 @@ module.exports = {
         'speed': 43,
       },
       'attack': 196,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -29034,6 +35282,7 @@ module.exports = {
         'speed': 79,
       },
       'attack': 200,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 4800,
@@ -29058,6 +35307,7 @@ module.exports = {
         'speed': 65,
       },
       'attack': 188,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -29082,6 +35332,7 @@ module.exports = {
         'speed': 125,
       },
       'attack': 174,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -29111,6 +35362,7 @@ module.exports = {
         'speed': 73,
       },
       'attack': 93,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -29135,6 +35387,7 @@ module.exports = {
         'speed': 121,
       },
       'attack': 134,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -29168,6 +35421,7 @@ module.exports = {
         'speed': 13,
       },
       'attack': 133,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 12,
       'eggSteps': 4800,
@@ -29192,6 +35446,7 @@ module.exports = {
         'speed': 107,
       },
       'attack': 150,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 12,
       'eggSteps': 4800,
@@ -29213,6 +35468,7 @@ module.exports = {
         'speed': 143,
       },
       'attack': 168,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -29242,6 +35498,7 @@ module.exports = {
         'speed': 34,
       },
       'attack': 52,
+      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -29263,6 +35520,7 @@ module.exports = {
         'speed': 34,
       },
       'attack': 212,
+      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -29273,6 +35531,2003 @@ module.exports = {
           },
         ],
       },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 810,
+      'name': 'Grookey',
+      'type': [4],
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 40,
+        'defense': 50,
+        'specialDefense': 40,
+        'speed': 65,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 62,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 48,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 811,
+      'name': 'Thwackey',
+      'type': [4],
+      'base': {
+        'hitpoints': 70,
+        'attack': 85,
+        'specialAttack': 55,
+        'defense': 70,
+        'specialDefense': 60,
+        'speed': 80,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 147,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 88,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 812,
+      'name': 'Rillaboom',
+      'type': [4],
+      'base': {
+        'hitpoints': 100,
+        'attack': 125,
+        'specialAttack': 60,
+        'defense': 90,
+        'specialDefense': 70,
+        'speed': 85,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 265,
+      'catchRate': 45,
+      'attack': 144,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 813,
+      'name': 'Scorbunny',
+      'type': [1],
+      'base': {
+        'hitpoints': 50,
+        'attack': 71,
+        'specialAttack': 40,
+        'defense': 40,
+        'specialDefense': 40,
+        'speed': 69,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 62,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 48,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 814,
+      'name': 'Raboot',
+      'type': [1],
+      'base': {
+        'hitpoints': 65,
+        'attack': 86,
+        'specialAttack': 55,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 94,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 147,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 84,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 815,
+      'name': 'Cinderace',
+      'type': [1],
+      'base': {
+        'hitpoints': 80,
+        'attack': 116,
+        'specialAttack': 65,
+        'defense': 75,
+        'specialDefense': 75,
+        'speed': 119,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 265,
+      'catchRate': 45,
+      'attack': 130,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 816,
+      'name': 'Sobble',
+      'type': [2],
+      'base': {
+        'hitpoints': 50,
+        'attack': 40,
+        'specialAttack': 70,
+        'defense': 40,
+        'specialDefense': 40,
+        'speed': 70,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 62,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 47,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 817,
+      'name': 'Drizzile',
+      'type': [2],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 95,
+        'defense': 55,
+        'specialDefense': 55,
+        'speed': 90,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 147,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 87,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 818,
+      'name': 'Inteleon',
+      'type': [2],
+      'base': {
+        'hitpoints': 70,
+        'attack': 85,
+        'specialAttack': 125,
+        'defense': 65,
+        'specialDefense': 65,
+        'speed': 120,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 265,
+      'catchRate': 45,
+      'attack': 133,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 819,
+      'name': 'Skwovet',
+      'type': [0],
+      'base': {
+        'hitpoints': 70,
+        'attack': 55,
+        'specialAttack': 35,
+        'defense': 55,
+        'specialDefense': 35,
+        'speed': 25,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 55,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 45,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 820,
+      'name': 'Greedent',
+      'type': [0],
+      'base': {
+        'hitpoints': 120,
+        'attack': 95,
+        'specialAttack': 55,
+        'defense': 95,
+        'specialDefense': 75,
+        'speed': 20,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 161,
+      'catchRate': 90,
+      'attack': 127,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 800,
+    },
+    {
+      'id': 821,
+      'name': 'Rookidee',
+      'type': [9],
+      'base': {
+        'hitpoints': 38,
+        'attack': 47,
+        'specialAttack': 33,
+        'defense': 35,
+        'specialDefense': 35,
+        'speed': 57,
+      },
+      'eggCycles': 15,
+      'levelType': 3,
+      'exp': 49,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 30,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 822,
+      'name': 'Corvisquire',
+      'type': [9],
+      'base': {
+        'hitpoints': 68,
+        'attack': 67,
+        'specialAttack': 43,
+        'defense': 55,
+        'specialDefense': 55,
+        'speed': 77,
+      },
+      'eggCycles': 15,
+      'levelType': 3,
+      'exp': 128,
+      'catchRate': 120,
+      'evolutions': [],
+      'attack': 65,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 600,
+    },
+    {
+      'id': 823,
+      'name': 'Corviknight',
+      'type': [
+        9,
+        16,
+      ],
+      'base': {
+        'hitpoints': 98,
+        'attack': 87,
+        'specialAttack': 53,
+        'defense': 105,
+        'specialDefense': 85,
+        'speed': 67,
+      },
+      'eggCycles': 15,
+      'levelType': 3,
+      'exp': 248,
+      'catchRate': 45,
+      'attack': 122,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 824,
+      'name': 'Blipbug',
+      'type': [11],
+      'base': {
+        'hitpoints': 25,
+        'attack': 20,
+        'specialAttack': 25,
+        'defense': 20,
+        'specialDefense': 45,
+        'speed': 45,
+      },
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 36,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 14,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 825,
+      'name': 'Dottler',
+      'type': [
+        11,
+        10,
+      ],
+      'base': {
+        'hitpoints': 50,
+        'attack': 35,
+        'specialAttack': 50,
+        'defense': 80,
+        'specialDefense': 90,
+        'speed': 30,
+      },
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 117,
+      'catchRate': 120,
+      'evolutions': [],
+      'attack': 50,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 600,
+    },
+    {
+      'id': 826,
+      'name': 'Orbeetle',
+      'type': [
+        11,
+        10,
+      ],
+      'base': {
+        'hitpoints': 60,
+        'attack': 45,
+        'specialAttack': 80,
+        'defense': 110,
+        'specialDefense': 120,
+        'speed': 90,
+      },
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 253,
+      'catchRate': 45,
+      'attack': 95,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 827,
+      'name': 'Nickit',
+      'type': [15],
+      'base': {
+        'hitpoints': 40,
+        'attack': 28,
+        'specialAttack': 47,
+        'defense': 28,
+        'specialDefense': 52,
+        'speed': 50,
+      },
+      'eggCycles': 15,
+      'levelType': 1,
+      'exp': 49,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 29,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 828,
+      'name': 'Thievul',
+      'type': [15],
+      'base': {
+        'hitpoints': 70,
+        'attack': 58,
+        'specialAttack': 87,
+        'defense': 58,
+        'specialDefense': 92,
+        'speed': 90,
+      },
+      'eggCycles': 15,
+      'levelType': 1,
+      'exp': 159,
+      'catchRate': 127,
+      'attack': 98,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 37,
+      'eggSteps': 600,
+    },
+    {
+      'id': 829,
+      'name': 'Gossifleur',
+      'type': [4],
+      'base': {
+        'hitpoints': 40,
+        'attack': 40,
+        'specialAttack': 40,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 10,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 50,
+      'catchRate': 190,
+      'evolutions': [],
+      'attack': 34,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 830,
+      'name': 'Eldegoss',
+      'type': [4],
+      'base': {
+        'hitpoints': 60,
+        'attack': 50,
+        'specialAttack': 80,
+        'defense': 90,
+        'specialDefense': 120,
+        'speed': 60,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 161,
+      'catchRate': 75,
+      'attack': 93,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 831,
+      'name': 'Wooloo',
+      'type': [0],
+      'base': {
+        'hitpoints': 42,
+        'attack': 40,
+        'specialAttack': 40,
+        'defense': 55,
+        'specialDefense': 45,
+        'speed': 48,
+      },
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 122,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 36,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 832,
+      'name': 'Dubwool',
+      'type': [0],
+      'base': {
+        'hitpoints': 72,
+        'attack': 80,
+        'specialAttack': 60,
+        'defense': 100,
+        'specialDefense': 90,
+        'speed': 88,
+      },
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 172,
+      'catchRate': 127,
+      'attack': 109,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 37,
+      'eggSteps': 600,
+    },
+    {
+      'id': 833,
+      'name': 'Chewtle',
+      'type': [2],
+      'base': {
+        'hitpoints': 50,
+        'attack': 64,
+        'specialAttack': 38,
+        'defense': 50,
+        'specialDefense': 38,
+        'speed': 44,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 57,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 44,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 834,
+      'name': 'Drednaw',
+      'type': [
+        2,
+        12,
+      ],
+      'base': {
+        'hitpoints': 90,
+        'attack': 115,
+        'specialAttack': 48,
+        'defense': 90,
+        'specialDefense': 68,
+        'speed': 74,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 170,
+      'catchRate': 75,
+      'attack': 117,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 835,
+      'name': 'Yamper',
+      'type': [3],
+      'base': {
+        'hitpoints': 59,
+        'attack': 45,
+        'specialAttack': 40,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 26,
+      },
+      'eggCycles': 20,
+      'levelType': 1,
+      'exp': 54,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 43,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 836,
+      'name': 'Boltund',
+      'type': [3],
+      'base': {
+        'hitpoints': 69,
+        'attack': 90,
+        'specialAttack': 90,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 121,
+      },
+      'eggCycles': 20,
+      'levelType': 1,
+      'exp': 172,
+      'catchRate': 45,
+      'attack': 113,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 837,
+      'name': 'Rolycoly',
+      'type': [12],
+      'base': {
+        'hitpoints': 30,
+        'attack': 40,
+        'specialAttack': 40,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 30,
+      },
+      'eggCycles': 15,
+      'levelType': 3,
+      'exp': 48,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 29,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 838,
+      'name': 'Carkol',
+      'type': [
+        12,
+        1,
+      ],
+      'base': {
+        'hitpoints': 80,
+        'attack': 60,
+        'specialAttack': 60,
+        'defense': 90,
+        'specialDefense': 70,
+        'speed': 50,
+      },
+      'eggCycles': 15,
+      'levelType': 3,
+      'exp': 144,
+      'catchRate': 120,
+      'evolutions': [],
+      'attack': 88,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 600,
+    },
+    {
+      'id': 839,
+      'name': 'Coalossal',
+      'type': [
+        12,
+        1,
+      ],
+      'base': {
+        'hitpoints': 110,
+        'attack': 80,
+        'specialAttack': 80,
+        'defense': 120,
+        'specialDefense': 90,
+        'speed': 30,
+      },
+      'eggCycles': 15,
+      'levelType': 3,
+      'exp': 255,
+      'catchRate': 45,
+      'attack': 148,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 840,
+      'name': 'Applin',
+      'type': [
+        4,
+        14,
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 40,
+        'specialAttack': 40,
+        'defense': 80,
+        'specialDefense': 40,
+        'speed': 20,
+      },
+      'eggCycles': 20,
+      'levelType': 0,
+      'exp': 52,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 34,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 841,
+      'name': 'Flapple',
+      'type': [
+        4,
+        14,
+      ],
+      'base': {
+        'hitpoints': 70,
+        'attack': 110,
+        'specialAttack': 95,
+        'defense': 80,
+        'specialDefense': 60,
+        'speed': 70,
+      },
+      'eggCycles': 20,
+      'levelType': 0,
+      'exp': 170,
+      'catchRate': 45,
+      'attack': 131,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 842,
+      'name': 'Appletun',
+      'type': [
+        4,
+        14,
+      ],
+      'base': {
+        'hitpoints': 110,
+        'attack': 85,
+        'specialAttack': 100,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 30,
+      },
+      'eggCycles': 20,
+      'levelType': 0,
+      'exp': 170,
+      'catchRate': 45,
+      'attack': 151,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 843,
+      'name': 'Silicobra',
+      'type': [8],
+      'base': {
+        'hitpoints': 52,
+        'attack': 57,
+        'specialAttack': 35,
+        'defense': 75,
+        'specialDefense': 50,
+        'speed': 46,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 63,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 48,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 844,
+      'name': 'Sandaconda',
+      'type': [8],
+      'base': {
+        'hitpoints': 72,
+        'attack': 107,
+        'specialAttack': 65,
+        'defense': 125,
+        'specialDefense': 70,
+        'speed': 71,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 179,
+      'catchRate': 120,
+      'attack': 126,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
+    },
+    {
+      'id': 845,
+      'name': 'Cramorant',
+      'type': [
+        9,
+        2,
+      ],
+      'base': {
+        'hitpoints': 70,
+        'attack': 85,
+        'specialAttack': 85,
+        'defense': 55,
+        'specialDefense': 95,
+        'speed': 85,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 166,
+      'catchRate': 45,
+      'attack': 113,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 846,
+      'name': 'Arrokuda',
+      'type': [2],
+      'base': {
+        'hitpoints': 41,
+        'attack': 63,
+        'specialAttack': 40,
+        'defense': 40,
+        'specialDefense': 30,
+        'speed': 66,
+      },
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 56,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 38,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 847,
+      'name': 'Barraskewda',
+      'type': [2],
+      'base': {
+        'hitpoints': 61,
+        'attack': 123,
+        'specialAttack': 60,
+        'defense': 60,
+        'specialDefense': 50,
+        'speed': 136,
+      },
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 172,
+      'catchRate': 60,
+      'attack': 99,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 800,
+    },
+    {
+      'id': 848,
+      'name': 'Toxel',
+      'type': [
+        3,
+        7,
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 38,
+        'specialAttack': 54,
+        'defense': 35,
+        'specialDefense': 35,
+        'speed': 40,
+      },
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 48,
+      'catchRate': 75,
+      'evolutions': [],
+      'attack': 33,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 849,
+      'name': 'Toxtricity',
+      'type': [
+        3,
+        7,
+      ],
+      'base': {
+        'hitpoints': 75,
+        'attack': 98,
+        'specialAttack': 114,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 75,
+      },
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 176,
+      'catchRate': 45,
+      'attack': 140,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 850,
+      'name': 'Sizzlipede',
+      'type': [
+        1,
+        11,
+      ],
+      'base': {
+        'hitpoints': 50,
+        'attack': 65,
+        'specialAttack': 50,
+        'defense': 45,
+        'specialDefense': 50,
+        'speed': 45,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 61,
+      'catchRate': 190,
+      'evolutions': [],
+      'attack': 53,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 851,
+      'name': 'Centiskorch',
+      'type': [
+        1,
+        11,
+      ],
+      'base': {
+        'hitpoints': 100,
+        'attack': 115,
+        'specialAttack': 90,
+        'defense': 65,
+        'specialDefense': 90,
+        'speed': 65,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 184,
+      'catchRate': 75,
+      'attack': 162,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 852,
+      'name': 'Clobbopus',
+      'type': [6],
+      'base': {
+        'hitpoints': 50,
+        'attack': 68,
+        'specialAttack': 50,
+        'defense': 60,
+        'specialDefense': 50,
+        'speed': 32,
+      },
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 62,
+      'catchRate': 180,
+      'evolutions': [],
+      'attack': 56,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 853,
+      'name': 'Grapploct',
+      'type': [6],
+      'base': {
+        'hitpoints': 80,
+        'attack': 118,
+        'specialAttack': 70,
+        'defense': 90,
+        'specialDefense': 80,
+        'speed': 42,
+      },
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 168,
+      'catchRate': 45,
+      'attack': 132,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 854,
+      'name': 'Sinistea',
+      'type': [13],
+      'base': {
+        'hitpoints': 40,
+        'attack': 45,
+        'specialAttack': 74,
+        'defense': 45,
+        'specialDefense': 54,
+        'speed': 50,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 62,
+      'catchRate': 120,
+      'evolutions': [],
+      'attack': 49,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
+    },
+    {
+      'id': 855,
+      'name': 'Polteageist',
+      'type': [13],
+      'base': {
+        'hitpoints': 60,
+        'attack': 65,
+        'specialAttack': 134,
+        'defense': 65,
+        'specialDefense': 114,
+        'speed': 70,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 178,
+      'catchRate': 60,
+      'attack': 122,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 800,
+    },
+    {
+      'id': 856,
+      'name': 'Hatenna',
+      'type': [10],
+      'base': {
+        'hitpoints': 42,
+        'attack': 30,
+        'specialAttack': 56,
+        'defense': 45,
+        'specialDefense': 53,
+        'speed': 39,
+      },
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 53,
+      'catchRate': 235,
+      'evolutions': [],
+      'attack': 36,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 60,
+      'eggSteps': 800,
+    },
+    {
+      'id': 857,
+      'name': 'Hattrem',
+      'type': [10],
+      'base': {
+        'hitpoints': 57,
+        'attack': 40,
+        'specialAttack': 86,
+        'defense': 65,
+        'specialDefense': 73,
+        'speed': 49,
+      },
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 130,
+      'catchRate': 120,
+      'evolutions': [],
+      'attack': 69,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
+    },
+    {
+      'id': 858,
+      'name': 'Hatterene',
+      'type': [
+        10,
+        17,
+      ],
+      'base': {
+        'hitpoints': 57,
+        'attack': 90,
+        'specialAttack': 136,
+        'defense': 95,
+        'specialDefense': 103,
+        'speed': 29,
+      },
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 255,
+      'catchRate': 45,
+      'attack': 142,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 859,
+      'name': 'Impidimp',
+      'type': [
+        15,
+        17,
+      ],
+      'base': {
+        'hitpoints': 45,
+        'attack': 45,
+        'specialAttack': 55,
+        'defense': 30,
+        'specialDefense': 40,
+        'speed': 50,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 53,
+      'catchRate': 255,
+      'evolutions': [],
+      'attack': 39,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 860,
+      'name': 'Morgrem',
+      'type': [
+        15,
+        17,
+      ],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 75,
+        'defense': 45,
+        'specialDefense': 55,
+        'speed': 70,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 130,
+      'catchRate': 120,
+      'evolutions': [],
+      'attack': 73,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 36,
+      'eggSteps': 800,
+    },
+    {
+      'id': 861,
+      'name': 'Grimmsnarl',
+      'type': [
+        15,
+        17,
+      ],
+      'base': {
+        'hitpoints': 95,
+        'attack': 120,
+        'specialAttack': 95,
+        'defense': 65,
+        'specialDefense': 75,
+        'speed': 60,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 255,
+      'catchRate': 45,
+      'attack': 158,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 862,
+      'name': 'Obstagoon',
+      'type': [
+        15,
+        0,
+      ],
+      'base': {
+        'hitpoints': 93,
+        'attack': 90,
+        'specialAttack': 60,
+        'defense': 101,
+        'specialDefense': 81,
+        'speed': 95,
+      },
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 260,
+      'catchRate': 45,
+      'attack': 128,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 863,
+      'name': 'Perrserker',
+      'type': [16],
+      'base': {
+        'hitpoints': 70,
+        'attack': 110,
+        'specialAttack': 50,
+        'defense': 100,
+        'specialDefense': 60,
+        'speed': 50,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 154,
+      'catchRate': 90,
+      'attack': 99,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 800,
+    },
+    {
+      'id': 864,
+      'name': 'Cursola',
+      'type': [13],
+      'base': {
+        'hitpoints': 60,
+        'attack': 95,
+        'specialAttack': 145,
+        'defense': 50,
+        'specialDefense': 130,
+        'speed': 30,
+      },
+      'eggCycles': 20,
+      'levelType': 1,
+      'exp': 179,
+      'catchRate': 30,
+      'attack': 141,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 800,
+    },
+    {
+      'id': 865,
+      'name': "Sirfetch'd",
+      'type': [6],
+      'base': {
+        'hitpoints': 62,
+        'attack': 135,
+        'specialAttack': 68,
+        'defense': 95,
+        'specialDefense': 82,
+        'speed': 65,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 177,
+      'catchRate': 45,
+      'attack': 128,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 866,
+      'name': 'Mr. Rime',
+      'type': [
+        10,
+        5,
+      ],
+      'base': {
+        'hitpoints': 80,
+        'attack': 85,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 100,
+        'speed': 70,
+      },
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'attack': 146,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 867,
+      'name': 'Runerigus',
+      'type': [
+        8,
+        13,
+      ],
+      'base': {
+        'hitpoints': 58,
+        'attack': 95,
+        'specialAttack': 50,
+        'defense': 145,
+        'specialDefense': 105,
+        'speed': 30,
+      },
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 169,
+      'catchRate': 90,
+      'attack': 102,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 868,
+      'name': 'Milcery',
+      'type': [17],
+      'base': {
+        'hitpoints': 45,
+        'attack': 40,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 61,
+        'speed': 34,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 54,
+      'catchRate': 200,
+      'evolutions': [],
+      'attack': 40,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869,
+      'name': 'Alcremie',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 870,
+      'name': 'Falinks',
+      'type': [6],
+      'base': {
+        'hitpoints': 65,
+        'attack': 100,
+        'specialAttack': 70,
+        'defense': 100,
+        'specialDefense': 60,
+        'speed': 75,
+      },
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 165,
+      'catchRate': 45,
+      'attack': 110,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 871,
+      'name': 'Pincurchin',
+      'type': [3],
+      'base': {
+        'hitpoints': 48,
+        'attack': 101,
+        'specialAttack': 91,
+        'defense': 95,
+        'specialDefense': 85,
+        'speed': 15,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 152,
+      'catchRate': 75,
+      'attack': 107,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 872,
+      'name': 'Snom',
+      'type': [
+        5,
+        11,
+      ],
+      'base': {
+        'hitpoints': 30,
+        'attack': 25,
+        'specialAttack': 45,
+        'defense': 35,
+        'specialDefense': 30,
+        'speed': 20,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 37,
+      'catchRate': 190,
+      'evolutions': [],
+      'attack': 20,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 873,
+      'name': 'Frosmoth',
+      'type': [
+        5,
+        11,
+      ],
+      'base': {
+        'hitpoints': 70,
+        'attack': 65,
+        'specialAttack': 125,
+        'defense': 60,
+        'specialDefense': 90,
+        'speed': 65,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 166,
+      'catchRate': 75,
+      'attack': 118,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 874,
+      'name': 'Stonjourner',
+      'type': [12],
+      'base': {
+        'hitpoints': 100,
+        'attack': 125,
+        'specialAttack': 20,
+        'defense': 135,
+        'specialDefense': 20,
+        'speed': 70,
+      },
+      'eggCycles': 25,
+      'levelType': 4,
+      'exp': 165,
+      'catchRate': 60,
+      'attack': 71,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 875,
+      'name': 'Eiscue',
+      'type': [5],
+      'base': {
+        'hitpoints': 75,
+        'attack': 80,
+        'specialAttack': 65,
+        'defense': 110,
+        'specialDefense': 90,
+        'speed': 50,
+      },
+      'eggCycles': 25,
+      'levelType': 4,
+      'exp': 165,
+      'catchRate': 60,
+      'attack': 113,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 876,
+      'name': 'Indeedee',
+      'type': [
+        10,
+        0,
+      ],
+      'base': {
+        'hitpoints': 60,
+        'attack': 65,
+        'specialAttack': 105,
+        'defense': 55,
+        'specialDefense': 95,
+        'speed': 95,
+      },
+      'eggCycles': 40,
+      'levelType': 1,
+      'exp': 166,
+      'catchRate': 30,
+      'attack': 103,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 877,
+      'name': 'Morpeko',
+      'type': [
+        3,
+        15,
+      ],
+      'base': {
+        'hitpoints': 58,
+        'attack': 95,
+        'specialAttack': 70,
+        'defense': 58,
+        'specialDefense': 58,
+        'speed': 97,
+      },
+      'eggCycles': 10,
+      'levelType': 2,
+      'exp': 153,
+      'catchRate': 180,
+      'attack': 91,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 49,
+      'eggSteps': 400,
+    },
+    {
+      'id': 878,
+      'name': 'Cufant',
+      'type': [16],
+      'base': {
+        'hitpoints': 72,
+        'attack': 80,
+        'specialAttack': 40,
+        'defense': 49,
+        'specialDefense': 49,
+        'speed': 40,
+      },
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 66,
+      'catchRate': 190,
+      'evolutions': [],
+      'attack': 63,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 879,
+      'name': 'Copperajah',
+      'type': [16],
+      'base': {
+        'hitpoints': 122,
+        'attack': 130,
+        'specialAttack': 80,
+        'defense': 69,
+        'specialDefense': 69,
+        'speed': 30,
+      },
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 175,
+      'catchRate': 90,
+      'attack': 162,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 29,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 880,
+      'name': 'Dracozolt',
+      'type': [
+        3,
+        14,
+      ],
+      'base': {
+        'hitpoints': 90,
+        'attack': 100,
+        'specialAttack': 80,
+        'defense': 90,
+        'specialDefense': 70,
+        'speed': 75,
+      },
+      'eggCycles': 35,
+      'levelType': 4,
+      'exp': 177,
+      'catchRate': 45,
+      'attack': 139,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 881,
+      'name': 'Arctozolt',
+      'type': [
+        3,
+        5,
+      ],
+      'base': {
+        'hitpoints': 90,
+        'attack': 100,
+        'specialAttack': 90,
+        'defense': 90,
+        'specialDefense': 80,
+        'speed': 55,
+      },
+      'eggCycles': 35,
+      'levelType': 4,
+      'exp': 177,
+      'catchRate': 45,
+      'attack': 148,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 882,
+      'name': 'Dracovish',
+      'type': [
+        2,
+        14,
+      ],
+      'base': {
+        'hitpoints': 90,
+        'attack': 90,
+        'specialAttack': 70,
+        'defense': 100,
+        'specialDefense': 80,
+        'speed': 75,
+      },
+      'eggCycles': 35,
+      'levelType': 4,
+      'exp': 177,
+      'catchRate': 45,
+      'attack': 132,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 883,
+      'name': 'Arctovish',
+      'type': [
+        2,
+        5,
+      ],
+      'base': {
+        'hitpoints': 90,
+        'attack': 90,
+        'specialAttack': 80,
+        'defense': 100,
+        'specialDefense': 90,
+        'speed': 55,
+      },
+      'eggCycles': 35,
+      'levelType': 4,
+      'exp': 177,
+      'catchRate': 45,
+      'attack': 141,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 884,
+      'name': 'Duraludon',
+      'type': [
+        16,
+        14,
+      ],
+      'base': {
+        'hitpoints': 70,
+        'attack': 95,
+        'specialAttack': 120,
+        'defense': 115,
+        'specialDefense': 50,
+        'speed': 85,
+      },
+      'eggCycles': 30,
+      'levelType': 2,
+      'exp': 187,
+      'catchRate': 45,
+      'attack': 143,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 885,
+      'name': 'Dreepy',
+      'type': [
+        14,
+        13,
+      ],
+      'base': {
+        'hitpoints': 28,
+        'attack': 60,
+        'specialAttack': 40,
+        'defense': 30,
+        'specialDefense': 30,
+        'speed': 82,
+      },
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 54,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 30,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 886,
+      'name': 'Drakloak',
+      'type': [
+        14,
+        13,
+      ],
+      'base': {
+        'hitpoints': 68,
+        'attack': 80,
+        'specialAttack': 60,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 102,
+      },
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 144,
+      'catchRate': 45,
+      'evolutions': [],
+      'attack': 80,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 887,
+      'name': 'Dragapult',
+      'type': [
+        14,
+        13,
+      ],
+      'base': {
+        'hitpoints': 88,
+        'attack': 120,
+        'specialAttack': 100,
+        'defense': 75,
+        'specialDefense': 75,
+        'speed': 142,
+      },
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 300,
+      'catchRate': 45,
+      'attack': 169,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 888,
+      'name': 'Zacian',
+      'type': [
+        17,
+        16,
+      ],
+      'base': {
+        'hitpoints': 92,
+        'attack': 130,
+        'specialAttack': 80,
+        'defense': 115,
+        'specialDefense': 115,
+        'speed': 138,
+      },
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 335,
+      'catchRate': 10,
+      'attack': 197,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 889,
+      'name': 'Zamazenta',
+      'type': [
+        6,
+        16,
+      ],
+      'base': {
+        'hitpoints': 92,
+        'attack': 130,
+        'specialAttack': 80,
+        'defense': 115,
+        'specialDefense': 115,
+        'speed': 138,
+      },
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 335,
+      'catchRate': 10,
+      'attack': 197,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 890,
+      'name': 'Eternatus',
+      'type': [
+        7,
+        14,
+      ],
+      'base': {
+        'hitpoints': 140,
+        'attack': 85,
+        'specialAttack': 145,
+        'defense': 95,
+        'specialDefense': 95,
+        'speed': 130,
+      },
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 345,
+      'catchRate': 255,
+      'attack': 237,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 891,
+      'name': 'Kubfu',
+      'type': [6],
+      'base': {
+        'hitpoints': 60,
+        'attack': 90,
+        'specialAttack': 53,
+        'defense': 60,
+        'specialDefense': 50,
+        'speed': 72,
+      },
+      'catchRate': 3,
+      'evolutions': [],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 335,
+      'attack': 76,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 892,
+      'name': 'Urshifu',
+      'type': [
+        6,
+        15,
+      ],
+      'base': {
+        'hitpoints': 100,
+        'attack': 130,
+        'specialAttack': 63,
+        'defense': 100,
+        'specialDefense': 60,
+        'speed': 97,
+      },
+      'catchRate': 3,
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 335,
+      'attack': 149,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 893,
+      'name': 'Zarude',
+      'type': [
+        15,
+        4,
+      ],
+      'base': {
+        'hitpoints': 105,
+        'attack': 120,
+        'specialAttack': 70,
+        'defense': 105,
+        'specialDefense': 95,
+        'speed': 105,
+      },
+      'catchRate': 3,
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 335,
+      'attack': 175,
+      'nativeRegion': 7,
+      'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -29927,6 +38182,7 @@ module.exports = {
   'GameConstants': {
     'TICK_TIME': 100,
     'BATTLE_TICK': 1000,
+    'BATTLE_FRONTIER_TICK': 500,
     'UNDERGROUND_TICK': 1000,
     'DUNGEON_TIME': 6000,
     'DUNGEON_TICK': 10,
@@ -29938,7 +38194,7 @@ module.exports = {
     'ACHIEVEMENT_TICK': 1000,
     'MIN_LOAD_TIME': 500,
     'MAX_LOAD_TIME': 20000,
-    'MAX_AVAILABLE_REGION': 2,
+    'MAX_AVAILABLE_REGION': 3,
     'TotalPokemonsPerRegion': [
       151,
       251,
@@ -29947,6 +38203,7 @@ module.exports = {
       649,
       721,
       809,
+      893,
     ],
     'ITEM_USE_TIME': 30,
     'MINUTE': 60000,
@@ -29969,6 +38226,7 @@ module.exports = {
         'Registeel',
         'Jirachi',
       ],
+      '3': ['Manaphy'],
     },
     'SHINY_CHANCE_BATTLE': 8192,
     'SHINY_CHANCE_DUNGEON': 4096,
@@ -30265,6 +38523,7 @@ module.exports = {
       '5': 'safari',
       '6': 'town',
       '7': 'shop',
+      '8': 'battleFrontier',
       'idle': 0,
       'paused': 1,
       'fighting': 2,
@@ -30273,6 +38532,7 @@ module.exports = {
       'safari': 5,
       'town': 6,
       'shop': 7,
+      'battleFrontier': 8,
     },
     'Pokeball': {
       '0': 'Pokeball',
@@ -30292,11 +38552,13 @@ module.exports = {
       '2': 'dungeonToken',
       '3': 'diamond',
       '4': 'farmPoint',
+      '5': 'battlePoint',
       'money': 0,
       'questPoint': 1,
       'dungeonToken': 2,
       'diamond': 3,
       'farmPoint': 4,
+      'battlePoint': 5,
     },
     'TypeEffectiveness': {
       '0': 'Immune',
@@ -30351,6 +38613,10 @@ module.exports = {
         101,
         134,
       ],
+      '3': [
+        201,
+        230,
+      ],
     },
     'TypeColor': [
       '#A8A77A',
@@ -30372,202 +38638,54 @@ module.exports = {
       '#B7B7CE',
       '#D685AD',
     ],
-    'HIGHEST_ROUTE_NUMBER': 134,
-    'AMOUNT_OF_ROUTES_KANTO': 25,
     'ROUTE_KILLS_NEEDED': 10,
-    'routeRequirements': {
-      '0': {
-        '1': [],
-        '2': [1],
-        '3': [2],
-        '4': [3],
-        '5': [4],
-        '6': [5],
-        '7': [
-          5,
-          10,
-        ],
-        '8': [
-          5,
-          6,
-          7,
-        ],
-        '9': [4],
-        '10': [9],
-        '11': [6],
-        '12': [
-          7,
-          10,
-          11,
-        ],
-        '13': [
-          11,
-          12,
-        ],
-        '14': [13],
-        '15': [14],
-        '16': [8],
-        '17': [16],
-        '18': [17],
-        '19': [
-          15,
-          18,
-        ],
-        '20': [19],
-        '21': [20],
-        '22': [1],
-        '23': [22],
-        '24': [4],
-        '25': [24],
-      },
-      '1': {
-        '26': [46],
-        '27': [26],
-        '30': [29],
-        '31': [30],
-        '33': [32],
-        '36': [35],
-        '37': [36],
-        '39': [38],
-        '40': [39],
-        '41': [40],
-        '46': [45],
-        '48': [47],
-      },
-      '2': {
-        '102': [101],
-        '103': [101],
-        '104': [102],
-        '105': [104],
-        '106': [105],
-        '107': [106],
-        '108': [107],
-        '109': [108],
-        '110': [116],
-        '111': [117],
-        '112': [111],
-        '113': [111],
-        '114': [113],
-        '115': [114],
-        '116': [104],
-        '117': [110],
-        '118': [117],
-        '119': [118],
-        '120': [119],
-        '121': [120],
-        '122': [121],
-        '123': [122],
-        '124': [121],
-        '125': [124],
-        '126': [125],
-        '127': [126],
-        '128': [127],
-        '129': [128],
-        '130': [129],
-        '131': [130],
-        '132': [131],
-        '133': [132],
-        '134': [133],
-      },
-    },
-    'routeBadgeRequirements': {
-      '0': {
-        '3': 1,
-        '5': 2,
-        '7': 3,
-        '8': 3,
-        '9': 2,
-        '11': 3,
-        '12': 6,
-        '13': 6,
-        '16': 6,
-        '19': 5,
-        '21': 7,
-        '22': 8,
-        '24': 2,
-      },
-      '1': {
-        '28': 26,
-        '32': 14,
-        '34': 15,
-        '35': 16,
-        '38': 17,
-        '42': 19,
-        '43': 20,
-        '44': 20,
-        '45': 21,
-        '47': 18,
-      },
-      '2': {
-        '105': 31,
-        '111': 29,
-        '112': 30,
-        '116': 27,
-        '117': 28,
-        '118': 31,
-        '120': 32,
-        '126': 33,
-        '127': 34,
-      },
-    },
     'WaterAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'IceAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'ForestAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'CaveAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'GemCaveAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'PowerPlantAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'MansionAreas': {
       '0': {},
       '1': {},
       '2': {},
+      '3': {},
     },
     'GraveyardAreas': {
       '0': {},
       '1': {},
       '2': {},
-    },
-    'routeDungeonRequirements': {
-      '0': {
-        '4': 'Mt. Moon',
-        '20': 'Seafoam Islands',
-      },
-      '1': {
-        '33': 'Union Cave',
-        '34': 'Ilex Forest',
-      },
-      '2': {
-        '110': 'Granite Cave',
-        '112': 'Jagged Pass',
-        '113': 'Fiery Path',
-        '115': 'Meteor Falls',
-        '116': 'Petalburg Woods',
-        '124': 'Mt. Pyre',
-        '128': 'Seafloor Cavern',
-      },
+      '3': {},
     },
     'Starter': {
       '0': 'Bulbasaur',
@@ -30591,7 +38709,20 @@ module.exports = {
       '8': 'Metal_coat',
       '9': 'Kings_rock',
       '10': 'Upgrade',
-      '11': 'Time_stone',
+      '11': 'Soothe_bell',
+      '12': 'Deepsea_tooth',
+      '13': 'Deepsea_scale',
+      '14': 'Dawn_stone',
+      '15': 'Dusk_stone',
+      '16': 'Shiny_stone',
+      '17': 'Dubious_disc',
+      '18': 'Electirizer',
+      '19': 'Magmarizer',
+      '20': 'Protector',
+      '21': 'Reaper_cloth',
+      '22': 'Razor_claw',
+      '23': 'Razor_fang',
+      '24': 'Prism_scale',
       'None': -1,
       '-1': 'None',
       'Fire_stone': 0,
@@ -30605,7 +38736,20 @@ module.exports = {
       'Metal_coat': 8,
       'Kings_rock': 9,
       'Upgrade': 10,
-      'Time_stone': 11,
+      'Soothe_bell': 11,
+      'Deepsea_tooth': 12,
+      'Deepsea_scale': 13,
+      'Dawn_stone': 14,
+      'Dusk_stone': 15,
+      'Shiny_stone': 16,
+      'Dubious_disc': 17,
+      'Electirizer': 18,
+      'Magmarizer': 19,
+      'Protector': 20,
+      'Reaper_cloth': 21,
+      'Razor_claw': 22,
+      'Razor_fang': 23,
+      'Prism_scale': 24,
     },
     'BattleItemType': {
       'xAttack': 'xAttack',
@@ -30623,6 +38767,11 @@ module.exports = {
       '4': 'Lickitung',
       '5': 'Togepi',
       '6': 'Beldum',
+      '7': 'Skorupi',
+      '8': 'Combee',
+      '9': 'Burmy (plant)',
+      '10': 'Spiritomb',
+      '11': 'Cherubi',
       'Eevee': 0,
       'Porygon': 1,
       'Jynx': 2,
@@ -30630,6 +38779,11 @@ module.exports = {
       'Lickitung': 4,
       'Togepi': 5,
       'Beldum': 6,
+      'Skorupi': 7,
+      'Combee': 8,
+      'Burmy (plant)': 9,
+      'Spiritomb': 10,
+      'Cherubi': 11,
     },
     'PokeBlockColor': {
       '0': 'Black',
@@ -30698,6 +38852,8 @@ module.exports = {
       'Old Amber': 'Aerodactyl',
       'Root Fossil': 'Lileep',
       'Claw Fossil': 'Anorith',
+      'Armor Fossil': 'Shieldon',
+      'Skull Fossil': 'Cranidos',
     },
     'PokemonToFossil': {
       'Omanyte': 'Helix Fossil',
@@ -30705,6 +38861,8 @@ module.exports = {
       'Aerodactyl': 'Old Amber',
       'Lileep': 'Root Fossil',
       'Anorith': 'Claw Fossil',
+      'Shieldon': 'Armor Fossil',
+      'Cranidos': 'Skull Fossil',
     },
     'KantoGyms': [
       'Pewter City',
@@ -30750,6 +38908,21 @@ module.exports = {
       'Elite Glacia',
       'Elite Drake',
       'Champion Wallace',
+    ],
+    'SinnohGyms': [
+      'Oreburgh City',
+      'Eterna City',
+      'Hearthome City',
+      'Veilstone City',
+      'Pastoria City',
+      'Canalave City',
+      'Snowpoint City',
+      'Sunyshore City',
+      'Elite Aaron',
+      'Elite Bertha',
+      'Elite Flint',
+      'Elite Lucian',
+      'Champion Cynthia',
     ],
     'RegionGyms': [
       [
@@ -30797,6 +38970,21 @@ module.exports = {
         'Elite Drake',
         'Champion Wallace',
       ],
+      [
+        'Oreburgh City',
+        'Eterna City',
+        'Hearthome City',
+        'Veilstone City',
+        'Pastoria City',
+        'Canalave City',
+        'Snowpoint City',
+        'Sunyshore City',
+        'Elite Aaron',
+        'Elite Bertha',
+        'Elite Flint',
+        'Elite Lucian',
+        'Champion Cynthia',
+      ],
     ],
     'KantoDungeons': [
       'Viridian Forest',
@@ -30839,6 +39027,28 @@ module.exports = {
       'Victory Road Hoenn',
       'Petalburg Woods',
       'New Mauville',
+    ],
+    'SinnohDungeons': [
+      'Oreburgh Gate',
+      'Ravaged Path',
+      'Eterna Forest',
+      'Old Chateau',
+      'Wayward Cave',
+      'Mt. Coronet South',
+      'Iron Island',
+      'Mt. Coronet North',
+      'Lake Verity',
+      'Lake Valor',
+      'Lake Acuity',
+      'Distortion World',
+      'Victory Road Sinnoh',
+      'Spear Pillar',
+      'Hall of Origin',
+      'Fullmoon Island',
+      'Newmoon Island',
+      'Flower Paradise',
+      'Snowpoint Temple',
+      'Stark Mountain',
     ],
     'RegionDungeons': [
       [
@@ -30883,16 +39093,40 @@ module.exports = {
         'Petalburg Woods',
         'New Mauville',
       ],
+      [
+        'Oreburgh Gate',
+        'Ravaged Path',
+        'Eterna Forest',
+        'Old Chateau',
+        'Wayward Cave',
+        'Mt. Coronet South',
+        'Iron Island',
+        'Mt. Coronet North',
+        'Lake Verity',
+        'Lake Valor',
+        'Lake Acuity',
+        'Distortion World',
+        'Victory Road Sinnoh',
+        'Spear Pillar',
+        'Hall of Origin',
+        'Fullmoon Island',
+        'Newmoon Island',
+        'Flower Paradise',
+        'Snowpoint Temple',
+        'Stark Mountain',
+      ],
     ],
     'StartingTowns': [
       'Pallet Town',
       'New Bark Town',
       'Littleroot Town',
+      'Twinleaf Town',
     ],
     'DockTowns': [
       'Vermillion City',
       'Olivine City',
       'Slateport City',
+      'Canalave City',
     ],
   },
 };

@@ -1,36 +1,39 @@
 const { MessageEmbed } = require('discord.js');
 const {
-  pokemonsPerRoute,
+  regionRoutes,
   pokemonList,
   RouteShardTypes,
   PokemonType,
   pokemonTypeIcons,
   gameVersion,
+  GameConstants,
 } = require('../helpers.js');
 
 module.exports = {
   name        : 'route',
   aliases     : ['routes', 'routeinfo'],
   description : 'Get PokéClicker game info about a specific Pokémon',
-  args        : ['id'],
+  args        : ['id', 'region?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-    const [routeNumber] = args;
+    const [routeNumber, region] = args;
     if (isNaN(routeNumber)) return msg.reply(`Invalid route number: \`${routeNumber}\``);
+    let regionID;
+    if (region !== undefined) {
+      regionID = isNaN(region) ? GameConstants.Region[region.toLowerCase()] : +region;
+    }
 
-    let route;
-    Object.values(pokemonsPerRoute).forEach(routes => {
-      if (route) return;
-      route = Object.entries(routes).find(([r, p]) => r == routeNumber);
-      if (route) route = route[1];
+    const route = regionRoutes.find(routeData => {
+      if (routeData.number == routeNumber && (regionID == undefined || routeData.region == regionID))
+        return routeData;
     });
 
-    if (!route) return msg.reply(`Route \`${routeNumber}\` not found..`);
+    if (!route) return msg.reply(`Route \`${routeNumber}\` not found${regionID != undefined ? ` in ${GameConstants.Region[regionID]}` : ''}..`);
 
-    let pokemon = Object.values(route).flat();
+    let pokemon = Object.values(route.pokemon).flat();
     pokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
     pokemon = pokemonList.find(p => p.name == pokemon);
     if (!pokemon) pokemon = pokemonList[0];
@@ -44,7 +47,7 @@ module.exports = {
       .setFooter(`Data is up to date as of v${gameVersion}`);
 
     //embed.addField('❯ Pokemon', '\u200b');
-    Object.entries(route).forEach(([type, pokemon]) => {
+    Object.entries(route.pokemon).forEach(([type, pokemon]) => {
       if (!pokemon.length) return;
       const desc = [];
       desc.push('```prolog');

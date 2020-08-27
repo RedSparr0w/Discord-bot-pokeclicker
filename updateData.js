@@ -14,28 +14,26 @@ const fs = require('fs');
 
     const getRouteTypes = () => {
       const regionRoutes = {};
-      Object.entries(pokemonsPerRoute).forEach(([region, routes]) => {
-        regionRoutes[region] = {};
-        Object.entries(routes).forEach(([route, encounterType]) => {
-          regionRoutes[region][route] = {};
-          Object.values(encounterType).flat().forEach(pName => {
-            const pokemon = pokemonMap[pName];
-            if (!pokemon || pokemon.id <= 0) return;
-            if (!regionRoutes[region][route][pokemon.type[0]]) {
-              regionRoutes[region][route][pokemon.type[0]] = 0;
+      Routes.regionRoutes.forEach(routeData => {
+        if (!regionRoutes[routeData.region]) regionRoutes[routeData.region] = {};
+        if (!regionRoutes[routeData.region][routeData.number]) regionRoutes[routeData.region][routeData.number] = {};
+        Object.values(routeData.pokemon).flat().forEach(pName => {
+          const pokemon = pokemonMap[pName];
+          if (!pokemon || pokemon.id <= 0) return;
+          if (!regionRoutes[routeData.region][routeData.number][pokemon.type[0]]) {
+            regionRoutes[routeData.region][routeData.number][pokemon.type[0]] = 0;
+          }
+          regionRoutes[routeData.region][routeData.number][pokemon.type[0]]++;
+          if (pokemon.type[1]) {
+            if (!regionRoutes[routeData.region][routeData.number][pokemon.type[1]]) {
+              regionRoutes[routeData.region][routeData.number][pokemon.type[1]] = 0;
             }
-            regionRoutes[region][route][pokemon.type[0]]++;
-            if (pokemon.type[1]) {
-              if (!regionRoutes[region][route][pokemon.type[1]]) {
-                regionRoutes[region][route][pokemon.type[1]] = 0;
-              }
-              regionRoutes[region][route][pokemon.type[1]]++;
-            }
-          });
-          totalPokemon = Object.values(encounterType).flat().length;
-          Object.entries(regionRoutes[region][route]).forEach(([type, amount]) => {
-            regionRoutes[region][route][type] = +((amount / totalPokemon) * 100).toFixed(2);
-          });
+            regionRoutes[routeData.region][routeData.number][pokemon.type[1]]++;
+          }
+        });
+        totalPokemon = Object.values(routeData.pokemon).flat().length;
+        Object.entries(regionRoutes[routeData.region][routeData.number]).forEach(([type, amount]) => {
+          regionRoutes[routeData.region][routeData.number][type] = +((amount / totalPokemon) * 100).toFixed(2);
         });
       });
       return regionRoutes;
@@ -43,7 +41,7 @@ const fs = require('fs');
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
-      pokemonsPerRoute,
+      regionRoutes: Routes.regionRoutes,
       RouteShardTypes: getRouteTypes(),
       PokemonLocationType,
       PokemonType,
