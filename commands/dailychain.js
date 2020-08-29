@@ -131,15 +131,12 @@ module.exports = {
     };
 
     const betterToSell = (deal, next) => {
-      // If we would be better off selling item1 of this deal,
+      // If we wouldn't get diamonds from selling item2, we only stand to gain
+      const isDia = deal.amount2 < 100 && deal.amount2 > 0;
+
+      // If we would be better off selling item2 of this deal,
       // then we shouldn't suggest feeding it into the chain
-      const newChainValue = next.profit * deal.amount2 / deal.amount1;
-      const potentialProfit = newChainValue - deal.item1.value;
-
-      // If we wouldn't get diamonds from selling item1, we only stand to gain
-      const notDia = deal.amount1 >= 100 || deal.amount1 < 0;
-
-      return (!notDia && potentialProfit <= 0);
+      return (isDia && next.profit < deal.item2.value);
     };
 
     const chains = dailyDeals.reduceRight((res,deal) => {
@@ -147,7 +144,7 @@ module.exports = {
       let next = res.bestStartingWith[deal.item2.name];
 
       // Don't link to a bad chain
-      if (next != undefined && betterToSell(deal, next)) {
+      if (next != undefined && betterToSell(deal, res.list[next])) {
         next = undefined;
       }
 
