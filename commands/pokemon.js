@@ -11,6 +11,8 @@ const {
   gameVersion,
 } = require('../helpers.js');
 
+const fuzzyPokemon = FuzzySet(pokemonList.map(p => p.name.toLowerCase()), false);
+
 module.exports = {
   name        : 'pokemon',
   aliases     : ['p', 'poke', 'pinfo', 'pokeinfo'],
@@ -30,11 +32,17 @@ module.exports = {
 
     let pokemon = pokemonList.find(p => p.id == +id || p.name.toLowerCase() == id);
     if (!pokemon && isNaN(id)) {
-      const fuzzy = FuzzySet(pokemonList.map(p => p.name.toLowerCase()));
-
-      const newNames = fuzzy.get(id);
+      const newNames = fuzzyPokemon.get(id);
       if (newNames) {
         pokemon = pokemonList.find(p => p.name.toLowerCase() == newNames[0][1]);
+
+        // If this pokemon is an alternate form,
+        // but the user input didn't include a space,
+        // they probably just want the basic form
+        if (!Number.isInteger(pokemon.id) && !id.includes(' ')) {
+          const firstFormID = Math.floor(pokemon.id);
+          pokemon = pokemonList.find(p => p.id == firstFormID) || pokemon;
+        }
       }
     }
     if (!pokemon) pokemon = pokemonList.find(p => p.id == 0);
