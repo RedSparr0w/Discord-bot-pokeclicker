@@ -22,10 +22,10 @@ module.exports = {
 
     const pokemon = pokemonList.map(p=>({ id: p.id, name: p.name, attack: p.attack, apc: +(p.attack / p.eggCycles).toFixed(1)}));
 
-    const kantoPokemon = pokemon.filter(p => p.id >= 1 && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto]);
-    const johtoPokemon = pokemon.filter(p => p.id > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto] && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto]);
-    const hoennPokemon = pokemon.filter(p => p.id > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto] && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.hoenn]);
-    const sinnohPokemon = pokemon.filter(p => p.id > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.hoenn] && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.sinnoh]);
+    const kantoPokemon = pokemon.filter(p => Math.floor(p.id) >= 1 && p.id <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto]);
+    const johtoPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto]);
+    const hoennPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.hoenn]);
+    const sinnohPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.hoenn] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.sinnoh]);
     const getTop = (arr, type, amt = 10) => arr.sort((a, b) => b[type] - a[type]).slice(0, amt);
 
     embed.addField('\u200b', '**=================== OVERALL ===================**');
