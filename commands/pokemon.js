@@ -84,10 +84,10 @@ module.exports = {
         const descriptions = [];
         pokemon.locations[PokemonLocationType.Evolution].forEach(evolution => {
           let description = `\`${evolution.basePokemon.toUpperCase()}:\``;
-          description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
-          description += evolution.type.includes(EvolutionType.Location) ? `\n<:dungeonToken:737206932128923699> In ${evolution.dungeon}` : '';
           description += evolution.type.includes(EvolutionType.Level) ? `\n<:RareCandy:733974449774133299> Above level ${evolution.level}` : '';
           description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:740790300100001863> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
+          description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
+          description += evolution.type.includes(EvolutionType.Location) ? `\n<:dungeonToken:737206932128923699> While in ${evolution.dungeon}` : '';
           description += evolution.type.includes(EvolutionType.Other) ? '\n🍍 With unknown requirement' : '';
 
           descriptions.push(description);
