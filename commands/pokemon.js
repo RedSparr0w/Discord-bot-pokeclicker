@@ -62,7 +62,7 @@ module.exports = {
       .addField('<:Pokemon_egg:733973219177922591> Egg Steps', `${pokemon.eggSteps}`, true)
       .addField('\u200b', '\u200b'); // Spacing
 
-    if (pokemon.locations) {
+    if (pokemon.locations && Object.keys(pokemon.locations).length) {
       // Routes
       if (pokemon.locations[PokemonLocationType.Route]) {
         let description = '';
@@ -127,6 +127,8 @@ module.exports = {
         const description = pokemon.locations[PokemonLocationType.Safari];
         embed.addField('❯ Safari Zone Chance', description);
       }
+    } else {
+      embed.addField('\u200b', '```diff\n-Currently Unobtainable\n```');
     }
 
     // Spacing for the footer
