@@ -59,7 +59,7 @@ module.exports = {
       .addField('<:Pokeball:733980790718988348> Catch Rate', `${pokemon.catchRatePercent}%`, true)
       .addField('<:RareCandySmall:733974449774133299> Level Type', `${LevelType[pokemon.levelType]}`, true)
       .addField('\u200b', '\u200b', true) // Spacing
-      .addField('<:Pokemon_egg:733973219177922591> Egg Steps', `${pokemon.eggSteps}`, true)
+      .addField('<:Pokemon_egg:733973219177922591> Egg Steps', `${pokemon.eggSteps}`, true);
 
     if (pokemon.locations && Object.keys(pokemon.locations).length) {
       embed.addField('\u200b', '\u200b'); // Spacing
