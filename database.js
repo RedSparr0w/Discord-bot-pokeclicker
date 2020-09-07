@@ -8,8 +8,7 @@ async function setupDB(){
   const db = await getDB();
   await Promise.all([
     db.run('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS guilds(id INTEGER PRIMARY KEY AUTOINCREMENT, guild TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, name TEXT(64) NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS points(guild INTEGER NOT NULL, user INTEGER NOT NULL, points BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (guild, user), FOREIGN KEY (guild) REFERENCES guilds (id) ON DELETE CASCADE, FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(guild, user) ON CONFLICT REPLACE)'),
+    db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', last_claim_daily TEXT(24) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
   ]);
   db.close();
   return;
@@ -29,86 +28,101 @@ async function getUserID(user){
   return user_id;
 }
 
-async function getGuildID(guild){
+async function getAmount(user, table = 'coins'){
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
+  let result = await db.get(`SELECT amount FROM ${table} WHERE user=?`, user_id);
+  // If user doesn't exist yet, set them up (with 1000 coins)
+  if (!result) {
+    await db.run(`INSERT OR REPLACE INTO ${table} (user, amount) VALUES (?, 1000)`, user_id);
+    // try get the users points again
+    result = await db.get(`SELECT amount FROM ${table} WHERE user=?`, user_id);
+  }
+  db.close();
+
+  const { amount = 0 } = result || {};
+
+  return +amount;
+}
+
+async function addAmount(user, amount = 1, table = 'coins'){
+  // Check amount is valid
+  amount = +amount;
+  if (isNaN(amount)) return;
+  amount += await getAmount(user, table);
+
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
   const data = {
-    $guild: guild.id,
-    $name: guild.name,
+    $user_id: user_id,
+    $amount: amount,
   };
+
+  await db.run(`UPDATE ${table} SET amount=$amount WHERE user=$user_id`, data);
+  db.close();
+
+  return amount;
+}
+
+async function removeAmount(user, amount = 1, table = 'coins'){
+  return await addAmount(user, -amount, table);
+}
+
+async function setAmount(user, amount = 1, table = 'coins'){
+  // Check amount is valid
+  amount = +amount;
+  if (isNaN(amount)) return;
+
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
+  const data = {
+    $user_id: user_id,
+    $amount: amount,
+  };
+
+  await db.run(`UPDATE ${table} SET amount=$amount WHERE user=$user_id`, data);
+  db.close();
+
+  return amount;
+}
+
+async function getTop(amount = 10, table = 'coins'){
+  // amount must be between 1 - 50
+  if (isNaN(amount)) amount = 10;
+  amount = +Math.max(1, Math.min(50, amount));
 
   const db = await getDB();
-  await db.run('INSERT OR REPLACE INTO guilds (id, guild, name) values ((SELECT id FROM guilds WHERE guild = $guild), $guild, $name);', data);
-  const { guild_id = 0 } = await db.get('SELECT last_insert_rowid() AS guild_id;');
-  db.close();
-
-  return guild_id;
-}
-
-async function getPoints(guild, user, table = 'points'){
-  const [
-    db,
-    guild_id,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getGuildID(guild),
-    getUserID(user),
-  ]);
-
-  const { points } = await db.get(`SELECT points FROM ${table} WHERE  guild=? AND user=?`, guild_id, user_id) || { points: 0 };
-  db.close();
-
-  return +points;
-}
-
-async function addPoints(guild, user, points = 1, table = 'points'){
-  // Check points is valid
-  points = +points;
-  if (isNaN(points)) return;
-  points += await getPoints(guild, user, table);
-
-  const [
-    db,
-    guild_id,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getGuildID(guild),
-    getUserID(user),
-  ]);
-
-  const data = {
-    $guild_id: guild_id,
-    $user_id: user_id,
-    $points: points,
-  };
-
-  await db.run(`INSERT OR REPLACE INTO ${table} (guild, user, points) VALUES ($guild_id, $user_id, $points)`, data);
-  db.close();
-
-  return points;
-}
-
-async function getTop(guild, amount = 10, table = 'points'){
-  // amount must be between 1 - 50
-  amount = Math.max(1, Math.min(50, amount));
-
-  const [
-    db,
-    guild_id,
-  ] = await Promise.all([
-    getDB(),
-    getGuildID(guild),
-  ]);
-
-  const results = await db.all(`SELECT users.user, points  FROM ${table} INNER JOIN users ON users.id = ${table}.user WHERE guild = ${guild_id} ORDER BY points DESC LIMIT ${amount}`);
+  const results = await db.all(`SELECT users.user, amount FROM ${table} INNER JOIN users ON users.id = ${table}.user ORDER BY amount DESC LIMIT ${amount}`);
   db.close();
 
   return results;
 }
 
 module.exports = {
+  getDB,
   setupDB,
-  getPoints,
-  addPoints,
+  getUserID,
+  getAmount,
+  addAmount,
+  setAmount,
+  removeAmount,
   getTop,
 };
