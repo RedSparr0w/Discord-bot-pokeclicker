@@ -40,7 +40,7 @@ const setLastClaimDailyTime = async (user) => {
 module.exports = {
   name        : 'claim',
   aliases     : ['daily', 'timely'],
-  description : 'Short description',
+  description : 'Claim your daily coins',
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
