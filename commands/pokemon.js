@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
+const { website } = require('../config.json');
 const {
   pokemonList,
   LevelType,
@@ -51,7 +52,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}`)
       .setDescription(`${pokemonTypeIcons[PokemonType[pokemon.type[0]]]} _\`${PokemonType[pokemon.type[0]]}\`_${pokemon.type[1] ? `\n${pokemonTypeIcons[PokemonType[pokemon.type[1]]]} _\`${PokemonType[pokemon.type[1]]}\`_` : ''}`)
-      .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+      .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`)
       .addField('<:xAttackSmall:733974450864652380> Base Attack', `${pokemon.attack}`,true)
