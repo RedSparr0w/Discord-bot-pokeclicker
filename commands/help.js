@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const { upperCaseFirstLetter } = require('../helpers.js');
 const { prefix } = require('../config.json');
 
 module.exports = {
@@ -11,7 +12,6 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-    const data = [];
     let commands = msg.client.commands;
     if (msg.channel.type === 'dm'){
       commands = commands.filter(command => !command.guildOnly);
@@ -20,8 +20,18 @@ module.exports = {
     }
 
     if (!args.length) {
-      commands.forEach(command => data.push(`${prefix}${command.name}${command.args.map(arg=>` [${arg}]`).join('')}: ${command.description}`));
-      return msg.channel.send(data, { code: 'http', split: true });
+      const embed = new MessageEmbed()
+        .setTitle('Help')
+        .setDescription([
+          'For more detailed information about a command use',
+          '```css',
+          `${prefix}help [command_name]`,
+          '```',
+        ])
+        .setColor('#3498db');
+
+      commands.forEach(command => embed.addField(`❯ ${upperCaseFirstLetter(command.name)}`, [`${command.description.split('\n')[0]}`], true));
+      return msg.channel.send({ embed });
     }
 
     const name = args[0].toLowerCase();
@@ -32,13 +42,19 @@ module.exports = {
     }
 
     const embed = new MessageEmbed()
-      .setTitle(`***\`${prefix}help ${command.name}\`***`)
+      .setTitle(`Help | ${upperCaseFirstLetter(command.name)}`)
       .setColor('#3498db')
-      .addField('❯ Description', `\`${command.description}\``)
+      .addField('❯ Description', `${command.description}`)
       .addField('❯ Usage', `\`\`\`css\n${prefix}${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``)
       .addField('❯ Aliases', `\`${command.aliases.join('`, `') || '-'}\``, true)
       .addField('❯ Cooldown', `\`${command.cooldown || 3} second(s)\``, true)
       .addField('❯ Guild Only', `\`${command.guildOnly}\``, true);
+
+    if (command.helpFields) {
+      embed.addField('\u200b\n═══ More Information ═══', '\u200b');
+      command.helpFields.forEach(([header, body, inline]) => embed.addField(header, body, !!inline));
+    }
+
     msg.channel.send({ embed });
   },
 };
