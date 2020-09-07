@@ -1,3 +1,5 @@
+const { MessageEmbed } = require('discord.js');
+
 module.exports = {
   name        : 'ping',
   aliases     : [],
@@ -9,17 +11,22 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     const createdTime = Date.now();
-    return msg.channel.send([
-      '```yaml',
-      'Pong: ---ms',
-      '```',
-    ]).then(m=>{
+    
+    const embed = new MessageEmbed()
+      .setDescription([
+        '```yaml',
+        'Pong: ---ms',
+        '```',
+      ])
+      .setColor('#3498db');
+    return msg.channel.send({ embed }).then(m=>{
       const outboundDelay = Date.now() - createdTime;
-      m.edit([
+      embed.setDescription([
         '```yaml',
         `Pong: ${outboundDelay}ms`,
         '```',
       ]);
+      m.edit({ embed });
     });
   },
 };
