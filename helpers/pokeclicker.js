@@ -1,5 +1,49 @@
 module.exports = {
   'gameVersion': '0.5.1',
+  'shopItems': [
+    {
+      'name': 'Unown (D)',
+      'image': 'assets/images/pokemon/201.03.png',
+      'price': 700,
+      'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+    {
+      'name': 'Unown (I)',
+      'image': 'assets/images/pokemon/201.08.png',
+      'price': 700,
+      'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+    {
+      'name': 'Unown (S)',
+      'image': 'assets/images/pokemon/201.18.png',
+      'price': 700,
+      'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+    {
+      'name': 'Unown (C)',
+      'image': 'assets/images/pokemon/201.02.png',
+      'price': 700,
+      'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+    {
+      'name': 'Unown (O)',
+      'image': 'assets/images/pokemon/201.14.png',
+      'price': 700,
+      'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+    {
+      'name': 'Unown (R)',
+      'image': 'assets/images/pokemon/201.17.png',
+      'price': 700,
+      'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+  ],
   'regionRoutes': [
     {
       'region': 0,

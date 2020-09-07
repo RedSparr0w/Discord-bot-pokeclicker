@@ -38,7 +38,7 @@ client.on('error', e => error('Client error thrown:', e))
     if (autorole) {
       // Auto apply join role
       setTimeout(() => {
-        member.roles.add(autorole);
+        member.roles.add(autorole, 'Auto apply role');
       }, 6e4);
     }
   })

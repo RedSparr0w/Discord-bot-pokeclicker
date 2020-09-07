@@ -1,11 +1,12 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const { website } = require('./config.json');
 
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('https://pokeclicker-dev.github.io/pokeclicker/');
+  await page.goto(website);
 
   const result = await page.evaluate(() => {
     SpecialEvents.events.forEach(event => {
@@ -41,6 +42,7 @@ const fs = require('fs');
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
+      shopItems: App.game.discord.codes,
       regionRoutes: Routes.regionRoutes,
       RouteShardTypes: getRouteTypes(),
       PokemonLocationType,

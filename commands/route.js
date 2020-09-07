@@ -8,6 +8,7 @@ const {
   gameVersion,
   GameConstants,
 } = require('../helpers.js');
+const { website } = require('../config.json');
 
 module.exports = {
   name        : 'route',
@@ -42,7 +43,7 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle(`Route #${routeNumber}`)
-      .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+      .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`);
 

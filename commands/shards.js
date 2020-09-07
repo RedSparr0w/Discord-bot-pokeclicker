@@ -35,7 +35,6 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle(`${pokemonTypeIcons[type]} ${type} Shard Routes`)
-      //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`);
 
