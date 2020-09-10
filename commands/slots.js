@@ -62,7 +62,7 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
   if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += multipliers[icons.findIndex(i => i == row3[0])];
 
   // Berries
-  const berry = icons[6];
+  const berry = icons[icons.length - 1];
   if (lines >= 2 && row1[0] == berry) {
     if (row1[1] == berry) multiplier += 6;
     else if (lines >= 3 && row2[1] == berry) multiplier += 6;
