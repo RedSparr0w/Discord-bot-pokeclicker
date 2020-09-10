@@ -9,6 +9,12 @@ const multipliers = [
   15,
   8,
   8,
+  15,
+  15,
+  8,
+  8,
+  8,
+  8,
 ];
 const icons       = [
   '<:slots_7:751322075578499093>',
@@ -17,6 +23,13 @@ const icons       = [
   '<:slots_psyduck:751322076052455444>',
   '<:slots_magnemite:751322076014706698>',
   '<:slot_shelder:751322075481768027>',
+  '<:slots_pikachu:751322076031483944>',
+  '<:slots_psyduck:751322076052455444>',
+  '<:slots_magnemite:751322076014706698>',
+  '<:slot_shelder:751322075481768027>',
+  '<:slots_magnemite:751322076014706698>',
+  '<:slot_shelder:751322075481768027>',
+  '<:slots_berry:751322075955724368>',
   '<:slots_berry:751322075955724368>',
 ];
 
