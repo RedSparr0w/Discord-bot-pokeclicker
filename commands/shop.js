@@ -113,7 +113,7 @@ module.exports = {
         embed.setColor('#e74c3c')
           .setDescription([
             msg.author,
-            `**${item.name}** Failed to purhase!`,
+            `**${item.name}** Failed to purchase!`,
             '',
             '_you cannot afford this item_',
           ]);
