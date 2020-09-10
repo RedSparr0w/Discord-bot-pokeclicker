@@ -42,6 +42,7 @@ const { website } = require('./config.json');
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
+      shopItems: App.game.discord.codes,
       regionRoutes: Routes.regionRoutes,
       RouteShardTypes: getRouteTypes(),
       PokemonLocationType,
