@@ -11,7 +11,7 @@ const discordShopItems = [
     claimFunction: async (guild, member) => {
       const role = guild.roles.cache.find(role => role.name == 'Poké Squad');
       if (!role) return false;
-      await member.roles.add(role);
+      await member.roles.add(role, 'User purchased role');
       return true;
     },
   },
