@@ -2,6 +2,5 @@
   "prefix": "!",
   "token": "YOUR_BOTS_TOKEN_HERE",
   "website": "https://LINK.TO.WEBSITE/",
-  "ownerID": "YOUR_DISCORD_USER_ID (optional)",
-  "autorole": "ROLE_ID_HERE (optional)"
+  "ownerID": "YOUR_DISCORD_USER_ID (optional)"
 }
