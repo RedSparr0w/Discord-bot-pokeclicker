@@ -1,16 +1,17 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount } = require('../helpers.js');
-
 const multipliers = [
   300,
   100,
   15,
   15,
-  8,
-  8,
   15,
   15,
+  8,
+  8,
+  8,
+  8,
   8,
   8,
   8,
@@ -21,23 +22,25 @@ const icons       = [
   '<:slots_r:751322076115370044>',
   '<:slots_pikachu:751322076031483944>',
   '<:slots_psyduck:751322076052455444>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
   '<:slots_pikachu:751322076031483944>',
   '<:slots_psyduck:751322076052455444>',
   '<:slots_magnemite:751322076014706698>',
   '<:slot_shelder:751322075481768027>',
   '<:slots_magnemite:751322076014706698>',
   '<:slot_shelder:751322075481768027>',
-  '<:slots_berry:751322075955724368>',
+  '<:slots_magnemite:751322076014706698>',
+  '<:slot_shelder:751322075481768027>',
+  '<:slots_magnemite:751322076014706698>',
+  '<:slot_shelder:751322075481768027>',
   '<:slots_berry:751322075955724368>',
 ];
 
 const spinSlots = () => {
   const spinIcons = [[],[],[]];
   spinIcons.forEach((col, index) => {
-    const column = [...icons];
-    if (index == 2) column.splice(column.length - 1);
+    let column = [...icons];
+    // Filter out the berry for the last column
+    if (index == 2) column = column.filter(c => c != icons[icons.length - 1]);
     while (col.length < 3) {
       col.push(column.splice(Math.floor(Math.random() * column.length), 1)[0]);
     }
