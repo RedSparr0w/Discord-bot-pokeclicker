@@ -2,32 +2,105 @@ const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount } = require('../helpers.js');
 
+const slots = {
+  seven: '<:slots_7:751322075578499093>',
+  rocket: '<:slots_r:751322076115370044>',
+  pikachu: '<:slots_pikachu:751322076031483944>',
+  psyduck: '<:slots_psyduck:751322076052455444>',
+  magnemite: '<:slots_magnemite:751322076014706698>',
+  shelder: '<:slot_shelder:751322075481768027>',
+  berry: '<:slots_berry:751322075955724368>',
+};
+
 const columnOptions = [
-  ['<:slots_7:751322075578499093>', 300, 1],
-  ['<:slots_r:751322076115370044>', 100, 1],
-  ['<:slots_pikachu:751322076031483944>', 15, 2],
-  ['<:slots_psyduck:751322076052455444>', 15, 2],
-  ['<:slots_magnemite:751322076014706698>', 8, 4],
-  ['<:slot_shelder:751322075481768027>', 8, 4],
-  ['<:slots_berry:751322075955724368>', 1, 1],
+  [slots.seven, 300, 1],
+  [slots.rocket, 100, 1],
+  [slots.pikachu, 15, 2],
+  [slots.psyduck, 15, 2],
+  [slots.magnemite, 8, 4],
+  [slots.shelder, 8, 4],
+  [slots.berry, 1, 1],
 ];
 
-const icons = [];
-columnOptions.forEach(([icon, multiplier, count]) => {
-  for (let i = 0; i < count; i++) icons.push(icon);
-});
+const columns = [
+  [
+    slots.pikachu,
+    slots.shelder,
+    slots.pikachu,
+    slots.magnemite,
+    slots.seven,
+    slots.shelder,
+    slots.psyduck,
+    slots.rocket,
+    slots.berry,
+    slots.pikachu,
+    slots.shelder,
+    slots.seven,
+    slots.magnemite,
+    slots.pikachu,
+    slots.rocket,
+    slots.shelder,
+    slots.pikachu,
+    slots.seven,
+    slots.psyduck,
+    slots.berry,
+    slots.rocket,
+  ],
+  [
+    slots.magnemite,
+    slots.berry,
+    slots.psyduck,
+    slots.pikachu,
+    slots.magnemite,
+    slots.berry,
+    slots.psyduck,
+    slots.seven,
+    slots.magnemite,
+    slots.berry,
+    slots.rocket,
+    slots.psyduck,
+    slots.shelder,
+    slots.magnemite,
+    slots.psyduck,
+    slots.berry,
+    slots.seven,
+    slots.magnemite,
+    slots.berry,
+    slots.psyduck,
+    slots.rocket,
+  ],
+  [
+    slots.seven,
+    slots.psyduck,
+    slots.shelder,
+    slots.magnemite,
+    slots.pikachu,
+    slots.psyduck,
+    slots.shelder,
+    slots.magnemite,
+    slots.pikachu,
+    slots.psyduck,
+    slots.magnemite,
+    slots.shelder,
+    slots.pikachu,
+    slots.psyduck,
+    slots.magnemite,
+    slots.shelder,
+    slots.pikachu,
+    slots.psyduck,
+    slots.magnemite,
+    slots.shelder,
+    slots.rocket,
+  ],
+];
 
 const spinSlots = () => {
   const spinIcons = [[],[],[]];
-  spinIcons.forEach((col, index) => {
-    let column = [...icons];
-    // Filter out the berry for the last column
-    if (index == 2) column = column.filter(c => c != icons[icons.length - 1]);
-    while (col.length < 3) {
-      col.push(column.splice(Math.floor(Math.random() * column.length), 1)[0]);
-    }
+  return spinIcons.map((col, index) => {
+    const column = columns[index];
+    const rand = Math.floor(Math.random() * column.length);
+    return [...column, ...column].slice(rand, rand + 3);
   });
-  return spinIcons;
 };
 
 const calcWinningsMultiplier = (slotIcons, lines) => {
@@ -47,7 +120,7 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
   if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
 
   // Berries
-  const berry = icons[icons.length - 1];
+  const berry = slots.berry;
   if (lines >= 2 && row1[0] == berry) {
     if (row1[1] == berry) multiplier += 6;
     else if (lines >= 3 && row2[1] == berry) multiplier += 6;
@@ -83,8 +156,8 @@ module.exports = {
       '❯ Multipliers:',
       [
         `${columnOptions.filter(([icon, multiplier]) => multiplier > 1).map(([icon, multiplier]) => `${icon}${icon}${icon} ║ **× ${multiplier}**`).join('\n')}`,
-        `${icons[icons.length - 1]}${icons[icons.length - 1]}➖ ║ **× 6**`,
-        `${icons[icons.length - 1]}➖➖ ║ **× 2**`,
+        `${slots.berry}${slots.berry}➖ ║ **× 6**`,
+        `${slots.berry}➖➖ ║ **× 2**`,
         '',
         '_**Note:** The multiplier is divided by however many lines you are playing._',
       ],
