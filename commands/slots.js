@@ -1,39 +1,21 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount } = require('../helpers.js');
-const multipliers = [
-  300,
-  100,
-  15,
-  15,
-  15,
-  15,
-  8,
-  8,
-  8,
-  8,
-  8,
-  8,
-  8,
-  8,
+
+const columnOptions = [
+  ['<:slots_7:751322075578499093>', 300, 1],
+  ['<:slots_r:751322076115370044>', 100, 1],
+  ['<:slots_pikachu:751322076031483944>', 15, 2],
+  ['<:slots_psyduck:751322076052455444>', 15, 2],
+  ['<:slots_magnemite:751322076014706698>', 8, 4],
+  ['<:slot_shelder:751322075481768027>', 8, 4],
+  ['<:slots_berry:751322075955724368>', 1, 1],
 ];
-const icons       = [
-  '<:slots_7:751322075578499093>',
-  '<:slots_r:751322076115370044>',
-  '<:slots_pikachu:751322076031483944>',
-  '<:slots_psyduck:751322076052455444>',
-  '<:slots_pikachu:751322076031483944>',
-  '<:slots_psyduck:751322076052455444>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_berry:751322075955724368>',
-];
+
+const icons = [];
+columnOptions.forEach(([icon, multiplier, count]) => {
+  for (let i = 0; i < count; i++) icons.push(icon);
+});
 
 const spinSlots = () => {
   const spinIcons = [[],[],[]];
@@ -56,13 +38,13 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
   const row3 = slotIcons.map(r => r[2]);
 
   // Each Row
-  if (lines >= 2 && new Set(row1).size == 1) multiplier += multipliers[icons.findIndex(i => i == row1[0])];
-  if (new Set(row2).size == 1) multiplier += multipliers[icons.findIndex(i => i == row2[0])];
-  if (lines >= 2 && new Set(row3).size == 1) multiplier += multipliers[icons.findIndex(i => i == row3[0])];
+  if (lines >= 2 && new Set(row1).size == 1) multiplier += columnOptions.find(i => i[0] == row1[0])[1];
+  if (new Set(row2).size == 1) multiplier += columnOptions.find(i => i[0] == row2[0])[1];
+  if (lines >= 2 && new Set(row3).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
 
   // Both Diagonals
-  if (lines >= 3 && new Set([row1[0], row2[1], row3[2]]).size == 1) multiplier += multipliers[icons.findIndex(i => i == row1[0])];
-  if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += multipliers[icons.findIndex(i => i == row3[0])];
+  if (lines >= 3 && new Set([row1[0], row2[1], row3[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row1[0])[1];
+  if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
 
   // Berries
   const berry = icons[icons.length - 1];
@@ -100,7 +82,7 @@ module.exports = {
     [
       '❯ Multipliers:',
       [
-        `${icons.filter((icon, index) => multipliers[index]).map((icon, index) => `${icon}${icon}${icon} ║ **× ${multipliers[index]}**`).join('\n')}`,
+        `${columnOptions.filter(([icon, multiplier]) => multiplier > 1).map(([icon, multiplier]) => `${icon}${icon}${icon} ║ **× ${multiplier}**`).join('\n')}`,
         `${icons[icons.length - 1]}${icons[icons.length - 1]}➖ ║ **× 6**`,
         `${icons[icons.length - 1]}➖➖ ║ **× 2**`,
         '',
