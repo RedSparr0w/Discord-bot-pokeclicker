@@ -113,11 +113,7 @@ module.exports = {
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
-  execute     : async (msg, args) => {
-    const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nSlots are currently undergoing maintenance, try again later.`);
-    return msg.channel.send({ embed });
-  },
-  ignore      : async (msg, args) => {
+  execute      : async (msg, args) => {
     let [ bet, lines = 3 ] = args;
 
     // Check the bet amount is correct
