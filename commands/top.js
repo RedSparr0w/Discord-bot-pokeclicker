@@ -22,7 +22,7 @@ module.exports = {
       .setTitle(`__***Top ${results.length} Trainers:***__`)
       .setColor('#3498db');
       
-    embed.addField('\u200b', results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> ${msg.guild.members.cache.get(res.user) || 'Inactive Member'}`));
+    embed.addField('\u200b', results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`));
 
     msg.channel.send({ embed });
   },
