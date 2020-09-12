@@ -96,6 +96,7 @@ module.exports = {
           .setDescription([
             msg.author,
             'Failed to purchase item',
+            '',
             'Something wen\'t wrong, try again later..',
           ]);
         return msg.channel.send({ embed });
@@ -129,6 +130,7 @@ module.exports = {
             .setDescription([
               msg.author,
               'Failed to purchase item',
+              '',
               'Something wen\'t wrong, try again later..',
             ]);
           return msg.channel.send({ embed });
@@ -143,7 +145,31 @@ module.exports = {
           return msg.channel.send({ embed });
         }
       } else { // Game shop item
+
+        embed.setDescription([
+          `**${item.name}** Successfully purchased!`,
+          '_Enter the following code in game to claim:_',
+          '```',
+          generateCode(msg.author.id, item.name),
+          '```',
+        ]);
+
+        let error;
+        await msg.author.send({ embed }).catch(e => error = e);
+        // Error sending the code to the user, DM's might be disabled
+        if (error) {
+          embed.setColor('#e74c3c')
+            .setDescription([
+              msg.author,
+              'Failed to purchase item',
+              '',
+              '_make sure you are able to recieve direct messages_',
+            ]);
+          return msg.channel.send({ embed });
+        }
+
         const remainingBalance = await removeAmount(msg.author, item.price);
+
         embed.setColor('#2ecc71')
           .setDescription([
             msg.author,
@@ -154,16 +180,6 @@ module.exports = {
           .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
 
         msg.channel.send({ embed });
-
-        embed.setDescription([
-          `**${item.name}** Successfully purchased!`,
-          '_Enter the following code in game to claim:_',
-          '```',
-          generateCode(msg.author.id, item.name),
-          '```',
-        ]);
-
-        msg.author.send({ embed });
       }
     });
   },
