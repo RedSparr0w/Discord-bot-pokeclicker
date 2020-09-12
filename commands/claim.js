@@ -1,45 +1,28 @@
 const { MessageEmbed } = require('discord.js');
-const { getDB, getUserID, addAmount } = require('../database.js');
+const { addAmount } = require('../database.js');
+const {
+  getLastClaim,
+  updateClaimDate,
+  bumpClaimStreak,
+  resetClaimStreak,
+} = require('../helpers.js');
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
-const getLastClaimDailyTime = async (user) => {
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
-  const { last_claim_daily = 0 } = await db.get('SELECT last_claim_daily FROM coins WHERE user=?', user_id) || {};
-  db.close();
-  return new Date(last_claim_daily);
-};
-
-const setLastClaimDailyTime = async (user) => {
-  const [
-    db,
-    user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
-
-  const data = {
-    $user_id: user_id,
-    $date: new Date().toJSON(),
-  };
-
-  await db.run('UPDATE coins SET last_claim_daily=$date WHERE user=$user_id', data);
-  db.close();
+const calcStreakBonus = (streak) => {
+  const bigStreak = Math.max(0, Math.min(5, streak));
+  streak -= bigStreak;
+  const midStreak = Math.max(0, Math.min(10, streak));
+  streak -= midStreak;
+  return (bigStreak * 10) + (midStreak * 5) + streak;
 };
 
 module.exports = {
   name        : 'claim',
-  aliases     : ['daily', 'timely'],
+  aliases     : ['daily'],
   description : 'Claim your daily coins',
   args        : [],
   guildOnly   : true,
@@ -48,12 +31,14 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     // Check if user claimed within the last 24 hours
-    const lastClaim = await getLastClaimDailyTime(msg.author);
-    if (lastClaim >= (Date.now() - DAY)) {
-      const timeLeft = (+lastClaim + DAY) - Date.now();
-      const hours = Math.floor(timeLeft % DAY / HOUR);
-      const minutes = Math.floor(timeLeft % HOUR / MINUTE);
-      const seconds = Math.floor(timeLeft % MINUTE / SECOND);
+    let { last_claim, streak } = await getLastClaim(msg.author, 'daily_claim');
+
+    // User already claimed within last 24 hours
+    if (last_claim >= (Date.now() - DAY)) {
+      const time_left = (+last_claim + DAY) - Date.now();
+      const hours = Math.floor(time_left % DAY / HOUR);
+      const minutes = Math.floor(time_left % HOUR / MINUTE);
+      const seconds = Math.floor(time_left % MINUTE / SECOND);
       let timeRemaining = '';
       if (+hours) timeRemaining += `${hours} hours `;
       if (+hours || +minutes) timeRemaining += `${minutes} minutes `;
@@ -63,13 +48,20 @@ module.exports = {
       });
     }
 
+    // Should the claim streak be reset (if more than 2 days)
+    if (last_claim < (Date.now() - (2 * DAY))) {
+      await resetClaimStreak(msg.author, 'daily_claim');
+      streak = 0;
+    }
+
     // Add the coins to the users balance, set last claimed time
-    const dailyAmount = 100;
+    const dailyAmount = 100 + calcStreakBonus(streak);
     // Add the balance then set last claim time (incase the user doesn't exist yet)
     const balance = await addAmount(msg.author, dailyAmount, 'coins');
-    await setLastClaimDailyTime(msg.author);
+    await updateClaimDate(msg.author, 'daily_claim');
+    await bumpClaimStreak(msg.author, 'daily_claim');
     return msg.channel.send({
-      embed: new MessageEmbed().setColor('#2ecc71').setDescription(`${msg.author}\n**+${dailyAmount.toLocaleString('en-US')}** <:money:737206931759824918>\n\nCurrent Balance: **${balance.toLocaleString('en-US')}** <:money:737206931759824918>`),
+      embed: new MessageEmbed().setColor('#2ecc71').setDescription(`${msg.author}\n**+${dailyAmount.toLocaleString('en-US')}** <:money:737206931759824918>\n\nCurrent Balance: **${balance.toLocaleString('en-US')}** <:money:737206931759824918>\nCurrent Streak: **${streak + 1}**`),
     });
   },
 };
