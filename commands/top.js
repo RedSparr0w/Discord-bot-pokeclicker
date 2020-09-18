@@ -18,12 +18,11 @@ module.exports = {
 
     const results = await getTop(amount);
 
-    const embed = new MessageEmbed()
-      .setTitle(`__***Top ${results.length} Trainers:***__`)
-      .setColor('#3498db');
+    const output = [`__***Top ${results.length} Trainers:***__`];
       
-    embed.addField('\u200b', results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`));
+    output.push(...results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`));
 
-    msg.channel.send({ embed });
+    // Send an initial message then edit it, so we don't ping the users every time this command is used
+    msg.channel.send('Loading...').then(m => m.edit(output));
   },
 };
