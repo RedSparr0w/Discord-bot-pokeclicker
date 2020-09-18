@@ -37,7 +37,8 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     let bet = args.find(a => betRegex.test(a));
-    let side = args.find(a => new RegExp(`^(${Object.keys(coinSides).join('|')})$`).test(a));
+    let side = args.find(a => new RegExp(`^(${Object.keys(coinSides).join('|')})$`, 'i').test(a));
+    side = side.toLowerCase();
 
     // Check player has selected a coin side
     if (!side || coinSides[side] == undefined) {
