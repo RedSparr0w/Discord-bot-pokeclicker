@@ -1,4 +1,3 @@
-const { MessageEmbed } = require('discord.js');
 const { getTop } = require('../database.js');
 
 module.exports = {
