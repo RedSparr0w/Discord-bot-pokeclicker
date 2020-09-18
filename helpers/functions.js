@@ -1,9 +1,10 @@
-const postPages = async (msg, pages, page = 1) => {
+const postPages = async (msg, pages, page = 1, msgEdit = false) => {
   // page number should be 1 lower than expected for array
   page = Math.max(1, Math.min(pages.length, page)) - 1;
 
-  // Send the default page,
-  const botMsg = await msg.channel.send(pages[page]);
+  // Send the default page
+  const botMsg = await msg.channel.send(msgEdit ? 'Loading...' : pages[page]);
+  if (msgEdit) await botMsg.edit(pages[page]);
 
   // Don't add the reactions if only 1 page
   if (pages.length <= 1) return;

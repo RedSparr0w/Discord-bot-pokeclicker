@@ -109,7 +109,7 @@ async function setAmount(user, amount = 1, table = 'coins'){
 async function getTop(amount = 10, table = 'coins'){
   // amount must be between 1 - 50
   if (isNaN(amount)) amount = 10;
-  amount = +Math.max(1, Math.min(50, amount));
+  amount = +Math.max(1, amount);
 
   const db = await getDB();
   const results = await db.all(`SELECT users.user, amount FROM ${table} INNER JOIN users ON users.id = ${table}.user ORDER BY amount DESC LIMIT ${amount}`);
