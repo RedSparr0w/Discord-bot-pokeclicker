@@ -72,8 +72,6 @@ module.exports = {
         const itemType = botMsg.embeds[0].fields.find(f => f.name == 'Color') ? 'background' : 'trainer';
         const itemIndex = pageNumber <= trainerCardColors.length ? pageNumber - 1 : (pageNumber - trainerCardColors.length) - 1;
 
-        console.log(itemType, itemIndex);
-
         // Initial embed object, with red color
         const embed = new MessageEmbed().setColor('#e74c3c');
 
