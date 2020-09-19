@@ -9,6 +9,7 @@ async function setupDB(){
   await Promise.all([
     db.run('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)'),
     db.run('CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default \'0\', trainer INT(3) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+    db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
@@ -154,6 +155,71 @@ async function getTrainerCard(user){
   return result;
 }
 
+async function setTrainerCard(user, type, index){
+  if (!type) return console.error('No type specified to set on trainer card');
+  if (index == undefined) return console.error('No item index specified to set on trainer card');
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+    getTrainerCard(user), // We want this incase the profile isn't created yet
+  ]);
+
+  const result = await db.run(`UPDATE trainer_card SET ${type}=? WHERE user=?`, index, user_id);
+  db.close();
+
+  return result;
+}
+
+async function getPurchased(user, type){
+  if (!type) return console.error('No purchase type to get specified');
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
+  let result = await db.get(`SELECT ${type} FROM purchased WHERE user=?`, user_id);
+  // If user doesn't exist yet, set them up
+  if (!result) {
+    await db.run('INSERT OR REPLACE INTO purchased (user) VALUES (?)', user_id);
+    // try get the users points again
+    result = await db.get(`SELECT ${type} FROM purchased WHERE user=?`, user_id);
+  }
+  db.close();
+
+  return result[type].split('').map(Number);
+}
+
+async function addPurchased(user, type, index){
+  if (!type) return console.error('No type to purchase specified');
+  if (index == undefined) return console.error('No item index to purchase specified');
+
+  // Get currently purchased items
+  let purchased = await getPurchased(user, type);
+  // Add our item
+  purchased[index] = 1;
+  // Any empty items need to be 0
+  purchased = Array.from(purchased, i => i ? 1 : 0).join('');
+
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
+  const result = await db.run(`UPDATE purchased SET ${type}=? WHERE user=?`, purchased, user_id);
+  db.close();
+
+  return result;
+}
+
 module.exports = {
   getDB,
   setupDB,
@@ -165,4 +231,7 @@ module.exports = {
   getTop,
   getRank,
   getTrainerCard,
+  setTrainerCard,
+  getPurchased,
+  addPurchased,
 };
