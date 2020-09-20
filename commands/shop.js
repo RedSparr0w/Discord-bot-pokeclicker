@@ -152,6 +152,10 @@ module.exports = {
           '```',
           generateCode(msg.author.id, item.name),
           '```',
+          '',
+          '**NOTE:**',
+          '_You will need to link your Discord account in game before the code will work_',
+          '`Start Menu` → `Save` → `Link Discord`',
         ]);
 
         let error;
