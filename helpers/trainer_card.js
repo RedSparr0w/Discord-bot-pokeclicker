@@ -6,6 +6,7 @@ const trainerCardColors = [
   'green',
   'bronze',
   'silver',
+  'gold',
 ];
 
 // highest trainer image ID 0 → X
