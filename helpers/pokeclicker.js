@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.5.2',
+  'gameVersion': '0.5.3',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -41,6 +41,13 @@ module.exports = {
       'image': 'assets/images/pokemon/201.17.png',
       'price': 700,
       'description': 'Alternate form of Unown',
+      'claimed': false,
+    },
+    {
+      'name': 'Surfing Pikachu',
+      'image': 'assets/images/pokemon/-2.png',
+      'price': 1500,
+      'description': "It's a Pikachu on a surfboard!",
       'claimed': false,
     },
   ],
@@ -1264,6 +1271,11 @@ module.exports = {
         'headbutt': [],
       },
       'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'route': 39,
+        },
         {
           'requiredValue': 1,
           'type': 2,
@@ -11857,7 +11869,7 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 0,
       'locations': {
-        '1': ['0'],
+        '1': [0],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -15833,7 +15845,7 @@ module.exports = {
       'attack': 164,
       'nativeRegion': 1,
       'locations': {
-        '1': ['1'],
+        '1': [1],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -15857,7 +15869,7 @@ module.exports = {
       'attack': 182,
       'nativeRegion': 1,
       'locations': {
-        '1': ['1'],
+        '1': [1],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -15881,7 +15893,7 @@ module.exports = {
       'attack': 162,
       'nativeRegion': 1,
       'locations': {
-        '1': ['1'],
+        '1': [1],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -20916,7 +20928,7 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
-        '1': ['2'],
+        '1': [2],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -20940,7 +20952,7 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
-        '1': ['2'],
+        '1': [2],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -20964,7 +20976,7 @@ module.exports = {
       'attack': 147,
       'nativeRegion': 2,
       'locations': {
-        '1': ['2'],
+        '1': [2],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -20991,7 +21003,7 @@ module.exports = {
       'attack': 162,
       'nativeRegion': 2,
       'locations': {
-        '1': ['2'],
+        '1': [2],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -21018,7 +21030,7 @@ module.exports = {
       'attack': 173,
       'nativeRegion': 2,
       'locations': {
-        '1': ['2'],
+        '1': [2],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -21120,7 +21132,7 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 2,
       'locations': {
-        '1': ['2'],
+        '1': [2],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25284,7 +25296,7 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 3,
       'locations': {
-        '1': ['3'],
+        '1': [3],
       },
       'catchRatePercent': 2,
       'eggSteps': 400,
@@ -38265,23 +38277,6 @@ module.exports = {
     'DAY': 86400000,
     'ROAMING_MIN_CHANCE': 8192,
     'ROAMING_MAX_CHANCE': 4096,
-    'RoamingPokemon': {
-      '0': ['Mew'],
-      '1': [
-        'Raikou',
-        'Entei',
-        'Suicune',
-      ],
-      '2': [
-        'Latios',
-        'Latias',
-        'Regice',
-        'Regirock',
-        'Registeel',
-        'Jirachi',
-      ],
-      '3': ['Manaphy'],
-    },
     'SHINY_CHANCE_BATTLE': 8192,
     'SHINY_CHANCE_DUNGEON': 4096,
     'SHINY_CHANCE_BREEDING': 1024,
@@ -38745,11 +38740,13 @@ module.exports = {
       '0': 'Bulbasaur',
       '1': 'Charmander',
       '2': 'Squirtle',
+      '3': 'Pikachu',
       'None': -1,
       '-1': 'None',
       'Bulbasaur': 0,
       'Charmander': 1,
       'Squirtle': 2,
+      'Pikachu': 3,
     },
     'StoneType': {
       '0': 'Fire_stone',
