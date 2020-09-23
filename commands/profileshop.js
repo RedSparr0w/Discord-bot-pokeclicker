@@ -5,7 +5,7 @@ const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-
 
 module.exports = {
   name        : 'profileshop',
-  aliases     : [],
+  aliases     : ['trainercardshop', 'tcshop'],
   description : 'View stuff you can buy for your money',
   args        : ['page?'],
   guildOnly   : true,

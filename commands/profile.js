@@ -10,7 +10,7 @@ const numStr = num => num.toLocaleString('en-US');
 
 module.exports = {
   name        : 'profile',
-  aliases     : ['trainercard'],
+  aliases     : ['trainercard', 'tc'],
   description : 'Get an image of your trainer badge',
   args        : [],
   guildOnly   : true,
