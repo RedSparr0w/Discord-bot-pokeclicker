@@ -5,10 +5,10 @@ const mutedRoleID = '758167963294629898';
 module.exports = {
   name        : 'mute',
   aliases     : [],
-  description : 'Mute specified users',
+  description : `Apply the <@&${mutedRoleID}> role to users`,
   args        : ['@users'],
   guildOnly   : true,
-  cooldown    : 1,
+  cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['MUTE_MEMBERS'], // Voice mut permission
   execute     : async (msg, args) => {
