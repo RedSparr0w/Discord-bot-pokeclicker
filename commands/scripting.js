@@ -23,7 +23,7 @@ module.exports = {
 
     for (const [, member] of [...msg.mentions.members]) {
       await member.roles.add(externalScriptsRoleID, `Role applied by ${msg.member.displayName}-${msg.author.id}`);
-      output.push(`${member}`);
+      output.push(member);
     }
 
     embed.setColor('#3498db').setDescription(output);
