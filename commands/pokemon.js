@@ -75,7 +75,7 @@ module.exports = {
       }
       // Roaming
       if (pokemon.locations[PokemonLocationType.Roaming]) {
-        const description = pokemon.locations[PokemonLocationType.Roaming].map(region => GameConstants.Region[region].toUpperCase()).join('\n');
+        const description = pokemon.locations[PokemonLocationType.Roaming].map(r => `${GameConstants.Region[r.region].toUpperCase()}${r.requirements ? `🔒\n***Unlock Requirements:***\n_${r.requirements.replace(/and/g, '\nand').replace(/or/g, '\nor')}` : ''}_`).join('\n');
         embed.addField('❯ Roaming', description);
       }
       // Dungeon
@@ -85,7 +85,7 @@ module.exports = {
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonBoss].join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/and/g, '\nand').replace(/or/g, '\nor')}` : ''}_`).join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
       // Evolutions

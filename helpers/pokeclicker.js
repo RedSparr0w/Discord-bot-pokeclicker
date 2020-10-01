@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.5.4',
+  'gameVersion': '0.5.5-beta',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -1753,7 +1753,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 34,
+          'dungeonIndex': 22,
         },
       ],
       'orderNumber': 104.1,
@@ -1784,7 +1784,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 23,
+          'dungeonIndex': 24,
         },
         {
           'requiredValue': 1,
@@ -1887,7 +1887,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 25,
+          'dungeonIndex': 26,
         },
       ],
       'orderNumber': 113,
@@ -1946,7 +1946,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 27,
+          'dungeonIndex': 28,
         },
       ],
       'orderNumber': 115,
@@ -2300,7 +2300,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 28,
+          'dungeonIndex': 29,
         },
       ],
       'orderNumber': 124,
@@ -2712,7 +2712,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 37,
+          'dungeonIndex': 38,
         },
       ],
       'orderNumber': 205,
@@ -2807,7 +2807,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 41,
+          'dungeonIndex': 42,
         },
       ],
       'orderNumber': 208,
@@ -3088,7 +3088,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 43,
+          'dungeonIndex': 44,
         },
       ],
       'orderNumber': 216,
@@ -3292,7 +3292,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 47,
+          'dungeonIndex': 48,
         },
       ],
       'orderNumber': 222,
@@ -3367,7 +3367,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 48,
+          'dungeonIndex': 49,
         },
       ],
       'orderNumber': 224,
@@ -5354,7 +5354,11 @@ module.exports = {
       'attack': 141,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Flower Paradise'],
+        '3': [
+          {
+            'dungeon': 'Flower Paradise',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Ivysaur',
@@ -5699,7 +5703,11 @@ module.exports = {
         '0': {
           '1': [47],
         },
-        '3': ['Ilex Forest'],
+        '3': [
+          {
+            'dungeon': 'Ilex Forest',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Metapod',
@@ -5843,7 +5851,11 @@ module.exports = {
         '0': {
           '1': [47],
         },
-        '3': ['Ilex Forest'],
+        '3': [
+          {
+            'dungeon': 'Ilex Forest',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Kakuna',
@@ -6135,7 +6147,11 @@ module.exports = {
           'Burned Tower',
           'Mt Mortar',
         ],
-        '3': ['Tin Tower'],
+        '3': [
+          {
+            'dungeon': 'Tin Tower',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Rattata',
@@ -6378,7 +6394,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '2': ['Power Plant'],
-        '3': ['Viridian Forest'],
+        '3': [
+          {
+            'dungeon': 'Viridian Forest',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Pichu',
@@ -6824,7 +6844,11 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Fullmoon Island'],
+        '3': [
+          {
+            'dungeon': 'Fullmoon Island',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Clefairy',
@@ -7072,6 +7096,7 @@ module.exports = {
           'Shoal Cave',
           'Cave of Origin',
           'Seafloor Cavern',
+          'Sealed Chamber',
           'Victory Road Hoenn',
           'Oreburgh Gate',
           'Ravaged Path',
@@ -7129,6 +7154,7 @@ module.exports = {
           'Cave of Origin',
           'Seafloor Cavern',
           'Sky Pillar',
+          'Sealed Chamber',
           'Victory Road Hoenn',
           'Iron Island',
           'Distortion World',
@@ -7137,7 +7163,11 @@ module.exports = {
           'Snowpoint Temple',
           'Stark Mountain',
         ],
-        '3': ['Burned Tower'],
+        '3': [
+          {
+            'dungeon': 'Burned Tower',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Zubat',
@@ -7541,7 +7571,11 @@ module.exports = {
         '0': {
           '3': [228],
         },
-        '3': ['Digletts Cave'],
+        '3': [
+          {
+            'dungeon': 'Digletts Cave',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Diglett',
@@ -7729,7 +7763,11 @@ module.exports = {
           'Lake Valor',
           'Lake Acuity',
         ],
-        '3': ['Lake Verity'],
+        '3': [
+          {
+            'dungeon': 'Lake Verity',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Psyduck',
@@ -8231,7 +8269,11 @@ module.exports = {
           'Mt. Coronet South',
           'Mt. Coronet North',
         ],
-        '3': ['Jagged Pass'],
+        '3': [
+          {
+            'dungeon': 'Jagged Pass',
+          },
+        ],
         '5': ['Fighting'],
       },
       'catchRatePercent': 49,
@@ -8275,8 +8317,12 @@ module.exports = {
           ],
         },
         '3': [
-          'Victory Road',
-          'Mt. Coronet South',
+          {
+            'dungeon': 'Victory Road',
+          },
+          {
+            'dungeon': 'Mt. Coronet South',
+          },
         ],
         '4': [
           {
@@ -8375,7 +8421,11 @@ module.exports = {
           ],
         },
         '2': ['Flower Paradise'],
-        '3': ['Sprout Tower'],
+        '3': [
+          {
+            'dungeon': 'Sprout Tower',
+          },
+        ],
         '5': ['Grass'],
       },
       'catchRatePercent': 63,
@@ -8559,6 +8609,7 @@ module.exports = {
         '2': [
           'Shoal Cave',
           'Seafloor Cavern',
+          'Sealed Chamber',
           'Iron Island',
         ],
       },
@@ -8745,8 +8796,12 @@ module.exports = {
           'Stark Mountain',
         ],
         '3': [
-          'Victory Road Hoenn',
-          'Mt. Coronet North',
+          {
+            'dungeon': 'Victory Road Hoenn',
+          },
+          {
+            'dungeon': 'Mt. Coronet North',
+          },
         ],
         '4': [
           {
@@ -8956,7 +9011,11 @@ module.exports = {
           ],
         },
         '2': ['Seafoam Islands'],
-        '3': ['Slowpoke Well'],
+        '3': [
+          {
+            'dungeon': 'Slowpoke Well',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Slowpoke',
@@ -9068,7 +9127,11 @@ module.exports = {
           'Cerulean Cave',
           'Victory Road Sinnoh',
         ],
-        '3': ['New Mauville'],
+        '3': [
+          {
+            'dungeon': 'New Mauville',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Magnemite',
@@ -9244,7 +9307,11 @@ module.exports = {
           ],
         },
         '2': ['Whirl Islands'],
-        '3': ['Seafoam Islands'],
+        '3': [
+          {
+            'dungeon': 'Seafoam Islands',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -9277,7 +9344,11 @@ module.exports = {
             230,
           ],
         },
-        '3': ['Whirl Islands'],
+        '3': [
+          {
+            'dungeon': 'Whirl Islands',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Seel',
@@ -9525,7 +9596,11 @@ module.exports = {
           'Old Chateau',
           'Distortion World',
         ],
-        '3': ['Tin Tower'],
+        '3': [
+          {
+            'dungeon': 'Tin Tower',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Gastly',
@@ -9610,7 +9685,11 @@ module.exports = {
           'Iron Island',
           'Victory Road Sinnoh',
         ],
-        '3': ['Rock Tunnel'],
+        '3': [
+          {
+            'dungeon': 'Rock Tunnel',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -9767,7 +9846,11 @@ module.exports = {
             40,
           ],
         },
-        '3': ['Whirl Islands'],
+        '3': [
+          {
+            'dungeon': 'Whirl Islands',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Krabby',
@@ -9839,7 +9922,11 @@ module.exports = {
           'Power Plant',
           'Cerulean Cave',
         ],
-        '3': ['New Mauville'],
+        '3': [
+          {
+            'dungeon': 'New Mauville',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Voltorb',
@@ -9997,7 +10084,11 @@ module.exports = {
           'Victory Road',
           'Cerulean Cave',
         ],
-        '3': ['Pokemon Tower'],
+        '3': [
+          {
+            'dungeon': 'Pokemon Tower',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Cubone',
@@ -10173,7 +10264,11 @@ module.exports = {
           'Pokemon Mansion',
           'Stark Mountain',
         ],
-        '3': ['Burned Tower'],
+        '3': [
+          {
+            'dungeon': 'Burned Tower',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Koffing',
@@ -10269,8 +10364,12 @@ module.exports = {
         },
         '2': ['Stark Mountain'],
         '3': [
-          'Cerulean Cave',
-          'Victory Road Sinnoh',
+          {
+            'dungeon': 'Cerulean Cave',
+          },
+          {
+            'dungeon': 'Victory Road Sinnoh',
+          },
         ],
         '4': [
           {
@@ -10607,7 +10706,11 @@ module.exports = {
             229,
           ],
         },
-        '3': ['Lake Verity'],
+        '3': [
+          {
+            'dungeon': 'Lake Verity',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Goldeen',
@@ -10805,7 +10908,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '2': ['Ice Path'],
-        '3': ['Snowpoint Temple'],
+        '3': [
+          {
+            'dungeon': 'Snowpoint Temple',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Smoochum',
@@ -10849,7 +10956,11 @@ module.exports = {
         '0': {
           '3': [222],
         },
-        '3': ['Power Plant'],
+        '3': [
+          {
+            'dungeon': 'Power Plant',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Elekid',
@@ -10890,7 +11001,11 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Pokemon Mansion'],
+        '3': [
+          {
+            'dungeon': 'Pokemon Mansion',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Magby',
@@ -11138,9 +11253,15 @@ module.exports = {
           ],
         },
         '3': [
-          'Oreburgh Gate',
-          'Ravaged Path',
-          'Lake Acuity',
+          {
+            'dungeon': 'Oreburgh Gate',
+          },
+          {
+            'dungeon': 'Ravaged Path',
+          },
+          {
+            'dungeon': 'Lake Acuity',
+          },
         ],
         '4': [
           {
@@ -11460,7 +11581,11 @@ module.exports = {
       'attack': 55,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Mt. Moon'],
+        '3': [
+          {
+            'dungeon': 'Mt. Moon',
+          },
+        ],
         '8': ['Helix Fossil'],
       },
       'catchRatePercent': 17,
@@ -11530,7 +11655,11 @@ module.exports = {
       'attack': 54,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Mt. Moon'],
+        '3': [
+          {
+            'dungeon': 'Mt. Moon',
+          },
+        ],
         '8': ['Dome Fossil'],
       },
       'catchRatePercent': 17,
@@ -11622,7 +11751,11 @@ module.exports = {
             16,
           ],
         },
-        '3': ['Hall of Origin'],
+        '3': [
+          {
+            'dungeon': 'Hall of Origin',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Munchlax',
@@ -11657,7 +11790,11 @@ module.exports = {
       'attack': 165,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Seafoam Islands'],
+        '3': [
+          {
+            'dungeon': 'Seafoam Islands',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -11684,7 +11821,11 @@ module.exports = {
       'attack': 173,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Power Plant'],
+        '3': [
+          {
+            'dungeon': 'Power Plant',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -11711,7 +11852,11 @@ module.exports = {
       'attack': 180,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Victory Road'],
+        '3': [
+          {
+            'dungeon': 'Victory Road',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -11846,7 +11991,11 @@ module.exports = {
       'attack': 235,
       'nativeRegion': 0,
       'locations': {
-        '3': ['Cerulean Cave'],
+        '3': [
+          {
+            'dungeon': 'Cerulean Cave',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -11870,7 +12019,11 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 0,
       'locations': {
-        '1': [0],
+        '1': [
+          {
+            'region': 0,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -11965,7 +12118,11 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Flower Paradise'],
+        '3': [
+          {
+            'dungeon': 'Flower Paradise',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Bayleef',
@@ -12355,8 +12512,12 @@ module.exports = {
           'Mt. Coronet North',
         ],
         '3': [
-          'Ilex Forest',
-          'Lake Valor',
+          {
+            'dungeon': 'Ilex Forest',
+          },
+          {
+            'dungeon': 'Lake Valor',
+          },
         ],
         '4': [
           {
@@ -13528,7 +13689,11 @@ module.exports = {
           '1': [32],
         },
         '2': ['Ruins of Alph'],
-        '3': ['Union Cave'],
+        '3': [
+          {
+            'dungeon': 'Union Cave',
+          },
+        ],
         '5': ['Water'],
       },
       'catchRatePercent': 63,
@@ -13775,7 +13940,11 @@ module.exports = {
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Ruins of Alph'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+          },
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -13931,7 +14100,11 @@ module.exports = {
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Ruins of Alph'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+          },
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -14021,7 +14194,11 @@ module.exports = {
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Ruins of Alph'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+          },
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -14111,7 +14288,11 @@ module.exports = {
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Ruins of Alph'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+          },
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -14551,7 +14732,11 @@ module.exports = {
       'attack': 101,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Dark Cave'],
+        '3': [
+          {
+            'dungeon': 'Dark Cave',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -14617,8 +14802,12 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
-          'Iron Island',
-          'Victory Road Sinnoh',
+          {
+            'dungeon': 'Iron Island',
+          },
+          {
+            'dungeon': 'Victory Road Sinnoh',
+          },
         ],
         '4': [
           {
@@ -14784,8 +14973,12 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
-          'Burned Tower',
-          'Hall of Origin',
+          {
+            'dungeon': 'Burned Tower',
+          },
+          {
+            'dungeon': 'Hall of Origin',
+          },
         ],
       },
       'catchRatePercent': 51,
@@ -15235,7 +15428,11 @@ module.exports = {
       'attack': 53,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Ice Path'],
+        '3': [
+          {
+            'dungeon': 'Ice Path',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -15305,7 +15502,11 @@ module.exports = {
           '2': [113],
           '3': [227],
         },
-        '3': ['Stark Mountain'],
+        '3': [
+          {
+            'dungeon': 'Stark Mountain',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -15618,7 +15819,11 @@ module.exports = {
       'attack': 24,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Mt Mortar'],
+        '3': [
+          {
+            'dungeon': 'Mt Mortar',
+          },
+        ],
         '5': ['Fighting'],
         '6': [
           'Hitmonlee',
@@ -15814,7 +16019,11 @@ module.exports = {
       'attack': 59,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Hall of Origin'],
+        '3': [
+          {
+            'dungeon': 'Hall of Origin',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Chansey',
@@ -15846,7 +16055,12 @@ module.exports = {
       'attack': 164,
       'nativeRegion': 1,
       'locations': {
-        '1': [1],
+        '1': [
+          {
+            'region': 1,
+            'requirements': 'Burned Tower needs to be completed.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -15870,7 +16084,12 @@ module.exports = {
       'attack': 182,
       'nativeRegion': 1,
       'locations': {
-        '1': [1],
+        '1': [
+          {
+            'region': 1,
+            'requirements': 'Burned Tower needs to be completed.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -15894,7 +16113,12 @@ module.exports = {
       'attack': 162,
       'nativeRegion': 1,
       'locations': {
-        '1': [1],
+        '1': [
+          {
+            'region': 1,
+            'requirements': 'Burned Tower needs to be completed.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -15929,7 +16153,11 @@ module.exports = {
       'attack': 50,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Mt Silver'],
+        '3': [
+          {
+            'dungeon': 'Mt Silver',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -16032,7 +16260,11 @@ module.exports = {
       'attack': 203,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Whirl Islands'],
+        '3': [
+          {
+            'dungeon': 'Whirl Islands',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -16059,7 +16291,12 @@ module.exports = {
       'attack': 239,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Tin Tower'],
+        '3': [
+          {
+            'dungeon': 'Tin Tower',
+            'requirements': 'Raikou needs to be caught and Entei needs to be caught and Suicune needs to be caught.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -16086,7 +16323,12 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 1,
       'locations': {
-        '3': ['Ilex Forest'],
+        '3': [
+          {
+            'dungeon': 'Ilex Forest',
+            'requirements': 'Requires the Elite Johto Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -16702,7 +16944,11 @@ module.exports = {
             230,
           ],
         },
-        '3': ['Eterna Forest'],
+        '3': [
+          {
+            'dungeon': 'Eterna Forest',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Silcoon',
@@ -16791,7 +17037,11 @@ module.exports = {
             230,
           ],
         },
-        '3': ['Eterna Forest'],
+        '3': [
+          {
+            'dungeon': 'Eterna Forest',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Cascoon',
@@ -17585,7 +17835,11 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': ['Hall of Origin'],
-        '3': ['Petalburg Woods'],
+        '3': [
+          {
+            'dungeon': 'Petalburg Woods',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -17648,7 +17902,11 @@ module.exports = {
       'attack': 248,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Hall of Origin'],
+        '3': [
+          {
+            'dungeon': 'Hall of Origin',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Vigoroth',
@@ -17806,7 +18064,11 @@ module.exports = {
           'Rusturf Tunnel',
           'Victory Road Hoenn',
         ],
-        '3': ['Rusturf Tunnel'],
+        '3': [
+          {
+            'dungeon': 'Rusturf Tunnel',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -17870,6 +18132,11 @@ module.exports = {
       'attack': 140,
       'nativeRegion': 2,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Cave of Origin',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Loudred',
@@ -17937,7 +18204,11 @@ module.exports = {
       'attack': 119,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Victory Road Hoenn'],
+        '3': [
+          {
+            'dungeon': 'Victory Road Hoenn',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Makuhita',
@@ -18028,7 +18299,11 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': ['Mt. Coronet South'],
-        '3': ['Granite Cave'],
+        '3': [
+          {
+            'dungeon': 'Granite Cave',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -18156,7 +18431,11 @@ module.exports = {
           'Sky Pillar',
           'Victory Road Hoenn',
         ],
-        '3': ['Granite Cave'],
+        '3': [
+          {
+            'dungeon': 'Granite Cave',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -18229,7 +18508,11 @@ module.exports = {
       'attack': 85,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Victory Road Hoenn'],
+        '3': [
+          {
+            'dungeon': 'Victory Road Hoenn',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Aron',
@@ -18352,8 +18635,12 @@ module.exports = {
           '3': [217],
         },
         '3': [
-          'Victory Road Hoenn',
-          'Mt. Coronet North',
+          {
+            'dungeon': 'Victory Road Hoenn',
+          },
+          {
+            'dungeon': 'Mt. Coronet North',
+          },
         ],
         '4': [
           {
@@ -18834,7 +19121,11 @@ module.exports = {
           'Shoal Cave',
           'Seafloor Cavern',
         ],
-        '3': ['Seafloor Cavern'],
+        '3': [
+          {
+            'dungeon': 'Seafloor Cavern',
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 1600,
@@ -18917,8 +19208,12 @@ module.exports = {
           'Stark Mountain',
         ],
         '3': [
-          'Mt. Chimney',
-          'Jagged Pass',
+          {
+            'dungeon': 'Mt. Chimney',
+          },
+          {
+            'dungeon': 'Jagged Pass',
+          },
         ],
       },
       'catchRatePercent': 63,
@@ -18981,7 +19276,11 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Fiery Path'],
+        '3': [
+          {
+            'dungeon': 'Fiery Path',
+          },
+        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -19014,7 +19313,11 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': ['Jagged Pass'],
-        '3': ['Jagged Pass'],
+        '3': [
+          {
+            'dungeon': 'Jagged Pass',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -19408,7 +19711,11 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Meteor Falls'],
+        '3': [
+          {
+            'dungeon': 'Meteor Falls',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -19435,7 +19742,11 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Meteor Falls'],
+        '3': [
+          {
+            'dungeon': 'Meteor Falls',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -19531,8 +19842,12 @@ module.exports = {
         },
         '2': ['Victory Road Hoenn'],
         '3': [
-          'Oreburgh Gate',
-          'Ravaged Path',
+          {
+            'dungeon': 'Oreburgh Gate',
+          },
+          {
+            'dungeon': 'Ravaged Path',
+          },
         ],
         '4': [
           {
@@ -19854,7 +20169,11 @@ module.exports = {
       'attack': 10,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Mt. Coronet North'],
+        '3': [
+          {
+            'dungeon': 'Mt. Coronet North',
+          },
+        ],
         '5': ['Water'],
       },
       'catchRatePercent': 63,
@@ -20061,7 +20380,11 @@ module.exports = {
           ],
         },
         '2': ['Mt. Pyre'],
-        '3': ['Mt. Pyre'],
+        '3': [
+          {
+            'dungeon': 'Mt. Pyre',
+          },
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 1000,
@@ -20139,7 +20462,11 @@ module.exports = {
           'Mt. Pyre',
           'Distortion World',
         ],
-        '3': ['Mt. Pyre'],
+        '3': [
+          {
+            'dungeon': 'Mt. Pyre',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 1000,
@@ -20172,8 +20499,12 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '3': [
-          'Sky Pillar',
-          'Distortion World',
+          {
+            'dungeon': 'Sky Pillar',
+          },
+          {
+            'dungeon': 'Distortion World',
+          },
         ],
         '4': [
           {
@@ -20237,7 +20568,11 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': ['Distortion World'],
-        '3': ['Mt. Pyre'],
+        '3': [
+          {
+            'dungeon': 'Mt. Pyre',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Chingling',
@@ -20278,7 +20613,11 @@ module.exports = {
           '2': [120],
         },
         '2': ['Hall of Origin'],
-        '3': ['Mt. Coronet South'],
+        '3': [
+          {
+            'dungeon': 'Mt. Coronet South',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -20359,7 +20698,11 @@ module.exports = {
           ],
         },
         '2': ['Lake Acuity'],
-        '3': ['Shoal Cave'],
+        '3': [
+          {
+            'dungeon': 'Shoal Cave',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20929,7 +21272,11 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
-        '1': [2],
+        '3': [
+          {
+            'dungeon': 'Sealed Chamber',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -20953,7 +21300,11 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
-        '1': [2],
+        '3': [
+          {
+            'dungeon': 'Sealed Chamber',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -20977,7 +21328,11 @@ module.exports = {
       'attack': 147,
       'nativeRegion': 2,
       'locations': {
-        '1': [2],
+        '3': [
+          {
+            'dungeon': 'Sealed Chamber',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -21004,7 +21359,12 @@ module.exports = {
       'attack': 162,
       'nativeRegion': 2,
       'locations': {
-        '1': [2],
+        '1': [
+          {
+            'region': 2,
+            'requirements': 'Requires the Elite Hoenn Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -21031,7 +21391,12 @@ module.exports = {
       'attack': 173,
       'nativeRegion': 2,
       'locations': {
-        '1': [2],
+        '1': [
+          {
+            'region': 2,
+            'requirements': 'Requires the Elite Hoenn Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -21055,7 +21420,12 @@ module.exports = {
       'attack': 233,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Cave of Origin'],
+        '3': [
+          {
+            'dungeon': 'Cave of Origin',
+            'requirements': 'Requires the Elite Hoenn Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -21079,7 +21449,12 @@ module.exports = {
       'attack': 233,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Cave of Origin'],
+        '3': [
+          {
+            'dungeon': 'Cave of Origin',
+            'requirements': 'Requires the Elite Hoenn Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -21106,7 +21481,11 @@ module.exports = {
       'attack': 262,
       'nativeRegion': 2,
       'locations': {
-        '3': ['Sky Pillar'],
+        '3': [
+          {
+            'dungeon': 'Sky Pillar',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -21133,7 +21512,12 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 2,
       'locations': {
-        '1': [2],
+        '1': [
+          {
+            'region': 2,
+            'requirements': 'Requires the Elite Hoenn Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -23339,7 +23723,11 @@ module.exports = {
           'Distortion World',
           'Spear Pillar',
         ],
-        '3': ['Wayward Cave'],
+        '3': [
+          {
+            'dungeon': 'Wayward Cave',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -23367,8 +23755,12 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '3': [
-          'Mt. Coronet South',
-          'Distortion World',
+          {
+            'dungeon': 'Mt. Coronet South',
+          },
+          {
+            'dungeon': 'Distortion World',
+          },
         ],
         '4': [
           {
@@ -23619,7 +24011,11 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Victory Road Sinnoh'],
+        '3': [
+          {
+            'dungeon': 'Victory Road Sinnoh',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Gible',
@@ -24856,7 +25252,11 @@ module.exports = {
       'attack': 82,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Old Chateau'],
+        '3': [
+          {
+            'dungeon': 'Old Chateau',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24883,7 +25283,12 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Old Chateau'],
+        '3': [
+          {
+            'dungeon': 'Old Chateau',
+            'requirements': 'Rotom needs to be caught.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24910,7 +25315,12 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Old Chateau'],
+        '3': [
+          {
+            'dungeon': 'Old Chateau',
+            'requirements': 'Rotom needs to be caught.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24937,7 +25347,12 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Old Chateau'],
+        '3': [
+          {
+            'dungeon': 'Old Chateau',
+            'requirements': 'Rotom needs to be caught.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24964,7 +25379,12 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Old Chateau'],
+        '3': [
+          {
+            'dungeon': 'Old Chateau',
+            'requirements': 'Rotom needs to be caught.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24991,7 +25411,12 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Old Chateau'],
+        '3': [
+          {
+            'dungeon': 'Old Chateau',
+            'requirements': 'Rotom needs to be caught.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -25015,7 +25440,11 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Lake Acuity'],
+        '3': [
+          {
+            'dungeon': 'Lake Acuity',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -25039,7 +25468,12 @@ module.exports = {
       'attack': 174,
       'nativeRegion': 3,
       'locations': {
-        '1': [3],
+        '1': [
+          {
+            'region': 3,
+            'requirements': 'Lake Verity needs to be completed.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -25063,7 +25497,11 @@ module.exports = {
       'attack': 169,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Lake Valor'],
+        '3': [
+          {
+            'dungeon': 'Lake Valor',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 3200,
@@ -25090,7 +25528,11 @@ module.exports = {
       'attack': 251,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Spear Pillar'],
+        '3': [
+          {
+            'dungeon': 'Spear Pillar',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25117,7 +25559,11 @@ module.exports = {
       'attack': 239,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Spear Pillar'],
+        '3': [
+          {
+            'dungeon': 'Spear Pillar',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25144,7 +25590,11 @@ module.exports = {
       'attack': 191,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Stark Mountain'],
+        '3': [
+          {
+            'dungeon': 'Stark Mountain',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 400,
@@ -25168,7 +25618,11 @@ module.exports = {
       'attack': 226,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Snowpoint Temple'],
+        '3': [
+          {
+            'dungeon': 'Snowpoint Temple',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25195,7 +25649,11 @@ module.exports = {
       'attack': 242,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Distortion World'],
+        '3': [
+          {
+            'dungeon': 'Distortion World',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25244,7 +25702,12 @@ module.exports = {
       'attack': 166,
       'nativeRegion': 3,
       'locations': {
-        '1': [3],
+        '1': [
+          {
+            'region': 3,
+            'requirements': 'Fullmoon Island needs to be completed.',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25307,7 +25770,11 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 3,
       'locations': {
-        '1': [3],
+        '1': [
+          {
+            'region': 3,
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 400,
@@ -25331,7 +25798,11 @@ module.exports = {
       'attack': 162,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Newmoon Island'],
+        '3': [
+          {
+            'dungeon': 'Newmoon Island',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -25355,7 +25826,11 @@ module.exports = {
       'attack': 184,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Flower Paradise'],
+        '3': [
+          {
+            'dungeon': 'Flower Paradise',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -25382,7 +25857,11 @@ module.exports = {
       'attack': 181,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Flower Paradise'],
+        '3': [
+          {
+            'dungeon': 'Flower Paradise',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -25406,7 +25885,11 @@ module.exports = {
       'attack': 262,
       'nativeRegion': 3,
       'locations': {
-        '3': ['Hall of Origin'],
+        '3': [
+          {
+            'dungeon': 'Hall of Origin',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -39263,6 +39746,7 @@ module.exports = {
       'Mt Silver',
     ],
     'HoennDungeons': [
+      'Petalburg Woods',
       'Rusturf Tunnel',
       'Granite Cave',
       'Jagged Pass',
@@ -39270,13 +39754,13 @@ module.exports = {
       'Mt. Chimney',
       'Meteor Falls',
       'Mt. Pyre',
+      'New Mauville',
       'Shoal Cave',
       'Seafloor Cavern',
+      'Sealed Chamber',
       'Cave of Origin',
       'Sky Pillar',
       'Victory Road Hoenn',
-      'Petalburg Woods',
-      'New Mauville',
     ],
     'SinnohDungeons': [
       'Oreburgh Gate',
@@ -39293,12 +39777,12 @@ module.exports = {
       'Distortion World',
       'Victory Road Sinnoh',
       'Spear Pillar',
-      'Hall of Origin',
       'Fullmoon Island',
       'Newmoon Island',
       'Flower Paradise',
       'Snowpoint Temple',
       'Stark Mountain',
+      'Hall of Origin',
     ],
     'RegionDungeons': [
       [
@@ -39328,6 +39812,7 @@ module.exports = {
         'Mt Silver',
       ],
       [
+        'Petalburg Woods',
         'Rusturf Tunnel',
         'Granite Cave',
         'Jagged Pass',
@@ -39335,13 +39820,13 @@ module.exports = {
         'Mt. Chimney',
         'Meteor Falls',
         'Mt. Pyre',
+        'New Mauville',
         'Shoal Cave',
         'Seafloor Cavern',
+        'Sealed Chamber',
         'Cave of Origin',
         'Sky Pillar',
         'Victory Road Hoenn',
-        'Petalburg Woods',
-        'New Mauville',
       ],
       [
         'Oreburgh Gate',
@@ -39358,12 +39843,12 @@ module.exports = {
         'Distortion World',
         'Victory Road Sinnoh',
         'Spear Pillar',
-        'Hall of Origin',
         'Fullmoon Island',
         'Newmoon Island',
         'Flower Paradise',
         'Snowpoint Temple',
         'Stark Mountain',
+        'Hall of Origin',
       ],
     ],
     'StartingTowns': [
