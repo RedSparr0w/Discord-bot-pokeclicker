@@ -29,7 +29,12 @@ client.once('ready', async() => {
   // Check the database is setup
   await setupDB();
 
+  // Set our status
   client.user.setActivity(`PokéClicker v${gameVersion}`);
+  // Set our status each hour
+  setInterval(() => {
+    client.user.setActivity(`PokéClicker v${gameVersion}`);
+  }, 1000 * 60 * 60);
 });
 
 client.on('error', e => error('Client error thrown:', e))
