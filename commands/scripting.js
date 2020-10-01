@@ -1,7 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
-const { upperCaseFirstLetter, postPages, trainerCardColors, totalTrainerImages } = require('../helpers.js');
-const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
 
 const externalScriptsRoleID = '761015248856809493';
 const reactionName = 'code';
