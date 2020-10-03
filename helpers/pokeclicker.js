@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.5.5-beta',
+  'gameVersion': '0.5.5-patch2',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -1764,7 +1764,6 @@ module.exports = {
       'pokemon': {
         'land': [
           'Poochyena',
-          'Electrike',
           'Gulpin',
           'Minun',
           'Oddish',
@@ -2099,9 +2098,7 @@ module.exports = {
       'pokemon': {
         'land': [
           'Zigzagoon',
-          'Electrike',
           'Linoone',
-          'Manectric',
           'Wingull',
           'Kecleon',
         ],
@@ -4071,12 +4068,12 @@ module.exports = {
         '9': 40,
       },
       '110': {
-        '2': 50,
-        '3': 25,
-        '4': 8.33,
-        '7': 25,
-        '9': 25,
-        '15': 8.33,
+        '2': 54.55,
+        '3': 18.18,
+        '4': 9.09,
+        '7': 27.27,
+        '9': 27.27,
+        '15': 9.09,
       },
       '111': {
         '2': 44.44,
@@ -4134,12 +4131,11 @@ module.exports = {
         '17': 18.18,
       },
       '118': {
-        '0': 25,
-        '2': 58.33,
-        '3': 16.67,
-        '7': 8.33,
-        '9': 25,
-        '15': 16.67,
+        '0': 30,
+        '2': 70,
+        '7': 10,
+        '9': 30,
+        '15': 20,
       },
       '119': {
         '0': 28.57,
@@ -18681,12 +18677,6 @@ module.exports = {
       'attack': 43,
       'nativeRegion': 2,
       'locations': {
-        '0': {
-          '2': [
-            110,
-            118,
-          ],
-        },
         '5': ['Electric'],
       },
       'catchRatePercent': 36,
@@ -18711,9 +18701,6 @@ module.exports = {
       'attack': 110,
       'nativeRegion': 2,
       'locations': {
-        '0': {
-          '2': [118],
-        },
         '4': [
           {
             'basePokemon': 'Electrike',
@@ -19215,6 +19202,7 @@ module.exports = {
             'dungeon': 'Jagged Pass',
           },
         ],
+        '5': ['Fire'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -22266,6 +22254,7 @@ module.exports = {
             204,
           ],
         },
+        '5': ['Electric'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -22388,6 +22377,7 @@ module.exports = {
           ],
         },
         '2': ['Eterna Forest'],
+        '5': ['Grass'],
         '6': ['Roselia'],
       },
       'catchRatePercent': 63,
@@ -22944,6 +22934,7 @@ module.exports = {
             224,
           ],
         },
+        '5': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -25719,6 +25710,15 @@ module.exports = {
       'eggCycles': 40,
       'levelType': 4,
       'exp': 216,
+      'evolutions': [
+        {
+          'basePokemon': 'Phione',
+          'type': [0],
+          'evolvedPokemon': 'Manaphy',
+          'level': 69420,
+        },
+      ],
+      'baby': true,
       'catchRate': 30,
       'base': {
         'hitpoints': 80,
@@ -25731,14 +25731,7 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 3,
       'locations': {
-        '4': [
-          {
-            'basePokemon': 'Manaphy',
-            'type': [0],
-            'evolvedPokemon': 'Phione',
-            'level': 100,
-          },
-        ],
+        '6': ['Manaphy'],
       },
       'catchRatePercent': 12,
       'eggSteps': 1600,
@@ -25750,14 +25743,6 @@ module.exports = {
       'eggCycles': 10,
       'levelType': 4,
       'exp': 270,
-      'evolutions': [
-        {
-          'basePokemon': 'Manaphy',
-          'type': [0],
-          'evolvedPokemon': 'Phione',
-          'level': 100,
-        },
-      ],
       'catchRate': 3,
       'base': {
         'hitpoints': 100,
@@ -25773,6 +25758,14 @@ module.exports = {
         '1': [
           {
             'region': 3,
+          },
+        ],
+        '4': [
+          {
+            'basePokemon': 'Phione',
+            'type': [0],
+            'evolvedPokemon': 'Manaphy',
+            'level': 69420,
           },
         ],
       },
@@ -38945,10 +38938,10 @@ module.exports = {
     'ROAMING_MAX_CHANCE': 4096,
     'SHINY_CHANCE_BATTLE': 8192,
     'SHINY_CHANCE_DUNGEON': 4096,
-    'SHINY_CHANCE_BREEDING': 1024,
     'SHINY_CHANCE_SHOP': 2048,
-    'SHINY_CHANCE_STONE': 4096,
+    'SHINY_CHANCE_STONE': 2048,
     'SHINY_CHANCE_SAFARI': 2048,
+    'SHINY_CHANCE_BREEDING': 1024,
     'ITEM_PRICE_MULTIPLIER': 1.00045,
     'ITEM_PRICE_DEDUCT': 1.0005,
     'PLATE_VALUE': 100,
@@ -39025,6 +39018,38 @@ module.exports = {
       'ready_to_hatch': {
         'name': 'notification.ready_to_hatch',
         'displayName': 'Egg ready to hatch',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'hatched': {
+        'name': 'notification.hatched',
+        'displayName': 'Egg hatched',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'hatched_shiny': {
+        'name': 'notification.hatched_shiny',
+        'displayName': 'Egg hatched a shiny',
         'options': [
           {
             'text': 'On',
@@ -39169,6 +39194,22 @@ module.exports = {
       'ready_to_harvest': {
         'name': 'notification.ready_to_harvest',
         'displayName': 'Berry ready to harvest',
+        'options': [
+          {
+            'text': 'On',
+            'value': true,
+          },
+          {
+            'text': 'Off',
+            'value': false,
+          },
+        ],
+        'defaultValue': true,
+        'value': true,
+      },
+      'gym_won': {
+        'name': 'notification.gym_won',
+        'displayName': 'Gym leader defeated',
         'options': [
           {
             'text': 'On',
