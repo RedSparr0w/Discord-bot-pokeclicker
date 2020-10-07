@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.5.5-patch2',
+  'gameVersion': '0.5.6',
   'shopItems': [
     {
       'name': 'Unown (D)',
