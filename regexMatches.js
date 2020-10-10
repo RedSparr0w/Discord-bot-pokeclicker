@@ -28,14 +28,14 @@ module.exports = [
   },
   // soon™
   {
-    regex: /(when).+(release|version|update)/i,
+    regex: /\b(when)\b.+\b(release|version|update)\b/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },
   },
   // FAQ
   {
-    regex: /(how|where).+(catch|find|get|evolve|buy)/i,
+    regex: /\b(how|where)\b.+\b(catch|find|get|evolve|buy)\b/i,
     execute: (message, client) => {
       let text = '';
       const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
