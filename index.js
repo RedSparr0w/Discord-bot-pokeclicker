@@ -9,7 +9,10 @@ const {
   gameVersion,
   RunOnInterval,
 } = require('./helpers.js');
-const { setupDB } = require('./database.js');
+const {
+  setupDB,
+  backupDB,
+} = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 
 const client = new Discord.Client();
@@ -34,6 +37,10 @@ client.once('ready', async() => {
     // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
   }, true);
+
+  new RunOnInterval(6 * 60 * 6e4 /* 6 Hours */, () => {
+    client.guilds.cache.forEach(guild => backupDB(guild));
+  });
 });
 
 client.on('error', e => error('Client error thrown:', e))
