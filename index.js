@@ -7,6 +7,7 @@ const {
   warn,
   error,
   gameVersion,
+  RunOnInterval,
 } = require('./helpers.js');
 const { setupDB } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
@@ -29,12 +30,10 @@ client.once('ready', async() => {
   // Check the database is setup
   await setupDB();
 
-  // Set our status
-  client.user.setActivity(`PokéClicker v${gameVersion}`);
-  // Set our status each hour
-  setInterval(() => {
+  new RunOnInterval(60 * 6e4 /* 1 Hour */, () => {
+    // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
-  }, 1000 * 60 * 60);
+  }, true);
 });
 
 client.on('error', e => error('Client error thrown:', e))
