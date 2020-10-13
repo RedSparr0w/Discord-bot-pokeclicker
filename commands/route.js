@@ -42,7 +42,7 @@ module.exports = {
     const shiny = !Math.floor(Math.random() * 512);
 
     const embed = new MessageEmbed()
-      .setTitle(`Route #${routeNumber}`)
+      .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | Route #${routeNumber}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`);
@@ -62,7 +62,7 @@ module.exports = {
     // Shards:
     let shardsInfo;
     Object.entries(RouteShardTypes).forEach(([region, routes]) => {
-      if (routes[routeNumber]) shardsInfo = routes[routeNumber];
+      if (region == route.region && routes[routeNumber]) shardsInfo = routes[routeNumber];
     });
     if (shardsInfo) {
       const descIcon = [];
