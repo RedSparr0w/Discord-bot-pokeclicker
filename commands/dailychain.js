@@ -13,7 +13,7 @@ module.exports = {
   args        : ['max slots(3)?', 'from date(2020-12-01)?', 'days(14)?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     let [maxSlots, fromDate, days] = args;

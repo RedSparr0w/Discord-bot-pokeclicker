@@ -15,7 +15,7 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     const balance = await getAmount(msg.author);

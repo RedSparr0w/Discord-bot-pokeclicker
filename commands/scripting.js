@@ -9,7 +9,7 @@ module.exports = {
   args        : ['@users'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
   userperms   : ['MUTE_MEMBERS'], // Voice mut permission
   execute     : async (msg, args) => {
     const embed = new MessageEmbed().setColor('#e74c3c');

@@ -21,7 +21,7 @@ module.exports = {
   args        : ['id/name', 'shiny?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     let id = args.join(' ').toLowerCase().trim();

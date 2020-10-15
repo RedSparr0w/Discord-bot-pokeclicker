@@ -17,7 +17,7 @@ module.exports = {
   args        : ['type', 'order(chance|route)?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     let [type, order] = args;

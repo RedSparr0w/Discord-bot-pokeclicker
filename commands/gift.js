@@ -8,7 +8,7 @@ module.exports = {
   args        : ['points', '@user'],
   guildOnly   : true,
   cooldown    : 1,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['MANAGE_GUILD'],
   execute     : async (msg, args) => {
     const amount = +(args.find(arg=>/^-?\d+$/.test(arg)) || 10);
