@@ -1,3 +1,5 @@
+const { MessageEmbed } = require('discord.js');
+
 module.exports = [
   // Auto react to comments if 2+ lines start with an emoji
   {
@@ -43,14 +45,22 @@ module.exports = [
       if (message.member.joinedTimestamp <= now) return;
 
       // New member
-      let text = '';
+      const description = [];
+
+      // #faq
       const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
-      if (faq) text += `\nYou might be able to find the answer you are looking for in the ${faq}.`;
+      if (faq) description.push(`You might be able to find the answer you are looking for in the ${faq}.`);
 
+      // #bot-commands
       const botCommands = message.guild.channels.cache.find(channel => channel.name == 'bot-commands');
-      if (botCommands) text += `\nThere may be a command available in ${botCommands}.`;
+      if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
+    
+      // wiki
+      description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
+      const embed = new MessageEmbed()
+        .setDescription(description);
 
-      if (text.length) message.reply(text);
+      message.reply({embed});
     },
   },
 ];
