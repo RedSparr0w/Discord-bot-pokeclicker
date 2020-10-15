@@ -37,6 +37,12 @@ module.exports = [
   {
     regex: /\b(how|where)\b.+\b(catch|find|get|evolve|buy)\b/i,
     execute: (message, client) => {
+      // If they have been a member longer than a week, assume they know about the #faq & #bot-commands
+      const now = new Date();
+      now.setDate(now.getDate() - 7);
+      if (message.member.joinedTimestamp <= now) return;
+
+      // New member
       let text = '';
       const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
       if (faq) text += `\nYou might be able to find the answer you are looking for in the ${faq}.`;
