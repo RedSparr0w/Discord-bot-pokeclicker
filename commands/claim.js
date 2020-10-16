@@ -33,9 +33,9 @@ module.exports = {
     // Check if user claimed within the last 24 hours
     let { last_claim, streak } = await getLastClaim(msg.author, 'daily_claim');
 
-    // User already claimed within last 24 hours
-    if (last_claim >= (Date.now() - DAY)) {
-      const time_left = (+last_claim + DAY) - Date.now();
+    // User already claimed within last 23 hours
+    if (last_claim >= (Date.now() - (DAY - HOUR))) {
+      const time_left = (+last_claim + (DAY - HOUR)) - Date.now();
       const hours = Math.floor(time_left % DAY / HOUR);
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
