@@ -36,11 +36,11 @@ client.once('ready', async() => {
   new RunOnInterval(60 * 6e4 /* 1 Hour */, () => {
     // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
-  }, true);
+  }, { run_now: true });
 
   new RunOnInterval(6 * 60 * 6e4 /* 6 Hours */, () => {
     client.guilds.cache.forEach(guild => backupDB(guild));
-  });
+  }, { timezone_offset: 0 });
 });
 
 client.on('error', e => error('Client error thrown:', e))
