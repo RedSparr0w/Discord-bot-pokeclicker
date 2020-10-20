@@ -13,12 +13,13 @@ const { website } = require('../config.json');
 module.exports = {
   name        : 'route',
   aliases     : ['routes', 'routeinfo'],
-  description : 'Get PokéClicker game info about a specific Pokémon',
+  description : 'Get PokéClicker game info about a specific route',
   args        : ['id', 'region?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     const [routeNumber, region] = args;
     if (isNaN(routeNumber)) return msg.reply(`Invalid route number: \`${routeNumber}\``);

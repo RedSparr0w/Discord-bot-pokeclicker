@@ -79,6 +79,29 @@ client.on('error', e => error('Client error thrown:', e))
       return message.reply('I do not have the required permissions to run this command.');
     }
 
+    const commandAllowedHere = (
+      (message.channel.type === 'text' && (
+        // User can manage the guild, and can use bot commands anywhere
+        message.channel.memberPermissions(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+        // Command was run in `#dev-bot`
+        message.channel.name === 'dev-bot' ||
+        // Command is allowed in this channel
+        (!command.channels || command.channels.includes(message.channel.name))
+      ))
+    );
+
+    if (!commandAllowedHere) {
+      const botChannels = command.channels && message.guild.channels.cache
+        // Find all allowed channels
+        .filter((channel) => command.channels.includes(channel.name))
+        // Sort by priority
+        .sort((a, b) => command.channels.indexOf(a.name) - command.channels.indexOf(b.name));
+      const botChannel = botChannels && botChannels.length !== 0
+        ? ` Please try again in ${botChannels.first()}`
+        : '';
+      return message.reply(`You're not allowed to use that here.${botChannel}`);
+    }
+
     // Check the user has supplied enough arguments for the command
     if (command.args.filter(arg=>!arg.endsWith('?')).length > args.length) {
       return message.channel.send([

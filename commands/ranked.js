@@ -14,6 +14,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands', 'bragging', 'game-corner'],
   execute     : async (msg, args) => {
     const embed = new MessageEmbed()
       .setTitle('Top ranked Pokémon')
