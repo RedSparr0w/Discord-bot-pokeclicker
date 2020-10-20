@@ -71,19 +71,19 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     // Check the user has the required permissions
-    if (message.channel.type === 'text' && message.channel.memberPermissions(message.member).missing(command.userperms).length) {
+    if (message.channel.type === 'text' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
       return message.reply('You do not have the required permissions to run this command.');
     }
 
     // Check the bot has the required permissions
-    if (message.channel.type === 'text' && message.channel.memberPermissions(message.guild.me).missing(command.botperms).length) {
+    if (message.channel.type === 'text' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
       return message.reply('I do not have the required permissions to run this command.');
     }
 
     const commandAllowedHere = (
       (message.channel.type === 'text' && (
         // User can manage the guild, and can use bot commands anywhere
-        message.channel.memberPermissions(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+        message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
         // Command was run in `#dev-bot`
         message.channel.name === 'dev-bot' ||
         // Command is allowed in this channel

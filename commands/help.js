@@ -20,7 +20,7 @@ module.exports = {
     if (msg.channel.type === 'dm'){
       commands = commands.filter(command => !command.guildOnly);
     } else if (msg.channel.type === 'text'){
-      commands = commands.filter(command => !msg.channel.memberPermissions(msg.member).missing(command.userperms).length);
+      commands = commands.filter(command => !msg.channel.permissionsFor(msg.member).missing(command.userperms).length);
     }
 
     if (!args.length) {
