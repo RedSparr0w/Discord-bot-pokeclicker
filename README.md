@@ -11,7 +11,10 @@ Steps for running:
 
 ## Permissions
 
-* `ATTACH_FILES` - Attach Files - Used for `!backup`
-* `DELETE_MESSAGE` - Manage Messages - Used for `!post`
-* `SEND_MESSAGES` - Used for all
-* `EMBED_LINKS` - Used for all
+* Manage Roles - Allow the bot to assign and unassign roles with `!mute`, `!unmute`, and `!scripting`
+* Read Text Channels & See Voice Channels
+* Send Messages
+* Manage Messages - Allow the bot to delete messages
+* Embedded Links
+* Attach files - Allow the bot to post database backups
+* Mention `@everyone`, `@here` and All Roles
