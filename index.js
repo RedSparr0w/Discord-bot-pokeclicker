@@ -8,6 +8,7 @@ const {
   error,
   gameVersion,
   RunOnInterval,
+  formatChannelList,
 } = require('./helpers.js');
 const {
   setupDB,
@@ -91,15 +92,14 @@ client.on('error', e => error('Client error thrown:', e))
     );
 
     if (!commandAllowedHere) {
-      const botChannels = command.channels && message.guild.channels.cache
-        // Find all allowed channels
-        .filter((channel) => command.channels.includes(channel.name))
-        // Sort by priority
-        .sort((a, b) => command.channels.indexOf(a.name) - command.channels.indexOf(b.name));
-      const botChannel = botChannels && botChannels.length !== 0
-        ? ` Please try again in ${botChannels.first()}`
-        : '';
-      return message.reply(`You're not allowed to use that here.${botChannel}`);
+      let botChannelMessage = '';
+      if (command.channels && command.channels.length !== 0) {
+        botChannelMessage = `Please try again in ${formatChannelList(message.guild, command.channels)}.`
+      }
+      const safeMessage = message.content.replace(/`/g, '');
+      return message
+        .reply(`This is not the correct channel for \`${safeMessage}\`. ${botChannelMessage}`)
+        .then(() => message.delete().catch((e) => error('Unable to delete message:', e)));
     }
 
     // Check the user has supplied enough arguments for the command
