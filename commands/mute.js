@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-
-const mutedRoleID = '758167963294629898';
+const { mutedRoleID } = require('../config.json');
 
 module.exports = {
   name        : 'mute',

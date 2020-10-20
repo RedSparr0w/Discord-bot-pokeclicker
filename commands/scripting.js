@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-
-const externalScriptsRoleID = '761015248856809493';
+const { externalScriptsRoleID } = require('../config.json');
 
 module.exports = {
   name        : 'scripting',
