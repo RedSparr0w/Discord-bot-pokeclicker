@@ -49,7 +49,7 @@ module.exports = {
     }
 
     // Should the claim streak be reset (if more than 2 days)
-    if (last_claim < (Date.now() - (2 * DAY))) {
+    if (last_claim < (Date.now() - (3 * DAY))) {
       await resetClaimStreak(msg.author, 'daily_claim');
       streak = 0;
     }
