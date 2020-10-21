@@ -35,6 +35,13 @@ module.exports = [
       message.channel.send('soon™');
     },
   },
+  // cats > dogs
+  {
+    regex: /\b(legendary|roaming)\b.+\b(dogs?)\b/i,
+    execute: (message, client) => {
+      message.react('🐱');
+    },
+  },
   // FAQ
   {
     regex: /\b(how|where)\b.+\b(catch|find|get|evolve|buy)\b/i,
