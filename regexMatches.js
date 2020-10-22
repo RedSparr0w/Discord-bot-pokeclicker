@@ -49,7 +49,7 @@ module.exports = [
       // If they have been a member longer than a week, assume they know about the #faq & #bot-commands
       const now = new Date();
       now.setDate(now.getDate() - 7);
-      if (message.member.joinedTimestamp <= now) return;
+      if (message.member && message.member.joinedTimestamp <= now) return;
 
       // New member
       const description = [];

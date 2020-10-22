@@ -41,7 +41,7 @@ module.exports = {
 
     // Check player has selected a coin side
     if (!side || coinSides[side.toLowerCase()] == undefined) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid coin side selected: \`${side}\``);
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid coin side selected.`);
       return msg.channel.send({ embed });
     }
     side = coinSides[side.toLowerCase()];
