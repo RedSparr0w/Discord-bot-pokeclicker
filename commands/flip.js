@@ -38,10 +38,9 @@ module.exports = {
   execute     : async (msg, args) => {
     let bet = args.find(a => betRegex.test(a));
     let side = args.find(a => new RegExp(`^(${Object.keys(coinSides).join('|')})$`, 'i').test(a));
-    side = side.toLowerCase();
 
     // Check player has selected a coin side
-    if (!side || coinSides[side] == undefined) {
+    if (!side || coinSides[side.toLowerCase()] == undefined) {
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid coin side selected: \`${side}\``);
       return msg.channel.send({ embed });
     }
