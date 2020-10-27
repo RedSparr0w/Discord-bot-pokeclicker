@@ -55,17 +55,18 @@ module.exports = [
       const description = [];
 
       // #faq
-      const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
+      const faq = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'faq') || '#faq' : '#faq';
       if (faq) description.push(`You might be able to find the answer you are looking for in the ${faq}.`);
 
       // #bot-commands
-      const botCommands = message.guild.channels.cache.find(channel => channel.name == 'bot-commands');
+      const botCommands = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'bot-commands') || '#bot-commands' : '#bot-commands';
       if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
     
       // wiki
       description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
-      const embed = new MessageEmbed()
-        .setDescription(description);
+
+      // Create the embed
+      const embed = new MessageEmbed().setDescription(description);
 
       message.reply({embed});
     },
