@@ -49,8 +49,12 @@ client.on('error', e => error('Client error thrown:', e))
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) {
-      const match = regexMatches.find(match => match.regex.test(message.content));
-      if (match) match.execute(message, client);
+      try {
+        const match = regexMatches.find(match => match.regex.test(message.content));
+        if (match) match.execute(message, client);
+      } catch (err) {
+        error('Regex Match Error:\n', err);
+      }
       return;
     }
 
