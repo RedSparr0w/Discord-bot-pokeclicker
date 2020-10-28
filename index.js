@@ -88,8 +88,8 @@ client.on('error', e => error('Client error thrown:', e))
       (message.channel.type === 'text' && (
         // User can manage the guild, and can use bot commands anywhere
         message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
-        // Command was run in `#dev-bot`
-        message.channel.name === 'dev-bot' ||
+        // Command was run in `#****-bot`
+        message.channel.name.endsWith('-bot') ||
         // Command is allowed in this channel
         (!command.channels || command.channels.includes(message.channel.name))
       ))
