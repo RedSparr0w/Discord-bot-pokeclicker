@@ -10,7 +10,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
   userperms   : ['MUTE_MEMBERS'], // Voice mute permission
-  channels    : ['mod-bot'],
+  channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     const embed = new MessageEmbed().setColor('#e74c3c');
 

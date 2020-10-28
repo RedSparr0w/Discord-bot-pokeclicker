@@ -16,7 +16,7 @@ module.exports = {
   cooldown    : 0.1,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['MANAGE_GUILD'],
-  channels    : [], // `dev-bot` is automatically allowed
+  channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     if (!ownerID || msg.author.id !== ownerID) return;
     try {

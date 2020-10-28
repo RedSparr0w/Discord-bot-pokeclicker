@@ -12,7 +12,7 @@ const { website } = require('../config.json');
 
 module.exports = {
   name        : 'route',
-  aliases     : ['routes', 'routeinfo'],
+  aliases     : ['routes', 'routeinfo', 'r'],
   description : 'Get PokéClicker game info about a specific route',
   args        : ['id', 'region?'],
   guildOnly   : true,

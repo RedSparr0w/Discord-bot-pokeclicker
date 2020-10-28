@@ -9,7 +9,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['MANAGE_GUILD'],
-  channels    : [], // `dev-bot` is automatically allowed
+  channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     msg.delete().catch(e=>error('Unable to delete message:', e));
     const [, message_id] = args;

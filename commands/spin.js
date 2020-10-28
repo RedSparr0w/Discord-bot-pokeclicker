@@ -17,7 +17,7 @@ module.exports = {
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  channels    : ['game-corner', 'bot-commands'],
+  channels    : ['bot-commands', 'game-corner'],
   execute     : async (msg, args) => {
     let bet = args.find(a => betRegex.test(a));
 
