@@ -135,8 +135,7 @@ class DailyDeal {
       if (deal.item2.name == name1) {
         if (deal.item1.name == name2) {
           return true;
-        }
-        else {
+        } else {
           return DailyDeal.reverseDealExists(deal.item1.name, name2, dealList);
         }
       }

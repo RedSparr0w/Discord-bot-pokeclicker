@@ -27,11 +27,10 @@ class RunOnInterval {
   }
 
   set interval_in_ms(v){
-    if (isNaN(+v)) return false;
+    if (isNaN(+v)) return;
     // Set interval, restart timeout
     this.__interval_in_ms = +v;
     this.start();
-    return this.__interval_in_ms;
   }
 
   get function_to_run(){
@@ -39,10 +38,9 @@ class RunOnInterval {
   }
 
   set function_to_run(f){
-    if (typeof f !== 'function') return false;
+    if (typeof f !== 'function') return;
     this.__function_to_run = f;
     this.start();
-    return f;
   }
 
   get run_once(){
@@ -50,7 +48,7 @@ class RunOnInterval {
   }
 
   set run_once(v){
-    return this.__run_once = !!v;
+    this.__run_once = !!v;
   }
 
   start() {
