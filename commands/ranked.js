@@ -7,13 +7,14 @@ const {
 
 module.exports = {
   name        : 'ranked',
-  aliases     : ['ranks', 'rank', 'r'],
+  aliases     : ['ranks', 'rank'],
   description : 'Get a list of the top ranked Pokémon',
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     const embed = new MessageEmbed()
       .setTitle('Top ranked Pokémon')

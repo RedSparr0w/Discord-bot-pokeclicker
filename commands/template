@@ -7,6 +7,11 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['MANAGE_CHANNELS', 'MANAGE_MESSAGES'],
+  // If you provide `channels`, it will limit the command's usage to those
+  // channels (as well as `#dev-bot` automatically). To allow in all channels,
+  // remove the option entirely, and to restrict usage to only users with the
+  // `MANAGE_GUILD` permission, set it to `[]`
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     return
   },
