@@ -8,6 +8,7 @@ const {
   error,
   gameVersion,
   RunOnInterval,
+  formatChannelList,
 } = require('./helpers.js');
 const {
   setupDB,
@@ -74,13 +75,33 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     // Check the user has the required permissions
-    if (message.channel.type === 'text' && message.channel.memberPermissions(message.member).missing(command.userperms).length) {
+    if (message.channel.type === 'text' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
       return message.reply('You do not have the required permissions to run this command.');
     }
 
     // Check the bot has the required permissions
-    if (message.channel.type === 'text' && message.channel.memberPermissions(message.guild.me).missing(command.botperms).length) {
+    if (message.channel.type === 'text' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
       return message.reply('I do not have the required permissions to run this command.');
+    }
+
+    const commandAllowedHere = (
+      (message.channel.type === 'text' && (
+        // User can manage the guild, and can use bot commands anywhere
+        message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+        // Command was run in `#****-bot`
+        message.channel.name.endsWith('-bot') ||
+        // Command is allowed in this channel
+        (!command.channels || command.channels.includes(message.channel.name))
+      ))
+    );
+
+    if (!commandAllowedHere) {
+      const output = [`This is not the correct channel for \`${prefix}${command.name}\`.`];
+      if (command.channels && command.channels.length !== 0) {
+        output.push(`Please try again in ${formatChannelList(message.guild, command.channels)}.`);
+      }
+      message.delete().catch((e) => error('Unable to delete message:', e));
+      return message.reply(output);
     }
 
     // Check the user has supplied enough arguments for the command

@@ -1,5 +1,9 @@
-const { MessageEmbed } = require('discord.js');
-const { upperCaseFirstLetter } = require('../helpers.js');
+const { Collection, MessageEmbed } = require('discord.js');
+const {
+  upperCaseFirstLetter,
+  getAvailableChannelList,
+  formatChannelList,
+} = require('../helpers.js');
 const { prefix } = require('../config.json');
 
 module.exports = {
@@ -16,7 +20,7 @@ module.exports = {
     if (msg.channel.type === 'dm'){
       commands = commands.filter(command => !command.guildOnly);
     } else if (msg.channel.type === 'text'){
-      commands = commands.filter(command => !msg.channel.memberPermissions(msg.member).missing(command.userperms).length);
+      commands = commands.filter(command => !msg.channel.permissionsFor(msg.member).missing(command.userperms).length);
     }
 
     if (!args.length) {
@@ -30,7 +34,33 @@ module.exports = {
         ])
         .setColor('#3498db');
 
-      commands.forEach(command => embed.addField(`❯ ${upperCaseFirstLetter(command.name)}`, [`${command.description.split('\n')[0]}`], true));
+      commands
+        // Group the commands by their primary channel
+        .reduce((acc, next) => {
+          const allowedChannels = getAvailableChannelList(msg.guild, next.channels);
+          let currChannel = 'Any';
+          // If this command is restricted to a channel, use the first channel
+          if (allowedChannels !== true) {
+            currChannel = allowedChannels.size === 0
+              ? 'Restricted'
+              : allowedChannels.first().name;
+          }
+
+          if (!acc.has(currChannel)) acc.set(currChannel, []);
+          acc.get(currChannel).push(next);
+          return acc;
+        }, new Collection())
+        .forEach((channelCommands, rawChannelName) => {
+          const channel = msg.guild.channels.cache.find((v) => v.name === rawChannelName) || rawChannelName;
+          const channelDescription = channelCommands.reduce((acc, command) => acc.concat(
+            `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`
+          ), []);
+          embed.addField(
+            channel.name ? `#${channel.name}` : `${channel} channel`,
+            channelDescription,
+            false
+          );
+        });
       return msg.channel.send({ embed });
     }
 
@@ -48,7 +78,8 @@ module.exports = {
       .addField('❯ Usage', `\`\`\`css\n${prefix}${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``)
       .addField('❯ Aliases', `\`${command.aliases.join('`, `') || '-'}\``, true)
       .addField('❯ Cooldown', `\`${command.cooldown || 3} second(s)\``, true)
-      .addField('❯ Guild Only', `\`${command.guildOnly}\``, true);
+      .addField('❯ Guild Only', `\`${command.guildOnly}\``, true)
+      .addField('❯ Channels', formatChannelList(msg.guild, command.channels), true);
 
     if (command.helpFields) {
       embed.addField('\u200b\n═══ More Information ═══', '\u200b');

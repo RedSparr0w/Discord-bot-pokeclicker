@@ -10,6 +10,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands', 'game-corner', 'bragging'],
   execute     : async (msg, args) => {
     const balance = await getAmount(msg.author);
 
