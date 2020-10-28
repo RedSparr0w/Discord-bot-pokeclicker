@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-
-const mutedRoleID = '758167963294629898';
+const { mutedRoleID } = require('../config.json');
 
 module.exports = {
   name        : 'unmute',
@@ -10,7 +9,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
-  userperms   : ['MUTE_MEMBERS'], // Voice mut permission
+  userperms   : ['MUTE_MEMBERS'], // Voice mute permission
   execute     : async (msg, args) => {
     const embed = new MessageEmbed().setColor('#e74c3c');
 

@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-
-const externalScriptsRoleID = '761015248856809493';
+const { externalScriptsRoleID } = require('../config.json');
 
 module.exports = {
   name        : 'scripting',
@@ -10,7 +9,8 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
-  userperms   : ['MUTE_MEMBERS'], // Voice mut permission
+  userperms   : ['MUTE_MEMBERS'], // Voice mute permission
+  channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     const embed = new MessageEmbed().setColor('#e74c3c');
 

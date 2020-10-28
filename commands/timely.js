@@ -24,6 +24,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands', 'game-corner'],
   execute     : async (msg, args) => {
     // Check if user claimed within the last 24 hours
     let { last_claim, streak } = await getLastClaim(msg.author, 'timely_claim');
