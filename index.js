@@ -96,14 +96,12 @@ client.on('error', e => error('Client error thrown:', e))
     );
 
     if (!commandAllowedHere) {
-      let botChannelMessage = '';
+      let botReply = [`This is not the correct channel for \`${prefix}${command.name}\`.`];
       if (command.channels && command.channels.length !== 0) {
-        botChannelMessage = `Please try again in ${formatChannelList(message.guild, command.channels)}.`
+        botReply.push(`Please try again in ${formatChannelList(message.guild, command.channels)}.`);
       }
-      const safeMessage = message.content.replace(/`/g, '');
-      return message
-        .reply(`This is not the correct channel for \`${safeMessage}\`. ${botChannelMessage}`)
-        .then(() => message.delete().catch((e) => error('Unable to delete message:', e)));
+      message.delete().catch((e) => error('Unable to delete message:', e));
+      return message.reply(botReply);
     }
 
     // Check the user has supplied enough arguments for the command
