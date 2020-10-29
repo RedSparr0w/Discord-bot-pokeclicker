@@ -10,7 +10,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
-  channels    : ['bot-commands', 'game-corner', 'bragging'],
+  channels    : ['game-corner', 'bot-commands', 'bragging'],
   execute     : async (msg, args) => {
     const results = await getTop(100);
     const resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`);
