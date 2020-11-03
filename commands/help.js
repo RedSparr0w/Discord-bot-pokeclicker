@@ -23,6 +23,7 @@ module.exports = {
       commands = commands.filter(command => !msg.channel.permissionsFor(msg.member).missing(command.userperms).length);
     }
 
+    // Help on all commands
     if (!args.length) {
       const embed = new MessageEmbed()
         .setTitle('Help')
@@ -34,36 +35,40 @@ module.exports = {
         ])
         .setColor('#3498db');
 
-      commands
-        // Group the commands by their primary channel
-        .reduce((acc, next) => {
-          const allowedChannels = getAvailableChannelList(msg.guild, next.channels);
-          let currChannel = 'Any';
-          // If this command is restricted to a channel, use the first channel
-          if (allowedChannels !== true) {
-            currChannel = allowedChannels.size === 0
-              ? 'Restricted'
-              : allowedChannels.first().name;
-          }
+      if (msg.channel.type === 'dm'){
+        const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
+        embed.addField(
+          '__***Commands:***__',
+          description,
+          false
+        );
+      } else if (msg.channel.type === 'text'){
+        commands
+          // Group the commands by their primary channel
+          .reduce((acc, next) => {
+            const allowedChannels = getAvailableChannelList(msg.guild, next.channels);
+            let currChannel = 'Any channel';
+            // If this command is restricted to a channel, use the first channel
+            if (allowedChannels !== true) {
+              currChannel = allowedChannels.size === 0
+                ? '#restricted-channel'
+                : `#${allowedChannels.first().name}`;
+            }
 
-          if (!acc.has(currChannel)) acc.set(currChannel, []);
-          acc.get(currChannel).push(next);
-          return acc;
-        }, new Collection())
-        .forEach((channelCommands, rawChannelName) => {
-          const channel = msg.guild.channels.cache.find((v) => v.name === rawChannelName) || rawChannelName;
-          const channelDescription = channelCommands.reduce((acc, command) => acc.concat(
-            `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`
-          ), []);
-          embed.addField(
-            channel.name ? `#${channel.name}` : `${channel} channel`,
-            channelDescription,
-            false
-          );
-        });
+            if (!acc.has(currChannel)) acc.set(currChannel, []);
+            acc.get(currChannel).push(next);
+            return acc;
+          }, new Collection())
+          .forEach((channelCommands, rawChannelName) => {
+            const channel = rawChannelName;
+            const channelDescription = channelCommands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`);
+            embed.addField(`**${channel}**`, channelDescription);
+          });
+      }
       return msg.channel.send({ embed });
     }
 
+    // Help on a specific command
     const name = args[0].toLowerCase();
     const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
