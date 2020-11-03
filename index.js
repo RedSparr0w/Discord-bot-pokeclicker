@@ -46,7 +46,7 @@ client.once('ready', async() => {
 
 client.on('error', e => error('Client error thrown:', e))
   .on('warn', warning => warn(warning))
-  .on('message', message => {
+  .on('message', async message => {
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) {
@@ -136,9 +136,9 @@ client.on('error', e => error('Client error thrown:', e))
     // Run the command
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
-      command.execute(message, args, commandName);
+      await command.execute(message, args, commandName);
     } catch (err) {
-      error('Error executing command:', err);
+      error(`Error executing command "${message.content}":\n`, err);
       message.reply('There was an error trying to execute that command!');
     }
   });
