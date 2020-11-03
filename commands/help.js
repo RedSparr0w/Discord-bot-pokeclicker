@@ -68,11 +68,11 @@ module.exports = {
         // #anywhere
         // #channel-specific
         // #restricted
-        if (anyCommands.length) embed.addField('**#anywhere**', anyCommands);
+        if (anyCommands.length) embed.addField('__***#anywhere***__', anyCommands);
         Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
-          embed.addField(`**#${channel}**`, commands);
+          embed.addField(`__***#${channel}***__`, commands);
         });
-        if (restrictedCommands.length) embed.addField('***#restricted-channel***', restrictedCommands);
+        if (restrictedCommands.length) embed.addField('__***#restricted-channel***__', restrictedCommands);
       }
       return msg.channel.send({ embed });
     }
