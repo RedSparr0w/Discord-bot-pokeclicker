@@ -37,33 +37,42 @@ module.exports = {
 
       if (msg.channel.type === 'dm'){
         const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
-        embed.addField(
-          '__***Commands:***__',
-          description,
-          false
-        );
+        embed.addField('__***Commands:***__', description);
       } else if (msg.channel.type === 'text'){
-        commands
-          // Group the commands by their primary channel
-          .reduce((acc, next) => {
-            const allowedChannels = getAvailableChannelList(msg.guild, next.channels);
-            let currChannel = 'Any channel';
-            // If this command is restricted to a channel, use the first channel
-            if (allowedChannels !== true) {
-              currChannel = allowedChannels.size === 0
-                ? '#restricted-channel'
-                : `#${allowedChannels.first().name}`;
-            }
+        // Group the commands by their primary channel
+        const restrictedCommands = [];
+        const anyCommands = [];
+        const groupedCommands = {};
+        commands.forEach(command => {
+          // Not restricted to any channels
+          if (command.channels === undefined) {
+            return anyCommands.push(formattedCommand(command));
+          }
+          // No channels allowed, restricted to specific hidden channels
+          if (command.channels.length === 0) {
+            return restrictedCommands.push(formattedCommand(command));
+          }
+          const allowedChannels = getAvailableChannelList(msg.guild, command.channels);
+          // No channels allowed, restricted from this server
+          if (allowedChannels.size === 0) {
+            return restrictedCommands.push(formattedCommand(command));
+          }
+          // Use the first channel name in the list
+          const channelName = allowedChannels.first().name;
+          if (groupedCommands[channelName] === undefined) groupedCommands[channelName] = [];
+          groupedCommands[channelName].push(formattedCommand(command));
+        });
 
-            if (!acc.has(currChannel)) acc.set(currChannel, []);
-            acc.get(currChannel).push(next);
-            return acc;
-          }, new Collection())
-          .forEach((channelCommands, rawChannelName) => {
-            const channel = rawChannelName;
-            const channelDescription = channelCommands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`);
-            embed.addField(`**${channel}**`, channelDescription);
-          });
+        // Add the commands to the embed
+        //
+        // #anywhere
+        // #channel-specific
+        // #restricted
+        if (anyCommands.length) embed.addField('**#anywhere**', anyCommands);
+        Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
+          embed.addField(`**#${channel}**`, commands);
+        });
+        if (restrictedCommands.length) embed.addField('***#restricted-channel***', restrictedCommands);
       }
       return msg.channel.send({ embed });
     }
@@ -94,3 +103,5 @@ module.exports = {
     msg.channel.send({ embed });
   },
 };
+
+const formattedCommand = command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`;
