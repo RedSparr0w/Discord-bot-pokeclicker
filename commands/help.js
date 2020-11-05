@@ -1,4 +1,4 @@
-const { Collection, MessageEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const {
   upperCaseFirstLetter,
   getAvailableChannelList,
