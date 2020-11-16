@@ -112,7 +112,7 @@ module.exports = {
       // Baby
       if (pokemon.locations[PokemonLocationType.Baby]) {
         const description = pokemon.locations[PokemonLocationType.Baby].join('\n');
-        embed.addField('❯ Parents', description);
+        embed.addField('❯ Breeding', description);
       }
       // Fossil
       if (pokemon.locations[PokemonLocationType.Fossil]) {
