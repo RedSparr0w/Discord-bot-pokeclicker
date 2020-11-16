@@ -3,11 +3,11 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
   name        : 'ping',
   aliases     : [],
-  description : 'Check that i\'m still responding',
+  description : 'Check that I\'m still responding',
   args        : [],
   guildOnly   : false,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     const createdTime = Date.now();

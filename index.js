@@ -1,14 +1,19 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token, autorole } = require('./config.json');
+const { prefix, token } = require('./config.json');
 const {
   log,
   info,
   warn,
   error,
   gameVersion,
+  RunOnInterval,
+  formatChannelList,
 } = require('./helpers.js');
-const { setupDB } = require('./database.js');
+const {
+  setupDB,
+  backupDB,
+} = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 
 const client = new Discord.Client();
@@ -29,25 +34,28 @@ client.once('ready', async() => {
   // Check the database is setup
   await setupDB();
 
-  client.user.setActivity(`PokéClicker v${gameVersion}`);
+  new RunOnInterval(60 * 6e4 /* 1 Hour */, () => {
+    // Set our status
+    client.user.setActivity(`PokéClicker v${gameVersion}`);
+  }, { run_now: true });
+
+  new RunOnInterval(6 * 60 * 6e4 /* 6 Hours */, () => {
+    client.guilds.cache.forEach(guild => backupDB(guild));
+  }, { timezone_offset: 0 });
 });
 
 client.on('error', e => error('Client error thrown:', e))
   .on('warn', warning => warn(warning))
-  .on('guildMemberAdd', async member => {
-    if (autorole) {
-      // Auto apply join role
-      setTimeout(() => {
-        member.roles.add(autorole, 'Auto apply role');
-      }, 6e4);
-    }
-  })
-  .on('message', message => {
+  .on('message', async message => {
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) {
-      const match = regexMatches.find(match => match.regex.test(message.content));
-      if (match) match.execute(message, client);
+      try {
+        const match = regexMatches.find(match => match.regex.test(message.content));
+        if (match) match.execute(message, client);
+      } catch (err) {
+        error('Regex Match Error:\n', err);
+      }
       return;
     }
 
@@ -67,13 +75,33 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     // Check the user has the required permissions
-    if (message.channel.type === 'text' && message.channel.memberPermissions(message.member).missing(command.userperms).length) {
+    if (message.channel.type === 'text' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
       return message.reply('You do not have the required permissions to run this command.');
     }
 
     // Check the bot has the required permissions
-    if (message.channel.type === 'text' && message.channel.memberPermissions(message.guild.me).missing(command.botperms).length) {
+    if (message.channel.type === 'text' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
       return message.reply('I do not have the required permissions to run this command.');
+    }
+
+    const commandAllowedHere = (
+      // Direct Message
+      message.channel.type === 'dm' ||
+      // User can manage the guild, and can use bot commands anywhere
+      message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+      // Command was run in `#****-bot`
+      message.channel.name.endsWith('-bot') ||
+      // Command is allowed in this channel
+      (!command.channels || command.channels.includes(message.channel.name))
+    );
+
+    if (!commandAllowedHere) {
+      const output = [`This is not the correct channel for \`${prefix}${command.name}\`.`];
+      if (command.channels && command.channels.length !== 0) {
+        output.push(`Please try again in ${formatChannelList(message.guild, command.channels)}.`);
+      }
+      message.delete().catch((e) => error('Unable to delete message:', e));
+      return message.reply(output);
     }
 
     // Check the user has supplied enough arguments for the command
@@ -108,9 +136,9 @@ client.on('error', e => error('Client error thrown:', e))
     // Run the command
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
-      command.execute(message, args, commandName);
+      await command.execute(message, args, commandName);
     } catch (err) {
-      error('Error executing command:', err);
+      error(`Error executing command "${message.content}":\n`, err);
       message.reply('There was an error trying to execute that command!');
     }
   });

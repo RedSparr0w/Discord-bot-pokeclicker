@@ -33,15 +33,16 @@ module.exports = {
   args        : ['amount', 'side (h|t)'],
   guildOnly   : true,
   cooldown    : 0.5,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['game-corner', 'bot-commands'],
   execute     : async (msg, args) => {
     let bet = args.find(a => betRegex.test(a));
-    let side = args.find(a => new RegExp(`^(${Object.keys(coinSides).join('|')})$`).test(a));
+    let side = args.find(a => new RegExp(`^(${Object.keys(coinSides).join('|')})$`, 'i').test(a));
 
     // Check player has selected a coin side
-    if (!side || coinSides[side] == undefined) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid coin side selected: \`${side}\``);
+    if (!side || coinSides[side.toLowerCase()] == undefined) {
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid coin side selected.`);
       return msg.channel.send({ embed });
     }
     side = coinSides[side.toLowerCase()];

@@ -63,3 +63,4 @@ typings/
 # config file
 config.json
 database.sqlite
+trainer_card.png

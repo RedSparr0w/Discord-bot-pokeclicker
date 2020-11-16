@@ -12,13 +12,14 @@ const { website } = require('../config.json');
 
 module.exports = {
   name        : 'route',
-  aliases     : ['routes', 'routeinfo'],
-  description : 'Get PokéClicker game info about a specific Pokémon',
+  aliases     : ['routes', 'routeinfo', 'r'],
+  description : 'Get PokéClicker game info about a specific route',
   args        : ['id', 'region?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     const [routeNumber, region] = args;
     if (isNaN(routeNumber)) return msg.reply(`Invalid route number: \`${routeNumber}\``);
@@ -42,7 +43,7 @@ module.exports = {
     const shiny = !Math.floor(Math.random() * 512);
 
     const embed = new MessageEmbed()
-      .setTitle(`Route #${routeNumber}`)
+      .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | Route #${routeNumber}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`);
@@ -62,7 +63,7 @@ module.exports = {
     // Shards:
     let shardsInfo;
     Object.entries(RouteShardTypes).forEach(([region, routes]) => {
-      if (routes[routeNumber]) shardsInfo = routes[routeNumber];
+      if (region == route.region && routes[routeNumber]) shardsInfo = routes[routeNumber];
     });
     if (shardsInfo) {
       const descIcon = [];

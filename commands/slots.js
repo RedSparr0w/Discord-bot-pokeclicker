@@ -2,47 +2,105 @@ const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount } = require('../helpers.js');
 
-const multipliers = [
-  300,
-  100,
-  15,
-  15,
-  8,
-  8,
-  15,
-  15,
-  8,
-  8,
-  8,
-  8,
+const slots = {
+  seven: '<:slots_7:751322075578499093>',
+  rocket: '<:slots_r:751322076115370044>',
+  pikachu: '<:slots_pikachu:751322076031483944>',
+  psyduck: '<:slots_psyduck:751322076052455444>',
+  magnemite: '<:slots_magnemite:751322076014706698>',
+  shelder: '<:slot_shelder:751322075481768027>',
+  berry: '<:slots_berry:751322075955724368>',
+};
+
+const columnOptions = [
+  [slots.seven, 300, 1],
+  [slots.rocket, 100, 1],
+  [slots.pikachu, 15, 2],
+  [slots.psyduck, 15, 2],
+  [slots.magnemite, 8, 4],
+  [slots.shelder, 8, 4],
+  [slots.berry, 1, 1],
 ];
-const icons       = [
-  '<:slots_7:751322075578499093>',
-  '<:slots_r:751322076115370044>',
-  '<:slots_pikachu:751322076031483944>',
-  '<:slots_psyduck:751322076052455444>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_pikachu:751322076031483944>',
-  '<:slots_psyduck:751322076052455444>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_magnemite:751322076014706698>',
-  '<:slot_shelder:751322075481768027>',
-  '<:slots_berry:751322075955724368>',
-  '<:slots_berry:751322075955724368>',
+
+const columns = [
+  [
+    slots.pikachu,
+    slots.shelder,
+    slots.pikachu,
+    slots.magnemite,
+    slots.seven,
+    slots.shelder,
+    slots.psyduck,
+    slots.rocket,
+    slots.berry,
+    slots.pikachu,
+    slots.shelder,
+    slots.seven,
+    slots.magnemite,
+    slots.pikachu,
+    slots.rocket,
+    slots.shelder,
+    slots.pikachu,
+    slots.seven,
+    slots.psyduck,
+    slots.berry,
+    slots.rocket,
+  ],
+  [
+    slots.magnemite,
+    slots.berry,
+    slots.psyduck,
+    slots.pikachu,
+    slots.magnemite,
+    slots.berry,
+    slots.psyduck,
+    slots.seven,
+    slots.magnemite,
+    slots.berry,
+    slots.rocket,
+    slots.psyduck,
+    slots.shelder,
+    slots.magnemite,
+    slots.psyduck,
+    slots.berry,
+    slots.seven,
+    slots.magnemite,
+    slots.berry,
+    slots.psyduck,
+    slots.rocket,
+  ],
+  [
+    slots.seven,
+    slots.psyduck,
+    slots.shelder,
+    slots.magnemite,
+    slots.pikachu,
+    slots.psyduck,
+    slots.shelder,
+    slots.magnemite,
+    slots.pikachu,
+    slots.psyduck,
+    slots.magnemite,
+    slots.shelder,
+    slots.pikachu,
+    slots.psyduck,
+    slots.magnemite,
+    slots.shelder,
+    slots.pikachu,
+    slots.psyduck,
+    slots.magnemite,
+    slots.shelder,
+    slots.rocket,
+  ],
 ];
 
 const spinSlots = () => {
   const spinIcons = [[],[],[]];
-  spinIcons.forEach((col, index) => {
-    const column = [...icons];
-    if (index == 2) column.splice(column.length - 1);
-    while (col.length < 3) {
-      col.push(column.splice(Math.floor(Math.random() * column.length), 1)[0]);
-    }
+  return spinIcons.map((col, index) => {
+    const column = columns[index];
+    const rand = Math.floor(Math.random() * column.length);
+    return [...column, ...column].slice(rand, rand + 3);
   });
-  return spinIcons;
 };
 
 const calcWinningsMultiplier = (slotIcons, lines) => {
@@ -53,16 +111,16 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
   const row3 = slotIcons.map(r => r[2]);
 
   // Each Row
-  if (lines >= 2 && new Set(row1).size == 1) multiplier += multipliers[icons.findIndex(i => i == row1[0])];
-  if (new Set(row2).size == 1) multiplier += multipliers[icons.findIndex(i => i == row2[0])];
-  if (lines >= 2 && new Set(row3).size == 1) multiplier += multipliers[icons.findIndex(i => i == row3[0])];
+  if (lines >= 2 && new Set(row1).size == 1) multiplier += columnOptions.find(i => i[0] == row1[0])[1];
+  if (new Set(row2).size == 1) multiplier += columnOptions.find(i => i[0] == row2[0])[1];
+  if (lines >= 2 && new Set(row3).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
 
   // Both Diagonals
-  if (lines >= 3 && new Set([row1[0], row2[1], row3[2]]).size == 1) multiplier += multipliers[icons.findIndex(i => i == row1[0])];
-  if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += multipliers[icons.findIndex(i => i == row3[0])];
+  if (lines >= 3 && new Set([row1[0], row2[1], row3[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row1[0])[1];
+  if (lines >= 3 && new Set([row3[0], row2[1], row1[2]]).size == 1) multiplier += columnOptions.find(i => i[0] == row3[0])[1];
 
   // Berries
-  const berry = icons[6];
+  const berry = slots.berry;
   if (lines >= 2 && row1[0] == berry) {
     if (row1[1] == berry) multiplier += 6;
     else if (lines >= 3 && row2[1] == berry) multiplier += 6;
@@ -97,9 +155,9 @@ module.exports = {
     [
       '❯ Multipliers:',
       [
-        `${icons.filter((icon, index) => multipliers[index]).map((icon, index) => `${icon}${icon}${icon} ║ **× ${multipliers[index]}**`).join('\n')}`,
-        `${icons[icons.length - 1]}${icons[icons.length - 1]}➖ ║ **× 6**`,
-        `${icons[icons.length - 1]}➖➖ ║ **× 2**`,
+        `${columnOptions.filter(([icon, multiplier]) => multiplier > 1).map(([icon, multiplier]) => `${icon}${icon}${icon} ║ **× ${multiplier}**`).join('\n')}`,
+        `${slots.berry}${slots.berry}➖ ║ **× 6**`,
+        `${slots.berry}➖➖ ║ **× 2**`,
         '',
         '_**Note:** The multiplier is divided by however many lines you are playing._',
       ],
@@ -108,9 +166,10 @@ module.exports = {
   args        : ['amount', 'lines(3)?'],
   guildOnly   : true,
   cooldown    : 0.5,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  execute     : async (msg, args) => {
+  channels    : ['game-corner', 'bot-commands'],
+  execute      : async (msg, args) => {
     let [ bet, lines = 3 ] = args;
 
     // Check the bet amount is correct

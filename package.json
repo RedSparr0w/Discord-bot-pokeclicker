@@ -1,6 +1,6 @@
 {
   "name": "discord-bot-pokeclicker",
-  "version": "0.4.17",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "node index",
@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^2.6.1",
     "discord.js": "^12.0.1",
     "fuzzyset": "^1.0.5",
+    "merge-images": "github:RedSparr0w/merge-images#develop-build",
     "puppeteer": "^5.2.1",
-    "sqlite": "^3.0.3"
+    "sqlite": "^3.0.3",
+    "text2png": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

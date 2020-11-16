@@ -21,8 +21,9 @@ module.exports = {
   args        : ['id/name', 'shiny?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     let id = args.join(' ').toLowerCase().trim();
     let shiny = false;
@@ -75,7 +76,7 @@ module.exports = {
       }
       // Roaming
       if (pokemon.locations[PokemonLocationType.Roaming]) {
-        const description = pokemon.locations[PokemonLocationType.Roaming].map(region => GameConstants.Region[region].toUpperCase()).join('\n');
+        const description = pokemon.locations[PokemonLocationType.Roaming].map(r => `${GameConstants.Region[r.region].toUpperCase()}${r.requirements ? `🔒\n***Unlock Requirements:***\n_${r.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Roaming', description);
       }
       // Dungeon
@@ -85,7 +86,7 @@ module.exports = {
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonBoss].join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
       // Evolutions
@@ -111,7 +112,7 @@ module.exports = {
       // Baby
       if (pokemon.locations[PokemonLocationType.Baby]) {
         const description = pokemon.locations[PokemonLocationType.Baby].join('\n');
-        embed.addField('❯ Parents', description);
+        embed.addField('❯ Breeding', description);
       }
       // Fossil
       if (pokemon.locations[PokemonLocationType.Fossil]) {

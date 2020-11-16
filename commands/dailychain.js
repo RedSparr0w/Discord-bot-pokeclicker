@@ -13,8 +13,9 @@ module.exports = {
   args        : ['max slots(3)?', 'from date(2020-12-01)?', 'days(14)?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     let [maxSlots, fromDate, days] = args;
 
@@ -183,7 +184,7 @@ module.exports = {
       // Title
       const title = `❯ ${dateToString(deals[0].date)} → ${dateToString(deals[deals.length - 1].date)}`;
       const description = `Profit per 1 of initial investment \`💎 ${profit.toLocaleString('en-US')}\``;
-      if (embed.length + title.length + description.length >= 6000) {
+      if (embed.length + title.length + description.length >= 5950) {
         return tooLong = true;
       }
       embed.addField(title, description);

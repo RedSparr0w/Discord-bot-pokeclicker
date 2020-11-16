@@ -1,3 +1,5 @@
+const { MessageEmbed } = require('discord.js');
+
 module.exports = [
   // Auto react to comments if 2+ lines start with an emoji
   {
@@ -28,23 +30,45 @@ module.exports = [
   },
   // soon™
   {
-    regex: /(when).+(release|version|update)/i,
+    regex: /\b(when)\b.+\b(released?|version|updated?)\b/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },
   },
+  // cats > dogs
+  {
+    regex: /\b(legendary|roaming)\b.+\b(dogs?)\b/i,
+    execute: (message, client) => {
+      message.react('🐱');
+    },
+  },
   // FAQ
   {
-    regex: /(how|where).+(catch|find|get|evolve|buy)/i,
+    regex: /\b(how|where)\b.+\b(catch|find|get|evolve|buy)\b/i,
     execute: (message, client) => {
-      let text = '';
-      const faq = message.guild.channels.cache.find(channel => channel.name == 'faq');
-      if (faq) text += `\nYou might be able to find the answer you are looking for in the ${faq}.`;
+      // If they have been a member longer than a week, assume they know about the #faq & #bot-commands
+      const now = new Date();
+      now.setDate(now.getDate() - 7);
+      if (message.member && message.member.joinedTimestamp <= now) return;
 
-      const botCommands = message.guild.channels.cache.find(channel => channel.name == 'bot-commands');
-      if (botCommands) text += `\nThere may be a command available in ${botCommands}.`;
+      // New member
+      const description = [];
 
-      if (text.length) message.reply(text);
+      // #faq
+      const faq = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'faq') || '#faq' : '#faq';
+      if (faq) description.push(`You might be able to find the answer you are looking for in the ${faq}.`);
+
+      // #bot-commands
+      const botCommands = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'bot-commands') || '#bot-commands' : '#bot-commands';
+      if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
+    
+      // wiki
+      description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
+
+      // Create the embed
+      const embed = new MessageEmbed().setDescription(description);
+
+      message.reply({embed});
     },
   },
 ];

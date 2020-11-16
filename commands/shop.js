@@ -11,7 +11,7 @@ const discordShopItems = [
     claimFunction: async (guild, member) => {
       const role = guild.roles.cache.find(role => role.name == 'Poké Squad');
       if (!role) return false;
-      await member.roles.add(role);
+      await member.roles.add(role, 'User purchased role');
       return true;
     },
   },
@@ -51,8 +51,9 @@ module.exports = {
   args        : ['page?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['game-corner', 'bot-commands'],
   execute     : async (msg, args) => {
     let [ page = 1 ] = args;
 
@@ -96,6 +97,7 @@ module.exports = {
           .setDescription([
             msg.author,
             'Failed to purchase item',
+            '',
             'Something wen\'t wrong, try again later..',
           ]);
         return msg.channel.send({ embed });
@@ -129,6 +131,7 @@ module.exports = {
             .setDescription([
               msg.author,
               'Failed to purchase item',
+              '',
               'Something wen\'t wrong, try again later..',
             ]);
           return msg.channel.send({ embed });
@@ -143,7 +146,35 @@ module.exports = {
           return msg.channel.send({ embed });
         }
       } else { // Game shop item
+
+        embed.setDescription([
+          `**${item.name}** Successfully purchased!`,
+          '_Enter the following code in game to claim:_',
+          '```',
+          generateCode(msg.author.id, item.name),
+          '```',
+          '',
+          '**NOTE:**',
+          '_You will need to link your Discord account in game before the code will work_',
+          '`Start Menu` → `Save` → `Link Discord`',
+        ]);
+
+        let error;
+        await msg.author.send({ embed }).catch(e => error = e);
+        // Error sending the code to the user, DM's might be disabled
+        if (error) {
+          embed.setColor('#e74c3c')
+            .setDescription([
+              msg.author,
+              'Failed to purchase item',
+              '',
+              '_make sure you are able to recieve direct messages_',
+            ]);
+          return msg.channel.send({ embed });
+        }
+
         const remainingBalance = await removeAmount(msg.author, item.price);
+
         embed.setColor('#2ecc71')
           .setDescription([
             msg.author,
@@ -154,16 +185,6 @@ module.exports = {
           .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
 
         msg.channel.send({ embed });
-
-        embed.setDescription([
-          `**${item.name}** Successfully purchased!`,
-          '_Enter the following code in game to claim:_',
-          '```',
-          generateCode(msg.author.id, item.name),
-          '```',
-        ]);
-
-        msg.author.send({ embed });
       }
     });
   },

@@ -8,8 +8,9 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['game-corner', 'bot-commands', 'bragging'],
   execute     : async (msg, args) => {
     const balance = await getAmount(msg.author);
 

@@ -1,29 +1,22 @@
-const { MessageEmbed } = require('discord.js');
 const { getTop } = require('../database.js');
+const { postPages } = require('../helpers.js');
 
 module.exports = {
   name        : 'top',
   aliases     : ['leaderboard', 'lb'],
   description : 'Get a list of users with the most points',
-  args        : ['amount(10)?'],
+  args        : [],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['game-corner', 'bot-commands', 'bragging'],
   execute     : async (msg, args) => {
-    const amount = +(args.find(arg=>/^\d+$/.test(arg)) || 10);
+    const results = await getTop(100);
+    const resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`);
 
-    // Check user has entered a valid amount
-    if (isNaN(amount) || amount < 1 || amount > 40) return msg.channel.send('Invalid amount specified, Must be between 1 and 40...');
+    const pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} Trainers:***__`, ...resultsText.splice(0, 10)]);
 
-    const results = await getTop(amount);
-
-    const embed = new MessageEmbed()
-      .setTitle(`__***Top ${results.length} Trainers:***__`)
-      .setColor('#3498db');
-      
-    embed.addField('\u200b', results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> ${msg.guild.members.cache.get(res.user) || 'Inactive Member'}`));
-
-    msg.channel.send({ embed });
+    postPages(msg, pages, 1, true);
   },
 };
