@@ -1,6 +1,7 @@
 const sqlite = require('sqlite');
 const { backupChannelID } = require('./config.json');
 const { MessageAttachment } = require('discord.js');
+const { warn } = require('./helpers/logging.js');
 
 const database_dir = './db/';
 const database_filename = 'database.sqlite';
@@ -27,13 +28,13 @@ async function setupDB(){
 async function backupDB(guild){
   // Check if this guild has a backup channel
   const backup_channel = await guild.channels.cache.get(backupChannelID);
-  if (!backup_channel) return;
+  if (!backup_channel) return warn('Backup channel not found!');
 
   const attachment = await new MessageAttachment().setFile(database_fullpath, 'database.backup.sqlite');
 
   backup_channel.send(`__***Database Backup:***__\n_${new Date().toJSON().replace(/T/g,' ').replace(/\.\w+$/,'')}_`, {
     files: [attachment],
-  });
+  }).catch(warn);
 }
 
 async function getUserID(user){
