@@ -27,7 +27,7 @@ async function setupDB(){
 
 async function backupDB(guild){
   // Check if this guild has a backup channel
-  const backup_channel = await guild.channels.cache.get(backupChannelID);
+  const backup_channel = await guild.channels.cache.find(c => c.id == backupChannelID);
   if (!backup_channel) return warn('Backup channel not found!');
 
   const attachment = await new MessageAttachment().setFile(database_fullpath, 'database.backup.sqlite');
