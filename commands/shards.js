@@ -17,8 +17,9 @@ module.exports = {
   args        : ['type', 'order(chance|route)?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     let [type, order] = args;
     type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
@@ -35,7 +36,6 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle(`${pokemonTypeIcons[type]} ${type} Shard Routes`)
-      //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`);
 

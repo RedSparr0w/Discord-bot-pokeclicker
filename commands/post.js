@@ -9,6 +9,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],
   userperms   : ['MANAGE_GUILD'],
+  channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     msg.delete().catch(e=>error('Unable to delete message:', e));
     const [, message_id] = args;
@@ -17,7 +18,7 @@ module.exports = {
       return msg.reply('You didn\'t specify a channel..');
     }
     const channel = msg.mentions.channels.first();
-    if (channel.memberPermissions(msg.guild.me).missing(['VIEW_CHANNEL', 'SEND_MESSAGES']).length){
+    if (channel.permissionsFor(msg.guild.me).missing(['VIEW_CHANNEL', 'SEND_MESSAGES']).length){
       return msg.reply(`I don't have permission to post in ${channel}..`);
     }
 

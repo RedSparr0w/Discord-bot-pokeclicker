@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
+const { website } = require('../config.json');
 const {
   pokemonList,
   LevelType,
@@ -20,8 +21,9 @@ module.exports = {
   args        : ['id/name', 'shiny?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     let id = args.join(' ').toLowerCase().trim();
     let shiny = false;
@@ -51,7 +53,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}`)
       .setDescription(`${pokemonTypeIcons[PokemonType[pokemon.type[0]]]} _\`${PokemonType[pokemon.type[0]]}\`_${pokemon.type[1] ? `\n${pokemonTypeIcons[PokemonType[pokemon.type[1]]]} _\`${PokemonType[pokemon.type[1]]}\`_` : ''}`)
-      .setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+      .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`)
       .addField('<:xAttackSmall:733974450864652380> Base Attack', `${pokemon.attack}`,true)
@@ -74,7 +76,7 @@ module.exports = {
       }
       // Roaming
       if (pokemon.locations[PokemonLocationType.Roaming]) {
-        const description = pokemon.locations[PokemonLocationType.Roaming].map(region => GameConstants.Region[region].toUpperCase()).join('\n');
+        const description = pokemon.locations[PokemonLocationType.Roaming].map(r => `${GameConstants.Region[r.region].toUpperCase()}${r.requirements ? `🔒\n***Unlock Requirements:***\n_${r.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Roaming', description);
       }
       // Dungeon
@@ -84,7 +86,7 @@ module.exports = {
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonBoss].join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
       // Evolutions
@@ -110,7 +112,7 @@ module.exports = {
       // Baby
       if (pokemon.locations[PokemonLocationType.Baby]) {
         const description = pokemon.locations[PokemonLocationType.Baby].join('\n');
-        embed.addField('❯ Parents', description);
+        embed.addField('❯ Breeding', description);
       }
       // Fossil
       if (pokemon.locations[PokemonLocationType.Fossil]) {

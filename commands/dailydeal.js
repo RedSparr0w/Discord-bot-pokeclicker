@@ -8,13 +8,14 @@ const {
 
 module.exports = {
   name        : 'dailydeal',
-  aliases     : ['dd', 'daily', 'deal', 'deals', 'dailydeals', 'ug', 'underground'],
+  aliases     : ['dd', 'deals', 'dailydeals', 'ug', 'underground'],
   description : 'Get a list of daily deals for the next 5 days',
   args        : ['from date(2020-12-31)?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
+  channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     let [date] = args;
     if (date) {
@@ -25,7 +26,6 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle('Upcoming Daily Deals')
-      //.setThumbnail(`https://pokeclicker-dev.github.io/pokeclicker/assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`);
 
