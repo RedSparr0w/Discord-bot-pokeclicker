@@ -33,7 +33,7 @@ const formatChannelList = (guild, channels) => {
       }
     }
     return `${acc}${joiner}${next}`;
-  }, '');
+  }, '') || '#restricted-channel';
 };
 
 module.exports = {
