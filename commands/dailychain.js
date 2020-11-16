@@ -184,7 +184,7 @@ module.exports = {
       // Title
       const title = `❯ ${dateToString(deals[0].date)} → ${dateToString(deals[deals.length - 1].date)}`;
       const description = `Profit per 1 of initial investment \`💎 ${profit.toLocaleString('en-US')}\``;
-      if (embed.length + title.length + description.length >= 6000) {
+      if (embed.length + title.length + description.length >= 5950) {
         return tooLong = true;
       }
       embed.addField(title, description);

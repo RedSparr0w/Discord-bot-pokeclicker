@@ -46,7 +46,7 @@ client.once('ready', async() => {
 
 client.on('error', e => error('Client error thrown:', e))
   .on('warn', warning => warn(warning))
-  .on('message', message => {
+  .on('message', async message => {
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) {
@@ -85,14 +85,14 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     const commandAllowedHere = (
-      (message.channel.type === 'text' && (
-        // User can manage the guild, and can use bot commands anywhere
-        message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
-        // Command was run in `#****-bot`
-        message.channel.name.endsWith('-bot') ||
-        // Command is allowed in this channel
-        (!command.channels || command.channels.includes(message.channel.name))
-      ))
+      // Direct Message
+      message.channel.type === 'dm' ||
+      // User can manage the guild, and can use bot commands anywhere
+      message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+      // Command was run in `#****-bot`
+      message.channel.name.endsWith('-bot') ||
+      // Command is allowed in this channel
+      (!command.channels || command.channels.includes(message.channel.name))
     );
 
     if (!commandAllowedHere) {
@@ -136,9 +136,9 @@ client.on('error', e => error('Client error thrown:', e))
     // Run the command
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
-      command.execute(message, args, commandName);
+      await command.execute(message, args, commandName);
     } catch (err) {
-      error('Error executing command:', err);
+      error(`Error executing command "${message.content}":\n`, err);
       message.reply('There was an error trying to execute that command!');
     }
   });

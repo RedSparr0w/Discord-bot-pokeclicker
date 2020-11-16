@@ -30,7 +30,7 @@ module.exports = [
   },
   // soon™
   {
-    regex: /\b(when)\b.+\b(release|version|update)\b/i,
+    regex: /\b(when)\b.+\b(released?|version|updated?)\b/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },

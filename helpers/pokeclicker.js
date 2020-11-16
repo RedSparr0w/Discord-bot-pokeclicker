@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.5.7',
+  'gameVersion': '0.6.0',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -53,6 +53,7 @@ module.exports = {
   ],
   'regionRoutes': [
     {
+      'routeName': 'Kanto Route 1',
       'region': 0,
       'number': 1,
       'pokemon': {
@@ -67,12 +68,42 @@ module.exports = {
       'orderNumber': 1,
     },
     {
+      'routeName': 'Kanto Route 22',
+      'region': 0,
+      'number': 22,
+      'pokemon': {
+        'land': [
+          'Rattata',
+          'Spearow',
+          'Nidoran(F)',
+          'Nidoran(M)',
+          'Mankey',
+        ],
+        'water': [
+          'Magikarp',
+          'Poliwag',
+          'Poliwhirl',
+          'Goldeen',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 0,
+          'route': 1,
+        },
+      ],
+      'orderNumber': 1.1,
+    },
+    {
+      'routeName': 'Kanto Route 2',
       'region': 0,
       'number': 2,
       'pokemon': {
         'land': [
-          'Caterpie',
-          'Weedle',
+          'Pidgey',
           'Rattata',
           'Nidoran(F)',
           'Nidoran(M)',
@@ -84,21 +115,21 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 1,
         },
       ],
       'orderNumber': 2,
     },
     {
+      'routeName': 'Kanto Route 3',
       'region': 0,
       'number': 3,
       'pokemon': {
         'land': [
-          'Pidgey',
           'Rattata',
           'Spearow',
           'Sandshrew',
-          'Jigglypuff',
           'Mankey',
         ],
         'water': [],
@@ -108,6 +139,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 2,
         },
         {
@@ -119,6 +151,7 @@ module.exports = {
       'orderNumber': 3,
     },
     {
+      'routeName': 'Kanto Route 4',
       'region': 0,
       'number': 4,
       'pokemon': {
@@ -130,10 +163,9 @@ module.exports = {
           'Mankey',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
-          'Psyduck',
-          'Krabby',
           'Seaking',
         ],
         'headbutt': [],
@@ -142,6 +174,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 3,
         },
         {
@@ -153,27 +186,21 @@ module.exports = {
       'orderNumber': 4,
     },
     {
+      'routeName': 'Kanto Route 24',
       'region': 0,
       'number': 24,
       'pokemon': {
         'land': [
-          'Caterpie',
-          'Metapod',
-          'Weedle',
-          'Kakuna',
-          'Pidgey',
           'Pidgey',
           'Pidgeotto',
           'Oddish',
           'Venonat',
-          'Abra',
           'Bellsprout',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
-          'Psyduck',
-          'Krabby',
           'Seaking',
         ],
         'headbutt': [],
@@ -182,32 +209,30 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 4,
         },
       ],
       'orderNumber': 4.1,
     },
     {
+      'routeName': 'Kanto Route 25',
       'region': 0,
       'number': 25,
       'pokemon': {
         'land': [
-          'Caterpie',
-          'Metapod',
-          'Weedle',
-          'Kakuna',
           'Pidgey',
           'Pidgeotto',
           'Oddish',
           'Venonat',
-          'Abra',
           'Bellsprout',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
-          'Psyduck',
           'Krabby',
+          'Kingler',
         ],
         'headbutt': [],
       },
@@ -215,12 +240,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 24,
         },
       ],
       'orderNumber': 4.2,
     },
     {
+      'routeName': 'Kanto Route 5',
       'region': 0,
       'number': 5,
       'pokemon': {
@@ -229,11 +256,8 @@ module.exports = {
           'Pidgeotto',
           'Rattata',
           'Jigglypuff',
-          'Oddish',
           'Meowth',
-          'Mankey',
           'Abra',
-          'Bellsprout',
         ],
         'water': [],
         'headbutt': [],
@@ -242,12 +266,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 25,
         },
       ],
       'orderNumber': 5,
     },
     {
+      'routeName': 'Kanto Route 6',
       'region': 0,
       'number': 6,
       'pokemon': {
@@ -256,17 +282,15 @@ module.exports = {
           'Pidgeotto',
           'Rattata',
           'Jigglypuff',
-          'Oddish',
           'Meowth',
-          'Mankey',
           'Abra',
-          'Bellsprout',
         ],
         'water': [
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
           'Poliwag',
           'Goldeen',
-          'Shellder',
-          'Krabby',
         ],
         'headbutt': [],
       },
@@ -274,12 +298,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 5,
         },
       ],
       'orderNumber': 6,
     },
     {
+      'routeName': 'Kanto Route 11',
       'region': 0,
       'number': 11,
       'pokemon': {
@@ -288,17 +314,13 @@ module.exports = {
           'Pidgeotto',
           'Raticate',
           'Rattata',
-          'Spearow',
-          'Ekans',
-          'Sandshrew',
           'Drowzee',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
           'Tentacool',
-          'Shellder',
-          'Krabby',
           'Horsea',
         ],
         'headbutt': [],
@@ -307,12 +329,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 6,
         },
       ],
       'orderNumber': 6.1,
     },
     {
+      'routeName': 'Kanto Route 9',
       'region': 0,
       'number': 9,
       'pokemon': {
@@ -321,8 +345,6 @@ module.exports = {
           'Raticate',
           'Spearow',
           'Fearow',
-          'Ekans',
-          'Sandshrew',
           'Nidoran(F)',
           'Nidoran(M)',
           'Nidorina',
@@ -335,6 +357,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 6,
         },
         {
@@ -346,26 +369,22 @@ module.exports = {
       'orderNumber': 9,
     },
     {
+      'routeName': 'Kanto Route 10',
       'region': 0,
       'number': 10,
       'pokemon': {
         'land': [
           'Rattata',
           'Raticate',
-          'Spearow',
-          'Ekans',
-          'Sandshrew',
           'Nidoran(F)',
           'Nidoran(M)',
           'Machop',
           'Magnemite',
-          'Voltorb',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
-          'Poliwhirl',
-          'Slowpoke',
           'Krabby',
           'Kingler',
           'Horsea',
@@ -376,6 +395,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 9,
         },
         {
@@ -387,35 +407,7 @@ module.exports = {
       'orderNumber': 10,
     },
     {
-      'region': 0,
-      'number': 7,
-      'pokemon': {
-        'land': [
-          'Pidgey',
-          'Pidgeotto',
-          'Rattata',
-          'Vulpix',
-          'Jigglypuff',
-          'Oddish',
-          'Meowth',
-          'Mankey',
-          'Growlithe',
-          'Abra',
-          'Bellsprout',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 10,
-        },
-      ],
-      'orderNumber': 10.1,
-    },
-    {
+      'routeName': 'Kanto Route 8',
       'region': 0,
       'number': 8,
       'pokemon': {
@@ -423,13 +415,9 @@ module.exports = {
           'Pidgey',
           'Pidgeotto',
           'Rattata',
-          'Ekans',
-          'Sandshrew',
           'Vulpix',
           'Jigglypuff',
           'Meowth',
-          'Mankey',
-          'Growlithe',
           'Abra',
           'Kadabra',
         ],
@@ -440,12 +428,41 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
-          'route': 7,
+          'region': 0,
+          'route': 10,
+        },
+      ],
+      'orderNumber': 10.1,
+    },
+    {
+      'routeName': 'Kanto Route 7',
+      'region': 0,
+      'number': 7,
+      'pokemon': {
+        'land': [
+          'Pidgey',
+          'Pidgeotto',
+          'Rattata',
+          'Vulpix',
+          'Jigglypuff',
+          'Meowth',
+          'Abra',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 0,
+          'route': 8,
         },
       ],
       'orderNumber': 10.2,
     },
     {
+      'routeName': 'Kanto Route 12',
       'region': 0,
       'number': 12,
       'pokemon': {
@@ -454,19 +471,17 @@ module.exports = {
           'Pidgeotto',
           'Oddish',
           'Gloom',
-          'Venonat',
           'Bellsprout',
           'Weepinbell',
           "Farfetch'd",
           'Snorlax',
         ],
         'water': [
+          'Slowpoke',
           'Slowbro',
           'Magikarp',
           'Poliwag',
           'Goldeen',
-          'Tentacool',
-          'Krabby',
           'Horsea',
           'Seadra',
         ],
@@ -482,6 +497,7 @@ module.exports = {
       'orderNumber': 12,
     },
     {
+      'routeName': 'Kanto Route 13',
       'region': 0,
       'number': 13,
       'pokemon': {
@@ -490,19 +506,17 @@ module.exports = {
           'Pidgeotto',
           'Oddish',
           'Gloom',
-          'Venonat',
           'Bellsprout',
           'Weepinbell',
           "Farfetch'd",
-          'Ditto',
         ],
         'water': [
+          'Slowpoke',
           'Slowbro',
           'Magikarp',
           'Poliwag',
           'Goldeen',
           'Tentacool',
-          'Krabby',
           'Horsea',
           'Seadra',
         ],
@@ -514,11 +528,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 12,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 14,
             },
           ],
@@ -527,11 +543,11 @@ module.exports = {
       'orderNumber': 13,
     },
     {
+      'routeName': 'Kanto Route 14',
       'region': 0,
       'number': 14,
       'pokemon': {
         'land': [
-          'Pidgey',
           'Pidgeotto',
           'Oddish',
           'Gloom',
@@ -539,9 +555,9 @@ module.exports = {
           'Venomoth',
           'Bellsprout',
           'Weepinbell',
-          'Ditto',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
         ],
@@ -553,11 +569,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 13,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 15,
             },
           ],
@@ -566,11 +584,11 @@ module.exports = {
       'orderNumber': 14,
     },
     {
+      'routeName': 'Kanto Route 15',
       'region': 0,
       'number': 15,
       'pokemon': {
         'land': [
-          'Pidgey',
           'Pidgeotto',
           'Oddish',
           'Gloom',
@@ -578,7 +596,6 @@ module.exports = {
           'Venomoth',
           'Bellsprout',
           'Weepinbell',
-          'Ditto',
         ],
         'water': [],
         'headbutt': [],
@@ -589,11 +606,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 14,
             },
           ],
@@ -602,6 +621,7 @@ module.exports = {
       'orderNumber': 15,
     },
     {
+      'routeName': 'Kanto Route 16',
       'region': 0,
       'number': 16,
       'pokemon': {
@@ -626,23 +646,22 @@ module.exports = {
       'orderNumber': 16,
     },
     {
+      'routeName': 'Kanto Route 17',
       'region': 0,
       'number': 17,
       'pokemon': {
         'land': [
-          'Raticate',
-          'Spearow',
           'Fearow',
           'Ponyta',
           'Doduo',
           'Dodrio',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
           'Tentacool',
           'Shellder',
-          'Krabby',
         ],
         'headbutt': [],
       },
@@ -652,11 +671,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 16,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 18,
             },
           ],
@@ -665,6 +686,7 @@ module.exports = {
       'orderNumber': 17,
     },
     {
+      'routeName': 'Kanto Route 18',
       'region': 0,
       'number': 18,
       'pokemon': {
@@ -676,11 +698,11 @@ module.exports = {
           'Doduo',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
           'Tentacool',
           'Shellder',
-          'Krabby',
         ],
         'headbutt': [],
       },
@@ -690,11 +712,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 17,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 15,
             },
           ],
@@ -703,6 +727,7 @@ module.exports = {
       'orderNumber': 18,
     },
     {
+      'routeName': 'Kanto Route 19',
       'region': 0,
       'number': 19,
       'pokemon': {
@@ -713,8 +738,6 @@ module.exports = {
           'Poliwag',
           'Goldeen',
           'Tentacruel',
-          'Shellder',
-          'Horsea',
           'Staryu',
         ],
         'headbutt': [],
@@ -729,6 +752,7 @@ module.exports = {
       'orderNumber': 19,
     },
     {
+      'routeName': 'Kanto Route 20',
       'region': 0,
       'number': 20,
       'pokemon': {
@@ -739,8 +763,6 @@ module.exports = {
           'Poliwag',
           'Goldeen',
           'Tentacruel',
-          'Shellder',
-          'Horsea',
           'Staryu',
         ],
         'headbutt': [],
@@ -751,6 +773,7 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 0,
               'route': 21,
             },
             {
@@ -764,6 +787,7 @@ module.exports = {
       'orderNumber': 20,
     },
     {
+      'routeName': 'Kanto Route 21',
       'region': 0,
       'number': 21,
       'pokemon': {
@@ -775,12 +799,11 @@ module.exports = {
           'Tangela',
         ],
         'water': [
+          'Tentacool',
           'Magikarp',
           'Poliwag',
           'Goldeen',
           'Tentacruel',
-          'Shellder',
-          'Horsea',
           'Staryu',
         ],
         'headbutt': [],
@@ -795,57 +818,22 @@ module.exports = {
       'orderNumber': 21,
     },
     {
-      'region': 0,
-      'number': 22,
-      'pokemon': {
-        'land': [
-          'Rattata',
-          'Spearow',
-          'Nidoran(F)',
-          'Nidoran(M)',
-          'Mankey',
-        ],
-        'water': [
-          'Poliwag',
-          'Poliwhirl',
-          'Goldeen',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'badge': 8,
-        },
-      ],
-      'orderNumber': 22,
-    },
-    {
+      'routeName': 'Kanto Route 23',
       'region': 0,
       'number': 23,
       'pokemon': {
         'land': [
-          'Spearow',
           'Fearow',
-          'Ekans',
-          'Arbok',
-          'Sandshrew',
-          'Sandslash',
           'Nidorina',
           'Nidorino',
           'Mankey',
           'Primeape',
-          'Ditto',
         ],
         'water': [
+          'Magikarp',
           'Poliwag',
           'Goldeen',
           'Poliwhirl',
-          'Slowbro',
-          'Kingler',
-          'Seadra',
-          'Seaking',
         ],
         'headbutt': [],
       },
@@ -853,12 +841,19 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 0,
           'route': 22,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 8,
         },
       ],
       'orderNumber': 23,
     },
     {
+      'routeName': 'Johto Route 29',
       'region': 1,
       'number': 29,
       'pokemon': {
@@ -887,6 +882,7 @@ module.exports = {
       'orderNumber': 29,
     },
     {
+      'routeName': 'Johto Route 46',
       'region': 1,
       'number': 46,
       'pokemon': {
@@ -906,12 +902,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 29,
         },
       ],
       'orderNumber': 29.1,
     },
     {
+      'routeName': 'Johto Route 30',
       'region': 1,
       'number': 30,
       'pokemon': {
@@ -944,12 +942,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 29,
         },
       ],
       'orderNumber': 30,
     },
     {
+      'routeName': 'Johto Route 31',
       'region': 1,
       'number': 31,
       'pokemon': {
@@ -987,12 +987,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 30,
         },
       ],
       'orderNumber': 31,
     },
     {
+      'routeName': 'Johto Route 32',
       'region': 1,
       'number': 32,
       'pokemon': {
@@ -1028,6 +1030,7 @@ module.exports = {
       'orderNumber': 32,
     },
     {
+      'routeName': 'Johto Route 33',
       'region': 1,
       'number': 33,
       'pokemon': {
@@ -1055,6 +1058,7 @@ module.exports = {
       'orderNumber': 33,
     },
     {
+      'routeName': 'Johto Route 34',
       'region': 1,
       'number': 34,
       'pokemon': {
@@ -1091,6 +1095,7 @@ module.exports = {
       'orderNumber': 34,
     },
     {
+      'routeName': 'Johto Route 35',
       'region': 1,
       'number': 35,
       'pokemon': {
@@ -1122,12 +1127,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 34,
         },
       ],
       'orderNumber': 35,
     },
     {
+      'routeName': 'Johto Route 36',
       'region': 1,
       'number': 36,
       'pokemon': {
@@ -1160,6 +1167,7 @@ module.exports = {
       'orderNumber': 36,
     },
     {
+      'routeName': 'Johto Route 37',
       'region': 1,
       'number': 37,
       'pokemon': {
@@ -1186,12 +1194,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 36,
         },
       ],
       'orderNumber': 37,
     },
     {
+      'routeName': 'Johto Route 38',
       'region': 1,
       'number': 38,
       'pokemon': {
@@ -1218,12 +1228,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 37,
         },
       ],
       'orderNumber': 38,
     },
     {
+      'routeName': 'Johto Route 39',
       'region': 1,
       'number': 39,
       'pokemon': {
@@ -1249,12 +1261,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 38,
         },
       ],
       'orderNumber': 39,
     },
     {
+      'routeName': 'Johto Route 40',
       'region': 1,
       'number': 40,
       'pokemon': {
@@ -1274,6 +1288,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 39,
         },
         {
@@ -1285,6 +1300,7 @@ module.exports = {
       'orderNumber': 40,
     },
     {
+      'routeName': 'Johto Route 41',
       'region': 1,
       'number': 41,
       'pokemon': {
@@ -1303,12 +1319,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 40,
         },
       ],
       'orderNumber': 41,
     },
     {
+      'routeName': 'Johto Route 42',
       'region': 1,
       'number': 42,
       'pokemon': {
@@ -1340,6 +1358,7 @@ module.exports = {
       'orderNumber': 42,
     },
     {
+      'routeName': 'Johto Route 43',
       'region': 1,
       'number': 43,
       'pokemon': {
@@ -1366,12 +1385,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 42,
         },
       ],
       'orderNumber': 43,
     },
     {
+      'routeName': 'Johto Route 44',
       'region': 1,
       'number': 44,
       'pokemon': {
@@ -1408,6 +1429,7 @@ module.exports = {
       'orderNumber': 44,
     },
     {
+      'routeName': 'Johto Route 45',
       'region': 1,
       'number': 45,
       'pokemon': {
@@ -1440,6 +1462,7 @@ module.exports = {
       'orderNumber': 45,
     },
     {
+      'routeName': 'Johto Route 47',
       'region': 1,
       'number': 47,
       'pokemon': {
@@ -1485,6 +1508,7 @@ module.exports = {
       'orderNumber': 47,
     },
     {
+      'routeName': 'Johto Route 48',
       'region': 1,
       'number': 48,
       'pokemon': {
@@ -1512,12 +1536,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 47,
         },
       ],
       'orderNumber': 48,
     },
     {
+      'routeName': 'Johto Route 27',
       'region': 1,
       'number': 27,
       'pokemon': {
@@ -1556,6 +1582,7 @@ module.exports = {
       'orderNumber': 49,
     },
     {
+      'routeName': 'Johto Route 26',
       'region': 1,
       'number': 26,
       'pokemon': {
@@ -1588,12 +1615,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 1,
           'route': 27,
         },
       ],
       'orderNumber': 50,
     },
     {
+      'routeName': 'Johto Route 28',
       'region': 1,
       'number': 28,
       'pokemon': {
@@ -1629,6 +1658,7 @@ module.exports = {
       'orderNumber': 51,
     },
     {
+      'routeName': 'Hoenn Route 101',
       'region': 2,
       'number': 101,
       'pokemon': {
@@ -1650,6 +1680,7 @@ module.exports = {
       'orderNumber': 101,
     },
     {
+      'routeName': 'Hoenn Route 103',
       'region': 2,
       'number': 103,
       'pokemon': {
@@ -1672,12 +1703,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 101,
         },
       ],
       'orderNumber': 101.1,
     },
     {
+      'routeName': 'Hoenn Route 102',
       'region': 2,
       'number': 102,
       'pokemon': {
@@ -1702,12 +1735,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 101,
         },
       ],
       'orderNumber': 102,
     },
     {
+      'routeName': 'Hoenn Route 104',
       'region': 2,
       'number': 104,
       'pokemon': {
@@ -1729,12 +1764,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 102,
         },
       ],
       'orderNumber': 104,
     },
     {
+      'routeName': 'Hoenn Route 116',
       'region': 2,
       'number': 116,
       'pokemon': {
@@ -1759,6 +1796,7 @@ module.exports = {
       'orderNumber': 104.1,
     },
     {
+      'routeName': 'Hoenn Route 110',
       'region': 2,
       'number': 110,
       'pokemon': {
@@ -1794,6 +1832,7 @@ module.exports = {
       'orderNumber': 110,
     },
     {
+      'routeName': 'Hoenn Route 117',
       'region': 2,
       'number': 117,
       'pokemon': {
@@ -1818,12 +1857,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 110,
         },
       ],
       'orderNumber': 110.1,
     },
     {
+      'routeName': 'Hoenn Route 111',
       'region': 2,
       'number': 111,
       'pokemon': {
@@ -1851,6 +1892,7 @@ module.exports = {
       'orderNumber': 111,
     },
     {
+      'routeName': 'Hoenn Route 112',
       'region': 2,
       'number': 112,
       'pokemon': {
@@ -1865,12 +1907,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 111,
         },
       ],
       'orderNumber': 112,
     },
     {
+      'routeName': 'Hoenn Route 113',
       'region': 2,
       'number': 113,
       'pokemon': {
@@ -1892,6 +1936,7 @@ module.exports = {
       'orderNumber': 113,
     },
     {
+      'routeName': 'Hoenn Route 114',
       'region': 2,
       'number': 114,
       'pokemon': {
@@ -1916,12 +1961,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 113,
         },
       ],
       'orderNumber': 114,
     },
     {
+      'routeName': 'Hoenn Route 115',
       'region': 2,
       'number': 115,
       'pokemon': {
@@ -1951,6 +1998,7 @@ module.exports = {
       'orderNumber': 115,
     },
     {
+      'routeName': 'Hoenn Route 105',
       'region': 2,
       'number': 105,
       'pokemon': {
@@ -1974,6 +2022,7 @@ module.exports = {
       'orderNumber': 115.1,
     },
     {
+      'routeName': 'Hoenn Route 106',
       'region': 2,
       'number': 106,
       'pokemon': {
@@ -1993,11 +2042,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 105,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 107,
             },
           ],
@@ -2006,6 +2057,7 @@ module.exports = {
       'orderNumber': 115.2,
     },
     {
+      'routeName': 'Hoenn Route 107',
       'region': 2,
       'number': 107,
       'pokemon': {
@@ -2025,11 +2077,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 106,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 108,
             },
           ],
@@ -2038,6 +2092,7 @@ module.exports = {
       'orderNumber': 115.3,
     },
     {
+      'routeName': 'Hoenn Route 108',
       'region': 2,
       'number': 108,
       'pokemon': {
@@ -2057,11 +2112,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 107,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 109,
             },
           ],
@@ -2070,6 +2127,7 @@ module.exports = {
       'orderNumber': 115.4,
     },
     {
+      'routeName': 'Hoenn Route 109',
       'region': 2,
       'number': 109,
       'pokemon': {
@@ -2093,6 +2151,7 @@ module.exports = {
       'orderNumber': 115.5,
     },
     {
+      'routeName': 'Hoenn Route 118',
       'region': 2,
       'number': 118,
       'pokemon': {
@@ -2122,6 +2181,7 @@ module.exports = {
       'orderNumber': 118,
     },
     {
+      'routeName': 'Hoenn Route 119',
       'region': 2,
       'number': 119,
       'pokemon': {
@@ -2149,12 +2209,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 118,
         },
       ],
       'orderNumber': 119,
     },
     {
+      'routeName': 'Hoenn Route 120',
       'region': 2,
       'number': 120,
       'pokemon': {
@@ -2180,12 +2242,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 119,
         },
       ],
       'orderNumber': 120,
     },
     {
+      'routeName': 'Hoenn Route 121',
       'region': 2,
       'number': 121,
       'pokemon': {
@@ -2211,12 +2275,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 120,
         },
       ],
       'orderNumber': 121,
     },
     {
+      'routeName': 'Hoenn Route 122',
       'region': 2,
       'number': 122,
       'pokemon': {
@@ -2235,6 +2301,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 121,
         },
         {
@@ -2246,6 +2313,7 @@ module.exports = {
       'orderNumber': 122,
     },
     {
+      'routeName': 'Hoenn Route 123',
       'region': 2,
       'number': 123,
       'pokemon': {
@@ -2271,12 +2339,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 122,
         },
       ],
       'orderNumber': 123,
     },
     {
+      'routeName': 'Hoenn Route 124',
       'region': 2,
       'number': 124,
       'pokemon': {
@@ -2303,6 +2373,7 @@ module.exports = {
       'orderNumber': 124,
     },
     {
+      'routeName': 'Hoenn Route 125',
       'region': 2,
       'number': 125,
       'pokemon': {
@@ -2321,12 +2392,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 124,
         },
       ],
       'orderNumber': 125,
     },
     {
+      'routeName': 'Hoenn Route 126',
       'region': 2,
       'number': 126,
       'pokemon': {
@@ -2347,12 +2420,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 124,
         },
       ],
       'orderNumber': 126,
     },
     {
+      'routeName': 'Hoenn Route 127',
       'region': 2,
       'number': 127,
       'pokemon': {
@@ -2373,11 +2448,13 @@ module.exports = {
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 125,
             },
             {
               'requiredValue': 10,
               'type': 2,
+              'region': 2,
               'route': 126,
             },
           ],
@@ -2386,6 +2463,7 @@ module.exports = {
       'orderNumber': 127,
     },
     {
+      'routeName': 'Hoenn Route 128',
       'region': 2,
       'number': 128,
       'pokemon': {
@@ -2405,12 +2483,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 127,
         },
       ],
       'orderNumber': 128,
     },
     {
+      'routeName': 'Hoenn Route 129',
       'region': 2,
       'number': 129,
       'pokemon': {
@@ -2430,12 +2510,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 128,
         },
       ],
       'orderNumber': 129,
     },
     {
+      'routeName': 'Hoenn Route 130',
       'region': 2,
       'number': 130,
       'pokemon': {
@@ -2454,12 +2536,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 129,
         },
       ],
       'orderNumber': 130,
     },
     {
+      'routeName': 'Hoenn Route 131',
       'region': 2,
       'number': 131,
       'pokemon': {
@@ -2478,12 +2562,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 130,
         },
       ],
       'orderNumber': 131,
     },
     {
+      'routeName': 'Hoenn Route 132',
       'region': 2,
       'number': 132,
       'pokemon': {
@@ -2503,12 +2589,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 131,
         },
       ],
       'orderNumber': 132,
     },
     {
+      'routeName': 'Hoenn Route 133',
       'region': 2,
       'number': 133,
       'pokemon': {
@@ -2528,12 +2616,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 132,
         },
       ],
       'orderNumber': 133,
     },
     {
+      'routeName': 'Hoenn Route 134',
       'region': 2,
       'number': 134,
       'pokemon': {
@@ -2553,12 +2643,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 2,
           'route': 133,
         },
       ],
       'orderNumber': 134,
     },
     {
+      'routeName': 'Sinnoh Route 201',
       'region': 3,
       'number': 201,
       'pokemon': {
@@ -2580,6 +2672,7 @@ module.exports = {
       'orderNumber': 201,
     },
     {
+      'routeName': 'Sinnoh Route 202',
       'region': 3,
       'number': 202,
       'pokemon': {
@@ -2596,12 +2689,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 201,
         },
       ],
       'orderNumber': 202,
     },
     {
+      'routeName': 'Sinnoh Route 203',
       'region': 3,
       'number': 203,
       'pokemon': {
@@ -2627,12 +2722,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 202,
         },
       ],
       'orderNumber': 203,
     },
     {
+      'routeName': 'Sinnoh Route 204',
       'region': 3,
       'number': 204,
       'pokemon': {
@@ -2659,12 +2756,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 202,
         },
       ],
       'orderNumber': 204,
     },
     {
+      'routeName': 'Sinnoh Route 205',
       'region': 3,
       'number': 205,
       'pokemon': {
@@ -2704,6 +2803,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 204,
         },
         {
@@ -2715,6 +2815,7 @@ module.exports = {
       'orderNumber': 205,
     },
     {
+      'routeName': 'Sinnoh Route 206',
       'region': 3,
       'number': 206,
       'pokemon': {
@@ -2736,6 +2837,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 205,
         },
         {
@@ -2747,6 +2849,7 @@ module.exports = {
       'orderNumber': 206,
     },
     {
+      'routeName': 'Sinnoh Route 207',
       'region': 3,
       'number': 207,
       'pokemon': {
@@ -2764,12 +2867,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 206,
         },
       ],
       'orderNumber': 207,
     },
     {
+      'routeName': 'Sinnoh Route 208',
       'region': 3,
       'number': 208,
       'pokemon': {
@@ -2799,6 +2904,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 207,
         },
         {
@@ -2810,6 +2916,7 @@ module.exports = {
       'orderNumber': 208,
     },
     {
+      'routeName': 'Sinnoh Route 209',
       'region': 3,
       'number': 209,
       'pokemon': {
@@ -2840,6 +2947,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 208,
         },
         {
@@ -2851,6 +2959,7 @@ module.exports = {
       'orderNumber': 209,
     },
     {
+      'routeName': 'Sinnoh Route 210',
       'region': 3,
       'number': 210,
       'pokemon': {
@@ -2865,7 +2974,7 @@ module.exports = {
           'Staravia',
           'Kricketune',
           'Bonsly',
-          'Mime jr.',
+          'Mime Jr.',
           'Machop',
           'Machoke',
           'Meditite',
@@ -2886,28 +2995,27 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 209,
         },
       ],
       'orderNumber': 210,
     },
     {
+      'routeName': 'Sinnoh Route 215',
       'region': 3,
-      'number': 211,
+      'number': 215,
       'pokemon': {
         'land': [
-          'Zubat',
-          'Machop',
+          'Abra',
+          'Kadabra',
           'Geodude',
           'Ponyta',
-          'Hoothoot',
-          'Meditite',
-          'Bidoof',
-          'Machoke',
-          'Graveler',
-          'Noctowl',
-          'Chingling',
-          'Bronzor',
+          'Lickitung',
+          'Scyther',
+          'Staravia',
+          'Kricketune',
+          'Marill',
         ],
         'water': [],
         'headbutt': [],
@@ -2916,87 +3024,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
-          'route': 213,
-        },
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'badge': 44,
+          'region': 3,
+          'route': 210,
         },
       ],
-      'orderNumber': 211,
+      'orderNumber': 210.1,
     },
     {
-      'region': 3,
-      'number': 212,
-      'pokemon': {
-        'land': [
-          'Ralts',
-          'Kirlia',
-          'Roselia',
-          'Starly',
-          'Staravia',
-          'Kricketune',
-          'Budew',
-          'Croagunk',
-        ],
-        'water': [
-          'Marill',
-          'Psyduck',
-          'Golduck',
-          'Magikarp',
-          'Goldeen',
-          'Gyarados',
-          'Seaking',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 213,
-        },
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'badge': 44,
-        },
-      ],
-      'orderNumber': 212,
-    },
-    {
-      'region': 3,
-      'number': 213,
-      'pokemon': {
-        'land': ['Chatot'],
-        'water': [
-          'Buizel',
-          'Floatzel',
-          'Tentacool',
-          'Tentacruel',
-          'Wingull',
-          'Pelipper',
-          'Shellos (east)',
-          'Gastrodon (east)',
-          'Magikarp',
-          'Remoraid',
-          'Gyarados',
-          'Octillery',
-          'Sharpedo',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 214,
-        },
-      ],
-      'orderNumber': 213,
-    },
-    {
+      'routeName': 'Sinnoh Route 214',
       'region': 3,
       'number': 214,
       'pokemon': {
@@ -3027,25 +3062,104 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 215,
         },
       ],
-      'orderNumber': 214,
+      'orderNumber': 210.2,
     },
     {
+      'routeName': 'Sinnoh Route 213',
       'region': 3,
-      'number': 215,
+      'number': 213,
+      'pokemon': {
+        'land': ['Chatot'],
+        'water': [
+          'Buizel',
+          'Floatzel',
+          'Tentacool',
+          'Tentacruel',
+          'Wingull',
+          'Pelipper',
+          'Shellos (east)',
+          'Gastrodon (east)',
+          'Magikarp',
+          'Remoraid',
+          'Gyarados',
+          'Octillery',
+          'Sharpedo',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 3,
+          'route': 214,
+        },
+      ],
+      'orderNumber': 210.3,
+    },
+    {
+      'routeName': 'Sinnoh Route 212',
+      'region': 3,
+      'number': 212,
       'pokemon': {
         'land': [
-          'Abra',
-          'Kadabra',
-          'Geodude',
-          'Ponyta',
-          'Lickitung',
-          'Scyther',
+          'Ralts',
+          'Kirlia',
+          'Roselia',
+          'Starly',
           'Staravia',
           'Kricketune',
+          'Budew',
+          'Croagunk',
+        ],
+        'water': [
           'Marill',
+          'Psyduck',
+          'Golduck',
+          'Magikarp',
+          'Goldeen',
+          'Gyarados',
+          'Seaking',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 3,
+          'route': 213,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 44,
+        },
+      ],
+      'orderNumber': 210.4,
+    },
+    {
+      'routeName': 'Sinnoh Route 211',
+      'region': 3,
+      'number': 211,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Machop',
+          'Geodude',
+          'Ponyta',
+          'Hoothoot',
+          'Meditite',
+          'Bidoof',
+          'Machoke',
+          'Graveler',
+          'Noctowl',
+          'Chingling',
+          'Bronzor',
         ],
         'water': [],
         'headbutt': [],
@@ -3054,12 +3168,19 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
-          'route': 210,
+          'region': 3,
+          'route': 213,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 44,
         },
       ],
-      'orderNumber': 215,
+      'orderNumber': 210.5,
     },
     {
+      'routeName': 'Sinnoh Route 216',
       'region': 3,
       'number': 216,
       'pokemon': {
@@ -3080,6 +3201,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 218,
         },
         {
@@ -3091,6 +3213,7 @@ module.exports = {
       'orderNumber': 216,
     },
     {
+      'routeName': 'Sinnoh Route 217',
       'region': 3,
       'number': 217,
       'pokemon': {
@@ -3112,12 +3235,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 216,
         },
       ],
       'orderNumber': 217,
     },
     {
+      'routeName': 'Sinnoh Route 218',
       'region': 3,
       'number': 218,
       'pokemon': {
@@ -3145,6 +3270,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 213,
         },
         {
@@ -3156,6 +3282,7 @@ module.exports = {
       'orderNumber': 218,
     },
     {
+      'routeName': 'Sinnoh Route 219',
       'region': 3,
       'number': 219,
       'pokemon': {
@@ -3177,6 +3304,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 213,
         },
         {
@@ -3188,6 +3316,7 @@ module.exports = {
       'orderNumber': 219,
     },
     {
+      'routeName': 'Sinnoh Route 220',
       'region': 3,
       'number': 220,
       'pokemon': {
@@ -3210,12 +3339,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 219,
         },
       ],
       'orderNumber': 220,
     },
     {
+      'routeName': 'Sinnoh Route 221',
       'region': 3,
       'number': 221,
       'pokemon': {
@@ -3246,12 +3377,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 220,
         },
       ],
       'orderNumber': 221,
     },
     {
+      'routeName': 'Sinnoh Route 222',
       'region': 3,
       'number': 222,
       'pokemon': {
@@ -3284,6 +3417,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 217,
         },
         {
@@ -3295,6 +3429,7 @@ module.exports = {
       'orderNumber': 222,
     },
     {
+      'routeName': 'Sinnoh Route 223',
       'region': 3,
       'number': 223,
       'pokemon': {
@@ -3316,6 +3451,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 222,
         },
         {
@@ -3327,6 +3463,7 @@ module.exports = {
       'orderNumber': 223,
     },
     {
+      'routeName': 'Sinnoh Route 224',
       'region': 3,
       'number': 224,
       'pokemon': {
@@ -3359,6 +3496,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 223,
         },
         {
@@ -3370,6 +3508,7 @@ module.exports = {
       'orderNumber': 224,
     },
     {
+      'routeName': 'Sinnoh Route 225',
       'region': 3,
       'number': 225,
       'pokemon': {
@@ -3399,6 +3538,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 224,
         },
         {
@@ -3410,6 +3550,7 @@ module.exports = {
       'orderNumber': 225,
     },
     {
+      'routeName': 'Sinnoh Route 226',
       'region': 3,
       'number': 226,
       'pokemon': {
@@ -3443,12 +3584,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 225,
         },
       ],
       'orderNumber': 226,
     },
     {
+      'routeName': 'Sinnoh Route 227',
       'region': 3,
       'number': 227,
       'pokemon': {
@@ -3478,12 +3621,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 226,
         },
       ],
       'orderNumber': 227,
     },
     {
+      'routeName': 'Sinnoh Route 228',
       'region': 3,
       'number': 228,
       'pokemon': {
@@ -3509,12 +3654,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 226,
         },
       ],
       'orderNumber': 228,
     },
     {
+      'routeName': 'Sinnoh Route 229',
       'region': 3,
       'number': 229,
       'pokemon': {
@@ -3551,12 +3698,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 228,
         },
       ],
       'orderNumber': 229,
     },
     {
+      'routeName': 'Sinnoh Route 230',
       'region': 3,
       'number': 230,
       'pokemon': {
@@ -3593,20 +3742,20 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 3,
           'route': 229,
         },
       ],
       'orderNumber': 230,
     },
     {
+      'routeName': 'Unova Route 19',
       'region': 4,
-      'number': 1,
+      'number': 19,
       'pokemon': {
         'land': [
-          'Jigglypuff',
-          'Watchog',
-          'Herdier',
-          'Scrafty',
+          'Patrat',
+          'Purrloin',
         ],
         'water': [
           'Basculin (Red-Striped)',
@@ -3616,60 +3765,45 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 2,
-        },
-      ],
-      'orderNumber': 1,
-    },
-    {
-      'region': 4,
-      'number': 2,
-      'pokemon': {
-        'land': [
-          'Jigglypuff',
-          'Lickitung',
-          'Watchog',
-          'Herdier',
-          'Liepard',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 3,
-        },
-      ],
-      'orderNumber': 2,
-    },
-    {
-      'region': 4,
-      'number': 3,
-      'pokemon': {
-        'land': [
-          'Yanma',
-          'Watchog',
-          'Herdier',
-          'Purrloin',
-          'Tranquill',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 80,
+          'badge': 52,
         },
       ],
-      'orderNumber': 3,
+      'orderNumber': 0.1,
     },
     {
+      'routeName': 'Unova Route 20',
+      'region': 4,
+      'number': 20,
+      'pokemon': {
+        'land': [
+          'Sunkern',
+          'Pidove',
+          'Venipede',
+          'Patrat',
+          'Purrloin',
+          'Sewaddle',
+        ],
+        'water': [
+          'Azurill',
+          'Basculin (Red-Striped)',
+          'Basculin (Blue-Striped)',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 4,
+          'route': 19,
+        },
+      ],
+      'orderNumber': 0.2,
+    },
+    {
+      'routeName': 'Unova Route 4',
       'region': 4,
       'number': 4,
       'pokemon': {
@@ -3693,6 +3827,44 @@ module.exports = {
       'orderNumber': 4,
     },
     {
+      'routeName': 'Desert Resort',
+      'region': 4,
+      'number': 25,
+      'pokemon': {
+        'land': [
+          'Sandshrew',
+          'Trapinch',
+          'Maractus',
+          'Darumaka',
+          'Dwebble',
+          'Scraggy',
+          'Sigilyph',
+          'Sandile',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'region': 4,
+              'route': 4,
+            },
+            {
+              'requiredValue': 1,
+              'type': 2,
+              'badge': 55,
+            },
+          ],
+        },
+      ],
+      'orderNumber': 4,
+    },
+    {
+      'routeName': 'Unova Route 5',
       'region': 4,
       'number': 5,
       'pokemon': {
@@ -3710,6 +3882,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 4,
           'route': 4,
         },
         {
@@ -3721,6 +3894,37 @@ module.exports = {
       'orderNumber': 5,
     },
     {
+      'routeName': 'Unova Route 16',
+      'region': 4,
+      'number': 16,
+      'pokemon': {
+        'land': [
+          'Gothita',
+          'Minccino',
+          'Trubbish',
+          'Liepard',
+          'Solosis',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 4,
+          'route': 4,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 55,
+        },
+      ],
+      'orderNumber': 5,
+    },
+    {
+      'routeName': 'Unova Route 6',
       'region': 4,
       'number': 6,
       'pokemon': {
@@ -3732,6 +3936,7 @@ module.exports = {
           'Tranquill',
           'Foongus',
           'Swadloon',
+          'Vanillite',
           'Shelmet',
         ],
         'water': [
@@ -3744,6 +3949,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 4,
           'route': 5,
         },
         {
@@ -3755,6 +3961,7 @@ module.exports = {
       'orderNumber': 6,
     },
     {
+      'routeName': 'Unova Route 7',
       'region': 4,
       'number': 7,
       'pokemon': {
@@ -3775,7 +3982,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 66,
+          'dungeonIndex': 64,
         },
         {
           'requiredValue': 1,
@@ -3786,58 +3993,103 @@ module.exports = {
       'orderNumber': 7,
     },
     {
+      'routeName': 'Unova Route 13',
       'region': 4,
-      'number': 8,
+      'number': 13,
       'pokemon': {
         'land': [
-          'Croagunk',
-          'Palpitoad',
-          'Karrablast',
-          'Shelmet',
-          'Stunfisk',
+          'Tangela',
+          'Pelipper',
+          'Drifblim',
+          'Absol',
+          'Lunatone',
+          'Solrock',
         ],
-        'water': [],
+        'water': [
+          'Staryu',
+          'Basculin (Red-Striped)',
+          'Basculin (Blue-Striped)',
+          'Frillish',
+        ],
         'headbutt': [],
       },
       'requirements': [
         {
-          'requirements': [
-            {
-              'requiredValue': 1,
-              'type': 2,
-              'dungeonIndex': 77,
-            },
-            {
-              'requirements': [
-                {
-                  'requiredValue': 10,
-                  'type': 2,
-                  'route': 9,
-                },
-                {
-                  'requiredValue': 1,
-                  'type': 2,
-                  'badge': 65,
-                },
-              ],
-            },
-          ],
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 67,
         },
       ],
-      'orderNumber': 8,
+      'orderNumber': 13,
     },
     {
+      'routeName': 'Undella Bay',
       'region': 4,
-      'number': 9,
+      'number': 24,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Frillish',
+          'Mantyke',
+          'Spheal',
+          'Remoraid',
+          'Jellicent',
+          'Wailmer',
+          'Chinchou',
+          'Ducklett',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 67,
+        },
+      ],
+      'orderNumber': 13,
+    },
+    {
+      'routeName': 'Unova Route 14',
+      'region': 4,
+      'number': 14,
       'pokemon': {
         'land': [
-          'Muk',
-          'Liepard',
-          'Garbodor',
-          'Minccino',
-          'Gothorita',
-          'Duosion',
-          'Pawniard',
+          'Golduck',
+          'Swablu',
+          'Mienfoo',
+          'Drifblim',
+          'Absol',
+          'Altaria',
+        ],
+        'water': [
+          'Buizel',
+          'Basculin (Red-Striped)',
+          'Basculin (Blue-Striped)',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 67,
+        },
+      ],
+      'orderNumber': 13,
+    },
+    {
+      'routeName': 'Unova Route 12',
+      'region': 4,
+      'number': 12,
+      'pokemon': {
+        'land': [
+          'Pinsir',
+          'Heracross',
+          'Roselia',
+          'Combee',
+          'Tranquill',
+          'Sewaddle',
         ],
         'water': [],
         'headbutt': [],
@@ -3846,12 +4098,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
-          'route': 11,
+          'region': 4,
+          'route': 13,
         },
       ],
-      'orderNumber': 9,
+      'orderNumber': 13.1,
     },
     {
+      'routeName': 'Unova Route 11',
       'region': 4,
       'number': 11,
       'pokemon': {
@@ -3876,137 +4130,25 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 4,
           'route': 12,
         },
       ],
-      'orderNumber': 11,
+      'orderNumber': 13.2,
     },
     {
+      'routeName': 'Unova Route 9',
       'region': 4,
-      'number': 12,
+      'number': 9,
       'pokemon': {
         'land': [
-          'Pinsir',
-          'Heracross',
-          'Roselia',
-          'Combee',
-          'Tranquill',
-          'Sewaddle',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 13,
-        },
-      ],
-      'orderNumber': 12,
-    },
-    {
-      'region': 4,
-      'number': 13,
-      'pokemon': {
-        'land': [
-          'Tangela',
-          'Pelipper',
-          'Drifblim',
-          'Absol',
-          'Lunatone',
-          'Solrock',
-        ],
-        'water': [
-          'Staryu',
-          'Basculin (Red-Striped)',
-          'Basculin (Blue-Striped)',
-          'Frillish',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'dungeonIndex': 69,
-        },
-      ],
-      'orderNumber': 13,
-    },
-    {
-      'region': 4,
-      'number': 14,
-      'pokemon': {
-        'land': [
-          'Golduck',
-          'Swablu',
-          'Mienfoo',
-          'Drifblim',
-          'Absol',
-          'Altaria',
-        ],
-        'water': [
-          'Buizel',
-          'Basculin (Red-Striped)',
-          'Basculin (Blue-Striped)',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'dungeonIndex': 69,
-        },
-      ],
-      'orderNumber': 14,
-    },
-    {
-      'region': 4,
-      'number': 15,
-      'pokemon': {
-        'land': [
-          'Sandslash',
-          'Gligar',
-          'Pupitar',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requirements': [
-            {
-              'requiredValue': 10,
-              'type': 2,
-              'route': 14,
-            },
-            {
-              'requiredValue': 10,
-              'type': 2,
-              'route': 16,
-            },
-          ],
-        },
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'badge': 65,
-        },
-      ],
-      'orderNumber': 15,
-    },
-    {
-      'region': 4,
-      'number': 16,
-      'pokemon': {
-        'land': [
-          'Gothita',
-          'Minccino',
-          'Trubbish',
+          'Muk',
           'Liepard',
-          'Solosis',
+          'Garbodor',
+          'Minccino',
+          'Gothorita',
+          'Duosion',
+          'Pawniard',
         ],
         'water': [],
         'headbutt': [],
@@ -4015,114 +4157,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
-          'route': 4,
-        },
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'badge': 55,
+          'region': 4,
+          'route': 11,
         },
       ],
-      'orderNumber': 16,
+      'orderNumber': 13.3,
     },
     {
-      'region': 4,
-      'number': 17,
-      'pokemon': {
-        'land': [
-          'Frillish',
-          'Alomomola',
-        ],
-        'water': [],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 1,
-        },
-      ],
-      'orderNumber': 17,
-    },
-    {
-      'region': 4,
-      'number': 18,
-      'pokemon': {
-        'land': [
-          'Tropius',
-          'Carnivine',
-          'Watchog',
-          'Crustle',
-          'Scrafty',
-        ],
-        'water': [
-          'Frillish',
-          'Alomomola',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 17,
-        },
-      ],
-      'orderNumber': 18,
-    },
-    {
-      'region': 4,
-      'number': 19,
-      'pokemon': {
-        'land': [
-          'Patrat',
-          'Purrloin',
-        ],
-        'water': [
-          'Basculin (Red-Striped)',
-          'Basculin (Blue-Striped)',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'type': 2,
-          'badge': 52,
-        },
-      ],
-      'orderNumber': 19,
-    },
-    {
-      'region': 4,
-      'number': 20,
-      'pokemon': {
-        'land': [
-          'Sunkern',
-          'Pidove',
-          'Venipede',
-          'Patrat',
-          'Purrloin',
-          'Sewaddle',
-        ],
-        'water': [
-          'Azurill',
-          'Basculin (Red-Striped)',
-          'Basculin (Blue-Striped)',
-        ],
-        'headbutt': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'type': 2,
-          'route': 19,
-        },
-      ],
-      'orderNumber': 20,
-    },
-    {
+      'routeName': 'Unova Route 21',
       'region': 4,
       'number': 21,
       'pokemon': {
@@ -4139,12 +4181,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 72,
+          'dungeonIndex': 68,
         },
       ],
       'orderNumber': 21,
     },
     {
+      'routeName': 'Unova Route 22',
       'region': 4,
       'number': 22,
       'pokemon': {
@@ -4168,12 +4211,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 4,
           'route': 21,
         },
       ],
       'orderNumber': 22,
     },
     {
+      'routeName': 'Unova Route 23',
       'region': 4,
       'number': 23,
       'pokemon': {
@@ -4197,12 +4242,221 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 73,
+          'dungeonIndex': 69,
         },
       ],
       'orderNumber': 23,
     },
     {
+      'routeName': 'Unova Route 8',
+      'region': 4,
+      'number': 8,
+      'pokemon': {
+        'land': [
+          'Croagunk',
+          'Tympole',
+          'Palpitoad',
+          'Karrablast',
+          'Shelmet',
+          'Stunfisk',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 1,
+              'type': 2,
+              'dungeonIndex': 73,
+            },
+            {
+              'requirements': [
+                {
+                  'requiredValue': 10,
+                  'type': 2,
+                  'region': 4,
+                  'route': 9,
+                },
+                {
+                  'requiredValue': 1,
+                  'type': 2,
+                  'badge': 65,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      'orderNumber': 23.1,
+    },
+    {
+      'routeName': 'Unova Route 15',
+      'region': 4,
+      'number': 15,
+      'pokemon': {
+        'land': [
+          'Sandslash',
+          'Gligar',
+          'Pupitar',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'region': 4,
+              'route': 14,
+            },
+            {
+              'requiredValue': 10,
+              'type': 2,
+              'region': 4,
+              'route': 16,
+            },
+          ],
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 65,
+        },
+      ],
+      'orderNumber': 23.1,
+    },
+    {
+      'routeName': 'Unova Route 3',
+      'region': 4,
+      'number': 3,
+      'pokemon': {
+        'land': [
+          'Yanma',
+          'Watchog',
+          'Herdier',
+          'Purrloin',
+          'Tranquill',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 76,
+        },
+      ],
+      'orderNumber': 23.1,
+    },
+    {
+      'routeName': 'Unova Route 2',
+      'region': 4,
+      'number': 2,
+      'pokemon': {
+        'land': [
+          'Jigglypuff',
+          'Lickitung',
+          'Watchog',
+          'Herdier',
+          'Liepard',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 4,
+          'route': 3,
+        },
+      ],
+      'orderNumber': 23.2,
+    },
+    {
+      'routeName': 'Unova Route 1',
+      'region': 4,
+      'number': 1,
+      'pokemon': {
+        'land': [
+          'Jigglypuff',
+          'Watchog',
+          'Herdier',
+          'Scrafty',
+        ],
+        'water': [
+          'Basculin (Red-Striped)',
+          'Basculin (Blue-Striped)',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 4,
+          'route': 2,
+        },
+      ],
+      'orderNumber': 23.3,
+    },
+    {
+      'routeName': 'Unova Route 17',
+      'region': 4,
+      'number': 17,
+      'pokemon': {
+        'land': [
+          'Frillish',
+          'Alomomola',
+        ],
+        'water': [],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 4,
+          'route': 1,
+        },
+      ],
+      'orderNumber': 23.4,
+    },
+    {
+      'routeName': 'Unova Route 18',
+      'region': 4,
+      'number': 18,
+      'pokemon': {
+        'land': [
+          'Tropius',
+          'Carnivine',
+          'Watchog',
+          'Crustle',
+          'Scrafty',
+        ],
+        'water': [
+          'Frillish',
+          'Alomomola',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 4,
+          'route': 17,
+        },
+      ],
+      'orderNumber': 23.5,
+    },
+    {
+      'routeName': 'Kalos Route 1',
       'region': 5,
       'number': 1,
       'pokemon': {
@@ -4220,6 +4474,7 @@ module.exports = {
       'orderNumber': 1,
     },
     {
+      'routeName': 'Kalos Route 2',
       'region': 5,
       'number': 2,
       'pokemon': {
@@ -4241,6 +4496,7 @@ module.exports = {
       'orderNumber': 2,
     },
     {
+      'routeName': 'Kalos Route 3',
       'region': 5,
       'number': 3,
       'pokemon': {
@@ -4259,12 +4515,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 84,
+          'dungeonIndex': 79,
         },
       ],
       'orderNumber': 3,
     },
     {
+      'routeName': 'Kalos Route 4',
       'region': 5,
       'number': 4,
       'pokemon': {
@@ -4288,6 +4545,7 @@ module.exports = {
       'orderNumber': 4,
     },
     {
+      'routeName': 'Kalos Route 5',
       'region': 5,
       'number': 5,
       'pokemon': {
@@ -4305,12 +4563,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 4,
         },
       ],
       'orderNumber': 5,
     },
     {
+      'routeName': 'Kalos Route 6',
       'region': 5,
       'number': 6,
       'pokemon': {
@@ -4328,12 +4588,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 5,
         },
       ],
       'orderNumber': 6,
     },
     {
+      'routeName': 'Kalos Route 7',
       'region': 5,
       'number': 7,
       'pokemon': {
@@ -4353,12 +4615,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 85,
+          'dungeonIndex': 80,
         },
       ],
       'orderNumber': 7,
     },
     {
+      'routeName': 'Kalos Route 8',
       'region': 5,
       'number': 8,
       'pokemon': {
@@ -4378,12 +4641,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 86,
+          'dungeonIndex': 81,
         },
       ],
       'orderNumber': 8,
     },
     {
+      'routeName': 'Kalos Route 9',
       'region': 5,
       'number': 9,
       'pokemon': {
@@ -4399,12 +4663,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 8,
         },
       ],
       'orderNumber': 9,
     },
     {
+      'routeName': 'Kalos Route 10',
       'region': 5,
       'number': 10,
       'pokemon': {
@@ -4424,12 +4690,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 87,
+          'dungeonIndex': 82,
         },
       ],
       'orderNumber': 10,
     },
     {
+      'routeName': 'Kalos Route 11',
       'region': 5,
       'number': 11,
       'pokemon': {
@@ -4455,6 +4722,7 @@ module.exports = {
       'orderNumber': 11,
     },
     {
+      'routeName': 'Kalos Route 12',
       'region': 5,
       'number': 12,
       'pokemon': {
@@ -4487,6 +4755,41 @@ module.exports = {
       'orderNumber': 12,
     },
     {
+      'routeName': 'Azure Bay',
+      'region': 5,
+      'number': 23,
+      'pokemon': {
+        'land': [
+          'Inkay',
+          'Chatot',
+          'Inkay',
+          'Slowpoke',
+          'Dwebble',
+          'Binacle',
+        ],
+        'water': [
+          'Tentacool',
+          'Lapras',
+          'Mantyke',
+          'Luvdisc',
+          'Chinchou',
+          'Remoraid',
+          'Alomomola',
+        ],
+        'headbutt': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 5,
+          'route': 12,
+        },
+      ],
+      'orderNumber': 12,
+    },
+    {
+      'routeName': 'Kalos Route 13',
       'region': 5,
       'number': 13,
       'pokemon': {
@@ -4504,12 +4807,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 12,
         },
       ],
       'orderNumber': 13,
     },
     {
+      'routeName': 'Kalos Route 14',
       'region': 5,
       'number': 14,
       'pokemon': {
@@ -4536,6 +4841,7 @@ module.exports = {
       'orderNumber': 14,
     },
     {
+      'routeName': 'Kalos Route 15',
       'region': 5,
       'number': 15,
       'pokemon': {
@@ -4565,6 +4871,7 @@ module.exports = {
       'orderNumber': 15,
     },
     {
+      'routeName': 'Kalos Route 16',
       'region': 5,
       'number': 16,
       'pokemon': {
@@ -4587,12 +4894,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 15,
         },
       ],
       'orderNumber': 16,
     },
     {
+      'routeName': 'Kalos Route 17',
       'region': 5,
       'number': 17,
       'pokemon': {
@@ -4609,12 +4918,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 91,
+          'dungeonIndex': 86,
         },
       ],
       'orderNumber': 17,
     },
     {
+      'routeName': 'Kalos Route 18',
       'region': 5,
       'number': 18,
       'pokemon': {
@@ -4633,12 +4943,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 92,
+          'dungeonIndex': 87,
         },
       ],
       'orderNumber': 18,
     },
     {
+      'routeName': 'Kalos Route 19',
       'region': 5,
       'number': 19,
       'pokemon': {
@@ -4660,12 +4971,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 18,
         },
       ],
       'orderNumber': 19,
     },
     {
+      'routeName': 'Kalos Route 20',
       'region': 5,
       'number': 20,
       'pokemon': {
@@ -4684,12 +4997,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 19,
         },
       ],
       'orderNumber': 20,
     },
     {
+      'routeName': 'Kalos Route 21',
       'region': 5,
       'number': 21,
       'pokemon': {
@@ -4713,12 +5028,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 19,
         },
       ],
       'orderNumber': 21,
     },
     {
+      'routeName': 'Kalos Route 22',
       'region': 5,
       'number': 22,
       'pokemon': {
@@ -4739,12 +5056,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'type': 2,
+          'region': 5,
           'route': 3,
         },
       ],
       'orderNumber': 22,
     },
     {
+      'routeName': 'Alola Route 1',
       'region': 6,
       'number': 1,
       'pokemon': {
@@ -4760,6 +5079,7 @@ module.exports = {
       'orderNumber': 1,
     },
     {
+      'routeName': 'Alola Route 3',
       'region': 6,
       'number': 3,
       'pokemon': {
@@ -4776,6 +5096,7 @@ module.exports = {
       'orderNumber': 3,
     },
     {
+      'routeName': 'Alola Route 5',
       'region': 6,
       'number': 5,
       'pokemon': {
@@ -4792,6 +5113,7 @@ module.exports = {
       'orderNumber': 5,
     },
     {
+      'routeName': 'Alola Route 14',
       'region': 6,
       'number': 14,
       'pokemon': {
@@ -4807,6 +5129,7 @@ module.exports = {
       'orderNumber': 14,
     },
     {
+      'routeName': 'Galar Route 1',
       'region': 7,
       'number': 1,
       'pokemon': {
@@ -4824,6 +5147,7 @@ module.exports = {
       'orderNumber': 1,
     },
     {
+      'routeName': 'Galar Route 2',
       'region': 7,
       'number': 2,
       'pokemon': {
@@ -4841,6 +5165,7 @@ module.exports = {
       'orderNumber': 2,
     },
     {
+      'routeName': 'Galar Route 3',
       'region': 7,
       'number': 3,
       'pokemon': {
@@ -4859,6 +5184,7 @@ module.exports = {
       'orderNumber': 3,
     },
     {
+      'routeName': 'Galar Route 4',
       'region': 7,
       'number': 4,
       'pokemon': {
@@ -4874,6 +5200,7 @@ module.exports = {
       'orderNumber': 4,
     },
     {
+      'routeName': 'Galar Route 5',
       'region': 7,
       'number': 5,
       'pokemon': {
@@ -4889,6 +5216,7 @@ module.exports = {
       'orderNumber': 5,
     },
     {
+      'routeName': 'Galar Route 6',
       'region': 7,
       'number': 6,
       'pokemon': {
@@ -4900,6 +5228,7 @@ module.exports = {
       'orderNumber': 6,
     },
     {
+      'routeName': 'Galar Route 7',
       'region': 7,
       'number': 7,
       'pokemon': {
@@ -4917,6 +5246,7 @@ module.exports = {
       'orderNumber': 7,
     },
     {
+      'routeName': 'Galar Route 8',
       'region': 7,
       'number': 8,
       'pokemon': {
@@ -4931,6 +5261,7 @@ module.exports = {
       'orderNumber': 8,
     },
     {
+      'routeName': 'Galar Route 9',
       'region': 7,
       'number': 9,
       'pokemon': {
@@ -4947,6 +5278,7 @@ module.exports = {
       'orderNumber': 9,
     },
     {
+      'routeName': 'Galar Route 10',
       'region': 7,
       'number': 10,
       'pokemon': {
@@ -4970,132 +5302,112 @@ module.exports = {
         '9': 50,
       },
       '2': {
-        '0': 20,
-        '7': 60,
-        '11': 40,
+        '0': 50,
+        '7': 50,
+        '9': 25,
       },
       '3': {
-        '0': 66.67,
-        '6': 16.67,
-        '8': 16.67,
-        '9': 33.33,
-        '17': 16.67,
+        '0': 50,
+        '6': 25,
+        '8': 25,
+        '9': 25,
       },
       '4': {
-        '0': 20,
-        '2': 50,
-        '6': 10,
-        '7': 10,
-        '8': 10,
-        '9': 10,
+        '0': 22.22,
+        '2': 44.44,
+        '6': 11.11,
+        '7': 11.11,
+        '8': 11.11,
+        '9': 11.11,
       },
       '5': {
-        '0': 55.56,
-        '4': 22.22,
-        '6': 11.11,
-        '7': 22.22,
-        '9': 22.22,
-        '10': 11.11,
-        '17': 11.11,
+        '0': 83.33,
+        '9': 33.33,
+        '10': 16.67,
+        '17': 16.67,
       },
       '6': {
-        '0': 38.46,
-        '2': 30.77,
-        '4': 15.38,
-        '6': 7.69,
-        '7': 15.38,
-        '9': 15.38,
-        '10': 7.69,
-        '17': 7.69,
-      },
-      '7': {
         '0': 45.45,
-        '1': 18.18,
-        '4': 18.18,
-        '6': 9.09,
-        '7': 18.18,
+        '2': 45.45,
         '9': 18.18,
         '10': 9.09,
         '17': 9.09,
       },
+      '7': {
+        '0': 71.43,
+        '1': 14.29,
+        '9': 28.57,
+        '10': 14.29,
+        '17': 14.29,
+      },
       '8': {
-        '0': 41.67,
-        '1': 16.67,
-        '6': 8.33,
-        '7': 8.33,
-        '8': 8.33,
-        '9': 16.67,
-        '10': 16.67,
-        '17': 8.33,
+        '0': 62.5,
+        '1': 12.5,
+        '9': 25,
+        '10': 25,
+        '17': 12.5,
       },
       '9': {
-        '0': 40,
+        '0': 50,
         '7': 50,
-        '8': 10,
-        '9': 20,
+        '9': 25,
       },
       '10': {
-        '0': 17.65,
-        '2': 41.18,
-        '3': 11.76,
-        '6': 5.88,
-        '7': 17.65,
-        '8': 5.88,
-        '9': 5.88,
-        '10': 5.88,
-        '16': 5.88,
+        '0': 16.67,
+        '2': 50,
+        '3': 8.33,
+        '6': 8.33,
+        '7': 16.67,
+        '16': 8.33,
       },
       '11': {
-        '0': 35.71,
-        '2': 42.86,
-        '7': 14.29,
-        '8': 7.14,
-        '9': 21.43,
-        '10': 7.14,
+        '0': 40,
+        '2': 50,
+        '7': 10,
+        '9': 20,
+        '10': 10,
       },
       '12': {
-        '0': 23.53,
-        '2': 47.06,
-        '4': 23.53,
-        '7': 35.29,
-        '9': 17.65,
-        '10': 5.88,
-        '11': 5.88,
+        '0': 26.67,
+        '2': 46.67,
+        '4': 26.67,
+        '7': 26.67,
+        '9': 20,
+        '10': 13.33,
       },
       '13': {
-        '0': 23.53,
-        '2': 47.06,
-        '4': 23.53,
-        '7': 35.29,
-        '9': 17.65,
-        '10': 5.88,
-        '11': 5.88,
+        '0': 20,
+        '2': 53.33,
+        '4': 26.67,
+        '7': 33.33,
+        '9': 20,
+        '10': 13.33,
       },
       '14': {
-        '0': 27.27,
-        '2': 18.18,
-        '4': 36.36,
-        '7': 54.55,
-        '9': 18.18,
-        '11': 18.18,
+        '0': 10,
+        '2': 30,
+        '4': 40,
+        '7': 60,
+        '9': 10,
+        '11': 20,
       },
       '15': {
-        '0': 33.33,
-        '4': 44.44,
-        '7': 66.67,
-        '9': 22.22,
-        '11': 22.22,
+        '0': 14.29,
+        '4': 57.14,
+        '7': 85.71,
+        '9': 14.29,
+        '11': 28.57,
       },
       '16': {
         '0': 100,
         '9': 50,
       },
       '17': {
-        '0': 45.45,
-        '1': 9.09,
-        '2': 45.45,
-        '7': 9.09,
-        '9': 36.36,
+        '0': 33.33,
+        '1': 11.11,
+        '2': 55.56,
+        '7': 11.11,
+        '9': 33.33,
       },
       '18': {
         '0': 50,
@@ -5105,52 +5417,48 @@ module.exports = {
       },
       '19': {
         '2': 100,
-        '7': 25,
+        '7': 33.33,
       },
       '20': {
         '2': 100,
-        '7': 25,
+        '7': 33.33,
       },
       '21': {
-        '0': 33.33,
-        '2': 58.33,
-        '4': 8.33,
-        '7': 8.33,
-        '9': 16.67,
+        '0': 36.36,
+        '2': 54.55,
+        '4': 9.09,
+        '7': 18.18,
+        '9': 18.18,
       },
       '22': {
-        '0': 25,
-        '2': 37.5,
-        '6': 12.5,
-        '7': 25,
-        '9': 12.5,
-      },
-      '23': {
-        '0': 16.67,
-        '2': 38.89,
+        '0': 22.22,
+        '2': 44.44,
         '6': 11.11,
         '7': 22.22,
-        '8': 11.11,
         '9': 11.11,
-        '10': 5.56,
+      },
+      '23': {
+        '0': 11.11,
+        '2': 44.44,
+        '6': 22.22,
+        '7': 22.22,
+        '9': 11.11,
       },
       '24': {
-        '0': 18.75,
-        '2': 31.25,
-        '4': 12.5,
-        '7': 31.25,
-        '9': 18.75,
-        '10': 6.25,
-        '11': 31.25,
+        '0': 22.22,
+        '2': 44.44,
+        '4': 22.22,
+        '7': 33.33,
+        '9': 22.22,
+        '11': 11.11,
       },
       '25': {
-        '0': 14.29,
-        '2': 28.57,
-        '4': 14.29,
-        '7': 35.71,
-        '9': 14.29,
-        '10': 7.14,
-        '11': 35.71,
+        '0': 20,
+        '2': 50,
+        '4': 20,
+        '7': 30,
+        '9': 20,
+        '11': 10,
       },
     },
     '1': {
@@ -5941,13 +6249,14 @@ module.exports = {
         '15': 20,
       },
       '6': {
-        '0': 30,
-        '2': 30,
-        '4': 40,
-        '7': 10,
-        '9': 10,
-        '11': 30,
-        '17': 10,
+        '0': 27.27,
+        '2': 27.27,
+        '4': 36.36,
+        '5': 9.09,
+        '7': 9.09,
+        '9': 9.09,
+        '11': 27.27,
+        '17': 9.09,
       },
       '7': {
         '0': 62.5,
@@ -5957,12 +6266,12 @@ module.exports = {
         '9': 12.5,
       },
       '8': {
-        '2': 20,
-        '3': 20,
-        '6': 20,
-        '7': 20,
-        '8': 40,
-        '11': 40,
+        '2': 33.33,
+        '3': 16.67,
+        '6': 16.67,
+        '7': 16.67,
+        '8': 33.33,
+        '11': 33.33,
       },
       '9': {
         '0': 14.29,
@@ -6073,6 +6382,24 @@ module.exports = {
         '8': 10,
         '9': 30,
         '15': 10,
+      },
+      '24': {
+        '2': 100,
+        '3': 12.5,
+        '5': 12.5,
+        '9': 25,
+        '13': 25,
+      },
+      '25': {
+        '1': 12.5,
+        '4': 12.5,
+        '6': 12.5,
+        '8': 37.5,
+        '9': 12.5,
+        '10': 12.5,
+        '11': 12.5,
+        '12': 12.5,
+        '15': 25,
       },
     },
     '5': {
@@ -6253,6 +6580,18 @@ module.exports = {
         '6': 11.11,
         '9': 11.11,
         '17': 22.22,
+      },
+      '23': {
+        '0': 7.69,
+        '2': 69.23,
+        '3': 7.69,
+        '5': 7.69,
+        '7': 7.69,
+        '9': 15.38,
+        '10': 23.08,
+        '11': 7.69,
+        '12': 15.38,
+        '15': 15.38,
       },
     },
     '6': {
@@ -7409,11 +7748,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            2,
-            24,
-            25,
-          ],
           '1': [
             30,
             31,
@@ -7456,10 +7790,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            24,
-            25,
-          ],
           '1': [
             30,
             31,
@@ -7556,11 +7886,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            2,
-            24,
-            25,
-          ],
           '1': [
             30,
             31,
@@ -7606,10 +7931,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            24,
-            25,
-          ],
           '1': [
             30,
             31,
@@ -7708,18 +8029,16 @@ module.exports = {
         '0': {
           '0': [
             1,
-            3,
+            2,
             24,
             25,
             5,
             6,
             11,
-            7,
             8,
+            7,
             12,
             13,
-            14,
-            15,
             21,
           ],
           '1': [
@@ -7774,8 +8093,8 @@ module.exports = {
             5,
             6,
             11,
-            7,
             8,
+            7,
             12,
             13,
             14,
@@ -7787,10 +8106,7 @@ module.exports = {
             43,
           ],
         },
-        '2': [
-          'Viridian Forest',
-          'Mt. Moon',
-        ],
+        '2': ['Viridian Forest'],
         '4': [
           {
             'basePokemon': 'Pidgey',
@@ -7867,6 +8183,7 @@ module.exports = {
         '0': {
           '0': [
             1,
+            22,
             2,
             3,
             4,
@@ -7875,12 +8192,11 @@ module.exports = {
             11,
             9,
             10,
-            7,
             8,
+            7,
             16,
             18,
             21,
-            22,
           ],
           '1': [
             29,
@@ -7900,6 +8216,7 @@ module.exports = {
           '5': [1],
         },
         '2': [
+          'Pokemon Mansion',
           'Sprout Tower',
           'Union Cave',
           'Burned Tower',
@@ -7937,7 +8254,6 @@ module.exports = {
             9,
             10,
             16,
-            17,
             18,
             21,
           ],
@@ -7954,10 +8270,10 @@ module.exports = {
           ],
         },
         '2': [
+          'Pokemon Mansion',
           'Burned Tower',
           'Mt Mortar',
           'Relic Passage',
-          'Strange House',
           'Dreamyard',
         ],
         '3': [
@@ -8009,16 +8325,12 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
             3,
             4,
-            11,
             9,
-            10,
             16,
-            17,
             18,
-            22,
-            23,
           ],
           '1': [
             46,
@@ -8126,14 +8438,7 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            4,
-            11,
-            9,
-            10,
-            8,
-            23,
-          ],
+          '0': [4],
           '1': [
             32,
             33,
@@ -8163,7 +8468,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [23],
           '1': [
             27,
             26,
@@ -8297,18 +8601,13 @@ module.exports = {
           '0': [
             3,
             4,
-            11,
-            9,
-            10,
-            8,
-            23,
           ],
           '2': [111],
+          '4': [25],
         },
         '2': [
           'Mt. Moon',
           'Union Cave',
-          'Desert Resort',
           'Relic Castle',
         ],
       },
@@ -8335,7 +8634,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [23],
           '1': [
             27,
             26,
@@ -8388,10 +8686,10 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
             2,
             9,
             10,
-            22,
           ],
           '1': [
             35,
@@ -8512,10 +8810,10 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
             2,
             9,
             10,
-            22,
           ],
           '1': [
             35,
@@ -8717,8 +9015,8 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
-            7,
             8,
+            7,
           ],
           '1': [
             36,
@@ -8727,8 +9025,8 @@ module.exports = {
           ],
         },
         '2': [
-          'Pokemon Mansion',
           'Mt. Pyre',
+          'Liberty Garden',
           'Abundant Shrine',
         ],
         '5': ['Fire'],
@@ -8755,6 +9053,11 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 0,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Liberty Garden',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Vulpix',
@@ -8799,16 +9102,15 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
-            3,
             5,
             6,
-            7,
             8,
+            7,
           ],
           '2': [115],
           '4': [
-            1,
             2,
+            1,
           ],
           '5': [20],
         },
@@ -8850,7 +9152,6 @@ module.exports = {
       'attack': 116,
       'nativeRegion': 0,
       'locations': {
-        '2': ['Cerulean Cave'],
         '4': [
           {
             'basePokemon': 'Jigglypuff',
@@ -8908,8 +9209,8 @@ module.exports = {
             207,
             208,
             209,
-            211,
             214,
+            211,
             216,
             217,
           ],
@@ -9002,7 +9303,6 @@ module.exports = {
           'Snowpoint Temple',
           'Stark Mountain',
           'Celestial Tower',
-          'Strange House',
           'Cave of Being',
           'Dreamyard',
           'Team Flare Secret HQ',
@@ -9058,9 +9358,6 @@ module.exports = {
           '0': [
             24,
             25,
-            5,
-            6,
-            7,
             12,
             13,
             14,
@@ -9143,6 +9440,7 @@ module.exports = {
             230,
           ],
         },
+        '2': ['Cerulean Cave'],
         '4': [
           {
             'basePokemon': 'Oddish',
@@ -9299,8 +9597,6 @@ module.exports = {
           '0': [
             24,
             25,
-            12,
-            13,
             14,
             15,
           ],
@@ -9341,10 +9637,7 @@ module.exports = {
             15,
           ],
         },
-        '2': [
-          'Victory Road',
-          'Cerulean Cave',
-        ],
+        '2': ['Cerulean Cave'],
         '4': [
           {
             'basePokemon': 'Venonat',
@@ -9464,8 +9757,8 @@ module.exports = {
           '0': [
             5,
             6,
-            7,
             8,
+            7,
           ],
           '1': [
             38,
@@ -9535,11 +9828,7 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            4,
-            24,
-            25,
-          ],
+          '0': [6],
           '1': [35],
           '3': [
             203,
@@ -9548,14 +9837,13 @@ module.exports = {
             208,
             209,
             210,
-            212,
             214,
+            212,
             225,
           ],
           '5': [22],
         },
         '2': [
-          'Seafoam Islands',
           'Oreburgh Gate',
           'Ravaged Path',
           'Lake Verity',
@@ -9588,6 +9876,7 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [6],
           '1': [35],
           '3': [
             203,
@@ -9596,21 +9885,20 @@ module.exports = {
             208,
             209,
             210,
-            212,
             214,
+            212,
             225,
             226,
             230,
           ],
           '4': [
-            11,
             14,
+            11,
             22,
             23,
           ],
         },
         '2': [
-          'Seafoam Islands',
           'Oreburgh Gate',
           'Ravaged Path',
           'Lake Valor',
@@ -9664,13 +9952,9 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
             3,
             4,
-            5,
-            6,
-            7,
-            8,
-            22,
             23,
           ],
           '1': [42],
@@ -9742,10 +10026,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            7,
-            8,
-          ],
           '1': [
             36,
             37,
@@ -9818,6 +10098,7 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
             4,
             24,
             25,
@@ -9832,7 +10113,6 @@ module.exports = {
             19,
             20,
             21,
-            22,
             23,
           ],
           '1': [
@@ -9851,10 +10131,11 @@ module.exports = {
           ],
         },
         '2': [
+          'Seafoam Islands',
+          'Cerulean Cave',
           'Ruins of Alph',
           'Giant Chasm',
           'Victory Road Unova',
-          'Wellspring Cave',
         ],
       },
       'catchRatePercent': 63,
@@ -9895,7 +10176,6 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
-            10,
             22,
             23,
           ],
@@ -9915,11 +10195,6 @@ module.exports = {
           'Ruins of Alph',
           'Frost Cavern',
           'Pokémon Village',
-        ],
-        '3': [
-          {
-            'dungeon': 'Wellspring Cave',
-          },
         ],
         '4': [
           {
@@ -9996,12 +10271,10 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
-            24,
-            25,
             5,
             6,
-            7,
             8,
+            7,
           ],
           '1': [
             34,
@@ -10014,7 +10287,10 @@ module.exports = {
           ],
           '5': [5],
         },
-        '2': ['Granite Cave'],
+        '2': [
+          'Granite Cave',
+          'Liberty Garden',
+        ],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -10050,10 +10326,7 @@ module.exports = {
           '0': [8],
           '3': [215],
         },
-        '2': [
-          'Cerulean Cave',
-          'Cave of Being',
-        ],
+        '2': ['Cave of Being'],
         '4': [
           {
             'basePokemon': 'Abra',
@@ -10085,6 +10358,11 @@ module.exports = {
       'attack': 96,
       'nativeRegion': 0,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Liberty Garden',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Kadabra',
@@ -10136,7 +10414,6 @@ module.exports = {
         },
         '2': [
           'Rock Tunnel',
-          'Victory Road',
           'Fiery Path',
           'Jagged Pass',
           'Mt. Coronet South',
@@ -10275,9 +10552,6 @@ module.exports = {
           '0': [
             24,
             25,
-            5,
-            6,
-            7,
             12,
             13,
             14,
@@ -10350,6 +10624,7 @@ module.exports = {
           ],
           '5': [14],
         },
+        '2': ['Cerulean Cave'],
         '4': [
           {
             'basePokemon': 'Bellsprout',
@@ -10429,12 +10704,12 @@ module.exports = {
         '0': {
           '0': [
             11,
-            12,
             13,
             17,
             18,
             19,
             20,
+            21,
           ],
           '1': [
             32,
@@ -10480,8 +10755,10 @@ module.exports = {
             221,
             222,
           ],
+          '5': [23],
         },
         '2': [
+          'Seafoam Islands',
           'Shoal Cave',
           'Seafloor Cavern',
           'Sealed Chamber',
@@ -10598,9 +10875,9 @@ module.exports = {
             206,
             207,
             210,
-            211,
-            214,
             215,
+            214,
+            211,
           ],
         },
         '2': [
@@ -10655,8 +10932,8 @@ module.exports = {
         '0': {
           '1': [45],
           '3': [
-            211,
             214,
+            211,
             216,
             225,
             226,
@@ -10666,6 +10943,7 @@ module.exports = {
         },
         '2': [
           'Victory Road',
+          'Cerulean Cave',
           'Mt Mortar',
           'Dark Cave',
           'Iron Island',
@@ -10767,9 +11045,9 @@ module.exports = {
             206,
             207,
             210,
-            211,
-            214,
             215,
+            214,
+            211,
           ],
         },
         '2': ['Mt Silver'],
@@ -10849,8 +11127,14 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [10],
-          '5': [12],
+          '0': [
+            12,
+            13,
+          ],
+          '5': [
+            12,
+            23,
+          ],
         },
         '2': [
           'Seafoam Islands',
@@ -10889,7 +11173,6 @@ module.exports = {
           '0': [
             12,
             13,
-            23,
           ],
         },
         '2': ['Seafoam Islands'],
@@ -10951,7 +11234,6 @@ module.exports = {
         '2': [
           'Power Plant',
           'New Mauville',
-          'Virbank Complex',
         ],
         '5': ['Electric'],
       },
@@ -11007,7 +11289,6 @@ module.exports = {
         },
         '2': [
           'Power Plant',
-          'Cerulean Cave',
           'Victory Road Sinnoh',
           'P2 Laboratory',
           'Lost Hotel',
@@ -11146,7 +11427,6 @@ module.exports = {
             28,
           ],
         },
-        '2': ['Cerulean Cave'],
         '4': [
           {
             'basePokemon': 'Doduo',
@@ -11361,13 +11641,8 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
-            6,
-            11,
             17,
             18,
-            19,
-            20,
-            21,
           ],
           '1': [
             41,
@@ -11377,11 +11652,7 @@ module.exports = {
           ],
           '3': [205],
         },
-        '2': [
-          'Seafoam Islands',
-          'Undella Bay',
-          'Seaside Cave',
-        ],
+        '2': ['Seaside Cave'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -11668,7 +11939,6 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 0,
       'locations': {
-        '2': ['Cerulean Cave'],
         '4': [
           {
             'basePokemon': 'Drowzee',
@@ -11710,16 +11980,8 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
-            4,
-            24,
             25,
-            6,
-            11,
             10,
-            12,
-            13,
-            17,
-            18,
           ],
           '1': [
             34,
@@ -11755,14 +12017,15 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            25,
             10,
-            23,
           ],
           '1': [
             34,
             40,
           ],
         },
+        '2': ['Seafoam Islands'],
         '3': [
           {
             'dungeon': 'Whirl Islands',
@@ -11807,10 +12070,10 @@ module.exports = {
       'attack': 40,
       'nativeRegion': 0,
       'locations': {
-        '0': {
-          '0': [10],
-        },
-        '2': ['New Mauville'],
+        '2': [
+          'Power Plant',
+          'New Mauville',
+        ],
         '5': ['Electric'],
       },
       'catchRatePercent': 51,
@@ -11837,7 +12100,6 @@ module.exports = {
       'locations': {
         '2': [
           'Power Plant',
-          'Cerulean Cave',
           'P2 Laboratory',
           'Lost Hotel',
         ],
@@ -12004,10 +12266,6 @@ module.exports = {
       'attack': 87,
       'nativeRegion': 0,
       'locations': {
-        '2': [
-          'Victory Road',
-          'Cerulean Cave',
-        ],
         '3': [
           {
             'dungeon': 'Pokemon Tower',
@@ -12163,7 +12421,6 @@ module.exports = {
           'Pokemon Mansion',
           'Burned Tower',
           'Fiery Path',
-          'Virbank Complex',
         ],
       },
       'catchRatePercent': 51,
@@ -12469,9 +12726,6 @@ module.exports = {
             10,
             12,
             13,
-            19,
-            20,
-            21,
           ],
           '2': [
             132,
@@ -12480,10 +12734,7 @@ module.exports = {
           ],
           '3': [226],
         },
-        '2': [
-          'Seafoam Islands',
-          'Whirl Islands',
-        ],
+        '2': ['Whirl Islands'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -12519,7 +12770,6 @@ module.exports = {
           '0': [
             12,
             13,
-            23,
           ],
           '3': [226],
         },
@@ -12564,6 +12814,7 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
             4,
             24,
             25,
@@ -12578,7 +12829,6 @@ module.exports = {
             19,
             20,
             21,
-            22,
             23,
           ],
           '1': [42],
@@ -12594,12 +12844,14 @@ module.exports = {
             204,
             208,
             209,
-            212,
             214,
+            212,
             229,
           ],
         },
         '2': [
+          'Seafoam Islands',
+          'Cerulean Cave',
           'Union Cave',
           'Meteor Falls',
           'Victory Road Hoenn',
@@ -12637,7 +12889,6 @@ module.exports = {
           '0': [
             4,
             24,
-            23,
           ],
           '1': [42],
           '3': [
@@ -12645,12 +12896,15 @@ module.exports = {
             204,
             208,
             209,
-            212,
             214,
+            212,
             229,
           ],
         },
-        '2': ['Parfum Palace'],
+        '2': [
+          'Cerulean Cave',
+          'Parfum Palace',
+        ],
         '3': [
           {
             'dungeon': 'Lake Verity',
@@ -12780,9 +13034,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Mime Jr.',
-            'type': [1],
-            'stone': -1,
+            'type': [0],
             'evolvedPokemon': 'Mr. Mime',
+            'level': 18,
           },
         ],
         '7': ['Celadon City'],
@@ -12993,7 +13247,11 @@ module.exports = {
           '4': [12],
           '5': [12],
         },
-        '2': ['Lostlorn Forest'],
+        '3': [
+          {
+            'dungeon': 'Lostlorn Forest',
+          },
+        ],
         '9': '2.41%',
       },
       'catchRatePercent': 17,
@@ -13060,11 +13318,22 @@ module.exports = {
       'locations': {
         '0': {
           '0': [
+            22,
+            4,
+            24,
+            25,
+            6,
+            11,
+            10,
             12,
             13,
+            14,
+            17,
+            18,
             19,
             20,
             21,
+            23,
           ],
           '1': [
             30,
@@ -13122,9 +13391,9 @@ module.exports = {
             208,
             209,
             210,
-            212,
-            213,
             214,
+            213,
+            212,
             218,
             219,
             220,
@@ -13141,6 +13410,8 @@ module.exports = {
           ],
         },
         '2': [
+          'Seafoam Islands',
+          'Cerulean Cave',
           'Ruins of Alph',
           'Union Cave',
           'Meteor Falls',
@@ -13190,9 +13461,9 @@ module.exports = {
             208,
             209,
             210,
-            212,
-            213,
             214,
+            213,
+            212,
             218,
             219,
             220,
@@ -13258,7 +13529,10 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '5': [12],
+          '5': [
+            12,
+            23,
+          ],
         },
         '3': [
           {
@@ -13290,12 +13564,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '0': [
-            13,
-            14,
-            15,
-            23,
-          ],
           '1': [
             34,
             35,
@@ -13303,6 +13571,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Pokemon Mansion',
           'Cerulean Cave',
           'Giant Chasm',
         ],
@@ -14356,6 +14625,7 @@ module.exports = {
           '1': [29],
           '5': [6],
         },
+        '2': ['Liberty Garden'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -14780,6 +15050,8 @@ module.exports = {
             26,
           ],
           '3': [220],
+          '4': [24],
+          '5': [23],
         },
         '2': ['Azure bay'],
         '5': ['Electric'],
@@ -15268,8 +15540,8 @@ module.exports = {
             120,
           ],
           '3': [
-            212,
             215,
+            212,
           ],
           '4': [
             6,
@@ -15367,9 +15639,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Bonsly',
-            'type': [1],
-            'stone': -1,
+            'type': [0],
             'evolvedPokemon': 'Sudowoodo',
+            'level': 17,
           },
         ],
       },
@@ -15625,7 +15897,10 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 1,
       'locations': {
-        '2': ['Flower Paradise'],
+        '2': [
+          'Flower Paradise',
+          'Liberty Garden',
+        ],
         '4': [
           {
             'basePokemon': 'Sunkern',
@@ -16819,8 +17094,8 @@ module.exports = {
           '3': [206],
           '4': [
             11,
-            15,
             23,
+            15,
           ],
         },
       },
@@ -17426,12 +17701,13 @@ module.exports = {
             224,
             230,
           ],
-          '4': [21],
+          '4': [
+            24,
+            21,
+          ],
+          '5': [23],
         },
-        '2': [
-          'Undella Bay',
-          'Azure bay',
-        ],
+        '2': ['Azure bay'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -17537,11 +17813,6 @@ module.exports = {
         '0': {
           '1': [41],
         },
-        '3': [
-          {
-            'dungeon': 'Undella Bay',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Mantyke',
@@ -18021,11 +18292,6 @@ module.exports = {
       'attack': 58,
       'nativeRegion': 1,
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Virbank Complex',
-          },
-        ],
         '5': ['Electric'],
         '6': ['Electabuzz'],
       },
@@ -18060,11 +18326,6 @@ module.exports = {
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Virbank Complex',
-          },
-        ],
         '5': ['Fire'],
         '6': ['Magmar'],
       },
@@ -19569,7 +19830,7 @@ module.exports = {
         '2': [
           'Mt. Pyre',
           'Iron Island',
-          'Undella Bay',
+          'Liberty Garden',
           'Azure bay',
         ],
       },
@@ -21279,6 +21540,7 @@ module.exports = {
             223,
             230,
           ],
+          '4': [24],
         },
         '2': [
           'Shoal Cave',
@@ -21319,11 +21581,6 @@ module.exports = {
             230,
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Undella Bay',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Wailmer',
@@ -21491,7 +21748,10 @@ module.exports = {
         '0': {
           '5': [8],
         },
-        '2': ['Jagged Pass'],
+        '2': [
+          'Jagged Pass',
+          'Reversal Mountain',
+        ],
         '3': [
           {
             'dungeon': 'Jagged Pass',
@@ -21589,12 +21849,10 @@ module.exports = {
       'locations': {
         '0': {
           '2': [111],
+          '4': [25],
           '5': [13],
         },
-        '2': [
-          'Desert Resort',
-          'Reversal Mountain',
-        ],
+        '2': ['Reversal Mountain'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -22663,7 +22921,6 @@ module.exports = {
         },
         '2': [
           'Sky Pillar',
-          'Strange House',
           'Victory Road Unova',
         ],
         '4': [
@@ -23029,12 +23286,12 @@ module.exports = {
             226,
             230,
           ],
-          '4': [21],
+          '4': [
+            24,
+            21,
+          ],
         },
-        '2': [
-          'Shoal Cave',
-          'Undella Bay',
-        ],
+        '2': ['Shoal Cave'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -23109,11 +23366,6 @@ module.exports = {
       'attack': 157,
       'nativeRegion': 2,
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Undella Bay',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Sealeo',
@@ -23298,12 +23550,14 @@ module.exports = {
           '2': [128],
           '3': [224],
           '4': [21],
-          '5': [12],
+          '5': [
+            12,
+            23,
+          ],
         },
         '2': [
           'Fullmoon Island',
           'Newmoon Island',
-          'Undella Bay',
           'Seaside Cave',
         ],
         '3': [
@@ -24309,8 +24563,8 @@ module.exports = {
           '3': [
             209,
             210,
-            212,
             215,
+            212,
           ],
           '5': [11],
         },
@@ -24519,9 +24773,9 @@ module.exports = {
           '3': [
             206,
             210,
-            212,
-            214,
             215,
+            214,
+            212,
           ],
         },
         '4': [
@@ -25270,8 +25524,8 @@ module.exports = {
             224,
           ],
           '4': [
-            11,
             14,
+            11,
             23,
           ],
         },
@@ -26141,9 +26395,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bonsly',
-          'type': [1],
-          'stone': -1,
+          'type': [0],
           'evolvedPokemon': 'Sudowoodo',
+          'level': 17,
         },
       ],
       'baby': true,
@@ -26183,9 +26437,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mime Jr.',
-          'type': [1],
-          'stone': -1,
+          'type': [0],
           'evolvedPokemon': 'Mr. Mime',
+          'level': 18,
         },
       ],
       'baby': true,
@@ -26201,7 +26455,10 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '3': [209],
+          '3': [
+            209,
+            210,
+          ],
         },
         '6': ['Mr. Mime'],
       },
@@ -26270,7 +26527,10 @@ module.exports = {
             222,
             224,
           ],
-          '5': [12],
+          '5': [
+            12,
+            23,
+          ],
         },
         '2': ['Azure bay'],
       },
@@ -26919,12 +27179,13 @@ module.exports = {
       'locations': {
         '0': {
           '3': [223],
-          '4': [21],
+          '4': [
+            24,
+            21,
+          ],
+          '5': [23],
         },
-        '2': [
-          'Undella Bay',
-          'Azure bay',
-        ],
+        '2': ['Azure bay'],
         '6': ['Mantine'],
       },
       'catchRatePercent': 11,
@@ -28739,7 +29000,13 @@ module.exports = {
       },
       'attack': 184,
       'nativeRegion': 4,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Liberty Garden',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -29088,10 +29355,7 @@ module.exports = {
             20,
           ],
         },
-        '2': [
-          'Floccesy Ranch',
-          'Virbank Complex',
-        ],
+        '2': ['Floccesy Ranch'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -29117,10 +29381,10 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            1,
-            2,
-            3,
             7,
+            3,
+            2,
+            1,
             18,
           ],
           '5': [15],
@@ -29165,10 +29429,7 @@ module.exports = {
       'attack': 35,
       'nativeRegion': 4,
       'locations': {
-        '2': [
-          'Floccesy Ranch',
-          'Virbank Complex',
-        ],
+        '2': ['Floccesy Ranch'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -29202,9 +29463,9 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            1,
-            2,
             3,
+            2,
+            1,
           ],
         },
         '4': [
@@ -29279,9 +29540,9 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            3,
             19,
             20,
+            3,
           ],
         },
       },
@@ -29309,10 +29570,10 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            2,
             5,
-            9,
             16,
+            9,
+            2,
           ],
           '5': [15],
         },
@@ -29619,7 +29880,7 @@ module.exports = {
         },
         '2': [
           'Floccesy Ranch',
-          'Virbank Complex',
+          'Liberty Garden',
         ],
       },
       'catchRatePercent': 63,
@@ -29657,10 +29918,10 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            3,
             6,
             7,
             12,
+            3,
           ],
         },
         '2': [
@@ -29849,7 +30110,6 @@ module.exports = {
           'Seaside Cave',
           'Victory Road Unova',
           'Twist Mountain',
-          'Wellspring Cave',
         ],
         '4': [
           {
@@ -29931,7 +30191,6 @@ module.exports = {
           'Seaside Cave',
           'Cave of Being',
           'Twist Mountain',
-          'Wellspring Cave',
         ],
       },
       'catchRatePercent': 51,
@@ -30038,9 +30297,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Reversal Mountain',
-          },
-          {
-            'dungeon': 'Wellspring Cave',
           },
         ],
         '4': [
@@ -30227,7 +30483,12 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 4,
-      'locations': {},
+      'locations': {
+        '0': {
+          '4': [8],
+        },
+        '2': ['Pinwheel Forest'],
+      },
       'catchRatePercent': 63,
       'eggSteps': 800,
     },
@@ -30408,8 +30669,8 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            12,
             20,
+            12,
           ],
         },
         '2': ['Lostlorn Forest'],
@@ -30780,15 +31041,15 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            1,
-            6,
-            11,
-            13,
-            14,
             19,
             20,
+            6,
+            13,
+            14,
+            11,
             22,
             23,
+            1,
           ],
           '5': [
             15,
@@ -30796,6 +31057,13 @@ module.exports = {
             21,
           ],
         },
+        '2': [
+          'Giant Chasm',
+          'Abundant Shrine',
+          'Victory Road Unova',
+          'Dragonspiral Tower',
+          'Pinwheel Forest',
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1600,
@@ -30821,15 +31089,15 @@ module.exports = {
       'locations': {
         '0': {
           '4': [
-            1,
-            6,
-            11,
-            13,
-            14,
             19,
             20,
+            6,
+            13,
+            14,
+            11,
             22,
             23,
+            1,
           ],
           '5': [
             15,
@@ -30837,6 +31105,13 @@ module.exports = {
             21,
           ],
         },
+        '2': [
+          'Giant Chasm',
+          'Abundant Shrine',
+          'Victory Road Unova',
+          'Dragonspiral Tower',
+          'Pinwheel Forest',
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1600,
@@ -30872,13 +31147,13 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '4': [4],
+          '4': [
+            4,
+            25,
+          ],
           '5': [9],
         },
-        '2': [
-          'Desert Resort',
-          'Relic Castle',
-        ],
+        '2': ['Relic Castle'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -30913,6 +31188,7 @@ module.exports = {
       'attack': 62,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Relic Castle'],
         '4': [
           {
             'basePokemon': 'Sandile',
@@ -30987,9 +31263,11 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '4': [4],
+          '4': [
+            4,
+            25,
+          ],
         },
-        '2': ['Desert Resort'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -31044,11 +31322,9 @@ module.exports = {
       'attack': 123,
       'nativeRegion': 4,
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Desert Resort',
-          },
-        ],
+        '0': {
+          '4': [25],
+        },
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -31083,7 +31359,10 @@ module.exports = {
       'attack': 48,
       'nativeRegion': 4,
       'locations': {
-        '2': ['Desert Resort'],
+        '0': {
+          '4': [25],
+          '5': [23],
+        },
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -31161,9 +31440,11 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '4': [4],
+          '4': [
+            4,
+            25,
+          ],
         },
-        '2': ['Desert Resort'],
       },
       'catchRatePercent': 49,
       'eggSteps': 600,
@@ -31232,13 +31513,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
+          '4': [25],
           '5': [10],
         },
-        '3': [
-          {
-            'dungeon': 'Desert Resort',
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -31548,7 +31825,9 @@ module.exports = {
       },
       'attack': 56,
       'nativeRegion': 4,
-      'locations': {},
+      'locations': {
+        '7': ['Driftveil City'],
+      },
       'catchRatePercent': 25,
       'eggSteps': 1000,
     },
@@ -31575,9 +31854,6 @@ module.exports = {
           '5': [20],
         },
         '3': [
-          {
-            'dungeon': 'Lostlorn Forest',
-          },
           {
             'dungeon': 'Pokémon Village',
           },
@@ -31606,7 +31882,7 @@ module.exports = {
         {
           'basePokemon': 'Minccino',
           'type': [1],
-          'stone': -1,
+          'stone': 16,
           'evolvedPokemon': 'Cinccino',
         },
       ],
@@ -31625,8 +31901,8 @@ module.exports = {
           '4': [
             4,
             5,
-            9,
             16,
+            9,
           ],
         },
       },
@@ -31656,7 +31932,7 @@ module.exports = {
           {
             'basePokemon': 'Minccino',
             'type': [1],
-            'stone': -1,
+            'stone': 16,
             'evolvedPokemon': 'Cinccino',
           },
         ],
@@ -31697,7 +31973,6 @@ module.exports = {
             16,
           ],
         },
-        '2': ['Strange House'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -31734,11 +32009,6 @@ module.exports = {
           '5': [20],
         },
         '2': ['Pokémon Village'],
-        '3': [
-          {
-            'dungeon': 'Strange House',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Gothita',
@@ -31815,10 +32085,7 @@ module.exports = {
             16,
           ],
         },
-        '2': [
-          'Strange House',
-          'Reflection Cave',
-        ],
+        '2': ['Reflection Cave'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -31853,11 +32120,6 @@ module.exports = {
         '0': {
           '4': [9],
         },
-        '3': [
-          {
-            'dungeon': 'Strange House',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Solosis',
@@ -31932,6 +32194,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
+          '4': [24],
           '5': [7],
         },
       },
@@ -31998,7 +32261,11 @@ module.exports = {
       },
       'attack': 47,
       'nativeRegion': 4,
-      'locations': {},
+      'locations': {
+        '0': {
+          '4': [6],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 800,
     },
@@ -32314,6 +32581,10 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 4,
       'locations': {
+        '2': [
+          'Pledge Grove',
+          'Dragonspiral Tower',
+        ],
         '4': [
           {
             'basePokemon': 'Deerling (Autumn)',
@@ -32348,6 +32619,10 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 4,
       'locations': {
+        '2': [
+          'Pledge Grove',
+          'Dragonspiral Tower',
+        ],
         '4': [
           {
             'basePokemon': 'Deerling (Winter)',
@@ -32424,8 +32699,8 @@ module.exports = {
         '0': {
           '4': [
             6,
-            8,
             11,
+            8,
           ],
           '5': [
             14,
@@ -32545,6 +32820,7 @@ module.exports = {
           ],
           '5': [20],
         },
+        '2': ['Pokémon Village'],
         '4': [
           {
             'basePokemon': 'Foongus',
@@ -32591,6 +32867,7 @@ module.exports = {
           '4': [
             4,
             13,
+            24,
             17,
             18,
           ],
@@ -32622,6 +32899,9 @@ module.exports = {
       'attack': 121,
       'nativeRegion': 4,
       'locations': {
+        '0': {
+          '4': [24],
+        },
         '4': [
           {
             'basePokemon': 'Frillish',
@@ -32658,6 +32938,7 @@ module.exports = {
             17,
             18,
           ],
+          '5': [23],
         },
       },
       'catchRatePercent': 25,
@@ -32968,6 +33249,11 @@ module.exports = {
       'attack': 96,
       'nativeRegion': 4,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Seaside Cave',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Tynamo',
@@ -33110,9 +33396,6 @@ module.exports = {
           {
             'dungeon': 'Celestial Tower',
           },
-          {
-            'dungeon': 'Strange House',
-          },
         ],
       },
       'catchRatePercent': 51,
@@ -33133,7 +33416,7 @@ module.exports = {
         {
           'basePokemon': 'Lampent',
           'type': [1],
-          'stone': -1,
+          'stone': 15,
           'evolvedPokemon': 'Chandelure',
         },
       ],
@@ -33186,7 +33469,7 @@ module.exports = {
           {
             'basePokemon': 'Lampent',
             'type': [1],
-            'stone': -1,
+            'stone': 15,
             'evolvedPokemon': 'Chandelure',
           },
         ],
@@ -33438,8 +33721,8 @@ module.exports = {
         '0': {
           '4': [
             6,
-            8,
             11,
+            8,
           ],
           '5': [
             14,
@@ -34088,6 +34371,7 @@ module.exports = {
             'level': 50,
           },
         ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -34146,6 +34430,7 @@ module.exports = {
           'level': 59,
         },
       ],
+      'baby': true,
       'base': {
         'hitpoints': 55,
         'attack': 85,
@@ -34156,7 +34441,9 @@ module.exports = {
       },
       'attack': 68,
       'nativeRegion': 4,
-      'locations': {},
+      'locations': {
+        '6': ['Volcarona'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1600,
     },
@@ -35487,7 +35774,7 @@ module.exports = {
         {
           'basePokemon': 'Floette',
           'type': [1],
-          'stone': -1,
+          'stone': 16,
           'evolvedPokemon': 'Florges',
         },
       ],
@@ -35537,7 +35824,7 @@ module.exports = {
           {
             'basePokemon': 'Floette',
             'type': [1],
-            'stone': -1,
+            'stone': 16,
             'evolvedPokemon': 'Florges',
           },
         ],
@@ -35822,7 +36109,7 @@ module.exports = {
         {
           'basePokemon': 'Doublade',
           'type': [1],
-          'stone': -1,
+          'stone': 15,
           'evolvedPokemon': 'Aegislash',
         },
       ],
@@ -35875,7 +36162,7 @@ module.exports = {
           {
             'basePokemon': 'Doublade',
             'type': [1],
-            'stone': -1,
+            'stone': 15,
             'evolvedPokemon': 'Aegislash',
           },
         ],
@@ -36044,7 +36331,10 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '5': [8],
+          '5': [
+            8,
+            23,
+          ],
         },
         '3': [
           {
@@ -36120,7 +36410,10 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '5': [12],
+          '5': [
+            12,
+            23,
+          ],
         },
       },
       'catchRatePercent': 36,
@@ -38559,9 +38852,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Steenee',
-          'type': [1],
-          'stone': -1,
+          'type': [0],
           'evolvedPokemon': 'Tsareena',
+          'level': 28,
         },
       ],
       'base': {
@@ -38609,9 +38902,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Steenee',
-            'type': [1],
-            'stone': -1,
+            'type': [0],
             'evolvedPokemon': 'Tsareena',
+            'level': 28,
           },
         ],
       },
@@ -42695,6 +42988,8 @@ module.exports = {
     'ACHIEVEMENT_TICK': 1000,
     'MIN_LOAD_TIME': 500,
     'MAX_LOAD_TIME': 20000,
+    'MUTATION_TICK': 1000,
+    'WANDER_TICK': 1500,
     'MAX_AVAILABLE_REGION': 3,
     'TotalPokemonsPerRegion': [
       151,
@@ -42711,6 +43006,7 @@ module.exports = {
     'MINUTE': 60000,
     'HOUR': 3600000,
     'DAY': 86400000,
+    'WEEK': 604800000,
     'ROAMING_MIN_CHANCE': 8192,
     'ROAMING_MAX_CHANCE': 4096,
     'SHINY_CHANCE_BATTLE': 8192,
@@ -42719,6 +43015,7 @@ module.exports = {
     'SHINY_CHANCE_STONE': 2048,
     'SHINY_CHANCE_SAFARI': 2048,
     'SHINY_CHANCE_BREEDING': 1024,
+    'SHINY_CHANCE_FARM': 2048,
     'ITEM_PRICE_MULTIPLIER': 1.00045,
     'ITEM_PRICE_DEDUCT': 1.0005,
     'PLATE_VALUE': 100,
@@ -42732,6 +43029,22 @@ module.exports = {
       0.96,
       0.98,
       1,
+    ],
+    'MULCH_USE_TIME': 300,
+    'BOOST_MULCH_MULTIPLIER': 1.5,
+    'RICH_MULCH_MULTIPLIER': 2,
+    'SURPRISE_MULCH_MULTIPLIER': 1.5,
+    'AMAZE_MULCH_GROWTH_MULTIPLIER': 1.25,
+    'AMAZE_MULCH_PRODUCE_MULTIPLIER': 1.5,
+    'AMAZE_MULCH_MUTATE_MULTIPLIER': 1.25,
+    'WANDER_RATE': 0.00001,
+    'BerryColor': [
+      '#EE8130',
+      '#A33EA1',
+      '#D685AD',
+      '#7AC74C',
+      '#F7D02C',
+      '#6390F0',
     ],
     'DUNGEON_SIZE': 5,
     'DUNGEON_CHEST_SHOW': 2,
@@ -42780,13 +43093,13 @@ module.exports = {
       24,
     ],
     'SAFARI_OUT_OF_BALLS': 'Game Over!<br>You have run out of safari balls to use.',
+    'GAIN_MONEY_BASE_REWARD': 0.0017,
+    'HATCH_EGGS_BASE_REWARD': 33,
+    'SHINY_BASE_REWARD': 3000,
     'DEFEAT_POKEMONS_BASE_REWARD': 1,
     'CAPTURE_POKEMONS_BASE_REWARD': 1.25,
-    'GAIN_MONEY_BASE_REWARD': 0.0017,
     'GAIN_TOKENS_BASE_REWARD': 0.09615384615384616,
-    'HATCH_EGGS_BASE_REWARD': 33,
     'MINE_LAYERS_BASE_REWARD': 720,
-    'SHINY_BASE_REWARD': 3000,
     'USE_OAK_ITEM_BASE_REWARD': 1,
     'ACTIVE_QUEST_MULTIPLIER': 4,
     'QUEST_CLICKS_PER_SECOND': 5,
@@ -42891,24 +43204,6 @@ module.exports = {
       'kalos': 5,
       'alola': 6,
       'galar': 7,
-    },
-    'RegionRoute': {
-      '0': [
-        1,
-        25,
-      ],
-      '1': [
-        26,
-        48,
-      ],
-      '2': [
-        101,
-        134,
-      ],
-      '3': [
-        201,
-        230,
-      ],
     },
     'TypeColor': [
       '#A8A77A',
@@ -43077,7 +43372,8 @@ module.exports = {
       '9': 'Burmy (plant)',
       '10': 'Spiritomb',
       '11': 'Cherubi',
-      '12': 'Meloetta (pirouette)',
+      '12': 'Zorua',
+      '13': 'Meloetta (pirouette)',
       'Eevee': 0,
       'Porygon': 1,
       'Jynx': 2,
@@ -43090,7 +43386,8 @@ module.exports = {
       'Burmy (plant)': 9,
       'Spiritomb': 10,
       'Cherubi': 11,
-      'Meloetta (pirouette)': 12,
+      'Zorua': 12,
+      'Meloetta (pirouette)': 13,
     },
     'PokeBlockColor': {
       '0': 'Black',
@@ -43425,19 +43722,15 @@ module.exports = {
     'UnovaDungeons': [
       'Pledge Grove',
       'Floccesy Ranch',
-      'Virbank Complex',
       'Liberty Garden',
       'Castelia Sewers',
       'Relic Passage',
-      'Desert Resort',
       'Relic Castle',
       'Lostlorn Forest',
       'Chargestone Cave',
       'Mistralton Cave',
       'Celestial Tower',
       'Reversal Mountain',
-      'Strange House',
-      'Undella Bay',
       'Seaside Cave',
       'Giant Chasm',
       'Abundant Shrine',
@@ -43447,7 +43740,6 @@ module.exports = {
       'Dragonspiral Tower',
       'Moor of Icirrus',
       'Pinwheel Forest',
-      'Wellspring Cave',
       'Dreamyard',
       'P2 Laboratory',
     ],
@@ -43534,19 +43826,15 @@ module.exports = {
       [
         'Pledge Grove',
         'Floccesy Ranch',
-        'Virbank Complex',
         'Liberty Garden',
         'Castelia Sewers',
         'Relic Passage',
-        'Desert Resort',
         'Relic Castle',
         'Lostlorn Forest',
         'Chargestone Cave',
         'Mistralton Cave',
         'Celestial Tower',
         'Reversal Mountain',
-        'Strange House',
-        'Undella Bay',
         'Seaside Cave',
         'Giant Chasm',
         'Abundant Shrine',
@@ -43556,7 +43844,6 @@ module.exports = {
         'Dragonspiral Tower',
         'Moor of Icirrus',
         'Pinwheel Forest',
-        'Wellspring Cave',
         'Dreamyard',
         'P2 Laboratory',
       ],
