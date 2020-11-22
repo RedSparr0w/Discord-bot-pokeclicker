@@ -4,9 +4,19 @@ const fs = require('fs');
 const { website } = require('./config.json');
 
 (async () => {
+
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
+  console.log(`navigate to ${website}\nwaiting for webpage to load..`);
+
   await page.goto(website);
+
+  console.log('webpage loaded!\nwaiting for data to load..');
+
+  await page.waitForFunction(() => App.game &&  App.game.update && App.game.update.version);
+
+  console.log('data loaded!\nupdating data..');
 
   const result = await page.evaluate(() => {
     SpecialEvents.events.forEach(event => {
@@ -76,6 +86,7 @@ const { website } = require('./config.json');
   // Save the data
   await fs.writeFileSync('./helpers/pokeclicker.js', output);
 
+  console.log('data updated!');
   console.log({ fileSise: output.length, errorCount: report.errorCount, warningCount: report.warningCount });
 
   await browser.close();
