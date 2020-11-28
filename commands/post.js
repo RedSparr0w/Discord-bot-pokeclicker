@@ -1,4 +1,4 @@
-const { error } = require('../helpers.js');
+const { warn, error } = require('../helpers.js');
 
 module.exports = {
   name        : 'post',
@@ -27,7 +27,7 @@ module.exports = {
       try {
         message = await channel.messages.fetch(message_id);
       } catch(err) {
-        error('Could not find message by ID', err);
+        warn('Could not find message by ID', err);
         return msg.reply('Specified message id not found..')
           .then(m => {
             setTimeout(()=>{
