@@ -1,5 +1,5 @@
 const sqlite = require('sqlite');
-const { backupChannelID } = require('./config.json');
+const { backupChannelID } = require('./config.js');
 const { MessageAttachment } = require('discord.js');
 const { warn } = require('./helpers/logging.js');
 

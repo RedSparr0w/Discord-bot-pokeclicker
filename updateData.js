@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const { website } = require('./config.json');
+const { website } = require('./config.js');
 
 (async () => {
 

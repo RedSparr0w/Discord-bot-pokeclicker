@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { betRegex, validBet, calcBetAmount } = require('../helpers.js');
-const { website } = require('../config.json');
+const { website } = require('../config.js');
 
 const coinSides = {
   heads: 1,

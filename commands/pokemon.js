@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
-const { website } = require('../config.json');
+const { website } = require('../config.js');
 const {
   pokemonList,
   LevelType,

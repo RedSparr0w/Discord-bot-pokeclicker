@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand } = require('../helpers.js');
-const { website } = require('../config.json');
+const { website } = require('../config.js');
 const discordShopItems = [
   {
     name: '<@&751979566280605728> Role',
