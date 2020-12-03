@@ -7,7 +7,7 @@ const discordShopItems = [
     name: '<@&751979566280605728> Role',
     image: '',
     price: 2500,
-    description: 'Get the <@&751979566280605728> role on this Discord server',
+    description: 'Get the <@&751979566280605728> role on this Discord server\n_+20% to claim bonuses_',
     claimFunction: async (guild, member) => {
       const role = guild.roles.cache.find(role => role.name == 'Poké Squad');
       if (!role) return false;

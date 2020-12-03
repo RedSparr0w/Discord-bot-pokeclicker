@@ -1,10 +1,12 @@
 const { MessageEmbed } = require('discord.js');
 const { addAmount } = require('../database.js');
+const { bonusRoles } = require('../config.js');
 const {
   getLastClaim,
   updateClaimDate,
   bumpClaimStreak,
   resetClaimStreak,
+  warn,
 } = require('../helpers.js');
 
 const SECOND = 1000;
@@ -12,8 +14,17 @@ const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
+const money_icon = '<:money:737206931759824918>';
+const timelyAmount = 10;
+
 // maximum of 10, 1 extra per streak
-const calcStreakBonus = (streak) => Math.max(0, Math.min(10, streak));
+const calcStreakBonus = (streak) => {
+  const bigStreak = Math.max(0, Math.min(10, streak));
+  streak -= bigStreak;
+  const midStreak = Math.max(0, Math.min(50, streak));
+  streak -= midStreak;
+  return bigStreak + Math.floor(midStreak * 0.2) + Math.floor(streak * 0.05);
+};
 
 module.exports = {
   name        : 'timely',
@@ -50,14 +61,48 @@ module.exports = {
       streak = 0;
     }
 
-    // Add the coins to the users balance, set last claimed time
-    const timelyAmount = 10 + calcStreakBonus(streak);
-    // Add the balance then set last claim time (incase the user doesn't exist yet)
-    const balance = await addAmount(msg.author, timelyAmount, 'coins');
+    // Calculate bonuses
+    const streakBonus = calcStreakBonus(streak);
+    let totalAmount = timelyAmount + streakBonus;
+    const roleBonuses = [];
+    try {
+      msg.member.roles.cache.map(r => r.id).forEach(roleID => {
+        const bonus = bonusRoles[roleID];
+        if (bonus) {
+          roleBonuses.push([roleID, Math.floor(totalAmount * bonus)]);
+        }
+      });
+    } catch (e) {
+      warn('something went wrong calculating role claim bonuses', e);
+    }
+    totalAmount += roleBonuses.reduce((a, [r, b]) => a + b, 0);
+
+    // Add the coins to the users balance then set last claim time (incase the user doesn't exist yet)
+    const balance = await addAmount(msg.author, totalAmount, 'coins');
     await updateClaimDate(msg.author, 'timely_claim');
     await bumpClaimStreak(msg.author, 'timely_claim');
+
+    const message = [
+      msg.author,
+      `_Timely Claim:_ **+${timelyAmount.toLocaleString('en-US')}** ${money_icon}`,
+    ];
+
+    if (streakBonus) {
+      message.push(`_Streak Bonus:_ **+${streakBonus.toLocaleString('en-US')}** ${money_icon} `);
+    }
+
+    roleBonuses.forEach(([r, b]) => {
+      message.push(`_<@&${r}>:_ **+${b.toLocaleString('en-US')}** ${money_icon}`);
+    });
+
+    message.push(
+      '',
+      `Current Balance: **${balance.toLocaleString('en-US')}** ${money_icon}`,
+      `Current Streak: **${streak + 1}**`
+    );
+
     return msg.channel.send({
-      embed: new MessageEmbed().setColor('#2ecc71').setDescription(`${msg.author}\n**+${timelyAmount.toLocaleString('en-US')}** <:money:737206931759824918>\n\nCurrent Balance: **${balance.toLocaleString('en-US')}** <:money:737206931759824918>\nCurrent Streak: **${streak + 1}**`),
+      embed: new MessageEmbed().setColor('#2ecc71').setDescription(message),
     });
   },
 };

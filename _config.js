@@ -6,4 +6,8 @@ module.exports = {
   backupChannelID: 'DISCORD_BACKUP_CHANNEL_ID (optional)',
   mutedRoleID: '758167963294629898',
   externalScriptsRoleID: '761015248856809493',
+  bonusRoles: {
+    '736262806306947215': 0.5, // Server Booster
+    '751979566280605728': 0.2, // Poké Squad
+  },
 };
