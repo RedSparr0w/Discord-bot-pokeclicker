@@ -25,6 +25,8 @@ const calcStreakBonus = (streak) => {
   return (bigStreak * 10) + (midStreak * 5) + streak;
 };
 
+const s = (amt) => amt != 1 ? 's' : '';
+
 module.exports = {
   name        : 'claim',
   aliases     : ['daily'],
@@ -46,9 +48,9 @@ module.exports = {
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
       let timeRemaining = '';
-      if (+hours) timeRemaining += `${hours} hours `;
-      if (+hours || +minutes) timeRemaining += `${minutes} minutes `;
-      timeRemaining += `${seconds} seconds`;
+      if (+hours) timeRemaining += `${hours} hour${s(hours)} `;
+      if (+hours || +minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
+      timeRemaining += `${seconds} second${s(seconds)}`;
       return msg.channel.send({
         embed: new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nYou've already claimed your ${money_icon} for today\nYou can claim again in ${timeRemaining}`),
       });

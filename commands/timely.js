@@ -17,7 +17,6 @@ const DAY = HOUR * 24;
 const money_icon = '<:money:737206931759824918>';
 const timelyAmount = 10;
 
-// maximum of 10, 1 extra per streak
 const calcStreakBonus = (streak) => {
   const bigStreak = Math.max(0, Math.min(10, streak));
   streak -= bigStreak;
@@ -25,6 +24,8 @@ const calcStreakBonus = (streak) => {
   streak -= midStreak;
   return bigStreak + Math.floor(midStreak * 0.2) + Math.floor(streak * 0.05);
 };
+
+const s = (amt) => amt != 1 ? 's' : '';
 
 module.exports = {
   name        : 'timely',
@@ -47,9 +48,9 @@ module.exports = {
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
       let timeRemaining = '';
-      if (+hours) timeRemaining += `${hours} hours `;
-      if (+hours || +minutes) timeRemaining += `${minutes} minutes `;
-      timeRemaining += `${seconds} seconds`;
+      if (+hours) timeRemaining += `${hours} hour${s(hours)} `;
+      if (+hours || +minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
+      timeRemaining += `${seconds} second${s(seconds)}`;
       return msg.channel.send({
         embed: new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nYou've already claimed your <:money:737206931759824918> too recently\nYou can claim again in ${timeRemaining}`),
       });
