@@ -44,7 +44,7 @@ module.exports = {
       },
       { // Discord tag
         // eslint-disable-next-line no-control-regex
-        src: text2png((msg.member.displayName).replace(/[^\x00-\x7F]/g, '').trim().substr(0, 33).toUpperCase(), {
+        src: text2png((msg.member.displayName).replace(/[^\x00-\x7F]/g, '').trim().substr(0, 33).toUpperCase() || 'TRAINER UNKNOWN', {
           font: '16px "pokemon_fire_red"',
           localFontPath: './assets/fonts/pokemon_fire_red.ttf',
           localFontName: 'pokemon_fire_red',
