@@ -174,7 +174,7 @@ module.exports = {
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount: \`${bet}\``);
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount.`);
       return msg.channel.send({ embed });
     }
 
