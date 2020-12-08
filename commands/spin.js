@@ -38,23 +38,23 @@ module.exports = {
 
     const multiplier = getMultiplier();
     const arrow = getArrow(multiplier);
-    const winnings = Math.floor(bet * multiplier);
+    const winnings = Math.floor(bet * multiplier) - bet;
 
     const output = [
       msg.author,
-      `**Winnings: ${winnings.toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
       '',
       `\`${multipliers.slice(0, 3).map(i => `[${i}]`).join('')}\``,
       `\`[${multipliers[3]}]\` ${arrow} \`[${multipliers[4]}]\``,
       `\`${multipliers.slice(5, 8).map(i => `[${i}]`).join('')}\``,
     ].join('\n');
 
-    addAmount(msg.author, winnings - bet);
+    addAmount(msg.author, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier > 1 ? '#2ecc71' : '#e74c3c')
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings - bet).toLocaleString('en-US')}`);
+      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
     return msg.channel.send({ embed });
   },
 };

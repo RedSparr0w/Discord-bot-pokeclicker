@@ -66,21 +66,21 @@ module.exports = {
 
     // Calculate winnings
     const multiplier = winMultiplier(type, botType);
-    const winnings = Math.floor(bet * multiplier);
+    const winnings = Math.floor(bet * multiplier) - bet;
 
     const output = [
       msg.author,
       `__**${multiplier == 0 ? 'LOSE' : multiplier == 1 ? 'TIE' : 'WIN'}**__`,
       `${typeIcons[type]} _vs_ ${typeIcons[botType]}`,
-      `**Winnings: ${winnings.toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
     ].join('\n');
 
-    addAmount(msg.author, winnings - bet);
+    addAmount(msg.author, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier == 0 ? '#e74c3c' : multiplier == 1 ? '#3498db' : '#2ecc71')
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings - bet).toLocaleString('en-US')}`);
+      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
 
     return msg.channel.send({ embed });
 

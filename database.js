@@ -2,6 +2,10 @@ const sqlite = require('sqlite');
 const { backupChannelID } = require('./config.js');
 const { MessageAttachment } = require('discord.js');
 const { warn } = require('./helpers/logging.js');
+const { version: botVersion } = require('./package.json');
+
+// current version, possibly older version
+const isOlderVersion = (version, compareVersion) => compareVersion.localeCompare(version, undefined, { numeric: true }) === 1;
 
 const database_dir = './db/';
 const database_filename = 'database.sqlite';
@@ -14,15 +18,41 @@ async function getDB(){
 async function setupDB(){
   const db = await getDB();
   await Promise.all([
+    // Keep track of any application data we need
+    db.run('CREATE TABLE IF NOT EXISTS application(name TEXT(1024) UNIQUE ON CONFLICT IGNORE NOT NULL, value TEXT(1024) NOT NULL, PRIMARY KEY (name))'),
+    // User data
     db.run('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)'),
     db.run('CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default \'0\', trainer INT(3) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+    db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', badge TEXT(1024) NOT NULL default \'\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+    // User Statistics
+    db.run('CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
+    db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
   ]);
+
   db.close();
+  await updateDB();
   return;
+}
+
+async function updateDB(){
+  const db = await getDB();
+  let version = await db.get('SELECT * FROM application WHERE name=?', 'version');
+
+  // Will only update the version if it doesn't already exist
+  await db.run('INSERT INTO application (name, value) values (?, ?)', 'version', botVersion);
+
+  if (isOlderVersion(version, '1.1.0')) {
+    version = '1.1.0';
+    await db.run('ALTER TABLE purchased ADD badge TEXT(1024) NOT NULL default \'\'');
+    await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', version);
+  }
+  
+  await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', botVersion);
+
+  db.close();
 }
 
 async function backupDB(guild){
@@ -75,6 +105,11 @@ async function getAmount(user, table = 'coins'){
 }
 
 async function addAmount(user, amount = 1, table = 'coins'){
+  // If user won 5k coins or more, give them the Rainbow Badge
+  if (amount >= 5e3) {
+    addPurchased(user, 'badge', 3);
+  }
+
   // Check amount is valid
   amount = +amount;
   if (isNaN(amount)) return;
@@ -87,6 +122,11 @@ async function addAmount(user, amount = 1, table = 'coins'){
     getDB(),
     getUserID(user),
   ]);
+
+  // If user has more than 25k coins, give them the Soul Badge
+  if (amount >= 25e3) {
+    addPurchased(user, 'badge', 5);
+  }
 
   const data = {
     $user_id: user_id,

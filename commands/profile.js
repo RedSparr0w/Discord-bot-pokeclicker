@@ -1,6 +1,6 @@
 const { MessageAttachment, MessageEmbed } = require('discord.js');
-const { getAmount, getRank, getTrainerCard } = require('../database.js');
-const { trainerCardColors, getLastClaim } = require('../helpers.js');
+const { getAmount, getRank, getTrainerCard, getPurchased } = require('../database.js');
+const { trainerCardColors, trainerCardBadges, getLastClaim } = require('../helpers.js');
 const { Canvas, Image } = require('canvas');
 const mergeImages = require('merge-images');
 const text2png = require('text2png');
@@ -35,6 +35,7 @@ module.exports = {
     const balance = await getAmount(user);
     const rank = await getRank(user);
     const trainerCard = await getTrainerCard(user);
+    const badges = await getPurchased(user, 'badge');
     const { streak: daily_streak } = await getLastClaim(user, 'daily_claim');
     const { streak: timely_streak } = await getLastClaim(user, 'timely_claim');
 
@@ -127,6 +128,7 @@ module.exports = {
         right: 85,
         top: 93,
       },
+      ...badges.map((b, i) => b ? trainerCardBadges[i] : b).filter(b => b),
     ], {
       Canvas,
       Image,

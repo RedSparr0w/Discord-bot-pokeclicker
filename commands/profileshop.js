@@ -100,6 +100,9 @@ module.exports = {
           remainingBalance = currentBalance;
         }
 
+        // If user updated their profile, give them the Boulder Badge
+        await addPurchased(msg.author, 'badge', 0);
+
         await setTrainerCard(msg.author, itemType, itemIndex);
 
         embed.setColor('#2ecc71')

@@ -67,21 +67,21 @@ module.exports = {
     const win = coinSide == side;
 
     // Calculate winnings
-    const winnings = Math.floor((bet + bet) * win);
+    const winnings = Math.floor((bet + bet) * win) - bet;
 
     const output = [
       msg.author,
       `**${(win ? 'WIN' : 'LOSE')}** - ${(coinSide ? 'HEADS' : 'TAILS')}`,
-      `**Winnings: ${winnings.toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
     ].join('\n');
 
-    addAmount(msg.author, winnings - bet);
+    addAmount(msg.author, winnings);
 
     const embed = new MessageEmbed()
       .setColor(win ? '#2ecc71' : '#e74c3c')
       .setThumbnail(coinImage[coinSide])
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings - bet).toLocaleString('en-US')}`);
+      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
 
     return msg.channel.send({ embed });
   },
