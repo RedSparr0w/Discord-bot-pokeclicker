@@ -28,6 +28,30 @@ for (const file of commandFiles) {
 
 const cooldowns = new Discord.Collection();
 
+const cooldownTimeLeft = (type, seconds, userID) => {
+  // Apply command cooldowns
+  if (!cooldowns.has(type)) {
+    cooldowns.set(type, new Discord.Collection());
+  }
+
+  const now = Date.now();
+  const timestamps = cooldowns.get(type);
+  const cooldownAmount = (seconds || 3) * 1000;
+
+  if (timestamps.has(userID)) {
+    const expirationTime = timestamps.get(userID) + cooldownAmount;
+
+    if (now < expirationTime) {
+      const timeLeft = (expirationTime - now) / 1000;
+      return timeLeft;
+    }
+  }
+
+  timestamps.set(userID, now);
+  setTimeout(() => timestamps.delete(userID), cooldownAmount);
+  return 0;
+};
+
 client.once('ready', async() => {
   info(`Logged in as ${client.user.tag}!`);
   log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot`);
@@ -113,25 +137,10 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     // Apply command cooldowns
-    if (!cooldowns.has(command.name)) {
-      cooldowns.set(command.name, new Discord.Collection());
+    const timeLeft = cooldownTimeLeft(command.name, command.cooldown, message.author.id);
+    if (timeLeft > 0) {
+      return message.reply(`Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`);
     }
-
-    const now = Date.now();
-    const timestamps = cooldowns.get(command.name);
-    const cooldownAmount = (command.cooldown || 3) * 1000;
-
-    if (timestamps.has(message.author.id)) {
-      const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
-
-      if (now < expirationTime) {
-        const timeLeft = (expirationTime - now) / 1000;
-        return message.reply(`Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`);
-      }
-    }
-
-    timestamps.set(message.author.id, now);
-    setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
     // Run the command
     try {
