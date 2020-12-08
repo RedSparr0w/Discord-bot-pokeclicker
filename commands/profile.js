@@ -1,4 +1,4 @@
-const { MessageAttachment } = require('discord.js');
+const { MessageAttachment, MessageEmbed } = require('discord.js');
 const { getAmount, getRank, getTrainerCard } = require('../database.js');
 const { trainerCardColors, getLastClaim } = require('../helpers.js');
 const { Canvas, Image } = require('canvas');
@@ -12,17 +12,31 @@ module.exports = {
   name        : 'profile',
   aliases     : ['trainercard', 'tc'],
   description : 'Get an image of your trainer badge',
-  args        : [],
+  args        : ['id?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-    const balance = await getAmount(msg.author);
-    const rank = await getRank(msg.author);
-    const trainerCard = await getTrainerCard(msg.author);
-    const { streak: daily_streak } = await getLastClaim(msg.author, 'daily_claim');
-    const { streak: timely_streak } = await getLastClaim(msg.author, 'timely_claim');
+    const [id] = args;
+
+    let member = msg.member;
+    let user = msg.author;
+
+    if (id) {
+      member = await msg.guild.members.fetch(id).catch(e => {});
+      if (!member) {
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid user ID specified.`);
+        return msg.channel.send({ embed });
+      }
+      user = member.user;
+    }
+
+    const balance = await getAmount(user);
+    const rank = await getRank(user);
+    const trainerCard = await getTrainerCard(user);
+    const { streak: daily_streak } = await getLastClaim(user, 'daily_claim');
+    const { streak: timely_streak } = await getLastClaim(user, 'timely_claim');
 
     mergeImages([
       // Base image
@@ -44,7 +58,7 @@ module.exports = {
       },
       { // Discord tag
         // eslint-disable-next-line no-control-regex
-        src: text2png((msg.member.displayName).replace(/[^\x00-\x7F]/g, '').trim().substr(0, 33).toUpperCase() || 'TRAINER UNKNOWN', {
+        src: text2png((member.displayName).replace(/[^\x00-\x7F]/g, '').trim().substr(0, 33).toUpperCase() || 'TRAINER UNKNOWN', {
           font: '16px "pokemon_fire_red"',
           localFontPath: './assets/fonts/pokemon_fire_red.ttf',
           localFontName: 'pokemon_fire_red',
