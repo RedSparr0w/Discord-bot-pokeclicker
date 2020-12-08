@@ -48,7 +48,7 @@ const trainerCardBadges = [
   },
   {
     name: 'Marsh',
-    description: 'Play in the games corner 1000 times',
+    description: 'Play in the games corner 1,000 times',
     icon: '<:marsh_badge:785737862280249364>',
     // card stuff
     src: './assets/images/badges/4.png',
