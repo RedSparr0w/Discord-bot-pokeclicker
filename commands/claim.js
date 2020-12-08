@@ -85,7 +85,7 @@ module.exports = {
 
     const message = [
       msg.author,
-      `_Timely Claim:_ **+${claimAmount.toLocaleString('en-US')}** ${money_icon}`,
+      `_Daily Claim:_ **+${claimAmount.toLocaleString('en-US')}** ${money_icon}`,
     ];
 
     if (streakBonus) {
