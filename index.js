@@ -158,7 +158,7 @@ client.on('error', e => error('Client error thrown:', e))
       await command.execute(message, args, commandName);
       addStatistic(message.author, `!${command.name}`);
       const commandsSent = await addStatistic(message.author, 'commands');
-      if (commandsSent >= 500) {
+      if (commandsSent >= 1000) {
         addPurchased(message.author, 'badge', 1);
       }
     } catch (err) {
