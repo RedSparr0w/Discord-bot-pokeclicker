@@ -42,7 +42,12 @@ async function updateDB(){
   let version = await db.get('SELECT * FROM application WHERE name=?', 'version');
 
   // Will only update the version if it doesn't already exist
-  await db.run('INSERT INTO application (name, value) values (?, ?)', 'version', botVersion);
+  if (!version || !version.value) {
+    await db.run('INSERT INTO application (name, value) values (?, ?)', 'version', botVersion);
+    version = botVersion;
+  } else {
+    version = version.value;
+  }
 
   if (isOlderVersion(version, '1.1.0')) {
     version = '1.1.0';
