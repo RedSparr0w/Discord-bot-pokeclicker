@@ -32,8 +32,8 @@ module.exports = {
   args        : ['amount', 'type(f|w|g)'],
   guildOnly   : true,
   cooldown    : 0.5,
-  botperms    : ['SEND_MESSAGES'],
-  userperms   : ['MANAGE_CHANNELS', 'MANAGE_MESSAGES'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  userperms   : ['SEND_MESSAGES'],
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (msg, args) => {
     let bet = args.find(a => betRegex.test(a));
