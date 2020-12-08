@@ -21,7 +21,7 @@ const trainerCardBadges = [
   },
   {
     name: 'Cascade',
-    description: '-',
+    description: 'Use the bot commands',
     icon: '<:cascade_badge:785737862166872064>',
     // card stuff
     src: './assets/images/badges/1.png',
@@ -30,7 +30,7 @@ const trainerCardBadges = [
   },
   {
     name: 'Thunder',
-    description: '-',
+    description: 'Be active in the server',
     icon: '<:thunder_badge:785737862146555925>',
     // card stuff
     src: './assets/images/badges/2.png',

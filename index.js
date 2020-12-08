@@ -13,6 +13,7 @@ const {
 const {
   setupDB,
   backupDB,
+  addPurchased,
   addStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
@@ -77,7 +78,10 @@ client.on('error', e => error('Client error thrown:', e))
     if (!message.content.startsWith(prefix)) {
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {
-        addStatistic(message.author, 'messages');
+        const messagesSent = await addStatistic(message.author, 'messages');
+        if (messagesSent >= 2500) {
+          addPurchased(message.author, 'badge', 2);
+        }
       }
 
       try {
@@ -152,8 +156,11 @@ client.on('error', e => error('Client error thrown:', e))
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
       await command.execute(message, args, commandName);
-      addStatistic(message.author, 'commands');
       addStatistic(message.author, `!${command.name}`);
+      const commandsSent = await addStatistic(message.author, 'commands');
+      if (commandsSent >= 500) {
+        addPurchased(message.author, 'badge', 1);
+      }
     } catch (err) {
       error(`Error executing command "${message.content}":\n`, err);
       message.reply('There was an error trying to execute that command!');
