@@ -1,3 +1,5 @@
+const { MessageEmbed } = require('discord.js');
+
 module.exports = {
   name        : 'command',
   aliases     : [],
@@ -13,6 +15,7 @@ module.exports = {
   // `MANAGE_GUILD` permission, set it to `[]`
   channels    : ['bot-commands'],
   execute     : async (msg, args) => {
-    return
+    const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nMessage here.`);
+    return msg.channel.send({ embed });
   },
 };
