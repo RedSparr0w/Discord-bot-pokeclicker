@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
 const { getStatistic } = require('../database.js');
-const {  } = require('../helpers.js');
 
 module.exports = {
   name        : 'statistics',
