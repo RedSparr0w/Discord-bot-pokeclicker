@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
-const { validBet, calcBetAmount } = require('../helpers.js');
+const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 
 const slots = {
   seven: '<:slots_7:751322075578499093>',
@@ -206,6 +206,7 @@ module.exports = {
     ];
 
     addAmount(msg.author, winnings);
+    addBetStatistics(msg.author, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier >= 1 ? '#2ecc71' : '#e74c3c')

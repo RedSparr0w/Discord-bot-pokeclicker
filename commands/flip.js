@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
-const { betRegex, validBet, calcBetAmount } = require('../helpers.js');
+const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { website } = require('../config.js');
 
 const coinSides = {
@@ -76,6 +76,7 @@ module.exports = {
     ].join('\n');
 
     addAmount(msg.author, winnings);
+    addBetStatistics(msg.author, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(win ? '#2ecc71' : '#e74c3c')

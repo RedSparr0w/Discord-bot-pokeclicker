@@ -279,6 +279,72 @@ async function addPurchased(user, type, index){
   return result;
 }
 
+async function getStatisticTypeID(type){
+  const data = {
+    $type: type,
+  };
+
+  const db = await getDB();
+  await db.run('INSERT OR REPLACE INTO statistic_types (id, name) values ((SELECT id FROM statistic_types WHERE name = $type), $type);', data);
+  const { type_id = 0 } = await db.get('SELECT last_insert_rowid() AS type_id;');
+  db.close();
+
+  return type_id;
+}
+
+async function getStatistic(user, type){
+  const [
+    db,
+    user_id,
+    type_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+    getStatisticTypeID(type),
+  ]);
+
+  let result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
+  // If user doesn't exist yet, set them up (with 1000 coins)
+  if (!result) {
+    await db.run('INSERT OR REPLACE INTO statistics (user, type) VALUES (?, ?)', user_id, type_id);
+    // try get the users points again
+    result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
+  }
+  db.close();
+
+  const { value = 0 } = result || {};
+
+  return +value;
+}
+
+async function addStatistic(user, type, amount = 1){
+  // Check amount is valid
+  amount = +amount;
+  if (isNaN(amount)) return;
+  amount += await getStatistic(user, type);
+
+  const [
+    db,
+    user_id,
+    type_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+    getStatisticTypeID(type),
+  ]);
+
+  const data = {
+    $type_id: type_id,
+    $user_id: user_id,
+    $amount: amount,
+  };
+
+  await db.run('UPDATE statistics SET value=$amount WHERE user=$user_id AND type=$type_id', data);
+  db.close();
+
+  return amount;
+}
+
 module.exports = {
   getDB,
   setupDB,
@@ -294,4 +360,7 @@ module.exports = {
   setTrainerCard,
   getPurchased,
   addPurchased,
+  getStatisticTypeID,
+  getStatistic,
+  addStatistic,
 };

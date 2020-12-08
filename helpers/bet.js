@@ -1,3 +1,7 @@
+const {
+  addStatistic,
+} = require('../database.js');
+
 const betRegex = /^(\d+|all|half|quarter|random|\d+e\d{1,2}|\d{1,2}%|100%)$/;
 
 // if it fails the regex check or is less than 0, then it is invalid (NaN isn't <= 0)
@@ -23,8 +27,25 @@ const calcBetAmount = (bet, balance) => {
   }
 };
 
+const addBetStatistics = (user, bet, winnings) => {
+  // Total times gambled
+  addStatistic(user, 'gc_games_played');
+  // Total amount bet
+  addStatistic(user, 'gc_coins_bet', bet);
+  // Total amount won
+  addStatistic(user, 'gc_coins_won', winnings);
+
+  // Total wins
+  if (winnings > 0) addStatistic(user, 'gc_games_won');
+  // Total ties
+  if (winnings == 0) addStatistic(user, 'gc_games_tied');
+  // Total losses
+  if (winnings < 0) addStatistic(user, 'gc_games_lost');
+};
+
 module.exports = {
   betRegex,
   validBet,
   calcBetAmount,
+  addBetStatistics,
 };

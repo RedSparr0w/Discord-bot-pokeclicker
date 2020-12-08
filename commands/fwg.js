@@ -1,4 +1,4 @@
-const { betRegex, validBet, calcBetAmount } = require('../helpers.js');
+const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 
@@ -76,6 +76,7 @@ module.exports = {
     ].join('\n');
 
     addAmount(msg.author, winnings);
+    addBetStatistics(msg.author, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier == 0 ? '#e74c3c' : multiplier == 1 ? '#3498db' : '#2ecc71')

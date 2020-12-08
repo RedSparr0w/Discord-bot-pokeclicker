@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
-const { betRegex, validBet, calcBetAmount } = require('../helpers.js');
+const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 
 const multipliers = [1.5, 1.7, 2.4, 0.2, 1.2, 0.1, 0.3, 0.5];
 const arrows      = ['↖️', '⬆️', '↗️','⬅️','➡️', '↙️', '⬇️', '↘️'];
@@ -50,6 +50,7 @@ module.exports = {
     ].join('\n');
 
     addAmount(msg.author, winnings);
+    addBetStatistics(msg.author, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier > 1 ? '#2ecc71' : '#e74c3c')

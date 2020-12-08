@@ -13,6 +13,7 @@ const {
 const {
   setupDB,
   backupDB,
+  addStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 
@@ -74,6 +75,11 @@ client.on('error', e => error('Client error thrown:', e))
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) {
+      const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
+      if (!timeLeft) {
+        addStatistic(message.author, 'messages');
+      }
+
       try {
         const match = regexMatches.find(match => match.regex.test(message.content));
         if (match) match.execute(message, client);
@@ -146,6 +152,8 @@ client.on('error', e => error('Client error thrown:', e))
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
       await command.execute(message, args, commandName);
+      addStatistic(message.author, 'commands');
+      addStatistic(message.author, `!${command.name}`);
     } catch (err) {
       error(`Error executing command "${message.content}":\n`, err);
       message.reply('There was an error trying to execute that command!');
