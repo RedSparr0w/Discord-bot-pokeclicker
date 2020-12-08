@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.6.7',
+  'gameVersion': '0.6.8',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -63,6 +63,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 1,
@@ -86,6 +87,7 @@ module.exports = {
           'Goldeen',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -110,6 +112,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -134,6 +137,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -169,6 +173,7 @@ module.exports = {
           'Seaking',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -204,6 +209,7 @@ module.exports = {
           'Seaking',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -235,6 +241,7 @@ module.exports = {
           'Kingler',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -261,6 +268,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -293,6 +301,7 @@ module.exports = {
           'Goldeen',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -324,6 +333,7 @@ module.exports = {
           'Horsea',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -352,6 +362,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -390,6 +401,7 @@ module.exports = {
           'Horsea',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -423,6 +435,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -450,6 +463,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -486,6 +500,7 @@ module.exports = {
           'Seadra',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -521,6 +536,7 @@ module.exports = {
           'Seadra',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -562,6 +578,7 @@ module.exports = {
           'Goldeen',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -599,6 +616,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -635,6 +653,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -664,6 +683,7 @@ module.exports = {
           'Shellder',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -705,6 +725,7 @@ module.exports = {
           'Shellder',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -741,6 +762,7 @@ module.exports = {
           'Staryu',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -766,6 +788,7 @@ module.exports = {
           'Staryu',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -807,6 +830,7 @@ module.exports = {
           'Staryu',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -836,6 +860,7 @@ module.exports = {
           'Poliwhirl',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -871,6 +896,7 @@ module.exports = {
           'Hoothoot',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -897,6 +923,7 @@ module.exports = {
           'Aipom',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -937,6 +964,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -982,6 +1010,7 @@ module.exports = {
           'Pineco',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1019,6 +1048,7 @@ module.exports = {
           'Hoothoot',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1047,6 +1077,7 @@ module.exports = {
           'Aipom',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1084,6 +1115,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1122,6 +1154,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1156,6 +1189,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1189,6 +1223,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1223,6 +1258,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1256,6 +1292,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1283,6 +1320,7 @@ module.exports = {
           'Kingler',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1314,6 +1352,7 @@ module.exports = {
           'Shellder',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1347,6 +1386,7 @@ module.exports = {
           'Aipom',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1380,6 +1420,7 @@ module.exports = {
           'Hoothoot',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1413,6 +1454,7 @@ module.exports = {
           'Aipom',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1451,6 +1493,7 @@ module.exports = {
           'Aipom',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1497,6 +1540,7 @@ module.exports = {
           'Pineco',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1531,6 +1575,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1571,6 +1616,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1610,6 +1656,7 @@ module.exports = {
           'Spinarak',
           'Pineco',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1647,6 +1694,7 @@ module.exports = {
           'Aipom',
           'Heracross',
         ],
+        'special': [],
       },
       'requirements': [
         {
@@ -1669,6 +1717,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1698,6 +1747,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1730,6 +1780,7 @@ module.exports = {
           'Corphish',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1759,6 +1810,7 @@ module.exports = {
           'Magikarp',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1785,6 +1837,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1816,6 +1869,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1852,6 +1906,7 @@ module.exports = {
           'Corphish',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1881,6 +1936,7 @@ module.exports = {
           'Barboach',
         ],
         'headbutt': ['Geodude'],
+        'special': [],
       },
       'requirements': [
         {
@@ -1902,6 +1958,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1925,6 +1982,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -1956,6 +2014,7 @@ module.exports = {
           'Barboach',
         ],
         'headbutt': ['Geodude'],
+        'special': [],
       },
       'requirements': [
         {
@@ -1987,6 +2046,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2011,6 +2071,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2035,6 +2096,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2070,6 +2132,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2105,6 +2168,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2140,6 +2204,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2170,6 +2235,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2191,10 +2257,6 @@ module.exports = {
           'Oddish',
           'Tropius',
           'Kecleon',
-          'Castform',
-          'Castform (sunny)',
-          'Castform (rainy)',
-          'Castform (snowy)',
         ],
         'water': [
           'Tentacool',
@@ -2204,6 +2266,61 @@ module.exports = {
           'Carvanha',
         ],
         'headbutt': [],
+        'special': [
+          {
+            'pokemon': 'Castform',
+            'req': [
+              {
+                'requiredValue': 1,
+                'type': 1,
+                'weather': [
+                  0,
+                  1,
+                  8,
+                  10,
+                ],
+              },
+            ],
+          },
+          {
+            'pokemon': 'Castform (sunny)',
+            'req': [
+              {
+                'requiredValue': 1,
+                'type': 1,
+                'weather': [7],
+              },
+            ],
+          },
+          {
+            'pokemon': 'Castform (rainy)',
+            'req': [
+              {
+                'requiredValue': 1,
+                'type': 1,
+                'weather': [
+                  2,
+                  3,
+                ],
+              },
+            ],
+          },
+          {
+            'pokemon': 'Castform (snowy)',
+            'req': [
+              {
+                'requiredValue': 1,
+                'type': 1,
+                'weather': [
+                  4,
+                  6,
+                  5,
+                  9,
+                ],
+              },
+            ],
+          },
+        ],
       },
       'requirements': [
         {
@@ -2237,6 +2354,7 @@ module.exports = {
           'Barboach',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2270,6 +2388,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2296,6 +2415,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2334,6 +2454,7 @@ module.exports = {
           'Wailmer',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2362,6 +2483,7 @@ module.exports = {
           'Relicanth',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2387,6 +2509,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2415,6 +2538,7 @@ module.exports = {
           'Relicanth',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2441,6 +2565,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2478,6 +2603,7 @@ module.exports = {
           'Corsola',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2505,6 +2631,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2531,6 +2658,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2557,6 +2685,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2584,6 +2713,7 @@ module.exports = {
           'Horsea',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2611,6 +2741,7 @@ module.exports = {
           'Horsea',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2638,6 +2769,7 @@ module.exports = {
           'Horsea',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2661,6 +2793,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2684,6 +2817,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2717,6 +2851,7 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2751,6 +2886,7 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2798,6 +2934,7 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2832,6 +2969,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2862,6 +3000,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2899,6 +3038,7 @@ module.exports = {
           'Seaking',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2942,6 +3082,7 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -2990,6 +3131,7 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3019,6 +3161,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3057,6 +3200,7 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3090,6 +3234,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3126,6 +3271,7 @@ module.exports = {
           'Seaking',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3163,6 +3309,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3196,6 +3343,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3230,6 +3378,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3265,6 +3414,7 @@ module.exports = {
           'Lumineon',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3299,6 +3449,7 @@ module.exports = {
           'Clamperl',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3334,6 +3485,7 @@ module.exports = {
           'Lanturn',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3372,6 +3524,7 @@ module.exports = {
           'Clamperl',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3412,6 +3565,7 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3446,6 +3600,7 @@ module.exports = {
           'Wailord',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3491,6 +3646,7 @@ module.exports = {
           'Luvdisc',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3533,6 +3689,7 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3579,6 +3736,7 @@ module.exports = {
           'Relicanth',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3616,6 +3774,7 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3649,6 +3808,7 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3693,6 +3853,7 @@ module.exports = {
           'Seaking',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3737,6 +3898,7 @@ module.exports = {
           'Wailord',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3762,6 +3924,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3791,6 +3954,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3816,6 +3980,7 @@ module.exports = {
         ],
         'water': ['Frillish'],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3843,6 +4008,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3877,6 +4043,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3907,6 +4074,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3944,6 +4112,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -3977,6 +4146,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4012,6 +4182,7 @@ module.exports = {
           'Frillish',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4039,6 +4210,7 @@ module.exports = {
           'Ducklett',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4068,6 +4240,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4093,6 +4266,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4125,6 +4299,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4152,6 +4327,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4176,6 +4352,7 @@ module.exports = {
           'Luvdisc',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4206,6 +4383,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4237,6 +4415,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4262,6 +4441,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4303,6 +4483,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4343,6 +4524,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4367,6 +4549,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4394,6 +4577,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4416,6 +4600,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4444,6 +4629,7 @@ module.exports = {
           'Alomomola',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4463,6 +4649,7 @@ module.exports = {
         'land': ['Rattata'],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4485,6 +4672,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4510,6 +4698,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4534,6 +4723,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4558,6 +4748,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4583,6 +4774,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4610,6 +4802,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4636,6 +4829,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4658,6 +4852,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4685,6 +4880,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4711,6 +4907,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4744,6 +4941,7 @@ module.exports = {
           'Binacle',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4777,6 +4975,7 @@ module.exports = {
           'Alomomola',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4802,6 +5001,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4830,6 +5030,7 @@ module.exports = {
         ],
         'water': ['Stunfisk'],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4860,6 +5061,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4889,6 +5091,7 @@ module.exports = {
           'Basculin (Blue-Striped)',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4913,6 +5116,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4938,6 +5142,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4966,6 +5171,7 @@ module.exports = {
           'Politoed',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -4992,6 +5198,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -5023,6 +5230,7 @@ module.exports = {
           'Dragonair',
         ],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -5051,6 +5259,7 @@ module.exports = {
         ],
         'water': ['Azumarill'],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [
         {
@@ -5074,6 +5283,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 1,
@@ -5091,6 +5301,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 3,
@@ -5108,6 +5319,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 5,
@@ -5124,6 +5336,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 14,
@@ -5142,6 +5355,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 1,
@@ -5160,6 +5374,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 2,
@@ -5179,6 +5394,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 3,
@@ -5195,6 +5411,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 4,
@@ -5211,6 +5428,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 5,
@@ -5223,6 +5441,7 @@ module.exports = {
         'land': ['Silicobra'],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 6,
@@ -5241,6 +5460,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 7,
@@ -5256,6 +5476,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 8,
@@ -5273,6 +5494,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 9,
@@ -5290,6 +5512,7 @@ module.exports = {
         ],
         'water': [],
         'headbutt': [],
+        'special': [],
       },
       'requirements': [],
       'orderNumber': 10,
@@ -5810,11 +6033,9 @@ module.exports = {
         '15': 20,
       },
       '119': {
-        '0': 28.57,
-        '1': 7.14,
-        '2': 42.86,
+        '0': 21.43,
+        '2': 35.71,
         '4': 14.29,
-        '5': 7.14,
         '7': 14.29,
         '9': 21.43,
         '15': 7.14,
@@ -22731,11 +22952,7 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
-      'locations': {
-        '0': {
-          '2': [119],
-        },
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
@@ -22757,11 +22974,7 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
-      'locations': {
-        '0': {
-          '2': [119],
-        },
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
@@ -22783,11 +22996,7 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
-      'locations': {
-        '0': {
-          '2': [119],
-        },
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
@@ -22809,11 +23018,7 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
-      'locations': {
-        '0': {
-          '2': [119],
-        },
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
@@ -25599,12 +25804,6 @@ module.exports = {
           'evolvedPokemon': 'Cherrim (overcast)',
           'level': 25,
         },
-        {
-          'basePokemon': 'Cherubi',
-          'type': [0],
-          'evolvedPokemon': 'Cherrim (sunshine)',
-          'level': 25,
-        },
       ],
       'base': {
         'hitpoints': 45,
@@ -25630,6 +25829,18 @@ module.exports = {
       'levelType': 2,
       'exp': 158,
       'catchRate': 75,
+      'evolutions': [
+        {
+          'basePokemon': 'Cherrim (overcast)',
+          'type': [
+            0,
+            4,
+          ],
+          'evolvedPokemon': 'Cherrim (sunshine)',
+          'level': 1,
+          'weather': [7],
+        },
+      ],
       'base': {
         'hitpoints': 70,
         'attack': 60,
@@ -25674,10 +25885,14 @@ module.exports = {
       'locations': {
         '4': [
           {
-            'basePokemon': 'Cherubi',
-            'type': [0],
+            'basePokemon': 'Cherrim (overcast)',
+            'type': [
+              0,
+              4,
+            ],
             'evolvedPokemon': 'Cherrim (sunshine)',
-            'level': 25,
+            'level': 1,
+            'weather': [7],
           },
         ],
       },
@@ -28277,7 +28492,7 @@ module.exports = {
         1,
         16,
       ],
-      'eggCycles': 10,
+      'eggCycles': 80,
       'levelType': 4,
       'exp': 270,
       'catchRate': 3,
@@ -28303,7 +28518,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 2,
-      'eggSteps': 400,
+      'eggSteps': 3200,
     },
     {
       'id': 486,
@@ -34601,6 +34816,7 @@ module.exports = {
         '1': [
           {
             'region': 4,
+            'requirements': 'Requires the Legend badge.',
           },
         ],
       },
@@ -34654,6 +34870,7 @@ module.exports = {
         '1': [
           {
             'region': 4,
+            'requirements': 'Requires the Legend badge.',
           },
         ],
       },
@@ -36942,9 +37159,16 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Sliggoo',
-          'type': [0],
+          'type': [
+            0,
+            4,
+          ],
           'evolvedPokemon': 'Goodra',
           'level': 50,
+          'weather': [
+            2,
+            9,
+          ],
         },
       ],
       'base': {
@@ -36995,9 +37219,16 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Sliggoo',
-            'type': [0],
+            'type': [
+              0,
+              4,
+            ],
             'evolvedPokemon': 'Goodra',
             'level': 50,
+            'weather': [
+              2,
+              9,
+            ],
           },
         ],
       },
