@@ -20,8 +20,8 @@ const newQuiz = async (guild) => {
   const quiz = randomFromArray(quizTypes)();
   const bot_message = await quiz_channel.send({ embed: quiz.embed });
 
-  // Time limit in minutes (2 → 15 minutes)
-  const time_limit = (Math.floor(Math.random() * 9) + 2) * 60 * 1000;
+  // Time limit in minutes (2 → 10 minutes)
+  const time_limit = getTimeLimit();
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);
 
@@ -74,6 +74,8 @@ const newQuiz = async (guild) => {
   setTimeout(() => newQuiz(guild), time_limit);
 };
 
+// Between 1 and 10 minutes
+const getTimeLimit = () => Math.floor(Math.random() * (9 * 60 * 1000)) + (1 * 60 * 1000);
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
 
