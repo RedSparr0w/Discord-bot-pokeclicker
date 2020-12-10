@@ -21,7 +21,7 @@ const trainerCardBadges = [
   },
   {
     name: 'Cascade',
-    description: 'Use the bot commands',
+    description: 'Use the bot commands 1,000 times',
     icon: '<:cascade_badge:785737862166872064>',
     // card stuff
     src: './assets/images/badges/1.png',
@@ -30,7 +30,7 @@ const trainerCardBadges = [
   },
   {
     name: 'Thunder',
-    description: 'Be active in the server',
+    description: 'Send 2,500 messages in the server\n(30s cooldown between messages)',
     icon: '<:thunder_badge:785737862146555925>',
     // card stuff
     src: './assets/images/badges/2.png',
@@ -39,7 +39,7 @@ const trainerCardBadges = [
   },
   {
     name: 'Rainbow',
-    description: 'Win over 5,000 coins in one game',
+    description: 'Win 5,000 coins or more in one game',
     icon: '<:rainbow_badge:785737862174736435>',
     // card stuff
     src: './assets/images/badges/3.png',
