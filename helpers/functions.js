@@ -42,7 +42,10 @@ const postPages = async (msg, pages, page = 1, msgEdit = false) => {
 
 const upperCaseFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
+const randomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
+
 module.exports = {
   postPages,
   upperCaseFirstLetter,
+  randomFromArray,
 };
