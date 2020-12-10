@@ -21,7 +21,7 @@ const newQuiz = async (guild) => {
   const bot_message = await quiz_channel.send({ embed: quiz.embed });
 
   // Time limit in minutes (2 → 15 minutes)
-  const time_limit = (Math.floor(Math.random() * 14) + 2) * 60 * 1000;
+  const time_limit = (Math.floor(Math.random() * 9) + 2) * 60 * 1000;
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);
 
@@ -74,11 +74,14 @@ const newQuiz = async (guild) => {
   setTimeout(() => newQuiz(guild), time_limit);
 };
 
+// Between 10 and 50
+const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
+
 const whosThatPokemon = () => {
   const pokemon = randomFromArray(pokemonList);
   const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '')}\\b`, 'i');
   
-  const amount = Math.floor(Math.random() * 9) * 5 + 20;
+  const amount = getAmount();
 
   const shiny = !Math.floor(Math.random() * 128);
 
@@ -100,7 +103,7 @@ const pokemonType = () => {
   const types = pokemon.type.map(t => PokemonType[t]);
   const answer = new RegExp(`^(${types.join('|') + (types.length > 1 ? `)\\s+?(${types.join('|')}` : '')})\\b`, 'i');
 
-  const amount = Math.floor(Math.random() * 9) * 5 + 20;
+  const amount = getAmount();
 
   const shiny = !Math.floor(Math.random() * 128);
 
