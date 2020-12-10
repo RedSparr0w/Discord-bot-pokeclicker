@@ -29,6 +29,9 @@ module.exports = {
       gc_games_lost,
       gc_coins_bet,
       gc_coins_won,
+      // Quiz
+      qz_answered,
+      qz_coins_won,
     ] = await Promise.all([
       getStatistic(user, 'messages'),
       getStatistic(user, 'commands'),
@@ -39,6 +42,9 @@ module.exports = {
       getStatistic(user, 'gc_games_lost'),
       getStatistic(user, 'gc_coins_bet'),
       getStatistic(user, 'gc_coins_won'),
+      // Quiz
+      getStatistic(user, 'qz_answered'),
+      getStatistic(user, 'qz_coins_won'),
     ]);
 
     embed.addField('__***#general***__', [
@@ -54,6 +60,13 @@ module.exports = {
       `**❯ Coins Bet:** ${gc_coins_bet.toLocaleString('en-US')}`,
       `**❯ Coins Won:** ${gc_coins_won.toLocaleString('en-US')}`,
     ]);
+
+    embed.addField('__***#bot-quiz***__', [
+      `**❯ Q's Answered:** ${qz_answered.toLocaleString('en-US')}`,
+      `**❯ Coins Won:** ${qz_coins_won.toLocaleString('en-US')}`,
+    ]);
+
+
     return msg.channel.send({ embed });
   },
 };
