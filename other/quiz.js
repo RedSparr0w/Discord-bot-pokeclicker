@@ -5,6 +5,7 @@ const {
   pokemonList,
   PokemonType,
   randomFromArray,
+  GameConstants,
 } = require('../helpers.js');
 
 const money_icon = '<:money:737206931759824918>';
@@ -143,10 +144,32 @@ const pokemonID = () => {
   };
 };
 
+const pokemonRegion = () => {
+  const pokemon = randomFromArray(pokemonList);
+  const answer = new RegExp(`^${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
+  
+  const amount = getAmount();
+
+  const shiny = !Math.floor(Math.random() * 128);
+
+  const embed = new MessageEmbed()
+    .setTitle('What\'s the Region?')
+    .setDescription(`What is this Pokemons native region?\n**+${amount} ${money_icon}**`)
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
 const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
+  pokemonRegion,
   pokemonID,
   pokemonType,
 ];
