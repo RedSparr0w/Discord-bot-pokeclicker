@@ -110,11 +110,6 @@ async function getAmount(user, table = 'coins'){
 }
 
 async function addAmount(user, amount = 1, table = 'coins'){
-  // If user won 5k coins or more, give them the Rainbow Badge
-  if (amount >= 5e3) {
-    addPurchased(user, 'badge', 3);
-  }
-
   // Check amount is valid
   amount = +amount;
   if (isNaN(amount)) return;

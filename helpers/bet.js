@@ -43,6 +43,12 @@ const addBetStatistics = async (user, bet, winnings) => {
   // Total losses
   if (winnings < 0) addStatistic(user, 'gc_games_lost');
 
+  // If user won 5k coins or more, give them the Rainbow Badge
+  if (winnings >= 5e3) {
+    addPurchased(user, 'badge', 3);
+  }
+
+  // If user played 1k or more games, give them the Marsh Badge
   if (games_played >= 1e3) {
     addPurchased(user, 'badge', 4);
   }
