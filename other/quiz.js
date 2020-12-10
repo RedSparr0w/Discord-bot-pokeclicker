@@ -125,7 +125,7 @@ const pokemonType = () => {
 
 const pokemonID = () => {
   const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^${pokemon.id}\\b`, 'i');
+  const answer = new RegExp(`^#?${pokemon.id}\\b`, 'i');
   
   const amount = getAmount();
 
