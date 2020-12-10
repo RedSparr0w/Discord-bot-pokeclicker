@@ -122,10 +122,32 @@ const pokemonType = () => {
   };
 };
 
+const pokemonID = () => {
+  const pokemon = randomFromArray(pokemonList);
+  const answer = new RegExp(`^${pokemon.id}\\b`, 'i');
+  
+  const amount = getAmount();
+
+  const shiny = !Math.floor(Math.random() * 128);
+
+  const embed = new MessageEmbed()
+    .setTitle('What\'s the ID?')
+    .setDescription(`What is this Pokemons national Pokedex ID?\n**+${amount} ${money_icon}**`)
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
 const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
+  pokemonID,
   pokemonType,
 ];
 
