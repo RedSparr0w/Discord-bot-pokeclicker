@@ -79,18 +79,30 @@ const newQuiz = async (guild) => {
 const getTimeLimit = () => Math.floor(Math.random() * (9 * 60 * 1000)) + (1 * 60 * 1000);
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
+const getShinyAmount = () => 50;
+const isShiny = chance => !Math.floor(Math.random() * chance);
 
 const whosThatPokemon = () => {
   const pokemon = randomFromArray(pokemonList);
   const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '')}\\b`, 'i');
   
-  const amount = getAmount();
+  let amount = getAmount();
 
-  const shiny = !Math.floor(Math.random() * 128);
+  const shiny = isShiny(128);
+
+  const description = ['Name the Pokemon!'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s that Pokemon?')
-    .setDescription(`Name the Pokemon!\n**+${amount} ${money_icon}**`)
+    .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
@@ -106,13 +118,23 @@ const pokemonType = () => {
   const types = pokemon.type.map(t => PokemonType[t]);
   const answer = new RegExp(`^(${types.join('|') + (types.length > 1 ? `)\\s+?(${types.join('|')}` : '')})\\b`, 'i');
 
-  const amount = getAmount();
+  let amount = getAmount();
 
-  const shiny = !Math.floor(Math.random() * 128);
+  const shiny = isShiny(128);
+
+  const description = ['What is this Pokemons type(s)?'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the type?')
-    .setDescription(`What is this Pokemons type(s)?\n**+${amount} ${money_icon}**`)
+    .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
@@ -127,13 +149,23 @@ const pokemonID = () => {
   const pokemon = randomFromArray(pokemonList);
   const answer = new RegExp(`^#?${pokemon.id}\\b`, 'i');
   
-  const amount = getAmount();
+  let amount = getAmount();
 
-  const shiny = !Math.floor(Math.random() * 128);
+  const shiny = isShiny(128);
+
+  const description = ['What is this Pokemons national Pokedex ID?'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the ID?')
-    .setDescription(`What is this Pokemons national Pokedex ID?\n**+${amount} ${money_icon}**`)
+    .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
@@ -148,13 +180,23 @@ const pokemonRegion = () => {
   const pokemon = randomFromArray(pokemonList);
   const answer = new RegExp(`^${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
   
-  const amount = getAmount();
+  let amount = getAmount();
 
-  const shiny = !Math.floor(Math.random() * 128);
+  const shiny = isShiny(128);
+
+  const description = ['What is this Pokemons native region?'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the Region?')
-    .setDescription(`What is this Pokemons native region?\n**+${amount} ${money_icon}**`)
+    .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
