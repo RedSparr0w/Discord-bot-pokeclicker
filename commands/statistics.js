@@ -12,7 +12,18 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands', 'game-corner'],
   execute     : async (msg, args) => {
-    const user = msg.author;
+    const [id] = args;
+
+    let user = msg.author;
+
+    if (id) {
+      const member = await msg.guild.members.fetch(id).catch(e => {});
+      if (!member) {
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid user ID specified.`);
+        return msg.channel.send({ embed });
+      }
+      user = member.user;
+    }
 
     const embed = new MessageEmbed()
       .setTitle('Statistics')
