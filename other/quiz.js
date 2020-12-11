@@ -76,7 +76,7 @@ const newQuiz = async (guild) => {
 };
 
 // Between 1 and 10 minutes
-const getTimeLimit = () => Math.floor(Math.random() * (2 * 60 * 1000)) + (0.5 * 60 * 1000);
+const getTimeLimit = () => Math.floor(Math.random() * (9 * 60 * 1000)) + (1 * 60 * 1000);
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
 const getShinyAmount = () => 50;
