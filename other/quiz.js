@@ -246,10 +246,12 @@ const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
-  pokemonRegion,
-  pokemonRegion,
+  whosThatPokemon,
   pokemonType,
   pokemonType,
+  pokemonType,
+  pokemonRegion,
+  pokemonRegion,
   pokemonID,
 ];
 
