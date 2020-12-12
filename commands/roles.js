@@ -16,6 +16,9 @@ module.exports = {
     const user = msg.author;
     const member = msg.member;
 
+    if (!notificationRoles || !notificationRoles.length) {
+      return msg.channel.send('No roles have been defined yet.');
+    }
 
     const getDescription = () => {
       const description = [user, 'Click the reactions to toggle the roles', ''];
