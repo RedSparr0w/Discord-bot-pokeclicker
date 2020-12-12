@@ -16,7 +16,7 @@ module.exports = {
     const user = msg.author;
     const member = msg.member;
 
-    if (!notificationRoles || !notificationRoles.length) {
+    if (!notificationRoles) {
       return msg.channel.send('No roles have been defined yet.');
     }
 
