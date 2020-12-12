@@ -241,17 +241,44 @@ const pokemonRegion = () => {
   };
 };
 
+const fossilPokemon = () => {
+  const [fossil, pokemon] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
+  const answer = new RegExp(`^${pokemon.replace(/\s?\(.+/, '')}\\b`, 'i');
+  
+  const amount = getAmount();
+
+  const description = ['What Pokemon comes from this fossil?'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  const embed = new MessageEmbed()
+    .setTitle('Who\'s that Pokemon?')
+    .setDescription(description)
+    .setThumbnail(encodeURI(`${website}assets/images/breeding/${fossil}.png`))
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
 const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
+  whosThatPokemon,
+  whosThatPokemon,
+  pokemonType,
   pokemonType,
   pokemonType,
   pokemonType,
   pokemonRegion,
   pokemonRegion,
+  pokemonRegion,
+  fossilPokemon,
   pokemonID,
 ];
 
