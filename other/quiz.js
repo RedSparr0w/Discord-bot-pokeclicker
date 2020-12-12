@@ -96,7 +96,7 @@ const whosThatPokemon = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** _(shiny)_`);
     amount += shiny_amount;
   }
 
@@ -128,7 +128,7 @@ const pokemonType = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** _(shiny)_`);
     amount += shiny_amount;
   }
 
@@ -159,7 +159,7 @@ const pokemonID = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** _(shiny)_`);
     amount += shiny_amount;
   }
 
@@ -190,7 +190,7 @@ const pokemonRegion = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+ ${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** _(shiny)_`);
     amount += shiny_amount;
   }
 
