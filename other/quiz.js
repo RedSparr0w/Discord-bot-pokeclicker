@@ -14,8 +14,8 @@ const {
 
 const money_icon = '<:money:737206931759824918>';
 
-// Between 1 and 10 minutes
-const getTimeLimit = () => Math.floor(Math.random() * (9 * MINUTE)) + (1 * MINUTE);
+// Between 1 and 6 minutes
+const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
 const isHappyHour = () => Date.now() % (9 * HOUR) < HOUR;
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
