@@ -240,9 +240,12 @@ const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
+  whosThatPokemon,
   pokemonRegion,
-  pokemonID,
+  pokemonRegion,
   pokemonType,
+  pokemonType,
+  pokemonID,
 ];
 
 module.exports = {
