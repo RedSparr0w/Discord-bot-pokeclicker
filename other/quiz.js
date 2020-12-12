@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { quizChannelID, website } = require('../config.js');
-const { addAmount, addStatistic } = require('../database.js');
+const { addAmount, addStatistic, addPurchased } = require('../database.js');
 const {
   pokemonList,
   PokemonType,
@@ -73,8 +73,13 @@ const newQuiz = async (guild) => {
 
       // Add coins to the users balance
       const balance = await addAmount(user, quiz.amount);
-      addStatistic(user, 'qz_answered');
+      const answered = await addStatistic(user, 'qz_answered');
       addStatistic(user, 'qz_coins_won', quiz.amount);
+
+      // If user has answered more than 100 questions, give them the Marsh Badge
+      if (answered >= 100) {
+        await addPurchased(user, 'badge', 4);
+      }
 
       const description = [
         `${user}`,
