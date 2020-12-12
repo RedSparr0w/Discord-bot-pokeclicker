@@ -75,7 +75,7 @@ const newQuiz = async (guild) => {
     if (!finished) {
       finished = m.createdTimestamp;
     } else {
-      if (winners.has(user.id) || m.createdTimestamp - finished > 2 * SECOND) {
+      if (winners.has(user.id) || m.createdTimestamp - finished > 3 * SECOND) {
         return;
       }
       quiz.amount = Math.floor(quiz.amount / 2);
