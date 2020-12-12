@@ -10,7 +10,7 @@ const trainerCardColors = [
 ];
 
 const trainerCardBadges = [
-  {
+  { // 0
     name: 'Boulder',
     description: 'Purchase something in the profile shop',
     icon: '<:boulder_badge:785737861768151061>',
@@ -19,7 +19,7 @@ const trainerCardBadges = [
     left: 27,
     bottom: 11,
   },
-  {
+  { // 1
     name: 'Cascade',
     description: 'Use the bot commands 1,000 times',
     icon: '<:cascade_badge:785737862166872064>',
@@ -28,7 +28,7 @@ const trainerCardBadges = [
     left: 53,
     bottom: 11,
   },
-  {
+  { // 2
     name: 'Thunder',
     description: 'Send 2,500 messages in the server\n(30s cooldown between messages)',
     icon: '<:thunder_badge:785737862146555925>',
@@ -37,7 +37,7 @@ const trainerCardBadges = [
     left: 74,
     bottom: 10,
   },
-  {
+  { // 3
     name: 'Rainbow',
     description: 'Win 5,000 coins or more in one game',
     icon: '<:rainbow_badge:785737862174736435>',
@@ -46,7 +46,7 @@ const trainerCardBadges = [
     left: 98,
     bottom: 10,
   },
-  {
+  { // 4
     name: 'Marsh',
     description: 'Play in the games corner 1,000 times',
     icon: '<:marsh_badge:785737862280249364>',
@@ -55,7 +55,7 @@ const trainerCardBadges = [
     left: 123,
     bottom: 11,
   },
-  {
+  { // 5
     name: 'Soul',
     description: 'Reach a Balance of over 25,000',
     icon: '<:soul_badge:785737861981798481>',
@@ -64,7 +64,7 @@ const trainerCardBadges = [
     left: 147,
     bottom: 11,
   },
-  {
+  { // 6
     name: 'Volcano',
     description: 'Reach a Timely streak of over 500',
     icon: '<:volcano_badge:785737862196887612>',
@@ -73,7 +73,7 @@ const trainerCardBadges = [
     left: 171,
     bottom: 11,
   },
-  {
+  { // 7
     name: 'Earth',
     description: 'Reach a Daily streak of over 100',
     icon: '<:earth_badge:785737862385631312>',
