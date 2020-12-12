@@ -6,6 +6,7 @@ const {
   PokemonType,
   randomFromArray,
   GameConstants,
+  SECOND,
   MINUTE,
   HOUR,
   upperCaseFirstLetter,
@@ -62,41 +63,59 @@ const newQuiz = async (guild) => {
 
   // Reason for footer once finished
   let end_reason = 'Closed';
+  let finished = 0;
 
+  const winners = new Set();
+
+  const collector = quiz_channel.createMessageCollector(filter, { time: 15000 });
+  collector.on('collect', async m => {
+    const user = m.author;
+
+    // If this is the first answer
+    if (!finished) {
+      finished = m.createdTimestamp;
+    } else {
+      if (winners.has(user.id) || m.createdTimestamp - finished > 2 * SECOND) {
+        return;
+      }
+      quiz.amount = Math.floor(quiz.amount / 2);
+      if (!quiz.amount) {
+        return;
+      }
+    }
+    winners.add(user.id);
+    const amount = quiz.amount;
+
+    m.react('🎉');
+
+    // Add coins to the users balance
+    const balance = await addAmount(user, amount);
+    const answered = await addStatistic(user, 'qz_answered');
+    addStatistic(user, 'qz_coins_won', amount);
+
+    // If user has answered more than 100 questions, give them the Marsh Badge
+    if (answered >= 100) {
+      await addPurchased(user, 'badge', 4);
+    }
+
+    const description = [
+      `${user}`,
+      '**CORRECT!**',
+      `**+${amount} ${money_icon}**`,
+    ];
+
+    const embed = new MessageEmbed()
+      .setDescription(description)
+      .setFooter(`Balance: ${balance.toLocaleString('en-US')}`)
+      .setColor('#2ecc71');
+
+    m.channel.send({ embed });
+  });
   // errors: ['time'] treats ending because of the time limit as an error
   quiz_channel.awaitMessages(filter, { max: 1, time:  time_limit, errors: ['time'] })
     .then(async collected => {
       // Set a reason for the message footer
       end_reason = 'Answered!';
-
-      const m = collected.first();
-
-      m.react('🎉');
-
-      const user = m.author;
-
-      // Add coins to the users balance
-      const balance = await addAmount(user, quiz.amount);
-      const answered = await addStatistic(user, 'qz_answered');
-      addStatistic(user, 'qz_coins_won', quiz.amount);
-
-      // If user has answered more than 100 questions, give them the Marsh Badge
-      if (answered >= 100) {
-        await addPurchased(user, 'badge', 4);
-      }
-
-      const description = [
-        `${user}`,
-        '**CORRECT!**',
-        `**+${quiz.amount} ${money_icon}**`,
-      ];
-
-      const embed = new MessageEmbed()
-        .setDescription(description)
-        .setFooter(`Balance: ${balance.toLocaleString('en-US')}`)
-        .setColor('#2ecc71');
-
-      m.channel.send({ embed });
     })
     .catch(collected => {
       // Set a reason for the message footer
