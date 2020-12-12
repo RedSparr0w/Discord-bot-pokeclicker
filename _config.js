@@ -4,6 +4,7 @@ module.exports = {
   website: 'https://LINK.TO.WEBSITE/',
   ownerID: 'YOUR_DISCORD_USER_ID (optional)',
   backupChannelID: 'DISCORD_BACKUP_CHANNEL_ID (optional)',
+  quizChannelID: 'DISCORD_QUIZ_CHANNEL_ID (optional)',
   mutedRoleID: '758167963294629898',
   externalScriptsRoleID: '761015248856809493',
   bonusRoles: {
