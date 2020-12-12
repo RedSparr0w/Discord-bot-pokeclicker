@@ -69,6 +69,9 @@ const newQuiz = async (guild) => {
       end_reason = 'Answered!';
 
       const m = collected.first();
+
+      m.react('🎉');
+
       const user = m.author;
 
       // Add coins to the users balance
