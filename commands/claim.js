@@ -7,12 +7,11 @@ const {
   bumpClaimStreak,
   resetClaimStreak,
   warn,
+  SECOND,
+  MINUTE,
+  HOUR,
+  DAY,
 } = require('../helpers.js');
-
-const SECOND = 1000;
-const MINUTE = SECOND * 60;
-const HOUR = MINUTE * 60;
-const DAY = HOUR * 24;
 
 const money_icon = '<:money:737206931759824918>';
 const claimAmount = 100;

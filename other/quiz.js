@@ -6,14 +6,11 @@ const {
   PokemonType,
   randomFromArray,
   GameConstants,
+  MINUTE,
+  HOUR,
 } = require('../helpers.js');
 
 const money_icon = '<:money:737206931759824918>';
-
-const SECOND = 1000;
-const MINUTE = SECOND * 60;
-const HOUR = MINUTE * 60;
-const DAY = HOUR * 24;
 
 // Between 1 and 10 minutes
 const getTimeLimit = () => Math.floor(Math.random() * (9 * MINUTE)) + (1 * MINUTE);

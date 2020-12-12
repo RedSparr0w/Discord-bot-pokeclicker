@@ -9,6 +9,7 @@ const {
   gameVersion,
   RunOnInterval,
   formatChannelList,
+  HOUR,
 } = require('./helpers.js');
 const {
   setupDB,
@@ -61,16 +62,16 @@ client.once('ready', async() => {
   // Check the database is setup
   await setupDB();
 
-  new RunOnInterval(60 * 6e4 /* 1 Hour */, () => {
+  new RunOnInterval(HOUR, () => {
     // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
   }, { run_now: true });
 
-  new RunOnInterval(6 * 60 * 6e4 /* 6 Hours */, () => {
+  new RunOnInterval(6 * HOUR, () => {
     client.guilds.cache.forEach(guild => backupDB(guild));
   }, { timezone_offset: 0 });
 
-  new RunOnInterval(9 * 60 * 6e4 /* 9 Hours */, () => {
+  new RunOnInterval(9 * HOUR, () => {
     client.guilds.cache.forEach(guild => postHappyHour(guild));
   }, { timezone_offset: 0 });
   
