@@ -67,7 +67,7 @@ const newQuiz = async (guild) => {
 
   const winners = new Set();
 
-  const collector = quiz_channel.createMessageCollector(filter, { time: 15000 });
+  const collector = quiz_channel.createMessageCollector(filter, { time: time_limit });
   collector.on('collect', async m => {
     const user = m.author;
 
