@@ -263,6 +263,39 @@ const fossilPokemon = () => {
   };
 };
 
+const pokemonFossil = () => {
+  const [fossil, pokemonName] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
+  const answer = new RegExp(`^${fossil.replace(/\s*fossil/i, '')}\\b`, 'i');
+  
+  const pokemon = pokemonList.find(p => p.name == pokemonName);
+  
+  let amount = getAmount();
+
+  const shiny = isShiny(128);
+
+  const description = ['What fossil does this Pokemon come from?'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new MessageEmbed()
+    .setTitle('What\'s the fossil?')
+    .setDescription(description)
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
 const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
@@ -279,6 +312,7 @@ const quizTypes = [
   pokemonRegion,
   pokemonRegion,
   fossilPokemon,
+  pokemonFossil,
   pokemonID,
 ];
 
