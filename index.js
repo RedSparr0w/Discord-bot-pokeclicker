@@ -17,7 +17,7 @@ const {
   addStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
-const { newQuiz } = require('./other/quiz.js');
+const { newQuiz, postHappyHour } = require('./other/quiz.js');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -68,6 +68,10 @@ client.once('ready', async() => {
 
   new RunOnInterval(6 * 60 * 6e4 /* 6 Hours */, () => {
     client.guilds.cache.forEach(guild => backupDB(guild));
+  }, { timezone_offset: 0 });
+
+  new RunOnInterval(9 * 60 * 6e4 /* 9 Hours */, () => {
+    client.guilds.cache.forEach(guild => postHappyHour(guild));
   }, { timezone_offset: 0 });
   
   // Will restart itself

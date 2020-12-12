@@ -10,6 +10,32 @@ const {
 
 const money_icon = '<:money:737206931759824918>';
 
+const SECOND = 1000;
+const MINUTE = SECOND * 60;
+const HOUR = MINUTE * 60;
+const DAY = HOUR * 24;
+
+// Between 1 and 10 minutes
+const getTimeLimit = () => Math.floor(Math.random() * (9 * MINUTE)) + (1 * MINUTE);
+const isHappyHour = () => Date.now() % (9 * HOUR) < HOUR;
+// Between 10 and 50
+const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
+const getShinyAmount = () => 100;
+const isShiny = chance => !Math.floor(Math.random() * chance);
+
+const postHappyHour = async (guild) => {
+  // If no quiz channel or ID, return
+  if (!quizChannelID) return;
+  const quiz_channel = await guild.channels.cache.find(c => c.id == quizChannelID);
+  if (!quiz_channel) return;
+
+  const embed = new MessageEmbed()
+    .setTitle('It\'s Happy Hour!')
+    .setDescription(['For the next 1 hour, questions will be posted 3x as fast!', '', 'Good Luck!'])
+    .setColor('#2ecc71');
+
+  return await quiz_channel.send({ embed });
+};
 
 const newQuiz = async (guild) => {
   // If no quiz channel or ID, return
@@ -19,21 +45,31 @@ const newQuiz = async (guild) => {
 
   // Generate and send a random question
   const quiz = randomFromArray(quizTypes)();
-  const bot_message = await quiz_channel.send({ embed: quiz.embed });
 
   // Time limit in minutes (2 → 10 minutes)
-  const time_limit = getTimeLimit();
+  let time_limit = getTimeLimit();
+
+  const happyHour = isHappyHour();
+
+  // 3 x more questions
+  if (happyHour) {
+    time_limit /= 3;
+    quiz.embed.setFooter('Happy Hour! (3x faster questions)');
+  }
+
+  const bot_message = await quiz_channel.send({ embed: quiz.embed });
+
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);
 
   // Reason for footer once finished
-  let end_reason = 'closed';
+  let end_reason = 'Closed';
 
   // errors: ['time'] treats ending because of the time limit as an error
   quiz_channel.awaitMessages(filter, { max: 1, time:  time_limit, errors: ['time'] })
     .then(async collected => {
       // Set a reason for the message footer
-      end_reason = 'answered!';
+      end_reason = 'Answered!';
 
       const m = collected.first();
       const user = m.author;
@@ -58,14 +94,14 @@ const newQuiz = async (guild) => {
     })
     .catch(collected => {
       // Set a reason for the message footer
-      end_reason = 'timed out!';
+      end_reason = 'Timed out!';
     }).finally(() => {
       // Update the message
       const botEmbed = bot_message.embeds[0];
       const description = `${botEmbed.description.split('\n').map(l => `~~${l.trim()}~~`).join('\n')}`;
 
       botEmbed.setDescription(description)
-        .setFooter(end_reason)
+        .setFooter(`${botEmbed.footer ? botEmbed.footer.text : ''}\n${end_reason}`)
         .setColor('#e74c3c');
 
       bot_message.edit({ embed: botEmbed });
@@ -74,13 +110,6 @@ const newQuiz = async (guild) => {
   // Post another question once the timer finishes
   setTimeout(() => newQuiz(guild), time_limit);
 };
-
-// Between 1 and 10 minutes
-const getTimeLimit = () => Math.floor(Math.random() * (9 * 60 * 1000)) + (1 * 60 * 1000);
-// Between 10 and 50
-const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
-const getShinyAmount = () => 50;
-const isShiny = chance => !Math.floor(Math.random() * chance);
 
 const whosThatPokemon = () => {
   const pokemon = randomFromArray(pokemonList);
@@ -218,4 +247,5 @@ const quizTypes = [
 
 module.exports = {
   newQuiz,
+  postHappyHour,
 };
