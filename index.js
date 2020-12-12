@@ -89,7 +89,7 @@ client.on('error', e => error('Client error thrown:', e))
       if (!timeLeft) {
         const messagesSent = await addStatistic(message.author, 'messages');
         if (messagesSent >= 2500) {
-          addPurchased(message.author, 'badge', 2);
+          await addPurchased(message.author, 'badge', 2);
         }
       }
 
@@ -168,7 +168,7 @@ client.on('error', e => error('Client error thrown:', e))
       addStatistic(message.author, `!${command.name}`);
       const commandsSent = await addStatistic(message.author, 'commands');
       if (commandsSent >= 1000) {
-        addPurchased(message.author, 'badge', 1);
+        await addPurchased(message.author, 'badge', 1);
       }
     } catch (err) {
       error(`Error executing command "${message.content}":\n`, err);

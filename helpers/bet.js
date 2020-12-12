@@ -31,7 +31,7 @@ const calcBetAmount = (bet, balance) => {
 const addBetStatistics = async (user, bet, winnings) => {
   // If user won 5k coins or more, give them the Rainbow Badge
   if (winnings >= 5e3) {
-    addPurchased(user, 'badge', 3);
+    await addPurchased(user, 'badge', 3);
   }
 
   // Total times gambled
@@ -50,7 +50,7 @@ const addBetStatistics = async (user, bet, winnings) => {
 
   // If user played 1k or more games, give them the Marsh Badge
   if (games_played >= 1e3) {
-    addPurchased(user, 'badge', 4);
+    await addPurchased(user, 'badge', 4);
   }
 };
 

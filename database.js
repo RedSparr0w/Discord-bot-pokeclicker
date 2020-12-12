@@ -125,7 +125,7 @@ async function addAmount(user, amount = 1, table = 'coins'){
 
   // If user has more than 25k coins, give them the Soul Badge
   if (amount >= 25e3) {
-    addPurchased(user, 'badge', 5);
+    await addPurchased(user, 'badge', 5);
   }
 
   const data = {
