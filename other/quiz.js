@@ -8,6 +8,7 @@ const {
   GameConstants,
   MINUTE,
   HOUR,
+  upperCaseFirstLetter,
 } = require('../helpers.js');
 
 const money_icon = '<:money:737206931759824918>';
@@ -296,6 +297,52 @@ const pokemonFossil = () => {
   };
 };
 
+const dockTown = () => {
+  const town = randomFromArray(GameConstants.DockTowns);
+  const region = GameConstants.DockTowns.findIndex(t => t == town);
+  const answer = new RegExp(`^${town.replace(/\s*(town|city)/i, '')}\\b`, 'i');
+  
+  const amount = getAmount();
+
+  const description = [`Where abouts is the Dock located in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  const embed = new MessageEmbed()
+    .setTitle('Setting sail!')
+    .setDescription(description)
+    .setThumbnail(`${website}assets/images/ship.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
+const startingTown = () => {
+  const town = randomFromArray(GameConstants.StartingTowns);
+  const region = GameConstants.StartingTowns.findIndex(t => t == town);
+  const answer = new RegExp(`^${town.replace(/\s*(town|city)/i, '')}\\b`, 'i');
+  
+  const amount = getAmount();
+
+  const description = [`Where does the player start in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  const embed = new MessageEmbed()
+    .setTitle('Getting started!')
+    .setDescription(description)
+    .setThumbnail(`${website}assets/images/ship.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
 const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
@@ -304,6 +351,8 @@ const quizTypes = [
   whosThatPokemon,
   whosThatPokemon,
   whosThatPokemon,
+  whosThatPokemon,
+  pokemonType,
   pokemonType,
   pokemonType,
   pokemonType,
@@ -311,9 +360,12 @@ const quizTypes = [
   pokemonRegion,
   pokemonRegion,
   pokemonRegion,
+  pokemonRegion,
+  pokemonID,
   fossilPokemon,
   pokemonFossil,
-  pokemonID,
+  dockTown,
+  startingTown,
 ];
 
 module.exports = {
