@@ -39,7 +39,7 @@ module.exports = {
     await addOrderedReactions(bot_message, [...reactionIDs, '🔄']);
     const role_filter = (reaction, u) => reactionIDs.includes(reaction.emoji.id) && u.id === user.id;
     
-    const refresh_filter = (reaction, user) => reaction.emoji.name === '🔄' && user.id === msg.author.id;
+    const refresh_filter = (reaction, u) => reaction.emoji.name === '🔄' && u.id === user.id;
   
     // Allow reactions for up to x ms
     const time = 2 * MINUTE;
