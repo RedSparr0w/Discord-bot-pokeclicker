@@ -138,7 +138,7 @@ const newQuiz = async (guild) => {
 
 const whosThatPokemon = () => {
   const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '')}\\b`, 'i');
+  const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '').replace('.', '\\.')}\\b`, 'i');
   
   let amount = getAmount();
 
