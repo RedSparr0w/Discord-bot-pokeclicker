@@ -28,7 +28,7 @@ const postHappyHour = async (guild) => {
   const quiz_channel = await guild.channels.cache.find(c => c.id == quizChannelID);
   if (!quiz_channel) return;
   quiz_channel.setRateLimitPerUser(0, 'Happy Hour!').catch(O_o=>{});
-  setTimeout(() => quiz_channel.setRateLimitPerUser(3, 'Happy Hour!').catch(O_o=>{}), HOUR);
+  setTimeout(() => quiz_channel.setRateLimitPerUser(5, 'Happy Hour!').catch(O_o=>{}), HOUR);
 
   const embed = new MessageEmbed()
     .setTitle('It\'s Happy Hour!')
