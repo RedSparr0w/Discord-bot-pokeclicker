@@ -47,7 +47,7 @@ const newQuiz = async (guild) => {
   if (!quiz_channel) return;
 
   // Generate and send a random question
-  const quiz = randomFromArray(quizTypes)();
+  const quiz = selectWeightedOption(quizTypes).option();
 
   // Time limit in minutes (2 → 10 minutes)
   let time_limit = getTimeLimit();
@@ -430,37 +430,34 @@ const startingTown = () => {
   };
 };
 
+class WeightedOption {
+  constructor(option, weight) {
+    this.option = option;
+    this.weight = weight;
+  }
+}
+
+const selectWeightedOption = (options_array) => {
+  const total = options_array.reduce((acc, o) => acc + o.weight, 0);
+  const rand = Math.random() * total;
+  let acc = 0;
+  return options_array.find(o => {
+    acc += o.weight;
+    return acc >= rand;
+  });
+};
+
 const quizTypes = [
-  whosThatPokemon,
-  whosThatPokemon,
-  whosThatPokemon,
-  whosThatPokemon,
-  whosThatPokemon,
-  whosThatPokemon,
-  whosThatPokemon,
-  whosThatPokemon,
-  pokemonType,
-  pokemonType,
-  pokemonType,
-  pokemonType,
-  pokemonType,
-  pokemonRegion,
-  pokemonRegion,
-  pokemonRegion,
-  pokemonRegion,
-  whosThePokemonEvolution,
-  whosThePokemonEvolution,
-  whosThePokemonEvolution,
-  whosThePokemonEvolution,
-  whosThePokemonPrevolution,
-  whosThePokemonPrevolution,
-  whosThePokemonPrevolution,
-  whosThePokemonPrevolution,
-  pokemonID,
-  fossilPokemon,
-  pokemonFossil,
-  dockTown,
-  startingTown,
+  new WeightedOption(whosThatPokemon, 10),
+  new WeightedOption(pokemonType, 8),
+  new WeightedOption(pokemonRegion, 6),
+  new WeightedOption(whosThePokemonEvolution, 6),
+  new WeightedOption(whosThePokemonPrevolution, 6),
+  new WeightedOption(pokemonID, 1),
+  new WeightedOption(fossilPokemon, 1),
+  new WeightedOption(pokemonFossil, 1),
+  new WeightedOption(startingTown, 1),
+  new WeightedOption(dockTown, 1),
 ];
 
 module.exports = {
