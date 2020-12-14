@@ -22,6 +22,8 @@ const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
 const getShinyAmount = () => 100;
 const isShiny = chance => !Math.floor(Math.random() * chance);
 
+const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
+
 const postHappyHour = async (guild) => {
   // If no quiz channel or ID, return
   if (!quizChannelID) return;
@@ -158,6 +160,70 @@ const whosThatPokemon = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s that Pokemon?')
+    .setDescription(description)
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
+const whosThePokemonEvolution = () => {
+  const pokemon = randomFromArray(pokemonListWithEvolution);
+  const answer = new RegExp(`^(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace('.', '\\.')).join('|')})\\b`, 'i');
+  
+  let amount = getAmount();
+
+  const shiny = isShiny(128);
+
+  const description = ['Name the Evolution!'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new MessageEmbed()
+    .setTitle('Who can this Pokemon evolve to?')
+    .setDescription(description)
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
+    .setColor('#3498db');
+
+  return {
+    embed,
+    answer,
+    amount,
+  };
+};
+
+const whosThePokemonPrevolution = () => {
+  const prevolution = randomFromArray(pokemonListWithEvolution);
+  const evolution = randomFromArray(prevolution.evolutions);
+  const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
+  const answer = new RegExp(`^(${prevolution.name.replace(/\s?\(.+/, '').replace('.', '\\.')})\\b`, 'i');
+  
+  let amount = getAmount();
+
+  const shiny = isShiny(128);
+
+  const description = ['Name the Prevolution!'];
+  description.push(`**+${amount} ${money_icon}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new MessageEmbed()
+    .setTitle('Who does this Pokemon evolve from?')
     .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
@@ -382,6 +448,14 @@ const quizTypes = [
   pokemonRegion,
   pokemonRegion,
   pokemonRegion,
+  whosThePokemonEvolution,
+  whosThePokemonEvolution,
+  whosThePokemonEvolution,
+  whosThePokemonEvolution,
+  whosThePokemonPrevolution,
+  whosThePokemonPrevolution,
+  whosThePokemonPrevolution,
+  whosThePokemonPrevolution,
   pokemonID,
   fossilPokemon,
   pokemonFossil,
