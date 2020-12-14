@@ -146,7 +146,7 @@ const newQuiz = async (guild) => {
 
 const whosThatPokemon = () => {
   const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '').replace('.', '\\.')}\\b`, 'i');
+  const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '').replace('.', '.?')}\\b`, 'i');
   
   let amount = getAmount();
 
@@ -177,7 +177,7 @@ const whosThatPokemon = () => {
 
 const whosThePokemonEvolution = () => {
   const pokemon = randomFromArray(pokemonListWithEvolution);
-  const answer = new RegExp(`^(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace('.', '\\.')).join('|')})\\b`, 'i');
+  const answer = new RegExp(`^(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace('.', '.?')).join('|')})\\b`, 'i');
   
   let amount = getAmount();
 
@@ -210,7 +210,7 @@ const whosThePokemonPrevolution = () => {
   const prevolution = randomFromArray(pokemonListWithEvolution);
   const evolution = randomFromArray(prevolution.evolutions);
   const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
-  const answer = new RegExp(`^(${prevolution.name.replace(/\s?\(.+/, '').replace('.', '\\.')})\\b`, 'i');
+  const answer = new RegExp(`^(${prevolution.name.replace(/\s?\(.+/, '').replace('.', '.?')})\\b`, 'i');
   
   let amount = getAmount();
 
