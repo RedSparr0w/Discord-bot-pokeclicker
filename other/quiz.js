@@ -10,6 +10,7 @@ const {
   MINUTE,
   HOUR,
   upperCaseFirstLetter,
+  warn,
 } = require('../helpers.js');
 
 const money_icon = '<:money:737206931759824918>';
@@ -60,7 +61,10 @@ const newQuiz = async (guild) => {
     quiz.embed.setFooter('Happy Hour! (4x faster questions)');
   }
 
-  const bot_message = await quiz_channel.send({ embed: quiz.embed });
+  const bot_message = await quiz_channel.send({ embed: quiz.embed }).catch((...args) => warn('Unable to send quiz question', ...args));
+
+  // If no bot message for whatever reason, try again in 1 minute
+  if (!bot_message) return setTimeout(() => newQuiz(guild), MINUTE);
 
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);
@@ -113,7 +117,7 @@ const newQuiz = async (guild) => {
       .setFooter(`Balance: ${balance.toLocaleString('en-US')}`)
       .setColor('#2ecc71');
 
-    m.channel.send({ embed });
+    m.channel.send({ embed }).catch((...args) => warn('Unable to send quiz winner message', ...args));
   });
   // errors: ['time'] treats ending because of the time limit as an error
   quiz_channel.awaitMessages(filter, { max: 1, time:  time_limit, errors: ['time'] })
@@ -133,7 +137,7 @@ const newQuiz = async (guild) => {
         .setFooter(`${botEmbed.footer ? botEmbed.footer.text : ''}\n${end_reason}`)
         .setColor('#e74c3c');
 
-      bot_message.edit({ embed: botEmbed });
+      bot_message.edit({ embed: botEmbed }).catch((...args) => warn('Unable to edit quiz question', ...args));
     });
 
   // Post another question once the timer finishes
