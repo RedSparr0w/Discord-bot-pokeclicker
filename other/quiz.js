@@ -38,7 +38,7 @@ const postHappyHour = async (guild) => {
     .setDescription(['For the next 1 hour, questions will be posted 4x as fast!', '', 'Good Luck!'])
     .setColor('#2ecc71');
 
-  return await quiz_channel.send({ embed });
+  return await quiz_channel.send('<@&788190728027242496>', { embed });
 };
 
 const newQuiz = async (guild) => {
