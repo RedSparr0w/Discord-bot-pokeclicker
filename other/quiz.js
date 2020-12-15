@@ -183,7 +183,7 @@ const whosThePokemonEvolution = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['Name the Evolution!'];
+  const description = ['Who can this Pokemon evolve to?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -194,7 +194,7 @@ const whosThePokemonEvolution = () => {
   }
 
   const embed = new MessageEmbed()
-    .setTitle('Who can this Pokemon evolve to?')
+    .setTitle('Name the Evolution!')
     .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
@@ -216,7 +216,7 @@ const whosThePokemonPrevolution = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['Name the Prevolution!'];
+  const description = ['Who does this Pokemon evolve from?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -227,7 +227,7 @@ const whosThePokemonPrevolution = () => {
   }
 
   const embed = new MessageEmbed()
-    .setTitle('Who does this Pokemon evolve from?')
+    .setTitle('Name the Prevolution!')
     .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
