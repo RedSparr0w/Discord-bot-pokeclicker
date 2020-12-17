@@ -97,8 +97,13 @@ const newQuiz = async (guild) => {
     m.react('🎉');
 
     // Add coins to the users balance
-    const balance = await addAmount(user, amount);
-    const answered = await addStatistic(user, 'qz_answered');
+    const [
+      balance,
+      answered,
+    ] = await Promise.all([
+      addAmount(user, amount),
+      addStatistic(user, 'qz_answered'),
+    ]);
     addStatistic(user, 'qz_coins_won', amount);
 
     // If user has answered more than 100 questions, give them the Marsh Badge
@@ -114,7 +119,7 @@ const newQuiz = async (guild) => {
 
     const embed = new MessageEmbed()
       .setDescription(description)
-      .setFooter(`Balance: ${balance.toLocaleString('en-US')}`)
+      .setFooter(`Balance: ${balance.toLocaleString('en-US')}\nAnswered: ${answered}`)
       .setColor('#2ecc71');
 
     m.channel.send({ embed }).catch((...args) => warn('Unable to send quiz winner message', ...args));
