@@ -67,6 +67,8 @@ const { website } = require('./config.js');
         return p;
       }),
       GameConstants,
+      BadgeEnums,
+      gymList,
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
