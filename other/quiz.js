@@ -119,7 +119,7 @@ const newQuiz = async (guild) => {
 
     const embed = new MessageEmbed()
       .setDescription(description)
-      .setFooter(`Balance: ${balance.toLocaleString('en-US')}\nAnswered: ${answered}`)
+      .setFooter(`Answered: ${answered}\nBalance: ${balance.toLocaleString('en-US')}`)
       .setColor('#2ecc71');
 
     m.channel.send({ embed }).catch((...args) => warn('Unable to send quiz winner message', ...args));
