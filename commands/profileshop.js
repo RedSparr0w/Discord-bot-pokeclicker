@@ -59,7 +59,7 @@ module.exports = {
     const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === msg.author.id;
   
     // Allow reactions for up to x ms
-    const timer = 1e5; // (100 seconds)
+    const timer = 3e5; // (300 seconds)
     const buy = botMsg.createReactionCollector(buyFilter, {time: timer});
 
     buy.on('collect', async r => {
