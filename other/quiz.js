@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { quizChannelID, website } = require('../config.js');
+const { quizChannelID } = require('../config.js');
 const { addAmount, addStatistic, addPurchased } = require('../database.js');
 const {
   SECOND,
