@@ -28,7 +28,7 @@ const whosThatPokemon = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['Name the Pokemon!'];
+  const description = ['Name the Pokémon!'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -39,7 +39,7 @@ const whosThatPokemon = () => {
   }
 
   const embed = new MessageEmbed()
-    .setTitle('Who\'s that Pokemon?')
+    .setTitle('Who\'s that Pokémon?')
     .setDescription(description)
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
@@ -59,7 +59,7 @@ const whosThePokemonEvolution = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['Who can this Pokemon evolve to?'];
+  const description = ['Who can this Pokémon evolve to?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -92,7 +92,7 @@ const whosThePokemonPrevolution = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['Who does this Pokemon evolve from?'];
+  const description = ['Who does this Pokémon evolve from?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -124,7 +124,7 @@ const pokemonType = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['What is this Pokemons type(s)?'];
+  const description = ['What is this Pokémons type(s)?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -155,7 +155,7 @@ const pokemonID = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['What is this Pokemons national Pokedex ID?'];
+  const description = ['What is this Pokémons national Pokedex ID?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -186,7 +186,7 @@ const pokemonRegion = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['What is this Pokemons native region?'];
+  const description = ['What is this Pokémons native region?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -215,11 +215,11 @@ const fossilPokemon = () => {
   
   const amount = getAmount();
 
-  const description = ['What Pokemon comes from this fossil?'];
+  const description = ['What Pokémon comes from this fossil?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
-    .setTitle('Who\'s that Pokemon?')
+    .setTitle('Who\'s that Pokémon?')
     .setDescription(description)
     .setThumbnail(encodeURI(`${website}assets/images/breeding/${fossil}.png`))
     .setColor('#3498db');
@@ -241,7 +241,7 @@ const pokemonFossil = () => {
 
   const shiny = isShiny(128);
 
-  const description = ['What fossil does this Pokemon come from?'];
+  const description = ['What fossil does this Pokémon come from?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   // If shiny award more coins
@@ -365,7 +365,7 @@ const pokemonGymLeader = () => {
   
   let amount = getAmount();
 
-  const description = ['Which Gym Leader uses this Pokemon?'];
+  const description = ['Which Gym Leader uses this Pokémon?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   const shiny = isShiny(128);
@@ -397,7 +397,7 @@ const gymLeaderPokemon = () => {
   
   const amount = getAmount();
 
-  const description = ['Which Pokemon does this Gym Leader use?'];
+  const description = ['Which Pokémon does this Gym Leader use?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
@@ -471,7 +471,7 @@ const gymLeaderType = () => {
   
   const amount = getAmount();
 
-  const description = ['Which main Pokemon type does this Gym Leader use?'];
+  const description = ['Which main Pokémon type does this Gym Leader use?'];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
