@@ -56,6 +56,9 @@ const newQuiz = async (guild) => {
   // If no bot message for whatever reason, try again in 1 minute
   if (!bot_message) return setTimeout(() => newQuiz(guild), MINUTE);
 
+  // Post another question once the timer finishes
+  setTimeout(() => newQuiz(guild), time_limit);
+
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);
 
@@ -134,9 +137,6 @@ const newQuiz = async (guild) => {
 
       bot_message.edit({ embed: botEmbed }).catch((...args) => warn('Unable to edit quiz question', ...args));
     });
-
-  // Post another question once the timer finishes
-  setTimeout(() => newQuiz(guild), time_limit);
 };
 
 module.exports = {
