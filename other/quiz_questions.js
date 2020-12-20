@@ -22,7 +22,7 @@ const gymsWithBadges = Object.keys(gymList).filter(t => badgeList.includes(Badge
 
 const whosThatPokemon = () => {
   const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^${pokemon.name.replace(/\s?\(.+/, '').replace('.', '.?')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${pokemon.name.replace(/\s?\(.+/, '').replace('.', '.?')}\\b`, 'i');
   
   let amount = getAmount();
 
@@ -53,7 +53,7 @@ const whosThatPokemon = () => {
 
 const whosThePokemonEvolution = () => {
   const pokemon = randomFromArray(pokemonListWithEvolution);
-  const answer = new RegExp(`^(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace('.', '.?')).join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace('.', '.?')).join('|')})\\b`, 'i');
   
   let amount = getAmount();
 
@@ -86,7 +86,7 @@ const whosThePokemonPrevolution = () => {
   const prevolution = randomFromArray(pokemonListWithEvolution);
   const evolution = randomFromArray(prevolution.evolutions);
   const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
-  const answer = new RegExp(`^(${prevolution.name.replace(/\s?\(.+/, '').replace('.', '.?')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${prevolution.name.replace(/\s?\(.+/, '').replace('.', '.?')})\\b`, 'i');
   
   let amount = getAmount();
 
@@ -118,7 +118,7 @@ const whosThePokemonPrevolution = () => {
 const pokemonType = () => {
   const pokemon = randomFromArray(pokemonList);
   const types = pokemon.type.map(t => PokemonType[t]);
-  const answer = new RegExp(`^(${types.join('|') + (types.length > 1 ? `)\\s+?(${types.join('|')}` : '')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${types.join('|') + (types.length > 1 ? `)\\s+?(${types.join('|')}` : '')})\\b`, 'i');
 
   let amount = getAmount();
 
@@ -149,7 +149,7 @@ const pokemonType = () => {
 
 const pokemonID = () => {
   const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^#?${Math.floor(+pokemon.id)}\\b`, 'i');
+  const answer = new RegExp(`^\\W*#?${Math.floor(+pokemon.id)}\\b`, 'i');
   
   let amount = getAmount();
 
@@ -180,7 +180,7 @@ const pokemonID = () => {
 
 const pokemonRegion = () => {
   const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
   
   let amount = getAmount();
 
@@ -211,7 +211,7 @@ const pokemonRegion = () => {
 
 const fossilPokemon = () => {
   const [fossil, pokemon] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = new RegExp(`^${pokemon.replace(/\s?\(.+/, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${pokemon.replace(/\s?\(.+/, '')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -233,7 +233,7 @@ const fossilPokemon = () => {
 
 const pokemonFossil = () => {
   const [fossil, pokemonName] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = new RegExp(`^${fossil.replace(/\s*fossil/i, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${fossil.replace(/\s*fossil/i, '')}\\b`, 'i');
   
   const pokemon = pokemonList.find(p => p.name == pokemonName);
   
@@ -267,7 +267,7 @@ const pokemonFossil = () => {
 const dockTown = () => {
   const town = randomFromArray(GameConstants.DockTowns);
   const region = GameConstants.DockTowns.findIndex(t => t == town);
-  const answer = new RegExp(`^${town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -290,7 +290,7 @@ const dockTown = () => {
 const startingTown = () => {
   const town = randomFromArray(GameConstants.StartingTowns);
   const region = GameConstants.StartingTowns.findIndex(t => t == town);
-  const answer = new RegExp(`^${town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -313,7 +313,7 @@ const startingTown = () => {
 const badgeGymLeader = () => {
   const gym = gymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^${gym.leaderName.replace(/\d/g, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${gym.leaderName.replace(/\d/g, '')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -336,7 +336,7 @@ const badgeGymLeader = () => {
 const badgeGymLocation = () => {
   const gym = gymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^${gym.town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -361,7 +361,7 @@ const pokemonGymLeader = () => {
   const pokemonName = randomFromArray(gym.pokemons).name;
   const pokemon = pokemonList.find(p => p.name == pokemonName);
   const leaders = Object.values(gymList).filter(g => g.pokemons.find(p => p.name = pokemonName)).map(g => g.leaderName);
-  const answer = new RegExp(`^(${leaders.join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${leaders.join('|')})\\b`, 'i');
   
   let amount = getAmount();
 
@@ -393,7 +393,7 @@ const pokemonGymLeader = () => {
 const gymLeaderPokemon = () => {
   const gym = gymList[randomFromArray(gymsWithBadges)];
   const pokemon = gym.pokemons.map(p => p.name.replace(/\s?\(.+/, '').replace('.', '.?'));
-  const answer = new RegExp(`^(${pokemon.join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${pokemon.join('|')})\\b`, 'i');
   
   const amount = getAmount();
 
@@ -415,7 +415,7 @@ const gymLeaderPokemon = () => {
 
 const gymLeaderLocation = () => {
   const gym = gymList[randomFromArray(gymsWithBadges)];
-  const answer = new RegExp(`^${gym.town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -438,7 +438,7 @@ const gymLeaderLocation = () => {
 const gymLeaderBadge = () => {
   const gym = gymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^${badge}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${badge}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -467,7 +467,7 @@ const gymLeaderType = () => {
   types.forEach(t => typeCount[t] = (typeCount[t] || 0) + 1);
   const maxTypeAmount = Math.max(...Object.values(typeCount));
   const mainTypes = Object.entries(typeCount).filter(([t, c]) => c >= maxTypeAmount).map(([t]) => PokemonType[t]);
-  const answer = new RegExp(`^(${mainTypes.join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${mainTypes.join('|')})\\b`, 'i');
   
   const amount = getAmount();
 
