@@ -397,7 +397,7 @@ const gymLeaderPokemon = () => {
   
   const amount = getAmount();
 
-  const description = ['Which Pokémon does this Gym Leader use?'];
+  const description = ['Which Pokémon does this Gym Leader use?', `||${gym.leaderName}||`];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
@@ -419,7 +419,7 @@ const gymLeaderLocation = () => {
   
   const amount = getAmount();
 
-  const description = ['Which location can you find this Gym Leader?'];
+  const description = ['Which location can you find this Gym Leader?', `||${gym.leaderName}||`];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
@@ -442,7 +442,7 @@ const gymLeaderBadge = () => {
   
   const amount = getAmount();
 
-  const description = ['Which Badge does this Gym Leader award?'];
+  const description = ['Which Badge does this Gym Leader award?', `||${gym.leaderName}||`];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
@@ -471,7 +471,7 @@ const gymLeaderType = () => {
   
   const amount = getAmount();
 
-  const description = ['Which main Pokémon type does this Gym Leader use?'];
+  const description = ['Which main Pokémon type does this Gym Leader use?', `||${gym.leaderName}||`];
   description.push(`**+${amount} ${money_icon}**`);
 
   const embed = new MessageEmbed()
