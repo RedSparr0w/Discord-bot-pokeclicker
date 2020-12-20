@@ -25,7 +25,7 @@ const postHappyHour = async (guild) => {
 
   const embed = new MessageEmbed()
     .setTitle('It\'s Happy Hour!')
-    .setDescription(['For the next 1 hour, questions will be posted 4x as fast!', '', 'Good Luck!'])
+    .setDescription(['For the next 1 hour, questions will be posted 6x as often!', '', 'Good Luck!'])
     .setColor('#2ecc71');
 
   return await quiz_channel.send('<@&788190728027242496>', { embed });
@@ -47,8 +47,8 @@ const newQuiz = async (guild) => {
 
   // 3 x more questions
   if (happyHour) {
-    time_limit /= 4;
-    quiz.embed.setFooter('Happy Hour! (4x faster questions)');
+    time_limit /= 6;
+    quiz.embed.setFooter('Happy Hour! (questions 6x more often)');
   }
 
   const bot_message = await quiz_channel.send({ embed: quiz.embed }).catch((...args) => warn('Unable to send quiz question', ...args));
