@@ -1,11 +1,12 @@
 const { MessageEmbed } = require('discord.js');
-const { quizChannelID } = require('../config.js');
+const { quizChannelID, ownerID } = require('../config.js');
 const { addAmount, addStatistic, addPurchased } = require('../database.js');
 const {
   SECOND,
   MINUTE,
   HOUR,
   warn,
+  log,
 } = require('../helpers.js');
 const { getQuizQuestion } = require('./quiz_questions.js');
 
@@ -117,6 +118,19 @@ const newQuiz = async (guild) => {
 
     m.channel.send({ embed }).catch((...args) => warn('Unable to send quiz winner message', ...args));
   });
+    
+  // If code reaction, console log the expected answer
+  const answerFilter = (reaction, user) => reaction.emoji.id === '761083768614027265' && user.id === ownerID;
+
+  // Allow reactions for up to x ms
+  const timer = 3e5; // (300 seconds)
+  const logAnswer = bot_message.createReactionCollector(answerFilter, {time: timer});
+
+  logAnswer.on('collect', async r => {
+    bot_message.reactions.removeAll().catch(O_o=>{});
+    log(quiz.answer);
+  });
+
   // errors: ['time'] treats ending because of the time limit as an error
   quiz_channel.awaitMessages(filter, { max: 1, time:  time_limit, errors: ['time'] })
     .then(async collected => {
