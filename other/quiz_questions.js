@@ -360,7 +360,7 @@ const pokemonGymLeader = () => {
   const gym = gymList[randomFromArray(gymsWithBadges)];
   const pokemonName = randomFromArray(gym.pokemons).name;
   const pokemon = pokemonList.find(p => p.name == pokemonName);
-  const leaders = Object.values(gymList).filter(g => g.pokemons.find(p => p.name = pokemonName)).map(g => g.leaderName);
+  const leaders = Object.values(gymList).filter(g => g.pokemons.find(p => p.name == pokemonName)).map(g => g.leaderName);
   const answer = new RegExp(`^\\W*(${leaders.join('|')})\\b`, 'i');
   
   let amount = getAmount();
