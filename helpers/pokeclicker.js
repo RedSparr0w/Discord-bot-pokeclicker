@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.6.9',
+  'gameVersion': '0.7.0',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -5167,7 +5167,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 86,
+          'dungeonIndex': 85,
         },
       ],
       'orderNumber': 17,
@@ -5195,7 +5195,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 87,
+          'dungeonIndex': 86,
         },
       ],
       'orderNumber': 18,
@@ -5338,6 +5338,12 @@ module.exports = {
       'number': 1,
       'pokemon': {
         'land': [
+          'Caterpie',
+          'Alolan Rattata',
+          'Ledyba',
+          'Spinarak',
+          'Pichu',
+          'Buneary',
           'Pikipek',
           'Yungoos',
           'Grubbin',
@@ -5346,8 +5352,74 @@ module.exports = {
         'headbutt': [],
         'special': [],
       },
-      'requirements': [],
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 78,
+        },
+      ],
       'orderNumber': 1,
+    },
+    {
+      'routeName': "Route 1 Hau'oli Outskirts",
+      'region': 6,
+      'number': 18,
+      'pokemon': {
+        'land': [
+          'Slowpoke',
+          'Wingull',
+          'Inkay',
+        ],
+        'water': [
+          'Tentacool',
+          'Mantyke',
+          'Finneon',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 1,
+        },
+      ],
+      'orderNumber': 1.1,
+    },
+    {
+      'routeName': 'Alola Route 2',
+      'region': 6,
+      'number': 2,
+      'pokemon': {
+        'land': [
+          'Alolan Rattata',
+          'Spearow',
+          'Ekans',
+          'Alolan Meowth',
+          'Growlithe',
+          'Abra',
+          'Drowzee',
+          'Smeargle',
+          'Makuhita',
+          'Furfrou',
+          'Yungoos',
+          'Cutiefly',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 91,
+        },
+      ],
+      'orderNumber': 2,
     },
     {
       'routeName': 'Alola Route 3',
@@ -5355,17 +5427,54 @@ module.exports = {
       'number': 3,
       'pokemon': {
         'land': [
+          'Spearow',
+          'Mankey',
+          'Bagon',
+          'Rufflet',
+          'Vullaby',
+          'Hawlucha',
           'Cutiefly',
-          'Rockruff',
-          'Oricorio',
-          'Crabrawler',
         ],
         'water': [],
         'headbutt': [],
         'special': [],
       },
-      'requirements': [],
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 93,
+        },
+      ],
       'orderNumber': 3,
+    },
+    {
+      'routeName': 'Alola Route 4',
+      'region': 6,
+      'number': 4,
+      'pokemon': {
+        'land': [
+          'Alolan Rattata',
+          'Eevee',
+          'Igglybuff',
+          'Lillipup',
+          'Pikipek',
+          'Yungoos',
+          'Grubbin',
+          'Mudbray',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 79,
+        },
+      ],
+      'orderNumber': 4,
     },
     {
       'routeName': 'Alola Route 5',
@@ -5373,34 +5482,717 @@ module.exports = {
       'number': 5,
       'pokemon': {
         'land': [
-          'Mudbray',
-          'Dewpider',
-          'Salandit',
-          'Stufful',
+          'Caterpie',
+          'Metapod',
+          'Butterfree',
+          'Bonsly',
+          'Lillipup',
+          'Pikipek',
+          'Trumbeak',
+          'Grubbin',
+          'Fomantis',
         ],
         'water': [],
         'headbutt': [],
         'special': [],
       },
-      'requirements': [],
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 99,
+        },
+      ],
       'orderNumber': 5,
+    },
+    {
+      'routeName': 'Melemele Sea',
+      'region': 6,
+      'number': 19,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Magikarp',
+          'Corsola',
+          'Remoraid',
+          'Wingull',
+          'Clamperl',
+          'Luvdisc',
+          'Mantyke',
+          'Finneon',
+          'Wishiwashi (Solo)',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 100,
+        },
+      ],
+      'orderNumber': 5.1,
+    },
+    {
+      'routeName': 'Kalae Bay',
+      'region': 6,
+      'number': 20,
+      'pokemon': {
+        'land': [
+          'Alolan Rattata',
+          'Slowpoke',
+          'Wingull',
+          'Bagon',
+          'Yungoos',
+        ],
+        'water': [
+          'Tentacool',
+          'Shellder',
+          'Magikarp',
+          'Remoraid',
+          'Wingull',
+          'Finneon',
+          'Mantyke',
+          'Wishiwashi (Solo)',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 95,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 100,
+        },
+      ],
+      'orderNumber': 5.2,
+    },
+    {
+      'routeName': 'Alola Route 6',
+      'region': 6,
+      'number': 6,
+      'pokemon': {
+        'land': [
+          'Alolan Rattata',
+          'Eevee',
+          'Igglybuff',
+          'Lillipup',
+          'Pikipek',
+          'Yungoos',
+          'Grubbin',
+          'Mudbray',
+          "Oricorio (Pa'u)",
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 100,
+        },
+      ],
+      'orderNumber': 6,
+    },
+    {
+      'routeName': 'Alola Route 7',
+      'region': 6,
+      'number': 7,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Staryu',
+          'Magikarp',
+          'Wingull',
+          'Finneon',
+          'Wishiwashi (Solo)',
+          'Pyukumuku',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 6,
+        },
+      ],
+      'orderNumber': 7,
+    },
+    {
+      'routeName': 'Alola Route 8',
+      'region': 6,
+      'number': 8,
+      'pokemon': {
+        'land': [
+          'Alolan Rattata',
+          'Fletchling',
+          'Trumbeak',
+          'Yungoos',
+          'Stufful',
+        ],
+        'water': [
+          'Tentacool',
+          'Magikarp',
+          'Chinchou',
+          'Remoraid',
+          'Finneon',
+          'Mantyke',
+          'Wishiwashi (Solo)',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 101,
+        },
+      ],
+      'orderNumber': 8,
+    },
+    {
+      'routeName': 'Alola Route 9',
+      'region': 6,
+      'number': 9,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Magikarp',
+          'Corsola',
+          'Luvdisc',
+          'Wishiwashi (Solo)',
+          'Mareanie',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 103,
+        },
+      ],
+      'orderNumber': 9,
+    },
+    {
+      'routeName': 'Alola Akala Outskirts',
+      'region': 6,
+      'number': 21,
+      'pokemon': {
+        'land': [
+          'Alolan Raticate',
+          'Natu',
+          'Wingull',
+          'Nosepass',
+          'Gumshoos',
+          'Stufful',
+        ],
+        'water': [
+          'Magikarp',
+          'Chinchou',
+          'Wishiwashi (Solo)',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 104,
+        },
+      ],
+      'orderNumber': 9.1,
+    },
+    {
+      'routeName': 'Alola Route 10',
+      'region': 6,
+      'number': 10,
+      'pokemon': {
+        'land': [
+          'Alolan Raticate',
+          'Fearow',
+          'Ledian',
+          'Ariados',
+          'Skarmory',
+          'Pancham',
+          'Gumshoos',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 106,
+        },
+      ],
+      'orderNumber': 10,
+    },
+    {
+      'routeName': 'Mount Hokulani',
+      'region': 6,
+      'number': 22,
+      'pokemon': {
+        'land': [
+          'Fearow',
+          'Ditto',
+          'Cleffa',
+          'Skarmory',
+          'Elekid',
+          'Beldum',
+          'Elgyem',
+          'Minior (Meteor)',
+          'Minior (Blue-core)',
+          'Minior (Green-core)',
+          'Minior (Indigo-core)',
+          'Minior (Orange-core)',
+          'Minior (Red-core)',
+          'Minior (Violet-core)',
+          'Minior (Yellow-core)',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 10,
+        },
+      ],
+      'orderNumber': 10.1,
+    },
+    {
+      'routeName': 'Alola Route 11',
+      'region': 6,
+      'number': 11,
+      'pokemon': {
+        'land': [
+          'Parasect',
+          'Ledian',
+          'Ariados',
+          'Pancham',
+          'Trumbeak',
+          'Komala',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 106,
+        },
+      ],
+      'orderNumber': 11,
+    },
+    {
+      'routeName': 'Alola Route 12',
+      'region': 6,
+      'number': 12,
+      'pokemon': {
+        'land': [
+          'Alolan Geodude',
+          'Alolan Graveler',
+          'Houndoom',
+          'Manectric',
+          'Torkoal',
+          'Mudbray',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 11,
+        },
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 107,
+        },
+      ],
+      'orderNumber': 12,
+    },
+    {
+      'routeName': 'Alola Route 13',
+      'region': 6,
+      'number': 13,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Magikarp',
+          'Wishiwashi (Solo)',
+          'Bruxish',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 12,
+        },
+      ],
+      'orderNumber': 13,
     },
     {
       'routeName': 'Alola Route 14',
       'region': 6,
       'number': 14,
       'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacruel',
+          'Magikarp',
+          'Pelipper',
+          'Finneon',
+          'Frillish',
+          'Wishiwashi (Solo)',
+          'Bruxish',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 13,
+        },
+      ],
+      'orderNumber': 14,
+    },
+    {
+      'routeName': 'Alola Route 15',
+      'region': 6,
+      'number': 15,
+      'pokemon': {
         'land': [
-          'Turtonator',
-          'Togedemaru',
-          'Mimikyu',
+          'Alolan Raticate',
+          'Slowpoke',
+          'Pelipper',
+          'Gumshoos',
+        ],
+        'water': [
+          'Tentacruel',
+          'Magikarp',
+          'Clamperl',
+          'Finneon',
+          'Wishiwashi (Solo)',
+          'Bruxish',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 108,
+        },
+      ],
+      'orderNumber': 15,
+    },
+    {
+      'routeName': 'Alola Route 16',
+      'region': 6,
+      'number': 16,
+      'pokemon': {
+        'land': [
+          'Alolan Raticate',
+          'Slowpoke',
+          'Pelipper',
+          'Scraggy',
+          'Gumshoos',
         ],
         'water': [],
         'headbutt': [],
         'special': [],
       },
-      'requirements': [],
-      'orderNumber': 14,
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 15,
+        },
+      ],
+      'orderNumber': 16,
+    },
+    {
+      'routeName': 'Alola Route 17',
+      'region': 6,
+      'number': 17,
+      'pokemon': {
+        'land': [
+          'Alolan Raticate',
+          'Fearow',
+          'Alolan Graveler',
+          'Ledian',
+          'Ariados',
+          'Scraggy',
+          'Bisharp',
+          'Gumshoos',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 109,
+        },
+      ],
+      'orderNumber': 17,
+    },
+    {
+      'routeName': 'Alola Haina Desert',
+      'region': 6,
+      'number': 23,
+      'pokemon': {
+        'land': [
+          'Alolan Dugtrio',
+          'Trapinch',
+          'Baltoy',
+          'Gabite',
+          'Krokorok',
+          'Golett',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 108,
+        },
+      ],
+      'orderNumber': 23,
+    },
+    {
+      'routeName': 'Poni Wilds',
+      'region': 6,
+      'number': 24,
+      'pokemon': {
+        'land': [
+          'Granbull',
+          'Pelipper',
+          'Gastrodon (east)',
+          'Furfrou',
+          'Inkay',
+        ],
+        'water': ['Dhelmise'],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 82,
+        },
+      ],
+      'orderNumber': 24,
+    },
+    {
+      'routeName': 'Ancient Poni Path',
+      'region': 6,
+      'number': 25,
+      'pokemon': {
+        'land': [
+          'Granbull',
+          'Pelipper',
+          'Gastrodon (east)',
+          'Furfrou',
+          'Inkay',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 24,
+        },
+      ],
+      'orderNumber': 25,
+    },
+    {
+      'routeName': 'Poni Breaker Coast',
+      'region': 6,
+      'number': 26,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacruel',
+          'Lapras',
+          'Magikarp',
+          'Pelipper',
+          'Carvanha',
+          'Wailmer',
+          'Relicanth',
+          'Gastrodon (east)',
+          'Lumineon',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 25,
+        },
+      ],
+      'orderNumber': 26,
+    },
+    {
+      'routeName': 'Poni Grove',
+      'region': 6,
+      'number': 27,
+      'pokemon': {
+        'land': [
+          'Pinsir',
+          'Heracross',
+          'Buneary',
+          'Riolu',
+          'Zoroark',
+          'Trumbeak',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 90,
+        },
+      ],
+      'orderNumber': 27,
+    },
+    {
+      'routeName': 'Poni Plains',
+      'region': 6,
+      'number': 28,
+      'pokemon': {
+        'land': [
+          'Alolan Raticate',
+          'Fearow',
+          'Hypno',
+          'Tauros',
+          'Miltank',
+          'Pelipper',
+          'Hariyama',
+          'Cottonee',
+          'Petilil',
+          'Trumbeak',
+          'Gumshoos',
+          'Mudsdale',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 27,
+        },
+      ],
+      'orderNumber': 28,
+    },
+    {
+      'routeName': 'Poni Coast',
+      'region': 6,
+      'number': 29,
+      'pokemon': {
+        'land': ['Alolan Dugtrio'],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 28,
+        },
+      ],
+      'orderNumber': 29,
+    },
+    {
+      'routeName': 'Poni Gauntlet',
+      'region': 6,
+      'number': 30,
+      'pokemon': {
+        'land': [
+          'Pelipper',
+          'Lickitung',
+          'Golduck',
+          'Granbull',
+          'Inkay',
+          'Bewear',
+        ],
+        'water': [
+          'Magikarp',
+          'Dratini',
+          'Barboach',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 29,
+        },
+      ],
+      'orderNumber': 30,
     },
     {
       'routeName': 'Galar Route 1',
@@ -6890,34 +7682,248 @@ module.exports = {
     },
     '6': {
       '1': {
-        '0': 66.67,
-        '9': 33.33,
-        '11': 33.33,
+        '0': 33.33,
+        '3': 11.11,
+        '7': 11.11,
+        '9': 22.22,
+        '11': 44.44,
+        '15': 11.11,
+      },
+      '2': {
+        '0': 33.33,
+        '1': 8.33,
+        '6': 8.33,
+        '7': 8.33,
+        '9': 8.33,
+        '10': 16.67,
+        '11': 8.33,
+        '15': 16.67,
+        '17': 8.33,
       },
       '3': {
-        '1': 25,
-        '6': 25,
-        '9': 25,
-        '11': 25,
-        '12': 25,
-        '17': 25,
+        '0': 28.57,
+        '6': 28.57,
+        '9': 57.14,
+        '11': 14.29,
+        '14': 14.29,
+        '15': 14.29,
+        '17': 14.29,
+      },
+      '4': {
+        '0': 62.5,
+        '8': 12.5,
+        '9': 12.5,
+        '11': 12.5,
+        '15': 12.5,
+        '17': 12.5,
       },
       '5': {
-        '0': 25,
-        '1': 25,
-        '2': 25,
-        '6': 25,
-        '7': 25,
-        '8': 25,
-        '11': 25,
+        '0': 33.33,
+        '4': 11.11,
+        '9': 33.33,
+        '11': 44.44,
+        '12': 11.11,
+      },
+      '6': {
+        '0': 55.56,
+        '8': 11.11,
+        '9': 22.22,
+        '10': 11.11,
+        '11': 11.11,
+        '15': 11.11,
+        '17': 11.11,
+      },
+      '7': {
+        '2': 100,
+        '7': 14.29,
+        '9': 14.29,
+      },
+      '8': {
+        '0': 33.33,
+        '2': 58.33,
+        '3': 8.33,
+        '6': 8.33,
+        '7': 8.33,
+        '9': 25,
+        '15': 8.33,
+      },
+      '9': {
+        '2': 100,
+        '7': 20,
+        '12': 20,
+      },
+      '10': {
+        '0': 28.57,
+        '6': 14.29,
+        '7': 14.29,
+        '9': 42.86,
+        '11': 28.57,
+        '15': 14.29,
+        '16': 14.29,
+      },
+      '11': {
+        '0': 33.33,
+        '4': 16.67,
+        '6': 16.67,
+        '7': 16.67,
+        '9': 33.33,
+        '11': 50,
+      },
+      '12': {
+        '1': 33.33,
+        '3': 50,
+        '8': 16.67,
+        '12': 33.33,
+        '15': 16.67,
+      },
+      '13': {
+        '2': 100,
+        '10': 33.33,
       },
       '14': {
-        '1': 33.33,
-        '3': 33.33,
-        '13': 33.33,
-        '14': 33.33,
-        '16': 33.33,
-        '17': 33.33,
+        '2': 100,
+        '7': 14.29,
+        '9': 14.29,
+        '10': 14.29,
+        '13': 14.29,
+      },
+      '15': {
+        '0': 10,
+        '2': 80,
+        '7': 10,
+        '9': 10,
+        '10': 20,
+        '15': 10,
+      },
+      '16': {
+        '0': 20,
+        '2': 40,
+        '6': 20,
+        '9': 20,
+        '10': 20,
+        '15': 40,
+      },
+      '17': {
+        '0': 25,
+        '3': 12.5,
+        '6': 12.5,
+        '7': 12.5,
+        '9': 25,
+        '11': 25,
+        '12': 12.5,
+        '15': 37.5,
+        '16': 12.5,
+      },
+      '18': {
+        '2': 83.33,
+        '7': 16.67,
+        '9': 33.33,
+        '10': 33.33,
+        '15': 16.67,
+      },
+      '19': {
+        '2': 100,
+        '7': 10,
+        '9': 20,
+        '12': 10,
+      },
+      '20': {
+        '0': 7.69,
+        '2': 76.92,
+        '7': 7.69,
+        '9': 23.08,
+        '10': 7.69,
+        '14': 7.69,
+        '15': 7.69,
+      },
+      '21': {
+        '0': 22.22,
+        '2': 44.44,
+        '3': 11.11,
+        '6': 11.11,
+        '9': 22.22,
+        '10': 11.11,
+        '12': 11.11,
+        '15': 11.11,
+      },
+      '22': {
+        '0': 13.33,
+        '3': 6.67,
+        '9': 66.67,
+        '10': 13.33,
+        '12': 53.33,
+        '16': 13.33,
+        '17': 6.67,
+      },
+      '23': {
+        '8': 100,
+        '10': 16.67,
+        '13': 16.67,
+        '14': 16.67,
+        '15': 16.67,
+        '16': 16.67,
+      },
+      '24': {
+        '0': 16.67,
+        '2': 33.33,
+        '4': 16.67,
+        '8': 16.67,
+        '9': 16.67,
+        '10': 16.67,
+        '13': 16.67,
+        '15': 16.67,
+        '17': 16.67,
+      },
+      '25': {
+        '0': 20,
+        '2': 40,
+        '8': 20,
+        '9': 20,
+        '10': 20,
+        '15': 20,
+        '17': 20,
+      },
+      '26': {
+        '2': 100,
+        '5': 11.11,
+        '7': 11.11,
+        '8': 11.11,
+        '9': 11.11,
+        '12': 11.11,
+        '15': 11.11,
+      },
+      '27': {
+        '0': 33.33,
+        '6': 33.33,
+        '9': 16.67,
+        '11': 33.33,
+        '15': 16.67,
+      },
+      '28': {
+        '0': 41.67,
+        '2': 8.33,
+        '4': 16.67,
+        '6': 8.33,
+        '8': 8.33,
+        '9': 25,
+        '10': 8.33,
+        '15': 8.33,
+        '17': 8.33,
+      },
+      '29': {
+        '8': 100,
+        '16': 100,
+      },
+      '30': {
+        '0': 22.22,
+        '2': 44.44,
+        '6': 11.11,
+        '8': 11.11,
+        '9': 11.11,
+        '10': 11.11,
+        '14': 11.11,
+        '15': 11.11,
+        '17': 11.11,
       },
     },
     '7': {
@@ -8049,11 +9055,16 @@ module.exports = {
             31,
           ],
           '5': [2],
+          '6': [
+            1,
+            5,
+          ],
         },
         '2': [
           'Viridian Forest',
           'Ilex Forest',
           'Santalune Forest',
+          'Melemele Meadow',
         ],
       },
       'catchRatePercent': 63,
@@ -8092,11 +9103,14 @@ module.exports = {
             31,
             47,
           ],
+          '6': [5],
         },
         '2': [
           'Viridian Forest',
           'Ilex Forest',
           'Santalune Forest',
+          'Melemele Meadow',
+          'Lush Jungle',
         ],
         '4': [
           {
@@ -8134,7 +9148,9 @@ module.exports = {
       'locations': {
         '0': {
           '1': [47],
+          '6': [5],
         },
+        '2': ['Melemele Meadow'],
         '3': [
           {
             'dungeon': 'Ilex Forest',
@@ -8532,6 +9548,54 @@ module.exports = {
       'eggSteps': 600,
     },
     {
+      'id': 19.01,
+      'name': 'Alolan Rattata',
+      'nativeRegion': 6,
+      'catchRate': 255,
+      'type': [
+        15,
+        0,
+      ],
+      'levelType': 2,
+      'exp': 51,
+      'eggCycles': 15,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Rattata',
+          'type': [0],
+          'evolvedPokemon': 'Alolan Raticate',
+          'level': 20,
+        },
+      ],
+      'base': {
+        'hitpoints': 30,
+        'attack': 56,
+        'specialAttack': 25,
+        'defense': 35,
+        'specialDefense': 35,
+        'speed': 72,
+      },
+      'attack': 26,
+      'locations': {
+        '0': {
+          '6': [
+            1,
+            2,
+            4,
+            20,
+            6,
+            8,
+          ],
+        },
+        '2': [
+          'Verdant Cavern',
+          'Po Town',
+        ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
       'id': 20,
       'name': 'Raticate',
       'catchRate': 127,
@@ -8596,6 +9660,91 @@ module.exports = {
       'eggSteps': 920,
     },
     {
+      'id': 20.01,
+      'name': 'Alolan Raticate',
+      'nativeRegion': 6,
+      'catchRate': 127,
+      'type': [
+        15,
+        0,
+      ],
+      'levelType': 2,
+      'exp': 145,
+      'eggCycles': 23,
+      'base': {
+        'hitpoints': 75,
+        'attack': 71,
+        'specialAttack': 40,
+        'defense': 70,
+        'specialDefense': 80,
+        'speed': 77,
+      },
+      'attack': 78,
+      'locations': {
+        '0': {
+          '6': [
+            21,
+            10,
+            15,
+            16,
+            17,
+            28,
+          ],
+        },
+        '2': [
+          'Po Town',
+          'Mount Lanikala',
+        ],
+        '3': [
+          {
+            'dungeon': 'Verdant Cavern',
+          },
+        ],
+        '4': [
+          {
+            'basePokemon': 'Alolan Rattata',
+            'type': [0],
+            'evolvedPokemon': 'Alolan Raticate',
+            'level': 20,
+          },
+        ],
+      },
+      'catchRatePercent': 37,
+      'eggSteps': 920,
+    },
+    {
+      'id': 20.02,
+      'name': 'Totem Alolan Raticate',
+      'nativeRegion': 6,
+      'catchRate': 127,
+      'type': [
+        15,
+        0,
+      ],
+      'levelType': 2,
+      'exp': 145,
+      'eggCycles': 15,
+      'base': {
+        'hitpoints': 75,
+        'attack': 71,
+        'specialAttack': 40,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 77,
+      },
+      'attack': 81,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Verdant Cavern',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
+    },
+    {
       'id': 21,
       'name': 'Spearow',
       'catchRate': 255,
@@ -8650,6 +9799,10 @@ module.exports = {
             225,
             226,
           ],
+          '6': [
+            2,
+            3,
+          ],
         },
         '2': ['Hall of Origin'],
       },
@@ -8694,6 +9847,12 @@ module.exports = {
             225,
             226,
             227,
+          ],
+          '6': [
+            10,
+            22,
+            17,
+            28,
           ],
         },
         '2': [
@@ -8745,7 +9904,9 @@ module.exports = {
             32,
             33,
           ],
+          '6': [2],
         },
+        '2': ['Po Town'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -8818,7 +9979,10 @@ module.exports = {
         '0': {
           '5': [3],
         },
-        '2': ['Power Plant'],
+        '2': [
+          'Power Plant',
+          'Pikachu Valley',
+        ],
         '3': [
           {
             'dungeon': 'Viridian Forest',
@@ -8836,6 +10000,202 @@ module.exports = {
           },
         ],
         '5': ['Electric'],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.01,
+      'name': 'Pikachu (Original cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.02,
+      'name': 'Pikachu (Hoenn cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.03,
+      'name': 'Pikachu (Sinnoh cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.04,
+      'name': 'Pikachu (Unova cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.05,
+      'name': 'Pikachu (Kalos cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.06,
+      'name': 'Pikachu (Alola cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.07,
+      'name': 'Pikachu (Partner cap)',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pikachu Valley',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -8874,6 +10234,31 @@ module.exports = {
       },
       'catchRatePercent': 25,
       'eggSteps': 600,
+    },
+    {
+      'id': 26.01,
+      'name': 'Alolan Raichu',
+      'nativeRegion': 6,
+      'catchRate': 75,
+      'type': [
+        3,
+        10,
+      ],
+      'levelType': 2,
+      'exp': 218,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 60,
+        'attack': 85,
+        'specialAttack': 95,
+        'defense': 50,
+        'specialDefense': 85,
+        'speed': 110,
+      },
+      'attack': 108,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 400,
     },
     {
       'id': 27,
@@ -8920,6 +10305,41 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 27.01,
+      'name': 'Alolan Sandshrew',
+      'nativeRegion': 6,
+      'catchRate': 255,
+      'type': [
+        5,
+        16,
+      ],
+      'levelType': 2,
+      'exp': 60,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Sandshrew',
+          'type': [1],
+          'stone': 27,
+          'evolvedPokemon': 'Alolan Sandslash',
+        },
+      ],
+      'base': {
+        'hitpoints': 50,
+        'attack': 75,
+        'specialAttack': 10,
+        'defense': 90,
+        'specialDefense': 35,
+        'speed': 40,
+      },
+      'attack': 30,
+      'locations': {
+        '2': ['Mount Lanikala'],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
       'id': 28,
       'name': 'Sandslash',
       'catchRate': 90,
@@ -8957,6 +10377,40 @@ module.exports = {
             'type': [0],
             'evolvedPokemon': 'Sandslash',
             'level': 22,
+          },
+        ],
+      },
+      'catchRatePercent': 29,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 28.01,
+      'name': 'Alolan Sandslash',
+      'nativeRegion': 6,
+      'catchRate': 90,
+      'type': [
+        5,
+        16,
+      ],
+      'levelType': 2,
+      'exp': 158,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 75,
+        'attack': 100,
+        'specialAttack': 25,
+        'defense': 120,
+        'specialDefense': 65,
+        'speed': 65,
+      },
+      'attack': 78,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Alolan Sandshrew',
+            'type': [1],
+            'stone': 27,
+            'evolvedPokemon': 'Alolan Sandslash',
           },
         ],
       },
@@ -9277,6 +10731,7 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 0,
       'locations': {
+        '2': ['Nebby'],
         '3': [
           {
             'dungeon': 'Fullmoon Island',
@@ -9343,6 +10798,38 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 37.01,
+      'name': 'Alolan Vulpix',
+      'nativeRegion': 6,
+      'catchRate': 190,
+      'type': [5],
+      'levelType': 2,
+      'exp': 60,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Vulpix',
+          'type': [1],
+          'stone': 27,
+          'evolvedPokemon': 'Alolan Ninetales',
+        },
+      ],
+      'base': {
+        'hitpoints': 38,
+        'attack': 41,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 65,
+        'speed': 65,
+      },
+      'attack': 40,
+      'locations': {
+        '2': ['Mount Lanikala'],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
       'id': 38,
       'name': 'Ninetales',
       'catchRate': 75,
@@ -9372,6 +10859,37 @@ module.exports = {
             'type': [1],
             'stone': 0,
             'evolvedPokemon': 'Ninetales',
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 38.01,
+      'name': 'Alolan Ninetales',
+      'nativeRegion': 6,
+      'catchRate': 75,
+      'type': [1],
+      'levelType': 2,
+      'exp': 177,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 73,
+        'attack': 67,
+        'specialAttack': 81,
+        'defense': 75,
+        'specialDefense': 100,
+        'speed': 109,
+      },
+      'attack': 113,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Alolan Vulpix',
+            'type': [1],
+            'stone': 27,
+            'evolvedPokemon': 'Alolan Ninetales',
           },
         ],
       },
@@ -9552,6 +11070,12 @@ module.exports = {
           'Mt. Coronet North',
           'Castelia Sewers',
           'Connecting Cave',
+          "Hau'oli Cemetery",
+          'Verdant Cavern',
+          'Seaward Cave',
+          'Ten Carat Hill',
+          "Diglett's Tunnel",
+          'Memorial Hill',
         ],
       },
       'catchRatePercent': 63,
@@ -9614,6 +11138,10 @@ module.exports = {
           'Cave of Being',
           'Dreamyard',
           'Team Flare Secret HQ',
+          'Thrifty Megamart',
+          'Po Town',
+          'Vast Poni Canyon',
+          'Resolution Cave',
         ],
         '3': [
           {
@@ -9830,6 +11358,8 @@ module.exports = {
         '2': [
           'Mt. Moon',
           'Ilex Forest',
+          'Brooklet Hill',
+          'Lush Jungle',
         ],
         '9': '3.01%',
       },
@@ -9858,6 +11388,9 @@ module.exports = {
       'attack': 92,
       'nativeRegion': 0,
       'locations': {
+        '0': {
+          '6': [11],
+        },
         '2': ['Cerulean Cave'],
         '4': [
           {
@@ -9996,6 +11529,44 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 50.01,
+      'name': 'Alolan Diglett',
+      'nativeRegion': 6,
+      'catchRate': 255,
+      'type': [
+        8,
+        16,
+      ],
+      'levelType': 2,
+      'exp': 53,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Diglett',
+          'type': [0],
+          'evolvedPokemon': 'Alolan Dugtrio',
+          'level': 26,
+        },
+      ],
+      'base': {
+        'hitpoints': 10,
+        'attack': 55,
+        'specialAttack': 35,
+        'defense': 30,
+        'specialDefense': 45,
+        'speed': 90,
+      },
+      'attack': 18,
+      'locations': {
+        '2': [
+          'Verdant Cavern',
+          "Diglett's Tunnel",
+        ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
       'id': 51,
       'name': 'Dugtrio',
       'catchRate': 50,
@@ -10028,6 +11599,50 @@ module.exports = {
             'basePokemon': 'Diglett',
             'type': [0],
             'evolvedPokemon': 'Dugtrio',
+            'level': 26,
+          },
+        ],
+      },
+      'catchRatePercent': 18,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 51.01,
+      'name': 'Alolan Dugtrio',
+      'nativeRegion': 6,
+      'catchRate': 50,
+      'type': [
+        8,
+        16,
+      ],
+      'levelType': 2,
+      'exp': 149,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 35,
+        'attack': 100,
+        'specialAttack': 50,
+        'defense': 60,
+        'specialDefense': 70,
+        'speed': 110,
+      },
+      'attack': 66,
+      'locations': {
+        '0': {
+          '6': [
+            23,
+            29,
+          ],
+        },
+        '2': [
+          'Vast Poni Canyon',
+          'Resolution Cave',
+        ],
+        '4': [
+          {
+            'basePokemon': 'Alolan Diglett',
+            'type': [0],
+            'evolvedPokemon': 'Alolan Dugtrio',
             'level': 26,
           },
         ],
@@ -10079,6 +11694,44 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 52.01,
+      'name': 'Alolan Meowth',
+      'nativeRegion': 6,
+      'catchRate': 255,
+      'type': [15],
+      'levelType': 2,
+      'exp': 58,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Meowth',
+          'type': [1],
+          'stone': 11,
+          'evolvedPokemon': 'Alolan Persian',
+        },
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 35,
+        'specialAttack': 50,
+        'defense': 35,
+        'specialDefense': 40,
+        'speed': 90,
+      },
+      'attack': 35,
+      'locations': {
+        '0': {
+          '6': [2],
+        },
+        '2': [
+          "Trainers' School",
+          'Malie Garden',
+        ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
       'id': 53,
       'name': 'Persian',
       'catchRate': 90,
@@ -10103,6 +11756,37 @@ module.exports = {
             'type': [0],
             'evolvedPokemon': 'Persian',
             'level': 28,
+          },
+        ],
+      },
+      'catchRatePercent': 29,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 53.01,
+      'name': 'Alolan Persian',
+      'nativeRegion': 6,
+      'catchRate': 90,
+      'type': [15],
+      'levelType': 2,
+      'exp': 154,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 75,
+        'defense': 60,
+        'specialDefense': 65,
+        'speed': 115,
+      },
+      'attack': 85,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Alolan Meowth',
+            'type': [1],
+            'stone': 11,
+            'evolvedPokemon': 'Alolan Persian',
           },
         ],
       },
@@ -10159,6 +11843,10 @@ module.exports = {
           'Lake Valor',
           'Lake Acuity',
           'Floccesy Ranch',
+          'Seaward Cave',
+          'Ten Carat Hill',
+          'Brooklet Hill',
+          'Malie Garden',
         ],
         '5': ['Water'],
       },
@@ -10206,6 +11894,7 @@ module.exports = {
             22,
             23,
           ],
+          '6': [30],
         },
         '2': [
           'Oreburgh Gate',
@@ -10267,6 +11956,7 @@ module.exports = {
             23,
           ],
           '1': [42],
+          '6': [3],
         },
         '5': ['Fighting'],
       },
@@ -10340,6 +12030,7 @@ module.exports = {
             37,
             48,
           ],
+          '6': [2],
         },
         '2': ['Pokemon Mansion'],
         '5': ['Fire'],
@@ -10452,6 +12143,7 @@ module.exports = {
           'Ruins of Alph',
           'Giant Chasm',
           'Victory Road Unova',
+          'Brooklet Hill',
         ],
       },
       'catchRatePercent': 63,
@@ -10518,6 +12210,7 @@ module.exports = {
           'Ruins of Alph',
           'Frost Cavern',
           'Pokémon Village',
+          'Malie Garden',
         ],
         '4': [
           {
@@ -10609,10 +12302,12 @@ module.exports = {
             215,
           ],
           '5': [5],
+          '6': [2],
         },
         '2': [
           'Granite Cave',
           'Liberty Garden',
+          "Trainers' School",
         ],
       },
       'catchRatePercent': 53,
@@ -10742,6 +12437,7 @@ module.exports = {
           'Mt. Coronet South',
           'Mt. Coronet North',
           'Glittering Cave',
+          'Ten Carat Hill',
         ],
         '3': [
           {
@@ -10790,6 +12486,7 @@ module.exports = {
             226,
           ],
         },
+        '2': ['Vast Poni Canyon'],
         '3': [
           {
             'dungeon': 'Victory Road',
@@ -11087,6 +12784,13 @@ module.exports = {
             12,
             23,
           ],
+          '6': [
+            18,
+            19,
+            20,
+            7,
+            8,
+          ],
         },
         '2': [
           'Seafoam Islands',
@@ -11094,7 +12798,7 @@ module.exports = {
           'Seafloor Cavern',
           'Sealed Chamber',
           'Iron Island',
-          'Azure bay',
+          'Brooklet Hill',
         ],
       },
       'catchRatePercent': 51,
@@ -11148,6 +12852,11 @@ module.exports = {
             224,
             226,
             230,
+          ],
+          '6': [
+            14,
+            15,
+            26,
           ],
         },
         '2': ['Iron Island'],
@@ -11231,6 +12940,43 @@ module.exports = {
       'eggSteps': 600,
     },
     {
+      'id': 74.01,
+      'name': 'Alolan Geodude',
+      'nativeRegion': 6,
+      'catchRate': 255,
+      'type': [
+        12,
+        3,
+      ],
+      'levelType': 3,
+      'exp': 60,
+      'eggCycles': 15,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Geodude',
+          'type': [0],
+          'evolvedPokemon': 'Alolan Graveler',
+          'level': 25,
+        },
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 80,
+        'specialAttack': 30,
+        'defense': 100,
+        'specialDefense': 30,
+        'speed': 20,
+      },
+      'attack': 41,
+      'locations': {
+        '0': {
+          '6': [12],
+        },
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
       'id': 75,
       'name': 'Graveler',
       'catchRate': 120,
@@ -11305,6 +13051,54 @@ module.exports = {
       'eggSteps': 920,
     },
     {
+      'id': 75.01,
+      'name': 'Alolan Graveler',
+      'nativeRegion': 6,
+      'catchRate': 120,
+      'type': [
+        12,
+        3,
+      ],
+      'levelType': 3,
+      'exp': 137,
+      'eggCycles': 23,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Graveler',
+          'type': [1],
+          'stone': 6,
+          'evolvedPokemon': 'Alolan Golem',
+        },
+      ],
+      'base': {
+        'hitpoints': 55,
+        'attack': 95,
+        'specialAttack': 45,
+        'defense': 115,
+        'specialDefense': 45,
+        'speed': 35,
+      },
+      'attack': 74,
+      'locations': {
+        '0': {
+          '6': [
+            12,
+            17,
+          ],
+        },
+        '4': [
+          {
+            'basePokemon': 'Alolan Geodude',
+            'type': [0],
+            'evolvedPokemon': 'Alolan Graveler',
+            'level': 25,
+          },
+        ],
+      },
+      'catchRatePercent': 36,
+      'eggSteps': 920,
+    },
+    {
       'id': 76,
       'name': 'Golem',
       'catchRate': 45,
@@ -11332,6 +13126,40 @@ module.exports = {
             'type': [1],
             'stone': 6,
             'evolvedPokemon': 'Golem',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 76.01,
+      'name': 'Alolan Golem',
+      'nativeRegion': 6,
+      'catchRate': 45,
+      'type': [
+        12,
+        3,
+      ],
+      'levelType': 3,
+      'exp': 223,
+      'eggCycles': 35,
+      'base': {
+        'hitpoints': 80,
+        'attack': 120,
+        'specialAttack': 55,
+        'defense': 130,
+        'specialDefense': 65,
+        'speed': 45,
+      },
+      'attack': 125,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Alolan Graveler',
+            'type': [1],
+            'stone': 6,
+            'evolvedPokemon': 'Alolan Golem',
           },
         ],
       },
@@ -11466,12 +13294,17 @@ module.exports = {
             12,
             23,
           ],
+          '6': [
+            18,
+            20,
+            15,
+            16,
+          ],
         },
         '2': [
           'Seafoam Islands',
           'Slowpoke Well',
           'Hall of Origin',
-          'Azure bay',
         ],
       },
       'catchRatePercent': 51,
@@ -11565,6 +13398,7 @@ module.exports = {
         '2': [
           'Power Plant',
           'New Mauville',
+          "Trainers' School",
         ],
         '5': ['Electric'],
       },
@@ -11808,6 +13642,7 @@ module.exports = {
           'Whirl Islands',
           'Seaside Cave',
           'Giant Chasm',
+          'Seaward Cave',
         ],
         '3': [
           {
@@ -11901,6 +13736,46 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 88.01,
+      'name': 'Alolan Grimer',
+      'nativeRegion': 6,
+      'catchRate': 190,
+      'type': [
+        7,
+        15,
+      ],
+      'levelType': 2,
+      'exp': 65,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Alolan Grimer',
+          'type': [0],
+          'evolvedPokemon': 'Alolan Muk',
+          'level': 38,
+        },
+      ],
+      'base': {
+        'hitpoints': 80,
+        'attack': 80,
+        'specialAttack': 40,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 25,
+      },
+      'attack': 65,
+      'locations': {
+        '2': ['Po Town'],
+        '3': [
+          {
+            'dungeon': "Trainers' School",
+          },
+        ],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
       'id': 89,
       'name': 'Muk',
       'catchRate': 75,
@@ -11936,6 +13811,40 @@ module.exports = {
             'basePokemon': 'Grimer',
             'type': [0],
             'evolvedPokemon': 'Muk',
+            'level': 38,
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 89.01,
+      'name': 'Alolan Muk',
+      'nativeRegion': 6,
+      'catchRate': 75,
+      'type': [
+        7,
+        15,
+      ],
+      'levelType': 2,
+      'exp': 175,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 105,
+        'attack': 105,
+        'specialAttack': 65,
+        'defense': 75,
+        'specialDefense': 100,
+        'speed': 50,
+      },
+      'attack': 143,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Alolan Grimer',
+            'type': [0],
+            'evolvedPokemon': 'Alolan Muk',
             'level': 38,
           },
         ],
@@ -11983,6 +13892,7 @@ module.exports = {
           ],
           '3': [205],
           '5': [8],
+          '6': [20],
         },
         '2': ['Seaside Cave'],
       },
@@ -12063,6 +13973,9 @@ module.exports = {
           'Eterna Forest',
           'Old Chateau',
           'Distortion World',
+          "Hau'oli Cemetery",
+          'Memorial Hill',
+          'Thrifty Megamart',
         ],
       },
       'catchRatePercent': 51,
@@ -12111,10 +14024,14 @@ module.exports = {
           'Celestial Tower',
           'Frost Cavern',
           'Victory Road Kalos',
+          'Thrifty Megamart',
         ],
         '3': [
           {
             'dungeon': 'Tin Tower',
+          },
+          {
+            'dungeon': 'Po Town',
           },
         ],
         '4': [
@@ -12151,7 +14068,10 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 0,
       'locations': {
-        '2': ['Old Chateau'],
+        '2': [
+          'Old Chateau',
+          'Thrifty Megamart',
+        ],
         '4': [
           {
             'basePokemon': 'Haunter',
@@ -12250,7 +14170,9 @@ module.exports = {
             34,
             35,
           ],
+          '6': [2],
         },
+        '2': ['Po Town'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -12274,6 +14196,9 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 0,
       'locations': {
+        '0': {
+          '6': [28],
+        },
         '4': [
           {
             'basePokemon': 'Drowzee',
@@ -12508,7 +14433,7 @@ module.exports = {
             23,
           ],
         },
-        '2': ['Azure bay'],
+        '2': ['Exeggutor Island Hill'],
         '9': '12.05%',
       },
       'catchRatePercent': 29,
@@ -12550,6 +14475,31 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 103.01,
+      'name': 'Alolan Exeggutor',
+      'nativeRegion': 6,
+      'catchRate': 45,
+      'type': [
+        4,
+        14,
+      ],
+      'levelType': 4,
+      'exp': 186,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 95,
+        'attack': 105,
+        'specialAttack': 125,
+        'defense': 85,
+        'specialDefense': 75,
+        'speed': 45,
+      },
+      'attack': 176,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
       'id': 104,
       'name': 'Cubone',
       'catchRate': 190,
@@ -12579,6 +14529,7 @@ module.exports = {
         '2': [
           'Pokemon Tower',
           'Glittering Cave',
+          'Wela Volcano Park',
         ],
         '9': '6.02%',
       },
@@ -12621,6 +14572,69 @@ module.exports = {
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
+    },
+    {
+      'id': 105.01,
+      'name': 'Alolan Marowak',
+      'nativeRegion': 6,
+      'catchRate': 75,
+      'type': [
+        1,
+        13,
+      ],
+      'levelType': 2,
+      'exp': 149,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 60,
+        'attack': 80,
+        'specialAttack': 50,
+        'defense': 110,
+        'specialDefense': 80,
+        'speed': 45,
+      },
+      'attack': 87,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Wela Volcano Park',
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
+    },
+    {
+      'id': 105.02,
+      'name': 'Totem Alolan Marowak',
+      'nativeRegion': 6,
+      'catchRate': 75,
+      'type': [
+        1,
+        13,
+      ],
+      'levelType': 2,
+      'exp': 149,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 60,
+        'attack': 80,
+        'specialAttack': 50,
+        'defense': 110,
+        'specialDefense': 80,
+        'speed': 65,
+      },
+      'attack': 88,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Wela Volcano Park',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 106,
@@ -12717,6 +14731,7 @@ module.exports = {
           '1': [44],
           '3': [215],
           '4': [2],
+          '6': [30],
         },
         '3': [
           {
@@ -13021,6 +15036,7 @@ module.exports = {
       'attack': 109,
       'nativeRegion': 0,
       'locations': {
+        '2': ['Wela Volcano Park'],
         '3': [
           {
             'dungeon': 'Glittering Cave',
@@ -13203,6 +15219,8 @@ module.exports = {
           'Abundant Shrine',
           'Pinwheel Forest',
           'Parfum Palace',
+          'Brooklet Hill',
+          'Malie Garden',
         ],
       },
       'catchRatePercent': 58,
@@ -13304,6 +15322,7 @@ module.exports = {
           ],
           '4': [13],
           '5': [8],
+          '6': [7],
         },
         '2': ['Seafoam Islands'],
         '5': ['Water'],
@@ -13504,6 +15523,7 @@ module.exports = {
         '0': {
           '3': [222],
         },
+        '2': ['Hokulani Observatory'],
         '3': [
           {
             'dungeon': 'Power Plant',
@@ -13549,6 +15569,7 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 0,
       'locations': {
+        '2': ['Wela Volcano Park'],
         '3': [
           {
             'dungeon': 'Pokemon Mansion',
@@ -13589,10 +15610,18 @@ module.exports = {
           '3': [229],
           '4': [12],
           '5': [12],
+          '6': [27],
         },
+        '2': ['Lush Jungle'],
         '3': [
           {
             'dungeon': 'Lostlorn Forest',
+          },
+          {
+            'dungeon': 'Po Town',
+          },
+          {
+            'dungeon': 'Exeggutor Island Hill',
           },
         ],
         '9': '2.41%',
@@ -13626,7 +15655,13 @@ module.exports = {
             48,
           ],
           '5': [12],
+          '6': [28],
         },
+        '3': [
+          {
+            'dungeon': 'Paniola Ranch',
+          },
+        ],
         '9': '6.02%',
       },
       'catchRatePercent': 17,
@@ -13755,6 +15790,19 @@ module.exports = {
             3,
             22,
           ],
+          '6': [
+            19,
+            20,
+            7,
+            8,
+            9,
+            21,
+            13,
+            14,
+            15,
+            26,
+            30,
+          ],
         },
         '2': [
           'Seafoam Islands',
@@ -13773,6 +15821,11 @@ module.exports = {
           'Lake Valor',
           'Lake Acuity',
           'Parfum Palace',
+          'Seaward Cave',
+          'Brooklet Hill',
+          'Malie Garden',
+          'Vast Poni Canyon',
+          'Poni Meadow',
         ],
       },
       'catchRatePercent': 63,
@@ -13829,6 +15882,7 @@ module.exports = {
         '2': [
           'Parfum Palace',
           'Team Flare Secret HQ',
+          'Malie Garden',
         ],
         '3': [
           {
@@ -13880,12 +15934,8 @@ module.exports = {
             12,
             23,
           ],
+          '6': [26],
         },
-        '3': [
-          {
-            'dungeon': 'Azure bay',
-          },
-        ],
         '5': ['Water'],
       },
       'catchRatePercent': 17,
@@ -13916,6 +15966,7 @@ module.exports = {
             35,
             47,
           ],
+          '6': [22],
         },
         '2': [
           'Pokemon Mansion',
@@ -14014,6 +16065,10 @@ module.exports = {
       'locations': {
         '0': {
           '5': [10],
+          '6': [
+            4,
+            6,
+          ],
         },
         '2': ['Hall of Origin'],
         '7': ['Celadon City'],
@@ -14040,6 +16095,11 @@ module.exports = {
       'attack': 155,
       'nativeRegion': 0,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Hope',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -14071,6 +16131,11 @@ module.exports = {
       'attack': 115,
       'nativeRegion': 0,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Conflict',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -14487,8 +16552,12 @@ module.exports = {
         '0': {
           '1': [45],
           '5': [21],
+          '6': [30],
         },
-        '2': ['Dragonspiral Tower'],
+        '2': [
+          'Dragonspiral Tower',
+          'Poni Meadow',
+        ],
         '5': ['Dragon'],
       },
       'catchRatePercent': 17,
@@ -15073,6 +17142,7 @@ module.exports = {
           'Sprout Tower',
           'Ilex Forest',
           'Eterna Forest',
+          'Lush Jungle',
         ],
       },
       'catchRatePercent': 63,
@@ -15188,6 +17258,7 @@ module.exports = {
             26,
           ],
           '5': [4],
+          '6': [1],
         },
       },
       'catchRatePercent': 63,
@@ -15217,8 +17288,17 @@ module.exports = {
       'locations': {
         '0': {
           '3': [229],
+          '6': [
+            10,
+            11,
+            17,
+          ],
         },
-        '2': ['Pledge Grove'],
+        '2': [
+          'Pledge Grove',
+          'Malie Garden',
+          "Ula'ula Meadow",
+        ],
         '4': [
           {
             'basePokemon': 'Ledyba',
@@ -15280,7 +17360,9 @@ module.exports = {
             27,
             26,
           ],
+          '6': [1],
         },
+        '2': ['Po Town'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -15309,10 +17391,17 @@ module.exports = {
       'locations': {
         '0': {
           '3': [229],
+          '6': [
+            10,
+            11,
+            17,
+          ],
         },
         '2': [
           'Terminus Cave',
           'Victory Road Kalos',
+          'Malie Garden',
+          "Ula'ula Meadow",
         ],
         '4': [
           {
@@ -15348,6 +17437,11 @@ module.exports = {
       'attack': 128,
       'nativeRegion': 1,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Resolution Cave',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Golbat',
@@ -15400,8 +17494,11 @@ module.exports = {
           '3': [220],
           '4': [24],
           '5': [23],
+          '6': [
+            8,
+            21,
+          ],
         },
-        '2': ['Azure bay'],
         '5': ['Electric'],
       },
       'catchRatePercent': 51,
@@ -15477,6 +17574,10 @@ module.exports = {
       'attack': 17,
       'nativeRegion': 1,
       'locations': {
+        '0': {
+          '6': [1],
+        },
+        '2': ['Pikachu Valley'],
         '6': ['Pikachu'],
       },
       'catchRatePercent': 51,
@@ -15510,6 +17611,9 @@ module.exports = {
       'attack': 27,
       'nativeRegion': 1,
       'locations': {
+        '0': {
+          '6': [22],
+        },
         '6': ['Clefairy'],
       },
       'catchRatePercent': 42,
@@ -15546,6 +17650,12 @@ module.exports = {
       'attack': 27,
       'nativeRegion': 1,
       'locations': {
+        '0': {
+          '6': [
+            4,
+            6,
+          ],
+        },
         '6': ['Jigglypuff'],
       },
       'catchRatePercent': 47,
@@ -15657,6 +17767,7 @@ module.exports = {
       'locations': {
         '0': {
           '1': [28],
+          '6': [21],
         },
         '2': ['Ruins of Alph'],
       },
@@ -15731,7 +17842,10 @@ module.exports = {
             43,
           ],
         },
-        '2': ['Floccesy Ranch'],
+        '2': [
+          'Floccesy Ranch',
+          'Paniola Ranch',
+        ],
         '5': ['Electric'],
       },
       'catchRatePercent': 60,
@@ -15801,6 +17915,7 @@ module.exports = {
       'attack': 147,
       'nativeRegion': 1,
       'locations': {
+        '2': ['Ruins of Conflict'],
         '4': [
           {
             'basePokemon': 'Flaaffy',
@@ -15832,7 +17947,10 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 1,
       'locations': {
-        '2': ['Flower Paradise'],
+        '2': [
+          'Flower Paradise',
+          'Ruins of Abundance',
+        ],
         '4': [
           {
             'basePokemon': 'Gloom',
@@ -15948,6 +18066,7 @@ module.exports = {
         '2': [
           'Victory Road Sinnoh',
           'Abundant Shrine',
+          'Ruins of Hope',
         ],
         '4': [
           {
@@ -16022,6 +18141,7 @@ module.exports = {
         '0': {
           '5': [19],
         },
+        '2': ['Ruins of Hope'],
         '4': [
           {
             'basePokemon': 'Poliwhirl',
@@ -16252,6 +18372,7 @@ module.exports = {
         '2': [
           'Flower Paradise',
           'Liberty Garden',
+          'Nebby',
         ],
         '4': [
           {
@@ -16417,6 +18538,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': ['Fullmoon Island'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Life',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -16572,6 +18698,8 @@ module.exports = {
         '2': [
           'Mt Silver',
           'Celestial Tower',
+          "Hau'oli Cemetery",
+          'Poni Meadow',
         ],
       },
       'catchRatePercent': 17,
@@ -17550,6 +19678,13 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 1,
       'locations': {
+        '0': {
+          '6': [
+            24,
+            25,
+            30,
+          ],
+        },
         '4': [
           {
             'basePokemon': 'Snubbull',
@@ -17696,6 +19831,7 @@ module.exports = {
           ],
           '4': [12],
           '5': [12],
+          '6': [27],
         },
         '3': [
           {
@@ -17749,6 +19885,7 @@ module.exports = {
           'Lake Acuity',
           'Snowpoint Temple',
           'Giant Chasm',
+          'Mount Lanikala',
         ],
       },
       'catchRatePercent': 21,
@@ -18011,6 +20148,10 @@ module.exports = {
             40,
           ],
           '2': [128],
+          '6': [
+            19,
+            9,
+          ],
         },
       },
       'catchRatePercent': 21,
@@ -18060,8 +20201,12 @@ module.exports = {
             12,
             23,
           ],
+          '6': [
+            19,
+            20,
+            8,
+          ],
         },
-        '2': ['Azure bay'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -18137,6 +20282,9 @@ module.exports = {
           {
             'dungeon': 'Ice Path',
           },
+          {
+            'dungeon': 'Seaward Cave',
+          },
         ],
       },
       'catchRatePercent': 17,
@@ -18206,8 +20354,16 @@ module.exports = {
           '1': [45],
           '2': [113],
           '3': [227],
+          '6': [
+            10,
+            22,
+          ],
         },
-        '2': ['Reversal Mountain'],
+        '2': [
+          'Reversal Mountain',
+          'Hokulani Observatory',
+          'Vast Poni Canyon',
+        ],
         '3': [
           {
             'dungeon': 'Stark Mountain',
@@ -18254,6 +20410,7 @@ module.exports = {
           '3': [214],
           '5': [10],
         },
+        '2': ['Po Town'],
         '5': ['Fire'],
       },
       'catchRatePercent': 36,
@@ -18281,6 +20438,9 @@ module.exports = {
       'attack': 129,
       'nativeRegion': 1,
       'locations': {
+        '0': {
+          '6': [12],
+        },
         '2': ['Team Flare Secret HQ'],
         '4': [
           {
@@ -18489,6 +20649,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [7],
+          '6': [2],
         },
         '2': ['Ruins of Alph'],
       },
@@ -18612,7 +20773,10 @@ module.exports = {
       'attack': 39,
       'nativeRegion': 1,
       'locations': {
-        '2': ['Snowpoint Temple'],
+        '2': [
+          'Snowpoint Temple',
+          'Seaward Cave',
+        ],
         '6': ['Jynx'],
       },
       'catchRatePercent': 17,
@@ -18646,6 +20810,10 @@ module.exports = {
       'attack': 58,
       'nativeRegion': 1,
       'locations': {
+        '0': {
+          '6': [22],
+        },
+        '2': ['Hokulani Observatory'],
         '5': ['Electric'],
         '6': ['Electabuzz'],
       },
@@ -18680,6 +20848,7 @@ module.exports = {
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
+        '2': ['Wela Volcano Park'],
         '5': ['Fire'],
         '6': ['Magmar'],
       },
@@ -18712,7 +20881,13 @@ module.exports = {
             47,
           ],
           '5': [12],
+          '6': [28],
         },
+        '3': [
+          {
+            'dungeon': 'Paniola Ranch',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -18873,6 +21048,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Mt Silver',
+          },
+          {
+            'dungeon': "Diglett's Tunnel",
           },
         ],
       },
@@ -20181,12 +22359,21 @@ module.exports = {
             229,
             230,
           ],
+          '6': [
+            18,
+            19,
+            20,
+            20,
+            7,
+            21,
+          ],
         },
         '2': [
           'Mt. Pyre',
           'Iron Island',
           'Liberty Garden',
-          'Azure bay',
+          "Trainers' School",
+          'Brooklet Hill',
         ],
       },
       'catchRatePercent': 51,
@@ -20260,10 +22447,21 @@ module.exports = {
             13,
             22,
           ],
+          '6': [
+            14,
+            15,
+            16,
+            24,
+            25,
+            26,
+            28,
+            30,
+          ],
         },
         '2': [
           'Iron Island',
           'Giant Chasm',
+          'Exeggutor Island Hill',
         ],
         '4': [
           {
@@ -20393,6 +22591,7 @@ module.exports = {
       'attack': 127,
       'nativeRegion': 2,
       'locations': {
+        '2': ['Ruins of Life'],
         '4': [
           {
             'basePokemon': 'Kirlia',
@@ -20444,6 +22643,7 @@ module.exports = {
           ],
           '3': [229],
         },
+        '2': ['Brooklet Hill'],
       },
       'catchRatePercent': 53,
       'eggSteps': 600,
@@ -20474,6 +22674,14 @@ module.exports = {
           '3': [229],
           '5': [3],
         },
+        '3': [
+          {
+            'dungeon': 'Malie Garden',
+          },
+          {
+            'dungeon': 'Po Town',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Surskit',
@@ -20928,6 +23136,9 @@ module.exports = {
       'attack': 32,
       'nativeRegion': 2,
       'locations': {
+        '0': {
+          '6': [2],
+        },
         '2': [
           'Granite Cave',
           'Victory Road Hoenn',
@@ -20958,6 +23169,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [11],
+          '6': [28],
         },
         '3': [
           {
@@ -21061,6 +23273,9 @@ module.exports = {
       'attack': 47,
       'nativeRegion': 2,
       'locations': {
+        '0': {
+          '6': [21],
+        },
         '2': [
           'Mt. Coronet South',
           'Chargestone Cave',
@@ -21128,6 +23343,7 @@ module.exports = {
       'attack': 76,
       'nativeRegion': 2,
       'locations': {
+        '2': ['Nebby'],
         '4': [
           {
             'basePokemon': 'Skitty',
@@ -21198,6 +23414,7 @@ module.exports = {
           'Cave of Origin',
           'Sky Pillar',
           'Victory Road Hoenn',
+          'Ten Carat Hill',
         ],
         '3': [
           {
@@ -21488,6 +23705,9 @@ module.exports = {
       'attack': 110,
       'nativeRegion': 2,
       'locations': {
+        '0': {
+          '6': [12],
+        },
         '2': ['Team Flare Secret HQ'],
         '4': [
           {
@@ -21788,6 +24008,7 @@ module.exports = {
             119,
           ],
           '5': [22],
+          '6': [26],
         },
       },
       'catchRatePercent': 58,
@@ -21906,6 +24127,7 @@ module.exports = {
           ],
           '4': [24],
           '5': [8],
+          '6': [26],
         },
         '2': [
           'Shoal Cave',
@@ -22073,6 +24295,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [18],
+          '6': [12],
         },
         '3': [
           {
@@ -22181,6 +24404,11 @@ module.exports = {
           '2': [113],
           '5': [21],
         },
+        '3': [
+          {
+            'dungeon': 'Ten Carat Hill',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -22216,6 +24444,7 @@ module.exports = {
           '2': [111],
           '4': [25],
           '5': [13],
+          '6': [23],
         },
         '2': ['Reversal Mountain'],
       },
@@ -22558,6 +24787,7 @@ module.exports = {
         '2': [
           'Giant Chasm',
           'Glittering Cave',
+          'Nebby',
         ],
         '3': [
           {
@@ -22599,6 +24829,7 @@ module.exports = {
         '2': [
           'Giant Chasm',
           'Glittering Cave',
+          'Nebby',
         ],
         '3': [
           {
@@ -22657,6 +24888,7 @@ module.exports = {
             14,
             19,
           ],
+          '6': [30],
         },
         '2': [
           'Meteor Falls',
@@ -22666,6 +24898,13 @@ module.exports = {
           'Mt. Coronet South',
           'Mt. Coronet North',
           'Moor of Icirrus',
+          'Vast Poni Canyon',
+          'Poni Meadow',
+        ],
+        '3': [
+          {
+            'dungeon': 'Seaward Cave',
+          },
         ],
       },
       'catchRatePercent': 51,
@@ -22760,7 +24999,10 @@ module.exports = {
             117,
           ],
         },
-        '2': ['Parfum Palace'],
+        '2': [
+          'Parfum Palace',
+          'Vast Poni Canyon',
+        ],
       },
       'catchRatePercent': 54,
       'eggSteps': 600,
@@ -22832,6 +25074,7 @@ module.exports = {
       'locations': {
         '0': {
           '2': [111],
+          '6': [23],
         },
         '3': [
           {
@@ -23042,6 +25285,7 @@ module.exports = {
       'attack': 10,
       'nativeRegion': 2,
       'locations': {
+        '2': ['Brooklet Hill'],
         '3': [
           {
             'dungeon': 'Mt. Coronet North',
@@ -23237,7 +25481,10 @@ module.exports = {
             123,
           ],
         },
-        '2': ['Mt. Pyre'],
+        '2': [
+          'Mt. Pyre',
+          'Thrifty Megamart',
+        ],
         '3': [
           {
             'dungeon': 'Mt. Pyre',
@@ -23276,6 +25523,7 @@ module.exports = {
         '2': [
           'Sky Pillar',
           'Victory Road Unova',
+          'Thrifty Megamart',
         ],
         '4': [
           {
@@ -23405,6 +25653,11 @@ module.exports = {
           '2': [119],
           '4': [18],
         },
+        '3': [
+          {
+            'dungeon': 'Exeggutor Island Hill',
+          },
+        ],
         '5': ['Grass'],
       },
       'catchRatePercent': 53,
@@ -23429,7 +25682,10 @@ module.exports = {
       'attack': 102,
       'nativeRegion': 2,
       'locations': {
-        '2': ['Distortion World'],
+        '2': [
+          'Distortion World',
+          'Ruins of Life',
+        ],
         '3': [
           {
             'dungeon': 'Mt. Pyre',
@@ -23483,6 +25739,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Mt. Coronet South',
+          },
+          {
+            'dungeon': 'Mount Lanikala',
           },
         ],
       },
@@ -23564,7 +25823,10 @@ module.exports = {
             217,
           ],
         },
-        '2': ['Lake Acuity'],
+        '2': [
+          'Lake Acuity',
+          'Mount Lanikala',
+        ],
         '3': [
           {
             'dungeon': 'Shoal Cave',
@@ -23593,6 +25855,11 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 2,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Mount Lanikala',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Snorunt',
@@ -23775,6 +26042,10 @@ module.exports = {
             221,
           ],
           '5': [12],
+          '6': [
+            19,
+            15,
+          ],
         },
         '5': ['Water'],
       },
@@ -23831,6 +26102,7 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 2,
       'locations': {
+        '2': ['Ruins of Hope'],
         '4': [
           {
             'basePokemon': 'Clamperl',
@@ -23871,6 +26143,7 @@ module.exports = {
             126,
           ],
           '3': [226],
+          '6': [26],
         },
       },
       'catchRatePercent': 11,
@@ -23903,16 +26176,15 @@ module.exports = {
             8,
             23,
           ],
+          '6': [
+            19,
+            9,
+          ],
         },
         '2': [
           'Fullmoon Island',
           'Newmoon Island',
           'Seaside Cave',
-        ],
-        '3': [
-          {
-            'dungeon': 'Azure bay',
-          },
         ],
       },
       'catchRatePercent': 58,
@@ -23947,6 +26219,10 @@ module.exports = {
       'locations': {
         '0': {
           '5': [8],
+          '6': [
+            3,
+            20,
+          ],
         },
         '5': ['Dragon'],
       },
@@ -24058,6 +26334,9 @@ module.exports = {
       'attack': 42,
       'nativeRegion': 2,
       'locations': {
+        '0': {
+          '6': [22],
+        },
         '7': ['Mossdeep City'],
       },
       'catchRatePercent': 2,
@@ -26187,7 +28466,13 @@ module.exports = {
             224,
             230,
           ],
+          '6': [
+            24,
+            25,
+            26,
+          ],
         },
+        '2': ['Exeggutor Island Hill'],
         '4': [
           {
             'basePokemon': 'Shellos (east)',
@@ -26265,6 +28550,11 @@ module.exports = {
           '3': [205],
           '5': [8],
         },
+        '3': [
+          {
+            'dungeon': "Hau'oli Cemetery",
+          },
+        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 1200,
@@ -26337,6 +28627,12 @@ module.exports = {
       'attack': 57,
       'nativeRegion': 3,
       'locations': {
+        '0': {
+          '6': [
+            1,
+            27,
+          ],
+        },
         '2': ['Eterna Forest'],
       },
       'catchRatePercent': 51,
@@ -26775,7 +29071,9 @@ module.exports = {
             209,
             210,
           ],
+          '6': [5],
         },
+        '2': ['Lush Jungle'],
         '6': ['Sudowoodo'],
       },
       'catchRatePercent': 63,
@@ -26818,6 +29116,7 @@ module.exports = {
             210,
           ],
         },
+        '2': ["Trainers' School"],
         '6': ['Mr. Mime'],
       },
       'catchRatePercent': 41,
@@ -26890,7 +29189,6 @@ module.exports = {
             23,
           ],
         },
-        '2': ['Azure bay'],
       },
       'catchRatePercent': 12,
       'eggSteps': 800,
@@ -26990,6 +29288,9 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 3,
       'locations': {
+        '0': {
+          '6': [23],
+        },
         '3': [
           {
             'dungeon': 'Victory Road Sinnoh',
@@ -27111,6 +29412,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [22],
+          '6': [27],
         },
         '3': [
           {
@@ -27457,8 +29759,20 @@ module.exports = {
             220,
             221,
           ],
+          '6': [
+            18,
+            19,
+            20,
+            7,
+            8,
+            14,
+            15,
+          ],
         },
-        '2': ['Iron Island'],
+        '2': [
+          'Iron Island',
+          'Brooklet Hill',
+        ],
         '5': ['Water'],
       },
       'catchRatePercent': 51,
@@ -27491,6 +29805,7 @@ module.exports = {
             220,
             221,
           ],
+          '6': [26],
         },
         '4': [
           {
@@ -27545,8 +29860,13 @@ module.exports = {
             12,
             23,
           ],
+          '6': [
+            18,
+            19,
+            20,
+            8,
+          ],
         },
-        '2': ['Azure bay'],
         '6': ['Mantine'],
       },
       'catchRatePercent': 11,
@@ -27841,6 +30161,7 @@ module.exports = {
       'attack': 150,
       'nativeRegion': 3,
       'locations': {
+        '2': ['Ruins of Conflict'],
         '4': [
           {
             'basePokemon': 'Electabuzz',
@@ -27971,6 +30292,11 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 3,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Abundance',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -29790,7 +32116,17 @@ module.exports = {
       'attack': 35,
       'nativeRegion': 4,
       'locations': {
-        '2': ['Floccesy Ranch'],
+        '0': {
+          '6': [
+            4,
+            5,
+            6,
+          ],
+        },
+        '2': [
+          'Floccesy Ranch',
+          'Paniola Ranch',
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -30194,6 +32530,7 @@ module.exports = {
       'attack': 137,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Ruins of Life'],
         '4': [
           {
             'basePokemon': 'Munna',
@@ -30432,6 +32769,7 @@ module.exports = {
         '2': [
           'Relic Passage',
           'Reflection Cave',
+          'Ten Carat Hill',
         ],
       },
       'catchRatePercent': 63,
@@ -30471,6 +32809,7 @@ module.exports = {
           'Seaside Cave',
           'Victory Road Unova',
           'Twist Mountain',
+          'Vast Poni Canyon',
         ],
         '4': [
           {
@@ -31269,11 +33608,18 @@ module.exports = {
       'attack': 32,
       'nativeRegion': 4,
       'locations': {
+        '0': {
+          '6': [28],
+        },
         '2': [
           'Lostlorn Forest',
           'Abundant Shrine',
           'Victory Road Unova',
           'Pinwheel Forest',
+          'Melemele Meadow',
+          'Malie Garden',
+          "Ula'ula Meadow",
+          'Poni Meadow',
         ],
       },
       'catchRatePercent': 51,
@@ -31301,6 +33647,7 @@ module.exports = {
       'attack': 98,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Ruins of Abundance'],
         '4': [
           {
             'basePokemon': 'Cottonee',
@@ -31340,11 +33687,18 @@ module.exports = {
       'attack': 43,
       'nativeRegion': 4,
       'locations': {
+        '0': {
+          '6': [28],
+        },
         '2': [
           'Lostlorn Forest',
           'Abundant Shrine',
           'Victory Road Unova',
           'Pinwheel Forest',
+          'Melemele Meadow',
+          'Malie Garden',
+          "Ula'ula Meadow",
+          'Poni Meadow',
         ],
       },
       'catchRatePercent': 51,
@@ -31369,6 +33723,7 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Ruins of Abundance'],
         '4': [
           {
             'basePokemon': 'Petilil',
@@ -31424,6 +33779,9 @@ module.exports = {
           'Victory Road Unova',
           'Dragonspiral Tower',
           'Pinwheel Forest',
+          'Brooklet Hill',
+          'Malie Garden',
+          'Vast Poni Canyon',
         ],
       },
       'catchRatePercent': 11,
@@ -31471,6 +33829,9 @@ module.exports = {
           'Victory Road Unova',
           'Dragonspiral Tower',
           'Pinwheel Forest',
+          'Brooklet Hill',
+          'Malie Garden',
+          'Vast Poni Canyon',
         ],
       },
       'catchRatePercent': 11,
@@ -31548,6 +33909,9 @@ module.exports = {
       'attack': 62,
       'nativeRegion': 4,
       'locations': {
+        '0': {
+          '6': [23],
+        },
         '2': ['Relic Castle'],
         '4': [
           {
@@ -31803,7 +34167,12 @@ module.exports = {
             4,
             25,
           ],
+          '6': [
+            16,
+            17,
+          ],
         },
+        '2': ['Po Town'],
       },
       'catchRatePercent': 49,
       'eggSteps': 600,
@@ -32114,7 +34483,10 @@ module.exports = {
             16,
           ],
         },
-        '2': ['Castelia Sewers'],
+        '2': [
+          'Castelia Sewers',
+          'Po Town',
+        ],
         '3': [
           {
             'dungeon': 'Lost Hotel',
@@ -32185,6 +34557,7 @@ module.exports = {
       'attack': 56,
       'nativeRegion': 4,
       'locations': {
+        '2': ["Trainers' School"],
         '7': ['Driftveil City'],
       },
       'catchRatePercent': 25,
@@ -32211,6 +34584,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [20],
+          '6': [27],
         },
         '3': [
           {
@@ -32690,6 +35064,11 @@ module.exports = {
       'attack': 148,
       'nativeRegion': 4,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Mount Lanikala',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Vanillish',
@@ -33230,6 +35609,7 @@ module.exports = {
             17,
             18,
           ],
+          '6': [14],
         },
         '2': ['Seaside Cave'],
       },
@@ -33261,6 +35641,7 @@ module.exports = {
         '0': {
           '4': [24],
         },
+        '2': ['Thrifty Megamart'],
         '4': [
           {
             'basePokemon': 'Frillish',
@@ -33298,6 +35679,7 @@ module.exports = {
             18,
           ],
         },
+        '2': ['Brooklet Hill'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1600,
@@ -33682,6 +36064,9 @@ module.exports = {
       'attack': 68,
       'nativeRegion': 4,
       'locations': {
+        '0': {
+          '6': [22],
+        },
         '2': ['Celestial Tower'],
       },
       'catchRatePercent': 63,
@@ -33753,6 +36138,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Celestial Tower',
+          },
+          {
+            'dungeon': "Hau'oli Cemetery",
           },
         ],
       },
@@ -34192,7 +36580,10 @@ module.exports = {
           ],
           '5': [8],
         },
-        '2': ['Dragonspiral Tower'],
+        '2': [
+          'Dragonspiral Tower',
+          'Vast Poni Canyon',
+        ],
       },
       'catchRatePercent': 49,
       'eggSteps': 1000,
@@ -34251,7 +36642,10 @@ module.exports = {
       'attack': 127,
       'nativeRegion': 4,
       'locations': {
-        '2': ['Victory Road Kalos'],
+        '2': [
+          'Victory Road Kalos',
+          'Resolution Cave',
+        ],
         '3': [
           {
             'dungeon': 'Victory Road Unova',
@@ -34296,6 +36690,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [10],
+          '6': [23],
         },
         '2': ['Dragonspiral Tower'],
       },
@@ -34377,6 +36772,11 @@ module.exports = {
           '5': [15],
         },
         '2': ['Lost Hotel'],
+        '3': [
+          {
+            'dungeon': 'Po Town',
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -34403,6 +36803,9 @@ module.exports = {
       'attack': 117,
       'nativeRegion': 4,
       'locations': {
+        '0': {
+          '6': [17],
+        },
         '4': [
           {
             'basePokemon': 'Pawniard',
@@ -34473,6 +36876,7 @@ module.exports = {
       'locations': {
         '0': {
           '4': [23],
+          '6': [3],
         },
       },
       'catchRatePercent': 51,
@@ -34544,6 +36948,7 @@ module.exports = {
       'locations': {
         '0': {
           '4': [23],
+          '6': [3],
         },
       },
       'catchRatePercent': 51,
@@ -35823,8 +38228,12 @@ module.exports = {
             2,
             3,
           ],
+          '6': [8],
         },
-        '2': ['Santalune Forest'],
+        '2': [
+          'Santalune Forest',
+          'Wela Volcano Park',
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -36119,6 +38528,11 @@ module.exports = {
         '0': {
           '5': [4],
         },
+        '3': [
+          {
+            'dungeon': 'Melemele Meadow',
+          },
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -36295,6 +38709,14 @@ module.exports = {
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
+        '3': [
+          {
+            'dungeon': "Ula'ula Meadow",
+          },
+          {
+            'dungeon': 'Poni Meadow',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Flabébé (Red)',
@@ -36504,6 +38926,12 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
+        '2': [
+          'Ruins of Conflict',
+          'Ruins of Life',
+          'Ruins of Abundance',
+          'Ruins of Hope',
+        ],
         '4': [
           {
             'basePokemon': 'Floette (Red)',
@@ -36734,6 +39162,10 @@ module.exports = {
       'locations': {
         '0': {
           '5': [5],
+          '6': [
+            10,
+            11,
+          ],
         },
       },
       'catchRatePercent': 57,
@@ -36794,10 +39226,18 @@ module.exports = {
       'locations': {
         '0': {
           '5': [5],
+          '6': [
+            2,
+            24,
+            25,
+          ],
         },
         '3': [
           {
             'dungeon': 'Parfum Palace',
+          },
+          {
+            'dungeon': "Trainers' School",
           },
         ],
       },
@@ -37147,12 +39587,13 @@ module.exports = {
             8,
             23,
           ],
+          '6': [
+            18,
+            24,
+            25,
+            30,
+          ],
         },
-        '3': [
-          {
-            'dungeon': 'Azure bay',
-          },
-        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -37453,6 +39894,7 @@ module.exports = {
       'attack': 99,
       'nativeRegion': 5,
       'locations': {
+        '2': ['Nebby'],
         '4': [
           {
             'basePokemon': 'Helioptile',
@@ -37617,7 +40059,22 @@ module.exports = {
       },
       'attack': 143,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Conflict',
+          },
+          {
+            'dungeon': 'Ruins of Life',
+          },
+          {
+            'dungeon': 'Ruins of Abundance',
+          },
+          {
+            'dungeon': 'Ruins of Hope',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1400,
     },
@@ -37645,6 +40102,7 @@ module.exports = {
       'locations': {
         '0': {
           '5': [10],
+          '6': [3],
         },
       },
       'catchRatePercent': 31,
@@ -37675,6 +40133,10 @@ module.exports = {
         '0': {
           '5': [11],
         },
+        '2': [
+          'Ruins of Conflict',
+          'Hokulani Observatory',
+        ],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -37701,9 +40163,13 @@ module.exports = {
       'attack': 80,
       'nativeRegion': 5,
       'locations': {
+        '2': ['Vast Poni Canyon'],
         '3': [
           {
             'dungeon': 'Reflection Cave',
+          },
+          {
+            'dungeon': 'Ten Carat Hill',
           },
         ],
       },
@@ -37859,6 +40325,7 @@ module.exports = {
             16,
           ],
         },
+        '2': ['Thrifty Megamart'],
         '3': [
           {
             'dungeon': 'Lost Hotel',
@@ -37901,6 +40368,11 @@ module.exports = {
         '0': {
           '5': [16],
         },
+        '3': [
+          {
+            'dungeon': 'Memorial Hill',
+          },
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -38089,6 +40561,7 @@ module.exports = {
       'attack': 29,
       'nativeRegion': 5,
       'locations': {
+        '2': ['Verdant Cavern'],
         '3': [
           {
             'dungeon': 'Terminus Cave',
@@ -38123,6 +40596,11 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 5,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Resolution Cave',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Noibat',
@@ -38653,7 +41131,12 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [1],
+          '6': [
+            1,
+            4,
+            5,
+            6,
+          ],
         },
       },
       'catchRatePercent': 63,
@@ -38689,6 +41172,16 @@ module.exports = {
       'attack': 61,
       'nativeRegion': 6,
       'locations': {
+        '0': {
+          '6': [
+            5,
+            8,
+            11,
+            27,
+            28,
+          ],
+        },
+        '2': ['Lush Jungle'],
         '4': [
           {
             'basePokemon': 'Pikipek',
@@ -38763,8 +41256,16 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [1],
+          '6': [
+            1,
+            2,
+            4,
+            20,
+            6,
+            8,
+          ],
         },
+        '2': ['Verdant Cavern'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -38788,6 +41289,22 @@ module.exports = {
       'attack': 103,
       'nativeRegion': 6,
       'locations': {
+        '0': {
+          '6': [
+            21,
+            10,
+            15,
+            16,
+            17,
+            28,
+          ],
+        },
+        '2': ['Mount Lanikala'],
+        '3': [
+          {
+            'dungeon': 'Verdant Cavern',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Yungoos',
@@ -38799,6 +41316,35 @@ module.exports = {
       },
       'catchRatePercent': 37,
       'eggSteps': 920,
+    },
+    {
+      'id': 735.01,
+      'name': 'Totem Gumshoos',
+      'type': [0],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 146,
+      'catchRate': 127,
+      'base': {
+        'hitpoints': 88,
+        'attack': 110,
+        'specialAttack': 55,
+        'defense': 70,
+        'specialDefense': 60,
+        'speed': 45,
+      },
+      'attack': 106,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Verdant Cavern',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 37,
+      'eggSteps': 600,
     },
     {
       'id': 736,
@@ -38828,8 +41374,14 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [1],
+          '6': [
+            1,
+            4,
+            5,
+            6,
+          ],
         },
+        '2': ['Hokulani Observatory'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -38864,6 +41416,7 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 6,
       'locations': {
+        '2': ['Hokulani Observatory'],
         '4': [
           {
             'basePokemon': 'Grubbin',
@@ -38898,6 +41451,11 @@ module.exports = {
       'attack': 141,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Hokulani Observatory',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Charjabug',
@@ -38909,6 +41467,38 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
+    },
+    {
+      'id': 738.01,
+      'name': 'Totem Vikavolt',
+      'type': [
+        11,
+        3,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 225,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 77,
+        'attack': 80,
+        'specialAttack': 155,
+        'defense': 100,
+        'specialDefense': 85,
+        'speed': 53,
+      },
+      'attack': 166,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Hokulani Observatory',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 600,
     },
     {
       'id': 739,
@@ -38937,9 +41527,7 @@ module.exports = {
       'attack': 56,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [3],
-        },
+        '5': ['Fighting'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -38980,7 +41568,7 @@ module.exports = {
     },
     {
       'id': 741,
-      'name': 'Oricorio',
+      'name': 'Oricorio (Baile)',
       'type': [
         1,
         9,
@@ -39000,9 +41588,102 @@ module.exports = {
       'attack': 114,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': "Ula'ula Meadow",
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 741.01,
+      'name': 'Oricorio (Pom-pom)',
+      'type': [
+        3,
+        9,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 167,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 75,
+        'attack': 70,
+        'specialAttack': 98,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 93,
+      },
+      'attack': 114,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Melemele Meadow',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 741.02,
+      'name': "Oricorio (Pa'u)",
+      'type': [
+        10,
+        9,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 167,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 75,
+        'attack': 70,
+        'specialAttack': 98,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 93,
+      },
+      'attack': 114,
+      'nativeRegion': 6,
+      'locations': {
         '0': {
-          '6': [3],
+          '6': [6],
         },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 741.03,
+      'name': 'Oricorio (Sensu)',
+      'type': [
+        13,
+        9,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 167,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 75,
+        'attack': 70,
+        'specialAttack': 98,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 93,
+      },
+      'attack': 114,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Poni Meadow',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -39038,8 +41719,12 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [3],
+          '6': [
+            2,
+            3,
+          ],
         },
+        '2': ['Melemele Meadow'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -39066,6 +41751,10 @@ module.exports = {
       'attack': 89,
       'nativeRegion': 6,
       'locations': {
+        '2': [
+          "Ula'ula Meadow",
+          'Poni Meadow',
+        ],
         '4': [
           {
             'basePokemon': 'Cutiefly',
@@ -39089,9 +41778,36 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Rockruff',
-          'type': [0],
-          'evolvedPokemon': 'Lycanroc',
+          'type': [
+            0,
+            2,
+          ],
+          'evolvedPokemon': 'Lycanroc (Midday)',
           'level': 25,
+          'startHour': 6,
+          'endHour': 16,
+        },
+        {
+          'basePokemon': 'Rockruff',
+          'type': [
+            0,
+            2,
+          ],
+          'evolvedPokemon': 'Lycanroc (Dusk)',
+          'level': 25,
+          'startHour': 16,
+          'endHour': 20,
+        },
+        {
+          'basePokemon': 'Rockruff',
+          'type': [
+            0,
+            2,
+          ],
+          'evolvedPokemon': 'Lycanroc (Midnight)',
+          'level': 25,
+          'startHour': 20,
+          'endHour': 6,
         },
       ],
       'base': {
@@ -39105,16 +41821,18 @@ module.exports = {
       'attack': 38,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [3],
-        },
+        '3': [
+          {
+            'dungeon': 'Ten Carat Hill',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 600,
     },
     {
       'id': 745,
-      'name': 'Lycanroc',
+      'name': 'Lycanroc (Midday)',
       'type': [12],
       'eggCycles': 23,
       'levelType': 2,
@@ -39131,12 +41849,91 @@ module.exports = {
       'attack': 108,
       'nativeRegion': 6,
       'locations': {
+        '2': ['Vast Poni Canyon'],
         '4': [
           {
             'basePokemon': 'Rockruff',
-            'type': [0],
-            'evolvedPokemon': 'Lycanroc',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Lycanroc (Midday)',
             'level': 25,
+            'startHour': 6,
+            'endHour': 16,
+          },
+        ],
+      },
+      'catchRatePercent': 29,
+      'eggSteps': 920,
+    },
+    {
+      'id': 745.01,
+      'name': 'Lycanroc (Midnight)',
+      'type': [12],
+      'eggCycles': 23,
+      'levelType': 2,
+      'exp': 170,
+      'catchRate': 90,
+      'base': {
+        'hitpoints': 85,
+        'attack': 115,
+        'specialAttack': 55,
+        'defense': 75,
+        'specialDefense': 75,
+        'speed': 82,
+      },
+      'attack': 120,
+      'nativeRegion': 6,
+      'locations': {
+        '2': ['Vast Poni Canyon'],
+        '4': [
+          {
+            'basePokemon': 'Rockruff',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Lycanroc (Midnight)',
+            'level': 25,
+            'startHour': 20,
+            'endHour': 6,
+          },
+        ],
+      },
+      'catchRatePercent': 29,
+      'eggSteps': 920,
+    },
+    {
+      'id': 745.02,
+      'name': 'Lycanroc (Dusk)',
+      'type': [12],
+      'eggCycles': 23,
+      'levelType': 2,
+      'exp': 170,
+      'catchRate': 90,
+      'base': {
+        'hitpoints': 75,
+        'attack': 117,
+        'specialAttack': 55,
+        'defense': 65,
+        'specialDefense': 65,
+        'speed': 110,
+      },
+      'attack': 109,
+      'nativeRegion': 6,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Rockruff',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Lycanroc (Dusk)',
+            'level': 25,
+            'startHour': 16,
+            'endHour': 20,
           },
         ],
       },
@@ -39145,7 +41942,7 @@ module.exports = {
     },
     {
       'id': 746,
-      'name': 'Wishiwashi',
+      'name': 'Wishiwashi (Solo)',
       'type': [2],
       'eggCycles': 15,
       'levelType': 4,
@@ -39161,7 +41958,78 @@ module.exports = {
       },
       'attack': 16,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            19,
+            20,
+            7,
+            8,
+            9,
+            21,
+            13,
+            14,
+            15,
+          ],
+        },
+      },
+      'catchRatePercent': 21,
+      'eggSteps': 600,
+    },
+    {
+      'id': 746.01,
+      'name': 'Wishiwashi (School)',
+      'type': [2],
+      'eggCycles': 15,
+      'levelType': 4,
+      'exp': 61,
+      'catchRate': 60,
+      'base': {
+        'hitpoints': 45,
+        'attack': 140,
+        'specialAttack': 140,
+        'defense': 130,
+        'specialDefense': 135,
+        'speed': 30,
+      },
+      'attack': 182,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Brooklet Hill',
+          },
+        ],
+      },
+      'catchRatePercent': 21,
+      'eggSteps': 600,
+    },
+    {
+      'id': 746.02,
+      'name': 'Totem Wishiwashi (School)',
+      'type': [2],
+      'eggCycles': 15,
+      'levelType': 4,
+      'exp': 61,
+      'catchRate': 60,
+      'base': {
+        'hitpoints': 45,
+        'attack': 140,
+        'specialAttack': 140,
+        'defense': 140,
+        'specialDefense': 135,
+        'speed': 30,
+      },
+      'attack': 186,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Brooklet Hill',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 21,
       'eggSteps': 600,
     },
@@ -39194,7 +42062,12 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [9],
+        },
+        '2': ['Po Town'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -39260,8 +42133,13 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [5],
+          '6': [
+            4,
+            6,
+            12,
+          ],
         },
+        '2': ['Paniola Ranch'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -39285,6 +42163,9 @@ module.exports = {
       'attack': 140,
       'nativeRegion': 6,
       'locations': {
+        '0': {
+          '6': [28],
+        },
         '4': [
           {
             'basePokemon': 'Mudbray',
@@ -39327,9 +42208,7 @@ module.exports = {
       'attack': 36,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [5],
-        },
+        '2': ['Brooklet Hill'],
       },
       'catchRatePercent': 53,
       'eggSteps': 600,
@@ -39356,6 +42235,14 @@ module.exports = {
       'attack': 94,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Brooklet Hill',
+          },
+          {
+            'dungeon': 'Malie Garden',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Dewpider',
@@ -39367,6 +42254,38 @@ module.exports = {
       },
       'catchRatePercent': 31,
       'eggSteps': 920,
+    },
+    {
+      'id': 752.01,
+      'name': 'Totem Araquanid',
+      'type': [
+        2,
+        11,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 159,
+      'catchRate': 100,
+      'base': {
+        'hitpoints': 68,
+        'attack': 70,
+        'specialAttack': 50,
+        'defense': 92,
+        'specialDefense': 132,
+        'speed': 52,
+      },
+      'attack': 94,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Brooklet Hill',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 31,
+      'eggSteps': 600,
     },
     {
       'id': 753,
@@ -39394,7 +42313,15 @@ module.exports = {
       },
       'attack': 37,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [5],
+        },
+        '2': [
+          'Lush Jungle',
+          'Po Town',
+        ],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -39417,6 +42344,11 @@ module.exports = {
       'attack': 129,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Lush Jungle',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Fomantis',
@@ -39428,6 +42360,35 @@ module.exports = {
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
+    },
+    {
+      'id': 754.01,
+      'name': 'Totem Lurantis',
+      'type': [4],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 168,
+      'catchRate': 75,
+      'base': {
+        'hitpoints': 70,
+        'attack': 105,
+        'specialAttack': 80,
+        'defense': 90,
+        'specialDefense': 90,
+        'speed': 65,
+      },
+      'attack': 132,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Lush Jungle',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 800,
     },
     {
       'id': 755,
@@ -39458,7 +42419,9 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '5': ['Grass'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -39526,9 +42489,7 @@ module.exports = {
       'attack': 50,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [5],
-        },
+        '2': ['Wela Volcano Park'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -39555,6 +42516,11 @@ module.exports = {
       'attack': 105,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Wela Volcano Park',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Salandit',
@@ -39566,6 +42532,38 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
+    },
+    {
+      'id': 758.01,
+      'name': 'Totem Salazzle',
+      'type': [
+        7,
+        1,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 168,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 68,
+        'attack': 64,
+        'specialAttack': 111,
+        'defense': 60,
+        'specialDefense': 70,
+        'speed': 117,
+      },
+      'attack': 109,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Wela Volcano Park',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
     },
     {
       'id': 759,
@@ -39598,7 +42596,10 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [5],
+          '6': [
+            8,
+            21,
+          ],
         },
       },
       'catchRatePercent': 40,
@@ -39626,6 +42627,9 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 6,
       'locations': {
+        '0': {
+          '6': [30],
+        },
         '4': [
           {
             'basePokemon': 'Stufful',
@@ -39695,6 +42699,7 @@ module.exports = {
       'attack': 41,
       'nativeRegion': 6,
       'locations': {
+        '2': ['Lush Jungle'],
         '4': [
           {
             'basePokemon': 'Bounsweet',
@@ -39756,7 +42761,15 @@ module.exports = {
       },
       'attack': 89,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '2': [
+          'Ruins of Conflict',
+          'Lush Jungle',
+          'Ruins of Life',
+          'Ruins of Abundance',
+          'Ruins of Hope',
+        ],
+      },
       'catchRatePercent': 21,
       'eggSteps': 800,
     },
@@ -39781,7 +42794,9 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '2': ['Lush Jungle'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -39803,7 +42818,9 @@ module.exports = {
       },
       'attack': 113,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '2': ['Lush Jungle'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -39836,7 +42853,9 @@ module.exports = {
       },
       'attack': 18,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '5': ['Water'],
+      },
       'catchRatePercent': 29,
       'eggSteps': 800,
     },
@@ -39959,7 +42978,11 @@ module.exports = {
       },
       'attack': 61,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [7],
+        },
+      },
       'catchRatePercent': 21,
       'eggSteps': 600,
     },
@@ -40026,7 +43049,7 @@ module.exports = {
     },
     {
       'id': 774,
-      'name': 'Minior',
+      'name': 'Minior (Meteor)',
       'type': [
         12,
         9,
@@ -40045,7 +43068,214 @@ module.exports = {
       },
       'attack': 87,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.01,
+      'name': 'Minior (Blue-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.02,
+      'name': 'Minior (Green-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.03,
+      'name': 'Minior (Indigo-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.04,
+      'name': 'Minior (Orange-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.05,
+      'name': 'Minior (Red-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.06,
+      'name': 'Minior (Violet-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 774.07,
+      'name': 'Minior (Yellow-core)',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 154,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 100,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 120,
+      },
+      'attack': 115,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [22],
+        },
+      },
       'catchRatePercent': 12,
       'eggSteps': 1000,
     },
@@ -40067,7 +43297,11 @@ module.exports = {
       },
       'attack': 121,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [11],
+        },
+      },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -40093,9 +43327,7 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [14],
-        },
+        '5': ['Dragon'],
       },
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -40122,9 +43354,43 @@ module.exports = {
       'attack': 82,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [14],
-        },
+        '3': [
+          {
+            'dungeon': 'Hokulani Observatory',
+          },
+        ],
+      },
+      'catchRatePercent': 49,
+      'eggSteps': 400,
+    },
+    {
+      'id': 777.01,
+      'name': 'Totem Togedemaru',
+      'type': [
+        3,
+        16,
+      ],
+      'eggCycles': 10,
+      'levelType': 2,
+      'exp': 152,
+      'catchRate': 180,
+      'base': {
+        'hitpoints': 65,
+        'attack': 98,
+        'specialAttack': 40,
+        'defense': 83,
+        'specialDefense': 73,
+        'speed': 96,
+      },
+      'attack': 87,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Hokulani Observatory',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 49,
       'eggSteps': 400,
@@ -40151,9 +43417,43 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 6,
       'locations': {
-        '0': {
-          '6': [14],
-        },
+        '3': [
+          {
+            'dungeon': 'Thrifty Megamart',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 778.01,
+      'name': 'Totem Mimikyu',
+      'type': [
+        13,
+        17,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 167,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 55,
+        'attack': 100,
+        'specialAttack': 60,
+        'defense': 90,
+        'specialDefense': 115,
+        'speed': 106,
+      },
+      'attack': 110,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Thrifty Megamart',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -40179,7 +43479,15 @@ module.exports = {
       },
       'attack': 112,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            13,
+            14,
+            15,
+          ],
+        },
+      },
       'catchRatePercent': 26,
       'eggSteps': 600,
     },
@@ -40204,7 +43512,9 @@ module.exports = {
       },
       'attack': 131,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '5': ['Dragon'],
+      },
       'catchRatePercent': 24,
       'eggSteps': 800,
     },
@@ -40229,7 +43539,11 @@ module.exports = {
       },
       'attack': 150,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [24],
+        },
+      },
       'catchRatePercent': 11,
       'eggSteps': 1000,
     },
@@ -40259,7 +43573,10 @@ module.exports = {
       },
       'attack': 46,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '2': ['Vast Poni Canyon'],
+        '5': ['Dragon'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 1600,
     },
@@ -40293,6 +43610,7 @@ module.exports = {
       'attack': 86,
       'nativeRegion': 6,
       'locations': {
+        '2': ['Vast Poni Canyon'],
         '4': [
           {
             'basePokemon': 'Jangmo-o',
@@ -40301,6 +43619,7 @@ module.exports = {
             'level': 35,
           },
         ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -40327,6 +43646,11 @@ module.exports = {
       'attack': 175,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Vast Poni Canyon',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Hakamo-o',
@@ -40335,9 +43659,42 @@ module.exports = {
             'level': 45,
           },
         ],
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
+    },
+    {
+      'id': 784.01,
+      'name': 'Totem Kommo-o',
+      'type': [
+        14,
+        6,
+      ],
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 75,
+        'attack': 120,
+        'specialAttack': 110,
+        'defense': 135,
+        'specialDefense': 115,
+        'speed': 95,
+      },
+      'attack': 200,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Vast Poni Canyon',
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1600,
     },
     {
       'id': 785,
@@ -40360,7 +43717,13 @@ module.exports = {
       },
       'attack': 148,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Conflict',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 600,
     },
@@ -40385,7 +43748,13 @@ module.exports = {
       },
       'attack': 156,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Life',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 600,
     },
@@ -40410,7 +43779,13 @@ module.exports = {
       },
       'attack': 162,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Abundance',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 600,
     },
@@ -40435,7 +43810,13 @@ module.exports = {
       },
       'attack': 144,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Hope',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 600,
     },
@@ -40530,6 +43911,11 @@ module.exports = {
       'attack': 259,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Nebby',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Cosmoem',
@@ -40563,7 +43949,13 @@ module.exports = {
       },
       'attack': 259,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Nebby',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 4800,
     },
@@ -40576,7 +43968,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 109,
@@ -40735,7 +44127,13 @@ module.exports = {
       },
       'attack': 196,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Resolution Cave',
+          },
+        ],
+      },
       'catchRatePercent': 17,
       'eggSteps': 4800,
     },
@@ -40745,7 +44143,7 @@ module.exports = {
       'type': [10],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 270,
       'catchRate': 255,
       'base': {
         'hitpoints': 97,
@@ -40756,6 +44154,34 @@ module.exports = {
         'speed': 79,
       },
       'attack': 200,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Mount Lanikala',
+          },
+        ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 800.03,
+      'name': 'Necrozma (Ultra)',
+      'type': [10],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 255,
+      'base': {
+        'hitpoints': 97,
+        'attack': 167,
+        'specialAttack': 167,
+        'defense': 97,
+        'specialDefense': 97,
+        'speed': 129,
+      },
+      'attack': 291,
       'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 63,
@@ -43251,27 +46677,24 @@ module.exports = {
     },
     {
       'id': -4,
-      'name': 'Santa Dragonite',
+      'name': 'Santa Snorlax',
       'nativeRegion': 0,
-      'catchRate': 20,
-      'type': [
-        14,
-        9,
-      ],
+      'catchRate': 25,
+      'type': [0],
       'levelType': 4,
-      'exp': 270,
+      'exp': 189,
       'eggCycles': 40,
       'base': {
-        'hitpoints': 91,
-        'attack': 134,
-        'specialAttack': 100,
-        'defense': 95,
-        'specialDefense': 100,
-        'speed': 80,
+        'hitpoints': 160,
+        'attack': 110,
+        'specialAttack': 65,
+        'defense': 65,
+        'specialDefense': 110,
+        'speed': 30,
       },
-      'attack': 196,
+      'attack': 172,
       'locations': {},
-      'catchRatePercent': 9,
+      'catchRatePercent': 11,
       'eggSteps': 1600,
     },
     {
@@ -43369,7 +46792,7 @@ module.exports = {
       'id': -9,
       'name': 'Lets go Eevee',
       'nativeRegion': 0,
-      'catchRate': 255,
+      'catchRate': 50,
       'type': [0],
       'levelType': 2,
       'exp': 65,
@@ -43384,7 +46807,7 @@ module.exports = {
       },
       'attack': 54,
       'locations': {},
-      'catchRatePercent': 63,
+      'catchRatePercent': 18,
       'eggSteps': 1400,
     },
     {
@@ -43799,6 +47222,31 @@ module.exports = {
       'catchRatePercent': 1,
       'eggSteps': 4800,
     },
+    {
+      'id': -793,
+      'name': '???',
+      'type': [
+        12,
+        7,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 257,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 109,
+        'attack': 53,
+        'specialAttack': 127,
+        'defense': 47,
+        'specialDefense': 131,
+        'speed': 103,
+      },
+      'attack': 144,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
+    },
   ],
   'GameConstants': {
     'TICK_TIME': 100,
@@ -43817,7 +47265,7 @@ module.exports = {
     'MAX_LOAD_TIME': 20000,
     'MUTATION_TICK': 1000,
     'WANDER_TICK': 1500,
-    'MAX_AVAILABLE_REGION': 3,
+    'MAX_AVAILABLE_REGION': 4,
     'TotalPokemonsPerRegion': [
       151,
       251,
@@ -44072,6 +47520,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'Ice': {
         '0': {},
@@ -44079,6 +47530,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'Forest': {
         '0': {},
@@ -44086,6 +47540,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'Cave': {
         '0': {},
@@ -44093,6 +47550,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'GemCave': {
         '0': {},
@@ -44100,6 +47560,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'PowerPlant': {
         '0': {},
@@ -44107,6 +47570,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'Mansion': {
         '0': {},
@@ -44114,6 +47580,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
       'Graveyard': {
         '0': {},
@@ -44121,6 +47590,9 @@ module.exports = {
         '2': {},
         '3': {},
         '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
       },
     },
     'EnvironmentCssClass': {
@@ -44173,6 +47645,7 @@ module.exports = {
       '24': 'Prism_scale',
       '25': 'Sachet',
       '26': 'Whipped_dream',
+      '27': 'Ice_stone',
       'None': -1,
       '-1': 'None',
       'Fire_stone': 0,
@@ -44202,6 +47675,7 @@ module.exports = {
       'Prism_scale': 24,
       'Sachet': 25,
       'Whipped_dream': 26,
+      'Ice_stone': 27,
     },
     'BattleItemType': {
       'xAttack': 'xAttack',
@@ -44226,6 +47700,8 @@ module.exports = {
       '11': 'Cherubi',
       '12': 'Zorua',
       '13': 'Meloetta (pirouette)',
+      '14': 'Type: Null',
+      '15': 'Poipole',
       'Eevee': 0,
       'Porygon': 1,
       'Jynx': 2,
@@ -44240,6 +47716,8 @@ module.exports = {
       'Cherubi': 11,
       'Zorua': 12,
       'Meloetta (pirouette)': 13,
+      'Type: Null': 14,
+      'Poipole': 15,
     },
     'PokeBlockColor': {
       '0': 'Black',
@@ -44327,7 +47805,7 @@ module.exports = {
     'KantoGyms': [
       'Pewter City',
       'Cerulean City',
-      'Vermillion City',
+      'vermilion City',
       'Celadon City',
       'Saffron City',
       'Fuchsia City',
@@ -44414,11 +47892,25 @@ module.exports = {
       'Elite Drasna',
       'Champion Diantha',
     ],
+    'AlolaGyms': [
+      'Iki Town',
+      'Konikoni City',
+      'Aether Foundation',
+      'Malie City',
+      'Altar of the Sunne and Moone',
+      'Seafolk Village',
+      'Exeggutor Island',
+      'Elite Molayne',
+      'Elite Olivia',
+      'Elite Acerola',
+      'Elite Kahili',
+      'Champion Hao',
+    ],
     'RegionGyms': [
       [
         'Pewter City',
         'Cerulean City',
-        'Vermillion City',
+        'vermilion City',
         'Celadon City',
         'Saffron City',
         'Fuchsia City',
@@ -44504,6 +47996,20 @@ module.exports = {
         'Elite Wikstrom',
         'Elite Drasna',
         'Champion Diantha',
+      ],
+      [
+        'Iki Town',
+        'Konikoni City',
+        'Aether Foundation',
+        'Malie City',
+        'Altar of the Sunne and Moone',
+        'Seafolk Village',
+        'Exeggutor Island',
+        'Elite Molayne',
+        'Elite Olivia',
+        'Elite Acerola',
+        'Elite Kahili',
+        'Champion Hao',
       ],
     ],
     'KantoDungeons': [
@@ -44601,13 +48107,42 @@ module.exports = {
       'Connecting Cave',
       'Glittering Cave',
       'Reflection Cave',
-      'Azure Bay',
       'Lost Hotel',
       'Frost Cavern',
       'Team Flare Secret HQ',
       'Terminus Cave',
       'Pokémon Village',
       'Victory Road Kalos',
+    ],
+    'AlolaDungeons': [
+      'Exeggutor Island Hill',
+      "Trainers' School",
+      "Hau'oli Cemetery",
+      'Verdant Cavern',
+      'Melemele Meadow',
+      'Seaward Cave',
+      'Ten Carat Hill',
+      'Ruins of Conflict',
+      'Pikachu Valley',
+      'Paniola Ranch',
+      'Brooklet Hill',
+      'Wela Volcano Park',
+      'Lush Jungle',
+      "Diglett's Tunnel",
+      'Memorial Hill',
+      'Ruins of Life',
+      'Malie Garden',
+      'Hokulani Observatory',
+      'Thrifty Megamart',
+      "Ula'ula Meadow",
+      'Po Town',
+      'Mount Lanikala',
+      'Ruins of Abundance',
+      'Vast Poni Canyon',
+      'Nebby',
+      'Ruins of Hope',
+      'Poni Meadow',
+      'Resolution Cave',
     ],
     'RegionDungeons': [
       [
@@ -44705,13 +48240,42 @@ module.exports = {
         'Connecting Cave',
         'Glittering Cave',
         'Reflection Cave',
-        'Azure Bay',
         'Lost Hotel',
         'Frost Cavern',
         'Team Flare Secret HQ',
         'Terminus Cave',
         'Pokémon Village',
         'Victory Road Kalos',
+      ],
+      [
+        'Exeggutor Island Hill',
+        "Trainers' School",
+        "Hau'oli Cemetery",
+        'Verdant Cavern',
+        'Melemele Meadow',
+        'Seaward Cave',
+        'Ten Carat Hill',
+        'Ruins of Conflict',
+        'Pikachu Valley',
+        'Paniola Ranch',
+        'Brooklet Hill',
+        'Wela Volcano Park',
+        'Lush Jungle',
+        "Diglett's Tunnel",
+        'Memorial Hill',
+        'Ruins of Life',
+        'Malie Garden',
+        'Hokulani Observatory',
+        'Thrifty Megamart',
+        "Ula'ula Meadow",
+        'Po Town',
+        'Mount Lanikala',
+        'Ruins of Abundance',
+        'Vast Poni Canyon',
+        'Nebby',
+        'Ruins of Hope',
+        'Poni Meadow',
+        'Resolution Cave',
       ],
     ],
     'StartingTowns': [
@@ -44721,14 +48285,18 @@ module.exports = {
       'Twinleaf Town',
       'Aspertia City',
       'Vaniville Town',
+      '',
+      '',
     ],
     'DockTowns': [
-      'Vermillion City',
+      'vermilion City',
       'Olivine City',
       'Slateport City',
       'Canalave City',
       'Castelia City',
       'Coumarine City',
+      '',
+      '',
     ],
   },
   'BadgeEnums': {
@@ -44811,6 +48379,18 @@ module.exports = {
     '76': 'Elite_Wikstrom',
     '77': 'Elite_Drasna',
     '78': 'Elite_KalosChampion',
+    '79': 'MelemeleKahuna',
+    '80': 'AkalaKahuna',
+    '81': 'Elite_Nihilego',
+    '82': 'UlaulaKahuna',
+    '83': 'Elite_UltraNecrozma',
+    '84': 'MinaTrail',
+    '85': 'PoniKahuna',
+    '86': 'Elite_Olivia',
+    '87': 'Elite_Acerola',
+    '88': 'Elite_Molayne',
+    '89': 'Elite_Kahili',
+    '90': 'Elite_AlolaChampion',
     'None': 0,
     'Boulder': 1,
     'Cascade': 2,
@@ -44890,6 +48470,18 @@ module.exports = {
     'Elite_Wikstrom': 76,
     'Elite_Drasna': 77,
     'Elite_KalosChampion': 78,
+    'MelemeleKahuna': 79,
+    'AkalaKahuna': 80,
+    'Elite_Nihilego': 81,
+    'UlaulaKahuna': 82,
+    'Elite_UltraNecrozma': 83,
+    'MinaTrail': 84,
+    'PoniKahuna': 85,
+    'Elite_Olivia': 86,
+    'Elite_Acerola': 87,
+    'Elite_Molayne': 88,
+    'Elite_Kahili': 89,
+    'Elite_AlolaChampion': 90,
   },
   'gymList': {
     'Pewter City': {
@@ -44946,9 +48538,9 @@ module.exports = {
         },
       ],
     },
-    'Vermillion City': {
+    'vermilion City': {
       'leaderName': 'Lt. Surge',
-      'town': 'Vermillion City',
+      'town': 'vermilion City',
       'pokemons': [
         {
           'name': 'Raichu',
@@ -45790,17 +49382,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Geodude',
-          'maxHealth': 282900,
+          'maxHealth': 382900,
           'level': 12,
         },
         {
           'name': 'Geodude',
-          'maxHealth': 282900,
+          'maxHealth': 382900,
           'level': 12,
         },
         {
           'name': 'Nosepass',
-          'maxHealth': 310200,
+          'maxHealth': 410200,
           'level': 15,
         },
       ],
@@ -45821,17 +49413,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Machop',
-          'maxHealth': 324000,
+          'maxHealth': 424000,
           'level': 16,
         },
         {
           'name': 'Meditite',
-          'maxHealth': 324000,
+          'maxHealth': 424000,
           'level': 16,
         },
         {
           'name': 'Makuhita',
-          'maxHealth': 344000,
+          'maxHealth': 444000,
           'level': 19,
         },
       ],
@@ -45846,22 +49438,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Voltorb',
-          'maxHealth': 352000,
+          'maxHealth': 452000,
           'level': 20,
         },
         {
           'name': 'Electrike',
-          'maxHealth': 348000,
+          'maxHealth': 448000,
           'level': 20,
         },
         {
           'name': 'Magneton',
-          'maxHealth': 383000,
+          'maxHealth': 483000,
           'level': 22,
         },
         {
           'name': 'Manectric',
-          'maxHealth': 348000,
+          'maxHealth': 448000,
           'level': 24,
         },
       ],
@@ -45876,22 +49468,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Numel',
-          'maxHealth': 372000,
+          'maxHealth': 472000,
           'level': 24,
         },
         {
           'name': 'Slugma',
-          'maxHealth': 372000,
+          'maxHealth': 472000,
           'level': 24,
         },
         {
           'name': 'Camerupt',
-          'maxHealth': 392000,
+          'maxHealth': 492000,
           'level': 26,
         },
         {
           'name': 'Torkoal',
-          'maxHealth': 424000,
+          'maxHealth': 524000,
           'level': 29,
         },
       ],
@@ -45906,22 +49498,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Spinda',
-          'maxHealth': 390000,
+          'maxHealth': 490000,
           'level': 27,
         },
         {
           'name': 'Vigoroth',
-          'maxHealth': 430000,
+          'maxHealth': 530000,
           'level': 27,
         },
         {
           'name': 'Linoone',
-          'maxHealth': 460000,
+          'maxHealth': 560000,
           'level': 29,
         },
         {
           'name': 'Slaking',
-          'maxHealth': 496000,
+          'maxHealth': 596000,
           'level': 31,
         },
       ],
@@ -45942,27 +49534,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Swablu',
-          'maxHealth': 405000,
+          'maxHealth': 605000,
           'level': 29,
         },
         {
           'name': 'Tropius',
-          'maxHealth': 450000,
+          'maxHealth': 650000,
           'level': 29,
         },
         {
           'name': 'Pelipper',
-          'maxHealth': 430000,
+          'maxHealth': 630000,
           'level': 30,
         },
         {
           'name': 'Skarmory',
-          'maxHealth': 467000,
+          'maxHealth': 667000,
           'level': 31,
         },
         {
           'name': 'Altaria',
-          'maxHealth': 469000,
+          'maxHealth': 669000,
           'level': 33,
         },
       ],
@@ -45977,22 +49569,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Claydol',
-          'maxHealth': 502000,
+          'maxHealth': 702000,
           'level': 41,
         },
         {
           'name': 'Xatu',
-          'maxHealth': 503000,
+          'maxHealth': 703000,
           'level': 41,
         },
         {
           'name': 'Lunatone',
-          'maxHealth': 502000,
+          'maxHealth': 702000,
           'level': 42,
         },
         {
           'name': 'Solrock',
-          'maxHealth': 503000,
+          'maxHealth': 703000,
           'level': 42,
         },
       ],
@@ -46007,27 +49599,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Luvdisc',
-          'maxHealth': 498000,
+          'maxHealth': 798000,
           'level': 41,
         },
         {
           'name': 'Whiscash',
-          'maxHealth': 513000,
+          'maxHealth': 813000,
           'level': 41,
         },
         {
           'name': 'Sealeo',
-          'maxHealth': 523400,
+          'maxHealth': 823400,
           'level': 43,
         },
         {
           'name': 'Crawdaunt',
-          'maxHealth': 542000,
+          'maxHealth': 842000,
           'level': 43,
         },
         {
           'name': 'Kingdra',
-          'maxHealth': 565000,
+          'maxHealth': 865000,
           'level': 46,
         },
       ],
@@ -46048,27 +49640,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Mightyena',
-          'maxHealth': 572000,
+          'maxHealth': 972000,
           'level': 46,
         },
         {
           'name': 'Shiftry',
-          'maxHealth': 580000,
+          'maxHealth': 980000,
           'level': 48,
         },
         {
           'name': 'Cacturne',
-          'maxHealth': 602000,
+          'maxHealth': 1002000,
           'level': 46,
         },
         {
           'name': 'Crawdaunt',
-          'maxHealth': 615000,
+          'maxHealth': 1015000,
           'level': 48,
         },
         {
           'name': 'Absol',
-          'maxHealth': 620000,
+          'maxHealth': 1020000,
           'level': 49,
         },
       ],
@@ -46089,27 +49681,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Dusclops',
-          'maxHealth': 636700,
+          'maxHealth': 1036700,
           'level': 48,
         },
         {
           'name': 'Banette',
-          'maxHealth': 638000,
+          'maxHealth': 1038000,
           'level': 49,
         },
         {
           'name': 'Sableye',
-          'maxHealth': 652000,
+          'maxHealth': 1052000,
           'level': 50,
         },
         {
           'name': 'Banette',
-          'maxHealth': 638000,
+          'maxHealth': 1038000,
           'level': 49,
         },
         {
           'name': 'Dusclops',
-          'maxHealth': 663000,
+          'maxHealth': 1063000,
           'level': 51,
         },
       ],
@@ -46130,27 +49722,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Sealeo',
-          'maxHealth': 682000,
+          'maxHealth': 1082000,
           'level': 50,
         },
         {
           'name': 'Glalie',
-          'maxHealth': 672000,
+          'maxHealth': 1072000,
           'level': 50,
         },
         {
           'name': 'Sealeo',
-          'maxHealth': 686000,
+          'maxHealth': 1086000,
           'level': 52,
         },
         {
           'name': 'Glalie',
-          'maxHealth': 676000,
+          'maxHealth': 1076000,
           'level': 52,
         },
         {
           'name': 'Walrein',
-          'maxHealth': 700000,
+          'maxHealth': 1100000,
           'level': 53,
         },
       ],
@@ -46171,27 +49763,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Shelgon',
-          'maxHealth': 664000,
+          'maxHealth': 1064000,
           'level': 52,
         },
         {
           'name': 'Altaria',
-          'maxHealth': 672000,
+          'maxHealth': 1072000,
           'level': 54,
         },
         {
           'name': 'Flygon',
-          'maxHealth': 676000,
+          'maxHealth': 1076000,
           'level': 53,
         },
         {
           'name': 'Flygon',
-          'maxHealth': 676000,
+          'maxHealth': 1076000,
           'level': 53,
         },
         {
           'name': 'Salamence',
-          'maxHealth': 757000,
+          'maxHealth': 1157000,
           'level': 55,
         },
       ],
@@ -46212,32 +49804,32 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Wailord',
-          'maxHealth': 802000,
+          'maxHealth': 1202000,
           'level': 57,
         },
         {
           'name': 'Tentacruel',
-          'maxHealth': 764000,
+          'maxHealth': 1164000,
           'level': 55,
         },
         {
           'name': 'Ludicolo',
-          'maxHealth': 784000,
+          'maxHealth': 1184000,
           'level': 56,
         },
         {
           'name': 'Whiscash',
-          'maxHealth': 772000,
+          'maxHealth': 1172000,
           'level': 56,
         },
         {
           'name': 'Gyarados',
-          'maxHealth': 763000,
+          'maxHealth': 1163000,
           'level': 56,
         },
         {
           'name': 'Milotic',
-          'maxHealth': 782000,
+          'maxHealth': 1182000,
           'level': 58,
         },
       ],
@@ -46258,22 +49850,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Geodude',
-          'maxHealth': 938000,
+          'maxHealth': 1338000,
           'level': 12,
         },
         {
           'name': 'Onix',
-          'maxHealth': 942000,
+          'maxHealth': 1342000,
           'level': 12,
         },
         {
           'name': 'Cranidos',
-          'maxHealth': 942000,
+          'maxHealth': 1342000,
           'level': 14,
         },
       ],
       'badgeReward': 40,
-      'moneyReward': 2500,
+      'moneyReward': 250,
       'defeatMessage': "This is embarrassing... I went and lost to a Trainer who didn't have a single Gym Badge... But that's tough. You were strong, and I was weak. That's all there is. According to Pokémon League rules, I have to give you our Gym Badge since you've beaten me, the Leader. Heres your official Pokémon League Coal Badge.",
       'requirements': [
         {
@@ -46289,22 +49881,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Turtwig',
-          'maxHealth': 1033000,
+          'maxHealth': 1433000,
           'level': 20,
         },
         {
           'name': 'Cherrim (overcast)',
-          'maxHealth': 1037500,
+          'maxHealth': 1437500,
           'level': 20,
         },
         {
           'name': 'Roserade',
-          'maxHealth': 1039000,
+          'maxHealth': 1439000,
           'level': 22,
         },
       ],
       'badgeReward': 41,
-      'moneyReward': 5000,
+      'moneyReward': 500,
       'defeatMessage': "I might've said it before, but you're really tough! Wasn't it hard for you to raise your Pokémon to be so good? I guess that's a measure of how much you love your Pokémon. In recognition of that, I proudly grant you this!\"",
       'requirements': [
         {
@@ -46320,22 +49912,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Duskull',
-          'maxHealth': 1050000,
+          'maxHealth': 1450000,
           'level': 24,
         },
         {
           'name': 'Haunter',
-          'maxHealth': 1080000,
+          'maxHealth': 1480000,
           'level': 24,
         },
         {
           'name': 'Mismagius',
-          'maxHealth': 1080000,
+          'maxHealth': 1480000,
           'level': 26,
         },
       ],
       'badgeReward': 42,
-      'moneyReward': 10000,
+      'moneyReward': 1000,
       'defeatMessage': 'I am dumbfounded! So very, very strong! You, your Pokémon, so strong! Your power is admirable! I shall honor it with this Gym Badge!"',
       'requirements': [
         {
@@ -46351,22 +49943,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Meditite',
-          'maxHealth': 1137000,
+          'maxHealth': 1537000,
           'level': 28,
         },
         {
           'name': 'Machoke',
-          'maxHealth': 1138000,
+          'maxHealth': 1538000,
           'level': 29,
         },
         {
           'name': 'Lucario',
-          'maxHealth': 1140000,
+          'maxHealth': 1540000,
           'level': 32,
         },
       ],
       'badgeReward': 43,
-      'moneyReward': 20000,
+      'moneyReward': 2000,
       'defeatMessage': '...OK. You win. That was a tough loss. I learned a lot from it. Please, accept this Gym Badge.',
       'requirements': [
         {
@@ -46382,22 +49974,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Gyarados',
-          'maxHealth': 1187000,
+          'maxHealth': 1687000,
           'level': 33,
         },
         {
           'name': 'Quagsire',
-          'maxHealth': 1193000,
+          'maxHealth': 1693000,
           'level': 34,
         },
         {
           'name': 'Floatzel',
-          'maxHealth': 1193000,
+          'maxHealth': 1693000,
           'level': 37,
         },
       ],
       'badgeReward': 44,
-      'moneyReward': 40000,
+      'moneyReward': 4000,
       'defeatMessage': "It seems the undertow pulled me under... But I had a great time battling with you! You've earned this!",
       'requirements': [
         {
@@ -46413,22 +50005,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Magneton',
-          'maxHealth': 1267000,
+          'maxHealth': 1767000,
           'level': 37,
         },
         {
           'name': 'Steelix',
-          'maxHealth': 1272000,
+          'maxHealth': 1772000,
           'level': 38,
         },
         {
           'name': 'Bastiodon',
-          'maxHealth': 1268000,
+          'maxHealth': 1768000,
           'level': 41,
         },
       ],
       'badgeReward': 45,
-      'moneyReward': 80000,
+      'moneyReward': 8000,
       'defeatMessage': 'You were strong enough to take down my prized team of Pokémon. In recognition of that power, I give you this: the Mine Badge!',
       'requirements': [
         {
@@ -46444,22 +50036,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Sneasel',
-          'maxHealth': 1372500,
+          'maxHealth': 1872500,
           'level': 40,
         },
         {
           'name': 'Piloswine',
-          'maxHealth': 1376000,
+          'maxHealth': 1876000,
           'level': 40,
         },
         {
           'name': 'Abomasnow',
-          'maxHealth': 1370000,
+          'maxHealth': 1870000,
           'level': 42,
         },
         {
           'name': 'Froslass',
-          'maxHealth': 1370000,
+          'maxHealth': 1870000,
           'level': 44,
         },
       ],
@@ -46480,22 +50072,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Jolteon',
-          'maxHealth': 1465000,
+          'maxHealth': 1965000,
           'level': 46,
         },
         {
           'name': 'Raichu',
-          'maxHealth': 1465000,
+          'maxHealth': 1965000,
           'level': 46,
         },
         {
           'name': 'Luxray',
-          'maxHealth': 1478000,
+          'maxHealth': 1978000,
           'level': 48,
         },
         {
           'name': 'Electivire',
-          'maxHealth': 1480000,
+          'maxHealth': 1980000,
           'level': 50,
         },
       ],
@@ -46516,27 +50108,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Yanmega',
-          'maxHealth': 1945330,
+          'maxHealth': 2545330,
           'level': 49,
         },
         {
           'name': 'Scizor',
-          'maxHealth': 1948300,
+          'maxHealth': 2548300,
           'level': 49,
         },
         {
           'name': 'Vespiquen',
-          'maxHealth': 1952000,
+          'maxHealth': 2552000,
           'level': 50,
         },
         {
           'name': 'Heracross',
-          'maxHealth': 1957000,
+          'maxHealth': 2557000,
           'level': 51,
         },
         {
           'name': 'Drapion',
-          'maxHealth': 1960250,
+          'maxHealth': 2560250,
           'level': 53,
         },
       ],
@@ -46557,27 +50149,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Whiscash',
-          'maxHealth': 2045330,
+          'maxHealth': 2645330,
           'level': 50,
         },
         {
           'name': 'Gliscor',
-          'maxHealth': 2048300,
+          'maxHealth': 2648300,
           'level': 53,
         },
         {
           'name': 'Hippowdon',
-          'maxHealth': 2052000,
+          'maxHealth': 2652000,
           'level': 52,
         },
         {
           'name': 'Golem',
-          'maxHealth': 2057000,
+          'maxHealth': 2657000,
           'level': 52,
         },
         {
           'name': 'Rhyperior',
-          'maxHealth': 2060250,
+          'maxHealth': 2660250,
           'level': 55,
         },
       ],
@@ -46598,27 +50190,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Houndoom',
-          'maxHealth': 2145330,
+          'maxHealth': 2845330,
           'level': 52,
         },
         {
           'name': 'Flareon',
-          'maxHealth': 2148300,
+          'maxHealth': 2848300,
           'level': 55,
         },
         {
           'name': 'Rapidash',
-          'maxHealth': 2152000,
+          'maxHealth': 2852000,
           'level': 53,
         },
         {
           'name': 'Infernape',
-          'maxHealth': 2157000,
+          'maxHealth': 2857000,
           'level': 55,
         },
         {
           'name': 'Magmortar',
-          'maxHealth': 2160250,
+          'maxHealth': 2860250,
           'level': 57,
         },
       ],
@@ -46639,27 +50231,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Mr. Mime',
-          'maxHealth': 2248300,
+          'maxHealth': 3048300,
           'level': 53,
         },
         {
           'name': 'Espeon',
-          'maxHealth': 2252000,
+          'maxHealth': 3052000,
           'level': 55,
         },
         {
           'name': 'Bronzong',
-          'maxHealth': 2257000,
+          'maxHealth': 3057000,
           'level': 54,
         },
         {
           'name': 'Alakazam',
-          'maxHealth': 2260250,
+          'maxHealth': 3060250,
           'level': 56,
         },
         {
           'name': 'Gallade',
-          'maxHealth': 2266000,
+          'maxHealth': 3066000,
           'level': 59,
         },
       ],
@@ -46680,32 +50272,32 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Spiritomb',
-          'maxHealth': 2458300,
+          'maxHealth': 3458300,
           'level': 58,
         },
         {
           'name': 'Roserade',
-          'maxHealth': 2462000,
+          'maxHealth': 3462000,
           'level': 58,
         },
         {
           'name': 'Togekiss',
-          'maxHealth': 2464000,
+          'maxHealth': 3464000,
           'level': 60,
         },
         {
           'name': 'Lucario',
-          'maxHealth': 2460250,
+          'maxHealth': 3460250,
           'level': 60,
         },
         {
           'name': 'Milotic',
-          'maxHealth': 2470000,
+          'maxHealth': 3470000,
           'level': 58,
         },
         {
           'name': 'Garchomp',
-          'maxHealth': 2570000,
+          'maxHealth': 3570000,
           'level': 62,
         },
       ],
@@ -46726,22 +50318,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Patrat',
-          'maxHealth': 2458300,
+          'maxHealth': 3458300,
           'level': 58,
         },
         {
           'name': 'Pidove',
-          'maxHealth': 2462000,
+          'maxHealth': 3462000,
           'level': 58,
         },
         {
           'name': 'Lillipup',
-          'maxHealth': 2464000,
+          'maxHealth': 3464000,
           'level': 58,
         },
       ],
       'badgeReward': 53,
-      'moneyReward': 128000,
+      'moneyReward': 500,
       'defeatMessage': 'That battle has made me feel really glad you were my first challenger as a Gym Leader… I give you this in honor of the strength you and your Pokémon showed!',
       'requirements': [
         {
@@ -46757,22 +50349,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Koffing',
-          'maxHealth': 2458300,
+          'maxHealth': 3658300,
           'level': 58,
         },
         {
           'name': 'Grimer',
-          'maxHealth': 2462000,
+          'maxHealth': 3662000,
           'level': 58,
         },
         {
           'name': 'Whirlipede',
-          'maxHealth': 2464000,
+          'maxHealth': 3664000,
           'level': 58,
         },
       ],
       'badgeReward': 54,
-      'moneyReward': 128000,
+      'moneyReward': 1000,
       'defeatMessage': "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I feel revitalized and refreshed now! Here! Proof that you beat me!",
       'requirements': [
         {
@@ -46788,27 +50380,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Dwebble',
-          'maxHealth': 2458300,
+          'maxHealth': 3858300,
           'level': 58,
         },
         {
           'name': 'Shelmet',
-          'maxHealth': 2462000,
+          'maxHealth': 3862000,
           'level': 58,
         },
         {
           'name': 'Karrablast',
-          'maxHealth': 2464000,
+          'maxHealth': 3964000,
           'level': 58,
         },
         {
           'name': 'Leavanny',
-          'maxHealth': 2464000,
+          'maxHealth': 4064000,
           'level': 58,
         },
       ],
       'badgeReward': 55,
-      'moneyReward': 128000,
+      'moneyReward': 2000,
       'defeatMessage': "Oh hoo… You are very strong indeed! I guess it's no surprise I lost. Here! Take this Insect Badge! I think it'll suit you!",
       'requirements': [
         {
@@ -46824,27 +50416,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Emolga',
-          'maxHealth': 2458300,
+          'maxHealth': 4258300,
           'level': 58,
         },
         {
           'name': 'Flaaffy',
-          'maxHealth': 2462000,
+          'maxHealth': 4262000,
           'level': 58,
         },
         {
           'name': 'Joltik',
-          'maxHealth': 2464000,
+          'maxHealth': 4464000,
           'level': 58,
         },
         {
           'name': 'Zebstrika',
-          'maxHealth': 2464000,
+          'maxHealth': 4464000,
           'level': 58,
         },
       ],
       'badgeReward': 56,
-      'moneyReward': 128000,
+      'moneyReward': 4000,
       'defeatMessage': "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my feet! Take this!",
       'requirements': [
         {
@@ -46860,27 +50452,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Krokorok',
-          'maxHealth': 2458300,
+          'maxHealth': 4658300,
           'level': 58,
         },
         {
           'name': 'Sandslash',
-          'maxHealth': 2462000,
+          'maxHealth': 4662000,
           'level': 58,
         },
         {
           'name': 'Onix',
-          'maxHealth': 2464000,
+          'maxHealth': 4864000,
           'level': 58,
         },
         {
           'name': 'Excadrill',
-          'maxHealth': 2464000,
+          'maxHealth': 5064000,
           'level': 58,
         },
       ],
       'badgeReward': 57,
-      'moneyReward': 128000,
+      'moneyReward': 8000,
       'defeatMessage': "Phew… You're really somethin'! Li'l whippersnapper Trainers who pack a real punch keep showin' up one after another. Mrmph. Here! Take this!",
       'requirements': [
         {
@@ -46896,27 +50488,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Swoobat',
-          'maxHealth': 2458300,
+          'maxHealth': 5458300,
           'level': 58,
         },
         {
           'name': 'Skarmory',
-          'maxHealth': 2462000,
+          'maxHealth': 6062000,
           'level': 58,
         },
         {
           'name': 'Sigilyph',
-          'maxHealth': 2464000,
+          'maxHealth': 5664000,
           'level': 58,
         },
         {
           'name': 'Swanna',
-          'maxHealth': 2464000,
+          'maxHealth': 5864000,
           'level': 58,
         },
       ],
       'badgeReward': 58,
-      'moneyReward': 128000,
+      'moneyReward': 16000,
       'defeatMessage': "You're an amazing Pokémon Trainer. My Pokémon and I are happy because for the first time in quite a while--about two years, I'd say--we could fight with our full strength. This is an official League Gym Badge. But this is just a stepping-stone.",
       'requirements': [
         {
@@ -46932,27 +50524,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Druddigon',
-          'maxHealth': 2458300,
+          'maxHealth': 6558300,
           'level': 58,
         },
         {
           'name': 'Flygon',
-          'maxHealth': 2462000,
+          'maxHealth': 6662000,
           'level': 58,
         },
         {
           'name': 'Altaria',
-          'maxHealth': 2464000,
+          'maxHealth': 6464000,
           'level': 58,
         },
         {
           'name': 'Haxorus',
-          'maxHealth': 2464000,
+          'maxHealth': 6964000,
           'level': 58,
         },
       ],
       'badgeReward': 59,
-      'moneyReward': 128000,
+      'moneyReward': 32000,
       'defeatMessage': "Wonderful. I'm grateful that we had a chance to meet and battle. It reminded me that Pokémon battles are about working with others to meet our challenges together.",
       'requirements': [
         {
@@ -46968,27 +50560,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Wailord',
-          'maxHealth': 2458300,
+          'maxHealth': 7458300,
           'level': 58,
         },
         {
           'name': 'Mantine',
-          'maxHealth': 2462000,
+          'maxHealth': 7262000,
           'level': 58,
         },
         {
           'name': 'Carracosta',
-          'maxHealth': 2464000,
+          'maxHealth': 7064000,
           'level': 58,
         },
         {
           'name': 'Jellicent',
-          'maxHealth': 2464000,
+          'maxHealth': 7464000,
           'level': 58,
         },
       ],
       'badgeReward': 60,
-      'moneyReward': 128000,
+      'moneyReward': 64000,
       'defeatMessage': "You don't just look strong, you're strong fo' reals! Eh, I was swept away, too! Oh yeah, yo. I was so surprised that I forgot! I gotta give this to you!",
       'requirements': [
         {
@@ -47004,37 +50596,37 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Cofagrigus',
-          'maxHealth': 1945330,
+          'maxHealth': 8945330,
           'level': 49,
         },
         {
           'name': 'Gengar',
-          'maxHealth': 1948300,
+          'maxHealth': 8948300,
           'level': 49,
         },
         {
           'name': 'Froslass',
-          'maxHealth': 1952000,
+          'maxHealth': 8952000,
           'level': 50,
         },
         {
           'name': 'Drifblim',
-          'maxHealth': 1957000,
+          'maxHealth': 8957000,
           'level': 51,
         },
         {
           'name': 'Golurk',
-          'maxHealth': 1960250,
+          'maxHealth': 8960250,
           'level': 53,
         },
         {
           'name': 'Chandelure',
-          'maxHealth': 1960250,
+          'maxHealth': 8960250,
           'level': 53,
         },
       ],
       'badgeReward': 61,
-      'moneyReward': 64000,
+      'moneyReward': 128000,
       'defeatMessage': "My Pokémon and the challenger's Pokémon. Everyone battled even though they were hurt... Thank you.",
       'requirements': [
         {
@@ -47050,37 +50642,37 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Throh',
-          'maxHealth': 1945330,
+          'maxHealth': 9945330,
           'level': 49,
         },
         {
           'name': 'Sawk',
-          'maxHealth': 1948300,
+          'maxHealth': 9948300,
           'level': 49,
         },
         {
           'name': 'Lucario',
-          'maxHealth': 1952000,
+          'maxHealth': 9952000,
           'level': 50,
         },
         {
           'name': 'Mienshao',
-          'maxHealth': 1957000,
+          'maxHealth': 9957000,
           'level': 51,
         },
         {
           'name': 'Machamp',
-          'maxHealth': 1957000,
+          'maxHealth': 9957000,
           'level': 51,
         },
         {
           'name': 'Conkeldurr',
-          'maxHealth': 1960250,
+          'maxHealth': 9960250,
           'level': 53,
         },
       ],
       'badgeReward': 62,
-      'moneyReward': 64000,
+      'moneyReward': 128000,
       'defeatMessage': 'Whew! Well done! As your battles continue, aim for even greater heights!',
       'requirements': [
         {
@@ -47096,37 +50688,37 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Honchkrow',
-          'maxHealth': 1945330,
+          'maxHealth': 10945330,
           'level': 49,
         },
         {
           'name': 'Scrafty',
-          'maxHealth': 1948300,
+          'maxHealth': 10948300,
           'level': 49,
         },
         {
           'name': 'Krookodile',
-          'maxHealth': 1952000,
+          'maxHealth': 10952000,
           'level': 50,
         },
         {
           'name': 'Houndoom',
-          'maxHealth': 1957000,
+          'maxHealth': 10957000,
           'level': 51,
         },
         {
           'name': 'Tyranitar',
-          'maxHealth': 1957000,
+          'maxHealth': 10957000,
           'level': 51,
         },
         {
           'name': 'Bisharp',
-          'maxHealth': 1960250,
+          'maxHealth': 10960250,
           'level': 53,
         },
       ],
       'badgeReward': 63,
-      'moneyReward': 64000,
+      'moneyReward': 128000,
       'defeatMessage': 'Whether or not you get to fight at full strength, whether or not luck smiles on you--none of that matters. Only results matter. And a loss is a loss. See, victory shines like a bright light. And right now, you and your Pokémon are shining brilliantly.',
       'requirements': [
         {
@@ -47142,37 +50734,37 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Musharna',
-          'maxHealth': 1945330,
+          'maxHealth': 11945330,
           'level': 49,
         },
         {
           'name': 'Alakazam',
-          'maxHealth': 1948300,
+          'maxHealth': 11948300,
           'level': 49,
         },
         {
           'name': 'Gothitelle',
-          'maxHealth': 1957000,
+          'maxHealth': 11957000,
           'level': 51,
         },
         {
           'name': 'Gallade',
-          'maxHealth': 1957000,
+          'maxHealth': 11957000,
           'level': 51,
         },
         {
           'name': 'Reuniclus',
-          'maxHealth': 1952000,
+          'maxHealth': 11952000,
           'level': 50,
         },
         {
           'name': 'Metagross',
-          'maxHealth': 1960250,
+          'maxHealth': 11960250,
           'level': 53,
         },
       ],
       'badgeReward': 64,
-      'moneyReward': 64000,
+      'moneyReward': 128000,
       'defeatMessage': 'You and your Pokémon are both excellent and elegant. To have been able to battle against such a splendid team... My Pokémon and I learned a lot! I offer you my thanks',
       'requirements': [
         {
@@ -47188,37 +50780,37 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Hydreigon',
-          'maxHealth': 2458300,
+          'maxHealth': 12458300,
           'level': 58,
         },
         {
           'name': 'Salamence',
-          'maxHealth': 2462000,
+          'maxHealth': 12462000,
           'level': 58,
         },
         {
           'name': 'Aggron',
-          'maxHealth': 2464000,
+          'maxHealth': 12464000,
           'level': 58,
         },
         {
           'name': 'Archeops',
-          'maxHealth': 2460250,
+          'maxHealth': 12460250,
           'level': 60,
         },
         {
           'name': 'Lapras',
-          'maxHealth': 2470000,
+          'maxHealth': 12470000,
           'level': 58,
         },
         {
           'name': 'Haxorus',
-          'maxHealth': 2570000,
+          'maxHealth': 14570000,
           'level': 62,
         },
       ],
       'badgeReward': 65,
-      'moneyReward': 128000,
+      'moneyReward': 256000,
       'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
       'requirements': [
         {
@@ -47469,7 +51061,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'type': 2,
-          'dungeonIndex': 89,
+          'dungeonIndex': 88,
         },
       ],
     },
@@ -47663,10 +51255,393 @@ module.exports = {
         },
       ],
     },
+    'Iki Town': {
+      'leaderName': 'Hala',
+      'town': 'Iki Town',
+      'pokemons': [
+        {
+          'name': 'Machop',
+          'maxHealth': 2458300,
+          'level': 15,
+        },
+        {
+          'name': 'Makuhita',
+          'maxHealth': 2462000,
+          'level': 15,
+        },
+        {
+          'name': 'Crabrawler',
+          'maxHealth': 2462000,
+          'level': 16,
+        },
+      ],
+      'badgeReward': 79,
+      'moneyReward': 128000,
+      'defeatMessage': 'The results come as no surprise to me. What a fine Trainer...and what fine Pokémon, too!',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 94,
+        },
+      ],
+    },
+    'Konikoni City': {
+      'leaderName': 'Olivia',
+      'town': 'Konikoni City',
+      'pokemons': [
+        {
+          'name': 'Anorith',
+          'maxHealth': 2458300,
+          'level': 27,
+        },
+        {
+          'name': 'Lileep',
+          'maxHealth': 2462000,
+          'level': 27,
+        },
+        {
+          'name': 'Lycanroc (Midnight)',
+          'maxHealth': 2462000,
+          'level': 28,
+        },
+      ],
+      'badgeReward': 80,
+      'moneyReward': 128000,
+      'defeatMessage': 'How lovely.',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'type': 2,
+          'region': 6,
+          'route': 9,
+        },
+      ],
+    },
+    'Aether Foundation': {
+      'leaderName': 'Ultra Wormhole',
+      'town': 'Aether Foundation',
+      'pokemons': [
+        {
+          'name': '???',
+          'maxHealth': 2458300,
+          'level': 27,
+        },
+      ],
+      'badgeReward': 81,
+      'moneyReward': 128000,
+      'defeatMessage': 'The creature escaped back into the ultra wormhole.',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 80,
+        },
+      ],
+    },
+    'Malie City': {
+      'leaderName': 'Nanu',
+      'town': 'Malie City',
+      'pokemons': [
+        {
+          'name': 'Sableye',
+          'maxHealth': 2458300,
+          'level': 43,
+        },
+        {
+          'name': 'Krokorok',
+          'maxHealth': 2462000,
+          'level': 43,
+        },
+        {
+          'name': 'Alolan Persian',
+          'maxHealth': 2462000,
+          'level': 44,
+        },
+      ],
+      'badgeReward': 82,
+      'moneyReward': 128000,
+      'defeatMessage': 'Hmph...',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 110,
+        },
+      ],
+    },
+    'Altar of the Sunne and Moone': {
+      'leaderName': 'Ultra Megalopolis',
+      'town': 'Altar of the Sunne and Moone',
+      'pokemons': [
+        {
+          'name': 'Necrozma (Ultra)',
+          'maxHealth': 2458300,
+          'level': 60,
+        },
+      ],
+      'badgeReward': 83,
+      'moneyReward': 128000,
+      'defeatMessage': 'Necrozma fled. It left something behind.',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 80,
+        },
+      ],
+    },
+    'Seafolk Village': {
+      'leaderName': 'Mina',
+      'town': 'Seafolk Village',
+      'pokemons': [
+        {
+          'name': 'Mawile',
+          'maxHealth': 2458300,
+          'level': 51,
+        },
+        {
+          'name': 'Granbull',
+          'maxHealth': 2462000,
+          'level': 51,
+        },
+        {
+          'name': 'Ribombee',
+          'maxHealth': 2462000,
+          'level': 51,
+        },
+      ],
+      'badgeReward': 84,
+      'moneyReward': 128000,
+      'defeatMessage': "Woah! I'm shocked at your strength!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'dungeonIndex': 114,
+        },
+      ],
+    },
+    'Exeggutor Island': {
+      'leaderName': 'Hapu',
+      'town': 'Exeggutor Island',
+      'pokemons': [
+        {
+          'name': 'Golurk',
+          'maxHealth': 2458300,
+          'level': 53,
+        },
+        {
+          'name': 'Gastrodon (east)',
+          'maxHealth': 2462000,
+          'level': 53,
+        },
+        {
+          'name': 'Flygon',
+          'maxHealth': 2462000,
+          'level': 53,
+        },
+        {
+          'name': 'Mudsdale',
+          'maxHealth': 2462000,
+          'level': 54,
+        },
+      ],
+      'badgeReward': 85,
+      'moneyReward': 128000,
+      'defeatMessage': 'You have succeeded in your final grand trial!',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 84,
+        },
+      ],
+    },
+    'Elite Molayne': {
+      'leaderName': 'Molayne',
+      'town': 'Elite Molayne',
+      'pokemons': [
+        {
+          'name': 'Klefki',
+          'maxHealth': 1945330,
+          'level': 56,
+        },
+        {
+          'name': 'Bisharp',
+          'maxHealth': 1948300,
+          'level': 56,
+        },
+        {
+          'name': 'Magnezone',
+          'maxHealth': 1952000,
+          'level': 56,
+        },
+        {
+          'name': 'Metagross',
+          'maxHealth': 1957000,
+          'level': 56,
+        },
+        {
+          'name': 'Alolan Dugtrio',
+          'maxHealth': 1957000,
+          'level': 57,
+        },
+      ],
+      'badgeReward': 88,
+      'moneyReward': 64000,
+      'defeatMessage': 'That Kukui... He certainly found an interesting Trainer for me to face!',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 85,
+        },
+      ],
+    },
+    'Elite Olivia': {
+      'leaderName': 'Olivia',
+      'town': 'Elite Olivia',
+      'pokemons': [
+        {
+          'name': 'Armaldo',
+          'maxHealth': 1945330,
+          'level': 56,
+        },
+        {
+          'name': 'Cradily',
+          'maxHealth': 1948300,
+          'level': 56,
+        },
+        {
+          'name': 'Gigalith',
+          'maxHealth': 1952000,
+          'level': 56,
+        },
+        {
+          'name': 'Probopass',
+          'maxHealth': 1957000,
+          'level': 56,
+        },
+        {
+          'name': 'Lycanroc (Midnight)',
+          'maxHealth': 1957000,
+          'level': 57,
+        },
+      ],
+      'badgeReward': 86,
+      'moneyReward': 64000,
+      'defeatMessage': "I don't see the same look in your eyes that I saw when we first met on Akala Island. Have you had some experiences that you'll carry with you in your heart forever? Well, it's time for you to move on.",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 88,
+        },
+      ],
+    },
+    'Elite Acerola': {
+      'leaderName': 'Acerola',
+      'town': 'Elite Acerola',
+      'pokemons': [
+        {
+          'name': 'Banette',
+          'maxHealth': 1945330,
+          'level': 56,
+        },
+        {
+          'name': 'Drifblim',
+          'maxHealth': 1948300,
+          'level': 56,
+        },
+        {
+          'name': 'Dhelmise',
+          'maxHealth': 1952000,
+          'level': 56,
+        },
+        {
+          'name': 'Froslass',
+          'maxHealth': 1957000,
+          'level': 56,
+        },
+        {
+          'name': 'Palossand',
+          'maxHealth': 1957000,
+          'level': 57,
+        },
+      ],
+      'badgeReward': 87,
+      'moneyReward': 64000,
+      'defeatMessage': "I'm...I'm speechless! You've done me in!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 86,
+        },
+      ],
+    },
+    'Elite Kahili': {
+      'leaderName': 'Kahili',
+      'town': 'Elite Kahili',
+      'pokemons': [
+        {
+          'name': 'Braviary',
+          'maxHealth': 1945330,
+          'level': 56,
+        },
+        {
+          'name': 'Hawlucha',
+          'maxHealth': 1948300,
+          'level': 56,
+        },
+        {
+          'name': 'Oricorio (Baile)',
+          'maxHealth': 1952000,
+          'level': 56,
+        },
+        {
+          'name': 'Mandibuzz',
+          'maxHealth': 1957000,
+          'level': 56,
+        },
+        {
+          'name': 'Toucannon',
+          'maxHealth': 1957000,
+          'level': 57,
+        },
+      ],
+      'badgeReward': 89,
+      'moneyReward': 64000,
+      'defeatMessage': "It's frustrating to me as a member of the Elite Four, but it seems your strength is the real deal.",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 87,
+        },
+      ],
+    },
     'Champion Blue': {
       'leaderName': 'Blue',
       'town': 'Champion Blue',
-      'pokemons': [],
+      'pokemons': [
+        {
+          'name': 'Pidgeot',
+          'maxHealth': 52340,
+          'level': 59,
+        },
+        {
+          'name': 'Alakazam',
+          'maxHealth': 56320,
+          'level': 57,
+        },
+        {
+          'name': 'Rhydon',
+          'maxHealth': 58340,
+          'level': 59,
+        },
+      ],
       'badgeReward': 13,
       'moneyReward': 10000,
       'defeatMessage': "Why? Why did I lose? I never made any mistakes raising my Pokémon… Darn it! You're the new Pokémon League Champion! Although I don't like to admit it…",
@@ -47675,6 +51650,168 @@ module.exports = {
           'requiredValue': 1,
           'type': 2,
           'badge': 12,
+        },
+      ],
+      'basePokemon': [
+        {
+          'name': 'Pidgeot',
+          'maxHealth': 52340,
+          'level': 59,
+        },
+        {
+          'name': 'Alakazam',
+          'maxHealth': 56320,
+          'level': 57,
+        },
+        {
+          'name': 'Rhydon',
+          'maxHealth': 58340,
+          'level': 59,
+        },
+      ],
+      'alternativePokemon1': [
+        {
+          'name': 'Exeggutor',
+          'maxHealth': 57520,
+          'level': 59,
+        },
+        {
+          'name': 'Gyarados',
+          'maxHealth': 63040,
+          'level': 61,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 70000,
+          'level': 63,
+        },
+      ],
+      'alternativePokemon2': [
+        {
+          'name': 'Arcanine',
+          'maxHealth': 65340,
+          'level': 59,
+        },
+        {
+          'name': 'Exeggutor',
+          'maxHealth': 57520,
+          'level': 61,
+        },
+        {
+          'name': 'Blastoise',
+          'maxHealth': 70000,
+          'level': 63,
+        },
+      ],
+      'alternativePokemon3': [
+        {
+          'name': 'Gyarados',
+          'maxHealth': 63040,
+          'level': 59,
+        },
+        {
+          'name': 'Arcanine',
+          'maxHealth': 65340,
+          'level': 61,
+        },
+        {
+          'name': 'Venusaur',
+          'maxHealth': 70000,
+          'level': 63,
+        },
+      ],
+    },
+    'Champion Hao': {
+      'leaderName': 'Hao',
+      'town': 'Champion Hao',
+      'pokemons': [
+        {
+          'name': 'Alolan Raichu',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+        {
+          'name': 'Tauros',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Noivern',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Crabominable',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+      ],
+      'badgeReward': 90,
+      'moneyReward': 100000,
+      'defeatMessage': "We're gonna keep moving forward, by staying at full power all the time!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'type': 2,
+          'badge': 89,
+        },
+      ],
+      'basePokemon': [
+        {
+          'name': 'Alolan Raichu',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+        {
+          'name': 'Tauros',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Noivern',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Crabominable',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+      ],
+      'alternativePokemon1': [
+        {
+          'name': 'Flareon',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Primarina',
+          'maxHealth': 2015330,
+          'level': 60,
+        },
+      ],
+      'alternativePokemon2': [
+        {
+          'name': 'Vaporeon',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Decidueye',
+          'maxHealth': 2015330,
+          'level': 60,
+        },
+      ],
+      'alternativePokemon3': [
+        {
+          'name': 'Leafeon',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Incineroar',
+          'maxHealth': 2015330,
+          'level': 60,
         },
       ],
     },
