@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { addAmount } = require('../database.js');
+const { serverIcons } = require('../config.js');
 
 module.exports = {
   name        : 'gift',
@@ -25,11 +26,11 @@ module.exports = {
       return msg.channel.send({ embed });
     }
 
-    const output = [msg.author, `Gifted ${amount.toLocaleString('en-NZ')} <:money:737206931759824918> to the following users`, ''];
+    const output = [msg.author, `Gifted ${amount.toLocaleString('en-NZ')} ${serverIcons.money} to the following users`, ''];
 
     for (const [, user] of [...msg.mentions.users]) {
       const balance = await addAmount(user, amount);
-      output.push(`${user}: ${balance.toLocaleString('en-NZ')} <:money:737206931759824918>`);
+      output.push(`${user}: ${balance.toLocaleString('en-NZ')} ${serverIcons.money}`);
     }
 
     embed.setColor('#2ecc71')

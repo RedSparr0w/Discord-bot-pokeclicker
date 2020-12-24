@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
-const { website } = require('../config.js');
+const { website, serverIcons } = require('../config.js');
 
 const coinSides = {
   heads: 1,
@@ -72,7 +72,7 @@ module.exports = {
     const output = [
       msg.author,
       `**${(win ? 'WIN' : 'LOSE')}** - ${(coinSide ? 'HEADS' : 'TAILS')}`,
-      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
     ].join('\n');
 
     addAmount(msg.author, winnings);

@@ -18,7 +18,7 @@ const {
   addStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
-const { newQuiz, postHappyHour } = require('./other/quiz.js');
+const { newQuiz, postHappyHour } = require('./other/quiz/quiz.js');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();

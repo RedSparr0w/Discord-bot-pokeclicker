@@ -1,6 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
+const { serverIcons } = require('../config.js');
 
 const slots = {
   seven: '<:slots_7:751322075578499093>',
@@ -202,7 +203,7 @@ module.exports = {
       `║ ${slotIcons.map(r => r[1]).join(' ║ ')} ║`,
       `║ ${slotIcons.map(r => r[2]).join(' ║ ')} ║`,
       '',
-      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
     ];
 
     addAmount(msg.author, winnings);

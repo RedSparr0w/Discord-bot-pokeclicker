@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { website } = require('../config.js');
+const { website, serverIcons } = require('../../config.js');
 const {
   pokemonList,
   PokemonType,
@@ -8,8 +8,7 @@ const {
   upperCaseFirstLetter,
   BadgeEnums,
   gymList,
-} = require('../helpers.js');
-const money_icon = '<:money:737206931759824918>';
+} = require('../../helpers.js');
 
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
@@ -29,7 +28,7 @@ const whosThatPokemon = () => {
   const shiny = isShiny(128);
 
   const description = ['Name the Pokémon!'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -60,7 +59,7 @@ const whosThePokemonEvolution = () => {
   const shiny = isShiny(128);
 
   const description = ['Who can this Pokémon evolve to?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -93,7 +92,7 @@ const whosThePokemonPrevolution = () => {
   const shiny = isShiny(128);
 
   const description = ['Who does this Pokémon evolve from?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -125,7 +124,7 @@ const pokemonType = () => {
   const shiny = isShiny(128);
 
   const description = ['What is this Pokémons type(s)?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -156,7 +155,7 @@ const pokemonID = () => {
   const shiny = isShiny(128);
 
   const description = ['What is this Pokémons national Pokedex ID?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -187,7 +186,7 @@ const pokemonRegion = () => {
   const shiny = isShiny(128);
 
   const description = ['What is this Pokémons native region?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -216,7 +215,7 @@ const fossilPokemon = () => {
   const amount = getAmount();
 
   const description = ['What Pokémon comes from this fossil?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s that Pokémon?')
@@ -242,7 +241,7 @@ const pokemonFossil = () => {
   const shiny = isShiny(128);
 
   const description = ['What fossil does this Pokémon come from?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
   if (shiny) {
@@ -272,7 +271,7 @@ const dockTown = () => {
   const amount = getAmount();
 
   const description = [`Where abouts is the Dock located in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Setting sail!')
@@ -295,7 +294,7 @@ const startingTown = () => {
   const amount = getAmount();
 
   const description = [`Where does the player start in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Getting started!')
@@ -318,7 +317,7 @@ const badgeGymLeader = () => {
   const amount = getAmount();
 
   const description = ['Which Gym Leader awards this badge?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s the Gym Leader?')
@@ -341,7 +340,7 @@ const badgeGymLocation = () => {
   const amount = getAmount();
 
   const description = ['Which location has a Gym that awards this badge?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Where\'s the Gym?')
@@ -366,7 +365,7 @@ const pokemonGymLeader = () => {
   let amount = getAmount();
 
   const description = ['Which Gym Leader uses this Pokémon?'];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const shiny = isShiny(128);
 
@@ -398,7 +397,7 @@ const gymLeaderPokemon = () => {
   const amount = getAmount();
 
   const description = ['Which Pokémon does this Gym Leader use?', `||${gym.leaderName}||`];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Which Pokemon?')
@@ -420,7 +419,7 @@ const gymLeaderLocation = () => {
   const amount = getAmount();
 
   const description = ['Which location can you find this Gym Leader?', `||${gym.leaderName}||`];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('Where are they?')
@@ -443,7 +442,7 @@ const gymLeaderBadge = () => {
   const amount = getAmount();
 
   const description = ['Which Badge does this Gym Leader award?', `||${gym.leaderName}||`];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the Badge?')
@@ -472,7 +471,7 @@ const gymLeaderType = () => {
   const amount = getAmount();
 
   const description = ['Which main Pokémon type does this Gym Leader use?', `||${gym.leaderName}||`];
-  description.push(`**+${amount} ${money_icon}**`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the Type?')

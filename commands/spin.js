@@ -1,6 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
+const { serverIcons } = require('../config.js');
 
 const multipliers = [1.5, 1.7, 2.4, 0.2, 1.2, 0.1, 0.3, 0.5];
 const arrows      = ['↖️', '⬆️', '↗️','⬅️','➡️', '↙️', '⬇️', '↘️'];
@@ -42,7 +43,7 @@ module.exports = {
 
     const output = [
       msg.author,
-      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
       '',
       `\`${multipliers.slice(0, 3).map(i => `[${i}]`).join('')}\``,
       `\`[${multipliers[3]}]\` ${arrow} \`[${multipliers[4]}]\``,

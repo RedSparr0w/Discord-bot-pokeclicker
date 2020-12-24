@@ -1,20 +1,18 @@
 const { MessageEmbed } = require('discord.js');
-const { quizChannelID, ownerID } = require('../config.js');
-const { addAmount, addStatistic, addPurchased } = require('../database.js');
+const { quizChannelID, ownerID, serverIcons } = require('../../config.js');
+const { addAmount, addStatistic, addPurchased } = require('../../database.js');
 const {
   SECOND,
   MINUTE,
   HOUR,
   warn,
   log,
-} = require('../helpers.js');
+} = require('../../helpers.js');
 const { getQuizQuestion } = require('./quiz_questions.js');
-
-const money_icon = '<:money:737206931759824918>';
+const { isHappyHour } = require('./quiz_functions.js');
 
 // Between 1 and 6 minutes
 const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
-const isHappyHour = () => Date.now() % (9 * HOUR) < HOUR;
 
 const postHappyHour = async (guild) => {
   // If no quiz channel or ID, return
@@ -26,7 +24,7 @@ const postHappyHour = async (guild) => {
 
   const embed = new MessageEmbed()
     .setTitle('It\'s Happy Hour!')
-    .setDescription(['For the next 1 hour, questions will be posted 6x as often!', '', 'Good Luck!'])
+    .setDescription(['For the next 1 hour, questions will be posted 6 × as often and shiny chances are 6 × better!', '', 'Good Luck!'])
     .setColor('#2ecc71');
 
   return await quiz_channel.send('<@&788190728027242496>', { embed });
@@ -49,7 +47,7 @@ const newQuiz = async (guild, reoccur = false) => {
   // 3 x more questions
   if (happyHour) {
     time_limit /= 6;
-    quiz.embed.setFooter('Happy Hour! (questions 6x more often)');
+    quiz.embed.setFooter('Happy Hour!\n(6 × Faster Questions, 6 × Shiny Chance)');
   }
 
   const bot_message = await quiz_channel.send({ embed: quiz.embed }).catch((...args) => warn('Unable to send quiz question', ...args));
@@ -108,7 +106,7 @@ const newQuiz = async (guild, reoccur = false) => {
     const description = [
       `${user}`,
       '**CORRECT!**',
-      `**+${amount} ${money_icon}**`,
+      `**+${amount} ${serverIcons.money}**`,
     ];
 
     const embed = new MessageEmbed()

@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand } = require('../helpers.js');
-const { website } = require('../config.js');
+const { website, serverIcons } = require('../config.js');
 const discordShopItems = [
   {
     name: '<@&751979566280605728> Role',
@@ -68,7 +68,7 @@ module.exports = {
         .setColor('#3498db')
         .setDescription(msg.author)
         .addField('Name', item.name, true)
-        .addField('Price', `${item.price} <:money:737206931759824918>`, true)
+        .addField('Price', `${item.price} ${serverIcons.money}`, true)
         .addField('Description', item.description)
         .setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${allShopItems.length}`);
 

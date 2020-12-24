@@ -1,6 +1,7 @@
 const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
+const { serverIcons } = require('../config.js');
 
 const types = {
   f: 0,
@@ -72,7 +73,7 @@ module.exports = {
       msg.author,
       `__**${multiplier == 0 ? 'LOSE' : multiplier == 1 ? 'TIE' : 'WIN'}**__`,
       `${typeIcons[type]} _vs_ ${typeIcons[botType]}`,
-      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
     ].join('\n');
 
     addAmount(msg.author, winnings);

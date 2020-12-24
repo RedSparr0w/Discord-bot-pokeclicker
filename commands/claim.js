@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { addAmount } = require('../database.js');
-const { bonusRoles } = require('../config.js');
+const { bonusRoles, serverIcons } = require('../config.js');
 const {
   getLastClaim,
   updateClaimDate,
@@ -13,7 +13,6 @@ const {
   DAY,
 } = require('../helpers.js');
 
-const money_icon = '<:money:737206931759824918>';
 const claimAmount = 100;
 
 const calcStreakBonus = (streak) => {
@@ -51,7 +50,7 @@ module.exports = {
       if (+hours || +minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
       timeRemaining += `${seconds} second${s(seconds)}`;
       return msg.channel.send({
-        embed: new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nYou've already claimed your ${money_icon} for today\nYou can claim again in ${timeRemaining}`),
+        embed: new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
       });
     }
 
@@ -84,20 +83,20 @@ module.exports = {
 
     const message = [
       msg.author,
-      `_Daily Claim:_ **+${claimAmount.toLocaleString('en-US')}** ${money_icon}`,
+      `_Daily Claim:_ **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`,
     ];
 
     if (streakBonus) {
-      message.push(`_Streak Bonus:_ **+${streakBonus.toLocaleString('en-US')}** ${money_icon} `);
+      message.push(`_Streak Bonus:_ **+${streakBonus.toLocaleString('en-US')}** ${serverIcons.money} `);
     }
 
     roleBonuses.forEach(([r, b]) => {
-      message.push(`_<@&${r}>:_ **+${b.toLocaleString('en-US')}** ${money_icon}`);
+      message.push(`_<@&${r}>:_ **+${b.toLocaleString('en-US')}** ${serverIcons.money}`);
     });
 
     message.push(
       '',
-      `Current Balance: **${balance.toLocaleString('en-US')}** ${money_icon}`,
+      `Current Balance: **${balance.toLocaleString('en-US')}** ${serverIcons.money}`,
       `Current Streak: **${streak + 1}**`
     );
 
