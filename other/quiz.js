@@ -32,7 +32,7 @@ const postHappyHour = async (guild) => {
   return await quiz_channel.send('<@&788190728027242496>', { embed });
 };
 
-const newQuiz = async (guild) => {
+const newQuiz = async (guild, reoccur = false) => {
   // If no quiz channel or ID, return
   if (!quizChannelID) return;
   const quiz_channel = await guild.channels.cache.find(c => c.id == quizChannelID);
@@ -55,10 +55,10 @@ const newQuiz = async (guild) => {
   const bot_message = await quiz_channel.send({ embed: quiz.embed }).catch((...args) => warn('Unable to send quiz question', ...args));
 
   // If no bot message for whatever reason, try again in 1 minute
-  if (!bot_message) return setTimeout(() => newQuiz(guild), MINUTE);
+  if (!bot_message) return setTimeout(() => newQuiz(guild, reoccur), MINUTE);
 
   // Post another question once the timer finishes
-  setTimeout(() => newQuiz(guild), time_limit);
+  if (reoccur) setTimeout(() => newQuiz(guild, reoccur), time_limit);
 
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);

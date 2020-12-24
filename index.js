@@ -76,7 +76,7 @@ client.once('ready', async() => {
   }, { timezone_offset: 0 });
   
   // Will restart itself
-  client.guilds.cache.forEach(guild => newQuiz(guild));
+  client.guilds.cache.forEach(guild => newQuiz(guild, true));
 });
 
 client.on('error', e => error('Client error thrown:', e))
