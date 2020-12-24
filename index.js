@@ -10,7 +10,6 @@ const {
   RunOnInterval,
   formatChannelList,
   HOUR,
-  MINUTE,
 } = require('./helpers.js');
 const {
   setupDB,

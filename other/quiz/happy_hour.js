@@ -3,7 +3,7 @@ const { quizChannelID } = require('../../config.js');
 const { HOUR } = require('../../helpers.js');
 
 const happyHourBonus = 6;
-const isHappyHour = () => true;//Date.now() % (9 * HOUR) < HOUR;
+const isHappyHour = () => Date.now() % (9 * HOUR) < HOUR;
 const nextHappyHour = (now = new Date()) => new Date((now - (now % (9 * HOUR))) + 9 * HOUR);
 
 const startHappyHour = async (guild) => {

@@ -4,7 +4,6 @@ const { addAmount, addStatistic, addPurchased } = require('../../database.js');
 const {
   SECOND,
   MINUTE,
-  HOUR,
   warn,
   log,
 } = require('../../helpers.js');
