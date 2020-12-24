@@ -9,26 +9,10 @@ const {
   log,
 } = require('../../helpers.js');
 const { getQuizQuestion } = require('./quiz_questions.js');
-const { isHappyHour } = require('./quiz_functions.js');
+const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
 
 // Between 1 and 6 minutes
 const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
-
-const postHappyHour = async (guild) => {
-  // If no quiz channel or ID, return
-  if (!quizChannelID) return;
-  const quiz_channel = await guild.channels.cache.find(c => c.id == quizChannelID);
-  if (!quiz_channel) return;
-  quiz_channel.setRateLimitPerUser(0, 'Happy Hour!').catch(O_o=>{});
-  setTimeout(() => quiz_channel.setRateLimitPerUser(5, 'Happy Hour!').catch(O_o=>{}), HOUR);
-
-  const embed = new MessageEmbed()
-    .setTitle('It\'s Happy Hour!')
-    .setDescription(['For the next 1 hour, questions will be posted 6 × as often and shiny chances are 6 × better!', '', 'Good Luck!'])
-    .setColor('#2ecc71');
-
-  return await quiz_channel.send('<@&788190728027242496>', { embed });
-};
 
 const newQuiz = async (guild, reoccur = false) => {
   // If no quiz channel or ID, return
@@ -46,8 +30,8 @@ const newQuiz = async (guild, reoccur = false) => {
 
   // 3 x more questions
   if (happyHour) {
-    time_limit /= 6;
-    quiz.embed.setFooter('Happy Hour!\n(6 × Faster Questions, 6 × Shiny Chance)');
+    time_limit /= happyHourBonus;
+    quiz.embed.setFooter(`Happy Hour!\n(${happyHourBonus} × Faster Questions, ${happyHourBonus} × Shiny Chance)`);
   }
 
   const bot_message = await quiz_channel.send({ embed: quiz.embed }).catch((...args) => warn('Unable to send quiz question', ...args));
@@ -153,5 +137,4 @@ const newQuiz = async (guild, reoccur = false) => {
 
 module.exports = {
   newQuiz,
-  postHappyHour,
 };

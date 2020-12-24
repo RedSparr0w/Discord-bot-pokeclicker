@@ -9,11 +9,12 @@ const {
   BadgeEnums,
   gymList,
 } = require('../../helpers.js');
+const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
 
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
 const getShinyAmount = () => 100;
-const isShiny = chance => !Math.floor(Math.random() * chance);
+const isShiny = chance => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));

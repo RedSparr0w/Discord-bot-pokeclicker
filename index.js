@@ -10,6 +10,7 @@ const {
   RunOnInterval,
   formatChannelList,
   HOUR,
+  MINUTE,
 } = require('./helpers.js');
 const {
   setupDB,
@@ -18,7 +19,8 @@ const {
   addStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
-const { newQuiz, postHappyHour } = require('./other/quiz/quiz.js');
+const { newQuiz } = require('./other/quiz/quiz.js');
+const { startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -71,9 +73,15 @@ client.once('ready', async() => {
     client.guilds.cache.forEach(guild => backupDB(guild));
   }, { timezone_offset: 0 });
 
+  // Start happy hour
   new RunOnInterval(9 * HOUR, () => {
-    client.guilds.cache.forEach(guild => postHappyHour(guild));
+    client.guilds.cache.forEach(guild => startHappyHour(guild));
   }, { timezone_offset: 0 });
+
+  // End happy hour 1 hour later
+  new RunOnInterval(9 * HOUR, () => {
+    client.guilds.cache.forEach(guild => endHappyHour(guild));
+  }, { timezone_offset: HOUR });
   
   // Will restart itself
   client.guilds.cache.forEach(guild => newQuiz(guild, true));
