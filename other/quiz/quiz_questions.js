@@ -118,7 +118,7 @@ const whosThePokemonPrevolution = () => {
 const pokemonType = () => {
   const pokemon = randomFromArray(pokemonList);
   const types = pokemon.type.map(t => PokemonType[t]);
-  const answer = new RegExp(`^\\W*(${types.join('|') + (types.length > 1 ? `)\\s+?(${types.join('|')}` : '')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')})\\b`, 'i');
 
   let amount = getAmount();
 
