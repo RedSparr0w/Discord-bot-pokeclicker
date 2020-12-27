@@ -104,7 +104,7 @@ const newQuiz = async (guild, reoccur = false) => {
   const answerFilter = (reaction, user) => reaction.emoji.id === '761083768614027265' && user.id === ownerID;
 
   // Allow reactions for up to x ms
-  const timer = 3e5; // (300 seconds)
+  const timer = 12e5; // (1200 seconds)
   const logAnswer = bot_message.createReactionCollector(answerFilter, {time: timer});
 
   logAnswer.on('collect', async r => {
