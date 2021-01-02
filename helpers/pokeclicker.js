@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.7.0',
+  'gameVersion': '0.7.1',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -92,7 +92,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 1,
         },
@@ -117,7 +118,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 1,
         },
@@ -142,13 +144,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 2,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 1,
         },
       ],
@@ -178,13 +181,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 3,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 2,
         },
       ],
@@ -214,7 +219,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 4,
         },
@@ -246,7 +252,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 24,
         },
@@ -273,7 +280,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 25,
         },
@@ -306,7 +314,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 5,
         },
@@ -338,7 +347,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 6,
         },
@@ -367,13 +377,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 6,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 2,
         },
       ],
@@ -406,13 +417,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 9,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 3,
         },
       ],
@@ -440,7 +453,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 10,
         },
@@ -468,7 +482,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 8,
         },
@@ -505,7 +520,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 5,
         },
       ],
@@ -543,13 +559,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 12,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 14,
             },
@@ -585,13 +603,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 13,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 15,
             },
@@ -623,13 +643,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 14,
             },
@@ -658,7 +680,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 5,
         },
       ],
@@ -690,13 +713,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 16,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 18,
             },
@@ -732,13 +757,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 17,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 15,
             },
@@ -767,7 +794,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 5,
         },
       ],
@@ -795,13 +822,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 21,
             },
             {
               'requiredValue': 1,
-              'type': 2,
+              'option': 2,
+              'achievementType': 17,
               'dungeonIndex': 6,
             },
           ],
@@ -835,7 +864,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 5,
         },
       ],
@@ -865,13 +894,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 22,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 8,
         },
       ],
@@ -901,7 +931,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 13,
         },
       ],
@@ -928,7 +958,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 29,
         },
@@ -969,7 +1000,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 29,
         },
@@ -1015,7 +1047,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 30,
         },
@@ -1053,7 +1086,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 14,
         },
       ],
@@ -1082,7 +1115,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 12,
         },
       ],
@@ -1120,7 +1154,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 14,
         },
       ],
@@ -1159,7 +1194,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 34,
         },
@@ -1194,7 +1230,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 16,
         },
       ],
@@ -1228,7 +1264,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 36,
         },
@@ -1263,7 +1300,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 37,
         },
@@ -1297,7 +1335,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 38,
         },
@@ -1325,13 +1364,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 39,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 17,
         },
       ],
@@ -1357,7 +1397,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 40,
         },
@@ -1391,7 +1432,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 17,
         },
       ],
@@ -1425,7 +1466,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 42,
         },
@@ -1459,12 +1501,12 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 19,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 20,
         },
       ],
@@ -1498,7 +1540,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 19,
         },
       ],
@@ -1545,7 +1588,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 19,
         },
       ],
@@ -1580,7 +1623,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 47,
         },
@@ -1621,7 +1665,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 21,
         },
       ],
@@ -1661,7 +1705,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 27,
         },
@@ -1699,7 +1744,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 26,
         },
       ],
@@ -1722,7 +1767,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 26,
         },
       ],
@@ -1752,7 +1797,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 101,
         },
@@ -1785,7 +1831,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 101,
         },
@@ -1815,7 +1862,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 102,
         },
@@ -1842,7 +1890,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 22,
         },
       ],
@@ -1874,12 +1923,13 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 24,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 28,
         },
       ],
@@ -1911,7 +1961,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 110,
         },
@@ -1941,7 +1992,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 29,
         },
       ],
@@ -1963,7 +2014,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 111,
         },
@@ -1987,7 +2039,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 26,
         },
       ],
@@ -2019,7 +2072,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 113,
         },
@@ -2051,7 +2105,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 28,
         },
       ],
@@ -2076,7 +2131,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 31,
         },
       ],
@@ -2103,13 +2158,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 105,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 107,
             },
@@ -2139,13 +2196,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 106,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 108,
             },
@@ -2175,13 +2234,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 107,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 109,
             },
@@ -2209,7 +2270,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 31,
         },
       ],
@@ -2240,7 +2301,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 31,
         },
       ],
@@ -2272,7 +2333,7 @@ module.exports = {
             'req': [
               {
                 'requiredValue': 1,
-                'type': 1,
+                'option': 1,
                 'weather': [
                   0,
                   1,
@@ -2287,7 +2348,7 @@ module.exports = {
             'req': [
               {
                 'requiredValue': 1,
-                'type': 1,
+                'option': 1,
                 'weather': [7],
               },
             ],
@@ -2297,7 +2358,7 @@ module.exports = {
             'req': [
               {
                 'requiredValue': 1,
-                'type': 1,
+                'option': 1,
                 'weather': [
                   2,
                   3,
@@ -2310,7 +2371,7 @@ module.exports = {
             'req': [
               {
                 'requiredValue': 1,
-                'type': 1,
+                'option': 1,
                 'weather': [
                   4,
                   6,
@@ -2325,7 +2386,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 118,
         },
@@ -2359,7 +2421,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 119,
         },
@@ -2393,7 +2456,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 120,
         },
@@ -2420,13 +2484,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 121,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 32,
         },
       ],
@@ -2459,7 +2524,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 122,
         },
@@ -2488,7 +2554,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 29,
         },
       ],
@@ -2514,7 +2581,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 124,
         },
@@ -2543,7 +2611,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 124,
         },
@@ -2572,13 +2641,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 125,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 2,
               'route': 126,
             },
@@ -2608,7 +2679,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 127,
         },
@@ -2636,7 +2708,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 128,
         },
@@ -2663,7 +2736,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 129,
         },
@@ -2690,7 +2764,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 130,
         },
@@ -2718,7 +2793,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 131,
         },
@@ -2746,7 +2822,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 132,
         },
@@ -2774,7 +2851,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 2,
           'route': 133,
         },
@@ -2798,7 +2876,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 39,
         },
       ],
@@ -2822,7 +2900,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 201,
         },
@@ -2856,7 +2935,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 202,
         },
@@ -2891,7 +2971,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 202,
         },
@@ -2939,13 +3020,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 204,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 38,
         },
       ],
@@ -2974,13 +3057,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 205,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 41,
         },
       ],
@@ -3005,7 +3089,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 206,
         },
@@ -3043,13 +3128,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 207,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 42,
         },
       ],
@@ -3087,13 +3174,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 208,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 42,
         },
       ],
@@ -3136,7 +3224,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 209,
         },
@@ -3166,7 +3255,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 210,
         },
@@ -3205,7 +3295,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 215,
         },
@@ -3239,7 +3330,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 214,
         },
@@ -3276,13 +3368,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 213,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 44,
         },
       ],
@@ -3314,13 +3407,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 213,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 44,
         },
       ],
@@ -3348,13 +3442,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 218,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 44,
         },
       ],
@@ -3383,7 +3479,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 216,
         },
@@ -3419,13 +3516,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 213,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 44,
         },
       ],
@@ -3454,13 +3552,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 213,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 44,
         },
       ],
@@ -3490,7 +3589,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 219,
         },
@@ -3529,7 +3629,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 220,
         },
@@ -3570,13 +3671,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 217,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 48,
         },
       ],
@@ -3605,13 +3708,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 222,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 47,
         },
       ],
@@ -3651,13 +3755,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 223,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 49,
         },
       ],
@@ -3694,13 +3800,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 224,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 52,
         },
       ],
@@ -3741,7 +3848,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 225,
         },
@@ -3779,7 +3887,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 226,
         },
@@ -3813,7 +3922,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 226,
         },
@@ -3858,7 +3968,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 228,
         },
@@ -3903,7 +4014,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 3,
           'route': 229,
         },
@@ -3929,7 +4041,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 52,
         },
       ],
@@ -3959,7 +4071,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 19,
         },
@@ -3985,7 +4098,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 54,
         },
       ],
@@ -4015,13 +4128,14 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 4,
               'route': 4,
             },
             {
               'requiredValue': 1,
-              'type': 2,
+              'option': 2,
               'badge': 55,
             },
           ],
@@ -4048,13 +4162,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 4,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 55,
         },
       ],
@@ -4079,13 +4194,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 4,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 55,
         },
       ],
@@ -4117,13 +4233,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 5,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 56,
         },
       ],
@@ -4151,12 +4268,13 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 64,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 57,
         },
       ],
@@ -4187,7 +4305,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 67,
         },
       ],
@@ -4215,7 +4334,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 67,
         },
       ],
@@ -4245,7 +4365,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 67,
         },
       ],
@@ -4271,7 +4392,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 13,
         },
@@ -4304,7 +4426,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 12,
         },
@@ -4332,7 +4455,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 11,
         },
@@ -4357,7 +4481,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 68,
         },
       ],
@@ -4388,7 +4513,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 21,
         },
@@ -4420,7 +4546,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 69,
         },
       ],
@@ -4448,20 +4575,22 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 1,
-              'type': 2,
+              'option': 2,
+              'achievementType': 17,
               'dungeonIndex': 73,
             },
             {
               'requirements': [
                 {
                   'requiredValue': 10,
-                  'type': 2,
+                  'option': 2,
+                  'achievementType': 15,
                   'region': 4,
                   'route': 9,
                 },
                 {
                   'requiredValue': 1,
-                  'type': 2,
+                  'option': 2,
                   'badge': 65,
                 },
               ],
@@ -4490,13 +4619,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 4,
               'route': 14,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 4,
               'route': 16,
             },
@@ -4504,7 +4635,7 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 65,
         },
       ],
@@ -4529,7 +4660,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 76,
         },
       ],
@@ -4554,7 +4686,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 3,
         },
@@ -4582,7 +4715,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 2,
         },
@@ -4605,7 +4739,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 1,
         },
@@ -4634,7 +4769,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 4,
           'route': 17,
         },
@@ -4654,7 +4790,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 65,
         },
       ],
@@ -4681,7 +4817,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 65,
         },
       ],
@@ -4715,7 +4851,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 79,
         },
       ],
@@ -4744,7 +4881,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 66,
         },
       ],
@@ -4773,7 +4910,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 4,
         },
@@ -4800,7 +4938,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 5,
         },
@@ -4833,7 +4972,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 80,
         },
       ],
@@ -4869,7 +5009,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 81,
         },
       ],
@@ -4892,7 +5033,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 8,
         },
@@ -4921,7 +5063,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 82,
         },
       ],
@@ -4950,7 +5093,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 67,
         },
       ],
@@ -4984,7 +5127,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 68,
         },
       ],
@@ -5015,7 +5158,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 12,
         },
@@ -5039,7 +5183,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 12,
         },
@@ -5073,7 +5218,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 70,
         },
       ],
@@ -5107,7 +5252,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 71,
         },
       ],
@@ -5141,7 +5286,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 15,
         },
@@ -5166,7 +5312,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 85,
         },
       ],
@@ -5194,7 +5341,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 86,
         },
       ],
@@ -5228,7 +5376,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 18,
         },
@@ -5255,7 +5404,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 19,
         },
@@ -5288,7 +5438,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 19,
         },
@@ -5325,7 +5476,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 3,
         },
@@ -5355,7 +5507,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 78,
         },
       ],
@@ -5382,7 +5534,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 1,
         },
@@ -5415,7 +5568,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 91,
         },
       ],
@@ -5442,7 +5596,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 93,
         },
       ],
@@ -5470,7 +5625,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 79,
         },
       ],
@@ -5499,7 +5654,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 99,
         },
       ],
@@ -5529,7 +5685,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 100,
         },
       ],
@@ -5563,12 +5720,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 95,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 100,
         },
       ],
@@ -5597,7 +5756,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 100,
         },
       ],
@@ -5624,7 +5784,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 6,
         },
@@ -5658,7 +5819,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 101,
         },
       ],
@@ -5683,7 +5845,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 103,
         },
       ],
@@ -5713,7 +5876,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 104,
         },
       ],
@@ -5740,7 +5904,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 106,
         },
       ],
@@ -5775,7 +5940,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 10,
         },
@@ -5802,7 +5968,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 106,
         },
       ],
@@ -5828,13 +5995,15 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 11,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 107,
         },
       ],
@@ -5857,7 +6026,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 12,
         },
@@ -5885,7 +6055,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 13,
         },
@@ -5917,7 +6088,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 108,
         },
       ],
@@ -5942,7 +6114,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 15,
         },
@@ -5971,7 +6144,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 109,
         },
       ],
@@ -5997,7 +6171,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 108,
         },
       ],
@@ -6022,7 +6197,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 82,
         },
       ],
@@ -6047,7 +6222,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 24,
         },
@@ -6077,7 +6253,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 25,
         },
@@ -6104,7 +6281,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 90,
         },
       ],
@@ -6136,7 +6313,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 27,
         },
@@ -6156,7 +6334,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 28,
         },
@@ -6187,7 +6366,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 29,
         },
@@ -10870,7 +11050,10 @@ module.exports = {
       'name': 'Alolan Ninetales',
       'nativeRegion': 6,
       'catchRate': 75,
-      'type': [1],
+      'type': [
+        5,
+        17,
+      ],
       'levelType': 2,
       'exp': 177,
       'eggCycles': 30,
@@ -16206,6 +16389,11 @@ module.exports = {
       'attack': 89,
       'nativeRegion': 0,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'P2 Laboratory',
+          },
+        ],
         '7': ['Celadon City'],
       },
       'catchRatePercent': 17,
@@ -23384,6 +23572,11 @@ module.exports = {
           'Sky Pillar',
           'Reflection Cave',
         ],
+        '3': [
+          {
+            'dungeon': 'P2 Laboratory',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -23419,6 +23612,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Granite Cave',
+          },
+          {
+            'dungeon': 'P2 Laboratory',
           },
           {
             'dungeon': 'Glittering Cave',
@@ -33039,6 +33235,9 @@ module.exports = {
           },
           {
             'dungeon': 'Dreamyard',
+          },
+          {
+            'dungeon': 'P2 Laboratory',
           },
         ],
       },
@@ -47334,6 +47533,46 @@ module.exports = {
       'equal': 1,
       'more': 2,
     },
+    'AchievementType': {
+      '0': 'Money',
+      '1': 'Token',
+      '2': 'Attack',
+      '3': 'Diamond',
+      '4': 'Underground Items Found',
+      '5': 'Underground Layers Mined',
+      '6': 'Max Level Oak Item',
+      '7': 'Captured',
+      '8': 'Defeated',
+      '9': 'Caught Pokemon',
+      '10': 'Caught Unique Pokemons By Region',
+      '11': 'Shiny Pokemon',
+      '12': 'Hatch',
+      '13': 'Pokeball',
+      '14': 'Click',
+      '15': 'Route Kill',
+      '16': 'Clear Gym',
+      '17': 'Clear Dungeon',
+      'None': -1,
+      '-1': 'None',
+      'Money': 0,
+      'Token': 1,
+      'Attack': 2,
+      'Diamond': 3,
+      'Underground Items Found': 4,
+      'Underground Layers Mined': 5,
+      'Max Level Oak Item': 6,
+      'Captured': 7,
+      'Defeated': 8,
+      'Caught Pokemon': 9,
+      'Caught Unique Pokemons By Region': 10,
+      'Shiny Pokemon': 11,
+      'Hatch': 12,
+      'Pokeball': 13,
+      'Click': 14,
+      'Route Kill': 15,
+      'Clear Gym': 16,
+      'Clear Dungeon': 17,
+    },
     'DungeonTile': {
       '0': 'empty',
       '1': 'enemy',
@@ -47805,7 +48044,7 @@ module.exports = {
     'KantoGyms': [
       'Pewter City',
       'Cerulean City',
-      'vermilion City',
+      'Vermilion City',
       'Celadon City',
       'Saffron City',
       'Fuchsia City',
@@ -47910,7 +48149,7 @@ module.exports = {
       [
         'Pewter City',
         'Cerulean City',
-        'vermilion City',
+        'Vermilion City',
         'Celadon City',
         'Saffron City',
         'Fuchsia City',
@@ -48285,17 +48524,17 @@ module.exports = {
       'Twinleaf Town',
       'Aspertia City',
       'Vaniville Town',
-      '',
+      'Iki Town',
       '',
     ],
     'DockTowns': [
-      'vermilion City',
+      'Vermilion City',
       'Olivine City',
       'Slateport City',
       'Canalave City',
       'Castelia City',
       'Coumarine City',
-      '',
+      "Hau'oli City",
       '',
     ],
   },
@@ -48505,7 +48744,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 2,
         },
@@ -48532,15 +48772,16 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 4,
         },
       ],
     },
-    'vermilion City': {
+    'Vermilion City': {
       'leaderName': 'Lt. Surge',
-      'town': 'vermilion City',
+      'town': 'Vermilion City',
       'pokemons': [
         {
           'name': 'Raichu',
@@ -48554,13 +48795,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 6,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 2,
         },
       ],
@@ -48591,7 +48833,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 0,
           'route': 7,
         },
@@ -48623,7 +48866,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 4,
         },
       ],
@@ -48661,13 +48904,15 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
-              'type': 2,
+              'option': 2,
+              'achievementType': 15,
               'region': 0,
               'route': 15,
             },
@@ -48701,7 +48946,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 7,
         },
       ],
@@ -48742,17 +48988,17 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 7,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 6,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 3,
         },
       ],
@@ -48793,7 +49039,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 8,
         },
       ],
@@ -48834,7 +49080,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 9,
         },
       ],
@@ -48875,7 +49121,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 10,
         },
       ],
@@ -48916,7 +49162,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 11,
         },
       ],
@@ -48942,7 +49188,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 10,
         },
       ],
@@ -48973,7 +49220,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 13,
         },
       ],
@@ -48999,7 +49247,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 34,
         },
@@ -49036,7 +49285,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 16,
         },
       ],
@@ -49062,7 +49311,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 17,
         },
       ],
@@ -49093,7 +49342,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 18,
         },
       ],
@@ -49124,7 +49373,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 1,
           'route': 43,
         },
@@ -49161,7 +49411,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 20,
         },
       ],
@@ -49202,7 +49452,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 21,
         },
       ],
@@ -49243,7 +49493,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 22,
         },
       ],
@@ -49284,7 +49534,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 23,
         },
       ],
@@ -49325,7 +49575,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 24,
         },
       ],
@@ -49371,7 +49621,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 25,
         },
       ],
@@ -49402,7 +49652,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 26,
         },
       ],
@@ -49523,7 +49773,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 30,
         },
       ],
@@ -49629,7 +49879,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 35,
         },
       ],
@@ -49670,7 +49921,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 34,
         },
       ],
@@ -49711,7 +49962,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 35,
         },
       ],
@@ -49752,7 +50003,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 36,
         },
       ],
@@ -49793,7 +50044,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 37,
         },
       ],
@@ -49839,7 +50090,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 38,
         },
       ],
@@ -49870,7 +50121,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 39,
         },
       ],
@@ -49901,7 +50152,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 40,
         },
       ],
@@ -49932,7 +50183,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 41,
         },
       ],
@@ -49963,7 +50214,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 42,
         },
       ],
@@ -49994,7 +50245,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 43,
         },
       ],
@@ -50025,7 +50276,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 44,
         },
       ],
@@ -50061,7 +50312,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 45,
         },
       ],
@@ -50097,7 +50348,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 46,
         },
       ],
@@ -50138,7 +50389,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 47,
         },
       ],
@@ -50179,7 +50430,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 48,
         },
       ],
@@ -50220,7 +50471,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 49,
         },
       ],
@@ -50261,7 +50512,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 50,
         },
       ],
@@ -50307,7 +50558,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 51,
         },
       ],
@@ -50338,7 +50589,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 58,
         },
       ],
@@ -50369,7 +50621,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 53,
         },
       ],
@@ -50405,7 +50657,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 60,
         },
       ],
@@ -50441,7 +50694,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 55,
         },
       ],
@@ -50477,7 +50730,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 56,
         },
       ],
@@ -50513,7 +50766,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 57,
         },
       ],
@@ -50549,7 +50802,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 58,
         },
       ],
@@ -50585,7 +50838,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 59,
         },
       ],
@@ -50631,7 +50884,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 60,
         },
       ],
@@ -50677,7 +50930,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 61,
         },
       ],
@@ -50723,7 +50976,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 62,
         },
       ],
@@ -50769,7 +51022,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 63,
         },
       ],
@@ -50815,7 +51068,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 64,
         },
       ],
@@ -50841,7 +51094,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 3,
         },
@@ -50868,7 +51122,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 66,
         },
       ],
@@ -50899,7 +51153,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 67,
         },
       ],
@@ -50930,7 +51184,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 68,
         },
       ],
@@ -50961,13 +51215,14 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 5,
           'route': 13,
         },
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 69,
         },
       ],
@@ -50998,7 +51253,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 70,
         },
       ],
@@ -51029,7 +51284,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 71,
         },
       ],
@@ -51060,7 +51315,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 88,
         },
       ],
@@ -51096,7 +51352,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 73,
         },
       ],
@@ -51132,7 +51388,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 74,
         },
       ],
@@ -51168,7 +51424,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 75,
         },
       ],
@@ -51204,7 +51460,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 76,
         },
       ],
@@ -51250,7 +51506,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 77,
         },
       ],
@@ -51281,7 +51537,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 94,
         },
       ],
@@ -51312,7 +51569,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 10,
-          'type': 2,
+          'option': 2,
+          'achievementType': 15,
           'region': 6,
           'route': 9,
         },
@@ -51334,7 +51592,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 80,
         },
       ],
@@ -51365,7 +51623,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 110,
         },
       ],
@@ -51386,7 +51645,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 80,
         },
       ],
@@ -51417,7 +51676,8 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
+          'achievementType': 17,
           'dungeonIndex': 114,
         },
       ],
@@ -51453,7 +51713,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 84,
         },
       ],
@@ -51494,7 +51754,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 85,
         },
       ],
@@ -51535,7 +51795,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 88,
         },
       ],
@@ -51576,7 +51836,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 86,
         },
       ],
@@ -51617,7 +51877,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 87,
         },
       ],
@@ -51648,7 +51908,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 12,
         },
       ],
@@ -51752,7 +52012,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'type': 2,
+          'option': 2,
           'badge': 89,
         },
       ],
