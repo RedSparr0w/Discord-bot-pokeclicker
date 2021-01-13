@@ -9,6 +9,17 @@ const trainerCardColors = [
   'gold',
 ];
 
+const trainerCardBadgeTypes = {
+  Boulder: 0,
+  Cascade: 1,
+  Thunder: 2,
+  Rainbow: 3,
+  Marsh: 4,
+  Soul: 5,
+  Volcano: 6,
+  Earth: 7,
+};
+
 const trainerCardBadges = [
   { // 0
     name: 'Boulder',
@@ -89,6 +100,7 @@ const totalTrainerImages = 64;
 
 module.exports = {
   trainerCardColors,
+  trainerCardBadgeTypes,
   trainerCardBadges,
   totalTrainerImages,
 };

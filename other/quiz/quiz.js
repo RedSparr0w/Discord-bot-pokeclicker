@@ -6,6 +6,7 @@ const {
   MINUTE,
   warn,
   log,
+  trainerCardBadgeTypes,
 } = require('../../helpers.js');
 const { getQuizQuestion } = require('./quiz_questions.js');
 const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
@@ -80,7 +81,7 @@ const newQuiz = async (guild, reoccur = false) => {
 
     // If user has answered more than 100 questions, give them the Marsh Badge
     if (answered >= 100) {
-      await addPurchased(user, 'badge', 4);
+      await addPurchased(user, 'badge', trainerCardBadgeTypes.Marsh);
     }
 
     const description = [

@@ -1,6 +1,12 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
-const { upperCaseFirstLetter, postPages, trainerCardColors, totalTrainerImages } = require('../helpers.js');
+const {
+  upperCaseFirstLetter,
+  postPages,
+  trainerCardColors,
+  totalTrainerImages,
+  trainerCardBadgeTypes,
+} = require('../helpers.js');
 const { serverIcons } = require('../config.js');
 const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
 
@@ -102,7 +108,7 @@ module.exports = {
         }
 
         // If user updated their profile, give them the Boulder Badge
-        await addPurchased(msg.author, 'badge', 0);
+        await addPurchased(msg.author, 'badge', trainerCardBadgeTypes.Boulder);
 
         await setTrainerCard(msg.author, itemType, itemIndex);
 
