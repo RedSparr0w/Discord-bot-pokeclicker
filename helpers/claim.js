@@ -1,4 +1,5 @@
 const { getDB, getUserID, addPurchased } = require('../database.js');
+const { trainerCardBadgeTypes } = require('./trainer_card.js');
 
 const getLastClaim = async (user, table) => {
   const [
@@ -20,11 +21,11 @@ const getLastClaim = async (user, table) => {
   const { last_claim = 0, streak = 0 } = result;
 
   if (table == 'timely_claim' && streak >= 500) {
-    await addPurchased(user, 'badge', 6);
+    await addPurchased(user, 'badge', trainerCardBadgeTypes.Volcano);
   }
 
   if (table == 'daily_claim' && streak >= 100) {
-    await addPurchased(user, 'badge', 7);
+    await addPurchased(user, 'badge', trainerCardBadgeTypes.Earth);
   }
 
   // Return last_claim as a date and streak

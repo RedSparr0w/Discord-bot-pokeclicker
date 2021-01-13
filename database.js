@@ -2,6 +2,7 @@ const sqlite = require('sqlite');
 const { backupChannelID } = require('./config.js');
 const { MessageAttachment } = require('discord.js');
 const { warn } = require('./helpers/logging.js');
+const { trainerCardBadgeTypes } = require('./helpers/trainer_card.js');
 const { version: botVersion } = require('./package.json');
 
 // current version, possibly older version
@@ -125,7 +126,7 @@ async function addAmount(user, amount = 1, table = 'coins'){
 
   // If user has more than 25k coins, give them the Soul Badge
   if (amount >= 25e3) {
-    await addPurchased(user, 'badge', 5);
+    await addPurchased(user, 'badge', trainerCardBadgeTypes.Soul);
   }
 
   const data = {
