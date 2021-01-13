@@ -19,7 +19,7 @@ const {
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 const { newQuiz } = require('./other/quiz/quiz.js');
-const { startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
+const { happyHourHours, startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -73,12 +73,12 @@ client.once('ready', async() => {
   }, { timezone_offset: 0 });
 
   // Start happy hour
-  new RunOnInterval(9 * HOUR, () => {
+  new RunOnInterval(happyHourHours * HOUR, () => {
     client.guilds.cache.forEach(guild => startHappyHour(guild));
   }, { timezone_offset: 0 });
 
   // End happy hour 1 hour later
-  new RunOnInterval(9 * HOUR, () => {
+  new RunOnInterval(happyHourHours * HOUR, () => {
     client.guilds.cache.forEach(guild => endHappyHour(guild));
   }, { timezone_offset: HOUR });
   

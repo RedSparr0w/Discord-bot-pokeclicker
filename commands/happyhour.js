@@ -1,7 +1,6 @@
 const { MessageEmbed } = require('discord.js');
-const {
-  HOUR,
-} = require('../helpers.js');
+const { HOUR } = require('../helpers.js');
+const { happyHourHours } = require('../other/quiz/happy_hour.js');
 
 module.exports = {
   name        : 'happyhour',
@@ -15,7 +14,7 @@ module.exports = {
   channels    : ['bot-commands', 'game-corner', 'bot-coins'],
   execute     : async (msg, args) => {
     const now = Date.now();
-    const happy_hour = new Date((now - (now % (9 * HOUR))) + 9 * HOUR);
+    const happy_hour = new Date((now - (now % (happyHourHours * HOUR))) + happyHourHours * HOUR);
     
     const embed = new MessageEmbed()
       .setDescription('Next happy hour:')

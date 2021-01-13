@@ -3,8 +3,9 @@ const { quizChannelID } = require('../../config.js');
 const { HOUR } = require('../../helpers.js');
 
 const happyHourBonus = 6;
-const isHappyHour = () => Date.now() % (9 * HOUR) < HOUR;
-const nextHappyHour = (now = new Date()) => new Date((now - (now % (9 * HOUR))) + 9 * HOUR);
+const happyHourHours = 7;
+const isHappyHour = () => Date.now() % (happyHourHours * HOUR) < HOUR;
+const nextHappyHour = (now = new Date()) => new Date((now - (now % (happyHourHours * HOUR))) + happyHourHours * HOUR);
 
 const startHappyHour = async (guild) => {
   // If no quiz channel or ID, return
@@ -42,6 +43,7 @@ const endHappyHour = async (guild) => {
 
 module.exports = {
   happyHourBonus,
+  happyHourHours,
   isHappyHour,
   nextHappyHour,
   startHappyHour,
