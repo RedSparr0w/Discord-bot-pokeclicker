@@ -13,8 +13,9 @@ const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
 
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
-const getShinyAmount = () => 100;
-const isShiny = chance => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
+const getShinyAmount = () => 100 + getAmount();
+const shinyChance = 64;
+const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
@@ -26,7 +27,7 @@ const whosThatPokemon = () => {
   
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['Name the Pokémon!'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -48,6 +49,7 @@ const whosThatPokemon = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -57,7 +59,7 @@ const whosThePokemonEvolution = () => {
   
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['Who can this Pokémon evolve to?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -79,6 +81,7 @@ const whosThePokemonEvolution = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -90,7 +93,7 @@ const whosThePokemonPrevolution = () => {
   
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['Who does this Pokémon evolve from?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -112,6 +115,7 @@ const whosThePokemonPrevolution = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -122,7 +126,7 @@ const pokemonType = () => {
 
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['What is this Pokémons type(s)?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -144,6 +148,7 @@ const pokemonType = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -153,7 +158,7 @@ const pokemonID = () => {
   
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['What is this Pokémons national Pokedex ID?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -175,6 +180,7 @@ const pokemonID = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -184,7 +190,7 @@ const pokemonRegion = () => {
   
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['What is this Pokémons native region?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -206,6 +212,7 @@ const pokemonRegion = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -239,7 +246,7 @@ const pokemonFossil = () => {
   
   let amount = getAmount();
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   const description = ['What fossil does this Pokémon come from?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
@@ -261,6 +268,7 @@ const pokemonFossil = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
@@ -368,7 +376,7 @@ const pokemonGymLeader = () => {
   const description = ['Which Gym Leader uses this Pokémon?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const shiny = isShiny(128);
+  const shiny = isShiny();
 
   // If shiny award more coins
   if (shiny) {
@@ -387,6 +395,7 @@ const pokemonGymLeader = () => {
     embed,
     answer,
     amount,
+    shiny,
   };
 };
 
