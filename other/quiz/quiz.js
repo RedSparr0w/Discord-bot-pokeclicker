@@ -67,7 +67,7 @@ const newQuiz = async (guild, reoccur = false) => {
     winners.add(user.id);
     const amount = quiz.amount;
 
-    m.react('🎉');
+    m.react(serverIcons.money.match(/:(\d+)>/)[1]);
 
     // Add coins to the users balance
     const [
