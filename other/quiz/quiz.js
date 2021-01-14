@@ -61,7 +61,7 @@ const newQuiz = async (guild, reoccur = false) => {
     } else {
       quiz.amount = Math.floor(quiz.amount / 2);
       if (!quiz.amount || winners.has(user.id) || m.createdTimestamp - finished > 3 * SECOND) {
-        return m.react('🐌');
+        return;
       }
     }
     winners.add(user.id);
