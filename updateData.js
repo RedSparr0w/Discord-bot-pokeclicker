@@ -76,22 +76,23 @@ const { website } = require('./config.js');
   });
 
   // Tidy up the result data with our eslint rules
-  const CLIEngine = require('eslint').CLIEngine;
+  const { ESLint } = require('eslint');
 
-  const cli = new CLIEngine({
+  const cli = new ESLint({
     fix: true,
   });
 
-  const report = cli.executeOnText(result, './helpers/pokeclicker.js');
+  const results = await cli.lintText(result);
+  const res = results[0];
 
   // Get the output after running through eslint
-  const output = report.results[0].output;
+  const output = res.output;
 
   // Save the data
   await fs.writeFileSync('./helpers/pokeclicker.js', output);
 
   console.log('data updated!');
-  console.log({ fileSise: output.length, errorCount: report.errorCount, warningCount: report.warningCount });
+  console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
 
   await browser.close();
 })();
