@@ -69,6 +69,8 @@ const { website } = require('./config.js');
       GameConstants,
       BadgeEnums,
       gymList,
+      berryType: BerryType,
+      berryList: App.game.farming.berryData,
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
