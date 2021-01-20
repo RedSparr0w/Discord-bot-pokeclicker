@@ -25,7 +25,7 @@ const calcBetAmount = (bet, balance) => {
     case 'quarter':
       return Math.max(1, Math.floor(balance / 4));
     case 'random':
-      return Math.max(1, Math.floor(Math.random() * balance));
+      return Math.floor(Math.random() * balance) + 1;
     default:
       return +bet;
   }
