@@ -70,7 +70,10 @@ module.exports = {
         let description = '';
         Object.entries(pokemon.locations[PokemonLocationType.Route]).forEach(([region, routes]) => {
           description += `\n\n__${GameConstants.Region[region].toUpperCase()}:__`;
-          description += `\n${routes.join(', ')}`;
+          routes.forEach(route => {
+            description += `\n${route.route}`;
+            description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
+          });
         });
         embed.addField('❯ Routes', description);
       }
@@ -86,7 +89,7 @@ module.exports = {
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
       // Evolutions
