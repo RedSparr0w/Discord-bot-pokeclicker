@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.7.2',
+  'gameVersion': '0.7.3',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -10871,6 +10871,10 @@ module.exports = {
         'specialDefense': 65,
         'speed': 35,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Moon_stone',
+      },
       'attack': 61,
       'nativeRegion': 0,
       'locations': {
@@ -10907,6 +10911,10 @@ module.exports = {
         'defense': 73,
         'specialDefense': 90,
         'speed': 60,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Moon_stone',
       },
       'attack': 130,
       'nativeRegion': 0,
@@ -12362,6 +12370,10 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
+      },
       'attack': 69,
       'nativeRegion': 0,
       'locations': {
@@ -12425,6 +12437,10 @@ module.exports = {
         'defense': 95,
         'specialDefense': 90,
         'speed': 70,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
       },
       'attack': 137,
       'nativeRegion': 0,
@@ -13082,6 +13098,10 @@ module.exports = {
         'specialDefense': 30,
         'speed': 20,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Everstone',
+      },
       'attack': 41,
       'nativeRegion': 0,
       'locations': {
@@ -13185,6 +13205,10 @@ module.exports = {
         'defense': 115,
         'specialDefense': 45,
         'speed': 35,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
       },
       'attack': 74,
       'nativeRegion': 0,
@@ -13299,6 +13323,10 @@ module.exports = {
         'defense': 130,
         'specialDefense': 65,
         'speed': 45,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
       },
       'attack': 125,
       'nativeRegion': 0,
@@ -13465,6 +13493,10 @@ module.exports = {
         'specialDefense': 40,
         'speed': 15,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
+      },
       'attack': 61,
       'nativeRegion': 0,
       'locations': {
@@ -13512,7 +13544,10 @@ module.exports = {
         'specialDefense': 80,
         'speed': 30,
       },
-      'heldItem': 'Kings_rock',
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
+      },
       'attack': 142,
       'nativeRegion': 0,
       'locations': {
@@ -13566,6 +13601,10 @@ module.exports = {
         'defense': 70,
         'specialDefense': 55,
         'speed': 45,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
       },
       'attack': 42,
       'nativeRegion': 0,
@@ -13628,6 +13667,10 @@ module.exports = {
         'defense': 95,
         'specialDefense': 70,
         'speed': 70,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
       },
       'attack': 99,
       'nativeRegion': 0,
@@ -14294,6 +14337,10 @@ module.exports = {
         'specialDefense': 45,
         'speed': 70,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
+      },
       'attack': 41,
       'nativeRegion': 0,
       'locations': {
@@ -14706,6 +14753,10 @@ module.exports = {
         'specialDefense': 50,
         'speed': 35,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Rare Bone',
+      },
       'attack': 49,
       'nativeRegion': 0,
       'locations': {
@@ -14734,6 +14785,10 @@ module.exports = {
         'defense': 110,
         'specialDefense': 80,
         'speed': 45,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Rare Bone',
       },
       'attack': 87,
       'nativeRegion': 0,
@@ -15132,6 +15187,10 @@ module.exports = {
         'specialDefense': 105,
         'speed': 50,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Oval Stone',
+      },
       'attack': 27,
       'nativeRegion': 0,
       'locations': {
@@ -15254,6 +15313,10 @@ module.exports = {
         'specialDefense': 25,
         'speed': 60,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
+      },
       'attack': 37,
       'nativeRegion': 0,
       'locations': {
@@ -15299,6 +15362,10 @@ module.exports = {
         'defense': 95,
         'specialDefense': 45,
         'speed': 85,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
       },
       'attack': 90,
       'nativeRegion': 0,
@@ -15700,6 +15767,10 @@ module.exports = {
         'specialDefense': 85,
         'speed': 105,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Electirizer',
+      },
       'attack': 114,
       'nativeRegion': 0,
       'locations': {
@@ -15748,6 +15819,10 @@ module.exports = {
         'defense': 57,
         'specialDefense': 85,
         'speed': 93,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Magmarizer',
       },
       'attack': 122,
       'nativeRegion': 0,
@@ -16733,7 +16808,10 @@ module.exports = {
         'specialDefense': 50,
         'speed': 50,
       },
-      'heldItem': 'Dragon_scale',
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
+      },
       'attack': 48,
       'nativeRegion': 0,
       'locations': {
@@ -16775,6 +16853,10 @@ module.exports = {
         'specialDefense': 70,
         'speed': 70,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
+      },
       'attack': 92,
       'nativeRegion': 0,
       'locations': {
@@ -16809,6 +16891,10 @@ module.exports = {
         'defense': 95,
         'specialDefense': 100,
         'speed': 80,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
       },
       'attack': 196,
       'nativeRegion': 0,
@@ -16874,6 +16960,10 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'heldItem': {
+        'type': 3,
+        'id': 19,
       },
       'attack': 184,
       'nativeRegion': 0,
@@ -17669,6 +17759,10 @@ module.exports = {
         'specialDefense': 56,
         'speed': 67,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_scale',
+      },
       'attack': 54,
       'nativeRegion': 1,
       'locations': {
@@ -17710,6 +17804,10 @@ module.exports = {
         'defense': 58,
         'specialDefense': 76,
         'speed': 67,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_scale',
       },
       'attack': 116,
       'nativeRegion': 1,
@@ -17795,6 +17893,10 @@ module.exports = {
         'defense': 28,
         'specialDefense': 55,
         'speed': 15,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Moon_stone',
       },
       'attack': 27,
       'nativeRegion': 1,
@@ -18323,6 +18425,10 @@ module.exports = {
         'specialDefense': 100,
         'speed': 70,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
+      },
       'attack': 134,
       'nativeRegion': 1,
       'locations': {
@@ -18840,6 +18946,10 @@ module.exports = {
         'defense': 80,
         'specialDefense': 110,
         'speed': 30,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
       },
       'attack': 142,
       'nativeRegion': 1,
@@ -19789,6 +19899,10 @@ module.exports = {
         'specialDefense': 65,
         'speed': 30,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
+      },
       'attack': 111,
       'nativeRegion': 1,
       'locations': {
@@ -20327,6 +20441,10 @@ module.exports = {
         'specialDefense': 95,
         'speed': 35,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
+      },
       'attack': 85,
       'nativeRegion': 1,
       'locations': {
@@ -20534,7 +20652,10 @@ module.exports = {
         'specialDefense': 70,
         'speed': 70,
       },
-      'heldItem': 'Metal_coat',
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
+      },
       'attack': 86,
       'nativeRegion': 1,
       'locations': {
@@ -20661,6 +20782,10 @@ module.exports = {
         'specialDefense': 95,
         'speed': 85,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
+      },
       'attack': 146,
       'nativeRegion': 1,
       'locations': {
@@ -20769,6 +20894,10 @@ module.exports = {
         'defense': 90,
         'specialDefense': 95,
         'speed': 60,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Upgrade',
       },
       'attack': 146,
       'nativeRegion': 1,
@@ -20995,6 +21124,10 @@ module.exports = {
         'specialDefense': 55,
         'speed': 95,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Electirizer',
+      },
       'attack': 58,
       'nativeRegion': 1,
       'locations': {
@@ -21032,6 +21165,10 @@ module.exports = {
         'defense': 37,
         'specialDefense': 55,
         'speed': 83,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Magmarizer',
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -21095,6 +21232,10 @@ module.exports = {
         'defense': 10,
         'specialDefense': 135,
         'speed': 55,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Oval Stone',
       },
       'attack': 59,
       'nativeRegion': 1,
@@ -21411,6 +21552,10 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'heldItem': {
+        'type': 3,
+        'id': 19,
       },
       'attack': 184,
       'nativeRegion': 1,
@@ -21856,6 +22001,10 @@ module.exports = {
         'specialDefense': 41,
         'speed': 60,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Revive',
+      },
       'attack': 26,
       'nativeRegion': 2,
       'locations': {
@@ -21889,6 +22038,10 @@ module.exports = {
         'defense': 61,
         'specialDefense': 61,
         'speed': 100,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Max Revive',
       },
       'attack': 82,
       'nativeRegion': 2,
@@ -23352,6 +23505,10 @@ module.exports = {
         'specialDefense': 60,
         'speed': 50,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
+      },
       'attack': 119,
       'nativeRegion': 2,
       'locations': {
@@ -23457,6 +23614,10 @@ module.exports = {
         'defense': 135,
         'specialDefense': 90,
         'speed': 30,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
       },
       'attack': 47,
       'nativeRegion': 2,
@@ -23600,6 +23761,10 @@ module.exports = {
         'specialDefense': 55,
         'speed': 50,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Iron Ball',
+      },
       'attack': 73,
       'nativeRegion': 2,
       'locations': {
@@ -23651,6 +23816,10 @@ module.exports = {
         'specialDefense': 40,
         'speed': 30,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
+      },
       'attack': 54,
       'nativeRegion': 2,
       'locations': {
@@ -23689,6 +23858,10 @@ module.exports = {
         'defense': 140,
         'specialDefense': 50,
         'speed': 40,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
       },
       'attack': 85,
       'nativeRegion': 2,
@@ -23735,6 +23908,10 @@ module.exports = {
         'defense': 180,
         'specialDefense': 60,
         'speed': 50,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
       },
       'attack': 124,
       'nativeRegion': 2,
@@ -24195,6 +24372,10 @@ module.exports = {
         'specialDefense': 20,
         'speed': 65,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_tooth',
+      },
       'attack': 48,
       'nativeRegion': 2,
       'locations': {
@@ -24228,6 +24409,10 @@ module.exports = {
         'defense': 40,
         'specialDefense': 40,
         'speed': 95,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_tooth',
       },
       'attack': 110,
       'nativeRegion': 2,
@@ -24971,6 +25156,10 @@ module.exports = {
         'specialDefense': 85,
         'speed': 70,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Moon_stone',
+      },
       'attack': 112,
       'nativeRegion': 2,
       'locations': {
@@ -25012,6 +25201,10 @@ module.exports = {
         'defense': 85,
         'specialDefense': 65,
         'speed': 70,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Sun_stone',
       },
       'attack': 112,
       'nativeRegion': 2,
@@ -26264,6 +26457,10 @@ module.exports = {
         'specialDefense': 75,
         'speed': 52,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_tooth',
+      },
       'attack': 123,
       'nativeRegion': 2,
       'locations': {
@@ -26294,6 +26491,10 @@ module.exports = {
         'defense': 105,
         'specialDefense': 75,
         'speed': 52,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_scale',
       },
       'attack': 122,
       'nativeRegion': 2,
@@ -26330,6 +26531,10 @@ module.exports = {
         'specialDefense': 65,
         'speed': 55,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_scale',
+      },
       'attack': 113,
       'nativeRegion': 2,
       'locations': {
@@ -26360,6 +26565,10 @@ module.exports = {
         'defense': 55,
         'specialDefense': 65,
         'speed': 97,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Heart Scale',
       },
       'attack': 38,
       'nativeRegion': 2,
@@ -26410,6 +26619,10 @@ module.exports = {
         'specialDefense': 30,
         'speed': 50,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
+      },
       'attack': 46,
       'nativeRegion': 2,
       'locations': {
@@ -26449,6 +26662,10 @@ module.exports = {
         'specialDefense': 50,
         'speed': 50,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
+      },
       'attack': 94,
       'nativeRegion': 2,
       'locations': {
@@ -26483,6 +26700,10 @@ module.exports = {
         'defense': 80,
         'specialDefense': 80,
         'speed': 100,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Dragon_scale',
       },
       'attack': 195,
       'nativeRegion': 2,
@@ -26527,6 +26748,10 @@ module.exports = {
         'specialDefense': 60,
         'speed': 30,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
+      },
       'attack': 42,
       'nativeRegion': 2,
       'locations': {
@@ -26565,6 +26790,10 @@ module.exports = {
         'specialDefense': 80,
         'speed': 50,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
+      },
       'attack': 86,
       'nativeRegion': 2,
       'locations': {
@@ -26602,6 +26831,10 @@ module.exports = {
         'defense': 130,
         'specialDefense': 90,
         'speed': 70,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
       },
       'attack': 188,
       'nativeRegion': 2,
@@ -26888,6 +27121,10 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Star Piece',
       },
       'attack': 184,
       'nativeRegion': 2,
@@ -29164,6 +29401,10 @@ module.exports = {
         'specialDefense': 86,
         'speed': 23,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
+      },
       'attack': 33,
       'nativeRegion': 3,
       'locations': {
@@ -29207,6 +29448,10 @@ module.exports = {
         'defense': 116,
         'specialDefense': 116,
         'speed': 33,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
       },
       'attack': 130,
       'nativeRegion': 3,
@@ -29342,6 +29587,10 @@ module.exports = {
         'defense': 5,
         'specialDefense': 65,
         'speed': 30,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Oval Stone',
       },
       'attack': 10,
       'nativeRegion': 3,
@@ -30203,6 +30452,10 @@ module.exports = {
         'specialDefense': 90,
         'speed': 60,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Metal_coat',
+      },
       'attack': 143,
       'nativeRegion': 3,
       'locations': {
@@ -30354,6 +30607,10 @@ module.exports = {
         'specialDefense': 85,
         'speed': 95,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Electirizer',
+      },
       'attack': 150,
       'nativeRegion': 3,
       'locations': {
@@ -30385,6 +30642,10 @@ module.exports = {
         'defense': 67,
         'specialDefense': 95,
         'speed': 83,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Magmarizer',
       },
       'attack': 154,
       'nativeRegion': 3,
@@ -30705,6 +30966,10 @@ module.exports = {
         'defense': 145,
         'specialDefense': 150,
         'speed': 40,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
       },
       'attack': 109,
       'nativeRegion': 3,
@@ -31416,6 +31681,10 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'heldItem': {
+        'type': 3,
+        'id': 19,
       },
       'attack': 184,
       'nativeRegion': 3,
@@ -32959,6 +33228,10 @@ module.exports = {
         'specialDefense': 25,
         'speed': 15,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Everstone',
+      },
       'attack': 39,
       'nativeRegion': 4,
       'locations': {
@@ -32994,6 +33267,10 @@ module.exports = {
         'defense': 105,
         'specialDefense': 40,
         'speed': 20,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Everstone',
       },
       'attack': 85,
       'nativeRegion': 4,
@@ -33034,6 +33311,10 @@ module.exports = {
         'defense': 130,
         'specialDefense': 80,
         'speed': 25,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Everstone',
       },
       'attack': 144,
       'nativeRegion': 4,
@@ -33951,6 +34232,10 @@ module.exports = {
         'specialDefense': 55,
         'speed': 98,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_tooth',
+      },
       'attack': 107,
       'nativeRegion': 4,
       'locations': {
@@ -34001,6 +34286,10 @@ module.exports = {
         'defense': 65,
         'specialDefense': 55,
         'speed': 98,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Deepsea_scale',
       },
       'attack': 107,
       'nativeRegion': 4,
@@ -34279,6 +34568,10 @@ module.exports = {
         'specialDefense': 35,
         'speed': 55,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Rare Bone',
+      },
       'attack': 48,
       'nativeRegion': 4,
       'locations': {
@@ -34307,6 +34600,10 @@ module.exports = {
         'defense': 125,
         'specialDefense': 75,
         'speed': 45,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Rare Bone',
       },
       'attack': 121,
       'nativeRegion': 4,
@@ -37930,6 +38227,10 @@ module.exports = {
         'specialDefense': 128,
         'speed': 90,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Star Piece',
+      },
       'attack': 182,
       'nativeRegion': 4,
       'locations': {
@@ -40295,6 +40596,10 @@ module.exports = {
         'defense': 75,
         'specialDefense': 63,
         'speed': 118,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
       },
       'attack': 117,
       'nativeRegion': 5,
@@ -43265,6 +43570,10 @@ module.exports = {
         'specialDefense': 100,
         'speed': 60,
       },
+      'heldItem': {
+        'type': 2,
+        'id': 'Star Piece',
+      },
       'attack': 87,
       'nativeRegion': 6,
       'locations': {
@@ -43676,6 +43985,10 @@ module.exports = {
         'specialDefense': 70,
         'speed': 92,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Razor_fang',
+      },
       'attack': 112,
       'nativeRegion': 6,
       'locations': {
@@ -43770,6 +44083,10 @@ module.exports = {
         'specialDefense': 45,
         'speed': 45,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Razor_claw',
+      },
       'attack': 46,
       'nativeRegion': 6,
       'locations': {
@@ -43806,6 +44123,10 @@ module.exports = {
         'specialDefense': 70,
         'speed': 65,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Razor_claw',
+      },
       'attack': 86,
       'nativeRegion': 6,
       'locations': {
@@ -43841,6 +44162,10 @@ module.exports = {
         'defense': 125,
         'specialDefense': 105,
         'speed': 85,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Razor_claw',
       },
       'attack': 175,
       'nativeRegion': 6,
@@ -47575,16 +47900,20 @@ module.exports = {
     },
     'DungeonTile': {
       '0': 'empty',
-      '1': 'enemy',
-      '2': 'chest',
-      '3': 'boss',
+      '1': 'entrance',
+      '2': 'enemy',
+      '3': 'chest',
+      '4': 'boss',
       'empty': 0,
-      'enemy': 1,
-      'chest': 2,
-      'boss': 3,
+      'entrance': 1,
+      'enemy': 2,
+      'chest': 3,
+      'boss': 4,
     },
-    'ROUTE_HELD_ITEM_CHANCE': 512,
-    'DUNGEON_HELD_ITEM_CHANCE': 128,
+    'ROUTE_HELD_ITEM_MODIFIER': 1,
+    'DUNGEON_HELD_ITEM_MODIFIER': 4,
+    'HELD_ITEM_CHANCE': 512,
+    'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
     'DUNGEON_SHARDS': 3,
     'DUNGEON_BOSS_SHARDS': 20,
     'GYM_SHARDS': 5,
@@ -52263,6 +52592,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52313,6 +52644,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52363,6 +52696,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52413,6 +52748,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52463,6 +52800,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52513,6 +52852,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52563,6 +52904,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52613,6 +52956,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52663,6 +53008,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52713,6 +53060,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52763,6 +53112,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52813,6 +53164,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52863,6 +53216,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52913,6 +53268,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -52963,6 +53320,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53013,6 +53372,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53063,6 +53424,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53113,6 +53476,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53163,6 +53528,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53224,6 +53591,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53274,6 +53643,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53324,6 +53695,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53374,6 +53747,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53424,6 +53799,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53474,6 +53851,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53524,6 +53903,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53574,6 +53955,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53624,6 +54007,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53674,6 +54059,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53724,6 +54111,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53774,6 +54163,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53824,6 +54215,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53874,6 +54267,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53924,6 +54319,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -53974,6 +54371,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -54027,10 +54426,13 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Charmander',
         'Cyndaquil',
         'Torchic',
         'Chimchar',
+        'Tepig',
       ],
     },
     {
@@ -54092,10 +54494,13 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Squirtle',
         'Totodile',
         'Mudkip',
         'Piplup',
+        'Oshawott',
       ],
     },
     {
@@ -54157,6 +54562,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Pikachu',
       ],
     },
@@ -54211,10 +54618,13 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Bulbasaur',
         'Chikorita',
         'Treecko',
         'Turtwig',
+        'Snivy',
       ],
     },
     {
@@ -54276,6 +54686,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Snover',
       ],
     },
@@ -54338,6 +54750,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Riolu',
       ],
     },
@@ -54401,6 +54815,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Gulpin',
       ],
     },
@@ -54463,6 +54879,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Larvitar',
       ],
     },
@@ -54514,6 +54932,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Tropius',
       ],
     },
@@ -54576,6 +54996,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Natu',
       ],
     },
@@ -54638,6 +55060,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Nincada',
       ],
     },
@@ -54700,6 +55124,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Sudowoodo',
       ],
     },
@@ -54721,6 +55147,14 @@ module.exports = {
         'Considered to have a special power from the olden days, this Berry is sometimes dried and used as a good-luck charm.',
         'This Berry causes other Berries to wither away faster.',
       ],
+      'aura': {
+        'auraType': 7,
+        'auraMultipliers': [
+          1.25,
+          1.5,
+          2,
+        ],
+      },
       'flavors': [
         {
           'type': 0,
@@ -54754,6 +55188,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Shedinja',
       ],
     },
@@ -54816,6 +55252,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Bagon',
       ],
     },
@@ -54870,6 +55308,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Absol',
       ],
     },
@@ -54932,6 +55372,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Skarmory',
       ],
     },
@@ -54983,6 +55425,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55044,6 +55488,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Togepi',
       ],
     },
@@ -55095,6 +55541,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55145,6 +55593,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55198,6 +55648,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55248,6 +55700,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55298,6 +55752,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55348,6 +55804,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55398,6 +55856,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Manaphy',
       ],
     },
@@ -55449,6 +55909,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55499,6 +55961,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55552,6 +56016,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Mew',
       ],
     },
@@ -55603,6 +56069,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55653,6 +56121,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
     {
@@ -55711,6 +56181,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
         'Jirachi',
       ],
     },
@@ -55762,6 +56234,8 @@ module.exports = {
         'Combee',
         'Cherubi',
         'Munchlax',
+        'Sewaddle',
+        'Karrablast',
       ],
     },
   ],
