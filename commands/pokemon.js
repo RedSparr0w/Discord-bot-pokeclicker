@@ -132,6 +132,16 @@ module.exports = {
         const description = pokemon.locations[PokemonLocationType.Safari];
         embed.addField('❯ Safari Zone Chance', description);
       }
+      // Battle Frontier
+      if (pokemon.locations[PokemonLocationType.BattleFrontier]) {
+        const description = pokemon.locations[PokemonLocationType.BattleFrontier].join('\n');
+        embed.addField('❯ Battle Frontier', description);
+      }
+      // Wandering
+      if (pokemon.locations[PokemonLocationType.Wandering]) {
+        const description = pokemon.locations[PokemonLocationType.Wandering].join('\n');
+        embed.addField('❯ Farm Wandering', description);
+      }
     } else {
       embed.addField('\u200b', '```diff\n-Currently Unobtainable\n```');
     }
