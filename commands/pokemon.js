@@ -72,7 +72,8 @@ module.exports = {
           description += `\n\n__${GameConstants.Region[region].toUpperCase()}:__`;
           routes.forEach(route => {
             description += `\n${route.route}`;
-            description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
+            // description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
+            description += `${route.requirements ? '🔒' : ''}`;
           });
         });
         embed.addField('❯ Routes', description);
