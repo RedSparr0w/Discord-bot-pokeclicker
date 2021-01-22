@@ -69,12 +69,14 @@ module.exports = {
       if (pokemon.locations[PokemonLocationType.Route]) {
         let description = '';
         Object.entries(pokemon.locations[PokemonLocationType.Route]).forEach(([region, routes]) => {
-          description += `\n\n__${GameConstants.Region[region].toUpperCase()}:__`;
+          description += `\n\n__${GameConstants.Region[region].toUpperCase()}:__\n`;
+          /* TO BE FIXED: Too large for Discord for some mons
           routes.forEach(route => {
             description += `\n${route.route}`;
-            // description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
-            description += `${route.requirements ? '🔒' : ''}`;
+            description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
           });
+          */
+          description += [...new Set(routes.map(route => `${route.route}${route.requirements ? '🔒' : ''}`))].join('\n');
         });
         embed.addField('❯ Routes', description);
       }
