@@ -14,6 +14,10 @@ const { website } = require('./config.js');
 
   console.log('webpage loaded!\nwaiting for data to load..');
 
+  page.evaluate(() => {
+    App.start();
+  });
+
   await page.waitForFunction(() => App.game &&  App.game.update && App.game.update.version);
 
   console.log('data loaded!\nupdating data..');
