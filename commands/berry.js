@@ -83,6 +83,11 @@ module.exports = {
     berry.wander.forEach((p, i) => wanderers[i % 3].push(p));
     wanderers.forEach((w, i) => embed.addField(!i ? '<:Pokeball:733980790718988348> Wanderers' : '\u200b', `${w.join('\n')}`, true));
 
+    if (berry.hint) {
+      embed.addField('\u200b', '\u200b', false); // Spacing
+      embed.addField('❔ Hint', berry.hint, false);
+    }
+
     // Spacing for the footer
     embed.addField('\u200b', '\u200b');
 

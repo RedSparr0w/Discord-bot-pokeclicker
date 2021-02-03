@@ -74,7 +74,11 @@ const { website } = require('./config.js');
       BadgeEnums,
       gymList,
       berryType: BerryType,
-      berryList: App.game.farming.berryData,
+      berryList: App.game.farming.berryData.map(b => {
+        const mutation = App.game.farming.mutations.find(m => m.mutatedBerry == b.type);
+        if (mutation) b.hint = mutation.hint;
+        return b;
+      }),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });

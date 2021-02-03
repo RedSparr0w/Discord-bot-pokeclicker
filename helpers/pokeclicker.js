@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.7.5',
+  'gameVersion': '0.7.6',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -27529,7 +27529,14 @@ module.exports = {
         'speed': 95,
       },
       'attack': 173,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 7,
+            'requirements': 'undefined needs to be completed.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 3200,
     },
@@ -27585,7 +27592,14 @@ module.exports = {
         'speed': 100,
       },
       'attack': 171,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 9,
+            'requirements': 'undefined needs to be completed.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 3200,
     },
@@ -27641,7 +27655,14 @@ module.exports = {
         'speed': 90,
       },
       'attack': 166,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 8,
+            'requirements': 'undefined needs to be completed.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 3200,
     },
@@ -71917,22 +71938,7 @@ module.exports = {
         'speed': 0,
       },
       'attack': 17,
-      'locations': {
-        '1': [
-          {
-            'region': 7,
-            'requirements': 'undefined needs to be completed.',
-          },
-          {
-            'region': 8,
-            'requirements': 'undefined needs to be completed.',
-          },
-          {
-            'region': 9,
-            'requirements': 'undefined needs to be completed.',
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -78367,6 +78373,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Pecha and Oran Berries near each other will produce something interesting!",
     },
     {
       'type': 9,
@@ -78419,6 +78426,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Cheri and Leppa Berries near each other will produce something interesting!",
     },
     {
       'type': 10,
@@ -78471,6 +78479,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Chesto and Leppa Berries near each other will produce something interesting!",
     },
     {
       'type': 11,
@@ -78523,6 +78532,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Pecha and Aspear Berries near each other will produce something interesting!",
     },
     {
       'type': 12,
@@ -78575,6 +78585,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Rawst and Oran Berries near each other will produce something interesting!",
     },
     {
       'type': 13,
@@ -78627,6 +78638,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Sitrus and Aspear Berries near each other will produce something interesting!",
     },
     {
       'type': 14,
@@ -78679,6 +78691,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings get too spicy!",
     },
     {
       'type': 15,
@@ -78731,6 +78744,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings get too dry!",
     },
     {
       'type': 16,
@@ -78783,6 +78797,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings get too sweet!",
     },
     {
       'type': 17,
@@ -78835,6 +78850,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings get too bitter!",
     },
     {
       'type': 18,
@@ -78887,6 +78903,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings get too sour!",
     },
     {
       'type': 19,
@@ -78950,6 +78967,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that there's a legendary Berry that only appears when fully surrounded by unique ripe Berry plants!",
     },
     {
       'type': 20,
@@ -79002,6 +79020,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Iapapa and Mago Berries near each other will produce something interesting!",
     },
     {
       'type': 21,
@@ -79054,6 +79073,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Chesto and Persim Berries near each other will produce something interesting!",
     },
     {
       'type': 22,
@@ -79106,6 +79126,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little spicy, a little sweet, and a little sour at the same time.",
     },
     {
       'type': 23,
@@ -79158,6 +79179,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted fairly spicy, dry, and bitter at the same time.",
     },
     {
       'type': 24,
@@ -79210,6 +79232,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Aguav and Figy Berries near each other will produce something interesting!",
     },
     {
       'type': 25,
@@ -79262,6 +79285,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Razz Berries near Pomeg Berries can cause it to change!",
     },
     {
       'type': 26,
@@ -79314,6 +79338,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Leppa, Bluk and Wiki Berries near each other will produce something interesting!",
     },
     {
       'type': 27,
@@ -79366,6 +79391,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Pecha, Nanab and Mago Berries near each other will produce something interesting!",
     },
     {
       'type': 28,
@@ -79418,6 +79444,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Aspear Berries near Aguav Berries can cause it to change!",
     },
     {
       'type': 29,
@@ -79470,6 +79497,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Pinap Berries can spread a new Berry into nearby empty plots!",
     },
     {
       'type': 30,
@@ -79522,6 +79550,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a Tamato berry will change if its surroundings get extremely spicy!",
     },
     {
       'type': 31,
@@ -79574,6 +79603,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a Cornn berry will change if its surroundings get extremely dry!",
     },
     {
       'type': 32,
@@ -79626,6 +79656,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a Magost berry will change if its surroundings get extremely sweet!",
     },
     {
       'type': 33,
@@ -79678,6 +79709,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a Rabuta berry will change if its surroundings get extremely bitter!",
     },
     {
       'type': 34,
@@ -79730,6 +79762,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that a Nomel berry will change if its surroundings get extremely sour!",
     },
     {
       'type': 35,
@@ -79790,6 +79823,7 @@ module.exports = {
         'Chimchar',
         'Tepig',
       ],
+      'hint': "I've heard that growing Razz, Figy, Tamato and Spelon Berries near each other will produce something interesting!",
     },
     {
       'type': 36,
@@ -79858,6 +79892,7 @@ module.exports = {
         'Piplup',
         'Oshawott',
       ],
+      'hint': "I've heard that growing Oran, Chesto, Kelpsy and Coba Berries near each other will produce something interesting!",
     },
     {
       'type': 37,
@@ -79922,6 +79957,7 @@ module.exports = {
         'Karrablast',
         'Pikachu',
       ],
+      'hint': "I've heard that growing Pinap, Iapapa, Qualot and Grepa Berries near each other will produce something interesting!",
     },
     {
       'type': 38,
@@ -79982,6 +80018,7 @@ module.exports = {
         'Turtwig',
         'Snivy',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little spicy and fairly bitter at the same time.",
     },
     {
       'type': 39,
@@ -80046,6 +80083,7 @@ module.exports = {
         'Karrablast',
         'Snover',
       ],
+      'hint': "I've heard that growing a Passho Berry alone will cause it to change!",
     },
     {
       'type': 40,
@@ -80110,6 +80148,7 @@ module.exports = {
         'Karrablast',
         'Riolu',
       ],
+      'hint': "I've heard that using the Blaze Cassette can cause Spelon Berries to change!",
     },
     {
       'type': 41,
@@ -80175,6 +80214,7 @@ module.exports = {
         'Karrablast',
         'Gulpin',
       ],
+      'hint': "I've heard that using the Poison Barb can cause Pamtre Berries to change!",
     },
     {
       'type': 42,
@@ -80239,6 +80279,7 @@ module.exports = {
         'Karrablast',
         'Larvitar',
       ],
+      'hint': "I've heard that using the Sprinklotad can cause Watmel Berries to change!",
     },
     {
       'type': 43,
@@ -80292,6 +80333,7 @@ module.exports = {
         'Karrablast',
         'Tropius',
       ],
+      'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little dry and fairly bitter at the same time.",
     },
     {
       'type': 44,
@@ -80356,6 +80398,7 @@ module.exports = {
         'Karrablast',
         'Natu',
       ],
+      'hint': "I've heard that growing Wiki, Bluk, Cornn and Pamtre Berries near each other will produce something interesting!",
     },
     {
       'type': 45,
@@ -80420,6 +80463,7 @@ module.exports = {
         'Karrablast',
         'Nincada',
       ],
+      'hint': "I've heard that a special Berry can appear after being surrounded by Rindo Berries!",
     },
     {
       'type': 46,
@@ -80484,6 +80528,7 @@ module.exports = {
         'Karrablast',
         'Sudowoodo',
       ],
+      'hint': "I've heard that using the Cell Battery can cause Cornn Berries to change!",
     },
     {
       'type': 47,
@@ -80548,6 +80593,7 @@ module.exports = {
         'Karrablast',
         'Shedinja',
       ],
+      'hint': "I've heard of a Berry that only appears after a Berry plant has withered, but is repelled by Colbur Plants.",
     },
     {
       'type': 48,
@@ -80612,6 +80658,7 @@ module.exports = {
         'Karrablast',
         'Bagon',
       ],
+      'hint': "I've heard that growing Occa, Rindo, Passho and Wacan Berries near each other will produce something interesting!",
     },
     {
       'type': 49,
@@ -80668,6 +80715,7 @@ module.exports = {
         'Karrablast',
         'Absol',
       ],
+      'hint': "I've heard that growing Rabuta, Kasib and Payapa Berries near each other will produce something interesting!",
     },
     {
       'type': 50,
@@ -80732,6 +80780,7 @@ module.exports = {
         'Karrablast',
         'Skarmory',
       ],
+      'hint': "I've heard that a special Berry can appear after being surrounded by Shuca and Charti Berries!",
     },
     {
       'type': 51,
@@ -80784,6 +80833,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that Chople Berries will turn into a different Berry if surrounded by more than two of its own kind",
     },
     {
       'type': 52,
@@ -80848,6 +80898,7 @@ module.exports = {
         'Karrablast',
         'Togepi',
       ],
+      'hint': "I've heard that growing Mago, Nanab, Magost and Watmel Berries near each other will produce something interesting!",
     },
     {
       'type': 53,
@@ -80900,6 +80951,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard of a Berry that only appears in the driest of fields.",
     },
     {
       'type': 54,
@@ -80952,6 +81004,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard of a Berry that only appears in the sweetest of fields.",
     },
     {
       'type': 55,
@@ -81007,6 +81060,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard of a Berry that only appears in the most bitter of fields.",
     },
     {
       'type': 56,
@@ -81059,6 +81113,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard of a Berry that only appears in the most sour of fields.",
     },
     {
       'type': 57,
@@ -81111,6 +81166,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Liechi and Ganlon Berries near each other will produce something interesting!",
     },
     {
       'type': 58,
@@ -81163,6 +81219,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Salac and Petaya Berries near each other will produce something interesting!",
     },
     {
       'type': 59,
@@ -81216,6 +81273,7 @@ module.exports = {
         'Karrablast',
         'Manaphy',
       ],
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Passho Berries.',
     },
     {
       'type': 60,
@@ -81268,6 +81326,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Shuca Berries.',
     },
     {
       'type': 61,
@@ -81320,6 +81379,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Coba Berries.',
     },
     {
       'type': 62,
@@ -81376,6 +81436,7 @@ module.exports = {
         'Karrablast',
         'Mew',
       ],
+      'hint': 'Legends tell of a mysterious Berry that only appears while surrounded by all types of Berries.',
     },
     {
       'type': 63,
@@ -81428,6 +81489,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Chilan Berries near Enigma Berries can cause it to change!",
     },
     {
       'type': 64,
@@ -81480,6 +81542,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "I've heard that growing Roseli Berries near Enigma Berries can cause it to change!",
     },
     {
       'type': 65,
@@ -81541,6 +81604,7 @@ module.exports = {
         'Karrablast',
         'Jirachi',
       ],
+      'hint': "I've heard that growing Haban Berries near Enigma Berries can cause it to change!",
     },
     {
       'type': 66,
@@ -81593,6 +81657,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
       ],
+      'hint': "There's a mysterious berry that requires a specific configuration of Berries. However there's still something missing...",
     },
   ],
 };
