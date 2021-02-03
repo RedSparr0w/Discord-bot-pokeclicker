@@ -67,12 +67,14 @@ module.exports = {
       .addField('<:farmPoint:751765173089468448> Farm Points', `${berry.farmValue.toLocaleString('en-US')}`, true)
       .addField('🍒 Harvest Amount', `${berry.harvestAmount}`, true)
       .addField('🌷 Replant Rate', `${Math.floor(berry.replantRate * 100)}%`, true)
-      .addField('🌱 Growth Time', berry.growthTime.map((s, i) => `**${berryStages[i]}:** ${formatSecondsFullLetters(s, true)}`).join('\n'), true);
+      .addField('\u200b', '\u200b', false) // Spacing
+      .addField('🌱 Growth Time', berry.growthTime.map((s, i) => `**${berryStages[i]}:** ${formatSecondsFullLetters(s, true)}`).join('\n'), true)
+      .addField('🌶️ Flavor', berry.flavors.map((f) => `**${flavorTypes[f.type]}:** ${f.value}`).join('\n'), true);
 
     if (berry.aura) embed.addField('✨ Aura', `__**${auraType[berry.aura.auraType]} Bonus**__\n${berry.aura.auraMultipliers.map((m, i) => `**${berryStages[i+1]}**: ${m}×`).join('\n')}`, true);
     else embed.addField('\u200b', '\u200b', true); // Spacing
 
-    embed.addField('🌶️ Flavor', berry.flavors.map((f) => `**${flavorTypes[f.type]}:** ${f.value}`).join('\n'), true);
+    embed.addField('\u200b', '\u200b', false); // Spacing
 
     // Add the wanderers in 3 columns
     const wanderers = [[], [], []];
