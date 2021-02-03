@@ -10,7 +10,9 @@ const dateToString = date => `${date.getFullYear()}-${(date.getMonth() + 1).toSt
 const dateToUTCString = date => date.toISOString().substr(0, 10);
 const formatSecondsFullLetters = (input) => {
   // Temporarily recast to number until everything is in modules
-  if (Number.isNaN(Number(input)) || input === 0) { return '-'; }
+  if (Number.isNaN(Number(input)) || input === 0) {
+    return '-';
+  }
   let time = Math.abs(input * 1000);
   const times = [];
 
