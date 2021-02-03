@@ -8,7 +8,7 @@ const {
 
 const dateToString = date => `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, 0)}-${date.getDate().toString().padStart(2, 0)}`;
 const dateToUTCString = date => date.toISOString().substr(0, 10);
-const formatSecondsFullLetters = (input) => {
+const formatSecondsFullLetters = (input, hide_zero = false) => {
   // Temporarily recast to number until everything is in modules
   if (Number.isNaN(Number(input)) || input === 0) {
     return '-';
@@ -40,7 +40,7 @@ const formatSecondsFullLetters = (input) => {
     const seconds = Math.floor(time / SECOND);
     times.push(`${seconds}s`.padStart(3, '0'));
   }
-  return times.slice(0, 3).join(' ');
+  return times.slice(0, 3).filter(a => !(hide_zero && a.startsWith('00'))).join(' ');
 };
 
 module.exports = {
