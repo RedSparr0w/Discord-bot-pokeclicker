@@ -38,7 +38,7 @@ const fuzzyBerry = FuzzySet(Object.keys(berryType), false);
 
 module.exports = {
   name        : 'berry',
-  aliases     : ['berries'],
+  aliases     : ['berries', 'bery', 'berri', 'beri', 'berrie'],
   description : 'Get PokéClicker game info about a specific Berry',
   args        : ['id/name'],
   guildOnly   : true,
