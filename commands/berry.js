@@ -49,7 +49,7 @@ module.exports = {
   execute     : async (msg, args) => {
     const id = args.join(' ').toLowerCase().trim();
 
-    let berry = berryList.find(b => b.type == +id);
+    let berry = berryList.find(b => b.type == (+id - 1));
     if (!berry && isNaN(id)) {
       const newNames = fuzzyBerry.get(id);
       if (newNames) {
@@ -59,7 +59,7 @@ module.exports = {
     if (!berry) return msg.channel.send('Berry not found..');
 
     const embed = new MessageEmbed()
-      .setTitle(`#${berry.type >= 0 ? berry.type.toString().padStart(3, 0) : '???'} ${berryType[berry.type].toUpperCase()}`)
+      .setTitle(`#${berry.type >= 0 ? (berry.type + 1).toString().padStart(2, 0) : '???'} ${berryType[berry.type].toUpperCase()}`)
       .setThumbnail(`${website}assets/images/items/berry/${berryType[berry.type]}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`)
