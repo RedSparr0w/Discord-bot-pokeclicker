@@ -63,7 +63,9 @@ module.exports = {
       .setThumbnail(`${website}assets/images/items/berry/${berryType[berry.type]}.png`)
       .setColor('#3498db')
       .setFooter(`Data is up to date as of v${gameVersion}`)
+      .addField('\u200b', '\u200b', false) // Spacing
       .addField('Description', `${berry.description.join('\n')}`, false)
+      .addField('\u200b', '\u200b', false) // Spacing
       .addField('<:farmPoint:751765173089468448> Farm Points', `${berry.farmValue.toLocaleString('en-US')}`, true)
       .addField('🍒 Harvest Amount', `${berry.harvestAmount}`, true)
       .addField('🌷 Replant Rate', `${Math.floor(berry.replantRate * 100)}%`, true)
