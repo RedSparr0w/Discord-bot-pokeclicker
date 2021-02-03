@@ -67,13 +67,17 @@ module.exports = {
       .addField('<:farmPoint:751765173089468448> Farm Points', `${berry.farmValue.toLocaleString('en-US')}`, true)
       .addField('🍒 Harvest Amount', `${berry.harvestAmount}`, true)
       .addField('🌷 Replant Rate', `${Math.floor(berry.replantRate * 100)}%`, true)
-      .addField('🌱 Growth Time', berry.growthTime.map((s, i) => `**${berryStages[i]}:** ${formatSecondsFullLetters(s, true)}`).join('\n'), true)
-      .addField('🌶️ Flavor', berry.flavors.map((f) => `**${flavorTypes[f.type]}:** ${f.value}`).join('\n'), true);
+      .addField('🌱 Growth Time', berry.growthTime.map((s, i) => `**${berryStages[i]}:** ${formatSecondsFullLetters(s, true)}`).join('\n'), true);
 
     if (berry.aura) embed.addField('<:Pokeball:733980790718988348> Aura', `__**${auraType[berry.aura.auraType]} Bonus**__\n${berry.aura.auraMultipliers.map((m, i) => `**${berryStages[i+1]}**: ${m}×`).join('\n')}`, true);
+    else embed.addField('\u200b', '\u200b', true); // Spacing
 
+    embed.addField('🌶️ Flavor', berry.flavors.map((f) => `**${flavorTypes[f.type]}:** ${f.value}`).join('\n'), true);
 
-    embed.addField('<:Pokeball:733980790718988348> Wanderers', `${berry.wander.join('\n')}`, false);
+    // Add the wanderers in 3 columns
+    const wanderers = [[], [], []];
+    berry.wander.forEach((p, i) => wanderers[i % 3].push(p));
+    wanderers.forEach((w, i) => embed.addField(!i ? '<:Pokeball:733980790718988348> Wanderers' : '\u200b', `${w.join('\n')}`, true));
 
     // Spacing for the footer
     embed.addField('\u200b', '\u200b');
