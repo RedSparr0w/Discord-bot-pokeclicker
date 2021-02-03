@@ -25550,9 +25550,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Mime Jr.',
-            'type': [1],
-            'stone': -1,
+            'type': [0],
             'evolvedPokemon': 'Mr. Mime',
+            'level': 32,
           },
         ],
         '7': ['Celadon City'],
@@ -29863,9 +29863,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Bonsly',
-            'type': [1],
-            'stone': -1,
+            'type': [0],
             'evolvedPokemon': 'Sudowoodo',
+            'level': 32,
           },
         ],
         '11': ['Charti'],
@@ -45303,9 +45303,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Bonsly',
-          'type': [1],
-          'stone': -1,
+          'type': [0],
           'evolvedPokemon': 'Sudowoodo',
+          'level': 32,
         },
       ],
       'baby': true,
@@ -45355,9 +45355,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Mime Jr.',
-          'type': [1],
-          'stone': -1,
+          'type': [0],
           'evolvedPokemon': 'Mr. Mime',
+          'level': 32,
         },
       ],
       'baby': true,
@@ -52956,7 +52956,7 @@ module.exports = {
         {
           'basePokemon': 'Minccino',
           'type': [1],
-          'stone': -1,
+          'stone': 16,
           'evolvedPokemon': 'Cinccino',
         },
       ],
@@ -53051,7 +53051,7 @@ module.exports = {
           {
             'basePokemon': 'Minccino',
             'type': [1],
-            'stone': -1,
+            'stone': 16,
             'evolvedPokemon': 'Cinccino',
           },
         ],
@@ -55435,7 +55435,7 @@ module.exports = {
         {
           'basePokemon': 'Lampent',
           'type': [1],
-          'stone': -1,
+          'stone': 15,
           'evolvedPokemon': 'Chandelure',
         },
       ],
@@ -55520,7 +55520,7 @@ module.exports = {
           {
             'basePokemon': 'Lampent',
             'type': [1],
-            'stone': -1,
+            'stone': 15,
             'evolvedPokemon': 'Chandelure',
           },
         ],
@@ -59545,7 +59545,7 @@ module.exports = {
         {
           'basePokemon': 'Doublade',
           'type': [1],
-          'stone': -1,
+          'stone': 15,
           'evolvedPokemon': 'Aegislash',
         },
       ],
@@ -59598,7 +59598,7 @@ module.exports = {
           {
             'basePokemon': 'Doublade',
             'type': [1],
-            'stone': -1,
+            'stone': 15,
             'evolvedPokemon': 'Aegislash',
           },
         ],
@@ -62163,7 +62163,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'type': [1],
-          'stone': -1,
+          'stone': 2,
           'evolvedPokemon': 'Vikavolt',
         },
       ],
@@ -62250,7 +62250,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'type': [1],
-            'stone': -1,
+            'stone': 2,
             'evolvedPokemon': 'Vikavolt',
           },
         ],
@@ -77386,269 +77386,6 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 97,
-        },
-      ],
-    },
-    'Trainer Marnie': {
-      'leaderName': 'Marnie',
-      'town': 'Trainer Marnie',
-      'pokemons': [
-        {
-          'name': 'Liepard',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Toxicroak',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Scrafty',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Morpeko',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Grimmsnarl',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 99,
-      'moneyReward': 64000,
-      'defeatMessage': "I mean, If you're gonna win, you could at least win in a way that makes me look good, right?",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 124,
-        },
-      ],
-    },
-    'Trainer Bede': {
-      'leaderName': 'Bede',
-      'town': 'Trainer Bede',
-      'pokemons': [
-        {
-          'name': 'Mawile',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Gardevoir',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Galarian Rapidash',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Sylveon',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Hatterene',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 101,
-      'moneyReward': 64000,
-      'defeatMessage': "I couldn't win, but at least I was able to show everyone how great Fairy types are.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 100,
-        },
-      ],
-    },
-    'Gym Leader Klara': {
-      'leaderName': 'Klara',
-      'town': 'Gym Leader Klara',
-      'pokemons': [
-        {
-          'name': 'Galarian Slowking',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Galarian Weezing',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Drapion',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Scolipede',
-          'maxHealth': 1945330,
-          'level': 60,
-        },
-        {
-          'name': 'Galarian Slowbro',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 103,
-      'moneyReward': 64000,
-      'defeatMessage': 'Aww, come on! What a drag! But...I guess it was also kinda fun!',
-      'requirements': [
-        {
-          'requirements': [
-            {
-              'requiredValue': 1,
-              'option': 2,
-              'achievementType': 17,
-              'dungeonIndex': -1,
-            },
-            {
-              'requiredValue': 1,
-              'option': 2,
-              'achievementType': 17,
-              'dungeonIndex': -1,
-            },
-          ],
-        },
-      ],
-    },
-    'Gym Leader Avery': {
-      'leaderName': 'Avery',
-      'town': 'Gym Leader Avery',
-      'pokemons': [
-        {
-          'name': 'Galarian Slowking',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Galarian Rapidash',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Swoobat',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Alakazam',
-          'maxHealth': 1945330,
-          'level': 60,
-        },
-        {
-          'name': 'Galarian Slowbro',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 104,
-      'moneyReward': 64000,
-      'defeatMessage': 'More! I require more! Show me your Stored Power!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 103,
-        },
-      ],
-    },
-    'Dojo Master Mustard': {
-      'leaderName': 'Mustard',
-      'town': 'Dojo Master Mustard',
-      'pokemons': [
-        {
-          'name': 'Luxray',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Corviknight',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Lycanroc (Midday)',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Kommo-o',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Urshifu (Single Strike)',
-          'maxHealth': 1945330,
-          'level': 60,
-        },
-        {
-          'name': 'Urshifu (Rapid Strike)',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 105,
-      'moneyReward': 64000,
-      'defeatMessage': "That strength of yours doesn't bend easily!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 104,
-        },
-      ],
-    },
-    'Trainer Peony': {
-      'leaderName': 'Freezington',
-      'town': 'Trainer Peony',
-      'pokemons': [
-        {
-          'name': 'Perrserker',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Bronzong',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Scizor',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Aggron',
-          'maxHealth': 1945330,
-          'level': 60,
-        },
-        {
-          'name': 'Copperajah',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 106,
-      'moneyReward': 64000,
-      'defeatMessage': 'Gone and got stronger again, have you? Ah well! Hats off to you-in more ways than one!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'pokemonID': 898,
         },
       ],
     },
