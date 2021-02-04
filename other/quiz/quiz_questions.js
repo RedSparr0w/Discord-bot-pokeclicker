@@ -252,7 +252,7 @@ const pokemonID = () => new Promise(resolve => {
 
     const shiny = isShiny();
 
-    const description = ['What is this Pokémons national Pokedex ID?'];
+    const description = ['What is this Pokémons national Pokédex ID?'];
     description.push(`**+${amount} ${serverIcons.money}**`);
 
     // If shiny award more coins
