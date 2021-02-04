@@ -285,7 +285,7 @@ const pokemonID = () => new Promise(resolve => {
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
-              .setTitle(`It's #${pokemon.id.toString().padStart(3, '0')}!`)
+              .setTitle(`It's #${Math.floor(pokemon.id).toString().padStart(3, '0')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
             m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
