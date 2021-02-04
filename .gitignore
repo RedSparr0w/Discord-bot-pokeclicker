@@ -64,3 +64,6 @@ typings/
 config.js
 database.sqlite
 trainer_card.png
+thumbs.db
+who.png
+whoFinal.png
