@@ -20,7 +20,6 @@ const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 64;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
 const defaultEndFunction = (title, image, description) => async (m, e) => {
-  image = encodeURI(image);
   const embed = new MessageEmbed()
     .setTitle(title)
     .setThumbnail(image)
@@ -439,7 +438,7 @@ const dockTown = () => {
     .setThumbnail(`${website}assets/images/ship.png`)
     .setColor('#3498db');
 
-  const townImage = `${website}assets/images/towns/${town}.png`;
+  const townImage = encodeURI(`${website}assets/images/towns/${town}.png`);
 
   return {
     embed,
@@ -465,7 +464,7 @@ const startingTown = () => {
     .setThumbnail(`${website}assets/images/ship.png`)
     .setColor('#3498db');
 
-  const townImage = `${website}assets/images/towns/${town}.png`;
+  const townImage = encodeURI(`${website}assets/images/towns/${town}.png`);
 
   return {
     embed,
@@ -521,7 +520,7 @@ const badgeGymLocation = () => {
     .setThumbnail(image)
     .setColor('#3498db');
 
-  const townImage = `${website}assets/images/towns/${gym.town}.png`;
+  const townImage = encodeURI(`${website}assets/images/towns/${gym.town}.png`);
 
   return {
     embed,
