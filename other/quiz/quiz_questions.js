@@ -653,11 +653,13 @@ const gymLeaderBadge = () => {
     .setThumbnail(image)
     .setColor('#3498db');
 
+  const badgeImage = encodeURI(`${website}assets/images/badges/${badge}.png`);
+
   return {
     embed,
     answer,
     amount,
-    end: defaultEndFunction(`The badge is ${badge}!`, image),
+    end: defaultEndFunction(`It's the ${badge} Badge!`, badgeImage),
   };
 };
 
