@@ -20,6 +20,7 @@ const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 64;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
 const defaultEndFunction = (title, image) => async (m, e) => {
+  image = encodeURI(image);
   const embed = new MessageEmbed()
     .setTitle(title)
     .setThumbnail(image)
@@ -121,7 +122,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
         shiny,
         files: [attachment],
         end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0]), shiny);
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0].evolvedPokemon), shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
@@ -284,7 +285,7 @@ const pokemonID = () => new Promise(resolve => {
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
-              .setTitle(`It's #${pokemon.id.padStart(3, '0')}!`)
+              .setTitle(`It's #${pokemon.id.toString().padStart(3, '0')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
             m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
