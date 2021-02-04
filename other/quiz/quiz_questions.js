@@ -26,7 +26,7 @@ const defaultEndFunction = (title, image) => async (m, e) => {
     .setColor('#e74c3c');
   m.channel.send({ embed }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
-
+const getPokemonByName = name => pokemonList.find(p => p.name == name);
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
@@ -84,177 +84,286 @@ const whosThatPokemon = () => new Promise(resolve => {
   })();
 });
 
-const whosThePokemonEvolution = async () => {
-  const pokemon = randomFromArray(pokemonListWithEvolution);
-  const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace(/\W/g, '.?')).join('|')})\\b`, 'i');
+const whosThePokemonEvolution = () => new Promise(resolve => {
+  (async () => {
+    const pokemon = randomFromArray(pokemonListWithEvolution);
+    const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace(/\W/g, '.?')).join('|')})\\b`, 'i');
+    
+    let amount = getAmount();
+
+    const shiny = isShiny();
+
+    const description = ['Who can this Pokémon evolve to?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** _(shiny)_`);
+      amount += shiny_amount;
+    }
+
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    
+    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
+      const attachment = await new MessageAttachment().setFile('who.png');
+
+      const embed = new MessageEmbed()
+        .setTitle('Name the Evolution!')
+        .setDescription(description)
+        .setImage('attachment://who.png')
+        .setColor('#3498db');
+    
+      resolve({
+        embed,
+        answer,
+        amount,
+        shiny,
+        files: [attachment],
+        end: async (m, e) => {
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0]), shiny);
+          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
+            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
+            const embed = new MessageEmbed()
+              .setTitle(`It's ${pokemon.evolutions.map(p => p.evolvedPokemon).join(' or ')}!`)
+              .setImage('attachment://whoFinal.png')
+              .setColor('#e74c3c');
+            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+          });
+        },
+      });
+    });
+  })();
+});
+
+const whosThePokemonPrevolution = () => new Promise(resolve => {
+  (async () => {
+    const prevolution = randomFromArray(pokemonListWithEvolution);
+    const evolution = randomFromArray(prevolution.evolutions);
+    const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
+    const answer = new RegExp(`^\\W*(${prevolution.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')})\\b`, 'i');
+    
+    let amount = getAmount();
+
+    const shiny = isShiny();
+
+    const description = ['Who does this Pokémon evolve from?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** _(shiny)_`);
+      amount += shiny_amount;
+    }
+
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    
+    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
+      const attachment = await new MessageAttachment().setFile('who.png');
+
+      const embed = new MessageEmbed()
+        .setTitle('Name the Prevolution!')
+        .setDescription(description)
+        .setImage('attachment://who.png')
+        .setColor('#3498db');
+    
+      resolve({
+        embed,
+        answer,
+        amount,
+        shiny,
+        files: [attachment],
+        end: async (m, e) => {
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(prevolution, shiny);
+          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
+            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
+            const embed = new MessageEmbed()
+              .setTitle(`It's ${prevolution.name}!`)
+              .setImage('attachment://whoFinal.png')
+              .setColor('#e74c3c');
+            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+          });
+        },
+      });
+    });
+  })();
+});
+
+const pokemonType = () => new Promise(resolve => {
+  (async () => {
+    const pokemon = randomFromArray(pokemonList);
+    const types = pokemon.type.map(t => PokemonType[t]);
+    const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')})\\b`, 'i');
+
+    let amount = getAmount();
+
+    const shiny = isShiny();
+
+    const description = ['What is this Pokémons type(s)?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** _(shiny)_`);
+      amount += shiny_amount;
+    }
+
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    
+    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
+      const attachment = await new MessageAttachment().setFile('who.png');
+
+      const embed = new MessageEmbed()
+        .setTitle('What\'s the type?')
+        .setDescription(description)
+        .setImage('attachment://who.png')
+        .setColor('#3498db');
+    
+      resolve({
+        embed,
+        answer,
+        amount,
+        shiny,
+        files: [attachment],
+        end: async (m, e) => {
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
+            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
+            const embed = new MessageEmbed()
+              .setTitle(`It's ${types.join(' & ')}!`)
+              .setImage('attachment://whoFinal.png')
+              .setColor('#e74c3c');
+            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+          });
+        },
+      });
+    });
+  })();
+});
+
+const pokemonID = () => new Promise(resolve => {
+  (async () => {
+    const pokemon = randomFromArray(pokemonList);
+    const answer = new RegExp(`^\\W*#?${Math.floor(+pokemon.id)}\\b`, 'i');
+    
+    let amount = getAmount();
+
+    const shiny = isShiny();
+
+    const description = ['What is this Pokémons national Pokedex ID?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** _(shiny)_`);
+      amount += shiny_amount;
+    }
+
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
   
-  let amount = getAmount();
+    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
+      const attachment = await new MessageAttachment().setFile('who.png');
 
-  const shiny = isShiny();
+      const embed = new MessageEmbed()
+        .setTitle('What\'s the ID?')
+        .setDescription(description)
+        .setImage('attachment://who.png')
+        .setColor('#3498db');
+    
+      resolve({
+        embed,
+        answer,
+        amount,
+        shiny,
+        files: [attachment],
+        end: async (m, e) => {
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
+            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
+            const embed = new MessageEmbed()
+              .setTitle(`It's #${pokemon.id.padStart(3, '0')}!`)
+              .setImage('attachment://whoFinal.png')
+              .setColor('#e74c3c');
+            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+          });
+        },
+      });
+    });
+  })();
+});
 
-  const description = ['Who can this Pokémon evolve to?'];
-  description.push(`**+${amount} ${serverIcons.money}**`);
+const pokemonRegion = () => new Promise(resolve => {
+  (async () => {
+    const pokemon = randomFromArray(pokemonList);
+    const answer = new RegExp(`^\\W*${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
+    
+    let amount = getAmount();
 
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
-    amount += shiny_amount;
-  }
+    const shiny = isShiny();
 
-  const embed = new MessageEmbed()
-    .setTitle('Name the Evolution!')
-    .setDescription(description)
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
+    const description = ['What is this Pokémons native region?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
 
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-  };
-};
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** _(shiny)_`);
+      amount += shiny_amount;
+    }
 
-const whosThePokemonPrevolution = async () => {
-  const prevolution = randomFromArray(pokemonListWithEvolution);
-  const evolution = randomFromArray(prevolution.evolutions);
-  const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
-  const answer = new RegExp(`^\\W*(${prevolution.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')})\\b`, 'i');
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
   
-  let amount = getAmount();
+    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
+      const attachment = await new MessageAttachment().setFile('who.png');
 
-  const shiny = isShiny();
-
-  const description = ['Who does this Pokémon evolve from?'];
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const embed = new MessageEmbed()
-    .setTitle('Name the Prevolution!')
-    .setDescription(description)
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-  };
-};
-
-const pokemonType = async () => {
-  const pokemon = randomFromArray(pokemonList);
-  const types = pokemon.type.map(t => PokemonType[t]);
-  const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')})\\b`, 'i');
-
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What is this Pokémons type(s)?'];
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const embed = new MessageEmbed()
-    .setTitle('What\'s the type?')
-    .setDescription(description)
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-  };
-};
-
-const pokemonID = async () => {
-  const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^\\W*#?${Math.floor(+pokemon.id)}\\b`, 'i');
-  
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What is this Pokémons national Pokedex ID?'];
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const embed = new MessageEmbed()
-    .setTitle('What\'s the ID?')
-    .setDescription(description)
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-  };
-};
-
-const pokemonRegion = async () => {
-  const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^\\W*${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
-  
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What is this Pokémons native region?'];
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const embed = new MessageEmbed()
-    .setTitle('What\'s the Region?')
-    .setDescription(description)
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-  };
-};
+      const embed = new MessageEmbed()
+        .setTitle('What\'s the Region?')
+        .setDescription(description)
+        .setImage('attachment://who.png')
+        .setColor('#3498db');
+    
+      resolve({
+        embed,
+        answer,
+        amount,
+        shiny,
+        files: [attachment],
+        end: async (m, e) => {
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
+            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
+            const embed = new MessageEmbed()
+              .setTitle(`It's ${GameConstants.Region[pokemon.nativeRegion]}!`)
+              .setImage('attachment://whoFinal.png')
+              .setColor('#e74c3c');
+            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+          });
+        },
+      });
+    });
+  })();
+});
 
 const fossilPokemon = () => {
   const [fossil, pokemon] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
   const answer = new RegExp(`^\\W*${pokemon.replace(/\s?\(.+/, '').replace(/\W/g, '.?')}\\b`, 'i');
   
-  const amount = getAmount();
+  let amount = getAmount();
+
+  const shiny = isShiny();
 
   const description = ['What Pokémon comes from this fossil?'];
   description.push(`**+${amount} ${serverIcons.money}**`);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
 
   const image = encodeURI(`${website}assets/images/breeding/${fossil}.png`);
 
@@ -263,12 +372,15 @@ const fossilPokemon = () => {
     .setDescription(description)
     .setThumbnail(image)
     .setColor('#3498db');
+  
+  const pokemonData = getPokemonByName(pokemon);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}.png`;
 
   return {
     embed,
     answer,
     amount,
-    end: defaultEndFunction(`It's ${pokemon}!`, image),
+    end: defaultEndFunction(`It's ${pokemon}!`, pokemonImage),
   };
 };
 
@@ -369,6 +481,7 @@ const badgeGymLeader = () => {
   const amount = getAmount();
 
   const description = ['Which Gym Leader awards this badge?'];
+  description.push(`||${badge} Badge||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   const embed = new MessageEmbed()
@@ -395,7 +508,7 @@ const badgeGymLocation = () => {
   const amount = getAmount();
 
   const description = ['Which location has a Gym that awards this badge?'];
-  description.push(`||${badge}||`);
+  description.push(`||${badge} Badge||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   const image = encodeURI(`${website}assets/images/badges/${badge}.png`);
@@ -462,7 +575,7 @@ const gymLeaderPokemon = () => {
   
   const amount = getAmount();
 
-  const description = ['Which Pokémon does this Gym Leader use?', `||${gym.leaderName}||`];
+  const description = ['Which Pokémon does this Gym Leader use?'];
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
@@ -488,7 +601,7 @@ const gymLeaderLocation = () => {
   
   const amount = getAmount();
 
-  const description = ['Which location can you find this Gym Leader?', `||${gym.leaderName}||`];
+  const description = ['Which location can you find this Gym Leader?'];
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
@@ -515,7 +628,7 @@ const gymLeaderBadge = () => {
   
   const amount = getAmount();
 
-  const description = ['Which Badge does this Gym Leader award?', `||${gym.leaderName}||`];
+  const description = ['Which Badge does this Gym Leader award?'];
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
@@ -588,10 +701,10 @@ const selectWeightedOption = (options_array) => {
 const quizTypes = [
   new WeightedOption(whosThatPokemon, 10),
   new WeightedOption(pokemonType, 8),
-  new WeightedOption(pokemonRegion, 6),
+  new WeightedOption(pokemonRegion, 4),
   new WeightedOption(whosThePokemonEvolution, 6),
   new WeightedOption(whosThePokemonPrevolution, 6),
-  new WeightedOption(pokemonID, 1),
+  new WeightedOption(pokemonID, 3),
   new WeightedOption(fossilPokemon, 1),
   new WeightedOption(pokemonFossil, 1),
   new WeightedOption(startingTown, 1),
@@ -608,9 +721,7 @@ const quizTypes = [
 
 const getQuizQuestion = async () => {
   const selected = selectWeightedOption(quizTypes);
-  const quiz = await selected.option();
-  console.log(quiz);
-  return quiz;
+  return await selected.option();
 };
 
 module.exports = {
