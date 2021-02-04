@@ -13,6 +13,7 @@ const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
 
 // Between 1 and 6 minutes
 const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
+const ANSWER_TIME_LIMIT = 3 * SECOND;
 
 const newQuiz = async (guild, reoccur = false) => {
   // If no quiz channel or ID, return
@@ -21,7 +22,7 @@ const newQuiz = async (guild, reoccur = false) => {
   if (!quiz_channel) return;
 
   // Generate and send a random question
-  const quiz = getQuizQuestion();
+  const quiz = await getQuizQuestion();
 
   // Time limit in minutes (2 → 10 minutes)
   let time_limit = getTimeLimit();
@@ -34,19 +35,17 @@ const newQuiz = async (guild, reoccur = false) => {
     quiz.embed.setFooter(`Happy Hour!\n(${happyHourBonus} × Faster Questions, ${happyHourBonus} × Shiny Chance)`);
   }
 
-  const bot_message = await quiz_channel.send({ embed: quiz.embed }).catch((...args) => warn('Unable to send quiz question', ...args));
+  const bot_message = await quiz_channel.send({ embed: quiz.embed, files: quiz.files }).catch((...args) => warn('Unable to send quiz question', ...args));
 
   // If no bot message for whatever reason, try again in 1 minute
   if (!bot_message) return setTimeout(() => newQuiz(guild, reoccur), MINUTE);
 
   // Post another question once the timer finishes
-  if (reoccur) setTimeout(() => newQuiz(guild, reoccur), time_limit);
+  if (reoccur) setTimeout(() => newQuiz(guild, reoccur), time_limit + ANSWER_TIME_LIMIT);
 
   // Which messages are we trying to catch
   const filter = m => quiz.answer.test(m.content);
 
-  // Reason for footer once finished
-  let end_reason = 'Closed';
   let finished = 0;
 
   const winners = new Set();
@@ -60,7 +59,7 @@ const newQuiz = async (guild, reoccur = false) => {
       finished = m.createdTimestamp;
     } else {
       quiz.amount = Math.floor(quiz.amount / 2);
-      if (!quiz.amount || winners.has(user.id) || m.createdTimestamp - finished > 3 * SECOND) {
+      if (!quiz.amount || winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT) {
         return;
       }
     }
@@ -115,23 +114,17 @@ const newQuiz = async (guild, reoccur = false) => {
 
   // errors: ['time'] treats ending because of the time limit as an error
   quiz_channel.awaitMessages(filter, { max: 1, time:  time_limit, errors: ['time'] })
-    .then(async collected => {
-      // Set a reason for the message footer
-      end_reason = 'Answered!';
-    })
-    .catch(collected => {
-      // Set a reason for the message footer
-      end_reason = 'Timed out!';
-    }).finally(() => {
+    .then(() => {
       // Update the message
       const botEmbed = bot_message.embeds[0];
-      const description = `${botEmbed.description.split('\n').map(l => `~~${l.trim()}~~`).join('\n')}`;
-
-      botEmbed.setDescription(description)
-        .setFooter(`${botEmbed.footer ? botEmbed.footer.text : ''}\n${end_reason}`)
-        .setColor('#e74c3c');
-
-      bot_message.edit({ embed: botEmbed }).catch((...args) => warn('Unable to edit quiz question', ...args));
+      setTimeout(() => {
+        quiz.end(bot_message, botEmbed);
+      }, ANSWER_TIME_LIMIT);
+    })
+    .catch(() => {
+      // Update the message
+      const botEmbed = bot_message.embeds[0];
+      quiz.end(bot_message, botEmbed);
     });
 };
 

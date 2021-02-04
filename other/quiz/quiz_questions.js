@@ -1,4 +1,5 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, MessageAttachment } = require('discord.js');
+const fs =  require('fs');
 const { website, serverIcons } = require('../../config.js');
 const {
   pokemonList,
@@ -8,52 +9,74 @@ const {
   upperCaseFirstLetter,
   BadgeEnums,
   gymList,
+  warn,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
+const { getWhosThatPokemonImage, getWhosThatPokemonFinalImage } = require('./quiz_functions.js');
 
 // Between 10 and 50
 const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
 const getShinyAmount = () => 100 + getAmount();
-const shinyChance = 64;
+const shinyChance = 1;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
 const gymsWithBadges = Object.keys(gymList).filter(t => badgeList.includes(BadgeEnums[gymList[t].badgeReward]));
 
-const whosThatPokemon = () => {
-  const pokemon = randomFromArray(pokemonList);
-  const answer = new RegExp(`^\\W*${pokemon.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')}\\b`, 'i');
-  
-  let amount = getAmount();
+const whosThatPokemon = () => new Promise(resolve => {
+  (async () => {
+    const pokemon = randomFromArray(pokemonList);
+    const answer = new RegExp(`^\\W*${pokemon.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')}\\b`, 'i');
+    
+    let amount = getAmount();
 
-  const shiny = isShiny();
+    const shiny = isShiny();
 
-  const description = ['Name the Pokémon!'];
-  description.push(`**+${amount} ${serverIcons.money}**`);
+    const description = ['Name the Pokémon!'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
 
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
-    amount += shiny_amount;
-  }
+    // If shiny award more coins
+    if (shiny) {
+      const shiny_amount = getShinyAmount();
+      description.push(`**+${shiny_amount}** ✨`);
+      amount += shiny_amount;
+    }
 
-  const embed = new MessageEmbed()
-    .setTitle('Who\'s that Pokémon?')
-    .setDescription(description)
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    
+    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
+      const attachment = await new MessageAttachment().setFile('who.png');
 
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-  };
-};
+      const embed = new MessageEmbed()
+        .setTitle('Who\'s that Pokémon?')
+        .setDescription(description)
+        .setImage('attachment://who.png')
+        .setColor('#3498db');
+    
+      resolve({
+        embed,
+        answer,
+        amount,
+        shiny,
+        files: [attachment],
+        end: async (m, e) => {
+          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
+            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
+            const embed = new MessageEmbed()
+              .setTitle(`It's ${pokemon.name}!`)
+              .setImage('attachment://whoFinal.png')
+              .setColor('#e74c3c');
+            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to edit quiz question', ...args));
+          });
+        },
+      });
+    });
+  })();
+});
 
-const whosThePokemonEvolution = () => {
+const whosThePokemonEvolution = async () => {
   const pokemon = randomFromArray(pokemonListWithEvolution);
   const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace(/\W/g, '.?')).join('|')})\\b`, 'i');
   
@@ -85,7 +108,7 @@ const whosThePokemonEvolution = () => {
   };
 };
 
-const whosThePokemonPrevolution = () => {
+const whosThePokemonPrevolution = async () => {
   const prevolution = randomFromArray(pokemonListWithEvolution);
   const evolution = randomFromArray(prevolution.evolutions);
   const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
@@ -119,7 +142,7 @@ const whosThePokemonPrevolution = () => {
   };
 };
 
-const pokemonType = () => {
+const pokemonType = async () => {
   const pokemon = randomFromArray(pokemonList);
   const types = pokemon.type.map(t => PokemonType[t]);
   const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')})\\b`, 'i');
@@ -152,7 +175,7 @@ const pokemonType = () => {
   };
 };
 
-const pokemonID = () => {
+const pokemonID = async () => {
   const pokemon = randomFromArray(pokemonList);
   const answer = new RegExp(`^\\W*#?${Math.floor(+pokemon.id)}\\b`, 'i');
   
@@ -184,7 +207,7 @@ const pokemonID = () => {
   };
 };
 
-const pokemonRegion = () => {
+const pokemonRegion = async () => {
   const pokemon = randomFromArray(pokemonList);
   const answer = new RegExp(`^\\W*${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
   
@@ -514,7 +537,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 10),
+  new WeightedOption(whosThatPokemon, 1000),
   new WeightedOption(pokemonType, 8),
   new WeightedOption(pokemonRegion, 6),
   new WeightedOption(whosThePokemonEvolution, 6),
@@ -534,7 +557,12 @@ const quizTypes = [
   // new WeightedOption(___, 1),
 ];
 
-const getQuizQuestion = () => selectWeightedOption(quizTypes).option();
+const getQuizQuestion = async () => {
+  const selected = selectWeightedOption(quizTypes);
+  const quiz = await selected.option();
+  console.log(quiz);
+  return quiz;
+};
 
 module.exports = {
   getQuizQuestion,
