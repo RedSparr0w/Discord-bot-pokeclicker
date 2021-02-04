@@ -19,12 +19,13 @@ const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
 const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 64;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
-const defaultEndFunction = (title, image) => async (m, e) => {
+const defaultEndFunction = (title, image, description) => async (m, e) => {
   image = encodeURI(image);
   const embed = new MessageEmbed()
     .setTitle(title)
     .setThumbnail(image)
     .setColor('#e74c3c');
+  if (description) embed.setDescription(description);
   m.channel.send({ embed }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
@@ -574,11 +575,20 @@ const gymLeaderPokemon = () => {
   const pokemon = gym.pokemons.map(p => p.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?'));
   const answer = new RegExp(`^\\W*(${pokemon.join('|')})\\b`, 'i');
   
-  const amount = getAmount();
+  let amount = getAmount();
 
   const description = ['Which Pokémon does this Gym Leader use?'];
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** _(shiny)_`);
+    amount += shiny_amount;
+  }
 
   const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
 
@@ -588,11 +598,14 @@ const gymLeaderPokemon = () => {
     .setThumbnail(image)
     .setColor('#3498db');
 
+  const pokemonData = getPokemonByName(gym.pokemons[0].name);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}.png`;
+
   return {
     embed,
     answer,
     amount,
-    end: defaultEndFunction(`The location is ${gym.town}!`, image),
+    end: defaultEndFunction('The Pokémon are:', pokemonImage, [...new Set(gym.pokemons.map(p => p.name))].join('\n')),
   };
 };
 
