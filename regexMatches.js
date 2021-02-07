@@ -63,4 +63,17 @@ module.exports = [
       message.reply({embed});
     },
   },
+  {
+    // Figure out a better way to test for the bots own ID
+    regex: /<@!733927271726841887>/,
+    execute: (message, client) => {
+      if (/(Hello|Hi|Hey)/i.test(message.content)) {
+        message.reply('Hello!');
+      } else if (/(thanks|ty|thank\s*you)/i.test(message.content)) {
+        message.reply('No problem!');
+      } else {
+        message.reply('Why have you summoned me?');
+      }
+    },
+  },
 ];
