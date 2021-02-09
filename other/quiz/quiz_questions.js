@@ -126,7 +126,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
-              .setTitle(`It's ${pokemon.evolutions.map(p => p.evolvedPokemon).join(' or ')}!`)
+              .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
             m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
