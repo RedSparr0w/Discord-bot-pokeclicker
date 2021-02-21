@@ -22,7 +22,7 @@ module.exports = [
   },
   // soon™
   {
-    regex: /\b(when)\b.+\b(released?|version|updated?)\b/i,
+    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?)\b|\b(released?|version|updated?)\b.+\b(wh?ens?)\b)/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },
