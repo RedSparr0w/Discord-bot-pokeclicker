@@ -11,7 +11,6 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  channels    : ['bot-commands', 'game-corner'],
   execute     : async (msg, args) => {
     const description = `<:heartscale:761861364876574740> Thank you for considering donating,
     The money will go towards the server cost of the Discord bot.
