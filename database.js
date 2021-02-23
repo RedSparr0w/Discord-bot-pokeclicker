@@ -326,7 +326,7 @@ async function getOverallStatistic(stat_type){
     getStatisticTypeID(stat_type),
   ]);
 
-  const result = await db.get('SELECT name, user AS users, value FROM statistics INNER JOIN statistic_types ON statistic_types.id = type WHERE type=? GROUP BY statistic_types.id;', type_id);
+  const result = await db.get('SELECT name, COUNT(user) AS users, SUM(value) FROM statistics INNER JOIN statistic_types ON statistic_types.id = type WHERE type=? GROUP BY type;', type_id);
   db.close();
 
   const { name = 'not found', users = 0, value = 0 } = result || {};
