@@ -5,7 +5,7 @@ module.exports = {
   name        : 'statistics',
   aliases     : ['stats'],
   description : 'Get an overview of your statistics for this server',
-  args        : [],
+  args        : ['user_id?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
