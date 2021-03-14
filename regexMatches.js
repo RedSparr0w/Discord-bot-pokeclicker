@@ -64,8 +64,8 @@ module.exports = [
     },
   },
   {
-    // Figure out a better way to test for the bots own ID
-    regex: /<@!?733927271726841887>/,
+    // Figure out a better way to test for the bots own ID/Role
+    regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
     execute: (message, client) => {
       if (/(Hello|Hi|Hey)/i.test(message.content)) {
         message.reply('Hello!');
