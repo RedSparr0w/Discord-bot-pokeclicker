@@ -4,7 +4,7 @@ const { postPages } = require('../helpers.js');
 module.exports = {
   name        : 'top',
   aliases     : ['leaderboard', 'lb'],
-  description : 'Get a list of users with the most points',
+  description : 'Get a list of users with the most points.\n\nType can be one of: quiz, timely, daily, coins (default)',
   args        : ['type?'],
   guildOnly   : true,
   cooldown    : 3,
