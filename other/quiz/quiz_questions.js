@@ -14,8 +14,8 @@ const {
 const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
 const { getWhosThatPokemonImage, getWhosThatPokemonFinalImage } = require('./quiz_functions.js');
 
-// Between 10 and 50
-const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
+// Between 20 and 50 coins per question
+const getAmount = () => Math.floor(Math.random() * 7) * 5 + 20;
 const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 64;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
