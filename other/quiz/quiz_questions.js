@@ -14,8 +14,8 @@ const {
 const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
 const { getWhosThatPokemonImage, getWhosThatPokemonFinalImage } = require('./quiz_functions.js');
 
-// Between 10 and 50
-const getAmount = () => Math.floor(Math.random() * 9) * 5 + 10;
+// Between 20 and 50 coins per question
+const getAmount = () => Math.floor(Math.random() * 7) * 5 + 20;
 const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 64;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance : chance / happyHourBonus));
@@ -126,7 +126,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
-              .setTitle(`It's ${pokemon.evolutions.map(p => p.evolvedPokemon).join(' or ')}!`)
+              .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
             m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
@@ -285,7 +285,7 @@ const pokemonID = () => new Promise(resolve => {
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
-              .setTitle(`It's #${pokemon.id.toString().padStart(3, '0')}!`)
+              .setTitle(`It's ${pokemon.id < 0 ? '-': ''}#${Math.floor(Math.abs(pokemon.id)).toString().padStart(3, '0')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
             m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));

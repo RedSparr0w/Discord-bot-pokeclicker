@@ -22,7 +22,7 @@ module.exports = [
   },
   // soon™
   {
-    regex: /\b(when)\b.+\b(released?|version|updated?)\b/i,
+    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|alola|galar)\b|\b(released?|version|updated?|alola|galar)\b.+\b(wh?ens?)\b)/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },
@@ -61,6 +61,19 @@ module.exports = [
       const embed = new MessageEmbed().setDescription(description);
 
       message.reply({embed});
+    },
+  },
+  {
+    // Figure out a better way to test for the bots own ID/Role
+    regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
+    execute: (message, client) => {
+      if (/(Hello|Hi|Hey)/i.test(message.content)) {
+        message.reply('Hello!');
+      } else if (/(thanks|ty|thank\s*you)/i.test(message.content)) {
+        message.reply('No problem!');
+      } else {
+        message.reply('Why have you summoned me?');
+      }
     },
   },
 ];

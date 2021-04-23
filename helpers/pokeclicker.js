@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.7.6',
+  'gameVersion': '0.8.0',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -4807,9 +4807,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 1,
+          'requiredValue': 10,
           'option': 2,
-          'badge': 65,
+          'achievementType': 15,
+          'region': 5,
+          'route': 1,
         },
       ],
       'orderNumber': 2,
@@ -5241,7 +5243,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 71,
+          'achievementType': 17,
+          'dungeonIndex': 87,
         },
       ],
       'orderNumber': 15,
@@ -5302,7 +5305,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 86,
+          'dungeonIndex': 89,
         },
       ],
       'orderNumber': 17,
@@ -5331,7 +5334,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 87,
+          'dungeonIndex': 90,
         },
       ],
       'orderNumber': 18,
@@ -5558,7 +5561,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 92,
+          'dungeonIndex': 95,
         },
       ],
       'orderNumber': 2,
@@ -5586,7 +5589,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 94,
+          'dungeonIndex': 97,
         },
       ],
       'orderNumber': 3,
@@ -5644,7 +5647,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 100,
+          'dungeonIndex': 103,
         },
       ],
       'orderNumber': 5,
@@ -5675,7 +5678,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 101,
+          'dungeonIndex': 104,
         },
       ],
       'orderNumber': 5.1,
@@ -5710,13 +5713,13 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 96,
+          'dungeonIndex': 99,
         },
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 101,
+          'dungeonIndex': 104,
         },
       ],
       'orderNumber': 5.2,
@@ -5746,7 +5749,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 101,
+          'dungeonIndex': 104,
         },
       ],
       'orderNumber': 6,
@@ -5809,7 +5812,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 102,
+          'dungeonIndex': 105,
         },
       ],
       'orderNumber': 8,
@@ -5835,7 +5838,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 104,
+          'dungeonIndex': 107,
         },
       ],
       'orderNumber': 9,
@@ -5866,7 +5869,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 105,
+          'dungeonIndex': 108,
         },
       ],
       'orderNumber': 9.1,
@@ -5894,7 +5897,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 107,
+          'dungeonIndex': 110,
         },
       ],
       'orderNumber': 10,
@@ -5958,7 +5961,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 107,
+          'dungeonIndex': 110,
         },
       ],
       'orderNumber': 11,
@@ -5992,7 +5995,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 108,
+          'dungeonIndex': 111,
         },
       ],
       'orderNumber': 12,
@@ -6078,7 +6081,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 109,
+          'dungeonIndex': 112,
         },
       ],
       'orderNumber': 15,
@@ -6134,7 +6137,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 110,
+          'dungeonIndex': 113,
         },
       ],
       'orderNumber': 17,
@@ -6161,7 +6164,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 109,
+          'dungeonIndex': 112,
         },
       ],
       'orderNumber': 23,
@@ -6386,7 +6389,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 119,
+          'dungeonIndex': 122,
         },
       ],
       'orderNumber': 1,
@@ -7888,7 +7891,7 @@ module.exports = {
           'Cutiefly',
           'Wooloo',
           'Milcery',
-          ' Galarian Meowth',
+          'Galarian Meowth',
           'Budew',
           'Ferroseed',
           'Joltik',
@@ -7911,7 +7914,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 121,
+          'dungeonIndex': 124,
         },
       ],
       'orderNumber': 11,
@@ -7984,7 +7987,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 122,
+          'dungeonIndex': 125,
         },
       ],
       'orderNumber': 13,
@@ -8179,7 +8182,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 126,
+          'dungeonIndex': 129,
         },
       ],
       'orderNumber': 14,
@@ -16922,8 +16925,8 @@ module.exports = {
         {
           'basePokemon': 'Pikachu',
           'type': [1],
-          'stone': 2,
           'evolvedPokemon': 'Raichu',
+          'stone': 2,
         },
       ],
       'base': {
@@ -16986,8 +16989,8 @@ module.exports = {
           {
             'basePokemon': 'Pichu',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Pikachu',
+            'stone': 11,
           },
         ],
         '5': ['Electric'],
@@ -17239,8 +17242,8 @@ module.exports = {
           {
             'basePokemon': 'Pikachu',
             'type': [1],
-            'stone': 2,
             'evolvedPokemon': 'Raichu',
+            'stone': 2,
           },
         ],
       },
@@ -17349,8 +17352,8 @@ module.exports = {
         {
           'basePokemon': 'Alolan Sandshrew',
           'type': [1],
-          'stone': 27,
           'evolvedPokemon': 'Alolan Sandslash',
+          'stone': 27,
         },
       ],
       'base': {
@@ -17460,8 +17463,8 @@ module.exports = {
           {
             'basePokemon': 'Alolan Sandshrew',
             'type': [1],
-            'stone': 27,
             'evolvedPokemon': 'Alolan Sandslash',
+            'stone': 27,
           },
         ],
       },
@@ -17564,8 +17567,8 @@ module.exports = {
         {
           'basePokemon': 'Nidorina',
           'type': [1],
-          'stone': 4,
           'evolvedPokemon': 'Nidoqueen',
+          'stone': 4,
         },
       ],
       'base': {
@@ -17670,8 +17673,8 @@ module.exports = {
           {
             'basePokemon': 'Nidorina',
             'type': [1],
-            'stone': 4,
             'evolvedPokemon': 'Nidoqueen',
+            'stone': 4,
           },
         ],
       },
@@ -17774,8 +17777,8 @@ module.exports = {
         {
           'basePokemon': 'Nidorino',
           'type': [1],
-          'stone': 4,
           'evolvedPokemon': 'Nidoking',
+          'stone': 4,
         },
       ],
       'base': {
@@ -17880,8 +17883,8 @@ module.exports = {
           {
             'basePokemon': 'Nidorino',
             'type': [1],
-            'stone': 4,
             'evolvedPokemon': 'Nidoking',
+            'stone': 4,
           },
         ],
       },
@@ -17900,8 +17903,8 @@ module.exports = {
         {
           'basePokemon': 'Clefairy',
           'type': [1],
-          'stone': 4,
           'evolvedPokemon': 'Clefable',
+          'stone': 4,
         },
       ],
       'base': {
@@ -17944,8 +17947,8 @@ module.exports = {
           {
             'basePokemon': 'Cleffa',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Clefairy',
+            'stone': 11,
           },
         ],
       },
@@ -18003,8 +18006,8 @@ module.exports = {
           {
             'basePokemon': 'Clefairy',
             'type': [1],
-            'stone': 4,
             'evolvedPokemon': 'Clefable',
+            'stone': 4,
           },
         ],
       },
@@ -18023,8 +18026,8 @@ module.exports = {
         {
           'basePokemon': 'Vulpix',
           'type': [1],
-          'stone': 0,
           'evolvedPokemon': 'Ninetales',
+          'stone': 0,
         },
       ],
       'base': {
@@ -18115,8 +18118,8 @@ module.exports = {
         {
           'basePokemon': 'Alolan Vulpix',
           'type': [1],
-          'stone': 27,
           'evolvedPokemon': 'Alolan Ninetales',
+          'stone': 27,
         },
       ],
       'base': {
@@ -18162,8 +18165,8 @@ module.exports = {
           {
             'basePokemon': 'Vulpix',
             'type': [1],
-            'stone': 0,
             'evolvedPokemon': 'Ninetales',
+            'stone': 0,
           },
         ],
       },
@@ -18196,8 +18199,8 @@ module.exports = {
           {
             'basePokemon': 'Alolan Vulpix',
             'type': [1],
-            'stone': 27,
             'evolvedPokemon': 'Alolan Ninetales',
+            'stone': 27,
           },
         ],
       },
@@ -18219,8 +18222,8 @@ module.exports = {
         {
           'basePokemon': 'Jigglypuff',
           'type': [1],
-          'stone': 4,
           'evolvedPokemon': 'Wigglytuff',
+          'stone': 4,
         },
       ],
       'base': {
@@ -18288,8 +18291,8 @@ module.exports = {
           {
             'basePokemon': 'Igglybuff',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Jigglypuff',
+            'stone': 11,
           },
         ],
       },
@@ -18354,8 +18357,8 @@ module.exports = {
           {
             'basePokemon': 'Jigglypuff',
             'type': [1],
-            'stone': 4,
             'evolvedPokemon': 'Wigglytuff',
+            'stone': 4,
           },
         ],
       },
@@ -18510,8 +18513,8 @@ module.exports = {
         {
           'basePokemon': 'Golbat',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Crobat',
+          'stone': 11,
         },
       ],
       'base': {
@@ -18560,7 +18563,6 @@ module.exports = {
           'Celestial Tower',
           'Cave of Being',
           'Dreamyard',
-          'Team Flare Secret HQ',
           'Thrifty Megamart',
           'Po Town',
           'Vast Poni Canyon',
@@ -18734,14 +18736,14 @@ module.exports = {
         {
           'basePokemon': 'Gloom',
           'type': [1],
-          'stone': 3,
           'evolvedPokemon': 'Vileplume',
+          'stone': 3,
         },
         {
           'basePokemon': 'Gloom',
           'type': [1],
-          'stone': 5,
           'evolvedPokemon': 'Bellossom',
+          'stone': 5,
         },
       ],
       'base': {
@@ -18870,8 +18872,8 @@ module.exports = {
           {
             'basePokemon': 'Gloom',
             'type': [1],
-            'stone': 3,
             'evolvedPokemon': 'Vileplume',
+            'stone': 3,
           },
         ],
       },
@@ -19331,8 +19333,8 @@ module.exports = {
         {
           'basePokemon': 'Alolan Meowth',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Alolan Persian',
+          'stone': 11,
         },
       ],
       'base': {
@@ -19362,7 +19364,7 @@ module.exports = {
     },
     {
       'id': 52.2,
-      'name': ' Galarian Meowth',
+      'name': 'Galarian Meowth',
       'nativeRegion': 7,
       'catchRate': 255,
       'type': [0],
@@ -19452,8 +19454,8 @@ module.exports = {
           {
             'basePokemon': 'Alolan Meowth',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Alolan Persian',
+            'stone': 11,
           },
         ],
       },
@@ -19819,8 +19821,8 @@ module.exports = {
         {
           'basePokemon': 'Growlithe',
           'type': [1],
-          'stone': 0,
           'evolvedPokemon': 'Arcanine',
+          'stone': 0,
         },
       ],
       'base': {
@@ -19914,8 +19916,8 @@ module.exports = {
           {
             'basePokemon': 'Growlithe',
             'type': [1],
-            'stone': 0,
             'evolvedPokemon': 'Arcanine',
+            'stone': 0,
           },
         ],
       },
@@ -20083,6 +20085,7 @@ module.exports = {
           'Ruins of Alph',
           'Giant Chasm',
           'Victory Road Unova',
+          'Victory Road Kalos',
           'Brooklet Hill',
         ],
       },
@@ -20101,14 +20104,14 @@ module.exports = {
         {
           'basePokemon': 'Poliwhirl',
           'type': [1],
-          'stone': 1,
           'evolvedPokemon': 'Poliwrath',
+          'stone': 1,
         },
         {
           'basePokemon': 'Poliwhirl',
           'type': [1],
-          'stone': 9,
           'evolvedPokemon': 'Politoed',
+          'stone': 9,
         },
       ],
       'base': {
@@ -20208,6 +20211,7 @@ module.exports = {
           'Ruins of Alph',
           'Frost Cavern',
           'Pokémon Village',
+          'Victory Road Kalos',
           'Malie Garden',
           'Tower of Water',
         ],
@@ -20260,8 +20264,8 @@ module.exports = {
           {
             'basePokemon': 'Poliwhirl',
             'type': [1],
-            'stone': 1,
             'evolvedPokemon': 'Poliwrath',
+            'stone': 1,
           },
         ],
       },
@@ -20368,8 +20372,8 @@ module.exports = {
         {
           'basePokemon': 'Kadabra',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Alakazam',
+          'stone': 6,
         },
       ],
       'base': {
@@ -20473,8 +20477,8 @@ module.exports = {
           {
             'basePokemon': 'Kadabra',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Alakazam',
+            'stone': 6,
           },
         ],
       },
@@ -20591,8 +20595,8 @@ module.exports = {
         {
           'basePokemon': 'Machoke',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Machamp',
+          'stone': 6,
         },
       ],
       'base': {
@@ -20733,8 +20737,8 @@ module.exports = {
           {
             'basePokemon': 'Machoke',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Machamp',
+            'stone': 6,
           },
         ],
       },
@@ -20841,8 +20845,8 @@ module.exports = {
         {
           'basePokemon': 'Weepinbell',
           'type': [1],
-          'stone': 3,
           'evolvedPokemon': 'Victreebel',
+          'stone': 3,
         },
       ],
       'base': {
@@ -20938,8 +20942,8 @@ module.exports = {
           {
             'basePokemon': 'Weepinbell',
             'type': [1],
-            'stone': 3,
             'evolvedPokemon': 'Victreebel',
+            'stone': 3,
           },
         ],
       },
@@ -21457,6 +21461,8 @@ module.exports = {
           'Solaceon Ruins',
           'Iron Island',
           'Mt. Coronet North',
+          'Terminus Cave',
+          'Victory Road Kalos',
         ],
       },
       'catchRatePercent': 63,
@@ -21518,8 +21524,8 @@ module.exports = {
         {
           'basePokemon': 'Graveler',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Golem',
+          'stone': 6,
         },
       ],
       'base': {
@@ -21617,8 +21623,8 @@ module.exports = {
         {
           'basePokemon': 'Alolan Graveler',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Alolan Golem',
+          'stone': 6,
         },
       ],
       'base': {
@@ -21683,8 +21689,8 @@ module.exports = {
           {
             'basePokemon': 'Graveler',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Golem',
+            'stone': 6,
           },
         ],
       },
@@ -21717,8 +21723,8 @@ module.exports = {
           {
             'basePokemon': 'Alolan Graveler',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Alolan Golem',
+            'stone': 6,
           },
         ],
       },
@@ -21937,8 +21943,8 @@ module.exports = {
         {
           'basePokemon': 'Slowpoke',
           'type': [1],
-          'stone': 9,
           'evolvedPokemon': 'Slowking',
+          'stone': 9,
         },
       ],
       'base': {
@@ -22748,8 +22754,8 @@ module.exports = {
         {
           'basePokemon': 'Shellder',
           'type': [1],
-          'stone': 1,
           'evolvedPokemon': 'Cloyster',
+          'stone': 1,
         },
       ],
       'base': {
@@ -22892,8 +22898,8 @@ module.exports = {
           {
             'basePokemon': 'Shellder',
             'type': [1],
-            'stone': 1,
             'evolvedPokemon': 'Cloyster',
+            'stone': 1,
           },
         ],
       },
@@ -22994,8 +23000,8 @@ module.exports = {
         {
           'basePokemon': 'Haunter',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Gengar',
+          'stone': 6,
         },
       ],
       'base': {
@@ -23096,8 +23102,8 @@ module.exports = {
           {
             'basePokemon': 'Haunter',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Gengar',
+            'stone': 6,
           },
         ],
       },
@@ -23119,8 +23125,8 @@ module.exports = {
         {
           'basePokemon': 'Onix',
           'type': [1],
-          'stone': 8,
           'evolvedPokemon': 'Steelix',
+          'stone': 8,
         },
       ],
       'base': {
@@ -23178,7 +23184,7 @@ module.exports = {
           'Cave of Being',
           'Victory Road Unova',
           'Twist Mountain',
-          'Glittering Cave',
+          "Sea Spirit's Den",
         ],
         '3': [
           {
@@ -23630,8 +23636,8 @@ module.exports = {
         {
           'basePokemon': 'Exeggcute',
           'type': [1],
-          'stone': 3,
           'evolvedPokemon': 'Exeggutor',
+          'stone': 3,
         },
       ],
       'base': {
@@ -23774,8 +23780,8 @@ module.exports = {
           {
             'basePokemon': 'Exeggcute',
             'type': [1],
-            'stone': 3,
             'evolvedPokemon': 'Exeggutor',
+            'stone': 3,
           },
         ],
       },
@@ -24105,11 +24111,7 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Victory Road Kalos',
-          },
-        ],
+        '2': ['Victory Road Kalos'],
         '7': ['Celadon City'],
       },
       'catchRatePercent': 17,
@@ -24322,8 +24324,8 @@ module.exports = {
         {
           'basePokemon': 'Rhydon',
           'type': [1],
-          'stone': 20,
           'evolvedPokemon': 'Rhyperior',
+          'stone': 20,
         },
       ],
       'base': {
@@ -24403,8 +24405,8 @@ module.exports = {
         {
           'basePokemon': 'Chansey',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Blissey',
+          'stone': 11,
         },
       ],
       'base': {
@@ -24775,8 +24777,8 @@ module.exports = {
           {
             'basePokemon': 'Happiny',
             'type': [1],
-            'stone': -1,
             'evolvedPokemon': 'Chansey',
+            'stone': -1,
           },
         ],
         '9': '2.41%',
@@ -24977,8 +24979,8 @@ module.exports = {
         {
           'basePokemon': 'Seadra',
           'type': [1],
-          'stone': 7,
           'evolvedPokemon': 'Kingdra',
+          'stone': 7,
         },
       ],
       'base': {
@@ -25377,8 +25379,8 @@ module.exports = {
         {
           'basePokemon': 'Staryu',
           'type': [1],
-          'stone': 1,
           'evolvedPokemon': 'Starmie',
+          'stone': 1,
         },
       ],
       'base': {
@@ -25506,8 +25508,8 @@ module.exports = {
           {
             'basePokemon': 'Staryu',
             'type': [1],
-            'stone': 1,
             'evolvedPokemon': 'Starmie',
+            'stone': 1,
           },
         ],
       },
@@ -25620,8 +25622,8 @@ module.exports = {
         {
           'basePokemon': 'Scyther',
           'type': [1],
-          'stone': 8,
           'evolvedPokemon': 'Scizor',
+          'stone': 8,
         },
       ],
       'base': {
@@ -25698,14 +25700,12 @@ module.exports = {
         },
         '2': [
           'Ice Path',
+          'Frost Cavern',
           'Crown Shrine',
         ],
         '3': [
           {
             'dungeon': 'Snowpoint Temple',
-          },
-          {
-            'dungeon': 'Frost Cavern',
           },
         ],
         '4': [
@@ -25733,8 +25733,8 @@ module.exports = {
         {
           'basePokemon': 'Electabuzz',
           'type': [1],
-          'stone': 18,
           'evolvedPokemon': 'Electivire',
+          'stone': 18,
         },
       ],
       'base': {
@@ -25816,8 +25816,8 @@ module.exports = {
         {
           'basePokemon': 'Magmar',
           'type': [1],
-          'stone': 19,
           'evolvedPokemon': 'Magmortar',
+          'stone': 19,
         },
       ],
       'base': {
@@ -26684,7 +26684,6 @@ module.exports = {
         },
         '2': [
           'Parfum Palace',
-          'Team Flare Secret HQ',
           'Malie Garden',
         ],
         '3': [
@@ -26813,6 +26812,7 @@ module.exports = {
             },
           ],
         },
+        '2': ["Sea Spirit's Den"],
         '5': ['Water'],
       },
       'catchRatePercent': 17,
@@ -26886,20 +26886,20 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'type': [1],
-          'stone': 1,
           'evolvedPokemon': 'Vaporeon',
+          'stone': 1,
         },
         {
           'basePokemon': 'Eevee',
           'type': [1],
-          'stone': 2,
           'evolvedPokemon': 'Jolteon',
+          'stone': 2,
         },
         {
           'basePokemon': 'Eevee',
           'type': [1],
-          'stone': 0,
           'evolvedPokemon': 'Flareon',
+          'stone': 0,
         },
         {
           'basePokemon': 'Eevee',
@@ -26907,8 +26907,8 @@ module.exports = {
             1,
             2,
           ],
-          'stone': 11,
           'evolvedPokemon': 'Espeon',
+          'stone': 11,
           'startHour': 6,
           'endHour': 18,
         },
@@ -26918,8 +26918,8 @@ module.exports = {
             1,
             2,
           ],
-          'stone': 11,
           'evolvedPokemon': 'Umbreon',
+          'stone': 11,
           'startHour': 18,
           'endHour': 6,
         },
@@ -27031,8 +27031,8 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'type': [1],
-            'stone': 1,
             'evolvedPokemon': 'Vaporeon',
+            'stone': 1,
           },
         ],
       },
@@ -27075,8 +27075,8 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'type': [1],
-            'stone': 2,
             'evolvedPokemon': 'Jolteon',
+            'stone': 2,
           },
         ],
       },
@@ -27114,8 +27114,8 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'type': [1],
-            'stone': 0,
             'evolvedPokemon': 'Flareon',
+            'stone': 0,
           },
         ],
       },
@@ -27134,8 +27134,8 @@ module.exports = {
         {
           'basePokemon': 'Porygon',
           'type': [1],
-          'stone': 10,
           'evolvedPokemon': 'Porygon2',
+          'stone': 10,
         },
       ],
       'base': {
@@ -27469,8 +27469,8 @@ module.exports = {
           {
             'basePokemon': 'Munchlax',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Snorlax',
+            'stone': 11,
           },
         ],
       },
@@ -27499,6 +27499,12 @@ module.exports = {
       'attack': 165,
       'nativeRegion': 0,
       'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'undefined needs to be completed.',
+          },
+        ],
         '3': [
           {
             'dungeon': 'Seafoam Islands',
@@ -27562,6 +27568,12 @@ module.exports = {
       'attack': 173,
       'nativeRegion': 0,
       'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'undefined needs to be completed.',
+          },
+        ],
         '3': [
           {
             'dungeon': 'Power Plant',
@@ -27625,6 +27637,12 @@ module.exports = {
       'attack': 180,
       'nativeRegion': 0,
       'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'undefined needs to be completed.',
+          },
+        ],
         '3': [
           {
             'dungeon': 'Victory Road',
@@ -28801,8 +28819,6 @@ module.exports = {
           ],
         },
         '2': [
-          'Terminus Cave',
-          'Victory Road Kalos',
           'Malie Garden',
           "Ula'ula Meadow",
         ],
@@ -28849,8 +28865,8 @@ module.exports = {
           {
             'basePokemon': 'Golbat',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Crobat',
+            'stone': 11,
           },
         ],
       },
@@ -29067,6 +29083,7 @@ module.exports = {
             },
           ],
         },
+        '2': ["Sea Spirit's Den"],
         '4': [
           {
             'basePokemon': 'Chinchou',
@@ -29091,8 +29108,8 @@ module.exports = {
         {
           'basePokemon': 'Pichu',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Pikachu',
+          'stone': 11,
         },
       ],
       'baby': true,
@@ -29138,8 +29155,8 @@ module.exports = {
         {
           'basePokemon': 'Cleffa',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Clefairy',
+          'stone': 11,
         },
       ],
       'baby': true,
@@ -29185,8 +29202,8 @@ module.exports = {
         {
           'basePokemon': 'Igglybuff',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Jigglypuff',
+          'stone': 11,
         },
       ],
       'baby': true,
@@ -29228,8 +29245,8 @@ module.exports = {
         {
           'basePokemon': 'Togepi',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Togetic',
+          'stone': 11,
         },
       ],
       'base': {
@@ -29264,8 +29281,8 @@ module.exports = {
         {
           'basePokemon': 'Togetic',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Togekiss',
+          'stone': 16,
         },
       ],
       'base': {
@@ -29283,8 +29300,8 @@ module.exports = {
           {
             'basePokemon': 'Togepi',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Togetic',
+            'stone': 11,
           },
         ],
       },
@@ -29623,8 +29640,8 @@ module.exports = {
           {
             'basePokemon': 'Gloom',
             'type': [1],
-            'stone': 5,
             'evolvedPokemon': 'Bellossom',
+            'stone': 5,
           },
         ],
       },
@@ -29749,8 +29766,8 @@ module.exports = {
           {
             'basePokemon': 'Azurill',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Marill',
+            'stone': 11,
           },
         ],
         '5': ['Water'],
@@ -29947,8 +29964,8 @@ module.exports = {
           {
             'basePokemon': 'Poliwhirl',
             'type': [1],
-            'stone': 9,
             'evolvedPokemon': 'Politoed',
+            'stone': 9,
           },
         ],
       },
@@ -30148,8 +30165,8 @@ module.exports = {
         {
           'basePokemon': 'Sunkern',
           'type': [1],
-          'stone': 5,
           'evolvedPokemon': 'Sunflora',
+          'stone': 5,
         },
       ],
       'base': {
@@ -30203,8 +30220,8 @@ module.exports = {
           {
             'basePokemon': 'Sunkern',
             'type': [1],
-            'stone': 5,
             'evolvedPokemon': 'Sunflora',
+            'stone': 5,
           },
         ],
       },
@@ -30523,8 +30540,8 @@ module.exports = {
               1,
               2,
             ],
-            'stone': 11,
             'evolvedPokemon': 'Espeon',
+            'stone': 11,
             'startHour': 6,
             'endHour': 18,
           },
@@ -30568,8 +30585,8 @@ module.exports = {
               1,
               2,
             ],
-            'stone': 11,
             'evolvedPokemon': 'Umbreon',
+            'stone': 11,
             'startHour': 18,
             'endHour': 6,
           },
@@ -30593,8 +30610,8 @@ module.exports = {
         {
           'basePokemon': 'Murkrow',
           'type': [1],
-          'stone': 15,
           'evolvedPokemon': 'Honchkrow',
+          'stone': 15,
         },
       ],
       'base': {
@@ -30649,8 +30666,8 @@ module.exports = {
           {
             'basePokemon': 'Slowpoke',
             'type': [1],
-            'stone': 9,
             'evolvedPokemon': 'Slowking',
+            'stone': 9,
           },
         ],
       },
@@ -30694,8 +30711,8 @@ module.exports = {
         {
           'basePokemon': 'Misdreavus',
           'type': [1],
-          'stone': 15,
           'evolvedPokemon': 'Mismagius',
+          'stone': 15,
         },
       ],
       'base': {
@@ -31453,11 +31470,9 @@ module.exports = {
             },
           ],
         },
-        '2': ['Dark Cave'],
-        '3': [
-          {
-            'dungeon': 'Reflection Cave',
-          },
+        '2': [
+          'Dark Cave',
+          'Reflection Cave',
         ],
         '4': [
           {
@@ -31694,8 +31709,8 @@ module.exports = {
         {
           'basePokemon': 'Gligar',
           'type': [1],
-          'stone': 23,
           'evolvedPokemon': 'Gliscor',
+          'stone': 23,
         },
       ],
       'base': {
@@ -31782,8 +31797,8 @@ module.exports = {
           {
             'basePokemon': 'Onix',
             'type': [1],
-            'stone': 8,
             'evolvedPokemon': 'Steelix',
+            'stone': 8,
           },
         ],
       },
@@ -31951,8 +31966,8 @@ module.exports = {
           {
             'basePokemon': 'Scyther',
             'type': [1],
-            'stone': 8,
             'evolvedPokemon': 'Scizor',
+            'stone': 8,
           },
         ],
       },
@@ -31994,7 +32009,6 @@ module.exports = {
           ],
         },
         '2': [
-          'Terminus Cave',
           'Galar Mine No. 2',
           'Watchtower Ruins',
         ],
@@ -32109,8 +32123,8 @@ module.exports = {
         {
           'basePokemon': 'Sneasel',
           'type': [1],
-          'stone': 22,
           'evolvedPokemon': 'Weavile',
+          'stone': 22,
         },
       ],
       'base': {
@@ -32925,8 +32939,8 @@ module.exports = {
           {
             'basePokemon': 'Mantyke',
             'type': [1],
-            'stone': -1,
             'evolvedPokemon': 'Mantine',
+            'stone': -1,
           },
         ],
       },
@@ -32998,9 +33012,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Stark Mountain',
-          },
-          {
-            'dungeon': 'Victory Road Kalos',
           },
         ],
         '11': ['Babiri'],
@@ -33085,7 +33096,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Houndour',
@@ -33136,8 +33146,8 @@ module.exports = {
           {
             'basePokemon': 'Seadra',
             'type': [1],
-            'stone': 7,
             'evolvedPokemon': 'Kingdra',
+            'stone': 7,
           },
         ],
       },
@@ -33234,8 +33244,8 @@ module.exports = {
         {
           'basePokemon': 'Porygon2',
           'type': [1],
-          'stone': 17,
           'evolvedPokemon': 'Porygon-Z',
+          'stone': 17,
         },
       ],
       'base': {
@@ -33258,8 +33268,8 @@ module.exports = {
           {
             'basePokemon': 'Porygon',
             'type': [1],
-            'stone': 10,
             'evolvedPokemon': 'Porygon2',
+            'stone': 10,
           },
         ],
       },
@@ -33494,6 +33504,7 @@ module.exports = {
         },
         '2': [
           'Snowpoint Temple',
+          'Frost Cavern',
           'Seaward Cave',
         ],
         '6': ['Jynx'],
@@ -33796,8 +33807,8 @@ module.exports = {
           {
             'basePokemon': 'Chansey',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Blissey',
+            'stone': 11,
           },
         ],
       },
@@ -33928,6 +33939,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Terminus Cave'],
         '3': [
           {
             'dungeon': 'Mt Silver',
@@ -33983,11 +33995,7 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Terminus Cave',
-          },
-        ],
+        '2': ['Terminus Cave'],
         '4': [
           {
             'basePokemon': 'Larvitar',
@@ -34071,6 +34079,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Whirl Islands',
+          },
+          {
+            'dungeon': "Sea Spirit's Den",
           },
         ],
       },
@@ -34572,7 +34583,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Poochyena',
@@ -35156,8 +35166,8 @@ module.exports = {
         {
           'basePokemon': 'Lombre',
           'type': [1],
-          'stone': 1,
           'evolvedPokemon': 'Ludicolo',
+          'stone': 1,
         },
       ],
       'base': {
@@ -35213,7 +35223,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Pokémon Village'],
+        '2': [
+          'Pokémon Village',
+          'Victory Road Kalos',
+        ],
         '4': [
           {
             'basePokemon': 'Lotad',
@@ -35272,8 +35285,8 @@ module.exports = {
           {
             'basePokemon': 'Lombre',
             'type': [1],
-            'stone': 1,
             'evolvedPokemon': 'Ludicolo',
+            'stone': 1,
           },
         ],
       },
@@ -35367,8 +35380,8 @@ module.exports = {
         {
           'basePokemon': 'Nuzleaf',
           'type': [1],
-          'stone': 3,
           'evolvedPokemon': 'Shiftry',
+          'stone': 3,
         },
       ],
       'base': {
@@ -35475,8 +35488,8 @@ module.exports = {
           {
             'basePokemon': 'Nuzleaf',
             'type': [1],
-            'stone': 3,
             'evolvedPokemon': 'Shiftry',
+            'stone': 3,
           },
         ],
       },
@@ -36295,8 +36308,8 @@ module.exports = {
         {
           'basePokemon': 'Kirlia',
           'type': [1],
-          'stone': 14,
           'evolvedPokemon': 'Gallade',
+          'stone': 14,
         },
       ],
       'base': {
@@ -37081,8 +37094,8 @@ module.exports = {
         {
           'basePokemon': 'Azurill',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Marill',
+          'stone': 11,
         },
       ],
       'baby': true,
@@ -37200,8 +37213,8 @@ module.exports = {
         {
           'basePokemon': 'Skitty',
           'type': [1],
-          'stone': 4,
           'evolvedPokemon': 'Delcatty',
+          'stone': 4,
         },
       ],
       'base': {
@@ -37255,8 +37268,8 @@ module.exports = {
           {
             'basePokemon': 'Skitty',
             'type': [1],
-            'stone': 4,
             'evolvedPokemon': 'Delcatty',
+            'stone': 4,
           },
         ],
       },
@@ -37410,6 +37423,7 @@ module.exports = {
           'Granite Cave',
           'Victory Road Hoenn',
           'Mistralton Cave',
+          'Terminus Cave',
         ],
       },
       'catchRatePercent': 49,
@@ -37742,7 +37756,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Electrike',
@@ -37928,8 +37941,8 @@ module.exports = {
         {
           'basePokemon': 'Roselia',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Roserade',
+          'stone': 16,
         },
       ],
       'base': {
@@ -38038,8 +38051,8 @@ module.exports = {
               1,
               2,
             ],
-            'stone': 11,
             'evolvedPokemon': 'Roselia',
+            'stone': 11,
             'startHour': 6,
             'endHour': 18,
           },
@@ -38112,7 +38125,6 @@ module.exports = {
       'attack': 121,
       'nativeRegion': 2,
       'locations': {
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Gulpin',
@@ -40165,8 +40177,8 @@ module.exports = {
         {
           'basePokemon': 'Feebas',
           'type': [1],
-          'stone': 24,
           'evolvedPokemon': 'Milotic',
+          'stone': 24,
         },
       ],
       'base': {
@@ -40254,8 +40266,8 @@ module.exports = {
           {
             'basePokemon': 'Feebas',
             'type': [1],
-            'stone': 24,
             'evolvedPokemon': 'Milotic',
+            'stone': 24,
           },
         ],
       },
@@ -40601,8 +40613,8 @@ module.exports = {
         {
           'basePokemon': 'Dusclops',
           'type': [1],
-          'stone': 21,
           'evolvedPokemon': 'Dusknoir',
+          'stone': 21,
         },
       ],
       'base': {
@@ -40727,8 +40739,8 @@ module.exports = {
               1,
               2,
             ],
-            'stone': 11,
             'evolvedPokemon': 'Chimecho',
+            'stone': 11,
             'startHour': 18,
             'endHour': 6,
           },
@@ -40886,8 +40898,8 @@ module.exports = {
         {
           'basePokemon': 'Snorunt',
           'type': [1],
-          'stone': 14,
           'evolvedPokemon': 'Froslass',
+          'stone': 14,
         },
       ],
       'base': {
@@ -41301,14 +41313,14 @@ module.exports = {
         {
           'basePokemon': 'Clamperl',
           'type': [1],
-          'stone': 12,
           'evolvedPokemon': 'Huntail',
+          'stone': 12,
         },
         {
           'basePokemon': 'Clamperl',
           'type': [1],
-          'stone': 13,
           'evolvedPokemon': 'Gorebyss',
+          'stone': 13,
         },
       ],
       'base': {
@@ -41385,8 +41397,8 @@ module.exports = {
           {
             'basePokemon': 'Clamperl',
             'type': [1],
-            'stone': 12,
             'evolvedPokemon': 'Huntail',
+            'stone': 12,
           },
         ],
       },
@@ -41421,8 +41433,8 @@ module.exports = {
           {
             'basePokemon': 'Clamperl',
             'type': [1],
-            'stone': 13,
             'evolvedPokemon': 'Gorebyss',
+            'stone': 13,
           },
         ],
       },
@@ -43158,8 +43170,8 @@ module.exports = {
             1,
             2,
           ],
-          'stone': 11,
           'evolvedPokemon': 'Roselia',
+          'stone': 11,
           'startHour': 6,
           'endHour': 18,
         },
@@ -43279,8 +43291,8 @@ module.exports = {
           {
             'basePokemon': 'Roselia',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Roserade',
+            'stone': 16,
           },
         ],
       },
@@ -44042,6 +44054,7 @@ module.exports = {
         '2': [
           'Victory Road Sinnoh',
           'Frost Cavern',
+          'Victory Road Kalos',
         ],
         '4': [
           {
@@ -44659,8 +44672,8 @@ module.exports = {
         {
           'basePokemon': 'Buneary',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Lopunny',
+          'stone': 11,
         },
       ],
       'base': {
@@ -44764,8 +44777,8 @@ module.exports = {
           {
             'basePokemon': 'Buneary',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Lopunny',
+            'stone': 11,
           },
         ],
       },
@@ -44795,8 +44808,8 @@ module.exports = {
           {
             'basePokemon': 'Misdreavus',
             'type': [1],
-            'stone': 15,
             'evolvedPokemon': 'Mismagius',
+            'stone': 15,
           },
         ],
       },
@@ -44825,13 +44838,12 @@ module.exports = {
       'attack': 152,
       'nativeRegion': 3,
       'locations': {
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Murkrow',
             'type': [1],
-            'stone': 15,
             'evolvedPokemon': 'Honchkrow',
+            'stone': 15,
           },
         ],
       },
@@ -44936,8 +44948,8 @@ module.exports = {
             1,
             2,
           ],
-          'stone': 11,
           'evolvedPokemon': 'Chimecho',
+          'stone': 11,
           'startHour': 18,
           'endHour': 6,
         },
@@ -45438,7 +45450,10 @@ module.exports = {
             },
           ],
         },
-        '2': ["Trainers' School"],
+        '2': [
+          'Reflection Cave',
+          "Trainers' School",
+        ],
         '6': ['Mr. Mime'],
       },
       'catchRatePercent': 41,
@@ -45456,8 +45471,8 @@ module.exports = {
         {
           'basePokemon': 'Happiny',
           'type': [1],
-          'stone': -1,
           'evolvedPokemon': 'Chansey',
+          'stone': -1,
         },
       ],
       'baby': true,
@@ -45763,8 +45778,8 @@ module.exports = {
         {
           'basePokemon': 'Munchlax',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Snorlax',
+          'stone': 11,
         },
       ],
       'baby': true,
@@ -45807,8 +45822,8 @@ module.exports = {
             1,
             2,
           ],
-          'stone': 11,
           'evolvedPokemon': 'Lucario',
+          'stone': 11,
           'startHour': 6,
           'endHour': 18,
         },
@@ -45894,8 +45909,8 @@ module.exports = {
               1,
               2,
             ],
-            'stone': 11,
             'evolvedPokemon': 'Lucario',
+            'stone': 11,
             'startHour': 6,
             'endHour': 18,
           },
@@ -46258,10 +46273,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Pinwheel Forest',
-          'Team Flare Secret HQ',
-        ],
+        '2': ['Pinwheel Forest'],
         '4': [
           {
             'basePokemon': 'Croagunk',
@@ -46461,8 +46473,8 @@ module.exports = {
         {
           'basePokemon': 'Mantyke',
           'type': [1],
-          'stone': -1,
           'evolvedPokemon': 'Mantine',
+          'stone': -1,
         },
       ],
       'baby': true,
@@ -46732,6 +46744,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Frost Cavern',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Snover',
@@ -46786,8 +46803,8 @@ module.exports = {
           {
             'basePokemon': 'Sneasel',
             'type': [1],
-            'stone': 22,
             'evolvedPokemon': 'Weavile',
+            'stone': 22,
           },
         ],
       },
@@ -46972,8 +46989,8 @@ module.exports = {
           {
             'basePokemon': 'Rhydon',
             'type': [1],
-            'stone': 20,
             'evolvedPokemon': 'Rhyperior',
+            'stone': 20,
           },
         ],
       },
@@ -47079,8 +47096,8 @@ module.exports = {
           {
             'basePokemon': 'Electabuzz',
             'type': [1],
-            'stone': 18,
             'evolvedPokemon': 'Electivire',
+            'stone': 18,
           },
         ],
       },
@@ -47134,8 +47151,8 @@ module.exports = {
           {
             'basePokemon': 'Magmar',
             'type': [1],
-            'stone': 19,
             'evolvedPokemon': 'Magmortar',
+            'stone': 19,
           },
         ],
       },
@@ -47168,8 +47185,8 @@ module.exports = {
           {
             'basePokemon': 'Togetic',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Togekiss',
+            'stone': 16,
           },
         ],
       },
@@ -47327,8 +47344,8 @@ module.exports = {
           {
             'basePokemon': 'Gligar',
             'type': [1],
-            'stone': 23,
             'evolvedPokemon': 'Gliscor',
+            'stone': 23,
           },
         ],
       },
@@ -47426,8 +47443,8 @@ module.exports = {
           {
             'basePokemon': 'Porygon2',
             'type': [1],
-            'stone': 17,
             'evolvedPokemon': 'Porygon-Z',
+            'stone': 17,
           },
         ],
       },
@@ -47460,8 +47477,8 @@ module.exports = {
           {
             'basePokemon': 'Kirlia',
             'type': [1],
-            'stone': 14,
             'evolvedPokemon': 'Gallade',
+            'stone': 14,
           },
         ],
       },
@@ -47543,8 +47560,8 @@ module.exports = {
           {
             'basePokemon': 'Dusclops',
             'type': [1],
-            'stone': 21,
             'evolvedPokemon': 'Dusknoir',
+            'stone': 21,
           },
         ],
       },
@@ -47617,8 +47634,8 @@ module.exports = {
           {
             'basePokemon': 'Snorunt',
             'type': [1],
-            'stone': 14,
             'evolvedPokemon': 'Froslass',
+            'stone': 14,
           },
         ],
       },
@@ -49502,10 +49519,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Dreamyard',
-          'Team Flare Secret HQ',
-        ],
+        '2': ['Dreamyard'],
         '4': [
           {
             'basePokemon': 'Purrloin',
@@ -49530,8 +49544,8 @@ module.exports = {
         {
           'basePokemon': 'Pansage',
           'type': [1],
-          'stone': 3,
           'evolvedPokemon': 'Simisage',
+          'stone': 3,
         },
       ],
       'base': {
@@ -49545,6 +49559,7 @@ module.exports = {
       'attack': 51,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Santalune Forest'],
         '5': ['Grass'],
       },
       'catchRatePercent': 51,
@@ -49573,8 +49588,8 @@ module.exports = {
           {
             'basePokemon': 'Pansage',
             'type': [1],
-            'stone': 3,
             'evolvedPokemon': 'Simisage',
+            'stone': 3,
           },
         ],
       },
@@ -49593,8 +49608,8 @@ module.exports = {
         {
           'basePokemon': 'Pansear',
           'type': [1],
-          'stone': 0,
           'evolvedPokemon': 'Simisear',
+          'stone': 0,
         },
       ],
       'base': {
@@ -49608,6 +49623,7 @@ module.exports = {
       'attack': 51,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Santalune Forest'],
         '5': ['Fire'],
       },
       'catchRatePercent': 51,
@@ -49636,8 +49652,8 @@ module.exports = {
           {
             'basePokemon': 'Pansear',
             'type': [1],
-            'stone': 0,
             'evolvedPokemon': 'Simisear',
+            'stone': 0,
           },
         ],
       },
@@ -49656,8 +49672,8 @@ module.exports = {
         {
           'basePokemon': 'Panpour',
           'type': [1],
-          'stone': 1,
           'evolvedPokemon': 'Simipour',
+          'stone': 1,
         },
       ],
       'base': {
@@ -49671,6 +49687,7 @@ module.exports = {
       'attack': 51,
       'nativeRegion': 4,
       'locations': {
+        '2': ['Santalune Forest'],
         '5': ['Water'],
       },
       'catchRatePercent': 51,
@@ -49699,8 +49716,8 @@ module.exports = {
           {
             'basePokemon': 'Panpour',
             'type': [1],
-            'stone': 1,
             'evolvedPokemon': 'Simipour',
+            'stone': 1,
           },
         ],
       },
@@ -49719,8 +49736,8 @@ module.exports = {
         {
           'basePokemon': 'Munna',
           'type': [1],
-          'stone': 4,
           'evolvedPokemon': 'Musharna',
+          'stone': 4,
         },
       ],
       'base': {
@@ -49794,8 +49811,8 @@ module.exports = {
           {
             'basePokemon': 'Munna',
             'type': [1],
-            'stone': 4,
             'evolvedPokemon': 'Musharna',
+            'stone': 4,
           },
         ],
       },
@@ -50098,8 +50115,8 @@ module.exports = {
         {
           'basePokemon': 'Boldore',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Gigalith',
+          'stone': 6,
         },
       ],
       'base': {
@@ -50184,8 +50201,8 @@ module.exports = {
           {
             'basePokemon': 'Boldore',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Gigalith',
+            'stone': 6,
           },
         ],
       },
@@ -50207,8 +50224,8 @@ module.exports = {
         {
           'basePokemon': 'Woobat',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Swoobat',
+          'stone': 11,
         },
       ],
       'base': {
@@ -50260,6 +50277,7 @@ module.exports = {
           'Seaside Cave',
           'Cave of Being',
           'Twist Mountain',
+          "Sea Spirit's Den",
           'Galar Mine',
           'Watchtower Ruins',
         ],
@@ -50316,8 +50334,8 @@ module.exports = {
           {
             'basePokemon': 'Woobat',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Swoobat',
+            'stone': 11,
           },
         ],
       },
@@ -50542,8 +50560,8 @@ module.exports = {
         {
           'basePokemon': 'Gurdurr',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Conkeldurr',
+          'stone': 6,
         },
       ],
       'base': {
@@ -50630,8 +50648,8 @@ module.exports = {
           {
             'basePokemon': 'Gurdurr',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Conkeldurr',
+            'stone': 6,
           },
         ],
       },
@@ -51038,8 +51056,8 @@ module.exports = {
         {
           'basePokemon': 'Swadloon',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Leavanny',
+          'stone': 11,
         },
       ],
       'base': {
@@ -51099,8 +51117,8 @@ module.exports = {
           {
             'basePokemon': 'Swadloon',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Leavanny',
+            'stone': 11,
           },
         ],
       },
@@ -51262,8 +51280,8 @@ module.exports = {
         {
           'basePokemon': 'Cottonee',
           'type': [1],
-          'stone': 5,
           'evolvedPokemon': 'Whimsicott',
+          'stone': 5,
         },
       ],
       'base': {
@@ -51347,8 +51365,8 @@ module.exports = {
           {
             'basePokemon': 'Cottonee',
             'type': [1],
-            'stone': 5,
             'evolvedPokemon': 'Whimsicott',
+            'stone': 5,
           },
         ],
       },
@@ -51367,8 +51385,8 @@ module.exports = {
         {
           'basePokemon': 'Petilil',
           'type': [1],
-          'stone': 5,
           'evolvedPokemon': 'Lilligant',
+          'stone': 5,
         },
       ],
       'base': {
@@ -51464,8 +51482,8 @@ module.exports = {
           {
             'basePokemon': 'Petilil',
             'type': [1],
-            'stone': 5,
             'evolvedPokemon': 'Lilligant',
+            'stone': 5,
           },
         ],
       },
@@ -51568,6 +51586,8 @@ module.exports = {
           'Victory Road Unova',
           'Dragonspiral Tower',
           'Pinwheel Forest',
+          'Frost Cavern',
+          'Victory Road Kalos',
           'Brooklet Hill',
           'Malie Garden',
           'Vast Poni Canyon',
@@ -51669,6 +51689,8 @@ module.exports = {
           'Victory Road Unova',
           'Dragonspiral Tower',
           'Pinwheel Forest',
+          'Frost Cavern',
+          'Victory Road Kalos',
           'Brooklet Hill',
           'Malie Garden',
           'Vast Poni Canyon',
@@ -51903,8 +51925,8 @@ module.exports = {
         {
           'basePokemon': 'Galarian Darumaka',
           'type': [1],
-          'stone': 27,
           'evolvedPokemon': 'Galarian Darmanitan',
+          'stone': 27,
         },
       ],
       'base': {
@@ -52027,8 +52049,8 @@ module.exports = {
           {
             'basePokemon': 'Galarian Darumaka',
             'type': [1],
-            'stone': 27,
             'evolvedPokemon': 'Galarian Darmanitan',
+            'stone': 27,
           },
         ],
       },
@@ -52190,6 +52212,7 @@ module.exports = {
             },
           ],
         },
+        '2': ["Sea Spirit's Den"],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -52384,7 +52407,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Scraggy',
@@ -52765,11 +52787,6 @@ module.exports = {
           'Castelia Sewers',
           'Po Town',
         ],
-        '3': [
-          {
-            'dungeon': 'Lost Hotel',
-          },
-        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -52977,8 +52994,8 @@ module.exports = {
         {
           'basePokemon': 'Minccino',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Cinccino',
+          'stone': 16,
         },
       ],
       'base': {
@@ -53072,8 +53089,8 @@ module.exports = {
           {
             'basePokemon': 'Minccino',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Cinccino',
+            'stone': 16,
           },
         ],
       },
@@ -53620,6 +53637,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Frost Cavern'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -54234,8 +54252,8 @@ module.exports = {
         {
           'basePokemon': 'Karrablast',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Escavalier',
+          'stone': 6,
         },
       ],
       'base': {
@@ -54341,8 +54359,8 @@ module.exports = {
           {
             'basePokemon': 'Karrablast',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Escavalier',
+            'stone': 6,
           },
         ],
       },
@@ -55264,8 +55282,8 @@ module.exports = {
         {
           'basePokemon': 'Eelektrik',
           'type': [1],
-          'stone': 2,
           'evolvedPokemon': 'Eelektross',
+          'stone': 2,
         },
       ],
       'base': {
@@ -55319,8 +55337,8 @@ module.exports = {
           {
             'basePokemon': 'Eelektrik',
             'type': [1],
-            'stone': 2,
             'evolvedPokemon': 'Eelektross',
+            'stone': 2,
           },
         ],
       },
@@ -55456,8 +55474,8 @@ module.exports = {
         {
           'basePokemon': 'Lampent',
           'type': [1],
-          'stone': 15,
           'evolvedPokemon': 'Chandelure',
+          'stone': 15,
         },
       ],
       'base': {
@@ -55541,8 +55559,8 @@ module.exports = {
           {
             'basePokemon': 'Lampent',
             'type': [1],
-            'stone': 15,
             'evolvedPokemon': 'Chandelure',
+            'stone': 15,
           },
         ],
       },
@@ -55715,6 +55733,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Frost Cavern'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -55766,12 +55785,8 @@ module.exports = {
         '2': [
           'Twist Mountain',
           'Dragonspiral Tower',
+          'Frost Cavern',
           'Dyna Tree Hill',
-        ],
-        '3': [
-          {
-            'dungeon': 'Frost Cavern',
-          },
         ],
         '4': [
           {
@@ -55877,15 +55892,13 @@ module.exports = {
           ],
         },
         '2': [
+          'Frost Cavern',
           'Split-Decision Ruins',
           'Dyna Tree Hill',
         ],
         '3': [
           {
             'dungeon': 'Twist Mountain',
-          },
-          {
-            'dungeon': 'Frost Cavern',
           },
         ],
       },
@@ -55904,8 +55917,8 @@ module.exports = {
         {
           'basePokemon': 'Shelmet',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Accelgor',
+          'stone': 6,
         },
       ],
       'base': {
@@ -56018,8 +56031,8 @@ module.exports = {
           {
             'basePokemon': 'Shelmet',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Accelgor',
+            'stone': 6,
           },
         ],
       },
@@ -56177,10 +56190,7 @@ module.exports = {
       'attack': 128,
       'nativeRegion': 4,
       'locations': {
-        '2': [
-          'Dragonspiral Tower',
-          'Team Flare Secret HQ',
-        ],
+        '2': ['Dragonspiral Tower'],
         '4': [
           {
             'basePokemon': 'Mienfoo',
@@ -56853,12 +56863,10 @@ module.exports = {
             },
           ],
         },
+        '2': ['Terminus Cave'],
         '3': [
           {
             'dungeon': 'Twist Mountain',
-          },
-          {
-            'dungeon': 'Terminus Cave',
           },
         ],
       },
@@ -56937,11 +56945,7 @@ module.exports = {
       'attack': 98,
       'nativeRegion': 4,
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Victory Road Kalos',
-          },
-        ],
+        '2': ['Victory Road Kalos'],
         '4': [
           {
             'basePokemon': 'Deino',
@@ -58383,11 +58387,7 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Santalune Forest',
-          },
-        ],
+        '2': ['Santalune Forest'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -58528,7 +58528,6 @@ module.exports = {
       'attack': 126,
       'nativeRegion': 5,
       'locations': {
-        '2': ['Team Flare Secret HQ'],
         '4': [
           {
             'basePokemon': 'Litleo',
@@ -58738,8 +58737,8 @@ module.exports = {
         {
           'basePokemon': 'Floette (Red)',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Florges (Red)',
+          'stone': 16,
         },
       ],
       'base': {
@@ -58785,8 +58784,8 @@ module.exports = {
         {
           'basePokemon': 'Floette (Yellow)',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Florges (Yellow)',
+          'stone': 16,
         },
       ],
       'base': {
@@ -58824,8 +58823,8 @@ module.exports = {
         {
           'basePokemon': 'Floette (Blue)',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Florges (Blue)',
+          'stone': 16,
         },
       ],
       'base': {
@@ -58863,8 +58862,8 @@ module.exports = {
         {
           'basePokemon': 'Floette (Orange)',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Florges (Orange)',
+          'stone': 16,
         },
       ],
       'base': {
@@ -58902,8 +58901,8 @@ module.exports = {
         {
           'basePokemon': 'Floette (White)',
           'type': [1],
-          'stone': 16,
           'evolvedPokemon': 'Florges (White)',
+          'stone': 16,
         },
       ],
       'base': {
@@ -58980,8 +58979,8 @@ module.exports = {
           {
             'basePokemon': 'Floette (Red)',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Florges (Red)',
+            'stone': 16,
           },
         ],
       },
@@ -59011,8 +59010,8 @@ module.exports = {
           {
             'basePokemon': 'Floette (Yellow)',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Florges (Yellow)',
+            'stone': 16,
           },
         ],
       },
@@ -59042,8 +59041,8 @@ module.exports = {
           {
             'basePokemon': 'Floette (Blue)',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Florges (Blue)',
+            'stone': 16,
           },
         ],
       },
@@ -59073,8 +59072,8 @@ module.exports = {
           {
             'basePokemon': 'Floette (Orange)',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Florges (Orange)',
+            'stone': 16,
           },
         ],
       },
@@ -59104,8 +59103,8 @@ module.exports = {
           {
             'basePokemon': 'Floette (White)',
             'type': [1],
-            'stone': 16,
             'evolvedPokemon': 'Florges (White)',
+            'stone': 16,
           },
         ],
       },
@@ -59566,8 +59565,8 @@ module.exports = {
         {
           'basePokemon': 'Doublade',
           'type': [1],
-          'stone': 15,
           'evolvedPokemon': 'Aegislash',
+          'stone': 15,
         },
       ],
       'base': {
@@ -59619,8 +59618,8 @@ module.exports = {
           {
             'basePokemon': 'Doublade',
             'type': [1],
-            'stone': 15,
             'evolvedPokemon': 'Aegislash',
+            'stone': 15,
           },
         ],
       },
@@ -59639,8 +59638,8 @@ module.exports = {
         {
           'basePokemon': 'Spritzee',
           'type': [1],
-          'stone': 25,
           'evolvedPokemon': 'Aromatisse',
+          'stone': 25,
         },
       ],
       'base': {
@@ -59694,8 +59693,8 @@ module.exports = {
           {
             'basePokemon': 'Spritzee',
             'type': [1],
-            'stone': 25,
             'evolvedPokemon': 'Aromatisse',
+            'stone': 25,
           },
         ],
       },
@@ -59714,8 +59713,8 @@ module.exports = {
         {
           'basePokemon': 'Swirlix',
           'type': [1],
-          'stone': 26,
           'evolvedPokemon': 'Slurpuff',
+          'stone': 26,
         },
       ],
       'base': {
@@ -59769,8 +59768,8 @@ module.exports = {
           {
             'basePokemon': 'Swirlix',
             'type': [1],
-            'stone': 26,
             'evolvedPokemon': 'Slurpuff',
+            'stone': 26,
           },
         ],
       },
@@ -60006,7 +60005,10 @@ module.exports = {
       'attack': 44,
       'nativeRegion': 5,
       'locations': {
-        '2': ['Galar Mine No. 2'],
+        '2': [
+          "Sea Spirit's Den",
+          'Galar Mine No. 2',
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -60284,8 +60286,8 @@ module.exports = {
         {
           'basePokemon': 'Helioptile',
           'type': [1],
-          'stone': 5,
           'evolvedPokemon': 'Heliolisk',
+          'stone': 5,
         },
       ],
       'base': {
@@ -60342,8 +60344,8 @@ module.exports = {
           {
             'basePokemon': 'Helioptile',
             'type': [1],
-            'stone': 5,
             'evolvedPokemon': 'Heliolisk',
+            'stone': 5,
           },
         ],
       },
@@ -60713,11 +60715,11 @@ module.exports = {
             },
           ],
         },
-        '2': ['Vast Poni Canyon'],
+        '2': [
+          'Reflection Cave',
+          'Vast Poni Canyon',
+        ],
         '3': [
-          {
-            'dungeon': 'Reflection Cave',
-          },
           {
             'dungeon': 'Ten Carat Hill',
           },
@@ -60786,6 +60788,7 @@ module.exports = {
             },
           ],
         },
+        '5': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -60918,11 +60921,9 @@ module.exports = {
             },
           ],
         },
-        '2': ['Thrifty Megamart'],
-        '3': [
-          {
-            'dungeon': 'Lost Hotel',
-          },
+        '2': [
+          'Lost Hotel',
+          'Thrifty Megamart',
         ],
       },
       'catchRatePercent': 25,
@@ -60943,8 +60944,8 @@ module.exports = {
         {
           'basePokemon': 'Phantump',
           'type': [1],
-          'stone': 6,
           'evolvedPokemon': 'Trevenant',
+          'stone': 6,
         },
       ],
       'base': {
@@ -61044,8 +61045,8 @@ module.exports = {
           {
             'basePokemon': 'Phantump',
             'type': [1],
-            'stone': 6,
             'evolvedPokemon': 'Trevenant',
+            'stone': 6,
           },
         ],
       },
@@ -61248,17 +61249,10 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '2': [
+          'Victory Road Kalos',
           'Verdant Cavern',
           'Galar Mine No. 2',
           'Watchtower Ruins',
-        ],
-        '3': [
-          {
-            'dungeon': 'Terminus Cave',
-          },
-          {
-            'dungeon': 'Victory Road Kalos',
-          },
         ],
       },
       'catchRatePercent': 51,
@@ -61340,6 +61334,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Team Flare Secret HQ',
+            'requirements': 'Team Flare Secret HQ needs to be completed.',
           },
         ],
       },
@@ -61371,6 +61366,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Team Flare Secret HQ',
+            'requirements': 'Team Flare Secret HQ needs to be completed.',
           },
         ],
       },
@@ -61430,7 +61426,14 @@ module.exports = {
       },
       'attack': 151,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Reflection Cave',
+            'requirements': 'Requires the Elite Kalos Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 1000,
     },
@@ -61455,7 +61458,14 @@ module.exports = {
       },
       'attack': 193,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'Requires the Elite Kalos Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -61480,7 +61490,14 @@ module.exports = {
       },
       'attack': 193,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Kalos Power Plant',
+            'requirements': 'Kalos Power Plant needs to be completed 5 times and Requires the Elite Kalos Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -62184,8 +62201,8 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'type': [1],
-          'stone': 2,
           'evolvedPokemon': 'Vikavolt',
+          'stone': 2,
         },
       ],
       'base': {
@@ -62271,8 +62288,8 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'type': [1],
-            'stone': 2,
             'evolvedPokemon': 'Vikavolt',
+            'stone': 2,
           },
         ],
       },
@@ -62323,8 +62340,8 @@ module.exports = {
         {
           'basePokemon': 'Crabrawler',
           'type': [1],
-          'stone': -1,
           'evolvedPokemon': 'Crabominable',
+          'stone': -1,
         },
       ],
       'base': {
@@ -62369,8 +62386,8 @@ module.exports = {
           {
             'basePokemon': 'Crabrawler',
             'type': [1],
-            'stone': -1,
             'evolvedPokemon': 'Crabominable',
+            'stone': -1,
           },
         ],
       },
@@ -64007,8 +64024,8 @@ module.exports = {
         {
           'basePokemon': 'Steenee',
           'type': [1],
-          'stone': -1,
           'evolvedPokemon': 'Tsareena',
+          'stone': -1,
         },
       ],
       'base': {
@@ -64063,8 +64080,8 @@ module.exports = {
           {
             'basePokemon': 'Steenee',
             'type': [1],
-            'stone': -1,
             'evolvedPokemon': 'Tsareena',
+            'stone': -1,
           },
         ],
       },
@@ -64506,8 +64523,8 @@ module.exports = {
         {
           'basePokemon': 'Type: Null',
           'type': [1],
-          'stone': 11,
           'evolvedPokemon': 'Silvally',
+          'stone': 11,
         },
       ],
       'base': {
@@ -64547,8 +64564,8 @@ module.exports = {
           {
             'basePokemon': 'Type: Null',
             'type': [1],
-            'stone': 11,
             'evolvedPokemon': 'Silvally',
+            'stone': 11,
           },
         ],
       },
@@ -65900,8 +65917,8 @@ module.exports = {
         {
           'basePokemon': 'Poipole',
           'type': [1],
-          'stone': -1,
           'evolvedPokemon': 'Naganadel',
+          'stone': -1,
         },
       ],
       'base': {
@@ -65944,8 +65961,8 @@ module.exports = {
           {
             'basePokemon': 'Poipole',
             'type': [1],
-            'stone': -1,
             'evolvedPokemon': 'Naganadel',
+            'stone': -1,
           },
         ],
       },
@@ -66036,8 +66053,8 @@ module.exports = {
         {
           'basePokemon': 'Meltan',
           'type': [1],
-          'stone': -1,
           'evolvedPokemon': 'Melmetal',
+          'stone': -1,
         },
       ],
       'base': {
@@ -66077,8 +66094,8 @@ module.exports = {
           {
             'basePokemon': 'Meltan',
             'type': [1],
-            'stone': -1,
             'evolvedPokemon': 'Melmetal',
+            'stone': -1,
           },
         ],
       },
@@ -70706,8 +70723,8 @@ module.exports = {
             1,
             2,
           ],
-          'stone': 11,
           'evolvedPokemon': 'Frosmoth',
+          'stone': 11,
           'startHour': 18,
           'endHour': 6,
         },
@@ -70780,8 +70797,8 @@ module.exports = {
               1,
               2,
             ],
-            'stone': 11,
             'evolvedPokemon': 'Frosmoth',
+            'stone': 11,
             'startHour': 18,
             'endHour': 6,
           },
@@ -72604,7 +72621,7 @@ module.exports = {
     'MAX_LOAD_TIME': 20000,
     'MUTATION_TICK': 1000,
     'WANDER_TICK': 1500,
-    'MAX_AVAILABLE_REGION': 4,
+    'MAX_AVAILABLE_REGION': 5,
     'TotalPokemonsPerRegion': [
       151,
       251,
@@ -72762,6 +72779,7 @@ module.exports = {
     'CAPTURE_POKEMONS_BASE_REWARD': 1.25,
     'GAIN_TOKENS_BASE_REWARD': 0.09615384615384616,
     'MINE_LAYERS_BASE_REWARD': 720,
+    'MINE_ITEMS_BASE_REWARD': 210,
     'USE_OAK_ITEM_BASE_REWARD': 1,
     'ACTIVE_QUEST_MULTIPLIER': 4,
     'QUEST_CLICKS_PER_SECOND': 5,
@@ -73516,6 +73534,9 @@ module.exports = {
       'Connecting Cave',
       'Glittering Cave',
       'Reflection Cave',
+      "Sea Spirit's Den",
+      'Kalos Power Plant',
+      'Pokéball Factory',
       'Lost Hotel',
       'Frost Cavern',
       'Team Flare Secret HQ',
@@ -73661,6 +73682,9 @@ module.exports = {
         'Connecting Cave',
         'Glittering Cave',
         'Reflection Cave',
+        "Sea Spirit's Den",
+        'Kalos Power Plant',
+        'Pokéball Factory',
         'Lost Hotel',
         'Frost Cavern',
         'Team Flare Secret HQ',
@@ -76304,17 +76328,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Surskit',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 23737400,
+          'level': 10,
         },
         {
           'name': 'Vivillon',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 27395730,
+          'level': 12,
         },
       ],
       'badgeReward': 66,
-      'moneyReward': 128000,
+      'moneyReward': 100000,
       'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your <Pokémon> have shown me a whole new depth of field! Fantastic! Just fantastic!",
       'requirements': [
         {
@@ -76332,17 +76356,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Amaura',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 31937530,
+          'level': 25,
         },
         {
           'name': 'Tyrunt',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 31837400,
+          'level': 25,
         },
       ],
       'badgeReward': 67,
-      'moneyReward': 128000,
+      'moneyReward': 200000,
       'defeatMessage': "There are some things that seem out of reach no matter how hard you try. However, it's important that you never give up--no matter the opponent or the odds. I could tell from our battle that you and your Pokémon understand that. To commemorate such an impressive show of teamwork, please accept the Cliff Badge!",
       'requirements': [
         {
@@ -76358,22 +76382,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Mienfoo',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 36558300,
+          'level': 29,
         },
         {
           'name': 'Machoke',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 36062000,
+          'level': 28,
         },
         {
           'name': 'Hawlucha',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 38362000,
+          'level': 32,
         },
       ],
       'badgeReward': 68,
-      'moneyReward': 128000,
+      'moneyReward': 300000,
       'defeatMessage': "Oh! I have been defeated! Alack, alay! Lady Korrina gave a terrible display! This is it. I must give up my title and admit that your strength far exceeds-- Just teasing! But here's your Badge. Boy, you'll be rolling in 'em soon!",
       'requirements': [
         {
@@ -76389,22 +76413,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Jumpluff',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 41508300,
+          'level': 30,
         },
         {
           'name': 'Weepinbell',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 41562000,
+          'level': 31,
         },
         {
           'name': 'Gogoat',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 43502000,
+          'level': 34,
         },
       ],
       'badgeReward': 69,
-      'moneyReward': 128000,
+      'moneyReward': 400000,
       'defeatMessage': "Yeh believe in yer Pokémon... And they believe in yeh, too... Mighty oaks from acorns grow. Go on, then. Yeh've earned it. Here's yer own Plant Badge, sprout.",
       'requirements': [
         {
@@ -76420,35 +76444,29 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Emolga',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 44058300,
+          'level': 35,
         },
         {
           'name': 'Magneton',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 44062000,
+          'level': 35,
         },
         {
           'name': 'Heliolisk',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 46062000,
+          'level': 37,
         },
       ],
       'badgeReward': 70,
-      'moneyReward': 128000,
+      'moneyReward': 500000,
       'defeatMessage': "Oh, Bonnie... When will you learn there's no shame in losing? I'm glad whenever I get to learn something new thanks to strong challengers like you here.",
       'requirements': [
         {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 5,
-          'route': 13,
-        },
-        {
           'requiredValue': 1,
           'option': 2,
-          'badge': 69,
+          'achievementType': 17,
+          'dungeonIndex': 86,
         },
       ],
     },
@@ -76458,22 +76476,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Mawile',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 45058300,
+          'level': 38,
         },
         {
           'name': 'Mr. Mime',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 46462000,
+          'level': 38,
         },
         {
           'name': 'Sylveon',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 48062000,
+          'level': 42,
         },
       ],
       'badgeReward': 71,
-      'moneyReward': 128000,
+      'moneyReward': 600000,
       'defeatMessage': 'Yes... That was a fine battle. I shall reward you for this great victory. This is the Fairy Badge. It is yours now. Its beauty is captivating, is it not? ... ... ... ... ... ... Ah... Do forgive me. I was so captivated, I forgot for a moment that it is yours.',
       'requirements': [
         {
@@ -76489,22 +76507,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Sigilyph',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 50058300,
+          'level': 44,
         },
         {
           'name': 'Slowking',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 52062000,
+          'level': 45,
         },
         {
           'name': 'Meowstic',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 54462000,
+          'level': 48,
         },
       ],
       'badgeReward': 72,
-      'moneyReward': 128000,
+      'moneyReward': 700000,
       'defeatMessage': 'Now, the Psychic Badge. A testament to your skill. Proof of your power.',
       'requirements': [
         {
@@ -76520,29 +76538,29 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Abomasnow',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 59558300,
+          'level': 56,
         },
         {
           'name': 'Cryogonal',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 60654830,
+          'level': 55,
         },
         {
           'name': 'Avalugg',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 63062000,
+          'level': 59,
         },
       ],
       'badgeReward': 73,
-      'moneyReward': 128000,
+      'moneyReward': 800000,
       'defeatMessage': "Impressive! Your Pokémon fought with great courage. I can tell that you've trained your Pokémon well.",
       'requirements': [
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 89,
+          'dungeonIndex': 92,
         },
       ],
     },
@@ -76552,27 +76570,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Pyroar',
-          'maxHealth': 1945330,
-          'level': 49,
+          'maxHealth': 69696969,
+          'level': 63,
         },
         {
           'name': 'Torkoal',
-          'maxHealth': 1948300,
-          'level': 49,
+          'maxHealth': 70048300,
+          'level': 63,
         },
         {
           'name': 'Chandelure',
-          'maxHealth': 1952000,
-          'level': 50,
+          'maxHealth': 70052000,
+          'level': 63,
         },
         {
           'name': 'Talonflame',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 73557000,
+          'level': 65,
         },
       ],
       'badgeReward': 74,
-      'moneyReward': 64000,
+      'moneyReward': 900000,
       'defeatMessage': 'What news... So a new challenger has defeated Malva of the Elite Four!',
       'requirements': [
         {
@@ -76588,27 +76606,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Clawitzer',
-          'maxHealth': 1945330,
-          'level': 49,
+          'maxHealth': 69696969,
+          'level': 63,
         },
         {
           'name': 'Gyarados',
-          'maxHealth': 1948300,
-          'level': 49,
+          'maxHealth': 70405330,
+          'level': 63,
         },
         {
           'name': 'Starmie',
-          'maxHealth': 1952000,
-          'level': 50,
+          'maxHealth': 70405330,
+          'level': 63,
         },
         {
           'name': 'Barbaracle',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 73557000,
+          'level': 65,
         },
       ],
       'badgeReward': 75,
-      'moneyReward': 64000,
+      'moneyReward': 900000,
       'defeatMessage': 'I shall store my memory of you and your Pokémon forever away within my heart.',
       'requirements': [
         {
@@ -76624,27 +76642,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Klefki',
-          'maxHealth': 1945330,
-          'level': 49,
+          'maxHealth': 69696969,
+          'level': 63,
         },
         {
           'name': 'Probopass',
-          'maxHealth': 1948300,
-          'level': 49,
+          'maxHealth': 70405330,
+          'level': 63,
         },
         {
           'name': 'Scizor',
-          'maxHealth': 1952000,
-          'level': 50,
+          'maxHealth': 70405330,
+          'level': 63,
         },
         {
           'name': 'Aegislash',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 73557000,
+          'level': 65,
         },
       ],
       'badgeReward': 76,
-      'moneyReward': 64000,
+      'moneyReward': 900000,
       'defeatMessage': 'Glorious! The trust that you share with your honorable Pokémon surpasses even mine!',
       'requirements': [
         {
@@ -76660,27 +76678,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Dragalge',
-          'maxHealth': 1945330,
-          'level': 49,
+          'maxHealth': 69696969,
+          'level': 63,
         },
         {
           'name': 'Druddigon',
-          'maxHealth': 1948300,
-          'level': 49,
+          'maxHealth': 70405330,
+          'level': 63,
         },
         {
           'name': 'Altaria',
-          'maxHealth': 1952000,
-          'level': 50,
+          'maxHealth': 70405330,
+          'level': 63,
         },
         {
           'name': 'Noivern',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 73557000,
+          'level': 65,
         },
       ],
       'badgeReward': 77,
-      'moneyReward': 64000,
+      'moneyReward': 900000,
       'defeatMessage': "Oh, dear me. That sure was a quick battle... I do hope you'll come back again sometime!",
       'requirements': [
         {
@@ -76696,37 +76714,37 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Hawlucha',
-          'maxHealth': 2458300,
-          'level': 58,
+          'maxHealth': 7208300,
+          'level': 64,
         },
         {
           'name': 'Tyrantrum',
-          'maxHealth': 2462000,
-          'level': 58,
+          'maxHealth': 74057000,
+          'level': 65,
         },
         {
           'name': 'Aurorus',
-          'maxHealth': 2464000,
-          'level': 58,
+          'maxHealth': 74057000,
+          'level': 65,
         },
         {
           'name': 'Gourgeist',
-          'maxHealth': 2460250,
-          'level': 60,
+          'maxHealth': 74557000,
+          'level': 65,
         },
         {
           'name': 'Goodra',
-          'maxHealth': 2470000,
-          'level': 58,
+          'maxHealth': 76170000,
+          'level': 66,
         },
         {
           'name': 'Gardevoir',
-          'maxHealth': 2570000,
-          'level': 62,
+          'maxHealth': 77070000,
+          'level': 68,
         },
       ],
       'badgeReward': 78,
-      'moneyReward': 128000,
+      'moneyReward': 1000000,
       'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
       'requirements': [
         {
@@ -76764,7 +76782,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 95,
+          'dungeonIndex': 98,
         },
       ],
     },
@@ -76850,7 +76868,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 111,
+          'dungeonIndex': 114,
         },
       ],
     },
@@ -76903,7 +76921,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 115,
+          'dungeonIndex': 118,
         },
       ],
     },
@@ -77272,7 +77290,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 123,
+          'dungeonIndex': 126,
         },
       ],
     },

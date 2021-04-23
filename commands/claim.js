@@ -12,6 +12,7 @@ const {
   HOUR,
   DAY,
 } = require('../helpers.js');
+const time_between_claims = 23 * HOUR;
 
 const claimAmount = 100;
 
@@ -40,8 +41,8 @@ module.exports = {
     let { last_claim, streak } = await getLastClaim(msg.author, 'daily_claim');
 
     // User already claimed within last 23 hours
-    if (last_claim >= (Date.now() - (DAY - HOUR))) {
-      const time_left = (+last_claim + (DAY - HOUR)) - Date.now();
+    if (last_claim >= (Date.now() - time_between_claims)) {
+      const time_left = (+last_claim + time_between_claims) - Date.now();
       const hours = Math.floor(time_left % DAY / HOUR);
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
@@ -50,7 +51,8 @@ module.exports = {
       if (+hours || +minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
       timeRemaining += `${seconds} second${s(seconds)}`;
       return msg.channel.send({
-        embed: new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
+        embed: new MessageEmbed().setColor('#e74c3c').setFooter('Next claim').setTimestamp(time_between_claims + (+last_claim))
+          .setDescription(`${msg.author}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
       });
     }
 

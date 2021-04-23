@@ -13,7 +13,7 @@ const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
 
 // Between 1 and 6 minutes
 const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
-const ANSWER_TIME_LIMIT = 3 * SECOND;
+const ANSWER_TIME_LIMIT = 5 * SECOND;
 
 const newQuiz = async (guild, reoccur = false) => {
   // If no quiz channel or ID, return
@@ -58,7 +58,7 @@ const newQuiz = async (guild, reoccur = false) => {
     if (!finished) {
       finished = m.createdTimestamp;
     } else {
-      quiz.amount = Math.floor(quiz.amount / 2);
+      quiz.amount = Math.ceil(quiz.amount / 2);
       if (!quiz.amount || winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT) {
         return;
       }

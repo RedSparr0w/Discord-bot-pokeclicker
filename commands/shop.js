@@ -15,6 +15,18 @@ const discordShopItems = [
       return true;
     },
   },
+  {
+    name: '<@&824467607981129781> Role',
+    image: '',
+    price: 100000,
+    description: 'Get the <@&824467607981129781> role on this Discord server\n_no bonuses just a new colored name_',
+    claimFunction: async (guild, member) => {
+      const role = guild.roles.cache.find(role => role.name == '100k club');
+      if (!role) return false;
+      await member.roles.add(role, 'User purchased role');
+      return true;
+    },
+  },
 ];
 const allShopItems = [...shopItems, ...discordShopItems];
 
@@ -68,7 +80,7 @@ module.exports = {
         .setColor('#3498db')
         .setDescription(msg.author)
         .addField('Name', item.name, true)
-        .addField('Price', `${item.price} ${serverIcons.money}`, true)
+        .addField('Price', `${item.price.toLocaleString('en-US')} ${serverIcons.money}`, true)
         .addField('Description', item.description)
         .setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${allShopItems.length}`);
 

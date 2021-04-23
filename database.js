@@ -309,6 +309,31 @@ async function getStatisticTypeID(type){
   return type_id;
 }
 
+async function getStatisticTypes(){
+  const db = await getDB();
+  const results = await db.all('SELECT * FROM statistic_types;');
+  db.close();
+
+  return results || [];
+}
+
+async function getOverallStatistic(stat_type){
+  const [
+    db,
+    type_id,
+  ] = await Promise.all([
+    getDB(),
+    getStatisticTypeID(stat_type),
+  ]);
+
+  const result = await db.get('SELECT name, COUNT(user) AS users, SUM(value) AS value FROM statistics INNER JOIN statistic_types ON statistic_types.id = type WHERE type=? GROUP BY type;', type_id);
+  db.close();
+
+  const { name = 'not found', users = 0, value = 0 } = result || {};
+
+  return { name, users, value };
+}
+
 async function getStatistic(user, type){
   const [
     db,
@@ -321,7 +346,7 @@ async function getStatistic(user, type){
   ]);
 
   let result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
-  // If user doesn't exist yet, set them up (with 1000 coins)
+  // If user doesn't exist yet, set them up
   if (!result) {
     await db.run('INSERT OR REPLACE INTO statistics (user, type) VALUES (?, ?)', user_id, type_id);
     // try get the users points again
@@ -378,6 +403,8 @@ module.exports = {
   getPurchased,
   addPurchased,
   getStatisticTypeID,
+  getStatisticTypes,
+  getOverallStatistic,
   getStatistic,
   addStatistic,
 };
