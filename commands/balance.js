@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount } = require('../database.js');
+const { serverIcons } = require('../config.js');
 
 module.exports = {
   name        : 'balance',
@@ -16,7 +17,7 @@ module.exports = {
 
     const output = [
       msg.author,
-      `**Balance: ${balance.toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Balance: ${balance.toLocaleString('en-US')} ${serverIcons.money}**`,
     ].join('\n');
 
     const embed = new MessageEmbed()

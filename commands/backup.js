@@ -1,3 +1,4 @@
+const { MessageEmbed } = require('discord.js');
 const { backupDB } = require('../database.js');
 
 module.exports = {
@@ -11,6 +12,9 @@ module.exports = {
   userperms   : ['MANAGE_GUILD'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
+    msg.channel.send({
+      embed: new MessageEmbed().setColor('#2ecc71').setDescription('Backed up database!'),
+    });
     backupDB(msg.guild);
   },
 };

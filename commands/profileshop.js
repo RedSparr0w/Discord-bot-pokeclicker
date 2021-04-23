@@ -1,6 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
-const { upperCaseFirstLetter, postPages, trainerCardColors, totalTrainerImages } = require('../helpers.js');
+const {
+  upperCaseFirstLetter,
+  postPages,
+  trainerCardColors,
+  totalTrainerImages,
+  trainerCardBadgeTypes,
+} = require('../helpers.js');
+const { serverIcons } = require('../config.js');
 const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
 
 module.exports = {
@@ -29,7 +36,7 @@ module.exports = {
         .setColor('#3498db')
         .setDescription(msg.author)
         .addField('Color', upperCaseFirstLetter(color), true)
-        .addField('Price', purchasedBackgrounds[index] ? '0 <:money:737206931759824918>' : '1000 <:money:737206931759824918>', true)
+        .addField('Price', `${purchasedBackgrounds[index] ? '0' : '1000'} ${serverIcons.money}`, true)
         .addField('Description', 'Update your trainer card background')
         .setThumbnail(`${imageBaseLink}/trainer_card/${color}.png`);
 
@@ -41,7 +48,7 @@ module.exports = {
         .setColor('#3498db')
         .setDescription(msg.author)
         .addField('Trainer ID', `#${trainerID.toString().padStart(3, 0)}`, true)
-        .addField('Price', purchasedTrainers[trainerID] ? '0 <:money:737206931759824918>' : '500 <:money:737206931759824918>', true)
+        .addField('Price', `${purchasedTrainers[trainerID] ? '0' : '500'} ${serverIcons.money}`, true)
         .addField('Description', 'Set your displayed trainer')
         .setThumbnail(`${imageBaseLink}/trainers/${trainerID}.png`);
 
@@ -59,7 +66,7 @@ module.exports = {
     const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === msg.author.id;
   
     // Allow reactions for up to x ms
-    const timer = 1e5; // (100 seconds)
+    const timer = 3e5; // (300 seconds)
     const buy = botMsg.createReactionCollector(buyFilter, {time: timer});
 
     buy.on('collect', async r => {
@@ -99,6 +106,9 @@ module.exports = {
         } else {
           remainingBalance = currentBalance;
         }
+
+        // If user updated their profile, give them the Boulder Badge
+        await addPurchased(msg.author, 'badge', trainerCardBadgeTypes.Boulder);
 
         await setTrainerCard(msg.author, itemType, itemIndex);
 

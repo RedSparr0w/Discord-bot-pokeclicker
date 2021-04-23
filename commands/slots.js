@@ -1,6 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
-const { validBet, calcBetAmount } = require('../helpers.js');
+const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
+const { serverIcons } = require('../config.js');
 
 const slots = {
   seven: '<:slots_7:751322075578499093>',
@@ -168,13 +169,13 @@ module.exports = {
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  channels    : ['game-corner', 'bot-commands'],
+  channels    : ['game-corner'],
   execute      : async (msg, args) => {
     let [ bet, lines = 3 ] = args;
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount: \`${bet}\``);
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount.`);
       return msg.channel.send({ embed });
     }
 
@@ -193,7 +194,7 @@ module.exports = {
     const slotIcons = spinSlots();
 
     const multiplier = calcWinningsMultiplier(slotIcons, lines);
-    const winnings = Math.floor(bet * multiplier);
+    const winnings = Math.floor(bet * multiplier) - bet;
 
     const output = [
       msg.author,
@@ -202,15 +203,16 @@ module.exports = {
       `║ ${slotIcons.map(r => r[1]).join(' ║ ')} ║`,
       `║ ${slotIcons.map(r => r[2]).join(' ║ ')} ║`,
       '',
-      `**Winnings: ${winnings.toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
     ];
 
-    addAmount(msg.author, winnings - bet);
+    addAmount(msg.author, winnings);
+    addBetStatistics(msg.author, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier >= 1 ? '#2ecc71' : '#e74c3c')
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings - bet).toLocaleString('en-US')}`);
+      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
     return msg.channel.send({ embed });
   },
 };

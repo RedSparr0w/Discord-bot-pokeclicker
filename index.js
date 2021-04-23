@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const { prefix, token } = require('./config.js');
 const {
   log,
   info,
@@ -9,12 +9,18 @@ const {
   gameVersion,
   RunOnInterval,
   formatChannelList,
+  trainerCardBadgeTypes,
+  HOUR,
 } = require('./helpers.js');
 const {
   setupDB,
   backupDB,
+  addPurchased,
+  addStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
+const { newQuiz } = require('./other/quiz/quiz.js');
+const { happyHourHours, startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -28,20 +34,57 @@ for (const file of commandFiles) {
 
 const cooldowns = new Discord.Collection();
 
+const cooldownTimeLeft = (type, seconds, userID) => {
+  // Apply command cooldowns
+  if (!cooldowns.has(type)) {
+    cooldowns.set(type, new Discord.Collection());
+  }
+
+  const now = Date.now();
+  const timestamps = cooldowns.get(type);
+  const cooldownAmount = (seconds || 3) * 1000;
+
+  if (timestamps.has(userID)) {
+    const expirationTime = timestamps.get(userID) + cooldownAmount;
+
+    if (now < expirationTime) {
+      const timeLeft = (expirationTime - now) / 1000;
+      return timeLeft;
+    }
+  }
+
+  timestamps.set(userID, now);
+  setTimeout(() => timestamps.delete(userID), cooldownAmount);
+  return 0;
+};
+
 client.once('ready', async() => {
   info(`Logged in as ${client.user.tag}!`);
   log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot`);
   // Check the database is setup
   await setupDB();
 
-  new RunOnInterval(60 * 6e4 /* 1 Hour */, () => {
+  new RunOnInterval(HOUR, () => {
     // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
   }, { run_now: true });
 
-  new RunOnInterval(6 * 60 * 6e4 /* 6 Hours */, () => {
+  new RunOnInterval(6 * HOUR, () => {
     client.guilds.cache.forEach(guild => backupDB(guild));
   }, { timezone_offset: 0 });
+
+  // Start happy hour
+  new RunOnInterval(happyHourHours * HOUR, () => {
+    client.guilds.cache.forEach(guild => startHappyHour(guild));
+  }, { timezone_offset: 0 });
+
+  // End happy hour 1 hour later
+  new RunOnInterval(happyHourHours * HOUR, () => {
+    client.guilds.cache.forEach(guild => endHappyHour(guild));
+  }, { timezone_offset: HOUR });
+  
+  // Will restart itself
+  client.guilds.cache.forEach(guild => newQuiz(guild, true));
 });
 
 client.on('error', e => error('Client error thrown:', e))
@@ -50,6 +93,14 @@ client.on('error', e => error('Client error thrown:', e))
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) {
+      const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
+      if (!timeLeft) {
+        const messagesSent = await addStatistic(message.author, 'messages');
+        if (messagesSent >= 2500) {
+          await addPurchased(message.author, 'badge', trainerCardBadgeTypes.Thunder);
+        }
+      }
+
       try {
         const match = regexMatches.find(match => match.regex.test(message.content));
         if (match) match.execute(message, client);
@@ -113,30 +164,20 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     // Apply command cooldowns
-    if (!cooldowns.has(command.name)) {
-      cooldowns.set(command.name, new Discord.Collection());
+    const timeLeft = cooldownTimeLeft(command.name, command.cooldown, message.author.id);
+    if (timeLeft > 0) {
+      return message.reply(`Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`);
     }
-
-    const now = Date.now();
-    const timestamps = cooldowns.get(command.name);
-    const cooldownAmount = (command.cooldown || 3) * 1000;
-
-    if (timestamps.has(message.author.id)) {
-      const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
-
-      if (now < expirationTime) {
-        const timeLeft = (expirationTime - now) / 1000;
-        return message.reply(`Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`);
-      }
-    }
-
-    timestamps.set(message.author.id, now);
-    setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
     // Run the command
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
       await command.execute(message, args, commandName);
+      addStatistic(message.author, `!${command.name}`);
+      const commandsSent = await addStatistic(message.author, 'commands');
+      if (commandsSent >= 1000) {
+        await addPurchased(message.author, 'badge', trainerCardBadgeTypes.Cascade);
+      }
     } catch (err) {
       error(`Error executing command "${message.content}":\n`, err);
       message.reply('There was an error trying to execute that command!');
