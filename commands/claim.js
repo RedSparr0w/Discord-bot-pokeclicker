@@ -1,16 +1,20 @@
 const { MessageEmbed } = require('discord.js');
 const { addAmount } = require('../database.js');
+const { bonusRoles, serverIcons } = require('../config.js');
 const {
   getLastClaim,
   updateClaimDate,
   bumpClaimStreak,
   resetClaimStreak,
+  warn,
+  SECOND,
+  MINUTE,
+  HOUR,
+  DAY,
 } = require('../helpers.js');
+const time_between_claims = 23 * HOUR;
 
-const SECOND = 1000;
-const MINUTE = SECOND * 60;
-const HOUR = MINUTE * 60;
-const DAY = HOUR * 24;
+const claimAmount = 100;
 
 const calcStreakBonus = (streak) => {
   const bigStreak = Math.max(0, Math.min(5, streak));
@@ -19,6 +23,8 @@ const calcStreakBonus = (streak) => {
   streak -= midStreak;
   return (bigStreak * 10) + (midStreak * 5) + streak;
 };
+
+const s = (amt) => amt != 1 ? 's' : '';
 
 module.exports = {
   name        : 'claim',
@@ -35,17 +41,18 @@ module.exports = {
     let { last_claim, streak } = await getLastClaim(msg.author, 'daily_claim');
 
     // User already claimed within last 23 hours
-    if (last_claim >= (Date.now() - (DAY - HOUR))) {
-      const time_left = (+last_claim + (DAY - HOUR)) - Date.now();
+    if (last_claim >= (Date.now() - time_between_claims)) {
+      const time_left = (+last_claim + time_between_claims) - Date.now();
       const hours = Math.floor(time_left % DAY / HOUR);
       const minutes = Math.floor(time_left % HOUR / MINUTE);
       const seconds = Math.floor(time_left % MINUTE / SECOND);
       let timeRemaining = '';
-      if (+hours) timeRemaining += `${hours} hours `;
-      if (+hours || +minutes) timeRemaining += `${minutes} minutes `;
-      timeRemaining += `${seconds} seconds`;
+      if (+hours) timeRemaining += `${hours} hour${s(hours)} `;
+      if (+hours || +minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
+      timeRemaining += `${seconds} second${s(seconds)}`;
       return msg.channel.send({
-        embed: new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nYou've already claimed your <:money:737206931759824918> for today\nYou can claim again in ${timeRemaining}`),
+        embed: new MessageEmbed().setColor('#e74c3c').setFooter('Next claim').setTimestamp(time_between_claims + (+last_claim))
+          .setDescription(`${msg.author}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
       });
     }
 
@@ -55,14 +62,48 @@ module.exports = {
       streak = 0;
     }
 
-    // Add the coins to the users balance, set last claimed time
-    const dailyAmount = 100 + calcStreakBonus(streak);
-    // Add the balance then set last claim time (incase the user doesn't exist yet)
-    const balance = await addAmount(msg.author, dailyAmount, 'coins');
+    // Calculate bonuses
+    const streakBonus = calcStreakBonus(streak);
+    let totalAmount = claimAmount + streakBonus;
+    const roleBonuses = [];
+    try {
+      msg.member.roles.cache.map(r => r.id).forEach(roleID => {
+        const bonus = bonusRoles[roleID];
+        if (bonus) {
+          roleBonuses.push([roleID, Math.floor(totalAmount * bonus)]);
+        }
+      });
+    } catch (e) {
+      warn('something went wrong calculating role claim bonuses', e);
+    }
+    totalAmount += roleBonuses.reduce((a, [r, b]) => a + b, 0);
+
+    // Add the coins to the users balance then set last claim time (incase the user doesn't exist yet)
+    const balance = await addAmount(msg.author, totalAmount, 'coins');
     await updateClaimDate(msg.author, 'daily_claim');
     await bumpClaimStreak(msg.author, 'daily_claim');
+
+    const message = [
+      msg.author,
+      `_Daily Claim:_ **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`,
+    ];
+
+    if (streakBonus) {
+      message.push(`_Streak Bonus:_ **+${streakBonus.toLocaleString('en-US')}** ${serverIcons.money} `);
+    }
+
+    roleBonuses.forEach(([r, b]) => {
+      message.push(`_<@&${r}>:_ **+${b.toLocaleString('en-US')}** ${serverIcons.money}`);
+    });
+
+    message.push(
+      '',
+      `Current Balance: **${balance.toLocaleString('en-US')}** ${serverIcons.money}`,
+      `Current Streak: **${streak + 1}**`
+    );
+
     return msg.channel.send({
-      embed: new MessageEmbed().setColor('#2ecc71').setDescription(`${msg.author}\n**+${dailyAmount.toLocaleString('en-US')}** <:money:737206931759824918>\n\nCurrent Balance: **${balance.toLocaleString('en-US')}** <:money:737206931759824918>\nCurrent Streak: **${streak + 1}**`),
+      embed: new MessageEmbed().setColor('#2ecc71').setDescription(message),
     });
   },
 };

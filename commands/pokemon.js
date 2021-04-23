@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
-const { website } = require('../config.json');
+const { website } = require('../config.js');
 const {
   pokemonList,
   LevelType,
@@ -69,8 +69,14 @@ module.exports = {
       if (pokemon.locations[PokemonLocationType.Route]) {
         let description = '';
         Object.entries(pokemon.locations[PokemonLocationType.Route]).forEach(([region, routes]) => {
-          description += `\n\n__${GameConstants.Region[region].toUpperCase()}:__`;
-          description += `\n${routes.join(', ')}`;
+          description += `\n\n__${GameConstants.Region[region].toUpperCase()}:__\n`;
+          /* TO BE FIXED: Too large for Discord for some mons
+          routes.forEach(route => {
+            description += `\n${route.route}`;
+            description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
+          });
+          */
+          description += [...new Set(routes.map(route => `${route.route}${route.requirements ? '🔒' : ''}`))].join('\n');
         });
         embed.addField('❯ Routes', description);
       }
@@ -86,7 +92,7 @@ module.exports = {
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
       // Evolutions
@@ -98,6 +104,7 @@ module.exports = {
           description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:740790300100001863> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
           description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
           description += evolution.type.includes(EvolutionType.Location) ? `\n<:dungeonToken:737206932128923699> While in ${evolution.dungeon}` : '';
+          description += evolution.type.includes(EvolutionType.Environment) ? `\n🌳 While in a ${evolution.environment} environment` : '';
           description += evolution.type.includes(EvolutionType.Other) ? '\n🍍 With unknown requirement' : '';
 
           descriptions.push(description);
@@ -128,6 +135,16 @@ module.exports = {
       if (pokemon.locations[PokemonLocationType.Safari]) {
         const description = pokemon.locations[PokemonLocationType.Safari];
         embed.addField('❯ Safari Zone Chance', description);
+      }
+      // Battle Frontier
+      if (pokemon.locations[PokemonLocationType.BattleFrontier]) {
+        const description = pokemon.locations[PokemonLocationType.BattleFrontier].join('\n');
+        embed.addField('❯ Battle Frontier', description);
+      }
+      // Wandering
+      if (pokemon.locations[PokemonLocationType.Wandering]) {
+        const description = pokemon.locations[PokemonLocationType.Wandering].join('\n');
+        embed.addField('❯ Farm Wandering', description);
       }
     } else {
       embed.addField('\u200b', '```diff\n-Currently Unobtainable\n```');

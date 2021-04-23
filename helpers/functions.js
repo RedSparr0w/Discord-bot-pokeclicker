@@ -42,7 +42,24 @@ const postPages = async (msg, pages, page = 1, msgEdit = false) => {
 
 const upperCaseFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
+const randomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
+
+const addOrderedReactions = async (message, reactions) => {
+  const addReaction = (reaction, cb) =>{
+    setTimeout(async () => {
+      await message.react(reaction).catch(O_o=>{});
+      cb();
+    }, 100);
+  };
+
+  reactions.reduce((promiseChain, reaction) => promiseChain.then(() => new Promise((resolve) => {
+    addReaction(reaction, resolve);
+  })), Promise.resolve());
+};
+
 module.exports = {
   postPages,
   upperCaseFirstLetter,
+  randomFromArray,
+  addOrderedReactions,
 };

@@ -1,12 +1,26 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const { website } = require('./config.json');
+const { website } = require('./config.js');
 
 (async () => {
+
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
+  console.log(`navigate to ${website}\nwaiting for webpage to load..`);
+
   await page.goto(website);
+
+  console.log('webpage loaded!\nwaiting for data to load..');
+
+  page.evaluate(() => {
+    App.start();
+  });
+
+  await page.waitForFunction(() => App.game &&  App.game.update && App.game.update.version);
+
+  console.log('data loaded!\nupdating data..');
 
   const result = await page.evaluate(() => {
     SpecialEvents.events.forEach(event => {
@@ -57,26 +71,36 @@ const { website } = require('./config.json');
         return p;
       }),
       GameConstants,
+      BadgeEnums,
+      gymList,
+      berryType: BerryType,
+      berryList: App.game.farming.berryData.map(b => {
+        const mutation = App.game.farming.mutations.find(m => m.mutatedBerry == b.type);
+        if (mutation) b.hint = mutation.hint;
+        return b;
+      }),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
 
   // Tidy up the result data with our eslint rules
-  const CLIEngine = require('eslint').CLIEngine;
+  const { ESLint } = require('eslint');
 
-  const cli = new CLIEngine({
+  const cli = new ESLint({
     fix: true,
   });
 
-  const report = cli.executeOnText(result, './helpers/pokeclicker.js');
+  const results = await cli.lintText(result);
+  const res = results[0];
 
   // Get the output after running through eslint
-  const output = report.results[0].output;
+  const output = res.output;
 
   // Save the data
   await fs.writeFileSync('./helpers/pokeclicker.js', output);
 
-  console.log({ fileSise: output.length, errorCount: report.errorCount, warningCount: report.warningCount });
+  console.log('data updated!');
+  console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
 
   await browser.close();
 })();

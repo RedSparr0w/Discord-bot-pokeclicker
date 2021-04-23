@@ -1,5 +1,5 @@
 const { error } = require('../helpers.js');
-const { ownerID } = require('../config.json');
+const { ownerID } = require('../config.js');
 const clean = text => {
   if (typeof(text) === 'string')
     return text.replace(/`/g, `\`${String.fromCharCode(8203)}`).replace(/@/g, `@${String.fromCharCode(8203)}`);

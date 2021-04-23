@@ -4,7 +4,7 @@ This is the code for the Pokéclicker Discord Bot. In order to run it locally fo
 
 Steps for running:
 
-* Copy `_config.json` to `config.json` and change the settings
+* Copy `_config.js` to `config.js` and change the settings
 * Run `npm ci` to install dependencies
 * Run `npm start` to start the server
 * Open the invite link provided in the console, and add the bot to a server, then grant it a role with the permissions listed below

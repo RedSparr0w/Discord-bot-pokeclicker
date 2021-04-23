@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
-const { betRegex, validBet, calcBetAmount } = require('../helpers.js');
-const { website } = require('../config.json');
+const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
+const { website, serverIcons } = require('../config.js');
 
 const coinSides = {
   heads: 1,
@@ -35,7 +35,7 @@ module.exports = {
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  channels    : ['game-corner', 'bot-commands'],
+  channels    : ['game-corner'],
   execute     : async (msg, args) => {
     let bet = args.find(a => betRegex.test(a));
     let side = args.find(a => new RegExp(`^(${Object.keys(coinSides).join('|')})$`, 'i').test(a));
@@ -49,7 +49,7 @@ module.exports = {
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount: \`${bet}\``);
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount.`);
       return msg.channel.send({ embed });
     }
 
@@ -67,21 +67,22 @@ module.exports = {
     const win = coinSide == side;
 
     // Calculate winnings
-    const winnings = Math.floor((bet + bet) * win);
+    const winnings = Math.floor((bet + bet) * win) - bet;
 
     const output = [
       msg.author,
       `**${(win ? 'WIN' : 'LOSE')}** - ${(coinSide ? 'HEADS' : 'TAILS')}`,
-      `**Winnings: ${winnings.toLocaleString('en-US')} <:money:737206931759824918>**`,
+      `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
     ].join('\n');
 
-    addAmount(msg.author, winnings - bet);
+    addAmount(msg.author, winnings);
+    addBetStatistics(msg.author, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(win ? '#2ecc71' : '#e74c3c')
       .setThumbnail(coinImage[coinSide])
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings - bet).toLocaleString('en-US')}`);
+      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
 
     return msg.channel.send({ embed });
   },

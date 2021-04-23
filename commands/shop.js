@@ -1,15 +1,27 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand } = require('../helpers.js');
-const { website } = require('../config.json');
+const { website, serverIcons } = require('../config.js');
 const discordShopItems = [
   {
     name: '<@&751979566280605728> Role',
     image: '',
     price: 2500,
-    description: 'Get the <@&751979566280605728> role on this Discord server',
+    description: 'Get the <@&751979566280605728> role on this Discord server\n_+20% to claim bonuses_',
     claimFunction: async (guild, member) => {
       const role = guild.roles.cache.find(role => role.name == 'Poké Squad');
+      if (!role) return false;
+      await member.roles.add(role, 'User purchased role');
+      return true;
+    },
+  },
+  {
+    name: '<@&824467607981129781> Role',
+    image: '',
+    price: 100000,
+    description: 'Get the <@&824467607981129781> role on this Discord server\n_no bonuses just a new colored name_',
+    claimFunction: async (guild, member) => {
+      const role = guild.roles.cache.find(role => role.name == '100k club');
       if (!role) return false;
       await member.roles.add(role, 'User purchased role');
       return true;
@@ -68,7 +80,7 @@ module.exports = {
         .setColor('#3498db')
         .setDescription(msg.author)
         .addField('Name', item.name, true)
-        .addField('Price', `${item.price} <:money:737206931759824918>`, true)
+        .addField('Price', `${item.price.toLocaleString('en-US')} ${serverIcons.money}`, true)
         .addField('Description', item.description)
         .setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${allShopItems.length}`);
 

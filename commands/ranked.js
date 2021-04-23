@@ -27,6 +27,7 @@ module.exports = {
     const johtoPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.kanto] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto]);
     const hoennPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.johto] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.hoenn]);
     const sinnohPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.hoenn] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.sinnoh]);
+    const unovaPokemon = pokemon.filter(p => Math.floor(p.id) > GameConstants.TotalPokemonsPerRegion[GameConstants.Region.sinnoh] && Math.floor(p.id) <= GameConstants.TotalPokemonsPerRegion[GameConstants.Region.unova]);
     const getTop = (arr, type, amt = 10) => arr.sort((a, b) => b[type] - a[type]).slice(0, amt);
 
     embed.addField('\u200b', '**=================== OVERALL ===================**');
@@ -48,6 +49,10 @@ module.exports = {
     embed.addField('\u200b', '**==================== SINNOH ===================**');
     embed.addField('\n❯ Attack', ['```prolog', ...getTop(sinnohPokemon, 'attack', 10).map(p => `${p.name.padEnd(18, ' ')} ${p.attack.toString().padStart(3, ' ')}`), '```'].join('\n'), true);
     embed.addField('\n❯ Breeding Attack', ['```prolog', ...getTop(sinnohPokemon, 'apc', 10).map(p => `${p.name.padEnd(18, ' ')} ${p.apc.toFixed(1).padStart(4, ' ')}`), '```'].join('\n'), true);
+
+    embed.addField('\u200b', '**==================== UNOVA ====================**');
+    embed.addField('\n❯ Attack', ['```prolog', ...getTop(unovaPokemon, 'attack', 10).map(p => `${p.name.padEnd(18, ' ')} ${p.attack.toString().padStart(3, ' ')}`), '```'].join('\n'), true);
+    embed.addField('\n❯ Breeding Attack', ['```prolog', ...getTop(unovaPokemon, 'apc', 10).map(p => `${p.name.padEnd(18, ' ')} ${p.apc.toFixed(1).padStart(4, ' ')}`), '```'].join('\n'), true);
 
     msg.channel.send({ embed });
   },
