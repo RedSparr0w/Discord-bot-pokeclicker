@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.0',
+  'gameVersion': '0.8.1',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -2548,7 +2548,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 29,
+          'dungeonIndex': 33,
         },
       ],
       'orderNumber': 124,
@@ -3021,7 +3021,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 38,
+          'dungeonIndex': 41,
         },
       ],
       'orderNumber': 205,
@@ -3129,7 +3129,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 42,
+          'dungeonIndex': 45,
         },
       ],
       'orderNumber': 208,
@@ -3442,7 +3442,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 45,
+          'dungeonIndex': 48,
         },
       ],
       'orderNumber': 216,
@@ -3671,7 +3671,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 49,
+          'dungeonIndex': 52,
         },
       ],
       'orderNumber': 222,
@@ -3755,7 +3755,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 50,
+          'dungeonIndex': 53,
         },
       ],
       'orderNumber': 224,
@@ -4261,7 +4261,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 65,
+          'dungeonIndex': 68,
         },
         {
           'requiredValue': 1,
@@ -4298,7 +4298,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 68,
+          'dungeonIndex': 71,
         },
       ],
       'orderNumber': 13,
@@ -4327,7 +4327,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 68,
+          'dungeonIndex': 71,
         },
       ],
       'orderNumber': 13,
@@ -4358,7 +4358,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 68,
+          'dungeonIndex': 71,
         },
       ],
       'orderNumber': 13,
@@ -4474,7 +4474,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 69,
+          'dungeonIndex': 73,
         },
       ],
       'orderNumber': 21,
@@ -4539,7 +4539,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 70,
+          'dungeonIndex': 75,
         },
       ],
       'orderNumber': 23,
@@ -4568,7 +4568,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 17,
-              'dungeonIndex': 74,
+              'dungeonIndex': 79,
             },
             {
               'requirements': [
@@ -4653,7 +4653,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 77,
+          'dungeonIndex': 82,
         },
       ],
       'orderNumber': 23.1,
@@ -4846,7 +4846,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 80,
+          'dungeonIndex': 85,
         },
       ],
       'orderNumber': 3,
@@ -4964,7 +4964,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 81,
+          'dungeonIndex': 86,
         },
       ],
       'orderNumber': 7,
@@ -5001,7 +5001,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 82,
+          'dungeonIndex': 87,
         },
       ],
       'orderNumber': 8,
@@ -5055,7 +5055,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 83,
+          'dungeonIndex': 88,
         },
       ],
       'orderNumber': 10,
@@ -5085,6 +5085,13 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 67,
+        },
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 15,
+          'region': 5,
+          'route': 10,
         },
       ],
       'orderNumber': 11,
@@ -5244,7 +5251,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 87,
+          'dungeonIndex': 92,
         },
       ],
       'orderNumber': 15,
@@ -5305,7 +5312,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 89,
+          'dungeonIndex': 94,
         },
       ],
       'orderNumber': 17,
@@ -5334,7 +5341,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 90,
+          'dungeonIndex': 95,
         },
       ],
       'orderNumber': 18,
@@ -5561,7 +5568,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 95,
+          'dungeonIndex': 100,
         },
       ],
       'orderNumber': 2,
@@ -5589,7 +5596,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 97,
+          'dungeonIndex': 102,
         },
       ],
       'orderNumber': 3,
@@ -5647,7 +5654,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 103,
+          'dungeonIndex': 108,
         },
       ],
       'orderNumber': 5,
@@ -5678,7 +5685,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 104,
+          'dungeonIndex': 109,
         },
       ],
       'orderNumber': 5.1,
@@ -5713,13 +5720,13 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 99,
+          'dungeonIndex': 104,
         },
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 104,
+          'dungeonIndex': 109,
         },
       ],
       'orderNumber': 5.2,
@@ -5749,7 +5756,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 104,
+          'dungeonIndex': 109,
         },
       ],
       'orderNumber': 6,
@@ -5812,7 +5819,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 105,
+          'dungeonIndex': 110,
         },
       ],
       'orderNumber': 8,
@@ -5838,7 +5845,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 107,
+          'dungeonIndex': 112,
         },
       ],
       'orderNumber': 9,
@@ -5869,7 +5876,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 108,
+          'dungeonIndex': 113,
         },
       ],
       'orderNumber': 9.1,
@@ -5897,7 +5904,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 110,
+          'dungeonIndex': 115,
         },
       ],
       'orderNumber': 10,
@@ -5961,7 +5968,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 110,
+          'dungeonIndex': 115,
         },
       ],
       'orderNumber': 11,
@@ -5995,7 +6002,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 111,
+          'dungeonIndex': 116,
         },
       ],
       'orderNumber': 12,
@@ -6081,7 +6088,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 112,
+          'dungeonIndex': 117,
         },
       ],
       'orderNumber': 15,
@@ -6137,7 +6144,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 113,
+          'dungeonIndex': 118,
         },
       ],
       'orderNumber': 17,
@@ -6164,7 +6171,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 112,
+          'dungeonIndex': 117,
         },
       ],
       'orderNumber': 23,
@@ -6389,7 +6396,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 122,
+          'dungeonIndex': 127,
         },
       ],
       'orderNumber': 1,
@@ -7914,7 +7921,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 124,
+          'dungeonIndex': 129,
         },
       ],
       'orderNumber': 11,
@@ -7987,7 +7994,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 125,
+          'dungeonIndex': 130,
         },
       ],
       'orderNumber': 13,
@@ -8182,7 +8189,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 129,
+          'dungeonIndex': 134,
         },
       ],
       'orderNumber': 14,
@@ -18472,7 +18479,6 @@ module.exports = {
           'Dark Cave',
           'Granite Cave',
           'Meteor Falls',
-          'Mt. Chimney',
           'Shoal Cave',
           'Cave of Origin',
           'Seafloor Cavern',
@@ -20573,11 +20579,6 @@ module.exports = {
           'Glittering Cave',
           'Ten Carat Hill',
         ],
-        '3': [
-          {
-            'dungeon': 'Jagged Pass',
-          },
-        ],
         '5': ['Fighting'],
       },
       'catchRatePercent': 49,
@@ -21454,7 +21455,7 @@ module.exports = {
           'Mt Mortar',
           'Dark Cave',
           'Granite Cave',
-          'Victory Road Hoenn',
+          'Magma Hideout',
           'Oreburgh Gate',
           'Wayward Cave',
           'Mt. Coronet South',
@@ -21580,6 +21581,7 @@ module.exports = {
           'Cerulean Cave',
           'Mt Mortar',
           'Dark Cave',
+          'Magma Hideout',
           'Iron Island',
           'Victory Road Sinnoh',
           'Stark Mountain',
@@ -21588,9 +21590,6 @@ module.exports = {
           'Victory Road Kalos',
         ],
         '3': [
-          {
-            'dungeon': 'Victory Road Hoenn',
-          },
           {
             'dungeon': 'Mt. Coronet North',
           },
@@ -22249,7 +22248,6 @@ module.exports = {
         '2': [
           'Power Plant',
           'Victory Road Sinnoh',
-          'P2 Laboratory',
           'Lost Hotel',
         ],
         '3': [
@@ -22690,11 +22688,7 @@ module.exports = {
         '2': [
           'Power Plant',
           'Pokemon Mansion',
-        ],
-        '3': [
-          {
-            'dungeon': 'Castelia Sewers',
-          },
+          'Castelia Sewers',
         ],
         '4': [
           {
@@ -25660,6 +25654,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['P2 Laboratory'],
         '9': '2.41%',
         '11': ['Always'],
       },
@@ -26943,6 +26938,12 @@ module.exports = {
           'level': 20,
           'dungeon': 'Eterna Forest',
         },
+        {
+          'basePokemon': 'Eevee',
+          'type': [0],
+          'evolvedPokemon': 'Sylveon',
+          'level': 29,
+        },
       ],
       'base': {
         'hitpoints': 55,
@@ -27152,6 +27153,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
         '7': ['Celadon City'],
@@ -27502,7 +27504,7 @@ module.exports = {
         '1': [
           {
             'region': 5,
-            'requirements': 'undefined needs to be completed.',
+            'requirements': "Sea Spirit's Den needs to be completed.",
           },
         ],
         '3': [
@@ -27571,7 +27573,7 @@ module.exports = {
         '1': [
           {
             'region': 5,
-            'requirements': 'undefined needs to be completed.',
+            'requirements': "Sea Spirit's Den needs to be completed.",
           },
         ],
         '3': [
@@ -27640,7 +27642,7 @@ module.exports = {
         '1': [
           {
             'region': 5,
-            'requirements': 'undefined needs to be completed.',
+            'requirements': "Sea Spirit's Den needs to be completed.",
           },
         ],
         '3': [
@@ -31606,6 +31608,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['P2 Laboratory'],
         '11': ['Always'],
       },
       'catchRatePercent': 51,
@@ -31633,6 +31636,7 @@ module.exports = {
       'attack': 109,
       'nativeRegion': 1,
       'locations': {
+        '2': ['P2 Laboratory'],
         '4': [
           {
             'basePokemon': 'Pineco',
@@ -31962,6 +31966,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['P2 Laboratory'],
         '4': [
           {
             'basePokemon': 'Scyther',
@@ -34538,10 +34543,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Petalburg Woods',
-          'Mt. Chimney',
-        ],
+        '2': ['Petalburg Woods'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -34650,7 +34652,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Petalburg Woods'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -36620,6 +36621,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Petalburg Woods',
+            'requirements': 'Petalburg Woods needs to be completed.',
           },
         ],
       },
@@ -36892,11 +36894,6 @@ module.exports = {
           'Victory Road Hoenn',
           'Connecting Cave',
         ],
-        '3': [
-          {
-            'dungeon': 'Rusturf Tunnel',
-          },
-        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -37062,11 +37059,7 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Victory Road Hoenn',
-          },
-        ],
+        '2': ['Victory Road Hoenn'],
         '4': [
           {
             'basePokemon': 'Makuhita',
@@ -37314,6 +37307,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
       },
@@ -37366,6 +37360,7 @@ module.exports = {
           },
           {
             'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
           },
           {
             'dungeon': 'Glittering Cave',
@@ -37476,13 +37471,9 @@ module.exports = {
           ],
         },
         '2': [
+          'Victory Road Hoenn',
           'Mistralton Cave',
           'Terminus Cave',
-        ],
-        '3': [
-          {
-            'dungeon': 'Victory Road Hoenn',
-          },
         ],
         '4': [
           {
@@ -37631,10 +37622,8 @@ module.exports = {
             },
           ],
         },
+        '2': ['Victory Road Hoenn'],
         '3': [
-          {
-            'dungeon': 'Victory Road Hoenn',
-          },
           {
             'dungeon': 'Mt. Coronet North',
           },
@@ -38448,11 +38437,6 @@ module.exports = {
           'Shoal Cave',
           'Seafloor Cavern',
         ],
-        '3': [
-          {
-            'dungeon': 'Seafloor Cavern',
-          },
-        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 1600,
@@ -38562,14 +38546,6 @@ module.exports = {
           'Stark Mountain',
           'Reversal Mountain',
         ],
-        '3': [
-          {
-            'dungeon': 'Mt. Chimney',
-          },
-          {
-            'dungeon': 'Jagged Pass',
-          },
-        ],
         '5': ['Fire'],
       },
       'catchRatePercent': 63,
@@ -38664,6 +38640,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Magma Hideout'],
         '3': [
           {
             'dungeon': 'Fiery Path',
@@ -38710,11 +38687,6 @@ module.exports = {
         '2': [
           'Jagged Pass',
           'Reversal Mountain',
-        ],
-        '3': [
-          {
-            'dungeon': 'Jagged Pass',
-          },
         ],
       },
       'catchRatePercent': 63,
@@ -39931,11 +39903,7 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Relic Castle',
-          },
-        ],
+        '2': ['Relic Castle'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -41853,11 +41821,6 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'P2 Laboratory',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Metang',
@@ -46853,11 +46816,6 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'P2 Laboratory',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Magneton',
@@ -47031,6 +46989,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
+            'requirements': 'Giant Chasm needs to be completed.',
           },
         ],
         '4': [
@@ -47401,6 +47360,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
+            'requirements': 'Giant Chasm needs to be completed.',
           },
         ],
         '4': [
@@ -47437,6 +47397,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
         '4': [
@@ -47676,7 +47637,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['P2 Laboratory'],
         '3': [
           {
             'dungeon': 'Old Chateau',
@@ -50498,6 +50458,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
+            'requirements': 'Giant Chasm needs to be completed.',
           },
           {
             'dungeon': 'Victory Road Unova',
@@ -50507,6 +50468,7 @@ module.exports = {
           },
           {
             'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
       },
@@ -54355,6 +54317,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Karrablast',
@@ -55220,7 +55188,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['P2 Laboratory'],
         '4': [
           {
             'basePokemon': 'Klang',
@@ -55403,7 +55370,6 @@ module.exports = {
       'attack': 136,
       'nativeRegion': 4,
       'locations': {
-        '2': ['P2 Laboratory'],
         '4': [
           {
             'basePokemon': 'Elgyem',
@@ -57659,6 +57625,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
       },
@@ -58609,7 +58576,23 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '11': [
+          'Aspear',
+          'Sitrus',
+          'Pinap',
+          'Iapapa',
+          'Qualot',
+          'Grepa',
+          'Nomel',
+          'Wacan',
+          'Shuca',
+          'Charti',
+          'Chilan',
+          'Jaboca',
+          'Kee',
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 800,
     },
@@ -58639,7 +58622,18 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '11': [
+          'Oran',
+          'Kelpsy',
+          'Passho',
+          'Yache',
+          'Coba',
+          'Rowap',
+          'Maranga',
+          'Apicot',
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 800,
     },
@@ -60389,6 +60383,7 @@ module.exports = {
             },
           ],
         },
+        '8': ['Jaw Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -60477,6 +60472,7 @@ module.exports = {
             },
           ],
         },
+        '8': ['Sail Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -60543,7 +60539,7 @@ module.exports = {
       'id': 700,
       'name': 'Sylveon',
       'type': [17],
-      'eggCycles': 35,
+      'eggCycles': 53,
       'levelType': 2,
       'exp': 184,
       'catchRate': 45,
@@ -60580,9 +60576,17 @@ module.exports = {
             'dungeon': 'Ruins of Hope',
           },
         ],
+        '4': [
+          {
+            'basePokemon': 'Eevee',
+            'type': [0],
+            'evolvedPokemon': 'Sylveon',
+            'level': 29,
+          },
+        ],
       },
       'catchRatePercent': 17,
-      'eggSteps': 1400,
+      'eggSteps': 2120,
     },
     {
       'id': 701,
@@ -61064,6 +61068,14 @@ module.exports = {
       'levelType': 2,
       'exp': 67,
       'catchRate': 120,
+      'evolutions': [
+        {
+          'basePokemon': 'Pumpkaboo',
+          'type': [1],
+          'evolvedPokemon': 'Gourgeist',
+          'stone': 6,
+        },
+      ],
       'base': {
         'hitpoints': 44,
         'attack': 66,
@@ -61101,7 +61113,7 @@ module.exports = {
         13,
         4,
       ],
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 60,
@@ -61123,9 +61135,17 @@ module.exports = {
             },
           ],
         },
+        '4': [
+          {
+            'basePokemon': 'Pumpkaboo',
+            'type': [1],
+            'evolvedPokemon': 'Gourgeist',
+            'stone': 6,
+          },
+        ],
       },
       'catchRatePercent': 21,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 712,
@@ -73188,6 +73208,8 @@ module.exports = {
       'Skull Fossil': 'Cranidos',
       'Cover Fossil': 'Tirtouga',
       'Plume Fossil': 'Archen',
+      'Jaw Fossil': 'Tyrunt',
+      'Sail Fossil': 'Amaura',
     },
     'PokemonToFossil': {
       'Omanyte': 'Helix Fossil',
@@ -73199,6 +73221,8 @@ module.exports = {
       'Cranidos': 'Skull Fossil',
       'Tirtouga': 'Cover Fossil',
       'Archen': 'Plume Fossil',
+      'Tyrunt': 'Jaw Fossil',
+      'Amaura': 'Sail Fossil',
     },
     'KantoGyms': [
       'Pewter City',
@@ -73472,8 +73496,11 @@ module.exports = {
       'Fiery Path',
       'Mt. Chimney',
       'Meteor Falls',
+      'Weather Institute',
       'Mt. Pyre',
       'New Mauville',
+      'Magma Hideout',
+      'Aqua Hideout',
       'Shoal Cave',
       'Seafloor Cavern',
       'Sealed Chamber',
@@ -73516,7 +73543,9 @@ module.exports = {
       'Mistralton Cave',
       'Celestial Tower',
       'Reversal Mountain',
+      'Team Plasma Assault',
       'Seaside Cave',
+      'Plasma Frigate',
       'Giant Chasm',
       'Abundant Shrine',
       'Cave of Being',
@@ -73620,8 +73649,11 @@ module.exports = {
         'Fiery Path',
         'Mt. Chimney',
         'Meteor Falls',
+        'Weather Institute',
         'Mt. Pyre',
         'New Mauville',
+        'Magma Hideout',
+        'Aqua Hideout',
         'Shoal Cave',
         'Seafloor Cavern',
         'Sealed Chamber',
@@ -73664,7 +73696,9 @@ module.exports = {
         'Mistralton Cave',
         'Celestial Tower',
         'Reversal Mountain',
+        'Team Plasma Assault',
         'Seaside Cave',
+        'Plasma Frigate',
         'Giant Chasm',
         'Abundant Shrine',
         'Cave of Being',
@@ -75130,7 +75164,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 35,
+          'dungeonIndex': 38,
         },
       ],
     },
@@ -75840,7 +75874,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 59,
+          'dungeonIndex': 62,
         },
       ],
     },
@@ -75908,7 +75942,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 61,
+          'dungeonIndex': 64,
         },
       ],
     },
@@ -76339,7 +76373,7 @@ module.exports = {
       ],
       'badgeReward': 66,
       'moneyReward': 100000,
-      'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your <Pokémon> have shown me a whole new depth of field! Fantastic! Just fantastic!",
+      'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your Pokémon have shown me a whole new depth of field! Fantastic! Just fantastic!",
       'requirements': [
         {
           'requiredValue': 10,
@@ -76466,7 +76500,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 86,
+          'dungeonIndex': 91,
         },
       ],
     },
@@ -76560,7 +76594,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 92,
+          'dungeonIndex': 97,
         },
       ],
     },
@@ -76782,7 +76816,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 98,
+          'dungeonIndex': 103,
         },
       ],
     },
@@ -76868,7 +76902,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 114,
+          'dungeonIndex': 119,
         },
       ],
     },
@@ -76921,7 +76955,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 118,
+          'dungeonIndex': 123,
         },
       ],
     },
@@ -77290,7 +77324,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 126,
+          'dungeonIndex': 131,
         },
       ],
     },
@@ -78182,6 +78216,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
     },
     {
@@ -78286,6 +78321,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Blue)',
       ],
     },
     {
@@ -78338,6 +78374,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
     },
     {
@@ -78655,6 +78692,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that growing Sitrus and Aspear Berries near each other will produce something interesting!",
     },
@@ -78920,6 +78958,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings get too sour!",
     },
@@ -79090,6 +79129,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Chesto and Persim Berries near each other will produce something interesting!",
     },
@@ -79143,6 +79183,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little spicy, a little sweet, and a little sour at the same time.",
     },
@@ -79249,6 +79290,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that growing Aguav and Figy Berries near each other will produce something interesting!",
     },
@@ -79514,6 +79556,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that growing Pinap Berries can spread a new Berry into nearby empty plots!",
     },
@@ -79909,6 +79952,7 @@ module.exports = {
         'Mudkip',
         'Piplup',
         'Oshawott',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Oran, Chesto, Kelpsy and Coba Berries near each other will produce something interesting!",
     },
@@ -79974,6 +80018,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
         'Pikachu',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that growing Pinap, Iapapa, Qualot and Grepa Berries near each other will produce something interesting!",
     },
@@ -80100,6 +80145,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
         'Snover',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing a Passho Berry alone will cause it to change!",
     },
@@ -80296,6 +80342,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
         'Larvitar',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that using the Sprinklotad can cause Watmel Berries to change!",
     },
@@ -80350,6 +80397,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
         'Tropius',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little dry and fairly bitter at the same time.",
     },
@@ -80545,6 +80593,7 @@ module.exports = {
         'Sewaddle',
         'Karrablast',
         'Sudowoodo',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that using the Cell Battery can cause Cornn Berries to change!",
     },
@@ -80850,6 +80899,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that Chople Berries will turn into a different Berry if surrounded by more than two of its own kind",
     },
@@ -81077,6 +81127,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard of a Berry that only appears in the most bitter of fields.",
     },
@@ -81130,6 +81181,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard of a Berry that only appears in the most sour of fields.",
     },
@@ -81183,6 +81235,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Yellow)',
       ],
       'hint': "I've heard that growing Liechi and Ganlon Berries near each other will produce something interesting!",
     },
@@ -81236,6 +81289,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Salac and Petaya Berries near each other will produce something interesting!",
     },
@@ -81506,6 +81560,7 @@ module.exports = {
         'Munchlax',
         'Sewaddle',
         'Karrablast',
+        'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Chilan Berries near Enigma Berries can cause it to change!",
     },
