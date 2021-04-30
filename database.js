@@ -176,6 +176,9 @@ async function getTop(amount = 10, table = 'coins'){
 
   const db = await getDB();
   switch (table) {
+    case 'messages':
+      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='messages' ORDER BY amount DESC LIMIT ${amount}`);
+      break;
     case 'quiz':
       results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='qz_answered' ORDER BY amount DESC LIMIT ${amount}`);
       break;

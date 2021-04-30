@@ -4,7 +4,7 @@ const { postPages } = require('../helpers.js');
 module.exports = {
   name        : 'top',
   aliases     : ['leaderboard', 'lb'],
-  description : 'Get a list of users with the most points.\n\nType can be one of: quiz, timely, daily, coins (default)',
+  description : 'Get a list of users with the most points.\n\nType can be one of: coins (default), quiz, timely, daily, messages',
   args        : ['type?'],
   guildOnly   : true,
   cooldown    : 3,
@@ -34,6 +34,13 @@ module.exports = {
         results = await getTop(100, 'claim');
         resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0} streak\` <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} Daily Streak:***__`, ...resultsText.splice(0, 10)]);
+        break;
+      case 'messages':
+      case 'message':
+      case 'msg':
+        results = await getTop(100, 'messages');
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0} streak\` <@!${res.user}>`);
+        pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} Messages Sent:***__`, ...resultsText.splice(0, 10)]);
         break;
       case 'coins':
       default:
