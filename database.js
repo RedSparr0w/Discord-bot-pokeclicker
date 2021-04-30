@@ -176,12 +176,6 @@ async function getTop(amount = 10, table = 'coins'){
 
   const db = await getDB();
   switch (table) {
-    case 'messages':
-      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='messages' ORDER BY amount DESC LIMIT ${amount}`);
-      break;
-    case 'quiz':
-      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='qz_answered' ORDER BY amount DESC LIMIT ${amount}`);
-      break;
     case 'timely':
       results = await db.all(`SELECT users.user, streak as amount, RANK () OVER ( ORDER BY streak DESC ) rank FROM timely_claim INNER JOIN users ON users.id = timely_claim.user ORDER BY amount DESC LIMIT ${amount}`);
       break;
@@ -190,8 +184,12 @@ async function getTop(amount = 10, table = 'coins'){
       results = await db.all(`SELECT users.user, streak as amount, RANK () OVER ( ORDER BY streak DESC ) rank FROM daily_claim INNER JOIN users ON users.id = daily_claim.user ORDER BY amount DESC LIMIT ${amount}`);
       break;
     case 'coins':
+      results = await db.all(`SELECT users.user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins INNER JOIN users ON users.id = coins.user ORDER BY amount DESC LIMIT ${amount}`);
+      break;
+    case 'messages':
+    case 'qz_answered':
     default:
-      results = await db.all(`SELECT users.user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM ${table} INNER JOIN users ON users.id = ${table}.user ORDER BY amount DESC LIMIT ${amount}`);
+      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='${table}' ORDER BY amount DESC LIMIT ${amount}`);
   }
   db.close();
 
