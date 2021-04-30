@@ -39,7 +39,7 @@ module.exports = {
       case 'message':
       case 'msg':
         results = await getTop(100, 'messages');
-        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0} streak\` <@!${res.user}>`);
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0} messages\` <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} Messages Sent:***__`, ...resultsText.splice(0, 10)]);
         break;
       case 'coins':
