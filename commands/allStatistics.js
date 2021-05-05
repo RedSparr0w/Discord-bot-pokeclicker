@@ -29,7 +29,7 @@ module.exports = {
 
       embed.setTitle('__***Overall Statistics***__')
         .setColor('#3498db')
-        .setDescription(['```js', `${'name'.padEnd(padding.name, ' ')} | ${'users'.padStart(padding.users, ' ')} | ${'value'.padStart(padding.value, ' ')}`, ''.padStart(6 + padding.name + padding.users + padding.value, '-'), ...results.sort((a, b) => b.users - a.users).map(r => `${r.name.padEnd(padding.name, ' ')} | ${r.users.toLocaleString('en-US').padStart(padding.users, ' ')} | ${r.value.toLocaleString('en-US').padStart(padding.value, ' ')}`), '```']);
+        .setDescription(['```js', `${'name'.padEnd(padding.name, ' ')} | ${'users'.padStart(padding.users, ' ')} | ${'value'.padStart(padding.value, ' ')}`, ''.padStart(6 + padding.name + padding.users + padding.value, '-'), ...results.sort((a, b) => b.value - a.value).sort((a, b) => b.users - a.users).map(r => `${r.name.padEnd(padding.name, ' ')} | ${r.users.toLocaleString('en-US').padStart(padding.users, ' ')} | ${r.value.toLocaleString('en-US').padStart(padding.value, ' ')}`), '```']);
 
       return msg.channel.send({ embed });
     } else {
