@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.1',
+  'gameVersion': '0.8.2',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -72766,6 +72766,7 @@ module.exports = {
     },
     'ROUTE_HELD_ITEM_MODIFIER': 1,
     'DUNGEON_HELD_ITEM_MODIFIER': 4,
+    'DUNGEON_BOSS_HELD_ITEM_MODIFIER': 6,
     'HELD_ITEM_CHANCE': 512,
     'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
     'DUNGEON_SHARDS': 3,
@@ -76748,7 +76749,7 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Hawlucha',
-          'maxHealth': 7208300,
+          'maxHealth': 72083000,
           'level': 64,
         },
         {
