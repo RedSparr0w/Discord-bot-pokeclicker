@@ -8,6 +8,24 @@ const {
 
 const dateToString = date => `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, 0)}-${date.getDate().toString().padStart(2, 0)}`;
 const dateToUTCString = date => date.toISOString().substr(0, 10);
+
+const formatDateToString = (date) => {
+  const s = (amt) => amt != 1 ? 's' : '';
+  date = typeof date == 'number' ? date : +date;
+  const weeks = Math.floor(date / WEEK);
+  const days = Math.floor(date % WEEK / DAY);
+  const hours = Math.floor(date % DAY / HOUR);
+  const minutes = Math.floor(date % HOUR / MINUTE);
+  const seconds = Math.floor(date % MINUTE / SECOND);
+  let timeRemaining = '';
+  if (weeks) timeRemaining += `${weeks} week${s(weeks)} `;
+  if (days) timeRemaining += `${days} day${s(days)} `;
+  if (hours) timeRemaining += `${hours} hour${s(hours)} `;
+  if (minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
+  if (seconds) timeRemaining += `${seconds} second${s(seconds)}`;
+  return timeRemaining.trim();
+};
+
 const formatSecondsFullLetters = (input, hide_zero = false) => {
   // Temporarily recast to number until everything is in modules
   if (Number.isNaN(Number(input)) || input === 0) {
@@ -46,5 +64,6 @@ const formatSecondsFullLetters = (input, hide_zero = false) => {
 module.exports = {
   dateToString,
   dateToUTCString,
+  formatDateToString,
   formatSecondsFullLetters,
 };

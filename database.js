@@ -31,6 +31,8 @@ async function setupDB(){
     // User Statistics
     db.run('CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
     db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
+    // Checked on interval
+    db.run('CREATE TABLE IF NOT EXISTS reminders(id INTEGER PRIMARY KEY AUTOINCREMENT, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, message TEXT(2048) NOT NULL default \'\')'),
   ]);
 
   db.close();
@@ -388,6 +390,55 @@ async function addStatistic(user, type, amount = 1){
   return amount;
 }
 
+async function addReminder(user, time, message = ''){
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
+  const result = await db.run('INSERT INTO reminders (user, datetime, message) VALUES (?, ?, ?)', user_id, Math.floor(+time), message);
+  db.close();
+
+  return result;
+}
+
+async function getOldReminders(date = Date.now()){
+  const db = await getDB();
+
+  const results = await db.all(`SELECT * FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.datetime <= ${+date} ORDER BY reminders.id ASC`);
+  db.close();
+
+  return results;
+}
+
+async function getUserReminders(user){
+  const [
+    db,
+    user_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+  ]);
+
+  const results = await db.all(`SELECT * FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.user = ${user_id} ORDER BY reminders.id ASC`);
+  db.close();
+
+  return results;
+}
+
+async function clearReminders(ids = []){
+  // TODO: allow users to cancel their own reminders
+  const db = await getDB();
+
+  const results = await db.run(`DELETE FROM reminders WHERE reminders.id IN (${ids.join(',')})`);
+  db.close();
+
+  return results;
+}
+
 module.exports = {
   getDB,
   setupDB,
@@ -408,4 +459,8 @@ module.exports = {
   getOverallStatistic,
   getStatistic,
   addStatistic,
+  addReminder,
+  getOldReminders,
+  getUserReminders,
+  clearReminders,
 };
