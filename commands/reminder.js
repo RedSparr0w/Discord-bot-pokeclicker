@@ -40,7 +40,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setDescription(`I will send you a reminder in ${formatDateToString(remindInTime)}
 
-      > ${reminderMessage}
+      > ${reminderMessage.replace(/\n/g, '\n> ')}
 
       _Please make sure you are able to recieve Direct Messages from the bot,
       otherwise you will not get a reminder!_`)
