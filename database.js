@@ -408,7 +408,7 @@ async function addReminder(user, time, message = ''){
 async function getOldReminders(date = Date.now()){
   const db = await getDB();
 
-  const results = await db.all(`SELECT reminders.id AS id, users.user AS user, reminders.message AS message FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.datetime <= ${+date} ORDER BY reminders.id ASC`);
+  const results = await db.all(`SELECT reminders.id, users.user, reminders.message FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.datetime <= ${+date} ORDER BY reminders.id ASC`);
   db.close();
 
   return results;
@@ -423,7 +423,7 @@ async function getUserReminders(user){
     getUserID(user),
   ]);
 
-  const results = await db.all(`SELECT * FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.user = ${user_id} ORDER BY reminders.id ASC`);
+  const results = await db.all(`SELECT reminders.id, users.user, reminders.message, reminders.datetime FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.user = ${user_id} ORDER BY reminders.id ASC`);
   db.close();
 
   return results;
