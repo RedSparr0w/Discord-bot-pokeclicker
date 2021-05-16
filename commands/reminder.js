@@ -19,15 +19,15 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
     const currentTime = Date.now();
-    const mins = (msg.content.match(/\b(\d+)\s?m(in(ute)?(s)?)?\b/) || [0,0])[1];
-    const hours = (msg.content.match(/\b(\d+)\s?h(our(s)?)?\b/) || [0,0])[1];
-    const days = (msg.content.match(/\b(\d+)\s?d(ay(s)?)?\b/) || [0,0])[1];
-    const weeks = (msg.content.match(/\b(\d+)\s?w(eek(s)?)?\b/) || [0,0])[1];
+    const mins = (msg.content.match(/\b(\d+)\s?m(in(ute)?(s)?)?\b/i) || [0,0])[1];
+    const hours = (msg.content.match(/\b(\d+)\s?h(our(s)?)?\b/i) || [0,0])[1];
+    const days = (msg.content.match(/\b(\d+)\s?d(ay(s)?)?\b/i) || [0,0])[1];
+    const weeks = (msg.content.match(/\b(\d+)\s?w(eek(s)?)?\b/i) || [0,0])[1];
 
     const remindInTime = mins * MINUTE + hours * HOUR + days * DAY + weeks * WEEK;
     const reminderTime = new Date(+currentTime + remindInTime);
 
-    const reminderMessage = msg.content.replace(/..?\w+(\b|\s)/, '').replace(/\b(\d+)\s?m(in(ute)?(s)?)?\b/, '').replace(/\b(\d+)\s?h(our(s)?)?\b/, '').replace(/\b(\d+)\s?d(ay(s)?)?\b/, '').replace(/\b(\d+)\s?w(eek(s)?)?\b/, '').trim();
+    const reminderMessage = msg.content.replace(/..?\w+(\b|\s)/, '').replace(/\b(\d+)\s?m(in(ute)?(s)?)?\b/i, '').replace(/\b(\d+)\s?h(our(s)?)?\b/i, '').replace(/\b(\d+)\s?d(ay(s)?)?\b/i, '').replace(/\b(\d+)\s?w(eek(s)?)?\b/i, '').trim();
 
     if (remindInTime <= 0) {
       return msg.reply('You need to add a time to remind you in (minutes, hours, days, weeks)');
