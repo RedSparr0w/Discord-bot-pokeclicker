@@ -6,11 +6,7 @@ const sendReminders = async (client) => {
   reminders.forEach(r => {
     client.users.fetch(r.user, false).then((user) => {
       // Try send the user a DM with the reminder
-      try {
-        user.send(r.message);
-      } catch(err) {
-        warn('Could not send user DM with reminder:', r, err);
-      } // User doesn't have DMs enabled, or something else went wrong
+      user.send(r.message).catch(err=>warn('Could not send user DM with reminder:', r, err));
     }).catch(O_o=>{});
 
     // Clear the reminders we have just sent out
