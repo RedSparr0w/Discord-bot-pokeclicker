@@ -29,7 +29,11 @@ module.exports = {
 
     const reminderMessage = msg.content.replace(/..?\w+(\b|\s)/, '').replace(/\b(\d+)\s?m(in(ute)?(s)?)?\b/, '').replace(/\b(\d+)\s?h(our(s)?)?\b/, '').replace(/\b(\d+)\s?d(ay(s)?)?\b/, '').replace(/\b(\d+)\s?w(eek(s)?)?\b/, '').trim();
 
-    console.log(await addReminder(msg.author, reminderTime, reminderMessage));
+    if (remindInTime <= 0) {
+      return msg.reply('You need to add a time to remind you in (minutes, hours, days, weeks)');
+    }
+
+    await addReminder(msg.author, reminderTime, reminderMessage);
 
     const embed = new MessageEmbed()
       .setDescription(`I will send you a reminder in ${formatDateToString(remindInTime)}

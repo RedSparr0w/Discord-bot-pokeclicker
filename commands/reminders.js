@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js');
 const { getUserReminders } = require('../database.js');
-const { dateToString } = require('../helpers.js');
 
 module.exports = {
   name        : 'reminders',
@@ -20,7 +19,7 @@ module.exports = {
       .setColor('#3498db');
 
     // Add reminders fields
-    reminders.forEach(r => embed.addField(`**${new Date(+r.datetime).toISOString().replace(/T/, ' ').replace(/\..+/, '')}:**`, r.message.substr(0, 1024)));
+    reminders.forEach(r => embed.addField(`**${new Date(+r.datetime).toISOString().replace(/T/, ' ').replace(/\..+/, '')}:**`, r.message.length >= 1024 ? `${r.message.substr(0, 1024)}...` : r.message));
 
     return msg.channel.send({ embed });
   },
