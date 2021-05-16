@@ -10,6 +10,7 @@ const {
   RunOnInterval,
   formatChannelList,
   trainerCardBadgeTypes,
+  MINUTE,
   HOUR,
 } = require('./helpers.js');
 const {
@@ -20,6 +21,7 @@ const {
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 const { newQuiz } = require('./other/quiz/quiz.js');
+const { sendReminders } = require('./other/reminder/reminder.js');
 const { happyHourHours, startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
 
 const client = new Discord.Client();
@@ -63,6 +65,10 @@ client.once('ready', async() => {
   log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot`);
   // Check the database is setup
   await setupDB();
+
+  new RunOnInterval(MINUTE, () => {
+    sendReminders(client);
+  }, { timezone_offset: 0, run_now: true });
 
   new RunOnInterval(HOUR, () => {
     // Set our status
