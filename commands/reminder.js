@@ -11,7 +11,8 @@ const { addReminder } = require('../database.js');
 module.exports = {
   name        : 'remindme',
   aliases     : ['remind', 'reminder', 'rm'],
-  description : 'Send a reminder message',
+  description : `Get the bot to send you a DM reminding you of something,
+  Possible time arguments are minutes, hours, days or weeks.`,
   args        : ['time (1 day 1 hour)', 'message'],
   guildOnly   : true,
   cooldown    : 2,

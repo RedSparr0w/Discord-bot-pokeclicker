@@ -4,8 +4,9 @@ const { getUserReminders, clearReminders } = require('../database.js');
 module.exports = {
   name        : 'clearreminder',
   aliases     : ['clearreminders', 'removereminder', 'removereminders'],
-  description : 'Clear some reminders',
-  args        : ['reminder IDs'],
+  description : `Clear some pending reminders,
+  Get the ID(s) of the reminder using the reminder command`,
+  args        : ['reminder ID(s)'],
   guildOnly   : true,
   cooldown    : 2,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

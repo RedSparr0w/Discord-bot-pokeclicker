@@ -4,7 +4,8 @@ const { getUserReminders } = require('../database.js');
 module.exports = {
   name        : 'reminders',
   aliases     : [],
-  description : 'Current reminders',
+  description : `Get a list of your pending reminders,
+  List displays [ID] Date/Time and message`,
   args        : [],
   guildOnly   : true,
   cooldown    : 2,
