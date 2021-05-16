@@ -19,7 +19,7 @@ module.exports = {
       .setColor('#3498db');
 
     // Add reminders fields
-    reminders.forEach(r => embed.addField(`**${new Date(+r.datetime).toISOString().replace(/T/, ' ').replace(/\..+/, '')}:**`, r.message.length >= 1024 ? `${r.message.substr(0, 1024)}...` : r.message));
+    reminders.forEach(r => embed.addField(`[${r.id}] **${new Date(+r.datetime).toISOString().replace(/T/, ' ').replace(/\..+/, '')}:**`, r.message.length >= 1000 ? `${r.message.substr(0, 1000)}...` : r.message));
 
     return msg.channel.send({ embed });
   },

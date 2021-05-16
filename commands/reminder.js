@@ -12,7 +12,7 @@ module.exports = {
   name        : 'remindme',
   aliases     : ['remind', 'reminder', 'rm'],
   description : 'Send a reminder message',
-  args        : [],
+  args        : ['time (1 day 1 hour)', 'message'],
   guildOnly   : true,
   cooldown    : 2,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
