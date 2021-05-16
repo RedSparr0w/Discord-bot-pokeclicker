@@ -13,7 +13,7 @@ module.exports = {
   aliases     : ['remind', 'reminder', 'rm'],
   description : `Get the bot to send you a DM reminding you of something,
   Possible time arguments are minutes, hours, days or weeks.`,
-  args        : ['time (1 day 1 hour)', 'message'],
+  args        : ['time (1 day 1 hour)?', 'message?'],
   guildOnly   : true,
   cooldown    : 2,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
@@ -31,7 +31,8 @@ module.exports = {
     const reminderMessage = msg.content.replace(/..?\w+(\b|\s)/, '').replace(/\b(\d+)\s?m(in(ute)?(s)?)?\b/i, '').replace(/\b(\d+)\s?h(our(s)?)?\b/i, '').replace(/\b(\d+)\s?d(ay(s)?)?\b/i, '').replace(/\b(\d+)\s?w(eek(s)?)?\b/i, '').trim();
 
     if (remindInTime <= 0) {
-      return msg.reply('You need to add a time to remind you in (minutes, hours, days, weeks)');
+      const showReminders = require('./reminders.js');
+      return showReminders.execute(msg, args);
     }
 
     await addReminder(msg.author, reminderTime, reminderMessage);

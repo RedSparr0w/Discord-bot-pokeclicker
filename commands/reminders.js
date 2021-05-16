@@ -15,7 +15,7 @@ module.exports = {
     const reminders = await getUserReminders(msg.author);
 
     const embed = new MessageEmbed()
-      .setTitle('Your Reminders:')
+      .setTitle('Pending Reminders:')
       .setFooter('Note that times are displayed in UTC')
       .setColor('#3498db');
 
