@@ -180,7 +180,7 @@ module.exports = {
               msg.author,
               'Failed to purchase item',
               '',
-              '_make sure you are able to recieve direct messages_',
+              '_make sure you are able to receive direct messages_',
             ]);
           return msg.channel.send({ embed });
         }

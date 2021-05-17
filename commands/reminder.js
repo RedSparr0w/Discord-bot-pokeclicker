@@ -42,7 +42,7 @@ module.exports = {
 
       > ${reminderMessage.replace(/\n/g, '\n> ')}
 
-      _Please make sure you are able to recieve Direct Messages from the bot,
+      _Please make sure you are able to receive Direct Messages from the bot,
       otherwise you will not get a reminder!_`)
       .setFooter('Reminder Time')
       .setTimestamp(reminderTime)
