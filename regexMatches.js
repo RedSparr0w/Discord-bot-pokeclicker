@@ -58,7 +58,7 @@ module.exports = [
       description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
 
       // Create the embed
-      const embed = new MessageEmbed().setDescription(description);
+      const embed = new MessageEmbed().setDescription(description).setColor('RANDOM');
 
       message.reply({embed});
     },
@@ -67,7 +67,7 @@ module.exports = [
     // Figure out a better way to test for the bots own ID/Role
     regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
     execute: (message, client) => {
-      if (/(Hello|Hi|Hey)/i.test(message.content)) {
+      if (/(Hello|Hi|Hey|Sup)/i.test(message.content)) {
         message.reply('Hello!');
       } else if (/(thanks|ty|thank\s*you)/i.test(message.content)) {
         message.reply('No problem!');
