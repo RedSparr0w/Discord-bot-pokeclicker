@@ -35,6 +35,10 @@ module.exports = {
       return showReminders.execute(msg, args);
     }
 
+    if (reminderMessage.length < 1) {
+      return msg.reply('Reminder message cannot be empty!');
+    }
+
     await addReminder(msg.author, reminderTime, reminderMessage);
 
     const embed = new MessageEmbed()
