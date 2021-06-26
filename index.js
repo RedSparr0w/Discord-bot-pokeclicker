@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.js');
+const { prefix, token, mutedRoleID } = require('./config.js');
 const {
   log,
   info,
@@ -98,6 +98,14 @@ client.on('error', e => error('Client error thrown:', e))
   .on('message', async message => {
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
+
+    // Mute users who mass ping (3 or more users)
+    if (message.mentions.users.size >= 3) {
+      message.delete().catch(e=>{});
+      message.member.roles.add(mutedRoleID, 'User muted for mass ping');
+      return message.reply('You have been muted, Do not mass ping!');
+    }
+
     if (!message.content.startsWith(prefix)) {
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {
