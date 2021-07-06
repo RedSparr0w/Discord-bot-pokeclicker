@@ -10,16 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.6.1",
-    "discord.js": "^12.0.1",
-    "fuzzyset": "^1.0.5",
+    "canvas": "^2.8.0",
+    "discord.js": "^12.5.3",
+    "fuzzyset": "^1.0.6",
     "merge-images": "github:RedSparr0w/merge-images#develop-build",
-    "puppeteer": "^5.2.1",
-    "sqlite": "^3.0.3",
+    "puppeteer": "^5.5.0",
+    "sqlite": "^3.0.6",
     "text2png": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^7.18.0",
+    "eslint": "^7.30.0",
     "node-pre-gyp": "0.12.0"
   }
 }
