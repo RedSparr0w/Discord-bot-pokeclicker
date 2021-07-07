@@ -24,6 +24,6 @@ module.exports = {
       .addField('Role Members:', roleMemberCount)
       .setTimestamp();
 
-    return msg.channel.send({ embed: embed });
+    return msg.channel.send({ embeds: [embed] });
   },
 };

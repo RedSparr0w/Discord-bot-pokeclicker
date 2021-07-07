@@ -35,7 +35,7 @@ const newQuiz = async (guild, reoccur = false) => {
     quiz.embed.setFooter(`Happy Hour!\n(${happyHourBonus} × Faster Questions, ${happyHourBonus} × Shiny Chance)`);
   }
 
-  const bot_message = await quiz_channel.send({ embed: quiz.embed, files: quiz.files }).catch((...args) => warn('Unable to send quiz question', ...args));
+  const bot_message = await quiz_channel.send({ embeds: [quiz.embed], files: quiz.files }).catch((...args) => warn('Unable to send quiz question', ...args));
 
   // If no bot message for whatever reason, try again in 1 minute
   if (!bot_message) return setTimeout(() => newQuiz(guild, reoccur), MINUTE);

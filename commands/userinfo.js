@@ -28,6 +28,6 @@ module.exports = {
       .setFooter(`ID: ${user.id}`)
       .setTimestamp();
 
-    return msg.channel.send({ embed: embed });
+    return msg.channel.send({ embeds: [embed] });
   },
 };
