@@ -3,8 +3,9 @@ const { HOUR } = require('../helpers.js');
 const { happyHourHours } = require('../other/quiz/happy_hour.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'happyhour',
-  aliases     : ['hh'],
+  aliases     : ['hh', 'happy-hour'],
   description : 'Check when the next happy hour is',
   args        : [],
   guildOnly   : true,
@@ -12,7 +13,7 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands', 'game-corner', 'bot-coins'],
-  execute     : async (msg, args) => {
+  execute     : async (interaction) => {
     const now = Date.now();
     const happy_hour = new Date((now - (now % (happyHourHours * HOUR))) + happyHourHours * HOUR);
     
@@ -20,6 +21,6 @@ module.exports = {
       .setDescription('Next happy hour:')
       .setTimestamp(happy_hour)
       .setColor('#3498db');
-    return msg.channel.send({ embeds: [embed] });
+    return interaction.reply({ embeds: [embed] });
   },
 };

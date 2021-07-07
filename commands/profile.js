@@ -9,25 +9,26 @@ const fs =  require('fs');
 const numStr = num => num.toLocaleString('en-US');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'profile',
-  aliases     : ['trainercard', 'tc'],
-  description : 'Get an image of your trainer badge',
+  aliases     : ['trainercard', 'tc', 'trainer-card'],
+  description : 'Get an image of your trainer card',
   args        : ['id?'],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES'],
   userperms   : ['SEND_MESSAGES'],
-  execute     : async (msg, args) => {
-    const [id] = args;
+  execute     : async (interaction) => {
+    const id = interaction.options.get('user')?.value;
 
-    let member = msg.member;
-    let user = msg.author;
+    let member = interaction.member;
+    let user = interaction.user;
 
     if (id) {
-      member = await msg.guild.members.fetch(id).catch(e => {});
+      member = await interaction.guild.members.fetch(id).catch(e => {});
       if (!member) {
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid user ID specified.`);
-        return msg.channel.send({ embeds: [embed] });
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+        return interaction.reply({ embeds: [embed], ephemeral: true });
       }
       user = member.user;
     }
@@ -138,14 +139,14 @@ module.exports = {
       fs.writeFile('trainer_card.png', base64Image, {encoding: 'base64'}, async function(err) {
         const attachment = await new MessageAttachment().setFile('trainer_card.png');
 
-        return msg.channel.send(attachment);
+        return interaction.reply({ files: [attachment] });
 
         // const embed = new MessageEmbed()
         //   .setColor('#3498db')
         //   .attachFiles(attachment)
         //   .setImage('attachment://trainer_card.png');
   
-        // return msg.channel.send({ embeds: [embed] });
+        // return interaction.reply({ embeds: [embed] });
       });
     });
   },

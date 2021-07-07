@@ -254,6 +254,28 @@ client.on('error', e => error('Client error thrown:', e))
           ],
         },
         {
+          name: 'happy-hour',
+          description: 'Check when the next happy hour is for #bot-coins',
+        },
+        {
+          name: 'pokemon',
+          description: 'Get PokéClicker game info about a specific Pokémon',
+          options: [
+            {
+              name: 'name-id',
+              type: 'STRING',
+              description: 'Name or Pokédex ID of the Pokémon',
+              required: true,
+            },
+            {
+              name: 'shiny',
+              type: 'BOOLEAN',
+              description: 'Shiny image',
+              required: false,
+            },
+          ],
+        },
+        {
           name: 'reminder',
           description: 'Command for modifying reminders',
           options: [
@@ -299,6 +321,18 @@ client.on('error', e => error('Client error thrown:', e))
         {
           name: 'timely',
           description: 'Claim your 2 hourly PokéCoins',
+        },
+        {
+          name: 'trainer-card',
+          description: 'Get an image of your trainer card',
+          options: [
+            {
+              name: 'user',
+              type: 'USER',
+              description: 'Get another users trainer card',
+              required: false,
+            },
+          ],
         },
       ];
 

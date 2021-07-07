@@ -15,6 +15,7 @@ const {
 const fuzzyPokemon = FuzzySet(pokemonList.map(p => p.name.toLowerCase()), false);
 
 module.exports = {
+  type        : 'interaction',
   name        : 'pokemon',
   aliases     : ['p', 'poke', 'pinfo', 'pokeinfo'],
   description : 'Get PokéClicker game info about a specific Pokémon',
@@ -24,13 +25,9 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    let id = args.join(' ').toLowerCase().trim();
-    let shiny = false;
-    if (id.endsWith(' shiny')) {
-      id = id.slice(0, id.length - 6);
-      shiny = true;
-    }
+  execute     : async (interaction) => {
+    const id = interaction.options.get('name-id').value;
+    const shiny = interaction.options.get('shiny')?.value || false;
 
     let pokemon = pokemonList.find(p => p.id == +id || p.name.toLowerCase() == id);
     if (!pokemon && isNaN(id)) {
@@ -153,6 +150,6 @@ module.exports = {
     // Spacing for the footer
     embed.addField('\u200b', '\u200b');
 
-    msg.channel.send({ embeds: [embed] });
+    interaction.reply({ embeds: [embed] });
   },
 };
