@@ -18,7 +18,8 @@
     "fuzzyset": "^1.0.6",
     "merge-images": "github:RedSparr0w/merge-images#develop-build",
     "puppeteer": "^5.5.0",
-    "sqlite": "^3.0.6",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2",
     "text2png": "^2.3.0"
   },
   "devDependencies": {

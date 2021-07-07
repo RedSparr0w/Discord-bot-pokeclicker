@@ -1,4 +1,5 @@
 const sqlite = require('sqlite');
+const sqlite3 = require('sqlite3');
 const { backupChannelID } = require('./config.js');
 const { MessageAttachment } = require('discord.js');
 const { warn } = require('./helpers/logging.js');
@@ -13,7 +14,10 @@ const database_filename = 'database.sqlite';
 const database_fullpath = database_dir + database_filename;
 
 async function getDB(){
-  return await sqlite.open(database_fullpath);
+  return await sqlite.open({
+    filename: database_fullpath,
+    driver: sqlite3.Database,
+  });
 }
 
 async function setupDB(){
