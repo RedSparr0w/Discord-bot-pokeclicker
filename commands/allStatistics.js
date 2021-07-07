@@ -12,8 +12,6 @@ module.exports = {
   userperms   : ['MANAGE_GUILD'],
   channels    : [],
   execute     : async (interaction) => {
-    console.log(interaction);
-    console.log(interaction.options);
     const type = interaction.options.get('type')?.value;
 
     const embed = new MessageEmbed().setColor('#e74c3c');

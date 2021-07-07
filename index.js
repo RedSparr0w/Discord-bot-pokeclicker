@@ -77,15 +77,18 @@ client.once('ready', async() => {
   // Check the database is setup
   await setupDB();
 
+  // Check for and send any reminders every minute
   new RunOnInterval(MINUTE, () => {
     sendReminders(client);
   }, { timezone_offset: 0, run_now: true });
 
+  // Update our status every hour
   new RunOnInterval(HOUR, () => {
     // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
   }, { run_now: true });
 
+  // Backup the database every 6 hours
   new RunOnInterval(6 * HOUR, () => {
     client.guilds.cache.forEach(guild => backupDB(guild));
   }, { timezone_offset: 0 });
@@ -100,7 +103,7 @@ client.once('ready', async() => {
     client.guilds.cache.forEach(guild => endHappyHour(guild));
   }, { timezone_offset: HOUR });
   
-  // Will restart itself
+  // Quiz will restart itself, only needs to be run once
   client.guilds.cache.forEach(guild => newQuiz(guild, true));
 });
 
