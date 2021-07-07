@@ -54,6 +54,6 @@ module.exports = {
     embed.addField('\n❯ Attack', ['```prolog', ...getTop(unovaPokemon, 'attack', 10).map(p => `${p.name.padEnd(18, ' ')} ${p.attack.toString().padStart(3, ' ')}`), '```'].join('\n'), true);
     embed.addField('\n❯ Breeding Attack', ['```prolog', ...getTop(unovaPokemon, 'apc', 10).map(p => `${p.name.padEnd(18, ' ')} ${p.apc.toFixed(1).padStart(4, ' ')}`), '```'].join('\n'), true);
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

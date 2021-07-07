@@ -97,7 +97,7 @@ const newQuiz = async (guild, reoccur = false) => {
       .setFooter(`Answered: ${answered.toLocaleString('en-US')}\nBalance: ${balance.toLocaleString('en-US')}`)
       .setColor('#2ecc71');
 
-    m.channel.send({ embed }).catch((...args) => warn('Unable to send quiz winner message', ...args));
+    m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to send quiz winner message', ...args));
   });
     
   // If code reaction, console log the expected answer

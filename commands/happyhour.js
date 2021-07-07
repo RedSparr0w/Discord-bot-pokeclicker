@@ -20,6 +20,6 @@ module.exports = {
       .setDescription('Next happy hour:')
       .setTimestamp(happy_hour)
       .setColor('#3498db');
-    return msg.channel.send({ embed });
+    return msg.channel.send({ embeds: [embed] });
   },
 };

@@ -27,7 +27,7 @@ module.exports = {
       member = await msg.guild.members.fetch(id).catch(e => {});
       if (!member) {
         const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid user ID specified.`);
-        return msg.channel.send({ embed });
+        return msg.channel.send({ embeds: [embed] });
       }
       user = member.user;
     }
@@ -145,7 +145,7 @@ module.exports = {
         //   .attachFiles(attachment)
         //   .setImage('attachment://trainer_card.png');
   
-        // return msg.channel.send({ embed });
+        // return msg.channel.send({ embeds: [embed] });
       });
     });
   },

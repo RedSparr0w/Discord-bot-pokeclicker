@@ -7,8 +7,9 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'dailydeal',
-  aliases     : ['dd', 'deals', 'dailydeals', 'ug', 'underground'],
+  aliases     : ['dd', 'deals', 'dailydeals', 'ug', 'underground', 'daily-deals'],
   description : 'Get a list of daily deals for the next 5 days',
   args        : ['from date(2020-12-31)?'],
   guildOnly   : true,
@@ -16,10 +17,10 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    let [date] = args;
+  execute     : async (interaction) => {
+    let date = interaction.options.get('from-date')?.value;
     if (date) {
-      if (!/\d{4}-\d{2}-\d{2}/.test(date)) return msg.reply(`Invalid date specified: \`${date}\`\nMust be \`YYYY-MM-DD\` format`);
+      if (!/\d{4}-\d{2}-\d{2}/.test(date)) return interaction.reply(`Invalid date specified: \`${date}\`\nMust be \`YYYY-MM-DD\` format`, { ephemeral: true });
       date = date.split('-');
       date[1]--;
     }
@@ -71,6 +72,6 @@ module.exports = {
       dateToCheck.setDate(dateToCheck.getDate() + 1);
     }
 
-    msg.channel.send({ embed });
+    interaction.reply({ embeds: [embed] });
   },
 };

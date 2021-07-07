@@ -27,6 +27,6 @@ module.exports = {
       '```',
     ].join('\n'));
     
-    await interaction.editReply({ embeds: [embed] });
+    await interaction.editReply({ embeds: [embed], ephemeral: true });
   },
 };

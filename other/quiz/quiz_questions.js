@@ -25,7 +25,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
     .setThumbnail(image)
     .setColor('#e74c3c');
   if (description) embed.setDescription(description);
-  m.channel.send({ embed }).catch((...args) => warn('Unable to post quiz answer', ...args));
+  m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
 

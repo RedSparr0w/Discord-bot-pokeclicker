@@ -51,6 +51,6 @@ module.exports = {
       embed.addField(`❯ ${GameConstants.Region[region].toUpperCase()}`, `\`\`\`ini\n${description.join('\n')}\n\`\`\``, true);
     });
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

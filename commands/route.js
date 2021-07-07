@@ -84,6 +84,6 @@ module.exports = {
       //embed.addField('\u200b', descChance.join('\n'), true);
     }
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

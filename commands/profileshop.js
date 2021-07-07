@@ -40,7 +40,7 @@ module.exports = {
         .addField('Description', 'Update your trainer card background')
         .setThumbnail(`${imageBaseLink}/trainer_card/${color}.png`);
 
-      pages.push({ embed });
+      pages.push({ embeds: [embed] });
     });
 
     for (let trainerID = 0; trainerID <= totalTrainerImages; trainerID++) {
@@ -52,7 +52,7 @@ module.exports = {
         .addField('Description', 'Set your displayed trainer')
         .setThumbnail(`${imageBaseLink}/trainers/${trainerID}.png`);
 
-      pages.push({ embed });
+      pages.push({ embeds: [embed] });
     }
 
     pages = pages.map((page, index) => {
@@ -95,7 +95,7 @@ module.exports = {
             '_you cannot afford this item_',
           ]);
 
-          return msg.channel.send({ embed });
+          return msg.channel.send({ embeds: [embed] });
         }
 
         // Item purchased
@@ -120,7 +120,7 @@ module.exports = {
             `New ${itemType} has been set!`,
           ])
           .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
-        return msg.channel.send({ embed });
+        return msg.channel.send({ embeds: [embed] });
       } catch (e) {
         const embed = new MessageEmbed()
           .setColor('#e74c3c')
@@ -131,7 +131,7 @@ module.exports = {
             'Something wen\'t wrong, try again later..',
           ]);
 
-        return msg.channel.send({ embed });
+        return msg.channel.send({ embeds: [embed] });
       }
     });
   },

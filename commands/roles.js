@@ -32,7 +32,7 @@ module.exports = {
       .setColor('#3498db')
       .setDescription(getDescription());
     
-    const bot_message = await msg.channel.send({ embed });
+    const bot_message = await msg.channel.send({ embeds: [embed] });
 
     const reactionIDs = Object.values(notificationRoles).map(r => (r.match(/:(\d+)>/) || [])[1]);
 
@@ -62,7 +62,7 @@ module.exports = {
       setTimeout(() => {
         const embed = bot_message.embeds[0];
         embed.setDescription(getDescription());
-        bot_message.edit({ embed }).catch(O_o=>{});
+        bot_message.edit({ embeds: [embed] }).catch(O_o=>{});
       }, SECOND / 2);
     });
 
@@ -75,7 +75,7 @@ module.exports = {
       setTimeout(() => {
         const embed = bot_message.embeds[0];
         embed.setDescription(getDescription());
-        bot_message.edit({ embed }).catch(O_o=>{});
+        bot_message.edit({ embeds: [embed] }).catch(O_o=>{});
       }, SECOND / 2);
     });
 

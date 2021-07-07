@@ -127,24 +127,182 @@ client.on('error', e => error('Client error thrown:', e))
       const data = [
         {
           name: 'ping',
-          description: 'Replies with Pong!',
+          description: 'Replies with the bots current ping to Discord',
         },
         {
-          name: 'allstatistics',
-          description: 'Replies with your input!',
+          name: 'badges',
+          description: 'Check what badges can be earned for your trainer card',
+        },
+        {
+          name: 'balance',
+          description: 'Get your current PokéCoin balance',
+        },
+        {
+          name: 'berry',
+          description: 'Get PokéClicker game info about a specific Berry',
           options: [
             {
-              name: 'type',
+              name: 'berryname',
               type: 'STRING',
-              description: 'The input to echo back',
+              description: 'Which berry you want info on (can be an ID or name)',
+              required: true,
+            },
+          ],
+        },
+        {
+          name: 'claim',
+          description: 'Claim your daily PokéCoins',
+        },
+        {
+          name: 'daily-chain',
+          description: 'Get a list of the best daily chains for the next 14 days',
+          options: [
+            {
+              name: 'max-slots',
+              type: 'INTEGER',
+              description: 'Maximum number of slots you have unlocked in the Underground (default 3)',
+              required: false,
+            },
+            {
+              name: 'days',
+              type: 'INTEGER',
+              description: 'Maximum number of days would you like to complete a chain for (default 14)',
+              required: false,
+            },
+            {
+              name: 'from-date',
+              type: 'STRING',
+              description: 'YYYY-MM-DD - Starting date for the daily chain (default today UTC)',
               required: false,
             },
           ],
         },
+        {
+          name: 'daily-deals',
+          description: 'Get a list of daily deals for the next 5 days',
+          options: [
+            {
+              name: 'from-date',
+              type: 'STRING',
+              description: 'YYYY-MM-DD - Starting date for the daily chain (default today UTC)',
+              required: false,
+            },
+          ],
+        },
+        {
+          name: 'donate',
+          description: 'Get a PayPal Donate link to help with the server cost of the Discord bot',
+        },
+        {
+          name: 'flip',
+          description: 'Flip a coin and bet some money',
+          options: [
+            {
+              name: 'bet-amount',
+              type: 'STRING',
+              description: 'How much money you want to bet',
+              required: true,
+            },
+            {
+              name: 'coin-side',
+              type: 'STRING',
+              description: 'Which side of the coin are you betting on',
+              required: true,
+              choices: [
+                {
+                  name: 'Heads',
+                  value: 'heads',
+                },
+                {
+                  name: 'Tails',
+                  value: 'tails',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'fire-water-grass',
+          description: 'Fire, Water, Grass _(Rock, Paper, Scissors)_ bet some money',
+          options: [
+            {
+              name: 'bet-amount',
+              type: 'STRING',
+              description: 'How much money you want to bet',
+              required: true,
+            },
+            {
+              name: 'type',
+              type: 'STRING',
+              description: 'Which type are you betting on',
+              required: true,
+              choices: [
+                {
+                  name: 'Fire',
+                  value: 'fire',
+                },
+                {
+                  name: 'Water',
+                  value: 'water',
+                },
+                {
+                  name: 'Grass',
+                  value: 'grass',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'reminder',
+          description: 'Command for modifying reminders',
+          options: [
+            {
+              name: 'view',
+              type: 'SUB_COMMAND',
+              description: 'View pending reminders',
+            },
+            {
+              name: 'add',
+              type: 'SUB_COMMAND',
+              description: 'Add a new reminder',
+              options: [
+                {
+                  name: 'time',
+                  type: 'STRING',
+                  description: 'How long until you want to be reminded',
+                  required: true,
+                },
+                {
+                  name: 'message',
+                  type: 'STRING',
+                  description: 'What you want to be reminded about',
+                  required: true,
+                },
+              ],
+            },
+            {
+              name: 'remove',
+              type: 'SUB_COMMAND',
+              description: 'Remove reminder(s)',
+              options: [
+                {
+                  name: 'ids',
+                  type: 'STRING',
+                  description: 'Reminder ID(s) to remove',
+                  required: true,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'timely',
+          description: 'Claim your 2 hourly PokéCoins',
+        },
       ];
 
-      const command = await client.guilds.cache.get('611852340752023552').commands.set(data);
-      console.log(command);
+      return await client.guilds.cache.get('611852340752023552').commands.set(data);
     }
 
     // Non command messages
@@ -169,11 +327,45 @@ client.on('error', e => error('Client error thrown:', e))
       // We don't want to process anything else now
       return;
     }
+
+    // Each argument should be split by 1 (or more) space character
+    const args = message.content.slice(prefix.length).trim().split(/,?\s+/);
+    const commandName = args.shift().toLowerCase();
+
+    const command = client.commands.get(commandName)
+      || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+
+    // // Each argument should be split by 1 (or more) space character
+    // const args = message.content.slice(prefix.length).trim().split(/,?\s+/);
+    // const commandName = args.shift().toLowerCase();
+
+    // Not a valid command
+    if (!command) return;
+
+    // Apply command cooldowns
+    const timeLeft = cooldownTimeLeft(command.name, command.cooldown, message.author.id);
+    if (timeLeft > 0) {
+      return message.reply({ content: `Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
+    }
+
+    // Run the command
+    try {
+      // Send the message object, along with the arguments, and the commandName (incase an alias was used)
+      await command.execute(message, args, client);
+      addStatistic(message.author, `!${command.name}`);
+      const commandsSent = await addStatistic(message.author, 'commands');
+      if (commandsSent >= 1000) {
+        await addPurchased(message.author, 'badge', trainerCardBadgeTypes.Cascade);
+      }
+    } catch (err) {
+      error(`Error executing command "${command.name}":\n`, err);
+      message.reply('There was an error trying to execute that command!');
+    }
   })
   .on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
 
-    console.log('int:\n', interaction, '\n/int');
+    console.log(interaction);
 
     const command = client.commands.get(interaction.commandName)
       || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(interaction.commandName));

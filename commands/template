@@ -16,6 +16,6 @@ module.exports = {
   channels    : ['bot-commands'],
   execute     : async (msg, args) => {
     const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nMessage here.`);
-    return msg.channel.send({ embed });
+    return msg.channel.send({ embeds: [embed] });
   },
 };

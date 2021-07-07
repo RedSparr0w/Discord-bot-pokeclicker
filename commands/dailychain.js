@@ -7,8 +7,9 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'dailychain',
-  aliases     : ['dc', 'dailychains', 'chain', 'chains'],
+  aliases     : ['dc', 'dailychains', 'chain', 'chains', 'daily-chain'],
   description : 'Get a list of the best daily chains for the next 14 days',
   args        : ['max slots(3)?', 'from date(2020-12-01)?', 'days(14)?'],
   guildOnly   : true,
@@ -16,32 +17,33 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    let [maxSlots, fromDate, days] = args;
+  execute     : async (interaction) => {
+    let [
+      maxSlots,
+      fromDate,
+      days,
+    ] = [
+      +interaction.options.get('max-slots')?.value || 3,
+      interaction.options.get('from-date')?.value,
+      +interaction.options.get('days')?.value || 14,
+    ];
 
     if (isNaN(maxSlots) || maxSlots <= 0 || maxSlots > 5) {
       maxSlots = 3;
-    } else {
-      maxSlots = +maxSlots;
     }
 
     if (fromDate) {
-      if (!/\d{4}-\d{2}-\d{2}/.test(fromDate)) return msg.reply(`Invalid from date specified: \`${fromDate}\`\nMust be \`YYYY-MM-DD\` format`);
+      if (!/\d{4}-\d{2}-\d{2}/.test(fromDate)) return interaction.reply(`Invalid from date specified: \`${fromDate}\`\nMust be \`YYYY-MM-DD\` format`, { ephemeral: true });
       fromDate = fromDate.split('-');
       fromDate[1]--;
       fromDate = new Date(fromDate[0], fromDate[1], fromDate[2]);
     } else {
       const today = new Date();
+      // go to yesterday
       fromDate = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours() - 13);
     }
 
-    if (isNaN(days) || days <= 0) {
-      days = 14;
-    } else {
-      // speed is no longer an issue,
-      // but we are limited by message length limits
-      days = Math.min(1000, days);
-    }
+    days = Math.max(1, Math.min(1000, days));
 
     const embed = new MessageEmbed()
       .setTitle(`Upcoming Daily Deals (${maxSlots} slots - ${days} days)`)
@@ -216,6 +218,6 @@ module.exports = {
     });
 
 
-    msg.channel.send({ embed });
+    interaction.reply({ embeds: [embed] });
   },
 };

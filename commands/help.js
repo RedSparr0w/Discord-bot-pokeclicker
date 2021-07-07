@@ -74,7 +74,7 @@ module.exports = {
         });
         if (restrictedCommands.length) embed.addField('__***#restricted-channel***__', restrictedCommands);
       }
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
 
     // Help on a specific command
@@ -100,7 +100,7 @@ module.exports = {
       command.helpFields.forEach(([header, body, inline]) => embed.addField(header, body, !!inline));
     }
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };
 

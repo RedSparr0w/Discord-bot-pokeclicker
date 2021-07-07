@@ -3,6 +3,7 @@ const { MessageEmbed } = require('discord.js');
 const donatelink = 'https://www.paypal.com/donate?hosted_button_id=AYMCC237K8VR4';
 
 module.exports = {
+  type        : 'interaction',
   name        : 'donate',
   aliases     : [],
   description : 'Get a PayPal Donate link to help with the server cost of the Discord bot',
@@ -11,7 +12,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  execute     : async (msg, args) => {
+  execute     : async (interaction) => {
     const description = `<:heartscale:761861364876574740> Thank you for considering donating,
     The money will go towards the server cost of the Discord bot.
 
@@ -22,6 +23,6 @@ module.exports = {
       .setColor('#3498db')
       .setDescription(description);
     
-    return msg.channel.send({ embed });
+    return interaction.reply({ embeds: [embed] });
   },
 };

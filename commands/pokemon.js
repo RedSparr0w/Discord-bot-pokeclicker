@@ -153,6 +153,6 @@ module.exports = {
     // Spacing for the footer
     embed.addField('\u200b', '\u200b');
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

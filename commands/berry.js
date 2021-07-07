@@ -37,6 +37,7 @@ const auraType = [
 const fuzzyBerry = FuzzySet(Object.keys(berryType), false);
 
 module.exports = {
+  type        : 'interaction',
   name        : 'berry',
   aliases     : ['berries', 'bery', 'berri', 'beri', 'berrie'],
   description : 'Get PokéClicker game info about a specific Berry',
@@ -46,17 +47,17 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    const id = args.join(' ').toLowerCase().trim();
+  execute     : async (interaction) => {
+    const id = interaction.options.get('berryname')?.value;
 
     let berry = berryList.find(b => b.type == (+id - 1));
     if (!berry && isNaN(id)) {
-      const newNames = fuzzyBerry.get(id);
+      const newNames = fuzzyBerry.get(id.toString());
       if (newNames) {
         berry = berryList.find(b => b.type == +berryType[newNames[0][1]]);
       }
     }
-    if (!berry) return msg.channel.send('Berry not found..');
+    if (!berry) return interaction.reply('Berry not found..', { ephemeral: true });
 
     const embed = new MessageEmbed()
       .setTitle(`#${berry.type >= 0 ? (berry.type + 1).toString().padStart(2, 0) : '???'} ${berryType[berry.type].toUpperCase()}`)
@@ -91,6 +92,6 @@ module.exports = {
     // Spacing for the footer
     embed.addField('\u200b', '\u200b');
 
-    msg.channel.send({ embed });
+    interaction.reply({ embeds: [embed] });
   },
 };

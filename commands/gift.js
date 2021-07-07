@@ -19,11 +19,11 @@ module.exports = {
 
     if (isNaN(amount)) {
       embed.setDescription('Invalid amount specified..');
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
     if (!msg.mentions.users.size) {
       embed.setDescription('No users mentioned..');
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
 
     const output = [msg.author, `Gifted ${amount.toLocaleString('en-NZ')} ${serverIcons.money} to the following users`, ''];
@@ -36,6 +36,6 @@ module.exports = {
     embed.setColor('#2ecc71')
       .setDescription(output);
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

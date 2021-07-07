@@ -25,7 +25,7 @@ module.exports = {
     // Check the bet amount is correct
     if (!validBet(bet)) {
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount.`);
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
 
     const balance = await getAmount(msg.author);
@@ -34,7 +34,7 @@ module.exports = {
 
     if (bet > balance || !balance || balance <= 0) {
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nNot enough coins.`);
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
 
     const multiplier = getMultiplier();
@@ -57,6 +57,6 @@ module.exports = {
       .setColor(multiplier > 1 ? '#2ecc71' : '#e74c3c')
       .setDescription(output)
       .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
-    return msg.channel.send({ embed });
+    return msg.channel.send({ embeds: [embed] });
   },
 };

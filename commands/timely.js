@@ -27,18 +27,19 @@ const calcStreakBonus = (streak) => {
 const s = (amt) => amt != 1 ? 's' : '';
 
 module.exports = {
+  type        : 'interaction',
   name        : 'timely',
   aliases     : [],
-  description : 'Claim your 2 hourly coins',
+  description : 'Claim your 2 hourly PokéCoins',
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['game-corner', 'bot-commands'],
-  execute     : async (msg, args) => {
+  execute     : async (interaction) => {
     // Check if user claimed within the last 24 hours
-    let { last_claim, streak } = await getLastClaim(msg.author, 'timely_claim');
+    let { last_claim, streak } = await getLastClaim(interaction.user, 'timely_claim');
 
     // User already claimed within last 2 hours
     if (last_claim >= (Date.now() - time_between_claims)) {
@@ -50,15 +51,17 @@ module.exports = {
       if (+hours) timeRemaining += `${hours} hour${s(hours)} `;
       if (+hours || +minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
       timeRemaining += `${seconds} second${s(seconds)}`;
-      return msg.channel.send({
-        embed: new MessageEmbed().setColor('#e74c3c').setFooter('Next timely').setTimestamp(time_between_claims + (+last_claim))
-          .setDescription(`${msg.author}\nYou've already claimed your ${serverIcons.money} too recently\nYou can claim again in ${timeRemaining}`),
+      return interaction.reply({
+        embeds: [
+          new MessageEmbed().setColor('#e74c3c').setFooter('Next timely').setTimestamp(time_between_claims + (+last_claim))
+            .setDescription(`${interaction.user}\nYou've already claimed your ${serverIcons.money} too recently\nYou can claim again in ${timeRemaining}`),
+        ],
       });
     }
 
     // Should the claim streak be reset (if more than 1 day)
     if (last_claim < (Date.now() - (2 * DAY))) {
-      await resetClaimStreak(msg.author, 'timely_claim');
+      await resetClaimStreak(interaction.user, 'timely_claim');
       streak = 0;
     }
 
@@ -67,7 +70,7 @@ module.exports = {
     let totalAmount = timelyAmount + streakBonus;
     const roleBonuses = [];
     try {
-      msg.member.roles.cache.map(r => r.id).forEach(roleID => {
+      interaction.member.roles.cache.map(r => r.id).forEach(roleID => {
         const bonus = bonusRoles[roleID];
         if (bonus) {
           roleBonuses.push([roleID, Math.floor(totalAmount * bonus)]);
@@ -79,12 +82,12 @@ module.exports = {
     totalAmount += roleBonuses.reduce((a, [r, b]) => a + b, 0);
 
     // Add the coins to the users balance then set last claim time (incase the user doesn't exist yet)
-    const balance = await addAmount(msg.author, totalAmount, 'coins');
-    await updateClaimDate(msg.author, 'timely_claim');
-    await bumpClaimStreak(msg.author, 'timely_claim');
+    const balance = await addAmount(interaction.user, totalAmount, 'coins');
+    await updateClaimDate(interaction.user, 'timely_claim');
+    await bumpClaimStreak(interaction.user, 'timely_claim');
 
     const message = [
-      msg.author,
+      interaction.user,
       `_Timely Claim:_ **+${timelyAmount.toLocaleString('en-US')}** ${serverIcons.money}`,
     ];
 
@@ -102,8 +105,8 @@ module.exports = {
       `Current Streak: **${streak + 1}**`
     );
 
-    return msg.channel.send({
-      embed: new MessageEmbed().setColor('#2ecc71').setDescription(message),
+    return interaction.reply({
+      embeds: [new MessageEmbed().setColor('#2ecc71').setDescription(message.join('\n'))],
     });
   },
 };

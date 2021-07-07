@@ -21,11 +21,11 @@ module.exports = {
 
     if (!badge) {
       embed.setDescription('Invalid badge icon specified..');
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
     if (!msg.mentions.users.size) {
       embed.setDescription('No users mentioned..');
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
 
     const output = [msg.author, `Gave ${badge.icon} ${badge.name} Badge to the following users`, ''];
@@ -38,6 +38,6 @@ module.exports = {
     embed.setColor('#2ecc71')
       .setDescription(output);
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

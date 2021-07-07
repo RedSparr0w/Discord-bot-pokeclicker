@@ -15,7 +15,7 @@ module.exports = {
 
     if (!msg.mentions.members.size) {
       embed.setDescription('No users mentioned..');
-      return msg.channel.send({ embed });
+      return msg.channel.send({ embeds: [embed] });
     }
 
     const output = [msg.author, '', 'Unmuted the following users:'];
@@ -27,6 +27,6 @@ module.exports = {
 
     embed.setColor('#3498db').setDescription(output);
 
-    msg.channel.send({ embed });
+    msg.channel.send({ embeds: [embed] });
   },
 };

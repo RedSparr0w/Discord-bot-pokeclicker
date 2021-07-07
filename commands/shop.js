@@ -86,7 +86,7 @@ module.exports = {
 
       if (item.image) embed.setThumbnail(website + item.image);
 
-      pages.push({ embed });
+      pages.push({ embeds: [embed] });
     });
 
     const botMsg = await postPages(msg, pages, page);
@@ -112,7 +112,7 @@ module.exports = {
             '',
             'Something wen\'t wrong, try again later..',
           ]);
-        return msg.channel.send({ embed });
+        return msg.channel.send({ embeds: [embed] });
       }
 
       const item = allShopItems[itemID - 1];
@@ -132,7 +132,7 @@ module.exports = {
             '_you cannot afford this item_',
           ]);
 
-        return msg.channel.send({ embed });
+        return msg.channel.send({ embeds: [embed] });
       }
 
       // Purchase item
@@ -146,7 +146,7 @@ module.exports = {
               '',
               'Something wen\'t wrong, try again later..',
             ]);
-          return msg.channel.send({ embed });
+          return msg.channel.send({ embeds: [embed] });
         } else {
           const remainingBalance = await removeAmount(msg.author, item.price);
           embed.setColor('#2ecc71')
@@ -155,7 +155,7 @@ module.exports = {
               `**${item.name}** Successfully purchased!`,
             ])
             .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
-          return msg.channel.send({ embed });
+          return msg.channel.send({ embeds: [embed] });
         }
       } else { // Game shop item
 
@@ -172,7 +172,7 @@ module.exports = {
         ]);
 
         let error;
-        await msg.author.send({ embed }).catch(e => error = e);
+        await msg.author.send({ embeds: [embed] }).catch(e => error = e);
         // Error sending the code to the user, DM's might be disabled
         if (error) {
           embed.setColor('#e74c3c')
@@ -182,7 +182,7 @@ module.exports = {
               '',
               '_make sure you are able to receive direct messages_',
             ]);
-          return msg.channel.send({ embed });
+          return msg.channel.send({ embeds: [embed] });
         }
 
         const remainingBalance = await removeAmount(msg.author, item.price);
@@ -196,7 +196,7 @@ module.exports = {
           ])
           .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
 
-        msg.channel.send({ embed });
+        msg.channel.send({ embeds: [embed] });
       }
     });
   },

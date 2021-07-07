@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const { backupDB } = require('../database.js');
 
 module.exports = {
+  type        : 'message',
   name        : 'backup',
   aliases     : [],
   description : 'Backup database',
@@ -13,7 +14,7 @@ module.exports = {
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     msg.channel.send({
-      embed: new MessageEmbed().setColor('#2ecc71').setDescription('Backed up database!'),
+      embeds: [new MessageEmbed().setColor('#2ecc71').setDescription('Backed up database!')],
     });
     backupDB(msg.guild);
   },
