@@ -9,7 +9,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  execute     : async (msg, args) => {
+  execute     : async (interaction) => {
     const createdTime = Date.now();
     
     const embed = new MessageEmbed()
@@ -17,16 +17,16 @@ module.exports = {
         '```yaml',
         'Pong: ---ms',
         '```',
-      ])
+      ].join('\n'))
       .setColor('#3498db');
-    return msg.channel.send({ embed }).then(m=>{
-      const outboundDelay = Date.now() - createdTime;
-      embed.setDescription([
-        '```yaml',
-        `Pong: ${outboundDelay}ms`,
-        '```',
-      ]);
-      m.edit({ embed });
-    });
+    await interaction.reply({ embeds: [embed], ephemeral: true });
+    const outboundDelay = Date.now() - createdTime;
+    embed.setDescription([
+      '```yaml',
+      `Pong: ${outboundDelay}ms`,
+      '```',
+    ].join('\n'));
+    
+    await interaction.editReply({ embeds: [embed] });
   },
 };

@@ -11,8 +11,10 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['MANAGE_GUILD'],
   channels    : [],
-  execute     : async (msg, args) => {
-    const [type] = args;
+  execute     : async (interaction) => {
+    console.log(interaction);
+    console.log(interaction.options);
+    const type = interaction.options.get('type')?.value;
 
     const embed = new MessageEmbed().setColor('#e74c3c');
 
@@ -29,28 +31,28 @@ module.exports = {
 
       embed.setTitle('__***Overall Statistics***__')
         .setColor('#3498db')
-        .setDescription(['```js', `${'name'.padEnd(padding.name, ' ')} | ${'users'.padStart(padding.users, ' ')} | ${'value'.padStart(padding.value, ' ')}`, ''.padStart(6 + padding.name + padding.users + padding.value, '-'), ...results.sort((a, b) => b.value - a.value).sort((a, b) => b.users - a.users).map(r => `${r.name.padEnd(padding.name, ' ')} | ${r.users.toLocaleString('en-US').padStart(padding.users, ' ')} | ${r.value.toLocaleString('en-US').padStart(padding.value, ' ')}`), '```']);
+        .setDescription(['```js', `${'name'.padEnd(padding.name, ' ')} | ${'users'.padStart(padding.users, ' ')} | ${'value'.padStart(padding.value, ' ')}`, ''.padStart(6 + padding.name + padding.users + padding.value, '-'), ...results.sort((a, b) => b.value - a.value).sort((a, b) => b.users - a.users).map(r => `${r.name.padEnd(padding.name, ' ')} | ${r.users.toLocaleString('en-US').padStart(padding.users, ' ')} | ${r.value.toLocaleString('en-US').padStart(padding.value, ' ')}`), '```'].join('\n'));
 
-      return msg.channel.send({ embed });
+      return interaction.reply({ embeds: [embed] });
     } else {
-      const stat = statTypes.find(s => s.name == type);
+      const stat = statTypes.find(s => s.name == type.value);
 
       if (!stat) {
         embed.setTitle('Overall Statistics')
-          .setDescription(statTypes.map(s => s.name));
-        return msg.channel.send({ embed });
+          .setDescription(statTypes.map(s => s.name).join('\n'));
+        return interaction.reply({ embeds: [embed] });
       }
 
-      const stats = await getOverallStatistic(type);
+      const stats = await getOverallStatistic(type.value);
 
       embed.setTitle(`__***${stats.name}***__`)
         .setColor('#3498db')
         .setDescription([
           `**❯ Users:** ${stats.users.toLocaleString('en-US')}`,
           `**❯ Value:** ${stats.value.toLocaleString('en-US')}`,
-        ]);
+        ].join('\n'));
 
-      return msg.channel.send({ embed });
+      return interaction.reply({ embeds: [embed] });
     }
   },
 };
