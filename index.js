@@ -319,6 +319,10 @@ client.on('error', e => error('Client error thrown:', e))
           ],
         },
         {
+          name: 'roles',
+          description: 'Claim your 2 hourly PokéCoins',
+        },
+        {
           name: 'timely',
           description: 'Claim your 2 hourly PokéCoins',
         },

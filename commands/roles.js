@@ -1,8 +1,9 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { notificationRoles } = require('../config.js');
 const { addOrderedReactions, SECOND, MINUTE } = require('../helpers.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'roles',
   aliases     : ['role'],
   description : 'Get certain roles for updates and other stuff',
@@ -12,74 +13,63 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    const user = msg.author;
-    const member = msg.member;
+  execute     : async (interaction) => {
+    const user = interaction.user;
+    const member = interaction.member;
 
     if (!notificationRoles) {
-      return msg.channel.send('No roles have been defined yet.');
+      return interaction.reply('No roles have been defined yet.');
     }
 
-    const getDescription = () => {
-      const description = [user, 'Click the reactions to toggle the roles', ''];
-      Object.keys(notificationRoles).forEach(roleID => {
-        description.push(`${notificationRoles[roleID]} <@&${roleID}>: ${member.roles.cache.has(roleID) ? 'enabled' : 'disabled'}`);
+    const customID = Math.random().toString(36).substring(8);
+
+    const getButtons = () => {
+      const buttons = new MessageActionRow();
+      notificationRoles.forEach(role => {
+        if (!member.guild.roles.cache.get(role.id)) return;
+        buttons.addComponents(
+          new MessageButton()
+            .setCustomId(`${role.id}-role${customID}`)
+            .setLabel(role.name)
+            .setStyle(member.roles.cache.has(role.id) ? 'SUCCESS' : 'DANGER')
+            .setEmoji((role.emoji.match(/:(\d+)>/) || [])[1])
+        );
       });
-      return description;
+      return buttons;
     };
 
     const embed = new MessageEmbed()
       .setColor('#3498db')
-      .setDescription(getDescription());
+      .setDescription([user, 'Click the buttons to toggle the roles', ''].join('\n'));
     
-    const bot_message = await msg.channel.send({ embeds: [embed] });
+    await interaction.reply({ embeds: [embed], components: [getButtons()] });
 
-    const reactionIDs = Object.values(notificationRoles).map(r => (r.match(/:(\d+)>/) || [])[1]);
-
-    await addOrderedReactions(bot_message, [...reactionIDs, '🔄']);
-    const role_filter = (reaction, u) => reactionIDs.includes(reaction.emoji.id) && u.id === user.id;
-    
-    const refresh_filter = (reaction, u) => reaction.emoji.name === '🔄' && u.id === user.id;
+    const role_filter = (i) => i.customId.endsWith(`role${customID}`) && i.user.id === interaction.user.id;
   
     // Allow reactions for up to x ms
     const time = 2 * MINUTE;
-    const role_reaction = bot_message.createReactionCollector(role_filter, { time });
+    const role_reaction = interaction.channel.createMessageComponentCollector({ filter: role_filter, time });
 
-    role_reaction.on('collect', async r => {
+    role_reaction.on('collect', async i => {
       // Remove the users reaction
-      r.users.remove(user.id).catch(O_o=>{});
+      await i.deferUpdate();
+      await i.editReply({ components: [getButtons()] });
 
       // Update the users roles
-      const role_index = reactionIDs.findIndex(reactionID => reactionID === r.emoji.id);
-      const roleID = Object.keys(notificationRoles)[role_index];
+      const roleID = i.customId.replace(/-\w+/, '');
       if (member.roles.cache.has(roleID)) {
-        await member.roles.remove(roleID, 'Self removed role');
+        await member.roles.remove(roleID, 'Self removed role').catch(O_o=>{});
       } else {
-        await member.roles.add(roleID, 'Self applied role');
+        await member.roles.add(roleID, 'Self applied role').catch(O_o=>{});
       }
 
       // Update the bot message
-      setTimeout(() => {
-        const embed = bot_message.embeds[0];
-        embed.setDescription(getDescription());
-        bot_message.editReply({ embeds: [embed] }).catch(O_o=>{});
-      }, SECOND / 2);
-    });
-
-    const refresh_reaction = bot_message.createReactionCollector(refresh_filter, { time });
-    refresh_reaction.on('collect', async r => {
-      // Remove the users reaction
-      r.users.remove(user.id).catch(O_o=>{});
-
-      // Update the bot message
-      setTimeout(() => {
-        const embed = bot_message.embeds[0];
-        embed.setDescription(getDescription());
-        bot_message.editReply({ embeds: [embed] }).catch(O_o=>{});
+      setTimeout(async () => {
+        await i.editReply({ components: [getButtons()] });
       }, SECOND / 2);
     });
 
     // Clear all the reactions once we aren't listening
-    role_reaction.on('end', () => bot_message.reactions.removeAll().catch(O_o=>{}));
+    role_reaction.on('end', () => interaction.update({ components: [] }).catch(O_o=>{}));
   },
 };
