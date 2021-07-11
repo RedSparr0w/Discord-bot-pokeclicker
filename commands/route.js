@@ -11,6 +11,7 @@ const {
 const { website } = require('../config.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'route',
   aliases     : ['routes', 'routeinfo', 'r'],
   description : 'Get PokéClicker game info about a specific route',
@@ -20,20 +21,21 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    const [routeNumber, region] = args;
-    if (isNaN(routeNumber)) return msg.reply(`Invalid route number: \`${routeNumber}\``);
-    let regionID;
-    if (region !== undefined) {
-      regionID = isNaN(region) ? GameConstants.Region[region.toLowerCase()] : +region;
-    }
+  execute     : async (interaction) => {
+    const [
+      routeNumber,
+      regionID,
+    ] = [
+      interaction.options.get('number').value,
+      interaction.options.get('region')?.value,
+    ];
 
     const route = regionRoutes.find(routeData => {
       if (routeData.number == routeNumber && (regionID == undefined || routeData.region == regionID))
         return routeData;
     });
 
-    if (!route) return msg.reply(`Route \`${routeNumber}\` not found${regionID != undefined ? ` in ${GameConstants.Region[regionID]}` : ''}..`);
+    if (!route) return interaction.reply(`Route \`${routeNumber}\` not found${regionID != undefined ? ` in ${GameConstants.Region[regionID]}` : ''}..`);
 
     let pokemon = Object.values(route.pokemon).flat();
     pokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
@@ -84,6 +86,6 @@ module.exports = {
       //embed.addField('\u200b', descChance.join('\n'), true);
     }
 
-    msg.channel.send({ embeds: [embed] });
+    interaction.reply({ embeds: [embed] });
   },
 };

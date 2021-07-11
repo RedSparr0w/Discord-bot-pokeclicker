@@ -1,6 +1,6 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { notificationRoles } = require('../config.js');
-const { addOrderedReactions, SECOND, MINUTE } = require('../helpers.js');
+const { SECOND, MINUTE } = require('../helpers.js');
 
 module.exports = {
   type        : 'interaction',
