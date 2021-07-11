@@ -62,7 +62,7 @@ module.exports = {
       setTimeout(() => {
         const embed = bot_message.embeds[0];
         embed.setDescription(getDescription());
-        bot_message.edit({ embeds: [embed] }).catch(O_o=>{});
+        bot_message.editReply({ embeds: [embed] }).catch(O_o=>{});
       }, SECOND / 2);
     });
 
@@ -75,7 +75,7 @@ module.exports = {
       setTimeout(() => {
         const embed = bot_message.embeds[0];
         embed.setDescription(getDescription());
-        bot_message.edit({ embeds: [embed] }).catch(O_o=>{});
+        bot_message.editReply({ embeds: [embed] }).catch(O_o=>{});
       }, SECOND / 2);
     });
 

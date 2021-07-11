@@ -11,8 +11,9 @@ const { serverIcons } = require('../config.js');
 const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
 
 module.exports = {
+  type        : 'interaction',
   name        : 'profileshop',
-  aliases     : ['trainercardshop', 'tcshop'],
+  aliases     : ['trainercardshop', 'tcshop', 'trainer-card-shop'],
   description : 'View stuff you can buy for your money',
   args        : ['page?'],
   guildOnly   : true,
@@ -20,21 +21,21 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['game-corner', 'bot-commands'],
-  execute     : async (msg, args) => {
-    let [ page = 1 ] = args;
+  execute     : async (interaction) => {
+    let page = +(interaction.options.get('page')?.value || 1);
 
     if (isNaN(page) || page <= 0) page = 1;
 
-    const balance = await getAmount(msg.author);
-    const purchasedBackgrounds = await getPurchased(msg.author, 'background');
-    const purchasedTrainers = await getPurchased(msg.author, 'trainer');
+    const balance = await getAmount(interaction.user);
+    const purchasedBackgrounds = await getPurchased(interaction.user, 'background');
+    const purchasedTrainers = await getPurchased(interaction.user, 'trainer');
 
     let pages = [];
 
     trainerCardColors.forEach((color, index) => {
       const embed = new MessageEmbed()
         .setColor('#3498db')
-        .setDescription(msg.author)
+        .setDescription(interaction.user.toString())
         .addField('Color', upperCaseFirstLetter(color), true)
         .addField('Price', `${purchasedBackgrounds[index] ? '0' : '1000'} ${serverIcons.money}`, true)
         .addField('Description', 'Update your trainer card background')
@@ -46,7 +47,7 @@ module.exports = {
     for (let trainerID = 0; trainerID <= totalTrainerImages; trainerID++) {
       const embed = new MessageEmbed()
         .setColor('#3498db')
-        .setDescription(msg.author)
+        .setDescription(interaction.user.toString())
         .addField('Trainer ID', `#${trainerID.toString().padStart(3, 0)}`, true)
         .addField('Price', `${purchasedTrainers[trainerID] ? '0' : '500'} ${serverIcons.money}`, true)
         .addField('Description', 'Set your displayed trainer')
@@ -56,83 +57,83 @@ module.exports = {
     }
 
     pages = pages.map((page, index) => {
-      page.embed.setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${pages.length}`);
+      page.embeds[0].setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${pages.length}`);
       return page;
     });
 
-    const botMsg = await postPages(msg, pages, page);
+    const botMsg = await postPages(interaction, pages, page);
     
-    await botMsg.react('737206931759824918');
-    const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === msg.author.id;
+    // await botMsg.react('737206931759824918');
+    // const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === interaction.user.id;
   
-    // Allow reactions for up to x ms
-    const timer = 3e5; // (300 seconds)
-    const buy = botMsg.createReactionCollector(buyFilter, {time: timer});
+    // // Allow reactions for up to x ms
+    // const timer = 3e5; // (300 seconds)
+    // const buy = botMsg.createReactionCollector(buyFilter, {time: timer});
 
-    buy.on('collect', async r => {
-      botMsg.reactions.removeAll().catch(O_o=>{});
-      const currentBalance = await getAmount(msg.author);
+    // buy.on('collect', async r => {
+    //   botMsg.reactions.removeAll().catch(O_o=>{});
+    //   const currentBalance = await getAmount(interaction.user);
 
-      try {
-        const price = parseInt(botMsg.embeds[0].fields.find(f => f.name == 'Price').value);
-        const pageNumber = (botMsg.embeds[0].footer.text.match(/(\d+)\//) || [])[1];
-        // TODO: Update this if we add more item types in the future
-        const itemType = botMsg.embeds[0].fields.find(f => f.name == 'Color') ? 'background' : 'trainer';
-        const itemIndex = pageNumber <= trainerCardColors.length ? pageNumber - 1 : (pageNumber - trainerCardColors.length) - 1;
+    //   try {
+    //     const price = parseInt(botMsg.embeds[0].fields.find(f => f.name == 'Price').value);
+    //     const pageNumber = (botMsg.embeds[0].footer.text.match(/(\d+)\//) || [])[1];
+    //     // TODO: Update this if we add more item types in the future
+    //     const itemType = botMsg.embeds[0].fields.find(f => f.name == 'Color') ? 'background' : 'trainer';
+    //     const itemIndex = pageNumber <= trainerCardColors.length ? pageNumber - 1 : (pageNumber - trainerCardColors.length) - 1;
 
-        // Initial embed object, with red color
-        const embed = new MessageEmbed().setColor('#e74c3c');
+    //     // Initial embed object, with red color
+    //     const embed = new MessageEmbed().setColor('#e74c3c');
 
-        // Couldn't read the price correctly
-        if (isNaN(price)) throw new Error('Price is NaN');
+    //     // Couldn't read the price correctly
+    //     if (isNaN(price)) throw new Error('Price is NaN');
 
-        // Item too expensive
-        if (price > currentBalance) {
-          embed.setDescription([
-            msg.author,
-            'Failed to purchase!',
-            '',
-            '_you cannot afford this item_',
-          ]);
+    //     // Item too expensive
+    //     if (price > currentBalance) {
+    //       embed.setDescription([
+    //         interaction.user,
+    //         'Failed to purchase!',
+    //         '',
+    //         '_you cannot afford this item_',
+    //       ].join('\n'));
 
-          return msg.channel.send({ embeds: [embed] });
-        }
+    //       return interaction.reply({ embeds: [embed] });
+    //     }
 
-        // Item purchased
-        let remainingBalance;
-        if (price > 0) {
-          await addPurchased(msg.author, itemType, itemIndex);
-          remainingBalance = await removeAmount(msg.author, price);
-        } else {
-          remainingBalance = currentBalance;
-        }
+    //     // Item purchased
+    //     let remainingBalance;
+    //     if (price > 0) {
+    //       await addPurchased(interaction.user, itemType, itemIndex);
+    //       remainingBalance = await removeAmount(interaction.user, price);
+    //     } else {
+    //       remainingBalance = currentBalance;
+    //     }
 
-        // If user updated their profile, give them the Boulder Badge
-        await addPurchased(msg.author, 'badge', trainerCardBadgeTypes.Boulder);
+    //     // If user updated their profile, give them the Boulder Badge
+    //     await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Boulder);
 
-        await setTrainerCard(msg.author, itemType, itemIndex);
+    //     await setTrainerCard(interaction.user, itemType, itemIndex);
 
-        embed.setColor('#2ecc71')
-          .setDescription([
-            msg.author,
-            'Successfully purchased!',
-            '',
-            `New ${itemType} has been set!`,
-          ])
-          .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
-        return msg.channel.send({ embeds: [embed] });
-      } catch (e) {
-        const embed = new MessageEmbed()
-          .setColor('#e74c3c')
-          .setDescription([
-            msg.author,
-            'Failed to purchase item',
-            '',
-            'Something wen\'t wrong, try again later..',
-          ]);
+    //     embed.setColor('#2ecc71')
+    //       .setDescription([
+    //         interaction.user,
+    //         'Successfully purchased!',
+    //         '',
+    //         `New ${itemType} has been set!`,
+    //       ].join('\n'))
+    //       .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
+    //     return interaction.reply({ embeds: [embed] });
+    //   } catch (e) {
+    //     const embed = new MessageEmbed()
+    //       .setColor('#e74c3c')
+    //       .setDescription([
+    //         interaction.user,
+    //         'Failed to purchase item',
+    //         '',
+    //         'Something wen\'t wrong, try again later..',
+    //       ].join('\n'));
 
-        return msg.channel.send({ embeds: [embed] });
-      }
-    });
+    //     return interaction.reply({ embeds: [embed] });
+    //   }
+    // });
   },
 };

@@ -334,6 +334,18 @@ client.on('error', e => error('Client error thrown:', e))
             },
           ],
         },
+        {
+          name: 'trainer-card-shop',
+          description: 'View stuff you can buy with your money for your trainer card',
+          options: [
+            {
+              name: 'page',
+              type: 'INTEGER',
+              description: 'Which start page',
+              required: false,
+            },
+          ],
+        },
       ];
 
       return await client.guilds.cache.get('611852340752023552').commands.set(data);
@@ -471,7 +483,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
     } catch (err) {
       error(`Error executing command "${command.name}":\n`, err);
-      interaction.reply('There was an error trying to execute that command!');
+      interaction.followUp('There was an error trying to execute that command!');
     }
   });
 

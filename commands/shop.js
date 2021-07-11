@@ -89,7 +89,7 @@ module.exports = {
       pages.push({ embeds: [embed] });
     });
 
-    const botMsg = await postPages(msg, pages, page);
+    const botMsg = await postPages(interaction, pages, page);
     
     await botMsg.react('737206931759824918');
     const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === msg.author.id;

@@ -58,6 +58,6 @@ module.exports = {
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} Trainers:***__`, ...resultsText.splice(0, 10)]);
     }
 
-    postPages(msg, pages, 1, true);
+    postPages(interaction, pages, 1, true);
   },
 };
