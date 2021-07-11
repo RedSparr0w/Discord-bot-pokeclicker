@@ -340,7 +340,7 @@ client.on('error', e => error('Client error thrown:', e))
               choices: [
                 // copy(GameHelper.enumStrings(GameConstants.Region).filter(r => r != 'none').map(r => `{
                 //   name: '${r.replace(/\b\w/g, m => m.toUpperCase())}',
-                //   value: '${GameConstants.Region[r]}',
+                //   value: ${GameConstants.Region[r]},
                 // },`).join('\n'))
                 {
                   name: 'Kanto',
