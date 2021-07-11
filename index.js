@@ -389,9 +389,9 @@ client.on('error', e => error('Client error thrown:', e))
     if (!command) return;
 
     // Apply command cooldowns
-    const timeLeft = cooldownTimeLeft(command.name, command.cooldown, message.author.id);
+    const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;
     if (timeLeft > 0) {
-      return message.reply({ content: `Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
+      return message.reply({ content: `Please wait ${timeLeft} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
     }
 
     // Run the command
@@ -465,9 +465,9 @@ client.on('error', e => error('Client error thrown:', e))
     // }
 
     // Apply command cooldowns
-    const timeLeft = cooldownTimeLeft(command.name, command.cooldown, interaction.user.id);
+    const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
     if (timeLeft > 0) {
-      return interaction.reply({ content: `Please wait ${Math.ceil(timeLeft * 10) / 10} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
+      return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
     }
 
     // Run the command
