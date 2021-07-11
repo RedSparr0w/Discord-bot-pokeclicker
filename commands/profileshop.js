@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, MessageButton } = require('discord.js');
 const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
 const {
   upperCaseFirstLetter,
@@ -61,79 +61,93 @@ module.exports = {
       return page;
     });
 
-    const botMsg = await postPages(interaction, pages, page);
+    const buttons = await postPages(interaction, pages, page);
     
-    // await botMsg.react('737206931759824918');
-    // const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === interaction.user.id;
+    const customID = Math.random().toString(36).substring(8);
+
+    buttons.addComponents(
+        new MessageButton()
+          .setCustomId(`purchase${customID}`)
+          .setLabel('purchase')
+          .setStyle('SECONDARY')
+          .setEmoji('751765172523106377')
+      );
+
+    interaction.editReply({ components: [buttons] });
+    const buyFilter = (i) => i.customId === `purchase${customID}` && i.user.id === interaction.user.id;
   
-    // // Allow reactions for up to x ms
-    // const timer = 3e5; // (300 seconds)
-    // const buy = botMsg.createReactionCollector(buyFilter, {time: timer});
+    // Allow reactions for up to x ms
+    const timer = 2e5; // (200 seconds)
+    const buy = interaction.channel.createMessageComponentCollector({ filter: buyFilter, time: timer });
 
-    // buy.on('collect', async r => {
-    //   botMsg.reactions.removeAll().catch(O_o=>{});
-    //   const currentBalance = await getAmount(interaction.user);
+    buy.on('collect', async i => {
+      await i.deferUpdate();
+      await i.editReply({ components: [] });
 
-    //   try {
-    //     const price = parseInt(botMsg.embeds[0].fields.find(f => f.name == 'Price').value);
-    //     const pageNumber = (botMsg.embeds[0].footer.text.match(/(\d+)\//) || [])[1];
-    //     // TODO: Update this if we add more item types in the future
-    //     const itemType = botMsg.embeds[0].fields.find(f => f.name == 'Color') ? 'background' : 'trainer';
-    //     const itemIndex = pageNumber <= trainerCardColors.length ? pageNumber - 1 : (pageNumber - trainerCardColors.length) - 1;
+      const currentBalance = await getAmount(interaction.user);
 
-    //     // Initial embed object, with red color
-    //     const embed = new MessageEmbed().setColor('#e74c3c');
+      try {
+        const message = await interaction.fetchReply();
+        const price = parseInt(message.embeds[0].fields.find(f => f.name == 'Price').value);
+        const pageNumber = (message.embeds[0].footer.text.match(/(\d+)\//) || [])[1];
+        // TODO: Update this if we add more item types in the future
+        const itemType = message.embeds[0].fields.find(f => f.name == 'Color') ? 'background' : 'trainer';
+        const itemIndex = pageNumber <= trainerCardColors.length ? pageNumber - 1 : (pageNumber - trainerCardColors.length) - 1;
 
-    //     // Couldn't read the price correctly
-    //     if (isNaN(price)) throw new Error('Price is NaN');
+        // Initial embed object, with red color
+        const embed = new MessageEmbed().setColor('#e74c3c');
 
-    //     // Item too expensive
-    //     if (price > currentBalance) {
-    //       embed.setDescription([
-    //         interaction.user,
-    //         'Failed to purchase!',
-    //         '',
-    //         '_you cannot afford this item_',
-    //       ].join('\n'));
+        // Couldn't read the price correctly
+        if (isNaN(price)) throw new Error('Price is NaN');
 
-    //       return interaction.reply({ embeds: [embed] });
-    //     }
+        // Item too expensive
+        if (price > currentBalance) {
+          embed.setDescription([
+            interaction.user,
+            'Failed to purchase!',
+            '',
+            '_you cannot afford this item_',
+          ].join('\n'));
 
-    //     // Item purchased
-    //     let remainingBalance;
-    //     if (price > 0) {
-    //       await addPurchased(interaction.user, itemType, itemIndex);
-    //       remainingBalance = await removeAmount(interaction.user, price);
-    //     } else {
-    //       remainingBalance = currentBalance;
-    //     }
+          return interaction.followUp({ embeds: [embed] });
+        }
 
-    //     // If user updated their profile, give them the Boulder Badge
-    //     await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Boulder);
+        // Item purchased
+        let remainingBalance;
+        if (price > 0) {
+          await addPurchased(interaction.user, itemType, itemIndex);
+          remainingBalance = await removeAmount(interaction.user, price);
+        } else {
+          remainingBalance = currentBalance;
+        }
 
-    //     await setTrainerCard(interaction.user, itemType, itemIndex);
+        // If user updated their profile, give them the Boulder Badge
+        await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Boulder);
 
-    //     embed.setColor('#2ecc71')
-    //       .setDescription([
-    //         interaction.user,
-    //         'Successfully purchased!',
-    //         '',
-    //         `New ${itemType} has been set!`,
-    //       ].join('\n'))
-    //       .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
-    //     return interaction.reply({ embeds: [embed] });
-    //   } catch (e) {
-    //     const embed = new MessageEmbed()
-    //       .setColor('#e74c3c')
-    //       .setDescription([
-    //         interaction.user,
-    //         'Failed to purchase item',
-    //         '',
-    //         'Something wen\'t wrong, try again later..',
-    //       ].join('\n'));
+        await setTrainerCard(interaction.user, itemType, itemIndex);
 
-    //     return interaction.reply({ embeds: [embed] });
-    //   }
-    // });
+        embed.setColor('#2ecc71')
+          .setDescription([
+            interaction.user,
+            'Successfully purchased!',
+            '',
+            `New ${itemType} has been set!`,
+          ].join('\n'))
+          .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
+        return interaction.followUp({ embeds: [embed] });
+      } catch (e) {
+        console.log(e);
+        const embed = new MessageEmbed()
+          .setColor('#e74c3c')
+          .setDescription([
+            interaction.user,
+            'Failed to purchase item',
+            '',
+            'Something wen\'t wrong, try again later..',
+          ].join('\n'));
+
+        return interaction.followUp({ embeds: [embed] });
+      }
+    });
   },
 };

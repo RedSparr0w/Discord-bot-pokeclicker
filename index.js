@@ -411,8 +411,6 @@ client.on('error', e => error('Client error thrown:', e))
   .on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
 
-    console.log(interaction);
-
     const command = client.commands.get(interaction.commandName)
       || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(interaction.commandName));
 
