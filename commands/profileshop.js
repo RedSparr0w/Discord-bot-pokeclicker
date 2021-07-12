@@ -66,12 +66,12 @@ module.exports = {
     const customID = Math.random().toString(36).substring(8);
 
     buttons.addComponents(
-        new MessageButton()
-          .setCustomId(`purchase${customID}`)
-          .setLabel('purchase')
-          .setStyle('SECONDARY')
-          .setEmoji('751765172523106377')
-      );
+      new MessageButton()
+        .setCustomId(`purchase${customID}`)
+        .setLabel('purchase')
+        .setStyle('SECONDARY')
+        .setEmoji('751765172523106377')
+    );
 
     interaction.editReply({ components: [buttons] });
     const buyFilter = (i) => i.customId === `purchase${customID}` && i.user.id === interaction.user.id;
