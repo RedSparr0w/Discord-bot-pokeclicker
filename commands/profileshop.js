@@ -6,6 +6,7 @@ const {
   trainerCardColors,
   totalTrainerImages,
   trainerCardBadgeTypes,
+  randomString,
 } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
 const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
@@ -63,7 +64,7 @@ module.exports = {
 
     const buttons = await postPages(interaction, pages, page);
     
-    const customID = Math.random().toString(36).substring(2, 8);
+    const customID = randomString(6);
 
     buttons.addComponents(
       new MessageButton()

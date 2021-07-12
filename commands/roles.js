@@ -1,6 +1,6 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 const { notificationRoles } = require('../config.js');
-const { SECOND, MINUTE } = require('../helpers.js');
+const { SECOND, MINUTE, randomString } = require('../helpers.js');
 
 module.exports = {
   type        : 'interaction',
@@ -21,7 +21,7 @@ module.exports = {
       return interaction.reply('No roles have been defined yet.');
     }
 
-    const customID = Math.random().toString(36).substring(2, 8);
+    const customID = randomString(6);
 
     const getButtons = () => {
       const buttons = new MessageActionRow();
