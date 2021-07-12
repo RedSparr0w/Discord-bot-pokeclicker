@@ -489,6 +489,18 @@ client.on('error', e => error('Client error thrown:', e))
           ],
         },
         {
+          name: 'shop',
+          description: 'View stuff you can buy with your money for in game',
+          options: [
+            {
+              name: 'page',
+              type: 'INTEGER',
+              description: 'Which start page',
+              required: false,
+            },
+          ],
+        },
+        {
           name: 'timely',
           description: 'Claim your 2 hourly PokéCoins',
         },

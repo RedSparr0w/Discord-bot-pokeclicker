@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, MessageButton } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand } = require('../helpers.js');
 const { website, serverIcons } = require('../config.js');
@@ -57,6 +57,7 @@ const generateCode = (discordID, code) => {
 };
 
 module.exports = {
+  type        : 'interaction',
   name        : 'shop',
   aliases     : [],
   description : 'View stuff you can buy for your money',
@@ -66,19 +67,19 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['game-corner', 'bot-commands'],
-  execute     : async (msg, args) => {
-    let [ page = 1 ] = args;
+  execute     : async (interaction) => {
+    let page = interaction.options.get('page')?.value || 1;
 
     if (isNaN(page) || page <= 0) page = 1;
 
-    const balance = await getAmount(msg.author);
+    const balance = await getAmount(interaction.user);
 
     const pages = [];
 
     allShopItems.forEach((item, index) => {
       const embed = new MessageEmbed()
         .setColor('#3498db')
-        .setDescription(msg.author)
+        .setDescription(interaction.user.toString())
         .addField('Name', item.name, true)
         .addField('Price', `${item.price.toLocaleString('en-US')} ${serverIcons.money}`, true)
         .addField('Description', item.description)
@@ -89,34 +90,46 @@ module.exports = {
       pages.push({ embeds: [embed] });
     });
 
-    const botMsg = await postPages(interaction, pages, page);
+    const buttons = await postPages(interaction, pages, page);
     
-    await botMsg.react('737206931759824918');
-    const buyFilter = (reaction, user) => reaction.emoji.id === '737206931759824918' && user.id === msg.author.id;
+    const customID = Math.random().toString(36).substring(8);
+
+    buttons.addComponents(
+      new MessageButton()
+        .setCustomId(`purchase${customID}`)
+        .setLabel('purchase')
+        .setStyle('SECONDARY')
+        .setEmoji('751765172523106377')
+    );
+
+    interaction.editReply({ components: [buttons] });
+    const buyFilter = (i) => i.customId === `purchase${customID}` && i.user.id === interaction.user.id;
   
     // Allow reactions for up to x ms
-    const timer = 1e5; // (100 seconds)
-    const buy = botMsg.createReactionCollector(buyFilter, {time: timer});
+    const timer = 2e5; // (200 seconds)
+    const buy = interaction.channel.createMessageComponentCollector({ filter: buyFilter, time: timer });
 
-    buy.on('collect', async r => {
-      botMsg.reactions.removeAll().catch(O_o=>{});
-      const itemID = (botMsg.embeds[0].footer.text.match(/(\d+)\//) || [])[1];
+    buy.on('collect', async i => {
+      await i.deferUpdate();
+      await i.editReply({ components: [] });
+      const message = await interaction.fetchReply();
+      const itemID = (message.embeds[0].footer.text.match(/(\d+)\//) || [])[1];
 
       // Item doesn't exist or couldn't get item ID
       if (!itemID || !allShopItems[itemID - 1]) {
         const embed = new MessageEmbed()
           .setColor('#e74c3c')
           .setDescription([
-            msg.author,
+            interaction.user,
             'Failed to purchase item',
             '',
             'Something wen\'t wrong, try again later..',
-          ]);
-        return msg.channel.send({ embeds: [embed] });
+          ].join('\n'));
+        return interaction.followUp({ embeds: [embed] });
       }
 
       const item = allShopItems[itemID - 1];
-      const currentBalance = await getAmount(msg.author);
+      const currentBalance = await getAmount(interaction.user);
 
       // Create the embed now and edit as needed
       const embed = new MessageEmbed().setFooter(`Balance: ${currentBalance.toLocaleString('en-US')}`);
@@ -126,36 +139,36 @@ module.exports = {
       if (item.price > currentBalance) {
         embed.setColor('#e74c3c')
           .setDescription([
-            msg.author,
+            interaction.user,
             `**${item.name}** Failed to purchase!`,
             '',
             '_you cannot afford this item_',
-          ]);
+          ].join('\n'));
 
-        return msg.channel.send({ embeds: [embed] });
+        return interaction.followUp({ embeds: [embed] });
       }
 
       // Purchase item
       if (item.claimFunction) { // Discord shop item
-        const purchased = await item.claimFunction(msg.guild, msg.member);
+        const purchased = await item.claimFunction(interaction.member.guild, interaction.member);
         if (!purchased) {
           embed.setColor('#e74c3c')
             .setDescription([
-              msg.author,
+              interaction.user,
               'Failed to purchase item',
               '',
               'Something wen\'t wrong, try again later..',
-            ]);
-          return msg.channel.send({ embeds: [embed] });
+            ].join('\n'));
+          return interaction.followUp({ embeds: [embed] });
         } else {
-          const remainingBalance = await removeAmount(msg.author, item.price);
+          const remainingBalance = await removeAmount(interaction.user, item.price);
           embed.setColor('#2ecc71')
             .setDescription([
-              msg.author,
+              interaction.user,
               `**${item.name}** Successfully purchased!`,
-            ])
+            ].join('\n'))
             .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
-          return msg.channel.send({ embeds: [embed] });
+          return interaction.followUp({ embeds: [embed] });
         }
       } else { // Game shop item
 
@@ -163,40 +176,40 @@ module.exports = {
           `**${item.name}** Successfully purchased!`,
           '_Enter the following code in game to claim:_',
           '```',
-          generateCode(msg.author.id, item.name),
+          generateCode(interaction.user.id, item.name),
           '```',
           '',
           '**NOTE:**',
           '_You will need to link your Discord account in game before the code will work_',
           '`Start Menu` → `Save` → `Link Discord`',
-        ]);
+        ].join('\n'));
 
         let error;
-        await msg.author.send({ embeds: [embed] }).catch(e => error = e);
+        await interaction.user.send({ embeds: [embed] }).catch(e => error = e);
         // Error sending the code to the user, DM's might be disabled
         if (error) {
           embed.setColor('#e74c3c')
             .setDescription([
-              msg.author,
+              interaction.user,
               'Failed to purchase item',
               '',
               '_make sure you are able to receive direct messages_',
-            ]);
-          return msg.channel.send({ embeds: [embed] });
+            ].join('\n'));
+          return interaction.followUp({ embeds: [embed] });
         }
 
-        const remainingBalance = await removeAmount(msg.author, item.price);
+        const remainingBalance = await removeAmount(interaction.user, item.price);
 
         embed.setColor('#2ecc71')
           .setDescription([
-            msg.author,
+            interaction.user,
             `**${item.name}** Successfully purchased!`,
             '',
             '_code will be sent to you via direct message_',
-          ])
+          ].join('\n'))
           .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
 
-        msg.channel.send({ embeds: [embed] });
+        interaction.followUp({ embeds: [embed] });
       }
     });
   },
