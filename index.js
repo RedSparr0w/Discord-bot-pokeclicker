@@ -673,12 +673,8 @@ client.on('error', e => error('Client error thrown:', e))
     const command = client.commands.get(commandName)
       || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
-    // // Each argument should be split by 1 (or more) space character
-    // const args = message.content.slice(prefix.length).trim().split(/,?\s+/);
-    // const commandName = args.shift().toLowerCase();
-
     // Not a valid command
-    if (!command) return;
+    if (!command || command.type == 'interaction') return;
 
     // Apply command cooldowns
     const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;
@@ -706,55 +702,40 @@ client.on('error', e => error('Client error thrown:', e))
     const command = client.commands.get(interaction.commandName)
       || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(interaction.commandName));
 
-    // // Each argument should be split by 1 (or more) space character
-    // const args = message.content.slice(prefix.length).trim().split(/,?\s+/);
-    // const commandName = args.shift().toLowerCase();
-
     // Not a valid command
-    if (!command) return;
+    if (!command || command.type !== 'interaction') return;
 
     // // Check if command needs to be executed inside a guild channel
     // if (command.guildOnly && message.channel.type !== 'text') {
     //   return message.channel.send('I can\'t execute that command inside DMs!');
     // }
 
-    // // Check the user has the required permissions
-    // if (message.channel.type === 'text' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
-    //   return message.reply('You do not have the required permissions to run this command.');
-    // }
+    // Check the user has the required permissions
+    if (interaction.channel.type === 'text' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+      return interaction.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
+    }
 
-    // // Check the bot has the required permissions
-    // if (message.channel.type === 'text' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
-    //   return message.reply('I do not have the required permissions to run this command.');
-    // }
+    // Check the bot has the required permissions
+    if (interaction.channel.type === 'text' && interaction.channel.permissionsFor(interaction.guild.me).missing(command.botperms).length) {
+      return interaction.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
+    }
 
-    // const commandAllowedHere = (
-    //   // Direct Message
-    //   message.channel.type === 'dm' ||
-    //   // User can manage the guild, and can use bot commands anywhere
-    //   message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
-    //   // Command was run in `#****-bot`
-    //   message.channel.name.endsWith('-bot') ||
-    //   // Command is allowed in this channel
-    //   (!command.channels || command.channels.includes(message.channel.name))
-    // );
+    const commandAllowedHere = (
+      // User can manage the guild, and can use bot commands anywhere
+      interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
+      // Command was run in `#****-bot`
+      interaction.channel.name.endsWith('-bot') ||
+      // Command is allowed in this channel
+      (!command.channels || command.channels.includes(interaction.channel.name))
+    );
 
-    // if (!commandAllowedHere) {
-    //   const output = [`This is not the correct channel for \`${prefix}${command.name}\`.`];
-    //   if (command.channels && command.channels.length !== 0) {
-    //     output.push(`Please try again in ${formatChannelList(message.guild, command.channels)}.`);
-    //   }
-    //   message.delete().catch((e) => error('Unable to delete message:', e));
-    //   return message.reply(output);
-    // }
-
-    // // Check the user has supplied enough arguments for the command
-    // if (command.args.filter(arg=>!arg.endsWith('?')).length > args.length) {
-    //   return message.channel.send([
-    //     'You didn\'t provide enough command arguments!',
-    //     `The proper usage would be: \`${prefix}${command.name}${command.args.map(arg => ` [${arg}]`).join('')}\``,
-    //   ]);
-    // }
+    if (!commandAllowedHere) {
+      const output = [`This is not the correct channel for \`/${command.name}\`.`];
+      if (command.channels && command.channels.length !== 0) {
+        output.push(`Please try again in ${formatChannelList(interaction.guild, command.channels)}.`);
+      }
+      return interaction.reply({ content: output.join('\n'), ephemeral: true });
+    }
 
     // Apply command cooldowns
     const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
@@ -765,7 +746,9 @@ client.on('error', e => error('Client error thrown:', e))
     // Run the command
     try {
       // Send the message object, along with the arguments, and the commandName (incase an alias was used)
-      await command.execute(interaction);
+      await command.execute(interaction).catch(e => {
+        throw(e);
+      });
       addStatistic(interaction.user, `!${command.name}`);
       const commandsSent = await addStatistic(interaction.user, 'commands');
       if (commandsSent >= 1000) {
@@ -773,7 +756,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
     } catch (err) {
       error(`Error executing command "${command.name}":\n`, err);
-      interaction.followUp('There was an error trying to execute that command!');
+      interaction.replied ? interaction.followUp({ content: 'There was an error trying to execute that command!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to execute that command!', ephemeral: true });
     }
   });
 
