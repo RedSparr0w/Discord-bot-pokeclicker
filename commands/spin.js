@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
-const { betRegex, validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
+const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
 
 const multipliers = [1.5, 1.7, 2.4, 0.2, 1.2, 0.1, 0.3, 0.5];
@@ -10,6 +10,7 @@ const getMultiplier = () => multipliers[Math.floor(Math.random() * (multipliers.
 const getArrow = (multiplier) => arrows[multipliers.findIndex(m => m == multiplier)];
 
 module.exports = {
+  type        : 'interaction',
   name        : 'spin',
   aliases     : ['wheel'],
   description : 'Spin the wheel for a prize',
@@ -19,22 +20,22 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['game-corner'],
-  execute     : async (msg, args) => {
-    let bet = args.find(a => betRegex.test(a));
+  execute     : async (interaction) => {
+    let bet = interaction.options.get('bet-amount').value;
 
     // Check the bet amount is correct
-    if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount.`);
-      return msg.channel.send({ embeds: [embed] });
+    if (!validBet(bet) || bet < 10) {
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount, must be 10 or more.`);
+      return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
-    const balance = await getAmount(msg.author);
+    const balance = await getAmount(interaction.user);
 
     bet = calcBetAmount(bet, balance);
 
     if (bet > balance || !balance || balance <= 0) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nNot enough coins.`);
-      return msg.channel.send({ embeds: [embed] });
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
+      return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
     const multiplier = getMultiplier();
@@ -42,21 +43,21 @@ module.exports = {
     const winnings = Math.floor(bet * multiplier) - bet;
 
     const output = [
-      msg.author,
+      interaction.user,
       `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
       '',
       `\`${multipliers.slice(0, 3).map(i => `[${i}]`).join('')}\``,
       `\`[${multipliers[3]}]\` ${arrow} \`[${multipliers[4]}]\``,
       `\`${multipliers.slice(5, 8).map(i => `[${i}]`).join('')}\``,
-    ].join('\n');
+    ];
 
-    addAmount(msg.author, winnings);
-    addBetStatistics(msg.author, bet, winnings);
+    addAmount(interaction.user, winnings);
+    addBetStatistics(interaction.user, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier > 1 ? '#2ecc71' : '#e74c3c')
-      .setDescription(output)
+      .setDescription(output.join('\n'))
       .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
-    return msg.channel.send({ embeds: [embed] });
+    return interaction.reply({ embeds: [embed] });
   },
 };

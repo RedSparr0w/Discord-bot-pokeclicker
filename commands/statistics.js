@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const { getStatistic } = require('../database.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'statistics',
   aliases     : ['stats'],
   description : 'Get an overview of your statistics for this server',
@@ -11,23 +12,23 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands', 'game-corner'],
-  execute     : async (msg, args) => {
-    const [id] = args;
+  execute     : async (interaction) => {
+    const id = interaction.options.get('user')?.value;
 
-    let user = msg.author;
+    let user = interaction.user;
 
     if (id) {
-      const member = await msg.guild.members.fetch(id).catch(e => {});
+      const member = await interaction.member.guild.members.fetch(id).catch(e => {});
       if (!member) {
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid user ID specified.`);
-        return msg.channel.send({ embeds: [embed] });
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid user ID specified.`);
+        return interaction.reply({ embeds: [embed] });
       }
       user = member.user;
     }
 
     const embed = new MessageEmbed()
       .setTitle('Statistics')
-      .setDescription(user)
+      .setDescription(user.toString())
       .setColor('#3498db');
 
     const [
@@ -61,7 +62,7 @@ module.exports = {
     embed.addField('__***#general***__', [
       `**❯ Messages:** ${messages.toLocaleString('en-US')}`,
       `**❯ Commands:** ${commands.toLocaleString('en-US')}`,
-    ]);
+    ].join('\n'));
 
     embed.addField('__***#games-corner***__', [
       `**❯ Games Played:** ${gc_games_played.toLocaleString('en-US')}`,
@@ -70,14 +71,14 @@ module.exports = {
       `**❯ Games Lost:** ${gc_games_lost.toLocaleString('en-US')}`,
       `**❯ Coins Bet:** ${gc_coins_bet.toLocaleString('en-US')}`,
       `**❯ Coins Won:** ${gc_coins_won.toLocaleString('en-US')}`,
-    ]);
+    ].join('\n'));
 
     embed.addField('__***#bot-quiz***__', [
       `**❯ Q's Answered:** ${qz_answered.toLocaleString('en-US')}`,
       `**❯ Coins Won:** ${qz_coins_won.toLocaleString('en-US')}`,
-    ]);
+    ].join('\n'));
 
 
-    return msg.channel.send({ embeds: [embed] });
+    return interaction.reply({ embeds: [embed] });
   },
 };

@@ -141,6 +141,7 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
 };
 
 module.exports = {
+  type        : 'interaction',
   name        : 'slots',
   aliases     : ['slot'],
   description : 'Spin the slots for a prize',
@@ -170,22 +171,28 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['game-corner'],
-  execute      : async (msg, args) => {
-    let [ bet, lines = 3 ] = args;
+  execute      : async (interaction) => {
+    let [
+      bet,
+      lines,
+    ] = [
+      interaction.options.get('bet-amount').value,
+      interaction.options.get('lines')?.value || 3,
+    ];
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nInvalid bet amount.`);
-      return msg.channel.send({ embeds: [embed] });
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
+      return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
-    const balance = await getAmount(msg.author);
+    const balance = await getAmount(interaction.user);
 
     bet = calcBetAmount(bet, balance);
 
     if (bet > balance || !balance || balance <= 0) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${msg.author}\nNot enough coins.`);
-      return msg.channel.send({ embeds: [embed] });
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
+      return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
     // Check the player has entered a correct amount of lines
@@ -197,7 +204,7 @@ module.exports = {
     const winnings = Math.floor(bet * multiplier) - bet;
 
     const output = [
-      msg.author,
+      interaction.user,
       '',
       `║ ${slotIcons.map(r => r[0]).join(' ║ ')} ║`,
       `║ ${slotIcons.map(r => r[1]).join(' ║ ')} ║`,
@@ -206,13 +213,13 @@ module.exports = {
       `**Winnings: ${(winnings + bet).toLocaleString('en-US')} ${serverIcons.money}**`,
     ];
 
-    addAmount(msg.author, winnings);
-    addBetStatistics(msg.author, bet, winnings);
+    addAmount(interaction.user, winnings);
+    addBetStatistics(interaction.user, bet, winnings);
 
     const embed = new MessageEmbed()
       .setColor(multiplier >= 1 ? '#2ecc71' : '#e74c3c')
-      .setDescription(output)
+      .setDescription(output.join('\n'))
       .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
-    return msg.channel.send({ embeds: [embed] });
+    return interaction.reply({ embeds: [embed] });
   },
 };

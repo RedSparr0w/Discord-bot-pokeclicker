@@ -501,6 +501,62 @@ client.on('error', e => error('Client error thrown:', e))
           ],
         },
         {
+          name: 'slots',
+          description: 'Spin the slots and bet some money',
+          options: [
+            {
+              name: 'bet-amount',
+              type: 'STRING',
+              description: 'How much money you want to bet',
+              required: true,
+            },
+            {
+              name: 'lines',
+              type: 'INTEGER',
+              description: 'How many lines you want to play (default 3)',
+              required: false,
+              choices: [
+                {
+                  name: '1',
+                  value: 1,
+                },
+                {
+                  name: '2',
+                  value: 2,
+                },
+                {
+                  name: '3',
+                  value: 3,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'spin',
+          description: 'Spin the wheel and bet some money',
+          options: [
+            {
+              name: 'bet-amount',
+              type: 'STRING',
+              description: 'How much money you want to bet',
+              required: true,
+            },
+          ],
+        },
+        {
+          name: 'statistics',
+          description: 'Get an image of your trainer card',
+          options: [
+            {
+              name: 'user',
+              type: 'USER',
+              description: 'Get another users statistics',
+              required: false,
+            },
+          ],
+        },
+        {
           name: 'timely',
           description: 'Claim your 2 hourly PokéCoins',
         },
