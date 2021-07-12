@@ -4,7 +4,6 @@ const {
   getAvailableChannelList,
   formatChannelList,
 } = require('../helpers.js');
-const { prefix } = require('../config.js');
 
 module.exports = {
   type        : 'interaction',
@@ -32,7 +31,7 @@ module.exports = {
         .setDescription([
           'For more detailed information about a command use',
           '```css',
-          '/help [command_name]',
+          '/commands [command_name]',
           '```',
         ].join('\n'))
         .setColor('#3498db');
