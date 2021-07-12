@@ -81,8 +81,8 @@ module.exports = {
     const name = args[0].toLowerCase();
     const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
-    if (!command) {
-      return msg.channel.send('That is not a valid command!');
+    if (!command || command.type == 'interaction') {
+      return msg.channel.send({ content: 'That is not a valid command!', ephemeral: true });
     }
 
     const embed = new MessageEmbed()

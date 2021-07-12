@@ -82,16 +82,15 @@ module.exports = {
     const name = command.toLowerCase();
     command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
-    if (!command) {
+    if (!command || command.type != 'interaction') {
       return interaction.reply('That is not a valid command!');
     }
 
     const embed = new MessageEmbed()
       .setTitle(`Help | ${upperCaseFirstLetter(command.name)}`)
       .setColor('#3498db')
-      .addField('❯ Description', `${command.description}`)
-      .addField('❯ Usage', `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``)
-      .addField('❯ Aliases', `\`${command.aliases.join('`, `') || '-'}\``, true)
+      .addField('❯ Description', `${command.description}`, false)
+      .addField('❯ Usage', `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``, false)
       .addField('❯ Cooldown', `\`${command.cooldown || 3} second(s)\``, true)
       .addField('❯ Guild Only', `\`${command.guildOnly}\``, true)
       .addField('❯ Channels', formatChannelList(interaction.guild, command.channels), true);
