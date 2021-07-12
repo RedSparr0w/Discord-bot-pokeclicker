@@ -561,6 +561,48 @@ client.on('error', e => error('Client error thrown:', e))
           description: 'Claim your 2 hourly PokéCoins',
         },
         {
+          name: 'top',
+          description: 'Spin the slots and bet some money',
+          options: [
+            {
+              name: 'type',
+              type: 'STRING',
+              description: 'How many lines you want to play (default 3)',
+              required: false,
+              choices: [
+                {
+                  name: 'Answers',
+                  value: 'answers',
+                },
+                {
+                  name: 'Quiz',
+                  value: 'answers',
+                },
+                {
+                  name: 'Messages',
+                  value: 'messages',
+                },
+                {
+                  name: 'Commands',
+                  value: 'commands',
+                },
+                {
+                  name: 'Timely',
+                  value: 'timely',
+                },
+                {
+                  name: 'Daily',
+                  value: 'daily',
+                },
+                {
+                  name: 'Coins',
+                  value: 'coins',
+                },
+              ],
+            },
+          ],
+        },
+        {
           name: 'trainer-card',
           description: 'Get an image of your trainer card',
           options: [
