@@ -97,8 +97,8 @@ module.exports = {
     buttons.addComponents(
       new MessageButton()
         .setCustomId(`purchase${customID}`)
-        .setLabel('purchase')
-        .setStyle('SECONDARY')
+        .setLabel('Purchase')
+        .setStyle('PRIMARY')
         .setEmoji('751765172523106377')
     );
 

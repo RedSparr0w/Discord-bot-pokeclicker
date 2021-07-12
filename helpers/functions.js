@@ -2,7 +2,7 @@ const { MessageActionRow, MessageButton } = require('discord.js');
 
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   const updateButtons = async (i) => {
-    const prev = buttons.components.find(b => b.label == 'prev');
+    const prev = buttons.components.find(b => b.label == 'Prev');
     if (page <= 0) {
       prev.disabled = true;
       await i.editReply({ components: [buttons] });
@@ -10,7 +10,7 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
       prev.disabled = false;
       await i.editReply({ components: [buttons] });
     }
-    const next = buttons.components.find(b => b.label == 'next');
+    const next = buttons.components.find(b => b.label == 'Next');
     if (page >= pages.length - 1) {
       next.disabled = true;
       await i.editReply({ components: [buttons] });
@@ -35,12 +35,12 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
     .addComponents(
       new MessageButton()
         .setCustomId(`prev${customID}`)
-        .setLabel('prev')
+        .setLabel('Prev')
         .setStyle('SECONDARY')
         .setEmoji('⬅'),
       new MessageButton()
         .setCustomId(`next${customID}`)
-        .setLabel('next')
+        .setLabel('Next')
         .setStyle('SECONDARY')
         .setEmoji('➡')
     );
