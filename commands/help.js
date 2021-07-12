@@ -32,7 +32,7 @@ module.exports = {
           '```css',
           `${prefix}help [command_name]`,
           '```',
-        ])
+        ].join('\n'))
         .setColor('#3498db');
 
       if (msg.channel.type === 'dm'){
@@ -68,11 +68,11 @@ module.exports = {
         // #anywhere
         // #channel-specific
         // #restricted
-        if (anyCommands.length) embed.addField('__***#anywhere***__', anyCommands);
+        if (anyCommands.length) embed.addField('__***#anywhere***__', anyCommands.join('\n'));
         Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
-          embed.addField(`__***#${channel}***__`, commands);
+          embed.addField(`__***#${channel}***__`, commands.join('\n'));
         });
-        if (restrictedCommands.length) embed.addField('__***#restricted-channel***__', restrictedCommands);
+        if (restrictedCommands.length) embed.addField('__***#restricted-channel***__', restrictedCommands.join('\n'));
       }
       return msg.channel.send({ embeds: [embed] });
     }
