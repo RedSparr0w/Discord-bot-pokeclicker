@@ -92,7 +92,7 @@ module.exports = {
 
     const buttons = await postPages(interaction, pages, page);
     
-    const customID = Math.random().toString(36).substring(8);
+    const customID = Math.random().toString(36).substring(2, 8);
 
     buttons.addComponents(
       new MessageButton()

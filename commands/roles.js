@@ -21,7 +21,7 @@ module.exports = {
       return interaction.reply('No roles have been defined yet.');
     }
 
-    const customID = Math.random().toString(36).substring(8);
+    const customID = Math.random().toString(36).substring(2, 8);
 
     const getButtons = () => {
       const buttons = new MessageActionRow();

@@ -3,7 +3,7 @@ const { MessageActionRow, MessageButton } = require('discord.js');
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   // page number should be 1 lower than expected for array
   page = Math.max(1, Math.min(pages.length, page)) - 1;
-  const customID = Math.random().toString(36).substring(8);
+  const customID = Math.random().toString(36).substring(2, 8);
 
   // Send the default page
   await interaction.reply(msgEdit ? 'Loading...' : pages[page]);
