@@ -1,5 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const FuzzySet = require('fuzzyset');
 const {
   PokemonType,
   GameConstants,
@@ -11,6 +10,7 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
+  type        : 'interaction',
   name        : 'shards',
   aliases     : ['s', 'shard'],
   description : 'Get a list of routes where you can obtain a particular type of shard',
@@ -20,17 +20,14 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   channels    : ['bot-commands'],
-  execute     : async (msg, args) => {
-    let [type, order] = args;
-    type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
-    if (!(PokemonType[type] >= 0)) {
-      
-      const fuzzy = FuzzySet(Object.keys(PokemonType).filter(isNaN).filter(t => t != 'None'));
-
-      const newType = fuzzy.get(type);
-      if (!newType) return msg.reply(`Invalid type: \`${type}\``);
-      type = newType[0][1];
-    }
+  execute     : async (interaction) => {
+    const [
+      type,
+      order,
+    ] = [
+      interaction.options.get('type').value,
+      interaction.options.get('order')?.value || 'chance',
+    ];
     
     const sortFunc = order == 'chance' ? (a, b) => b[1] - a[1] : (a, b) => a[0] - b[0];
 
@@ -51,6 +48,6 @@ module.exports = {
       embed.addField(`❯ ${GameConstants.Region[region].toUpperCase()}`, `\`\`\`ini\n${description.join('\n')}\n\`\`\``, true);
     });
 
-    msg.channel.send({ embeds: [embed] });
+    interaction.reply({ embeds: [embed] });
   },
 };
