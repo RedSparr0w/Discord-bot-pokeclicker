@@ -24,7 +24,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
     .setTitle(title)
     .setThumbnail(image)
     .setColor('#e74c3c');
-  if (description) embed.setDescription(description);
+  if (description) embed.setDescription(typeof description == 'string' ? description : description.join('\n'));
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
@@ -59,7 +59,7 @@ const whosThatPokemon = () => new Promise(resolve => {
 
       const embed = new MessageEmbed()
         .setTitle('Who\'s that Pokémon?')
-        .setDescription(description)
+        .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
         .setColor('#3498db');
     
@@ -77,7 +77,7 @@ const whosThatPokemon = () => new Promise(resolve => {
               .setTitle(`It's ${pokemon.name}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
-            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
           });
         },
       });
@@ -111,7 +111,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
 
       const embed = new MessageEmbed()
         .setTitle('Name the Evolution!')
-        .setDescription(description)
+        .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
         .setColor('#3498db');
     
@@ -129,7 +129,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
               .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
-            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
           });
         },
       });
@@ -165,7 +165,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
 
       const embed = new MessageEmbed()
         .setTitle('Name the Prevolution!')
-        .setDescription(description)
+        .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
         .setColor('#3498db');
     
@@ -183,7 +183,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
               .setTitle(`It's ${prevolution.name}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
-            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
           });
         },
       });
@@ -218,7 +218,7 @@ const pokemonType = () => new Promise(resolve => {
 
       const embed = new MessageEmbed()
         .setTitle('What\'s the type?')
-        .setDescription(description)
+        .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
         .setColor('#3498db');
     
@@ -236,7 +236,7 @@ const pokemonType = () => new Promise(resolve => {
               .setTitle(`It's ${types.join(' & ')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
-            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
           });
         },
       });
@@ -270,7 +270,7 @@ const pokemonID = () => new Promise(resolve => {
 
       const embed = new MessageEmbed()
         .setTitle('What\'s the ID?')
-        .setDescription(description)
+        .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
         .setColor('#3498db');
     
@@ -288,7 +288,7 @@ const pokemonID = () => new Promise(resolve => {
               .setTitle(`It's ${pokemon.id < 0 ? '-': ''}#${Math.floor(Math.abs(pokemon.id)).toString().padStart(3, '0')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
-            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
           });
         },
       });
@@ -322,7 +322,7 @@ const pokemonRegion = () => new Promise(resolve => {
 
       const embed = new MessageEmbed()
         .setTitle('What\'s the Region?')
-        .setDescription(description)
+        .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
         .setColor('#3498db');
     
@@ -340,7 +340,7 @@ const pokemonRegion = () => new Promise(resolve => {
               .setTitle(`It's ${GameConstants.Region[pokemon.nativeRegion]}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
-            m.channel.send({ embed, files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
           });
         },
       });
@@ -370,7 +370,7 @@ const fossilPokemon = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s that Pokémon?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(image)
     .setColor('#3498db');
   
@@ -407,7 +407,7 @@ const pokemonFossil = () => {
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the fossil?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
@@ -434,7 +434,7 @@ const dockTown = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Setting sail!')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/ship.png`)
     .setColor('#3498db');
 
@@ -460,7 +460,7 @@ const startingTown = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Getting started!')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/ship.png`)
     .setColor('#3498db');
 
@@ -487,7 +487,7 @@ const badgeGymLeader = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s the Gym Leader?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(encodeURI(`${website}assets/images/badges/${badge}.png`))
     .setColor('#3498db');
 
@@ -516,7 +516,7 @@ const badgeGymLocation = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Where\'s the Gym?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(image)
     .setColor('#3498db');
 
@@ -554,7 +554,7 @@ const pokemonGymLeader = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Who\'s the Gym Leader?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
@@ -593,7 +593,7 @@ const gymLeaderPokemon = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Which Pokemon?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(image)
     .setColor('#3498db');
 
@@ -622,7 +622,7 @@ const gymLeaderLocation = () => {
 
   const embed = new MessageEmbed()
     .setTitle('Where are they?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(image)
     .setColor('#3498db');
 
@@ -649,7 +649,7 @@ const gymLeaderBadge = () => {
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the Badge?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(image)
     .setColor('#3498db');
 
@@ -684,7 +684,7 @@ const gymLeaderType = () => {
 
   const embed = new MessageEmbed()
     .setTitle('What\'s the Type?')
-    .setDescription(description)
+    .setDescription(description.join('\n'))
     .setThumbnail(image)
     .setColor('#3498db');
 

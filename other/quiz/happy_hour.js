@@ -18,10 +18,10 @@ const startHappyHour = async (guild) => {
 
   const embed = new MessageEmbed()
     .setTitle('It\'s Happy Hour!')
-    .setDescription(['Happy Hour is on for the next 1 hour!', `Questions are posted ${happyHourBonus} × as often`, `Shiny chances are ${happyHourBonus} × higher`, '', 'Good Luck!'])
+    .setDescription(['Happy Hour is on for the next 1 hour!', `Questions are posted ${happyHourBonus} × as often`, `Shiny chances are ${happyHourBonus} × higher`, '', 'Good Luck!'].join('\n'))
     .setColor('#2ecc71');
 
-  return await quiz_channel.send('<@&788190728027242496>', { embeds: [embed] });
+  return await quiz_channel.send({ content: '<@&788190728027242496>', embeds: [embed] });
 };
 
 const endHappyHour = async (guild) => {
@@ -34,7 +34,7 @@ const endHappyHour = async (guild) => {
 
   const embed = new MessageEmbed()
     .setTitle('Happy Hour is over!')
-    .setDescription(['The next happy hour will be:'])
+    .setDescription(['The next happy hour will be:'].join('\n'))
     .setTimestamp(nextHappyHour())
     .setColor('#e74c3c');
 

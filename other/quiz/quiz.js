@@ -50,7 +50,7 @@ const newQuiz = async (guild, reoccur = false) => {
 
   const winners = new Set();
 
-  const collector = quiz_channel.createMessageCollector(filter, { time: time_limit });
+  const collector = quiz_channel.createMessageCollector({ filter, time: time_limit });
   collector.on('collect', async m => {
     const user = m.author;
 
@@ -93,7 +93,7 @@ const newQuiz = async (guild, reoccur = false) => {
     ];
 
     const embed = new MessageEmbed()
-      .setDescription(description)
+      .setDescription(description.join('\n'))
       .setFooter(`Answered: ${answered.toLocaleString('en-US')}\nBalance: ${balance.toLocaleString('en-US')}`)
       .setColor('#2ecc71');
 
@@ -105,7 +105,7 @@ const newQuiz = async (guild, reoccur = false) => {
 
   // Allow reactions for up to x ms
   const timer = 12e5; // (1200 seconds)
-  const logAnswer = bot_message.createReactionCollector(answerFilter, {time: timer});
+  const logAnswer = bot_message.createReactionCollector({ filter: answerFilter, time: timer });
 
   logAnswer.on('collect', async r => {
     bot_message.reactions.removeAll().catch(O_o=>{});
@@ -113,7 +113,7 @@ const newQuiz = async (guild, reoccur = false) => {
   });
 
   // errors: ['time'] treats ending because of the time limit as an error
-  quiz_channel.awaitMessages(filter, { max: 1, time:  time_limit, errors: ['time'] })
+  quiz_channel.awaitMessages({ filter, max: 1, time:  time_limit, errors: ['time'] })
     .then(() => {
       // Update the message
       const botEmbed = bot_message.embeds[0];
