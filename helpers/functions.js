@@ -50,7 +50,7 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   });
 
   // Clear all the reactions once we aren't listening
-  backwards.on('end', () => interaction.update({ components: [] }).catch(O_o=>{}));
+  backwards.on('end', () => interaction.editReply({ components: [] }).catch(O_o=>{}));
 
   return buttons;
 };

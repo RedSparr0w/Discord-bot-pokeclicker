@@ -70,6 +70,6 @@ module.exports = {
     });
 
     // Clear all the reactions once we aren't listening
-    role_reaction.on('end', () => interaction.update({ components: [] }).catch(O_o=>{}));
+    role_reaction.on('end', () => interaction.editReply({ components: [] }).catch(O_o=>{}));
   },
 };
