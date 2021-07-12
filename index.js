@@ -154,6 +154,18 @@ client.on('error', e => error('Client error thrown:', e))
           description: 'Claim your daily PokéCoins',
         },
         {
+          name: 'commands',
+          description: 'List all of my commands or info about a specific command.',
+          options: [
+            {
+              name: 'command',
+              type: 'STRING',
+              description: 'Get help on a specific command',
+              required: false,
+            },
+          ],
+        },
+        {
           name: 'daily-chain',
           description: 'Get a list of the best daily chains for the next 14 days',
           options: [
