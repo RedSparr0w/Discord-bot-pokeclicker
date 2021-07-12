@@ -1,6 +1,25 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
 
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
+  const updateButtons = async (i) => {
+    const prev = buttons.components.find(b => b.label == 'prev');
+    if (page <= 0) {
+      prev.disabled = true;
+      await i.editReply({ components: [buttons] });
+    } else {
+      prev.disabled = false;
+      await i.editReply({ components: [buttons] });
+    }
+    const next = buttons.components.find(b => b.label == 'next');
+    if (page >= pages.length - 1) {
+      next.disabled = true;
+      await i.editReply({ components: [buttons] });
+    } else {
+      next.disabled = false;
+      await i.editReply({ components: [buttons] });
+    }
+  };
+
   // page number should be 1 lower than expected for array
   page = Math.max(1, Math.min(pages.length, page)) - 1;
   const customID = randomString(6);
@@ -8,6 +27,9 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   // Send the default page
   await interaction.reply(msgEdit ? 'Loading...' : pages[page]);
   if (msgEdit) await interaction.editReply(pages[page]);
+
+  // Don't add the reactions if only 1 page
+  if (pages.length <= 1) return;
 
   const buttons = new MessageActionRow()
     .addComponents(
@@ -23,10 +45,7 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
         .setEmoji('➡')
     );
 
-  interaction.editReply({ components: [buttons] });
-
-  // Don't add the reactions if only 1 page
-  if (pages.length <= 1) return;
+  updateButtons(interaction);
 
   // // Filters
   const backwardsFilter = (i) => i.customId === `prev${customID}` && i.user.id === interaction.user.id;
@@ -40,12 +59,14 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   backwards.on('collect', async i => {
     page = page <= 0 ? 0 : --page;
     await i.deferUpdate();
+    updateButtons(i);
     await i.editReply(pages[page]);
   });
 
   forwards.on('collect', async i => {
     page = page >= pages.length - 1 ? pages.length - 1 : ++page;
     await i.deferUpdate();
+    updateButtons(i);
     await i.editReply(pages[page]);
   });
 
