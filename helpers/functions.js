@@ -1,22 +1,22 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
 
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
-  const updateButtons = async (i) => {
+  const updateButtons = async (i, editPost = true) => {
     const prev = buttons.components.find(b => b.label == 'Prev');
     if (page <= 0) {
       prev.disabled = true;
-      await i.editReply({ components: [buttons] });
+      if (editPost) await i.editReply({ components: [buttons] });
     } else {
       prev.disabled = false;
-      await i.editReply({ components: [buttons] });
+      if (editPost) await i.editReply({ components: [buttons] });
     }
     const next = buttons.components.find(b => b.label == 'Next');
     if (page >= pages.length - 1) {
       next.disabled = true;
-      await i.editReply({ components: [buttons] });
+      if (editPost) await i.editReply({ components: [buttons] });
     } else {
       next.disabled = false;
-      await i.editReply({ components: [buttons] });
+      if (editPost) await i.editReply({ components: [buttons] });
     }
   };
 
@@ -59,15 +59,15 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   backwards.on('collect', async i => {
     page = page <= 0 ? 0 : --page;
     await i.deferUpdate();
-    updateButtons(i);
-    await i.editReply(pages[page]);
+    updateButtons(i, false);
+    await i.editReply({...pages[page], ...{components: [buttons]}});
   });
 
   forwards.on('collect', async i => {
     page = page >= pages.length - 1 ? pages.length - 1 : ++page;
     await i.deferUpdate();
-    updateButtons(i);
-    await i.editReply(pages[page]);
+    updateButtons(i, false);
+    await i.editReply({...pages[page], ...{components: [buttons]}});
   });
 
   // Clear all the reactions once we aren't listening
