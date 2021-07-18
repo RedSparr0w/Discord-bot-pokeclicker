@@ -17,7 +17,7 @@ const calcBetAmount = (bet, balance) => {
     const percentage = parseInt(bet) / 100;
     return Math.max(1, Math.floor(balance * percentage));
   }
-  switch(bet) {
+  switch(bet.toLowerCase()) {
     case 'all':
       return balance;
     case 'half':
