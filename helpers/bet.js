@@ -6,7 +6,7 @@ const {
   trainerCardBadgeTypes,
 } = require('./trainer_card.js');
 
-const betRegex = /^(\d+|all|half|quarter|random|\d+e\d{1,2}|\d{1,2}%|100%)$/;
+const betRegex = /^(\d+|all|half|quarter|random|\d+e\d{1,2}|\d{1,2}%|100%)$/i;
 
 // if it fails the regex check or is less than 0, then it is invalid (NaN isn't <= 0)
 const invalidBet = bet => !betRegex.test(bet) || +bet <= 0;
