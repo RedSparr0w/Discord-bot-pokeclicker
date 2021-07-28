@@ -16,11 +16,10 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle('Pending Reminders:')
-      .setFooter('Note that times are displayed in UTC')
       .setColor('#3498db');
 
     // Add reminders fields
-    reminders.forEach(r => embed.addField(`[${r.id}] **${new Date(+r.datetime).toISOString().replace(/T/, ' ').replace(/\..+/, '')}:**`, r.message.length >= 1000 ? `${r.message.substr(0, 1000)}...` : r.message));
+    reminders.forEach(r => embed.addField(`[${r.id}] **<t:${Math.floor(+r.datetime / 1000)}>:**`, r.message.length >= 1000 ? `${r.message.substr(0, 1000)}...` : r.message));
 
     return msg.channel.send({ embed });
   },
