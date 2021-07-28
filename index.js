@@ -116,8 +116,11 @@ client.on('error', e => error('Client error thrown:', e))
       }
 
       try {
-        const match = regexMatches.find(match => match.regex.test(message.content));
-        if (match) match.execute(message, client);
+        regexMatches.forEach(match => {
+          if (match.regex.test(message.content)) {
+            match.execute(message, client);
+          }
+        });
       } catch (err) {
         error('Regex Match Error:\n', err);
       }
