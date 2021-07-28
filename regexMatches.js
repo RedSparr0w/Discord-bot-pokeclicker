@@ -67,10 +67,19 @@ module.exports = [
     // Figure out a better way to test for the bots own ID/Role
     regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
     execute: (message, client) => {
-      if (/(Hello|Hi|Hey|Sup)/i.test(message.content)) {
+      if (/\b(Hello|Hi|Hey|Sup)\b/i.test(message.content)) {
         message.reply('Hello!');
       } else if (/(thanks|ty|thank\s*you)/i.test(message.content)) {
-        message.reply('No problem!');
+        const phrases = [
+          'No problem!',
+          'You\'re welcome!',
+          'You are welcome!',
+          'Anytime!',
+          '️️❤️',
+          '<:heartscale:761861364876574740>',
+          'No no, Thank you!',
+        ];
+        message.reply(phrases[Math.floor(Math.random() * phrases.length)]);
       } else {
         message.reply('Why have you summoned me?');
       }
