@@ -81,7 +81,12 @@ module.exports = [
         ];
         message.reply(phrases[Math.floor(Math.random() * phrases.length)]);
       } else {
-        message.reply('Why have you summoned me?');
+        const phrases = [
+          'Why have you summoned me?',
+          'What do you need?',
+          'Here to help..',
+        ];
+        message.reply(phrases[Math.floor(Math.random() * phrases.length)]);
       }
     },
   },
