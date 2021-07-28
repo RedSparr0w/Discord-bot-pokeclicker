@@ -68,7 +68,12 @@ module.exports = [
     regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
     execute: (message, client) => {
       if (/\b(Hello|Hi|Hey|Sup)\b/i.test(message.content)) {
-        message.reply('Hello!');
+        const phrases = [
+          'Hello',
+          'Hey',
+          '👋',
+        ];
+        message.reply(phrases[Math.floor(Math.random() * phrases.length)]);
       } else if (/(thanks|ty|thank\s*you)/i.test(message.content)) {
         const phrases = [
           'No problem!',
