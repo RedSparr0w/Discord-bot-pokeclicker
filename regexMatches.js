@@ -22,14 +22,14 @@ module.exports = [
   },
   // soon™
   {
-    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|alola|galar)\b|\b(released?|version|updated?|alola|galar)\b.+\b(wh?ens?)\b)/i,
+    regex: /(\b(wh?ens?)\b.+\b((new (region)|(update)|(release)|(content))|released?|version|updated?|alola|galar)\b|\b((new (region)|(update)|(release)|(content))|released?|version|updated?|alola|galar)\b.+\b(wh?ens?)\b)/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },
   },
   // cats > dogs
   {
-    regex: /\b(legendary|roaming)\b.+\b(dogs?)\b/i,
+    regex: /\b(legendary|roaming|roamer)\b.+\b(dogs?|canines?|wolfs?)\b/i,
     execute: (message, client) => {
       message.react('🐱');
     },
