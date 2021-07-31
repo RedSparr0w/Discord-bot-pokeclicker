@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.2',
+  'gameVersion': '0.8.3',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -5691,7 +5691,7 @@ module.exports = {
       'orderNumber': 5.1,
     },
     {
-      'routeName': 'Kalae Bay',
+      'routeName': "Kala'e Bay",
       'region': 6,
       'number': 20,
       'pokemon': {
@@ -5851,7 +5851,7 @@ module.exports = {
       'orderNumber': 9,
     },
     {
-      'routeName': 'Alola Akala Outskirts',
+      'routeName': 'Akala Outskirts',
       'region': 6,
       'number': 21,
       'pokemon': {
@@ -6196,7 +6196,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 82,
+          'achievementType': 17,
+          'dungeonIndex': 122,
         },
       ],
       'orderNumber': 24,
@@ -6396,7 +6397,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 127,
+          'dungeonIndex': 128,
         },
       ],
       'orderNumber': 1,
@@ -7921,7 +7922,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 129,
+          'dungeonIndex': 130,
         },
       ],
       'orderNumber': 11,
@@ -7994,7 +7995,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 130,
+          'dungeonIndex': 131,
         },
       ],
       'orderNumber': 13,
@@ -8189,7 +8190,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 134,
+          'dungeonIndex': 135,
         },
       ],
       'orderNumber': 14,
@@ -14149,7 +14150,7 @@ module.exports = {
         '16': 5.88,
       },
       '11': {
-        '0': 18.75,
+        '0': 12.5,
         '2': 18.75,
         '3': 25,
         '4': 18.75,
@@ -14157,7 +14158,7 @@ module.exports = {
         '8': 6.25,
         '11': 12.5,
         '13': 6.25,
-        '16': 6.25,
+        '16': 12.5,
         '17': 12.5,
       },
       '12': {
@@ -16436,10 +16437,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Verdant Cavern',
-          'Po Town',
-        ],
+        '2': ['Verdant Cavern'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -16578,10 +16576,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Po Town',
-          'Mount Lanikala',
-        ],
+        '2': ['Mount Lanakila'],
         '3': [
           {
             'dungeon': 'Verdant Cavern',
@@ -16873,7 +16868,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Po Town'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -17373,7 +17367,7 @@ module.exports = {
       },
       'attack': 30,
       'locations': {
-        '2': ['Mount Lanikala'],
+        '2': ['Mount Lanakila'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -18139,7 +18133,7 @@ module.exports = {
       },
       'attack': 40,
       'locations': {
-        '2': ['Mount Lanikala'],
+        '2': ['Mount Lanakila'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -18570,7 +18564,6 @@ module.exports = {
           'Cave of Being',
           'Dreamyard',
           'Thrifty Megamart',
-          'Po Town',
           'Vast Poni Canyon',
           'Resolution Cave',
         ],
@@ -19373,7 +19366,7 @@ module.exports = {
       'name': 'Galarian Meowth',
       'nativeRegion': 7,
       'catchRate': 255,
-      'type': [0],
+      'type': [16],
       'levelType': 2,
       'exp': 58,
       'eggCycles': 20,
@@ -22649,12 +22642,7 @@ module.exports = {
       },
       'attack': 65,
       'locations': {
-        '2': ['Po Town'],
-        '3': [
-          {
-            'dungeon': "Trainers' School",
-          },
-        ],
+        '2': ["Trainers' School"],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -23050,9 +23038,6 @@ module.exports = {
           {
             'dungeon': 'Tin Tower',
           },
-          {
-            'dungeon': 'Po Town',
-          },
         ],
         '4': [
           {
@@ -23239,7 +23224,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Po Town'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -25941,9 +25925,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Lostlorn Forest',
-          },
-          {
-            'dungeon': 'Po Town',
           },
           {
             'dungeon': 'Exeggutor Island Hill',
@@ -28775,7 +28756,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Po Town'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -32202,7 +32182,7 @@ module.exports = {
           'Lake Acuity',
           'Snowpoint Temple',
           'Giant Chasm',
-          'Mount Lanikala',
+          'Mount Lanakila',
         ],
         '3': [
           {
@@ -33066,7 +33046,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Po Town'],
         '5': ['Fire'],
       },
       'catchRatePercent': 36,
@@ -36500,14 +36479,7 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Malie Garden',
-          },
-          {
-            'dungeon': 'Po Town',
-          },
-        ],
+        '2': ['Malie Garden'],
         '4': [
           {
             'basePokemon': 'Surskit',
@@ -40800,7 +40772,7 @@ module.exports = {
             'dungeon': 'Mt. Coronet South',
           },
           {
-            'dungeon': 'Mount Lanikala',
+            'dungeon': 'Mount Lanakila',
           },
         ],
         '11': ['Colbur'],
@@ -40979,7 +40951,7 @@ module.exports = {
         },
         '2': [
           'Lake Acuity',
-          'Mount Lanikala',
+          'Mount Lanakila',
           'Watchtower Ruins',
         ],
         '3': [
@@ -41053,7 +41025,7 @@ module.exports = {
         '2': ['Dyna Tree Hill'],
         '3': [
           {
-            'dungeon': 'Mount Lanikala',
+            'dungeon': 'Mount Lanakila',
           },
           {
             'dungeon': 'Watchtower Ruins',
@@ -52319,7 +52291,6 @@ module.exports = {
           ],
         },
         '2': [
-          'Po Town',
           'Galar Mine No. 2',
           'Tower of Darkness',
         ],
@@ -52745,10 +52716,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Castelia Sewers',
-          'Po Town',
-        ],
+        '2': ['Castelia Sewers'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -53836,7 +53804,7 @@ module.exports = {
         },
         '3': [
           {
-            'dungeon': 'Mount Lanikala',
+            'dungeon': 'Mount Lanakila',
           },
         ],
         '4': [
@@ -56434,11 +56402,6 @@ module.exports = {
           ],
         },
         '2': ['Lost Hotel'],
-        '3': [
-          {
-            'dungeon': 'Po Town',
-          },
-        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -58433,6 +58396,481 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
+      'id': 666.01,
+      'name': 'Vivillon (Pokéball)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.02,
+      'name': 'Vivillon (Polar)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.03,
+      'name': 'Vivillon (Tundra)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.04,
+      'name': 'Vivillon (Continental)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.05,
+      'name': 'Vivillon (Garden)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.06,
+      'name': 'Vivillon (Elegant)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.07,
+      'name': 'Vivillon (Icy Snow)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.08,
+      'name': 'Vivillon (Modern)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.09,
+      'name': 'Vivillon (Marine)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.1,
+      'name': 'Vivillon (Archipelago)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.11,
+      'name': 'Vivillon (High Plains)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.12,
+      'name': 'Vivillon (Sandstorm)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.13,
+      'name': 'Vivillon (River)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.14,
+      'name': 'Vivillon (Monsoon)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.15,
+      'name': 'Vivillon (Savanna)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.16,
+      'name': 'Vivillon (Sun)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.17,
+      'name': 'Vivillon (Ocean)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.18,
+      'name': 'Vivillon (Jungle)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 666.19,
+      'name': 'Vivillon (Fancy)',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 185,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 52,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 50,
+        'speed': 89,
+      },
+      'attack': 85,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
       'id': 667,
       'name': 'Litleo',
       'type': [
@@ -59371,12 +59809,10 @@ module.exports = {
             },
           ],
         },
+        '2': ["Trainers' School"],
         '3': [
           {
             'dungeon': 'Parfum Palace',
-          },
-          {
-            'dungeon': "Trainers' School",
           },
         ],
       },
@@ -60992,11 +61428,9 @@ module.exports = {
             },
           ],
         },
-        '2': ['Glimwood Tangle'],
-        '3': [
-          {
-            'dungeon': 'Memorial Hill',
-          },
+        '2': [
+          'Memorial Hill',
+          'Glimwood Tangle',
         ],
       },
       'catchRatePercent': 36,
@@ -62083,7 +62517,7 @@ module.exports = {
             },
           ],
         },
-        '2': ['Mount Lanikala'],
+        '2': ['Mount Lanakila'],
         '3': [
           {
             'dungeon': 'Verdant Cavern',
@@ -63014,7 +63448,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Po Town'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -63437,13 +63870,13 @@ module.exports = {
             },
           ],
         },
-        '2': ['Split-Decision Ruins'],
+        '2': [
+          'Malie Garden',
+          'Split-Decision Ruins',
+        ],
         '3': [
           {
             'dungeon': 'Brooklet Hill',
-          },
-          {
-            'dungeon': 'Malie Garden',
           },
         ],
         '4': [
@@ -63550,10 +63983,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Lush Jungle',
-          'Po Town',
-        ],
+        '2': ['Lush Jungle'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -65846,7 +66276,7 @@ module.exports = {
       'locations': {
         '3': [
           {
-            'dungeon': 'Mount Lanikala',
+            'dungeon': 'Mount Lanakila',
           },
         ],
       },
@@ -72601,6 +73031,7 @@ module.exports = {
     {
       'id': -793,
       'name': '???',
+      'nativeRegion': 6,
       'type': [
         12,
         7,
@@ -72618,7 +73049,6 @@ module.exports = {
         'speed': 103,
       },
       'attack': 144,
-      'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -72641,6 +73071,30 @@ module.exports = {
     'MAX_LOAD_TIME': 20000,
     'MUTATION_TICK': 1000,
     'WANDER_TICK': 1500,
+    'Region': {
+      '0': 'kanto',
+      '1': 'johto',
+      '2': 'hoenn',
+      '3': 'sinnoh',
+      '4': 'unova',
+      '5': 'kalos',
+      '6': 'alola',
+      '7': 'galar',
+      '8': 'armor',
+      '9': 'crown',
+      'none': -1,
+      '-1': 'none',
+      'kanto': 0,
+      'johto': 1,
+      'hoenn': 2,
+      'sinnoh': 3,
+      'unova': 4,
+      'kalos': 5,
+      'alola': 6,
+      'galar': 7,
+      'armor': 8,
+      'crown': 9,
+    },
     'MAX_AVAILABLE_REGION': 5,
     'TotalPokemonsPerRegion': [
       151,
@@ -72664,9 +73118,9 @@ module.exports = {
     'ROAMING_MAX_CHANCE': 4096,
     'SHINY_CHANCE_BATTLE': 8192,
     'SHINY_CHANCE_DUNGEON': 4096,
-    'SHINY_CHANCE_SHOP': 2048,
     'SHINY_CHANCE_STONE': 2048,
     'SHINY_CHANCE_SAFARI': 2048,
+    'SHINY_CHANCE_SHOP': 1024,
     'SHINY_CHANCE_BREEDING': 1024,
     'SHINY_CHANCE_FARM': 1024,
     'ITEM_PRICE_MULTIPLIER': 1.00045,
@@ -72880,30 +73334,6 @@ module.exports = {
       '0.5': 'NotVery',
       'Normal': 1,
       'Very': 2,
-    },
-    'Region': {
-      '0': 'kanto',
-      '1': 'johto',
-      '2': 'hoenn',
-      '3': 'sinnoh',
-      '4': 'unova',
-      '5': 'kalos',
-      '6': 'alola',
-      '7': 'galar',
-      '8': 'armor',
-      '9': 'crown',
-      'none': -1,
-      '-1': 'none',
-      'kanto': 0,
-      'johto': 1,
-      'hoenn': 2,
-      'sinnoh': 3,
-      'unova': 4,
-      'kalos': 5,
-      'alola': 6,
-      'galar': 7,
-      'armor': 8,
-      'crown': 9,
     },
     'TypeColor': [
       '#A8A77A',
@@ -73318,7 +73748,7 @@ module.exports = {
     'AlolaGyms': [
       'Iki Town',
       'Konikoni City',
-      'Aether Foundation',
+      'Aether Paradise',
       'Malie City',
       'Altar of the Sunne and Moone',
       'Seafolk Village',
@@ -73437,7 +73867,7 @@ module.exports = {
       [
         'Iki Town',
         'Konikoni City',
-        'Aether Foundation',
+        'Aether Paradise',
         'Malie City',
         'Altar of the Sunne and Moone',
         'Seafolk Village',
@@ -73596,8 +74026,9 @@ module.exports = {
       'Thrifty Megamart',
       "Ula'ula Meadow",
       'Po Town',
-      'Mount Lanikala',
+      'Mount Lanakila',
       'Ruins of Abundance',
+      'Aether Foundation',
       'Vast Poni Canyon',
       'Nebby',
       'Ruins of Hope',
@@ -73749,8 +74180,9 @@ module.exports = {
         'Thrifty Megamart',
         "Ula'ula Meadow",
         'Po Town',
-        'Mount Lanikala',
+        'Mount Lanakila',
         'Ruins of Abundance',
+        'Aether Foundation',
         'Vast Poni Canyon',
         'Nebby',
         'Ruins of Hope',
@@ -75369,7 +75801,7 @@ module.exports = {
         },
       ],
       'badgeReward': 39,
-      'moneyReward': 15000,
+      'moneyReward': 16000,
       'defeatMessage': 'I, the Champion, fall in defeat… That was wonderful work. You were elegant, infuriatingly so. And yet it was utterly glorious! Kudos to you! You are a truly noble Pokémon Trainer!',
       'requirements': [
         {
@@ -75431,7 +75863,7 @@ module.exports = {
         },
       ],
       'badgeReward': 41,
-      'moneyReward': 500,
+      'moneyReward': 400,
       'defeatMessage': "I might've said it before, but you're really tough! Wasn't it hard for you to raise your Pokémon to be so good? I guess that's a measure of how much you love your Pokémon. In recognition of that, I proudly grant you this!\"",
       'requirements': [
         {
@@ -75462,7 +75894,7 @@ module.exports = {
         },
       ],
       'badgeReward': 42,
-      'moneyReward': 1000,
+      'moneyReward': 740,
       'defeatMessage': 'I am dumbfounded! So very, very strong! You, your Pokémon, so strong! Your power is admirable! I shall honor it with this Gym Badge!"',
       'requirements': [
         {
@@ -75493,7 +75925,7 @@ module.exports = {
         },
       ],
       'badgeReward': 43,
-      'moneyReward': 2000,
+      'moneyReward': 1200,
       'defeatMessage': '...OK. You win. That was a tough loss. I learned a lot from it. Please, accept this Gym Badge.',
       'requirements': [
         {
@@ -75524,7 +75956,7 @@ module.exports = {
         },
       ],
       'badgeReward': 44,
-      'moneyReward': 4000,
+      'moneyReward': 2500,
       'defeatMessage': "It seems the undertow pulled me under... But I had a great time battling with you! You've earned this!",
       'requirements': [
         {
@@ -75555,7 +75987,7 @@ module.exports = {
         },
       ],
       'badgeReward': 45,
-      'moneyReward': 8000,
+      'moneyReward': 4800,
       'defeatMessage': 'You were strong enough to take down my prized team of Pokémon. In recognition of that power, I give you this: the Mine Badge!',
       'requirements': [
         {
@@ -75591,7 +76023,7 @@ module.exports = {
         },
       ],
       'badgeReward': 46,
-      'moneyReward': 16000,
+      'moneyReward': 8000,
       'defeatMessage': "Wow! You're great! You've earned my respect! I think your focus and will bowled us over totally. Oh, that's right! I'm supposed to give you this!",
       'requirements': [
         {
@@ -75627,7 +76059,7 @@ module.exports = {
         },
       ],
       'badgeReward': 47,
-      'moneyReward': 32000,
+      'moneyReward': 12000,
       'defeatMessage': "...Hehehe. Hahahah! ...That was the most fun I've had in a battle since...I don't know when! It's also made me excited to know you and your team will keep battling to greater heights! This is your eighth Gym Badge. You've earned this!",
       'requirements': [
         {
@@ -75668,7 +76100,7 @@ module.exports = {
         },
       ],
       'badgeReward': 48,
-      'moneyReward': 64000,
+      'moneyReward': 18000,
       'defeatMessage': "I lost with the most beautiful and toughest of the bug Pokémon... We lost because I wasn't good enough... That's it! Back to training camp! Let's hear it for me! No... That was wrong... Anyway... Go on to the next room! Three Trainers are waiting for you. They are all tougher than me.",
       'requirements': [
         {
@@ -75709,7 +76141,7 @@ module.exports = {
         },
       ],
       'badgeReward': 49,
-      'moneyReward': 64000,
+      'moneyReward': 18000,
       'defeatMessage': "You're quite something, youngster. I like how you and your Pokémon earned the win by working as one. That's what makes you so strong. Ahahaha! I think that you can go as far as you want.",
       'requirements': [
         {
@@ -75750,7 +76182,7 @@ module.exports = {
         },
       ],
       'badgeReward': 50,
-      'moneyReward': 64000,
+      'moneyReward': 18000,
       'defeatMessage': '.........Keep going...I know your spirit burns hot. Your whole team does.',
       'requirements': [
         {
@@ -75791,7 +76223,7 @@ module.exports = {
         },
       ],
       'badgeReward': 51,
-      'moneyReward': 64000,
+      'moneyReward': 18000,
       'defeatMessage': "Congratulations. You have beaten the Elite Four. However, that doesn't mean you're done with the Pokémon league. There remains the Champion. I should warn you—the Champion is far stronger than the Elite Four. Now, go on. Step through the doorway to your final battle.",
       'requirements': [
         {
@@ -75837,7 +76269,7 @@ module.exports = {
         },
       ],
       'badgeReward': 52,
-      'moneyReward': 128000,
+      'moneyReward': 32000,
       'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion! Come with me. We'll take the lift.",
       'requirements': [
         {
@@ -75900,7 +76332,7 @@ module.exports = {
         },
       ],
       'badgeReward': 54,
-      'moneyReward': 1000,
+      'moneyReward': 800,
       'defeatMessage': "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I feel revitalized and refreshed now! Here! Proof that you beat me!",
       'requirements': [
         {
@@ -75936,7 +76368,7 @@ module.exports = {
         },
       ],
       'badgeReward': 55,
-      'moneyReward': 2000,
+      'moneyReward': 1500,
       'defeatMessage': "Oh hoo… You are very strong indeed! I guess it's no surprise I lost. Here! Take this Insect Badge! I think it'll suit you!",
       'requirements': [
         {
@@ -75973,7 +76405,7 @@ module.exports = {
         },
       ],
       'badgeReward': 56,
-      'moneyReward': 4000,
+      'moneyReward': 2600,
       'defeatMessage': "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my feet! Take this!",
       'requirements': [
         {
@@ -76009,7 +76441,7 @@ module.exports = {
         },
       ],
       'badgeReward': 57,
-      'moneyReward': 8000,
+      'moneyReward': 4800,
       'defeatMessage': "Phew… You're really somethin'! Li'l whippersnapper Trainers who pack a real punch keep showin' up one after another. Mrmph. Here! Take this!",
       'requirements': [
         {
@@ -76045,7 +76477,7 @@ module.exports = {
         },
       ],
       'badgeReward': 58,
-      'moneyReward': 16000,
+      'moneyReward': 7600,
       'defeatMessage': "You're an amazing Pokémon Trainer. My Pokémon and I are happy because for the first time in quite a while--about two years, I'd say--we could fight with our full strength. This is an official League Gym Badge. But this is just a stepping-stone.",
       'requirements': [
         {
@@ -76081,7 +76513,7 @@ module.exports = {
         },
       ],
       'badgeReward': 59,
-      'moneyReward': 32000,
+      'moneyReward': 14000,
       'defeatMessage': "Wonderful. I'm grateful that we had a chance to meet and battle. It reminded me that Pokémon battles are about working with others to meet our challenges together.",
       'requirements': [
         {
@@ -76117,7 +76549,7 @@ module.exports = {
         },
       ],
       'badgeReward': 60,
-      'moneyReward': 64000,
+      'moneyReward': 27000,
       'defeatMessage': "You don't just look strong, you're strong fo' reals! Eh, I was swept away, too! Oh yeah, yo. I was so surprised that I forgot! I gotta give this to you!",
       'requirements': [
         {
@@ -76163,7 +76595,7 @@ module.exports = {
         },
       ],
       'badgeReward': 61,
-      'moneyReward': 128000,
+      'moneyReward': 32000,
       'defeatMessage': "My Pokémon and the challenger's Pokémon. Everyone battled even though they were hurt... Thank you.",
       'requirements': [
         {
@@ -76209,7 +76641,7 @@ module.exports = {
         },
       ],
       'badgeReward': 62,
-      'moneyReward': 128000,
+      'moneyReward': 32000,
       'defeatMessage': 'Whew! Well done! As your battles continue, aim for even greater heights!',
       'requirements': [
         {
@@ -76255,7 +76687,7 @@ module.exports = {
         },
       ],
       'badgeReward': 63,
-      'moneyReward': 128000,
+      'moneyReward': 32000,
       'defeatMessage': 'Whether or not you get to fight at full strength, whether or not luck smiles on you--none of that matters. Only results matter. And a loss is a loss. See, victory shines like a bright light. And right now, you and your Pokémon are shining brilliantly.',
       'requirements': [
         {
@@ -76301,7 +76733,7 @@ module.exports = {
         },
       ],
       'badgeReward': 64,
-      'moneyReward': 128000,
+      'moneyReward': 32000,
       'defeatMessage': 'You and your Pokémon are both excellent and elegant. To have been able to battle against such a splendid team... My Pokémon and I learned a lot! I offer you my thanks',
       'requirements': [
         {
@@ -76347,7 +76779,7 @@ module.exports = {
         },
       ],
       'badgeReward': 65,
-      'moneyReward': 256000,
+      'moneyReward': 64000,
       'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
       'requirements': [
         {
@@ -76373,7 +76805,7 @@ module.exports = {
         },
       ],
       'badgeReward': 66,
-      'moneyReward': 100000,
+      'moneyReward': 800,
       'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your Pokémon have shown me a whole new depth of field! Fantastic! Just fantastic!",
       'requirements': [
         {
@@ -76401,7 +76833,7 @@ module.exports = {
         },
       ],
       'badgeReward': 67,
-      'moneyReward': 200000,
+      'moneyReward': 1700,
       'defeatMessage': "There are some things that seem out of reach no matter how hard you try. However, it's important that you never give up--no matter the opponent or the odds. I could tell from our battle that you and your Pokémon understand that. To commemorate such an impressive show of teamwork, please accept the Cliff Badge!",
       'requirements': [
         {
@@ -76432,7 +76864,7 @@ module.exports = {
         },
       ],
       'badgeReward': 68,
-      'moneyReward': 300000,
+      'moneyReward': 3800,
       'defeatMessage': "Oh! I have been defeated! Alack, alay! Lady Korrina gave a terrible display! This is it. I must give up my title and admit that your strength far exceeds-- Just teasing! But here's your Badge. Boy, you'll be rolling in 'em soon!",
       'requirements': [
         {
@@ -76463,7 +76895,7 @@ module.exports = {
         },
       ],
       'badgeReward': 69,
-      'moneyReward': 400000,
+      'moneyReward': 5500,
       'defeatMessage': "Yeh believe in yer Pokémon... And they believe in yeh, too... Mighty oaks from acorns grow. Go on, then. Yeh've earned it. Here's yer own Plant Badge, sprout.",
       'requirements': [
         {
@@ -76494,7 +76926,7 @@ module.exports = {
         },
       ],
       'badgeReward': 70,
-      'moneyReward': 500000,
+      'moneyReward': 9000,
       'defeatMessage': "Oh, Bonnie... When will you learn there's no shame in losing? I'm glad whenever I get to learn something new thanks to strong challengers like you here.",
       'requirements': [
         {
@@ -76526,7 +76958,7 @@ module.exports = {
         },
       ],
       'badgeReward': 71,
-      'moneyReward': 600000,
+      'moneyReward': 16000,
       'defeatMessage': 'Yes... That was a fine battle. I shall reward you for this great victory. This is the Fairy Badge. It is yours now. Its beauty is captivating, is it not? ... ... ... ... ... ... Ah... Do forgive me. I was so captivated, I forgot for a moment that it is yours.',
       'requirements': [
         {
@@ -76557,7 +76989,7 @@ module.exports = {
         },
       ],
       'badgeReward': 72,
-      'moneyReward': 700000,
+      'moneyReward': 30000,
       'defeatMessage': 'Now, the Psychic Badge. A testament to your skill. Proof of your power.',
       'requirements': [
         {
@@ -76588,7 +77020,7 @@ module.exports = {
         },
       ],
       'badgeReward': 73,
-      'moneyReward': 800000,
+      'moneyReward': 52000,
       'defeatMessage': "Impressive! Your Pokémon fought with great courage. I can tell that you've trained your Pokémon well.",
       'requirements': [
         {
@@ -76625,7 +77057,7 @@ module.exports = {
         },
       ],
       'badgeReward': 74,
-      'moneyReward': 900000,
+      'moneyReward': 64000,
       'defeatMessage': 'What news... So a new challenger has defeated Malva of the Elite Four!',
       'requirements': [
         {
@@ -76661,7 +77093,7 @@ module.exports = {
         },
       ],
       'badgeReward': 75,
-      'moneyReward': 900000,
+      'moneyReward': 64000,
       'defeatMessage': 'I shall store my memory of you and your Pokémon forever away within my heart.',
       'requirements': [
         {
@@ -76697,7 +77129,7 @@ module.exports = {
         },
       ],
       'badgeReward': 76,
-      'moneyReward': 900000,
+      'moneyReward': 64000,
       'defeatMessage': 'Glorious! The trust that you share with your honorable Pokémon surpasses even mine!',
       'requirements': [
         {
@@ -76733,7 +77165,7 @@ module.exports = {
         },
       ],
       'badgeReward': 77,
-      'moneyReward': 900000,
+      'moneyReward': 64000,
       'defeatMessage': "Oh, dear me. That sure was a quick battle... I do hope you'll come back again sometime!",
       'requirements': [
         {
@@ -76779,7 +77211,7 @@ module.exports = {
         },
       ],
       'badgeReward': 78,
-      'moneyReward': 1000000,
+      'moneyReward': 128000,
       'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
       'requirements': [
         {
@@ -76854,9 +77286,9 @@ module.exports = {
         },
       ],
     },
-    'Aether Foundation': {
+    'Aether Paradise': {
       'leaderName': 'Ultra Wormhole',
-      'town': 'Aether Foundation',
+      'town': 'Aether Paradise',
       'pokemons': [
         {
           'name': '???',
@@ -76956,7 +77388,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 123,
+          'dungeonIndex': 124,
         },
       ],
     },
@@ -77325,7 +77757,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 131,
+          'dungeonIndex': 132,
         },
       ],
     },
