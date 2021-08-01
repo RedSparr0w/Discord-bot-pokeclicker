@@ -100,7 +100,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     // If shiny award more coins
     if (shiny) {
       const shiny_amount = getShinyAmount();
-      description.push(`**+${shiny_amount}** _(shiny)_`);
+      description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
       amount += shiny_amount;
     }
 
@@ -154,7 +154,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
     // If shiny award more coins
     if (shiny) {
       const shiny_amount = getShinyAmount();
-      description.push(`**+${shiny_amount}** _(shiny)_`);
+      description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
       amount += shiny_amount;
     }
 
@@ -207,7 +207,7 @@ const pokemonType = () => new Promise(resolve => {
     // If shiny award more coins
     if (shiny) {
       const shiny_amount = getShinyAmount();
-      description.push(`**+${shiny_amount}** _(shiny)_`);
+      description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
       amount += shiny_amount;
     }
 
@@ -259,7 +259,7 @@ const pokemonID = () => new Promise(resolve => {
     // If shiny award more coins
     if (shiny) {
       const shiny_amount = getShinyAmount();
-      description.push(`**+${shiny_amount}** _(shiny)_`);
+      description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
       amount += shiny_amount;
     }
 
@@ -311,7 +311,7 @@ const pokemonRegion = () => new Promise(resolve => {
     // If shiny award more coins
     if (shiny) {
       const shiny_amount = getShinyAmount();
-      description.push(`**+${shiny_amount}** _(shiny)_`);
+      description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
       amount += shiny_amount;
     }
 
@@ -362,7 +362,7 @@ const fossilPokemon = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
     amount += shiny_amount;
   }
 
@@ -401,7 +401,7 @@ const pokemonFossil = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
     amount += shiny_amount;
   }
 
@@ -548,7 +548,7 @@ const pokemonGymLeader = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
     amount += shiny_amount;
   }
 
@@ -585,7 +585,7 @@ const gymLeaderPokemon = () => {
   // If shiny award more coins
   if (shiny) {
     const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** _(shiny)_`);
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
     amount += shiny_amount;
   }
 
