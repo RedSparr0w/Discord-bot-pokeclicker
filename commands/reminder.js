@@ -30,8 +30,6 @@ module.exports = {
       interaction.options.get('view'),
     ];
 
-    console.log(add, remove, view);
-
     if (add) {
       reminderAdd(interaction, add.options);
     }
