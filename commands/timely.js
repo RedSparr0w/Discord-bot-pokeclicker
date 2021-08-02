@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
-const { addAmount } = require('../database.js');
-const { bonusRoles, serverIcons } = require('../config.js');
+const { addAmount, addReminder } = require('../database.js');
+const { bonusRoles, serverIcons, prefix, autoReminderRoleID } = require('../config.js');
 const {
   getLastClaim,
   updateClaimDate,
@@ -101,6 +101,15 @@ module.exports = {
       `Current Balance: **${balance.toLocaleString('en-US')}** ${serverIcons.money}`,
       `Current Streak: **${streak + 1}**`
     );
+    
+    if (!msg.member.roles.cache.find(r => r.id == autoReminderRoleID)) {
+      const reminderTime = new Date();
+      reminderTime.setHours(reminderTime.getHours() + 2);
+
+      addReminder(msg.author, reminderTime, `${prefix}timely`);
+
+      message.push('', 'Auto reminder will be sent in 2 hours');
+    }
 
     return msg.channel.send({
       embed: new MessageEmbed().setColor('#2ecc71').setDescription(message),
