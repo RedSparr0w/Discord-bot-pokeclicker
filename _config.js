@@ -13,16 +13,26 @@ module.exports = {
   externalScriptsRoleID: '761015248856809493',
   // Roles that get bonus coins (percentage gain)
   bonusRoles: {
-    '642082374515163176': 0.2, // Poké Squad (alt)
     '751979566280605728': 0.2, // Poké Squad
     '736262806306947215': 0.5, // Server Booster
   },
-  notificationRoles: {
-    // Role ID: Reaction
-    '787144169176825856': '<:Pokeball:662909508284055553>', // Game Updates
-    '787144107817959444': '<:money:751765172523106377>', // Bot Updates
-    '788190728027242496': '<:marsh_badge:785737862280249364>', // Happy Hour
-  },
+  notificationRoles: [
+    {
+      id: '787144169176825856',
+      name: 'Game Updates',
+      emoji: '<:Pokeball:662909508284055553>',
+    },
+    {
+      id: '787144107817959444',
+      name: 'Bot Updates',
+      emoji: '<:money:751765172523106377>',
+    },
+    {
+      id: '788190728027242496',
+      name: 'Happy Hour',
+      emoji: '<:marsh_badge:785737862280249364>',
+    },
+  ],
   serverIcons: {
     money: '<:money:737206931759824918>',
   },

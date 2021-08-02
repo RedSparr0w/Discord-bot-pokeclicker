@@ -32,7 +32,7 @@ module.exports = {
             .setCustomId(`${role.id}-role${customID}`)
             .setLabel(role.name)
             .setStyle(member.roles.cache.has(role.id) ? 'SUCCESS' : 'DANGER')
-            .setEmoji((role.emoji.match(/:(\d+)>/) || [])[1])
+            .setEmoji((role.emoji?.match(/:(\d+)>/) ?? [role.emoji])[1])
         );
       });
       return buttons;
@@ -41,8 +41,9 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor('#3498db')
       .setDescription([user, 'Click the buttons to toggle the roles', ''].join('\n'));
-    
-    await interaction.reply({ embeds: [embed], components: [getButtons()] });
+    const buttons = getButtons();
+    const components = buttons.components.length ? [buttons] : [];
+    await interaction.reply({ embeds: [embed], components });
 
     const role_filter = (i) => i.customId.endsWith(`role${customID}`) && i.user.id === interaction.user.id;
   
