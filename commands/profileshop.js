@@ -6,6 +6,7 @@ const {
   trainerCardColors,
   totalTrainerImages,
   trainerCardBadgeTypes,
+  error,
 } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
 const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
@@ -122,6 +123,7 @@ module.exports = {
           .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
         return msg.channel.send({ embed });
       } catch (e) {
+        error('Failed to purchase item', e);
         const embed = new MessageEmbed()
           .setColor('#e74c3c')
           .setDescription([
