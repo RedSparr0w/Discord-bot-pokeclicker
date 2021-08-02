@@ -11,7 +11,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
-  channels    : ['bot-commands'],
+  channels    : ['bot-commands', 'game-corner'],
   execute     : async (msg, args) => {
     const user = msg.author;
     const member = msg.member;
