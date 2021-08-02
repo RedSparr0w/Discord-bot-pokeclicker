@@ -11,6 +11,7 @@ module.exports = {
   // Specific roles in the server
   mutedRoleID: '758167963294629898',
   externalScriptsRoleID: '761015248856809493',
+  autoReminderRoleID: '871624019005292564',
   // Roles that get bonus coins (percentage gain)
   bonusRoles: {
     '751979566280605728': 0.2, // Poké Squad
@@ -31,6 +32,11 @@ module.exports = {
       id: '788190728027242496',
       name: 'Happy Hour',
       emoji: '<:marsh_badge:785737862280249364>',
+    },
+    {
+      id: '871624019005292564',
+      name: 'Auto Reminder',
+      emoji: '<:star_ping:871628714386006056>',
     },
   ],
   serverIcons: {
