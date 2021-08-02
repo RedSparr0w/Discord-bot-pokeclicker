@@ -102,7 +102,7 @@ module.exports = {
       `Current Streak: **${streak + 1}**`
     );
     
-    if (msg.member.roles.cache.find(r => r.id == autoReminderRoleID)) {
+    if (msg.member.roles.cache.has(autoReminderRoleID)) {
       const reminderTime = new Date();
       reminderTime.setHours(reminderTime.getHours() + 2);
 
