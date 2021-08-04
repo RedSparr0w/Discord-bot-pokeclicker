@@ -12,7 +12,7 @@ const {
   warn,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus } = require('./happy_hour.js');
-const { getWhosThatPokemonImage, getWhosThatPokemonFinalImage } = require('./quiz_functions.js');
+const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage } = require('./quiz_functions.js');
 
 // Between 20 and 50 coins per question
 const getAmount = () => Math.floor(Math.random() * 7) * 5 + 20;
@@ -35,7 +35,7 @@ const gymsWithBadges = Object.keys(gymList).filter(t => badgeList.includes(Badge
 
 const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
-    const pokemon = randomFromArray(pokemonList);
+    const pokemon = getRandomPokemon();
     const answer = new RegExp(`^\\W*${pokemon.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')}\\b`, 'i');
     
     let amount = getAmount();
@@ -193,7 +193,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
 
 const pokemonType = () => new Promise(resolve => {
   (async () => {
-    const pokemon = randomFromArray(pokemonList);
+    const pokemon = getRandomPokemon();
     const types = pokemon.type.map(t => PokemonType[t]);
     const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')})\\b`, 'i');
 
@@ -246,7 +246,7 @@ const pokemonType = () => new Promise(resolve => {
 
 const pokemonID = () => new Promise(resolve => {
   (async () => {
-    const pokemon = randomFromArray(pokemonList);
+    const pokemon = getRandomPokemon();
     const answer = new RegExp(`^\\W*#?${Math.floor(+pokemon.id)}\\b`, 'i');
     
     let amount = getAmount();
@@ -298,7 +298,7 @@ const pokemonID = () => new Promise(resolve => {
 
 const pokemonRegion = () => new Promise(resolve => {
   (async () => {
-    const pokemon = randomFromArray(pokemonList);
+    const pokemon = getRandomPokemon();
     const answer = new RegExp(`^\\W*${GameConstants.Region[pokemon.nativeRegion]}\\b`, 'i');
     
     let amount = getAmount();
