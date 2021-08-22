@@ -641,7 +641,7 @@ client.on('error', e => error('Client error thrown:', e))
         },
       ];
 
-      return await client.guilds.cache.get('611852340752023552').commands.set(data);
+      return await client.guilds.cache.get(message.guild.id.toString()).commands.set(data);
     }
 
     // Non command messages
