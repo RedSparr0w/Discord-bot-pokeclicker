@@ -120,7 +120,6 @@ client.on('error', e => error('Client error thrown:', e))
       message.member.roles.add(mutedRoleID, 'User muted for mass ping');
       return message.reply('You have been muted, Do not mass ping!');
     }
-
     
     if (!client.application || !client.application.owner) await client.application.fetch();
 
