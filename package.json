@@ -16,7 +16,7 @@
     "canvas": "^2.8.0",
     "discord.js": "^13.1.0",
     "fuzzyset": "^1.0.6",
-    "merge-images": "git://github.com/RedSparr0w/merge-images#develop-build",
+    "merge-images": "git+https://github.com/RedSparr0w/merge-images#develop-build",
     "puppeteer": "^5.5.0",
     "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2",
