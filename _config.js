@@ -1,4 +1,5 @@
 module.exports = {
+  development: true,
   prefix: '!',
   token: 'YOUR_BOTS_TOKEN_HERE',
   // Image source website base

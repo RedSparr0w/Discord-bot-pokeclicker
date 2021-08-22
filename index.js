@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token, mutedRoleID } = require('./config.js');
+const { development, prefix, token, mutedRoleID } = require('./config.js');
 const {
   log,
   info,
@@ -79,7 +79,8 @@ client.once('ready', async() => {
 
   // Check for and send any reminders every minute
   new RunOnInterval(MINUTE, () => {
-    sendReminders(client);
+    // only run if we aren't running on a dev enviroment
+    if (!development) sendReminders(client);
   }, { timezone_offset: 0, run_now: true });
 
   // Update our status every hour
