@@ -73,7 +73,7 @@ const cooldownTimeLeft = (type, seconds, userID) => {
 
 client.once('ready', async() => {
   info(`Logged in as ${client.user.tag}!`);
-  log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot`);
+  log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot%20applications.commands`);
   // Check the database is setup
   await setupDB();
 
