@@ -7,8 +7,8 @@ const {
 
 module.exports = {
   type        : 'interaction',
-  name        : 'commands',
-  aliases     : [],
+  name        : 'help',
+  aliases     : ['commands'],
   description : 'List all of my commands or info about a specific command.',
   args        : ['command_name?'],
   guildOnly   : false,
@@ -17,7 +17,7 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   execute     : async (interaction) => {
     let command = interaction.options.get('command')?.value;
-    let commands = interaction.client.commands.filter(c => c.type === 'interaction');
+    let commands = interaction.client.slashCommands;
     if (interaction.channel.type === 'DM'){
       commands = commands.filter(command => !command.guildOnly);
     } else if (interaction.channel.type === 'GUILD_TEXT'){
@@ -29,9 +29,9 @@ module.exports = {
       const embed = new MessageEmbed()
         .setTitle('Help')
         .setDescription([
-          'For more detailed information about a command use',
+          'For more detailed information about a command use:',
           '```css',
-          '/commands [command_name]',
+          '/help [command_name]',
           '```',
         ].join('\n'))
         .setColor('#3498db');

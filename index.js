@@ -36,13 +36,21 @@ const client = new Discord.Client({
     Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
   ],
 });
+
+// Gather our available commands
 client.commands = new Discord.Collection();
-
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
   client.commands.set(command.name, command);
+}
+
+// Gather our available slash commands (interactions)
+client.slashCommands = new Discord.Collection();
+const slashCommandsFiles = fs.readdirSync('./slash_commands').filter(file => file.endsWith('.js'));
+for (const file of slashCommandsFiles) {
+  const command = require(`./slash_commands/${file}`);
+  client.slashCommands.set(command.name, command);
 }
 
 const cooldowns = new Discord.Collection();
@@ -124,6 +132,7 @@ client.on('error', e => error('Client error thrown:', e))
     if (!client.application || !client.application.owner) await client.application.fetch();
 
     if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application.owner.id) {
+      console.log('Deploying new commands!');
       const data = [
         {
           name: 'ping',
@@ -155,6 +164,18 @@ client.on('error', e => error('Client error thrown:', e))
         },
         {
           name: 'commands',
+          description: 'List all of my commands or info about a specific command.',
+          options: [
+            {
+              name: 'command',
+              type: 'STRING',
+              description: 'Get help on a specific command',
+              required: false,
+            },
+          ],
+        },
+        {
+          name: 'help',
           description: 'List all of my commands or info about a specific command.',
           options: [
             {
@@ -702,11 +723,10 @@ client.on('error', e => error('Client error thrown:', e))
   .on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
 
-    const command = client.commands.get(interaction.commandName)
-      || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(interaction.commandName));
+    const command = client.slashCommands.find(cmd => cmd.type === 'interaction' && (cmd.name === interaction.commandName || (cmd.aliases && cmd.aliases.includes(interaction.commandName))));
 
     // Not a valid command
-    if (!command || command.type !== 'interaction') return;
+    if (!command) return interaction.reply({ content: `Command not found: \`${interaction.commandName}\``, ephemeral: true });
 
     // // Check if command needs to be executed inside a guild channel
     // if (command.guildOnly && message.channel.type !== 'GUILD_TEXT') {
@@ -725,7 +745,7 @@ client.on('error', e => error('Client error thrown:', e))
 
     const commandAllowedHere = (
       // User can manage the guild, and can use bot commands anywhere
-      interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
+      //interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
       // Command was run in `#****-bot`
       interaction.channel.name.endsWith('-bot') ||
       // Command is allowed in this channel

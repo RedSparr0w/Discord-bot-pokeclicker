@@ -20,30 +20,22 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (interaction) => {
-    const [
-      add,
-      remove,
-      view,
-    ] =  [
-      interaction.options.get('add'),
-      interaction.options.get('remove'),
-      interaction.options.get('view'),
-    ];
+    const subcommand = interaction.options.getSubcommand();
 
-    if (add) {
-      reminderAdd(interaction, add.options);
+    if (subcommand === 'add') {
+      reminderAdd(interaction, interaction.options);
     }
-    if (remove) {
-      reminderRemove(interaction, remove.options);
+    if (subcommand === 'remove') {
+      reminderRemove(interaction, interaction.options);
     }
-    if (view) {
-      reminderView(interaction, view.options);
+    if (subcommand === 'view') {
+      reminderView(interaction, interaction.options);
     }
   },
 };
 
 const reminderRemove = async (interaction) => {
-  const reminderIDs = interaction.options.get('id').value.split(/\s/).map(Number);
+  const reminderIDs = interaction.options.get('ids').value.split(/\s/).map(Number);
   const reminders = await getUserReminders(interaction.user);
   const remindersToClear = reminders.filter(r => reminderIDs.includes(+r.id));
 
