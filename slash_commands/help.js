@@ -6,11 +6,17 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'help',
   aliases     : ['commands'],
   description : 'List all of my commands or info about a specific command.',
-  args        : ['command_name?'],
+  args        : [
+    {
+      name: 'command',
+      type: 'STRING',
+      description: 'Get help on a specific command',
+      required: false,
+    },
+  ],
   guildOnly   : false,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
@@ -82,7 +88,7 @@ module.exports = {
     const name = command.toLowerCase();
     command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
-    if (!command || command.type != 'interaction') {
+    if (!command) {
       return interaction.reply('That is not a valid command!');
     }
 

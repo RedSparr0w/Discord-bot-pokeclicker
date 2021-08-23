@@ -2,11 +2,17 @@ const { MessageEmbed } = require('discord.js');
 const { getStatistic } = require('../database.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'statistics',
   aliases     : ['stats'],
   description : 'Get an overview of your statistics for this server',
-  args        : ['user_id?'],
+  args        : [
+    {
+      name: 'user',
+      type: 'USER',
+      description: 'Get another users statistics',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

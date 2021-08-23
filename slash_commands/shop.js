@@ -57,11 +57,17 @@ const generateCode = (discordID, code) => {
 };
 
 module.exports = {
-  type        : 'interaction',
   name        : 'shop',
   aliases     : [],
-  description : 'View stuff you can buy for your money',
-  args        : ['page?'],
+  description : 'View stuff you can buy with your PokéCoins for in game',
+  args        : [
+    {
+      name: 'page',
+      type: 'INTEGER',
+      description: 'Which start page',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

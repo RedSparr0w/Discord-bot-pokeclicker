@@ -3,10 +3,9 @@ const { getAmount } = require('../database.js');
 const { serverIcons } = require('../config.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'balance',
   aliases     : ['bal', '$'],
-  description : 'Get your current balance',
+  description : 'Get your current PokéCoin balance',
   args        : [],
   guildOnly   : true,
   cooldown    : 3,

@@ -141,10 +141,9 @@ const calcWinningsMultiplier = (slotIcons, lines) => {
 };
 
 module.exports = {
-  type        : 'interaction',
   name        : 'slots',
   aliases     : ['slot'],
-  description : 'Spin the slots for a prize',
+  description : 'Spin the slots and bet some PokéCoins',
   helpFields: [
     [
       '❯ Lines:',
@@ -165,7 +164,34 @@ module.exports = {
       ],
     ],
   ],
-  args        : ['amount', 'lines(3)?'],
+  args        : [
+    {
+      name: 'bet-amount',
+      type: 'STRING',
+      description: 'How much money you want to bet',
+      required: true,
+    },
+    {
+      name: 'lines',
+      type: 'INTEGER',
+      description: 'How many lines you want to play (default 3)',
+      required: false,
+      choices: [
+        {
+          name: '1',
+          value: 1,
+        },
+        {
+          name: '2',
+          value: 2,
+        },
+        {
+          name: '3',
+          value: 3,
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

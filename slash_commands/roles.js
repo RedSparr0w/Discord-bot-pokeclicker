@@ -3,7 +3,6 @@ const { notificationRoles } = require('../config.js');
 const { SECOND, MINUTE, randomString } = require('../helpers.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'roles',
   aliases     : ['role'],
   description : 'Get certain roles for updates and other stuff',

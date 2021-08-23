@@ -27,11 +27,37 @@ const winMultiplier = (player, bot) => {
 };
 
 module.exports = {
-  type        : 'interaction',
-  name        : 'fwg',
+  name        : 'fire-water-grass',
   aliases     : ['fgw', 'gfw', 'gwf', 'wfg', 'wgf', 'fire-water-grass'],
-  description : 'Fire, Water, Grass _(Rock, Paper, Scissors)_',
-  args        : ['amount', 'type(f|w|g)'],
+  description : 'Fire, Water, Grass (Rock, Paper, Scissors) bet some PokéCoins',
+  args        : [
+    {
+      name: 'bet-amount',
+      type: 'STRING',
+      description: 'How much money you want to bet',
+      required: true,
+    },
+    {
+      name: 'type',
+      type: 'STRING',
+      description: 'Which type are you betting on',
+      required: true,
+      choices: [
+        {
+          name: 'Fire',
+          value: 'fire',
+        },
+        {
+          name: 'Water',
+          value: 'water',
+        },
+        {
+          name: 'Grass',
+          value: 'grass',
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

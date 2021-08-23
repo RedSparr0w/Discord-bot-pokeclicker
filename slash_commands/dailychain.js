@@ -7,11 +7,29 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'dailychain',
   aliases     : ['dc', 'dailychains', 'chain', 'chains', 'daily-chain'],
   description : 'Get a list of the best daily chains for the next 14 days',
-  args        : ['max slots(3)?', 'from date(2020-12-01)?', 'days(14)?'],
+  args        : [
+    {
+      name: 'max-slots',
+      type: 'INTEGER',
+      description: 'Maximum number of slots you have unlocked in the Underground (default 3)',
+      required: false,
+    },
+    {
+      name: 'days',
+      type: 'INTEGER',
+      description: 'Maximum number of days would you like to complete a chain for (default 14)',
+      required: false,
+    },
+    {
+      name: 'from-date',
+      type: 'STRING',
+      description: 'YYYY-MM-DD - Starting date for the daily chain (default today UTC)',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

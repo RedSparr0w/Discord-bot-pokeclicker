@@ -2,11 +2,47 @@ const { getTop } = require('../database.js');
 const { postPages } = require('../helpers.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'top',
   aliases     : ['leaderboard', 'lb'],
-  description : 'Get a list of users with the most points.\n\nType can be one of:\n`coins` (default) `quiz` `timely` `daily` `messages` `commands`',
-  args        : ['type?'],
+  description : 'Get a list of users with the most points in specific categories',
+  args        : [
+    {
+      name: 'type',
+      type: 'STRING',
+      description: 'How many lines you want to play (default 3)',
+      required: false,
+      choices: [
+        {
+          name: 'Answers',
+          value: 'answers',
+        },
+        {
+          name: 'Quiz',
+          value: 'answers',
+        },
+        {
+          name: 'Messages',
+          value: 'messages',
+        },
+        {
+          name: 'Commands',
+          value: 'commands',
+        },
+        {
+          name: 'Timely',
+          value: 'timely',
+        },
+        {
+          name: 'Daily',
+          value: 'daily',
+        },
+        {
+          name: 'Coins',
+          value: 'coins',
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES'],

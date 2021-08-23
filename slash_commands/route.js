@@ -11,11 +11,69 @@ const {
 const { website } = require('../config.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'route',
   aliases     : ['routes', 'routeinfo', 'r'],
   description : 'Get PokéClicker game info about a specific route',
-  args        : ['id', 'region?'],
+  args        : [
+    {
+      name: 'number',
+      type: 'INTEGER',
+      description: 'Route number',
+      required: true,
+    },
+    {
+      name: 'region',
+      type: 'INTEGER',
+      description: 'Region name',
+      required: false,
+      choices: [
+        // copy(GameHelper.enumStrings(GameConstants.Region).filter(r => r != 'none').map(r => `{
+        //   name: '${r.replace(/\b\w/g, m => m.toUpperCase())}',
+        //   value: ${GameConstants.Region[r]},
+        // },`).join('\n'))
+        {
+          name: 'Kanto',
+          value: 0,
+        },
+        {
+          name: 'Johto',
+          value: 1,
+        },
+        {
+          name: 'Hoenn',
+          value: 2,
+        },
+        {
+          name: 'Sinnoh',
+          value: 3,
+        },
+        {
+          name: 'Unova',
+          value: 4,
+        },
+        {
+          name: 'Kalos',
+          value: 5,
+        },
+        {
+          name: 'Alola',
+          value: 6,
+        },
+        {
+          name: 'Galar',
+          value: 7,
+        },
+        {
+          name: 'Armor',
+          value: 8,
+        },
+        {
+          name: 'Crown',
+          value: 9,
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

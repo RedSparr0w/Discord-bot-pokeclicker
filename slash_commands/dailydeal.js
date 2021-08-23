@@ -7,11 +7,17 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'dailydeal',
   aliases     : ['dd', 'deals', 'dailydeals', 'ug', 'underground', 'daily-deals'],
   description : 'Get a list of daily deals for the next 5 days',
-  args        : ['from date(2020-12-31)?'],
+  args        : [
+    {
+      name: 'from-date',
+      type: 'STRING',
+      description: 'YYYY-MM-DD - Starting date for the daily chain (default today UTC)',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

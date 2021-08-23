@@ -16,7 +16,7 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-    let commands = msg.client.commands.filter(c => c.type != 'interaction');
+    let commands = msg.client.commands;
     if (msg.channel.type === 'DM'){
       commands = commands.filter(command => !command.guildOnly);
     } else if (msg.channel.type === 'GUILD_TEXT'){
@@ -81,7 +81,7 @@ module.exports = {
     const name = args[0].toLowerCase();
     const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
-    if (!command || command.type == 'interaction') {
+    if (!command) {
       return msg.channel.send({ content: 'That is not a valid command!', ephemeral: true });
     }
 

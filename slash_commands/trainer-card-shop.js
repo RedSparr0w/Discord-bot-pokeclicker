@@ -13,11 +13,17 @@ const { serverIcons } = require('../config.js');
 const imageBaseLink = 'https://raw.githubusercontent.com/RedSparr0w/Discord-bot-pokeclicker/master/assets/images';
 
 module.exports = {
-  type        : 'interaction',
-  name        : 'profileshop',
-  aliases     : ['trainercardshop', 'tcshop', 'trainer-card-shop'],
-  description : 'View stuff you can buy for your money',
-  args        : ['page?'],
+  name        : 'trainer-card-shop',
+  aliases     : ['trainercardshop', 'tcshop', 'profileshop'],
+  description : 'View stuff you can buy with your PokéCoins for your trainer card',
+  args        : [
+    {
+      name: 'page',
+      type: 'INTEGER',
+      description: 'Which start page',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

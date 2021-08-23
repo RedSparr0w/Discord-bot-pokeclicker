@@ -10,11 +10,17 @@ const getMultiplier = () => multipliers[Math.floor(Math.random() * (multipliers.
 const getArrow = (multiplier) => arrows[multipliers.findIndex(m => m == multiplier)];
 
 module.exports = {
-  type        : 'interaction',
   name        : 'spin',
   aliases     : ['wheel'],
-  description : 'Spin the wheel for a prize',
-  args        : ['amount'],
+  description : 'Spin the wheel and bet some PokéCoins',
+  args        : [
+    {
+      name: 'bet-amount',
+      type: 'STRING',
+      description: 'How much money you want to bet',
+      required: true,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

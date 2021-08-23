@@ -27,7 +27,6 @@ const calcStreakBonus = (streak) => {
 const s = (amt) => amt != 1 ? 's' : '';
 
 module.exports = {
-  type        : 'interaction',
   name        : 'timely',
   aliases     : [],
   description : 'Claim your 2 hourly PokéCoins',

@@ -37,11 +37,17 @@ const auraType = [
 const fuzzyBerry = FuzzySet(Object.keys(berryType), false);
 
 module.exports = {
-  type        : 'interaction',
   name        : 'berry',
   aliases     : ['berries', 'bery', 'berri', 'beri', 'berrie'],
   description : 'Get PokéClicker game info about a specific Berry',
-  args        : ['id/name'],
+  args        : [
+    {
+      name: 'berryname',
+      type: 'STRING',
+      description: 'Which berry you want info on (can be an ID or name)',
+      required: true,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

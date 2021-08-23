@@ -15,11 +15,23 @@ const {
 const fuzzyPokemon = FuzzySet(pokemonList.map(p => p.name.toLowerCase()), false);
 
 module.exports = {
-  type        : 'interaction',
   name        : 'pokemon',
   aliases     : ['p', 'poke', 'pinfo', 'pokeinfo'],
   description : 'Get PokéClicker game info about a specific Pokémon',
-  args        : ['id/name', 'shiny?'],
+  args        : [
+    {
+      name: 'name-id',
+      type: 'STRING',
+      description: 'Name or Pokédex ID of the Pokémon',
+      required: true,
+    },
+    {
+      name: 'shiny',
+      type: 'BOOLEAN',
+      description: 'Shiny image',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

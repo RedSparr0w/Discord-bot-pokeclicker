@@ -9,12 +9,48 @@ const {
 const { addReminder, getUserReminders, clearReminders } = require('../database.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'reminder',
   aliases     : ['remind', 'remindme', 'rm'],
-  description : `Get the bot to send you a DM reminding you of something,
-  Possible time arguments are minutes, hours, days or weeks.`,
-  args        : ['time (1 day 1 hour)?', 'message?'],
+  description : 'Command for modifying reminders',
+  args        : [
+    {
+      name: 'view',
+      type: 'SUB_COMMAND',
+      description: 'View pending reminders',
+    },
+    {
+      name: 'add',
+      type: 'SUB_COMMAND',
+      description: 'Add a new reminder',
+      options: [
+        {
+          name: 'time',
+          type: 'STRING',
+          description: 'How long until you want to be reminded',
+          required: true,
+        },
+        {
+          name: 'message',
+          type: 'STRING',
+          description: 'What you want to be reminded about',
+          required: true,
+        },
+      ],
+    },
+    {
+      name: 'remove',
+      type: 'SUB_COMMAND',
+      description: 'Remove reminder(s)',
+      options: [
+        {
+          name: 'ids',
+          type: 'STRING',
+          description: 'Reminder ID(s) to remove',
+          required: true,
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 2,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

@@ -3,7 +3,6 @@ const { MessageEmbed } = require('discord.js');
 const donatelink = 'https://www.paypal.com/donate?hosted_button_id=AYMCC237K8VR4';
 
 module.exports = {
-  type        : 'interaction',
   name        : 'donate',
   aliases     : [],
   description : 'Get a PayPal Donate link to help with the server cost of the Discord bot',

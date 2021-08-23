@@ -10,11 +10,107 @@ const {
 } = require('../helpers.js');
 
 module.exports = {
-  type        : 'interaction',
   name        : 'shards',
   aliases     : ['s', 'shard'],
   description : 'Get a list of routes where you can obtain a particular type of shard',
-  args        : ['type', 'order(chance|route)?'],
+  args        : [
+    {
+      name: 'type',
+      type: 'STRING',
+      description: 'Shard type',
+      required: true,
+      choices: [
+        {
+          name: 'Normal',
+          value: 'Normal',
+        },
+        {
+          name: 'Fire',
+          value: 'Fire',
+        },
+        {
+          name: 'Water',
+          value: 'Water',
+        },
+        {
+          name: 'Electric',
+          value: 'Electric',
+        },
+        {
+          name: 'Grass',
+          value: 'Grass',
+        },
+        {
+          name: 'Ice',
+          value: 'Ice',
+        },
+        {
+          name: 'Fighting',
+          value: 'Fighting',
+        },
+        {
+          name: 'Poison',
+          value: 'Poison',
+        },
+        {
+          name: 'Ground',
+          value: 'Ground',
+        },
+        {
+          name: 'Flying',
+          value: 'Flying',
+        },
+        {
+          name: 'Psychic',
+          value: 'Psychic',
+        },
+        {
+          name: 'Bug',
+          value: 'Bug',
+        },
+        {
+          name: 'Rock',
+          value: 'Rock',
+        },
+        {
+          name: 'Ghost',
+          value: 'Ghost',
+        },
+        {
+          name: 'Dragon',
+          value: 'Dragon',
+        },
+        {
+          name: 'Dark',
+          value: 'Dark',
+        },
+        {
+          name: 'Steel',
+          value: 'Steel',
+        },
+        {
+          name: 'Fairy',
+          value: 'Fairy',
+        },
+      ],
+    },
+    {
+      name: 'order',
+      type: 'STRING',
+      description: 'Order by',
+      required: false,
+      choices: [
+        {
+          name: 'Chance',
+          value: 'chance',
+        },
+        {
+          name: 'Route',
+          value: 'route',
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],

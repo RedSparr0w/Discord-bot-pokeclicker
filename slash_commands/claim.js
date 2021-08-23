@@ -27,7 +27,6 @@ const calcStreakBonus = (streak) => {
 const s = (amt) => amt != 1 ? 's' : '';
 
 module.exports = {
-  type        : 'interaction',
   name        : 'claim',
   aliases     : ['daily'],
   description : 'Claim your daily PokéCoins',

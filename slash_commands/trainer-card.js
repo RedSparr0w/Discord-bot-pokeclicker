@@ -9,11 +9,17 @@ const fs =  require('fs');
 const numStr = num => num.toLocaleString('en-US');
 
 module.exports = {
-  type        : 'interaction',
-  name        : 'profile',
-  aliases     : ['trainercard', 'tc', 'trainer-card'],
+  name        : 'trainer-card',
+  aliases     : ['trainercard', 'tc', 'profile'],
   description : 'Get an image of your trainer card',
-  args        : ['id?'],
+  args        : [
+    {
+      name: 'user',
+      type: 'USER',
+      description: 'Get another users trainer card',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES'],

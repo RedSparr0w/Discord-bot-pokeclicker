@@ -27,11 +27,33 @@ const coinImage = {
 const flipCoin = () => Math.round(Math.random());
 
 module.exports = {
-  type        : 'interaction',
   name        : 'flip',
   aliases     : ['coin'],
-  description : 'Flip a coin for a prize',
-  args        : ['amount', 'side (h|t)'],
+  description : 'Flip a coin and bet some PokéCoins',
+  args        : [
+    {
+      name: 'bet-amount',
+      type: 'STRING',
+      description: 'How much money you want to bet',
+      required: true,
+    },
+    {
+      name: 'coin-side',
+      type: 'STRING',
+      description: 'Which side of the coin are you betting on',
+      required: true,
+      choices: [
+        {
+          name: 'Heads',
+          value: 'heads',
+        },
+        {
+          name: 'Tails',
+          value: 'tails',
+        },
+      ],
+    },
+  ],
   guildOnly   : true,
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
