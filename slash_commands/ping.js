@@ -21,9 +21,10 @@ module.exports = {
       .setColor('#3498db');
     await interaction.reply({ embeds: [embed], ephemeral: true });
     const outboundDelay = Date.now() - createdTime;
+    const APIDelay = Math.round(interaction.client.ws.ping);
     embed.setDescription([
       '```yaml',
-      `Pong: ${outboundDelay}ms`,
+      `Pong: ${outboundDelay - APIDelay}ms\nAPI: ${APIDelay}ms`,
       '```',
     ].join('\n'));
     

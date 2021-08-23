@@ -21,9 +21,10 @@ module.exports = {
     const createdTime = Date.now();
     await msg.reply({ embeds: [embed], ephemeral: true }).then(m => {
       const outboundDelay = Date.now() - createdTime;
+      const APIDelay = Math.round(msg.client.ws.ping);
       embed.setDescription([
         '```yaml',
-        `Pong: ${outboundDelay}ms`,
+        `Pong: ${outboundDelay - APIDelay}ms\nAPI: ${APIDelay}ms`,
         '```',
       ].join('\n'));
       
