@@ -2,6 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const { getStatistic } = require('../database.js');
 
 module.exports = {
+  type        : 'USER',
   name        : 'statistics',
   aliases     : ['stats'],
   description : 'Get an overview of your statistics for this server',

@@ -133,11 +133,17 @@ client.on('error', e => error('Client error thrown:', e))
 
     if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application.owner.id) {
       console.log('Deploying new commands!');
+
       const data = client.slashCommands.map(c => ({
         name: c.name,
         description: c.description,
         options: c.args,
       }));
+
+      data.push(...client.slashCommands.filter(c => c.type).map(c => ({
+        name: c.name,
+        type: c.type,
+      })));
 
       return await client.guilds.cache.get(message.guild.id.toString()).commands.set(data);
     }
@@ -199,65 +205,66 @@ client.on('error', e => error('Client error thrown:', e))
     }
   })
   .on('interactionCreate', async interaction => {
-    if (!interaction.isCommand()) return;
+    if (interaction.isCommand() || interaction.isContextMenu()) {
 
-    const command = client.slashCommands.find(cmd => cmd.name === interaction.commandName);
+      const command = client.slashCommands.find(cmd => cmd.name === interaction.commandName);
 
-    // Not a valid command
-    if (!command) return interaction.reply({ content: 'Command not found..', ephemeral: true });
+      // Not a valid command
+      if (!command) return interaction.reply({ content: 'Command not found..', ephemeral: true });
 
-    // // Check if command needs to be executed inside a guild channel
-    // if (command.guildOnly && message.channel.type !== 'GUILD_TEXT') {
-    //   return message.channel.send('I can\'t execute that command inside DMs!');
-    // }
+      // // Check if command needs to be executed inside a guild channel
+      // if (command.guildOnly && message.channel.type !== 'GUILD_TEXT') {
+      //   return message.channel.send('I can\'t execute that command inside DMs!');
+      // }
 
-    // Check the user has the required permissions
-    if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
-      return interaction.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
-    }
-
-    // Check the bot has the required permissions
-    if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.guild.me).missing(command.botperms).length) {
-      return interaction.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
-    }
-
-    const commandAllowedHere = (
-      // User can manage the guild, and can use bot commands anywhere
-      //interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
-      // Command was run in `#****-bot`
-      interaction.channel.name.endsWith('-bot') ||
-      // Command is allowed in this channel
-      (!command.channels || command.channels.includes(interaction.channel.name))
-    );
-
-    if (!commandAllowedHere) {
-      const output = [`This is not the correct channel for \`/${command.name}\`.`];
-      if (command.channels && command.channels.length !== 0) {
-        output.push(`Please try again in ${formatChannelList(interaction.guild, command.channels)}.`);
+      // Check the user has the required permissions
+      if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+        return interaction.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
       }
-      return interaction.reply({ content: output.join('\n'), ephemeral: true });
-    }
 
-    // Apply command cooldowns
-    const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
-    if (timeLeft > 0) {
-      return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
-    }
-
-    // Run the command
-    try {
-      // Send the message object, along with the arguments, and the commandName (incase an alias was used)
-      await command.execute(interaction).catch(e => {
-        throw(e);
-      });
-      addStatistic(interaction.user, `!${command.name}`);
-      const commandsSent = await addStatistic(interaction.user, 'commands');
-      if (commandsSent >= 1000) {
-        await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Cascade);
+      // Check the bot has the required permissions
+      if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.guild.me).missing(command.botperms).length) {
+        return interaction.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
       }
-    } catch (err) {
-      error(`Error executing command "${command.name}":\n`, err);
-      interaction.replied ? interaction.followUp({ content: 'There was an error trying to execute that command!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to execute that command!', ephemeral: true });
+
+      const commandAllowedHere = (
+        // User can manage the guild, and can use bot commands anywhere
+        //interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
+        // Command was run in `#****-bot`
+        interaction.channel.name.endsWith('-bot') ||
+        // Command is allowed in this channel
+        (!command.channels || command.channels.includes(interaction.channel.name))
+      );
+
+      if (!commandAllowedHere) {
+        const output = [`This is not the correct channel for \`/${command.name}\`.`];
+        if (command.channels && command.channels.length !== 0) {
+          output.push(`Please try again in ${formatChannelList(interaction.guild, command.channels)}.`);
+        }
+        return interaction.reply({ content: output.join('\n'), ephemeral: true });
+      }
+
+      // Apply command cooldowns
+      const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
+      if (timeLeft > 0) {
+        return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
+      }
+
+      // Run the command
+      try {
+        // Send the message object, along with the arguments, and the commandName (incase an alias was used)
+        await command.execute(interaction).catch(e => {
+          throw(e);
+        });
+        addStatistic(interaction.user, `!${command.name}`);
+        const commandsSent = await addStatistic(interaction.user, 'commands');
+        if (commandsSent >= 1000) {
+          await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Cascade);
+        }
+      } catch (err) {
+        error(`Error executing command "${command.name}":\n`, err);
+        interaction.replied ? interaction.followUp({ content: 'There was an error trying to execute that command!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to execute that command!', ephemeral: true });
+      }
     }
   });
 

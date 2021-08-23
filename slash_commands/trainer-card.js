@@ -9,6 +9,7 @@ const fs =  require('fs');
 const numStr = num => num.toLocaleString('en-US');
 
 module.exports = {
+  type        : 'USER',
   name        : 'trainer-card',
   aliases     : ['trainercard', 'tc', 'profile'],
   description : 'Get an image of your trainer card',
