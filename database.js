@@ -12,34 +12,35 @@ const isOlderVersion = (version, compareVersion) => compareVersion.localeCompare
 const database_dir = './db/';
 const database_filename = 'database.sqlite';
 const database_fullpath = database_dir + database_filename;
+let db;
 
 async function getDB(){
-  return await sqlite.open({
+  db = db || await sqlite.open({
     filename: database_fullpath,
     driver: sqlite3.Database,
   });
+  // return the database
+  return db;
 }
 
 async function setupDB(){
   const db = await getDB();
-  await Promise.all([
-    // Keep track of any application data we need
-    db.run('CREATE TABLE IF NOT EXISTS application(name TEXT(1024) UNIQUE ON CONFLICT IGNORE NOT NULL, value TEXT(1024) NOT NULL, PRIMARY KEY (name))'),
-    // User data
-    db.run('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default \'0\', trainer INT(3) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', badge TEXT(1024) NOT NULL default \'\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    // User Statistics
-    db.run('CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
-    db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
-    // Checked on interval
-    db.run('CREATE TABLE IF NOT EXISTS reminders(id INTEGER PRIMARY KEY AUTOINCREMENT, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, message TEXT(2048) NOT NULL default \'\')'),
-  ]);
+  // Keep track of any application data we need
+  await db.run('CREATE TABLE IF NOT EXISTS application(name TEXT(1024) UNIQUE ON CONFLICT IGNORE NOT NULL, value TEXT(1024) NOT NULL, PRIMARY KEY (name))'),
+  // User data
+  await db.run('CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL, tag TEXT(64) NOT NULL)'),
+  await db.run('CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default \'0\', trainer INT(3) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+  await db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', badge TEXT(1024) NOT NULL default \'\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+  await db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+  await db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+  await db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+  // User Statistics
+  await db.run('CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
+  await db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
+  // Checked on interval
+  await db.run('CREATE TABLE IF NOT EXISTS reminders(id INTEGER PRIMARY KEY AUTOINCREMENT, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, message TEXT(2048) NOT NULL default \'\')'),
 
-  db.close();
+  // Update the database if it's an old DB
   await updateDB();
   return;
 }
@@ -63,8 +64,6 @@ async function updateDB(){
   }
   
   await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', botVersion);
-
-  db.close();
 }
 
 async function backupDB(guild){
@@ -88,7 +87,6 @@ async function getUserID(user){
   const db = await getDB();
   await db.run('INSERT OR REPLACE INTO users (id, user, tag) values ((SELECT id FROM users WHERE user = $user), $user, $tag);', data);
   const { user_id = 0 } = await db.get('SELECT last_insert_rowid() AS user_id;');
-  db.close();
 
   return user_id;
 }
@@ -97,10 +95,10 @@ async function getAmount(user, table = 'coins'){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   let result = await db.get(`SELECT amount FROM ${table} WHERE user=?`, user_id);
   // If user doesn't exist yet, set them up (with 1000 coins)
@@ -109,7 +107,6 @@ async function getAmount(user, table = 'coins'){
     // try get the users points again
     result = await db.get(`SELECT amount FROM ${table} WHERE user=?`, user_id);
   }
-  db.close();
 
   const { amount = 0 } = result || {};
 
@@ -125,10 +122,10 @@ async function addAmount(user, amount = 1, table = 'coins'){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   // If user has more than 25k coins, give them the Soul Badge
   if (amount >= 25e3) {
@@ -141,7 +138,6 @@ async function addAmount(user, amount = 1, table = 'coins'){
   };
 
   await db.run(`UPDATE ${table} SET amount=$amount WHERE user=$user_id`, data);
-  db.close();
 
   return amount;
 }
@@ -158,10 +154,10 @@ async function setAmount(user, amount = 1, table = 'coins'){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   const data = {
     $user_id: user_id,
@@ -169,7 +165,6 @@ async function setAmount(user, amount = 1, table = 'coins'){
   };
 
   await db.run(`UPDATE ${table} SET amount=$amount WHERE user=$user_id`, data);
-  db.close();
 
   return amount;
 }
@@ -197,7 +192,6 @@ async function getTop(amount = 10, table = 'coins'){
     default:
       results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='${table}' ORDER BY amount DESC LIMIT ${amount}`);
   }
-  db.close();
 
   return results;
 }
@@ -206,13 +200,12 @@ async function getRank(user, table = 'coins'){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   const result = await db.get('SELECT * FROM ( SELECT user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins ) WHERE user=?', user_id);
-  db.close();
 
   return result.rank || 0;
 }
@@ -221,10 +214,10 @@ async function getTrainerCard(user){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   let result = await db.get('SELECT * FROM trainer_card WHERE user=?', user_id);
   // If user doesn't exist yet, set them up
@@ -233,7 +226,6 @@ async function getTrainerCard(user){
     // try get the users points again
     result = await db.get('SELECT * FROM trainer_card WHERE user=?', user_id);
   }
-  db.close();
 
   return result;
 }
@@ -244,14 +236,13 @@ async function setTrainerCard(user, type, index){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-    getTrainerCard(user), // We want this incase the profile isn't created yet
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+    await getTrainerCard(user), // We want this incase the profile isn't created yet
+  ];
 
   const result = await db.run(`UPDATE trainer_card SET ${type}=? WHERE user=?`, index, user_id);
-  db.close();
 
   return result;
 }
@@ -261,10 +252,10 @@ async function getPurchased(user, type){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   let result = await db.get(`SELECT ${type} FROM purchased WHERE user=?`, user_id);
   // If user doesn't exist yet, set them up
@@ -273,7 +264,6 @@ async function getPurchased(user, type){
     // try get the users points again
     result = await db.get(`SELECT ${type} FROM purchased WHERE user=?`, user_id);
   }
-  db.close();
 
   return result[type].split('').map(Number);
 }
@@ -292,13 +282,12 @@ async function addPurchased(user, type, index){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   const result = await db.run(`UPDATE purchased SET ${type}=? WHERE user=?`, purchased, user_id);
-  db.close();
 
   return result;
 }
@@ -311,7 +300,6 @@ async function getStatisticTypeID(type){
   const db = await getDB();
   await db.run('INSERT OR REPLACE INTO statistic_types (id, name) values ((SELECT id FROM statistic_types WHERE name = $type), $type);', data);
   const { type_id = 0 } = await db.get('SELECT last_insert_rowid() AS type_id;');
-  db.close();
 
   return type_id;
 }
@@ -319,7 +307,6 @@ async function getStatisticTypeID(type){
 async function getStatisticTypes(){
   const db = await getDB();
   const results = await db.all('SELECT * FROM statistic_types;');
-  db.close();
 
   return results || [];
 }
@@ -328,13 +315,12 @@ async function getOverallStatistic(stat_type){
   const [
     db,
     type_id,
-  ] = await Promise.all([
-    getDB(),
-    getStatisticTypeID(stat_type),
-  ]);
+  ] = [
+    await getDB(),
+    await getStatisticTypeID(stat_type),
+  ];
 
   const result = await db.get('SELECT name, COUNT(user) AS users, SUM(value) AS value FROM statistics INNER JOIN statistic_types ON statistic_types.id = type WHERE type=? GROUP BY type;', type_id);
-  db.close();
 
   const { name = 'not found', users = 0, value = 0 } = result || {};
 
@@ -346,11 +332,11 @@ async function getStatistic(user, type){
     db,
     user_id,
     type_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-    getStatisticTypeID(type),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+    await getStatisticTypeID(type),
+  ];
 
   let result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
   // If user doesn't exist yet, set them up
@@ -359,7 +345,6 @@ async function getStatistic(user, type){
     // try get the users points again
     result = await db.get('SELECT value FROM statistics WHERE user=? AND type=?', user_id, type_id);
   }
-  db.close();
 
   const { value = 0 } = result || {};
 
@@ -376,11 +361,11 @@ async function addStatistic(user, type, amount = 1){
     db,
     user_id,
     type_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-    getStatisticTypeID(type),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+    await getStatisticTypeID(type),
+  ];
 
   const data = {
     $type_id: type_id,
@@ -389,7 +374,6 @@ async function addStatistic(user, type, amount = 1){
   };
 
   await db.run('UPDATE statistics SET value=$amount WHERE user=$user_id AND type=$type_id', data);
-  db.close();
 
   return amount;
 }
@@ -398,13 +382,12 @@ async function addReminder(user, time, message = ''){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   const result = await db.run('INSERT INTO reminders (user, datetime, message) VALUES (?, ?, ?)', user_id, Math.floor(+time), message);
-  db.close();
 
   return result;
 }
@@ -413,7 +396,6 @@ async function getOldReminders(date = Date.now()){
   const db = await getDB();
 
   const results = await db.all(`SELECT reminders.id, users.user, reminders.message FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.datetime <= ${+date} ORDER BY reminders.id ASC`);
-  db.close();
 
   return results;
 }
@@ -422,13 +404,12 @@ async function getUserReminders(user){
   const [
     db,
     user_id,
-  ] = await Promise.all([
-    getDB(),
-    getUserID(user),
-  ]);
+  ] = [
+    await getDB(),
+    await getUserID(user),
+  ];
 
   const results = await db.all(`SELECT reminders.id, users.user, reminders.message, reminders.datetime FROM reminders INNER JOIN users ON users.id = reminders.user WHERE reminders.user = ${user_id} ORDER BY reminders.id ASC`);
-  db.close();
 
   return results;
 }
@@ -438,10 +419,32 @@ async function clearReminders(ids = []){
   const db = await getDB();
 
   const results = await db.run(`DELETE FROM reminders WHERE reminders.id IN (${ids.join(',')})`);
-  db.close();
 
   return results;
 }
+
+process.on('beforeExit', code => {
+  console.log(`Process will exit with code: ${code}`);
+  db.close();
+  process.exit(code);
+});
+
+process.on('exit', code => {
+  console.log(`Process exited with code: ${code}`);
+  db.close();
+});
+
+process.on('SIGTERM', signal => {
+  console.log(`Process ${process.pid} received a SIGTERM signal`);
+  db.close();
+  process.exit(0);
+});
+
+process.on('SIGINT', signal => {
+  console.log(`Process ${process.pid} has been interrupted`);
+  db.close();
+  process.exit(0);
+});
 
 module.exports = {
   getDB,

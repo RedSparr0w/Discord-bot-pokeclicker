@@ -75,10 +75,10 @@ const newQuiz = async (guild, reoccur = false) => {
     const [
       balance,
       answered,
-    ] = await Promise.all([
-      addAmount(user, amount),
-      addStatistic(user, 'qz_answered'),
-    ]);
+    ] = [
+      await addAmount(user, amount),
+      await addStatistic(user, 'qz_answered'),
+    ];
     addStatistic(user, 'qz_coins_won', amount);
 
     // If user has answered more than 100 questions, give them the Marsh Badge
