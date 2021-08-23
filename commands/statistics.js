@@ -44,20 +44,20 @@ module.exports = {
       // Quiz
       qz_answered,
       qz_coins_won,
-    ] = [
-      await getStatistic(user, 'messages'),
-      await getStatistic(user, 'commands'),
+    ] = await Promise.all([
+      getStatistic(user, 'messages'),
+      getStatistic(user, 'commands'),
       // Games Corner
-      await getStatistic(user, 'gc_games_played'),
-      await getStatistic(user, 'gc_games_won'),
-      await getStatistic(user, 'gc_games_tied'),
-      await getStatistic(user, 'gc_games_lost'),
-      await getStatistic(user, 'gc_coins_bet'),
-      await getStatistic(user, 'gc_coins_won'),
+      getStatistic(user, 'gc_games_played'),
+      getStatistic(user, 'gc_games_won'),
+      getStatistic(user, 'gc_games_tied'),
+      getStatistic(user, 'gc_games_lost'),
+      getStatistic(user, 'gc_coins_bet'),
+      getStatistic(user, 'gc_coins_won'),
       // Quiz
-      await getStatistic(user, 'qz_answered'),
-      await getStatistic(user, 'qz_coins_won'),
-    ];
+      getStatistic(user, 'qz_answered'),
+      getStatistic(user, 'qz_coins_won'),
+    ]);
 
     embed.addField('__***#general***__', [
       `**❯ Messages:** ${messages.toLocaleString('en-US')}`,
