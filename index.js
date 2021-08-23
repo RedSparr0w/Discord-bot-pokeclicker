@@ -256,7 +256,7 @@ client.on('error', e => error('Client error thrown:', e))
         },
         {
           name: 'fire-water-grass',
-          description: 'Fire, Water, Grass _(Rock, Paper, Scissors)_ bet some money',
+          description: 'Fire, Water, Grass (Rock, Paper, Scissors) bet some money',
           options: [
             {
               name: 'bet-amount',
