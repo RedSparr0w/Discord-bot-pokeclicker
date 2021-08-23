@@ -709,17 +709,17 @@ client.on('error', e => error('Client error thrown:', e))
     if (!command || command.type !== 'interaction') return;
 
     // // Check if command needs to be executed inside a guild channel
-    // if (command.guildOnly && message.channel.type !== 'text') {
+    // if (command.guildOnly && message.channel.type !== 'GUILD_TEXT') {
     //   return message.channel.send('I can\'t execute that command inside DMs!');
     // }
 
     // Check the user has the required permissions
-    if (interaction.channel.type === 'text' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+    if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
       return interaction.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
     }
 
     // Check the bot has the required permissions
-    if (interaction.channel.type === 'text' && interaction.channel.permissionsFor(interaction.guild.me).missing(command.botperms).length) {
+    if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.guild.me).missing(command.botperms).length) {
       return interaction.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
     }
 

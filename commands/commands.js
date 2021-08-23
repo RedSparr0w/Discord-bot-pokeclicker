@@ -17,10 +17,10 @@ module.exports = {
   userperms   : ['SEND_MESSAGES'],
   execute     : async (interaction) => {
     let command = interaction.options.get('command')?.value;
-    let commands = interaction.client.commands;
-    if (interaction.channel.type === 'dm'){
+    let commands = interaction.client.commands.filter(c => c.type === 'interaction');
+    if (interaction.channel.type === 'DM'){
       commands = commands.filter(command => !command.guildOnly);
-    } else if (interaction.channel.type === 'text'){
+    } else if (interaction.channel.type === 'GUILD_TEXT'){
       commands = commands.filter(command => !interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length);
     }
 
@@ -36,15 +36,15 @@ module.exports = {
         ].join('\n'))
         .setColor('#3498db');
 
-      if (interaction.channel.type === 'dm'){
+      if (interaction.channel.type === 'DM'){
         const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
         embed.addField('__***Commands:***__', description);
-      } else if (interaction.channel.type === 'text'){
+      } else if (interaction.channel.type === 'GUILD_TEXT'){
         // Group the commands by their primary channel
         const restrictedCommands = [];
         const anyCommands = [];
         const groupedCommands = {};
-        commands.filter(c => c.type === 'interaction').forEach(command => {
+        commands.forEach(command => {
           // Not restricted to any channels
           if (command.channels === undefined) {
             return anyCommands.push(formattedCommand(command));
