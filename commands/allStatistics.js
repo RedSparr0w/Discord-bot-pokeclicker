@@ -12,8 +12,8 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['MANAGE_GUILD'],
   channels    : [],
-  execute     : async (interaction) => {
-    const type = interaction.options.get('type')?.value;
+  execute     : async (msg, args) => {
+    const type = args[0];
 
     const embed = new MessageEmbed().setColor('#e74c3c');
 
@@ -32,17 +32,17 @@ module.exports = {
         .setColor('#3498db')
         .setDescription(['```js', `${'name'.padEnd(padding.name, ' ')} | ${'users'.padStart(padding.users, ' ')} | ${'value'.padStart(padding.value, ' ')}`, ''.padStart(6 + padding.name + padding.users + padding.value, '-'), ...results.sort((a, b) => b.value - a.value).sort((a, b) => b.users - a.users).map(r => `${r.name.padEnd(padding.name, ' ')} | ${r.users.toLocaleString('en-US').padStart(padding.users, ' ')} | ${r.value.toLocaleString('en-US').padStart(padding.value, ' ')}`), '```'].join('\n'));
 
-      return interaction.reply({ embeds: [embed] });
+      return msg.reply({ embeds: [embed] });
     } else {
-      const stat = statTypes.find(s => s.name == type.value);
+      const stat = statTypes.find(s => s.name == type);
 
       if (!stat) {
         embed.setTitle('Overall Statistics')
           .setDescription(statTypes.map(s => s.name).join('\n'));
-        return interaction.reply({ embeds: [embed] });
+        return msg.reply({ embeds: [embed] });
       }
 
-      const stats = await getOverallStatistic(type.value);
+      const stats = await getOverallStatistic(type);
 
       embed.setTitle(`__***${stats.name}***__`)
         .setColor('#3498db')
@@ -51,7 +51,7 @@ module.exports = {
           `**❯ Value:** ${stats.value.toLocaleString('en-US')}`,
         ].join('\n'));
 
-      return interaction.reply({ embeds: [embed] });
+      return msg.reply({ embeds: [embed] });
     }
   },
 };

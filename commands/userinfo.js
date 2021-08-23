@@ -18,10 +18,10 @@ module.exports = {
     const joinServer = new Date(member.joinedTimestamp);
     const embed = new MessageEmbed()
       .setAuthor(user.tag, user.displayAvatarURL())
-      .setDescription(user)
+      .setDescription(user.toString())
       .setColor('RANDOM')
       .setThumbnail(user.displayAvatarURL())
-      .addField('Status:', user.presence.status)
+      .addField('Status:', member.presence.status)
       .addField('Joined Discord:', joinDiscord.toGMTString())
       .addField('Joined Server:', joinServer.toGMTString())
       .addField('Roles:', member.roles.cache.map(r => `${r}`).join('\n'))
