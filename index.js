@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { development, prefix, token, mutedRoleID } = require('./config.js');
+const { development, prefix, token, backupChannelID, mutedRoleID } = require('./config.js');
 const {
   log,
   info,
@@ -91,7 +91,7 @@ client.once('ready', async() => {
 
   // Backup the database every 6 hours
   new RunOnInterval(6 * HOUR, () => {
-    client.guilds.cache.forEach(guild => backupDB(guild));
+    if (+backupChannelID) client.guilds.cache.forEach(guild => backupDB(guild));
   }, { timezone_offset: 0 });
 
   // Start happy hour
