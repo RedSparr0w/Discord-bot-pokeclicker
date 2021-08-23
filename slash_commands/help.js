@@ -95,8 +95,8 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle(`Help | ${upperCaseFirstLetter(command.name)}`)
       .setColor('#3498db')
-      .addField('❯ Description', `${command.description}`, false)
-      .addField('❯ Usage', `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``, false)
+      .addField('❯ Description', `${command.description || '---'}`, false)
+      .addField('❯ Usage', `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg.name}${arg.required ? '' : '?'}]`).join('')}\`\`\``, false)
       .addField('❯ Cooldown', `\`${command.cooldown || 3} second(s)\``, true)
       .addField('❯ Guild Only', `\`${command.guildOnly}\``, true)
       .addField('❯ Channels', formatChannelList(interaction.guild, command.channels), true);

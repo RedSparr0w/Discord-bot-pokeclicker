@@ -150,8 +150,8 @@ module.exports = {
       [
         '**`1 Line:`** The middle line across',
         '**`2 Lines:`** All 3 lines across',
-        '**`3 Lines:`** All 3 lines across and both diagonal lines',
-      ],
+        '**`3 Lines:`** All 3 lines across and both diagonal lines _(default)_',
+      ].join('\n'),
     ],
     [
       '❯ Multipliers:',
@@ -161,7 +161,7 @@ module.exports = {
         `${slots.berry}➖➖ ║ **× 2**`,
         '',
         '_**Note:** The multiplier is divided by however many lines you are playing._',
-      ],
+      ].join('\n'),
     ],
   ],
   args        : [
