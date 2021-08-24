@@ -103,6 +103,6 @@ module.exports = {
     });
 
     const botMsg = await msg.channel.send({ embeds: [embed], components: [select] });
-    selectedTime.on('end', () => botMsg.editReply({ components: [] }).catch(O_o=>{}));
+    selectedTime.on('end', () => botMsg.edit({ components: [] }).catch(O_o=>{}));
   },
 };
