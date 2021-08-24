@@ -49,6 +49,7 @@ const newQuiz = async (guild, reoccur = false) => {
   let finished = 0;
 
   const winners = new Set();
+  const winner_data = [];
 
   const collector = quiz_channel.createMessageCollector({ filter, time: time_limit });
   collector.on('collect', async m => {
@@ -86,18 +87,7 @@ const newQuiz = async (guild, reoccur = false) => {
       await addPurchased(user, 'badge', trainerCardBadgeTypes.Marsh);
     }
 
-    const description = [
-      `${user}`,
-      '**CORRECT!**',
-      `**+${amount} ${serverIcons.money}**`,
-    ];
-
-    const embed = new MessageEmbed()
-      .setDescription(description.join('\n'))
-      .setFooter(`Answered: ${answered.toLocaleString('en-US')}\nBalance: ${balance.toLocaleString('en-US')}`)
-      .setColor('#2ecc71');
-
-    m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to send quiz winner message', ...args));
+    winner_data.push({user, amount, balance, answered});
   });
     
   // If code reaction, console log the expected answer
@@ -118,6 +108,16 @@ const newQuiz = async (guild, reoccur = false) => {
       // Update the message
       const botEmbed = bot_message.embeds[0];
       setTimeout(() => {
+        // Send out the correct users and amounts
+        if (winner_data.length) {
+          const description = winner_data.map(w => `[${w.user}](https://cancel "Answered: ${w.answered.toLocaleString('en-US')}\nBalance: ${w.balance.toLocaleString('en-US')}"): **+${w.amount} ${serverIcons.money}**`);
+          const embed = new MessageEmbed()
+            .setTitle('**Correct:**')
+            .setDescription(description.join('\n'))
+            .setColor('#2ecc71');
+      
+          bot_message.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to send quiz winner message\n', ...args));
+        }
         quiz.end(bot_message, botEmbed);
       }, ANSWER_TIME_LIMIT);
     })
