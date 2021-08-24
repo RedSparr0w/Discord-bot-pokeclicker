@@ -1,12 +1,17 @@
 const { mutedRoleID } = require('../../config.js');
 const { getScheduleItems, clearScheduleItems } = require('../../database.js');
+const { error } = require('../../helpers.js');
 
 const checkScheduledItems = async (client) => {
   const scheduled = await getScheduleItems();
   scheduled.forEach(item => {
-    switch(item.type) {
-      case 'un-mute':
-        return unmute(client, item);
+    try {
+      switch(item.type) {
+        case 'un-mute':
+          return unmute(client, item);
+      }
+    } catch (e){
+      error('Failed to run scheduled item\n', item, '\n', e);
     }
   });
 
