@@ -1,18 +1,38 @@
 const { MessageEmbed } = require('discord.js');
 
 module.exports = {
+  type        : 'USER',
   name        : 'userinfo',
   aliases     : [],
   description : 'Get a members server info',
-  args        : [],
+  args        : [
+    {
+      name: 'user',
+      type: 'USER',
+      description: 'Get another users trainer card',
+      required: false,
+    },
+  ],
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['MUTE_MEMBERS'],
+  restrict    : ['MUTE_MEMBERS'],
   channels    : [],
-  execute     : async (msg, args) => {
-    const user = msg.mentions.users.first() || msg.author;
-    const member = msg.mentions.members.first() || msg.member;
+  execute     : async (interaction) => {
+    const id = interaction.options.get('user')?.value;
+
+    let member = interaction.member;
+    let user = interaction.user;
+
+    if (id) {
+      member = await interaction.guild.members.fetch(id).catch(e => {});
+      if (!member) {
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+        return interaction.reply({ embeds: [embed], ephemeral: true });
+      }
+      user = member.user;
+    }
 
     const joinDiscord = new Date(user.createdTimestamp);
     const joinServer = new Date(member.joinedTimestamp);
@@ -28,6 +48,6 @@ module.exports = {
       .setFooter(`ID: ${user.id}`)
       .setTimestamp();
 
-    return msg.channel.send({ embeds: [embed] });
+    return interaction.reply({ embeds: [embed], ephemeral: true });
   },
 };

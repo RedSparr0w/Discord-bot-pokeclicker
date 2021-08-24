@@ -133,19 +133,47 @@ client.on('error', e => error('Client error thrown:', e))
 
     if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application.owner.id) {
       console.log('Deploying new commands!');
-
+      // Add our slash commands
       const data = client.slashCommands.map(c => ({
         name: c.name,
         description: c.description,
         options: c.args,
+        defaultPermission: !(c.restrict || c.restrict?.length > 0),
       }));
-
+      // Add any context menu commands
       data.push(...client.slashCommands.filter(c => c.type).map(c => ({
         name: c.name,
         type: c.type,
+        defaultPermission: !(c.restrict || c.restrict?.length > 0),
       })));
+      // Update the current list of commands for this guild
+      await message.guild.commands.set(data);
 
-      return await client.guilds.cache.get(message.guild.id.toString()).commands.set(data);
+      const restrictCmds = client.slashCommands.filter(c => c.restrict?.length > 0).map(c => {
+        const roleIDs = message.guild.roles.cache.filter(r => r.permissions.has(c.restrict)).map(r => r.id);
+        c.roleIDs = roleIDs;
+        return c;
+      });
+
+      const fullPermissions = message.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
+        const cmd = restrictCmds.find(cmd => cmd.name === c.name);
+        console.log(cmd.name, cmd.roleIDs);
+        return {
+          id: c.id,
+          permissions: cmd.roleIDs.map(r => ({
+            id: r,
+            type: 'ROLE',
+            permission: true,
+          })),
+        };
+      });
+
+      console.log(fullPermissions);
+
+      // Update the permissions for these commands
+      await client.guilds.cache.get(message.guild.id.toString()).commands.permissions.set({ fullPermissions });
+
+      return;
     }
 
     // Non command messages
@@ -182,7 +210,7 @@ client.on('error', e => error('Client error thrown:', e))
       || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
     // Not a valid command
-    if (!command) return message.reply('Command not found..');
+    if (!command) return;
 
     // Apply command cooldowns
     const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;
