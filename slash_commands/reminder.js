@@ -54,7 +54,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 2,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   execute     : async (interaction) => {
     const subcommand = interaction.options.getSubcommand();
 

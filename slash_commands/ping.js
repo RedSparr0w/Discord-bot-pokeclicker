@@ -8,7 +8,7 @@ module.exports = {
   guildOnly   : false,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   execute     : async (interaction) => {
     const createdTime = Date.now();
     

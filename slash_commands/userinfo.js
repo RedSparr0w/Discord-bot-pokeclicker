@@ -17,8 +17,6 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['MUTE_MEMBERS'],
-  restrict    : ['MUTE_MEMBERS'],
-  channels    : [],
   execute     : async (interaction) => {
     const id = interaction.options.get('user')?.value;
 

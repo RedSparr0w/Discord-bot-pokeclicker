@@ -20,7 +20,7 @@ module.exports = {
   guildOnly   : false,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   execute     : async (interaction) => {
     let command = interaction.options.get('command')?.value;
     let commands = interaction.client.slashCommands;

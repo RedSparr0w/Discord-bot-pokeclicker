@@ -51,7 +51,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   channels    : ['bot-commands'],
   execute     : async (interaction) => {
     const id = interaction.options.get('berryname')?.value;

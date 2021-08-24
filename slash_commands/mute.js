@@ -8,7 +8,7 @@ module.exports = {
   type        : 'USER',
   name        : 'mute',
   aliases     : [],
-  description : `Apply the <@&${mutedRoleID}> role to users`,
+  description : 'Apply the @Muted role to users',
   args        : [
     {
       name: 'user',

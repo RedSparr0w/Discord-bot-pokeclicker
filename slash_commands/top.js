@@ -45,8 +45,8 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
-  userperms   : ['SEND_MESSAGES'],
+  botperms    : [],
+  userperms   : [],
   channels    : ['game-corner', 'bot-commands', 'bragging'],
   execute     : async (interaction) => {
     const type = interaction.options.get('type')?.value || 'coins';

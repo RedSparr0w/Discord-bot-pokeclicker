@@ -24,7 +24,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 0.5,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   channels    : ['game-corner'],
   execute     : async (interaction) => {
     let bet = interaction.options.get('bet-amount').value;

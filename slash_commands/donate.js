@@ -10,7 +10,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   execute     : async (interaction) => {
     const description = `<:heartscale:761861364876574740> Thank you for considering donating,
     The money will go towards the server cost of the Discord bot.

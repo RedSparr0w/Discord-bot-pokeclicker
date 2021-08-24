@@ -27,7 +27,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  userperms   : [],
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (interaction) => {
     let page = +(interaction.options.get('page')?.value || 1);
