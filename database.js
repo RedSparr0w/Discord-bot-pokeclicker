@@ -37,6 +37,8 @@ async function setupDB(){
     db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
     // Checked on interval
     db.run('CREATE TABLE IF NOT EXISTS reminders(id INTEGER PRIMARY KEY AUTOINCREMENT, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, message TEXT(2048) NOT NULL default \'\')'),
+    db.run('CREATE TABLE IF NOT EXISTS schedule_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
+    db.run('CREATE TABLE IF NOT EXISTS schedule(id INTEGER PRIMARY KEY AUTOINCREMENT, type TEXT(1024) NOT NULL, user INTEGER NOT NULL, datetime TEXT(24) NOT NULL, value TEXT(2048) NOT NULL default \'\', FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES schedule_types (id) ON DELETE CASCADE)'),
   ]);
 
   db.close();
@@ -443,6 +445,54 @@ async function clearReminders(ids = []){
   return results;
 }
 
+async function getScheduleTypeID(type){
+  const data = {
+    $type: type,
+  };
+
+  const db = await getDB();
+  await db.run('INSERT OR REPLACE INTO schedule_types (id, name) values ((SELECT id FROM schedule_types WHERE name = $type), $type);', data);
+  const { type_id = 0 } = await db.get('SELECT last_insert_rowid() AS type_id;');
+  db.close();
+
+  return type_id;
+}
+
+async function getScheduleItems(date = Date.now()){
+  const db = await getDB();
+
+  const results = await db.all(`SELECT schedule.id, schedule_types.name AS type, users.user, schedule.value, schedule.datetime FROM schedule INNER JOIN users ON users.id = schedule.user INNER JOIN schedule_types ON schedule_types.id = type WHERE schedule.datetime <= ${+date} ORDER BY schedule.id ASC`);
+  db.close();
+
+  return results;
+}
+
+async function addScheduleItem(type, user, time, value = ''){
+  const [
+    db,
+    user_id,
+    type_id,
+  ] = await Promise.all([
+    getDB(),
+    getUserID(user),
+    getScheduleTypeID(type),
+  ]);
+
+  const result = await db.run('INSERT INTO schedule (type, user, datetime, value) VALUES (?, ?, ?, ?)', type_id, user_id, Math.floor(+time), value);
+  db.close();
+
+  return result;
+}
+
+async function clearScheduleItems(ids = []){
+  const db = await getDB();
+
+  const results = await db.run(`DELETE FROM schedule WHERE schedule.id IN (${ids.join(',')})`);
+  db.close();
+
+  return results;
+}
+
 module.exports = {
   getDB,
   setupDB,
@@ -467,4 +517,8 @@ module.exports = {
   getOldReminders,
   getUserReminders,
   clearReminders,
+  getScheduleTypeID,
+  getScheduleItems,
+  addScheduleItem,
+  clearScheduleItems,
 };

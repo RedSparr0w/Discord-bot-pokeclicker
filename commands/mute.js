@@ -1,5 +1,8 @@
 const { MessageEmbed } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
+const { MessageActionRow, MessageSelectMenu } = require('discord.js');
+const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
+const { addScheduleItem } = require('../database.js');
 
 module.exports = {
   name        : 'mute',
@@ -19,14 +22,87 @@ module.exports = {
     }
 
     const output = [msg.author, '', 'Muted the following users:'];
+    const users = [];
 
-    for (const [, member] of [...msg.mentions.members]) {
-      await member.roles.add(mutedRoleID, `User muted by ${msg.member.displayName}-${msg.author.id}`);
-      output.push(member);
+    for (const [, m] of [...msg.mentions.members]) {
+      if (m == msg.guild.me) {
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
+        return msg.reply({ embeds: [embed] });
+      }
+      await m.roles.add(mutedRoleID, `User muted by ${msg.member.displayName}-${msg.author.id}`);
+      output.push(m);
+    }
+    for (const [, u] of [...msg.mentions.users]) {
+      users.push(u);
     }
 
     embed.setColor('#3498db').setDescription(output.join('\n'));
+    const customID = randomString();
+    const select = new MessageActionRow()
+      .addComponents(
+        new MessageSelectMenu()
+          .setCustomId(`mute-time-${customID}`)
+          .setPlaceholder('Mute user(s) for x time')
+          .addOptions([
+            {
+              label: '1 Hour',
+              description: 'Un-mute user(s) in 1 Hour',
+              value: HOUR.toString(),
+            },
+            {
+              label: '4 Hours',
+              description: 'Un-mute user(s) in 4 Hours',
+              value: (3 * HOUR).toString(),
+            },
+            {
+              label: '12 Hours',
+              description: 'Un-mute user(s) in 12 Hours',
+              value: (12 * HOUR).toString(),
+            },
+            {
+              label: '1 Day',
+              description: 'Un-mute user(s) in 1 Day',
+              value: DAY.toString(),
+            },
+            {
+              label: '3 Days',
+              description: 'Un-mute user(s) in 3 Days',
+              value: (3 * DAY).toString(),
+            },
+            {
+              label: '1 Week',
+              description: 'Un-mute user(s) in 1 Week',
+              value: WEEK.toString(),
+            },
+            {
+              label: 'Manually',
+              description: 'Un-mute user(s) manually',
+              value: '0',
+            },
+          ])
+      );
 
-    msg.channel.send({ embeds: [embed] });
+    // // Filters
+    const filter = (i) => i.customId === `mute-time-${customID}` && i.user.id === msg.author.id;
+
+    // Wait for up to x ms
+    const timer = 3 * MINUTE;
+    const selectedTime = msg.channel.createMessageComponentCollector({filter, time: timer});
+
+    selectedTime.on('collect', async i => {
+      await i.deferUpdate();
+      const value = +i.values[0] || 0;
+      if (value) {
+        const date = Date.now() + value;
+        embed.setDescription(`${output.join('\n')}\n\n_user(s) will be un-muted in ${formatDateToString(+i.values[0])}_`);
+        users.forEach(u => {
+          addScheduleItem('un-mute', u, date, `${msg.guild.id}|${formatDateToString(+i.values[0])}`);
+        });
+      }
+      await i.editReply({ embeds: [embed], components: [] });
+    });
+
+    const botMsg = await msg.channel.send({ embeds: [embed], components: [select] });
+    selectedTime.on('end', () => botMsg.editReply({ components: [] }).catch(O_o=>{}));
   },
 };

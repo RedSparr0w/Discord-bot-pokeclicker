@@ -24,6 +24,7 @@ const regexMatches = require('./regexMatches.js');
 const { newQuiz } = require('./other/quiz/quiz.js');
 const { sendReminders } = require('./other/reminder/reminder.js');
 const { happyHourHours, startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
+const { checkScheduledItems } = require('./other/scheduled/scheduled.js');
 
 const client = new Discord.Client({
   intents: [
@@ -90,6 +91,7 @@ client.once('ready', async() => {
   new RunOnInterval(MINUTE, () => {
     // only run if we aren't running on a dev enviroment
     if (!development) sendReminders(client);
+    checkScheduledItems(client);
   }, { timezone_offset: 0, run_now: true });
 
   // Update our status every hour
@@ -123,10 +125,10 @@ client.on('error', e => error('Client error thrown:', e))
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
 
-    // Mute users who mass ping (3 or more users)
-    if (message.mentions.users.size >= 3) {
+    // Mute users who mass ping (4 or more users)
+    if (message.mentions.users.size >= 4) {
       message.delete().catch(e=>{});
-      message.member.roles.add(mutedRoleID, 'User muted for mass ping');
+      message.member.roles.add(mutedRoleID, `User muted for mass ping (${message.mentions.users.size} users)`);
       return message.reply('You have been muted, Do not mass ping!');
     }
     
@@ -219,6 +221,16 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Not a valid command
     if (!command) return;
+
+    // Check the user has the required permissions
+    if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
+      return message.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
+    }
+
+    // Check the bot has the required permissions
+    if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
+      return message.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
+    }
 
     // Apply command cooldowns
     const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;

@@ -8,10 +8,10 @@ const sendReminders = async (client) => {
       // Try send the user a DM with the reminder
       user.send(r.message).catch(err=>warn('Could not send user DM with reminder:', r, err));
     }).catch(O_o=>{});
-
-    // Clear the reminders we have just sent out
-    clearReminders(reminders.map(r => r.id));
   });
+
+  // Clear the reminders we have just sent out
+  clearReminders(reminders.map(r => r.id));
 };
 
 module.exports = {
