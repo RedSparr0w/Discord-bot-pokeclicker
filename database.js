@@ -76,7 +76,8 @@ async function backupDB(guild){
 
   const attachment = await new MessageAttachment().setFile(database_fullpath, 'database.backup.sqlite');
 
-  backup_channel.send(`__***Database Backup:***__\n_${new Date().toJSON().replace(/T/g,' ').replace(/\.\w+$/,'')}_`, {
+  backup_channel.send({
+    content: `__***Database Backup:***__\n_${new Date().toJSON().replace(/T/g,' ').replace(/\.\w+$/,'')}_`,
     files: [attachment],
   }).catch(warn);
 }
