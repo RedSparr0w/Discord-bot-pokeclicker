@@ -1,4 +1,8 @@
-const { MessageActionRow, MessageButton } = require('discord.js');
+const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
+const request = require('request');
+const { error } = require('./logging');
+const { formatSecondsFullLetters } = require('./conversion');
+const { website } = require('../config.js');
 
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   const updateButtons = async (i, editPost = true) => {
@@ -101,10 +105,56 @@ const randomString = (length = 6) => {
   return str.substring(0, length);
 };
 
+const processSaveFile = (msg, file) => {
+  request(file.url, (err, response, body) => {
+    if (!err) {
+      try {
+        // Convert save file to JSON
+        const saveData = JSON.parse(Buffer.from(body, 'base64').toString());
+
+        // Gather data from the save file
+        const timeTraveller = saveData.player?._timeTraveller || false;
+        const _lastSeen = saveData.player?._lastSeen || '0';
+        const achievementsCompleted = Object.values(saveData.player?.achievementsCompleted || {}).filter(a=>a).length || 0;
+        const version = saveData.save?.update?.version || '0.0.0';
+        const name = saveData.save?.profile?.name || 'Trainer';
+        const trainer = saveData.save?.profile?.trainer || 0;
+        const pokemon = saveData.save?.profile?.pokemon || 0;
+        const pokemonShiny = saveData.save?.profile?.pokemonShiny || false;
+        const caughtPokemon = saveData.save?.party?.caughtPokemon?.length || 0;
+        const caughtPokemonShiny = saveData.save?.party?.caughtPokemon?.filter(p => p.shiny)?.length || 0;
+        const timePlayed = saveData.save?.statistics?.secondsPlayed || 0;
+        const discordID = saveData.save?.discord?.ID || false;
+        const challengesTotal = Object.values(saveData.save?.challenges?.list || {}).length || 0;
+        const challengesEnabled = Object.values(saveData.save?.challenges?.list || {}).filter(a=>a).length || 0;
+
+        // Create the embed
+        const embed = new MessageEmbed()
+          .setAuthor(name, `${website}assets/images/profile/trainer-${trainer}.png`)
+          .setColor('RANDOM')
+          .setThumbnail(`${website}assets/images/${pokemonShiny ? 'shiny' : ''}pokemon/${pokemon}.png`)
+          .addField('Discord:', discordID ? `<@${discordID}>` : 'False')
+          .addField('Pokemon Caught:', `${caughtPokemon} | ${caughtPokemonShiny} ✨`)
+          .addField('Time Played:', formatSecondsFullLetters(timePlayed))
+          .addField('Achievements:', `${achievementsCompleted}`)
+          .addField('Challenges:', `${challengesEnabled}/${challengesTotal}`)
+          .addField('Time Traveller:', upperCaseFirstLetter(timeTraveller.toString()))
+          .addField('Save File:', `[Download](${file.url})`)
+          .setFooter(`Version: v${version} | Last Seen:`)
+          .setTimestamp(_lastSeen);
+        msg.reply({ embeds: [embed] });
+      } catch (e) {
+        error('something went wrong...\n', e);
+      }
+    }
+  });
+};
+
 module.exports = {
   postPages,
   upperCaseFirstLetter,
   randomFromArray,
   addOrderedReactions,
   randomString,
+  processSaveFile,
 };

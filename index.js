@@ -10,6 +10,7 @@ const {
   RunOnInterval,
   formatChannelList,
   trainerCardBadgeTypes,
+  processSaveFile,
   MINUTE,
   HOUR,
 } = require('./helpers.js');
@@ -130,6 +131,14 @@ client.on('error', e => error('Client error thrown:', e))
     }
     
     if (!client.application || !client.application.owner) await client.application.fetch();
+
+    // Process save files
+    if (message.attachments) {
+      message.attachments.forEach(file => {
+        if (file.name.endsWith('.txt') || file.size <= 1e6) return processSaveFile(message, file);
+      });
+      return;
+    }
 
     if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application.owner.id) {
       console.log('Deploying new commands!');
