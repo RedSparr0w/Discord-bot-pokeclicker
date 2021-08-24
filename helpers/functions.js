@@ -51,7 +51,7 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
 
   updateButtons(interaction);
 
-  // // Filters
+  // Filters
   const backwardsFilter = (i) => i.customId === `prev${customID}` && i.user.id === interaction.user.id;
   const forwardsFilter = (i) => i.customId === `next${customID}` && i.user.id === interaction.user.id;
 

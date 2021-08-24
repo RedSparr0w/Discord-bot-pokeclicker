@@ -51,9 +51,7 @@ module.exports = {
     const role_reaction = interaction.channel.createMessageComponentCollector({ filter: role_filter, time });
 
     role_reaction.on('collect', async i => {
-      // Remove the users reaction
       await i.deferUpdate();
-      await i.editReply({ components: [getButtons()] });
 
       // Update the users roles
       const roleID = i.customId.replace(/-\w+/, '');
@@ -62,6 +60,7 @@ module.exports = {
       } else {
         await member.roles.add(roleID, 'Self applied role').catch(O_o=>{});
       }
+      await i.editReply({ components: [getButtons()] });
 
       // Update the bot message
       setTimeout(async () => {
