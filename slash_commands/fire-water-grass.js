@@ -28,7 +28,7 @@ const winMultiplier = (player, bot) => {
 
 module.exports = {
   name        : 'fire-water-grass',
-  aliases     : ['fgw', 'gfw', 'gwf', 'wfg', 'wgf', 'fire-water-grass'],
+  aliases     : ['fwg', 'fgw', 'gfw', 'gwf', 'wfg', 'wgf', 'fire-water-grass'],
   description : 'Fire, Water, Grass (Rock, Paper, Scissors) bet some PokéCoins',
   args        : [
     {
