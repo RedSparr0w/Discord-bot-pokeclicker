@@ -115,6 +115,7 @@ module.exports = {
 
     return msg.reply({
       embeds: [new MessageEmbed().setColor('#2ecc71').setDescription(message.join('\n'))],
+      allowedMentions: { repliedUser: false },
     });
   },
 };
