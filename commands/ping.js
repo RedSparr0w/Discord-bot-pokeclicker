@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
   name        : 'ping',
   aliases     : [],
-  description : 'Check that I\'m still responding',
+  description : 'Replies with the bots current ping to Discord',
   args        : [],
   guildOnly   : false,
   cooldown    : 3,
