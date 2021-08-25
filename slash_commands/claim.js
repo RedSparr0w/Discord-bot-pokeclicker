@@ -108,7 +108,7 @@ module.exports = {
       const reminderTime = new Date();
       reminderTime.setHours(reminderTime.getHours() + 23);
 
-      addReminder(interaction.user, reminderTime, '/claim');
+      addReminder(interaction.user, reminderTime, '/claim\n<#456798288893706241>');
 
       message.push('', 'Auto reminder will be sent in 23 hours');
     }

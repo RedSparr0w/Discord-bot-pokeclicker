@@ -108,7 +108,7 @@ module.exports = {
       const reminderTime = new Date();
       reminderTime.setHours(reminderTime.getHours() + 2);
 
-      addReminder(msg.author, reminderTime, '/timely');
+      addReminder(msg.author, reminderTime, '/timely\n<#456798288893706241>');
 
       message.push('', 'Auto reminder will be sent in 2 hours');
     }
