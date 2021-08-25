@@ -39,10 +39,10 @@ module.exports = {
       .setDescription(user.toString())
       .setColor('RANDOM')
       .setThumbnail(user.displayAvatarURL())
-      .addField('Status:', member.presence.status)
+      .addField('Status:', member?.presence?.status || 'Unknown')
       .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)
       .addField('Joined Server:', `<t:${Math.floor(+joinServer / 1000)}:R>`)
-      .addField('Roles:', member.roles.cache.map(r => `${r}`).join('\n'))
+      .addField('Roles:', member?.roles?.cache?.map(r => `${r}`)?.join('\n') || 'Unknown')
       .setFooter(`ID: ${user.id}`)
       .setTimestamp();
 
