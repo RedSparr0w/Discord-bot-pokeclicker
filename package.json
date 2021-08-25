@@ -15,15 +15,15 @@
   "dependencies": {
     "canvas": "^2.8.0",
     "discord.js": "^13.1.0",
+    "eslint": "^7.32.0",
     "fuzzyset": "^1.0.6",
     "merge-images": "git+https://github.com/RedSparr0w/merge-images#develop-build",
-    "puppeteer": "^5.5.0",
+    "puppeteer": "^10.2.0",
     "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2",
     "text2png": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^7.30.0",
     "node-pre-gyp": "0.12.0"
   }
 }
