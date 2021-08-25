@@ -1,4 +1,4 @@
-const { warn, error } = require('../helpers.js');
+const { warn, error, MINUTE } = require('../helpers.js');
 
 module.exports = {
   name        : 'post',
@@ -11,11 +11,10 @@ module.exports = {
   userperms   : ['MANAGE_GUILD'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
-    msg.delete().catch(e=>error('Unable to delete message:', e));
     const [, message_id] = args;
 
     if (!msg.mentions.channels.size){
-      return msg.reply('You didn\'t specify a channel..');
+      return msg.reply({ content: 'You didn\'t specify a channel..' });
     }
     const channel = msg.mentions.channels.first();
     if (channel.permissionsFor(msg.guild.me).missing(['VIEW_CHANNEL', 'SEND_MESSAGES']).length){
@@ -41,7 +40,7 @@ module.exports = {
 
     const filter = m => m.author.id === msg.author.id;
     // errors: ['time'] treats ending because of the time limit as an error (2 minutes)
-    msg.channel.awaitMessages(filter, { max: 1, time: 180000, errors: ['time'] })
+    msg.channel.awaitMessages({filter, max: 1, time: 2 * MINUTE, errors: ['time'] })
       .then(collected => {
         const m = collected.first();
         if (message){
@@ -49,6 +48,7 @@ module.exports = {
         } else {
           channel.send(m.content);
         }
+        msg.delete().catch(e=>error('Unable to delete message:', e));
         bot_reply.delete().catch(e=>error('Unable to delete message:', e));
         m.delete().catch(e=>error('Unable to delete message:', e));
       })
