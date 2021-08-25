@@ -61,7 +61,7 @@ typings/
 .next
 
 # config file
-config.js
+config*.js
 database.sqlite
 trainer_card.png
 thumbs.db
