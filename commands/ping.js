@@ -13,7 +13,8 @@ module.exports = {
     const embed = new MessageEmbed()
       .setDescription([
         '```yaml',
-        'Pong: ---ms',
+        'Pong: --ms',
+        'API: ---ms',
         '```',
       ].join('\n'))
       .setColor('#3498db');
@@ -24,7 +25,8 @@ module.exports = {
       const APIDelay = Math.round(msg.client.ws.ping);
       embed.setDescription([
         '```yaml',
-        `Pong: ${outboundDelay - APIDelay}ms\nAPI: ${APIDelay}ms`,
+        `Pong: ${outboundDelay - APIDelay}ms`,
+        `API: ${APIDelay}ms`,
         '```',
       ].join('\n'));
       
