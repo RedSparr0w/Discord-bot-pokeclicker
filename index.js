@@ -137,7 +137,7 @@ client.on('error', e => error('Client error thrown:', e))
     // Process save files
     if (message.attachments?.size) {
       message.attachments.forEach(file => {
-        if (file.name.endsWith('.txt') || file.size <= 1e6) return processSaveFile(message, file);
+        if (file.name?.endsWith('.txt') && file.size <= 1e6) return processSaveFile(message, file);
       });
     }
 
