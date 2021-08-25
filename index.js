@@ -135,7 +135,7 @@ client.on('error', e => error('Client error thrown:', e))
     if (!client.application || !client.application.owner) await client.application.fetch();
 
     // Process save files
-    if (message.attachments && message.attachments.length) {
+    if (message.attachments?.size) {
       message.attachments.forEach(file => {
         if (file.name.endsWith('.txt') || file.size <= 1e6) return processSaveFile(message, file);
       });
