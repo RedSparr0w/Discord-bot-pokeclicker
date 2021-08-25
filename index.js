@@ -230,6 +230,23 @@ client.on('error', e => error('Client error thrown:', e))
       return message.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
     }
 
+    const commandAllowedHere = (
+      // User can manage the guild, and can use bot commands anywhere
+      //message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+      // Command was run in `#****-bot`
+      message.channel.name.endsWith('-bot') ||
+      // Command is allowed in this channel
+      (!command.channels || command.channels.includes(message.channel.name))
+    );
+
+    if (!commandAllowedHere) {
+      const output = [`This is not the correct channel for \`${prefix}${command.name}\`.`];
+      if (command.channels && command.channels.length !== 0) {
+        output.push(`Please try again in ${formatChannelList(message.guild, command.channels)}.`);
+      }
+      return message.reply({ content: output.join('\n'), ephemeral: true });
+    }
+
     // Apply command cooldowns
     const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;
     if (timeLeft > 0) {
