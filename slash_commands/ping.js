@@ -25,7 +25,7 @@ module.exports = {
     const APIDelay = Math.round(interaction.client.ws.ping);
     embed.setDescription([
       '```yaml',
-      `Pong: ${outboundDelay - APIDelay}ms`,
+      `Pong: ${outboundDelay}ms`,
       `API: ${APIDelay}ms`,
       '```',
     ].join('\n'));
