@@ -60,10 +60,12 @@ typings/
 # next.js build output
 .next
 
+# thumbnail generation data
+thumbs.db
+
 # config file
 config*.js
+# database
 database.sqlite
-trainer_card.png
-thumbs.db
-who.png
-whoFinal.png
+# any images in the base folder
+/*.png
