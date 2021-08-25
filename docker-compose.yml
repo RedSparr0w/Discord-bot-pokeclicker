@@ -1,0 +1,11 @@
+version: "3"
+services:
+  discord-bot-pokeclicker:
+    build: .
+    container_name: Discord-bot-pokeclicker
+    command: ["pm2-runtime", "start", "ecosystem.config.js"]
+    volumes:
+      - ./:/usr/src/bot
+      - /usr/src/bot/node_modules/
+    working_dir: /usr/src/bot
+    restart: unless-stopped
