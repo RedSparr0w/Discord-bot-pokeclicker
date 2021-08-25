@@ -1,3 +1,12 @@
+/*
+Command used to generate the list of aliases:
+!eval
+```js
+const commands = msg.client.commands.map(c => [c.name, ...c.aliases]).flat();
+return `'${msg.client.slashCommands.map(c => [c.name, ...c.aliases]).flat().filter(c => !commands.includes(c)).join("','")}'`;
+```
+*/
+
 const { MessageEmbed } = require('discord.js');
 const { prefix } = require('../config');
 
