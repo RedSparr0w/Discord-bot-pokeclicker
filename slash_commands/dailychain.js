@@ -14,7 +14,7 @@ module.exports = {
     {
       name: 'max-slots',
       type: 'INTEGER',
-      description: 'Maximum number of slots you have unlocked in the Underground (default 3)',
+      description: 'Maximum number of slots you have unlocked in the Underground (default 5)',
       required: false,
     },
     {
@@ -41,7 +41,7 @@ module.exports = {
       fromDate,
       days,
     ] = [
-      +interaction.options.get('max-slots')?.value || 3,
+      +interaction.options.get('max-slots')?.value || 5,
       interaction.options.get('from-date')?.value,
       +interaction.options.get('days')?.value || 14,
     ];
