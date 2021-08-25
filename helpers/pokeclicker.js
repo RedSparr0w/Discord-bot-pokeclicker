@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.5',
+  'gameVersion': '0.8.6',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -23617,6 +23617,12 @@ module.exports = {
           'evolvedPokemon': 'Exeggutor',
           'stone': 3,
         },
+        {
+          'basePokemon': 'Exeggcute',
+          'type': [1],
+          'evolvedPokemon': 'Alolan Exeggutor',
+          'stone': 3,
+        },
       ],
       'base': {
         'hitpoints': 60,
@@ -23777,7 +23783,7 @@ module.exports = {
       ],
       'levelType': 4,
       'exp': 186,
-      'eggCycles': 20,
+      'eggCycles': 30,
       'base': {
         'hitpoints': 95,
         'attack': 105,
@@ -23787,9 +23793,18 @@ module.exports = {
         'speed': 45,
       },
       'attack': 176,
-      'locations': {},
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Exeggcute',
+            'type': [1],
+            'evolvedPokemon': 'Alolan Exeggutor',
+            'stone': 3,
+          },
+        ],
+      },
       'catchRatePercent': 17,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 104,
@@ -23805,6 +23820,17 @@ module.exports = {
           'type': [0],
           'evolvedPokemon': 'Marowak',
           'level': 28,
+        },
+        {
+          'basePokemon': 'Cubone',
+          'type': [
+            0,
+            2,
+          ],
+          'evolvedPokemon': 'Alolan Marowak',
+          'level': 28,
+          'startHour': 18,
+          'endHour': 6,
         },
       ],
       'base': {
@@ -23911,7 +23937,7 @@ module.exports = {
       ],
       'levelType': 2,
       'exp': 149,
-      'eggCycles': 20,
+      'eggCycles': 30,
       'base': {
         'hitpoints': 60,
         'attack': 80,
@@ -23927,9 +23953,22 @@ module.exports = {
             'dungeon': 'Wela Volcano Park',
           },
         ],
+        '4': [
+          {
+            'basePokemon': 'Cubone',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Alolan Marowak',
+            'level': 28,
+            'startHour': 18,
+            'endHour': 6,
+          },
+        ],
       },
       'catchRatePercent': 25,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 105.02,
@@ -44338,7 +44377,7 @@ module.exports = {
       'name': 'Ambipom',
       'type': [0],
       'eggCycles': 30,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 169,
       'catchRate': 45,
       'base': {
@@ -44717,7 +44756,7 @@ module.exports = {
       'name': 'Mismagius',
       'type': [13],
       'eggCycles': 38,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 173,
       'catchRate': 45,
       'base': {
@@ -44782,7 +44821,7 @@ module.exports = {
       'name': 'Glameow',
       'type': [0],
       'eggCycles': 20,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 62,
       'catchRate': 190,
       'evolutions': [
@@ -44824,7 +44863,7 @@ module.exports = {
       'name': 'Purugly',
       'type': [0],
       'eggCycles': 30,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 158,
       'catchRate': 75,
       'base': {
@@ -44865,7 +44904,7 @@ module.exports = {
       'name': 'Chingling',
       'type': [10],
       'eggCycles': 20,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 57,
       'catchRate': 120,
       'evolutions': [
@@ -45391,7 +45430,7 @@ module.exports = {
       'name': 'Happiny',
       'type': [0],
       'eggCycles': 32,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 110,
       'catchRate': 130,
       'evolutions': [
@@ -47090,7 +47129,7 @@ module.exports = {
         9,
       ],
       'eggCycles': 23,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 245,
       'catchRate': 30,
       'base': {
@@ -47467,7 +47506,7 @@ module.exports = {
       'name': 'Dusknoir',
       'type': [13],
       'eggCycles': 57,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 236,
       'catchRate': 45,
       'base': {
@@ -49653,7 +49692,7 @@ module.exports = {
       'name': 'Munna',
       'type': [10],
       'eggCycles': 10,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 58,
       'catchRate': 190,
       'evolutions': [
@@ -49708,7 +49747,7 @@ module.exports = {
       'name': 'Musharna',
       'type': [10],
       'eggCycles': 15,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 170,
       'catchRate': 75,
       'base': {
@@ -49898,8 +49937,8 @@ module.exports = {
           ],
         },
         '2': [
-          'Pledge Grove',
           'Victory Road Unova',
+          'Pledge Grove',
         ],
         '4': [
           {
@@ -50361,7 +50400,7 @@ module.exports = {
       'name': 'Audino',
       'type': [0],
       'eggCycles': 20,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 390,
       'catchRate': 255,
       'base': {
@@ -52909,7 +52948,7 @@ module.exports = {
       'name': 'Minccino',
       'type': [0],
       'eggCycles': 15,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 60,
       'catchRate': 255,
       'evolutions': [
@@ -52993,7 +53032,7 @@ module.exports = {
       'name': 'Cinccino',
       'type': [0],
       'eggCycles': 23,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 165,
       'catchRate': 60,
       'base': {
@@ -54066,8 +54105,8 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': [
-          'Pledge Grove',
           'Dragonspiral Tower',
+          'Pledge Grove',
         ],
         '4': [
           {
@@ -54104,8 +54143,8 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': [
-          'Pledge Grove',
           'Dragonspiral Tower',
+          'Pledge Grove',
         ],
         '4': [
           {
@@ -54729,7 +54768,7 @@ module.exports = {
       'name': 'Alomomola',
       'type': [2],
       'eggCycles': 40,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 165,
       'catchRate': 75,
       'base': {
@@ -57615,6 +57654,7 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '5': ['Grass'],
+        '11': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -57720,6 +57760,7 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '5': ['Fire'],
+        '11': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -57825,6 +57866,7 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '5': ['Water'],
+        '11': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -61324,7 +61366,7 @@ module.exports = {
         17,
       ],
       'eggCycles': 20,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 165,
       'catchRate': 75,
       'base': {
@@ -61978,6 +62020,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '5': ['Grass'],
+        '11': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -62086,6 +62129,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '5': ['Fire'],
+        '11': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -62191,6 +62235,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '5': ['Water'],
+        '11': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -62646,9 +62691,13 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Charjabug',
-          'type': [1],
+          'type': [
+            0,
+            3,
+          ],
           'evolvedPokemon': 'Vikavolt',
-          'stone': 2,
+          'level': 20,
+          'dungeon': 'Vast Poni Canyon',
         },
       ],
       'base': {
@@ -62733,9 +62782,13 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Charjabug',
-            'type': [1],
+            'type': [
+              0,
+              3,
+            ],
             'evolvedPokemon': 'Vikavolt',
-            'stone': 2,
+            'level': 20,
+            'dungeon': 'Vast Poni Canyon',
           },
         ],
       },
@@ -62785,9 +62838,13 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Crabrawler',
-          'type': [1],
+          'type': [
+            0,
+            3,
+          ],
           'evolvedPokemon': 'Crabominable',
-          'stone': -1,
+          'level': 20,
+          'dungeon': 'Mount Lanakila',
         },
       ],
       'base': {
@@ -62831,9 +62888,13 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Crabrawler',
-            'type': [1],
+            'type': [
+              0,
+              3,
+            ],
             'evolvedPokemon': 'Crabominable',
-            'stone': -1,
+            'level': 20,
+            'dungeon': 'Mount Lanakila',
           },
         ],
       },
@@ -63072,7 +63133,7 @@ module.exports = {
           'evolvedPokemon': 'Lycanroc (Midday)',
           'level': 25,
           'startHour': 6,
-          'endHour': 16,
+          'endHour': 17,
         },
         {
           'basePokemon': 'Rockruff',
@@ -63082,8 +63143,8 @@ module.exports = {
           ],
           'evolvedPokemon': 'Lycanroc (Dusk)',
           'level': 25,
-          'startHour': 16,
-          'endHour': 20,
+          'startHour': 17,
+          'endHour': 18,
         },
         {
           'basePokemon': 'Rockruff',
@@ -63093,7 +63154,18 @@ module.exports = {
           ],
           'evolvedPokemon': 'Lycanroc (Midnight)',
           'level': 25,
-          'startHour': 20,
+          'startHour': 18,
+          'endHour': 5,
+        },
+        {
+          'basePokemon': 'Rockruff',
+          'type': [
+            0,
+            2,
+          ],
+          'evolvedPokemon': 'Lycanroc (Dusk)',
+          'level': 25,
+          'startHour': 5,
           'endHour': 6,
         },
       ],
@@ -63171,7 +63243,7 @@ module.exports = {
             'evolvedPokemon': 'Lycanroc (Midday)',
             'level': 25,
             'startHour': 6,
-            'endHour': 16,
+            'endHour': 17,
           },
         ],
       },
@@ -63207,8 +63279,8 @@ module.exports = {
             ],
             'evolvedPokemon': 'Lycanroc (Midnight)',
             'level': 25,
-            'startHour': 20,
-            'endHour': 6,
+            'startHour': 18,
+            'endHour': 5,
           },
         ],
       },
@@ -63243,8 +63315,19 @@ module.exports = {
             ],
             'evolvedPokemon': 'Lycanroc (Dusk)',
             'level': 25,
-            'startHour': 16,
-            'endHour': 20,
+            'startHour': 17,
+            'endHour': 18,
+          },
+          {
+            'basePokemon': 'Rockruff',
+            'type': [
+              0,
+              2,
+            ],
+            'evolvedPokemon': 'Lycanroc (Dusk)',
+            'level': 25,
+            'startHour': 5,
+            'endHour': 6,
           },
         ],
       },
@@ -63256,7 +63339,7 @@ module.exports = {
       'name': 'Wishiwashi (Solo)',
       'type': [2],
       'eggCycles': 15,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 61,
       'catchRate': 60,
       'base': {
@@ -63338,7 +63421,7 @@ module.exports = {
       'name': 'Wishiwashi (School)',
       'type': [2],
       'eggCycles': 15,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 61,
       'catchRate': 60,
       'base': {
@@ -63366,7 +63449,7 @@ module.exports = {
       'name': 'Totem Wishiwashi (School)',
       'type': [2],
       'eggCycles': 15,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 61,
       'catchRate': 60,
       'base': {
@@ -64465,9 +64548,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Steenee',
-          'type': [1],
+          'type': [0],
           'evolvedPokemon': 'Tsareena',
-          'stone': -1,
+          'level': 29,
         },
       ],
       'base': {
@@ -64521,9 +64604,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Steenee',
-            'type': [1],
+            'type': [0],
             'evolvedPokemon': 'Tsareena',
-            'stone': -1,
+            'level': 29,
           },
         ],
       },
@@ -64535,7 +64618,7 @@ module.exports = {
       'name': 'Comfey',
       'type': [17],
       'eggCycles': 20,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 170,
       'catchRate': 60,
       'base': {
@@ -64913,7 +64996,7 @@ module.exports = {
       'name': 'Pyukumuku',
       'type': [2],
       'eggCycles': 15,
-      'levelType': 4,
+      'levelType': 1,
       'exp': 144,
       'catchRate': 60,
       'base': {
@@ -64979,7 +65062,9 @@ module.exports = {
       },
       'attack': 163,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '7': ['Aether Paradise'],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -65975,6 +66060,12 @@ module.exports = {
           'evolvedPokemon': 'Solgaleo',
           'level': 53,
         },
+        {
+          'basePokemon': 'Cosmoem',
+          'type': [0],
+          'evolvedPokemon': 'Lunala',
+          'level': 53,
+        },
       ],
       'base': {
         'hitpoints': 43,
@@ -66063,6 +66154,14 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Nebby',
+          },
+        ],
+        '4': [
+          {
+            'basePokemon': 'Cosmoem',
+            'type': [0],
+            'evolvedPokemon': 'Lunala',
+            'level': 53,
           },
         ],
       },
@@ -66358,9 +66457,9 @@ module.exports = {
       'evolutions': [
         {
           'basePokemon': 'Poipole',
-          'type': [1],
+          'type': [0],
           'evolvedPokemon': 'Naganadel',
-          'stone': -1,
+          'level': 41,
         },
       ],
       'base': {
@@ -66373,7 +66472,9 @@ module.exports = {
       },
       'attack': 93,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '7': ['Altar of the Sunne and Moone'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 4800,
     },
@@ -66402,9 +66503,9 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Poipole',
-            'type': [1],
+            'type': [0],
             'evolvedPokemon': 'Naganadel',
-            'stone': -1,
+            'level': 41,
           },
         ],
       },
@@ -66572,6 +66673,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '5': ['Grass'],
+        '11': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -66674,6 +66776,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '5': ['Fire'],
+        '11': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -66776,6 +66879,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '5': ['Water'],
+        '11': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -73047,17 +73151,22 @@ module.exports = {
     },
   ],
   'GameConstants': {
+    'SECOND': 1000,
+    'MINUTE': 60000,
+    'HOUR': 3600000,
+    'DAY': 86400000,
+    'WEEK': 604800000,
     'TICK_TIME': 100,
     'BATTLE_TICK': 1000,
     'BATTLE_FRONTIER_TICK': 500,
     'UNDERGROUND_TICK': 1000,
-    'DUNGEON_TIME': 6000,
-    'DUNGEON_TICK': 10,
+    'DUNGEON_TIME': 60000,
+    'DUNGEON_TICK': 100,
     'EFFECT_ENGINE_TICK': 1000,
     'SAVE_TICK': 10000,
-    'GYM_TIME': 3000,
+    'GYM_TIME': 30000,
     'GYM_COUNTDOWN': 1000,
-    'GYM_TICK': 10,
+    'GYM_TICK': 100,
     'ACHIEVEMENT_TICK': 1000,
     'MIN_LOAD_TIME': 500,
     'MAX_LOAD_TIME': 20000,
@@ -73101,11 +73210,6 @@ module.exports = {
       898,
     ],
     'ITEM_USE_TIME': 30,
-    'SECOND': 1000,
-    'MINUTE': 60000,
-    'HOUR': 3600000,
-    'DAY': 86400000,
-    'WEEK': 604800000,
     'ROAMING_MIN_CHANCE': 8192,
     'ROAMING_MAX_CHANCE': 4096,
     'SHINY_CHANCE_BATTLE': 8192,
@@ -80315,6 +80419,9 @@ module.exports = {
         'Torchic',
         'Chimchar',
         'Tepig',
+        'Fennekin',
+        'Litten',
+        'Scorbunny',
       ],
       'hint': "I've heard that growing Razz, Figy, Tamato and Spelon Berries near each other will produce something interesting!",
     },
@@ -80384,6 +80491,9 @@ module.exports = {
         'Mudkip',
         'Piplup',
         'Oshawott',
+        'Froakie',
+        'Popplio',
+        'Sobble',
         'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Oran, Chesto, Kelpsy and Coba Berries near each other will produce something interesting!",
@@ -80512,6 +80622,9 @@ module.exports = {
         'Treecko',
         'Turtwig',
         'Snivy',
+        'Chespin',
+        'Rowlet',
+        'Grookey',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little spicy and fairly bitter at the same time.",
     },
