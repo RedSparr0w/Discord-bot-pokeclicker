@@ -59,7 +59,7 @@ module.exports = {
       });
     }
 
-    // Should the claim streak be reset (if more than 1 day)
+    // Should the claim streak be reset (if more than 2 days)
     if (last_claim < (Date.now() - (2 * DAY))) {
       await resetClaimStreak(msg.author, 'timely_claim');
       streak = 0;

@@ -23,7 +23,7 @@ const formatDateToString = (date) => {
   if (hours) timeRemaining += `${hours} hour${s(hours)} `;
   if (minutes) timeRemaining += `${minutes} minute${s(minutes)} `;
   if (seconds) timeRemaining += `${seconds} second${s(seconds)}`;
-  return timeRemaining.trim();
+  return timeRemaining.trim() || '0 seconds';
 };
 
 const formatSecondsFullLetters = (input, hide_zero = false) => {

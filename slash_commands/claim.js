@@ -58,7 +58,7 @@ module.exports = {
       });
     }
 
-    // Should the claim streak be reset (if more than 2 days)
+    // Should the claim streak be reset (if more than 3 days)
     if (last_claim < (Date.now() - (3 * DAY))) {
       await resetClaimStreak(interaction.user, 'daily_claim');
       streak = 0;
