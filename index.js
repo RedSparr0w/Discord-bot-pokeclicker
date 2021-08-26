@@ -127,9 +127,13 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Mute users who mass ping (4 or more users)
     if (message.mentions.users.size >= 4) {
-      message.delete().catch(e=>{});
-      message.member.roles.add(mutedRoleID, `User muted for mass ping (${message.mentions.users.size} users)`);
-      return message.reply('You have been muted, Do not mass ping!');
+      try {
+        message.delete().catch(e=>{});
+        message.member.roles.add(mutedRoleID, `User muted for mass ping (${message.mentions.users.size} users)`);
+        return message.reply('You have been muted, Do not mass ping!');
+      } catch (e) {
+        error('Unable to mute user for mass ping:\n', e);
+      }
     }
     
     if (!client.application || !client.application.owner) await client.application.fetch();
@@ -137,50 +141,58 @@ client.on('error', e => error('Client error thrown:', e))
     // Process save files
     if (message.attachments?.size) {
       message.attachments.forEach(file => {
-        if (file.name?.endsWith('.txt') && file.size <= 1e6) return processSaveFile(message, file);
+        try {
+          if (file.name?.endsWith('.txt') && file.size <= 1e6) return processSaveFile(message, file);
+        } catch (e) {
+          error('Unable to process save file:\n', e);
+        }
       });
     }
 
     if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application.owner.id) {
-      console.log('Deploying new commands!');
-      // Add our slash commands
-      const data = client.slashCommands.map(c => ({
-        name: c.name,
-        description: c.description,
-        options: c.args,
-        defaultPermission: (!c.userperms || c.userperms?.length == 0),
-      }));
-      // Add any context menu commands
-      data.push(...client.slashCommands.filter(c => c.type).map(c => ({
-        name: c.name,
-        type: c.type,
-        defaultPermission: (!c.userperms || c.userperms?.length == 0),
-      })));
-      // Update the current list of commands for this guild
-      await message.guild.commands.set(data);
+      try {
+        console.log('Deploying new commands!');
+        // Add our slash commands
+        const data = client.slashCommands.map(c => ({
+          name: c.name,
+          description: c.description,
+          options: c.args,
+          defaultPermission: (!c.userperms || c.userperms?.length == 0),
+        }));
+        // Add any context menu commands
+        data.push(...client.slashCommands.filter(c => c.type).map(c => ({
+          name: c.name,
+          type: c.type,
+          defaultPermission: (!c.userperms || c.userperms?.length == 0),
+        })));
+        // Update the current list of commands for this guild
+        await message.guild.commands.set(data);
 
-      const restrictCmds = client.slashCommands.filter(c => c.userperms?.length > 0).map(c => {
-        const roleIDs = message.guild.roles.cache.filter(r => r.permissions.has(c.userperms)).map(r => r.id);
-        c.roleIDs = roleIDs;
-        return c;
-      });
+        const restrictCmds = client.slashCommands.filter(c => c.userperms?.length > 0).map(c => {
+          const roleIDs = message.guild.roles.cache.filter(r => r.permissions.has(c.userperms)).map(r => r.id);
+          c.roleIDs = roleIDs;
+          return c;
+        });
 
-      const fullPermissions = message.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
-        const cmd = restrictCmds.find(cmd => cmd.name === c.name);
-        return {
-          id: c.id,
-          permissions: cmd.roleIDs.map(r => ({
-            id: r,
-            type: 'ROLE',
-            permission: true,
-          })),
-        };
-      });
+        const fullPermissions = message.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
+          const cmd = restrictCmds.find(cmd => cmd.name === c.name);
+          return {
+            id: c.id,
+            permissions: cmd.roleIDs.map(r => ({
+              id: r,
+              type: 'ROLE',
+              permission: true,
+            })),
+          };
+        });
 
-      // Update the permissions for these commands
-      await client.guilds.cache.get(message.guild.id.toString()).commands.permissions.set({ fullPermissions });
-      message.reply(`Updated guild commands!\n\`\`\`yaml\nCommands: ${data.length}\nRestricted: ${fullPermissions.length}\n\`\`\``);
+        // Update the permissions for these commands
+        await client.guilds.cache.get(message.guild.id.toString()).commands.permissions.set({ fullPermissions });
+        message.reply(`Updated guild commands!\n\`\`\`yaml\nCommands: ${data.length}\nRestricted: ${fullPermissions.length}\n\`\`\``);
 
+      } catch (e) {
+        error('Unable to deploy new commands:\n', e);
+      }
       return;
     }
 
@@ -255,8 +267,8 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Run the command
     try {
-      // Send the message object, along with the arguments, and the commandName (incase an alias was used)
-      await command.execute(message, args, client);
+      // Send the message object, along with the arguments
+      await command.execute(message, args);
       addStatistic(message.author, `!${command.name}`);
       const commandsSent = await addStatistic(message.author, 'commands');
       if (commandsSent >= 1000) {
@@ -315,7 +327,7 @@ client.on('error', e => error('Client error thrown:', e))
 
       // Run the command
       try {
-        // Send the message object, along with the arguments, and the commandName (incase an alias was used)
+        // Send the message object
         await command.execute(interaction).catch(e => {
           throw(e);
         });
