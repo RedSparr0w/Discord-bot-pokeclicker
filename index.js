@@ -246,7 +246,7 @@ client.on('error', e => error('Client error thrown:', e))
       // User can manage the guild, and can use bot commands anywhere
       //message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
       // Command was run in `#****-bot`
-      message.channel.name.endsWith('-bot') ||
+      message.channel.name?.endsWith('-bot') ||
       // Command is allowed in this channel
       (!command.channels || command.channels.includes(message.channel.name))
     );
@@ -276,7 +276,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
     } catch (err) {
       error(`Error executing command "${command.name}":\n`, err);
-      message.reply('There was an error trying to execute that command!');
+      message.reply({ content: 'There was an error trying to execute that command!'});
     }
   })
   .on('interactionCreate', async interaction => {
@@ -306,7 +306,7 @@ client.on('error', e => error('Client error thrown:', e))
         // User can manage the guild, and can use bot commands anywhere
         //interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
         // Command was run in `#****-bot`
-        interaction.channel.name.endsWith('-bot') ||
+        interaction.channel.name?.endsWith('-bot') ||
         // Command is allowed in this channel
         (!command.channels || command.channels.includes(interaction.channel.name))
       );
