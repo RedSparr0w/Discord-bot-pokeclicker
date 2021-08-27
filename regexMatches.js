@@ -60,7 +60,7 @@ module.exports = [
       // Create the embed
       const embed = new MessageEmbed().setDescription(description.join('\n')).setColor('RANDOM');
 
-      message.reply({embed});
+      message.reply({embeds: [embed]});
     },
   },
   {
