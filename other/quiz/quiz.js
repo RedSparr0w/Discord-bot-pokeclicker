@@ -10,6 +10,7 @@ const {
 } = require('../../helpers.js');
 const { getQuizQuestion } = require('./quiz_questions.js');
 const { happyHourBonus, isHappyHour } = require('./happy_hour.js');
+const { trainerCardBadges } = require('../../helpers/trainer_card.js');
 
 // Between 1 and 6 minutes
 const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
@@ -83,8 +84,21 @@ const newQuiz = async (guild, reoccur = false) => {
     addStatistic(user, 'qz_coins_won', amount);
 
     // If user has answered more than 100 questions, give them the Marsh Badge
-    if (answered >= 100) {
+    if (answered == 100) {
       await addPurchased(user, 'badge', trainerCardBadgeTypes.Marsh);
+      const congratsEmbed = new MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+        m.author.toString(),
+        `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Marsh].icon} Marsh badge for having ${answered} questions answered!`,
+      ].join('\n'));
+      m.channel.send({ embeds: [congratsEmbed] });
+    }
+
+    if (answered % 1000 == 0) {
+      const congratsEmbed = new MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+        m.author.toString(),
+        `You just reached ${answered.toLocaleString('en-US')} questions answered!`,
+      ].join('\n'));
+      m.channel.send({ embeds: [congratsEmbed] });
     }
 
     winner_data.push({user, amount, balance, answered});
