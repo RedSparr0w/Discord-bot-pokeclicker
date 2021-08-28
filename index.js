@@ -234,6 +234,12 @@ client.on('error', e => error('Client error thrown:', e))
     // Not a valid command
     if (!command) return;
 
+
+    // Check if command needs to be executed inside a guild channel
+    if (message.channel.type !== 'GUILD_TEXT' && command.guildOnly) {
+      return message.channel.send('This command can only be executed within guild channels!');
+    }
+
     // Check the user has the required permissions
     if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
       return message.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
@@ -288,11 +294,6 @@ client.on('error', e => error('Client error thrown:', e))
 
       // Not a valid command
       if (!command) return interaction.reply({ content: 'Command not found..', ephemeral: true });
-
-      // // Check if command needs to be executed inside a guild channel
-      // if (command.guildOnly && message.channel.type !== 'GUILD_TEXT') {
-      //   return message.channel.send('I can\'t execute that command inside DMs!');
-      // }
 
       // Check the user has the required permissions
       if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
