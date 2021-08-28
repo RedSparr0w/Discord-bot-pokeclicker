@@ -3,6 +3,7 @@ const { mutedRoleID } = require('../config.js');
 const { MessageActionRow, MessageSelectMenu } = require('discord.js');
 const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
 const { addScheduleItem } = require('../database.js');
+const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
   type        : 'USER',
@@ -92,19 +93,28 @@ module.exports = {
 
     // Wait for up to x ms
     const timer = 3 * MINUTE;
-    const selectedTime = interaction.channel.createMessageComponentCollector({filter, time: timer});
+    const selectedTime = interaction.channel.createMessageComponentCollector({ filter, time: timer, max: 1, errors: ['time'] });
+    let collected = false;
 
     selectedTime.on('collect', async i => {
+      collected = true;
       await i.deferUpdate();
       const value = +i.values[0] || 0;
       if (value) {
         const date = Date.now() + value;
-        embed.setDescription(`${output.join('\n')}\n\n_user will be un-muted in ${formatDateToString(+i.values[0])}_`);
+        embed.setDescription(`${output.join('\n')}\n\n_user will be un-muted in ${formatDateToString(value)}_`);
+        modLog(interaction.guild, `${member.toString()} muted by ${interaction.member.toString()}\n**Duration:** _${formatDateToString(value)}_`);
         addScheduleItem('un-mute', user, date, `${interaction.guild.id}|${formatDateToString(+i.values[0])}`);
       }
       await i.editReply({ embeds: [embed], components: [] });
     });
-    selectedTime.on('end', () => interaction.editReply({ components: [] }).catch(O_o=>{}));
+
+    selectedTime.on('end', i => {
+      if (!collected) {
+        interaction.editReply({ components: [] }).catch(O_o=>{});
+        modLog(interaction.guild, `${member.toString()} muted by ${interaction.member.toString()}\n**Duration:** _manual unmute_`);
+      }
+    });
 
     interaction.reply({ embeds: [embed], components: [select] });
   },

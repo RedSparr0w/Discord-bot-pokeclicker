@@ -1,5 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
+const SpamDetection = require('./other/mod/spamdetection.js');
 const { development, prefix, token, backupChannelID, mutedRoleID } = require('./config.js');
 const {
   log,
@@ -198,6 +199,7 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Non command messages
     if (!message.content.startsWith(prefix)) {
+      SpamDetection.check(message);
       // Add points for each message sent (every 30 seconds)
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {

@@ -1,6 +1,7 @@
 const { mutedRoleID } = require('../../config.js');
 const { getScheduleItems, clearScheduleItems } = require('../../database.js');
 const { error } = require('../../helpers.js');
+const { modLog } = require('../mod/functions.js');
 
 const checkScheduledItems = async (client) => {
   const scheduled = await getScheduleItems();
@@ -23,7 +24,10 @@ const unmute = async (client, item) => {
   const userID = item.user;
   const [, guildID, time] = item.value.match(/(\d+)\|([\w\s]+)/);
   const member = await getMember(client, guildID, userID);
-  await member?.roles.remove(mutedRoleID, `User unmuted (scheduled - ${time})`);
+  if (member) {
+    await member.roles.remove(mutedRoleID, `User unmuted (scheduled - ${time})`);
+    modLog(member.guild, `${member.toString()} unmuted by ${member.guild.me.toString()}\n**Reason:** _scheduled_\n**Duration:** _${time}_`);
+  }
 };
 
 const getMember = async (client, guildID, userID) => await client.guilds.cache.get(guildID)?.members.fetch(userID, false).catch(O_o=>{});

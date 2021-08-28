@@ -3,6 +3,7 @@ const { mutedRoleID } = require('../config.js');
 const { MessageActionRow, MessageSelectMenu } = require('discord.js');
 const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
 const { addScheduleItem } = require('../database.js');
+const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
   name        : 'mute',
@@ -87,22 +88,33 @@ module.exports = {
 
     // Wait for up to x ms
     const timer = 3 * MINUTE;
-    const selectedTime = msg.channel.createMessageComponentCollector({filter, time: timer});
+    const selectedTime = msg.channel.createMessageComponentCollector({ filter, time: timer, max: 1 });
+    let collected = false;
 
     selectedTime.on('collect', async i => {
+      collected = true;
       await i.deferUpdate();
       const value = +i.values[0] || 0;
       if (value) {
         const date = Date.now() + value;
-        embed.setDescription(`${output.join('\n')}\n\n_user(s) will be un-muted in ${formatDateToString(+i.values[0])}_`);
+        embed.setDescription(`${output.join('\n')}\n\n_user(s) will be un-muted in ${formatDateToString(value)}_`);
         users.forEach(u => {
           addScheduleItem('un-mute', u, date, `${msg.guild.id}|${formatDateToString(+i.values[0])}`);
+          modLog(msg.guild, `${u.toString()} muted by ${msg.author.toString()}\n**Duration:** _${formatDateToString(value)}_`);
         });
       }
       await i.editReply({ embeds: [embed], components: [] });
     });
 
     const botMsg = await msg.channel.send({ embeds: [embed], components: [select] });
-    selectedTime.on('end', () => botMsg.edit({ components: [] }).catch(O_o=>{}));
+
+    selectedTime.on('end', () => {
+      if (!collected) {
+        botMsg.edit({ components: [] }).catch(O_o=>{});
+        users.forEach(u => {
+          modLog(msg.guild, `${u.toString()} muted by ${msg.author.toString()}\n**Duration:** _manual unmute_`);
+        });
+      }
+    });
   },
 };

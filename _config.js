@@ -1,3 +1,5 @@
+const { SECOND, HOUR } = require('./helpers/constants');
+
 module.exports = {
   development: true,
   prefix: '!',
@@ -9,6 +11,7 @@ module.exports = {
   // Channel where the backup database should be sent
   backupChannelID: 'DISCORD_BACKUP_CHANNEL_ID (optional)',
   quizChannelID: 'DISCORD_QUIZ_CHANNEL_ID (optional)',
+  modLogChannelID: 'DISCORD_MOD_LOG_CHANNEL_ID (optional)',
   // Specific roles in the server
   mutedRoleID: '758167963294629898',
   externalScriptsRoleID: '761015248856809493',
@@ -42,5 +45,18 @@ module.exports = {
   ],
   serverIcons: {
     money: '<:money:737206931759824918>',
+  },
+  spamDetection: {
+    ignoreChannels: ['bot-coins'], // channel names or IDs
+    spam: {
+      amount: 4, // how many messages within timeframe count as spam (0 to disable)
+      time: 3 * SECOND, // message count within x ms
+      mute: 1 * HOUR, // how long to mute the user in ms
+    },
+    dupe: {
+      amount: 3, // how many duplicate messages within timeframe count as spam (0 to disable)
+      time: 30 * SECOND, // message count within x ms
+      mute: 1 * HOUR, // how long to mute the user in ms
+    },
   },
 };
