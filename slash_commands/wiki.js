@@ -28,7 +28,7 @@ module.exports = {
         .setTitle('PokéClicker wiki')
         .setDescription(wikiWebsite)
         .setColor('#e74c3c');
-      return interaction.reply({ embeds: [embed], ephemeral: true });
+      return interaction.reply({ embeds: [embed] });
     }
 
     const title = fuzzyWiki.get(search);
@@ -49,6 +49,6 @@ module.exports = {
       .setTitle('PokéClicker wiki')
       .setDescription(links.map(link => `[${link.title}](${link.link})`).join('\n'))
       .setColor('#3498db');
-    return interaction.reply({ embeds: [embed], ephemeral: true });
+    return interaction.reply({ embeds: [embed] });
   },
 };
