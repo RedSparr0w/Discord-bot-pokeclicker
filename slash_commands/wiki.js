@@ -41,8 +41,6 @@ module.exports = {
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
-    console.log(title);
-
     const links = title.map(([match, title]) => wikiLinks.find((link) => link.title.toLowerCase() == title));
 
     const embed = new MessageEmbed()
