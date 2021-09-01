@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const { website } = require('./config.js');
+const { website, wikiWebsite } = require('./config.js');
 
 (async () => {
 
@@ -12,6 +12,7 @@ const { website } = require('./config.js');
   });
   const page = await browser.newPage();
 
+  console.log('=== PokéClicker Game ===');
   console.log(`navigate to ${website}\nwaiting for webpage to load..`);
 
   await page.goto(website);
@@ -103,8 +104,35 @@ const { website } = require('./config.js');
   // Save the data
   await fs.writeFileSync('./helpers/pokeclicker.js', output);
 
-  console.log('data updated!');
+  console.log('PokéClicker Game data updated!');
   console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
+
+
+  // Update wiki data:
+  if (wikiWebsite) {
+    console.log('=== PokéClicker Wiki ===');
+    console.log(`navigate to ${wikiWebsite}\nwaiting for webpage to load..`);
+
+    await page.goto(`${wikiWebsite}Special:AllPages?hideredirects=1`);
+
+    console.log('webpage loaded!\nupdating data..');
+
+    const wikiLinks = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href]));
+    // map to titles only, filter out duplicates, map to { title, link }
+    const wikiData = { wikiLinks: [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] })) };
+
+    const wikiResults = await cli.lintText(`module.exports = ${JSON.stringify(wikiData, null, 2)}`);
+    const wikiResult = wikiResults[0];
+
+    // Get the output after running through eslint
+    const wikiOutput = wikiResult.output;
+
+    // Save the data
+    await fs.writeFileSync('./helpers/pokeclickerWiki.js', wikiOutput);
+
+    console.log('PokéClicker Wiki data updated!');
+    console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
+  }
 
   await browser.close();
 })();

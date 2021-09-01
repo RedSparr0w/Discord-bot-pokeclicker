@@ -6,6 +6,7 @@ module.exports = {
   token: 'YOUR_BOTS_TOKEN_HERE',
   // Image source website base
   website: 'https://LINK.TO.WEBSITE/',
+  wikiWebsite: 'https://LINK.TO.WIKI/',
   // Bot owner ID, used for eval and other commands
   ownerID: 'YOUR_DISCORD_USER_ID (optional)',
   // Channel where the backup database should be sent
