@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.6',
+  'gameVersion': '0.8.7',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -73223,6 +73223,8 @@ module.exports = {
     'ITEM_PRICE_DEDUCT': 1.0005,
     'PLATE_VALUE': 100,
     'BREEDING_ATTACK_BONUS': 25,
+    'FARM_PLOT_WIDTH': 5,
+    'FARM_PLOT_HEIGHT': 5,
     'BerryDistribution': [
       0.39,
       0.63,
@@ -73355,7 +73357,7 @@ module.exports = {
     'HATCH_EGGS_BASE_REWARD': 33,
     'SHINY_BASE_REWARD': 3000,
     'DEFEAT_POKEMONS_BASE_REWARD': 1,
-    'CAPTURE_POKEMONS_BASE_REWARD': 1.25,
+    'CAPTURE_POKEMONS_BASE_REWARD': 1.3513513513513513,
     'MINE_LAYERS_BASE_REWARD': 720,
     'MINE_ITEMS_BASE_REWARD': 210,
     'USE_OAK_ITEM_BASE_REWARD': 1,
@@ -73459,6 +73461,21 @@ module.exports = {
       '#D685AD',
     ],
     'ROUTE_KILLS_NEEDED': 10,
+    'ACHIEVEMENT_DEFEAT_ROUTE_VALUES': [
+      100,
+      1000,
+      10000,
+    ],
+    'ACHIEVEMENT_DEFEAT_GYM_VALUES': [
+      10,
+      100,
+      1000,
+    ],
+    'ACHIEVEMENT_DEFEAT_DUNGEON_VALUES': [
+      10,
+      100,
+      1000,
+    ],
     'Environments': {
       'Water': {
         '0': {},
@@ -74313,6 +74330,16 @@ module.exports = {
       'Vaniville Town',
       'Iki Town',
       'Postwick',
+    ],
+    'StartingRoutes': [
+      1,
+      29,
+      101,
+      201,
+      19,
+      1,
+      1,
+      1,
     ],
     'DockTowns': [
       'Vermilion City',
