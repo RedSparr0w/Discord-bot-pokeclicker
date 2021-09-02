@@ -287,7 +287,11 @@ async function addPurchased(user, type, index){
 
   // Get currently purchased items
   let purchased = await getPurchased(user, type);
-  // Add our item
+  // Check if item already purchased
+  if (purchased[index]) {
+    return false;
+  }
+  // Set our item as purchased
   purchased[index] = 1;
   // Any empty items need to be 0
   purchased = Array.from(purchased, i => i ? 1 : 0).join('');
@@ -303,7 +307,7 @@ async function addPurchased(user, type, index){
   const result = await db.run(`UPDATE purchased SET ${type}=? WHERE user=?`, purchased, user_id);
   db.close();
 
-  return result;
+  return result?.changes ? true : false;
 }
 
 async function getStatisticTypeID(type){
