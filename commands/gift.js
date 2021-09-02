@@ -34,7 +34,7 @@ module.exports = {
     }
 
     embed.setColor('#2ecc71')
-      .setDescription(output);
+      .setDescription(output.join('\n'));
 
     msg.channel.send({ embeds: [embed] });
   },
