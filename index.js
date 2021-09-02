@@ -11,6 +11,7 @@ const {
   RunOnInterval,
   formatChannelList,
   trainerCardBadgeTypes,
+  trainerCardBadges,
   processSaveFile,
   MINUTE,
   HOUR,
@@ -204,7 +205,12 @@ client.on('error', e => error('Client error thrown:', e))
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {
         const messagesSent = await addStatistic(message.author, 'messages');
-        if (messagesSent >= 2500) {
+        if (messagesSent == 2500) {
+          const congratsEmbed = new Discord.MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+            message.author.toString(),
+            `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Thunder].icon} Thunder badge for sending ${messagesSent} messages on the server!`,
+          ].join('\n'));
+          message.channel.send({ embeds: [congratsEmbed] });
           await addPurchased(message.author, 'badge', trainerCardBadgeTypes.Thunder);
         }
       }
