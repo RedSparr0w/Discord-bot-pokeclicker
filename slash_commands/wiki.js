@@ -42,10 +42,13 @@ module.exports = {
     }
 
     const links = title.map(([match, title]) => wikiLinks.find((link) => link.title.toLowerCase() == title));
+    const topLink = links.shift();
 
     const embed = new MessageEmbed()
       .setTitle('PokéClicker wiki')
-      .setDescription(links.map(link => `[${link.title}](${link.link})`).join('\n'))
+      .setDescription(`**Top result:**
+      **[${topLink.title}](${topLink.link})**
+      ${!links.length ? '' : `\nSimilar:\n${links.map(link => `[${link.title}](${link.link})`).join('\n')}`}`)
       .setColor('#3498db');
     return interaction.reply({ embeds: [embed] });
   },
