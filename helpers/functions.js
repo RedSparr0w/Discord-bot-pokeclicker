@@ -144,7 +144,7 @@ const processSaveFile = (msg, file) => {
           .setTimestamp(_lastSeen);
         msg.reply({ embeds: [embed] });
       } catch (e) {
-        error('something went wrong...\n', e);
+        error('Failed to process save file..\n', msg.url, '\n', e);
       }
     }
   });
