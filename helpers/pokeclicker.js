@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.7',
+  'gameVersion': '0.8.9',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -66417,7 +66417,14 @@ module.exports = {
       },
       'attack': 188,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -66442,7 +66449,14 @@ module.exports = {
       },
       'attack': 174,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -66580,7 +66594,14 @@ module.exports = {
       },
       'attack': 168,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 5,
+            'requirements': 'Requires the Elite Alola Champion badge.',
+          },
+        ],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -73253,7 +73274,8 @@ module.exports = {
       '#B7B7CE',
       '#1C1C1C',
     ],
-    'DUNGEON_SIZE': 5,
+    'BASE_DUNGEON_SIZE': 5,
+    'MIN_DUNGEON_SIZE': 5,
     'DUNGEON_CHEST_SHOW': 2,
     'DUNGEON_MAP_SHOW': 4,
     'AchievementOption': {
@@ -73286,6 +73308,7 @@ module.exports = {
       '18': 'Farming',
       '19': 'Quest',
       '20': 'Battle Frontier',
+      '21': 'Protein',
       'None': -1,
       '-1': 'None',
       'Money': 0,
@@ -73309,6 +73332,7 @@ module.exports = {
       'Farming': 18,
       'Quest': 19,
       'Battle Frontier': 20,
+      'Protein': 21,
     },
     'DungeonTile': {
       '0': 'empty',
