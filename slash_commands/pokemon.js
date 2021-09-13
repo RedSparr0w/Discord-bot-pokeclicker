@@ -72,6 +72,10 @@ module.exports = {
       .addField('\u200b', '\u200b', true) // Spacing
       .addField('<:Pokemon_egg:733973219177922591> Egg Steps', `${pokemon.eggSteps}`, true);
 
+    if (pokemon.heldItem) {
+      embed.addField('<:Amulet_Coin:662909955241803776> Rare Item Drop', `${pokemon.heldItem.id.replace(/_/g, ' ')}`, true);
+    }
+
     if (pokemon.locations && Object.keys(pokemon.locations).length) {
       embed.addField('\u200b', '\u200b'); // Spacing
       // Routes
