@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
+const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
   name        : 'unmute',
@@ -23,6 +24,8 @@ module.exports = {
     for (const [, member] of [...msg.mentions.members]) {
       await member.roles.remove(mutedRoleID, `User unmuted by ${msg.member.displayName}-${msg.author.id}`);
       output.push(member);
+      // Log to mod logs
+      modLog(msg.guild, `${member.toString()} unmuted by ${msg.author.toString()}`);
     }
 
     embed.setColor('#3498db').setDescription(output.join('\n'));
