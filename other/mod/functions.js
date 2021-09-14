@@ -10,10 +10,9 @@ const modLog = (guild, logMessage) => {
   }
 };
 
-const mute = (member, reason = '', time = 0) => {
+const mute = (member, time = 0) => {
   try {
     member.roles.add(mutedRoleID, `User muted by ${member.guild.me.displayName}-${member.guild.me.id}`);
-    modLog(member.guild, `${member.toString()} muted by ${member.guild.me.toString()}${reason ? `\n**Reason:** _${reason}_` : ''}${time ? `\n**Duration:** _${formatDateToString(time)}_` : ''}`);
     if (time) {
       unmute(member, time);
     }

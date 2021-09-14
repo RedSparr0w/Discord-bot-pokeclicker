@@ -1,6 +1,6 @@
 const { spamDetection } = require('../../config.js');
 const { SECOND, HOUR, formatDateToString } = require('../../helpers.js');
-const { mute } = require('./functions');
+const { mute, modLog } = require('./functions');
 const { MessageEmbed } = require('discord.js');
 
 
@@ -12,16 +12,34 @@ const check = (message) => {
 
   // Check if user has been spomming
   if (isSpam(message, spamDetection?.spam?.amount, spamDetection?.spam?.time)) {
-    const time = spamDetection?.spam?.mute || 1 * HOUR;
-    mute(message.member, 'spamming', time);
+    const time = spamDetection?.spam?.mute || 2 * HOUR;
+    mute(message.member, time);
+    modLog(
+      message.member.guild,
+      `**User:** ${message.member.guild.me.toString()}
+      **Action:** ${message.member.toString()} was muted
+      **Reason:** _spamming_
+      **Duration:** _${formatDateToString(time)}_
+      **Message Content:**
+      \`\`\`${message.content.replace(/```/g, '``')}\`\`\``.substring(0, 4000)
+    );
     const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Stop spamming!\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
   }
 
   // Check if user has been spomming the same message
   if (isDupe(message, spamDetection?.dupe?.amount, spamDetection?.dupe?.time)) {
-    const time = spamDetection?.dupe?.mute || 1 * HOUR;
-    mute(message.member, 'spamming (duplicate messages)', time);
+    const time = spamDetection?.dupe?.mute || 2 * HOUR;
+    mute(message.member, time);
+    modLog(
+      message.member.guild,
+      `**User:** ${message.member.guild.me.toString()}
+      **Action:** ${message.member.toString()} was muted
+      **Reason:** _spamming (duplicate messages)_
+      **Duration:** _${formatDateToString(time)}_
+      **Message Content:**
+      \`\`\`${message.content.replace(/```/g, '``')}\`\`\``.substring(0, 4000)
+    );
     const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Stop spamming!\n_(duplicate message)_\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
   }
