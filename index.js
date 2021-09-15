@@ -208,7 +208,7 @@ client.on('error', e => error('Client error thrown:', e))
         if (messagesSent == 2500) {
           const congratsEmbed = new Discord.MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
             message.author.toString(),
-            `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Thunder].icon} Thunder badge for sending ${messagesSent} messages on the server!`,
+            `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Thunder].icon} Thunder badge for sending ${messagesSent.toLocaleString('en-US')} messages on the server!`,
           ].join('\n'));
           message.channel.send({ embeds: [congratsEmbed] });
           await addPurchased(message.author, 'badge', trainerCardBadgeTypes.Thunder);
