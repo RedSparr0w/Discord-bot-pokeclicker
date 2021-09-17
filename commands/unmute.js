@@ -22,6 +22,11 @@ module.exports = {
     const output = [msg.author, '', 'Unmuted the following users:'];
 
     for (const [, member] of [...msg.mentions.members]) {
+      if (msg.member === member) {
+        modLog(msg.guild, `${member.toString()} attempted to unmute themselves`);
+        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot un-mute yourself!');
+        return msg.reply({ embeds: [embed] });
+      }
       await member.roles.remove(mutedRoleID, `User unmuted by ${msg.member.displayName}-${msg.author.id}`);
       output.push(member);
       // Log to mod logs
