@@ -10,6 +10,7 @@ const {
   PokemonLocationType,
   pokemonTypeIcons,
   gameVersion,
+  berryType,
 } = require('../helpers.js');
 
 const fuzzyPokemon = FuzzySet(pokemonList.map(p => p.name.toLowerCase()), false);
@@ -73,7 +74,7 @@ module.exports = {
       .addField('<:Pokemon_egg:733973219177922591> Egg Steps', `${pokemon.eggSteps}`, true);
 
     if (pokemon.heldItem) {
-      embed.addField('<:Amulet_Coin:662909955241803776> Rare Item Drop', `${pokemon.heldItem.id.replace(/_/g, ' ')}`, true);
+      embed.addField('<:Amulet_Coin:662909955241803776> Rare Item Drop', `${pokemon.heldItem.type == 3 ? `${berryType[pokemon.heldItem.id]} Berry` : pokemon.heldItem.id.replace(/_/g, ' ')}`, true);
     }
 
     if (pokemon.locations && Object.keys(pokemon.locations).length) {
