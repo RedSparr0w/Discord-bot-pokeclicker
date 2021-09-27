@@ -106,8 +106,7 @@ module.exports = {
     );
     
     if (msg.member.roles.cache.has(autoReminderRoleID)) {
-      const reminderTime = new Date();
-      reminderTime.setHours(reminderTime.getHours() + 23);
+      const reminderTime = new Date(Date.now() + HOUR * 23);
 
       addReminder(msg.author, reminderTime, '/claim\n<#456798288893706241>');
 
