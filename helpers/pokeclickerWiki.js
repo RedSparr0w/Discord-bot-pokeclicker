@@ -41,6 +41,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Baby_Pok%C3%A9mon',
     },
     {
+      'title': 'Badge (Discord)',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Badge_(Discord)',
+    },
+    {
       'title': 'Battle Frontier',
       'link': 'https://pokeclicker.miraheze.org/wiki/Battle_Frontier',
     },
@@ -99,6 +103,10 @@ module.exports = {
     {
       'title': 'Cerulean Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Cerulean_Cave',
+    },
+    {
+      'title': 'Challenge Mode',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Challenge_Mode',
     },
     {
       'title': 'Chargestone Cave',
@@ -275,6 +283,10 @@ module.exports = {
     {
       'title': 'Farm',
       'link': 'https://pokeclicker.miraheze.org/wiki/Farm',
+    },
+    {
+      'title': 'Farm Hand',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Farm_Hand',
     },
     {
       'title': 'Farm Items',
@@ -489,8 +501,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Liechi',
     },
     {
-      'title': 'List of Pokémon with attack',
-      'link': 'https://pokeclicker.miraheze.org/wiki/List_of_Pok%C3%A9mon_with_attack',
+      'title': 'List of Obtainable Pokémon',
+      'link': 'https://pokeclicker.miraheze.org/wiki/List_of_Obtainable_Pok%C3%A9mon',
     },
     {
       'title': 'Lost Hotel',
@@ -701,16 +713,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Poison_Barb',
     },
     {
-      'title': 'Pokemon Day Care',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pokemon_Day_Care',
-    },
-    {
       'title': 'Pokemon Mansion',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pokemon_Mansion',
-    },
-    {
-      'title': 'Pokemon Statistics',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pokemon_Statistics',
     },
     {
       'title': 'Pokemon Tower',
@@ -747,6 +751,18 @@ module.exports = {
     {
       'title': 'Pokéballs',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9balls',
+    },
+    {
+      'title': 'Pokéclicker Team',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9clicker_Team',
+    },
+    {
+      'title': 'Pokémon Day Care',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_Day_Care',
+    },
+    {
+      'title': 'Pokémon Statistics',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_Statistics',
     },
     {
       'title': 'Pokémon Village',
@@ -797,8 +813,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Rabuta',
     },
     {
-      'title': 'Rare hold items',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Rare_hold_items',
+      'title': 'Rare Hold Items',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rare_Hold_Items',
     },
     {
       'title': 'Ravaged Path',
@@ -943,6 +959,10 @@ module.exports = {
     {
       'title': 'Shoal Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Shoal_Cave',
+    },
+    {
+      'title': 'Shop (Discord)',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Shop_(Discord)',
     },
     {
       'title': 'Shops',
@@ -1153,6 +1173,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Wailmer_Pail',
     },
     {
+      'title': 'Wandering Pokémon',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wandering_Pok%C3%A9mon',
+    },
+    {
       'title': 'Water Egg',
       'link': 'https://pokeclicker.miraheze.org/wiki/Water_Egg',
     },
@@ -1193,12 +1217,12 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
     },
     {
-      'title': 'XClick',
-      'link': 'https://pokeclicker.miraheze.org/wiki/XClick',
+      'title': 'XAttack',
+      'link': 'https://pokeclicker.miraheze.org/wiki/XAttack',
     },
     {
-      'title': 'X Attack',
-      'link': 'https://pokeclicker.miraheze.org/wiki/X_Attack',
+      'title': 'XClick',
+      'link': 'https://pokeclicker.miraheze.org/wiki/XClick',
     },
     {
       'title': 'Yache',
