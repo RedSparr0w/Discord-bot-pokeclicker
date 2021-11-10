@@ -7,6 +7,10 @@ const { MessageEmbed } = require('discord.js');
 let messageLog = [];
 
 const check = (message) => {
+  if (message.content.startsWith('/')) {
+    return;
+  }
+
   // Log the message
   log(message);
 
