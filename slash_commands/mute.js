@@ -89,7 +89,7 @@ module.exports = {
       );
 
     // // Filters
-    const filter = (i) => i.customId === `mute-time-${customID}` && i.user.id === user.id;
+    const filter = (i) => i.customId === `mute-time-${customID}` && i.user.id === interaction.user.id;
 
     // Wait for up to x ms
     const timer = 3 * MINUTE;
