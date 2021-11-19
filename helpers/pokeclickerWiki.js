@@ -293,8 +293,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Farm_Items',
     },
     {
-      'title': 'Farming Points',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Farming_Points',
+      'title': 'Farm Points',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Farm_Points',
     },
     {
       'title': 'Fastball',

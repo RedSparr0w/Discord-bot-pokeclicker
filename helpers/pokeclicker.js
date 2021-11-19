@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.9',
+  'gameVersion': '0.8.11',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -2977,32 +2977,31 @@ module.exports = {
       'number': 205,
       'pokemon': {
         'land': [
-          'Bidoof',
           'Hoothoot',
           'Wurmple',
           'Silcoon',
           'Beautifly',
           'Cascoon',
           'Dustox',
+          'Bidoof',
           'Kricketot',
           'Budew',
+          'Buizel',
+          'Shellos (west)',
           'Drifloon',
         ],
         'water': [
-          'Wingull',
-          'Pelipper',
-          'Buizel',
-          'Tentacool',
-          'Tentacruel',
-          'Shellos (west)',
-          'Gastrodon (west)',
-          'Magikarp',
-          'Finneon',
-          'Shellder',
-          'Gyarados',
-          'Lumineon',
           'Psyduck',
           'Golduck',
+          'Tentacool',
+          'Tentacruel',
+          'Shellder',
+          'Magikarp',
+          'Gyarados',
+          'Shellos (west)',
+          'Gastrodon (west)',
+          'Finneon',
+          'Lumineon',
           'Barboach',
           'Whiscash',
         ],
@@ -3037,23 +3036,14 @@ module.exports = {
           'Geodude',
           'Ponyta',
           'Gligar',
-          'Kricketot',
           'Kricketune',
           'Stunky',
-          'Bronzor',
         ],
         'water': [],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 205,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3096,9 +3086,7 @@ module.exports = {
       'pokemon': {
         'land': [
           'Zubat',
-          'Machop',
           'Ralts',
-          'Meditite',
           'Roselia',
           'Bidoof',
           'Bibarel',
@@ -3107,24 +3095,17 @@ module.exports = {
         'water': [
           'Psyduck',
           'Golduck',
-          'Magikarp',
           'Goldeen',
-          'Barboach',
-          'Gyarados',
-          'Whiscash',
           'Seaking',
+          'Magikarp',
+          'Gyarados',
+          'Barboach',
+          'Whiscash',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 207,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3141,36 +3122,25 @@ module.exports = {
       'pokemon': {
         'land': [
           'Zubat',
-          'Gastly',
           'Chansey',
           'Ralts',
           'Roselia',
           'Duskull',
-          'Starly',
           'Staravia',
           'Bibarel',
-          'Bonsly',
-          'Mime Jr.',
         ],
         'water': [
           'Psyduck',
           'Golduck',
-          'Magikarp',
           'Goldeen',
           'Seaking',
+          'Magikarp',
           'Gyarados',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 208,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3185,6 +3155,9 @@ module.exports = {
       'number': 210,
       'pokemon': {
         'land': [
+          'Psyduck',
+          'Machop',
+          'Machoke',
           'Geodude',
           'Ponyta',
           'Chansey',
@@ -3192,23 +3165,18 @@ module.exports = {
           'Hoothoot',
           'Noctowl',
           'Roselia',
-          'Staravia',
-          'Kricketune',
-          'Bonsly',
-          'Mime Jr.',
-          'Machop',
-          'Machoke',
           'Meditite',
           'Swablu',
           'Bibarel',
+          'Staravia',
         ],
         'water': [
           'Psyduck',
           'Golduck',
           'Magikarp',
+          'Gyarados',
           'Barboach',
           'Whiscash',
-          'Gyarados',
         ],
         'headbutt': [],
         'special': [],
@@ -3232,13 +3200,10 @@ module.exports = {
         'land': [
           'Abra',
           'Kadabra',
-          'Geodude',
-          'Ponyta',
           'Lickitung',
           'Scyther',
-          'Staravia',
-          'Kricketune',
           'Marill',
+          'Staravia',
         ],
         'water': [],
         'headbutt': [],
@@ -3264,20 +3229,16 @@ module.exports = {
           'Zubat',
           'Geodude',
           'Graveler',
-          'Ponyta',
           'Rhyhorn',
-          'Sudowoodo',
-          'Girafarig',
           'Houndour',
-          'Kricketune',
           'Stunky',
         ],
         'water': [
           'Psyduck',
           'Golduck',
-          'Magikarp',
           'Goldeen',
           'Seaking',
+          'Magikarp',
           'Gyarados',
         ],
         'headbutt': [],
@@ -3299,21 +3260,22 @@ module.exports = {
       'region': 3,
       'number': 213,
       'pokemon': {
-        'land': ['Chatot'],
-        'water': [
+        'land': [
+          'Wingull',
           'Buizel',
-          'Floatzel',
+          'Shellos (east)',
+          'Chatot',
+        ],
+        'water': [
           'Tentacool',
           'Tentacruel',
+          'Magikarp',
+          'Gyarados',
+          'Remoraid',
+          'Octillery',
           'Wingull',
-          'Pelipper',
           'Shellos (east)',
           'Gastrodon (east)',
-          'Magikarp',
-          'Remoraid',
-          'Gyarados',
-          'Octillery',
-          'Sharpedo',
         ],
         'headbutt': [],
         'special': [],
@@ -3335,23 +3297,27 @@ module.exports = {
       'number': 212,
       'pokemon': {
         'land': [
+          'Marill',
+          'Quagsire',
           'Ralts',
           'Kirlia',
           'Roselia',
-          'Starly',
           'Staravia',
-          'Kricketune',
-          'Budew',
+          'Buizel',
+          'Shellos (east)',
           'Croagunk',
         ],
         'water': [
-          'Marill',
           'Psyduck',
           'Golduck',
-          'Magikarp',
           'Goldeen',
-          'Gyarados',
           'Seaking',
+          'Magikarp',
+          'Gyarados',
+          'Remoraid',
+          'Octillery',
+          'Shellos (east)',
+          'Gastrodon (east)',
         ],
         'headbutt': [],
         'special': [],
@@ -3363,11 +3329,6 @@ module.exports = {
           'achievementType': 15,
           'region': 3,
           'route': 213,
-        },
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 44,
         },
       ],
       'orderNumber': 210.4,
@@ -3380,14 +3341,12 @@ module.exports = {
         'land': [
           'Zubat',
           'Machop',
-          'Geodude',
-          'Ponyta',
-          'Hoothoot',
-          'Meditite',
-          'Bidoof',
           'Machoke',
           'Graveler',
+          'Hoothoot',
           'Noctowl',
+          'Meditite',
+          'Bidoof',
           'Chingling',
           'Bronzor',
         ],
@@ -3397,13 +3356,6 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 213,
-        },
-        {
           'requiredValue': 1,
           'option': 2,
           'badge': 44,
@@ -3412,15 +3364,47 @@ module.exports = {
       'orderNumber': 210.5,
     },
     {
+      'routeName': 'Sinnoh Route 218',
+      'region': 3,
+      'number': 218,
+      'pokemon': {
+        'land': [
+          'Mr. Mime',
+          'Floatzel',
+          'Gastrodon (west)',
+          'Glameow',
+          'Chatot',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Gyarados',
+          'Shellos (west)',
+          'Gastrodon (west)',
+          'Finneon',
+          'Lumineon',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 44,
+        },
+      ],
+      'orderNumber': 210.6,
+    },
+    {
       'routeName': 'Sinnoh Route 216',
       'region': 3,
       'number': 216,
       'pokemon': {
         'land': [
           'Zubat',
-          'Machoke',
           'Graveler',
-          'Noctowl',
           'Sneasel',
           'Meditite',
           'Snorunt',
@@ -3431,13 +3415,6 @@ module.exports = {
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 218,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3453,13 +3430,8 @@ module.exports = {
       'number': 217,
       'pokemon': {
         'land': [
-          'Zubat',
-          'Machoke',
-          'Noctowl',
           'Sneasel',
           'Swinub',
-          'Meditite',
-          'Medicham',
           'Snorunt',
           'Snover',
         ],
@@ -3479,48 +3451,6 @@ module.exports = {
       'orderNumber': 217,
     },
     {
-      'routeName': 'Sinnoh Route 218',
-      'region': 3,
-      'number': 218,
-      'pokemon': {
-        'land': [
-          'Mr. Mime',
-          'Glameow',
-          'Chatot',
-        ],
-        'water': [
-          'Wingull',
-          'Floatzel',
-          'Shellos (west)',
-          'Gastrodon (west)',
-          'Tentacool',
-          'Tentacruel',
-          'Pelipper',
-          'Magikarp',
-          'Finneon',
-          'Gyarados',
-          'Lumineon',
-        ],
-        'headbutt': [],
-        'special': [],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 213,
-        },
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 44,
-        },
-      ],
-      'orderNumber': 218,
-    },
-    {
       'routeName': 'Sinnoh Route 219',
       'region': 3,
       'number': 219,
@@ -3529,25 +3459,18 @@ module.exports = {
         'water': [
           'Tentacool',
           'Tentacruel',
+          'Magikarp',
+          'Gyarados',
           'Wingull',
           'Pelipper',
-          'Magikarp',
+          'Clamperl',
           'Finneon',
           'Lumineon',
-          'Gyarados',
-          'Clamperl',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 213,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3565,14 +3488,13 @@ module.exports = {
         'water': [
           'Tentacool',
           'Tentacruel',
-          'Wingull',
-          'Pelipper',
           'Magikarp',
-          'Finneon',
-          'Lumineon',
           'Gyarados',
           'Chinchou',
-          'Lanturn',
+          'Wingull',
+          'Pelipper',
+          'Finneon',
+          'Lumineon',
         ],
         'headbutt': [],
         'special': [],
@@ -3597,22 +3519,21 @@ module.exports = {
           'Sudowoodo',
           'Girafarig',
           'Roselia',
+          'Floatzel',
+          'Shellos (west)',
+          'Gastrodon (west)',
           'Stunky',
           'Skuntank',
         ],
         'water': [
-          'Wingull',
-          'Floatzel',
-          'Shellos (west)',
-          'Gastrodon (west)',
           'Tentacool',
           'Tentacruel',
-          'Pelipper',
           'Magikarp',
+          'Gyarados',
+          'Pelipper',
+          'Clamperl',
           'Finneon',
           'Lumineon',
-          'Gyarados',
-          'Clamperl',
         ],
         'headbutt': [],
         'special': [],
@@ -3636,37 +3557,31 @@ module.exports = {
         'land': [
           'Magnemite',
           'Magneton',
-          'Mr. Mime',
           'Electabuzz',
+          'Wingull',
+          'Pelipper',
           'Luxio',
+          'Floatzel',
+          'Gastrodon (east)',
           'Glameow',
           'Purugly',
           'Chatot',
         ],
         'water': [
-          'Wingull',
-          'Pelipper',
-          'Floatzel',
-          'Gastrodon (east)',
           'Tentacool',
           'Tentacruel',
           'Magikarp',
-          'Remoraid',
           'Gyarados',
+          'Remoraid',
           'Octillery',
+          'Wingull',
+          'Pelipper',
           'Sharpedo',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 217,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3684,26 +3599,19 @@ module.exports = {
         'land': [],
         'water': [
           'Tentacruel',
-          'Pelipper',
-          'Mantyke',
           'Magikarp',
+          'Gyarados',
           'Remoraid',
           'Octillery',
-          'Gyarados',
+          'Pelipper',
           'Wailmer',
           'Wailord',
+          'Mantyke',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 222,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3725,32 +3633,24 @@ module.exports = {
           'Beautifly',
           'Dustox',
           'Roselia',
+          'Floatzel',
+          'Gastrodon (east)',
           'Chatot',
         ],
         'water': [
-          'Pelipper',
-          'Buizel',
-          'Floatzel',
-          'Shellos (east)',
-          'Gastrodon (east)',
           'Tentacruel',
           'Magikarp',
-          'Remoraid',
           'Gyarados',
+          'Remoraid',
           'Octillery',
+          'Pelipper',
           'Luvdisc',
+          'Gastrodon (east)',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 223,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3772,30 +3672,21 @@ module.exports = {
           'Fearow',
           'Machoke',
           'Graveler',
-          'Roselia',
           'Skuntank',
           'Banette',
         ],
         'water': [
           'Psyduck',
           'Golduck',
-          'Poliwhirl',
           'Magikarp',
-          'Barboach',
           'Gyarados',
+          'Barboach',
           'Whiscash',
         ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 3,
-          'route': 224,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3812,25 +3703,20 @@ module.exports = {
         'land': [
           'Rattata',
           'Raticate',
-          'Spearow',
           'Fearow',
           'Machoke',
           'Graveler',
+          'Wingull',
           'Banette',
         ],
         'water': [
-          'Golduck',
           'Tentacruel',
-          'Seel',
-          'Dewgong',
-          'Wingull',
-          'Pelipper',
-          'Spheal',
-          'Sealeo',
-          'Magikarp',
           'Horsea',
           'Seadra',
+          'Magikarp',
           'Gyarados',
+          'Wingull',
+          'Pelipper',
           'Relicanth',
         ],
         'headbutt': [],
@@ -3862,14 +3748,13 @@ module.exports = {
           'Skarmory',
           'Numel',
           'Camerupt',
-          'Banette',
         ],
         'water': [
           'Poliwag',
           'Poliwhirl',
           'Magikarp',
-          'Barboach',
           'Gyarados',
+          'Barboach',
           'Whiscash',
         ],
         'headbutt': [],
@@ -3903,9 +3788,9 @@ module.exports = {
           'Poliwag',
           'Poliwhirl',
           'Magikarp',
+          'Gyarados',
           'Barboach',
           'Whiscash',
-          'Gyarados',
         ],
         'headbutt': [],
         'special': [],
@@ -3928,12 +3813,6 @@ module.exports = {
       'pokemon': {
         'land': [
           'Pidgey',
-          'Oddish',
-          'Gloom',
-          'Bellsprout',
-          'Weepinbell',
-          'Scyther',
-          'Pinsir',
           'Ledian',
           'Ariados',
           'Beautifly',
@@ -3944,14 +3823,12 @@ module.exports = {
           'Purugly',
         ],
         'water': [
-          'Wingull',
-          'Pelipper',
           'Surskit',
           'Masquerain',
-          'Magikarp',
           'Goldeen',
-          'Gyarados',
           'Seaking',
+          'Magikarp',
+          'Gyarados',
         ],
         'headbutt': [],
         'special': [],
@@ -3977,27 +3854,22 @@ module.exports = {
           'Gloom',
           'Bellsprout',
           'Weepinbell',
-          'Beautifly',
-          'Dustox',
-          'Roselia',
-        ],
-        'water': [
-          'Golduck',
           'Wingull',
           'Pelipper',
+          'Roselia',
           'Floatzel',
-          'Gastrodon (east)',
+        ],
+        'water': [
           'Tentacruel',
-          'Seel',
-          'Dewgong',
-          'Spheal',
-          'Sealeo',
           'Magikarp',
-          'Remoraid',
           'Gyarados',
+          'Remoraid',
           'Octillery',
+          'Wingull',
+          'Pelipper',
           'Wailmer',
           'Wailord',
+          'Sealeo',
         ],
         'headbutt': [],
         'special': [],
@@ -6071,6 +5943,7 @@ module.exports = {
           'Slowpoke',
           'Pelipper',
           'Gumshoos',
+          'Sandygast',
         ],
         'water': [
           'Tentacruel',
@@ -13158,26 +13031,24 @@ module.exports = {
         '11': 15.38,
       },
       '205': {
-        '0': 7.69,
-        '2': 61.54,
-        '4': 3.85,
-        '7': 15.38,
-        '8': 11.54,
-        '9': 23.08,
-        '11': 23.08,
-        '13': 3.85,
+        '0': 8,
+        '2': 60,
+        '4': 4,
+        '7': 16,
+        '8': 12,
+        '9': 16,
+        '11': 24,
+        '13': 4,
       },
       '206': {
-        '1': 11.11,
-        '6': 11.11,
-        '7': 22.22,
-        '8': 22.22,
-        '9': 22.22,
-        '10': 11.11,
-        '11': 22.22,
-        '12': 11.11,
-        '15': 11.11,
-        '16': 11.11,
+        '1': 14.29,
+        '6': 14.29,
+        '7': 28.57,
+        '8': 28.57,
+        '9': 28.57,
+        '11': 14.29,
+        '12': 14.29,
+        '15': 14.29,
       },
       '207': {
         '1': 20,
@@ -13189,125 +13060,108 @@ module.exports = {
         '12': 20,
       },
       '208': {
-        '0': 12.5,
-        '2': 56.25,
-        '4': 12.5,
-        '6': 12.5,
-        '7': 18.75,
-        '8': 12.5,
-        '9': 12.5,
-        '10': 12.5,
-        '17': 6.25,
-      },
-      '209': {
-        '0': 23.53,
-        '2': 41.18,
-        '4': 5.88,
-        '7': 17.65,
-        '9': 23.53,
-        '10': 11.76,
-        '12': 5.88,
-        '13': 11.76,
-        '17': 11.76,
-      },
-      '210': {
-        '0': 27.27,
-        '1': 4.55,
-        '2': 31.82,
-        '4': 4.55,
-        '6': 13.64,
-        '7': 4.55,
-        '8': 13.64,
-        '9': 27.27,
-        '10': 9.09,
-        '11': 9.09,
-        '12': 9.09,
-        '17': 4.55,
-      },
-      '211': {
-        '0': 25,
-        '1': 8.33,
-        '6': 25,
-        '7': 8.33,
-        '8': 16.67,
-        '9': 25,
-        '10': 25,
-        '12': 16.67,
-        '16': 8.33,
-      },
-      '212': {
-        '0': 13.33,
-        '2': 46.67,
-        '4': 13.33,
-        '6': 6.67,
-        '7': 20,
-        '9': 20,
-        '10': 13.33,
-        '11': 6.67,
-        '17': 20,
-      },
-      '213': {
-        '0': 7.14,
-        '2': 92.86,
-        '7': 14.29,
-        '8': 7.14,
-        '9': 28.57,
-        '15': 7.14,
-      },
-      '214': {
-        '0': 6.25,
-        '1': 12.5,
-        '2': 37.5,
-        '7': 12.5,
-        '8': 18.75,
-        '9': 12.5,
-        '10': 6.25,
-        '11': 6.25,
-        '12': 25,
-        '15': 12.5,
-      },
-      '215': {
-        '0': 22.22,
-        '1': 11.11,
-        '2': 11.11,
-        '8': 11.11,
-        '9': 22.22,
-        '10': 22.22,
-        '11': 22.22,
-        '12': 11.11,
-        '17': 11.11,
-      },
-      '216': {
-        '0': 12.5,
-        '4': 12.5,
-        '5': 37.5,
-        '6': 25,
-        '7': 12.5,
-        '8': 12.5,
-        '9': 25,
-        '10': 12.5,
-        '12': 12.5,
-        '15': 12.5,
-      },
-      '217': {
-        '0': 11.11,
-        '4': 11.11,
-        '5': 44.44,
-        '6': 33.33,
-        '7': 11.11,
-        '8': 11.11,
-        '9': 22.22,
-        '10': 22.22,
-        '15': 11.11,
-      },
-      '218': {
         '0': 14.29,
-        '2': 78.57,
-        '7': 14.29,
-        '8': 7.14,
-        '9': 28.57,
+        '2': 64.29,
+        '4': 14.29,
+        '7': 21.43,
+        '8': 14.29,
+        '9': 14.29,
         '10': 7.14,
         '17': 7.14,
+      },
+      '209': {
+        '0': 23.08,
+        '2': 53.85,
+        '4': 7.69,
+        '7': 15.38,
+        '9': 23.08,
+        '10': 7.69,
+        '13': 7.69,
+        '17': 7.69,
+      },
+      '210': {
+        '0': 30,
+        '1': 5,
+        '2': 40,
+        '4': 5,
+        '6': 15,
+        '7': 5,
+        '8': 15,
+        '9': 30,
+        '10': 5,
+        '11': 5,
+        '12': 5,
+      },
+      '211': {
+        '0': 30,
+        '6': 30,
+        '7': 10,
+        '8': 10,
+        '9': 30,
+        '10': 30,
+        '12': 10,
+        '16': 10,
+      },
+      '212': {
+        '0': 5.26,
+        '2': 73.68,
+        '4': 5.26,
+        '6': 5.26,
+        '7': 10.53,
+        '8': 10.53,
+        '9': 10.53,
+        '10': 10.53,
+        '17': 15.79,
+      },
+      '213': {
+        '0': 7.69,
+        '2': 92.31,
+        '7': 15.38,
+        '8': 7.69,
+        '9': 30.77,
+      },
+      '214': {
+        '1': 8.33,
+        '2': 50,
+        '7': 16.67,
+        '8': 25,
+        '9': 16.67,
+        '12': 25,
+        '15': 16.67,
+      },
+      '215': {
+        '0': 33.33,
+        '2': 16.67,
+        '9': 33.33,
+        '10': 33.33,
+        '11': 16.67,
+        '17': 16.67,
+      },
+      '216': {
+        '4': 16.67,
+        '5': 50,
+        '6': 16.67,
+        '7': 16.67,
+        '8': 16.67,
+        '9': 16.67,
+        '10': 16.67,
+        '12': 16.67,
+        '15': 16.67,
+      },
+      '217': {
+        '4': 25,
+        '5': 100,
+        '8': 25,
+        '15': 25,
+      },
+      '218': {
+        '0': 15.38,
+        '2': 76.92,
+        '7': 15.38,
+        '8': 15.38,
+        '9': 15.38,
+        '10': 7.69,
+        '17': 7.69,
       },
       '219': {
         '2': 100,
@@ -13316,32 +13170,30 @@ module.exports = {
       },
       '220': {
         '2': 100,
-        '3': 20,
-        '7': 20,
-        '9': 30,
+        '3': 11.11,
+        '7': 22.22,
+        '9': 33.33,
       },
       '221': {
-        '0': 5.88,
-        '2': 70.59,
-        '4': 5.88,
-        '7': 29.41,
-        '8': 5.88,
-        '9': 17.65,
-        '10': 5.88,
-        '12': 5.88,
-        '15': 11.76,
+        '0': 6.25,
+        '2': 68.75,
+        '4': 6.25,
+        '7': 31.25,
+        '8': 6.25,
+        '9': 12.5,
+        '10': 6.25,
+        '12': 6.25,
+        '15': 12.5,
       },
       '222': {
-        '0': 15.79,
-        '2': 57.89,
-        '3': 21.05,
-        '7': 10.53,
-        '8': 5.26,
-        '9': 21.05,
-        '10': 5.26,
-        '15': 5.26,
-        '16': 10.53,
-        '17': 5.26,
+        '0': 15,
+        '2': 65,
+        '3': 20,
+        '7': 10,
+        '8': 5,
+        '9': 30,
+        '15': 5,
+        '16': 10,
       },
       '223': {
         '2': 100,
@@ -13349,47 +13201,44 @@ module.exports = {
         '9': 33.33,
       },
       '224': {
-        '0': 5.26,
-        '2': 57.89,
-        '4': 26.32,
-        '7': 36.84,
-        '8': 5.26,
-        '9': 21.05,
-        '11': 10.53,
+        '0': 5.56,
+        '2': 55.56,
+        '4': 27.78,
+        '7': 38.89,
+        '8': 11.11,
+        '9': 22.22,
+        '11': 11.11,
       },
       '225': {
-        '0': 25,
-        '2': 43.75,
-        '4': 6.25,
-        '6': 6.25,
-        '7': 12.5,
-        '8': 18.75,
-        '9': 18.75,
-        '12': 6.25,
-        '13': 6.25,
-        '15': 6.25,
+        '0': 28.57,
+        '2': 42.86,
+        '6': 7.14,
+        '7': 7.14,
+        '8': 21.43,
+        '9': 21.43,
+        '12': 7.14,
+        '13': 7.14,
+        '15': 7.14,
       },
       '226': {
         '0': 20,
-        '2': 65,
-        '5': 15,
-        '6': 5,
-        '7': 5,
-        '8': 5,
-        '9': 25,
-        '12': 10,
-        '13': 5,
+        '2': 60,
+        '6': 6.67,
+        '7': 6.67,
+        '8': 6.67,
+        '9': 33.33,
+        '12': 13.33,
+        '13': 6.67,
       },
       '227': {
-        '0': 6.25,
-        '1': 12.5,
-        '2': 37.5,
-        '7': 12.5,
-        '8': 43.75,
-        '9': 25,
-        '12': 18.75,
-        '13': 6.25,
-        '16': 6.25,
+        '0': 6.67,
+        '1': 13.33,
+        '2': 40,
+        '7': 13.33,
+        '8': 46.67,
+        '9': 26.67,
+        '12': 20,
+        '16': 6.67,
       },
       '228': {
         '2': 50,
@@ -13400,21 +13249,19 @@ module.exports = {
         '15': 8.33,
       },
       '229': {
-        '0': 8.7,
-        '2': 30.43,
-        '4': 21.74,
-        '7': 30.43,
-        '9': 34.78,
-        '11': 43.48,
+        '0': 13.33,
+        '2': 33.33,
+        '4': 6.67,
+        '7': 20,
+        '9': 33.33,
+        '11': 53.33,
       },
       '230': {
-        '2': 69.57,
-        '4': 21.74,
-        '5': 13.04,
-        '7': 30.43,
-        '8': 4.35,
-        '9': 17.39,
-        '11': 8.7,
+        '2': 72.22,
+        '4': 27.78,
+        '5': 5.56,
+        '7': 33.33,
+        '9': 27.78,
       },
     },
     '4': {
@@ -13918,12 +13765,14 @@ module.exports = {
         '13': 14.29,
       },
       '15': {
-        '0': 10,
-        '2': 80,
-        '7': 10,
-        '9': 10,
-        '10': 20,
-        '15': 10,
+        '0': 9.09,
+        '2': 72.73,
+        '7': 9.09,
+        '8': 9.09,
+        '9': 9.09,
+        '10': 18.18,
+        '13': 9.09,
+        '15': 9.09,
       },
       '16': {
         '0': 20,
@@ -16713,9 +16562,6 @@ module.exports = {
             {
               'route': 225,
             },
-            {
-              'route': 226,
-            },
           ],
           '6': [
             {
@@ -18442,9 +18288,6 @@ module.exports = {
             {
               'route': 216,
             },
-            {
-              'route': 217,
-            },
           ],
           '9': [
             {
@@ -18660,9 +18503,6 @@ module.exports = {
               'route': 224,
             },
             {
-              'route': 229,
-            },
-            {
               'route': 230,
             },
           ],
@@ -18790,9 +18630,6 @@ module.exports = {
           '3': [
             {
               'route': 224,
-            },
-            {
-              'route': 229,
             },
             {
               'route': 230,
@@ -19519,6 +19356,9 @@ module.exports = {
               'route': 210,
             },
             {
+              'route': 210,
+            },
+            {
               'route': 214,
             },
             {
@@ -19622,12 +19462,6 @@ module.exports = {
             },
             {
               'route': 225,
-            },
-            {
-              'route': 226,
-            },
-            {
-              'route': 230,
             },
           ],
           '4': [
@@ -20153,9 +19987,6 @@ module.exports = {
           ],
           '3': [
             {
-              'route': 225,
-            },
-            {
               'route': 227,
             },
             {
@@ -20525,9 +20356,6 @@ module.exports = {
               'route': 207,
             },
             {
-              'route': 208,
-            },
-            {
               'route': 210,
             },
             {
@@ -20611,12 +20439,6 @@ module.exports = {
             },
             {
               'route': 211,
-            },
-            {
-              'route': 216,
-            },
-            {
-              'route': 217,
             },
             {
               'route': 225,
@@ -20806,9 +20628,6 @@ module.exports = {
               'route': 224,
             },
             {
-              'route': 229,
-            },
-            {
               'route': 230,
             },
           ],
@@ -20877,9 +20696,6 @@ module.exports = {
           '3': [
             {
               'route': 224,
-            },
-            {
-              'route': 229,
             },
             {
               'route': 230,
@@ -21430,13 +21246,7 @@ module.exports = {
               'route': 210,
             },
             {
-              'route': 215,
-            },
-            {
               'route': 214,
-            },
-            {
-              'route': 211,
             },
           ],
         },
@@ -21777,15 +21587,6 @@ module.exports = {
             {
               'route': 210,
             },
-            {
-              'route': 215,
-            },
-            {
-              'route': 214,
-            },
-            {
-              'route': 211,
-            },
           ],
         },
         '2': ['Mt Silver'],
@@ -21947,6 +21748,10 @@ module.exports = {
         'specialDefense': 40,
         'speed': 15,
       },
+      'heldItem': {
+        'type': 1,
+        'id': 'Kings_rock',
+      },
       'attack': 61,
       'nativeRegion': 0,
       'locations': {
@@ -22007,10 +21812,6 @@ module.exports = {
         'defense': 65,
         'specialDefense': 40,
         'speed': 15,
-      },
-      'heldItem': {
-        'type': 1,
-        'id': 'Kings_rock',
       },
       'attack': 61,
       'locations': {
@@ -22502,14 +22303,6 @@ module.exports = {
               'route': 47,
             },
           ],
-          '3': [
-            {
-              'route': 226,
-            },
-            {
-              'route': 230,
-            },
-          ],
         },
         '2': [
           'Whirl Islands',
@@ -22548,16 +22341,6 @@ module.exports = {
       'attack': 116,
       'nativeRegion': 0,
       'locations': {
-        '0': {
-          '3': [
-            {
-              'route': 226,
-            },
-            {
-              'route': 230,
-            },
-          ],
-        },
         '3': [
           {
             'dungeon': 'Whirl Islands',
@@ -22919,11 +22702,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '3': [
-            {
-              'route': 209,
-            },
-          ],
           '7': [
             {
               'route': 7,
@@ -25560,9 +25338,6 @@ module.exports = {
             {
               'route': 218,
             },
-            {
-              'route': 222,
-            },
           ],
         },
         '2': ['Reflection Cave'],
@@ -25661,9 +25436,6 @@ module.exports = {
             },
             {
               'route': 215,
-            },
-            {
-              'route': 229,
             },
           ],
           '5': [
@@ -25930,11 +25702,6 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '3': [
-            {
-              'route': 229,
-            },
-          ],
           '4': [
             {
               'route': 12,
@@ -28512,12 +28279,6 @@ module.exports = {
             {
               'route': 211,
             },
-            {
-              'route': 216,
-            },
-            {
-              'route': 217,
-            },
           ],
           '5': [
             {
@@ -28531,16 +28292,12 @@ module.exports = {
           ],
         },
         '2': [
-          'Mt. Coronet South',
           'Mt. Coronet North',
           'Pokémon Village',
         ],
         '3': [
           {
             'dungeon': 'Ilex Forest',
-          },
-          {
-            'dungeon': 'Lake Valor',
           },
         ],
         '4': [
@@ -29042,11 +28799,6 @@ module.exports = {
               'route': 26,
             },
           ],
-          '3': [
-            {
-              'route': 220,
-            },
-          ],
           '7': [
             {
               'route': 5,
@@ -29203,6 +28955,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Mt. Coronet South'],
         '6': ['Clefairy'],
       },
       'catchRatePercent': 42,
@@ -29894,9 +29647,6 @@ module.exports = {
           ],
           '3': [
             {
-              'route': 214,
-            },
-            {
               'route': 221,
             },
           ],
@@ -30418,6 +30168,11 @@ module.exports = {
             },
             {
               'route': 26,
+            },
+          ],
+          '3': [
+            {
+              'route': 212,
             },
           ],
           '5': [
@@ -31540,9 +31295,6 @@ module.exports = {
           ],
           '3': [
             {
-              'route': 214,
-            },
-            {
               'route': 221,
             },
           ],
@@ -32654,6 +32406,9 @@ module.exports = {
               'route': 213,
             },
             {
+              'route': 212,
+            },
+            {
               'route': 222,
             },
             {
@@ -32740,6 +32495,9 @@ module.exports = {
           '3': [
             {
               'route': 213,
+            },
+            {
+              'route': 212,
             },
             {
               'route': 222,
@@ -34967,9 +34725,6 @@ module.exports = {
             {
               'route': 229,
             },
-            {
-              'route': 230,
-            },
           ],
         },
         '3': [
@@ -35071,9 +34826,6 @@ module.exports = {
             },
             {
               'route': 229,
-            },
-            {
-              'route': 230,
             },
           ],
         },
@@ -35735,13 +35487,10 @@ module.exports = {
           ],
           '3': [
             {
-              'route': 205,
-            },
-            {
               'route': 213,
             },
             {
-              'route': 218,
+              'route': 213,
             },
             {
               'route': 219,
@@ -35750,7 +35499,7 @@ module.exports = {
               'route': 220,
             },
             {
-              'route': 221,
+              'route': 222,
             },
             {
               'route': 222,
@@ -35759,7 +35508,10 @@ module.exports = {
               'route': 226,
             },
             {
-              'route': 229,
+              'route': 226,
+            },
+            {
+              'route': 230,
             },
             {
               'route': 230,
@@ -35985,15 +35737,6 @@ module.exports = {
           ],
           '3': [
             {
-              'route': 205,
-            },
-            {
-              'route': 213,
-            },
-            {
-              'route': 218,
-            },
-            {
               'route': 219,
             },
             {
@@ -36001,6 +35744,9 @@ module.exports = {
             },
             {
               'route': 221,
+            },
+            {
+              'route': 222,
             },
             {
               'route': 222,
@@ -36015,7 +35761,7 @@ module.exports = {
               'route': 226,
             },
             {
-              'route': 229,
+              'route': 230,
             },
             {
               'route': 230,
@@ -37576,9 +37322,6 @@ module.exports = {
         '0': {
           '3': [
             {
-              'route': 208,
-            },
-            {
               'route': 210,
             },
             {
@@ -37586,9 +37329,6 @@ module.exports = {
             },
             {
               'route': 216,
-            },
-            {
-              'route': 217,
             },
           ],
         },
@@ -37626,13 +37366,6 @@ module.exports = {
       'attack': 78,
       'nativeRegion': 2,
       'locations': {
-        '0': {
-          '3': [
-            {
-              'route': 217,
-            },
-          ],
-        },
         '2': ['Victory Road Hoenn'],
         '3': [
           {
@@ -37977,9 +37710,6 @@ module.exports = {
               'route': 224,
             },
             {
-              'route': 225,
-            },
-            {
               'route': 229,
             },
             {
@@ -38269,9 +37999,6 @@ module.exports = {
             },
           ],
           '3': [
-            {
-              'route': 213,
-            },
             {
               'route': 222,
             },
@@ -40501,9 +40228,6 @@ module.exports = {
             {
               'route': 226,
             },
-            {
-              'route': 227,
-            },
           ],
         },
         '2': [
@@ -41113,14 +40837,6 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '3': [
-            {
-              'route': 226,
-            },
-            {
-              'route': 230,
-            },
-          ],
           '4': [
             {
               'route': 24,
@@ -41172,9 +40888,6 @@ module.exports = {
       'locations': {
         '0': {
           '3': [
-            {
-              'route': 226,
-            },
             {
               'route': 230,
             },
@@ -42581,12 +42294,6 @@ module.exports = {
             {
               'route': 204,
             },
-            {
-              'route': 209,
-            },
-            {
-              'route': 212,
-            },
           ],
         },
         '2': ['Lake Verity'],
@@ -42800,9 +42507,11 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Lake Valor',
-          'Lake Acuity',
+        '2': ['Lake Acuity'],
+        '3': [
+          {
+            'dungeon': 'Lake Valor',
+          },
         ],
         '4': [
           {
@@ -42861,9 +42570,6 @@ module.exports = {
               'route': 205,
             },
             {
-              'route': 206,
-            },
-            {
               'route': 207,
             },
           ],
@@ -42896,18 +42602,6 @@ module.exports = {
           '3': [
             {
               'route': 206,
-            },
-            {
-              'route': 210,
-            },
-            {
-              'route': 215,
-            },
-            {
-              'route': 214,
-            },
-            {
-              'route': 212,
             },
           ],
         },
@@ -43164,9 +42858,6 @@ module.exports = {
             },
             {
               'route': 208,
-            },
-            {
-              'route': 212,
             },
           ],
           '5': [
@@ -43938,7 +43629,7 @@ module.exports = {
               'route': 213,
             },
             {
-              'route': 224,
+              'route': 212,
             },
           ],
           '4': [
@@ -43980,9 +43671,6 @@ module.exports = {
       'locations': {
         '0': {
           '3': [
-            {
-              'route': 213,
-            },
             {
               'route': 218,
             },
@@ -44197,6 +43885,9 @@ module.exports = {
               'route': 205,
             },
             {
+              'route': 205,
+            },
+            {
               'route': 218,
             },
             {
@@ -44241,7 +43932,13 @@ module.exports = {
               'route': 213,
             },
             {
-              'route': 224,
+              'route': 213,
+            },
+            {
+              'route': 212,
+            },
+            {
+              'route': 212,
             },
           ],
         },
@@ -44276,6 +43973,9 @@ module.exports = {
           '3': [
             {
               'route': 205,
+            },
+            {
+              'route': 218,
             },
             {
               'route': 218,
@@ -44325,13 +44025,16 @@ module.exports = {
               'route': 213,
             },
             {
+              'route': 212,
+            },
+            {
               'route': 222,
             },
             {
               'route': 224,
             },
             {
-              'route': 230,
+              'route': 224,
             },
           ],
           '6': [
@@ -45163,9 +44866,6 @@ module.exports = {
         '0': {
           '3': [
             {
-              'route': 206,
-            },
-            {
               'route': 211,
             },
           ],
@@ -45320,14 +45020,6 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '3': [
-            {
-              'route': 209,
-            },
-            {
-              'route': 210,
-            },
-          ],
           '6': [
             {
               'route': 5,
@@ -45372,14 +45064,6 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '3': [
-            {
-              'route': 209,
-            },
-            {
-              'route': 210,
-            },
-          ],
           '7': [
             {
               'route': 3,
@@ -64533,6 +64217,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Lush Jungle'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -64931,6 +64616,11 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
+          '6': [
+            {
+              'route': 15,
+            },
+          ],
           '8': [
             {
               'route': 6,
@@ -66041,7 +65731,9 @@ module.exports = {
       },
       'attack': 22,
       'nativeRegion': 6,
-      'locations': {},
+      'locations': {
+        '7': ['Altar of the Sunne and Moone'],
+      },
       'catchRatePercent': 17,
       'eggSteps': 4800,
     },
@@ -66420,7 +66112,7 @@ module.exports = {
       'locations': {
         '1': [
           {
-            'region': 5,
+            'region': 6,
             'requirements': 'Requires the Elite Alola Champion badge.',
           },
         ],
@@ -66452,7 +66144,7 @@ module.exports = {
       'locations': {
         '1': [
           {
-            'region': 5,
+            'region': 6,
             'requirements': 'Requires the Elite Alola Champion badge.',
           },
         ],
@@ -66597,7 +66289,7 @@ module.exports = {
       'locations': {
         '1': [
           {
-            'region': 5,
+            'region': 6,
             'requirements': 'Requires the Elite Alola Champion badge.',
           },
         ],
@@ -72478,7 +72170,7 @@ module.exports = {
     },
     {
       'id': 898.2,
-      'name': 'Ghost Rider Calyrex',
+      'name': 'Shadow Rider Calyrex',
       'type': [
         10,
         13,
@@ -73907,7 +73599,7 @@ module.exports = {
       'Turffield',
       'Hulbury',
       'Motostoke',
-      'Stow-On-Side',
+      'Stow-on-Side',
       'Ballonlea',
       'Circhester',
       'Spikemuth',
@@ -74026,7 +73718,7 @@ module.exports = {
         'Turffield',
         'Hulbury',
         'Motostoke',
-        'Stow-On-Side',
+        'Stow-on-Side',
         'Ballonlea',
         'Circhester',
         'Spikemuth',
