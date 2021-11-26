@@ -1,5 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { addOrderedReactions } = require('./helpers.js');
+const { modLog } = require('./other/mod/functions.js');
 
 module.exports = [
   // Auto react to comments if 2+ lines start with an emoji
@@ -61,6 +62,21 @@ module.exports = [
       const embed = new MessageEmbed().setDescription(description.join('\n')).setColor('RANDOM');
 
       message.reply({embeds: [embed]});
+    },
+  },
+  {
+    regex: /(https?:\/\/)?(www\.)?(discord\.\w{1,3}|discordapp\.\w{1,3}\/invite)\/.+[a-z]/i,
+    execute: (message, client) => {
+      message.delete().catch(e => {});
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.me.toString()}
+        **User:** ${message.member.toString()}
+        **Action:** Deleted message
+        **Reason:** _Invite link_
+        **Message Content:**
+        \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      );
     },
   },
   {
