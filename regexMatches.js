@@ -1,6 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const { addOrderedReactions } = require('./helpers.js');
-const { modLog } = require('./other/mod/functions.js');
+const { HOUR } = require('./helpers/constants.js');
+const { modLog, mute } = require('./other/mod/functions.js');
 
 module.exports = [
   // Auto react to comments if 2+ lines start with an emoji
@@ -75,6 +76,23 @@ module.exports = [
         **User:** ${message.member.toString()}
         **Action:** Deleted message
         **Reason:** _Invite link_
+        **Message Content:**
+        \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      );
+    },
+  },
+  // Try remove some of the fake free nitro stuff
+  {
+    regex: /(https?:\/\/)?(www\.)?(([a-c]|[e-z])iscord|d[a-z]iscord|d([a-h]|[j-z])scord|di[a-z]scord|di([a-r]|[t-z])cord|dis[a-z]cord|dis([a-b]|[d-z])ord|disc[a-z]ord|disc([a-n]|[p-z])rd|disco[a-z]rd|disco([a-q]|[s-z])d|discor[a-z]d|discor([a-c]|[e-z])|discord[a-z])[\w-]+\.\w{1,10}\//i,
+    execute: (message, client) => {
+      mute(message.member, 2 * HOUR);
+      message.delete().catch(e => {});
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.me.toString()}
+        **User:** ${message.member.toString()}
+        **Action:** _Deleted message, Muted_
+        **Reason:** _Fake Discord link_
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
