@@ -103,7 +103,11 @@ module.exports = {
       if (value) {
         const date = Date.now() + value;
         embed.setDescription(`${output.join('\n')}\n\n_user will be un-muted in ${formatDateToString(value)}_`);
-        modLog(interaction.guild, `${member.toString()} muted by ${interaction.member.toString()}\n**Duration:** _${formatDateToString(value)}_`);
+        modLog(interaction.guild,
+          `**Mod:** ${interaction.member.toString()}
+          **User:** ${member.toString()}
+          **Action:** Muted
+          **Duration:** _${formatDateToString(value)}_`);
         addScheduleItem('un-mute', user, date, `${interaction.guild.id}|${formatDateToString(+i.values[0])}`);
       }
       await i.editReply({ embeds: [embed], components: [] });
@@ -112,7 +116,11 @@ module.exports = {
     selectedTime.on('end', i => {
       if (!collected) {
         interaction.editReply({ components: [] }).catch(O_o=>{});
-        modLog(interaction.guild, `${member.toString()} muted by ${interaction.member.toString()}\n**Duration:** _manual unmute_`);
+        modLog(interaction.guild,
+          `**Mod:** ${interaction.member.toString()}
+          **User:** ${member.toString()}
+          **Action:** Muted
+          **Duration:** _Manual unmute}_`);
       }
     });
 

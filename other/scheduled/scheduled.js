@@ -26,7 +26,12 @@ const unmute = async (client, item) => {
   const member = await getMember(client, guildID, userID);
   if (member) {
     await member.roles.remove(mutedRoleID, `User unmuted (scheduled - ${time})`);
-    modLog(member.guild, `${member.toString()} unmuted by ${member.guild.me.toString()}\n**Reason:** _scheduled_\n**Duration:** _${time}_`);
+    modLog(member.guild,
+      `**Mod:** ${member.guild.me.toString()}
+      **User:** ${member.toString()}
+      **Action:** Unmuted
+      **Reason:** _Scheduled_
+      **Duration:** _${time}_`);
   }
 };
 

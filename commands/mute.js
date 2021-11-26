@@ -100,7 +100,11 @@ module.exports = {
         embed.setDescription(`${output.join('\n')}\n\n_user(s) will be un-muted in ${formatDateToString(value)}_`);
         users.forEach(u => {
           addScheduleItem('un-mute', u, date, `${msg.guild.id}|${formatDateToString(+i.values[0])}`);
-          modLog(msg.guild, `${u.toString()} muted by ${msg.author.toString()}\n**Duration:** _${formatDateToString(value)}_`);
+          modLog(msg.guild,
+            `**Mod:** ${msg.author.toString()}
+            **User:** ${u.toString()}
+            **Action:** Muted
+            **Duration:** _${formatDateToString(value)}_`);
         });
       }
       await i.editReply({ embeds: [embed], components: [] });
@@ -112,7 +116,11 @@ module.exports = {
       if (!collected) {
         botMsg.edit({ components: [] }).catch(O_o=>{});
         users.forEach(u => {
-          modLog(msg.guild, `${u.toString()} muted by ${msg.author.toString()}\n**Duration:** _manual unmute_`);
+          modLog(msg.guild,
+            `**Mod:** ${msg.author.toString()}
+            **User:** ${u.toString()}
+            **Action:** Muted
+            **Duration:** _Manual unmute_`);
         });
       }
     });

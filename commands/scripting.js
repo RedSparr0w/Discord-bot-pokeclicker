@@ -29,7 +29,10 @@ module.exports = {
       }
       await member.roles.add(externalScriptsRoleID, `Role applied by ${msg.member.displayName}-${msg.author.id}`);
       output.push(member);
-      modLog(msg.guild, `${member.toString()} <@&${externalScriptsRoleID}> role applied by ${msg.author.toString()}`);
+      modLog(msg.guild,
+        `**Mod:** ${msg.author.toString()}
+        **User:** ${member.toString()}
+        **Action:** <@&${externalScriptsRoleID}> role applied`);
     }
 
     embed.setColor('#3498db').setDescription(output.join('\n'));

@@ -20,12 +20,14 @@ const check = (message) => {
     mute(message.member, time);
     modLog(
       message.member.guild,
-      `**User:** ${message.member.guild.me.toString()}
-      **Action:** ${message.member.toString()} was muted
+      `**Mod:** ${message.member.guild.me.toString()}
+      **User:** ${message.member.toString()}
+      **Action:** Muted
       **Reason:** _spamming_
       **Duration:** _${formatDateToString(time)}_
+      **Message Link:** _[Here](${message.url})_
       **Message Content:**
-      \`\`\`${message.content.replace(/```/g, '``')}\`\`\``.substring(0, 4000)
+      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
     );
     const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Stop spamming!\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
@@ -37,12 +39,14 @@ const check = (message) => {
     mute(message.member, time);
     modLog(
       message.member.guild,
-      `**User:** ${message.member.guild.me.toString()}
-      **Action:** ${message.member.toString()} was muted
+      `**Mod:** ${message.member.guild.me.toString()}
+      **User:** ${message.member.toString()}
+      **Action:** Muted
       **Reason:** _spamming (duplicate messages)_
       **Duration:** _${formatDateToString(time)}_
+      **Message Link:** _[Here](${message.url})_
       **Message Content:**
-      \`\`\`${message.content.replace(/```/g, '``')}\`\`\``.substring(0, 4000)
+      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
     );
     const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Stop spamming!\n_(duplicate message)_\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
