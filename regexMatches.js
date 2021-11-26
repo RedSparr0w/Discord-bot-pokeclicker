@@ -64,6 +64,7 @@ module.exports = [
       message.reply({embeds: [embed]});
     },
   },
+  // Remove discord invite links
   {
     regex: /(https?:\/\/)?(www\.)?(discord\.\w{1,3}|discordapp\.\w{1,3}\/invite)\/.+[a-z]/i,
     execute: (message, client) => {
