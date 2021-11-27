@@ -85,6 +85,9 @@ module.exports = [
   {
     regex: /(https?:\/\/)?(www\.)?(([a-c]|[e-z])iscord|d[a-z]iscord|d([a-h]|[j-z])scord|di[a-z]scord|di([a-r]|[t-z])cord|dis[a-z]cord|dis([a-b]|[d-z])ord|disc[a-z]ord|disc([a-n]|[p-z])rd|disco[a-z]rd|disco([a-q]|[s-z])d|discor[a-z]d|discor([a-c]|[e-z])|discord[a-z])[\w-]+\.\w{1,10}\//i,
     execute: (message, client) => {
+      if (message.content.test(/(https?:\/\/)?(www\.)?(discord\.\w{1,3}|discordapp\.\w{1,3})\//i)) {
+        return;
+      }
       mute(message.member, 2 * HOUR);
       message.delete().catch(e => {});
       modLog(
