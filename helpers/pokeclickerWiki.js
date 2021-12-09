@@ -733,10 +733,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9Clicker_Wiki:Ruleset',
     },
     {
-      'title': 'Poké Dollar',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9_Dollar',
-    },
-    {
       'title': 'Pokéball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9ball',
     },
@@ -759,6 +755,10 @@ module.exports = {
     {
       'title': 'Pokémon Day Care',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_Day_Care',
+    },
+    {
+      'title': 'Pokémon Dollars',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_Dollars',
     },
     {
       'title': 'Pokémon Statistics',
