@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { addOrderedReactions } = require('./helpers.js');
+const { addOrderedReactions, formatDateToString } = require('./helpers.js');
 const { HOUR } = require('./helpers/constants.js');
 const { modLog, mute } = require('./other/mod/functions.js');
 
@@ -99,6 +99,27 @@ module.exports = [
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
+    },
+  },
+  // Remove @everyone tags
+  {
+    regex: /@everyone/i,
+    execute: (message, client) => {
+      const time = 1 * HOUR;
+      mute(message.member, time);
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.me.toString()}
+        **User:** ${message.member.toString()}
+        **Action:** Muted
+        **Reason:** _Tagging \\@everyone_
+        **Duration:** _${formatDateToString(time)}_
+        **Message Link:** _[Here](${message.url})_
+        **Message Content:**
+        \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      );
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Do not attempt to tag \\@everyone\n\nYou will be unmuted in ${formatDateToString(time)}`);
+      return message.reply({ embeds: [embed] });
     },
   },
   {
