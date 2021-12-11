@@ -120,7 +120,7 @@ module.exports = {
           `**Mod:** ${interaction.member.toString()}
           **User:** ${member.toString()}
           **Action:** Muted
-          **Duration:** _Manual unmute}_`);
+          **Duration:** _Manual unmute_`);
       }
     });
 
