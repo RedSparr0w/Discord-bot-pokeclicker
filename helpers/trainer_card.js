@@ -50,7 +50,7 @@ const trainerCardBadges = [
   },
   { // 3
     name: 'Rainbow',
-    description: 'Win 5,000 coins or more in one game',
+    description: 'Win a net profit of 5,000 coins or more in one game',
     icon: '<:rainbow_badge:785737862174736435>',
     // card stuff
     src: './assets/images/badges/3.png',
