@@ -2,6 +2,7 @@ const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
 const request = require('request');
 const { error } = require('./logging');
 const { formatSecondsFullLetters } = require('./conversion');
+const { GameConstants, pokemonList } = require('./pokeclicker');
 const { website } = require('../config.js');
 
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
@@ -127,6 +128,14 @@ const processSaveFile = (msg, file) => {
         const discordID = saveData.save?.discord?.ID || false;
         const challengesTotal = Object.values(saveData.save?.challenges?.list || {}).length || 0;
         const challengesEnabled = Object.values(saveData.save?.challenges?.list || {}).filter(a=>a).length || 0;
+        const maxDungeons = saveData.save?.statistics?.dungeonsCleared
+          ?.map((amt, i) => ({ name: GameConstants.RegionDungeons.flat()[i] || 'Unknown', amt }))
+          ?.sort((a,b) => b.amt - a.amt)
+          ?.slice(0, 5) || [];
+        const maxPokemon = Object.entries(saveData.save?.statistics?.pokemonDefeated || {})
+          ?.map(([id, amt]) => ({ name: pokemonList.find(p => p.id == +id)?.name || 'Unknown', amt }))
+          ?.sort((a,b) => b.amt - a.amt)
+          ?.slice(0, 5) || [];
 
         // Create the embed
         const embed = new MessageEmbed()
@@ -138,6 +147,8 @@ const processSaveFile = (msg, file) => {
           .addField('Time Played:', formatSecondsFullLetters(timePlayed))
           .addField('Achievements:', `${achievementsCompleted}`)
           .addField('Challenges:', `${challengesEnabled}/${challengesTotal}`)
+          .addField('Dungeon Clears:', maxDungeons.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
+          .addField('Pokemon Defeated:', maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
           .addField('Time Traveller:', upperCaseFirstLetter(timeTraveller.toString()))
           .addField('Save File:', `[Download](${file.url})`)
           .setFooter(`Version: v${version} | Last Seen:`)
