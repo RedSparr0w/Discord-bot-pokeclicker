@@ -195,6 +195,15 @@ async function getTop(amount = 10, table = 'coins'){
     case 'coins':
       results = await db.all(`SELECT users.user, amount, RANK () OVER ( ORDER BY amount DESC ) rank FROM coins INNER JOIN users ON users.id = coins.user ORDER BY amount DESC LIMIT ${amount}`);
       break;
+    case 'coins-bet':
+      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_bet' ORDER BY amount DESC LIMIT ${amount}`);
+      break;
+    case 'coins-won':
+      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_won' ORDER BY amount DESC LIMIT ${amount}`);
+      break;
+    case 'coins-lost':
+      results = await db.all(`SELECT users.user, value AS amount, RANK () OVER ( ORDER BY value DESC ) rank FROM statistics INNER JOIN statistic_types ON statistics.type = statistic_types.id INNER JOIN users ON users.id = statistics.user WHERE statistic_types.name='gc_coins_won' ORDER BY amount ASC LIMIT ${amount}`);
+      break;
     case 'messages':
     case 'qz_answered':
     default:
