@@ -193,6 +193,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Digletts_Cave',
     },
     {
+      'title': 'Discord Integration',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Discord_Integration',
+    },
+    {
       'title': 'Distortion World',
       'link': 'https://pokeclicker.miraheze.org/wiki/Distortion_World',
     },
@@ -501,10 +505,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Liechi',
     },
     {
-      'title': 'List of Obtainable Pokémon',
-      'link': 'https://pokeclicker.miraheze.org/wiki/List_of_Obtainable_Pok%C3%A9mon',
-    },
-    {
       'title': 'Lost Hotel',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lost_Hotel',
     },
@@ -639,6 +639,10 @@ module.exports = {
     {
       'title': 'Oak Items',
       'link': 'https://pokeclicker.miraheze.org/wiki/Oak_Items',
+    },
+    {
+      'title': 'Obtainable Pokémon',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Obtainable_Pok%C3%A9mon',
     },
     {
       'title': 'Occa',
