@@ -4,6 +4,7 @@ const { addAmount, addStatistic, addPurchased } = require('../../database.js');
 const {
   SECOND,
   MINUTE,
+  error,
   warn,
   log,
   trainerCardBadgeTypes,
@@ -23,7 +24,14 @@ const newQuiz = async (guild, reoccur = false) => {
   if (!quiz_channel) return;
 
   // Generate and send a random question
-  const quiz = await getQuizQuestion();
+  let quiz;
+  while (!quiz) {
+    try {
+      quiz = await getQuizQuestion();
+    } catch(e) {
+      error(e);
+    }
+  }
 
   // Time limit in minutes (2 → 10 minutes)
   let time_limit = getTimeLimit();
