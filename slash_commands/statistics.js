@@ -71,7 +71,7 @@ module.exports = {
       `**❯ Commands:** ${commands.toLocaleString('en-US')}`,
     ].join('\n'));
 
-    embed.addField('__***#games-corner***__', [
+    embed.addField('__***#game-corner***__', [
       `**❯ Games Played:** ${gc_games_played.toLocaleString('en-US')}`,
       `**❯ Games Won:** ${gc_games_won.toLocaleString('en-US')}`,
       `**❯ Games Tied:** ${gc_games_tied.toLocaleString('en-US')}`,
@@ -80,7 +80,7 @@ module.exports = {
       `**❯ Coins Won:** ${gc_coins_won.toLocaleString('en-US')}`,
     ].join('\n'));
 
-    embed.addField('__***#bot-quiz***__', [
+    embed.addField('__***#bot-coins***__', [
       `**❯ Q's Answered:** ${qz_answered.toLocaleString('en-US')}`,
       `**❯ Coins Won:** ${qz_coins_won.toLocaleString('en-US')}`,
     ].join('\n'));
