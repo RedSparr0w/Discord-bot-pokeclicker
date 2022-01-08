@@ -69,6 +69,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Berry_Master',
     },
     {
+      'title': 'Black DNA',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_DNA',
+    },
+    {
       'title': 'Blaze Cassette',
       'link': 'https://pokeclicker.miraheze.org/wiki/Blaze_Cassette',
     },
@@ -243,6 +247,10 @@ module.exports = {
     {
       'title': 'Dusk Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Dusk_Stone',
+    },
+    {
+      'title': 'Duskball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Duskball',
     },
     {
       'title': 'EXP Share',
@@ -523,6 +531,10 @@ module.exports = {
     {
       'title': 'Lum',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lum',
+    },
+    {
+      'title': 'Luxuryball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Luxuryball',
     },
     {
       'title': 'MGW:RS',
@@ -813,6 +825,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Quests',
     },
     {
+      'title': 'Quickball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Quickball',
+    },
+    {
       'title': 'Rabuta',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rabuta',
     },
@@ -1089,6 +1105,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Thunder_Stone',
     },
     {
+      'title': 'Timerball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Timerball',
+    },
+    {
       'title': 'Tin Tower',
       'link': 'https://pokeclicker.miraheze.org/wiki/Tin_Tower',
     },
@@ -1215,6 +1235,10 @@ module.exports = {
     {
       'title': 'Whirl Islands',
       'link': 'https://pokeclicker.miraheze.org/wiki/Whirl_Islands',
+    },
+    {
+      'title': 'White DNA',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_DNA',
     },
     {
       'title': 'Wiki',
