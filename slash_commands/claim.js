@@ -110,6 +110,8 @@ module.exports = {
       addReminder(interaction.user, reminderTime, '/claim\n<#456798288893706241>');
 
       message.push('', 'Auto reminder will be sent in 23 hours');
+    } else {
+      message.push('', '_You can use the `/roles` command to be automatically reminded_');
     }
 
     return interaction.reply({
