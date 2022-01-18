@@ -119,6 +119,7 @@ module.exports = [
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Do not attempt to tag \\@everyone\n\nYou will be unmuted in ${formatDateToString(time)}`);
+      message.delete().catch(e => {});
       return message.reply({ embeds: [embed] });
     },
   },

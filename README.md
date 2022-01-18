@@ -11,10 +11,10 @@ Steps for running:
 
 ## Permissions
 
-* Manage Roles - Allow the bot to assign and unassign roles with `!mute`, `!unmute`, and `!scripting`
-* Read Text Channels & See Voice Channels
+* Manage Roles - Allow the bot to assign and unassign roles with `!mute`, `!unmute`, and `!scripting` and `/roles`
+* Read Text Channels & See Voice Channels - Needs this for any channel you want it to manage messages
 * Send Messages
 * Manage Messages - Allow the bot to delete messages
-* Embedded Links
-* Attach files - Allow the bot to post database backups
+* Embedded Links - Allows the bot to use embeds
+* Attach files - Allow the bot to post database backups in the backup channel
 * Mention `@everyone`, `@here` and All Roles
