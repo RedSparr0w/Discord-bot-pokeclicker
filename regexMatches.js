@@ -89,7 +89,6 @@ module.exports = [
         return;
       }
       mute(message.member, 2 * HOUR);
-      message.delete().catch(e => {});
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.me.toString()}
@@ -99,6 +98,7 @@ module.exports = [
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
+      message.delete().catch(e => {});
     },
   },
   // Remove @everyone tags
@@ -119,8 +119,8 @@ module.exports = [
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Do not attempt to tag \\@everyone\n\nYou will be unmuted in ${formatDateToString(time)}`);
+      message.reply({ embeds: [embed] });
       message.delete().catch(e => {});
-      return message.reply({ embeds: [embed] });
     },
   },
   {
