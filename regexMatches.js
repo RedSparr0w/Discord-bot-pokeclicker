@@ -123,6 +123,22 @@ module.exports = [
       message.delete().catch(e => {});
     },
   },
+  // Try remove some of the fake free nitro stuff
+  {
+    regex: /\.github\.io\//i,
+    execute: (message, client) => {
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.me.toString()}
+        **User:** ${message.member.toString()}
+        **Action:** _Deleted message_
+        **Reason:** _Github.io link_
+        **Message Content:**
+        \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      );
+      message.delete().catch(e => {});
+    },
+  },
   {
     // Figure out a better way to test for the bots own ID/Role
     regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
