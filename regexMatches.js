@@ -125,7 +125,7 @@ module.exports = [
   },
   // Try remove some of the fake free nitro stuff
   {
-    regex: /\.github\.io\//i,
+    regex: /\.github\.io\/pokeclicker/i,
     execute: (message, client) => {
       modLog(
         message.member.guild,
