@@ -105,7 +105,7 @@ module.exports = [
   {
     regex: /@everyone/i,
     execute: (message, client) => {
-      const time = 1 * HOUR;
+      const time = 2 * HOUR;
       mute(message.member, time);
       modLog(
         message.member.guild,
@@ -124,6 +124,25 @@ module.exports = [
     },
   },
   // Try remove some of the fake free nitro stuff
+  {
+    regex: /https?:\/\/dis.*(\.gift\/|\/nitro)/i,
+    execute: (message, client) => {
+      const time = 2 * HOUR;
+      mute(message.member, time);
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.me.toString()}
+        **User:** ${message.member.toString()}
+        **Action:** _Deleted message_
+        **Reason:** _Nitro scam link_
+        **Message Content:**
+        \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      );
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Possible nitro scam link..\n\nYou will be unmuted in ${formatDateToString(time)}`);
+      message.reply({ embeds: [embed] });
+      message.delete().catch(e => {});
+    },
+  },
   {
     regex: /\.github\.io\/pokeclicker/i,
     execute: (message, client) => {
