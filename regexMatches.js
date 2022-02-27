@@ -135,6 +135,8 @@ module.exports = [
         **User:** ${message.member.toString()}
         **Action:** _Deleted message_
         **Reason:** _Nitro scam link_
+        **Duration:** _${formatDateToString(time)}_
+        **Message Link:** _[Here](${message.url})_
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
@@ -152,6 +154,7 @@ module.exports = [
         **User:** ${message.member.toString()}
         **Action:** _Deleted message_
         **Reason:** _Github.io link_
+        **Message Link:** _[Here](${message.url})_
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
