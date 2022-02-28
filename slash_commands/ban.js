@@ -27,7 +27,7 @@ module.exports = {
     const id = interaction.options.get('user').value;
     const reason = interaction.options.get('reason')?.value;
 
-    let member = await interaction.guild.members.fetch(id).catch(e => {});
+    const member = await interaction.guild.members.fetch(id).catch(e => {});
     if (!member) {
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
       return interaction.reply({ embeds: [embed], ephemeral: true });
@@ -53,7 +53,7 @@ module.exports = {
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
-    let user = member.user;
+    const user = member.user;
 
     const joinDiscord = new Date(user.createdTimestamp);
     const joinServer = new Date(member.joinedTimestamp);

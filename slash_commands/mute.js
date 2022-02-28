@@ -17,6 +17,12 @@ module.exports = {
       description: 'User to mute',
       required: true,
     },
+    {
+      name: 'reason',
+      type: 'STRING',
+      description: 'The reason this user is being muted',
+      required: false,
+    },
   ],
   guildOnly   : true,
   cooldown    : 3,
@@ -24,6 +30,7 @@ module.exports = {
   userperms   : ['MUTE_MEMBERS'], // Voice mute permission
   execute     : async (interaction, args) => {
     const id = interaction.options.get('user').value;
+    const reason = interaction.options.get('reason')?.value;
 
     const member = await interaction.guild.members.fetch(id).catch(e => {});
     if (!member) {
