@@ -69,7 +69,7 @@ module.exports = {
       .setTitle(`#${berry.type >= 0 ? (berry.type + 1).toString().padStart(2, 0) : '???'} ${berryType[berry.type].toUpperCase()}`)
       .setThumbnail(`${website}assets/images/items/berry/${berryType[berry.type]}.png`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${gameVersion}`)
+      .setFooter({ text: `Data is up to date as of v${gameVersion}` })
       .addField('\u200b', '\u200b', false) // Spacing
       .addField('Description', `${berry.description.join('\n')}`, false)
       .addField('\u200b', '\u200b', false) // Spacing

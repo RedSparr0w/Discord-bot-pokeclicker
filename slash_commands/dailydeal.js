@@ -34,7 +34,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle('Upcoming Daily Deals')
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${gameVersion}`);
+      .setFooter({ text: `Data is up to date as of v${gameVersion}` });
 
     // Calculate name padding
     const allItemsLength = UndergroundItem.list.map(item => item.name.length);

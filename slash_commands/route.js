@@ -106,7 +106,7 @@ module.exports = {
       .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | Route #${routeNumber}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${gameVersion}`);
+      .setFooter({ text: `Data is up to date as of v${gameVersion}` });
 
     //embed.addField('❯ Pokemon', '\u200b');
     Object.entries(route.pokemon).forEach(([type, pokemon]) => {

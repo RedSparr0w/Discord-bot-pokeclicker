@@ -65,7 +65,7 @@ module.exports = {
     }
 
     pages = pages.map((page, index) => {
-      page.embeds[0].setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${pages.length}`);
+      page.embeds[0].setFooter({ text: `Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${pages.length}` });
       return page;
     });
 
@@ -141,7 +141,7 @@ module.exports = {
             '',
             `New ${itemType} has been set!`,
           ].join('\n'))
-          .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
+          .setFooter({ text: `Balance: ${remainingBalance.toLocaleString('en-US')}` });
         return interaction.followUp({ embeds: [embed] });
       } catch (e) {
         error('Failed to purchase item', e);

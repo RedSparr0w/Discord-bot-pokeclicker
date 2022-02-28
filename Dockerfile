@@ -36,3 +36,7 @@ RUN npm install --production
 RUN ls -al -R
 
 CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+
+# NOTES:
+# To re-build without cache:
+# docker-compose build --no-cache

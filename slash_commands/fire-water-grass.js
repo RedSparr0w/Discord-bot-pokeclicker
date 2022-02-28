@@ -109,7 +109,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor(multiplier == 0 ? '#e74c3c' : multiplier == 1 ? '#3498db' : '#2ecc71')
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
+      .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
 
     return interaction.reply({ embeds: [embed] });
 

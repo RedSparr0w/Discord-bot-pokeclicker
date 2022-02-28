@@ -52,7 +52,10 @@ module.exports = {
       timeRemaining += `${seconds} second${s(seconds)}`;
       return interaction.reply({
         embeds: [
-          new MessageEmbed().setColor('#e74c3c').setFooter('Next claim').setTimestamp(time_between_claims + (+last_claim))
+          new MessageEmbed()
+            .setColor('#e74c3c')
+            .setFooter({ text: 'Next claim' })
+            .setTimestamp(time_between_claims + (+last_claim))
             .setDescription(`${interaction.user}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
         ],
       });

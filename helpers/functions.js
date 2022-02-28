@@ -151,7 +151,7 @@ const processSaveFile = (msg, file) => {
           .addField('Pokemon Defeated:', maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
           .addField('Time Traveller:', upperCaseFirstLetter(timeTraveller.toString()))
           .addField('Save File:', `[Download](${file.url})`)
-          .setFooter(`Version: v${version} | Last Seen:`)
+          .setFooter({ text: `Version: v${version} | Last Seen:` })
           .setTimestamp(_lastSeen);
         msg.reply({ embeds: [embed] });
       } catch (e) {

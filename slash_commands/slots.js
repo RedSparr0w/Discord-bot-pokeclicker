@@ -245,7 +245,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor(multiplier >= 1 ? '#2ecc71' : '#e74c3c')
       .setDescription(output.join('\n'))
-      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
+      .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
     return interaction.reply({ embeds: [embed] });
   },
 };

@@ -89,7 +89,7 @@ module.exports = {
         .addField('Name', item.name, true)
         .addField('Price', `${item.price.toLocaleString('en-US')} ${serverIcons.money}`, true)
         .addField('Description', item.description)
-        .setFooter(`Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${allShopItems.length}`);
+        .setFooter({ text: `Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${allShopItems.length}` });
 
       if (item.image) embed.setThumbnail(website + item.image);
 
@@ -138,7 +138,7 @@ module.exports = {
       const currentBalance = await getAmount(interaction.user);
 
       // Create the embed now and edit as needed
-      const embed = new MessageEmbed().setFooter(`Balance: ${currentBalance.toLocaleString('en-US')}`);
+      const embed = new MessageEmbed().setFooter({ text: `Balance: ${currentBalance.toLocaleString('en-US')}` });
       if (item.image) embed.setThumbnail(website + item.image);
 
       // Item too expensive
@@ -173,7 +173,7 @@ module.exports = {
               interaction.user,
               `**${item.name}** Successfully purchased!`,
             ].join('\n'))
-            .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
+            .setFooter({ text: `Balance: ${remainingBalance.toLocaleString('en-US')}` });
           return interaction.followUp({ embeds: [embed] });
         }
       } else { // Game shop item
@@ -213,7 +213,7 @@ module.exports = {
             '',
             '_code will be sent to you via direct message_',
           ].join('\n'))
-          .setFooter(`Balance: ${remainingBalance.toLocaleString('en-US')}`);
+          .setFooter({ text: `Balance: ${remainingBalance.toLocaleString('en-US')}` });
 
         interaction.followUp({ embeds: [embed] });
       }

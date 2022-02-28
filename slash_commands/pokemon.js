@@ -65,7 +65,7 @@ module.exports = {
       .setDescription(`${pokemonTypeIcons[PokemonType[pokemon.type[0]]]} _\`${PokemonType[pokemon.type[0]]}\`_${pokemon.type[1] >= 0 ? `\n${pokemonTypeIcons[PokemonType[pokemon.type[1]]]} _\`${PokemonType[pokemon.type[1]]}\`_` : ''}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${gameVersion}`)
+      .setFooter({ text: `Data is up to date as of v${gameVersion}` })
       .addField('<:xAttackSmall:733974450864652380> Base Attack', `${pokemon.attack}`,true)
       .addField('\u200b', '\u200b', true) // Spacing
       .addField('<:Pokeball:733980790718988348> Catch Rate', `${pokemon.catchRatePercent}%`, true)

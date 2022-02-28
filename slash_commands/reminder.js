@@ -83,7 +83,7 @@ const reminderRemove = async (interaction) => {
 
   const embed = new MessageEmbed()
     .setTitle('Cleared Reminders:')
-    .setFooter('Note that times are displayed in UTC')
+    .setFooter({ text: 'Note that times are displayed in UTC' })
     .setColor('#3498db');
 
   // Add reminders fields
@@ -118,7 +118,7 @@ const reminderAdd = async (interaction, options) => {
 
     _Please make sure you are able to receive Direct Messages from the bot,
     otherwise you will not get a reminder!_`)
-    .setFooter('Reminder Time')
+    .setFooter({ text: 'Reminder Time' })
     .setTimestamp(reminderTime)
     .setColor('#3498db');
   return interaction.reply({ embeds: [embed] });

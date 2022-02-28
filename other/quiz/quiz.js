@@ -41,7 +41,7 @@ const newQuiz = async (guild, reoccur = false) => {
   // 3 x more questions
   if (happyHour) {
     time_limit /= happyHourBonus;
-    quiz.embed.setFooter(`Happy Hour!\n(${happyHourBonus} × Faster Questions, ${happyHourBonus} × Shiny Chance)`);
+    quiz.embed.setFooter({ text: `Happy Hour!\n(${happyHourBonus} × Faster Questions, ${happyHourBonus} × Shiny Chance)` });
   }
 
   const bot_message = await quiz_channel.send({ embeds: [quiz.embed], files: quiz.files }).catch((...args) => warn('Unable to send quiz question', ...args));

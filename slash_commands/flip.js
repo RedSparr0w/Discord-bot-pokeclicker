@@ -101,7 +101,7 @@ module.exports = {
       .setColor(win ? '#2ecc71' : '#e74c3c')
       .setThumbnail(coinImage[coinSide])
       .setDescription(output)
-      .setFooter(`Balance: ${(balance + winnings).toLocaleString('en-US')}`);
+      .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
 
     return interaction.reply({ embeds: [embed] });
   },

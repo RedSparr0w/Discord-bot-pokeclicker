@@ -130,7 +130,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle(`${pokemonTypeIcons[type]} ${type} Shard Routes`)
       .setColor('#3498db')
-      .setFooter(`Data is up to date as of v${gameVersion}`);
+      .setFooter({ text: `Data is up to date as of v${gameVersion}` });
 
     const shardRoutes = findShardRoutes(RouteShardTypes, PokemonType[type]);
     Object.entries(shardRoutes).forEach(([region, routes]) => {

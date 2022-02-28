@@ -67,7 +67,7 @@ module.exports = {
       .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)
       .addField('Joined Server:', `<t:${Math.floor(+joinServer / 1000)}:R>`)
       .addField('Roles:', member?.roles?.cache?.map(r => `${r}`)?.join('\n') || 'unknown')
-      .setFooter(`ID: ${user.id}`)
+      .setFooter({ text: `ID: ${user.id}` })
       .setTimestamp();
 
     modLog(interaction.guild,
