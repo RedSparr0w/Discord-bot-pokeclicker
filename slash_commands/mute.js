@@ -33,7 +33,22 @@ module.exports = {
     const user = member.user;
 
     if (member == interaction.guild.me) {
+      modLog(interaction.guild,
+        `**Mod:** ${interaction.member.toString()}
+        **User:** ${member.toString()}
+        **Action:** Attempted to mute the bot
+        **Reason:** ${reason || 'Unknown'}`);
       const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
+      return interaction.reply({ embeds: [embed], ephemeral: true });
+    }
+
+    if (member.roles.highest.position >= interaction.member.roles.highest.position) {
+      modLog(interaction.guild,
+        `**Mod:** ${interaction.member.toString()}
+        **User:** ${member.toString()}
+        **Action:** Attempted to mute user (failed as higher roles)
+        **Reason:** ${reason || 'Unknown'}`);
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('The user you tried to mute has higher or equal roles than you!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
