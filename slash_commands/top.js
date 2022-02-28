@@ -1,5 +1,6 @@
 const { getTop } = require('../database.js');
 const { postPages } = require('../helpers.js');
+const { serverIcons } = require('../config.js');
 
 module.exports = {
   name        : 'top',
@@ -90,17 +91,17 @@ module.exports = {
         break;
       case 'coins-won':
         results = await getTop(100, 'coins-won');
-        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`);
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` ${serverIcons.money} <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} coins won:***__`, ...resultsText.splice(0, 10)]).map(i => ({ content: i.join('\n') }));
         break;
       case 'coins-lost':
         results = await getTop(100, 'coins-lost');
-        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`);
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` ${serverIcons.money} <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} coins lost:***__`, ...resultsText.splice(0, 10)]).map(i => ({ content: i.join('\n') }));
         break;
       case 'coins-bet':
         results = await getTop(100, 'coins-bet');
-        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`);
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` ${serverIcons.money} <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} coins bet:***__`, ...resultsText.splice(0, 10)]).map(i => ({ content: i.join('\n') }));
         break;
       /* End stat type top commands */
@@ -118,7 +119,7 @@ module.exports = {
       case 'coins':
       default:
         results = await getTop(100, 'coins');
-        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` <:money:737206931759824918> <@!${res.user}>`);
+        resultsText = results.map((res, place) => `**#${place + 1}** \`${res.amount ? res.amount.toLocaleString('en-NZ') : 0}\` ${serverIcons.money} <@!${res.user}>`);
         pages = new Array(Math.ceil(results.length / 10)).fill('').map(page => [`__***Top ${results.length} trainers:***__`, ...resultsText.splice(0, 10)]).map(i => ({ content: i.join('\n') }));
     }
 
