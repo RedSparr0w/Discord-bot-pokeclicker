@@ -69,7 +69,6 @@ module.exports = [
   {
     regex: /(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.\w{1,3}\/invite)\/.+[a-z]/i,
     execute: (message, client) => {
-      message.delete().catch(e => {});
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.me.toString()}
@@ -79,6 +78,7 @@ module.exports = [
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
+      message.delete().catch(e => {});
     },
   },
   // Try remove some of the fake free nitro stuff
