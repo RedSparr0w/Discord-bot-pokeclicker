@@ -337,7 +337,7 @@ const pokemonRegion = () => new Promise(resolve => {
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
             const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
             const embed = new MessageEmbed()
-              .setTitle(`It's ${GameConstants.Region[pokemon.nativeRegion]}!`)
+              .setTitle(`It's ${upperCaseFirstLetter(GameConstants.Region[pokemon.nativeRegion])}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
             m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
