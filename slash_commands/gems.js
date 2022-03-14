@@ -3,21 +3,21 @@ const {
   PokemonType,
   GameConstants,
   pokemonTypeIcons,
-  RouteShardTypes,
-  findShardRoutes,
-  findShardBestRoute,
+  RouteGemTypes,
+  findGemRoutes,
+  findGemBestRoute,
   gameVersion,
 } = require('../helpers.js');
 
 module.exports = {
-  name        : 'shards',
-  aliases     : ['s', 'shard'],
-  description : 'Get a list of routes where you can obtain a particular type of shard',
+  name        : 'gems',
+  aliases     : ['gem', 's', 'shard'],
+  description : 'Get a list of routes where you can obtain a particular type of gem',
   args        : [
     {
       name: 'type',
       type: 'STRING',
-      description: 'Shard type',
+      description: 'Gem type',
       required: true,
       choices: [
         {
@@ -128,15 +128,15 @@ module.exports = {
     const sortFunc = order == 'chance' ? (a, b) => b[1] - a[1] : (a, b) => a[0] - b[0];
 
     const embed = new MessageEmbed()
-      .setTitle(`${pokemonTypeIcons[type]} ${type} Shard Routes`)
+      .setTitle(`${pokemonTypeIcons[type]} ${type} Gem Routes`)
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` });
 
-    const shardRoutes = findShardRoutes(RouteShardTypes, PokemonType[type]);
-    Object.entries(shardRoutes).forEach(([region, routes]) => {
+    const gemRoutes = findGemRoutes(RouteGemTypes, PokemonType[type]);
+    Object.entries(gemRoutes).forEach(([region, routes]) => {
       if (!Object.entries(routes).length) return;
-      const bestShardRoute = findShardBestRoute(RouteShardTypes, PokemonType[type], region);
-      const description = ['Best Route:', `${`[${bestShardRoute.route}]`.padEnd(4, ' ')} ${bestShardRoute.chance.toFixed(1).padStart(4,' ')}%`, '\nAll Routes:'];
+      const bestGemRoute = findGemBestRoute(RouteGemTypes, PokemonType[type], region);
+      const description = ['Best Route:', `${`[${bestGemRoute.route}]`.padEnd(4, ' ')} ${bestGemRoute.chance.toFixed(1).padStart(4,' ')}%`, '\nAll Routes:'];
       
       Object.entries(routes).sort(sortFunc).forEach(([route, chance]) => {
         description.push(`${`[${route}]`.padEnd(4, ' ')} ${chance.toFixed(1).padStart(4,' ')}%`);

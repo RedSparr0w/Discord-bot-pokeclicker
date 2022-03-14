@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const {
   regionRoutes,
   pokemonList,
-  RouteShardTypes,
+  RouteGemTypes,
   PokemonType,
   pokemonTypeIcons,
   gameVersion,
@@ -120,18 +120,18 @@ module.exports = {
 
     embed.addField('\u200b', '\u200b', false);
 
-    // Shards:
-    let shardsInfo;
-    Object.entries(RouteShardTypes).forEach(([region, routes]) => {
-      if (region == route.region && routes[routeNumber]) shardsInfo = routes[routeNumber];
+    // Gems:
+    let gemsInfo;
+    Object.entries(RouteGemTypes).forEach(([region, routes]) => {
+      if (region == route.region && routes[routeNumber]) gemsInfo = routes[routeNumber];
     });
-    if (shardsInfo) {
+    if (gemsInfo) {
       const descIcon = [];
       const descType = [];
       const descChance = [];
       descType.push('```prolog');
       descChance.push('```prolog');
-      Object.entries(shardsInfo).sort(([,a], [,b]) => b - a).forEach(([type, chance]) => {
+      Object.entries(gemsInfo).sort(([,a], [,b]) => b - a).forEach(([type, chance]) => {
         // descIcon.push(pokemonTypeIcons[PokemonType[type]]);
         // descType.push(PokemonType[type].padEnd(10, ' '));
         // descChance.push(`${chance.toFixed(1).padStart(4, ' ')}%`);
@@ -140,7 +140,7 @@ module.exports = {
       descType.push('```');
       descChance.push('```');
       //embed.addField('\u200b', descIcon.join('\n'), true);
-      embed.addField('❯ SHARDS', descIcon.join('\n'), true);
+      embed.addField('❯ GEMS', descIcon.join('\n'), true);
       //embed.addField('\u200b', descChance.join('\n'), true);
     }
 

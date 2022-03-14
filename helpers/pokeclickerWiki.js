@@ -205,6 +205,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Distortion_World',
     },
     {
+      'title': 'Diveball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Diveball',
+    },
+    {
       'title': 'Dock',
       'link': 'https://pokeclicker.miraheze.org/wiki/Dock',
     },
@@ -355,6 +359,10 @@ module.exports = {
     {
       'title': 'Fullmoon Island',
       'link': 'https://pokeclicker.miraheze.org/wiki/Fullmoon_Island',
+    },
+    {
+      'title': 'Galar',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galar',
     },
     {
       'title': 'Ganlon',
@@ -533,6 +541,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Lum',
     },
     {
+      'title': 'Lureball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lureball',
+    },
+    {
       'title': 'Luxuryball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Luxuryball',
     },
@@ -629,12 +641,20 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mt_Silver',
     },
     {
+      'title': 'Mystery Egg',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg',
+    },
+    {
       'title': 'NPCs',
       'link': 'https://pokeclicker.miraheze.org/wiki/NPCs',
     },
     {
       'title': 'Nanab',
       'link': 'https://pokeclicker.miraheze.org/wiki/Nanab',
+    },
+    {
+      'title': 'Nestball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Nestball',
     },
     {
       'title': 'New Mauville',
@@ -833,6 +853,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Rabuta',
     },
     {
+      'title': 'Radio Tower',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Radio_Tower',
+    },
+    {
       'title': 'Rare Hold Items',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rare_Hold_Items',
     },
@@ -875,6 +899,10 @@ module.exports = {
     {
       'title': 'Relic Passage',
       'link': 'https://pokeclicker.miraheze.org/wiki/Relic_Passage',
+    },
+    {
+      'title': 'Repeatball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Repeatball',
     },
     {
       'title': 'Reversal Mountain',
@@ -962,6 +990,14 @@ module.exports = {
     },
     {
       'title': 'Shards',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Shards',
+    },
+    {
+      'title': 'Gem Case',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Shard_Case',
+    },
+    {
+      'title': 'Gems',
       'link': 'https://pokeclicker.miraheze.org/wiki/Shards',
     },
     {
@@ -1093,6 +1129,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Team_Plasma_Assault',
     },
     {
+      'title': 'Team Rockets Hideout',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Team_Rockets_Hideout',
+    },
+    {
       'title': 'Terminus Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Terminus_Cave',
     },
@@ -1145,6 +1185,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Type_and_shard_effectiveness',
     },
     {
+      'title': 'Type and gem effectiveness',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Type_and_shard_effectiveness',
+    },
+    {
       'title': 'Ultraball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Ultraball',
     },
@@ -1171,6 +1215,10 @@ module.exports = {
     {
       'title': 'Victory Road Hoenn',
       'link': 'https://pokeclicker.miraheze.org/wiki/Victory_Road_Hoenn',
+    },
+    {
+      'title': 'Victory Road Johto',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Victory_Road_Johto',
     },
     {
       'title': 'Victory Road Kalos',

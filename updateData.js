@@ -63,7 +63,7 @@ const { website, wikiWebsite } = require('./config.js');
       gameVersion: App.game.update.version,
       shopItems: App.game.discord.codes,
       regionRoutes: Routes.regionRoutes,
-      RouteShardTypes: getRouteTypes(),
+      RouteGemTypes: getRouteTypes(),
       PokemonLocationType,
       PokemonType,
       LevelType,

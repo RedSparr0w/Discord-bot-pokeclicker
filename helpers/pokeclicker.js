@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.14',
+  'gameVersion': '0.8.15',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -190,7 +190,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 2,
+          'dungeonIndex': 1,
         },
       ],
       'orderNumber': 4,
@@ -522,7 +522,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 5,
+          'dungeonIndex': 4,
         },
       ],
       'orderNumber': 12,
@@ -682,7 +682,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 5,
+          'dungeonIndex': 4,
         },
       ],
       'orderNumber': 16,
@@ -2056,7 +2056,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 29,
+          'dungeonIndex': 28,
         },
       ],
       'orderNumber': 113,
@@ -2122,7 +2122,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 31,
+          'dungeonIndex': 29,
         },
       ],
       'orderNumber': 115,
@@ -2451,7 +2451,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 32,
+          'dungeonIndex': 33,
         },
       ],
       'orderNumber': 120,
@@ -3689,8 +3689,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 56,
+          'badge': 52,
         },
       ],
       'orderNumber': 224,
@@ -4168,7 +4167,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 71,
+          'dungeonIndex': 70,
         },
         {
           'requiredValue': 1,
@@ -4205,7 +4204,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 74,
+          'dungeonIndex': 73,
         },
       ],
       'orderNumber': 13,
@@ -4234,7 +4233,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 74,
+          'dungeonIndex': 73,
         },
       ],
       'orderNumber': 13,
@@ -4265,7 +4264,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 74,
+          'dungeonIndex': 73,
         },
       ],
       'orderNumber': 13,
@@ -4381,7 +4380,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 76,
+          'dungeonIndex': 75,
         },
       ],
       'orderNumber': 21,
@@ -4446,7 +4445,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 78,
+          'dungeonIndex': 77,
         },
       ],
       'orderNumber': 23,
@@ -4475,7 +4474,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 17,
-              'dungeonIndex': 82,
+              'dungeonIndex': 81,
             },
             {
               'requirements': [
@@ -5475,7 +5474,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 103,
+          'dungeonIndex': 102,
         },
       ],
       'orderNumber': 2,
@@ -5503,7 +5502,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 105,
+          'dungeonIndex': 104,
         },
       ],
       'orderNumber': 3,
@@ -5561,7 +5560,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 111,
+          'dungeonIndex': 109,
         },
       ],
       'orderNumber': 5,
@@ -5592,7 +5591,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 112,
+          'dungeonIndex': 110,
         },
       ],
       'orderNumber': 5.1,
@@ -5627,13 +5626,13 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 107,
+          'dungeonIndex': 106,
         },
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 112,
+          'dungeonIndex': 110,
         },
       ],
       'orderNumber': 5.2,
@@ -5663,7 +5662,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 112,
+          'dungeonIndex': 110,
         },
       ],
       'orderNumber': 6,
@@ -5726,7 +5725,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 113,
+          'dungeonIndex': 111,
         },
       ],
       'orderNumber': 8,
@@ -5752,7 +5751,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 115,
+          'dungeonIndex': 113,
         },
       ],
       'orderNumber': 9,
@@ -5783,7 +5782,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 116,
+          'dungeonIndex': 114,
         },
       ],
       'orderNumber': 9.1,
@@ -5811,7 +5810,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 118,
+          'dungeonIndex': 115,
         },
       ],
       'orderNumber': 10,
@@ -5875,7 +5874,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 118,
+          'dungeonIndex': 115,
         },
       ],
       'orderNumber': 11,
@@ -5909,7 +5908,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 119,
+          'dungeonIndex': 116,
         },
       ],
       'orderNumber': 12,
@@ -5996,7 +5995,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 120,
+          'dungeonIndex': 117,
         },
       ],
       'orderNumber': 15,
@@ -6052,7 +6051,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 121,
+          'dungeonIndex': 118,
         },
       ],
       'orderNumber': 17,
@@ -6079,7 +6078,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 120,
+          'dungeonIndex': 117,
         },
       ],
       'orderNumber': 23,
@@ -6105,7 +6104,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 125,
+          'dungeonIndex': 120,
         },
       ],
       'orderNumber': 24,
@@ -7759,6 +7758,133 @@ module.exports = {
       'orderNumber': 9,
     },
     {
+      'routeName': 'Potbottom Desert',
+      'region': 7,
+      'number': 9,
+      'pokemon': {
+        'land': [
+          'Sandile',
+          'Rhyhorn',
+          'Torkoal',
+          'Rufflet',
+          'Vullaby',
+          'Braviary',
+          'Mandibuzz',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': [
+              'Chansey',
+              'Rhyperior',
+              'Marowak',
+              'Rhydon',
+              'Sandaconda',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [0],
+            },
+          },
+          {
+            'pokemon': [
+              'Chansey',
+              'Pawniard',
+              'Jangmo-o',
+              'Krookodile',
+              'Krokorok',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [1],
+            },
+          },
+          {
+            'pokemon': [
+              'Chansey',
+              'Shinx',
+              'Krookodile',
+              'Krokorok',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [2],
+            },
+          },
+          {
+            'pokemon': [
+              'Chansey',
+              'Krookodile',
+              'Krokorok',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [3],
+            },
+          },
+          {
+            'pokemon': [
+              'Chansey',
+              'Fletchling',
+              'Rhyperior',
+              'Marowak',
+              'Sandaconda',
+              'Rhydon',
+              'Volcarona',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [7],
+            },
+          },
+          {
+            'pokemon': [
+              'Chansey',
+              'Silicobra',
+              'Scraggy',
+              'Rhyperior',
+              'Sandslash',
+              'Rhydon',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [8],
+            },
+          },
+          {
+            'pokemon': [
+              'Blissey',
+              'Rhyperior',
+              'Marowak',
+              'Sandaconda',
+            ],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [9],
+            },
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 15,
+          'region': 7,
+          'route': 32,
+        },
+      ],
+      'orderNumber': 9,
+    },
+    {
       'routeName': 'Galar Route 3',
       'region': 7,
       'number': 10,
@@ -8455,8 +8581,8 @@ module.exports = {
     },
     {
       'routeName': 'Fields of Honor',
-      'region': 8,
-      'number': 1,
+      'region': 7,
+      'number': 25,
       'pokemon': {
         'land': [
           'Galarian Slowpoke',
@@ -8596,12 +8722,12 @@ module.exports = {
           'badge': 109,
         },
       ],
-      'orderNumber': 1,
+      'orderNumber': 25,
     },
     {
       'routeName': 'Soothing Wetlands',
-      'region': 8,
-      'number': 2,
+      'region': 7,
+      'number': 26,
       'pokemon': {
         'land': [
           'Skorupi',
@@ -8754,46 +8880,46 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 1,
+              'region': 7,
+              'route': 25,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 3,
+              'region': 7,
+              'route': 27,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 4,
+              'region': 7,
+              'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 5,
+              'region': 7,
+              'route': 29,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 11,
+              'region': 7,
+              'route': 35,
             },
           ],
         },
       ],
-      'orderNumber': 2,
+      'orderNumber': 26,
     },
     {
       'routeName': 'Forest of Focus',
-      'region': 8,
-      'number': 3,
+      'region': 7,
+      'number': 27,
       'pokemon': {
         'land': [
           'Venipede',
@@ -8943,32 +9069,32 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 2,
+              'region': 7,
+              'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 4,
+              'region': 7,
+              'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 7,
+              'region': 7,
+              'route': 31,
             },
           ],
         },
       ],
-      'orderNumber': 3,
+      'orderNumber': 27,
     },
     {
       'routeName': 'Challenge Beach',
-      'region': 8,
-      'number': 4,
+      'region': 7,
+      'number': 28,
       'pokemon': {
         'land': [
           'Magnemite',
@@ -9157,32 +9283,32 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 2,
+              'region': 7,
+              'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 3,
+              'region': 7,
+              'route': 27,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 15,
+              'region': 7,
+              'route': 39,
             },
           ],
         },
       ],
-      'orderNumber': 4,
+      'orderNumber': 28,
     },
     {
       'routeName': 'Courageous Cavern',
-      'region': 8,
-      'number': 5,
+      'region': 7,
+      'number': 29,
       'pokemon': {
         'land': [
           'Pincurchin',
@@ -9294,39 +9420,39 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 1,
+              'region': 7,
+              'route': 25,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 2,
+              'region': 7,
+              'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 4,
+              'region': 7,
+              'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 6,
+              'region': 7,
+              'route': 30,
             },
           ],
         },
       ],
-      'orderNumber': 5,
+      'orderNumber': 29,
     },
     {
       'routeName': 'Loop Lagoon',
-      'region': 8,
-      'number': 6,
+      'region': 7,
+      'number': 30,
       'pokemon': {
         'land': [
           'Sandygast',
@@ -9478,25 +9604,25 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 5,
+              'region': 7,
+              'route': 29,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 13,
+              'region': 7,
+              'route': 37,
             },
           ],
         },
       ],
-      'orderNumber': 6,
+      'orderNumber': 30,
     },
     {
       'routeName': 'Training Lowlands',
-      'region': 8,
-      'number': 7,
+      'region': 7,
+      'number': 31,
       'pokemon': {
         'land': [
           'Lillipup',
@@ -9659,32 +9785,32 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 2,
+              'region': 7,
+              'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 10,
+              'region': 7,
+              'route': 34,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 15,
+              'region': 7,
+              'route': 39,
             },
           ],
         },
       ],
-      'orderNumber': 7,
+      'orderNumber': 31,
     },
     {
       'routeName': 'Warm-Up Tunnel',
-      'region': 8,
-      'number': 8,
+      'region': 7,
+      'number': 32,
       'pokemon': {
         'land': [
           'Sandshrew',
@@ -9758,143 +9884,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 8,
-          'route': 7,
+          'region': 7,
+          'route': 31,
         },
       ],
-      'orderNumber': 8,
-    },
-    {
-      'routeName': 'Potbottom Desert',
-      'region': 8,
-      'number': 9,
-      'pokemon': {
-        'land': [
-          'Sandile',
-          'Rhyhorn',
-          'Torkoal',
-          'Rufflet',
-          'Vullaby',
-          'Braviary',
-          'Mandibuzz',
-        ],
-        'water': [],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': [
-              'Chansey',
-              'Rhyperior',
-              'Marowak',
-              'Rhydon',
-              'Sandaconda',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [0],
-            },
-          },
-          {
-            'pokemon': [
-              'Chansey',
-              'Pawniard',
-              'Jangmo-o',
-              'Krookodile',
-              'Krokorok',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [1],
-            },
-          },
-          {
-            'pokemon': [
-              'Chansey',
-              'Shinx',
-              'Krookodile',
-              'Krokorok',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [2],
-            },
-          },
-          {
-            'pokemon': [
-              'Chansey',
-              'Krookodile',
-              'Krokorok',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [3],
-            },
-          },
-          {
-            'pokemon': [
-              'Chansey',
-              'Fletchling',
-              'Rhyperior',
-              'Marowak',
-              'Sandaconda',
-              'Rhydon',
-              'Volcarona',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [7],
-            },
-          },
-          {
-            'pokemon': [
-              'Chansey',
-              'Silicobra',
-              'Scraggy',
-              'Rhyperior',
-              'Sandslash',
-              'Rhydon',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [8],
-            },
-          },
-          {
-            'pokemon': [
-              'Blissey',
-              'Rhyperior',
-              'Marowak',
-              'Sandaconda',
-            ],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'weather': [9],
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 15,
-          'region': 8,
-          'route': 8,
-        },
-      ],
-      'orderNumber': 9,
+      'orderNumber': 32,
     },
     {
       'routeName': 'Challenge Road',
-      'region': 8,
-      'number': 10,
+      'region': 7,
+      'number': 34,
       'pokemon': {
         'land': [
           'Skorupi',
@@ -10047,25 +10046,25 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 7,
+              'region': 7,
+              'route': 31,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 11,
+              'region': 7,
+              'route': 35,
             },
           ],
         },
       ],
-      'orderNumber': 10,
+      'orderNumber': 34,
     },
     {
       'routeName': 'Brawlers Cave',
-      'region': 8,
-      'number': 11,
+      'region': 7,
+      'number': 35,
       'pokemon': {
         'land': [
           'Whismur',
@@ -10172,25 +10171,25 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 2,
+              'region': 7,
+              'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 10,
+              'region': 7,
+              'route': 34,
             },
           ],
         },
       ],
-      'orderNumber': 11,
+      'orderNumber': 35,
     },
     {
       'routeName': 'Workout Sea',
-      'region': 8,
-      'number': 12,
+      'region': 7,
+      'number': 36,
       'pokemon': {
         'land': [
           'Blipbug',
@@ -10315,32 +10314,32 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 1,
+              'region': 7,
+              'route': 25,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 11,
+              'region': 7,
+              'route': 35,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 13,
+              'region': 7,
+              'route': 37,
             },
           ],
         },
       ],
-      'orderNumber': 12,
+      'orderNumber': 36,
     },
     {
       'routeName': 'Stepping-Stone Sea',
-      'region': 8,
-      'number': 13,
+      'region': 7,
+      'number': 37,
       'pokemon': {
         'land': [
           'Blipbug',
@@ -10457,46 +10456,46 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 4,
+              'region': 7,
+              'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 6,
+              'region': 7,
+              'route': 30,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 12,
+              'region': 7,
+              'route': 36,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 14,
+              'region': 7,
+              'route': 38,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 15,
+              'region': 7,
+              'route': 39,
             },
           ],
         },
       ],
-      'orderNumber': 13,
+      'orderNumber': 37,
     },
     {
       'routeName': 'Insular Sea',
-      'region': 8,
-      'number': 14,
+      'region': 7,
+      'number': 38,
       'pokemon': {
         'land': [
           'Blipbug',
@@ -10614,25 +10613,25 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 13,
+              'region': 7,
+              'route': 37,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 15,
+              'region': 7,
+              'route': 39,
             },
           ],
         },
       ],
-      'orderNumber': 14,
+      'orderNumber': 38,
     },
     {
       'routeName': 'Honeycalm Sea',
-      'region': 8,
-      'number': 15,
+      'region': 7,
+      'number': 39,
       'pokemon': {
         'land': [],
         'water': [
@@ -10740,39 +10739,39 @@ module.exports = {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 4,
+              'region': 7,
+              'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 7,
+              'region': 7,
+              'route': 31,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 13,
+              'region': 7,
+              'route': 37,
             },
             {
               'requiredValue': 10,
               'option': 2,
               'achievementType': 15,
-              'region': 8,
-              'route': 15,
+              'region': 7,
+              'route': 39,
             },
           ],
         },
       ],
-      'orderNumber': 15,
+      'orderNumber': 39,
     },
     {
       'routeName': 'Honeycalm Island',
-      'region': 8,
-      'number': 16,
+      'region': 7,
+      'number': 40,
       'pokemon': {
         'land': [
           'Blipbug',
@@ -10889,16 +10888,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 8,
-          'route': 15,
+          'region': 7,
+          'route': 39,
         },
       ],
-      'orderNumber': 16,
+      'orderNumber': 40,
     },
     {
       'routeName': 'Slippery Slope',
-      'region': 9,
-      'number': 1,
+      'region': 7,
+      'number': 41,
       'pokemon': {
         'land': [
           'Snom',
@@ -11016,12 +11015,12 @@ module.exports = {
           'badge': 109,
         },
       ],
-      'orderNumber': 1,
+      'orderNumber': 41,
     },
     {
       'routeName': 'Frostpoint Field',
-      'region': 9,
-      'number': 2,
+      'region': 7,
+      'number': 42,
       'pokemon': {
         'land': [
           'Abomasnow',
@@ -11141,16 +11140,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 1,
+          'region': 7,
+          'route': 41,
         },
       ],
-      'orderNumber': 2,
+      'orderNumber': 42,
     },
     {
       'routeName': 'Giants Bed',
-      'region': 9,
-      'number': 3,
+      'region': 7,
+      'number': 43,
       'pokemon': {
         'land': [
           'Nidoran(M)',
@@ -11342,16 +11341,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 2,
+          'region': 7,
+          'route': 42,
         },
       ],
-      'orderNumber': 3,
+      'orderNumber': 43,
     },
     {
       'routeName': 'Old Cemetery',
-      'region': 9,
-      'number': 4,
+      'region': 7,
+      'number': 44,
       'pokemon': {
         'land': [
           'Nidoran(M)',
@@ -11484,16 +11483,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 3,
+          'region': 7,
+          'route': 43,
         },
       ],
-      'orderNumber': 4,
+      'orderNumber': 44,
     },
     {
       'routeName': 'Giants Foot',
-      'region': 9,
-      'number': 5,
+      'region': 7,
+      'number': 45,
       'pokemon': {
         'land': [
           'Copperajah',
@@ -11632,16 +11631,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 3,
+          'region': 7,
+          'route': 43,
         },
       ],
-      'orderNumber': 5,
+      'orderNumber': 45,
     },
     {
       'routeName': 'Roaring-Sea Caves',
-      'region': 9,
-      'number': 6,
+      'region': 7,
+      'number': 46,
       'pokemon': {
         'land': [
           'Zubat',
@@ -11691,16 +11690,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 5,
+          'region': 7,
+          'route': 45,
         },
       ],
-      'orderNumber': 6,
+      'orderNumber': 46,
     },
     {
       'routeName': 'Frigid Sea',
-      'region': 9,
-      'number': 7,
+      'region': 7,
+      'number': 47,
       'pokemon': {
         'land': [
           'Bergmite',
@@ -11835,16 +11834,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 6,
+          'region': 7,
+          'route': 46,
         },
       ],
-      'orderNumber': 7,
+      'orderNumber': 47,
     },
     {
       'routeName': 'Three-Point Pass',
-      'region': 9,
-      'number': 8,
+      'region': 7,
+      'number': 48,
       'pokemon': {
         'land': [
           'Bronzong',
@@ -11974,16 +11973,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 7,
+          'region': 7,
+          'route': 47,
         },
       ],
-      'orderNumber': 8,
+      'orderNumber': 48,
     },
     {
       'routeName': 'Lakeside Cave',
-      'region': 9,
-      'number': 9,
+      'region': 7,
+      'number': 49,
       'pokemon': {
         'land': [
           'Zubat',
@@ -12008,16 +12007,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 10,
+          'region': 7,
+          'route': 50,
         },
       ],
-      'orderNumber': 9,
+      'orderNumber': 49,
     },
     {
       'routeName': 'Ballimere Lake',
-      'region': 9,
-      'number': 10,
+      'region': 7,
+      'number': 50,
       'pokemon': {
         'land': [
           'Boltund',
@@ -12171,16 +12170,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 3,
+          'region': 7,
+          'route': 43,
         },
       ],
-      'orderNumber': 10,
+      'orderNumber': 50,
     },
     {
       'routeName': 'Snowslide Slope',
-      'region': 9,
-      'number': 11,
+      'region': 7,
+      'number': 51,
       'pokemon': {
         'land': [
           'Snom',
@@ -12303,16 +12302,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 3,
+          'region': 7,
+          'route': 43,
         },
       ],
-      'orderNumber': 11,
+      'orderNumber': 51,
     },
     {
       'routeName': 'Tunnel to the Top',
-      'region': 9,
-      'number': 12,
+      'region': 7,
+      'number': 52,
       'pokemon': {
         'land': [
           'Zubat',
@@ -12337,16 +12336,16 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 11,
+          'region': 7,
+          'route': 51,
         },
       ],
-      'orderNumber': 12,
+      'orderNumber': 52,
     },
     {
       'routeName': 'Path to the Peak',
-      'region': 9,
-      'number': 13,
+      'region': 7,
+      'number': 53,
       'pokemon': {
         'land': [
           'Snom',
@@ -12402,14 +12401,14 @@ module.exports = {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
-          'region': 9,
-          'route': 12,
+          'region': 7,
+          'route': 52,
         },
       ],
-      'orderNumber': 13,
+      'orderNumber': 53,
     },
   ],
-  'RouteShardTypes': {
+  'RouteGemTypes': {
     '0': {
       '1': {
         '0': 100,
@@ -14009,16 +14008,18 @@ module.exports = {
         '15': 4.76,
       },
       '9': {
-        '0': 5,
-        '2': 25,
-        '3': 5,
-        '4': 5,
-        '7': 5,
-        '8': 5,
-        '9': 5,
-        '13': 5,
-        '15': 10,
-        '16': 5,
+        '0': 50,
+        '1': 7.14,
+        '2': 178.57,
+        '3': 35.71,
+        '4': 35.71,
+        '7': 35.71,
+        '8': 50,
+        '9': 64.29,
+        '12': 7.14,
+        '13': 35.71,
+        '15': 92.86,
+        '16': 35.71,
       },
       '10': {
         '0': 11.76,
@@ -14193,9 +14194,7 @@ module.exports = {
         '15': 7.69,
         '16': 7.69,
       },
-    },
-    '8': {
-      '1': {
+      '25': {
         '0': 17.39,
         '2': 30.43,
         '4': 4.35,
@@ -14207,7 +14206,7 @@ module.exports = {
         '16': 4.35,
         '17': 8.7,
       },
-      '2': {
+      '26': {
         '0': 25,
         '2': 25,
         '4': 5,
@@ -14216,7 +14215,7 @@ module.exports = {
         '11': 10,
         '14': 5,
       },
-      '3': {
+      '27': {
         '0': 13.04,
         '2': 21.74,
         '3': 8.7,
@@ -14228,7 +14227,7 @@ module.exports = {
         '11': 8.7,
         '14': 4.35,
       },
-      '4': {
+      '28': {
         '0': 16.67,
         '2': 29.17,
         '3': 12.5,
@@ -14242,7 +14241,7 @@ module.exports = {
         '16': 4.17,
         '17': 8.33,
       },
-      '5': {
+      '29': {
         '2': 40.91,
         '3': 4.55,
         '5': 4.55,
@@ -14255,7 +14254,7 @@ module.exports = {
         '12': 13.64,
         '14': 4.55,
       },
-      '6': {
+      '30': {
         '0': 10,
         '2': 25,
         '3': 5,
@@ -14270,7 +14269,7 @@ module.exports = {
         '13': 5,
         '14': 5,
       },
-      '7': {
+      '31': {
         '0': 20.83,
         '2': 29.17,
         '4': 4.17,
@@ -14280,20 +14279,12 @@ module.exports = {
         '14': 4.17,
         '15': 8.33,
       },
-      '8': {
+      '32': {
         '0': 9.09,
         '1': 9.09,
         '8': 18.18,
       },
-      '9': {
-        '0': 14.29,
-        '1': 7.14,
-        '8': 14.29,
-        '9': 28.57,
-        '12': 7.14,
-        '15': 21.43,
-      },
-      '10': {
+      '34': {
         '0': 25,
         '2': 25,
         '4': 5,
@@ -14302,7 +14293,7 @@ module.exports = {
         '11': 10,
         '14': 5,
       },
-      '11': {
+      '35': {
         '0': 20,
         '2': 25,
         '6': 5,
@@ -14313,7 +14304,7 @@ module.exports = {
         '14': 5,
         '17': 5,
       },
-      '12': {
+      '36': {
         '0': 12,
         '2': 44,
         '4': 8,
@@ -14324,7 +14315,7 @@ module.exports = {
         '14': 8,
         '15': 4,
       },
-      '13': {
+      '37': {
         '0': 8,
         '2': 40,
         '4': 16,
@@ -14336,7 +14327,7 @@ module.exports = {
         '14': 16,
         '15': 4,
       },
-      '14': {
+      '38': {
         '0': 8.7,
         '2': 43.48,
         '4': 8.7,
@@ -14347,14 +14338,14 @@ module.exports = {
         '14': 8.7,
         '15': 4.35,
       },
-      '15': {
+      '39': {
         '2': 55.56,
         '7': 16.67,
         '9': 11.11,
         '14': 5.56,
         '15': 5.56,
       },
-      '16': {
+      '40': {
         '0': 8.7,
         '2': 39.13,
         '4': 8.7,
@@ -14363,9 +14354,7 @@ module.exports = {
         '11': 8.7,
         '14': 8.7,
       },
-    },
-    '9': {
-      '1': {
+      '41': {
         '0': 18.75,
         '5': 37.5,
         '8': 12.5,
@@ -14374,7 +14363,7 @@ module.exports = {
         '12': 6.25,
         '17': 6.25,
       },
-      '2': {
+      '42': {
         '0': 20,
         '4': 13.33,
         '5': 33.33,
@@ -14382,7 +14371,7 @@ module.exports = {
         '12': 6.67,
         '17': 6.67,
       },
-      '3': {
+      '43': {
         '0': 10.71,
         '2': 25,
         '4': 3.57,
@@ -14395,7 +14384,7 @@ module.exports = {
         '16': 3.57,
         '17': 3.57,
       },
-      '4': {
+      '44': {
         '0': 6.67,
         '7': 13.33,
         '10': 6.67,
@@ -14404,7 +14393,7 @@ module.exports = {
         '14': 6.67,
         '17': 6.67,
       },
-      '5': {
+      '45': {
         '0': 10.34,
         '2': 31.03,
         '4': 3.45,
@@ -14415,7 +14404,7 @@ module.exports = {
         '16': 13.79,
         '17': 3.45,
       },
-      '6': {
+      '46': {
         '0': 4.55,
         '2': 40.91,
         '5': 4.55,
@@ -14429,7 +14418,7 @@ module.exports = {
         '16': 4.55,
         '17': 4.55,
       },
-      '7': {
+      '47': {
         '0': 4.76,
         '2': 38.1,
         '4': 4.76,
@@ -14440,7 +14429,7 @@ module.exports = {
         '13': 4.76,
         '17': 4.76,
       },
-      '8': {
+      '48': {
         '0': 6.25,
         '5': 12.5,
         '8': 12.5,
@@ -14449,7 +14438,7 @@ module.exports = {
         '16': 12.5,
         '17': 6.25,
       },
-      '9': {
+      '49': {
         '0': 8.33,
         '1': 16.67,
         '4': 8.33,
@@ -14462,7 +14451,7 @@ module.exports = {
         '16': 41.67,
         '17': 16.67,
       },
-      '10': {
+      '50': {
         '0': 17.24,
         '2': 27.59,
         '3': 6.9,
@@ -14477,7 +14466,7 @@ module.exports = {
         '16': 3.45,
         '17': 3.45,
       },
-      '11': {
+      '51': {
         '0': 5.88,
         '2': 23.53,
         '5': 11.76,
@@ -14488,7 +14477,7 @@ module.exports = {
         '16': 17.65,
         '17': 5.88,
       },
-      '12': {
+      '52': {
         '0': 8.33,
         '5': 16.67,
         '7': 8.33,
@@ -14499,7 +14488,7 @@ module.exports = {
         '14': 41.67,
         '17': 25,
       },
-      '13': {
+      '53': {
         '0': 14.29,
         '5': 28.57,
         '11': 28.57,
@@ -16484,7 +16473,7 @@ module.exports = {
       ],
       'levelType': 2,
       'exp': 145,
-      'eggCycles': 15,
+      'eggCycles': 23,
       'base': {
         'hitpoints': 75,
         'attack': 71,
@@ -16503,7 +16492,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 37,
-      'eggSteps': 600,
+      'eggSteps': 920,
     },
     {
       'id': 21,
@@ -16805,6 +16794,16 @@ module.exports = {
           'evolvedPokemon': 'Raichu',
           'stone': 3,
         },
+        {
+          'basePokemon': 'Pikachu',
+          'type': [
+            1,
+            3,
+          ],
+          'evolvedPokemon': 'Alolan Raichu',
+          'stone': 3,
+          'region': 6,
+        },
       ],
       'base': {
         'hitpoints': 35,
@@ -16831,21 +16830,19 @@ module.exports = {
             {
               'route': 11,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -17092,21 +17089,21 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -17138,7 +17135,7 @@ module.exports = {
       ],
       'levelType': 2,
       'exp': 218,
-      'eggCycles': 10,
+      'eggCycles': 15,
       'base': {
         'hitpoints': 60,
         'attack': 85,
@@ -17148,9 +17145,22 @@ module.exports = {
         'speed': 110,
       },
       'attack': 108,
-      'locations': {},
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Pikachu',
+            'type': [
+              1,
+              3,
+            ],
+            'evolvedPokemon': 'Alolan Raichu',
+            'stone': 3,
+            'region': 6,
+          },
+        ],
+      },
       'catchRatePercent': 25,
-      'eggSteps': 400,
+      'eggSteps': 600,
     },
     {
       'id': 27,
@@ -17198,9 +17208,9 @@ module.exports = {
               'route': 25,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 8,
+              'route': 32,
             },
           ],
         },
@@ -17286,13 +17296,13 @@ module.exports = {
               'route': 18,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 9,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 9,
+              'route': 27,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -17403,32 +17413,32 @@ module.exports = {
               'route': 36,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 4,
+              'route': 44,
             },
           ],
         },
@@ -17478,9 +17488,9 @@ module.exports = {
               'route': 11,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
             },
           ],
         },
@@ -17520,33 +17530,33 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -17613,32 +17623,32 @@ module.exports = {
               'route': 36,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 4,
+              'route': 44,
             },
           ],
         },
@@ -17688,9 +17698,9 @@ module.exports = {
               'route': 11,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
             },
           ],
         },
@@ -17730,33 +17740,33 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -17805,17 +17815,17 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -17824,6 +17834,7 @@ module.exports = {
           'Mt. Coronet South',
           'Mt. Coronet North',
           'Giant Chasm',
+          'Lake of the Sunne and Moone',
         ],
         '4': [
           {
@@ -17861,24 +17872,21 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
-        '2': [
-          'Nebby',
-          'Dyna Tree Hill',
-        ],
+        '2': ['Dyna Tree Hill'],
         '3': [
           {
             'dungeon': 'Fullmoon Island',
@@ -18147,16 +18155,16 @@ module.exports = {
               'route': 20,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 28,
             },
           ],
         },
@@ -18199,33 +18207,33 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -18319,15 +18327,15 @@ module.exports = {
               'route': 216,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -18366,6 +18374,7 @@ module.exports = {
           'Ten Carat Hill',
           "Diglett's Tunnel",
           'Memorial Hill',
+          'Resolution Cave',
         ],
       },
       'catchRatePercent': 63,
@@ -18407,9 +18416,9 @@ module.exports = {
               'route': 227,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -18439,11 +18448,13 @@ module.exports = {
           'Dreamyard',
           'Thrifty Megamart',
           'Vast Poni Canyon',
-          'Resolution Cave',
         ],
         '3': [
           {
             'dungeon': 'Burned Tower',
+          },
+          {
+            'dungeon': 'Resolution Cave',
           },
         ],
         '4': [
@@ -18670,6 +18681,7 @@ module.exports = {
         '2': [
           'Cerulean Cave',
           'Flower Paradise',
+          'Ruins of Abundance',
         ],
         '4': [
           {
@@ -19411,16 +19423,16 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -19521,41 +19533,41 @@ module.exports = {
               'route': 30,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -19924,28 +19936,28 @@ module.exports = {
               'route': 21,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 11,
+              'route': 35,
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 11,
+              'route': 35,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -20048,29 +20060,29 @@ module.exports = {
               'route': 21,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -20081,6 +20093,7 @@ module.exports = {
           'Pokémon Village',
           'Victory Road Kalos',
           'Malie Garden',
+          'Ruins of Hope',
           'Tower of Water',
         ],
         '4': [
@@ -20122,9 +20135,9 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -20213,9 +20226,9 @@ module.exports = {
               'route': 2,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
           ],
         },
@@ -20266,17 +20279,17 @@ module.exports = {
               'route': 215,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -20322,21 +20335,21 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -20995,30 +21008,30 @@ module.exports = {
               'route': 8,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -21134,72 +21147,72 @@ module.exports = {
               'route': 26,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -21658,9 +21671,9 @@ module.exports = {
       'attack': 78,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -21731,9 +21744,9 @@ module.exports = {
       'attack': 118,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -21851,9 +21864,9 @@ module.exports = {
       'attack': 61,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
           ],
         },
@@ -21988,9 +22001,9 @@ module.exports = {
               'route': 222,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
             },
           ],
         },
@@ -22088,13 +22101,13 @@ module.exports = {
               'route': 222,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -22643,13 +22656,11 @@ module.exports = {
             {
               'route': 7,
             },
-          ],
-          '8': [
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
             },
           ],
         },
@@ -22701,21 +22712,19 @@ module.exports = {
             {
               'route': 7,
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
             },
           ],
         },
@@ -23195,22 +23204,20 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Snow',
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -23276,70 +23283,68 @@ module.exports = {
             {
               'route': 20,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -23461,9 +23466,13 @@ module.exports = {
         },
         {
           'basePokemon': 'Exeggcute',
-          'type': [1],
+          'type': [
+            1,
+            3,
+          ],
           'evolvedPokemon': 'Alolan Exeggutor',
           'stone': 0,
+          'region': 6,
         },
       ],
       'base': {
@@ -23533,15 +23542,15 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
           ],
         },
@@ -23574,29 +23583,29 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -23638,9 +23647,13 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Exeggcute',
-            'type': [1],
+            'type': [
+              1,
+              3,
+            ],
             'evolvedPokemon': 'Alolan Exeggutor',
             'stone': 0,
+            'region': 6,
           },
         ],
       },
@@ -23690,13 +23703,13 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 8,
+              'route': 32,
             },
           ],
         },
@@ -23734,7 +23747,7 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
@@ -23822,7 +23835,7 @@ module.exports = {
       ],
       'levelType': 2,
       'exp': 149,
-      'eggCycles': 20,
+      'eggCycles': 30,
       'base': {
         'hitpoints': 60,
         'attack': 80,
@@ -23841,7 +23854,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 25,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 106,
@@ -23957,15 +23970,15 @@ module.exports = {
               'route': 30,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -23992,9 +24005,13 @@ module.exports = {
         },
         {
           'basePokemon': 'Koffing',
-          'type': [0],
+          'type': [
+            0,
+            3,
+          ],
           'evolvedPokemon': 'Galarian Weezing',
           'level': 35,
+          'region': 7,
         },
       ],
       'base': {
@@ -24099,9 +24116,13 @@ module.exports = {
         '4': [
           {
             'basePokemon': 'Koffing',
-            'type': [0],
+            'type': [
+              0,
+              3,
+            ],
             'evolvedPokemon': 'Galarian Weezing',
             'level': 35,
+            'region': 7,
           },
         ],
       },
@@ -24149,12 +24170,10 @@ module.exports = {
           ],
           '7': [
             {
-              'route': 17,
-            },
-          ],
-          '8': [
-            {
               'route': 9,
+            },
+            {
+              'route': 17,
             },
           ],
         },
@@ -24214,11 +24233,6 @@ module.exports = {
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 23,
-            },
-          ],
-          '8': [
-            {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
             },
@@ -24229,6 +24243,9 @@ module.exports = {
             {
               'route': 9,
               'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 23,
             },
           ],
         },
@@ -24296,199 +24313,7 @@ module.exports = {
               'route': 210,
             },
           ],
-          '8': [
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
@@ -24514,123 +24339,315 @@ module.exports = {
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 16,
+              'route': 29,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 16,
+              'route': 29,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 16,
+              'route': 29,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 16,
+              'route': 29,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 16,
+              'route': 29,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 16,
+              'route': 29,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
+              'route': 40,
+              'requirements': 'The weather needs to be Clear',
+            },
+            {
+              'route': 40,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 40,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 40,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 40,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 40,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -24695,9 +24712,9 @@ module.exports = {
               'route': 13,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -24733,17 +24750,17 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 8,
+              'route': 32,
             },
           ],
         },
@@ -24820,9 +24837,9 @@ module.exports = {
               'route': 226,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 14,
+              'route': 38,
             },
           ],
         },
@@ -24876,29 +24893,29 @@ module.exports = {
               'route': 226,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -25065,10 +25082,8 @@ module.exports = {
             {
               'route': 15,
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -25296,12 +25311,12 @@ module.exports = {
               'route': 7,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -25334,36 +25349,36 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -25464,6 +25479,18 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
+        '4': [
+          {
+            'basePokemon': 'Mime Jr.',
+            'type': [
+              0,
+              3,
+            ],
+            'evolvedPokemon': 'Galarian Mr. Mime',
+            'level': 32,
+            'region': 7,
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -25512,9 +25539,9 @@ module.exports = {
               'route': 21,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -25548,12 +25575,12 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 2,
+              'route': 42,
             },
           ],
         },
@@ -25617,34 +25644,37 @@ module.exports = {
               'route': 222,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
         },
-        '2': ['Hokulani Observatory'],
+        '2': [
+          'Hokulani Observatory',
+          'Ruins of Conflict',
+        ],
         '3': [
           {
             'dungeon': 'Power Plant',
@@ -25695,37 +25725,37 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -25786,13 +25816,13 @@ module.exports = {
               'route': 27,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -25851,9 +25881,9 @@ module.exports = {
               'route': 28,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -26223,66 +26253,62 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
             },
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
-            },
-          ],
-          '9': [
-            {
-              'route': 3,
+              'route': 40,
             },
             {
-              'route': 5,
+              'route': 43,
             },
             {
-              'route': 6,
+              'route': 45,
             },
             {
-              'route': 7,
+              'route': 46,
             },
             {
-              'route': 10,
+              'route': 47,
             },
             {
-              'route': 11,
+              'route': 50,
+            },
+            {
+              'route': 51,
             },
           ],
         },
@@ -26461,75 +26487,71 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
-            },
-          ],
-          '9': [
-            {
-              'route': 3,
+              'route': 40,
             },
             {
-              'route': 5,
+              'route': 43,
             },
             {
-              'route': 7,
+              'route': 45,
             },
             {
-              'route': 10,
+              'route': 47,
             },
             {
-              'route': 11,
+              'route': 50,
+            },
+            {
+              'route': 51,
             },
           ],
         },
@@ -26651,14 +26673,12 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -26705,9 +26725,9 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
             },
           ],
         },
@@ -26890,18 +26910,16 @@ module.exports = {
             {
               'route': 11,
             },
-          ],
-          '9': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -26932,18 +26950,13 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Ruins of Hope',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -26976,18 +26989,13 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Ruins of Conflict',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -27020,9 +27028,9 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -27102,12 +27110,12 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -27139,9 +27147,9 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -27188,12 +27196,12 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -27225,9 +27233,9 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -27266,9 +27274,9 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
             },
           ],
         },
@@ -27305,57 +27313,57 @@ module.exports = {
               'route': 16,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -27507,8 +27515,8 @@ module.exports = {
       'locations': {
         '1': [
           {
-            'region': 9,
-            'requirements': 'undefined needs to be completed.',
+            'region': 7,
+            'requirements': 'undefined needs to be completed and You need to be in the [object Object] subregion of Galar.',
           },
         ],
       },
@@ -27576,8 +27584,8 @@ module.exports = {
       'locations': {
         '1': [
           {
-            'region': 8,
-            'requirements': 'undefined needs to be completed.',
+            'region': 7,
+            'requirements': 'undefined needs to be completed and You need to be in the [object Object] subregion of Galar.',
           },
         ],
       },
@@ -27631,9 +27639,9 @@ module.exports = {
               'route': 30,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -27678,13 +27686,13 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -27729,13 +27737,13 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -28740,11 +28748,6 @@ module.exports = {
       'attack': 128,
       'nativeRegion': 1,
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Resolution Cave',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Golbat',
@@ -28838,26 +28841,24 @@ module.exports = {
               'route': 6,
               'requirements': 'The weather needs to be Thunderstorm',
             },
-          ],
-          '8': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -28926,38 +28927,36 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Thunderstorm',
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -29009,9 +29008,9 @@ module.exports = {
               'route': 1,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -29512,7 +29511,6 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 1,
       'locations': {
-        '2': ['Ruins of Abundance'],
         '4': [
           {
             'basePokemon': 'Gloom',
@@ -29609,25 +29607,25 @@ module.exports = {
               'route': 3,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
           ],
@@ -29683,25 +29681,25 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -29814,26 +29812,25 @@ module.exports = {
               'route': 19,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
         },
-        '2': ['Ruins of Hope'],
         '4': [
           {
             'basePokemon': 'Poliwhirl',
@@ -30061,7 +30058,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Liberty Garden'],
+        '2': [
+          'Liberty Garden',
+          'Lake of the Sunne and Moone',
+        ],
         '5': ['Grass'],
       },
       'catchRatePercent': 60,
@@ -30086,7 +30086,6 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 1,
       'locations': {
-        '2': ['Nebby'],
         '4': [
           {
             'basePokemon': 'Sunkern',
@@ -30215,13 +30214,11 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Sandstorm',
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 10,
+              'route': 34,
             },
           ],
         },
@@ -30306,54 +30303,52 @@ module.exports = {
               'route': 7,
               'requirements': 'The weather needs to be Rain',
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -30394,18 +30389,13 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Ruins of Life',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -30443,9 +30433,9 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -31346,6 +31336,11 @@ module.exports = {
           'Dark Cave',
           'Reflection Cave',
         ],
+        '3': [
+          {
+            'dungeon': 'Ruins of Life',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Wynaut',
@@ -31544,12 +31539,12 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 10,
+              'route': 34,
             },
           ],
         },
@@ -31751,6 +31746,20 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Ruins of Conflict',
+          },
+          {
+            'dungeon': 'Ruins of Life',
+          },
+          {
+            'dungeon': 'Ruins of Abundance',
+          },
+          {
+            'dungeon': 'Ruins of Hope',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Snubbull',
@@ -31826,9 +31835,9 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -31868,13 +31877,13 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -31959,13 +31968,13 @@ module.exports = {
               'route': 27,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -32043,22 +32052,20 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -32299,10 +32306,8 @@ module.exports = {
               'route': 7,
               'requirements': 'The weather needs to be Blizzard',
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
             },
           ],
         },
@@ -32359,13 +32364,11 @@ module.exports = {
               'route': 6,
               'requirements': 'The weather needs to be Blizzard',
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -32559,13 +32562,11 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 12,
+              'route': 36,
             },
           ],
         },
@@ -32636,37 +32637,35 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 12,
+              'route': 36,
             },
           ],
         },
@@ -32759,14 +32758,12 @@ module.exports = {
             {
               'route': 18,
             },
-          ],
-          '9': [
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -32880,9 +32877,9 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -33017,9 +33014,9 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -33375,12 +33372,12 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 2,
+              'route': 42,
             },
           ],
         },
@@ -33432,29 +33429,29 @@ module.exports = {
               'route': 22,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -33499,37 +33496,37 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -33582,9 +33579,9 @@ module.exports = {
               'route': 28,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -33621,61 +33618,61 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '8': [
-            {
-              'route': 1,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 3,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 5,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 6,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Fog',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Fog',
-            },
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 12,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 13,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 16,
+              'route': 29,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 30,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 32,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 34,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 35,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 36,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 37,
+              'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 40,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -33815,9 +33812,9 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -33913,9 +33910,9 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -34641,9 +34638,9 @@ module.exports = {
               'route': 119,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -34691,9 +34688,9 @@ module.exports = {
       'attack': 82,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -35728,31 +35725,29 @@ module.exports = {
               'route': 9,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 6,
+              'route': 30,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -36010,69 +36005,67 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Rain',
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -36171,10 +36164,8 @@ module.exports = {
               'route': 9,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -36281,14 +36272,12 @@ module.exports = {
               'route': 4,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -36777,9 +36766,9 @@ module.exports = {
               'route': 116,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -36820,9 +36809,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -37011,9 +37000,9 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -37157,6 +37146,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Lake of the Sunne and Moone'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -37180,7 +37170,6 @@ module.exports = {
       'attack': 76,
       'nativeRegion': 2,
       'locations': {
-        '2': ['Nebby'],
         '4': [
           {
             'basePokemon': 'Skitty',
@@ -37216,9 +37205,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
           ],
         },
@@ -37265,9 +37254,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
           ],
         },
@@ -37329,12 +37318,12 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -37388,9 +37377,9 @@ module.exports = {
               'route': 18,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
           ],
         },
@@ -37438,9 +37427,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
           ],
         },
@@ -38087,9 +38076,9 @@ module.exports = {
               'route': 26,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -38170,21 +38159,21 @@ module.exports = {
               'route': 222,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
           ],
         },
@@ -38323,18 +38312,14 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
             },
           ],
         },
@@ -38383,10 +38368,8 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -38533,15 +38516,13 @@ module.exports = {
           ],
           '7': [
             {
+              'route': 9,
+            },
+            {
               'route': 15,
             },
-          ],
-          '8': [
             {
-              'route': 8,
-            },
-            {
-              'route': 9,
+              'route': 32,
             },
           ],
         },
@@ -38951,41 +38932,41 @@ module.exports = {
               'route': 14,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -39028,25 +39009,25 @@ module.exports = {
               'route': 21,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -39208,7 +39189,7 @@ module.exports = {
         '2': [
           'Giant Chasm',
           'Glittering Cave',
-          'Nebby',
+          'Lake of the Sunne and Moone',
         ],
         '3': [
           {
@@ -39263,7 +39244,7 @@ module.exports = {
         '2': [
           'Giant Chasm',
           'Glittering Cave',
-          'Nebby',
+          'Lake of the Sunne and Moone',
         ],
         '3': [
           {
@@ -39356,30 +39337,26 @@ module.exports = {
             {
               'route': 9,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 11,
-            },
-          ],
-          '9': [
-            {
-              'route': 3,
+              'route': 35,
             },
             {
-              'route': 5,
+              'route': 43,
             },
             {
-              'route': 6,
+              'route': 45,
             },
             {
-              'route': 10,
+              'route': 46,
+            },
+            {
+              'route': 50,
             },
           ],
         },
@@ -39475,46 +39452,42 @@ module.exports = {
               'route': 9,
               'requirements': 'The weather needs to be Sandstorm',
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 11,
-            },
-          ],
-          '9': [
-            {
-              'route': 3,
+              'route': 35,
             },
             {
-              'route': 5,
+              'route': 43,
             },
             {
-              'route': 10,
+              'route': 45,
+            },
+            {
+              'route': 50,
             },
           ],
         },
@@ -39603,36 +39576,34 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -39681,30 +39652,28 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Thunderstorm',
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -39851,13 +39820,11 @@ module.exports = {
               'route': 4,
               'requirements': 'The weather needs to be Sandstorm',
             },
-          ],
-          '9': [
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 8,
+              'route': 48,
             },
           ],
         },
@@ -39908,12 +39875,12 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 5,
+              'route': 45,
             },
           ],
         },
@@ -39987,9 +39954,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -40021,13 +39988,13 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -40076,19 +40043,17 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 6,
+              'route': 46,
             },
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -40128,10 +40093,8 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -40236,7 +40199,7 @@ module.exports = {
           '2': [
             {
               'route': 119,
-              'requirements': 'Castform needs to be caught and The weather needs to be Rain or Thunderstorm.',
+              'requirements': 'Castform needs to be caught.',
             },
           ],
         },
@@ -40664,37 +40627,37 @@ module.exports = {
               'route': 8,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -40856,34 +40819,32 @@ module.exports = {
             {
               'route': 18,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -40936,26 +40897,24 @@ module.exports = {
             {
               'route': 23,
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -41020,9 +40979,9 @@ module.exports = {
               'route': 21,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 7,
+              'route': 47,
             },
           ],
         },
@@ -41067,33 +41026,33 @@ module.exports = {
               'route': 230,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -41133,25 +41092,25 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -41232,6 +41191,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Ruins of Hope'],
         '5': ['Water'],
       },
       'catchRatePercent': 63,
@@ -41295,7 +41255,6 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 2,
       'locations': {
-        '2': ['Ruins of Hope'],
         '4': [
           {
             'basePokemon': 'Clamperl',
@@ -41353,9 +41312,9 @@ module.exports = {
               'route': 26,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -41473,9 +41432,9 @@ module.exports = {
               'route': 20,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -41556,12 +41515,12 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 12,
+              'route': 52,
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -41619,9 +41578,9 @@ module.exports = {
               'route': 22,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -41665,9 +41624,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -41714,9 +41673,9 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -42831,26 +42790,26 @@ module.exports = {
               'route': 204,
             },
           ],
-          '8': [
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 28,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 28,
+              'requirements': 'The weather needs to be Thunderstorm',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Rain',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
         },
@@ -42893,25 +42852,25 @@ module.exports = {
               'route': 222,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -42948,33 +42907,38 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Ruins of Conflict',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Luxio',
@@ -43681,10 +43645,8 @@ module.exports = {
               'route': 3,
               'requirements': 'The weather needs to be Clear',
             },
-          ],
-          '8': [
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -44365,34 +44327,32 @@ module.exports = {
             {
               'route': 12,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -44470,18 +44430,16 @@ module.exports = {
               'route': 9,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -44540,12 +44498,12 @@ module.exports = {
               'route': 27,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 4,
+              'route': 28,
             },
           ],
         },
@@ -44574,45 +44532,45 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -45052,13 +45010,11 @@ module.exports = {
               'route': 8,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '9': [
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 8,
+              'route': 48,
             },
           ],
         },
@@ -45126,16 +45082,14 @@ module.exports = {
             {
               'route': 17,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 8,
+              'route': 48,
             },
           ],
         },
@@ -45225,6 +45179,16 @@ module.exports = {
           'evolvedPokemon': 'Mr. Mime',
           'level': 32,
         },
+        {
+          'basePokemon': 'Mime Jr.',
+          'type': [
+            0,
+            3,
+          ],
+          'evolvedPokemon': 'Galarian Mr. Mime',
+          'level': 32,
+          'region': 7,
+        },
       ],
       'baby': true,
       'base': {
@@ -45244,34 +45208,32 @@ module.exports = {
               'route': 3,
               'requirements': 'The weather needs to be Blizzard',
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 2,
+              'route': 42,
             },
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 4,
+              'route': 44,
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 7,
+              'route': 47,
             },
             {
-              'route': 8,
+              'route': 48,
             },
             {
-              'route': 10,
+              'route': 50,
             },
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -45279,7 +45241,10 @@ module.exports = {
           'Reflection Cave',
           "Trainers' School",
         ],
-        '6': ['Mr. Mime'],
+        '6': [
+          'Mr. Mime',
+          'Galarian Mr. Mime',
+        ],
       },
       'catchRatePercent': 41,
       'eggSteps': 800,
@@ -45317,39 +45282,39 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 6,
+              'route': 30,
             },
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -45431,9 +45396,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -45478,9 +45443,9 @@ module.exports = {
               'route': 13,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -45567,12 +45532,12 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 12,
+              'route': 52,
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -45620,9 +45585,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -45708,9 +45673,9 @@ module.exports = {
               'route': 27,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -45753,10 +45718,8 @@ module.exports = {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
             },
-          ],
-          '9': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -45910,13 +45873,11 @@ module.exports = {
             {
               'route': 15,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 10,
+              'route': 34,
             },
           ],
         },
@@ -45958,54 +45919,52 @@ module.exports = {
             {
               'route': 17,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -46072,18 +46031,16 @@ module.exports = {
             {
               'route': 13,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -46120,13 +46077,13 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -46304,6 +46261,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Ruins of Hope',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Finneon',
@@ -46390,44 +46352,42 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -46527,10 +46487,8 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 2,
+              'route': 42,
             },
           ],
         },
@@ -46591,14 +46549,12 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
             },
           ],
         },
@@ -46642,17 +46598,17 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -46696,17 +46652,17 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -46787,29 +46743,29 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -46849,7 +46805,7 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
@@ -46900,13 +46856,13 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -46953,29 +46909,26 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
         },
-        '2': [
-          'Ruins of Conflict',
-          'Split-Decision Ruins',
-        ],
+        '2': ['Split-Decision Ruins'],
         '4': [
           {
             'basePokemon': 'Electabuzz',
@@ -47012,21 +46965,21 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -47131,18 +47084,13 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Ruins of Abundance',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -47209,9 +47157,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -47319,25 +47267,25 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -47561,37 +47509,37 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -47635,13 +47583,13 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -47681,9 +47629,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -47721,9 +47669,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -47761,9 +47709,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Rain',
             },
           ],
@@ -47801,9 +47749,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -47841,9 +47789,9 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -47855,6 +47803,31 @@ module.exports = {
           },
         ],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 479.6,
+      'name': 'Rotom (discord)',
+      'type': [
+        3,
+        13,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 182,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 50,
+        'attack': 50,
+        'specialAttack': 95,
+        'defense': 77,
+        'specialDefense': 77,
+        'speed': 91,
+      },
+      'attack': 82,
+      'nativeRegion': 3,
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -49214,9 +49187,9 @@ module.exports = {
               'route': 6,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -49267,13 +49240,13 @@ module.exports = {
               'route': 1,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -49310,9 +49283,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -49743,6 +49716,7 @@ module.exports = {
         },
         '2': [
           'Dreamyard',
+          'Ruins of Life',
           'Inner Slumbering Weald',
         ],
       },
@@ -49776,7 +49750,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Ruins of Life'],
         '4': [
           {
             'basePokemon': 'Munna',
@@ -50156,9 +50129,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -50210,33 +50183,33 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -50283,20 +50256,20 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 35,
             },
           ],
         },
@@ -50422,45 +50395,45 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 2,
+              'route': 42,
             },
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 4,
+              'route': 44,
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 6,
+              'route': 46,
             },
             {
-              'route': 7,
+              'route': 47,
             },
             {
-              'route': 8,
+              'route': 48,
             },
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 10,
+              'route': 50,
             },
             {
-              'route': 11,
+              'route': 51,
             },
             {
-              'route': 12,
+              'route': 52,
             },
             {
-              'route': 13,
+              'route': 53,
             },
           ],
         },
@@ -50557,14 +50530,12 @@ module.exports = {
             {
               'route': 17,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -50609,9 +50580,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -51133,9 +51104,9 @@ module.exports = {
               'route': 20,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -51213,9 +51184,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -51273,13 +51244,13 @@ module.exports = {
               'route': 28,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
           ],
@@ -51292,6 +51263,7 @@ module.exports = {
           'Melemele Meadow',
           'Malie Garden',
           "Ula'ula Meadow",
+          'Ruins of Abundance',
           'Poni Meadow',
         ],
       },
@@ -51321,18 +51293,17 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
           ],
         },
-        '2': ['Ruins of Abundance'],
         '4': [
           {
             'basePokemon': 'Cottonee',
@@ -51378,9 +51349,9 @@ module.exports = {
               'route': 28,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -51392,6 +51363,7 @@ module.exports = {
           'Melemele Meadow',
           'Malie Garden',
           "Ula'ula Meadow",
+          'Ruins of Abundance',
           'Poni Meadow',
         ],
       },
@@ -51418,38 +51390,37 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
         },
-        '2': ['Ruins of Abundance'],
         '4': [
           {
             'basePokemon': 'Petilil',
@@ -51530,25 +51501,23 @@ module.exports = {
             {
               'route': 9,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 6,
+              'route': 46,
             },
             {
-              'route': 7,
+              'route': 47,
             },
             {
-              'route': 10,
+              'route': 50,
             },
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -51633,25 +51602,23 @@ module.exports = {
             {
               'route': 9,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 6,
+              'route': 46,
             },
             {
-              'route': 7,
+              'route': 47,
             },
             {
-              'route': 10,
+              'route': 50,
             },
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -51715,7 +51682,7 @@ module.exports = {
               'route': 9,
             },
           ],
-          '8': [
+          '7': [
             {
               'route': 9,
             },
@@ -51762,7 +51729,7 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Overcast',
@@ -51816,7 +51783,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Overcast',
@@ -51922,10 +51889,8 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -52010,9 +51975,9 @@ module.exports = {
       'attack': 99,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -52089,6 +52054,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Ruins of Abundance',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -52174,13 +52144,11 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Sandstorm',
             },
-          ],
-          '8': [
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
             },
           ],
         },
@@ -52233,13 +52201,11 @@ module.exports = {
             {
               'route': 17,
             },
-          ],
-          '8': [
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -52310,20 +52276,18 @@ module.exports = {
           ],
           '7': [
             {
-              'route': 13,
-            },
-          ],
-          '8': [
-            {
-              'route': 2,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
               'route': 9,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 13,
+            },
+            {
+              'route': 26,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -52367,13 +52331,13 @@ module.exports = {
               'route': 18,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -52572,9 +52536,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 7,
+              'route': 47,
             },
           ],
         },
@@ -52606,17 +52570,17 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -52664,9 +52628,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 5,
+              'route': 45,
             },
           ],
         },
@@ -52848,33 +52812,33 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -52918,17 +52882,17 @@ module.exports = {
               'route': 27,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -53101,13 +53065,13 @@ module.exports = {
               'route': 16,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -53154,13 +53118,13 @@ module.exports = {
               'route': 20,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -53198,13 +53162,13 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -53257,13 +53221,13 @@ module.exports = {
               'route': 16,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -53309,13 +53273,13 @@ module.exports = {
               'route': 9,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -53352,13 +53316,13 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -53541,66 +53505,64 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Blizzard',
             },
-          ],
-          '9': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -53664,74 +53626,72 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 6,
+              'route': 46,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 6,
+              'route': 46,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -53808,34 +53768,32 @@ module.exports = {
             {
               'route': 23,
             },
-          ],
-          '9': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -54193,9 +54151,9 @@ module.exports = {
               'route': 10,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -54267,19 +54225,15 @@ module.exports = {
             {
               'route': 16,
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
-          ],
-          '9': [
             {
-              'route': 4,
+              'route': 44,
             },
           ],
         },
@@ -54312,13 +54266,13 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -54382,9 +54336,9 @@ module.exports = {
               'route': 16,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -54431,21 +54385,21 @@ module.exports = {
               'route': 20,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -54580,10 +54534,8 @@ module.exports = {
             {
               'route': 9,
             },
-          ],
-          '8': [
             {
-              'route': 13,
+              'route': 37,
             },
           ],
         },
@@ -54687,66 +54639,64 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -54902,26 +54852,24 @@ module.exports = {
             {
               'route': 16,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -54974,10 +54922,8 @@ module.exports = {
             {
               'route': 11,
             },
-          ],
-          '9': [
             {
-              'route': 9,
+              'route': 49,
             },
           ],
         },
@@ -55462,21 +55408,21 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -55516,13 +55462,13 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -55734,22 +55680,20 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -55792,73 +55736,73 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
@@ -55936,30 +55880,26 @@ module.exports = {
             {
               'route': 16,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
             },
           ],
         },
@@ -55988,13 +55928,13 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -56195,32 +56135,30 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 11,
+              'route': 35,
             },
-          ],
-          '9': [
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 12,
+              'route': 52,
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 13,
+              'route': 53,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -56338,10 +56276,8 @@ module.exports = {
               'route': 7,
               'requirements': 'The weather needs to be Sandstorm',
             },
-          ],
-          '9': [
             {
-              'route': 8,
+              'route': 48,
             },
           ],
         },
@@ -56412,27 +56348,25 @@ module.exports = {
           ],
           '7': [
             {
+              'route': 9,
+              'requirements': 'The weather needs to be Overcast',
+            },
+            {
               'route': 13,
             },
             {
               'route': 17,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 9,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -56474,10 +56408,8 @@ module.exports = {
             {
               'route': 7,
             },
-          ],
-          '8': [
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -56519,12 +56451,12 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 10,
+              'route': 34,
             },
           ],
         },
@@ -56575,12 +56507,10 @@ module.exports = {
           ],
           '7': [
             {
-              'route': 17,
-            },
-          ],
-          '8': [
-            {
               'route': 9,
+            },
+            {
+              'route': 17,
             },
           ],
         },
@@ -56611,7 +56541,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
               'route': 9,
             },
@@ -56672,12 +56602,10 @@ module.exports = {
           ],
           '7': [
             {
-              'route': 17,
-            },
-          ],
-          '8': [
-            {
               'route': 9,
+            },
+            {
+              'route': 17,
             },
           ],
         },
@@ -56708,7 +56636,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
               'route': 9,
             },
@@ -56755,18 +56683,16 @@ module.exports = {
             {
               'route': 15,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -56812,18 +56738,16 @@ module.exports = {
             {
               'route': 15,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -56873,9 +56797,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -56951,9 +56875,9 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
           ],
         },
@@ -57002,17 +56926,17 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -57045,17 +56969,17 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '0': {
-          '8': [
-            {
-              'route': 4,
-              'requirements': 'The weather needs to be Sunny',
-            },
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 14,
+              'route': 28,
+              'requirements': 'The weather needs to be Sunny',
+            },
+            {
+              'route': 38,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -58207,13 +58131,13 @@ module.exports = {
               'route': 8,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 6,
+              'route': 9,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 9,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -58257,45 +58181,45 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 12,
+              'route': 36,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 13,
+              'route': 37,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 15,
+              'route': 39,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -58335,21 +58259,21 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -59267,6 +59191,12 @@ module.exports = {
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
+        '2': [
+          'Ruins of Conflict',
+          'Ruins of Life',
+          'Ruins of Abundance',
+          'Ruins of Hope',
+        ],
         '3': [
           {
             'dungeon': "Ula'ula Meadow",
@@ -59484,12 +59414,6 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
-        '2': [
-          'Ruins of Conflict',
-          'Ruins of Life',
-          'Ruins of Abundance',
-          'Ruins of Hope',
-        ],
         '4': [
           {
             'basePokemon': 'Floette (Red)',
@@ -60587,22 +60511,20 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -60635,53 +60557,53 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
           ],
@@ -60814,21 +60736,21 @@ module.exports = {
               'route': 8,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -60859,21 +60781,21 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -60922,21 +60844,21 @@ module.exports = {
               'route': 8,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -60964,21 +60886,21 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -61036,6 +60958,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Lake of the Sunne and Moone'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -61062,7 +60985,6 @@ module.exports = {
       'attack': 99,
       'nativeRegion': 5,
       'locations': {
-        '2': ['Nebby'],
         '4': [
           {
             'basePokemon': 'Helioptile',
@@ -61106,9 +61028,9 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -61140,9 +61062,9 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -61189,15 +61111,15 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 2,
+              'route': 42,
             },
             {
-              'route': 11,
+              'route': 51,
             },
           ],
         },
@@ -61229,25 +61151,25 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -61284,27 +61206,13 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Ruins of Conflict',
-          },
-          {
-            'dungeon': 'Ruins of Life',
-          },
-          {
-            'dungeon': 'Ruins of Abundance',
-          },
-          {
-            'dungeon': 'Ruins of Hope',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Eevee',
@@ -61399,15 +61307,15 @@ module.exports = {
               'route': 11,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
             },
           ],
         },
         '2': [
-          'Ruins of Conflict',
           'Hokulani Observatory',
+          'Ruins of Conflict',
         ],
       },
       'catchRatePercent': 49,
@@ -61436,15 +61344,15 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 6,
+              'route': 46,
             },
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 12,
+              'route': 52,
             },
           ],
         },
@@ -61494,29 +61402,29 @@ module.exports = {
               'route': 14,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -61648,9 +61556,9 @@ module.exports = {
               'route': 16,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
             },
           ],
         },
@@ -61698,25 +61606,25 @@ module.exports = {
               'route': 16,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -61757,17 +61665,17 @@ module.exports = {
               'route': 20,
             },
           ],
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -61909,13 +61817,11 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
             },
             {
-              'route': 8,
+              'route': 48,
             },
           ],
         },
@@ -61944,12 +61850,12 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 7,
+              'route': 47,
             },
             {
-              'route': 8,
+              'route': 48,
             },
           ],
         },
@@ -62028,16 +61934,16 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
           ],
@@ -62835,7 +62741,7 @@ module.exports = {
       'id': 735.01,
       'name': 'Totem Gumshoos',
       'type': [0],
-      'eggCycles': 15,
+      'eggCycles': 23,
       'levelType': 2,
       'exp': 146,
       'catchRate': 127,
@@ -62858,7 +62764,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 37,
-      'eggSteps': 600,
+      'eggSteps': 920,
     },
     {
       'id': 736,
@@ -63061,7 +62967,7 @@ module.exports = {
         11,
         3,
       ],
-      'eggCycles': 15,
+      'eggCycles': 35,
       'levelType': 2,
       'exp': 225,
       'catchRate': 45,
@@ -63084,7 +62990,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 17,
-      'eggSteps': 600,
+      'eggSteps': 1400,
     },
     {
       'id': 739,
@@ -63494,25 +63400,25 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -63655,6 +63561,14 @@ module.exports = {
       'levelType': 1,
       'exp': 61,
       'catchRate': 60,
+      'evolutions': [
+        {
+          'basePokemon': 'Wishiwashi (Solo)',
+          'type': [0],
+          'evolvedPokemon': 'Wishiwashi (School)',
+          'level': 20,
+        },
+      ],
       'base': {
         'hitpoints': 45,
         'attack': 20,
@@ -63706,22 +63620,20 @@ module.exports = {
             {
               'route': 20,
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 15,
+              'route': 39,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -63733,7 +63645,7 @@ module.exports = {
       'id': 746.01,
       'name': 'Wishiwashi (School)',
       'type': [2],
-      'eggCycles': 15,
+      'eggCycles': 23,
       'levelType': 1,
       'exp': 61,
       'catchRate': 60,
@@ -63753,15 +63665,23 @@ module.exports = {
             'dungeon': 'Brooklet Hill',
           },
         ],
+        '4': [
+          {
+            'basePokemon': 'Wishiwashi (Solo)',
+            'type': [0],
+            'evolvedPokemon': 'Wishiwashi (School)',
+            'level': 20,
+          },
+        ],
       },
       'catchRatePercent': 21,
-      'eggSteps': 600,
+      'eggSteps': 920,
     },
     {
       'id': 746.02,
-      'name': 'Totem Wishiwashi (School)',
+      'name': 'Totem Wishiwashi',
       'type': [2],
-      'eggCycles': 15,
+      'eggCycles': 23,
       'levelType': 1,
       'exp': 61,
       'catchRate': 60,
@@ -63784,7 +63704,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 21,
-      'eggSteps': 600,
+      'eggSteps': 920,
     },
     {
       'id': 747,
@@ -63829,10 +63749,8 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '8': [
             {
-              'route': 6,
+              'route': 30,
             },
           ],
         },
@@ -63870,46 +63788,44 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -64131,50 +64047,48 @@ module.exports = {
             {
               'route': 12,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -64207,53 +64121,53 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -64286,7 +64200,7 @@ module.exports = {
         2,
         11,
       ],
-      'eggCycles': 15,
+      'eggCycles': 23,
       'levelType': 2,
       'exp': 159,
       'catchRate': 100,
@@ -64309,7 +64223,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 31,
-      'eggSteps': 600,
+      'eggSteps': 920,
     },
     {
       'id': 753,
@@ -64344,29 +64258,29 @@ module.exports = {
               'route': 5,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -64396,13 +64310,13 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -64428,7 +64342,7 @@ module.exports = {
       'id': 754.01,
       'name': 'Totem Lurantis',
       'type': [4],
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 168,
       'catchRate': 75,
@@ -64451,7 +64365,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 25,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 755,
@@ -64621,7 +64535,7 @@ module.exports = {
         7,
         1,
       ],
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 168,
       'catchRate': 45,
@@ -64644,7 +64558,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 17,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 759,
@@ -64948,80 +64862,80 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 14,
+              'route': 38,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 16,
+              'route': 40,
               'requirements': 'The weather needs to be Fog',
             },
           ],
         },
         '2': [
-          'Ruins of Conflict',
           'Lush Jungle',
+          'Ruins of Conflict',
           'Ruins of Life',
           'Ruins of Abundance',
           'Ruins of Hope',
@@ -65053,9 +64967,9 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -65087,9 +65001,9 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 3,
+              'route': 27,
             },
           ],
         },
@@ -65137,30 +65051,28 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Thunderstorm',
             },
-          ],
-          '8': [
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 5,
+              'route': 29,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -65193,13 +65105,13 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 5,
+              'route': 29,
             },
           ],
         },
@@ -65251,9 +65163,9 @@ module.exports = {
               'route': 15,
             },
           ],
-          '8': [
+          '7': [
             {
-              'route': 6,
+              'route': 30,
             },
           ],
         },
@@ -65284,17 +65196,17 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -65837,41 +65749,41 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -66022,15 +65934,11 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
             },
           ],
         },
@@ -66070,14 +65978,14 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '8': [
-            {
-              'route': 7,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
+          '7': [
             {
               'route': 9,
               'requirements': 'The weather needs to be Overcast',
+            },
+            {
+              'route': 31,
+              'requirements': 'The weather needs to be Sandstorm',
             },
           ],
         },
@@ -66186,7 +66094,7 @@ module.exports = {
         14,
         6,
       ],
-      'eggCycles': 40,
+      'eggCycles': 90,
       'levelType': 4,
       'exp': 270,
       'catchRate': 45,
@@ -66209,7 +66117,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 17,
-      'eggSteps': 1600,
+      'eggSteps': 3600,
     },
     {
       'id': 785,
@@ -66362,7 +66270,11 @@ module.exports = {
       'attack': 22,
       'nativeRegion': 6,
       'locations': {
-        '7': ['Altar of the Sunne and Moone'],
+        '3': [
+          {
+            'dungeon': 'Lake of the Sunne and Moone',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -66436,7 +66348,8 @@ module.exports = {
       'locations': {
         '3': [
           {
-            'dungeon': 'Nebby',
+            'dungeon': 'Lake of the Sunne and Moone',
+            'requirements': 'Solgaleo needs to be caught.',
           },
         ],
         '4': [
@@ -66475,7 +66388,8 @@ module.exports = {
       'locations': {
         '3': [
           {
-            'dungeon': 'Nebby',
+            'dungeon': 'Lake of the Sunne and Moone',
+            'requirements': 'Lunala needs to be caught.',
           },
         ],
         '4': [
@@ -66697,9 +66611,62 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 800.01,
+      'name': 'Necrozma (Dusk Mane)',
+      'type': [
+        10,
+        16,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 255,
+      'base': {
+        'hitpoints': 97,
+        'attack': 157,
+        'specialAttack': 113,
+        'defense': 127,
+        'specialDefense': 109,
+        'speed': 77,
+      },
+      'attack': 251,
+      'nativeRegion': 6,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 800.02,
+      'name': 'Necrozma (Dawn Wings)',
+      'type': [
+        10,
+        13,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 255,
+      'base': {
+        'hitpoints': 97,
+        'attack': 113,
+        'specialAttack': 157,
+        'defense': 109,
+        'specialDefense': 127,
+        'speed': 77,
+      },
+      'attack': 251,
+      'nativeRegion': 6,
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 4800,
+    },
+    {
       'id': 800.03,
       'name': 'Necrozma (Ultra)',
-      'type': [10],
+      'type': [
+        10,
+        14,
+      ],
       'eggCycles': 120,
       'levelType': 4,
       'exp': 270,
@@ -67344,60 +67311,56 @@ module.exports = {
             {
               'route': 10,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 6,
+              'route': 30,
             },
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 16,
-            },
-          ],
-          '9': [
-            {
-              'route': 1,
+              'route': 40,
             },
             {
-              'route': 2,
+              'route': 41,
             },
             {
-              'route': 3,
+              'route': 42,
             },
             {
-              'route': 5,
+              'route': 43,
             },
             {
-              'route': 10,
+              'route': 45,
             },
             {
-              'route': 10,
+              'route': 50,
+            },
+            {
+              'route': 50,
             },
           ],
         },
@@ -67442,26 +67405,24 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 2,
+              'route': 42,
             },
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 5,
+              'route': 45,
             },
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -67562,14 +67523,12 @@ module.exports = {
             {
               'route': 14,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Snow',
             },
           ],
@@ -67619,10 +67578,8 @@ module.exports = {
             {
               'route': 16,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
           ],
@@ -67680,31 +67637,29 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 6,
+              'route': 30,
             },
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -67935,14 +67890,12 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -67976,10 +67929,8 @@ module.exports = {
             {
               'route': 12,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Rain',
             },
           ],
@@ -68031,42 +67982,40 @@ module.exports = {
             {
               'route': 11,
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -68103,46 +68052,44 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Clear',
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -68207,16 +68154,14 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 10,
+              'route': 34,
             },
           ],
         },
@@ -68259,77 +68204,75 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 2,
+              'route': 26,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 10,
+              'route': 34,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -68389,10 +68332,8 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -68424,10 +68365,8 @@ module.exports = {
             {
               'route': 9,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
             },
           ],
         },
@@ -68513,12 +68452,12 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -68563,24 +68502,24 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 9,
+              'route': 49,
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -68625,40 +68564,38 @@ module.exports = {
             {
               'route': 12,
             },
-          ],
-          '8': [
             {
-              'route': 1,
+              'route': 25,
             },
             {
-              'route': 2,
+              'route': 26,
             },
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 4,
+              'route': 28,
             },
             {
-              'route': 6,
+              'route': 30,
             },
             {
-              'route': 7,
+              'route': 31,
             },
             {
-              'route': 10,
+              'route': 34,
             },
             {
-              'route': 12,
+              'route': 36,
             },
             {
-              'route': 13,
+              'route': 37,
             },
             {
-              'route': 14,
+              'route': 38,
             },
             {
-              'route': 16,
+              'route': 40,
             },
           ],
         },
@@ -68690,9 +68627,9 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 13,
+              'route': 37,
             },
           ],
         },
@@ -68723,9 +68660,9 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 13,
+              'route': 37,
             },
           ],
         },
@@ -68763,20 +68700,18 @@ module.exports = {
         '0': {
           '7': [
             {
+              'route': 9,
+              'requirements': 'The weather needs to be Sandstorm',
+            },
+            {
               'route': 15,
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 7,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
-              'route': 9,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
@@ -68807,11 +68742,6 @@ module.exports = {
         '0': {
           '7': [
             {
-              'route': 17,
-            },
-          ],
-          '8': [
-            {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
             },
@@ -68822,6 +68752,9 @@ module.exports = {
             {
               'route': 9,
               'requirements': 'The weather needs to be Fog',
+            },
+            {
+              'route': 17,
             },
           ],
         },
@@ -68868,37 +68801,35 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -68942,13 +68873,11 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
             },
             {
-              'route': 7,
+              'route': 31,
             },
           ],
         },
@@ -68980,66 +68909,64 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '8': [
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 3,
+              'route': 27,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 4,
+              'route': 28,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 7,
+              'route': 31,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69206,14 +69133,12 @@ module.exports = {
             {
               'route': 10,
             },
-          ],
-          '9': [
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -69246,13 +69171,13 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Sunny',
             },
           ],
@@ -69304,13 +69229,11 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '8': [
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
             },
           ],
         },
@@ -69370,26 +69293,24 @@ module.exports = {
             {
               'route': 21,
             },
-          ],
-          '8': [
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Sandstorm',
             },
             {
-              'route': 6,
+              'route': 30,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69426,9 +69347,9 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 4,
+              'route': 44,
             },
           ],
         },
@@ -69457,29 +69378,29 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69524,38 +69445,36 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69593,37 +69512,37 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69669,21 +69588,21 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 2,
+              'route': 42,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69744,10 +69663,8 @@ module.exports = {
               'route': 14,
               'requirements': 'The weather needs to be Fog',
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69787,17 +69704,17 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 5,
+              'route': 45,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69842,17 +69759,17 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 1,
+              'route': 41,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Fog',
             },
             {
-              'route': 11,
+              'route': 51,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -69897,18 +69814,16 @@ module.exports = {
             {
               'route': 19,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 3,
+              'route': 43,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Overcast',
             },
           ],
@@ -71566,17 +71481,15 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '8': [
+          '7': [
             {
-              'route': 5,
+              'route': 29,
             },
             {
-              'route': 6,
+              'route': 30,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -71632,16 +71545,14 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 1,
+              'route': 41,
             },
             {
-              'route': 11,
+              'route': 51,
             },
             {
-              'route': 13,
+              'route': 53,
             },
           ],
         },
@@ -71673,9 +71584,9 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 13,
+              'route': 53,
             },
           ],
         },
@@ -71720,13 +71631,11 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 3,
+              'route': 43,
             },
             {
-              'route': 5,
+              'route': 45,
             },
           ],
         },
@@ -71759,10 +71668,8 @@ module.exports = {
             {
               'route': 24,
             },
-          ],
-          '9': [
             {
-              'route': 7,
+              'route': 47,
             },
           ],
         },
@@ -71823,13 +71730,13 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -71874,19 +71781,15 @@ module.exports = {
             {
               'route': 22,
             },
-          ],
-          '8': [
             {
-              'route': 4,
+              'route': 28,
             },
-          ],
-          '9': [
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 10,
+              'route': 50,
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
@@ -71957,9 +71860,9 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 5,
+              'route': 45,
             },
           ],
         },
@@ -71992,10 +71895,8 @@ module.exports = {
             {
               'route': 14,
             },
-          ],
-          '9': [
             {
-              'route': 5,
+              'route': 45,
             },
           ],
         },
@@ -72214,9 +72115,9 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 4,
+              'route': 44,
             },
           ],
         },
@@ -72261,57 +72162,57 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {
         '0': {
-          '9': [
+          '7': [
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Thunderstorm',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 4,
+              'route': 44,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Clear',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Overcast',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Rain',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Snow',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Blizzard',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Sunny',
             },
             {
-              'route': 8,
+              'route': 48,
               'requirements': 'The weather needs to be Fog',
             },
           ],
@@ -72502,7 +72403,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 76,
-      'nativeRegion': 8,
+      'nativeRegion': 7,
       'locations': {
         '3': [
           {
@@ -72539,7 +72440,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 149,
-      'nativeRegion': 8,
+      'nativeRegion': 7,
       'locations': {
         '4': [
           {
@@ -72577,7 +72478,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 149,
-      'nativeRegion': 8,
+      'nativeRegion': 7,
       'locations': {
         '4': [
           {
@@ -72615,12 +72516,12 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 175,
-      'nativeRegion': 8,
+      'nativeRegion': 7,
       'locations': {
         '1': [
           {
-            'region': 8,
-            'requirements': 'Requires the Elite Galar Champion badge.',
+            'region': 7,
+            'requirements': 'Requires the Elite Galar Champion badge and You need to be in the [object Object] subregion of Galar.',
           },
         ],
       },
@@ -72644,7 +72545,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 130,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {
         '3': [
           {
@@ -72672,7 +72573,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 189,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {
         '3': [
           {
@@ -72700,12 +72601,12 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 184,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {
         '1': [
           {
-            'region': 9,
-            'requirements': 'Requires the Elite Galar Champion badge.',
+            'region': 7,
+            'requirements': 'Requires the Elite Galar Champion badge and You need to be in the [object Object] subregion of Galar.',
           },
         ],
       },
@@ -72729,12 +72630,12 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 155,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {
         '1': [
           {
-            'region': 9,
-            'requirements': 'Requires the Elite Galar Champion badge.',
+            'region': 7,
+            'requirements': 'Requires the Elite Galar Champion badge and You need to be in the [object Object] subregion of Galar.',
           },
         ],
       },
@@ -72761,7 +72662,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 134,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {
         '3': [
           {
@@ -72793,7 +72694,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 242,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -72818,7 +72719,7 @@ module.exports = {
       'levelType': 4,
       'exp': 335,
       'attack': 211,
-      'nativeRegion': 9,
+      'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -73533,8 +73434,7 @@ module.exports = {
       '5': 'kalos',
       '6': 'alola',
       '7': 'galar',
-      '8': 'armor',
-      '9': 'crown',
+      '8': 'final',
       'none': -1,
       '-1': 'none',
       'kanto': 0,
@@ -73545,8 +73445,7 @@ module.exports = {
       'kalos': 5,
       'alola': 6,
       'galar': 7,
-      'armor': 8,
-      'crown': 9,
+      'final': 8,
     },
     'MAX_AVAILABLE_REGION': 5,
     'TotalPokemonsPerRegion': [
@@ -73557,8 +73456,6 @@ module.exports = {
       649,
       721,
       809,
-      890,
-      893,
       898,
     ],
     'ITEM_USE_TIME': 30,
@@ -73683,9 +73580,9 @@ module.exports = {
     'HELD_ITEM_CHANCE': 512,
     'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
     'DNA_ITEM_CHANCE': 60,
-    'DUNGEON_SHARDS': 3,
-    'DUNGEON_BOSS_SHARDS': 20,
-    'GYM_SHARDS': 5,
+    'DUNGEON_GEMS': 3,
+    'DUNGEON_BOSS_GEMS': 20,
+    'GYM_GEMS': 5,
     'SAFARI_BATTLE_CHANCE': 5,
     'SAFARI_BASE_POKEBALL_COUNT': 30,
     'LEGAL_WALK_BLOCKS': [
@@ -74252,7 +74149,7 @@ module.exports = {
       'Elite Olivia',
       'Elite Acerola',
       'Elite Kahili',
-      'Champion Hao',
+      'Champion Hau',
     ],
     'GalarGyms': [
       'Turffield',
@@ -74378,7 +74275,7 @@ module.exports = {
         'Elite Olivia',
         'Elite Acerola',
         'Elite Kahili',
-        'Champion Hao',
+        'Champion Hau',
       ],
       [
         'Turffield',
@@ -74397,11 +74294,11 @@ module.exports = {
     ],
     'KantoDungeons': [
       'Viridian Forest',
-      'Digletts Cave',
       'Mt. Moon',
+      'Digletts Cave',
       'Rock Tunnel',
-      'Power Plant',
       'Pokemon Tower',
+      'Power Plant',
       'Seafoam Islands',
       'Pokemon Mansion',
       'Victory Road',
@@ -74428,13 +74325,13 @@ module.exports = {
       'Petalburg Woods',
       'Rusturf Tunnel',
       'Granite Cave',
-      'Jagged Pass',
       'Fiery Path',
-      'Mt. Chimney',
       'Meteor Falls',
+      'Mt. Chimney',
+      'Jagged Pass',
+      'New Mauville',
       'Weather Institute',
       'Mt. Pyre',
-      'New Mauville',
       'Magma Hideout',
       'Aqua Hideout',
       'Shoal Cave',
@@ -74468,7 +74365,6 @@ module.exports = {
       'Hall of Origin',
     ],
     'UnovaDungeons': [
-      'Pledge Grove',
       'Floccesy Ranch',
       'Liberty Garden',
       'Castelia Sewers',
@@ -74483,12 +74379,13 @@ module.exports = {
       'Seaside Cave',
       'Plasma Frigate',
       'Giant Chasm',
-      'Abundant Shrine',
       'Cave of Being',
+      'Abundant Shrine',
       'Victory Road Unova',
       'Twist Mountain',
       'Dragonspiral Tower',
       'Moor of Icirrus',
+      'Pledge Grove',
       'Pinwheel Forest',
       'Dreamyard',
       'P2 Laboratory',
@@ -74510,14 +74407,12 @@ module.exports = {
       'Victory Road Kalos',
     ],
     'AlolaDungeons': [
-      'Exeggutor Island Hill',
       "Trainers' School",
       "Hau'oli Cemetery",
       'Verdant Cavern',
       'Melemele Meadow',
       'Seaward Cave',
       'Ten Carat Hill',
-      'Ruins of Conflict',
       'Pikachu Valley',
       'Paniola Ranch',
       'Brooklet Hill',
@@ -74525,17 +74420,19 @@ module.exports = {
       'Lush Jungle',
       "Diglett's Tunnel",
       'Memorial Hill',
-      'Ruins of Life',
       'Malie Garden',
       'Hokulani Observatory',
       'Thrifty Megamart',
       "Ula'ula Meadow",
       'Po Town',
-      'Mount Lanakila',
-      'Ruins of Abundance',
       'Aether Foundation',
+      'Exeggutor Island Hill',
       'Vast Poni Canyon',
-      'Nebby',
+      'Mount Lanakila',
+      'Lake of the Sunne and Moone',
+      'Ruins of Conflict',
+      'Ruins of Life',
+      'Ruins of Abundance',
       'Ruins of Hope',
       'Poni Meadow',
       'Resolution Cave',
@@ -74554,11 +74451,11 @@ module.exports = {
     'RegionDungeons': [
       [
         'Viridian Forest',
-        'Digletts Cave',
         'Mt. Moon',
+        'Digletts Cave',
         'Rock Tunnel',
-        'Power Plant',
         'Pokemon Tower',
+        'Power Plant',
         'Seafoam Islands',
         'Pokemon Mansion',
         'Victory Road',
@@ -74585,13 +74482,13 @@ module.exports = {
         'Petalburg Woods',
         'Rusturf Tunnel',
         'Granite Cave',
-        'Jagged Pass',
         'Fiery Path',
-        'Mt. Chimney',
         'Meteor Falls',
+        'Mt. Chimney',
+        'Jagged Pass',
+        'New Mauville',
         'Weather Institute',
         'Mt. Pyre',
-        'New Mauville',
         'Magma Hideout',
         'Aqua Hideout',
         'Shoal Cave',
@@ -74625,7 +74522,6 @@ module.exports = {
         'Hall of Origin',
       ],
       [
-        'Pledge Grove',
         'Floccesy Ranch',
         'Liberty Garden',
         'Castelia Sewers',
@@ -74640,12 +74536,13 @@ module.exports = {
         'Seaside Cave',
         'Plasma Frigate',
         'Giant Chasm',
-        'Abundant Shrine',
         'Cave of Being',
+        'Abundant Shrine',
         'Victory Road Unova',
         'Twist Mountain',
         'Dragonspiral Tower',
         'Moor of Icirrus',
+        'Pledge Grove',
         'Pinwheel Forest',
         'Dreamyard',
         'P2 Laboratory',
@@ -74667,14 +74564,12 @@ module.exports = {
         'Victory Road Kalos',
       ],
       [
-        'Exeggutor Island Hill',
         "Trainers' School",
         "Hau'oli Cemetery",
         'Verdant Cavern',
         'Melemele Meadow',
         'Seaward Cave',
         'Ten Carat Hill',
-        'Ruins of Conflict',
         'Pikachu Valley',
         'Paniola Ranch',
         'Brooklet Hill',
@@ -74682,17 +74577,19 @@ module.exports = {
         'Lush Jungle',
         "Diglett's Tunnel",
         'Memorial Hill',
-        'Ruins of Life',
         'Malie Garden',
         'Hokulani Observatory',
         'Thrifty Megamart',
         "Ula'ula Meadow",
         'Po Town',
-        'Mount Lanakila',
-        'Ruins of Abundance',
         'Aether Foundation',
+        'Exeggutor Island Hill',
         'Vast Poni Canyon',
-        'Nebby',
+        'Mount Lanakila',
+        'Lake of the Sunne and Moone',
+        'Ruins of Conflict',
+        'Ruins of Life',
+        'Ruins of Abundance',
         'Ruins of Hope',
         'Poni Meadow',
         'Resolution Cave',
@@ -74716,7 +74613,7 @@ module.exports = {
       'Twinleaf Town',
       'Aspertia City',
       'Vaniville Town',
-      'Iki Town',
+      'Iki Town Outskirts',
       'Postwick',
     ],
     'StartingRoutes': [
@@ -77048,7 +76945,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 65,
+          'dungeonIndex': 64,
         },
       ],
       'flags': {
@@ -77124,7 +77021,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 67,
+          'dungeonIndex': 66,
         },
       ],
       'flags': {
@@ -78072,17 +77969,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Machop',
-          'maxHealth': 2458300,
+          'maxHealth': 62058739,
           'level': 15,
         },
         {
           'name': 'Makuhita',
-          'maxHealth': 2462000,
+          'maxHealth': 62058739,
           'level': 15,
         },
         {
           'name': 'Crabrawler',
-          'maxHealth': 2462000,
+          'maxHealth': 63069612,
           'level': 16,
         },
       ],
@@ -78094,7 +77991,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 106,
+          'dungeonIndex': 105,
         },
       ],
       'flags': {
@@ -78108,17 +78005,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Anorith',
-          'maxHealth': 2458300,
+          'maxHealth': 66147743,
           'level': 27,
         },
         {
           'name': 'Lileep',
-          'maxHealth': 2462000,
+          'maxHealth': 66147743,
           'level': 27,
         },
         {
           'name': 'Lycanroc (Midnight)',
-          'maxHealth': 2462000,
+          'maxHealth': 67478674,
           'level': 28,
         },
       ],
@@ -78145,7 +78042,7 @@ module.exports = {
       'pokemons': [
         {
           'name': '???',
-          'maxHealth': 2458300,
+          'maxHealth': 132295486,
           'level': 27,
         },
       ],
@@ -78170,17 +78067,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Sableye',
-          'maxHealth': 2458300,
+          'maxHealth': 70650480,
           'level': 43,
         },
         {
           'name': 'Krokorok',
-          'maxHealth': 2462000,
+          'maxHealth': 70650480,
           'level': 43,
         },
         {
           'name': 'Alolan Persian',
-          'maxHealth': 2462000,
+          'maxHealth': 71735104,
           'level': 44,
         },
       ],
@@ -78192,7 +78089,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 17,
-          'dungeonIndex': 122,
+          'dungeonIndex': 119,
         },
       ],
       'flags': {
@@ -78206,13 +78103,13 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Necrozma (Ultra)',
-          'maxHealth': 2458300,
+          'maxHealth': 141300960,
           'level': 60,
         },
       ],
       'badgeReward': 90,
       'moneyReward': 128000,
-      'defeatMessage': 'Necrozma fled. It left something behind.',
+      'defeatMessage': 'Necrozma fled.',
       'requirements': [
         {
           'requiredValue': 1,
@@ -78231,17 +78128,17 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Mawile',
-          'maxHealth': 2458300,
+          'maxHealth': 74749379,
           'level': 51,
         },
         {
           'name': 'Granbull',
-          'maxHealth': 2462000,
+          'maxHealth': 74749379,
           'level': 51,
         },
         {
           'name': 'Ribombee',
-          'maxHealth': 2462000,
+          'maxHealth': 75838262,
           'level': 51,
         },
       ],
@@ -78252,8 +78149,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 127,
+          'badge': 90,
         },
       ],
       'flags': {
@@ -78267,22 +78163,22 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Golurk',
-          'maxHealth': 2458300,
+          'maxHealth': 76658268,
           'level': 53,
         },
         {
           'name': 'Gastrodon (east)',
-          'maxHealth': 2462000,
+          'maxHealth': 76658268,
           'level': 53,
         },
         {
           'name': 'Flygon',
-          'maxHealth': 2462000,
+          'maxHealth': 76658268,
           'level': 53,
         },
         {
           'name': 'Mudsdale',
-          'maxHealth': 2462000,
+          'maxHealth': 77747374,
           'level': 54,
         },
       ],
@@ -78510,27 +78406,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Klefki',
-          'maxHealth': 1945330,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Bisharp',
-          'maxHealth': 1948300,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Magnezone',
-          'maxHealth': 1952000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Metagross',
-          'maxHealth': 1957000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Alolan Dugtrio',
-          'maxHealth': 1957000,
+          'maxHealth': 86456446,
           'level': 57,
         },
       ],
@@ -78555,27 +78451,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Armaldo',
-          'maxHealth': 1945330,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Cradily',
-          'maxHealth': 1948300,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Gigalith',
-          'maxHealth': 1952000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Probopass',
-          'maxHealth': 1957000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Lycanroc (Midnight)',
-          'maxHealth': 1957000,
+          'maxHealth': 86456446,
           'level': 57,
         },
       ],
@@ -78600,27 +78496,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Banette',
-          'maxHealth': 1945330,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Drifblim',
-          'maxHealth': 1948300,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Dhelmise',
-          'maxHealth': 1952000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Froslass',
-          'maxHealth': 1957000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Palossand',
-          'maxHealth': 1957000,
+          'maxHealth': 86456446,
           'level': 57,
         },
       ],
@@ -78645,27 +78541,27 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Braviary',
-          'maxHealth': 1945330,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Hawlucha',
-          'maxHealth': 1948300,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Oricorio (Baile)',
-          'maxHealth': 1952000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Mandibuzz',
-          'maxHealth': 1957000,
+          'maxHealth': 85547357,
           'level': 56,
         },
         {
           'name': 'Toucannon',
-          'maxHealth': 1957000,
+          'maxHealth': 86456446,
           'level': 57,
         },
       ],
@@ -78987,7 +78883,7 @@ module.exports = {
       'defeatMessage': 'I might have lost, but I still look good. Maybe I should snap a quick selfie...',
       'requirements': [
         {
-          'requiredValue': 20,
+          'requiredValue': 10,
           'option': 2,
           'achievementType': 15,
           'region': 7,
@@ -79043,6 +78939,56 @@ module.exports = {
           'option': 2,
           'achievementType': 17,
           'dungeonIndex': 136,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+    },
+    'Trainer Hop': {
+      'leaderName': 'Hop',
+      'town': 'Trainer Hop',
+      'pokemons': [
+        {
+          'name': 'Dubwool',
+          'maxHealth': 1945330,
+          'level': 49,
+        },
+        {
+          'name': 'Cramorant',
+          'maxHealth': 1948300,
+          'level': 49,
+        },
+        {
+          'name': 'Pincurchin',
+          'maxHealth': 1952000,
+          'level': 50,
+        },
+        {
+          'name': 'Snorlax',
+          'maxHealth': 1957000,
+          'level': 51,
+        },
+        {
+          'name': 'Corviknight',
+          'maxHealth': 1945330,
+          'level': 50,
+        },
+        {
+          'name': 'Inteleon',
+          'maxHealth': 2015330,
+          'level': 60,
+        },
+      ],
+      'badgeReward': 107,
+      'moneyReward': 64000,
+      'defeatMessage': "Thanks, mate. I'm really glad you were the one here with me.",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 106,
         },
       ],
       'flags': {
@@ -79394,28 +79340,28 @@ module.exports = {
         },
       ],
     },
-    'Champion Hao': {
-      'leaderName': 'Hao',
-      'town': 'Champion Hao',
+    'Champion Hau': {
+      'leaderName': 'Hau',
+      'town': 'Champion Hau',
       'pokemons': [
         {
           'name': 'Alolan Raichu',
-          'maxHealth': 2015330,
+          'maxHealth': 91545555,
           'level': 59,
         },
         {
           'name': 'Tauros',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Noivern',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Crabominable',
-          'maxHealth': 2015330,
+          'maxHealth': 91545555,
           'level': 59,
         },
       ],
@@ -79436,58 +79382,58 @@ module.exports = {
       'basePokemon': [
         {
           'name': 'Alolan Raichu',
-          'maxHealth': 2015330,
+          'maxHealth': 91545555,
           'level': 59,
         },
         {
           'name': 'Tauros',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Noivern',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Crabominable',
-          'maxHealth': 2015330,
+          'maxHealth': 91545555,
           'level': 59,
         },
       ],
       'alternativePokemon1': [
         {
           'name': 'Flareon',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Primarina',
-          'maxHealth': 2015330,
+          'maxHealth': 96725389,
           'level': 60,
         },
       ],
       'alternativePokemon2': [
         {
           'name': 'Vaporeon',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Decidueye',
-          'maxHealth': 2015330,
+          'maxHealth': 96725389,
           'level': 60,
         },
       ],
       'alternativePokemon3': [
         {
           'name': 'Leafeon',
-          'maxHealth': 2015330,
+          'maxHealth': 89636471,
           'level': 58,
         },
         {
           'name': 'Incineroar',
-          'maxHealth': 2015330,
+          'maxHealth': 96725389,
           'level': 60,
         },
       ],
@@ -79580,99 +79526,6 @@ module.exports = {
       'alternativePokemon3': [
         {
           'name': 'Rillaboom',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
-    },
-    'Trainer Hop': {
-      'leaderName': 'Hop',
-      'town': 'Trainer Hop',
-      'pokemons': [
-        {
-          'name': 'Dubwool',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Cramorant',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Pincurchin',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Snorlax',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Corviknight',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 107,
-      'moneyReward': 100000,
-      'defeatMessage': "Thanks, mate. I'm really glad you were the one here with me.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 106,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Dubwool',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Cramorant',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Pincurchin',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Snorlax',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Corviknight',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'alternativePokemon1': [
-        {
-          'name': 'Inteleon',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
-      'alternativePokemon2': [
-        {
-          'name': 'Rillaboom',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
-      'alternativePokemon3': [
-        {
-          'name': 'Cinderace',
           'maxHealth': 2015330,
           'level': 60,
         },
@@ -83789,7 +83642,7 @@ module.exports = {
         'Bounsweet',
         'Oricorio (Sensu)',
       ],
-      'hint': "There's a mysterious berry that requires a specific configuration of Berries. However there's still something missing...",
+      'hint': 'There is a Berry that requires a linked <u>Discord</u> account to appear...',
     },
   ],
 };

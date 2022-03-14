@@ -19,10 +19,10 @@ const pokemonTypeIcons = {
   'Fairy': '<:fairy_icon:733983301244813362>',
 };
 
-const findShardBestRoute = (RouteShardTypes, type, onlyRegion = -1) => {
+const findGemBestRoute = (RouteGemTypes, type, onlyRegion = -1) => {
   let highestPercent = 0;
   let bestRoute = 0;
-  Object.entries(RouteShardTypes).forEach(([region, routes]) => {
+  Object.entries(RouteGemTypes).forEach(([region, routes]) => {
     if (onlyRegion >= 0 && onlyRegion != region) return;
     Object.entries(routes).forEach(([route, types]) => {
       if (types[type] && types[type] > highestPercent) {
@@ -34,9 +34,9 @@ const findShardBestRoute = (RouteShardTypes, type, onlyRegion = -1) => {
   return { route: bestRoute, chance: highestPercent };
 };
 
-const findShardRoutes = (RouteShardTypes, type) => {
+const findGemRoutes = (RouteGemTypes, type) => {
   const regions = {};
-  Object.entries(RouteShardTypes).forEach(([region, routes]) => {
+  Object.entries(RouteGemTypes).forEach(([region, routes]) => {
     regions[region] = {};
     Object.entries(routes).forEach(([route, types]) => {
       if (types[type] > 0) {
@@ -150,8 +150,8 @@ const UndergroundItem = {'list':[{'name':'Rare Bone','id':1,'value':3,'valueType
 
 module.exports = {
   pokemonTypeIcons,
-  findShardBestRoute,
-  findShardRoutes,
+  findGemBestRoute,
+  findGemRoutes,
   SeededRand,
   DailyDeal,
   UndergroundItem,
