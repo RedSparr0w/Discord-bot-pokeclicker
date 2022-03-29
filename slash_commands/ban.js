@@ -77,6 +77,6 @@ module.exports = {
       **Reason:** ${reason || 'Unknown'}`);
 
     interaction.reply({ embeds: [embed], ephemeral: true });
-    member.ban({ reason: reason || 'Unknown' });
+    member.ban({ days: 7, reason: reason || 'Unknown' });
   },
 };
