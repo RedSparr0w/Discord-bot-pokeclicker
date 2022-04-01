@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.15',
+  'gameVersion': '0.8.17',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -93,7 +93,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 1,
         },
@@ -119,7 +119,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 1,
         },
@@ -145,7 +145,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 2,
         },
@@ -182,14 +182,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 3,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 1,
         },
       ],
@@ -220,7 +220,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 4,
         },
@@ -253,7 +253,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 24,
         },
@@ -281,7 +281,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 25,
         },
@@ -315,7 +315,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 5,
         },
@@ -348,7 +348,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 6,
         },
@@ -378,7 +378,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 6,
         },
@@ -418,14 +418,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 9,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 3,
         },
       ],
@@ -454,7 +454,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 10,
         },
@@ -483,7 +483,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 8,
         },
@@ -521,7 +521,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 4,
         },
       ],
@@ -556,18 +556,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 12,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 14,
             },
@@ -600,18 +602,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 13,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 15,
             },
@@ -640,18 +644,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 14,
             },
@@ -681,7 +687,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 4,
         },
       ],
@@ -710,18 +716,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 16,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 18,
             },
@@ -754,18 +762,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 17,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 15,
             },
@@ -819,18 +829,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 21,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 17,
+              'achievementType': 16,
               'dungeonIndex': 6,
             },
           ],
@@ -895,7 +907,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 22,
         },
@@ -959,7 +971,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 29,
         },
@@ -1001,7 +1013,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 29,
         },
@@ -1048,7 +1060,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 30,
         },
@@ -1116,7 +1128,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 12,
         },
       ],
@@ -1155,7 +1167,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 14,
         },
       ],
@@ -1195,7 +1207,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 34,
         },
@@ -1265,7 +1277,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 36,
         },
@@ -1301,7 +1313,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 37,
         },
@@ -1336,7 +1348,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 38,
         },
@@ -1365,7 +1377,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 39,
         },
@@ -1398,7 +1410,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 40,
         },
@@ -1465,13 +1477,17 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
+              'requiredValue': 2,
+              'option': 2,
               'requirements': [
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'achievementType': 17,
+                  'achievementType': 16,
                   'dungeonIndex': 18,
                 },
                 {
@@ -1484,7 +1500,7 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 1,
               'route': 42,
             },
@@ -1521,7 +1537,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 20,
         },
       ],
@@ -1556,7 +1572,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 21,
         },
       ],
@@ -1639,7 +1655,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 47,
         },
@@ -1721,7 +1737,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 27,
         },
@@ -1813,7 +1829,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 101,
         },
@@ -1847,7 +1863,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 101,
         },
@@ -1878,7 +1894,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 102,
         },
@@ -1906,7 +1922,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 25,
         },
       ],
@@ -1939,7 +1955,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 27,
         },
         {
@@ -1977,7 +1993,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 110,
         },
@@ -2030,7 +2046,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 111,
         },
@@ -2055,7 +2071,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 28,
         },
       ],
@@ -2088,7 +2104,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 113,
         },
@@ -2121,7 +2137,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 29,
         },
       ],
@@ -2170,18 +2186,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 105,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 107,
             },
@@ -2208,18 +2226,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 106,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 108,
             },
@@ -2246,18 +2266,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 107,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 109,
             },
@@ -2346,6 +2368,8 @@ module.exports = {
           {
             'pokemon': ['Castform (sunny)'],
             'req': {
+              'requiredValue': 2,
+              'option': 2,
               'requirements': [
                 {
                   'requiredValue': 1,
@@ -2363,6 +2387,8 @@ module.exports = {
           {
             'pokemon': ['Castform (rainy)'],
             'req': {
+              'requiredValue': 2,
+              'option': 2,
               'requirements': [
                 {
                   'requiredValue': 1,
@@ -2383,6 +2409,8 @@ module.exports = {
           {
             'pokemon': ['Castform (snowy)'],
             'req': {
+              'requiredValue': 2,
+              'option': 2,
               'requirements': [
                 {
                   'requiredValue': 1,
@@ -2408,7 +2436,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 118,
         },
@@ -2443,14 +2471,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 119,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 33,
         },
       ],
@@ -2484,7 +2512,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 120,
         },
@@ -2512,7 +2540,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 121,
         },
@@ -2552,7 +2580,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 122,
         },
@@ -2582,7 +2610,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 36,
         },
       ],
@@ -2609,7 +2637,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 124,
         },
@@ -2639,7 +2667,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 124,
         },
@@ -2665,18 +2693,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 125,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 2,
               'route': 126,
             },
@@ -2707,7 +2737,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 127,
         },
@@ -2736,7 +2766,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 128,
         },
@@ -2764,7 +2794,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 129,
         },
@@ -2792,7 +2822,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 130,
         },
@@ -2821,7 +2851,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 131,
         },
@@ -2850,7 +2880,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 132,
         },
@@ -2879,7 +2909,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 2,
           'route': 133,
         },
@@ -2928,7 +2958,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 201,
         },
@@ -2963,7 +2993,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 202,
         },
@@ -2999,7 +3029,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 202,
         },
@@ -3047,14 +3077,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 204,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 44,
         },
       ],
@@ -3107,7 +3137,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 206,
         },
@@ -3144,7 +3174,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 48,
         },
       ],
@@ -3220,7 +3250,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 209,
         },
@@ -3248,7 +3278,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 210,
         },
@@ -3283,7 +3313,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 215,
         },
@@ -3319,7 +3349,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 214,
         },
@@ -3361,7 +3391,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 213,
         },
@@ -3453,7 +3483,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 51,
         },
       ],
@@ -3478,7 +3508,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 216,
         },
@@ -3538,7 +3568,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 219,
         },
@@ -3577,7 +3607,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 220,
         },
@@ -3620,7 +3650,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 55,
         },
       ],
@@ -3760,7 +3790,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 225,
         },
@@ -3798,7 +3828,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 226,
         },
@@ -3833,7 +3863,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 226,
         },
@@ -3871,7 +3901,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 228,
         },
@@ -3912,7 +3942,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 3,
           'route': 229,
         },
@@ -3969,7 +3999,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 19,
         },
@@ -4022,11 +4052,13 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 2,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 4,
               'route': 4,
             },
@@ -4060,7 +4092,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 4,
         },
@@ -4092,7 +4124,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 4,
         },
@@ -4131,7 +4163,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 5,
         },
@@ -4166,7 +4198,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 70,
         },
         {
@@ -4203,7 +4235,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 73,
         },
       ],
@@ -4232,7 +4264,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 73,
         },
       ],
@@ -4263,7 +4295,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 73,
         },
       ],
@@ -4290,7 +4322,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 13,
         },
@@ -4324,7 +4356,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 12,
         },
@@ -4353,7 +4385,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 11,
         },
@@ -4379,7 +4411,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 75,
         },
       ],
@@ -4411,7 +4443,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 21,
         },
@@ -4444,7 +4476,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 77,
         },
       ],
@@ -4469,19 +4501,23 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 17,
+              'achievementType': 16,
               'dungeonIndex': 81,
             },
             {
+              'requiredValue': 2,
+              'option': 2,
               'requirements': [
                 {
                   'requiredValue': 10,
                   'option': 2,
-                  'achievementType': 15,
+                  'achievementType': 14,
                   'region': 4,
                   'route': 9,
                 },
@@ -4513,18 +4549,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 4,
               'route': 14,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 4,
               'route': 16,
             },
@@ -4558,7 +4596,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 85,
         },
       ],
@@ -4584,7 +4622,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 3,
         },
@@ -4613,7 +4651,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 2,
         },
@@ -4637,7 +4675,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 1,
         },
@@ -4667,7 +4705,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 4,
           'route': 17,
         },
@@ -4715,7 +4753,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 1,
         },
@@ -4751,7 +4789,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 88,
         },
       ],
@@ -4788,7 +4826,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 3,
         },
@@ -4847,7 +4885,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 4,
         },
@@ -4875,7 +4913,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 5,
         },
@@ -4907,7 +4945,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 89,
         },
       ],
@@ -4944,7 +4982,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 90,
         },
       ],
@@ -4968,7 +5006,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 8,
         },
@@ -4998,7 +5036,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 91,
         },
       ],
@@ -5033,7 +5071,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 10,
         },
@@ -5100,7 +5138,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 12,
         },
@@ -5125,7 +5163,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 12,
         },
@@ -5194,7 +5232,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 95,
         },
       ],
@@ -5229,7 +5267,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 15,
         },
@@ -5255,7 +5293,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 97,
         },
       ],
@@ -5284,7 +5322,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 98,
         },
       ],
@@ -5319,7 +5357,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 18,
         },
@@ -5347,7 +5385,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 19,
         },
@@ -5381,7 +5419,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 19,
         },
@@ -5416,6 +5454,7 @@ module.exports = {
         },
       ],
       'orderNumber': 1,
+      'subRegion': 0,
     },
     {
       'routeName': "Route 1 Hau'oli Outskirts",
@@ -5439,12 +5478,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 1,
         },
       ],
       'orderNumber': 1.1,
+      'subRegion': 0,
     },
     {
       'routeName': 'Alola Route 2',
@@ -5473,11 +5513,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 102,
         },
       ],
       'orderNumber': 2,
+      'subRegion': 0,
     },
     {
       'routeName': 'Alola Route 3',
@@ -5501,11 +5542,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 104,
         },
       ],
       'orderNumber': 3,
+      'subRegion': 0,
     },
     {
       'routeName': 'Alola Route 4',
@@ -5534,6 +5576,7 @@ module.exports = {
         },
       ],
       'orderNumber': 4,
+      'subRegion': 1,
     },
     {
       'routeName': 'Alola Route 5',
@@ -5559,11 +5602,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 109,
         },
       ],
       'orderNumber': 5,
+      'subRegion': 1,
     },
     {
       'routeName': 'Melemele Sea',
@@ -5590,11 +5634,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 110,
         },
       ],
       'orderNumber': 5.1,
+      'subRegion': 0,
     },
     {
       'routeName': "Kala'e Bay",
@@ -5625,17 +5670,18 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 106,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 110,
         },
       ],
       'orderNumber': 5.2,
+      'subRegion': 0,
     },
     {
       'routeName': 'Alola Route 6',
@@ -5661,11 +5707,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 110,
         },
       ],
       'orderNumber': 6,
+      'subRegion': 1,
     },
     {
       'routeName': 'Alola Route 7',
@@ -5689,12 +5736,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 6,
         },
       ],
       'orderNumber': 7,
+      'subRegion': 1,
     },
     {
       'routeName': 'Alola Route 8',
@@ -5724,11 +5772,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 111,
         },
       ],
       'orderNumber': 8,
+      'subRegion': 1,
     },
     {
       'routeName': 'Alola Route 9',
@@ -5750,11 +5799,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 113,
         },
       ],
       'orderNumber': 9,
+      'subRegion': 1,
     },
     {
       'routeName': 'Akala Outskirts',
@@ -5781,11 +5831,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 114,
         },
       ],
       'orderNumber': 9.1,
+      'subRegion': 1,
     },
     {
       'routeName': 'Alola Route 10',
@@ -5809,11 +5860,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 115,
         },
       ],
       'orderNumber': 10,
+      'subRegion': 2,
     },
     {
       'routeName': 'Mount Hokulani',
@@ -5845,12 +5897,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 10,
         },
       ],
       'orderNumber': 10.1,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 11',
@@ -5873,11 +5926,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 115,
         },
       ],
       'orderNumber': 11,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 12',
@@ -5900,18 +5954,19 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 11,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 116,
         },
       ],
       'orderNumber': 12,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 13',
@@ -5931,12 +5986,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 12,
         },
       ],
       'orderNumber': 13,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 14',
@@ -5960,12 +6016,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 13,
         },
       ],
       'orderNumber': 14,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 15',
@@ -5994,11 +6051,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 117,
         },
       ],
       'orderNumber': 15,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 16',
@@ -6020,12 +6078,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 15,
         },
       ],
       'orderNumber': 16,
+      'subRegion': 2,
     },
     {
       'routeName': 'Alola Route 17',
@@ -6050,11 +6109,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 118,
         },
       ],
       'orderNumber': 17,
+      'subRegion': 2,
     },
     {
       'routeName': 'Haina Desert',
@@ -6077,11 +6137,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 117,
         },
       ],
       'orderNumber': 23,
+      'subRegion': 2,
     },
     {
       'routeName': 'Poni Wilds',
@@ -6095,7 +6156,7 @@ module.exports = {
           'Furfrou',
           'Inkay',
         ],
-        'water': ['Dhelmise'],
+        'water': [],
         'headbutt': [],
         'special': [],
       },
@@ -6103,11 +6164,12 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 120,
         },
       ],
       'orderNumber': 24,
+      'subRegion': 2,
     },
     {
       'routeName': 'Ancient Poni Path',
@@ -6129,12 +6191,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 24,
         },
       ],
       'orderNumber': 25,
+      'subRegion': 2,
     },
     {
       'routeName': 'Poni Breaker Coast',
@@ -6160,12 +6223,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 25,
         },
       ],
       'orderNumber': 26,
+      'subRegion': 2,
     },
     {
       'routeName': 'Poni Grove',
@@ -6192,6 +6256,7 @@ module.exports = {
         },
       ],
       'orderNumber': 27,
+      'subRegion': 2,
     },
     {
       'routeName': 'Poni Plains',
@@ -6220,12 +6285,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 27,
         },
       ],
       'orderNumber': 28,
+      'subRegion': 2,
     },
     {
       'routeName': 'Poni Coast',
@@ -6241,12 +6307,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 28,
         },
       ],
       'orderNumber': 29,
+      'subRegion': 2,
     },
     {
       'routeName': 'Poni Gauntlet',
@@ -6273,12 +6340,13 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 29,
         },
       ],
       'orderNumber': 30,
+      'subRegion': 2,
     },
     {
       'routeName': 'Galar Route 1',
@@ -6303,8 +6371,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 131,
+          'achievementType': 16,
+          'dungeonIndex': 132,
         },
       ],
       'orderNumber': 1,
@@ -6337,7 +6405,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 1,
         },
@@ -6514,7 +6582,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 2,
         },
@@ -6704,7 +6772,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 3,
         },
@@ -6925,7 +6993,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 3,
         },
@@ -7123,7 +7191,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 5,
         },
@@ -7308,7 +7376,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 3,
         },
@@ -7528,7 +7596,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 3,
         },
@@ -7750,7 +7818,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 7,
         },
@@ -7877,7 +7945,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 32,
         },
@@ -7916,7 +7984,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 6,
         },
@@ -7955,8 +8023,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 133,
+          'achievementType': 16,
+          'dungeonIndex': 134,
         },
       ],
       'orderNumber': 11,
@@ -8028,8 +8096,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 134,
+          'achievementType': 16,
+          'dungeonIndex': 135,
         },
       ],
       'orderNumber': 13,
@@ -8223,8 +8291,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 138,
+          'achievementType': 16,
+          'dungeonIndex': 139,
         },
       ],
       'orderNumber': 14,
@@ -8334,7 +8402,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 16,
         },
@@ -8365,7 +8433,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 17,
         },
@@ -8474,7 +8542,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 20,
         },
@@ -8507,7 +8575,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 21,
         },
@@ -8572,7 +8640,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 23,
         },
@@ -8875,39 +8943,41 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 25,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 27,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 29,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 35,
             },
@@ -9064,25 +9134,27 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 31,
             },
@@ -9278,25 +9350,27 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 27,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 39,
             },
@@ -9415,32 +9489,34 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 25,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 30,
             },
@@ -9599,18 +9675,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 29,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 37,
             },
@@ -9780,25 +9858,27 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 34,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 39,
             },
@@ -9883,7 +9963,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 31,
         },
@@ -10041,18 +10121,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 31,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 35,
             },
@@ -10166,18 +10248,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 26,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 34,
             },
@@ -10309,25 +10393,27 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 25,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 35,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 37,
             },
@@ -10451,39 +10537,41 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 30,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 36,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 38,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 39,
             },
@@ -10608,18 +10696,20 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 37,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 39,
             },
@@ -10734,32 +10824,34 @@ module.exports = {
       },
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 28,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 31,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 37,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 7,
               'route': 39,
             },
@@ -10887,7 +10979,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 39,
         },
@@ -11139,7 +11231,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 41,
         },
@@ -11340,7 +11432,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 42,
         },
@@ -11482,7 +11574,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 43,
         },
@@ -11630,7 +11722,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 43,
         },
@@ -11689,7 +11781,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 45,
         },
@@ -11833,7 +11925,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 46,
         },
@@ -11972,7 +12064,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 47,
         },
@@ -12006,7 +12098,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 50,
         },
@@ -12169,7 +12261,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 43,
         },
@@ -12301,7 +12393,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 43,
         },
@@ -12335,7 +12427,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 51,
         },
@@ -12400,7 +12492,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 52,
         },
@@ -13877,15 +13969,13 @@ module.exports = {
         '16': 16.67,
       },
       '24': {
-        '0': 16.67,
-        '2': 33.33,
-        '4': 16.67,
-        '8': 16.67,
-        '9': 16.67,
-        '10': 16.67,
-        '13': 16.67,
-        '15': 16.67,
-        '17': 16.67,
+        '0': 20,
+        '2': 40,
+        '8': 20,
+        '9': 20,
+        '10': 20,
+        '15': 20,
+        '17': 20,
       },
       '25': {
         '0': 20,
@@ -16464,7 +16554,7 @@ module.exports = {
     },
     {
       'id': 20.02,
-      'name': 'Totem Alolan Raticate',
+      'name': 'Totem Raticate',
       'nativeRegion': 6,
       'catchRate': 127,
       'type': [
@@ -23826,7 +23916,7 @@ module.exports = {
     },
     {
       'id': 105.02,
-      'name': 'Totem Alolan Marowak',
+      'name': 'Totem Marowak',
       'nativeRegion': 6,
       'catchRate': 75,
       'type': [
@@ -24652,7 +24742,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Cerulean Cave'],
+        '2': [
+          'Cerulean Cave',
+          "Mina's Houseboat",
+        ],
         '4': [
           {
             'basePokemon': 'Happiny',
@@ -35757,6 +35850,7 @@ module.exports = {
           'Liberty Garden',
           "Trainers' School",
           'Brooklet Hill',
+          "Mina's Houseboat",
         ],
       },
       'catchRatePercent': 51,
@@ -36074,6 +36168,7 @@ module.exports = {
           'Iron Island',
           'Giant Chasm',
           'Exeggutor Island Hill',
+          "Mina's Houseboat",
         ],
         '4': [
           {
@@ -60312,7 +60407,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Glimwood Tangle'],
+        '2': [
+          "Mina's Houseboat",
+          'Glimwood Tangle',
+        ],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -60387,7 +60485,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Glimwood Tangle'],
+        '2': [
+          "Mina's Houseboat",
+          'Glimwood Tangle',
+        ],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -63290,7 +63391,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Melemele Meadow'],
+        '2': [
+          'Melemele Meadow',
+          "Mina's Houseboat",
+        ],
         '11': ['Always'],
       },
       'catchRatePercent': 51,
@@ -63321,6 +63425,11 @@ module.exports = {
         '2': [
           "Ula'ula Meadow",
           'Poni Meadow',
+        ],
+        '3': [
+          {
+            'dungeon': "Mina's Houseboat",
+          },
         ],
         '4': [
           {
@@ -64935,6 +65044,7 @@ module.exports = {
         },
         '2': [
           'Lush Jungle',
+          "Mina's Houseboat",
           'Ruins of Conflict',
           'Ruins of Life',
           'Ruins of Abundance',
@@ -65922,11 +66032,6 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '0': {
-          '6': [
-            {
-              'route': 24,
-            },
-          ],
           '7': [
             {
               'route': 21,
@@ -65942,6 +66047,7 @@ module.exports = {
             },
           ],
         },
+        '2': ["Mina's Houseboat"],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -73448,7 +73554,7 @@ module.exports = {
       'final': 8,
     },
     'MAX_AVAILABLE_REGION': 5,
-    'TotalPokemonsPerRegion': [
+    'MaxIDPerRegion': [
       151,
       251,
       386,
@@ -73525,18 +73631,17 @@ module.exports = {
       '7': 'Captured',
       '8': 'Defeated',
       '9': 'Caught Pokemon',
-      '10': 'Caught Unique Pokemons By Region',
-      '11': 'Shiny Pokemon',
-      '12': 'Hatch',
-      '13': 'Pokeball',
-      '14': 'Click',
-      '15': 'Route Kill',
-      '16': 'Clear Gym',
-      '17': 'Clear Dungeon',
-      '18': 'Farming',
-      '19': 'Quest',
-      '20': 'Battle Frontier',
-      '21': 'Protein',
+      '10': 'Shiny Pokemon',
+      '11': 'Hatch',
+      '12': 'Pokeball',
+      '13': 'Click',
+      '14': 'Route Kill',
+      '15': 'Clear Gym',
+      '16': 'Clear Dungeon',
+      '17': 'Farming',
+      '18': 'Quest',
+      '19': 'Battle Frontier',
+      '20': 'Protein',
       'None': -1,
       '-1': 'None',
       'Money': 0,
@@ -73549,18 +73654,17 @@ module.exports = {
       'Captured': 7,
       'Defeated': 8,
       'Caught Pokemon': 9,
-      'Caught Unique Pokemons By Region': 10,
-      'Shiny Pokemon': 11,
-      'Hatch': 12,
-      'Pokeball': 13,
-      'Click': 14,
-      'Route Kill': 15,
-      'Clear Gym': 16,
-      'Clear Dungeon': 17,
-      'Farming': 18,
-      'Quest': 19,
-      'Battle Frontier': 20,
-      'Protein': 21,
+      'Shiny Pokemon': 10,
+      'Hatch': 11,
+      'Pokeball': 12,
+      'Click': 13,
+      'Route Kill': 14,
+      'Clear Gym': 15,
+      'Clear Dungeon': 16,
+      'Farming': 17,
+      'Quest': 18,
+      'Battle Frontier': 19,
+      'Protein': 20,
     },
     'DungeonTile': {
       '0': 'empty',
@@ -73580,6 +73684,9 @@ module.exports = {
     'HELD_ITEM_CHANCE': 512,
     'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
     'DNA_ITEM_CHANCE': 60,
+    'GEM_UPGRADE_COST': 500,
+    'GEM_UPGRADE_STEP': 0.1,
+    'MAX_GEM_UPGRADES': 10,
     'DUNGEON_GEMS': 3,
     'DUNGEON_BOSS_GEMS': 20,
     'GYM_GEMS': 5,
@@ -74143,7 +74250,6 @@ module.exports = {
       'Malie City',
       'Vast Poni Canyon Trial',
       'Altar of the Sunne and Moone',
-      'Seafolk Village',
       'Exeggutor Island',
       'Elite Molayne',
       'Elite Olivia',
@@ -74269,7 +74375,6 @@ module.exports = {
         'Malie City',
         'Vast Poni Canyon Trial',
         'Altar of the Sunne and Moone',
-        'Seafolk Village',
         'Exeggutor Island',
         'Elite Molayne',
         'Elite Olivia',
@@ -74428,6 +74533,7 @@ module.exports = {
       'Aether Foundation',
       'Exeggutor Island Hill',
       'Vast Poni Canyon',
+      "Mina's Houseboat",
       'Mount Lanakila',
       'Lake of the Sunne and Moone',
       'Ruins of Conflict',
@@ -74585,6 +74691,7 @@ module.exports = {
         'Aether Foundation',
         'Exeggutor Island Hill',
         'Vast Poni Canyon',
+        "Mina's Houseboat",
         'Mount Lanakila',
         'Lake of the Sunne and Moone',
         'Ruins of Conflict',
@@ -74890,7 +74997,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 2,
         },
@@ -74922,7 +75029,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 4,
         },
@@ -74949,7 +75056,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 6,
         },
@@ -74991,7 +75098,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 0,
           'route': 7,
         },
@@ -75066,18 +75173,20 @@ module.exports = {
       'defeatMessage': 'Humph! You have proven your worth! Here! Take the Soul Badge!',
       'requirements': [
         {
+          'requiredValue': 1,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 15,
+              'achievementType': 14,
               'region': 0,
               'route': 15,
             },
@@ -75116,7 +75225,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 7,
         },
       ],
@@ -75382,7 +75491,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 10,
         },
       ],
@@ -75418,7 +75527,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 13,
         },
       ],
@@ -75449,7 +75558,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 1,
           'route': 34,
         },
@@ -75591,7 +75700,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 19,
         },
       ],
@@ -75813,56 +75922,6 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 24,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Champion Lance': {
-      'leaderName': 'Lance2',
-      'town': 'Champion Lance',
-      'pokemons': [
-        {
-          'name': 'Gyarados',
-          'maxHealth': 258300,
-          'level': 44,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 262000,
-          'level': 47,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 264000,
-          'level': 46,
-        },
-        {
-          'name': 'Aerodactyl',
-          'maxHealth': 260250,
-          'level': 46,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 270000,
-          'level': 47,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 270000,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 26,
-      'moneyReward': 7500,
-      'defeatMessage': "…It's over. But it's an odd feeling. I'm not angry that I lost. In fact, I feel happy. Happy that I witnessed the rise of a great new Champion!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 25,
         },
       ],
       'flags': {
@@ -76158,7 +76217,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 41,
         },
       ],
@@ -76340,56 +76399,6 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 37,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Champion Wallace': {
-      'leaderName': 'Wallace',
-      'town': 'Champion Wallace',
-      'pokemons': [
-        {
-          'name': 'Wailord',
-          'maxHealth': 1202000,
-          'level': 57,
-        },
-        {
-          'name': 'Tentacruel',
-          'maxHealth': 1164000,
-          'level': 55,
-        },
-        {
-          'name': 'Ludicolo',
-          'maxHealth': 1184000,
-          'level': 56,
-        },
-        {
-          'name': 'Whiscash',
-          'maxHealth': 1172000,
-          'level': 56,
-        },
-        {
-          'name': 'Gyarados',
-          'maxHealth': 1163000,
-          'level': 56,
-        },
-        {
-          'name': 'Milotic',
-          'maxHealth': 1182000,
-          'level': 58,
-        },
-      ],
-      'badgeReward': 39,
-      'moneyReward': 16000,
-      'defeatMessage': 'I, the Champion, fall in defeat… That was wonderful work. You were elegant, infuriatingly so. And yet it was utterly glorious! Kudos to you! You are a truly noble Pokémon Trainer!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 38,
         },
       ],
       'flags': {
@@ -76867,56 +76876,6 @@ module.exports = {
         'achievement': true,
       },
     },
-    'Champion Cynthia': {
-      'leaderName': 'Cynthia',
-      'town': 'Champion Cynthia',
-      'pokemons': [
-        {
-          'name': 'Spiritomb',
-          'maxHealth': 3458300,
-          'level': 58,
-        },
-        {
-          'name': 'Roserade',
-          'maxHealth': 3462000,
-          'level': 58,
-        },
-        {
-          'name': 'Togekiss',
-          'maxHealth': 3464000,
-          'level': 60,
-        },
-        {
-          'name': 'Lucario',
-          'maxHealth': 3460250,
-          'level': 60,
-        },
-        {
-          'name': 'Milotic',
-          'maxHealth': 3470000,
-          'level': 58,
-        },
-        {
-          'name': 'Garchomp',
-          'maxHealth': 3570000,
-          'level': 62,
-        },
-      ],
-      'badgeReward': 52,
-      'moneyReward': 32000,
-      'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion! Come with me. We'll take the lift.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 51,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
     'Aspertia City': {
       'leaderName': 'Cheren',
       'town': 'Aspertia City',
@@ -76944,7 +76903,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 64,
         },
       ],
@@ -77020,7 +76979,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 66,
         },
       ],
@@ -77429,56 +77388,6 @@ module.exports = {
         'achievement': true,
       },
     },
-    'Champion Iris': {
-      'leaderName': 'Iris',
-      'town': 'Champion Iris',
-      'pokemons': [
-        {
-          'name': 'Hydreigon',
-          'maxHealth': 12458300,
-          'level': 58,
-        },
-        {
-          'name': 'Salamence',
-          'maxHealth': 12462000,
-          'level': 58,
-        },
-        {
-          'name': 'Aggron',
-          'maxHealth': 12464000,
-          'level': 58,
-        },
-        {
-          'name': 'Archeops',
-          'maxHealth': 12460250,
-          'level': 60,
-        },
-        {
-          'name': 'Lapras',
-          'maxHealth': 12470000,
-          'level': 58,
-        },
-        {
-          'name': 'Haxorus',
-          'maxHealth': 14570000,
-          'level': 62,
-        },
-      ],
-      'badgeReward': 65,
-      'moneyReward': 64000,
-      'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 64,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
     'Santalune City': {
       'leaderName': 'Viola',
       'town': 'Santalune City',
@@ -77501,7 +77410,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 5,
           'route': 3,
         },
@@ -77638,7 +77547,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 94,
         },
       ],
@@ -77744,7 +77653,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 100,
         },
       ],
@@ -77913,56 +77822,6 @@ module.exports = {
         'achievement': true,
       },
     },
-    'Champion Diantha': {
-      'leaderName': 'Diantha',
-      'town': 'Champion Diantha',
-      'pokemons': [
-        {
-          'name': 'Hawlucha',
-          'maxHealth': 60083000,
-          'level': 64,
-        },
-        {
-          'name': 'Tyrantrum',
-          'maxHealth': 62057000,
-          'level': 65,
-        },
-        {
-          'name': 'Aurorus',
-          'maxHealth': 62057000,
-          'level': 65,
-        },
-        {
-          'name': 'Gourgeist',
-          'maxHealth': 62557000,
-          'level': 65,
-        },
-        {
-          'name': 'Goodra',
-          'maxHealth': 62170000,
-          'level': 66,
-        },
-        {
-          'name': 'Gardevoir',
-          'maxHealth': 63070000,
-          'level': 68,
-        },
-      ],
-      'badgeReward': 78,
-      'moneyReward': 128000,
-      'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 77,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
     'Iki Town': {
       'leaderName': 'Hala',
       'town': 'Iki Town',
@@ -77990,7 +77849,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 105,
         },
       ],
@@ -78026,7 +77885,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 6,
           'route': 9,
         },
@@ -78088,7 +77947,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
+          'achievementType': 16,
           'dungeonIndex': 119,
         },
       ],
@@ -78115,41 +77974,6 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 88,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Seafolk Village': {
-      'leaderName': 'Mina',
-      'town': 'Seafolk Village',
-      'pokemons': [
-        {
-          'name': 'Mawile',
-          'maxHealth': 74749379,
-          'level': 51,
-        },
-        {
-          'name': 'Granbull',
-          'maxHealth': 74749379,
-          'level': 51,
-        },
-        {
-          'name': 'Ribombee',
-          'maxHealth': 75838262,
-          'level': 51,
-        },
-      ],
-      'badgeReward': 91,
-      'moneyReward': 128000,
-      'defeatMessage': "Woah! I'm shocked at your strength!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 90,
         },
       ],
       'flags': {
@@ -78189,7 +78013,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 91,
+          'achievementType': 16,
+          'dungeonIndex': 123,
         },
       ],
       'flags': {
@@ -78400,6 +78225,35 @@ module.exports = {
         'achievement': false,
       },
     },
+    "Mina's Trial": {
+      'leaderName': 'Mina',
+      'town': "Mina's Houseboat",
+      'pokemons': [
+        {
+          'name': 'Pelipper',
+          'maxHealth': 2458300,
+          'level': 51,
+        },
+        {
+          'name': 'Chansey',
+          'maxHealth': 2462000,
+          'level': 51,
+        },
+        {
+          'name': 'Ribombee',
+          'maxHealth': 2462000,
+          'level': 51,
+        },
+      ],
+      'badgeReward': 91,
+      'moneyReward': 128000,
+      'defeatMessage': 'You have received the Fairium-Z!',
+      'requirements': [],
+      'flags': {
+        'quest': false,
+        'achievement': false,
+      },
+    },
     'Elite Molayne': {
       'leaderName': 'Molayne',
       'town': 'Elite Molayne',
@@ -78602,7 +78456,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 4,
         },
@@ -78639,7 +78493,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 5,
         },
@@ -78676,7 +78530,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 13,
         },
@@ -78718,7 +78572,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 15,
         },
@@ -78760,8 +78614,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 135,
+          'achievementType': 16,
+          'dungeonIndex': 136,
         },
       ],
       'flags': {
@@ -78801,7 +78655,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 18,
         },
@@ -78843,7 +78697,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 22,
         },
@@ -78885,7 +78739,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 15,
+          'achievementType': 14,
           'region': 7,
           'route': 22,
         },
@@ -78937,8 +78791,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 17,
-          'dungeonIndex': 136,
+          'achievementType': 16,
+          'dungeonIndex': 137,
         },
       ],
       'flags': {
@@ -79076,17 +78930,19 @@ module.exports = {
       'defeatMessage': 'Aww, come on! What a drag! But...I guess it was also kinda fun!',
       'requirements': [
         {
+          'requiredValue': 2,
+          'option': 2,
           'requirements': [
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 17,
+              'achievementType': 16,
               'dungeonIndex': -1,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 17,
+              'achievementType': 16,
               'dungeonIndex': -1,
             },
           ],
@@ -79337,6 +79193,416 @@ module.exports = {
           'name': 'Venusaur',
           'maxHealth': 70000,
           'level': 63,
+        },
+      ],
+    },
+    'Champion Lance': {
+      'leaderName': 'Lance2',
+      'town': 'Champion Lance',
+      'pokemons': [
+        {
+          'name': 'Gyarados',
+          'maxHealth': 258300,
+          'level': 44,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 262000,
+          'level': 47,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 264000,
+          'level': 46,
+        },
+        {
+          'name': 'Aerodactyl',
+          'maxHealth': 260250,
+          'level': 46,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 47,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 50,
+        },
+      ],
+      'badgeReward': 26,
+      'moneyReward': 7500,
+      'defeatMessage': "…It's over. But it's an odd feeling. I'm not angry that I lost. In fact, I feel happy. Happy that I witnessed the rise of a great new Champion!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 25,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Gyarados',
+          'maxHealth': 258300,
+          'level': 44,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 262000,
+          'level': 47,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 264000,
+          'level': 46,
+        },
+        {
+          'name': 'Aerodactyl',
+          'maxHealth': 260250,
+          'level': 46,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 47,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 50,
+        },
+      ],
+    },
+    'Champion Wallace': {
+      'leaderName': 'Wallace',
+      'town': 'Champion Wallace',
+      'pokemons': [
+        {
+          'name': 'Wailord',
+          'maxHealth': 1202000,
+          'level': 57,
+        },
+        {
+          'name': 'Tentacruel',
+          'maxHealth': 1164000,
+          'level': 55,
+        },
+        {
+          'name': 'Ludicolo',
+          'maxHealth': 1184000,
+          'level': 56,
+        },
+        {
+          'name': 'Whiscash',
+          'maxHealth': 1172000,
+          'level': 56,
+        },
+        {
+          'name': 'Gyarados',
+          'maxHealth': 1163000,
+          'level': 56,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 1182000,
+          'level': 58,
+        },
+      ],
+      'badgeReward': 39,
+      'moneyReward': 16000,
+      'defeatMessage': 'I, the Champion, fall in defeat… That was wonderful work. You were elegant, infuriatingly so. And yet it was utterly glorious! Kudos to you! You are a truly noble Pokémon Trainer!',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 38,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Wailord',
+          'maxHealth': 1202000,
+          'level': 57,
+        },
+        {
+          'name': 'Tentacruel',
+          'maxHealth': 1164000,
+          'level': 55,
+        },
+        {
+          'name': 'Ludicolo',
+          'maxHealth': 1184000,
+          'level': 56,
+        },
+        {
+          'name': 'Whiscash',
+          'maxHealth': 1172000,
+          'level': 56,
+        },
+        {
+          'name': 'Gyarados',
+          'maxHealth': 1163000,
+          'level': 56,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 1182000,
+          'level': 58,
+        },
+      ],
+    },
+    'Champion Cynthia': {
+      'leaderName': 'Cynthia',
+      'town': 'Champion Cynthia',
+      'pokemons': [
+        {
+          'name': 'Spiritomb',
+          'maxHealth': 3458300,
+          'level': 58,
+        },
+        {
+          'name': 'Roserade',
+          'maxHealth': 3462000,
+          'level': 58,
+        },
+        {
+          'name': 'Togekiss',
+          'maxHealth': 3464000,
+          'level': 60,
+        },
+        {
+          'name': 'Lucario',
+          'maxHealth': 3460250,
+          'level': 60,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 3470000,
+          'level': 58,
+        },
+        {
+          'name': 'Garchomp',
+          'maxHealth': 3570000,
+          'level': 62,
+        },
+      ],
+      'badgeReward': 52,
+      'moneyReward': 32000,
+      'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion! Come with me. We'll take the lift.",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 51,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Spiritomb',
+          'maxHealth': 3458300,
+          'level': 58,
+        },
+        {
+          'name': 'Roserade',
+          'maxHealth': 3462000,
+          'level': 58,
+        },
+        {
+          'name': 'Togekiss',
+          'maxHealth': 3464000,
+          'level': 60,
+        },
+        {
+          'name': 'Lucario',
+          'maxHealth': 3460250,
+          'level': 60,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 3470000,
+          'level': 58,
+        },
+        {
+          'name': 'Garchomp',
+          'maxHealth': 3570000,
+          'level': 62,
+        },
+      ],
+    },
+    'Champion Iris': {
+      'leaderName': 'Iris',
+      'town': 'Champion Iris',
+      'pokemons': [
+        {
+          'name': 'Hydreigon',
+          'maxHealth': 12458300,
+          'level': 58,
+        },
+        {
+          'name': 'Salamence',
+          'maxHealth': 12462000,
+          'level': 58,
+        },
+        {
+          'name': 'Aggron',
+          'maxHealth': 12464000,
+          'level': 58,
+        },
+        {
+          'name': 'Archeops',
+          'maxHealth': 12460250,
+          'level': 60,
+        },
+        {
+          'name': 'Lapras',
+          'maxHealth': 12470000,
+          'level': 58,
+        },
+        {
+          'name': 'Haxorus',
+          'maxHealth': 14570000,
+          'level': 62,
+        },
+      ],
+      'badgeReward': 65,
+      'moneyReward': 64000,
+      'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 64,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Hydreigon',
+          'maxHealth': 12458300,
+          'level': 58,
+        },
+        {
+          'name': 'Salamence',
+          'maxHealth': 12462000,
+          'level': 58,
+        },
+        {
+          'name': 'Aggron',
+          'maxHealth': 12464000,
+          'level': 58,
+        },
+        {
+          'name': 'Archeops',
+          'maxHealth': 12460250,
+          'level': 60,
+        },
+        {
+          'name': 'Lapras',
+          'maxHealth': 12470000,
+          'level': 58,
+        },
+        {
+          'name': 'Haxorus',
+          'maxHealth': 14570000,
+          'level': 62,
+        },
+      ],
+    },
+    'Champion Diantha': {
+      'leaderName': 'Diantha',
+      'town': 'Champion Diantha',
+      'pokemons': [
+        {
+          'name': 'Hawlucha',
+          'maxHealth': 60083000,
+          'level': 64,
+        },
+        {
+          'name': 'Tyrantrum',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Aurorus',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Gourgeist',
+          'maxHealth': 62557000,
+          'level': 65,
+        },
+        {
+          'name': 'Goodra',
+          'maxHealth': 62170000,
+          'level': 66,
+        },
+        {
+          'name': 'Gardevoir',
+          'maxHealth': 63070000,
+          'level': 68,
+        },
+      ],
+      'badgeReward': 78,
+      'moneyReward': 128000,
+      'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 77,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Hawlucha',
+          'maxHealth': 60083000,
+          'level': 64,
+        },
+        {
+          'name': 'Tyrantrum',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Aurorus',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Gourgeist',
+          'maxHealth': 62557000,
+          'level': 65,
+        },
+        {
+          'name': 'Goodra',
+          'maxHealth': 62170000,
+          'level': 66,
+        },
+        {
+          'name': 'Gardevoir',
+          'maxHealth': 63070000,
+          'level': 68,
         },
       ],
     },
