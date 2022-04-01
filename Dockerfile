@@ -1,7 +1,5 @@
 # docker-compose build --no-cache
 FROM node:16-alpine
-# Bundle APP files
-COPY ./ecosystem.config.js .
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
@@ -31,11 +29,6 @@ WORKDIR /usr/src/bot
 # Copy and Install our bot
 COPY ./package.json /usr/src/bot
 RUN npm install --production
-
-# Show current folder structure in logs
-RUN ls -al -R
-
-CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
 
 # NOTES:
 # To re-build without cache:

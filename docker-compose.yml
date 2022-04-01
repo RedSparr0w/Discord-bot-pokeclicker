@@ -9,3 +9,12 @@ services:
       - /usr/src/bot/node_modules/
     working_dir: /usr/src/bot
     restart: unless-stopped
+  update-discord-bot-pokeclicker:
+    build: .
+    container_name: Update-discord-bot-pokeclicker
+    command: ["npm", "run", "build"]
+    volumes:
+      - ./:/usr/src/bot
+      - /usr/src/bot/node_modules/
+    working_dir: /usr/src/bot
+    restart: "no"
