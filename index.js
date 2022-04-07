@@ -159,22 +159,37 @@ client.on('error', e => error('Client error thrown:', e))
           name: c.name,
           description: c.description,
           options: c.args,
-          defaultPermission: (!c.userperms || c.userperms?.length == 0),
+          defaultPermission: (!c.userperms || c.userperms?.length == 0) && (!c.userroles || c.userroles?.length == 0),
         }));
         // Add any context menu commands
         data.push(...client.slashCommands.filter(c => c.type).map(c => ({
           name: c.name,
           type: c.type,
-          defaultPermission: (!c.userperms || c.userperms?.length == 0),
+          defaultPermission: (!c.userperms || c.userperms?.length == 0) && (!c.userroles || c.userroles?.length == 0),
         })));
         // Update the current list of commands for this guild
         await message.guild.commands.set(data);
 
-        const restrictCmds = client.slashCommands.filter(c => c.userperms?.length > 0).map(c => {
-          const roleIDs = message.guild.roles.cache.filter(r => r.permissions.has(c.userperms)).map(r => r.id);
-          c.roleIDs = roleIDs;
-          return c;
-        });
+        const restrictCmds = client.slashCommands
+          .filter(c => c.userperms?.length > 0 || c.userroles?.length > 0)
+          .map(c => {
+            const roleIDs = message.guild.roles.cache.filter(r => {
+              let canUse = true;
+              if (c.userperms?.length) {
+                if (!r.permissions.has(c.userperms)) {
+                  canUse = false;
+                }
+              }
+              if (c.userroles?.length) {
+                if (!c.userroles.includes(r.id) && !c.userroles?.includes(r.name)) {
+                  canUse = false;
+                }
+              }
+              return canUse;
+            }).map(r => r.id);
+            c.roleIDs = roleIDs;
+            return c;
+          });
 
         const fullPermissions = message.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
           const cmd = restrictCmds.find(cmd => cmd.name === c.name);
@@ -250,6 +265,12 @@ client.on('error', e => error('Client error thrown:', e))
     if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
       return message.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
     }
+    
+    // Check user has the required roles
+    if (message.channel.type === 'GUILD_TEXT' && command.userroles?.length) {
+      const hasRolePerms = command.userroles.some(r => message.member.roles.cache.find(role => role.id == r || role.name == r));
+      if (!hasRolePerms) return message.reply({ content: 'You do not have the required roles to run this command.', ephemeral: true });
+    }
 
     // Check the bot has the required permissions
     if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
@@ -304,6 +325,12 @@ client.on('error', e => error('Client error thrown:', e))
       // Check the user has the required permissions
       if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
         return interaction.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
+      }
+
+      // Check user has the required roles
+      if (interaction.channel.type === 'GUILD_TEXT' && command.userroles?.length) {
+        const hasRolePerms = command.userroles.some(r => interaction.member.roles.cache.find(role => role.id == r || role.name == r));
+        if (!hasRolePerms) return interaction.reply({ content: 'You do not have the required roles to run this command.', ephemeral: true });
       }
 
       // Check the bot has the required permissions
