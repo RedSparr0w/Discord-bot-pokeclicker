@@ -2,7 +2,6 @@ const { MessageEmbed } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
-  type        : 'USER',
   name        : 'wiki-contributor',
   aliases     : [],
   description : 'Apply the @Wiki Contributor role to a user',
@@ -10,7 +9,7 @@ module.exports = {
     {
       name: 'user',
       type: 'USER',
-      description: 'User to mute',
+      description: 'User to apply the role to',
       required: true,
     },
   ],
