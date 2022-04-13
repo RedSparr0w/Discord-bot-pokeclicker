@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.8.17',
+  'gameVersion': '0.9.0',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -45,7 +45,7 @@ module.exports = {
     },
     {
       'name': 'Surfing Pikachu',
-      'image': 'assets/images/pokemon/-2.png',
+      'image': 'assets/images/pokemon/25.09.png',
       'price': 1500,
       'description': "It's a Pikachu on a surfboard!",
       'claimed': false,
@@ -3053,7 +3053,6 @@ module.exports = {
           'Budew',
           'Buizel',
           'Shellos (west)',
-          'Drifloon',
         ],
         'water': [
           'Psyduck',
@@ -3074,13 +3073,6 @@ module.exports = {
         'special': [],
       },
       'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 14,
-          'region': 3,
-          'route': 204,
-        },
         {
           'requiredValue': 1,
           'option': 2,
@@ -3112,7 +3104,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 41,
+          'achievementType': 16,
+          'dungeonIndex': 47,
         },
       ],
       'orderNumber': 206,
@@ -3175,7 +3168,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 48,
+          'dungeonIndex': 49,
         },
       ],
       'orderNumber': 208,
@@ -3484,7 +3477,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 51,
+          'dungeonIndex': 54,
         },
       ],
       'orderNumber': 216,
@@ -3651,7 +3644,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 55,
+          'dungeonIndex': 58,
         },
       ],
       'orderNumber': 222,
@@ -4199,7 +4192,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 70,
+          'dungeonIndex': 73,
         },
         {
           'requiredValue': 1,
@@ -4236,7 +4229,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 73,
+          'dungeonIndex': 76,
         },
       ],
       'orderNumber': 13,
@@ -4265,7 +4258,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 73,
+          'dungeonIndex': 76,
         },
       ],
       'orderNumber': 13,
@@ -4296,7 +4289,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 73,
+          'dungeonIndex': 76,
         },
       ],
       'orderNumber': 13,
@@ -4412,7 +4405,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 75,
+          'dungeonIndex': 78,
         },
       ],
       'orderNumber': 21,
@@ -4477,7 +4470,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 77,
+          'dungeonIndex': 80,
         },
       ],
       'orderNumber': 23,
@@ -4508,7 +4501,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 81,
+              'dungeonIndex': 84,
             },
             {
               'requiredValue': 2,
@@ -4597,7 +4590,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 85,
+          'dungeonIndex': 88,
         },
       ],
       'orderNumber': 23.1,
@@ -4790,7 +4783,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 88,
+          'dungeonIndex': 91,
         },
       ],
       'orderNumber': 3,
@@ -4946,7 +4939,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 89,
+          'dungeonIndex': 92,
         },
       ],
       'orderNumber': 7,
@@ -4983,7 +4976,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 90,
+          'dungeonIndex': 93,
         },
       ],
       'orderNumber': 8,
@@ -5037,7 +5030,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 91,
+          'dungeonIndex': 94,
         },
       ],
       'orderNumber': 10,
@@ -5233,7 +5226,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 95,
+          'dungeonIndex': 98,
         },
       ],
       'orderNumber': 15,
@@ -5294,7 +5287,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 97,
+          'dungeonIndex': 100,
         },
       ],
       'orderNumber': 17,
@@ -5323,7 +5316,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 98,
+          'dungeonIndex': 101,
         },
       ],
       'orderNumber': 18,
@@ -5514,7 +5507,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 102,
+          'dungeonIndex': 105,
         },
       ],
       'orderNumber': 2,
@@ -5543,7 +5536,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 104,
+          'dungeonIndex': 107,
         },
       ],
       'orderNumber': 3,
@@ -5603,7 +5596,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 109,
+          'dungeonIndex': 112,
         },
       ],
       'orderNumber': 5,
@@ -5635,7 +5628,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 110,
+          'dungeonIndex': 113,
         },
       ],
       'orderNumber': 5.1,
@@ -5671,13 +5664,13 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 106,
+          'dungeonIndex': 109,
         },
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 110,
+          'dungeonIndex': 113,
         },
       ],
       'orderNumber': 5.2,
@@ -5708,7 +5701,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 110,
+          'dungeonIndex': 113,
         },
       ],
       'orderNumber': 6,
@@ -5773,7 +5766,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 111,
+          'dungeonIndex': 114,
         },
       ],
       'orderNumber': 8,
@@ -5800,7 +5793,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 113,
+          'dungeonIndex': 116,
         },
       ],
       'orderNumber': 9,
@@ -5832,7 +5825,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 114,
+          'dungeonIndex': 117,
         },
       ],
       'orderNumber': 9.1,
@@ -5861,7 +5854,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 115,
+          'dungeonIndex': 118,
         },
       ],
       'orderNumber': 10,
@@ -5927,7 +5920,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 115,
+          'dungeonIndex': 118,
         },
       ],
       'orderNumber': 11,
@@ -5962,7 +5955,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 116,
+          'dungeonIndex': 119,
         },
       ],
       'orderNumber': 12,
@@ -6052,7 +6045,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 117,
+          'dungeonIndex': 120,
         },
       ],
       'orderNumber': 15,
@@ -6110,7 +6103,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 118,
+          'dungeonIndex': 121,
         },
       ],
       'orderNumber': 17,
@@ -6138,7 +6131,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 117,
+          'dungeonIndex': 120,
         },
       ],
       'orderNumber': 23,
@@ -6165,7 +6158,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 120,
+          'dungeonIndex': 123,
         },
       ],
       'orderNumber': 24,
@@ -6372,7 +6365,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 132,
+          'dungeonIndex': 135,
         },
       ],
       'orderNumber': 1,
@@ -8024,7 +8017,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 134,
+          'dungeonIndex': 137,
         },
       ],
       'orderNumber': 11,
@@ -8097,7 +8090,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 135,
+          'dungeonIndex': 138,
         },
       ],
       'orderNumber': 13,
@@ -8292,7 +8285,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 139,
+          'dungeonIndex': 142,
         },
       ],
       'orderNumber': 14,
@@ -13157,14 +13150,13 @@ module.exports = {
         '11': 15.38,
       },
       '205': {
-        '0': 8,
-        '2': 60,
-        '4': 4,
-        '7': 16,
-        '8': 12,
-        '9': 16,
-        '11': 24,
-        '13': 4,
+        '0': 8.33,
+        '2': 62.5,
+        '4': 4.17,
+        '7': 16.67,
+        '8': 12.5,
+        '9': 12.5,
+        '11': 25,
       },
       '206': {
         '1': 14.29,
@@ -15337,6 +15329,64 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 1.1,
+      'name': 'Bulbasaur (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 64,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Bulbasaur (clone)',
+          'type': [0],
+          'evolvedPokemon': 'Ivysaur (clone)',
+          'level': 16,
+        },
+      ],
+      'base': {
+        'hitpoints': 45,
+        'attack': 49,
+        'specialAttack': 65,
+        'defense': 49,
+        'specialDefense': 65,
+        'speed': 45,
+      },
+      'attack': 53,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 1.2,
+      'name': 'Spooky Bulbasaur',
+      'nativeRegion': 0,
+      'catchRate': 25,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 64,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 45,
+        'attack': 49,
+        'specialAttack': 65,
+        'defense': 49,
+        'specialDefense': 65,
+        'speed': 45,
+      },
+      'attack': 53,
+      'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 800,
+    },
+    {
       'id': 2,
       'name': 'Ivysaur',
       'catchRate': 45,
@@ -15379,6 +15429,48 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 2.1,
+      'name': 'Ivysaur (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 142,
+      'eggCycles': 30,
+      'evolutions': [
+        {
+          'basePokemon': 'Ivysaur (clone)',
+          'type': [0],
+          'evolvedPokemon': 'Venusaur (clone)',
+          'level': 32,
+        },
+      ],
+      'base': {
+        'hitpoints': 60,
+        'attack': 62,
+        'specialAttack': 80,
+        'defense': 63,
+        'specialDefense': 80,
+        'speed': 60,
+      },
+      'attack': 85,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Bulbasaur (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Ivysaur (clone)',
+            'level': 16,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
       'id': 3,
       'name': 'Venusaur',
       'catchRate': 45,
@@ -15405,6 +15497,40 @@ module.exports = {
             'basePokemon': 'Ivysaur',
             'type': [0],
             'evolvedPokemon': 'Venusaur',
+            'level': 32,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 3.1,
+      'name': 'Venusaur (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 236,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 80,
+        'attack': 82,
+        'specialAttack': 100,
+        'defense': 83,
+        'specialDefense': 100,
+        'speed': 80,
+      },
+      'attack': 141,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Ivysaur (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Venusaur (clone)',
             'level': 32,
           },
         ],
@@ -15442,6 +15568,36 @@ module.exports = {
         '5': ['Fire'],
         '11': ['Occa'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 4.1,
+      'name': 'Charmander (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [1],
+      'levelType': 3,
+      'exp': 62,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Charmander (clone)',
+          'type': [0],
+          'evolvedPokemon': 'Charmeleon (clone)',
+          'level': 16,
+        },
+      ],
+      'base': {
+        'hitpoints': 39,
+        'attack': 52,
+        'specialAttack': 60,
+        'defense': 43,
+        'specialDefense': 50,
+        'speed': 65,
+      },
+      'attack': 46,
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -15485,6 +15641,45 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 5.1,
+      'name': 'Charmeleon (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [1],
+      'levelType': 3,
+      'exp': 142,
+      'eggCycles': 30,
+      'evolutions': [
+        {
+          'basePokemon': 'Charmeleon (clone)',
+          'type': [0],
+          'evolvedPokemon': 'Charizard (clone)',
+          'level': 36,
+        },
+      ],
+      'base': {
+        'hitpoints': 58,
+        'attack': 64,
+        'specialAttack': 80,
+        'defense': 58,
+        'specialDefense': 65,
+        'speed': 80,
+      },
+      'attack': 81,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Charmander (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Charmeleon (clone)',
+            'level': 16,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
       'id': 6,
       'name': 'Charizard',
       'catchRate': 45,
@@ -15511,6 +15706,40 @@ module.exports = {
             'basePokemon': 'Charmeleon',
             'type': [0],
             'evolvedPokemon': 'Charizard',
+            'level': 36,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 6.1,
+      'name': 'Charizard (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [
+        1,
+        9,
+      ],
+      'levelType': 3,
+      'exp': 240,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 78,
+        'attack': 84,
+        'specialAttack': 109,
+        'defense': 78,
+        'specialDefense': 85,
+        'speed': 100,
+      },
+      'attack': 142,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Charmeleon (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Charizard (clone)',
             'level': 36,
           },
         ],
@@ -15548,6 +15777,36 @@ module.exports = {
         '5': ['Water'],
         '11': ['Passho'],
       },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 7.1,
+      'name': 'Squirtle (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 63,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Squirtle (clone)',
+          'type': [0],
+          'evolvedPokemon': 'Wartortle (clone)',
+          'level': 16,
+        },
+      ],
+      'base': {
+        'hitpoints': 44,
+        'attack': 48,
+        'specialAttack': 50,
+        'defense': 65,
+        'specialDefense': 64,
+        'speed': 43,
+      },
+      'attack': 50,
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -15591,6 +15850,45 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 8.1,
+      'name': 'Wartortle (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 142,
+      'eggCycles': 30,
+      'evolutions': [
+        {
+          'basePokemon': 'Wartortle (clone)',
+          'type': [0],
+          'evolvedPokemon': 'Blastoise (clone)',
+          'level': 36,
+        },
+      ],
+      'base': {
+        'hitpoints': 59,
+        'attack': 63,
+        'specialAttack': 65,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 58,
+      },
+      'attack': 83,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Squirtle (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Wartortle (clone)',
+            'level': 16,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
       'id': 9,
       'name': 'Blastoise',
       'catchRate': 45,
@@ -15614,6 +15912,37 @@ module.exports = {
             'basePokemon': 'Wartortle',
             'type': [0],
             'evolvedPokemon': 'Blastoise',
+            'level': 36,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 9.1,
+      'name': 'Blastoise (clone)',
+      'nativeRegion': 0,
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 239,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 79,
+        'attack': 83,
+        'specialAttack': 85,
+        'defense': 100,
+        'specialDefense': 105,
+        'speed': 78,
+      },
+      'attack': 139,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Wartortle (clone)',
+            'type': [0],
+            'evolvedPokemon': 'Blastoise (clone)',
             'level': 36,
           },
         ],
@@ -17149,15 +17478,103 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
-      'locations': {
-        '3': [
-          {
-            'dungeon': 'Pikachu Valley',
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 400,
+    },
+    {
+      'id': 25.08,
+      'name': 'Flying Pikachu',
+      'nativeRegion': 0,
+      'catchRate': 50,
+      'type': [
+        3,
+        9,
+      ],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
+    },
+    {
+      'id': 25.09,
+      'name': 'Surfing Pikachu',
+      'nativeRegion': 0,
+      'catchRate': 50,
+      'type': [
+        3,
+        2,
+      ],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
+    },
+    {
+      'id': 25.1,
+      'name': 'Pikachu (Gengar)',
+      'nativeRegion': 0,
+      'catchRate': 50,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
+    },
+    {
+      'id': 25.11,
+      'name': "Let's Go Pikachu",
+      'nativeRegion': 0,
+      'catchRate': 50,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 800,
     },
     {
       'id': 26,
@@ -17923,6 +18340,7 @@ module.exports = {
           'Mt. Moon',
           'Mt. Coronet South',
           'Mt. Coronet North',
+          'Spear Pillar',
           'Giant Chasm',
           'Lake of the Sunne and Moone',
         ],
@@ -18450,7 +18868,6 @@ module.exports = {
           'Sealed Chamber',
           'Victory Road Hoenn',
           'Oreburgh Gate',
-          'Ravaged Path',
           'Wayward Cave',
           'Mt. Coronet South',
           'Solaceon Ruins',
@@ -18527,10 +18944,12 @@ module.exports = {
           'Sky Pillar',
           'Sealed Chamber',
           'Victory Road Hoenn',
+          'Oreburgh Gate',
           'Iron Island',
+          'Spear Pillar',
           'Distortion World',
           'Victory Road Sinnoh',
-          'Spear Pillar',
+          'Sendoff Spring',
           'Snowpoint Temple',
           'Stark Mountain',
           'Celestial Tower',
@@ -19529,9 +19948,8 @@ module.exports = {
         },
         '2': [
           'Oreburgh Gate',
-          'Ravaged Path',
-          'Lake Verity',
           'Lake Valor',
+          'Lake Verity',
           'Lake Acuity',
           'Floccesy Ranch',
           'Seaward Cave',
@@ -19663,16 +20081,12 @@ module.exports = {
         },
         '2': [
           'Oreburgh Gate',
-          'Ravaged Path',
           'Lake Valor',
+          'Lake Verity',
           'Lake Acuity',
+          'Sendoff Spring',
           'Seaside Cave',
           'Abundant Shrine',
-        ],
-        '3': [
-          {
-            'dungeon': 'Lake Verity',
-          },
         ],
         '4': [
           {
@@ -20650,13 +21064,14 @@ module.exports = {
             },
           ],
         },
-        '2': ['Vast Poni Canyon'],
+        '2': [
+          'Spear Pillar',
+          'Stark Mountain',
+          'Vast Poni Canyon',
+        ],
         '3': [
           {
             'dungeon': 'Victory Road',
-          },
-          {
-            'dungeon': 'Mt. Coronet South',
           },
         ],
         '4': [
@@ -21524,7 +21939,9 @@ module.exports = {
           'Victory Road Johto',
           'Magma Hideout',
           'Iron Island',
+          'Spear Pillar',
           'Victory Road Sinnoh',
+          'Sendoff Spring',
           'Stark Mountain',
           'Cave of Being',
           'Terminus Cave',
@@ -22964,7 +23381,6 @@ module.exports = {
         '2': [
           'Pokemon Tower',
           'Old Chateau',
-          'Distortion World',
           'Celestial Tower',
           'Frost Cavern',
           'Victory Road Kalos',
@@ -25186,9 +25602,10 @@ module.exports = {
           'Union Cave',
           'Meteor Falls',
           'Victory Road Hoenn',
-          'Lake Verity',
           'Lake Valor',
+          'Lake Verity',
           'Lake Acuity',
+          'Sendoff Spring',
           'Abundant Shrine',
           'Pinwheel Forest',
           'Parfum Palace',
@@ -25324,7 +25741,7 @@ module.exports = {
         ],
         '3': [
           {
-            'dungeon': 'Lake Verity',
+            'dungeon': 'Sendoff Spring',
           },
         ],
         '4': [
@@ -26415,12 +26832,12 @@ module.exports = {
           'Seafloor Cavern',
           'Victory Road Hoenn',
           'Oreburgh Gate',
-          'Ravaged Path',
           'Mt. Coronet South',
-          'Mt. Coronet North',
-          'Lake Verity',
           'Lake Valor',
+          'Lake Verity',
+          'Mt. Coronet North',
           'Lake Acuity',
+          'Sendoff Spring',
           'Parfum Palace',
           'Seaward Cave',
           'Brooklet Hill',
@@ -26649,6 +27066,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Lake Acuity',
           'Parfum Palace',
           'Malie Garden',
         ],
@@ -26657,10 +27075,7 @@ module.exports = {
             'dungeon': 'Oreburgh Gate',
           },
           {
-            'dungeon': 'Ravaged Path',
-          },
-          {
-            'dungeon': 'Lake Acuity',
+            'dungeon': 'Sendoff Spring',
           },
         ],
         '4': [
@@ -27021,6 +27436,28 @@ module.exports = {
         '7': ['Celadon City'],
       },
       'catchRatePercent': 63,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 133.1,
+      'name': "Let's Go Eevee",
+      'nativeRegion': 0,
+      'catchRate': 50,
+      'type': [0],
+      'levelType': 2,
+      'exp': 65,
+      'eggCycles': 35,
+      'base': {
+        'hitpoints': 55,
+        'attack': 55,
+        'specialAttack': 45,
+        'defense': 50,
+        'specialDefense': 65,
+        'speed': 55,
+      },
+      'attack': 54,
+      'locations': {},
+      'catchRatePercent': 18,
       'eggSteps': 1400,
     },
     {
@@ -27479,6 +27916,37 @@ module.exports = {
       'eggSteps': 1600,
     },
     {
+      'id': 143.1,
+      'name': 'Santa Snorlax',
+      'nativeRegion': 0,
+      'catchRate': 25,
+      'type': [0],
+      'levelType': 4,
+      'exp': 189,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 160,
+        'attack': 110,
+        'specialAttack': 65,
+        'defense': 65,
+        'specialDefense': 110,
+        'speed': 30,
+      },
+      'attack': 172,
+      'locations': {
+        '4': [
+          {
+            'basePokemon': 'Elf Munchlax',
+            'type': [1],
+            'evolvedPokemon': 'Santa Snorlax',
+            'stone': 7,
+          },
+        ],
+      },
+      'catchRatePercent': 11,
+      'eggSteps': 1600,
+    },
+    {
       'id': 144,
       'name': 'Articuno',
       'catchRate': 3,
@@ -27885,6 +28353,28 @@ module.exports = {
         ],
       },
       'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 150.1,
+      'name': 'Armored Mewtwo',
+      'nativeRegion': 0,
+      'catchRate': 2,
+      'type': [10],
+      'levelType': 4,
+      'exp': 306,
+      'eggCycles': 120,
+      'base': {
+        'hitpoints': 106,
+        'attack': 110,
+        'specialAttack': 154,
+        'defense': 100,
+        'specialDefense': 100,
+        'speed': 130,
+      },
+      'attack': 246,
+      'locations': {},
+      'catchRatePercent': 1,
       'eggSteps': 4800,
     },
     {
@@ -28500,6 +28990,7 @@ module.exports = {
         },
         '2': [
           'Mt. Coronet North',
+          'Spear Pillar',
           'Pokémon Village',
         ],
         '3': [
@@ -29239,6 +29730,50 @@ module.exports = {
       'eggSteps': 400,
     },
     {
+      'id': 175.1,
+      'name': 'Spooky Togepi',
+      'nativeRegion': 1,
+      'catchRate': 30,
+      'type': [17],
+      'levelType': 1,
+      'exp': 49,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 25,
+        'specialAttack': 40,
+        'defense': 65,
+        'specialDefense': 65,
+        'speed': 20,
+      },
+      'attack': 28,
+      'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 400,
+    },
+    {
+      'id': 175.2,
+      'name': 'Surprise Togepi',
+      'nativeRegion': 1,
+      'catchRate': 30,
+      'type': [17],
+      'levelType': 1,
+      'exp': 49,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 25,
+        'specialAttack': 40,
+        'defense': 65,
+        'specialDefense': 65,
+        'speed': 20,
+      },
+      'attack': 28,
+      'locations': {},
+      'catchRatePercent': 12,
+      'eggSteps': 400,
+    },
+    {
       'id': 176,
       'name': 'Togetic',
       'catchRate': 75,
@@ -29798,7 +30333,6 @@ module.exports = {
           ],
         },
         '2': [
-          'Victory Road Sinnoh',
           'Abundant Shrine',
           'Ruins of Hope',
         ],
@@ -30713,6 +31247,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
           {
             'dungeon': 'Solaceon Ruins',
@@ -30740,7 +31275,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30762,7 +31304,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30784,7 +31333,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30808,6 +31364,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Solaceon Ruins',
           },
@@ -30838,6 +31398,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -30862,7 +31423,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30888,6 +31456,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -30912,7 +31481,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30934,7 +31510,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30956,7 +31539,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -30982,6 +31572,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
           {
             'dungeon': 'Solaceon Ruins',
@@ -31009,7 +31600,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31035,6 +31633,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
           {
             'dungeon': 'Solaceon Ruins',
@@ -31062,7 +31661,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31088,6 +31694,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -31112,7 +31719,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31134,7 +31748,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31156,7 +31777,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31178,7 +31806,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31204,6 +31839,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
           },
           {
             'dungeon': 'Solaceon Ruins',
@@ -31231,7 +31867,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31253,7 +31896,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31275,7 +31925,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31297,7 +31954,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31319,7 +31983,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31341,7 +32012,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31363,7 +32041,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -31743,11 +32428,11 @@ module.exports = {
             },
           ],
         },
-        '2': ['Rose Tower'],
+        '2': [
+          'Iron Island',
+          'Rose Tower',
+        ],
         '3': [
-          {
-            'dungeon': 'Iron Island',
-          },
           {
             'dungeon': 'Victory Road Sinnoh',
           },
@@ -37190,12 +37875,15 @@ module.exports = {
           ],
         },
         '2': [
-          'Mt. Coronet South',
+          'Spear Pillar',
           'Chargestone Cave',
         ],
         '3': [
           {
             'dungeon': 'Granite Cave',
+          },
+          {
+            'dungeon': 'Mt. Coronet South',
           },
         ],
       },
@@ -37586,9 +38274,13 @@ module.exports = {
         '2': [
           'Mt. Pyre',
           'Victory Road Hoenn',
-          'Mt. Coronet South',
           'Mt. Coronet North',
           'Connecting Cave',
+        ],
+        '3': [
+          {
+            'dungeon': 'Mt. Coronet South',
+          },
         ],
         '5': ['Fighting'],
       },
@@ -37617,7 +38309,10 @@ module.exports = {
       'attack': 78,
       'nativeRegion': 2,
       'locations': {
-        '2': ['Victory Road Hoenn'],
+        '2': [
+          'Victory Road Hoenn',
+          'Spear Pillar',
+        ],
         '3': [
           {
             'dungeon': 'Mt. Coronet North',
@@ -39459,7 +40154,6 @@ module.exports = {
           'Meteor Falls',
           'Victory Road Hoenn',
           'Oreburgh Gate',
-          'Ravaged Path',
           'Mt. Coronet South',
           'Mt. Coronet North',
           'Moor of Icirrus',
@@ -39590,9 +40284,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Oreburgh Gate',
-          },
-          {
-            'dungeon': 'Ravaged Path',
           },
           {
             'dungeon': 'Moor of Icirrus',
@@ -40294,7 +40985,7 @@ module.exports = {
           '2': [
             {
               'route': 119,
-              'requirements': 'Castform needs to be caught.',
+              'requirements': 'Castform needs to be caught and The weather needs to be Rain or Thunderstorm.',
             },
           ],
         },
@@ -40571,12 +41262,13 @@ module.exports = {
             },
           ],
         },
+        '2': ['Distortion World'],
         '3': [
           {
             'dungeon': 'Sky Pillar',
           },
           {
-            'dungeon': 'Distortion World',
+            'dungeon': 'Sendoff Spring',
           },
         ],
         '4': [
@@ -40656,6 +41348,7 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': [
+          'Spear Pillar',
           'Distortion World',
           'Ruins of Life',
         ],
@@ -40758,15 +41451,13 @@ module.exports = {
           ],
         },
         '2': [
+          'Spear Pillar',
           'Hall of Origin',
           'Newmoon Island',
           'Split-Decision Ruins',
           'Dyna Tree Hill',
         ],
         '3': [
-          {
-            'dungeon': 'Mt. Coronet South',
-          },
           {
             'dungeon': 'Mount Lanakila',
           },
@@ -42581,7 +43272,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Lake Valor'],
+        '2': [
+          'Lake Valor',
+          'Sendoff Spring',
+        ],
         '4': [
           {
             'basePokemon': 'Starly',
@@ -42736,11 +43430,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Lake Acuity'],
-        '3': [
-          {
-            'dungeon': 'Lake Valor',
-          },
+        '2': [
+          'Lake Valor',
+          'Lake Acuity',
+          'Sendoff Spring',
         ],
         '4': [
           {
@@ -44369,11 +45062,6 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
-          '3': [
-            {
-              'route': 205,
-            },
-          ],
           '5': [
             {
               'route': 8,
@@ -44453,6 +45141,10 @@ module.exports = {
           ],
         },
         '3': [
+          {
+            'dungeon': 'Valley Windworks',
+            'requirements': 'Valley Windworks needs to be completed.',
+          },
           {
             'dungeon': "Hau'oli Cemetery",
           },
@@ -44784,7 +45476,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Spear Pillar'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -44878,7 +45569,9 @@ module.exports = {
         '2': [
           'Mt. Coronet South',
           'Mt. Coronet North',
+          'Spear Pillar',
           'Distortion World',
+          'Sendoff Spring',
           'Reflection Cave',
         ],
         '6': ['Chimecho'],
@@ -44970,7 +45663,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['Spear Pillar'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -45114,16 +45806,17 @@ module.exports = {
           ],
         },
         '2': [
-          'Mt. Coronet South',
           'Solaceon Ruins',
           'Mt. Coronet North',
           'Distortion World',
-          'Spear Pillar',
           'Abundant Shrine',
         ],
         '3': [
           {
             'dungeon': 'Wayward Cave',
+          },
+          {
+            'dungeon': 'Mt. Coronet South',
           },
         ],
       },
@@ -45189,16 +45882,12 @@ module.exports = {
           ],
         },
         '2': [
+          'Spear Pillar',
+          'Distortion World',
           'Rose Tower',
           'Split-Decision Ruins',
         ],
         '3': [
-          {
-            'dungeon': 'Mt. Coronet South',
-          },
-          {
-            'dungeon': 'Distortion World',
-          },
           {
             'dungeon': 'Abundant Shrine',
           },
@@ -45586,11 +46275,6 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Victory Road Sinnoh',
-          },
-        ],
         '4': [
           {
             'basePokemon': 'Gible',
@@ -46141,7 +46825,6 @@ module.exports = {
           ],
         },
         '2': [
-          'Spear Pillar',
           'Moor of Icirrus',
           'Galar Mine No. 2',
         ],
@@ -46590,6 +47273,7 @@ module.exports = {
         '2': [
           'Mt. Coronet North',
           'Lake Acuity',
+          'Spear Pillar',
         ],
         '11': ['Yache'],
       },
@@ -46653,6 +47337,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Spear Pillar'],
         '3': [
           {
             'dungeon': 'Frost Cavern',
@@ -47733,8 +48418,8 @@ module.exports = {
         },
         '3': [
           {
-            'dungeon': 'Old Chateau',
-            'requirements': 'Rotom needs to be caught.',
+            'dungeon': 'Team Galactic Eterna Building',
+            'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
       },
@@ -47773,8 +48458,8 @@ module.exports = {
         },
         '3': [
           {
-            'dungeon': 'Old Chateau',
-            'requirements': 'Rotom needs to be caught.',
+            'dungeon': 'Team Galactic Eterna Building',
+            'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
       },
@@ -47813,8 +48498,8 @@ module.exports = {
         },
         '3': [
           {
-            'dungeon': 'Old Chateau',
-            'requirements': 'Rotom needs to be caught.',
+            'dungeon': 'Team Galactic Eterna Building',
+            'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
       },
@@ -47853,8 +48538,8 @@ module.exports = {
         },
         '3': [
           {
-            'dungeon': 'Old Chateau',
-            'requirements': 'Rotom needs to be caught.',
+            'dungeon': 'Team Galactic Eterna Building',
+            'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
       },
@@ -47893,8 +48578,8 @@ module.exports = {
         },
         '3': [
           {
-            'dungeon': 'Old Chateau',
-            'requirements': 'Rotom needs to be caught.',
+            'dungeon': 'Team Galactic Eterna Building',
+            'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
       },
@@ -47948,6 +48633,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Lake Acuity',
+            'requirements': 'Distortion World needs to be completed.',
           },
           {
             'dungeon': 'Cave of Being',
@@ -47979,7 +48665,7 @@ module.exports = {
         '1': [
           {
             'region': 3,
-            'requirements': 'Lake Verity needs to be completed.',
+            'requirements': 'Distortion World needs to be completed.',
           },
         ],
         '3': [
@@ -48013,6 +48699,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Lake Valor',
+            'requirements': 'Distortion World needs to be completed.',
           },
           {
             'dungeon': 'Cave of Being',
@@ -48047,6 +48734,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Spear Pillar',
+            'requirements': 'Requires the Elite Sinnoh Champion badge.',
           },
         ],
       },
@@ -48078,6 +48766,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Spear Pillar',
+            'requirements': 'Requires the Elite Sinnoh Champion badge.',
           },
         ],
       },
@@ -48175,6 +48864,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Distortion World',
+            'requirements': 'Requires the Elite Sinnoh Champion badge.',
           },
         ],
       },
@@ -66824,6 +67514,31 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 801.1,
+      'name': 'Magearna (Original Color)',
+      'type': [
+        16,
+        17,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': null,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 80,
+        'attack': 95,
+        'specialAttack': 130,
+        'defense': 115,
+        'specialDefense': 115,
+        'speed': 65,
+      },
+      'attack': 188,
+      'nativeRegion': 6,
+      'locations': {},
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
       'id': 802,
       'name': 'Marshadow',
       'type': [
@@ -72856,534 +73571,6 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': -1,
-      'name': 'Flying Pikachu',
-      'nativeRegion': 0,
-      'catchRate': 50,
-      'type': [
-        3,
-        9,
-      ],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'attack': 43,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 800,
-    },
-    {
-      'id': -2,
-      'name': 'Surfing Pikachu',
-      'nativeRegion': 0,
-      'catchRate': 50,
-      'type': [
-        3,
-        2,
-      ],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'attack': 43,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 800,
-    },
-    {
-      'id': -3,
-      'name': 'Armored Mewtwo',
-      'nativeRegion': 0,
-      'catchRate': 2,
-      'type': [10],
-      'levelType': 4,
-      'exp': 306,
-      'eggCycles': 120,
-      'base': {
-        'hitpoints': 106,
-        'attack': 110,
-        'specialAttack': 154,
-        'defense': 100,
-        'specialDefense': 100,
-        'speed': 130,
-      },
-      'attack': 246,
-      'locations': {},
-      'catchRatePercent': 1,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -4,
-      'name': 'Santa Snorlax',
-      'nativeRegion': 0,
-      'catchRate': 25,
-      'type': [0],
-      'levelType': 4,
-      'exp': 189,
-      'eggCycles': 40,
-      'base': {
-        'hitpoints': 160,
-        'attack': 110,
-        'specialAttack': 65,
-        'defense': 65,
-        'specialDefense': 110,
-        'speed': 30,
-      },
-      'attack': 172,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Elf Munchlax',
-            'type': [1],
-            'evolvedPokemon': 'Santa Snorlax',
-            'stone': 7,
-          },
-        ],
-      },
-      'catchRatePercent': 11,
-      'eggSteps': 1600,
-    },
-    {
-      'id': -5,
-      'name': 'Spooky Togepi',
-      'nativeRegion': 1,
-      'catchRate': 30,
-      'type': [17],
-      'levelType': 1,
-      'exp': 49,
-      'eggCycles': 10,
-      'base': {
-        'hitpoints': 35,
-        'attack': 25,
-        'specialAttack': 40,
-        'defense': 65,
-        'specialDefense': 65,
-        'speed': 20,
-      },
-      'attack': 28,
-      'locations': {},
-      'catchRatePercent': 12,
-      'eggSteps': 400,
-    },
-    {
-      'id': -6,
-      'name': 'Spooky Bulbasaur',
-      'nativeRegion': 0,
-      'catchRate': 25,
-      'type': [
-        4,
-        7,
-      ],
-      'levelType': 3,
-      'exp': 64,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 45,
-        'attack': 49,
-        'specialAttack': 65,
-        'defense': 49,
-        'specialDefense': 65,
-        'speed': 45,
-      },
-      'attack': 53,
-      'locations': {},
-      'catchRatePercent': 11,
-      'eggSteps': 800,
-    },
-    {
-      'id': -7,
-      'name': 'Pikachu (Gengar)',
-      'nativeRegion': 0,
-      'catchRate': 50,
-      'type': [3],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'attack': 43,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 800,
-    },
-    {
-      'id': -8,
-      'name': "Let's Go Pikachu",
-      'nativeRegion': 0,
-      'catchRate': 50,
-      'type': [3],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'attack': 43,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 800,
-    },
-    {
-      'id': -9,
-      'name': "Let's Go Eevee",
-      'nativeRegion': 0,
-      'catchRate': 50,
-      'type': [0],
-      'levelType': 2,
-      'exp': 65,
-      'eggCycles': 35,
-      'base': {
-        'hitpoints': 55,
-        'attack': 55,
-        'specialAttack': 45,
-        'defense': 50,
-        'specialDefense': 65,
-        'speed': 55,
-      },
-      'attack': 54,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 1400,
-    },
-    {
-      'id': -10,
-      'name': 'Bulbasaur (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [
-        4,
-        7,
-      ],
-      'levelType': 3,
-      'exp': 64,
-      'eggCycles': 20,
-      'evolutions': [
-        {
-          'basePokemon': 'Bulbasaur (clone)',
-          'type': [0],
-          'evolvedPokemon': 'Ivysaur (clone)',
-          'level': 16,
-        },
-      ],
-      'base': {
-        'hitpoints': 45,
-        'attack': 49,
-        'specialAttack': 65,
-        'defense': 49,
-        'specialDefense': 65,
-        'speed': 45,
-      },
-      'attack': 53,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 800,
-    },
-    {
-      'id': -11,
-      'name': 'Ivysaur (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [
-        4,
-        7,
-      ],
-      'levelType': 3,
-      'exp': 142,
-      'eggCycles': 30,
-      'evolutions': [
-        {
-          'basePokemon': 'Ivysaur (clone)',
-          'type': [0],
-          'evolvedPokemon': 'Venusaur (clone)',
-          'level': 32,
-        },
-      ],
-      'base': {
-        'hitpoints': 60,
-        'attack': 62,
-        'specialAttack': 80,
-        'defense': 63,
-        'specialDefense': 80,
-        'speed': 60,
-      },
-      'attack': 85,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Bulbasaur (clone)',
-            'type': [0],
-            'evolvedPokemon': 'Ivysaur (clone)',
-            'level': 16,
-          },
-        ],
-      },
-      'catchRatePercent': 17,
-      'eggSteps': 1200,
-    },
-    {
-      'id': -12,
-      'name': 'Venusaur (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [
-        4,
-        7,
-      ],
-      'levelType': 3,
-      'exp': 236,
-      'eggCycles': 45,
-      'base': {
-        'hitpoints': 80,
-        'attack': 82,
-        'specialAttack': 100,
-        'defense': 83,
-        'specialDefense': 100,
-        'speed': 80,
-      },
-      'attack': 141,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Ivysaur (clone)',
-            'type': [0],
-            'evolvedPokemon': 'Venusaur (clone)',
-            'level': 32,
-          },
-        ],
-      },
-      'catchRatePercent': 17,
-      'eggSteps': 1800,
-    },
-    {
-      'id': -13,
-      'name': 'Charmander (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [1],
-      'levelType': 3,
-      'exp': 62,
-      'eggCycles': 20,
-      'evolutions': [
-        {
-          'basePokemon': 'Charmander (clone)',
-          'type': [0],
-          'evolvedPokemon': 'Charmeleon (clone)',
-          'level': 16,
-        },
-      ],
-      'base': {
-        'hitpoints': 39,
-        'attack': 52,
-        'specialAttack': 60,
-        'defense': 43,
-        'specialDefense': 50,
-        'speed': 65,
-      },
-      'attack': 46,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 800,
-    },
-    {
-      'id': -14,
-      'name': 'Charmeleon (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [1],
-      'levelType': 3,
-      'exp': 142,
-      'eggCycles': 30,
-      'evolutions': [
-        {
-          'basePokemon': 'Charmeleon (clone)',
-          'type': [0],
-          'evolvedPokemon': 'Charizard (clone)',
-          'level': 36,
-        },
-      ],
-      'base': {
-        'hitpoints': 58,
-        'attack': 64,
-        'specialAttack': 80,
-        'defense': 58,
-        'specialDefense': 65,
-        'speed': 80,
-      },
-      'attack': 81,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Charmander (clone)',
-            'type': [0],
-            'evolvedPokemon': 'Charmeleon (clone)',
-            'level': 16,
-          },
-        ],
-      },
-      'catchRatePercent': 17,
-      'eggSteps': 1200,
-    },
-    {
-      'id': -15,
-      'name': 'Charizard (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [
-        1,
-        9,
-      ],
-      'levelType': 3,
-      'exp': 240,
-      'eggCycles': 45,
-      'base': {
-        'hitpoints': 78,
-        'attack': 84,
-        'specialAttack': 109,
-        'defense': 78,
-        'specialDefense': 85,
-        'speed': 100,
-      },
-      'attack': 142,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Charmeleon (clone)',
-            'type': [0],
-            'evolvedPokemon': 'Charizard (clone)',
-            'level': 36,
-          },
-        ],
-      },
-      'catchRatePercent': 17,
-      'eggSteps': 1800,
-    },
-    {
-      'id': -16,
-      'name': 'Squirtle (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [2],
-      'levelType': 3,
-      'exp': 63,
-      'eggCycles': 20,
-      'evolutions': [
-        {
-          'basePokemon': 'Squirtle (clone)',
-          'type': [0],
-          'evolvedPokemon': 'Wartortle (clone)',
-          'level': 16,
-        },
-      ],
-      'base': {
-        'hitpoints': 44,
-        'attack': 48,
-        'specialAttack': 50,
-        'defense': 65,
-        'specialDefense': 64,
-        'speed': 43,
-      },
-      'attack': 50,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 800,
-    },
-    {
-      'id': -17,
-      'name': 'Wartortle (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [2],
-      'levelType': 3,
-      'exp': 142,
-      'eggCycles': 30,
-      'evolutions': [
-        {
-          'basePokemon': 'Wartortle (clone)',
-          'type': [0],
-          'evolvedPokemon': 'Blastoise (clone)',
-          'level': 36,
-        },
-      ],
-      'base': {
-        'hitpoints': 59,
-        'attack': 63,
-        'specialAttack': 65,
-        'defense': 80,
-        'specialDefense': 80,
-        'speed': 58,
-      },
-      'attack': 83,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Squirtle (clone)',
-            'type': [0],
-            'evolvedPokemon': 'Wartortle (clone)',
-            'level': 16,
-          },
-        ],
-      },
-      'catchRatePercent': 17,
-      'eggSteps': 1200,
-    },
-    {
-      'id': -18,
-      'name': 'Blastoise (clone)',
-      'nativeRegion': 0,
-      'catchRate': 45,
-      'type': [2],
-      'levelType': 3,
-      'exp': 239,
-      'eggCycles': 45,
-      'base': {
-        'hitpoints': 79,
-        'attack': 83,
-        'specialAttack': 85,
-        'defense': 100,
-        'specialDefense': 105,
-        'speed': 78,
-      },
-      'attack': 139,
-      'locations': {
-        '4': [
-          {
-            'basePokemon': 'Wartortle (clone)',
-            'type': [0],
-            'evolvedPokemon': 'Blastoise (clone)',
-            'level': 36,
-          },
-        ],
-      },
-      'catchRatePercent': 17,
-      'eggSteps': 1800,
-    },
-    {
       'id': -100,
       'name': 'Mega Venusaur',
       'nativeRegion': 0,
@@ -73459,7 +73646,32 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': -115,
+      'id': -124,
+      'name': 'Mega Gardevoir',
+      'type': [
+        10,
+        17,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 68,
+        'attack': 85,
+        'specialAttack': 165,
+        'defense': 65,
+        'specialDefense': 135,
+        'speed': 100,
+      },
+      'attack': 172,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
+      'id': -142,
       'name': 'Mega Rayquaza',
       'nativeRegion': 2,
       'type': [
@@ -73553,7 +73765,7 @@ module.exports = {
       'galar': 7,
       'final': 8,
     },
-    'MAX_AVAILABLE_REGION': 5,
+    'MAX_AVAILABLE_REGION': 6,
     'MaxIDPerRegion': [
       151,
       251,
@@ -73842,7 +74054,8 @@ module.exports = {
     'ACHIEVEMENT_DEFEAT_DUNGEON_VALUES': [
       10,
       100,
-      1000,
+      250,
+      500,
     ],
     'Environments': {
       'Water': {
@@ -74116,10 +74329,10 @@ module.exports = {
       'ArrowLeft': 'left',
       'ArrowDown': 'down',
       'ArrowRight': 'right',
-      'KeyW': 'up',
-      'KeyA': 'left',
-      'KeyS': 'down',
-      'KeyD': 'right',
+      'W': 'up',
+      'A': 'left',
+      'S': 'down',
+      'D': 'right',
     },
     'FossilToPokemon': {
       'Helix Fossil': 'Omanyte',
@@ -74250,6 +74463,7 @@ module.exports = {
       'Malie City',
       'Vast Poni Canyon Trial',
       'Altar of the Sunne and Moone',
+      "Mina's Trial",
       'Exeggutor Island',
       'Elite Molayne',
       'Elite Olivia',
@@ -74375,6 +74589,7 @@ module.exports = {
         'Malie City',
         'Vast Poni Canyon Trial',
         'Altar of the Sunne and Moone',
+        "Mina's Trial",
         'Exeggutor Island',
         'Elite Molayne',
         'Elite Olivia',
@@ -74448,20 +74663,23 @@ module.exports = {
     ],
     'SinnohDungeons': [
       'Oreburgh Gate',
-      'Ravaged Path',
+      'Valley Windworks',
       'Eterna Forest',
       'Old Chateau',
+      'Team Galactic Eterna Building',
       'Wayward Cave',
       'Mt. Coronet South',
       'Solaceon Ruins',
       'Iron Island',
-      'Mt. Coronet North',
-      'Lake Verity',
       'Lake Valor',
+      'Lake Verity',
+      'Mt. Coronet North',
       'Lake Acuity',
+      'Team Galactic HQ',
+      'Spear Pillar',
       'Distortion World',
       'Victory Road Sinnoh',
-      'Spear Pillar',
+      'Sendoff Spring',
       'Fullmoon Island',
       'Newmoon Island',
       'Flower Paradise',
@@ -74606,20 +74824,23 @@ module.exports = {
       ],
       [
         'Oreburgh Gate',
-        'Ravaged Path',
+        'Valley Windworks',
         'Eterna Forest',
         'Old Chateau',
+        'Team Galactic Eterna Building',
         'Wayward Cave',
         'Mt. Coronet South',
         'Solaceon Ruins',
         'Iron Island',
-        'Mt. Coronet North',
-        'Lake Verity',
         'Lake Valor',
+        'Lake Verity',
+        'Mt. Coronet North',
         'Lake Acuity',
+        'Team Galactic HQ',
+        'Spear Pillar',
         'Distortion World',
         'Victory Road Sinnoh',
-        'Spear Pillar',
+        'Sendoff Spring',
         'Fullmoon Island',
         'Newmoon Island',
         'Flower Paradise',
@@ -74974,7 +75195,7 @@ module.exports = {
     'Elite_ArmorChampion': 112,
     'Elite_CrownChampion': 113,
   },
-  'gymList': {
+  'GymList': {
     'Pewter City': {
       'leaderName': 'Brock',
       'town': 'Pewter City',
@@ -75469,6 +75690,109 @@ module.exports = {
         'achievement': true,
       },
     },
+    'Champion Blue': {
+      'leaderName': 'Blue',
+      'town': 'Champion Blue',
+      'pokemons': [
+        {
+          'name': 'Pidgeot',
+          'maxHealth': 52340,
+          'level': 59,
+        },
+        {
+          'name': 'Alakazam',
+          'maxHealth': 56320,
+          'level': 57,
+        },
+        {
+          'name': 'Rhydon',
+          'maxHealth': 58340,
+          'level': 59,
+        },
+      ],
+      'badgeReward': 13,
+      'moneyReward': 10000,
+      'defeatMessage': "Why? Why did I lose? I never made any mistakes raising my Pokémon… Darn it! You're the new Pokémon League Champion! Although I don't like to admit it…",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 12,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Pidgeot',
+          'maxHealth': 52340,
+          'level': 59,
+        },
+        {
+          'name': 'Alakazam',
+          'maxHealth': 56320,
+          'level': 57,
+        },
+        {
+          'name': 'Rhydon',
+          'maxHealth': 58340,
+          'level': 59,
+        },
+      ],
+      'alternativePokemon1': [
+        {
+          'name': 'Exeggutor',
+          'maxHealth': 57520,
+          'level': 59,
+        },
+        {
+          'name': 'Gyarados',
+          'maxHealth': 63040,
+          'level': 61,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 70000,
+          'level': 63,
+        },
+      ],
+      'alternativePokemon2': [
+        {
+          'name': 'Arcanine',
+          'maxHealth': 65340,
+          'level': 59,
+        },
+        {
+          'name': 'Exeggutor',
+          'maxHealth': 57520,
+          'level': 61,
+        },
+        {
+          'name': 'Blastoise',
+          'maxHealth': 70000,
+          'level': 63,
+        },
+      ],
+      'alternativePokemon3': [
+        {
+          'name': 'Gyarados',
+          'maxHealth': 63040,
+          'level': 59,
+        },
+        {
+          'name': 'Arcanine',
+          'maxHealth': 65340,
+          'level': 61,
+        },
+        {
+          'name': 'Venusaur',
+          'maxHealth': 70000,
+          'level': 63,
+        },
+      ],
+    },
     'Violet City': {
       'leaderName': 'Falkner',
       'town': 'Violet City',
@@ -75928,6 +76252,88 @@ module.exports = {
         'quest': true,
         'achievement': true,
       },
+    },
+    'Champion Lance': {
+      'leaderName': 'Lance2',
+      'town': 'Champion Lance',
+      'pokemons': [
+        {
+          'name': 'Gyarados',
+          'maxHealth': 258300,
+          'level': 44,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 262000,
+          'level': 47,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 264000,
+          'level': 46,
+        },
+        {
+          'name': 'Aerodactyl',
+          'maxHealth': 260250,
+          'level': 46,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 47,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 50,
+        },
+      ],
+      'badgeReward': 26,
+      'moneyReward': 7500,
+      'defeatMessage': "…It's over. But it's an odd feeling. I'm not angry that I lost. In fact, I feel happy. Happy that I witnessed the rise of a great new Champion!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 25,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Gyarados',
+          'maxHealth': 258300,
+          'level': 44,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 262000,
+          'level': 47,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 264000,
+          'level': 46,
+        },
+        {
+          'name': 'Aerodactyl',
+          'maxHealth': 260250,
+          'level': 46,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 47,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 270000,
+          'level': 50,
+        },
+      ],
     },
     'Rustboro City': {
       'leaderName': 'Roxanne',
@@ -76406,6 +76812,88 @@ module.exports = {
         'achievement': true,
       },
     },
+    'Champion Wallace': {
+      'leaderName': 'Wallace',
+      'town': 'Champion Wallace',
+      'pokemons': [
+        {
+          'name': 'Wailord',
+          'maxHealth': 1202000,
+          'level': 57,
+        },
+        {
+          'name': 'Tentacruel',
+          'maxHealth': 1164000,
+          'level': 55,
+        },
+        {
+          'name': 'Ludicolo',
+          'maxHealth': 1184000,
+          'level': 56,
+        },
+        {
+          'name': 'Whiscash',
+          'maxHealth': 1172000,
+          'level': 56,
+        },
+        {
+          'name': 'Gyarados',
+          'maxHealth': 1163000,
+          'level': 56,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 1182000,
+          'level': 58,
+        },
+      ],
+      'badgeReward': 39,
+      'moneyReward': 16000,
+      'defeatMessage': 'I, the Champion, fall in defeat… That was wonderful work. You were elegant, infuriatingly so. And yet it was utterly glorious! Kudos to you! You are a truly noble Pokémon Trainer!',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 38,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Wailord',
+          'maxHealth': 1202000,
+          'level': 57,
+        },
+        {
+          'name': 'Tentacruel',
+          'maxHealth': 1164000,
+          'level': 55,
+        },
+        {
+          'name': 'Ludicolo',
+          'maxHealth': 1184000,
+          'level': 56,
+        },
+        {
+          'name': 'Whiscash',
+          'maxHealth': 1172000,
+          'level': 56,
+        },
+        {
+          'name': 'Gyarados',
+          'maxHealth': 1163000,
+          'level': 56,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 1182000,
+          'level': 58,
+        },
+      ],
+    },
     'Oreburgh City': {
       'leaderName': 'Roark',
       'town': 'Oreburgh City',
@@ -76876,6 +77364,88 @@ module.exports = {
         'achievement': true,
       },
     },
+    'Champion Cynthia': {
+      'leaderName': 'Cynthia',
+      'town': 'Champion Cynthia',
+      'pokemons': [
+        {
+          'name': 'Spiritomb',
+          'maxHealth': 3458300,
+          'level': 58,
+        },
+        {
+          'name': 'Roserade',
+          'maxHealth': 3462000,
+          'level': 58,
+        },
+        {
+          'name': 'Togekiss',
+          'maxHealth': 3464000,
+          'level': 60,
+        },
+        {
+          'name': 'Lucario',
+          'maxHealth': 3460250,
+          'level': 60,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 3470000,
+          'level': 58,
+        },
+        {
+          'name': 'Garchomp',
+          'maxHealth': 3570000,
+          'level': 62,
+        },
+      ],
+      'badgeReward': 52,
+      'moneyReward': 32000,
+      'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion! Come with me. We'll take the lift.",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 51,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Spiritomb',
+          'maxHealth': 3458300,
+          'level': 58,
+        },
+        {
+          'name': 'Roserade',
+          'maxHealth': 3462000,
+          'level': 58,
+        },
+        {
+          'name': 'Togekiss',
+          'maxHealth': 3464000,
+          'level': 60,
+        },
+        {
+          'name': 'Lucario',
+          'maxHealth': 3460250,
+          'level': 60,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 3470000,
+          'level': 58,
+        },
+        {
+          'name': 'Garchomp',
+          'maxHealth': 3570000,
+          'level': 62,
+        },
+      ],
+    },
     'Aspertia City': {
       'leaderName': 'Cheren',
       'town': 'Aspertia City',
@@ -76904,7 +77474,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 64,
+          'dungeonIndex': 67,
         },
       ],
       'flags': {
@@ -76980,7 +77550,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 66,
+          'dungeonIndex': 69,
         },
       ],
       'flags': {
@@ -77388,6 +77958,88 @@ module.exports = {
         'achievement': true,
       },
     },
+    'Champion Iris': {
+      'leaderName': 'Iris',
+      'town': 'Champion Iris',
+      'pokemons': [
+        {
+          'name': 'Hydreigon',
+          'maxHealth': 12458300,
+          'level': 58,
+        },
+        {
+          'name': 'Salamence',
+          'maxHealth': 12462000,
+          'level': 58,
+        },
+        {
+          'name': 'Aggron',
+          'maxHealth': 12464000,
+          'level': 58,
+        },
+        {
+          'name': 'Archeops',
+          'maxHealth': 12460250,
+          'level': 60,
+        },
+        {
+          'name': 'Lapras',
+          'maxHealth': 12470000,
+          'level': 58,
+        },
+        {
+          'name': 'Haxorus',
+          'maxHealth': 14570000,
+          'level': 62,
+        },
+      ],
+      'badgeReward': 65,
+      'moneyReward': 64000,
+      'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 64,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Hydreigon',
+          'maxHealth': 12458300,
+          'level': 58,
+        },
+        {
+          'name': 'Salamence',
+          'maxHealth': 12462000,
+          'level': 58,
+        },
+        {
+          'name': 'Aggron',
+          'maxHealth': 12464000,
+          'level': 58,
+        },
+        {
+          'name': 'Archeops',
+          'maxHealth': 12460250,
+          'level': 60,
+        },
+        {
+          'name': 'Lapras',
+          'maxHealth': 12470000,
+          'level': 58,
+        },
+        {
+          'name': 'Haxorus',
+          'maxHealth': 14570000,
+          'level': 62,
+        },
+      ],
+    },
     'Santalune City': {
       'leaderName': 'Viola',
       'town': 'Santalune City',
@@ -77548,7 +78200,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 94,
+          'dungeonIndex': 97,
         },
       ],
       'flags': {
@@ -77654,7 +78306,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 100,
+          'dungeonIndex': 103,
         },
       ],
       'flags': {
@@ -77822,6 +78474,88 @@ module.exports = {
         'achievement': true,
       },
     },
+    'Champion Diantha': {
+      'leaderName': 'Diantha',
+      'town': 'Champion Diantha',
+      'pokemons': [
+        {
+          'name': 'Hawlucha',
+          'maxHealth': 60083000,
+          'level': 64,
+        },
+        {
+          'name': 'Tyrantrum',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Aurorus',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Gourgeist',
+          'maxHealth': 62557000,
+          'level': 65,
+        },
+        {
+          'name': 'Goodra',
+          'maxHealth': 62170000,
+          'level': 66,
+        },
+        {
+          'name': 'Mega Gardevoir',
+          'maxHealth': 63070000,
+          'level': 68,
+        },
+      ],
+      'badgeReward': 78,
+      'moneyReward': 128000,
+      'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 77,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Hawlucha',
+          'maxHealth': 60083000,
+          'level': 64,
+        },
+        {
+          'name': 'Tyrantrum',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Aurorus',
+          'maxHealth': 62057000,
+          'level': 65,
+        },
+        {
+          'name': 'Gourgeist',
+          'maxHealth': 62557000,
+          'level': 65,
+        },
+        {
+          'name': 'Goodra',
+          'maxHealth': 62170000,
+          'level': 66,
+        },
+        {
+          'name': 'Mega Gardevoir',
+          'maxHealth': 63070000,
+          'level': 68,
+        },
+      ],
+    },
     'Iki Town': {
       'leaderName': 'Hala',
       'town': 'Iki Town',
@@ -77850,7 +78584,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 105,
+          'dungeonIndex': 108,
         },
       ],
       'flags': {
@@ -77948,7 +78682,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 119,
+          'dungeonIndex': 122,
         },
       ],
       'flags': {
@@ -78014,7 +78748,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 123,
+          'dungeonIndex': 126,
         },
       ],
       'flags': {
@@ -78434,6 +79168,104 @@ module.exports = {
         'achievement': true,
       },
     },
+    'Champion Hau': {
+      'leaderName': 'Hau',
+      'town': 'Champion Hau',
+      'pokemons': [
+        {
+          'name': 'Alolan Raichu',
+          'maxHealth': 91545555,
+          'level': 59,
+        },
+        {
+          'name': 'Tauros',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Noivern',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Crabominable',
+          'maxHealth': 91545555,
+          'level': 59,
+        },
+      ],
+      'badgeReward': 97,
+      'moneyReward': 100000,
+      'defeatMessage': "We're gonna keep moving forward, by staying at full power all the time!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 96,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Alolan Raichu',
+          'maxHealth': 91545555,
+          'level': 59,
+        },
+        {
+          'name': 'Tauros',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Noivern',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Crabominable',
+          'maxHealth': 91545555,
+          'level': 59,
+        },
+      ],
+      'alternativePokemon1': [
+        {
+          'name': 'Flareon',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Primarina',
+          'maxHealth': 96725389,
+          'level': 60,
+        },
+      ],
+      'alternativePokemon2': [
+        {
+          'name': 'Vaporeon',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Decidueye',
+          'maxHealth': 96725389,
+          'level': 60,
+        },
+      ],
+      'alternativePokemon3': [
+        {
+          'name': 'Leafeon',
+          'maxHealth': 89636471,
+          'level': 58,
+        },
+        {
+          'name': 'Incineroar',
+          'maxHealth': 96725389,
+          'level': 60,
+        },
+      ],
+    },
     'Turffield': {
       'leaderName': 'Milo',
       'town': 'Turffield',
@@ -78615,7 +79447,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 136,
+          'dungeonIndex': 139,
         },
       ],
       'flags': {
@@ -78792,7 +79624,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 137,
+          'dungeonIndex': 140,
         },
       ],
       'flags': {
@@ -78894,6 +79726,99 @@ module.exports = {
         'quest': true,
         'achievement': true,
       },
+    },
+    'Champion Leon': {
+      'leaderName': 'Leon',
+      'town': 'Champion Leon',
+      'pokemons': [
+        {
+          'name': 'Aegislash',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+        {
+          'name': 'Dragapult',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Haxorus',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Seismitoad',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+      ],
+      'badgeReward': 109,
+      'moneyReward': 100000,
+      'defeatMessage': "My time as Champion is over... But what a champion time it's been! Thank you for the greatest battle I've ever had!",
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 108,
+        },
+      ],
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'basePokemon': [
+        {
+          'name': 'Aegislash',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+        {
+          'name': 'Dragapult',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Haxorus',
+          'maxHealth': 2015330,
+          'level': 58,
+        },
+        {
+          'name': 'Seismitoad',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 2015330,
+          'level': 59,
+        },
+      ],
+      'alternativePokemon1': [
+        {
+          'name': 'Cinderace',
+          'maxHealth': 2015330,
+          'level': 60,
+        },
+      ],
+      'alternativePokemon2': [
+        {
+          'name': 'Inteleon',
+          'maxHealth': 2015330,
+          'level': 60,
+        },
+      ],
+      'alternativePokemon3': [
+        {
+          'name': 'Rillaboom',
+          'maxHealth': 2015330,
+          'level': 60,
+        },
+      ],
     },
     'Gym Leader Klara': {
       'leaderName': 'Klara',
@@ -79092,710 +80017,6 @@ module.exports = {
         'quest': true,
         'achievement': true,
       },
-    },
-    'Champion Blue': {
-      'leaderName': 'Blue',
-      'town': 'Champion Blue',
-      'pokemons': [
-        {
-          'name': 'Pidgeot',
-          'maxHealth': 52340,
-          'level': 59,
-        },
-        {
-          'name': 'Alakazam',
-          'maxHealth': 56320,
-          'level': 57,
-        },
-        {
-          'name': 'Rhydon',
-          'maxHealth': 58340,
-          'level': 59,
-        },
-      ],
-      'badgeReward': 13,
-      'moneyReward': 10000,
-      'defeatMessage': "Why? Why did I lose? I never made any mistakes raising my Pokémon… Darn it! You're the new Pokémon League Champion! Although I don't like to admit it…",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 12,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Pidgeot',
-          'maxHealth': 52340,
-          'level': 59,
-        },
-        {
-          'name': 'Alakazam',
-          'maxHealth': 56320,
-          'level': 57,
-        },
-        {
-          'name': 'Rhydon',
-          'maxHealth': 58340,
-          'level': 59,
-        },
-      ],
-      'alternativePokemon1': [
-        {
-          'name': 'Exeggutor',
-          'maxHealth': 57520,
-          'level': 59,
-        },
-        {
-          'name': 'Gyarados',
-          'maxHealth': 63040,
-          'level': 61,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 70000,
-          'level': 63,
-        },
-      ],
-      'alternativePokemon2': [
-        {
-          'name': 'Arcanine',
-          'maxHealth': 65340,
-          'level': 59,
-        },
-        {
-          'name': 'Exeggutor',
-          'maxHealth': 57520,
-          'level': 61,
-        },
-        {
-          'name': 'Blastoise',
-          'maxHealth': 70000,
-          'level': 63,
-        },
-      ],
-      'alternativePokemon3': [
-        {
-          'name': 'Gyarados',
-          'maxHealth': 63040,
-          'level': 59,
-        },
-        {
-          'name': 'Arcanine',
-          'maxHealth': 65340,
-          'level': 61,
-        },
-        {
-          'name': 'Venusaur',
-          'maxHealth': 70000,
-          'level': 63,
-        },
-      ],
-    },
-    'Champion Lance': {
-      'leaderName': 'Lance2',
-      'town': 'Champion Lance',
-      'pokemons': [
-        {
-          'name': 'Gyarados',
-          'maxHealth': 258300,
-          'level': 44,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 262000,
-          'level': 47,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 264000,
-          'level': 46,
-        },
-        {
-          'name': 'Aerodactyl',
-          'maxHealth': 260250,
-          'level': 46,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 270000,
-          'level': 47,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 270000,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 26,
-      'moneyReward': 7500,
-      'defeatMessage': "…It's over. But it's an odd feeling. I'm not angry that I lost. In fact, I feel happy. Happy that I witnessed the rise of a great new Champion!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 25,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Gyarados',
-          'maxHealth': 258300,
-          'level': 44,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 262000,
-          'level': 47,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 264000,
-          'level': 46,
-        },
-        {
-          'name': 'Aerodactyl',
-          'maxHealth': 260250,
-          'level': 46,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 270000,
-          'level': 47,
-        },
-        {
-          'name': 'Dragonite',
-          'maxHealth': 270000,
-          'level': 50,
-        },
-      ],
-    },
-    'Champion Wallace': {
-      'leaderName': 'Wallace',
-      'town': 'Champion Wallace',
-      'pokemons': [
-        {
-          'name': 'Wailord',
-          'maxHealth': 1202000,
-          'level': 57,
-        },
-        {
-          'name': 'Tentacruel',
-          'maxHealth': 1164000,
-          'level': 55,
-        },
-        {
-          'name': 'Ludicolo',
-          'maxHealth': 1184000,
-          'level': 56,
-        },
-        {
-          'name': 'Whiscash',
-          'maxHealth': 1172000,
-          'level': 56,
-        },
-        {
-          'name': 'Gyarados',
-          'maxHealth': 1163000,
-          'level': 56,
-        },
-        {
-          'name': 'Milotic',
-          'maxHealth': 1182000,
-          'level': 58,
-        },
-      ],
-      'badgeReward': 39,
-      'moneyReward': 16000,
-      'defeatMessage': 'I, the Champion, fall in defeat… That was wonderful work. You were elegant, infuriatingly so. And yet it was utterly glorious! Kudos to you! You are a truly noble Pokémon Trainer!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 38,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Wailord',
-          'maxHealth': 1202000,
-          'level': 57,
-        },
-        {
-          'name': 'Tentacruel',
-          'maxHealth': 1164000,
-          'level': 55,
-        },
-        {
-          'name': 'Ludicolo',
-          'maxHealth': 1184000,
-          'level': 56,
-        },
-        {
-          'name': 'Whiscash',
-          'maxHealth': 1172000,
-          'level': 56,
-        },
-        {
-          'name': 'Gyarados',
-          'maxHealth': 1163000,
-          'level': 56,
-        },
-        {
-          'name': 'Milotic',
-          'maxHealth': 1182000,
-          'level': 58,
-        },
-      ],
-    },
-    'Champion Cynthia': {
-      'leaderName': 'Cynthia',
-      'town': 'Champion Cynthia',
-      'pokemons': [
-        {
-          'name': 'Spiritomb',
-          'maxHealth': 3458300,
-          'level': 58,
-        },
-        {
-          'name': 'Roserade',
-          'maxHealth': 3462000,
-          'level': 58,
-        },
-        {
-          'name': 'Togekiss',
-          'maxHealth': 3464000,
-          'level': 60,
-        },
-        {
-          'name': 'Lucario',
-          'maxHealth': 3460250,
-          'level': 60,
-        },
-        {
-          'name': 'Milotic',
-          'maxHealth': 3470000,
-          'level': 58,
-        },
-        {
-          'name': 'Garchomp',
-          'maxHealth': 3570000,
-          'level': 62,
-        },
-      ],
-      'badgeReward': 52,
-      'moneyReward': 32000,
-      'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion! Come with me. We'll take the lift.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 51,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Spiritomb',
-          'maxHealth': 3458300,
-          'level': 58,
-        },
-        {
-          'name': 'Roserade',
-          'maxHealth': 3462000,
-          'level': 58,
-        },
-        {
-          'name': 'Togekiss',
-          'maxHealth': 3464000,
-          'level': 60,
-        },
-        {
-          'name': 'Lucario',
-          'maxHealth': 3460250,
-          'level': 60,
-        },
-        {
-          'name': 'Milotic',
-          'maxHealth': 3470000,
-          'level': 58,
-        },
-        {
-          'name': 'Garchomp',
-          'maxHealth': 3570000,
-          'level': 62,
-        },
-      ],
-    },
-    'Champion Iris': {
-      'leaderName': 'Iris',
-      'town': 'Champion Iris',
-      'pokemons': [
-        {
-          'name': 'Hydreigon',
-          'maxHealth': 12458300,
-          'level': 58,
-        },
-        {
-          'name': 'Salamence',
-          'maxHealth': 12462000,
-          'level': 58,
-        },
-        {
-          'name': 'Aggron',
-          'maxHealth': 12464000,
-          'level': 58,
-        },
-        {
-          'name': 'Archeops',
-          'maxHealth': 12460250,
-          'level': 60,
-        },
-        {
-          'name': 'Lapras',
-          'maxHealth': 12470000,
-          'level': 58,
-        },
-        {
-          'name': 'Haxorus',
-          'maxHealth': 14570000,
-          'level': 62,
-        },
-      ],
-      'badgeReward': 65,
-      'moneyReward': 64000,
-      'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 64,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Hydreigon',
-          'maxHealth': 12458300,
-          'level': 58,
-        },
-        {
-          'name': 'Salamence',
-          'maxHealth': 12462000,
-          'level': 58,
-        },
-        {
-          'name': 'Aggron',
-          'maxHealth': 12464000,
-          'level': 58,
-        },
-        {
-          'name': 'Archeops',
-          'maxHealth': 12460250,
-          'level': 60,
-        },
-        {
-          'name': 'Lapras',
-          'maxHealth': 12470000,
-          'level': 58,
-        },
-        {
-          'name': 'Haxorus',
-          'maxHealth': 14570000,
-          'level': 62,
-        },
-      ],
-    },
-    'Champion Diantha': {
-      'leaderName': 'Diantha',
-      'town': 'Champion Diantha',
-      'pokemons': [
-        {
-          'name': 'Hawlucha',
-          'maxHealth': 60083000,
-          'level': 64,
-        },
-        {
-          'name': 'Tyrantrum',
-          'maxHealth': 62057000,
-          'level': 65,
-        },
-        {
-          'name': 'Aurorus',
-          'maxHealth': 62057000,
-          'level': 65,
-        },
-        {
-          'name': 'Gourgeist',
-          'maxHealth': 62557000,
-          'level': 65,
-        },
-        {
-          'name': 'Goodra',
-          'maxHealth': 62170000,
-          'level': 66,
-        },
-        {
-          'name': 'Gardevoir',
-          'maxHealth': 63070000,
-          'level': 68,
-        },
-      ],
-      'badgeReward': 78,
-      'moneyReward': 128000,
-      'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 77,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Hawlucha',
-          'maxHealth': 60083000,
-          'level': 64,
-        },
-        {
-          'name': 'Tyrantrum',
-          'maxHealth': 62057000,
-          'level': 65,
-        },
-        {
-          'name': 'Aurorus',
-          'maxHealth': 62057000,
-          'level': 65,
-        },
-        {
-          'name': 'Gourgeist',
-          'maxHealth': 62557000,
-          'level': 65,
-        },
-        {
-          'name': 'Goodra',
-          'maxHealth': 62170000,
-          'level': 66,
-        },
-        {
-          'name': 'Gardevoir',
-          'maxHealth': 63070000,
-          'level': 68,
-        },
-      ],
-    },
-    'Champion Hau': {
-      'leaderName': 'Hau',
-      'town': 'Champion Hau',
-      'pokemons': [
-        {
-          'name': 'Alolan Raichu',
-          'maxHealth': 91545555,
-          'level': 59,
-        },
-        {
-          'name': 'Tauros',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Noivern',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Crabominable',
-          'maxHealth': 91545555,
-          'level': 59,
-        },
-      ],
-      'badgeReward': 97,
-      'moneyReward': 100000,
-      'defeatMessage': "We're gonna keep moving forward, by staying at full power all the time!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 96,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Alolan Raichu',
-          'maxHealth': 91545555,
-          'level': 59,
-        },
-        {
-          'name': 'Tauros',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Noivern',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Crabominable',
-          'maxHealth': 91545555,
-          'level': 59,
-        },
-      ],
-      'alternativePokemon1': [
-        {
-          'name': 'Flareon',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Primarina',
-          'maxHealth': 96725389,
-          'level': 60,
-        },
-      ],
-      'alternativePokemon2': [
-        {
-          'name': 'Vaporeon',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Decidueye',
-          'maxHealth': 96725389,
-          'level': 60,
-        },
-      ],
-      'alternativePokemon3': [
-        {
-          'name': 'Leafeon',
-          'maxHealth': 89636471,
-          'level': 58,
-        },
-        {
-          'name': 'Incineroar',
-          'maxHealth': 96725389,
-          'level': 60,
-        },
-      ],
-    },
-    'Champion Leon': {
-      'leaderName': 'Leon',
-      'town': 'Champion Leon',
-      'pokemons': [
-        {
-          'name': 'Aegislash',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-        {
-          'name': 'Dragapult',
-          'maxHealth': 2015330,
-          'level': 58,
-        },
-        {
-          'name': 'Haxorus',
-          'maxHealth': 2015330,
-          'level': 58,
-        },
-        {
-          'name': 'Seismitoad',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-      ],
-      'badgeReward': 109,
-      'moneyReward': 100000,
-      'defeatMessage': "My time as Champion is over... But what a champion time it's been! Thank you for the greatest battle I've ever had!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 108,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-      'basePokemon': [
-        {
-          'name': 'Aegislash',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-        {
-          'name': 'Dragapult',
-          'maxHealth': 2015330,
-          'level': 58,
-        },
-        {
-          'name': 'Haxorus',
-          'maxHealth': 2015330,
-          'level': 58,
-        },
-        {
-          'name': 'Seismitoad',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-      ],
-      'alternativePokemon1': [
-        {
-          'name': 'Cinderace',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
-      'alternativePokemon2': [
-        {
-          'name': 'Inteleon',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
-      'alternativePokemon3': [
-        {
-          'name': 'Rillaboom',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
     },
   },
   'berryType': {

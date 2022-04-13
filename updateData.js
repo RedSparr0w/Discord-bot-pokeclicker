@@ -77,7 +77,7 @@ const { website, wikiWebsite } = require('./config.js');
       }),
       GameConstants,
       BadgeEnums,
-      gymList,
+      GymList,
       berryType: BerryType,
       berryList: App.game.farming.berryData.map(b => {
         const mutation = App.game.farming.mutations.find(m => m.mutatedBerry == b.type);
