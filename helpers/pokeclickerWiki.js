@@ -1333,6 +1333,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Trade_Stone',
     },
     {
+      'title': 'Trainer School',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Trainer_School',
+    },
+    {
       'title': 'Treasure Scanner',
       'link': 'https://pokeclicker.miraheze.org/wiki/Treasure_Scanner',
     },
