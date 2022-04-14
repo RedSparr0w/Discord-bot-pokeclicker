@@ -664,7 +664,7 @@ const gymLeaderBadge = () => {
 };
 
 const gymLeaderType = () => {
-  const gym = gymList[randomFromArray(gymsWithBadges)];
+  const gym = GymList[randomFromArray(gymsWithBadges)];
   const pokemonNames = gym.pokemons.map(p => p.name);
   const pokemon = pokemonList.filter(p => pokemonNames.includes(p.name));
   const types = pokemon.map(p => p.type).flat();
