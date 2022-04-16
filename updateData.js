@@ -119,13 +119,15 @@ const { website, wikiWebsite } = require('./config.js');
 
     const wikiLinks = [];
     wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
-    const nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
-    console.log(nextPage);
-    if (nextPage.length && nextPage[0].startsWith('Next')) {
-      console.log(`navigate to ${nextPage[1]}\nwaiting for next page to load..`);
+    let pageNumber = 1;
+    let nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
+    while (nextPage && nextPage.length && nextPage[0].startsWith('Next')) {
+      ++pageNumber;
+      console.log(`navigate to page ${pageNumber}\nwaiting for page ${pageNumber} to load..`);
       await page.goto(nextPage[1]);
-      console.log('next page loaded!\nupdating data..');
+      console.log(`page ${pageNumber} loaded!\nupdating data..`);
       wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
+      nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
     }
     // map to titles only, filter out duplicates, map to { title, link }
     const wikiData = { wikiLinks: [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] })) };
