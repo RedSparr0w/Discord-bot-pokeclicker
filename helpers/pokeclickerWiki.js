@@ -465,6 +465,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Hard_Stone',
     },
     {
+      'title': "Hau'oli Cemetery",
+      'link': 'https://pokeclicker.miraheze.org/wiki/Hau%27oli_Cemetery',
+    },
+    {
       'title': 'Heart Scale',
       'link': 'https://pokeclicker.miraheze.org/wiki/Heart_Scale',
     },
@@ -495,6 +499,10 @@ module.exports = {
     {
       'title': 'Ice Path',
       'link': 'https://pokeclicker.miraheze.org/wiki/Ice_Path',
+    },
+    {
+      'title': 'Ice Stone',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ice_Stone',
     },
     {
       'title': 'Icicle Plate',
@@ -691,6 +699,10 @@ module.exports = {
     {
       'title': 'Medium Restore',
       'link': 'https://pokeclicker.miraheze.org/wiki/Medium_Restore',
+    },
+    {
+      'title': 'Melemele Meadow',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Melemele_Meadow',
     },
     {
       'title': 'Message Wall:Anapple96',
@@ -1081,6 +1093,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Alph',
     },
     {
+      'title': 'Ruins of Conflict',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Conflict',
+    },
+    {
       'title': 'Rusturf Tunnel',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rusturf_Tunnel',
     },
@@ -1127,6 +1143,10 @@ module.exports = {
     {
       'title': 'Seaside Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Seaside_Cave',
+    },
+    {
+      'title': 'Seaward Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Seaward_Cave',
     },
     {
       'title': 'Shiny Chance',
@@ -1289,6 +1309,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Team_Rockets_Hideout',
     },
     {
+      'title': 'Ten Carat Hill',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ten_Carat_Hill',
+    },
+    {
       'title': 'Terminus Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Terminus_Cave',
     },
@@ -1333,8 +1357,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Trade_Stone',
     },
     {
-      'title': 'Trainer School',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Trainer_School',
+      'title': "Trainers' School",
+      'link': 'https://pokeclicker.miraheze.org/wiki/Trainers%27_School',
     },
     {
       'title': 'Treasure Scanner',
@@ -1369,6 +1393,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Upgrade',
     },
     {
+      'title': 'Verdant Cavern',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Verdant_Cavern',
+    },
+    {
       'title': 'Victory Road',
       'link': 'https://pokeclicker.miraheze.org/wiki/Victory_Road',
     },
@@ -1383,6 +1411,90 @@ module.exports = {
     {
       'title': 'Victory Road Kalos',
       'link': 'https://pokeclicker.miraheze.org/wiki/Victory_Road_Kalos',
+    },
+    {
+      'title': 'Victory Road Sinnoh',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Victory_Road_Sinnoh',
+    },
+    {
+      'title': 'Victory Road Unova',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Victory_Road_Unova',
+    },
+    {
+      'title': 'Viridian Forest',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Viridian_Forest',
+    },
+    {
+      'title': 'Wacan',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wacan',
+    },
+    {
+      'title': 'Wailmer Pail',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wailmer_Pail',
+    },
+    {
+      'title': 'Wandering Pokémon',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wandering_Pok%C3%A9mon',
+    },
+    {
+      'title': 'Water Egg',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Water_Egg',
+    },
+    {
+      'title': 'Water Stone',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Water_Stone',
+    },
+    {
+      'title': 'Watmel',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Watmel',
+    },
+    {
+      'title': 'Wayward Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wayward_Cave',
+    },
+    {
+      'title': 'Weather',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Weather',
+    },
+    {
+      'title': 'Weather Institute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Weather_Institute',
+    },
+    {
+      'title': 'Wepear',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wepear',
+    },
+    {
+      'title': 'Whipped Dream',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Whipped_Dream',
+    },
+    {
+      'title': 'Whirl Islands',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Whirl_Islands',
+    },
+    {
+      'title': 'White DNA',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_DNA',
+    },
+    {
+      'title': 'Wiki',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
+    },
+    {
+      'title': 'XAttack',
+      'link': 'https://pokeclicker.miraheze.org/wiki/XAttack',
+    },
+    {
+      'title': 'XClick',
+      'link': 'https://pokeclicker.miraheze.org/wiki/XClick',
+    },
+    {
+      'title': 'Yache',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Yache',
+    },
+    {
+      'title': 'Zap Plate',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Zap_Plate',
     },
   ],
 };

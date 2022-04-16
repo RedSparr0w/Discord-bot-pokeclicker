@@ -117,7 +117,16 @@ const { website, wikiWebsite } = require('./config.js');
 
     console.log('webpage loaded!\nupdating data..');
 
-    const wikiLinks = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href]));
+    const wikiLinks = [];
+    wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
+    const nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
+    console.log(nextPage);
+    if (nextPage.length && nextPage[0].startsWith('Next')) {
+      console.log(`navigate to ${nextPage[1]}\nwaiting for next page to load..`);
+      await page.goto(nextPage[1]);
+      console.log('next page loaded!\nupdating data..');
+      wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
+    }
     // map to titles only, filter out duplicates, map to { title, link }
     const wikiData = { wikiLinks: [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] })) };
 
@@ -131,7 +140,7 @@ const { website, wikiWebsite } = require('./config.js');
     await fs.writeFileSync('./helpers/pokeclickerWiki.js', wikiOutput);
 
     console.log('PokéClicker Wiki data updated!');
-    console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
+    console.log({ fileSise: wikiOutput.length, errorCount: res.errorCount, warningCount: res.warningCount });
   }
 
   await browser.close();
