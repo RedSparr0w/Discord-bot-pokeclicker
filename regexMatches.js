@@ -24,9 +24,16 @@ module.exports = [
   },
   // soon™
   {
-    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|alola|galar)\b|\b(released?|version|updated?|alola|galar)\b.+\b(wh?ens?)\b)/i,
+    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|galar|hisui)\b|\b(released?|version|updated?|galar|hisui)\b.+\b(wh?ens?)\b)/i,
     execute: (message, client) => {
       message.channel.send('soon™');
+    },
+  },
+  // alola™
+  {
+    regex: /(\b(wh?ens?)\b.+\b(alola)\b|\b(alola)\b.+\b(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1649832120:F>™');
     },
   },
   // cats > dogs
