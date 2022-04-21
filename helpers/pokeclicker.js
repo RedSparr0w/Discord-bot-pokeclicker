@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.9.1',
+  'gameVersion': '0.9.2',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -31251,6 +31251,7 @@ module.exports = {
           },
           {
             'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -31279,6 +31280,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31310,6 +31315,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31339,6 +31348,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31365,11 +31378,8 @@ module.exports = {
       'locations': {
         '3': [
           {
-            'dungeon': 'Ruins of Alph',
-            'requirements': 'Try again another day.',
-          },
-          {
             'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -31427,6 +31437,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31487,6 +31501,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31516,6 +31534,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31543,6 +31565,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31576,6 +31602,7 @@ module.exports = {
           },
           {
             'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -31604,6 +31631,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31637,6 +31668,7 @@ module.exports = {
           },
           {
             'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -31665,6 +31697,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31725,6 +31761,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31752,6 +31792,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31783,6 +31827,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31810,6 +31858,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31843,6 +31895,7 @@ module.exports = {
           },
           {
             'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
           },
         ],
       },
@@ -31871,6 +31924,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31902,6 +31959,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31929,6 +31990,10 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
+            'requirements': 'Try again another day.',
+          },
+          {
+            'dungeon': 'Solaceon Ruins',
             'requirements': 'Try again another day.',
           },
         ],
@@ -31960,6 +32025,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -31989,6 +32058,10 @@ module.exports = {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
+          {
+            'dungeon': 'Solaceon Ruins',
+            'requirements': 'Try again another day.',
+          },
         ],
       },
       'catchRatePercent': 58,
@@ -32012,14 +32085,7 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {
-        '3': [
-          {
-            'dungeon': 'Ruins of Alph',
-            'requirements': 'Try again another day.',
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -32041,14 +32107,7 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {
-        '3': [
-          {
-            'dungeon': 'Ruins of Alph',
-            'requirements': 'Try again another day.',
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -38478,7 +38537,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Newmoon Island'],
+        '2': [
+          'Newmoon Island',
+          'Pikachu Valley',
+        ],
         '5': ['Electric'],
       },
       'catchRatePercent': 53,
@@ -38515,7 +38577,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Fullmoon Island'],
+        '2': [
+          'Fullmoon Island',
+          'Pikachu Valley',
+        ],
         '5': ['Electric'],
       },
       'catchRatePercent': 53,
@@ -44513,6 +44578,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Pikachu Valley'],
         '5': ['Electric'],
       },
       'catchRatePercent': 53,
@@ -54942,6 +55008,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Pikachu Valley'],
         '3': [
           {
             'dungeon': 'Lostlorn Forest',
@@ -62105,6 +62172,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Pikachu Valley',
           'Hokulani Observatory',
           'Ruins of Conflict',
         ],

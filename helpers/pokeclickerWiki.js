@@ -9,6 +9,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Achievements',
     },
     {
+      'title': 'Aether Foundation',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Aether_Foundation',
+    },
+    {
       'title': 'Aguav',
       'link': 'https://pokeclicker.miraheze.org/wiki/Aguav',
     },
@@ -83,6 +87,10 @@ module.exports = {
     {
       'title': 'Bluk',
       'link': 'https://pokeclicker.miraheze.org/wiki/Bluk',
+    },
+    {
+      'title': 'Brooklet Hill',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Brooklet_Hill',
     },
     {
       'title': 'Burned Tower',
@@ -209,6 +217,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Diamonds',
     },
     {
+      'title': "Diglett's Tunnel",
+      'link': 'https://pokeclicker.miraheze.org/wiki/Diglett%27s_Tunnel',
+    },
+    {
       'title': 'Digletts Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Digletts_Cave',
     },
@@ -323,6 +335,10 @@ module.exports = {
     {
       'title': 'Evolution Items',
       'link': 'https://pokeclicker.miraheze.org/wiki/Evolution_Items',
+    },
+    {
+      'title': 'Exeggutor Island Hill',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Exeggutor_Island_Hill',
     },
     {
       'title': 'Explorer Kit',
@@ -485,6 +501,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Hoenn',
     },
     {
+      'title': 'Hokulani Observatory',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Hokulani_Observatory',
+    },
+    {
       'title': 'Home Page',
       'link': 'https://pokeclicker.miraheze.org/wiki/Home_Page',
     },
@@ -601,6 +621,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Lake_Verity',
     },
     {
+      'title': 'Lake of the Sunne and Moone',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lake_of_the_Sunne_and_Moone',
+    },
+    {
       'title': 'Lansat',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lansat',
     },
@@ -653,6 +677,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Lureball',
     },
     {
+      'title': 'Lush Jungle',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lush_Jungle',
+    },
+    {
       'title': 'Luxuryball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Luxuryball',
     },
@@ -681,6 +709,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Magost',
     },
     {
+      'title': 'Malie Garden',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Malie_Garden',
+    },
+    {
       'title': 'Maranga',
       'link': 'https://pokeclicker.miraheze.org/wiki/Maranga',
     },
@@ -705,6 +737,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Melemele_Meadow',
     },
     {
+      'title': 'Memorial Hill',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Memorial_Hill',
+    },
+    {
       'title': 'Message Wall:Anapple96',
       'link': 'https://pokeclicker.miraheze.org/wiki/Message_Wall:Anapple96',
     },
@@ -721,6 +757,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Micle',
     },
     {
+      'title': "Mina's Houseboat",
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mina%27s_Houseboat',
+    },
+    {
       'title': 'Mind Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Mind_Plate',
     },
@@ -735,6 +775,10 @@ module.exports = {
     {
       'title': 'Moor of Icirrus',
       'link': 'https://pokeclicker.miraheze.org/wiki/Moor_of_Icirrus',
+    },
+    {
+      'title': 'Mount Lanakila',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mount_Lanakila',
     },
     {
       'title': 'Mt. Chimney',
@@ -837,6 +881,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pamtre',
     },
     {
+      'title': 'Paniola Ranch',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Paniola_Ranch',
+    },
+    {
       'title': 'Parfum Palace',
       'link': 'https://pokeclicker.miraheze.org/wiki/Parfum_Palace',
     },
@@ -865,6 +913,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Petaya',
     },
     {
+      'title': 'Pikachu Valley',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pikachu_Valley',
+    },
+    {
       'title': 'Pinap',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pinap',
     },
@@ -887,6 +939,10 @@ module.exports = {
     {
       'title': 'Plume Fossil',
       'link': 'https://pokeclicker.miraheze.org/wiki/Plume_Fossil',
+    },
+    {
+      'title': 'Po Town',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Po_Town',
     },
     {
       'title': 'Poison Barb',
@@ -955,6 +1011,10 @@ module.exports = {
     {
       'title': 'Pomeg',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pomeg',
+    },
+    {
+      'title': 'Poni Meadow',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Poni_Meadow',
     },
     {
       'title': 'Power Plant',
@@ -1053,6 +1113,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Repeatball',
     },
     {
+      'title': 'Resolution Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Resolution_Cave',
+    },
+    {
       'title': 'Reversal Mountain',
       'link': 'https://pokeclicker.miraheze.org/wiki/Reversal_Mountain',
     },
@@ -1089,12 +1153,24 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Rowap',
     },
     {
+      'title': 'Ruins of Abundance',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Abundance',
+    },
+    {
       'title': 'Ruins of Alph',
       'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Alph',
     },
     {
       'title': 'Ruins of Conflict',
       'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Conflict',
+    },
+    {
+      'title': 'Ruins of Hope',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Hope',
+    },
+    {
+      'title': 'Ruins of Life',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Life',
     },
     {
       'title': 'Rusturf Tunnel',
@@ -1147,6 +1223,10 @@ module.exports = {
     {
       'title': 'Seaward Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Seaward_Cave',
+    },
+    {
+      'title': 'Sendoff Spring',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Sendoff_Spring',
     },
     {
       'title': 'Shiny Chance',
@@ -1301,6 +1381,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Team_Flare_Secret_HQ',
     },
     {
+      'title': 'Team Galactic Eterna Building',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Team_Galactic_Eterna_Building',
+    },
+    {
+      'title': 'Team Galactic HQ',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Team_Galactic_HQ',
+    },
+    {
       'title': 'Team Plasma Assault',
       'link': 'https://pokeclicker.miraheze.org/wiki/Team_Plasma_Assault',
     },
@@ -1319,6 +1407,10 @@ module.exports = {
     {
       'title': 'Test Page',
       'link': 'https://pokeclicker.miraheze.org/wiki/Test_Page',
+    },
+    {
+      'title': 'Thrifty Megamart',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Thrifty_Megamart',
     },
     {
       'title': 'Thunder Stone',
@@ -1373,6 +1465,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Type_Effectiveness',
     },
     {
+      'title': "Ula'ula Meadow",
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ula%27ula_Meadow',
+    },
+    {
       'title': 'Ultraball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Ultraball',
     },
@@ -1391,6 +1487,14 @@ module.exports = {
     {
       'title': 'Upgrade',
       'link': 'https://pokeclicker.miraheze.org/wiki/Upgrade',
+    },
+    {
+      'title': 'Valley Windworks',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Valley_Windworks',
+    },
+    {
+      'title': 'Vast Poni Canyon',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Vast_Poni_Canyon',
     },
     {
       'title': 'Verdant Cavern',
@@ -1459,6 +1563,10 @@ module.exports = {
     {
       'title': 'Weather Institute',
       'link': 'https://pokeclicker.miraheze.org/wiki/Weather_Institute',
+    },
+    {
+      'title': 'Wela Volcano Park',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wela_Volcano_Park',
     },
     {
       'title': 'Wepear',
