@@ -151,68 +151,6 @@ client.on('error', e => error('Client error thrown:', e))
       });
     }
 
-    if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application.owner.id) {
-      try {
-        console.log('Deploying new commands!');
-        // Add our slash commands
-        const data = client.slashCommands.map(c => ({
-          name: c.name,
-          description: c.description,
-          options: c.args,
-          defaultPermission: (!c.userperms || c.userperms?.length == 0) && (!c.userroles || c.userroles?.length == 0),
-        }));
-        // Add any context menu commands
-        data.push(...client.slashCommands.filter(c => c.type).map(c => ({
-          name: c.name,
-          type: c.type,
-          defaultPermission: (!c.userperms || c.userperms?.length == 0) && (!c.userroles || c.userroles?.length == 0),
-        })));
-        // Update the current list of commands for this guild
-        await message.guild.commands.set(data);
-
-        const restrictCmds = client.slashCommands
-          .filter(c => c.userperms?.length > 0 || c.userroles?.length > 0)
-          .map(c => {
-            const roleIDs = message.guild.roles.cache.filter(r => {
-              let canUse = true;
-              if (c.userperms?.length) {
-                if (!r.permissions.has(c.userperms)) {
-                  canUse = false;
-                }
-              }
-              if (c.userroles?.length) {
-                if (!c.userroles.includes(r.id) && !c.userroles?.includes(r.name)) {
-                  canUse = false;
-                }
-              }
-              return canUse;
-            }).map(r => r.id);
-            c.roleIDs = roleIDs;
-            return c;
-          });
-
-        const fullPermissions = message.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
-          const cmd = restrictCmds.find(cmd => cmd.name === c.name);
-          return {
-            id: c.id,
-            permissions: cmd.roleIDs.map(r => ({
-              id: r,
-              type: 'ROLE',
-              permission: true,
-            })),
-          };
-        });
-
-        // Update the permissions for these commands
-        await client.guilds.cache.get(message.guild.id.toString()).commands.permissions.set({ fullPermissions });
-        message.reply(`Updated guild commands!\n\`\`\`yaml\nCommands: ${data.length}\nRestricted: ${fullPermissions.length}\n\`\`\``);
-
-      } catch (e) {
-        error('Unable to deploy new commands:\n', e);
-      }
-      return;
-    }
-
     // Non command messages
     if (!message.content.startsWith(prefix)) {
       SpamDetection.check(message);
