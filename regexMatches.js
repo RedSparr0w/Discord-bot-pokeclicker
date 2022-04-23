@@ -36,6 +36,41 @@ module.exports = [
       message.channel.send('<t:1649832120:F>™');
     },
   },
+  // kalos™
+  {
+    regex: /(\b(wh?ens?)\b.+\b(kalos)\b|\b(kalos)\b.+\b(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1617523860:F>™');
+    },
+  },
+  // unova™
+  {
+    regex: /(\b(wh?ens?)\b.+\b(unova)\b|\b(unova)\b.+\b(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1608721020:F>™');
+    },
+  },
+  // sinnoh™
+  {
+    regex: /(\b(wh?ens?)\b.+\b(sinnoh)\b|\b(sinnoh)\b.+\b(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1598607060:F>™');
+    },
+  },
+  // hoenn™
+  {
+    regex: /(\b(wh?ens?)\b.+\b(hoenn)\b|\b(hoenn)\b.+\b(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1593508320:F>™');
+    },
+  },
+  // johto™/kanto™
+  {
+    regex: /(\b(wh?ens?)\b.+\b(johto|kanto)\b|\b(johto|kanto)\b.+\b(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1578833220:F>™');
+    },
+  },
   // cats > dogs
   {
     regex: /\b(legendary|roaming)\b.+\b(dogs?)\b/i,
