@@ -71,7 +71,7 @@ const newQuiz = async (guild, reoccur = false) => {
       if (winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT) {
         return;
       }
-      quiz.amount = Math.ceil(quiz.amount / 2);
+      quiz.amount = Math.ceil(quiz.amount * 0.66);
     }
     winners.add(user.id);
     const amount = quiz.amount;
