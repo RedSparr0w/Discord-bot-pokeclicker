@@ -27,7 +27,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['MUTE_MEMBERS'], // Voice mute permission
+  userroles   : ['Moderator'],
   execute     : async (interaction, args) => {
     const id = interaction.options.get('user').value;
     const reason = interaction.options.get('reason')?.value;
