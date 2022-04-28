@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.9.2',
+  'gameVersion': '0.9.3',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -48,6 +48,13 @@ module.exports = {
       'image': 'assets/images/pokemon/25.09.png',
       'price': 1500,
       'description': "It's a Pikachu on a surfboard!",
+      'claimed': false,
+    },
+    {
+      'name': 'Rotom (discord)',
+      'image': 'assets/images/pokemon/479.6.png',
+      'price': 10000,
+      'description': 'A Discord style Rotom!',
       'claimed': false,
     },
   ],
@@ -8358,7 +8365,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 102,
+          'badge': 103,
         },
       ],
       'orderNumber': 16,
@@ -8464,9 +8471,22 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 1,
+          'requiredValue': 2,
           'option': 2,
-          'badge': 103,
+          'requirements': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'achievementType': 16,
+              'dungeonIndex': -1,
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'achievementType': 16,
+              'dungeonIndex': -1,
+            },
+          ],
         },
       ],
       'orderNumber': 19,
@@ -8496,9 +8516,20 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 1,
+          'requiredValue': 2,
           'option': 2,
-          'badge': 103,
+          'requirements': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 104,
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 105,
+            },
+          ],
         },
       ],
       'orderNumber': 20,
@@ -8600,7 +8631,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 105,
+          'badge': 107,
         },
       ],
       'orderNumber': 23,
@@ -8780,7 +8811,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 109,
+          'badge': 111,
         },
       ],
       'orderNumber': 25,
@@ -11097,7 +11128,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 109,
+          'badge': 111,
         },
       ],
       'orderNumber': 41,
@@ -15369,6 +15400,31 @@ module.exports = {
       'type': [
         4,
         7,
+      ],
+      'levelType': 3,
+      'exp': 64,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 45,
+        'attack': 49,
+        'specialAttack': 65,
+        'defense': 49,
+        'specialDefense': 65,
+        'speed': 45,
+      },
+      'attack': 53,
+      'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 800,
+    },
+    {
+      'id': 1.3,
+      'name': 'Bulbasaur (Rose)',
+      'nativeRegion': 0,
+      'catchRate': 25,
+      'type': [
+        4,
+        17,
       ],
       'levelType': 3,
       'exp': 64,
@@ -26184,6 +26240,7 @@ module.exports = {
         '2': [
           'Hokulani Observatory',
           'Ruins of Conflict',
+          'Split-Decision Ruins',
         ],
         '3': [
           {
@@ -27810,6 +27867,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Rock Peak Ruins'],
         '8': ['Old Amber'],
       },
       'catchRatePercent': 17,
@@ -27898,6 +27956,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iron Ruins'],
         '3': [
           {
             'dungeon': 'Hall of Origin',
@@ -31247,7 +31306,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Ruins of Alph',
-            'requirements': 'Try again another day.',
+            'requirements': 'Unown (A) cannot be caught yet.',
           },
           {
             'dungeon': 'Solaceon Ruins',
@@ -33605,7 +33664,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Giant Chasm'],
+        '2': [
+          'Giant Chasm',
+          'Iceberg Ruins',
+        ],
         '3': [
           {
             'dungeon': 'Ice Path',
@@ -41019,7 +41081,7 @@ module.exports = {
           '2': [
             {
               'route': 119,
-              'requirements': 'Castform needs to be caught and The weather needs to be Sunny.',
+              'requirements': 'Castform needs to be caught.',
             },
           ],
         },
@@ -41519,6 +41581,7 @@ module.exports = {
           'Spear Pillar',
           'Hall of Origin',
           'Newmoon Island',
+          'Iceberg Ruins',
           'Split-Decision Ruins',
           'Dyna Tree Hill',
         ],
@@ -41777,6 +41840,9 @@ module.exports = {
           },
           {
             'dungeon': 'Watchtower Ruins',
+          },
+          {
+            'dungeon': 'Iceberg Ruins',
           },
         ],
         '4': [
@@ -42169,6 +42235,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Rock Peak Ruins',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1600,
@@ -42484,6 +42555,7 @@ module.exports = {
         '2': [
           'Giant Chasm',
           'P2 Laboratory',
+          'Iron Ruins',
         ],
         '4': [
           {
@@ -42530,6 +42602,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Iron Ruins',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Metang',
@@ -42565,6 +42642,9 @@ module.exports = {
           {
             'dungeon': 'Sealed Chamber',
           },
+          {
+            'dungeon': 'Rock Peak Ruins',
+          },
         ],
       },
       'catchRatePercent': 2,
@@ -42593,6 +42673,9 @@ module.exports = {
           {
             'dungeon': 'Sealed Chamber',
           },
+          {
+            'dungeon': 'Iceberg Ruins',
+          },
         ],
       },
       'catchRatePercent': 2,
@@ -42620,6 +42703,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Sealed Chamber',
+          },
+          {
+            'dungeon': 'Iron Ruins',
           },
         ],
       },
@@ -45951,6 +46037,7 @@ module.exports = {
           'Spear Pillar',
           'Distortion World',
           'Rose Tower',
+          'Iron Ruins',
           'Split-Decision Ruins',
         ],
         '3': [
@@ -47459,6 +47546,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iceberg Ruins'],
         '4': [
           {
             'basePokemon': 'Sneasel',
@@ -47670,6 +47758,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Rock Peak Ruins'],
         '4': [
           {
             'basePokemon': 'Rhydon',
@@ -47774,7 +47863,11 @@ module.exports = {
             },
           ],
         },
-        '2': ['Split-Decision Ruins'],
+        '3': [
+          {
+            'dungeon': 'Split-Decision Ruins',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Electabuzz',
@@ -47830,6 +47923,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iron Ruins'],
         '4': [
           {
             'basePokemon': 'Magmar',
@@ -48389,6 +48483,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iceberg Ruins'],
         '3': [
           {
             'dungeon': 'Rose Tower',
@@ -51438,6 +51533,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Rock Peak Ruins'],
         '4': [
           {
             'basePokemon': 'Gurdurr',
@@ -52833,6 +52929,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iceberg Ruins'],
         '4': [
           {
             'basePokemon': 'Galarian Darumaka',
@@ -54649,6 +54746,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iceberg Ruins'],
         '3': [
           {
             'dungeon': 'Mount Lanakila',
@@ -56554,6 +56652,7 @@ module.exports = {
           'Twist Mountain',
           'Dragonspiral Tower',
           'Frost Cavern',
+          'Iceberg Ruins',
           'Dyna Tree Hill',
         ],
         '4': [
@@ -56661,6 +56760,7 @@ module.exports = {
         },
         '2': [
           'Frost Cavern',
+          'Iceberg Ruins',
           'Split-Decision Ruins',
           'Dyna Tree Hill',
         ],
@@ -57549,6 +57649,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Rock Peak Ruins'],
         '3': [
           {
             'dungeon': 'Twist Mountain',
@@ -62032,6 +62133,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Iceberg Ruins'],
         '4': [
           {
             'basePokemon': 'Amaura',
@@ -62539,6 +62641,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Rock Peak Ruins'],
         '4': [
           {
             'basePokemon': 'Phantump',
@@ -67786,6 +67889,7 @@ module.exports = {
     {
       'id': 808,
       'name': 'Meltan',
+      'nativeRegion': -1,
       'type': [16],
       'eggCycles': 120,
       'levelType': 4,
@@ -67808,7 +67912,6 @@ module.exports = {
         'speed': 34,
       },
       'attack': 52,
-      'nativeRegion': 6,
       'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -67816,6 +67919,7 @@ module.exports = {
     {
       'id': 809,
       'name': 'Melmetal',
+      'nativeRegion': -1,
       'type': [16],
       'eggCycles': 120,
       'levelType': 4,
@@ -67830,7 +67934,6 @@ module.exports = {
         'speed': 34,
       },
       'attack': 212,
-      'nativeRegion': 6,
       'locations': {
         '4': [
           {
@@ -72528,7 +72631,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Lake of Outrage'],
+        '2': [
+          'Lake of Outrage',
+          'Rock Peak Ruins',
+        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 1000,
@@ -73010,6 +73116,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Split-Decision Ruins'],
         '3': [
           {
             'dungeon': 'Lake of Outrage',
@@ -73106,7 +73213,12 @@ module.exports = {
             },
           ],
         },
-        '2': ['Split-Decision Ruins'],
+        '2': ['Iron Ruins'],
+        '3': [
+          {
+            'dungeon': 'Split-Decision Ruins',
+          },
+        ],
         '4': [
           {
             'basePokemon': 'Drakloak',
@@ -73845,6 +73957,7 @@ module.exports = {
       898,
     ],
     'ITEM_USE_TIME': 30,
+    'FLUTE_TYPE_ATTACK_MULTIPLIER': 1.005,
     'ROAMING_MIN_CHANCE': 8192,
     'ROAMING_MAX_CHANCE': 4096,
     'SHINY_CHANCE_BATTLE': 8192,
@@ -74301,6 +74414,20 @@ module.exports = {
       'Item_magnet': 'Item_magnet',
       'Lucky_incense': 'Lucky_incense',
     },
+    'FluteItemType': {
+      'Red_Flute': 'Red_Flute',
+      'White_Flute': 'White_Flute',
+      'Black_Flute': 'Black_Flute',
+      'Yellow_Flute': 'Yellow_Flute',
+      'Blue_Flute': 'Blue_Flute',
+      'Poke_Flute': 'Poke_Flute',
+      'Azure_Flute': 'Azure_Flute',
+      'Eon_Flute': 'Eon_Flute',
+      'Sun_Flute': 'Sun_Flute',
+      'Moon_Flute': 'Moon_Flute',
+      'Time_Flute': 'Time_Flute',
+      'Grass_Flute': 'Grass_Flute',
+    },
     'PokemonItemType': {
       '0': 'Eevee',
       '1': 'Porygon',
@@ -74543,14 +74670,16 @@ module.exports = {
       'Turffield',
       'Hulbury',
       'Motostoke',
-      'Stow-on-Side',
+      'Stow-on-Side1',
+      'Stow-on-Side2',
       'Ballonlea',
-      'Circhester',
+      'Circhester1',
+      'Circhester2',
       'Spikemuth',
       'Hammerlocke',
       'Trainer Marnie',
       'Trainer Hop',
-      'Trainer Bede',
+      'Gym Leader Bede',
       'Champion Leon',
     ],
     'RegionGyms': [
@@ -74669,14 +74798,16 @@ module.exports = {
         'Turffield',
         'Hulbury',
         'Motostoke',
-        'Stow-on-Side',
+        'Stow-on-Side1',
+        'Stow-on-Side2',
         'Ballonlea',
-        'Circhester',
+        'Circhester1',
+        'Circhester2',
         'Spikemuth',
         'Hammerlocke',
         'Trainer Marnie',
         'Trainer Hop',
-        'Trainer Bede',
+        'Gym Leader Bede',
         'Champion Leon',
       ],
     ],
@@ -75136,18 +75267,20 @@ module.exports = {
     '99': 'Galar_Water',
     '100': 'Galar_Fire',
     '101': 'Galar_Fighting',
-    '102': 'Galar_Fairy',
-    '103': 'Galar_Rock',
-    '104': 'Galar_Dark',
-    '105': 'Galar_Dragon',
-    '106': 'Elite_Marnie',
-    '107': 'Elite_Hop',
-    '108': 'Elite_Bede',
-    '109': 'Elite_GalarChampion',
-    '110': 'Armor_Poison',
-    '111': 'Armor_Psychic',
-    '112': 'Elite_ArmorChampion',
-    '113': 'Elite_CrownChampion',
+    '102': 'Galar_Ghost',
+    '103': 'Galar_Fairy',
+    '104': 'Galar_Rock',
+    '105': 'Galar_Ice',
+    '106': 'Galar_Dark',
+    '107': 'Galar_Dragon',
+    '108': 'Elite_Marnie',
+    '109': 'Elite_Bede',
+    '110': 'Elite_Hop',
+    '111': 'Elite_GalarChampion',
+    '112': 'Elite_ArmorPoison',
+    '113': 'Elite_ArmorPsychic',
+    '114': 'Elite_ArmorChampion',
+    '115': 'Elite_CrownChampion',
     'None': 0,
     'Boulder': 1,
     'Cascade': 2,
@@ -75250,21 +75383,33 @@ module.exports = {
     'Galar_Water': 99,
     'Galar_Fire': 100,
     'Galar_Fighting': 101,
-    'Galar_Fairy': 102,
-    'Galar_Rock': 103,
-    'Galar_Dark': 104,
-    'Galar_Dragon': 105,
-    'Elite_Marnie': 106,
-    'Elite_Hop': 107,
-    'Elite_Bede': 108,
-    'Elite_GalarChampion': 109,
-    'Armor_Poison': 110,
-    'Armor_Psychic': 111,
-    'Elite_ArmorChampion': 112,
-    'Elite_CrownChampion': 113,
+    'Galar_Ghost': 102,
+    'Galar_Fairy': 103,
+    'Galar_Rock': 104,
+    'Galar_Ice': 105,
+    'Galar_Dark': 106,
+    'Galar_Dragon': 107,
+    'Elite_Marnie': 108,
+    'Elite_Bede': 109,
+    'Elite_Hop': 110,
+    'Elite_GalarChampion': 111,
+    'Elite_ArmorPoison': 112,
+    'Elite_ArmorPsychic': 113,
+    'Elite_ArmorChampion': 114,
+    'Elite_CrownChampion': 115,
   },
   'GymList': {
     'Pewter City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 2,
+        },
+      ],
       'leaderName': 'Brock',
       'town': 'Pewter City',
       'pokemons': [
@@ -75282,21 +75427,23 @@ module.exports = {
       'badgeReward': 1,
       'moneyReward': 250,
       'defeatMessage': "I took you for granted. As proof of your victory, here's the Boulder Badge!",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Brock's gym",
+    },
+    'Cerulean City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
           'option': 2,
           'achievementType': 14,
           'region': 0,
-          'route': 2,
+          'route': 4,
         },
       ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Cerulean City': {
       'leaderName': 'Misty',
       'town': 'Cerulean City',
       'pokemons': [
@@ -75314,33 +75461,14 @@ module.exports = {
       'badgeReward': 2,
       'moneyReward': 500,
       'defeatMessage': "I can't believe I lost! All right! You can have the Cascade Badge to show you beat me!",
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 14,
-          'region': 0,
-          'route': 4,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Misty's gym",
     },
     'Vermilion City': {
-      'leaderName': 'Lt. Surge',
-      'town': 'Vermilion City',
-      'pokemons': [
-        {
-          'name': 'Raichu',
-          'maxHealth': 37000,
-          'level': 28,
-        },
-      ],
-      'badgeReward': 3,
-      'moneyReward': 1000,
-      'defeatMessage': "Whoa! You're the real deal, kid! Fine then, take the Thunder Badge!",
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -75355,12 +75483,35 @@ module.exports = {
           'badge': 2,
         },
       ],
+      'leaderName': 'Lt. Surge',
+      'town': 'Vermilion City',
+      'pokemons': [
+        {
+          'name': 'Raichu',
+          'maxHealth': 37000,
+          'level': 28,
+        },
+      ],
+      'badgeReward': 3,
+      'moneyReward': 1000,
+      'defeatMessage': "Whoa! You're the real deal, kid! Fine then, take the Thunder Badge!",
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Lt. Surge's gym",
     },
     'Celadon City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 7,
+        },
+      ],
       'leaderName': 'Erika',
       'town': 'Celadon City',
       'pokemons': [
@@ -75383,21 +75534,21 @@ module.exports = {
       'badgeReward': 4,
       'moneyReward': 1500,
       'defeatMessage': 'Oh! I concede defeat. You are remarkably strong. I must confer you the Rainbow Badge.',
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 14,
-          'region': 0,
-          'route': 7,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Erika's gym",
     },
     'Saffron City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 4,
+        },
+      ],
       'leaderName': 'Sabrina',
       'town': 'Saffron City',
       'pokemons': [
@@ -75420,19 +75571,36 @@ module.exports = {
       'badgeReward': 6,
       'moneyReward': 2500,
       'defeatMessage': "I'm shocked! But a loss is a loss. I admit I didn't work hard enough to win! You earned the Marsh Badge!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 4,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Sabrina's gym",
     },
     'Fuchsia City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'option': 2,
+              'achievementType': 14,
+              'region': 0,
+              'route': 18,
+            },
+            {
+              'requiredValue': 10,
+              'option': 2,
+              'achievementType': 14,
+              'region': 0,
+              'route': 15,
+            },
+          ],
+        },
+      ],
       'leaderName': 'Koga',
       'town': 'Fuchsia City',
       'pokemons': [
@@ -75460,34 +75628,22 @@ module.exports = {
       'badgeReward': 5,
       'moneyReward': 3500,
       'defeatMessage': 'Humph! You have proven your worth! Here! Take the Soul Badge!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'requirements': [
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 0,
-              'route': 18,
-            },
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 0,
-              'route': 15,
-            },
-          ],
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Koga's gym",
     },
     'Cinnabar Island': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 7,
+        },
+      ],
       'leaderName': 'Blaine',
       'town': 'Cinnabar Island',
       'pokemons': [
@@ -75510,20 +75666,31 @@ module.exports = {
       'badgeReward': 7,
       'moneyReward': 5000,
       'defeatMessage': "I've burnt out! You have earned the Volcano Badge!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 7,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Blaine's gym",
     },
     'Viridian City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 7,
+        },
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 6,
+        },
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 3,
+        },
+      ],
       'leaderName': 'Giovanni',
       'town': 'Viridian City',
       'pokemons': [
@@ -75556,29 +75723,21 @@ module.exports = {
       'badgeReward': 8,
       'moneyReward': 6000,
       'defeatMessage': 'Ha! That was a truly intense fight! You have won! As proof, here is the Earth Badge!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 7,
-        },
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 6,
-        },
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 3,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Giovanni's gym",
     },
     'Elite Lorelei': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 8,
+        },
+      ],
       'leaderName': 'Lorelei',
       'town': 'Elite Lorelei',
       'pokemons': [
@@ -75611,19 +75770,21 @@ module.exports = {
       'badgeReward': 9,
       'moneyReward': 7500,
       'defeatMessage': "You're better than I thought! Go on ahead! You only got a taste of Pokémon League power!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 8,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Lorelei',
     },
     'Elite Bruno': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 9,
+        },
+      ],
       'leaderName': 'Bruno',
       'town': 'Elite Bruno',
       'pokemons': [
@@ -75656,19 +75817,21 @@ module.exports = {
       'badgeReward': 10,
       'moneyReward': 7500,
       'defeatMessage': 'My job is done! Go face your next challenge!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 9,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Bruno',
     },
     'Elite Agatha': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 10,
+        },
+      ],
       'leaderName': 'Agatha',
       'town': 'Elite Agatha',
       'pokemons': [
@@ -75701,19 +75864,21 @@ module.exports = {
       'badgeReward': 11,
       'moneyReward': 7500,
       'defeatMessage': "You win! I see what the old duff sees in you now. I've nothing else to say. Run along now, child!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 10,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Agatha',
     },
     'Elite Lance': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 11,
+        },
+      ],
       'leaderName': 'Lance',
       'town': 'Elite Lance',
       'pokemons': [
@@ -75746,19 +75911,21 @@ module.exports = {
       'badgeReward': 12,
       'moneyReward': 7500,
       'defeatMessage': 'I still can’t believe my dragons lost to you! You’re now the Pokémon League champion! …Or, you would have been, but you have one more challenge ahead. You have to face another trainer!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 11,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Lance',
     },
     'Champion Blue': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 12,
+        },
+      ],
       'leaderName': 'Blue',
       'town': 'Champion Blue',
       'pokemons': [
@@ -75781,17 +75948,11 @@ module.exports = {
       'badgeReward': 13,
       'moneyReward': 10000,
       'defeatMessage': "Why? Why did I lose? I never made any mistakes raising my Pokémon… Darn it! You're the new Pokémon League Champion! Although I don't like to admit it…",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 12,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Blue',
       'basePokemon': [
         {
           'name': 'Pidgeot',
@@ -75862,6 +76023,15 @@ module.exports = {
       ],
     },
     'Violet City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 10,
+        },
+      ],
       'leaderName': 'Falkner',
       'town': 'Violet City',
       'pokemons': [
@@ -75879,20 +76049,22 @@ module.exports = {
       'badgeReward': 14,
       'moneyReward': 250,
       'defeatMessage': "...Darn! My Dad's cherished bird Pokémon... All right. Take this. It's the official Pokémon League Zephyr Badge.",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Falkner's gym",
+    },
+    'Azalea Town': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 10,
+          'dungeonIndex': 13,
         },
       ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Azalea Town': {
       'leaderName': 'Bugsy',
       'town': 'Azalea Town',
       'pokemons': [
@@ -75915,20 +76087,23 @@ module.exports = {
       'badgeReward': 15,
       'moneyReward': 500,
       'defeatMessage': "Whoa, amazing! You're an expert on Pokémon! My research isn't complete yet. Ok, you win. Take this Badge.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 13,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Bugsy's gym",
     },
     'Goldenrod City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 1,
+          'route': 34,
+        },
+      ],
       'leaderName': 'Whitney',
       'town': 'Goldenrod City',
       'pokemons': [
@@ -75946,21 +76121,21 @@ module.exports = {
       'badgeReward': 16,
       'moneyReward': 1000,
       'defeatMessage': "...Sniff... What? What do you want? A badge? Oh, right. I forgot. Here's Plain Badge.",
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 14,
-          'region': 1,
-          'route': 34,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Whitney's gym",
     },
     'Ecruteak City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 16,
+        },
+      ],
       'leaderName': 'Morty',
       'town': 'Ecruteak City',
       'pokemons': [
@@ -75988,19 +76163,21 @@ module.exports = {
       'badgeReward': 17,
       'moneyReward': 1500,
       'defeatMessage': "I'm not good enough yet... All right. This Badge is yours.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 16,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Morty's gym",
     },
     'Cianwood City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 17,
+        },
+      ],
       'leaderName': 'Chuck',
       'town': 'Cianwood City',
       'pokemons': [
@@ -76018,19 +76195,21 @@ module.exports = {
       'badgeReward': 18,
       'moneyReward': 2500,
       'defeatMessage': "Wha? Huh? I lost? How about that! You're worthy of Storm Badge!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 17,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Chuck's gym",
     },
     'Olivine City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 18,
+        },
+      ],
       'leaderName': 'Jasmine',
       'town': 'Olivine City',
       'pokemons': [
@@ -76053,19 +76232,22 @@ module.exports = {
       'badgeReward': 19,
       'moneyReward': 3500,
       'defeatMessage': '...You are a better trainer than me, in both skill and kindness. In accordance with League rules, I confer upon you this Badge.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 18,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Jasmine's gym",
     },
     'Mahogany Town': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 19,
+        },
+      ],
       'leaderName': 'Pryce',
       'town': 'Mahogany Town',
       'pokemons': [
@@ -76088,20 +76270,21 @@ module.exports = {
       'badgeReward': 20,
       'moneyReward': 4000,
       'defeatMessage': "Ah, I am impressed by your prowess. With your strong will, I know you will overcome all life's obstacles. You are worthy of this Badge!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 19,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Pryce's gym",
     },
     'Blackthorn City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 20,
+        },
+      ],
       'leaderName': 'Clair',
       'town': 'Blackthorn City',
       'pokemons': [
@@ -76129,19 +76312,21 @@ module.exports = {
       'badgeReward': 21,
       'moneyReward': 5000,
       'defeatMessage': 'Here, this is the Rising Badge... Hurry up! Take it!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 20,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Clair's gym",
     },
     'Elite Will': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 21,
+        },
+      ],
       'leaderName': 'Will',
       'town': 'Elite Will',
       'pokemons': [
@@ -76174,19 +76359,21 @@ module.exports = {
       'badgeReward': 22,
       'moneyReward': 7500,
       'defeatMessage': "Even though I was defeated, I won't change my course. I will continue battling until I stand above all Trainers! Now move on and experience the true ferocity of the Elite Four.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 21,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Will',
     },
     'Elite Koga': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 22,
+        },
+      ],
       'leaderName': 'Koga2',
       'town': 'Elite Koga',
       'pokemons': [
@@ -76219,19 +76406,21 @@ module.exports = {
       'badgeReward': 23,
       'moneyReward': 7500,
       'defeatMessage': 'I subjected you to everything I could muster. But my efforts failed. I must hone my skills. Go on to the next room, and put your abilities to the test!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 22,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Koga',
     },
     'Elite Bruno2': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 23,
+        },
+      ],
       'leaderName': 'Bruno2',
       'town': 'Elite Bruno2',
       'pokemons': [
@@ -76264,19 +76453,21 @@ module.exports = {
       'badgeReward': 24,
       'moneyReward': 7500,
       'defeatMessage': 'Having lost, I have no right to say anything… Go face your next challenge!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 23,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Bruno',
     },
     'Elite Karen': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 24,
+        },
+      ],
       'leaderName': 'Karen',
       'town': 'Elite Karen',
       'pokemons': [
@@ -76309,19 +76500,21 @@ module.exports = {
       'badgeReward': 25,
       'moneyReward': 7500,
       'defeatMessage': "Strong Pokémon. Weak Pokémon. That is only the selfish perception of people. Truly skilled Trainers should try to win with the Pokémon they love best. I like your style. You understand what's important. Go on — — the Champion is waiting.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 24,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Karen',
     },
     'Champion Lance': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 25,
+        },
+      ],
       'leaderName': 'Lance2',
       'town': 'Champion Lance',
       'pokemons': [
@@ -76359,17 +76552,11 @@ module.exports = {
       'badgeReward': 26,
       'moneyReward': 7500,
       'defeatMessage': "…It's over. But it's an odd feeling. I'm not angry that I lost. In fact, I feel happy. Happy that I witnessed the rise of a great new Champion!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 25,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Lance',
       'basePokemon': [
         {
           'name': 'Gyarados',
@@ -76404,6 +76591,14 @@ module.exports = {
       ],
     },
     'Rustboro City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 26,
+        },
+      ],
       'leaderName': 'Roxanne',
       'town': 'Rustboro City',
       'pokemons': [
@@ -76426,19 +76621,15 @@ module.exports = {
       'badgeReward': 27,
       'moneyReward': 1000,
       'defeatMessage': "So… I lost… It seems that I still have much more to learn… I understand. The Pokémon League's rules state that Trainers are to be given this if they defeat a Gym Leader. Please accept the official Pokémon League Stone Badge.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 26,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Roxanne's gym",
     },
     'Dewford Town': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Brawly',
       'town': 'Dewford Town',
       'pokemons': [
@@ -76461,13 +76652,21 @@ module.exports = {
       'badgeReward': 28,
       'moneyReward': 2000,
       'defeatMessage': "Whoah, wow! You made a much bigger splash than I expected! You swamped me! Okay, you've got me. Take this Gym Badge!",
-      'requirements': [],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Brawly's gym",
     },
     'Mauville City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 28,
+        },
+      ],
       'leaderName': 'Wattson',
       'town': 'Mauville City',
       'pokemons': [
@@ -76495,19 +76694,15 @@ module.exports = {
       'badgeReward': 29,
       'moneyReward': 3000,
       'defeatMessage': 'Wahahahah! Fine, I lost! You ended up giving me a thrill! Take this Badge!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 28,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Wattson's gym",
     },
     'Lavaridge Town': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Flannery',
       'town': 'Lavaridge Town',
       'pokemons': [
@@ -76535,13 +76730,21 @@ module.exports = {
       'badgeReward': 30,
       'moneyReward': 4000,
       'defeatMessage': "Oh... I guess I was trying too hard... I... I've only recently become a Gym Leader. I tried too hard to be someone I'm not. I have to do things my natural way. If I don't, my Pokémon will be confused. Thanks for teaching me that. For that, you deserve this.",
-      'requirements': [],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Flannery's gym",
     },
     'Petalburg City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 30,
+        },
+      ],
       'leaderName': 'Norman',
       'town': 'Petalburg City',
       'pokemons': [
@@ -76569,19 +76772,15 @@ module.exports = {
       'badgeReward': 31,
       'moneyReward': 5000,
       'defeatMessage': "… I… I can't… I can't believe it. I lost to you? But, rules are rules! Here, take this.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 30,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Norman's gym",
     },
     'Fortree City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Winona',
       'town': 'Fortree City',
       'pokemons': [
@@ -76614,13 +76813,15 @@ module.exports = {
       'badgeReward': 32,
       'moneyReward': 6000,
       'defeatMessage': 'Never before have I seen a Trainer command Pokémon with more grace than I... In recognition of your prowess, I present to you this Gym Badge.',
-      'requirements': [],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Winona's gym",
     },
     'Mossdeep City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Tate & Liza',
       'town': 'Mossdeep City',
       'pokemons': [
@@ -76648,13 +76849,22 @@ module.exports = {
       'badgeReward': 33,
       'moneyReward': 8000,
       'defeatMessage': "What? Our combination... Was shattered! It can't be helped. You've won... So, in recognition, take this Gym Badge.",
-      'requirements': [],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Tate & Liza's gym",
     },
     'Sootopolis City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 41,
+        },
+      ],
       'leaderName': 'Juan',
       'town': 'Sootopolis City',
       'pokemons': [
@@ -76687,20 +76897,21 @@ module.exports = {
       'badgeReward': 34,
       'moneyReward': 10000,
       'defeatMessage': 'Ahahaha, excellent! Very well, you are the winner. From you, I sense the brilliant shine of skill that will overcome all. However, compared with me or even Wallace, you are lacking in elegance. Perhaps I should make you a loan of my outfit? ... Hahaha, I merely jest! Rather than my clothes, I shall reward you with this, the Rain Badge.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 41,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Juan's gym",
     },
     'Elite Sidney': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 34,
+        },
+      ],
       'leaderName': 'Sidney',
       'town': 'Elite Sidney',
       'pokemons': [
@@ -76733,19 +76944,21 @@ module.exports = {
       'badgeReward': 35,
       'moneyReward': 15000,
       'defeatMessage': "Well, listen to what this loser has to say. You've got what it takes to go far. Now, go on to the next room and enjoy your next battle!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 34,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Sidney',
     },
     'Elite Phoebe': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 35,
+        },
+      ],
       'leaderName': 'Phoebe',
       'town': 'Elite Phoebe',
       'pokemons': [
@@ -76778,19 +76991,21 @@ module.exports = {
       'badgeReward': 36,
       'moneyReward': 15000,
       'defeatMessage': "There's a definite bond between you and your Pokémon, too. I didn't recognize it, so it's only natural that I lost. Yup, I'd like to see how far your bond will carry you. Go ahead, move to the next room.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 35,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Phoebe',
     },
     'Elite Glacia': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 36,
+        },
+      ],
       'leaderName': 'Glacia',
       'town': 'Elite Glacia',
       'pokemons': [
@@ -76823,19 +77038,21 @@ module.exports = {
       'badgeReward': 37,
       'moneyReward': 15000,
       'defeatMessage': 'Advance to the next room. And there, confirm the truly fearsome side of the Pokémon League.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 36,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Glacia',
     },
     'Elite Drake': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 37,
+        },
+      ],
       'leaderName': 'Drake',
       'town': 'Elite Drake',
       'pokemons': [
@@ -76868,19 +77085,21 @@ module.exports = {
       'badgeReward': 38,
       'moneyReward': 15000,
       'defeatMessage': 'You deserve every credit for coming this far as a Trainer of Pokémon. You do seem to know what is needed. Yes, what a Trainer needs is a virtuous heart. Pokémon touch the good hearts of Trainers and learn good from wrong. They touch the good hearts of Trainers and grow strong. Go! Go onwards! The Champion is waiting!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 37,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Drake',
     },
     'Champion Wallace': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 38,
+        },
+      ],
       'leaderName': 'Wallace',
       'town': 'Champion Wallace',
       'pokemons': [
@@ -76918,17 +77137,11 @@ module.exports = {
       'badgeReward': 39,
       'moneyReward': 16000,
       'defeatMessage': 'I, the Champion, fall in defeat… That was wonderful work. You were elegant, infuriatingly so. And yet it was utterly glorious! Kudos to you! You are a truly noble Pokémon Trainer!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 38,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Wallace',
       'basePokemon': [
         {
           'name': 'Wailord',
@@ -76963,6 +77176,14 @@ module.exports = {
       ],
     },
     'Oreburgh City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 39,
+        },
+      ],
       'leaderName': 'Roark',
       'town': 'Oreburgh City',
       'pokemons': [
@@ -76985,19 +77206,21 @@ module.exports = {
       'badgeReward': 40,
       'moneyReward': 250,
       'defeatMessage': "This is embarrassing... I went and lost to a Trainer who didn't have a single Gym Badge... But that's tough. You were strong, and I was weak. That's all there is. According to Pokémon League rules, I have to give you our Gym Badge since you've beaten me, the Leader. Heres your official Pokémon League Coal Badge.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 39,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Roark's gym",
     },
     'Eterna City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 40,
+        },
+      ],
       'leaderName': 'Gardenia',
       'town': 'Eterna City',
       'pokemons': [
@@ -77020,19 +77243,21 @@ module.exports = {
       'badgeReward': 41,
       'moneyReward': 400,
       'defeatMessage': "I might've said it before, but you're really tough! Wasn't it hard for you to raise your Pokémon to be so good? I guess that's a measure of how much you love your Pokémon. In recognition of that, I proudly grant you this!\"",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 40,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Gardenia's gym",
     },
     'Hearthome City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 41,
+        },
+      ],
       'leaderName': 'Fantina',
       'town': 'Hearthome City',
       'pokemons': [
@@ -77055,19 +77280,21 @@ module.exports = {
       'badgeReward': 42,
       'moneyReward': 740,
       'defeatMessage': 'I am dumbfounded! So very, very strong! You, your Pokémon, so strong! Your power is admirable! I shall honor it with this Gym Badge!"',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 41,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Fantina's gym",
     },
     'Veilstone City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 42,
+        },
+      ],
       'leaderName': 'Maylene',
       'town': 'Veilstone City',
       'pokemons': [
@@ -77090,19 +77317,21 @@ module.exports = {
       'badgeReward': 43,
       'moneyReward': 1200,
       'defeatMessage': '...OK. You win. That was a tough loss. I learned a lot from it. Please, accept this Gym Badge.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 42,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Maylene's gym",
     },
     'Pastoria City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 43,
+        },
+      ],
       'leaderName': 'Crasher Wake',
       'town': 'Pastoria City',
       'pokemons': [
@@ -77125,19 +77354,21 @@ module.exports = {
       'badgeReward': 44,
       'moneyReward': 2500,
       'defeatMessage': "It seems the undertow pulled me under... But I had a great time battling with you! You've earned this!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 43,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Crasher Wake's gym",
     },
     'Canalave City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 44,
+        },
+      ],
       'leaderName': 'Byron',
       'town': 'Canalave City',
       'pokemons': [
@@ -77160,19 +77391,21 @@ module.exports = {
       'badgeReward': 45,
       'moneyReward': 4800,
       'defeatMessage': 'You were strong enough to take down my prized team of Pokémon. In recognition of that power, I give you this: the Mine Badge!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 44,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Byron's gym",
     },
     'Snowpoint City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 45,
+        },
+      ],
       'leaderName': 'Candice',
       'town': 'Snowpoint City',
       'pokemons': [
@@ -77200,19 +77433,21 @@ module.exports = {
       'badgeReward': 46,
       'moneyReward': 8000,
       'defeatMessage': "Wow! You're great! You've earned my respect! I think your focus and will bowled us over totally. Oh, that's right! I'm supposed to give you this!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 45,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Candice's gym",
     },
     'Sunyshore City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 46,
+        },
+      ],
       'leaderName': 'Volkner',
       'town': 'Sunyshore City',
       'pokemons': [
@@ -77240,19 +77475,21 @@ module.exports = {
       'badgeReward': 47,
       'moneyReward': 12000,
       'defeatMessage': "...Hehehe. Hahahah! ...That was the most fun I've had in a battle since...I don't know when! It's also made me excited to know you and your team will keep battling to greater heights! This is your eighth Gym Badge. You've earned this!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 46,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Volkner's gym",
     },
     'Elite Aaron': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 47,
+        },
+      ],
       'leaderName': 'Aaron',
       'town': 'Elite Aaron',
       'pokemons': [
@@ -77285,19 +77522,21 @@ module.exports = {
       'badgeReward': 48,
       'moneyReward': 18000,
       'defeatMessage': "I lost with the most beautiful and toughest of the bug Pokémon... We lost because I wasn't good enough... That's it! Back to training camp! Let's hear it for me! No... That was wrong... Anyway... Go on to the next room! Three Trainers are waiting for you. They are all tougher than me.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 47,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Aaron',
     },
     'Elite Bertha': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 48,
+        },
+      ],
       'leaderName': 'Bertha',
       'town': 'Elite Bertha',
       'pokemons': [
@@ -77330,19 +77569,21 @@ module.exports = {
       'badgeReward': 49,
       'moneyReward': 18000,
       'defeatMessage': "You're quite something, youngster. I like how you and your Pokémon earned the win by working as one. That's what makes you so strong. Ahahaha! I think that you can go as far as you want.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 48,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Bertha',
     },
     'Elite Flint': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 49,
+        },
+      ],
       'leaderName': 'Flint',
       'town': 'Elite Flint',
       'pokemons': [
@@ -77375,19 +77616,21 @@ module.exports = {
       'badgeReward': 50,
       'moneyReward': 18000,
       'defeatMessage': '.........Keep going...I know your spirit burns hot. Your whole team does.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 49,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Flint',
     },
     'Elite Lucian': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 50,
+        },
+      ],
       'leaderName': 'Lucian',
       'town': 'Elite Lucian',
       'pokemons': [
@@ -77420,19 +77663,21 @@ module.exports = {
       'badgeReward': 51,
       'moneyReward': 18000,
       'defeatMessage': "Congratulations. You have beaten the Elite Four. However, that doesn't mean you're done with the Pokémon league. There remains the Champion. I should warn you—the Champion is far stronger than the Elite Four. Now, go on. Step through the doorway to your final battle.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 50,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Lucian',
     },
     'Champion Cynthia': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 51,
+        },
+      ],
       'leaderName': 'Cynthia',
       'town': 'Champion Cynthia',
       'pokemons': [
@@ -77470,17 +77715,11 @@ module.exports = {
       'badgeReward': 52,
       'moneyReward': 32000,
       'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion! Come with me. We'll take the lift.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 51,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Cynthia',
       'basePokemon': [
         {
           'name': 'Spiritomb',
@@ -77515,6 +77754,15 @@ module.exports = {
       ],
     },
     'Aspertia City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 67,
+        },
+      ],
       'leaderName': 'Cheren',
       'town': 'Aspertia City',
       'pokemons': [
@@ -77537,20 +77785,21 @@ module.exports = {
       'badgeReward': 53,
       'moneyReward': 500,
       'defeatMessage': 'That battle has made me feel really glad you were my first challenger as a Gym Leader… I give you this in honor of the strength you and your Pokémon showed!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 67,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Cheren's gym",
     },
     'Virbank City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 53,
+        },
+      ],
       'leaderName': 'Roxie',
       'town': 'Virbank City',
       'pokemons': [
@@ -77573,19 +77822,22 @@ module.exports = {
       'badgeReward': 54,
       'moneyReward': 800,
       'defeatMessage': "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I feel revitalized and refreshed now! Here! Proof that you beat me!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 53,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Roxie's gym",
     },
     'Castelia City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 69,
+        },
+      ],
       'leaderName': 'Burgh',
       'town': 'Castelia City',
       'pokemons': [
@@ -77613,20 +77865,21 @@ module.exports = {
       'badgeReward': 55,
       'moneyReward': 1500,
       'defeatMessage': "Oh hoo… You are very strong indeed! I guess it's no surprise I lost. Here! Take this Insect Badge! I think it'll suit you!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 69,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Burgh's gym",
     },
     'Nimbasa City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 55,
+        },
+      ],
       'leaderName': 'Elesa',
       'town': 'Nimbasa City',
       'pokemons': [
@@ -77654,19 +77907,21 @@ module.exports = {
       'badgeReward': 56,
       'moneyReward': 2600,
       'defeatMessage': "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my feet! Take this!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 55,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Elesa's gym",
     },
     'Driftveil City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 56,
+        },
+      ],
       'leaderName': 'Clay',
       'town': 'Driftveil City',
       'pokemons': [
@@ -77694,19 +77949,21 @@ module.exports = {
       'badgeReward': 57,
       'moneyReward': 4800,
       'defeatMessage': "Phew… You're really somethin'! Li'l whippersnapper Trainers who pack a real punch keep showin' up one after another. Mrmph. Here! Take this!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 56,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Clay's gym",
     },
     'Mistralton City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 57,
+        },
+      ],
       'leaderName': 'Skyla',
       'town': 'Mistralton City',
       'pokemons': [
@@ -77734,19 +77991,21 @@ module.exports = {
       'badgeReward': 58,
       'moneyReward': 7600,
       'defeatMessage': "You're an amazing Pokémon Trainer. My Pokémon and I are happy because for the first time in quite a while--about two years, I'd say--we could fight with our full strength. This is an official League Gym Badge. But this is just a stepping-stone.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 57,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Skyla's gym",
     },
     'Opelucid City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 58,
+        },
+      ],
       'leaderName': 'Drayden',
       'town': 'Opelucid City',
       'pokemons': [
@@ -77774,19 +78033,21 @@ module.exports = {
       'badgeReward': 59,
       'moneyReward': 14000,
       'defeatMessage': "Wonderful. I'm grateful that we had a chance to meet and battle. It reminded me that Pokémon battles are about working with others to meet our challenges together.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 58,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Drayden's gym",
     },
     'Humilau City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 59,
+        },
+      ],
       'leaderName': 'Marlon',
       'town': 'Humilau City',
       'pokemons': [
@@ -77814,19 +78075,21 @@ module.exports = {
       'badgeReward': 60,
       'moneyReward': 27000,
       'defeatMessage': "You don't just look strong, you're strong fo' reals! Eh, I was swept away, too! Oh yeah, yo. I was so surprised that I forgot! I gotta give this to you!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 59,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Marlon's gym",
     },
     'Elite Shauntal': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 60,
+        },
+      ],
       'leaderName': 'Shauntal',
       'town': 'Elite Shauntal',
       'pokemons': [
@@ -77864,19 +78127,21 @@ module.exports = {
       'badgeReward': 61,
       'moneyReward': 32000,
       'defeatMessage': "My Pokémon and the challenger's Pokémon. Everyone battled even though they were hurt... Thank you.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 60,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Shauntal',
     },
     'Elite Marshal': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 61,
+        },
+      ],
       'leaderName': 'Marshal',
       'town': 'Elite Marshal',
       'pokemons': [
@@ -77914,19 +78179,21 @@ module.exports = {
       'badgeReward': 62,
       'moneyReward': 32000,
       'defeatMessage': 'Whew! Well done! As your battles continue, aim for even greater heights!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 61,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Marshal',
     },
     'Elite Grimsley': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 62,
+        },
+      ],
       'leaderName': 'Grimsley',
       'town': 'Elite Grimsley',
       'pokemons': [
@@ -77964,19 +78231,21 @@ module.exports = {
       'badgeReward': 63,
       'moneyReward': 32000,
       'defeatMessage': 'Whether or not you get to fight at full strength, whether or not luck smiles on you--none of that matters. Only results matter. And a loss is a loss. See, victory shines like a bright light. And right now, you and your Pokémon are shining brilliantly.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 62,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Grimsley',
     },
     'Elite Caitlin': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 63,
+        },
+      ],
       'leaderName': 'Caitlin',
       'town': 'Elite Caitlin',
       'pokemons': [
@@ -78014,19 +78283,21 @@ module.exports = {
       'badgeReward': 64,
       'moneyReward': 32000,
       'defeatMessage': 'You and your Pokémon are both excellent and elegant. To have been able to battle against such a splendid team... My Pokémon and I learned a lot! I offer you my thanks',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 63,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Caitlin',
     },
     'Champion Iris': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 64,
+        },
+      ],
       'leaderName': 'Iris',
       'town': 'Champion Iris',
       'pokemons': [
@@ -78064,17 +78335,11 @@ module.exports = {
       'badgeReward': 65,
       'moneyReward': 64000,
       'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 64,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Iris',
       'basePokemon': [
         {
           'name': 'Hydreigon',
@@ -78109,6 +78374,16 @@ module.exports = {
       ],
     },
     'Santalune City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 5,
+          'route': 3,
+        },
+      ],
       'leaderName': 'Viola',
       'town': 'Santalune City',
       'pokemons': [
@@ -78126,21 +78401,21 @@ module.exports = {
       'badgeReward': 66,
       'moneyReward': 800,
       'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your Pokémon have shown me a whole new depth of field! Fantastic! Just fantastic!",
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 14,
-          'region': 5,
-          'route': 3,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Viola's gym",
     },
     'Cyllage City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 66,
+        },
+      ],
       'leaderName': 'Grant',
       'town': 'Cyllage City',
       'pokemons': [
@@ -78158,19 +78433,21 @@ module.exports = {
       'badgeReward': 67,
       'moneyReward': 1700,
       'defeatMessage': "There are some things that seem out of reach no matter how hard you try. However, it's important that you never give up--no matter the opponent or the odds. I could tell from our battle that you and your Pokémon understand that. To commemorate such an impressive show of teamwork, please accept the Cliff Badge!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 66,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Grant's gym",
     },
     'Shalour City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 67,
+        },
+      ],
       'leaderName': 'Korrina',
       'town': 'Shalour City',
       'pokemons': [
@@ -78193,19 +78470,21 @@ module.exports = {
       'badgeReward': 68,
       'moneyReward': 3800,
       'defeatMessage': "Oh! I have been defeated! Alack, alay! Lady Korrina gave a terrible display! This is it. I must give up my title and admit that your strength far exceeds-- Just teasing! But here's your Badge. Boy, you'll be rolling in 'em soon!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 67,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Korrina's gym",
     },
     'Coumarine City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 68,
+        },
+      ],
       'leaderName': 'Ramos',
       'town': 'Coumarine City',
       'pokemons': [
@@ -78228,19 +78507,22 @@ module.exports = {
       'badgeReward': 69,
       'moneyReward': 5500,
       'defeatMessage': "Yeh believe in yer Pokémon... And they believe in yeh, too... Mighty oaks from acorns grow. Go on, then. Yeh've earned it. Here's yer own Plant Badge, sprout.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 68,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Ramos's gym",
     },
     'Lumiose City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 97,
+        },
+      ],
       'leaderName': 'Clemont',
       'town': 'Lumiose City',
       'pokemons': [
@@ -78263,20 +78545,21 @@ module.exports = {
       'badgeReward': 70,
       'moneyReward': 9000,
       'defeatMessage': "Oh, Bonnie... When will you learn there's no shame in losing? I'm glad whenever I get to learn something new thanks to strong challengers like you here.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 97,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Clemont's gym",
     },
     'Laverre City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 70,
+        },
+      ],
       'leaderName': 'Valerie',
       'town': 'Laverre City',
       'pokemons': [
@@ -78299,19 +78582,21 @@ module.exports = {
       'badgeReward': 71,
       'moneyReward': 16000,
       'defeatMessage': 'Yes... That was a fine battle. I shall reward you for this great victory. This is the Fairy Badge. It is yours now. Its beauty is captivating, is it not? ... ... ... ... ... ... Ah... Do forgive me. I was so captivated, I forgot for a moment that it is yours.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 70,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Valerie's gym",
     },
     'Anistar City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 71,
+        },
+      ],
       'leaderName': 'Olympia',
       'town': 'Anistar City',
       'pokemons': [
@@ -78334,19 +78619,22 @@ module.exports = {
       'badgeReward': 72,
       'moneyReward': 30000,
       'defeatMessage': 'Now, the Psychic Badge. A testament to your skill. Proof of your power.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 71,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Olympia's gym",
     },
     'Snowbelle City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 103,
+        },
+      ],
       'leaderName': 'Wulfric',
       'town': 'Snowbelle City',
       'pokemons': [
@@ -78369,20 +78657,21 @@ module.exports = {
       'badgeReward': 73,
       'moneyReward': 52000,
       'defeatMessage': "Impressive! Your Pokémon fought with great courage. I can tell that you've trained your Pokémon well.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 103,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Wulfric's gym",
     },
     'Elite Malva': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 73,
+        },
+      ],
       'leaderName': 'Malva',
       'town': 'Elite Malva',
       'pokemons': [
@@ -78410,19 +78699,21 @@ module.exports = {
       'badgeReward': 74,
       'moneyReward': 64000,
       'defeatMessage': 'What news... So a new challenger has defeated Malva of the Elite Four!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 73,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Malva',
     },
     'Elite Siebold': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 74,
+        },
+      ],
       'leaderName': 'Siebold',
       'town': 'Elite Siebold',
       'pokemons': [
@@ -78450,19 +78741,21 @@ module.exports = {
       'badgeReward': 75,
       'moneyReward': 64000,
       'defeatMessage': 'I shall store my memory of you and your Pokémon forever away within my heart.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 74,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Siebold',
     },
     'Elite Wikstrom': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 75,
+        },
+      ],
       'leaderName': 'Wikstrom',
       'town': 'Elite Wikstrom',
       'pokemons': [
@@ -78490,19 +78783,21 @@ module.exports = {
       'badgeReward': 76,
       'moneyReward': 64000,
       'defeatMessage': 'Glorious! The trust that you share with your honorable Pokémon surpasses even mine!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 75,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Wikstrom',
     },
     'Elite Drasna': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 76,
+        },
+      ],
       'leaderName': 'Drasna',
       'town': 'Elite Drasna',
       'pokemons': [
@@ -78530,19 +78825,21 @@ module.exports = {
       'badgeReward': 77,
       'moneyReward': 64000,
       'defeatMessage': "Oh, dear me. That sure was a quick battle... I do hope you'll come back again sometime!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 76,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Drasna',
     },
     'Champion Diantha': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 77,
+        },
+      ],
       'leaderName': 'Diantha',
       'town': 'Champion Diantha',
       'pokemons': [
@@ -78580,17 +78877,11 @@ module.exports = {
       'badgeReward': 78,
       'moneyReward': 128000,
       'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 77,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Diantha',
       'basePokemon': [
         {
           'name': 'Hawlucha',
@@ -78625,6 +78916,15 @@ module.exports = {
       ],
     },
     'Iki Town': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 108,
+        },
+      ],
       'leaderName': 'Hala',
       'town': 'Iki Town',
       'pokemons': [
@@ -78647,20 +78947,23 @@ module.exports = {
       'badgeReward': 80,
       'moneyReward': 128000,
       'defeatMessage': 'The results come as no surprise to me. What a fine Trainer...and what fine Pokémon, too!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 108,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Hala's gym",
     },
     'Konikoni City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 6,
+          'route': 9,
+        },
+      ],
       'leaderName': 'Olivia',
       'town': 'Konikoni City',
       'pokemons': [
@@ -78683,21 +78986,21 @@ module.exports = {
       'badgeReward': 84,
       'moneyReward': 128000,
       'defeatMessage': 'How lovely.',
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 14,
-          'region': 6,
-          'route': 9,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Olivia's gym",
     },
     'Aether Paradise': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 84,
+        },
+      ],
       'leaderName': 'Ultra Wormhole',
       'town': 'Aether Paradise',
       'pokemons': [
@@ -78710,19 +79013,22 @@ module.exports = {
       'badgeReward': 85,
       'moneyReward': 128000,
       'defeatMessage': 'The creature escaped back into the ultra wormhole.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 84,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Ultra Wormhole's gym",
     },
     'Malie City': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 122,
+        },
+      ],
       'leaderName': 'Nanu',
       'town': 'Malie City',
       'pokemons': [
@@ -78745,20 +79051,21 @@ module.exports = {
       'badgeReward': 88,
       'moneyReward': 128000,
       'defeatMessage': 'Hmph...',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 122,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Nanu's gym",
     },
     'Altar of the Sunne and Moone': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 88,
+        },
+      ],
       'leaderName': 'Ultra Megalopolis',
       'town': 'Altar of the Sunne and Moone',
       'pokemons': [
@@ -78771,19 +79078,22 @@ module.exports = {
       'badgeReward': 90,
       'moneyReward': 128000,
       'defeatMessage': 'Necrozma fled.',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 88,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Ultra Megalopolis's gym",
     },
     'Exeggutor Island': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 126,
+        },
+      ],
       'leaderName': 'Hapu',
       'town': 'Exeggutor Island',
       'pokemons': [
@@ -78811,20 +79121,15 @@ module.exports = {
       'badgeReward': 92,
       'moneyReward': 128000,
       'defeatMessage': 'You have succeeded in your final grand trial!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 16,
-          'dungeonIndex': 126,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Hapu's gym",
     },
     "Ilima's Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Ilima',
       'town': 'Verdant Cavern',
       'pokemons': [
@@ -78847,13 +79152,15 @@ module.exports = {
       'badgeReward': 79,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Normalium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Ilima's gym",
     },
     "Lana's Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Lana',
       'town': 'Brooklet Hill',
       'pokemons': [
@@ -78876,13 +79183,15 @@ module.exports = {
       'badgeReward': 81,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Waterium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Lana's gym",
     },
     "Kiawe's Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Kiawe',
       'town': 'Wela Volcano Park',
       'pokemons': [
@@ -78905,13 +79214,15 @@ module.exports = {
       'badgeReward': 82,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Firium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Kiawe's gym",
     },
     "Mallow's Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Mallow',
       'town': 'Lush Jungle',
       'pokemons': [
@@ -78934,13 +79245,15 @@ module.exports = {
       'badgeReward': 83,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Grassium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Mallow's gym",
     },
     "Sophocles' Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Sophocles',
       'town': 'Hokulani Observatory',
       'pokemons': [
@@ -78963,13 +79276,15 @@ module.exports = {
       'badgeReward': 86,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Electrium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Sophocles's gym",
     },
     "Acerola's Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Acerola',
       'town': 'Thrifty Megamart',
       'pokemons': [
@@ -78992,13 +79307,15 @@ module.exports = {
       'badgeReward': 87,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Ghostium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Acerola's gym",
     },
     'Vast Poni Canyon Trial': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Totem Kommo-o',
       'town': 'Vast Poni Canyon',
       'pokemons': [
@@ -79021,13 +79338,15 @@ module.exports = {
       'badgeReward': 89,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Dragonium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Totem Kommo-o's gym",
     },
     "Mina's Trial": {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
       'leaderName': 'Mina',
       'town': "Mina's Houseboat",
       'pokemons': [
@@ -79050,13 +79369,21 @@ module.exports = {
       'badgeReward': 91,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Fairium-Z!',
-      'requirements': [],
       'flags': {
         'quest': false,
         'achievement': false,
       },
+      'buttonText': "Mina's gym",
     },
     'Elite Molayne': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 92,
+        },
+      ],
       'leaderName': 'Molayne',
       'town': 'Elite Molayne',
       'pokemons': [
@@ -79089,19 +79416,21 @@ module.exports = {
       'badgeReward': 95,
       'moneyReward': 64000,
       'defeatMessage': 'That Kukui... He certainly found an interesting Trainer for me to face!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 92,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Molayne',
     },
     'Elite Olivia': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 95,
+        },
+      ],
       'leaderName': 'Olivia',
       'town': 'Elite Olivia',
       'pokemons': [
@@ -79134,19 +79463,21 @@ module.exports = {
       'badgeReward': 93,
       'moneyReward': 64000,
       'defeatMessage': "I don't see the same look in your eyes that I saw when we first met on Akala Island. Have you had some experiences that you'll carry with you in your heart forever? Well, it's time for you to move on.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 95,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Olivia',
     },
     'Elite Acerola': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 93,
+        },
+      ],
       'leaderName': 'Acerola',
       'town': 'Elite Acerola',
       'pokemons': [
@@ -79179,19 +79510,21 @@ module.exports = {
       'badgeReward': 94,
       'moneyReward': 64000,
       'defeatMessage': "I'm...I'm speechless! You've done me in!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 93,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Acerola',
     },
     'Elite Kahili': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 94,
+        },
+      ],
       'leaderName': 'Kahili',
       'town': 'Elite Kahili',
       'pokemons': [
@@ -79224,19 +79557,21 @@ module.exports = {
       'badgeReward': 96,
       'moneyReward': 64000,
       'defeatMessage': "It's frustrating to me as a member of the Elite Four, but it seems your strength is the real deal.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 94,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Kahili',
     },
     'Champion Hau': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 96,
+        },
+      ],
       'leaderName': 'Hau',
       'town': 'Champion Hau',
       'pokemons': [
@@ -79264,17 +79599,11 @@ module.exports = {
       'badgeReward': 97,
       'moneyReward': 100000,
       'defeatMessage': "We're gonna keep moving forward, by staying at full power all the time!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 96,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': 'Hau',
       'basePokemon': [
         {
           'name': 'Alolan Raichu',
@@ -79335,23 +79664,7 @@ module.exports = {
       ],
     },
     'Turffield': {
-      'leaderName': 'Milo',
-      'town': 'Turffield',
-      'pokemons': [
-        {
-          'name': 'Gossifleur',
-          'maxHealth': 2458300,
-          'level': 19,
-        },
-        {
-          'name': 'Eldegoss',
-          'maxHealth': 2462000,
-          'level': 20,
-        },
-      ],
-      'badgeReward': 98,
-      'moneyReward': 128000,
-      'defeatMessage': 'The power of Grass has wilted... What an incredible Gym Challenger!',
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79361,34 +79674,31 @@ module.exports = {
           'route': 4,
         },
       ],
+      'leaderName': 'Milo',
+      'town': 'Turffield',
+      'pokemons': [
+        {
+          'name': 'Gossifleur',
+          'maxHealth': 40466361,
+          'level': 19,
+        },
+        {
+          'name': 'Eldegoss',
+          'maxHealth': 42596169,
+          'level': 20,
+        },
+      ],
+      'badgeReward': 98,
+      'moneyReward': 40000,
+      'defeatMessage': 'The power of Grass has wilted... What an incredible Gym Challenger!',
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Milo's gym",
     },
     'Hulbury': {
-      'leaderName': 'Nessa',
-      'town': 'Hulbury',
-      'pokemons': [
-        {
-          'name': 'Goldeen',
-          'maxHealth': 2458300,
-          'level': 22,
-        },
-        {
-          'name': 'Arrokuda',
-          'maxHealth': 2462000,
-          'level': 23,
-        },
-        {
-          'name': 'Drednaw',
-          'maxHealth': 2458300,
-          'level': 24,
-        },
-      ],
-      'badgeReward': 99,
-      'moneyReward': 128000,
-      'defeatMessage': 'I may proudly be the strongest member of this Gym, but I was totally washed away!',
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79398,34 +79708,36 @@ module.exports = {
           'route': 5,
         },
       ],
+      'leaderName': 'Nessa',
+      'town': 'Hulbury',
+      'pokemons': [
+        {
+          'name': 'Goldeen',
+          'maxHealth': 47607484,
+          'level': 22,
+        },
+        {
+          'name': 'Arrokuda',
+          'maxHealth': 48108615,
+          'level': 23,
+        },
+        {
+          'name': 'Drednaw',
+          'maxHealth': 50113141,
+          'level': 24,
+        },
+      ],
+      'badgeReward': 99,
+      'moneyReward': 60000,
+      'defeatMessage': 'I may proudly be the strongest member of this Gym, but I was totally washed away!',
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Nessa's gym",
     },
     'Motostoke': {
-      'leaderName': 'Kabu',
-      'town': 'Motostoke',
-      'pokemons': [
-        {
-          'name': 'Ninetales',
-          'maxHealth': 2458300,
-          'level': 25,
-        },
-        {
-          'name': 'Arcanine',
-          'maxHealth': 2462000,
-          'level': 25,
-        },
-        {
-          'name': 'Centiskorch',
-          'maxHealth': 2458300,
-          'level': 27,
-        },
-      ],
-      'badgeReward': 100,
-      'moneyReward': 128000,
-      'defeatMessage': "I'm often regarded as the first real roadblock of the Gym Challenge, and yet you defeated me! Clearly, your talent surpassed my many years of experience. I still have much to learn!",
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79435,39 +79747,36 @@ module.exports = {
           'route': 13,
         },
       ],
+      'leaderName': 'Kabu',
+      'town': 'Motostoke',
+      'pokemons': [
+        {
+          'name': 'Ninetales',
+          'maxHealth': 56008804,
+          'level': 25,
+        },
+        {
+          'name': 'Arcanine',
+          'maxHealth': 56008804,
+          'level': 25,
+        },
+        {
+          'name': 'Centiskorch',
+          'maxHealth': 58936636,
+          'level': 27,
+        },
+      ],
+      'badgeReward': 100,
+      'moneyReward': 60000,
+      'defeatMessage': "I'm often regarded as the first real roadblock of the Gym Challenge, and yet you defeated me! Clearly, your talent surpassed my many years of experience. I still have much to learn!",
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Kabu's gym",
     },
-    'Stow-on-Side': {
-      'leaderName': 'Bea',
-      'town': 'Stow-on-Side',
-      'pokemons': [
-        {
-          'name': 'Hitmontop',
-          'maxHealth': 2458300,
-          'level': 34,
-        },
-        {
-          'name': 'Pangoro',
-          'maxHealth': 2462000,
-          'level': 34,
-        },
-        {
-          'name': "Sirfetch'd",
-          'maxHealth': 2458300,
-          'level': 35,
-        },
-        {
-          'name': 'Machamp',
-          'maxHealth': 2458300,
-          'level': 36,
-        },
-      ],
-      'badgeReward': 101,
-      'moneyReward': 128000,
-      'defeatMessage': 'Your strength nearly made me want to turn and run in my bare feet!',
+    'Stow-on-Side1': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79477,39 +79786,85 @@ module.exports = {
           'route': 15,
         },
       ],
+      'leaderName': 'Bea',
+      'town': 'Stow-on-Side1',
+      'pokemons': [
+        {
+          'name': 'Hitmontop',
+          'maxHealth': 65892712,
+          'level': 34,
+        },
+        {
+          'name': 'Pangoro',
+          'maxHealth': 65892712,
+          'level': 34,
+        },
+        {
+          'name': "Sirfetch'd",
+          'maxHealth': 66586319,
+          'level': 35,
+        },
+        {
+          'name': 'Machamp',
+          'maxHealth': 69360749,
+          'level': 36,
+        },
+      ],
+      'badgeReward': 101,
+      'moneyReward': 80000,
+      'defeatMessage': 'Your strength nearly made me want to turn and run in my bare feet',
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Bea's gym",
     },
-    'Ballonlea': {
-      'leaderName': 'Opal',
-      'town': 'Ballonlea',
+    'Stow-on-Side2': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 7,
+          'route': 15,
+        },
+      ],
+      'leaderName': 'Allister',
+      'town': 'Stow-on-Side2',
       'pokemons': [
         {
-          'name': 'Galarian Weezing',
-          'maxHealth': 2458300,
+          'name': 'Galarian Yamask',
+          'maxHealth': 65892712,
+          'level': 34,
+        },
+        {
+          'name': 'Mimikyu',
+          'maxHealth': 65892712,
+          'level': 34,
+        },
+        {
+          'name': 'Cursola',
+          'maxHealth': 66586319,
+          'level': 35,
+        },
+        {
+          'name': 'Gengar',
+          'maxHealth': 69360749,
           'level': 36,
-        },
-        {
-          'name': 'Mawile',
-          'maxHealth': 2462000,
-          'level': 36,
-        },
-        {
-          'name': 'Togekiss',
-          'maxHealth': 2458300,
-          'level': 37,
-        },
-        {
-          'name': 'Alcremie (Strawberry Vanilla)',
-          'maxHealth': 2458300,
-          'level': 38,
         },
       ],
       'badgeReward': 102,
-      'moneyReward': 128000,
-      'defeatMessage': "Your pink is still lacking, but you're an excellent Trainer with some excellent Pokémon.",
+      'moneyReward': 80000,
+      'defeatMessage': 'Maybe my mask... kept me from seeing just how strong you really are...',
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Allister's gym",
+    },
+    'Ballonlea': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 1,
@@ -79518,39 +79873,41 @@ module.exports = {
           'dungeonIndex': 139,
         },
       ],
+      'leaderName': 'Opal',
+      'town': 'Ballonlea',
+      'pokemons': [
+        {
+          'name': 'Galarian Weezing',
+          'maxHealth': 71622513,
+          'level': 36,
+        },
+        {
+          'name': 'Mawile',
+          'maxHealth': 71622513,
+          'level': 36,
+        },
+        {
+          'name': 'Togekiss',
+          'maxHealth': 73130355,
+          'level': 37,
+        },
+        {
+          'name': 'Alcremie (Strawberry Vanilla)',
+          'maxHealth': 75392119,
+          'level': 38,
+        },
+      ],
+      'badgeReward': 103,
+      'moneyReward': 80000,
+      'defeatMessage': "Your pink is still lacking, but you're an excellent Trainer with some excellent Pokémon.",
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Opal's gym",
     },
-    'Circhester': {
-      'leaderName': 'Gordie',
-      'town': 'Circhester',
-      'pokemons': [
-        {
-          'name': 'Barbaracle',
-          'maxHealth': 2458300,
-          'level': 40,
-        },
-        {
-          'name': 'Shuckle',
-          'maxHealth': 2462000,
-          'level': 40,
-        },
-        {
-          'name': 'Stonjourner',
-          'maxHealth': 2458300,
-          'level': 41,
-        },
-        {
-          'name': 'Coalossal',
-          'maxHealth': 2458300,
-          'level': 42,
-        },
-      ],
-      'badgeReward': 103,
-      'moneyReward': 128000,
-      'defeatMessage': "I just want to climb into a hole... Well, I guess it'd be more like falling from here.",
+    'Circhester1': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79560,39 +79917,85 @@ module.exports = {
           'route': 18,
         },
       ],
+      'leaderName': 'Gordie',
+      'town': 'Circhester1',
+      'pokemons': [
+        {
+          'name': 'Barbaracle',
+          'maxHealth': 84261781,
+          'level': 40,
+        },
+        {
+          'name': 'Shuckle',
+          'maxHealth': 84261781,
+          'level': 40,
+        },
+        {
+          'name': 'Stonjourner',
+          'maxHealth': 86035713,
+          'level': 41,
+        },
+        {
+          'name': 'Coalossal',
+          'maxHealth': 88696611,
+          'level': 42,
+        },
+      ],
+      'badgeReward': 104,
+      'moneyReward': 80000,
+      'defeatMessage': "I just want to climb into a hole... Well, I guess it'd be more like falling from here.",
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Gordie's gym",
     },
-    'Spikemuth': {
-      'leaderName': 'Piers',
-      'town': 'Spikemuth',
-      'pokemons': [
+    'Circhester2': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
         {
-          'name': 'Scrafty',
-          'maxHealth': 2458300,
-          'level': 44,
-        },
-        {
-          'name': 'Malamar',
-          'maxHealth': 2462000,
-          'level': 45,
-        },
-        {
-          'name': 'Skuntank',
-          'maxHealth': 2458300,
-          'level': 45,
-        },
-        {
-          'name': 'Obstagoon',
-          'maxHealth': 2458300,
-          'level': 46,
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 7,
+          'route': 18,
         },
       ],
-      'badgeReward': 104,
-      'moneyReward': 128000,
-      'defeatMessage': "Me an' my team gave it our best. Let's meet up again for a battle some time...",
+      'leaderName': 'Melony',
+      'town': 'Circhester2',
+      'pokemons': [
+        {
+          'name': 'Frosmoth',
+          'maxHealth': 84261781,
+          'level': 40,
+        },
+        {
+          'name': 'Galarian Darmanitan',
+          'maxHealth': 84261781,
+          'level': 40,
+        },
+        {
+          'name': 'Eiscue',
+          'maxHealth': 86035713,
+          'level': 41,
+        },
+        {
+          'name': 'Lapras',
+          'maxHealth': 88696611,
+          'level': 42,
+        },
+      ],
+      'badgeReward': 105,
+      'moneyReward': 80000,
+      'defeatMessage': 'I think you took breaking the ice a little too literally...',
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Melony's gym",
+    },
+    'Spikemuth': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79602,39 +80005,41 @@ module.exports = {
           'route': 22,
         },
       ],
+      'leaderName': 'Piers',
+      'town': 'Spikemuth',
+      'pokemons': [
+        {
+          'name': 'Scrafty',
+          'maxHealth': 99141007,
+          'level': 44,
+        },
+        {
+          'name': 'Malamar',
+          'maxHealth': 100184597,
+          'level': 45,
+        },
+        {
+          'name': 'Skuntank',
+          'maxHealth': 100184597,
+          'level': 45,
+        },
+        {
+          'name': 'Obstagoon',
+          'maxHealth': 104348955,
+          'level': 46,
+        },
+      ],
+      'badgeReward': 106,
+      'moneyReward': 96000,
+      'defeatMessage': "Me an' my team gave it our best. Let's meet up again for a battle some time...",
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Piers's gym",
     },
     'Hammerlocke': {
-      'leaderName': 'Raihan',
-      'town': 'Hammerlocke',
-      'pokemons': [
-        {
-          'name': 'Gigalith',
-          'maxHealth': 2458300,
-          'level': 46,
-        },
-        {
-          'name': 'Flygon',
-          'maxHealth': 2462000,
-          'level': 47,
-        },
-        {
-          'name': 'Sandaconda',
-          'maxHealth': 2458300,
-          'level': 46,
-        },
-        {
-          'name': 'Duraludon',
-          'maxHealth': 2458300,
-          'level': 48,
-        },
-      ],
-      'badgeReward': 105,
-      'moneyReward': 128000,
-      'defeatMessage': 'I might have lost, but I still look good. Maybe I should snap a quick selfie...',
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 10,
@@ -79646,47 +80051,44 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 104,
+          'badge': 106,
         },
       ],
+      'leaderName': 'Raihan',
+      'town': 'Hammerlocke',
+      'pokemons': [
+        {
+          'name': 'Gigalith',
+          'maxHealth': 111645278,
+          'level': 46,
+        },
+        {
+          'name': 'Flygon',
+          'maxHealth': 112820492,
+          'level': 47,
+        },
+        {
+          'name': 'Sandaconda',
+          'maxHealth': 111645278,
+          'level': 46,
+        },
+        {
+          'name': 'Duraludon',
+          'maxHealth': 117521346,
+          'level': 48,
+        },
+      ],
+      'badgeReward': 107,
+      'moneyReward': 128000,
+      'defeatMessage': 'I might have lost, but I still look good. Maybe I should snap a quick selfie...',
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Raihan's gym",
     },
     'Trainer Marnie': {
-      'leaderName': 'Marnie',
-      'town': 'Trainer Marnie',
-      'pokemons': [
-        {
-          'name': 'Liepard',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Toxicroak',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Scrafty',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Morpeko',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Grimmsnarl',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 106,
-      'moneyReward': 64000,
-      'defeatMessage': "I mean, If you're gonna win, you could at least win in a way that makes me look good, right?",
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 1,
@@ -79695,139 +80097,46 @@ module.exports = {
           'dungeonIndex': 140,
         },
       ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Trainer Hop': {
-      'leaderName': 'Hop',
-      'town': 'Trainer Hop',
+      'leaderName': 'Marnie',
+      'town': 'Trainer Marnie',
       'pokemons': [
         {
-          'name': 'Dubwool',
-          'maxHealth': 1945330,
+          'name': 'Liepard',
+          'maxHealth': 117521346,
+          'level': 47,
+        },
+        {
+          'name': 'Toxicroak',
+          'maxHealth': 117521346,
+          'level': 47,
+        },
+        {
+          'name': 'Scrafty',
+          'maxHealth': 117521346,
+          'level': 47,
+        },
+        {
+          'name': 'Morpeko',
+          'maxHealth': 127967688,
+          'level': 48,
+        },
+        {
+          'name': 'Grimmsnarl',
+          'maxHealth': 130579274,
           'level': 49,
-        },
-        {
-          'name': 'Cramorant',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Pincurchin',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Snorlax',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Corviknight',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-        {
-          'name': 'Inteleon',
-          'maxHealth': 2015330,
-          'level': 60,
-        },
-      ],
-      'badgeReward': 107,
-      'moneyReward': 64000,
-      'defeatMessage': "Thanks, mate. I'm really glad you were the one here with me.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 106,
-        },
-      ],
-      'flags': {
-        'quest': true,
-        'achievement': true,
-      },
-    },
-    'Trainer Bede': {
-      'leaderName': 'Bede',
-      'town': 'Trainer Bede',
-      'pokemons': [
-        {
-          'name': 'Mawile',
-          'maxHealth': 1945330,
-          'level': 49,
-        },
-        {
-          'name': 'Gardevoir',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Galarian Rapidash',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Sylveon',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Hatterene',
-          'maxHealth': 1945330,
-          'level': 50,
         },
       ],
       'badgeReward': 108,
-      'moneyReward': 64000,
-      'defeatMessage': "I couldn't win, but at least I was able to show everyone how great Fairy types are.",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 107,
-        },
-      ],
+      'moneyReward': 150000,
+      'defeatMessage': "I mean, If you're gonna win, you could at least win in a way that makes me look good, right?",
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Marnie's gym",
     },
-    'Champion Leon': {
-      'leaderName': 'Leon',
-      'town': 'Champion Leon',
-      'pokemons': [
-        {
-          'name': 'Aegislash',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-        {
-          'name': 'Dragapult',
-          'maxHealth': 2015330,
-          'level': 58,
-        },
-        {
-          'name': 'Haxorus',
-          'maxHealth': 2015330,
-          'level': 58,
-        },
-        {
-          'name': 'Seismitoad',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-        {
-          'name': 'Charizard',
-          'maxHealth': 2015330,
-          'level': 59,
-        },
-      ],
-      'badgeReward': 109,
-      'moneyReward': 100000,
-      'defeatMessage': "My time as Champion is over... But what a champion time it's been! Thank you for the greatest battle I've ever had!",
+    'Gym Leader Bede': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 1,
@@ -79835,92 +80144,203 @@ module.exports = {
           'badge': 108,
         },
       ],
+      'leaderName': 'Bede',
+      'town': 'Gym Leader Bede',
+      'pokemons': [
+        {
+          'name': 'Mawile',
+          'maxHealth': 117521346,
+          'level': 51,
+        },
+        {
+          'name': 'Sylveon',
+          'maxHealth': 117521346,
+          'level': 51,
+        },
+        {
+          'name': 'Gardevoir',
+          'maxHealth': 117521346,
+          'level': 51,
+        },
+        {
+          'name': 'Galarian Rapidash',
+          'maxHealth': 127967688,
+          'level': 52,
+        },
+        {
+          'name': 'Hatterene',
+          'maxHealth': 130579274,
+          'level': 53,
+        },
+      ],
+      'badgeReward': 109,
+      'moneyReward': 150000,
+      'defeatMessage': "I couldn't win, but at least I was able to show everyone how great Fairy types are.",
       'flags': {
         'quest': true,
         'achievement': true,
       },
-      'basePokemon': [
+      'buttonText': "Bede's gym",
+    },
+    'Trainer Hop': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 109,
+        },
+      ],
+      'leaderName': 'Hop',
+      'town': 'Trainer Hop',
+      'pokemons': [
+        {
+          'name': 'Dubwool',
+          'maxHealth': 130579274,
+          'level': 59,
+        },
+        {
+          'name': 'Cramorant',
+          'maxHealth': 117521346,
+          'level': 58,
+        },
+        {
+          'name': 'Pincurchin',
+          'maxHealth': 117521346,
+          'level': 58,
+        },
+        {
+          'name': 'Snorlax',
+          'maxHealth': 117521346,
+          'level': 58,
+        },
+        {
+          'name': 'Corviknight',
+          'maxHealth': 130579274,
+          'level': 59,
+        },
+        {
+          'name': 'Inteleon',
+          'maxHealth': 137833678,
+          'level': 60,
+        },
+      ],
+      'badgeReward': 110,
+      'moneyReward': 200000,
+      'defeatMessage': "Thanks, mate. I'm really glad you were the one here with me.",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Hop's gym",
+    },
+    'Champion Leon': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 110,
+        },
+      ],
+      'leaderName': 'Leon',
+      'town': 'Champion Leon',
+      'pokemons': [
         {
           'name': 'Aegislash',
-          'maxHealth': 2015330,
-          'level': 59,
+          'maxHealth': 130579274,
+          'level': 62,
         },
         {
           'name': 'Dragapult',
-          'maxHealth': 2015330,
-          'level': 58,
+          'maxHealth': 130579274,
+          'level': 62,
         },
         {
           'name': 'Haxorus',
-          'maxHealth': 2015330,
-          'level': 58,
+          'maxHealth': 130579274,
+          'level': 63,
+        },
+      ],
+      'badgeReward': 111,
+      'moneyReward': 250000,
+      'defeatMessage': "My time as Champion is over... But what a champion time it's been! Thank you for the greatest battle I've ever had!",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': 'Leon',
+      'basePokemon': [
+        {
+          'name': 'Aegislash',
+          'maxHealth': 130579274,
+          'level': 62,
         },
         {
-          'name': 'Seismitoad',
-          'maxHealth': 2015330,
-          'level': 59,
+          'name': 'Dragapult',
+          'maxHealth': 130579274,
+          'level': 62,
         },
         {
-          'name': 'Charizard',
-          'maxHealth': 2015330,
-          'level': 59,
+          'name': 'Haxorus',
+          'maxHealth': 130579274,
+          'level': 63,
         },
       ],
       'alternativePokemon1': [
         {
+          'name': 'Seismitoad',
+          'maxHealth': 133481036,
+          'level': 64,
+        },
+        {
           'name': 'Cinderace',
-          'maxHealth': 2015330,
-          'level': 60,
+          'maxHealth': 137833678,
+          'level': 64,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 145088083,
+          'level': 65,
         },
       ],
       'alternativePokemon2': [
         {
+          'name': 'Mr. Rime',
+          'maxHealth': 133481036,
+          'level': 64,
+        },
+        {
           'name': 'Inteleon',
-          'maxHealth': 2015330,
-          'level': 60,
+          'maxHealth': 137833678,
+          'level': 64,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 145088083,
+          'level': 65,
         },
       ],
       'alternativePokemon3': [
         {
+          'name': 'Rhyperior',
+          'maxHealth': 133481036,
+          'level': 64,
+        },
+        {
           'name': 'Rillaboom',
-          'maxHealth': 2015330,
-          'level': 60,
+          'maxHealth': 137833678,
+          'level': 64,
+        },
+        {
+          'name': 'Charizard',
+          'maxHealth': 145088083,
+          'level': 65,
         },
       ],
     },
     'Gym Leader Klara': {
-      'leaderName': 'Klara',
-      'town': 'Gym Leader Klara',
-      'pokemons': [
-        {
-          'name': 'Galarian Slowking',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Galarian Weezing',
-          'maxHealth': 1952000,
-          'level': 50,
-        },
-        {
-          'name': 'Drapion',
-          'maxHealth': 1957000,
-          'level': 51,
-        },
-        {
-          'name': 'Scolipede',
-          'maxHealth': 1945330,
-          'level': 60,
-        },
-        {
-          'name': 'Galarian Slowbro',
-          'maxHealth': 1945330,
-          'level': 50,
-        },
-      ],
-      'badgeReward': 110,
-      'moneyReward': 64000,
-      'defeatMessage': 'Aww, come on! What a drag! But...I guess it was also kinda fun!',
+      'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
           'requiredValue': 2,
@@ -79941,150 +80361,190 @@ module.exports = {
           ],
         },
       ],
+      'leaderName': 'Klara',
+      'town': 'Gym Leader Klara',
+      'pokemons': [
+        {
+          'name': 'Galarian Slowking',
+          'maxHealth': 144036193,
+          'level': 68,
+        },
+        {
+          'name': 'Galarian Weezing',
+          'maxHealth': 144036193,
+          'level': 68,
+        },
+        {
+          'name': 'Drapion',
+          'maxHealth': 144036193,
+          'level': 68,
+        },
+        {
+          'name': 'Scolipede',
+          'maxHealth': 147068434,
+          'level': 69,
+        },
+        {
+          'name': 'Galarian Slowbro',
+          'maxHealth': 151617045,
+          'level': 70,
+        },
+      ],
+      'badgeReward': 112,
+      'moneyReward': 150000,
+      'defeatMessage': 'Aww, come on! What a drag! But...I guess it was also kinda fun!',
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Klara's gym",
     },
     'Gym Leader Avery': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 112,
+        },
+      ],
       'leaderName': 'Avery',
       'town': 'Gym Leader Avery',
       'pokemons': [
         {
-          'name': 'Galarian Slowking',
-          'maxHealth': 1948300,
-          'level': 49,
-        },
-        {
-          'name': 'Galarian Rapidash',
-          'maxHealth': 1952000,
-          'level': 50,
+          'name': 'Galarian Slowbro',
+          'maxHealth': 144036193,
+          'level': 68,
         },
         {
           'name': 'Swoobat',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 144036193,
+          'level': 68,
+        },
+        {
+          'name': 'Galarian Rapidash',
+          'maxHealth': 144036193,
+          'level': 68,
         },
         {
           'name': 'Alakazam',
-          'maxHealth': 1945330,
-          'level': 60,
+          'maxHealth': 147068434,
+          'level': 69,
         },
         {
-          'name': 'Galarian Slowbro',
-          'maxHealth': 1945330,
-          'level': 50,
+          'name': 'Galarian Slowking',
+          'maxHealth': 151617045,
+          'level': 70,
         },
       ],
-      'badgeReward': 111,
-      'moneyReward': 64000,
+      'badgeReward': 113,
+      'moneyReward': 150000,
       'defeatMessage': 'More! I require more! Show me your Stored Power!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 110,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Avery's gym",
     },
     'Dojo Master Mustard': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 113,
+        },
+      ],
       'leaderName': 'Mustard',
       'town': 'Dojo Master Mustard',
       'pokemons': [
         {
-          'name': 'Luxray',
-          'maxHealth': 1945330,
-          'level': 49,
+          'name': 'Mienshao',
+          'maxHealth': 151617046,
+          'level': 73,
         },
         {
-          'name': 'Corviknight',
-          'maxHealth': 1948300,
-          'level': 49,
+          'name': 'Luxray',
+          'maxHealth': 151617046,
+          'level': 73,
         },
         {
           'name': 'Lycanroc (Midday)',
-          'maxHealth': 1952000,
-          'level': 50,
+          'maxHealth': 154808984,
+          'level': 75,
         },
         {
           'name': 'Kommo-o',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 154808984,
+          'level': 75,
         },
         {
           'name': 'Urshifu (Single Strike)',
-          'maxHealth': 1945330,
-          'level': 60,
+          'maxHealth': 159596891,
+          'level': 75,
         },
         {
           'name': 'Urshifu (Rapid Strike)',
-          'maxHealth': 1945330,
-          'level': 50,
+          'maxHealth': 159596891,
+          'level': 75,
         },
       ],
-      'badgeReward': 112,
-      'moneyReward': 64000,
+      'badgeReward': 114,
+      'moneyReward': 250000,
       'defeatMessage': "That strength of yours doesn't bend easily!",
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 111,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Mustard's gym",
     },
     'Trainer Peony': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': -1,
+        },
+      ],
       'leaderName': 'Freezington',
       'town': 'Trainer Peony',
       'pokemons': [
         {
           'name': 'Perrserker',
-          'maxHealth': 1948300,
-          'level': 49,
+          'maxHealth': 197029616,
+          'level': 74,
         },
         {
           'name': 'Bronzong',
-          'maxHealth': 1952000,
-          'level': 50,
+          'maxHealth': 192967150,
+          'level': 73,
         },
         {
           'name': 'Scizor',
-          'maxHealth': 1957000,
-          'level': 51,
+          'maxHealth': 192967150,
+          'level': 73,
         },
         {
           'name': 'Aggron',
-          'maxHealth': 1945330,
-          'level': 60,
+          'maxHealth': 197029616,
+          'level': 74,
         },
         {
           'name': 'Copperajah',
-          'maxHealth': 1945330,
-          'level': 50,
+          'maxHealth': 203123316,
+          'level': 74,
         },
       ],
-      'badgeReward': 113,
-      'moneyReward': 64000,
+      'badgeReward': 115,
+      'moneyReward': 250000,
       'defeatMessage': 'Gone and got stronger again, have you? Ah well! Hats off to you-in more ways than one!',
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'pokemonID': 898,
-        },
-      ],
       'flags': {
         'quest': true,
         'achievement': true,
       },
+      'buttonText': "Freezington's gym",
     },
   },
   'berryType': {

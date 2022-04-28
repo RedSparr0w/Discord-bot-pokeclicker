@@ -59,6 +59,12 @@ const { website, wikiWebsite } = require('./config.js');
       return regionRoutes;
     };
 
+    const gyms = {};
+    Object.entries(GymList).map(([key, value]) => {
+      delete value.parent;
+      gyms[key] = value;
+    });
+
     const pokeclickerData = {
       gameVersion: App.game.update.version,
       shopItems: App.game.discord.codes,
@@ -77,7 +83,7 @@ const { website, wikiWebsite } = require('./config.js');
       }),
       GameConstants,
       BadgeEnums,
-      GymList,
+      GymList: gyms,
       berryType: BerryType,
       berryList: App.game.farming.berryData.map(b => {
         const mutation = App.game.farming.mutations.find(m => m.mutatedBerry == b.type);
