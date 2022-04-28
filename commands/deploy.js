@@ -30,47 +30,7 @@ module.exports = {
       })));
       // Update the current list of commands for this guild
       await msg.guild.commands.set(data);
-
-      const restrictCmds = msg.client.slashCommands
-        .filter(c => c.userperms?.length > 0 || c.userroles?.length > 0)
-        .map(c => {
-          const roleIDs = msg.guild.roles.cache.filter(r => {
-            let canUse = true;
-            if (c.userperms?.length) {
-              if (!r.permissions.has(c.userperms)) {
-                canUse = false;
-              }
-            }
-            if (c.userroles?.length) {
-              if (!c.userroles.includes(r.id) && !c.userroles.includes(r.name)) {
-                canUse = false;
-              }
-            }
-            return canUse;
-          }).map(r => r.id);
-          c.roleIDs = roleIDs;
-          return c;
-        });
-
-      const fullPermissions = msg.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
-        const cmd = restrictCmds.find(cmd => cmd.name === c.name);
-        return {
-          id: c.id,
-          permissions: cmd.roleIDs.map(r => ({
-            id: r,
-            type: 'ROLE',
-            permission: true,
-          })),
-        };
-      });
-      const output = msg.guild.commands.cache.filter(c => restrictCmds.find(cmd => cmd.name === c.name)).map(c => {
-        const cmd = restrictCmds.find(cmd => cmd.name === c.name);
-        return `/${c.name}\n${cmd.roleIDs.map(r => `<@&${r}>`).join('\n')}`;
-      });
-
-      // Update the permissions for these commands
-      await msg.client.guilds.cache.get(msg.guild.id.toString()).commands.permissions.set({ fullPermissions });
-      msg.reply(`Updated guild commands!\n\`\`\`yaml\nCommands: ${data.length}\nRestricted: ${fullPermissions.length}\n\`\`\`\n${output.join('\n')}`);
+      msg.reply(`Updated guild commands!\n\`\`\`yaml\nCommands: ${data.length}\nRestricted: ${data.filter(c => !c.defaultPermission).length}\n\`\`\``);
 
     } catch (e) {
       error('Unable to deploy new commands:\n', e);
