@@ -41,6 +41,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Aspear',
     },
     {
+      'title': 'Azure Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Azure_Flute',
+    },
+    {
       'title': 'Babiri',
       'link': 'https://pokeclicker.miraheze.org/wiki/Babiri',
     },
@@ -81,8 +85,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Black_DNA',
     },
     {
+      'title': 'Black Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Flute',
+    },
+    {
       'title': 'Blaze Cassette',
       'link': 'https://pokeclicker.miraheze.org/wiki/Blaze_Cassette',
+    },
+    {
+      'title': 'Blue Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Blue_Flute',
     },
     {
       'title': 'Bluk',
@@ -229,6 +241,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Discord_Integration',
     },
     {
+      'title': 'Discord Roles',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Discord_Roles',
+    },
+    {
       'title': 'Distortion World',
       'link': 'https://pokeclicker.miraheze.org/wiki/Distortion_World',
     },
@@ -321,6 +337,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Enigma',
     },
     {
+      'title': 'Eon Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Eon_Flute',
+    },
+    {
       'title': 'Eterna Forest',
       'link': 'https://pokeclicker.miraheze.org/wiki/Eterna_Forest',
     },
@@ -405,6 +425,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Flower_Paradise',
     },
     {
+      'title': 'Flutes',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Flutes',
+    },
+    {
       'title': 'Forum:Index',
       'link': 'https://pokeclicker.miraheze.org/wiki/Forum:Index',
     },
@@ -433,6 +457,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Gem_Case',
     },
     {
+      'title': 'Gem Master',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Gem_Master',
+    },
+    {
       'title': 'Gem Plates',
       'link': 'https://pokeclicker.miraheze.org/wiki/Gem_Plates',
     },
@@ -457,6 +485,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Grass_Egg',
     },
     {
+      'title': 'Grass Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Grass_Flute',
+    },
+    {
       'title': 'Greatball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Greatball',
     },
@@ -479,6 +511,10 @@ module.exports = {
     {
       'title': 'Hard Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Hard_Stone',
+    },
+    {
+      'title': 'Hatchery Helper',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Hatchery_Helper',
     },
     {
       'title': "Hau'oli Cemetery",
@@ -769,6 +805,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mistralton_Cave',
     },
     {
+      'title': 'Moon Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Moon_Flute',
+    },
+    {
       'title': 'Moon Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Moon_Stone',
     },
@@ -949,6 +989,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Poison_Barb',
     },
     {
+      'title': 'Poke Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Poke_Flute',
+    },
+    {
       'title': 'Pokemon Mansion',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pokemon_Mansion',
     },
@@ -1091,6 +1135,10 @@ module.exports = {
     {
       'title': 'Reaper Cloth',
       'link': 'https://pokeclicker.miraheze.org/wiki/Reaper_Cloth',
+    },
+    {
+      'title': 'Red Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Red_Flute',
     },
     {
       'title': 'Reflection Cave',
@@ -1357,6 +1405,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Stone_Plate',
     },
     {
+      'title': 'Sun Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Sun_Flute',
+    },
+    {
       'title': 'Sun Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Sun_Stone',
     },
@@ -1415,6 +1467,10 @@ module.exports = {
     {
       'title': 'Thunder Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Thunder_Stone',
+    },
+    {
+      'title': 'Time Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Time_Flute',
     },
     {
       'title': 'Timerball',
@@ -1585,6 +1641,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/White_DNA',
     },
     {
+      'title': 'White Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_Flute',
+    },
+    {
       'title': 'Wiki',
       'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
     },
@@ -1599,6 +1659,10 @@ module.exports = {
     {
       'title': 'Yache',
       'link': 'https://pokeclicker.miraheze.org/wiki/Yache',
+    },
+    {
+      'title': 'Yellow Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Flute',
     },
     {
       'title': 'Zap Plate',

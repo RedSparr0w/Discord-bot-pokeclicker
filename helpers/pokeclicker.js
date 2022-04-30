@@ -41081,7 +41081,7 @@ module.exports = {
           '2': [
             {
               'route': 119,
-              'requirements': 'Castform needs to be caught.',
+              'requirements': 'Castform needs to be caught and The weather needs to be Sunny.',
             },
           ],
         },
