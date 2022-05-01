@@ -78,6 +78,13 @@ module.exports = [
       message.react('🐱');
     },
   },
+  // cats > dogs
+  {
+    regex: /\b(kabuto)\b/i,
+    execute: (message, client) => {
+      message.react('970201411021307925');
+    },
+  },
   // FAQ
   {
     regex: /\b(how|where)\b.+\b(catch|find|get|evolve|buy)\b/i,
