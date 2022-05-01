@@ -17,7 +17,7 @@ const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage 
 // Between 30 and 60 coins per question
 const getAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 const getShinyAmount = () => 100 + getAmount();
-const shinyChance = 64;
+const shinyChance = 54;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour() ? chance / happyHourBonus : chance));
 const defaultEndFunction = (title, image, description) => async (m, e) => {
   const embed = new MessageEmbed()
@@ -714,12 +714,12 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 10),
-  new WeightedOption(pokemonType, 8),
-  new WeightedOption(pokemonRegion, 4),
-  new WeightedOption(whosThePokemonEvolution, 6),
-  new WeightedOption(whosThePokemonPrevolution, 6),
-  new WeightedOption(pokemonID, 3),
+  new WeightedOption(whosThatPokemon, 14),
+  new WeightedOption(pokemonType, 10),
+  new WeightedOption(whosThePokemonEvolution, 8),
+  new WeightedOption(whosThePokemonPrevolution, 8),
+  new WeightedOption(pokemonRegion, 5),
+  new WeightedOption(pokemonID, 5),
   new WeightedOption(fossilPokemon, 1),
   new WeightedOption(pokemonFossil, 1),
   new WeightedOption(startingTown, 1),
@@ -727,10 +727,10 @@ const quizTypes = [
   new WeightedOption(badgeGymLeader, 1),
   new WeightedOption(badgeGymLocation, 1),
   new WeightedOption(pokemonGymLeader, 1),
-  new WeightedOption(gymLeaderPokemon, 1),
+  new WeightedOption(gymLeaderType, 3),
+  new WeightedOption(gymLeaderPokemon, 2),
   new WeightedOption(gymLeaderLocation, 1),
   new WeightedOption(gymLeaderBadge, 1),
-  new WeightedOption(gymLeaderType, 1),
   // new WeightedOption(___, 1),
 ];
 
