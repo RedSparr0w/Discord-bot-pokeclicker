@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const { serverIcons } = require('./config.js');
 const { addOrderedReactions, formatDateToString } = require('./helpers.js');
 const { HOUR } = require('./helpers/constants.js');
 const { modLog, mute } = require('./other/mod/functions.js');
@@ -82,7 +83,9 @@ module.exports = [
   {
     regex: /\b(kabuto)\b/i,
     execute: (message, client) => {
-      message.react('970201411021307925');
+      if (serverIcons?.kabuto) {
+        message.react(serverIcons.kabuto.match(/:(\d+)>/)[1]);
+      }
     },
   },
   // FAQ

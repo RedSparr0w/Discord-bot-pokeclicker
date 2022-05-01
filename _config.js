@@ -46,6 +46,7 @@ module.exports = {
   ],
   serverIcons: {
     money: '<:money:751765172523106377>',
+    kabuto: '<:Kabuto:970201411021307925>',
   },
   spamDetection: {
     ignoreChannels: ['bot-coins'], // channel names or IDs
