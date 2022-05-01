@@ -18,7 +18,7 @@ const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage 
 const getAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 64;
-const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour ? chance / happyHourBonus : chance));
+const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour() ? chance / happyHourBonus : chance));
 const defaultEndFunction = (title, image, description) => async (m, e) => {
   const embed = new MessageEmbed()
     .setTitle(title)
