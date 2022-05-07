@@ -38,7 +38,7 @@ module.exports = {
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (interaction) => {
     // Check if user claimed within the last 24 hours
-    let { last_claim, streak } = await getLastClaim(interaction.user, 'timely_claim');
+    let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'timely_claim');
 
     // User already claimed within last 2 hours
     if (last_claim >= (Date.now() - time_between_claims)) {
@@ -61,8 +61,11 @@ module.exports = {
       });
     }
 
-    // Should the claim streak be reset (if more than 2 days)
-    if (last_claim < (Date.now() - (2 * DAY))) {
+    // Should the claim streak be reset (if more than 2 days, or 30 days if paused)
+    if (
+      (!paused && last_claim < (Date.now() - (2 * DAY)))
+      || (paused && last_claim < (Date.now() - (30 * DAY)))
+    ) {
       await resetClaimStreak(interaction.user, 'timely_claim');
       streak = 0;
     }

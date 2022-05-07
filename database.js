@@ -30,8 +30,8 @@ async function setupDB(){
     db.run('CREATE TABLE IF NOT EXISTS trainer_card(user INTEGER NOT NULL, background INT(3) NOT NULL default \'0\', trainer INT(3) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS purchased(user INTEGER NOT NULL, background TEXT(1024) NOT NULL default \'1\', trainer TEXT(1024) NOT NULL default \'11\', badge TEXT(1024) NOT NULL default \'\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     db.run('CREATE TABLE IF NOT EXISTS coins(user INTEGER NOT NULL, amount BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
-    db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+    db.run('CREATE TABLE IF NOT EXISTS daily_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', paused INT(1) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
+    db.run('CREATE TABLE IF NOT EXISTS timely_claim(user INTEGER NOT NULL, last_claim TEXT(24) NOT NULL default \'0\', streak BIGINT(12) NOT NULL default \'0\', paused INT(1) NOT NULL default \'0\', PRIMARY KEY (user), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, UNIQUE(user) ON CONFLICT REPLACE)'),
     // User Statistics
     db.run('CREATE TABLE IF NOT EXISTS statistic_types(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT(32) UNIQUE ON CONFLICT IGNORE NOT NULL)'),
     db.run('CREATE TABLE IF NOT EXISTS statistics(user INTEGER NOT NULL, type TEXT(1024) NOT NULL, value BIGINT(12) NOT NULL default \'0\', PRIMARY KEY (user, type), FOREIGN KEY (user) REFERENCES users (id) ON DELETE CASCADE, FOREIGN KEY (type) REFERENCES statistic_types (id) ON DELETE CASCADE, UNIQUE(user, type) ON CONFLICT REPLACE)'),
@@ -61,6 +61,12 @@ async function updateDB(){
   if (isOlderVersion(version, '1.1.0')) {
     version = '1.1.0';
     await db.run('ALTER TABLE purchased ADD badge TEXT(1024) NOT NULL default \'\'');
+    await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', version);
+  }
+  if (isOlderVersion(version, '1.2.0')) {
+    version = '1.2.0';
+    await db.run('ALTER TABLE daily_claim ADD paused INT(1) NOT NULL default \'0\'');
+    await db.run('ALTER TABLE timely_claim ADD paused INT(1) NOT NULL default \'0\'');
     await db.run('INSERT OR REPLACE INTO application (name, value) values (?, ?)', 'version', version);
   }
   
