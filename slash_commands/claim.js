@@ -61,10 +61,10 @@ module.exports = {
       });
     }
 
-    // Should the claim streak be reset (if more than 3 days, or 30 days if paused)
+    // Should the claim streak be reset (if more than 3 days, or 14 days if paused)
     if (
       (!paused && last_claim < (Date.now() - (3 * DAY)))
-      || (paused && last_claim < (Date.now() - (30 * DAY)))
+      || (paused && last_claim < (Date.now() - (14 * DAY)))
     ) {
       await resetClaimStreak(interaction.user, 'daily_claim');
       streak = 0;
