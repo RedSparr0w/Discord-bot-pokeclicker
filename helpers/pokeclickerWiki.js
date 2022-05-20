@@ -373,8 +373,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Farm',
     },
     {
-      'title': 'Farm Hand',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Farm_Hand',
+      'title': 'Farm Hands',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Farm_Hands',
     },
     {
       'title': 'Farm Items',
@@ -383,6 +383,10 @@ module.exports = {
     {
       'title': 'Farm Points',
       'link': 'https://pokeclicker.miraheze.org/wiki/Farm_Points',
+    },
+    {
+      'title': 'Farming Setups',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Farming_Setups',
     },
     {
       'title': 'Fastball',
@@ -513,8 +517,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Hard_Stone',
     },
     {
-      'title': 'Hatchery Helper',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Hatchery_Helper',
+      'title': 'Hatchery Helpers',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Hatchery_Helpers',
     },
     {
       'title': "Hau'oli Cemetery",
