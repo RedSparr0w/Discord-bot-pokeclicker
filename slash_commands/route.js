@@ -103,7 +103,7 @@ module.exports = {
     const shiny = !Math.floor(Math.random() * 512);
 
     const embed = new MessageEmbed()
-      .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | Route #${routeNumber}`)
+      .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | ${route.routeName}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` });

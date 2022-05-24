@@ -11,6 +11,7 @@ const {
   pokemonTypeIcons,
   gameVersion,
   berryType,
+  regionRoutes,
 } = require('../helpers.js');
 
 const fuzzyPokemon = FuzzySet(pokemonList.map(p => p.name.toLowerCase()), false);
@@ -90,7 +91,16 @@ module.exports = {
             description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
           });
           */
-          description += [...new Set(routes.map(route => `${route.route}${route.requirements ? '🔒' : ''}`))].join('\n');
+          description += [
+            ...new Set(routes.map(route => {
+              const r = regionRoutes.find(routeData => {
+                if (routeData.number == route.route && routeData.region == region)
+                  return routeData;
+              });
+              const name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? `Route ${r.number}` : r.routeName;
+              return `${name}${route.requirements ? '🔒' : ''}`;
+            })),
+          ].join('\n');
         });
         embed.addField('❯ Routes', description);
       }
