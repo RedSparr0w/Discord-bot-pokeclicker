@@ -7,6 +7,7 @@ const {
   findGemRoutes,
   findGemBestRoute,
   gameVersion,
+  regionRoutes,
 } = require('../helpers.js');
 
 module.exports = {
@@ -136,10 +137,21 @@ module.exports = {
     Object.entries(gemRoutes).forEach(([region, routes]) => {
       if (!Object.entries(routes).length) return;
       const bestGemRoute = findGemBestRoute(RouteGemTypes, PokemonType[type], region);
-      const description = ['Best Route:', `${`[${bestGemRoute.route}]`.padEnd(4, ' ')} ${bestGemRoute.chance.toFixed(1).padStart(4,' ')}%`, '\nAll Routes:'];
+      let r = regionRoutes.find(routeData => {
+        if (routeData.number == bestGemRoute.route && routeData.region == region)
+          return routeData;
+      });
+      let name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? `Route ${r.number}` : r.routeName;
+      const description = ['Best Route:', `${`[${name}]`} ${bestGemRoute.chance.toFixed(1).padStart(4,' ')}%`, '\nAll Routes:'];
       
       Object.entries(routes).sort(sortFunc).forEach(([route, chance]) => {
-        description.push(`${`[${route}]`.padEnd(4, ' ')} ${chance.toFixed(1).padStart(4,' ')}%`);
+        if (description.join('\r\n').length >= 900) return;
+        r = regionRoutes.find(routeData => {
+          if (routeData.number == route && routeData.region == region)
+            return routeData;
+        });
+        name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? `Route ${r.number}` : r.routeName;
+        description.push(`${`[${name}]`} ${chance.toFixed(1).padStart(4,' ')}%`);
       });
       embed.addField(`❯ ${GameConstants.Region[region].toUpperCase()}`, `\`\`\`ini\n${description.join('\n')}\n\`\`\``, true);
     });
