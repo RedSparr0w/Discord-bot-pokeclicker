@@ -118,7 +118,7 @@ const processSaveFile = (msg, file) => {
         const _lastSeen = saveData.player?._lastSeen || '0';
         const achievementsCompleted = Object.values(saveData.player?.achievementsCompleted || {}).filter(a=>a).length || 0;
         const version = saveData.save?.update?.version || '0.0.0';
-        const name = saveData.save?.profile?.name || 'Trainer';
+        const name = decodeURIComponent(saveData.save?.profile?.name || 'Trainer');
         const trainer = saveData.save?.profile?.trainer || 0;
         const pokemon = saveData.save?.profile?.pokemon || 0;
         const pokemonShiny = saveData.save?.profile?.pokemonShiny || false;
