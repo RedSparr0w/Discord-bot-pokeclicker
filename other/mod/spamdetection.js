@@ -25,6 +25,7 @@ const check = (message) => {
       **Action:** Muted
       **Reason:** _spamming_
       **Duration:** _${formatDateToString(time)}_
+      **Channel:** ${message.channel.name}
       **Message Link:** _[Here](${message.url})_
       **Message Content:**
       \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
@@ -44,6 +45,7 @@ const check = (message) => {
       **Action:** Muted
       **Reason:** _spamming (duplicate messages)_
       **Duration:** _${formatDateToString(time)}_
+      **Channel:** ${message.channel.name}
       **Message Link:** _[Here](${message.url})_
       **Message Content:**
       \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)

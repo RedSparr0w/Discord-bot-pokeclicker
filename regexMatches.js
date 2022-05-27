@@ -127,6 +127,7 @@ module.exports = [
         **User:** ${message.member.toString()}
         **Action:** Deleted message
         **Reason:** _Invite link_
+        **Channel:** ${message.channel.name}
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
@@ -147,6 +148,7 @@ module.exports = [
         **User:** ${message.member.toString()}
         **Action:** _Deleted message, Muted_
         **Reason:** _Fake Discord link_
+        **Channel:** ${message.channel.name}
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
@@ -166,6 +168,7 @@ module.exports = [
         **Action:** Muted
         **Reason:** _Tagging \\@everyone_
         **Duration:** _${formatDateToString(time)}_
+        **Channel:** ${message.channel.name}
         **Message Link:** _[Here](${message.url})_
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
@@ -188,6 +191,7 @@ module.exports = [
         **Action:** _Deleted message_
         **Reason:** _Nitro scam link_
         **Duration:** _${formatDateToString(time)}_
+        **Channel:** ${message.channel.name}
         **Message Link:** _[Here](${message.url})_
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
@@ -206,6 +210,7 @@ module.exports = [
         **User:** ${message.member.toString()}
         **Action:** _Deleted message_
         **Reason:** _Github.io link_
+        **Channel:** ${message.channel.name}
         **Message Link:** _[Here](${message.url})_
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
