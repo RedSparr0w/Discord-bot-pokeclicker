@@ -545,6 +545,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Hokulani_Observatory',
     },
     {
+      'title': 'Holo Caster',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Holo_Caster',
+    },
+    {
       'title': 'Home Page',
       'link': 'https://pokeclicker.miraheze.org/wiki/Home_Page',
     },
@@ -1451,6 +1455,10 @@ module.exports = {
     {
       'title': 'Team Rockets Hideout',
       'link': 'https://pokeclicker.miraheze.org/wiki/Team_Rockets_Hideout',
+    },
+    {
+      'title': 'Temporary Battles',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Temporary_Battles',
     },
     {
       'title': 'Ten Carat Hill',
