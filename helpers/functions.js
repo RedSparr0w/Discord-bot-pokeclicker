@@ -139,7 +139,10 @@ const processSaveFile = (msg, file) => {
 
         // Create the embed
         const embed = new MessageEmbed()
-          .setAuthor(name, `${website}assets/images/profile/trainer-${trainer}.png`)
+          .setAuthor({
+            name: name,
+            iconURL: `${website}assets/images/profile/trainer-${trainer}.png`,
+          })
           .setColor('RANDOM')
           .setThumbnail(`${website}assets/images/${pokemonShiny ? 'shiny' : ''}pokemon/${pokemon}.png`)
           .addField('Discord:', discordID ? `<@${discordID}>` : 'False')
