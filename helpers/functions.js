@@ -1,5 +1,5 @@
 const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
-const request = require('request');
+const https = require('https');
 const { error } = require('./logging');
 const { formatSecondsFullLetters } = require('./conversion');
 const { GameConstants, pokemonList } = require('./pokeclicker');
@@ -107,8 +107,16 @@ const randomString = (length = 6) => {
 };
 
 const processSaveFile = (msg, file) => {
-  request(file.url, (err, response, body) => {
-    if (!err) {
+  https.get(file.url, (res) => {
+    let body = '';
+  
+    // A chunk of data has been received.
+    res.on('data', (chunk) => {
+      body += chunk;
+    });
+  
+    // The whole response has been received.
+    res.on('end', () => {
       try {
         // Convert save file to JSON
         const saveData = JSON.parse(Buffer.from(body, 'base64').toString());
@@ -160,7 +168,9 @@ const processSaveFile = (msg, file) => {
       } catch (e) {
         error('Failed to process save file..\n', msg.url, '\n', e);
       }
-    }
+    });
+  }).on('error', error => {
+    console.error(error);
   });
 };
 
