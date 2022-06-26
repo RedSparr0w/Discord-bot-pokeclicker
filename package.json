@@ -18,12 +18,12 @@
     "eslint": "^7.32.0",
     "fuzzyset": "^1.0.6",
     "merge-images": "git+https://github.com/RedSparr0w/merge-images#develop-build",
-    "puppeteer": "^10.2.0",
     "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2",
     "text2png": "^2.3.0"
   },
   "devDependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.8"
+    "@mapbox/node-pre-gyp": "^1.0.8",
+    "puppeteer": "^15.1.1"
   }
 }
