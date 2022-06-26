@@ -19,7 +19,7 @@
     "fuzzyset": "^1.0.6",
     "merge-images": "git+https://github.com/RedSparr0w/merge-images#develop-build",
     "sqlite": "^4.0.23",
-    "sqlite3": "^5.0.2",
+    "sqlite3": "^5.0.3",
     "text2png": "^2.3.0"
   },
   "devDependencies": {
