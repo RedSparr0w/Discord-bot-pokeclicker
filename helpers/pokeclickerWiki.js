@@ -41,10 +41,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Aspear',
     },
     {
-      'title': 'Azure Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Azure_Flute',
-    },
-    {
       'title': 'Babiri',
       'link': 'https://pokeclicker.miraheze.org/wiki/Babiri',
     },
@@ -261,6 +257,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Dome_Fossil',
     },
     {
+      'title': 'Dowsing Machine',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Dowsing_Machine',
+    },
+    {
       'title': 'Draco Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Draco_Plate',
     },
@@ -335,10 +335,6 @@ module.exports = {
     {
       'title': 'Enigma',
       'link': 'https://pokeclicker.miraheze.org/wiki/Enigma',
-    },
-    {
-      'title': 'Eon Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Eon_Flute',
     },
     {
       'title': 'Eterna Forest',
@@ -489,10 +485,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Grass_Egg',
     },
     {
-      'title': 'Grass Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Grass_Flute',
-    },
-    {
       'title': 'Greatball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Greatball',
     },
@@ -595,10 +587,6 @@ module.exports = {
     {
       'title': 'Iron Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Iron_Plate',
-    },
-    {
-      'title': 'Item Magnet',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Item_Magnet',
     },
     {
       'title': 'Jaboca',
@@ -813,10 +801,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mistralton_Cave',
     },
     {
-      'title': 'Moon Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Moon_Flute',
-    },
-    {
       'title': 'Moon Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Moon_Stone',
     },
@@ -993,14 +977,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Po_Town',
     },
     {
-      'title': 'Poison Barb',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Poison_Barb',
-    },
-    {
-      'title': 'Poke Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Poke_Flute',
-    },
-    {
       'title': 'Pokemon Mansion',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pokemon_Mansion',
     },
@@ -1059,6 +1035,10 @@ module.exports = {
     {
       'title': 'Pokémon with Alternate Forms',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_with_Alternate_Forms',
+    },
+    {
+      'title': 'Pokérus',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus',
     },
     {
       'title': 'Pomeg',
@@ -1191,6 +1171,10 @@ module.exports = {
     {
       'title': 'Rock Tunnel',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rock_Tunnel',
+    },
+    {
+      'title': 'Rocky Helmet',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rocky_Helmet',
     },
     {
       'title': 'Root Fossil',
@@ -1411,10 +1395,6 @@ module.exports = {
     {
       'title': 'Stone Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Stone_Plate',
-    },
-    {
-      'title': 'Sun Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Sun_Flute',
     },
     {
       'title': 'Sun Stone',
