@@ -124,14 +124,13 @@ const processSaveFile = (msg, file) => {
         // Gather data from the save file
         const timeTraveller = saveData.player?._timeTraveller || false;
         const _lastSeen = saveData.player?._lastSeen || '0';
-        const achievementsCompleted = Object.values(saveData.player?.achievementsCompleted || {}).filter(a=>a).length || 0;
         const version = saveData.save?.update?.version || '0.0.0';
         const name = decodeURIComponent(saveData.save?.profile?.name || 'Trainer');
         const trainer = saveData.save?.profile?.trainer || 0;
         const pokemon = saveData.save?.profile?.pokemon || 0;
         const pokemonShiny = saveData.save?.profile?.pokemonShiny || false;
         const caughtPokemon = saveData.save?.party?.caughtPokemon?.length || 0;
-        const caughtPokemonShiny = saveData.save?.party?.caughtPokemon?.filter(p => p.shiny)?.length || 0;
+        const caughtPokemonShiny = saveData.save?.party?.caughtPokemon?.filter(p => p[5])?.length || 0;
         const timePlayed = saveData.save?.statistics?.secondsPlayed || 0;
         const discordID = saveData.save?.discord?.ID || false;
         const challengesTotal = Object.values(saveData.save?.challenges?.list || {}).length || 0;
@@ -156,7 +155,6 @@ const processSaveFile = (msg, file) => {
           .addField('Discord:', discordID ? `<@${discordID}>` : 'False')
           .addField('Pokemon Caught:', `${caughtPokemon} | ${caughtPokemonShiny} ✨`)
           .addField('Time Played:', formatSecondsFullLetters(timePlayed))
-          .addField('Achievements:', `${achievementsCompleted}`)
           .addField('Challenges:', `${challengesEnabled}/${challengesTotal}`)
           .addField('Dungeon Clears:', maxDungeons.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
           .addField('Pokemon Defeated:', maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
