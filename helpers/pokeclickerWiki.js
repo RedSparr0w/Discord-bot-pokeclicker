@@ -1173,6 +1173,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Rock_Tunnel',
     },
     {
+      'title': 'Rocket Game Corner',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rocket_Game_Corner',
+    },
+    {
       'title': 'Rocky Helmet',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rocky_Helmet',
     },
@@ -1299,6 +1303,10 @@ module.exports = {
     {
       'title': 'Shuca',
       'link': 'https://pokeclicker.miraheze.org/wiki/Shuca',
+    },
+    {
+      'title': 'Silph Co',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Silph_Co',
     },
     {
       'title': 'Sinnoh',

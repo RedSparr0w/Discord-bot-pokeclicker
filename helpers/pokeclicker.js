@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.9.6',
+  'gameVersion': '0.9.7',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -4021,22 +4021,16 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 2,
+          'requiredValue': 10,
           'option': 2,
-          'requirements': [
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 4,
-              'route': 4,
-            },
-            {
-              'requiredValue': 1,
-              'option': 2,
-              'badge': 55,
-            },
-          ],
+          'achievementType': 14,
+          'region': 4,
+          'route': 4,
+        },
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 55,
         },
       ],
       'orderNumber': 4,
@@ -60266,14 +60260,14 @@ module.exports = {
       'exp': 130,
       'catchRate': 120,
       'base': {
-        'hitpoints': 54,
-        'attack': 45,
-        'specialAttack': 75,
-        'defense': 47,
-        'specialDefense': 98,
-        'speed': 52,
+        'hitpoints': 74,
+        'attack': 65,
+        'specialAttack': 125,
+        'defense': 67,
+        'specialDefense': 128,
+        'speed': 92,
       },
-      'attack': 66,
+      'attack': 139,
       'nativeRegion': 5,
       'locations': {},
       'catchRatePercent': 36,
@@ -75167,6 +75161,7 @@ module.exports = {
       ],
     ],
     'TemporaryBattles': [
+      'Fighting Dojo',
       'AZ',
       'Ultra Wormhole',
       'Ultra Megalopolis',
