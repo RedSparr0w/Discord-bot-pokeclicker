@@ -14576,28 +14576,30 @@ module.exports = {
     '1': 'Roaming',
     '2': 'Dungeon',
     '3': 'DungeonBoss',
-    '4': 'Evolution',
-    '5': 'Egg',
-    '6': 'Baby',
-    '7': 'Shop',
-    '8': 'Fossil',
-    '9': 'Safari',
-    '10': 'BattleFrontier',
-    '11': 'Wandering',
-    '12': 'Discord',
+    '4': 'DungeonChest',
+    '5': 'Evolution',
+    '6': 'Egg',
+    '7': 'Baby',
+    '8': 'Shop',
+    '9': 'Fossil',
+    '10': 'Safari',
+    '11': 'BattleFrontier',
+    '12': 'Wandering',
+    '13': 'Discord',
     'Route': 0,
     'Roaming': 1,
     'Dungeon': 2,
     'DungeonBoss': 3,
-    'Evolution': 4,
-    'Egg': 5,
-    'Baby': 6,
-    'Shop': 7,
-    'Fossil': 8,
-    'Safari': 9,
-    'BattleFrontier': 10,
-    'Wandering': 11,
-    'Discord': 12,
+    'DungeonChest': 4,
+    'Evolution': 5,
+    'Egg': 6,
+    'Baby': 7,
+    'Shop': 8,
+    'Fossil': 9,
+    'Safari': 10,
+    'BattleFrontier': 11,
+    'Wandering': 12,
+    'Discord': 13,
   },
   'PokemonType': {
     '0': 'Normal',
@@ -15318,8 +15320,8 @@ module.exports = {
       'attack': 53,
       'nativeRegion': 0,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -15437,7 +15439,7 @@ module.exports = {
       'attack': 85,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bulbasaur',
             'type': [0],
@@ -15479,7 +15481,7 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bulbasaur (clone)',
             'type': [0],
@@ -15513,7 +15515,7 @@ module.exports = {
       'attack': 141,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ivysaur',
             'type': [0],
@@ -15547,7 +15549,7 @@ module.exports = {
       },
       'attack': 141,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ivysaur (clone)',
             'type': [0],
@@ -15586,8 +15588,8 @@ module.exports = {
       'attack': 46,
       'nativeRegion': 0,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -15649,7 +15651,7 @@ module.exports = {
       'attack': 81,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Charmander',
             'type': [0],
@@ -15688,7 +15690,7 @@ module.exports = {
       },
       'attack': 81,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Charmander (clone)',
             'type': [0],
@@ -15722,7 +15724,7 @@ module.exports = {
       'attack': 142,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Charmeleon',
             'type': [0],
@@ -15756,7 +15758,7 @@ module.exports = {
       },
       'attack': 142,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Charmeleon (clone)',
             'type': [0],
@@ -15795,8 +15797,8 @@ module.exports = {
       'attack': 50,
       'nativeRegion': 0,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -15858,7 +15860,7 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Squirtle',
             'type': [0],
@@ -15897,7 +15899,7 @@ module.exports = {
       },
       'attack': 83,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Squirtle (clone)',
             'type': [0],
@@ -15928,7 +15930,7 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wartortle',
             'type': [0],
@@ -15959,7 +15961,7 @@ module.exports = {
       },
       'attack': 139,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wartortle (clone)',
             'type': [0],
@@ -16112,7 +16114,7 @@ module.exports = {
           'Melemele Meadow',
           'Lush Jungle',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Caterpie',
             'type': [0],
@@ -16175,7 +16177,7 @@ module.exports = {
             'dungeon': 'Ilex Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Metapod',
             'type': [0],
@@ -16308,7 +16310,7 @@ module.exports = {
           'Ilex Forest',
           'Santalune Forest',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Weedle',
             'type': [0],
@@ -16354,7 +16356,7 @@ module.exports = {
             'dungeon': 'Ilex Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kakuna',
             'type': [0],
@@ -16527,7 +16529,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pidgey',
             'type': [0],
@@ -16561,7 +16563,7 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pidgeotto',
             'type': [0],
@@ -16810,7 +16812,7 @@ module.exports = {
             'dungeon': 'Tin Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rattata',
             'type': [0],
@@ -16872,7 +16874,7 @@ module.exports = {
             'dungeon': 'Verdant Cavern',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Rattata',
             'type': [0],
@@ -17127,7 +17129,7 @@ module.exports = {
           'Stark Mountain',
           'Pledge Grove',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Spearow',
             'type': [0],
@@ -17240,7 +17242,7 @@ module.exports = {
           ],
         },
         '2': ['Victory Road'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ekans',
             'type': [0],
@@ -17332,7 +17334,7 @@ module.exports = {
             'dungeon': 'Santalune Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pichu',
             'type': [1],
@@ -17340,8 +17342,8 @@ module.exports = {
             'stone': 7,
           },
         ],
-        '5': ['Electric'],
-        '11': ['Wacan'],
+        '6': ['Electric'],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -17583,7 +17585,7 @@ module.exports = {
       },
       'attack': 43,
       'locations': {
-        '12': [1500],
+        '13': [1500],
       },
       'catchRatePercent': 18,
       'eggSteps': 800,
@@ -17671,7 +17673,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pikachu',
             'type': [1],
@@ -17705,7 +17707,7 @@ module.exports = {
       },
       'attack': 108,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pikachu',
             'type': [
@@ -17892,7 +17894,7 @@ module.exports = {
             'dungeon': 'Victory Road Johto',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sandshrew',
             'type': [0],
@@ -17926,7 +17928,7 @@ module.exports = {
       },
       'attack': 78,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Sandshrew',
             'type': [1],
@@ -18008,7 +18010,7 @@ module.exports = {
             },
           ],
         },
-        '9': '18.07%',
+        '10': '18.07%',
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -18052,7 +18054,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nidoran(F)',
             'type': [0],
@@ -18060,7 +18062,7 @@ module.exports = {
             'level': 16,
           },
         ],
-        '9': '12.05%',
+        '10': '12.05%',
       },
       'catchRatePercent': 36,
       'eggSteps': 1200,
@@ -18119,7 +18121,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nidorina',
             'type': [1],
@@ -18201,7 +18203,7 @@ module.exports = {
             },
           ],
         },
-        '9': '30.12%',
+        '10': '30.12%',
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -18245,7 +18247,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nidoran(M)',
             'type': [0],
@@ -18253,7 +18255,7 @@ module.exports = {
             'level': 16,
           },
         ],
-        '9': '12.05%',
+        '10': '12.05%',
       },
       'catchRatePercent': 36,
       'eggSteps': 1200,
@@ -18312,7 +18314,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nidorino',
             'type': [1],
@@ -18378,7 +18380,7 @@ module.exports = {
           'Giant Chasm',
           'Lake of the Sunne and Moone',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cleffa',
             'type': [1],
@@ -18434,7 +18436,7 @@ module.exports = {
             'dungeon': 'Fullmoon Island',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Clefairy',
             'type': [1],
@@ -18533,7 +18535,7 @@ module.exports = {
           'Liberty Garden',
           'Abundant Shrine',
         ],
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -18589,7 +18591,7 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Vulpix',
             'type': [1],
@@ -18623,7 +18625,7 @@ module.exports = {
       },
       'attack': 113,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Vulpix',
             'type': [1],
@@ -18706,7 +18708,7 @@ module.exports = {
           'Dreamyard',
           'Pokémon Village',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Igglybuff',
             'type': [1],
@@ -18772,7 +18774,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Jigglypuff',
             'type': [1],
@@ -18992,7 +18994,7 @@ module.exports = {
             'dungeon': 'Resolution Cave',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Zubat',
             'type': [0],
@@ -19141,7 +19143,7 @@ module.exports = {
           ],
         },
         '2': ['Ilex Forest'],
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -19226,7 +19228,7 @@ module.exports = {
           'Flower Paradise',
           'Ruins of Abundance',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Oddish',
             'type': [0],
@@ -19292,7 +19294,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gloom',
             'type': [1],
@@ -19340,7 +19342,7 @@ module.exports = {
           'Brooklet Hill',
           'Lush Jungle',
         ],
-        '9': '6.02%',
+        '10': '6.02%',
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -19380,7 +19382,7 @@ module.exports = {
             'dungeon': 'Flower Paradise',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Paras',
             'type': [0],
@@ -19388,7 +19390,7 @@ module.exports = {
             'level': 24,
           },
         ],
-        '9': '18.07%',
+        '10': '18.07%',
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
@@ -19473,7 +19475,7 @@ module.exports = {
       'attack': 101,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Venonat',
             'type': [0],
@@ -19623,7 +19625,7 @@ module.exports = {
             'dungeon': "Diglett's Cave",
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Diglett',
             'type': [0],
@@ -19671,7 +19673,7 @@ module.exports = {
           'Vast Poni Canyon',
           'Resolution Cave',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Diglett',
             'type': [0],
@@ -19837,7 +19839,7 @@ module.exports = {
       'attack': 85,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Meowth',
             'type': [0],
@@ -19868,7 +19870,7 @@ module.exports = {
       },
       'attack': 85,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Meowth',
             'type': [1],
@@ -19992,7 +19994,7 @@ module.exports = {
           'Malie Garden',
           'Tower of Water',
         ],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20119,7 +20121,7 @@ module.exports = {
           'Seaside Cave',
           'Abundant Shrine',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Psyduck',
             'type': [0],
@@ -20185,7 +20187,7 @@ module.exports = {
           ],
         },
         '2': ['Rock Tunnel'],
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20220,7 +20222,7 @@ module.exports = {
           'Victory Road',
           'Cerulean Cave',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mankey',
             'type': [0],
@@ -20319,7 +20321,7 @@ module.exports = {
           ],
         },
         '2': ['Pokémon Mansion'],
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -20343,7 +20345,7 @@ module.exports = {
       'attack': 165,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Growlithe',
             'type': [1],
@@ -20602,7 +20604,7 @@ module.exports = {
           'Ruins of Hope',
           'Tower of Water',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Poliwag',
             'type': [0],
@@ -20647,7 +20649,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Poliwhirl',
             'type': [1],
@@ -20801,7 +20803,7 @@ module.exports = {
             'dungeon': 'Liberty Garden',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Abra',
             'type': [0],
@@ -20852,7 +20854,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kadabra',
             'type': [1],
@@ -20945,7 +20947,7 @@ module.exports = {
           'Glittering Cave',
           'Ten Carat Hill',
         ],
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -21065,7 +21067,7 @@ module.exports = {
             'dungeon': 'Victory Road',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Machop',
             'type': [0],
@@ -21096,7 +21098,7 @@ module.exports = {
       'attack': 142,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Machoke',
             'type': [1],
@@ -21189,7 +21191,7 @@ module.exports = {
           ],
         },
         '2': ['Flower Paradise'],
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -21264,7 +21266,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bellsprout',
             'type': [0],
@@ -21298,7 +21300,7 @@ module.exports = {
       'attack': 138,
       'nativeRegion': 0,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Weepinbell',
             'type': [1],
@@ -21716,7 +21718,7 @@ module.exports = {
           ],
         },
         '2': ['Iron Island'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tentacool',
             'type': [0],
@@ -21812,6 +21814,11 @@ module.exports = {
           'Mt. Coronet North',
           'Terminus Cave',
           'Victory Road Kalos',
+        ],
+        '4': [
+          {
+            'dungeon': 'Union Cave',
+          },
         ],
       },
       'catchRatePercent': 63,
@@ -21945,6 +21952,17 @@ module.exports = {
         ],
         '4': [
           {
+            'dungeon': 'Cerulean Cave',
+          },
+          {
+            'dungeon': 'Victory Road Johto',
+          },
+          {
+            'dungeon': 'Victory Road Sinnoh',
+          },
+        ],
+        '5': [
+          {
             'basePokemon': 'Geodude',
             'type': [0],
             'evolvedPokemon': 'Graveler',
@@ -21995,7 +22013,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Geodude',
             'type': [0],
@@ -22035,6 +22053,11 @@ module.exports = {
       'locations': {
         '4': [
           {
+            'dungeon': 'Mt. Mortar',
+          },
+        ],
+        '5': [
+          {
             'basePokemon': 'Graveler',
             'type': [1],
             'evolvedPokemon': 'Golem',
@@ -22067,7 +22090,7 @@ module.exports = {
       },
       'attack': 125,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Graveler',
             'type': [1],
@@ -22131,7 +22154,7 @@ module.exports = {
           ],
         },
         '2': ['Mt. Silver'],
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22202,7 +22225,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ponyta',
             'type': [0],
@@ -22244,7 +22267,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Ponyta',
             'type': [0],
@@ -22414,7 +22437,7 @@ module.exports = {
           'Seafoam Islands',
           'Cerulean Cave',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Slowpoke',
             'type': [0],
@@ -22510,7 +22533,7 @@ module.exports = {
           'New Mauville',
           "Trainers' School",
         ],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -22621,7 +22644,7 @@ module.exports = {
             'dungeon': 'New Mauville',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Magnemite',
             'type': [0],
@@ -22825,7 +22848,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Doduo',
             'type': [0],
@@ -22913,7 +22936,7 @@ module.exports = {
             'dungeon': 'Whirl Islands',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Seel',
             'type': [0],
@@ -23026,7 +23049,7 @@ module.exports = {
           'Pokémon Mansion',
           'Castelia Sewers',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Grimer',
             'type': [0],
@@ -23060,7 +23083,7 @@ module.exports = {
       },
       'attack': 143,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Alolan Grimer',
             'type': [0],
@@ -23220,7 +23243,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shellder',
             'type': [1],
@@ -23377,7 +23400,7 @@ module.exports = {
             'dungeon': 'Tin Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gastly',
             'type': [0],
@@ -23415,7 +23438,7 @@ module.exports = {
           'Old Chateau',
           'Thrifty Megamart',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Haunter',
             'type': [1],
@@ -23594,7 +23617,7 @@ module.exports = {
           ],
         },
         '2': ['Fullmoon Island'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Drowzee',
             'type': [0],
@@ -23855,7 +23878,7 @@ module.exports = {
             'dungeon': 'Whirl Islands',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Krabby',
             'type': [0],
@@ -23906,7 +23929,12 @@ module.exports = {
           "Team Rocket's Hideout",
           'New Mauville',
         ],
-        '5': ['Electric'],
+        '4': [
+          {
+            'dungeon': 'New Mauville',
+          },
+        ],
+        '6': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -23943,6 +23971,20 @@ module.exports = {
           },
         ],
         '4': [
+          {
+            'dungeon': 'Silph Co.',
+          },
+          {
+            'dungeon': 'Power Plant',
+          },
+          {
+            'dungeon': "Team Rocket's Hideout",
+          },
+          {
+            'dungeon': 'Aqua Hideout',
+          },
+        ],
+        '5': [
           {
             'basePokemon': 'Voltorb',
             'type': [0],
@@ -24063,7 +24105,7 @@ module.exports = {
           ],
         },
         '2': ['Exeggutor Island Hill'],
-        '9': '24.1%',
+        '10': '24.1%',
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -24118,7 +24160,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Exeggcute',
             'type': [1],
@@ -24152,7 +24194,7 @@ module.exports = {
       },
       'attack': 176,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Exeggcute',
             'type': [
@@ -24226,7 +24268,7 @@ module.exports = {
           'Glittering Cave',
           'Wela Volcano Park',
         ],
-        '9': '12.05%',
+        '10': '12.05%',
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -24276,7 +24318,7 @@ module.exports = {
             'dungeon': 'Pokémon Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cubone',
             'type': [0],
@@ -24284,7 +24326,7 @@ module.exports = {
             'level': 28,
           },
         ],
-        '9': '6.02%',
+        '10': '6.02%',
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
@@ -24316,7 +24358,7 @@ module.exports = {
             'dungeon': 'Wela Volcano Park',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cubone',
             'type': [
@@ -24385,7 +24427,7 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '2': ['Dusty Bowl'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tyrogue',
             'type': [0],
@@ -24393,7 +24435,7 @@ module.exports = {
             'level': 20,
           },
         ],
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -24418,7 +24460,7 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '2': ['Dusty Bowl'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tyrogue',
             'type': [0],
@@ -24426,7 +24468,7 @@ module.exports = {
             'level': 20,
           },
         ],
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -24492,7 +24534,7 @@ module.exports = {
           ],
         },
         '2': ['Victory Road Kalos'],
-        '7': ['Celadon City'],
+        '8': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -24587,7 +24629,7 @@ module.exports = {
             'dungeon': 'Burned Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Koffing',
             'type': [0],
@@ -24622,7 +24664,7 @@ module.exports = {
       'attack': 121,
       'locations': {
         '2': ['Inner Slumbering Weald'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Koffing',
             'type': [
@@ -24692,7 +24734,7 @@ module.exports = {
           'Stark Mountain',
           'Glittering Cave',
         ],
-        '9': '12.05%',
+        '10': '12.05%',
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -24767,7 +24809,7 @@ module.exports = {
             'dungeon': 'Victory Road Sinnoh',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rhyhorn',
             'type': [0],
@@ -25159,7 +25201,7 @@ module.exports = {
           ],
         },
         '2': ["Mina's Houseboat"],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Happiny',
             'type': [1],
@@ -25167,7 +25209,7 @@ module.exports = {
             'stone': -1,
           },
         ],
-        '9': '4.82%',
+        '10': '4.82%',
       },
       'catchRatePercent': 12,
       'eggSteps': 1600,
@@ -25229,9 +25271,9 @@ module.exports = {
           'Flower Paradise',
           'Giant Chasm',
         ],
-        '5': ['Grass'],
-        '9': '4.82%',
-        '11': ['Always'],
+        '6': ['Grass'],
+        '10': '4.82%',
+        '12': ['Always'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -25276,7 +25318,7 @@ module.exports = {
             'dungeon': 'Glittering Cave',
           },
         ],
-        '9': '18.07%',
+        '10': '18.07%',
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -25433,7 +25475,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Horsea',
             'type': [0],
@@ -25703,7 +25745,7 @@ module.exports = {
             'dungeon': 'Sendoff Spring',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Goldeen',
             'type': [0],
@@ -25786,7 +25828,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -25848,7 +25890,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Staryu',
             'type': [1],
@@ -25890,7 +25932,7 @@ module.exports = {
           ],
         },
         '2': ['Reflection Cave'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mime Jr.',
             'type': [0],
@@ -25898,7 +25940,7 @@ module.exports = {
             'level': 32,
           },
         ],
-        '7': ['Celadon City'],
+        '8': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -25944,7 +25986,7 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mime Jr.',
             'type': [
@@ -26011,8 +26053,8 @@ module.exports = {
           ],
         },
         '2': ['P2 Laboratory'],
-        '9': '4.82%',
-        '11': ['Always'],
+        '10': '4.82%',
+        '12': ['Always'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -26059,7 +26101,7 @@ module.exports = {
             'dungeon': 'Snowpoint Temple',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Smoochum',
             'type': [0],
@@ -26067,7 +26109,7 @@ module.exports = {
             'level': 30,
           },
         ],
-        '7': ['Celadon City'],
+        '8': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -26146,7 +26188,7 @@ module.exports = {
             'dungeon': 'Power Plant',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Elekid',
             'type': [0],
@@ -26154,7 +26196,7 @@ module.exports = {
             'level': 30,
           },
         ],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -26235,7 +26277,7 @@ module.exports = {
             'dungeon': 'Pokémon Mansion',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Magby',
             'type': [0],
@@ -26301,7 +26343,7 @@ module.exports = {
             'dungeon': 'Exeggutor Island Hill',
           },
         ],
-        '9': '4.82%',
+        '10': '4.82%',
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -26358,7 +26400,7 @@ module.exports = {
             'dungeon': 'Paniola Ranch',
           },
         ],
-        '9': '12.05%',
+        '10': '12.05%',
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -26792,7 +26834,7 @@ module.exports = {
           'Vast Poni Canyon',
           'Poni Meadow',
         ],
-        '7': ['Route 3 Pokémon Center'],
+        '8': ['Route 3 Pokémon Center'],
       },
       'catchRatePercent': 63,
       'eggSteps': 200,
@@ -27026,7 +27068,7 @@ module.exports = {
             'dungeon': 'Sendoff Spring',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Magikarp',
             'type': [0],
@@ -27146,7 +27188,7 @@ module.exports = {
             'requirements': 'Requires the Fog badge and Come back on Friday.',
           },
         ],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -27212,6 +27254,11 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Pokémon Village',
+          },
+        ],
+        '4': [
+          {
+            'dungeon': 'Hall of Origin',
           },
         ],
       },
@@ -27398,7 +27445,7 @@ module.exports = {
           ],
         },
         '2': ['Hall of Origin'],
-        '7': ['Celadon City'],
+        '8': ['Celadon City'],
       },
       'catchRatePercent': 63,
       'eggSteps': 1400,
@@ -27452,7 +27499,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [1],
@@ -27491,7 +27538,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [1],
@@ -27530,7 +27577,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [1],
@@ -27569,7 +27616,7 @@ module.exports = {
       'attack': 89,
       'nativeRegion': 0,
       'locations': {
-        '7': ['Celadon City'],
+        '8': ['Celadon City'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -27614,7 +27661,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Helix Fossil'],
+        '9': ['Helix Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -27648,7 +27695,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Omanyte',
             'type': [0],
@@ -27700,7 +27747,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Dome Fossil'],
+        '9': ['Dome Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -27734,7 +27781,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kabuto',
             'type': [0],
@@ -27776,7 +27823,7 @@ module.exports = {
           ],
         },
         '2': ['Rock Peak Ruins'],
-        '8': ['Old Amber'],
+        '9': ['Old Amber'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -27870,7 +27917,7 @@ module.exports = {
             'dungeon': 'Hall of Origin',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Munchlax',
             'type': [1],
@@ -27901,7 +27948,7 @@ module.exports = {
       },
       'attack': 172,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Elf Munchlax',
             'type': [1],
@@ -28177,7 +28224,7 @@ module.exports = {
           'Dragonspiral Tower',
           'Poni Meadow',
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -28225,7 +28272,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dratini',
             'type': [0],
@@ -28233,7 +28280,7 @@ module.exports = {
             'level': 30,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -28281,7 +28328,7 @@ module.exports = {
             'dungeon': 'Dragonspiral Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dragonair',
             'type': [0],
@@ -28289,7 +28336,7 @@ module.exports = {
             'level': 55,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -28372,7 +28419,7 @@ module.exports = {
             'region': 0,
           },
         ],
-        '11': ['Petaya'],
+        '12': ['Petaya'],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -28404,8 +28451,8 @@ module.exports = {
       'attack': 51,
       'nativeRegion': 1,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28437,7 +28484,7 @@ module.exports = {
       'attack': 81,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chikorita',
             'type': [0],
@@ -28468,7 +28515,7 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bayleef',
             'type': [0],
@@ -28507,8 +28554,8 @@ module.exports = {
       'attack': 46,
       'nativeRegion': 1,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28540,7 +28587,7 @@ module.exports = {
       'attack': 81,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cyndaquil',
             'type': [0],
@@ -28571,7 +28618,7 @@ module.exports = {
       'attack': 142,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Quilava',
             'type': [0],
@@ -28610,8 +28657,8 @@ module.exports = {
       'attack': 53,
       'nativeRegion': 1,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28643,7 +28690,7 @@ module.exports = {
       'attack': 87,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Totodile',
             'type': [0],
@@ -28674,7 +28721,7 @@ module.exports = {
       'attack': 147,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Croconaw',
             'type': [0],
@@ -28750,7 +28797,7 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': ['Pledge Grove'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sentret',
             'type': [0],
@@ -28965,7 +29012,7 @@ module.exports = {
             'dungeon': 'Ilex Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Hoothoot',
             'type': [0],
@@ -29118,7 +29165,7 @@ module.exports = {
           'Malie Garden',
           "Ula'ula Meadow",
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ledyba',
             'type': [0],
@@ -29265,7 +29312,7 @@ module.exports = {
           'Malie Garden',
           "Ula'ula Meadow",
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Spinarak',
             'type': [0],
@@ -29299,7 +29346,7 @@ module.exports = {
       'attack': 128,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Golbat',
             'type': [1],
@@ -29414,7 +29461,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -29513,7 +29560,7 @@ module.exports = {
           ],
         },
         '2': ["Sea Spirit's Den"],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chinchou',
             'type': [0],
@@ -29567,7 +29614,7 @@ module.exports = {
           ],
         },
         '2': ['Pikachu Valley'],
-        '6': ['Pikachu'],
+        '7': ['Pikachu'],
       },
       'catchRatePercent': 51,
       'eggSteps': 320,
@@ -29612,7 +29659,7 @@ module.exports = {
           ],
         },
         '2': ['Mt. Coronet South'],
-        '6': ['Clefairy'],
+        '7': ['Clefairy'],
       },
       'catchRatePercent': 42,
       'eggSteps': 320,
@@ -29658,7 +29705,7 @@ module.exports = {
             },
           ],
         },
-        '6': ['Jigglypuff'],
+        '7': ['Jigglypuff'],
       },
       'catchRatePercent': 47,
       'eggSteps': 320,
@@ -29690,8 +29737,8 @@ module.exports = {
       'attack': 25,
       'nativeRegion': 1,
       'locations': {
-        '7': ['Violet City'],
-        '11': ['Roseli'],
+        '8': ['Violet City'],
+        '12': ['Roseli'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -29770,7 +29817,7 @@ module.exports = {
       'attack': 75,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Togepi',
             'type': [1],
@@ -29854,7 +29901,7 @@ module.exports = {
           'Ruins of Alph',
           'Solaceon Ruins',
         ],
-        '11': ['Payapa'],
+        '12': ['Payapa'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -29945,7 +29992,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Natu',
             'type': [0],
@@ -30001,7 +30048,7 @@ module.exports = {
           'Floccesy Ranch',
           'Paniola Ranch',
         ],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -30043,7 +30090,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mareep',
             'type': [0],
@@ -30075,7 +30122,7 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': ['Ruins of Conflict'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Flaaffy',
             'type': [0],
@@ -30106,7 +30153,7 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gloom',
             'type': [1],
@@ -30232,7 +30279,7 @@ module.exports = {
           'Pinwheel Forest',
           'Tower of Water',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Azurill',
             'type': [1],
@@ -30240,7 +30287,7 @@ module.exports = {
             'stone': 7,
           },
         ],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -30303,7 +30350,7 @@ module.exports = {
           'Abundant Shrine',
           'Ruins of Hope',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Marill',
             'type': [0],
@@ -30364,7 +30411,7 @@ module.exports = {
           ],
         },
         '2': ['Pledge Grove'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bonsly',
             'type': [0],
@@ -30372,7 +30419,7 @@ module.exports = {
             'level': 32,
           },
         ],
-        '11': ['Charti'],
+        '12': ['Charti'],
       },
       'catchRatePercent': 22,
       'eggSteps': 800,
@@ -30425,7 +30472,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Poliwhirl',
             'type': [1],
@@ -30480,7 +30527,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -30516,7 +30563,7 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': ['Flower Paradise'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Hoppip',
             'type': [0],
@@ -30550,7 +30597,7 @@ module.exports = {
       'attack': 86,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Skiploom',
             'type': [0],
@@ -30656,7 +30703,7 @@ module.exports = {
           'Liberty Garden',
           'Lake of the Sunne and Moone',
         ],
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -30680,7 +30727,7 @@ module.exports = {
       'attack': 112,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sunkern',
             'type': [1],
@@ -30820,7 +30867,7 @@ module.exports = {
           'Ruins of Alph',
           'Union Cave',
         ],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -30951,7 +30998,7 @@ module.exports = {
           'Ruins of Alph',
           'Mt. Silver',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wooper',
             'type': [0],
@@ -30990,7 +31037,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [
@@ -31034,7 +31081,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [
@@ -31118,7 +31165,7 @@ module.exports = {
       'attack': 142,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Slowpoke',
             'type': [1],
@@ -31287,7 +31334,7 @@ module.exports = {
             'requirements': 'Try again another day.',
           },
         ],
-        '12': [700],
+        '13': [700],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -31321,7 +31368,7 @@ module.exports = {
             'requirements': 'Try again another day.',
           },
         ],
-        '12': [700],
+        '13': [700],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -31475,7 +31522,7 @@ module.exports = {
             'requirements': 'Try again another day.',
           },
         ],
-        '12': [700],
+        '13': [700],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -31674,7 +31721,7 @@ module.exports = {
             'requirements': 'Try again another day.',
           },
         ],
-        '12': [700],
+        '13': [700],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -31770,7 +31817,7 @@ module.exports = {
             'requirements': 'Try again another day.',
           },
         ],
-        '12': [700],
+        '13': [700],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -31804,7 +31851,7 @@ module.exports = {
             'requirements': 'Try again another day.',
           },
         ],
-        '12': [700],
+        '13': [700],
       },
       'catchRatePercent': 58,
       'eggSteps': 1600,
@@ -32151,7 +32198,7 @@ module.exports = {
             'dungeon': 'Ruins of Life',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wynaut',
             'type': [0],
@@ -32281,7 +32328,7 @@ module.exports = {
           ],
         },
         '2': ['P2 Laboratory'],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -32310,6 +32357,11 @@ module.exports = {
       'locations': {
         '2': ['P2 Laboratory'],
         '4': [
+          {
+            'dungeon': 'P2 Laboratory',
+          },
+        ],
+        '5': [
           {
             'basePokemon': 'Pineco',
             'type': [0],
@@ -32474,7 +32526,7 @@ module.exports = {
             'dungeon': 'Victory Road Sinnoh',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Onix',
             'type': [1],
@@ -32575,7 +32627,7 @@ module.exports = {
             'dungeon': 'Ruins of Hope',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Snubbull',
             'type': [0],
@@ -32622,7 +32674,7 @@ module.exports = {
           ],
         },
         '2': ['Dusty Bowl'],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -32657,7 +32709,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Scyther',
             'type': [1],
@@ -32798,7 +32850,7 @@ module.exports = {
             'dungeon': 'Lostlorn Forest',
           },
         ],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -32983,7 +33035,7 @@ module.exports = {
             'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Teddiursa',
             'type': [0],
@@ -33033,7 +33085,7 @@ module.exports = {
           'Fiery Path',
           'Stark Mountain',
         ],
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -33061,7 +33113,7 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': ['Stark Mountain'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Slugma',
             'type': [0],
@@ -33197,7 +33249,7 @@ module.exports = {
           'Frost Cavern',
           'Crown Shrine',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Swinub',
             'type': [0],
@@ -33489,7 +33541,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Remoraid',
             'type': [0],
@@ -33638,7 +33690,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mantyke',
             'type': [1],
@@ -33717,7 +33769,7 @@ module.exports = {
             'dungeon': 'Stark Mountain',
           },
         ],
-        '11': ['Babiri'],
+        '12': ['Babiri'],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -33764,7 +33816,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -33798,7 +33850,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Houndour',
             'type': [0],
@@ -33844,7 +33896,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Seadra',
             'type': [1],
@@ -33922,7 +33974,7 @@ module.exports = {
           ],
         },
         '2': ['Mt. Silver'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Phanpy',
             'type': [0],
@@ -33965,7 +34017,7 @@ module.exports = {
       'attack': 146,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Porygon',
             'type': [1],
@@ -34122,8 +34174,8 @@ module.exports = {
             'requirements': 'Mt. Mortar needs to be completed.',
           },
         ],
-        '5': ['Fighting'],
-        '6': [
+        '6': ['Fighting'],
+        '7': [
           'Hitmonlee',
           'Hitmonchan',
           'Hitmontop',
@@ -34151,7 +34203,7 @@ module.exports = {
       'attack': 78,
       'nativeRegion': 1,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tyrogue',
             'type': [0],
@@ -34209,7 +34261,7 @@ module.exports = {
           'Frost Cavern',
           'Seaward Cave',
         ],
-        '6': ['Jynx'],
+        '7': ['Jynx'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -34280,8 +34332,8 @@ module.exports = {
           ],
         },
         '2': ['Hokulani Observatory'],
-        '5': ['Electric'],
-        '6': ['Electabuzz'],
+        '6': ['Electric'],
+        '7': ['Electabuzz'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -34355,8 +34407,8 @@ module.exports = {
           ],
         },
         '2': ['Wela Volcano Park'],
-        '5': ['Fire'],
-        '6': ['Magmar'],
+        '6': ['Fire'],
+        '7': ['Magmar'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -34505,7 +34557,7 @@ module.exports = {
             'dungeon': 'Hall of Origin',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chansey',
             'type': [1],
@@ -34650,7 +34702,7 @@ module.exports = {
             'dungeon': "Diglett's Tunnel",
           },
         ],
-        '11': ['Shuca'],
+        '12': ['Shuca'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -34698,7 +34750,7 @@ module.exports = {
           ],
         },
         '2': ['Terminus Cave'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Larvitar',
             'type': [0],
@@ -34744,7 +34796,7 @@ module.exports = {
             'dungeon': 'Dusty Bowl',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pupitar',
             'type': [0],
@@ -34914,8 +34966,8 @@ module.exports = {
       'attack': 45,
       'nativeRegion': 2,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -34947,7 +34999,7 @@ module.exports = {
       'attack': 76,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Treecko',
             'type': [0],
@@ -34978,7 +35030,7 @@ module.exports = {
       'attack': 129,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Grovyle',
             'type': [0],
@@ -35017,8 +35069,8 @@ module.exports = {
       'attack': 55,
       'nativeRegion': 2,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -35053,7 +35105,7 @@ module.exports = {
       'attack': 93,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Torchic',
             'type': [0],
@@ -35087,7 +35139,7 @@ module.exports = {
       'attack': 157,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Combusken',
             'type': [0],
@@ -35126,8 +35178,8 @@ module.exports = {
       'attack': 55,
       'nativeRegion': 2,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -35162,7 +35214,7 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mudkip',
             'type': [0],
@@ -35196,7 +35248,7 @@ module.exports = {
       'attack': 164,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Marshtomp',
             'type': [0],
@@ -35311,7 +35363,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Poochyena',
             'type': [0],
@@ -35468,7 +35520,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Zigzagoon',
             'type': [0],
@@ -35518,7 +35570,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Zigzagoon',
             'type': [0],
@@ -35630,7 +35682,7 @@ module.exports = {
           'Petalburg Woods',
           'Eterna Forest',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wurmple',
             'type': [0],
@@ -35682,7 +35734,7 @@ module.exports = {
             'dungeon': 'Eterna Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Silcoon',
             'type': [0],
@@ -35732,7 +35784,7 @@ module.exports = {
           'Petalburg Woods',
           'Eterna Forest',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wurmple',
             'type': [0],
@@ -35784,7 +35836,7 @@ module.exports = {
             'dungeon': 'Eterna Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cascoon',
             'type': [0],
@@ -35949,7 +36001,7 @@ module.exports = {
           'Pokémon Village',
           'Victory Road Kalos',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lotad',
             'type': [0],
@@ -36003,7 +36055,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lombre',
             'type': [1],
@@ -36153,7 +36205,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Seedot',
             'type': [0],
@@ -36207,7 +36259,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nuzleaf',
             'type': [1],
@@ -36296,7 +36348,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Taillow',
             'type': [0],
@@ -36900,7 +36952,7 @@ module.exports = {
           'Exeggutor Island Hill',
           "Mina's Houseboat",
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wingull',
             'type': [0],
@@ -37053,7 +37105,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ralts',
             'type': [0],
@@ -37108,7 +37160,7 @@ module.exports = {
           ],
         },
         '2': ['Ruins of Life'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kirlia',
             'type': [0],
@@ -37211,7 +37263,7 @@ module.exports = {
           ],
         },
         '2': ['Malie Garden'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Surskit',
             'type': [0],
@@ -37286,7 +37338,7 @@ module.exports = {
             'dungeon': 'Flower Paradise',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shroomish',
             'type': [0],
@@ -37364,7 +37416,7 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': ['Pinwheel Forest'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Slakoth',
             'type': [0],
@@ -37400,7 +37452,7 @@ module.exports = {
             'dungeon': 'Hall of Origin',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Vigoroth',
             'type': [0],
@@ -37477,7 +37529,7 @@ module.exports = {
             },
           ],
         },
-        '11': ['Tanga'],
+        '12': ['Tanga'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -37511,7 +37563,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nincada',
             'type': [0],
@@ -37545,7 +37597,7 @@ module.exports = {
       'attack': 10,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nincada',
             'type': [0],
@@ -37553,7 +37605,7 @@ module.exports = {
             'level': 20,
           },
         ],
-        '11': ['Kasib'],
+        '12': ['Kasib'],
       },
       'catchRatePercent': 17,
       'eggSteps': 920,
@@ -37641,7 +37693,7 @@ module.exports = {
           ],
         },
         '2': ['Victory Road Hoenn'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Whismur',
             'type': [0],
@@ -37677,7 +37729,7 @@ module.exports = {
             'dungeon': 'Cave of Origin',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Loudred',
             'type': [0],
@@ -37727,7 +37779,7 @@ module.exports = {
           'Granite Cave',
           'Victory Road Hoenn',
         ],
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -37768,7 +37820,7 @@ module.exports = {
           ],
         },
         '2': ['Victory Road Hoenn'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Makuhita',
             'type': [0],
@@ -37832,7 +37884,7 @@ module.exports = {
           ],
         },
         '2': ['Floccesy Ranch'],
-        '6': ['Marill'],
+        '7': ['Marill'],
       },
       'catchRatePercent': 42,
       'eggSteps': 320,
@@ -37998,7 +38050,7 @@ module.exports = {
       'attack': 76,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Skitty',
             'type': [1],
@@ -38216,7 +38268,7 @@ module.exports = {
           'Mistralton Cave',
           'Terminus Cave',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Aron',
             'type': [0],
@@ -38261,7 +38313,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lairon',
             'type': [0],
@@ -38327,7 +38379,7 @@ module.exports = {
             'dungeon': 'Mt. Coronet South',
           },
         ],
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -38363,7 +38415,7 @@ module.exports = {
             'dungeon': 'Mt. Coronet North',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Meditite',
             'type': [0],
@@ -38439,7 +38491,7 @@ module.exports = {
           ],
         },
         '2': ['Watchtower Ruins'],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -38480,7 +38532,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Electrike',
             'type': [0],
@@ -38527,7 +38579,7 @@ module.exports = {
           'Newmoon Island',
           'Pikachu Valley',
         ],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -38567,7 +38619,7 @@ module.exports = {
           'Fullmoon Island',
           'Pikachu Valley',
         ],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -38609,7 +38661,7 @@ module.exports = {
           ],
         },
         '2': ['Newmoon Island'],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 42,
       'eggSteps': 600,
@@ -38651,7 +38703,7 @@ module.exports = {
           ],
         },
         '2': ['Fullmoon Island'],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 42,
       'eggSteps': 600,
@@ -38771,7 +38823,7 @@ module.exports = {
           'Lostlorn Forest',
           'Victory Road Unova',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Budew',
             'type': [
@@ -38784,7 +38836,7 @@ module.exports = {
             'endHour': 18,
           },
         ],
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 42,
       'eggSteps': 800,
@@ -38828,7 +38880,7 @@ module.exports = {
             },
           ],
         },
-        '11': ['Kebia'],
+        '12': ['Kebia'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -38852,7 +38904,7 @@ module.exports = {
       'attack': 121,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gulpin',
             'type': [0],
@@ -39018,7 +39070,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Carvanha',
             'type': [0],
@@ -39215,7 +39267,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wailmer',
             'type': [0],
@@ -39275,7 +39327,7 @@ module.exports = {
           'Stark Mountain',
           'Reversal Mountain',
         ],
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -39313,7 +39365,7 @@ module.exports = {
           'Stark Mountain',
           'Reversal Mountain',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Numel',
             'type': [0],
@@ -39439,7 +39491,7 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '2': ['Reversal Mountain'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Spoink',
             'type': [0],
@@ -39584,7 +39636,7 @@ module.exports = {
       'attack': 58,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Trapinch',
             'type': [0],
@@ -39623,7 +39675,7 @@ module.exports = {
             'dungeon': 'Dusty Bowl',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Vibrava',
             'type': [0],
@@ -39712,7 +39764,7 @@ module.exports = {
             'dungeon': 'Reversal Mountain',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cacnea',
             'type': [0],
@@ -39882,7 +39934,7 @@ module.exports = {
             'dungeon': 'Abundant Shrine',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Swablu',
             'type': [0],
@@ -40340,7 +40392,7 @@ module.exports = {
             'dungeon': 'Moor of Icirrus',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Barboach',
             'type': [0],
@@ -40516,7 +40568,7 @@ module.exports = {
           ],
         },
         '2': ['Parfum Palace'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Corphish',
             'type': [0],
@@ -40669,7 +40721,7 @@ module.exports = {
           'Sky Pillar',
           'Split-Decision Ruins',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Baltoy',
             'type': [0],
@@ -40721,7 +40773,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Root Fossil'],
+        '9': ['Root Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -40748,7 +40800,7 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lileep',
             'type': [0],
@@ -40797,7 +40849,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Claw Fossil'],
+        '9': ['Claw Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -40836,7 +40888,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Anorith',
             'type': [0],
@@ -40900,7 +40952,7 @@ module.exports = {
             'dungeon': 'Mt. Coronet North',
           },
         ],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -40941,7 +40993,7 @@ module.exports = {
             'dungeon': 'Rose Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Feebas',
             'type': [1],
@@ -41208,6 +41260,14 @@ module.exports = {
         ],
         '4': [
           {
+            'dungeon': 'Distortion World',
+          },
+          {
+            'dungeon': 'Pokémon Village',
+          },
+        ],
+        '5': [
+          {
             'basePokemon': 'Shuppet',
             'type': [0],
             'evolvedPokemon': 'Banette',
@@ -41322,7 +41382,7 @@ module.exports = {
             'dungeon': 'Sendoff Spring',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Duskull',
             'type': [0],
@@ -41373,8 +41433,8 @@ module.exports = {
             'dungeon': 'Exeggutor Island Hill',
           },
         ],
-        '5': ['Grass'],
-        '11': ['Coba'],
+        '6': ['Grass'],
+        '12': ['Coba'],
       },
       'catchRatePercent': 53,
       'eggSteps': 1000,
@@ -41411,7 +41471,7 @@ module.exports = {
             'dungeon': 'Liberty Garden',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chingling',
             'type': [
@@ -41514,7 +41574,7 @@ module.exports = {
             'dungeon': 'Mount Lanakila',
           },
         ],
-        '11': ['Colbur'],
+        '12': ['Colbur'],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -41554,7 +41614,7 @@ module.exports = {
             },
           ],
         },
-        '6': ['Wobbuffet'],
+        '7': ['Wobbuffet'],
       },
       'catchRatePercent': 37,
       'eggSteps': 640,
@@ -41769,7 +41829,7 @@ module.exports = {
             'dungeon': 'Iceberg Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Snorunt',
             'type': [0],
@@ -41898,7 +41958,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Spheal',
             'type': [0],
@@ -41956,7 +42016,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sealeo',
             'type': [0],
@@ -42033,7 +42093,7 @@ module.exports = {
           ],
         },
         '2': ['Ruins of Hope'],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -42061,7 +42121,7 @@ module.exports = {
       'attack': 123,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Clamperl',
             'type': [1],
@@ -42096,7 +42156,7 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Clamperl',
             'type': [1],
@@ -42284,8 +42344,8 @@ module.exports = {
             },
           ],
         },
-        '5': ['Dragon'],
-        '11': ['Haban'],
+        '6': ['Dragon'],
+        '12': ['Haban'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -42321,7 +42381,7 @@ module.exports = {
       'attack': 94,
       'nativeRegion': 2,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bagon',
             'type': [0],
@@ -42329,7 +42389,7 @@ module.exports = {
             'level': 30,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -42371,7 +42431,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shelgon',
             'type': [0],
@@ -42379,7 +42439,7 @@ module.exports = {
             'level': 50,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -42430,7 +42490,7 @@ module.exports = {
             },
           ],
         },
-        '7': ['Mossdeep City'],
+        '8': ['Mossdeep City'],
       },
       'catchRatePercent': 2,
       'eggSteps': 1600,
@@ -42481,7 +42541,7 @@ module.exports = {
           'P2 Laboratory',
           'Iron Ruins',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Beldum',
             'type': [0],
@@ -42531,7 +42591,7 @@ module.exports = {
             'dungeon': 'Iron Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Metang',
             'type': [0],
@@ -42831,7 +42891,7 @@ module.exports = {
             'requirements': 'Requires the Elite Hoenn Champion badge.',
           },
         ],
-        '11': ['Starf'],
+        '12': ['Starf'],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -42855,7 +42915,7 @@ module.exports = {
       'attack': 144,
       'nativeRegion': 2,
       'locations': {
-        '10': [100],
+        '11': [100],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -42879,7 +42939,7 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 2,
       'locations': {
-        '10': [151],
+        '11': [151],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -42903,7 +42963,7 @@ module.exports = {
       'attack': 116,
       'nativeRegion': 2,
       'locations': {
-        '10': [251],
+        '11': [251],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -42927,7 +42987,7 @@ module.exports = {
       'attack': 124,
       'nativeRegion': 2,
       'locations': {
-        '10': [386],
+        '11': [386],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -42959,8 +43019,8 @@ module.exports = {
       'attack': 58,
       'nativeRegion': 3,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -42992,7 +43052,7 @@ module.exports = {
       'attack': 94,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Turtwig',
             'type': [0],
@@ -43026,7 +43086,7 @@ module.exports = {
       'attack': 154,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Grotle',
             'type': [0],
@@ -43065,8 +43125,8 @@ module.exports = {
       'attack': 50,
       'nativeRegion': 3,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -43101,7 +43161,7 @@ module.exports = {
       'attack': 86,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chimchar',
             'type': [0],
@@ -43135,7 +43195,7 @@ module.exports = {
       'attack': 143,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Monferno',
             'type': [0],
@@ -43174,8 +43234,8 @@ module.exports = {
       'attack': 56,
       'nativeRegion': 3,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -43207,7 +43267,7 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Piplup',
             'type': [0],
@@ -43241,7 +43301,7 @@ module.exports = {
       'attack': 155,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Prinplup',
             'type': [0],
@@ -43359,7 +43419,7 @@ module.exports = {
           'Lake Valor',
           'Sendoff Spring',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Starly',
             'type': [0],
@@ -43393,7 +43453,7 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Staravia',
             'type': [0],
@@ -43518,7 +43578,7 @@ module.exports = {
           'Lake Acuity',
           'Sendoff Spring',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bidoof',
             'type': [0],
@@ -43610,7 +43670,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kricketot',
             'type': [0],
@@ -43685,7 +43745,7 @@ module.exports = {
           ],
         },
         '2': ['Master Dojo Trial'],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -43746,7 +43806,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shinx',
             'type': [0],
@@ -43810,7 +43870,7 @@ module.exports = {
             'dungeon': 'Ruins of Conflict',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Luxio',
             'type': [0],
@@ -43914,8 +43974,8 @@ module.exports = {
           ],
         },
         '2': ['Eterna Forest'],
-        '5': ['Grass'],
-        '6': ['Roselia'],
+        '6': ['Grass'],
+        '7': ['Roselia'],
       },
       'catchRatePercent': 63,
       'eggSteps': 640,
@@ -43954,7 +44014,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Roselia',
             'type': [1],
@@ -43993,7 +44053,7 @@ module.exports = {
       'attack': 58,
       'nativeRegion': 3,
       'locations': {
-        '8': ['Skull Fossil'],
+        '9': ['Skull Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -44017,7 +44077,7 @@ module.exports = {
       'attack': 137,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cranidos',
             'type': [0],
@@ -44059,7 +44119,7 @@ module.exports = {
       'attack': 42,
       'nativeRegion': 3,
       'locations': {
-        '8': ['Armor Fossil'],
+        '9': ['Armor Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -44086,7 +44146,7 @@ module.exports = {
       'attack': 85,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shieldon',
             'type': [0],
@@ -44188,8 +44248,8 @@ module.exports = {
             },
           ],
         },
-        '7': ['Pal Park'],
-        '11': ['Always'],
+        '8': ['Pal Park'],
+        '12': ['Always'],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -44227,7 +44287,7 @@ module.exports = {
       'attack': 25,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Burmy (plant)',
             'type': [
@@ -44286,7 +44346,7 @@ module.exports = {
       'attack': 25,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Burmy (plant)',
             'type': [
@@ -44344,7 +44404,7 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Burmy (plant)',
             'type': [0],
@@ -44378,7 +44438,7 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Burmy (sand)',
             'type': [0],
@@ -44412,7 +44472,7 @@ module.exports = {
       'attack': 93,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Burmy (trash)',
             'type': [0],
@@ -44446,7 +44506,7 @@ module.exports = {
       'attack': 103,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Burmy (plant)',
             'type': [0],
@@ -44522,8 +44582,8 @@ module.exports = {
           ],
         },
         '2': ['Lostlorn Forest'],
-        '7': ['Pal Park'],
-        '11': ['Always'],
+        '8': ['Pal Park'],
+        '12': ['Always'],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -44558,7 +44618,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Combee',
             'type': [0],
@@ -44597,7 +44657,7 @@ module.exports = {
           ],
         },
         '2': ['Pikachu Valley'],
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 53,
       'eggSteps': 400,
@@ -44654,7 +44714,7 @@ module.exports = {
           ],
         },
         '2': ['Victory Road Unova'],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -44719,7 +44779,7 @@ module.exports = {
           'Frost Cavern',
           'Victory Road Kalos',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Buizel',
             'type': [0],
@@ -44777,8 +44837,8 @@ module.exports = {
             },
           ],
         },
-        '7': ['Pal Park'],
-        '11': ['Always'],
+        '8': ['Pal Park'],
+        '12': ['Always'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -44814,7 +44874,7 @@ module.exports = {
       'attack': 98,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cherubi',
             'type': [0],
@@ -44845,7 +44905,7 @@ module.exports = {
       'attack': 98,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cherrim (overcast)',
             'type': [
@@ -44994,7 +45054,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shellos (west)',
             'type': [0],
@@ -45072,7 +45132,7 @@ module.exports = {
             'dungeon': 'Galar Mine No. 2',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shellos (east)',
             'type': [0],
@@ -45103,7 +45163,7 @@ module.exports = {
       'attack': 106,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Aipom',
             'type': [0],
@@ -45321,7 +45381,7 @@ module.exports = {
             'dungeon': 'Watchtower Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Drifloon',
             'type': [0],
@@ -45446,7 +45506,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Buneary',
             'type': [1],
@@ -45477,7 +45537,7 @@ module.exports = {
       'attack': 105,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Misdreavus',
             'type': [1],
@@ -45511,7 +45571,7 @@ module.exports = {
       'attack': 152,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Murkrow',
             'type': [1],
@@ -45593,7 +45653,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Glameow',
             'type': [0],
@@ -45658,7 +45718,7 @@ module.exports = {
           'Sendoff Spring',
           'Reflection Cave',
         ],
-        '6': ['Chimecho'],
+        '7': ['Chimecho'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -45821,7 +45881,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Stunky',
             'type': [0],
@@ -45977,7 +46037,7 @@ module.exports = {
             'dungeon': 'Abundant Shrine',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bronzor',
             'type': [0],
@@ -46025,7 +46085,7 @@ module.exports = {
           ],
         },
         '2': ['Lush Jungle'],
-        '6': ['Sudowoodo'],
+        '7': ['Sudowoodo'],
       },
       'catchRatePercent': 63,
       'eggSteps': 640,
@@ -46110,7 +46170,7 @@ module.exports = {
           'Reflection Cave',
           "Trainers' School",
         ],
-        '6': [
+        '7': [
           'Mr. Mime',
           'Galarian Mr. Mime',
         ],
@@ -46187,7 +46247,7 @@ module.exports = {
             },
           ],
         },
-        '6': ['Chansey'],
+        '7': ['Chansey'],
       },
       'catchRatePercent': 38,
       'eggSteps': 1280,
@@ -46271,7 +46331,7 @@ module.exports = {
             },
           ],
         },
-        '7': ['Solaceon Town'],
+        '8': ['Solaceon Town'],
       },
       'catchRatePercent': 31,
       'eggSteps': 1200,
@@ -46318,7 +46378,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -46360,7 +46420,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gible',
             'type': [0],
@@ -46368,7 +46428,7 @@ module.exports = {
             'level': 24,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -46407,7 +46467,7 @@ module.exports = {
           ],
         },
         '2': ['Hall of Origin'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gabite',
             'type': [0],
@@ -46415,7 +46475,7 @@ module.exports = {
             'level': 48,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -46455,8 +46515,8 @@ module.exports = {
             },
           ],
         },
-        '6': ['Snorlax'],
-        '11': ['Always'],
+        '7': ['Snorlax'],
+        '12': ['Always'],
       },
       'catchRatePercent': 18,
       'eggSteps': 1280,
@@ -46489,7 +46549,7 @@ module.exports = {
       'attack': 88,
       'nativeRegion': 3,
       'locations': {
-        '6': ['Santa Snorlax'],
+        '7': ['Santa Snorlax'],
       },
       'catchRatePercent': 18,
       'eggSteps': 1280,
@@ -46548,8 +46608,8 @@ module.exports = {
             'dungeon': 'Floccesy Ranch',
           },
         ],
-        '5': ['Fighting'],
-        '11': ['Chople'],
+        '6': ['Fighting'],
+        '12': ['Chople'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1000,
@@ -46587,7 +46647,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Riolu',
             'type': [
@@ -46679,7 +46739,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Hippopotas',
             'type': [0],
@@ -46746,7 +46806,7 @@ module.exports = {
           ],
         },
         '2': ['Reversal Mountain'],
-        '7': ['Pastoria City'],
+        '8': ['Pastoria City'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -46833,7 +46893,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Skorupi',
             'type': [0],
@@ -46952,7 +47012,7 @@ module.exports = {
           ],
         },
         '2': ['Pinwheel Forest'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Croagunk',
             'type': [0],
@@ -46998,7 +47058,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 53,
       'eggSteps': 1000,
@@ -47076,7 +47136,7 @@ module.exports = {
           'Iron Island',
           'Brooklet Hill',
         ],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -47129,7 +47189,7 @@ module.exports = {
             'dungeon': 'Ruins of Hope',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Finneon',
             'type': [0],
@@ -47255,7 +47315,7 @@ module.exports = {
             },
           ],
         },
-        '6': ['Mantine'],
+        '7': ['Mantine'],
       },
       'catchRatePercent': 11,
       'eggSteps': 800,
@@ -47360,7 +47420,7 @@ module.exports = {
           'Lake Acuity',
           'Spear Pillar',
         ],
-        '11': ['Yache'],
+        '12': ['Yache'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -47428,7 +47488,7 @@ module.exports = {
             'dungeon': 'Frost Cavern',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Snover',
             'type': [0],
@@ -47479,7 +47539,7 @@ module.exports = {
           ],
         },
         '2': ['Iceberg Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sneasel',
             'type': [
@@ -47538,7 +47598,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Magneton',
             'type': [
@@ -47641,7 +47701,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lickitung',
             'type': [0],
@@ -47696,7 +47756,7 @@ module.exports = {
           ],
         },
         '2': ['Rock Peak Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rhydon',
             'type': [1],
@@ -47745,7 +47805,7 @@ module.exports = {
             'requirements': 'Giant Chasm needs to be completed.',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tangela',
             'type': [0],
@@ -47805,7 +47865,7 @@ module.exports = {
             'dungeon': 'Split-Decision Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Electabuzz',
             'type': [1],
@@ -47861,7 +47921,7 @@ module.exports = {
           ],
         },
         '2': ['Iron Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Magmar',
             'type': [1],
@@ -47895,7 +47955,7 @@ module.exports = {
       'attack': 134,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Togetic',
             'type': [1],
@@ -47929,7 +47989,7 @@ module.exports = {
       'attack': 137,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Yanma',
             'type': [0],
@@ -47968,7 +48028,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [
@@ -48041,7 +48101,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [
@@ -48109,7 +48169,7 @@ module.exports = {
       'attack': 107,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gligar',
             'type': [
@@ -48178,7 +48238,7 @@ module.exports = {
             'requirements': 'Giant Chasm needs to be completed.',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Piloswine',
             'type': [0],
@@ -48209,7 +48269,7 @@ module.exports = {
       'attack': 150,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Porygon2',
             'type': [1],
@@ -48243,7 +48303,7 @@ module.exports = {
       'attack': 127,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kirlia',
             'type': [1],
@@ -48281,7 +48341,7 @@ module.exports = {
       'attack': 109,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nosepass',
             'type': [
@@ -48356,7 +48416,7 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 3,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dusclops',
             'type': [1],
@@ -48431,7 +48491,7 @@ module.exports = {
             'dungeon': 'Rose Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Snorunt',
             'type': [1],
@@ -48525,6 +48585,11 @@ module.exports = {
             'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
+        '4': [
+          {
+            'dungeon': 'Lost Hotel',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -48563,6 +48628,11 @@ module.exports = {
           {
             'dungeon': 'Team Galactic Eterna Building',
             'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
+          },
+        ],
+        '4': [
+          {
+            'dungeon': 'Lost Hotel',
           },
         ],
       },
@@ -48605,6 +48675,11 @@ module.exports = {
             'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
+        '4': [
+          {
+            'dungeon': 'Lost Hotel',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -48643,6 +48718,11 @@ module.exports = {
           {
             'dungeon': 'Team Galactic Eterna Building',
             'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
+          },
+        ],
+        '4': [
+          {
+            'dungeon': 'Lost Hotel',
           },
         ],
       },
@@ -48685,6 +48765,11 @@ module.exports = {
             'requirements': 'Rotom needs to be caught and Team Galactic Eterna Building needs to be completed.',
           },
         ],
+        '4': [
+          {
+            'dungeon': 'Lost Hotel',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -48711,7 +48796,7 @@ module.exports = {
       'attack': 82,
       'nativeRegion': 3,
       'locations': {
-        '12': [10000],
+        '13': [10000],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -49058,7 +49143,7 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 3,
       'locations': {
-        '6': ['Manaphy'],
+        '7': ['Manaphy'],
       },
       'catchRatePercent': 12,
       'eggSteps': 320,
@@ -49087,7 +49172,7 @@ module.exports = {
             'region': 3,
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Phione',
             'type': [0],
@@ -49095,7 +49180,7 @@ module.exports = {
             'level': 69420,
           },
         ],
-        '11': ['Liechi'],
+        '12': ['Liechi'],
       },
       'catchRatePercent': 2,
       'eggSteps': 400,
@@ -49652,8 +49737,8 @@ module.exports = {
       'attack': 45,
       'nativeRegion': 4,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -49685,7 +49770,7 @@ module.exports = {
       'attack': 78,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Snivy',
             'type': [0],
@@ -49716,7 +49801,7 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Servine',
             'type': [0],
@@ -49755,8 +49840,8 @@ module.exports = {
       'attack': 55,
       'nativeRegion': 4,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -49791,7 +49876,7 @@ module.exports = {
       'attack': 105,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tepig',
             'type': [0],
@@ -49825,7 +49910,7 @@ module.exports = {
       'attack': 170,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pignite',
             'type': [0],
@@ -49864,8 +49949,8 @@ module.exports = {
       'attack': 56,
       'nativeRegion': 4,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -49897,7 +49982,7 @@ module.exports = {
       'attack': 99,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Oshawott',
             'type': [0],
@@ -49928,7 +50013,7 @@ module.exports = {
       'attack': 161,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dewott',
             'type': [0],
@@ -50026,7 +50111,7 @@ module.exports = {
           ],
         },
         '2': ['Dreamyard'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Patrat',
             'type': [0],
@@ -50141,7 +50226,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lillipup',
             'type': [0],
@@ -50180,7 +50265,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Herdier',
             'type': [0],
@@ -50353,7 +50438,7 @@ module.exports = {
           ],
         },
         '2': ['Dreamyard'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Purrloin',
             'type': [0],
@@ -50393,7 +50478,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': ['Santalune Forest'],
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -50417,7 +50502,7 @@ module.exports = {
       'attack': 127,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pansage',
             'type': [1],
@@ -50457,7 +50542,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': ['Santalune Forest'],
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -50481,7 +50566,7 @@ module.exports = {
       'attack': 127,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pansear',
             'type': [1],
@@ -50521,7 +50606,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': ['Santalune Forest'],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -50545,7 +50630,7 @@ module.exports = {
       'attack': 127,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Panpour',
             'type': [1],
@@ -50640,7 +50725,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Munna',
             'type': [1],
@@ -50765,7 +50850,7 @@ module.exports = {
           'Victory Road Unova',
           'Dragonspiral Tower',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pidove',
             'type': [0],
@@ -50810,7 +50895,7 @@ module.exports = {
           'Victory Road Unova',
           'Pledge Grove',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tranquill',
             'type': [0],
@@ -50849,7 +50934,7 @@ module.exports = {
       'attack': 43,
       'nativeRegion': 4,
       'locations': {
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -50873,7 +50958,7 @@ module.exports = {
       'attack': 119,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Blitzle',
             'type': [0],
@@ -50983,7 +51068,7 @@ module.exports = {
           'Twist Mountain',
           'Vast Poni Canyon',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Roggenrola',
             'type': [0],
@@ -51030,7 +51115,7 @@ module.exports = {
             'dungeon': 'Dusty Bowl',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Boldore',
             'type': [1],
@@ -51163,7 +51248,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Woobat',
             'type': [1],
@@ -51253,7 +51338,7 @@ module.exports = {
             'dungeon': 'Reversal Mountain',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Drilbur',
             'type': [0],
@@ -51438,7 +51523,7 @@ module.exports = {
           'Victory Road Kalos',
           'Dusty Bowl',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Timburr',
             'type': [0],
@@ -51478,7 +51563,7 @@ module.exports = {
           ],
         },
         '2': ['Rock Peak Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gurdurr',
             'type': [1],
@@ -51674,7 +51759,7 @@ module.exports = {
           'Moor of Icirrus',
           'Pinwheel Forest',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tympole',
             'type': [0],
@@ -51739,7 +51824,7 @@ module.exports = {
             'dungeon': 'Pinwheel Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Palpitoad',
             'type': [0],
@@ -51785,7 +51870,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -51824,7 +51909,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -51870,7 +51955,7 @@ module.exports = {
           ],
         },
         '2': ['Lostlorn Forest'],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -51913,7 +51998,7 @@ module.exports = {
           ],
         },
         '2': ['Pinwheel Forest'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sewaddle',
             'type': [0],
@@ -51947,7 +52032,7 @@ module.exports = {
       'attack': 124,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Swadloon',
             'type': [1],
@@ -52040,7 +52125,7 @@ module.exports = {
           'Pinwheel Forest',
           'Master Dojo Trial',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Venipede',
             'type': [0],
@@ -52087,7 +52172,7 @@ module.exports = {
             'dungeon': 'Pinwheel Forest',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Whirlipede',
             'type': [0],
@@ -52195,7 +52280,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cottonee',
             'type': [1],
@@ -52312,7 +52397,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Petilil',
             'type': [1],
@@ -52639,7 +52724,7 @@ module.exports = {
           'Relic Castle',
           'Tower of Darkness',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sandile',
             'type': [0],
@@ -52689,7 +52774,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Krokorok',
             'type': [0],
@@ -52809,7 +52894,7 @@ module.exports = {
       'attack': 99,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Darumaka',
             'type': [0],
@@ -52842,7 +52927,14 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 4,
-      'locations': {},
+      'locations': {
+        '4': [
+          {
+            'dungeon': 'Relic Castle',
+            'requirements': 'Relic Castle needs to be completed 50 times.',
+          },
+        ],
+      },
       'catchRatePercent': 21,
       'eggSteps': 800,
     },
@@ -52874,7 +52966,7 @@ module.exports = {
           ],
         },
         '2': ['Iceberg Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Darumaka',
             'type': [1],
@@ -53107,7 +53199,7 @@ module.exports = {
             'dungeon': 'Seaside Cave',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dwebble',
             'type': [0],
@@ -53234,7 +53326,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Scraggy',
             'type': [0],
@@ -53385,7 +53477,7 @@ module.exports = {
       'attack': 102,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Yamask',
             'type': [0],
@@ -53434,7 +53526,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Cover Fossil'],
+        '9': ['Cover Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -53477,7 +53569,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tirtouga',
             'type': [0],
@@ -53526,7 +53618,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Plume Fossil'],
+        '9': ['Plume Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -53553,7 +53645,7 @@ module.exports = {
       'attack': 163,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Archen',
             'type': [0],
@@ -53611,6 +53703,11 @@ module.exports = {
           ],
         },
         '2': ['Castelia Sewers'],
+        '4': [
+          {
+            'dungeon': 'Lost Hotel',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -53665,6 +53762,14 @@ module.exports = {
           },
         ],
         '4': [
+          {
+            'dungeon': 'Lost Hotel',
+          },
+          {
+            'dungeon': 'Pokémon Village',
+          },
+        ],
+        '5': [
           {
             'basePokemon': 'Trubbish',
             'type': [0],
@@ -53739,7 +53844,7 @@ module.exports = {
           "Trainers' School",
           'Tower of Darkness',
         ],
-        '7': ['Driftveil City'],
+        '8': ['Driftveil City'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1000,
@@ -53795,6 +53900,15 @@ module.exports = {
           },
         ],
         '4': [
+          {
+            'dungeon': 'Lostlorn Forest',
+            'requirements': 'Lostlorn Forest needs to be completed 50 times.',
+          },
+          {
+            'dungeon': 'Victory Road Unova',
+          },
+        ],
+        '5': [
           {
             'basePokemon': 'Zorua',
             'type': [0],
@@ -53909,7 +54023,7 @@ module.exports = {
       'attack': 103,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Minccino',
             'type': [1],
@@ -54022,7 +54136,7 @@ module.exports = {
           ],
         },
         '2': ['Pokémon Village'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gothita',
             'type': [0],
@@ -54065,7 +54179,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gothorita',
             'type': [0],
@@ -54176,7 +54290,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Solosis',
             'type': [0],
@@ -54219,7 +54333,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Duosion',
             'type': [0],
@@ -54299,7 +54413,7 @@ module.exports = {
       'attack': 114,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ducklett',
             'type': [0],
@@ -54592,7 +54706,7 @@ module.exports = {
           'Giant Chasm',
           'Dragonspiral Tower',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Vanillite',
             'type': [0],
@@ -54696,7 +54810,7 @@ module.exports = {
             'dungeon': 'Mount Lanakila',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Vanillish',
             'type': [0],
@@ -54894,7 +55008,7 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Deerling (Spring)',
             'type': [0],
@@ -54928,7 +55042,7 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Deerling (Summer)',
             'type': [0],
@@ -54966,7 +55080,7 @@ module.exports = {
           'Dragonspiral Tower',
           'Pledge Grove',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Deerling (Autumn)',
             'type': [0],
@@ -55004,7 +55118,7 @@ module.exports = {
           'Dragonspiral Tower',
           'Pledge Grove',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Deerling (Winter)',
             'type': [0],
@@ -55132,7 +55246,7 @@ module.exports = {
           ],
         },
         '2': ['Moor of Icirrus'],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 53,
       'eggSteps': 600,
@@ -55171,7 +55285,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Karrablast',
             'type': [1],
@@ -55236,6 +55350,11 @@ module.exports = {
             },
           ],
         },
+        '4': [
+          {
+            'dungeon': 'Lostlorn Forest',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -55300,6 +55419,17 @@ module.exports = {
         },
         '2': ['Pokémon Village'],
         '4': [
+          {
+            'dungeon': 'Giant Chasm',
+          },
+          {
+            'dungeon': 'Abundant Shrine',
+          },
+          {
+            'dungeon': 'Pinwheel Forest',
+          },
+        ],
+        '5': [
           {
             'basePokemon': 'Foongus',
             'type': [0],
@@ -55596,7 +55726,7 @@ module.exports = {
           ],
         },
         '2': ['Thrifty Megamart'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Frillish',
             'type': [0],
@@ -55769,7 +55899,7 @@ module.exports = {
           ],
         },
         '2': ['Split-Decision Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Joltik',
             'type': [0],
@@ -55855,7 +55985,7 @@ module.exports = {
           'P2 Laboratory',
           'Dusty Bowl',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Ferroseed',
             'type': [0],
@@ -55979,7 +56109,7 @@ module.exports = {
           'Rose Tower',
           'Dusty Bowl',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Klink',
             'type': [0],
@@ -56034,7 +56164,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Klang',
             'type': [0],
@@ -56115,7 +56245,7 @@ module.exports = {
             'dungeon': 'Seaside Cave',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tynamo',
             'type': [0],
@@ -56146,7 +56276,7 @@ module.exports = {
       'attack': 160,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eelektrik',
             'type': [1],
@@ -56216,7 +56346,7 @@ module.exports = {
       'attack': 136,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Elgyem',
             'type': [0],
@@ -56321,7 +56451,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Litwick',
             'type': [0],
@@ -56367,7 +56497,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Lampent',
             'type': [1],
@@ -56456,7 +56586,7 @@ module.exports = {
       'attack': 81,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Axew',
             'type': [0],
@@ -56487,7 +56617,7 @@ module.exports = {
       'attack': 136,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Fraxure',
             'type': [0],
@@ -56599,7 +56729,7 @@ module.exports = {
           'Iceberg Ruins',
           'Dyna Tree Hill',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cubchoo',
             'type': [0],
@@ -56835,7 +56965,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Shelmet',
             'type': [1],
@@ -56999,7 +57129,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': ['Dragonspiral Tower'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mienfoo',
             'type': [0],
@@ -57189,7 +57319,7 @@ module.exports = {
             'dungeon': 'Watchtower Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Golett',
             'type': [0],
@@ -57310,7 +57440,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pawniard',
             'type': [0],
@@ -57443,7 +57573,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rufflet',
             'type': [0],
@@ -57538,7 +57668,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Vullaby',
             'type': [0],
@@ -57700,7 +57830,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -57736,7 +57866,7 @@ module.exports = {
       'nativeRegion': 4,
       'locations': {
         '2': ['Victory Road Kalos'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Deino',
             'type': [0],
@@ -57744,7 +57874,7 @@ module.exports = {
             'level': 50,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -57778,7 +57908,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Zweilous',
             'type': [0],
@@ -57786,7 +57916,7 @@ module.exports = {
             'level': 64,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -57838,7 +57968,7 @@ module.exports = {
             },
           ],
         },
-        '6': ['Volcarona'],
+        '7': ['Volcarona'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1280,
@@ -57887,7 +58017,7 @@ module.exports = {
             'requirements': 'Relic Passage needs to be completed.',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Larvesta',
             'type': [0],
@@ -58294,7 +58424,7 @@ module.exports = {
       'attack': 280,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kyurem',
             'type': [1],
@@ -58328,7 +58458,7 @@ module.exports = {
       'attack': 280,
       'nativeRegion': 4,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kyurem',
             'type': [1],
@@ -58460,7 +58590,7 @@ module.exports = {
       'attack': 173,
       'nativeRegion': 4,
       'locations': {
-        '7': ['Anville Town'],
+        '8': ['Anville Town'],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -58524,8 +58654,8 @@ module.exports = {
       'attack': 55,
       'nativeRegion': 5,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -58557,7 +58687,7 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chespin',
             'type': [0],
@@ -58591,7 +58721,7 @@ module.exports = {
       'attack': 148,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Quilladin',
             'type': [0],
@@ -58630,8 +58760,8 @@ module.exports = {
       'attack': 46,
       'nativeRegion': 5,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -58663,7 +58793,7 @@ module.exports = {
       'attack': 84,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Fennekin',
             'type': [0],
@@ -58697,7 +58827,7 @@ module.exports = {
       'attack': 133,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Braixen',
             'type': [0],
@@ -58736,8 +58866,8 @@ module.exports = {
       'attack': 48,
       'nativeRegion': 5,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -58769,7 +58899,7 @@ module.exports = {
       'attack': 77,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Froakie',
             'type': [0],
@@ -58803,7 +58933,7 @@ module.exports = {
       'attack': 133,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Frogadier',
             'type': [0],
@@ -58973,7 +59103,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bunnelby',
             'type': [0],
@@ -59122,7 +59252,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Fletchling',
             'type': [0],
@@ -59176,7 +59306,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Fletchinder',
             'type': [0],
@@ -59254,7 +59384,7 @@ module.exports = {
       'attack': 22,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Scatterbug',
             'type': [0],
@@ -59288,7 +59418,7 @@ module.exports = {
       'attack': 85,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Spewpa',
             'type': [0],
@@ -59838,7 +59968,7 @@ module.exports = {
       'attack': 126,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Litleo',
             'type': [0],
@@ -59920,7 +60050,7 @@ module.exports = {
       'attack': 45,
       'nativeRegion': 5,
       'locations': {
-        '11': [
+        '12': [
           'Aspear',
           'Sitrus',
           'Pinap',
@@ -59966,7 +60096,7 @@ module.exports = {
       'attack': 45,
       'nativeRegion': 5,
       'locations': {
-        '11': [
+        '12': [
           'Oran',
           'Kelpsy',
           'Passho',
@@ -60103,7 +60233,7 @@ module.exports = {
             'dungeon': 'Poni Meadow',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Flabébé (Red)',
             'type': [0],
@@ -60142,7 +60272,7 @@ module.exports = {
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Flabébé (Yellow)',
             'type': [0],
@@ -60181,7 +60311,7 @@ module.exports = {
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Flabébé (Blue)',
             'type': [0],
@@ -60220,7 +60350,7 @@ module.exports = {
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Flabébé (Orange)',
             'type': [0],
@@ -60259,7 +60389,7 @@ module.exports = {
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Flabébé (White)',
             'type': [0],
@@ -60312,7 +60442,7 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Floette (Red)',
             'type': [1],
@@ -60343,7 +60473,7 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Floette (Yellow)',
             'type': [1],
@@ -60374,7 +60504,7 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Floette (Blue)',
             'type': [1],
@@ -60405,7 +60535,7 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Floette (Orange)',
             'type': [1],
@@ -60436,7 +60566,7 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Floette (White)',
             'type': [1],
@@ -60505,7 +60635,7 @@ module.exports = {
       'attack': 168,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Skiddo',
             'type': [0],
@@ -60665,7 +60795,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pancham',
             'type': [0],
@@ -60787,7 +60917,7 @@ module.exports = {
       'attack': 104,
       'nativeRegion': 5,
       'locations': {
-        '7': ['Lumiose City'],
+        '8': ['Lumiose City'],
       },
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -60811,7 +60941,7 @@ module.exports = {
       'attack': 104,
       'nativeRegion': 5,
       'locations': {
-        '7': ['Lumiose City'],
+        '8': ['Lumiose City'],
       },
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -60835,7 +60965,7 @@ module.exports = {
       'attack': 104,
       'nativeRegion': 5,
       'locations': {
-        '7': ['Lumiose City'],
+        '8': ['Lumiose City'],
       },
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -60859,7 +60989,7 @@ module.exports = {
       'attack': 104,
       'nativeRegion': 5,
       'locations': {
-        '7': ['Lumiose City'],
+        '8': ['Lumiose City'],
       },
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -60905,7 +61035,7 @@ module.exports = {
       'attack': 104,
       'nativeRegion': 5,
       'locations': {
-        '7': ['Lumiose City'],
+        '8': ['Lumiose City'],
       },
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -60929,7 +61059,7 @@ module.exports = {
       'attack': 104,
       'nativeRegion': 5,
       'locations': {
-        '7': ['Lumiose City'],
+        '8': ['Lumiose City'],
       },
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -61032,7 +61162,7 @@ module.exports = {
           ],
         },
         '2': ['Dusty Bowl'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Espurr',
             'type': [0],
@@ -61125,7 +61255,7 @@ module.exports = {
       'attack': 89,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Honedge',
             'type': [0],
@@ -61159,7 +61289,7 @@ module.exports = {
       'attack': 87,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Doublade',
             'type': [1],
@@ -61237,7 +61367,7 @@ module.exports = {
       'attack': 133,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Spritzee',
             'type': [1],
@@ -61315,7 +61445,7 @@ module.exports = {
       'attack': 124,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Swirlix',
             'type': [1],
@@ -61512,7 +61642,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Inkay',
             'type': [0],
@@ -61592,7 +61722,7 @@ module.exports = {
           ],
         },
         '2': ['Dusty Bowl'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Binacle',
             'type': [0],
@@ -61703,7 +61833,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Skrelp',
             'type': [0],
@@ -61808,7 +61938,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Clauncher',
             'type': [0],
@@ -61889,7 +62019,7 @@ module.exports = {
       'attack': 99,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Helioptile',
             'type': [1],
@@ -61938,7 +62068,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Jaw Fossil'],
+        '9': ['Jaw Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -61972,7 +62102,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Tyrunt',
             'type': [0],
@@ -62027,7 +62157,7 @@ module.exports = {
             },
           ],
         },
-        '8': ['Sail Fossil'],
+        '9': ['Sail Fossil'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -62079,7 +62209,7 @@ module.exports = {
           ],
         },
         '2': ['Iceberg Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Amaura',
             'type': [0],
@@ -62118,7 +62248,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Eevee',
             'type': [0],
@@ -62335,7 +62465,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -62381,7 +62511,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Goomy',
             'type': [0],
@@ -62412,7 +62542,7 @@ module.exports = {
       'attack': 182,
       'nativeRegion': 5,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sliggoo',
             'type': [
@@ -62587,7 +62717,7 @@ module.exports = {
           ],
         },
         '2': ['Rock Peak Ruins'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Phantump',
             'type': [1],
@@ -62677,7 +62807,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pumpkaboo',
             'type': [1],
@@ -62766,7 +62896,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bergmite',
             'type': [0],
@@ -62860,7 +62990,7 @@ module.exports = {
             'dungeon': 'Resolution Cave',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Noibat',
             'type': [0],
@@ -63091,8 +63221,8 @@ module.exports = {
       'attack': 59,
       'nativeRegion': 6,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -63127,7 +63257,7 @@ module.exports = {
       'attack': 101,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rowlet',
             'type': [0],
@@ -63161,7 +63291,7 @@ module.exports = {
       'attack': 154,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dartrix',
             'type': [0],
@@ -63200,8 +63330,8 @@ module.exports = {
       'attack': 52,
       'nativeRegion': 6,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -63233,7 +63363,7 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Litten',
             'type': [0],
@@ -63267,7 +63397,7 @@ module.exports = {
       'attack': 160,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Torracat',
             'type': [0],
@@ -63306,8 +63436,8 @@ module.exports = {
       'attack': 58,
       'nativeRegion': 6,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -63339,7 +63469,7 @@ module.exports = {
       'attack': 96,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Popplio',
             'type': [0],
@@ -63373,7 +63503,7 @@ module.exports = {
       'attack': 148,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Brionne',
             'type': [0],
@@ -63485,7 +63615,7 @@ module.exports = {
           ],
         },
         '2': ['Lush Jungle'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Pikipek',
             'type': [0],
@@ -63519,7 +63649,7 @@ module.exports = {
       'attack': 134,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Trumbeak',
             'type': [0],
@@ -63632,7 +63762,7 @@ module.exports = {
             'dungeon': 'Verdant Cavern',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Yungoos',
             'type': [0],
@@ -63792,7 +63922,7 @@ module.exports = {
           ],
         },
         '2': ['Hokulani Observatory'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Grubbin',
             'type': [0],
@@ -63851,7 +63981,7 @@ module.exports = {
             'dungeon': 'Hokulani Observatory',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Charjabug',
             'type': [
@@ -63930,7 +64060,7 @@ module.exports = {
       'attack': 56,
       'nativeRegion': 6,
       'locations': {
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -63957,7 +64087,7 @@ module.exports = {
       'attack': 134,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Crabrawler',
             'type': [
@@ -64000,7 +64130,7 @@ module.exports = {
             'dungeon': "Ula'ula Meadow",
           },
         ],
-        '11': [
+        '12': [
           'Cheri',
           'Leppa',
           'Razz',
@@ -64046,7 +64176,7 @@ module.exports = {
             'dungeon': 'Melemele Meadow',
           },
         ],
-        '11': [
+        '12': [
           'Aspear',
           'Sitrus',
           'Pinap',
@@ -64087,7 +64217,7 @@ module.exports = {
       'attack': 114,
       'nativeRegion': 6,
       'locations': {
-        '11': [
+        '12': [
           'Pecha',
           'Persim',
           'Nanab',
@@ -64128,7 +64258,7 @@ module.exports = {
             'dungeon': 'Poni Meadow',
           },
         ],
-        '11': [
+        '12': [
           'Chesto',
           'Bluk',
           'Wiki',
@@ -64194,7 +64324,7 @@ module.exports = {
           'Melemele Meadow',
           "Mina's Houseboat",
         ],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -64230,7 +64360,7 @@ module.exports = {
             'dungeon': "Mina's Houseboat",
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cutiefly',
             'type': [0],
@@ -64392,7 +64522,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '2': ['Vast Poni Canyon'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rockruff',
             'type': [
@@ -64429,7 +64559,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '2': ['Vast Poni Canyon'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rockruff',
             'type': [
@@ -64465,7 +64595,7 @@ module.exports = {
       'attack': 109,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rockruff',
             'type': [
@@ -64605,7 +64735,7 @@ module.exports = {
             'dungeon': 'Brooklet Hill',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wishiwashi (Solo)',
             'type': [0],
@@ -64770,7 +64900,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mareanie',
             'type': [0],
@@ -64940,7 +65070,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Mudbray',
             'type': [0],
@@ -65121,7 +65251,7 @@ module.exports = {
             'dungeon': 'Brooklet Hill',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dewpider',
             'type': [0],
@@ -65266,7 +65396,7 @@ module.exports = {
             'dungeon': 'Lush Jungle',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Fomantis',
             'type': [0],
@@ -65345,7 +65475,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -65372,7 +65502,7 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Morelull',
             'type': [0],
@@ -65456,7 +65586,7 @@ module.exports = {
             'dungeon': 'Rose Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Salandit',
             'type': [0],
@@ -65637,7 +65767,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Stufful',
             'type': [0],
@@ -65701,7 +65831,7 @@ module.exports = {
           ],
         },
         '2': ['Lush Jungle'],
-        '11': ['Always'],
+        '12': ['Always'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -65734,7 +65864,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '2': ['Lush Jungle'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Bounsweet',
             'type': [0],
@@ -65770,7 +65900,7 @@ module.exports = {
             'dungeon': 'Rose Tower',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Steenee',
             'type': [0],
@@ -66018,7 +66148,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -66056,7 +66186,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wimpod',
             'type': [0],
@@ -66152,7 +66282,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sandygast',
             'type': [0],
@@ -66236,7 +66366,7 @@ module.exports = {
       'attack': 163,
       'nativeRegion': 6,
       'locations': {
-        '7': ['Aether Paradise'],
+        '8': ['Aether Paradise'],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -66260,7 +66390,7 @@ module.exports = {
       'attack': 167,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Type: Null',
             'type': [1],
@@ -66592,7 +66722,7 @@ module.exports = {
       'attack': 118,
       'nativeRegion': 6,
       'locations': {
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -66835,7 +66965,7 @@ module.exports = {
       'attack': 131,
       'nativeRegion': 6,
       'locations': {
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -66927,7 +67057,7 @@ module.exports = {
           ],
         },
         '2': ['Vast Poni Canyon'],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -66967,7 +67097,7 @@ module.exports = {
       'nativeRegion': 6,
       'locations': {
         '2': ['Vast Poni Canyon'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Jangmo-o',
             'type': [0],
@@ -66975,7 +67105,7 @@ module.exports = {
             'level': 35,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -67011,7 +67141,7 @@ module.exports = {
             'dungeon': 'Vast Poni Canyon',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Hakamo-o',
             'type': [0],
@@ -67019,7 +67149,7 @@ module.exports = {
             'level': 45,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -67249,7 +67379,7 @@ module.exports = {
       'attack': 42,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cosmog',
             'type': [0],
@@ -67289,7 +67419,7 @@ module.exports = {
             'requirements': 'Solgaleo needs to be caught.',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cosmoem',
             'type': [0],
@@ -67329,7 +67459,7 @@ module.exports = {
             'requirements': 'Lunala needs to be caught.',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cosmoem',
             'type': [0],
@@ -67738,7 +67868,7 @@ module.exports = {
       'attack': 93,
       'nativeRegion': 6,
       'locations': {
-        '7': ['Altar of the Sunne and Moone'],
+        '8': ['Altar of the Sunne and Moone'],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -67765,7 +67895,7 @@ module.exports = {
       'attack': 134,
       'nativeRegion': 6,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Poipole',
             'type': [0],
@@ -67905,7 +68035,7 @@ module.exports = {
       },
       'attack': 212,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Meltan',
             'type': [1],
@@ -67944,8 +68074,8 @@ module.exports = {
       'attack': 48,
       'nativeRegion': 7,
       'locations': {
-        '5': ['Grass'],
-        '11': ['Rindo'],
+        '6': ['Grass'],
+        '12': ['Rindo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -67977,7 +68107,7 @@ module.exports = {
       'attack': 88,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Grookey',
             'type': [0],
@@ -68008,7 +68138,7 @@ module.exports = {
       'attack': 144,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Thwackey',
             'type': [0],
@@ -68047,8 +68177,8 @@ module.exports = {
       'attack': 48,
       'nativeRegion': 7,
       'locations': {
-        '5': ['Fire'],
-        '11': ['Occa'],
+        '6': ['Fire'],
+        '12': ['Occa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -68080,7 +68210,7 @@ module.exports = {
       'attack': 84,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Scorbunny',
             'type': [0],
@@ -68111,7 +68241,7 @@ module.exports = {
       'attack': 130,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Raboot',
             'type': [0],
@@ -68150,8 +68280,8 @@ module.exports = {
       'attack': 47,
       'nativeRegion': 7,
       'locations': {
-        '5': ['Water'],
-        '11': ['Passho'],
+        '6': ['Water'],
+        '12': ['Passho'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -68183,7 +68313,7 @@ module.exports = {
       'attack': 87,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sobble',
             'type': [0],
@@ -68214,7 +68344,7 @@ module.exports = {
       'attack': 133,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Drizzile',
             'type': [0],
@@ -68393,7 +68523,7 @@ module.exports = {
             'dungeon': 'Dyna Tree Hill',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Skwovet',
             'type': [0],
@@ -68495,7 +68625,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rookidee',
             'type': [0],
@@ -68552,7 +68682,7 @@ module.exports = {
             'dungeon': 'Watchtower Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Corvisquire',
             'type': [0],
@@ -68671,7 +68801,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Blipbug',
             'type': [0],
@@ -68713,7 +68843,7 @@ module.exports = {
           ],
         },
         '2': ['Inner Slumbering Weald'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dottler',
             'type': [0],
@@ -68805,7 +68935,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Nickit',
             'type': [0],
@@ -68862,7 +68992,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Grass'],
+        '6': ['Grass'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -68897,7 +69027,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Gossifleur',
             'type': [0],
@@ -69060,7 +69190,7 @@ module.exports = {
           'Dyna Tree Hill',
           'Crown Shrine',
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Wooloo',
             'type': [0],
@@ -69128,7 +69258,7 @@ module.exports = {
           ],
         },
         '2': ['Galar Mine No. 2'],
-        '5': ['Water'],
+        '6': ['Water'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -69244,7 +69374,7 @@ module.exports = {
             'dungeon': 'Galar Mine No. 2',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Chewtle',
             'type': [0],
@@ -69332,7 +69462,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Yamper',
             'type': [0],
@@ -69429,7 +69559,7 @@ module.exports = {
             'dungeon': 'Galar Mine',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Rolycoly',
             'type': [0],
@@ -69487,7 +69617,7 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Carkol',
             'type': [0],
@@ -69721,7 +69851,7 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Silicobra',
             'type': [0],
@@ -69938,7 +70068,7 @@ module.exports = {
             'dungeon': 'Lake of Outrage',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Arrokuda',
             'type': [0],
@@ -69986,8 +70116,8 @@ module.exports = {
       'attack': 33,
       'nativeRegion': 7,
       'locations': {
-        '5': ['Electric'],
-        '7': ['Hulbury'],
+        '6': ['Electric'],
+        '8': ['Hulbury'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1000,
@@ -70014,7 +70144,7 @@ module.exports = {
       'attack': 140,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Toxel',
             'type': [0],
@@ -70048,7 +70178,7 @@ module.exports = {
       'attack': 140,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Toxel',
             'type': [0],
@@ -70105,7 +70235,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Fire'],
+        '6': ['Fire'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -70144,7 +70274,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Sizzlipede',
             'type': [0],
@@ -70277,7 +70407,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Clobbopus',
             'type': [0],
@@ -70515,7 +70645,7 @@ module.exports = {
             'dungeon': 'Glimwood Tangle',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Hatenna',
             'type': [0],
@@ -70574,7 +70704,7 @@ module.exports = {
             'dungeon': 'Lake of Outrage',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Hattrem',
             'type': [0],
@@ -70686,7 +70816,7 @@ module.exports = {
             'dungeon': 'Glimwood Tangle',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Impidimp',
             'type': [0],
@@ -70737,7 +70867,7 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Morgrem',
             'type': [0],
@@ -70791,7 +70921,7 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Linoone',
             'type': [0],
@@ -70837,7 +70967,7 @@ module.exports = {
             'dungeon': 'Lake of Outrage',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Meowth',
             'type': [0],
@@ -70868,7 +70998,7 @@ module.exports = {
       'attack': 141,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Corsola',
             'type': [0],
@@ -70899,7 +71029,7 @@ module.exports = {
       'attack': 128,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': "Galarian Farfetch'd",
             'type': [0],
@@ -70933,7 +71063,7 @@ module.exports = {
       'attack': 146,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Mr. Mime',
             'type': [0],
@@ -70967,7 +71097,7 @@ module.exports = {
       'attack': 102,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Galarian Yamask',
             'type': [
@@ -72418,7 +72548,7 @@ module.exports = {
       'attack': 110,
       'nativeRegion': 7,
       'locations': {
-        '5': ['Fighting'],
+        '6': ['Fighting'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -72456,7 +72586,7 @@ module.exports = {
             },
           ],
         },
-        '5': ['Electric'],
+        '6': ['Electric'],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -72552,7 +72682,7 @@ module.exports = {
             },
           ],
         },
-        '4': [
+        '5': [
           {
             'basePokemon': 'Snom',
             'type': [
@@ -72866,7 +72996,7 @@ module.exports = {
           ],
         },
         '2': ['Lake of Outrage'],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Cufant',
             'type': [0],
@@ -73044,7 +73174,7 @@ module.exports = {
       'attack': 30,
       'nativeRegion': 7,
       'locations': {
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -73092,7 +73222,7 @@ module.exports = {
             'dungeon': 'Lake of Outrage',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Dreepy',
             'type': [0],
@@ -73100,7 +73230,7 @@ module.exports = {
             'level': 50,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 2400,
@@ -73189,7 +73319,7 @@ module.exports = {
             'dungeon': 'Split-Decision Ruins',
           },
         ],
-        '4': [
+        '5': [
           {
             'basePokemon': 'Drakloak',
             'type': [0],
@@ -73197,7 +73327,7 @@ module.exports = {
             'level': 60,
           },
         ],
-        '5': ['Dragon'],
+        '6': ['Dragon'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -73330,7 +73460,7 @@ module.exports = {
       'attack': 237,
       'nativeRegion': 7,
       'locations': {
-        '7': ['Hammerlocke'],
+        '8': ['Hammerlocke'],
       },
       'catchRatePercent': 63,
       'eggSteps': 4800,
@@ -73413,7 +73543,7 @@ module.exports = {
       'attack': 149,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kubfu',
             'type': [
@@ -73451,7 +73581,7 @@ module.exports = {
       'attack': 149,
       'nativeRegion': 7,
       'locations': {
-        '4': [
+        '5': [
           {
             'basePokemon': 'Kubfu',
             'type': [

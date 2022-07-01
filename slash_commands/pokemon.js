@@ -122,6 +122,11 @@ module.exports = {
         const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addField('❯ Dungeon Boss', description);
       }
+      // Dungeon Chest
+      if (pokemon.locations[PokemonLocationType.DungeonChest]) {
+        const description = pokemon.locations[PokemonLocationType.DungeonChest].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
+        embed.addField('❯ Dungeon Chest', description);
+      }
       // Evolutions
       if (pokemon.locations[PokemonLocationType.Evolution]) {
         const descriptions = [];
