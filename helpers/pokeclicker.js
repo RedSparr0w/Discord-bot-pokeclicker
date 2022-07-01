@@ -42844,7 +42844,9 @@ module.exports = {
       },
       'attack': 144,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '10': [100],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -42866,7 +42868,9 @@ module.exports = {
       },
       'attack': 122,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '10': [151],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -42888,7 +42892,9 @@ module.exports = {
       },
       'attack': 116,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '10': [251],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -42910,7 +42916,9 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '10': [386],
+      },
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
