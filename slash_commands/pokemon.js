@@ -102,6 +102,9 @@ module.exports = {
             })),
           ].join('\n');
         });
+        if (description.length >= 1024) {
+          description = `${description.substring(0, 1010).replace(/\n.+$/, '')}\n... and more`;
+        }
         embed.addField('❯ Routes', description);
       }
       // Roaming
