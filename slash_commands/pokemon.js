@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
-const { website } = require('../config.js');
+const { website, serverIcons } = require('../config.js');
 const {
   pokemonList,
   LevelType,
@@ -165,13 +165,18 @@ module.exports = {
       }
       // Battle Frontier
       if (pokemon.locations[PokemonLocationType.BattleFrontier]) {
-        const description = pokemon.locations[PokemonLocationType.BattleFrontier].join('\n');
+        const description = pokemon.locations[PokemonLocationType.BattleFrontier].map(stage => `Stage ${stage}`).join('\n');
         embed.addField('❯ Battle Frontier', description);
       }
       // Wandering
       if (pokemon.locations[PokemonLocationType.Wandering]) {
         const description = pokemon.locations[PokemonLocationType.Wandering].join('\n');
         embed.addField('❯ Farm Wandering', description);
+      }
+      // Discord
+      if (pokemon.locations[PokemonLocationType.Discord]) {
+        const description = pokemon.locations[PokemonLocationType.Discord].map(price => `${serverIcons.money} ${price.toLocaleString()}`).join('\n');
+        embed.addField('❯ Discord Shop', description);
       }
     } else {
       embed.addField('\u200b', '```diff\n-Currently Unobtainable\n```');
