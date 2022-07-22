@@ -634,10 +634,11 @@ const gymLeaderLocation = () => {
   };
 };
 
+const regionRegex = new RegExp(`^(${Object.keys(GameConstants.Region).filter(v => isNaN(+v)).join('|')})_`, 'i');
 const gymLeaderBadge = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^\\W*${badge.replace(/\W/g, '.?')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${badge.replace(regionRegex, '').replace(/\W|_/g, '.?')}\\b`, 'i');
   
   const amount = getAmount();
 
