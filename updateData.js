@@ -123,7 +123,7 @@ const { website, wikiWebsite } = require('./config.js');
 
     console.log('webpage loaded!\nupdating data..');
 
-    const wikiLinks = [];
+    let wikiLinks = [];
     wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
     let pageNumber = 1;
     let nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
@@ -136,7 +136,12 @@ const { website, wikiWebsite } = require('./config.js');
       nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
     }
     // map to titles only, filter out duplicates, map to { title, link }
-    const wikiData = { wikiLinks: [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] })) };
+    wikiLinks = [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] }));
+    // Filter out other language links
+    wikiLinks = wikiLinks.filter(w => !/\/\w{2,3}$/.test(w.title));
+
+    // set data
+    const wikiData = { wikiLinks };
 
     const wikiResults = await cli.lintText(`module.exports = ${JSON.stringify(wikiData, null, 2)}`);
     const wikiResult = wikiResults[0];
