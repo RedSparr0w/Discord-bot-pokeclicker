@@ -75,6 +75,7 @@ const { website, wikiWebsite } = require('./config.js');
       LevelType,
       levelRequirements,
       EvolutionType,
+      WeatherType,
       pokemonList: pokemonList.map(p => {
         p.locations = PokemonHelper.getPokemonLocations(p.name);
         p.catchRatePercent = PokemonFactory.catchRateHelper(p.catchRate, true);
@@ -112,7 +113,6 @@ const { website, wikiWebsite } = require('./config.js');
 
   console.log('PokéClicker Game data updated!');
   console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
-
 
   // Update wiki data:
   if (wikiWebsite) {

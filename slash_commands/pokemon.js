@@ -2,11 +2,13 @@ const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { website, serverIcons } = require('../config.js');
 const {
+  upperCaseFirstLetter,
   pokemonList,
   LevelType,
   PokemonType,
   EvolutionType,
   GameConstants,
+  WeatherType,
   PokemonLocationType,
   pokemonTypeIcons,
   gameVersion,
@@ -135,8 +137,11 @@ module.exports = {
           description += evolution.type.includes(EvolutionType.Level) ? `\n<:RareCandy:733974449774133299> Above level ${evolution.level}` : '';
           description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:740790300100001863> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
           description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
-          description += evolution.type.includes(EvolutionType.Location) ? `\n<:dungeonToken:737206932128923699> While in ${evolution.dungeon}` : '';
+          description += evolution.type.includes(EvolutionType.Dungeon) ? `\n<:dungeonToken:737206932128923699> While in ${evolution.dungeon}` : '';
+          description += evolution.type.includes(EvolutionType.Region) ? `\n⛴️ While in ${evolution.regions.map(r => upperCaseFirstLetter(GameConstants.Region[r])).join(' or ')}` : '';
+          description += evolution.type.includes(EvolutionType.Gym) ? `\n<:fighting_icon:774090473966403585> While fighting the ${evolution.town} Gym` : '';
           description += evolution.type.includes(EvolutionType.Environment) ? `\n🌳 While in a ${evolution.environment} environment` : '';
+          description += evolution.type.includes(EvolutionType.Weather) ? `\n🌥️ While in ${evolution.weather.map(w => WeatherType[w]).join(' or ')} weather` : '';
           description += evolution.type.includes(EvolutionType.Other) ? '\n🍍 With unknown requirement' : '';
 
           descriptions.push(description);

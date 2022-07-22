@@ -813,8 +813,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mount_Lanakila',
     },
     {
-      'title': 'Mt. Chimney',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Mt._Chimney',
+      'title': 'Mt. Chimney Crater',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mt._Chimney_Crater',
     },
     {
       'title': 'Mt. Coronet North',

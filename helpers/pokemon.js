@@ -76,19 +76,12 @@ SeededRand.state = 12345;
 SeededRand.MOD = 233280;
 SeededRand.OFFSET = 49297;
 SeededRand.MULTIPLIER = 9301;
-
 class DailyDeal {
   constructor() {
     this.item1 = DailyDeal.randomItem();
     this.amount1 = DailyDeal.randomAmount();
     this.item2 = DailyDeal.randomItem();
     this.amount2 = DailyDeal.randomAmount();
-  }
-  static randomItem() {
-    return UndergroundItem.list[Math.floor(UndergroundItem.list.length * SeededRand.next())];
-  }
-  static randomAmount() {
-    return Math.floor(3 * SeededRand.next()) + 1;
   }
   static generateDeals(maxDeals, date) {
     SeededRand.seedWithDate(date);
@@ -105,13 +98,19 @@ class DailyDeal {
     }
     DailyDeal.list.push(...temp);
   }
+  static randomItem() {
+    return SeededRand.fromArray(UndergroundItem.list);
+  }
+  static randomAmount() {
+    return SeededRand.intBetween(1, 3);
+  }
   isValid(dealList) {
     const item1Name = this.item1.name;
     const item2Name = this.item2.name;
     if (item1Name == item2Name) {
       return false;
     }
-    if (this.item1.isStone) {
+    if (this.item1.isStone || this.item1.isShard) {
       return false;
     }
     if (DailyDeal.sameDealExists(item1Name, item2Name, dealList)) {
@@ -145,8 +144,540 @@ class DailyDeal {
 }
 DailyDeal.list = [];
 
-// Import: copy('const UndergroundItem = ' + JSON.stringify({list: UndergroundItem.list.map(i => ({name: i.name, id: i.id, value: i.value, valueType: i.valueType, isStone: i.isStone()}))}) + ';\n')
-const UndergroundItem = {'list':[{'name':'Rare Bone','id':1,'value':3,'valueType':'Diamond','isStone':false},{'name':'Star Piece','id':2,'value':5,'valueType':'Diamond','isStone':false},{'name':'Revive','id':3,'value':2,'valueType':'Diamond','isStone':false},{'name':'Max Revive','id':4,'value':4,'valueType':'Diamond','isStone':false},{'name':'Iron Ball','id':5,'value':2,'valueType':'Diamond','isStone':false},{'name':'Heart Scale','id':6,'value':10,'valueType':'Diamond','isStone':false},{'name':'Light Clay','id':7,'value':2,'valueType':'Diamond','isStone':false},{'name':'Odd Keystone','id':8,'value':6,'valueType':'Diamond','isStone':false},{'name':'Hard Stone','id':9,'value':4,'valueType':'Diamond','isStone':false},{'name':'Oval Stone','id':10,'value':3,'valueType':'Diamond','isStone':false},{'name':'Everstone','id':11,'value':3,'valueType':'Diamond','isStone':false},{'name':'Smooth Rock','id':12,'value':2,'valueType':'Diamond','isStone':false},{'name':'Heat Rock','id':13,'value':2,'valueType':'Diamond','isStone':false},{'name':'Icy Rock','id':14,'value':2,'valueType':'Diamond','isStone':false},{'name':'Damp Rock','id':15,'value':2,'valueType':'Diamond','isStone':false},{'name':'Draco Plate','id':100,'value':100,'valueType':'dragon','isStone':false},{'name':'Dread Plate','id':101,'value':100,'valueType':'dark','isStone':false},{'name':'Earth Plate','id':102,'value':100,'valueType':'ground','isStone':false},{'name':'Fist Plate','id':103,'value':100,'valueType':'fighting','isStone':false},{'name':'Flame Plate','id':104,'value':100,'valueType':'fire','isStone':false},{'name':'Icicle Plate','id':105,'value':100,'valueType':'ice','isStone':false},{'name':'Insect Plate','id':106,'value':100,'valueType':'bug','isStone':false},{'name':'Iron Plate','id':107,'value':100,'valueType':'steel','isStone':false},{'name':'Meadow Plate','id':108,'value':100,'valueType':'grass','isStone':false},{'name':'Mind Plate','id':109,'value':100,'valueType':'psychic','isStone':false},{'name':'Sky Plate','id':110,'value':100,'valueType':'flying','isStone':false},{'name':'Splash Plate','id':111,'value':100,'valueType':'water','isStone':false},{'name':'Spooky Plate','id':112,'value':100,'valueType':'ghost','isStone':false},{'name':'Stone Plate','id':113,'value':100,'valueType':'rock','isStone':false},{'name':'Toxic Plate','id':114,'value':100,'valueType':'poison','isStone':false},{'name':'Zap Plate','id':115,'value':100,'valueType':'electric','isStone':false},{'name':'Pixie Plate','id':116,'value':100,'valueType':'fairy','isStone':false},{'name':'Helix Fossil','id':200,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Dome Fossil','id':201,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Old Amber','id':202,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Root Fossil','id':203,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Claw Fossil','id':204,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Armor Fossil','id':205,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Skull Fossil','id':206,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Cover Fossil','id':207,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Plume Fossil','id':208,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Jaw Fossil','id':209,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Sail Fossil','id':210,'value':0,'valueType':'Mine Egg','isStone':false},{'name':'Fire Stone','id':300,'value':1,'valueType':'Fire_stone','isStone':true},{'name':'Water Stone','id':301,'value':1,'valueType':'Water_stone','isStone':true},{'name':'Thunder Stone','id':302,'value':1,'valueType':'Thunder_stone','isStone':true},{'name':'Leaf Stone','id':303,'value':1,'valueType':'Leaf_stone','isStone':true},{'name':'Moon Stone','id':304,'value':1,'valueType':'Moon_stone','isStone':true},{'name':'Sun Stone','id':305,'value':1,'valueType':'Sun_stone','isStone':true}]};
+// copy('const UndergroundItem = ' + JSON.stringify({list: UndergroundItem.list.map(i => ({name: i.name, id: i.id, value: i.value, valueType: i.valueType, isStone: i.isStone()}))}, null, 2) + ';\n')
+const UndergroundItem = {
+  'list': [
+    {
+      'name': 'Rare Bone',
+      'id': 1,
+      'value': 3,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Star Piece',
+      'id': 2,
+      'value': 5,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Revive',
+      'id': 3,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Max Revive',
+      'id': 4,
+      'value': 4,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Iron Ball',
+      'id': 5,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Heart Scale',
+      'id': 6,
+      'value': 10,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Light Clay',
+      'id': 7,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Odd Keystone',
+      'id': 8,
+      'value': 6,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Hard Stone',
+      'id': 9,
+      'value': 4,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Oval Stone',
+      'id': 10,
+      'value': 3,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Everstone',
+      'id': 11,
+      'value': 3,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Smooth Rock',
+      'id': 12,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Heat Rock',
+      'id': 13,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Icy Rock',
+      'id': 14,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Damp Rock',
+      'id': 15,
+      'value': 2,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Draco Plate',
+      'id': 100,
+      'value': 100,
+      'valueType': 'dragon',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Dread Plate',
+      'id': 101,
+      'value': 100,
+      'valueType': 'dark',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Earth Plate',
+      'id': 102,
+      'value': 100,
+      'valueType': 'ground',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Fist Plate',
+      'id': 103,
+      'value': 100,
+      'valueType': 'fighting',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Flame Plate',
+      'id': 104,
+      'value': 100,
+      'valueType': 'fire',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Icicle Plate',
+      'id': 105,
+      'value': 100,
+      'valueType': 'ice',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Insect Plate',
+      'id': 106,
+      'value': 100,
+      'valueType': 'bug',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Iron Plate',
+      'id': 107,
+      'value': 100,
+      'valueType': 'steel',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Meadow Plate',
+      'id': 108,
+      'value': 100,
+      'valueType': 'grass',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Mind Plate',
+      'id': 109,
+      'value': 100,
+      'valueType': 'psychic',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Sky Plate',
+      'id': 110,
+      'value': 100,
+      'valueType': 'flying',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Splash Plate',
+      'id': 111,
+      'value': 100,
+      'valueType': 'water',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Spooky Plate',
+      'id': 112,
+      'value': 100,
+      'valueType': 'ghost',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Stone Plate',
+      'id': 113,
+      'value': 100,
+      'valueType': 'rock',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Toxic Plate',
+      'id': 114,
+      'value': 100,
+      'valueType': 'poison',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Zap Plate',
+      'id': 115,
+      'value': 100,
+      'valueType': 'electric',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Pixie Plate',
+      'id': 116,
+      'value': 100,
+      'valueType': 'fairy',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Helix Fossil',
+      'id': 200,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Dome Fossil',
+      'id': 201,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Old Amber',
+      'id': 202,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Root Fossil',
+      'id': 203,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Claw Fossil',
+      'id': 204,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Armor Fossil',
+      'id': 205,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Skull Fossil',
+      'id': 206,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Cover Fossil',
+      'id': 207,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Plume Fossil',
+      'id': 208,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Jaw Fossil',
+      'id': 209,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Sail Fossil',
+      'id': 210,
+      'value': 0,
+      'valueType': 'Mine Egg',
+      'isStone': false,
+      'isShard': false,
+    },
+    {
+      'name': 'Fire Stone',
+      'id': 300,
+      'value': 1,
+      'valueType': 'Fire_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Water Stone',
+      'id': 301,
+      'value': 1,
+      'valueType': 'Water_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Thunder Stone',
+      'id': 302,
+      'value': 1,
+      'valueType': 'Thunder_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Leaf Stone',
+      'id': 303,
+      'value': 1,
+      'valueType': 'Leaf_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Moon Stone',
+      'id': 304,
+      'value': 1,
+      'valueType': 'Moon_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Sun Stone',
+      'id': 305,
+      'value': 1,
+      'valueType': 'Sun_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Shiny Stone',
+      'id': 306,
+      'value': 1,
+      'valueType': 'Shiny_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Dusk Stone',
+      'id': 307,
+      'value': 1,
+      'valueType': 'Dusk_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Dawn Stone',
+      'id': 308,
+      'value': 1,
+      'valueType': 'Dawn_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Ice Stone',
+      'id': 309,
+      'value': 1,
+      'valueType': 'Ice_stone',
+      'isStone': true,
+      'isShard': false,
+    },
+    {
+      'name': 'Red Shard',
+      'id': 400,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Yellow Shard',
+      'id': 401,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Green Shard',
+      'id': 402,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Blue Shard',
+      'id': 403,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Grey Shard',
+      'id': 404,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Purple Shard',
+      'id': 405,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Ochre Shard',
+      'id': 406,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Black Shard',
+      'id': 407,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Crimson Shard',
+      'id': 408,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Lime Shard',
+      'id': 409,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'White Shard',
+      'id': 410,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Pink Shard',
+      'id': 411,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+    {
+      'name': 'Cyan Shard',
+      'id': 412,
+      'value': 0,
+      'valueType': 'Diamond',
+      'isStone': false,
+      'isShard': true,
+    },
+  ],
+};
+
 
 module.exports = {
   pokemonTypeIcons,
