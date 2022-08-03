@@ -65,12 +65,20 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Battle_Points',
     },
     {
+      'title': 'Beastball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Beastball',
+    },
+    {
       'title': 'Belue',
       'link': 'https://pokeclicker.miraheze.org/wiki/Belue',
     },
     {
       'title': 'Berries',
       'link': 'https://pokeclicker.miraheze.org/wiki/Berries',
+    },
+    {
+      'title': 'Berry Forest',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Berry_Forest',
     },
     {
       'title': 'Berry Master',
@@ -85,12 +93,20 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Black_Flute',
     },
     {
+      'title': 'Black Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Shard',
+    },
+    {
       'title': 'Blaze Cassette',
       'link': 'https://pokeclicker.miraheze.org/wiki/Blaze_Cassette',
     },
     {
       'title': 'Blue Flute',
       'link': 'https://pokeclicker.miraheze.org/wiki/Blue_Flute',
+    },
+    {
+      'title': 'Blue Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Blue_Shard',
     },
     {
       'title': 'Bluk',
@@ -189,8 +205,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Cover_Fossil',
     },
     {
+      'title': 'Crimson Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Crimson_Shard',
+    },
+    {
       'title': 'Custap',
       'link': 'https://pokeclicker.miraheze.org/wiki/Custap',
+    },
+    {
+      'title': 'Cyan Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Cyan_Shard',
     },
     {
       'title': 'DNA Splicers',
@@ -489,8 +513,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Greatball',
     },
     {
+      'title': 'Green Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Green_Shard',
+    },
+    {
       'title': 'Grepa',
       'link': 'https://pokeclicker.miraheze.org/wiki/Grepa',
+    },
+    {
+      'title': 'Grey Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Grey_Shard',
     },
     {
       'title': 'Gyms',
@@ -685,6 +717,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Light_Clay',
     },
     {
+      'title': 'Lime Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lime_Shard',
+    },
+    {
+      'title': 'Linking Cord',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Linking_Cord',
+    },
+    {
       'title': 'Lost Hotel',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lost_Hotel',
     },
@@ -825,6 +865,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mt._Coronet_South',
     },
     {
+      'title': 'Mt. Ember Summit',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mt._Ember_Summit',
+    },
+    {
       'title': 'Mt. Moon',
       'link': 'https://pokeclicker.miraheze.org/wiki/Mt._Moon',
     },
@@ -879,6 +923,10 @@ module.exports = {
     {
       'title': 'Occa',
       'link': 'https://pokeclicker.miraheze.org/wiki/Occa',
+    },
+    {
+      'title': 'Ochre Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ochre_Shard',
     },
     {
       'title': 'Odd Keystone',
@@ -951,6 +999,10 @@ module.exports = {
     {
       'title': 'Pinap',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pinap',
+    },
+    {
+      'title': 'Pink Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Shard',
     },
     {
       'title': 'Pinwheel Forest',
@@ -1069,6 +1121,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Protein',
     },
     {
+      'title': 'Purple Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Purple_Shard',
+    },
+    {
       'title': 'Qualot',
       'link': 'https://pokeclicker.miraheze.org/wiki/Qualot',
     },
@@ -1101,10 +1157,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Rare_Hold_Items',
     },
     {
-      'title': 'Ravaged Path',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Ravaged_Path',
-    },
-    {
       'title': 'Rawst',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rawst',
     },
@@ -1127,6 +1179,10 @@ module.exports = {
     {
       'title': 'Red Flute',
       'link': 'https://pokeclicker.miraheze.org/wiki/Red_Flute',
+    },
+    {
+      'title': 'Red Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Red_Shard',
     },
     {
       'title': 'Reflection Cave',
@@ -1271,6 +1327,14 @@ module.exports = {
     {
       'title': 'Sendoff Spring',
       'link': 'https://pokeclicker.miraheze.org/wiki/Sendoff_Spring',
+    },
+    {
+      'title': 'Shard Trader',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Shard_Trader',
+    },
+    {
+      'title': 'Shards',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Shards',
     },
     {
       'title': 'Shiny Chance',
@@ -1501,12 +1565,12 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Toxic_Plate',
     },
     {
-      'title': 'Trade Stone',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Trade_Stone',
-    },
-    {
       'title': "Trainers' School",
       'link': 'https://pokeclicker.miraheze.org/wiki/Trainers%27_School',
+    },
+    {
+      'title': 'Translation Glossary',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Translation_Glossary',
     },
     {
       'title': 'Treasure Scanner',
@@ -1645,6 +1709,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/White_Flute',
     },
     {
+      'title': 'White Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_Shard',
+    },
+    {
       'title': 'Wiki',
       'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
     },
@@ -1663,6 +1731,10 @@ module.exports = {
     {
       'title': 'Yellow Flute',
       'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Flute',
+    },
+    {
+      'title': 'Yellow Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Shard',
     },
     {
       'title': 'Zap Plate',
