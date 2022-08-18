@@ -25,7 +25,7 @@ module.exports = [
   },
   // soon™
   {
-    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|galar|hisui)\b|\b(released?|version|updated?|galar|hisui)\b.+\b(wh?ens?)\b)/i,
+    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|galar|hisui|paldea)\b|\b(released?|version|updated?|galar|hisui|paldea)\b.+\b(wh?ens?)\b)/i,
     execute: (message, client) => {
       message.channel.send('soon™');
     },
