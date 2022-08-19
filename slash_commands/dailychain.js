@@ -4,6 +4,7 @@ const {
   UndergroundItem,
   dateToString,
   gameVersion,
+  UndergroundItemValueType,
 } = require('../helpers.js');
 
 module.exports = {
@@ -80,8 +81,8 @@ module.exports = {
     }
 
     const calculateProfit = (deal) => {
-      if (deal.item1.value >= 100 || deal.item1.value <= 1) deal.item1.value = 0;
-      if (deal.item2.value >= 100 || deal.item2.value <= 1) deal.item2.value = 0;
+      if (deal.item1.valueType != UndergroundItemValueType.Diamond) deal.item1.value = 0;
+      if (deal.item2.valueType != UndergroundItemValueType.Diamond) deal.item2.value = 0;
       if (deal.item1.value || deal.item2.value) {
       // An item is worth diamonds
         const profit = (deal.item2.value * deal.amount2) - (deal.item1.value * deal.amount1);

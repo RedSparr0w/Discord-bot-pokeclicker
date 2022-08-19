@@ -82,6 +82,7 @@ const { website, wikiWebsite } = require('./config.js');
         p.eggSteps = App.game.breeding.getSteps(p.eggCycles);
         return p;
       }),
+      UndergroundItemValueType,
       GameConstants,
       BadgeEnums,
       GymList: gyms,
