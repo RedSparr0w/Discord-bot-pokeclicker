@@ -1549,6 +1549,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/To-Do_list',
     },
     {
+      'title': 'Tohjo Falls',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tohjo_Falls',
+    },
+    {
       'title': 'Token Collector',
       'link': 'https://pokeclicker.miraheze.org/wiki/Token_Collector',
     },
@@ -1715,30 +1719,6 @@ module.exports = {
     {
       'title': 'Wiki',
       'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
-    },
-    {
-      'title': 'XAttack',
-      'link': 'https://pokeclicker.miraheze.org/wiki/XAttack',
-    },
-    {
-      'title': 'XClick',
-      'link': 'https://pokeclicker.miraheze.org/wiki/XClick',
-    },
-    {
-      'title': 'Yache',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Yache',
-    },
-    {
-      'title': 'Yellow Flute',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Flute',
-    },
-    {
-      'title': 'Yellow Shard',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Shard',
-    },
-    {
-      'title': 'Zap Plate',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Zap_Plate',
     },
   ],
 };
