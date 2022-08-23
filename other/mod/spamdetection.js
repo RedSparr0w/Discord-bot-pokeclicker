@@ -7,7 +7,8 @@ const { MessageEmbed } = require('discord.js');
 let messageLog = [];
 
 const check = (message) => {
-  if (message.content.startsWith('/')) {
+  // If message is empty or a command, ignore it
+  if (message.content.startsWith('/') || !message.content) {
     return;
   }
 
@@ -75,6 +76,8 @@ const log = (message, maxLog = 500) => {
 const isSpam = (message, amount = 4, interval = 3 * SECOND) => {
   // If disabled always return false
   if (!spamDetection?.spam?.amount) return false;
+  // If an empty message ignore it
+  if (!message.content) return false;
 
   // Only get messages from the same author, within the interval given
   const filter = log => log.authorID == message.author.id && message.createdTimestamp - log.createdTimestamp < interval;
@@ -93,6 +96,8 @@ const isSpam = (message, amount = 4, interval = 3 * SECOND) => {
 const isDupe = (message, amount = 3, interval = 30 * SECOND) => {
   // If disabled always return false
   if (!spamDetection?.dupe?.amount) return false;
+  // If an empty message ignore it
+  if (!message.content) return false;
 
   // Only get messages from the same author, within the interval given, with the same content
   const filter = log => log.authorID == message.author.id && message.createdTimestamp - log.createdTimestamp < interval && log.content == message.content;
