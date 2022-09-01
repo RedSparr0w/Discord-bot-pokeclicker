@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.9.12',
+  'gameVersion': '0.9.13',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -1114,6 +1114,512 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
+      'routeName': 'Five Isle Meadow',
+      'region': 0,
+      'number': 30,
+      'pokemon': {
+        'land': [
+          'Sentret',
+          'Pidgey',
+          'Pidgeotto',
+          'Hoppip',
+          'Meowth',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'cachedQuest': {
+            'state': 0,
+            'name': "Celio's Errand",
+            'quest': 0,
+          },
+        },
+      ],
+      'orderNumber': 30,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Memorial Pillar',
+      'region': 0,
+      'number': 31,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Hoppip',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 30,
+        },
+      ],
+      'orderNumber': 31,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Water Labyrinth',
+      'region': 0,
+      'number': 32,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Hoppip',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'cachedQuest': {
+            'state': 0,
+            'name': "Celio's Errand",
+            'quest': 0,
+          },
+        },
+      ],
+      'orderNumber': 32,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Resort Gorgeous',
+      'region': 0,
+      'number': 33,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Hoppip',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 32,
+        },
+      ],
+      'orderNumber': 33,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Water Path',
+      'region': 0,
+      'number': 34,
+      'pokemon': {
+        'land': [
+          'Sentret',
+          'Spearow',
+          'Fearow',
+          'Oddish',
+          'Bellsprout',
+          'Meowth',
+          'Gloom',
+          'Weepinbell',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'cachedQuest': {
+            'state': 0,
+            'name': "Celio's Errand",
+            'quest': 0,
+          },
+        },
+      ],
+      'orderNumber': 34,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Green Path',
+      'region': 0,
+      'number': 35,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 18,
+        },
+      ],
+      'orderNumber': 35,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Outcast Island',
+      'region': 0,
+      'number': 36,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 35,
+        },
+      ],
+      'orderNumber': 36,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Ruin Valley',
+      'region': 0,
+      'number': 37,
+      'pokemon': {
+        'land': [
+          'Natu',
+          'Spearow',
+          'Fearow',
+          'Meowth',
+          'Yanma',
+          'Wooper',
+          'Marill',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+          'Wobbuffet',
+        ],
+        'water': [
+          'Magikarp',
+          'Poliwag',
+          'Goldeen',
+          'Poliwhirl',
+          'Gyarados',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 34,
+        },
+      ],
+      'orderNumber': 37,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Canyon Entrance',
+      'region': 0,
+      'number': 38,
+      'pokemon': {
+        'land': [
+          'Sentret',
+          'Spearow',
+          'Fearow',
+          'Phanpy',
+          'Meowth',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'cachedQuest': {
+            'state': 0,
+            'name': "Celio's Errand",
+            'quest': 0,
+          },
+        },
+      ],
+      'orderNumber': 38,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Sevault Canyon',
+      'region': 0,
+      'number': 39,
+      'pokemon': {
+        'land': [
+          'Geodude',
+          'Phanpy',
+          'Fearow',
+          'Meowth',
+          'Cubone',
+          'Marowak',
+          'Persian',
+          'Onix',
+          'Skarmory',
+          'Larvitar',
+        ],
+        'water': [],
+        'headbutt': ['Graveler'],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 38,
+        },
+      ],
+      'orderNumber': 39,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Valencia Island',
+      'region': 0,
+      'number': 40,
+      'pokemon': {
+        'land': [
+          'Valencian Butterfree',
+          'Valencian Raticate',
+          'Valencian Vileplume',
+          'Valencian Paras',
+          'Valencian Weepinbell',
+          'Nidoran(M)',
+          'Nidoran(F)',
+          'Nidorina',
+        ],
+        'water': [
+          'Gyarados',
+          'Cloyster',
+          'Poliwhirl',
+        ],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 43,
+        },
+      ],
+      'orderNumber': 40,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1250000,
+    },
+    {
+      'routeName': 'Pinkan Forest',
+      'region': 0,
+      'number': 41,
+      'pokemon': {
+        'land': [
+          'Pinkan Caterpie',
+          'Pinkan Weedle',
+          'Pinkan Pidgey',
+          'Pinkan Vileplume',
+          'Pinkan Paras',
+          'Pinkan Venonat',
+          'Pinkan Mankey',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 16,
+          'dungeonIndex': 19,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+        },
+      ],
+      'orderNumber': 41,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1250000,
+    },
+    {
+      'routeName': 'Pinkan Plains',
+      'region': 0,
+      'number': 42,
+      'pokemon': {
+        'land': [
+          'Pinkan Pidgey',
+          'Pinkan Rattata',
+          'Pinkan Nidoran(M)',
+          'Pinkan Nidoran(F)',
+          'Pinkan Diglett',
+          'Pinkan Bellsprout',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 14,
+          'region': 0,
+          'route': 41,
+        },
+      ],
+      'orderNumber': 42,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1250000,
+    },
+    {
       'routeName': 'Johto Route 29',
       'region': 1,
       'number': 29,
@@ -1328,7 +1834,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 16,
+          'dungeonIndex': 24,
         },
       ],
       'orderNumber': 33,
@@ -1368,7 +1874,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 18,
+          'dungeonIndex': 26,
         },
       ],
       'orderNumber': 34,
@@ -1697,7 +2203,7 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'achievementType': 16,
-                  'dungeonIndex': 22,
+                  'dungeonIndex': 30,
                 },
                 {
                   'requiredValue': 1,
@@ -1748,7 +2254,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 24,
+          'dungeonIndex': 32,
         },
       ],
       'orderNumber': 44,
@@ -1784,7 +2290,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 25,
+          'dungeonIndex': 33,
         },
       ],
       'orderNumber': 45,
@@ -1912,7 +2418,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 27,
+          'dungeonIndex': 35,
         },
       ],
       'orderNumber': 49,
@@ -2145,7 +2651,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 30,
+          'dungeonIndex': 38,
         },
       ],
       'orderNumber': 104.1,
@@ -2179,7 +2685,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 32,
+          'dungeonIndex': 40,
         },
         {
           'requiredValue': 1,
@@ -2299,7 +2805,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 33,
+          'dungeonIndex': 41,
         },
       ],
       'orderNumber': 113,
@@ -2367,7 +2873,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 34,
+          'dungeonIndex': 42,
         },
       ],
       'orderNumber': 115,
@@ -2716,7 +3222,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 38,
+          'dungeonIndex': 46,
         },
       ],
       'orderNumber': 120,
@@ -2852,7 +3358,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 41,
+          'dungeonIndex': 49,
         },
       ],
       'orderNumber': 124,
@@ -3333,7 +3839,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 49,
+          'dungeonIndex': 57,
         },
       ],
       'orderNumber': 205,
@@ -3362,7 +3868,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 52,
+          'dungeonIndex': 60,
         },
       ],
       'orderNumber': 206,
@@ -3427,7 +3933,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 54,
+          'dungeonIndex': 62,
         },
       ],
       'orderNumber': 208,
@@ -3462,7 +3968,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 42,
+          'badge': 47,
         },
       ],
       'orderNumber': 209,
@@ -3682,7 +4188,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 44,
+          'badge': 49,
         },
       ],
       'orderNumber': 210.5,
@@ -3716,7 +4222,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Galactic Boss Cyrus',
         },
       ],
@@ -3745,7 +4251,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 59,
+          'dungeonIndex': 67,
         },
       ],
       'orderNumber': 216,
@@ -3801,7 +4307,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Galactic Boss Cyrus',
         },
       ],
@@ -3917,7 +4423,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 63,
+          'dungeonIndex': 71,
         },
       ],
       'orderNumber': 222,
@@ -3947,7 +4453,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 47,
+          'badge': 52,
         },
       ],
       'orderNumber': 223,
@@ -3987,7 +4493,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 52,
+          'badge': 57,
         },
       ],
       'orderNumber': 224,
@@ -4023,7 +4529,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 52,
+          'badge': 57,
         },
       ],
       'orderNumber': 225,
@@ -4244,7 +4750,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 52,
+          'badge': 57,
         },
       ],
       'orderNumber': 0.1,
@@ -4303,7 +4809,18 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 54,
+          'badge': 59,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'battleName': 'Team Plasma Grunt 1',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 1,
         },
       ],
       'orderNumber': 4,
@@ -4339,7 +4856,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 55,
+          'badge': 60,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 2,
         },
       ],
       'orderNumber': 4,
@@ -4372,7 +4895,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 55,
+          'badge': 60,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 2,
         },
       ],
       'orderNumber': 5,
@@ -4405,7 +4934,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 55,
+          'badge': 60,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 2,
         },
       ],
       'orderNumber': 5,
@@ -4445,7 +4980,23 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 56,
+          'badge': 61,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'battleName': 'Team Plasma Grunt 2',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'battleName': 'Team Plasma Grunt 3',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 4,
         },
       ],
       'orderNumber': 6,
@@ -4475,12 +5026,18 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 78,
+          'dungeonIndex': 86,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 57,
+          'badge': 62,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 7,
         },
       ],
       'orderNumber': 7,
@@ -4513,7 +5070,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 81,
+          'dungeonIndex': 89,
         },
       ],
       'orderNumber': 13,
@@ -4543,7 +5100,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 81,
+          'dungeonIndex': 89,
         },
       ],
       'orderNumber': 13,
@@ -4575,7 +5132,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 81,
+          'dungeonIndex': 89,
         },
       ],
       'orderNumber': 13,
@@ -4605,6 +5162,17 @@ module.exports = {
           'achievementType': 14,
           'region': 4,
           'route': 13,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'battleName': 'Zinzolin 1',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
+          'questIndex': 10,
         },
       ],
       'orderNumber': 13.1,
@@ -4695,7 +5263,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 83,
+          'dungeonIndex': 90,
         },
       ],
       'orderNumber': 21,
@@ -4762,7 +5330,17 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 85,
+          'dungeonIndex': 92,
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'battleName': 'Ghetsis 2',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Quest for the DNA Splicers',
         },
       ],
       'orderNumber': 23,
@@ -4794,7 +5372,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 89,
+              'dungeonIndex': 96,
             },
             {
               'requiredValue': 2,
@@ -4810,7 +5388,7 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'badge': 65,
+                  'badge': 70,
                 },
               ],
             },
@@ -4858,7 +5436,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 65,
+          'badge': 70,
         },
       ],
       'orderNumber': 23.1,
@@ -4885,7 +5463,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 93,
+          'dungeonIndex': 100,
         },
       ],
       'orderNumber': 23.1,
@@ -5019,7 +5597,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 65,
+          'badge': 70,
         },
       ],
       'orderNumber': 1,
@@ -5085,7 +5663,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 96,
+          'dungeonIndex': 103,
         },
       ],
       'orderNumber': 3,
@@ -5153,7 +5731,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 66,
+          'badge': 71,
         },
       ],
       'orderNumber': 4,
@@ -5285,7 +5863,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 97,
+          'dungeonIndex': 104,
         },
       ],
       'orderNumber': 8,
@@ -5341,7 +5919,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 98,
+          'dungeonIndex': 105,
         },
       ],
       'orderNumber': 10,
@@ -5371,7 +5949,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 67,
+          'badge': 72,
         },
         {
           'requiredValue': 10,
@@ -5413,7 +5991,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 68,
+          'badge': 73,
         },
       ],
       'orderNumber': 12,
@@ -5507,7 +6085,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 70,
+          'badge': 75,
         },
       ],
       'orderNumber': 14,
@@ -5543,7 +6121,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 102,
+          'dungeonIndex': 109,
         },
       ],
       'orderNumber': 15,
@@ -5606,7 +6184,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 104,
+          'dungeonIndex': 111,
         },
       ],
       'orderNumber': 17,
@@ -5636,7 +6214,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 105,
+          'dungeonIndex': 112,
         },
       ],
       'orderNumber': 18,
@@ -5767,7 +6345,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 78,
+          'badge': 83,
         },
       ],
       'orderNumber': 1,
@@ -5833,7 +6411,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 109,
+          'dungeonIndex': 116,
         },
       ],
       'orderNumber': 2,
@@ -5863,7 +6441,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 111,
+          'dungeonIndex': 118,
         },
       ],
       'orderNumber': 3,
@@ -5893,7 +6471,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 80,
+          'badge': 85,
         },
       ],
       'orderNumber': 4,
@@ -5925,7 +6503,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 116,
+          'dungeonIndex': 123,
         },
       ],
       'orderNumber': 5,
@@ -5958,7 +6536,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 117,
+          'dungeonIndex': 124,
         },
       ],
       'orderNumber': 5.1,
@@ -5995,13 +6573,13 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 113,
+          'dungeonIndex': 120,
         },
         {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 117,
+          'dungeonIndex': 124,
         },
       ],
       'orderNumber': 5.2,
@@ -6032,7 +6610,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 117,
+          'dungeonIndex': 124,
         },
       ],
       'orderNumber': 6,
@@ -6099,7 +6677,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 118,
+          'dungeonIndex': 125,
         },
       ],
       'orderNumber': 8,
@@ -6127,7 +6705,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 120,
+          'dungeonIndex': 127,
         },
       ],
       'orderNumber': 9,
@@ -6160,7 +6738,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 121,
+          'dungeonIndex': 128,
         },
       ],
       'orderNumber': 9.1,
@@ -6190,7 +6768,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 122,
+          'dungeonIndex': 129,
         },
       ],
       'orderNumber': 10,
@@ -6258,7 +6836,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 122,
+          'dungeonIndex': 129,
         },
       ],
       'orderNumber': 11,
@@ -6294,7 +6872,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 123,
+          'dungeonIndex': 130,
         },
       ],
       'orderNumber': 12,
@@ -6387,7 +6965,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 124,
+          'dungeonIndex': 131,
         },
       ],
       'orderNumber': 15,
@@ -6457,7 +7035,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 125,
+          'dungeonIndex': 132,
         },
       ],
       'orderNumber': 17,
@@ -6496,7 +7074,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 124,
+          'dungeonIndex': 131,
         },
       ],
       'orderNumber': 23,
@@ -6524,7 +7102,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 127,
+          'dungeonIndex': 134,
         },
       ],
       'orderNumber': 24,
@@ -6633,7 +7211,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 95,
+          'badge': 100,
         },
       ],
       'orderNumber': 27,
@@ -6756,7 +7334,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 95,
+          'badge': 100,
         },
       ],
       'orderNumber': 1,
@@ -6798,7 +7376,7 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Mirages',
         },
       ],
@@ -6975,7 +7553,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop2',
         },
       ],
@@ -8670,7 +9248,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop3',
         },
       ],
@@ -8709,7 +9287,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Bede1',
         },
       ],
@@ -8751,7 +9329,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 96,
+          'badge': 101,
         },
       ],
       'orderNumber': 14,
@@ -8785,7 +9363,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Bede2',
         },
       ],
@@ -9002,7 +9580,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'badge': 98,
+              'badge': 103,
             },
           ],
         },
@@ -9704,7 +10282,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 145,
+              'dungeonIndex': 152,
             },
           ],
         },
@@ -9946,7 +10524,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 145,
+              'dungeonIndex': 152,
             },
           ],
         },
@@ -10452,7 +11030,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 98,
+          'badge': 103,
         },
       ],
       'orderNumber': 23,
@@ -10485,7 +11063,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop6',
         },
       ],
@@ -10638,7 +11216,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop7',
         },
       ],
@@ -10745,7 +11323,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 105,
+          'badge': 110,
         },
       ],
       'orderNumber': 31,
@@ -10931,12 +11509,12 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 1,
-              'option': 2,
+              'option': 1,
               'battleName': 'Klara1',
             },
             {
               'requiredValue': 1,
-              'option': 2,
+              'option': 1,
               'battleName': 'Avery1',
             },
           ],
@@ -11125,7 +11703,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 146,
+              'dungeonIndex': 153,
             },
             {
               'requiredValue': 10,
@@ -11697,7 +12275,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 146,
+              'dungeonIndex': 153,
             },
             {
               'requiredValue': 10,
@@ -11888,7 +12466,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 147,
+              'dungeonIndex': 154,
             },
             {
               'requiredValue': 10,
@@ -12025,7 +12603,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 148,
+          'dungeonIndex': 155,
         },
       ],
       'orderNumber': 39,
@@ -12197,7 +12775,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 147,
+              'dungeonIndex': 154,
             },
           ],
         },
@@ -12343,7 +12921,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 16,
-              'dungeonIndex': 147,
+              'dungeonIndex': 154,
             },
             {
               'requiredValue': 10,
@@ -13053,7 +13631,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Peony',
         },
       ],
@@ -13861,7 +14439,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 151,
+          'dungeonIndex': 158,
         },
       ],
       'orderNumber': 51,
@@ -14379,7 +14957,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 158,
+          'dungeonIndex': 165,
         },
       ],
       'orderNumber': 55,
@@ -14588,6 +15166,102 @@ module.exports = {
         '9': 12.5,
         '10': 6.25,
         '11': 6.25,
+      },
+      '30': {
+        '0': 27.78,
+        '2': 66.67,
+        '4': 5.56,
+        '7': 16.67,
+        '9': 22.22,
+        '10': 5.56,
+      },
+      '31': {
+        '2': 92.31,
+        '4': 7.69,
+        '7': 23.08,
+        '9': 15.38,
+        '10': 7.69,
+      },
+      '32': {
+        '2': 92.31,
+        '4': 7.69,
+        '7': 23.08,
+        '9': 15.38,
+        '10': 7.69,
+      },
+      '33': {
+        '2': 92.31,
+        '4': 7.69,
+        '7': 23.08,
+        '9': 15.38,
+        '10': 7.69,
+      },
+      '34': {
+        '0': 23.81,
+        '2': 57.14,
+        '4': 19.05,
+        '7': 33.33,
+        '9': 14.29,
+        '10': 4.76,
+      },
+      '35': {
+        '2': 100,
+        '7': 25,
+        '9': 8.33,
+        '10': 8.33,
+      },
+      '36': {
+        '2': 100,
+        '7': 25,
+        '9': 8.33,
+        '10': 8.33,
+      },
+      '37': {
+        '0': 25,
+        '2': 56.25,
+        '8': 6.25,
+        '9': 31.25,
+        '10': 18.75,
+        '11': 6.25,
+        '17': 6.25,
+      },
+      '38': {
+        '0': 62.5,
+        '2': 25,
+        '8': 12.5,
+        '9': 25,
+        '10': 12.5,
+      },
+      '39': {
+        '0': 27.27,
+        '8': 63.64,
+        '9': 18.18,
+        '12': 36.36,
+        '16': 9.09,
+      },
+      '40': {
+        '0': 9.09,
+        '2': 27.27,
+        '4': 27.27,
+        '5': 9.09,
+        '7': 45.45,
+        '9': 18.18,
+        '11': 18.18,
+      },
+      '41': {
+        '0': 14.29,
+        '4': 28.57,
+        '6': 14.29,
+        '7': 42.86,
+        '9': 14.29,
+        '11': 57.14,
+      },
+      '42': {
+        '0': 33.33,
+        '4': 16.67,
+        '7': 50,
+        '8': 16.67,
+        '9': 16.67,
       },
     },
     '1': {
@@ -18096,10 +18770,41 @@ module.exports = {
         },
         '2': [
           'Viridian Forest',
+          'Pattern Bush',
           'Ilex Forest',
           'Santalune Forest',
           'Melemele Meadow',
         ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 10.01,
+      'name': 'Pinkan Caterpie',
+      'catchRate': 255,
+      'type': [11],
+      'levelType': 2,
+      'exp': 39,
+      'eggCycles': 15,
+      'base': {
+        'hitpoints': 45,
+        'attack': 30,
+        'specialAttack': 20,
+        'defense': 35,
+        'specialDefense': 20,
+        'speed': 45,
+      },
+      'attack': 19,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -18164,6 +18869,7 @@ module.exports = {
         },
         '2': [
           'Viridian Forest',
+          'Pattern Bush',
           'Ilex Forest',
           'Santalune Forest',
           'Melemele Meadow',
@@ -18249,7 +18955,40 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
-      'id': 12.1,
+      'id': 12.01,
+      'name': 'Valencian Butterfree',
+      'catchRate': 45,
+      'type': [
+        11,
+        9,
+      ],
+      'levelType': 2,
+      'exp': 178,
+      'eggCycles': 35,
+      'base': {
+        'hitpoints': 60,
+        'attack': 45,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 80,
+        'speed': 70,
+      },
+      'attack': 75,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 12.02,
       'name': 'Gigantamax Butterfree',
       'nativeRegion': -1,
       'catchRate': 45,
@@ -18331,9 +19070,43 @@ module.exports = {
         },
         '2': [
           'Viridian Forest',
+          'Pattern Bush',
           'Ilex Forest',
           'Santalune Forest',
         ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 13.01,
+      'name': 'Pinkan Weedle',
+      'catchRate': 255,
+      'type': [
+        11,
+        7,
+      ],
+      'levelType': 2,
+      'exp': 39,
+      'eggCycles': 15,
+      'base': {
+        'hitpoints': 40,
+        'attack': 35,
+        'specialAttack': 20,
+        'defense': 30,
+        'specialDefense': 20,
+        'speed': 50,
+      },
+      'attack': 19,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -18391,6 +19164,7 @@ module.exports = {
         },
         '2': [
           'Viridian Forest',
+          'Pattern Bush',
           'Ilex Forest',
           'Santalune Forest',
         ],
@@ -18526,6 +19300,9 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 30,
+            },
           ],
           '1': [
             {
@@ -18562,6 +19339,42 @@ module.exports = {
           ],
         },
         '2': ['Berry Forest'],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
+      'id': 16.01,
+      'name': 'Pinkan Pidgey',
+      'catchRate': 255,
+      'type': [
+        0,
+        9,
+      ],
+      'levelType': 3,
+      'exp': 50,
+      'eggCycles': 15,
+      'base': {
+        'hitpoints': 40,
+        'attack': 45,
+        'specialAttack': 35,
+        'defense': 40,
+        'specialDefense': 35,
+        'speed': 56,
+      },
+      'attack': 31,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+            {
+              'route': 42,
+            },
+          ],
+        },
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -18609,6 +19422,9 @@ module.exports = {
             },
             {
               'route': 29,
+            },
+            {
+              'route': 30,
             },
           ],
           '1': [
@@ -18842,6 +19658,37 @@ module.exports = {
       'eggSteps': 600,
     },
     {
+      'id': 19.02,
+      'name': 'Pinkan Rattata',
+      'catchRate': 255,
+      'type': [0],
+      'levelType': 2,
+      'exp': 51,
+      'eggCycles': 15,
+      'base': {
+        'hitpoints': 30,
+        'attack': 56,
+        'specialAttack': 25,
+        'defense': 35,
+        'specialDefense': 35,
+        'speed': 72,
+      },
+      'attack': 26,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 42,
+            },
+          ],
+        },
+        '2': ['Pinkan Mountain'],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 600,
+    },
+    {
       'id': 20,
       'name': 'Raticate',
       'catchRate': 127,
@@ -19023,6 +19870,36 @@ module.exports = {
       'eggSteps': 920,
     },
     {
+      'id': 20.03,
+      'name': 'Valencian Raticate',
+      'catchRate': 127,
+      'type': [0],
+      'levelType': 2,
+      'exp': 145,
+      'eggCycles': 23,
+      'base': {
+        'hitpoints': 55,
+        'attack': 81,
+        'specialAttack': 50,
+        'defense': 60,
+        'specialDefense': 70,
+        'speed': 97,
+      },
+      'attack': 75,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
+      'catchRatePercent': 37,
+      'eggSteps': 920,
+    },
+    {
       'id': 21,
       'name': 'Spearow',
       'catchRate': 255,
@@ -19092,6 +19969,15 @@ module.exports = {
             },
             {
               'route': 23,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 38,
             },
           ],
           '1': [
@@ -19214,6 +20100,18 @@ module.exports = {
             },
             {
               'route': 23,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 38,
+            },
+            {
+              'route': 39,
             },
           ],
           '1': [
@@ -19816,6 +20714,28 @@ module.exports = {
     },
     {
       'id': 25.13,
+      'name': 'Pinkan Pikachu',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.14,
       'name': 'Gigantamax Pikachu',
       'nativeRegion': -1,
       'catchRate': 190,
@@ -19833,6 +20753,30 @@ module.exports = {
       },
       'attack': 60,
       'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.15,
+      'name': 'Detective Pikachu',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {
+        '12': ['Enigma'],
+      },
       'catchRatePercent': 51,
       'eggSteps': 400,
     },
@@ -19936,6 +20880,28 @@ module.exports = {
       },
       'catchRatePercent': 25,
       'eggSteps': 600,
+    },
+    {
+      'id': 26.02,
+      'name': 'Detective Raichu',
+      'catchRate': 75,
+      'type': [3],
+      'levelType': 2,
+      'exp': 218,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 60,
+        'attack': 90,
+        'specialAttack': 90,
+        'defense': 55,
+        'specialDefense': 80,
+        'speed': 110,
+      },
+      'attack': 108,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 400,
     },
     {
       'id': 27,
@@ -20182,6 +21148,9 @@ module.exports = {
             {
               'route': 3,
             },
+            {
+              'route': 40,
+            },
           ],
           '1': [
             {
@@ -20226,6 +21195,37 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 29.01,
+      'name': 'Pinkan Nidoran(F)',
+      'catchRate': 235,
+      'type': [7],
+      'levelType': 3,
+      'exp': 55,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 55,
+        'attack': 47,
+        'specialAttack': 40,
+        'defense': 120,
+        'specialDefense': 40,
+        'speed': 41,
+      },
+      'attack': 51,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 42,
+            },
+          ],
+        },
+        '2': ['Pinkan Mountain'],
+      },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
+    },
+    {
       'id': 30,
       'name': 'Nidorina',
       'catchRate': 120,
@@ -20253,6 +21253,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
           '5': [
             {
               'route': 11,
@@ -20375,6 +21380,9 @@ module.exports = {
             {
               'route': 3,
             },
+            {
+              'route': 40,
+            },
           ],
           '1': [
             {
@@ -20414,6 +21422,37 @@ module.exports = {
           ],
         },
         '10': '30.12%',
+      },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
+    },
+    {
+      'id': 32.01,
+      'name': 'Pinkan Nidoran(M)',
+      'catchRate': 235,
+      'type': [7],
+      'levelType': 3,
+      'exp': 55,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 46,
+        'attack': 57,
+        'specialAttack': 40,
+        'defense': 40,
+        'specialDefense': 40,
+        'speed': 50,
+      },
+      'attack': 40,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 42,
+            },
+          ],
+        },
+        '2': ['Pinkan Mountain'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -20530,6 +21569,37 @@ module.exports = {
             'type': [1],
             'evolvedPokemon': 'Nidoking',
             'stone': 4,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 34.01,
+      'name': 'Pinkan Nidoking',
+      'catchRate': 45,
+      'type': [
+        7,
+        8,
+      ],
+      'levelType': 3,
+      'exp': 227,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 81,
+        'attack': 102,
+        'specialAttack': 85,
+        'defense': 77,
+        'specialDefense': 75,
+        'speed': 85,
+      },
+      'attack': 135,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pinkan Mountain',
           },
         ],
       },
@@ -21103,6 +22173,9 @@ module.exports = {
           'Rock Tunnel',
           'Seafoam Islands',
           'Victory Road',
+          'Icefall Cave',
+          'Lost Cave',
+          'Altering Cave',
           'Union Cave',
           'Slowpoke Well',
           'Ilex Forest',
@@ -21183,6 +22256,8 @@ module.exports = {
           'Seafoam Islands',
           'Victory Road',
           'Cerulean Cave',
+          'Icefall Cave',
+          'Lost Cave',
           'Whirl Islands',
           'Mt. Mortar',
           'Dark Cave',
@@ -21296,6 +22371,9 @@ module.exports = {
             },
             {
               'route': 29,
+            },
+            {
+              'route': 34,
             },
           ],
           '2': [
@@ -21442,6 +22520,9 @@ module.exports = {
             },
             {
               'route': 29,
+            },
+            {
+              'route': 34,
             },
           ],
           '1': [
@@ -21611,6 +22692,72 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 45.01,
+      'name': 'Valencian Vileplume',
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 221,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 75,
+        'attack': 80,
+        'specialAttack': 110,
+        'defense': 85,
+        'specialDefense': 90,
+        'speed': 50,
+      },
+      'attack': 136,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 45.02,
+      'name': 'Pinkan Vileplume',
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 221,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 75,
+        'attack': 80,
+        'specialAttack': 110,
+        'defense': 85,
+        'specialDefense': 90,
+        'speed': 50,
+      },
+      'attack': 136,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
       'id': 46,
       'name': 'Paras',
       'catchRate': 190,
@@ -21647,6 +22794,72 @@ module.exports = {
           'Lush Jungle',
         ],
         '10': '6.02%',
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 46.01,
+      'name': 'Valencian Paras',
+      'catchRate': 190,
+      'type': [
+        11,
+        4,
+      ],
+      'levelType': 2,
+      'exp': 57,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 35,
+        'attack': 70,
+        'specialAttack': 45,
+        'defense': 55,
+        'specialDefense': 55,
+        'speed': 25,
+      },
+      'attack': 44,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 46.02,
+      'name': 'Pinkan Paras',
+      'catchRate': 190,
+      'type': [
+        11,
+        4,
+      ],
+      'levelType': 2,
+      'exp': 57,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 35,
+        'attack': 70,
+        'specialAttack': 45,
+        'defense': 55,
+        'specialDefense': 55,
+        'speed': 25,
+      },
+      'attack': 44,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -21757,6 +22970,39 @@ module.exports = {
           ],
         },
         '2': ['Berry Forest'],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
+      'id': 48.01,
+      'name': 'Pinkan Venonat',
+      'catchRate': 190,
+      'type': [
+        11,
+        7,
+      ],
+      'levelType': 2,
+      'exp': 61,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 60,
+        'attack': 55,
+        'specialAttack': 40,
+        'defense': 50,
+        'specialDefense': 55,
+        'speed': 45,
+      },
+      'attack': 51,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -21893,6 +23139,36 @@ module.exports = {
           'Verdant Cavern',
           "Diglett's Tunnel",
         ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 50.02,
+      'name': 'Pinkan Diglett',
+      'catchRate': 255,
+      'type': [8],
+      'levelType': 2,
+      'exp': 53,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 10,
+        'attack': 55,
+        'specialAttack': 35,
+        'defense': 25,
+        'specialDefense': 45,
+        'speed': 95,
+      },
+      'attack': 17,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 42,
+            },
+          ],
+        },
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -22066,6 +23342,21 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 38,
+            },
+            {
+              'route': 39,
+            },
           ],
           '1': [
             {
@@ -22215,6 +23506,21 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 38,
+            },
+            {
+              'route': 39,
+            },
           ],
         },
         '5': [
@@ -22316,6 +23622,33 @@ module.exports = {
             {
               'route': 23,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 38,
+            },
           ],
           '1': [
             {
@@ -22369,6 +23702,9 @@ module.exports = {
           'Seafoam Islands',
           'Berry Forest',
           'Cerulean Cave',
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Oreburgh Gate',
           'Lake Valor',
           'Lake Verity',
@@ -22586,6 +23922,45 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 56.01,
+      'name': 'Pinkan Mankey',
+      'catchRate': 190,
+      'type': [6],
+      'levelType': 2,
+      'exp': 61,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Pinkan Mankey',
+          'type': [0],
+          'evolvedPokemon': 'Pinkan Primeape',
+          'level': 28,
+        },
+      ],
+      'base': {
+        'hitpoints': 40,
+        'attack': 80,
+        'specialAttack': 35,
+        'defense': 35,
+        'specialDefense': 45,
+        'speed': 70,
+      },
+      'attack': 42,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
+        '2': ['Pinkan Mountain'],
+      },
+      'catchRatePercent': 51,
+      'eggSteps': 800,
+    },
+    {
       'id': 57,
       'name': 'Primeape',
       'catchRate': 75,
@@ -22620,6 +23995,42 @@ module.exports = {
             'basePokemon': 'Mankey',
             'type': [0],
             'evolvedPokemon': 'Primeape',
+            'level': 28,
+          },
+        ],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 57.01,
+      'name': 'Pinkan Primeape',
+      'catchRate': 75,
+      'type': [6],
+      'levelType': 2,
+      'exp': 159,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 65,
+        'attack': 105,
+        'specialAttack': 60,
+        'defense': 60,
+        'specialDefense': 70,
+        'speed': 95,
+      },
+      'attack': 99,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pinkan Mountain',
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Pinkan Mankey',
+            'type': [0],
+            'evolvedPokemon': 'Pinkan Primeape',
             'level': 28,
           },
         ],
@@ -22813,6 +24224,9 @@ module.exports = {
             {
               'route': 23,
             },
+            {
+              'route': 37,
+            },
           ],
           '1': [
             {
@@ -22869,6 +24283,7 @@ module.exports = {
         '2': [
           'Berry Forest',
           'Cerulean Cave',
+          'Icefall Cave',
           'Ruins of Alph',
           'Giant Chasm',
           'Victory Road Unova',
@@ -22918,6 +24333,14 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 37,
+            },
+            {
+              'route': 40,
+            },
+          ],
           '1': [
             {
               'route': 30,
@@ -22985,6 +24408,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Ruins of Alph',
           'Frost Cavern',
           'Pokémon Village',
@@ -23331,6 +24755,7 @@ module.exports = {
           'Rock Tunnel',
           'Mt. Ember Summit',
           'Victory Road',
+          'Ruby Path',
           'Fiery Path',
           'Jagged Pass',
           'Mt. Coronet South',
@@ -23462,6 +24887,7 @@ module.exports = {
         '2': [
           'Mt. Ember Summit',
           'Cerulean Cave',
+          'Ruby Path',
           'Spear Pillar',
           'Stark Mountain',
           'Vast Poni Canyon',
@@ -23633,6 +25059,9 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 34,
+            },
           ],
           '1': [
             {
@@ -23659,6 +25088,39 @@ module.exports = {
           'Flower Paradise',
         ],
         '6': ['Grass'],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 69.01,
+      'name': 'Pinkan Bellsprout',
+      'catchRate': 255,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 60,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 50,
+        'attack': 75,
+        'specialAttack': 70,
+        'defense': 35,
+        'specialDefense': 30,
+        'speed': 40,
+      },
+      'attack': 55,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 42,
+            },
+          ],
+        },
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -23713,6 +25175,9 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 34,
+            },
           ],
           '1': [
             {
@@ -23748,6 +25213,39 @@ module.exports = {
             'level': 21,
           },
         ],
+      },
+      'catchRatePercent': 36,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 70.01,
+      'name': 'Valencian Weepinbell',
+      'catchRate': 120,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 137,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 65,
+        'attack': 90,
+        'specialAttack': 85,
+        'defense': 50,
+        'specialDefense': 45,
+        'speed': 55,
+      },
+      'attack': 90,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
+        },
       },
       'catchRatePercent': 36,
       'eggSteps': 1200,
@@ -23853,6 +25351,27 @@ module.exports = {
             },
             {
               'route': 29,
+            },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
             },
           ],
           '1': [
@@ -24028,6 +25547,9 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Shoal Cave',
           'Seafloor Cavern',
           'Sealed Chamber',
@@ -24071,6 +25593,27 @@ module.exports = {
             },
             {
               'route': 29,
+            },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
             },
           ],
           '1': [
@@ -24207,6 +25750,9 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Iron Island',
           'Courageous Cavern',
         ],
@@ -24261,6 +25807,9 @@ module.exports = {
             {
               'route': 27,
             },
+            {
+              'route': 39,
+            },
           ],
           '1': [
             {
@@ -24298,6 +25847,7 @@ module.exports = {
           'Rock Tunnel',
           'Mt. Ember Summit',
           'Victory Road',
+          'Ruby Path',
           'Union Cave',
           'Mt. Mortar',
           "Team Rocket's Hideout",
@@ -24316,6 +25866,9 @@ module.exports = {
         '4': [
           {
             'dungeon': 'Rock Tunnel',
+          },
+          {
+            'dungeon': 'Ruby Path',
           },
           {
             'dungeon': 'Union Cave',
@@ -24401,6 +25954,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 39,
+            },
+          ],
           '1': [
             {
               'route': 45,
@@ -24434,6 +25992,7 @@ module.exports = {
         },
         '2': [
           'Mt. Ember Summit',
+          'Ruby Path',
           'Mt. Mortar',
           'Dark Cave',
           'Victory Road Johto',
@@ -24870,6 +26429,33 @@ module.exports = {
             {
               'route': 23,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 38,
+            },
           ],
           '5': [
             {
@@ -24898,6 +26484,8 @@ module.exports = {
           'Seafoam Islands',
           'Berry Forest',
           'Cerulean Cave',
+          'Icefall Cave',
+          'Sunburst Island',
           'Slowpoke Well',
           'Tohjo Falls',
           'Hall of Origin',
@@ -25165,6 +26753,16 @@ module.exports = {
           'evolvedPokemon': 'Magnezone',
           'level': 20,
           'dungeon': 'Vast Poni Canyon',
+        },
+        {
+          'basePokemon': 'Magneton',
+          'type': [
+            1,
+            5,
+          ],
+          'evolvedPokemon': 'Magnezone',
+          'stone': 3,
+          'regions': [7],
         },
       ],
       'base': {
@@ -25465,6 +27063,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Whirl Islands',
           'Seaside Cave',
           'Giant Chasm',
@@ -25501,6 +27100,7 @@ module.exports = {
       'attack': 116,
       'nativeRegion': 0,
       'locations': {
+        '2': ['Icefall Cave'],
         '3': [
           {
             'dungeon': 'Whirl Islands',
@@ -25747,6 +27347,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Seaside Cave',
           'Courageous Cavern',
         ],
@@ -25777,6 +27378,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 40,
+            },
+          ],
           '7': [
             {
               'route': 5,
@@ -25907,6 +27513,7 @@ module.exports = {
         },
         '2': [
           'Pokémon Tower',
+          'Lost Cave',
           'Sprout Tower',
           'Tin Tower',
           'Eterna Forest',
@@ -26003,6 +27610,7 @@ module.exports = {
         },
         '2': [
           'Pokémon Tower',
+          'Lost Cave',
           'Old Chateau',
           'Celestial Tower',
           'Frost Cavern',
@@ -26156,6 +27764,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 39,
+            },
+          ],
           '7': [
             {
               'route': 3,
@@ -26208,6 +27821,41 @@ module.exports = {
           },
           {
             'dungeon': 'Relic Passage',
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 95.01,
+      'name': 'Crystal Onix',
+      'catchRate': 45,
+      'type': [
+        12,
+        5,
+      ],
+      'levelType': 2,
+      'exp': 77,
+      'eggCycles': 25,
+      'base': {
+        'hitpoints': 35,
+        'attack': 45,
+        'specialAttack': 30,
+        'defense': 160,
+        'specialDefense': 45,
+        'speed': 70,
+      },
+      'heldItem': {
+        'type': 2,
+        'id': 'Hard Stone',
+      },
+      'attack': 41,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Sunburst Island',
           },
         ],
       },
@@ -26372,6 +28020,27 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
           ],
           '1': [
             {
@@ -26449,6 +28118,9 @@ module.exports = {
         },
         '2': [
           'Seafoam Islands',
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Whirl Islands',
         ],
       },
@@ -26475,6 +28147,29 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+          ],
           '1': [
             {
               'route': 34,
@@ -26577,6 +28272,11 @@ module.exports = {
             },
           ],
         },
+        '2': [
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
+        ],
         '3': [
           {
             'dungeon': 'Whirl Islands',
@@ -26964,6 +28664,33 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 103.02,
+      'name': 'Pinkan Exeggutor',
+      'catchRate': 45,
+      'type': [
+        4,
+        10,
+      ],
+      'levelType': 4,
+      'exp': 186,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 95,
+        'attack': 95,
+        'specialAttack': 125,
+        'defense': 85,
+        'specialDefense': 75,
+        'speed': 55,
+      },
+      'attack': 168,
+      'nativeRegion': 0,
+      'locations': {
+        '8': ['Tanoby Ruins'],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
       'id': 104,
       'name': 'Cubone',
       'catchRate': 190,
@@ -27020,6 +28747,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 39,
+            },
+          ],
           '7': [
             {
               'route': 35,
@@ -27062,6 +28794,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 39,
+            },
+          ],
           '7': [
             {
               'route': 39,
@@ -27582,6 +29319,41 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 111.01,
+      'name': 'Pinkan Rhyhorn',
+      'catchRate': 120,
+      'type': [
+        8,
+        12,
+      ],
+      'levelType': 4,
+      'exp': 69,
+      'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Pinkan Rhyhorn',
+          'type': [0],
+          'evolvedPokemon': 'Pinkan Rhydon',
+          'level': 42,
+        },
+      ],
+      'base': {
+        'hitpoints': 80,
+        'attack': 85,
+        'specialAttack': 30,
+        'defense': 95,
+        'specialDefense': 30,
+        'speed': 25,
+      },
+      'attack': 59,
+      'nativeRegion': 0,
+      'locations': {
+        '2': ['Pinkan Mountain'],
+      },
+      'catchRatePercent': 36,
+      'eggSteps': 800,
+    },
+    {
       'id': 112,
       'name': 'Rhydon',
       'catchRate': 60,
@@ -27686,6 +29458,45 @@ module.exports = {
             'basePokemon': 'Rhyhorn',
             'type': [0],
             'evolvedPokemon': 'Rhydon',
+            'level': 42,
+          },
+        ],
+      },
+      'catchRatePercent': 21,
+      'eggSteps': 1200,
+    },
+    {
+      'id': 112.01,
+      'name': 'Pinkan Rhydon',
+      'catchRate': 60,
+      'type': [
+        8,
+        12,
+      ],
+      'levelType': 4,
+      'exp': 170,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 105,
+        'attack': 130,
+        'specialAttack': 45,
+        'defense': 120,
+        'specialDefense': 45,
+        'speed': 40,
+      },
+      'attack': 121,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pinkan Mountain',
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Pinkan Rhyhorn',
+            'type': [0],
+            'evolvedPokemon': 'Pinkan Rhydon',
             'level': 42,
           },
         ],
@@ -28196,6 +30007,27 @@ module.exports = {
             {
               'route': 29,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
           ],
           '2': [
             {
@@ -28221,6 +30053,9 @@ module.exports = {
         },
         '2': [
           'Seafoam Islands',
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Whirl Islands',
         ],
       },
@@ -28259,6 +30094,29 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+          ],
           '3': [
             {
               'route': 226,
@@ -28291,6 +30149,11 @@ module.exports = {
             },
           ],
         },
+        '2': [
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
+        ],
         '5': [
           {
             'basePokemon': 'Horsea',
@@ -28349,6 +30212,9 @@ module.exports = {
             },
             {
               'route': 23,
+            },
+            {
+              'route': 37,
             },
           ],
           '1': [
@@ -28437,6 +30303,7 @@ module.exports = {
         '2': [
           'Berry Forest',
           'Cerulean Cave',
+          'Icefall Cave',
           'Union Cave',
           'Tohjo Falls',
           'Meteor Falls',
@@ -28692,6 +30559,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Icefall Cave'],
         '6': ['Water'],
       },
       'catchRatePercent': 58,
@@ -29369,6 +31237,30 @@ module.exports = {
             {
               'route': 23,
             },
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+            {
+              'route': 37,
+            },
           ],
           '1': [
             {
@@ -29711,6 +31603,9 @@ module.exports = {
           'Seafoam Islands',
           'Berry Forest',
           'Cerulean Cave',
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Ruins of Alph',
           'Union Cave',
           'Tohjo Falls',
@@ -29762,6 +31657,35 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+            {
+              'route': 37,
+            },
+            {
+              'route': 40,
+            },
+          ],
           '3': [
             {
               'route': 203,
@@ -29971,6 +31895,9 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
+          'Sunburst Island',
+          'Tanoby Ruins',
           'Lake Acuity',
           'Malie Garden',
         ],
@@ -30119,7 +32046,10 @@ module.exports = {
             },
           ],
         },
-        '2': ["Sea Spirit's Den"],
+        '2': [
+          'Icefall Cave',
+          "Sea Spirit's Den",
+        ],
         '3': [
           {
             'dungeon': 'Union Cave',
@@ -30365,6 +32295,26 @@ module.exports = {
           'type': [0],
           'evolvedPokemon': 'Sylveon',
           'level': 29,
+        },
+        {
+          'basePokemon': 'Eevee',
+          'type': [
+            1,
+            5,
+          ],
+          'evolvedPokemon': 'Leafeon',
+          'stone': 0,
+          'regions': [7],
+        },
+        {
+          'basePokemon': 'Eevee',
+          'type': [
+            1,
+            5,
+          ],
+          'evolvedPokemon': 'Glaceon',
+          'stone': 29,
+          'regions': [7],
         },
       ],
       'base': {
@@ -31811,6 +33761,17 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 38,
+            },
+          ],
           '1': [
             {
               'route': 29,
@@ -32225,6 +34186,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Pattern Bush'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -32373,6 +34335,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Pattern Bush'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -33024,6 +34987,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 37,
+            },
+          ],
           '1': [
             {
               'route': 28,
@@ -33253,6 +35221,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Altering Cave',
           'Floccesy Ranch',
           'Paniola Ranch',
         ],
@@ -33412,6 +35381,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 37,
+            },
+          ],
           '2': [
             {
               'route': 102,
@@ -33489,6 +35463,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Mt. Mortar',
           'Abundant Shrine',
           'Victory Road Unova',
@@ -33747,6 +35722,20 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+          ],
           '1': [
             {
               'route': 32,
@@ -33759,6 +35748,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Sunburst Island'],
         '6': ['Grass'],
       },
       'catchRatePercent': 63,
@@ -33893,6 +35883,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Altering Cave'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -34002,6 +35993,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 37,
+            },
+          ],
           '1': [
             {
               'route': 35,
@@ -34049,6 +36045,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 37,
+            },
+          ],
           '1': [
             {
               'route': 32,
@@ -34096,6 +36097,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Ruins of Alph',
           'Union Cave',
         ],
@@ -34387,6 +36389,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Lost Cave'],
       },
       'catchRatePercent': 12,
       'eggSteps': 800,
@@ -34491,6 +36494,7 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': [
+          'Lost Cave',
           'Mt. Silver',
           'Celestial Tower',
           "Hau'oli Cemetery",
@@ -34520,6 +36524,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Unown (A) cannot be caught yet.',
@@ -34554,6 +36562,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -34586,6 +36598,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -34620,6 +36636,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -34713,6 +36733,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -34775,6 +36799,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -34809,6 +36837,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -34841,6 +36873,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -34875,6 +36911,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -34907,6 +36947,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -34941,6 +36985,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -34973,6 +37021,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -35037,6 +37089,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -35069,6 +37125,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -35104,6 +37164,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -35138,6 +37202,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -35170,6 +37238,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -35204,6 +37276,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -35236,6 +37312,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -35270,6 +37350,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -35302,6 +37386,10 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
           {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
@@ -35336,6 +37424,10 @@ module.exports = {
       'locations': {
         '3': [
           {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+          {
             'dungeon': 'Ruins of Alph',
             'requirements': 'Try again another day.',
           },
@@ -35366,7 +37458,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -35388,7 +37487,14 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Tanoby Ruins',
+            'requirements': 'Try again another day.',
+          },
+        ],
+      },
       'catchRatePercent': 58,
       'eggSteps': 1600,
     },
@@ -35412,6 +37518,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 37,
+            },
+          ],
           '7': [
             {
               'route': 14,
@@ -35604,7 +37715,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['P2 Laboratory'],
+        '2': [
+          'Altering Cave',
+          'P2 Laboratory',
+        ],
         '12': ['Always'],
       },
       'catchRatePercent': 51,
@@ -35942,6 +38056,29 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+          ],
           '1': [
             {
               'route': 32,
@@ -35959,7 +38096,11 @@ module.exports = {
             },
           ],
         },
-        '2': ['Dusty Bowl'],
+        '2': [
+          'Sunburst Island',
+          'Tanoby Ruins',
+          'Dusty Bowl',
+        ],
         '6': ['Water'],
       },
       'catchRatePercent': 17,
@@ -36057,7 +38198,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Galar Mine No. 2'],
+        '2': [
+          'Altering Cave',
+          'Galar Mine No. 2',
+        ],
         '3': [
           {
             'dungeon': 'Burned Tower',
@@ -36145,6 +38289,9 @@ module.exports = {
           ],
         },
         '3': [
+          {
+            'dungeon': 'Pattern Bush',
+          },
           {
             'dungeon': 'Lostlorn Forest',
           },
@@ -36274,6 +38421,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Mt. Silver',
           'Lake Acuity',
           'Snowpoint Temple',
@@ -36318,7 +38466,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Mt. Silver'],
+        '2': [
+          'Altering Cave',
+          'Mt. Silver',
+        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -36408,6 +38559,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Ruby Path',
           'Fiery Path',
           'Stark Mountain',
         ],
@@ -36439,6 +38591,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '2': ['Stark Mountain'],
+        '3': [
+          {
+            'dungeon': 'Ruby Path',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Slugma',
@@ -36517,7 +38674,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Ice Path'],
+        '2': [
+          'Icefall Cave',
+          'Ice Path',
+        ],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -36715,6 +38875,29 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 30,
+            },
+            {
+              'route': 31,
+            },
+            {
+              'route': 32,
+            },
+            {
+              'route': 33,
+            },
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+          ],
           '1': [
             {
               'route': 44,
@@ -36785,6 +38968,10 @@ module.exports = {
             },
           ],
         },
+        '2': [
+          'Sunburst Island',
+          'Tanoby Ruins',
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -37015,6 +39202,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Icefall Cave',
           'Giant Chasm',
           'Iceberg Ruins',
         ],
@@ -37067,6 +39255,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Tanoby Ruins'],
         '5': [
           {
             'basePokemon': 'Mantyke',
@@ -37106,6 +39295,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 39,
+            },
+          ],
           '1': [
             {
               'route': 45,
@@ -37193,6 +39387,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Altering Cave'],
         '6': ['Fire'],
       },
       'catchRatePercent': 36,
@@ -37313,6 +39508,14 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 38,
+            },
+            {
+              'route': 39,
+            },
+          ],
           '1': [
             {
               'route': 45,
@@ -37436,6 +39639,11 @@ module.exports = {
           ],
         },
         '2': ['Pledge Grove'],
+        '3': [
+          {
+            'dungeon': 'Altering Cave',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -37472,6 +39680,11 @@ module.exports = {
           ],
         },
         '2': ['Ruins of Alph'],
+        '3': [
+          {
+            'dungeon': 'Altering Cave',
+          },
+        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -38064,6 +40277,11 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '0': [
+            {
+              'route': 39,
+            },
+          ],
           '7': [
             {
               'route': 21,
@@ -51638,6 +53856,16 @@ module.exports = {
             'level': 20,
             'dungeon': 'Vast Poni Canyon',
           },
+          {
+            'basePokemon': 'Magneton',
+            'type': [
+              1,
+              5,
+            ],
+            'evolvedPokemon': 'Magnezone',
+            'stone': 3,
+            'regions': [7],
+          },
         ],
       },
       'catchRatePercent': 12,
@@ -51791,7 +54019,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
-            'requirements': 'Giant Chasm needs to be completed.',
+            'requirements': 'Requires beating Ghetsis 2.',
           },
         ],
         '5': [
@@ -52061,6 +54289,16 @@ module.exports = {
             'level': 20,
             'dungeon': 'Lush Jungle',
           },
+          {
+            'basePokemon': 'Eevee',
+            'type': [
+              1,
+              5,
+            ],
+            'evolvedPokemon': 'Leafeon',
+            'stone': 0,
+            'regions': [7],
+          },
         ],
       },
       'catchRatePercent': 17,
@@ -52141,6 +54379,16 @@ module.exports = {
             'evolvedPokemon': 'Glaceon',
             'level': 20,
             'dungeon': 'Mount Lanakila',
+          },
+          {
+            'basePokemon': 'Eevee',
+            'type': [
+              1,
+              5,
+            ],
+            'evolvedPokemon': 'Glaceon',
+            'stone': 29,
+            'regions': [7],
           },
         ],
       },
@@ -52236,7 +54484,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
-            'requirements': 'Giant Chasm needs to be completed.',
+            'requirements': 'Requires beating Ghetsis 2.',
           },
         ],
         '5': [
@@ -55376,6 +57624,11 @@ module.exports = {
           'Galar Mine',
           'Brawlers Cave',
         ],
+        '4': [
+          {
+            'dungeon': 'Galar Mine',
+          },
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 600,
@@ -55621,7 +57874,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
-            'requirements': 'Giant Chasm needs to be completed.',
+            'requirements': 'Requires beating Ghetsis 2.',
           },
           {
             'dungeon': 'Victory Road Unova',
@@ -61612,6 +63865,11 @@ module.exports = {
             'dungeon': 'Twist Mountain',
           },
         ],
+        '4': [
+          {
+            'dungeon': 'Iceberg Ruins',
+          },
+        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -61827,6 +64085,11 @@ module.exports = {
           'Energy Plant',
         ],
         '3': [
+          {
+            'dungeon': 'Galar Mine No. 2',
+          },
+        ],
+        '4': [
           {
             'dungeon': 'Galar Mine No. 2',
           },
@@ -63269,7 +65532,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Giant Chasm',
-            'requirements': 'Requires the Elite Unova Champion badge.',
+            'requirements': 'Requires beating Ghetsis 2 and Requires the Elite Unova Champion badge.',
           },
         ],
       },
@@ -69078,6 +71341,16 @@ module.exports = {
           'level': 20,
           'dungeon': 'Vast Poni Canyon',
         },
+        {
+          'basePokemon': 'Charjabug',
+          'type': [
+            1,
+            5,
+          ],
+          'evolvedPokemon': 'Vikavolt',
+          'stone': 3,
+          'regions': [7],
+        },
       ],
       'base': {
         'hitpoints': 57,
@@ -69232,6 +71505,16 @@ module.exports = {
             'evolvedPokemon': 'Vikavolt',
             'level': 20,
             'dungeon': 'Vast Poni Canyon',
+          },
+          {
+            'basePokemon': 'Charjabug',
+            'type': [
+              1,
+              5,
+            ],
+            'evolvedPokemon': 'Vikavolt',
+            'stone': 3,
+            'regions': [7],
           },
         ],
       },
@@ -75587,6 +77870,11 @@ module.exports = {
             'dungeon': 'Galar Mine',
           },
         ],
+        '4': [
+          {
+            'dungeon': 'Galar Mine',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Rolycoly',
@@ -77074,6 +79362,11 @@ module.exports = {
           ],
         },
         '2': ['Glimwood Tangle'],
+        '4': [
+          {
+            'dungeon': 'Glimwood Tangle',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -79954,6 +82247,7 @@ module.exports = {
     {
       'id': 890.1,
       'name': 'Eternamax Eternatus',
+      'nativeRegion': -1,
       'type': [
         7,
         14,
@@ -79971,7 +82265,6 @@ module.exports = {
       'exp': 345,
       'catchRate': 255,
       'attack': 540,
-      'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 4800,
@@ -81258,21 +83551,23 @@ module.exports = {
     },
     'BulletinBoards': {
       '0': 'Kanto',
-      '1': 'Kalos',
-      '2': 'Alola',
-      '3': 'Galar',
-      '4': 'Armor',
-      '5': 'Crown',
+      '1': 'Hoenn',
+      '2': 'Kalos',
+      '3': 'Alola',
+      '4': 'Galar',
+      '5': 'Armor',
+      '6': 'Crown',
       'None': -2,
       '-2': 'None',
       'All': -1,
       '-1': 'All',
       'Kanto': 0,
-      'Kalos': 1,
-      'Alola': 2,
-      'Galar': 3,
-      'Armor': 4,
-      'Crown': 5,
+      'Hoenn': 1,
+      'Kalos': 2,
+      'Alola': 3,
+      'Galar': 4,
+      'Armor': 5,
+      'Crown': 6,
     },
     'EnergyRestoreEffect': {
       'SmallRestore': 0.1,
@@ -81430,6 +83725,13 @@ module.exports = {
       'Gym Leader Bede',
       'Champion Leon',
     ],
+    'OrangeGyms': [
+      'Mikan Island',
+      'Navel Island',
+      'Trovita Island',
+      'Kumquat Island',
+      'Supreme Gym Leader Drake',
+    ],
     'RegionGyms': [
       [
         'Pewter City',
@@ -81556,6 +83858,13 @@ module.exports = {
         'Gym Leader Bede',
         'Champion Leon',
       ],
+      [
+        'Mikan Island',
+        'Navel Island',
+        'Trovita Island',
+        'Kumquat Island',
+        'Supreme Gym Leader Drake',
+      ],
     ],
     'KantoDungeons': [
       'Viridian Forest',
@@ -81572,6 +83881,14 @@ module.exports = {
       'Berry Forest',
       'Victory Road',
       'Cerulean Cave',
+      'Ruby Path',
+      'Icefall Cave',
+      'Sunburst Island',
+      'Lost Cave',
+      'Pattern Bush',
+      'Altering Cave',
+      'Tanoby Ruins',
+      'Pinkan Mountain',
     ],
     'JohtoDungeons': [
       'Sprout Tower',
@@ -81648,7 +83965,6 @@ module.exports = {
       'Mistralton Cave',
       'Celestial Tower',
       'Reversal Mountain',
-      'Team Plasma Assault',
       'Seaside Cave',
       'Plasma Frigate',
       'Giant Chasm',
@@ -81749,6 +84065,14 @@ module.exports = {
         'Berry Forest',
         'Victory Road',
         'Cerulean Cave',
+        'Ruby Path',
+        'Icefall Cave',
+        'Sunburst Island',
+        'Lost Cave',
+        'Pattern Bush',
+        'Altering Cave',
+        'Tanoby Ruins',
+        'Pinkan Mountain',
       ],
       [
         'Sprout Tower',
@@ -81825,7 +84149,6 @@ module.exports = {
         'Mistralton Cave',
         'Celestial Tower',
         'Reversal Mountain',
-        'Team Plasma Assault',
         'Seaside Cave',
         'Plasma Frigate',
         'Giant Chasm',
@@ -81989,9 +84312,43 @@ module.exports = {
       'Biker Goon 2',
       'Biker Goon 3',
       'Cue Ball Paxton',
+      'Sevii Rocket Grunt 1',
+      'Sevii Rocket Grunt 2',
+      'Sevii Rocket Grunt 3',
+      'Sevii Rocket Grunt 4',
+      'Sevii Rocket Grunt 5',
+      'Sevii Rocket Ariana',
+      'Sevii Rocket Archer',
+      'Scientist Gideon',
       'Spiky-eared Pichu',
       'Rocket Boss Giovanni',
       'Galactic Boss Cyrus',
+      'Team Plasma Grunt 1',
+      'Team Plasma Grunt 2',
+      'Team Plasma Grunt 3',
+      'Team Plasma Grunt 4',
+      'Team Plasma Grunt 5',
+      'Team Plasma Grunts 1',
+      'Team Plasma Grunts 2',
+      'Team Plasma Grunt 6',
+      'Zinzolin 1',
+      'Team Plasma Grunt 7',
+      'Team Plasma Grunt 8',
+      'Team Plasma Grunt 9',
+      'Zinzolin 2',
+      'Plasma Shadow 1',
+      'Colress',
+      'Plasma Shadow 2',
+      'Plasma Shadow 3',
+      'Plasma Shadow 4',
+      'Ghetsis 1',
+      'Ghetsis 2',
+      'Aipom Alley',
+      'Mime Interview',
+      'Underground Fighting Ring',
+      'Lab Ambush',
+      'Imposter',
+      'Possessed Mewtwo',
       'AZ',
       'Ash Ketchum Kanto',
       'Ash Ketchum Johto',
@@ -81999,6 +84356,7 @@ module.exports = {
       'Ash Ketchum Sinnoh',
       'Ash Ketchum Unova',
       'Ash Ketchum Kalos',
+      'Ash Ketchum Pinkan',
       'Ultra Wormhole',
       'Ultra Megalopolis',
       'Captain Mina',
@@ -82260,8 +84618,10 @@ module.exports = {
     'KantoSubRegions': {
       '0': 'Kanto',
       '1': 'Sevii123',
+      '2': 'Sevii4567',
       'Kanto': 0,
       'Sevii123': 1,
+      'Sevii4567': 2,
     },
     'JohtoSubRegions': {
       '0': 'Johto',
@@ -82343,81 +84703,86 @@ module.exports = {
     '37': 'Elite_Glacia',
     '38': 'Elite_Drake',
     '39': 'Elite_HoennChampion',
-    '40': 'Coal',
-    '41': 'Forest',
-    '42': 'Relic',
-    '43': 'Cobble',
-    '44': 'Fen',
-    '45': 'Mine',
-    '46': 'Icicle',
-    '47': 'Beacon',
-    '48': 'Elite_Aaron',
-    '49': 'Elite_Bertha',
-    '50': 'Elite_Flint',
-    '51': 'Elite_Lucian',
-    '52': 'Elite_SinnohChampion',
-    '53': 'Basic',
-    '54': 'Toxic',
-    '55': 'Insect',
-    '56': 'Bolt',
-    '57': 'Quake',
-    '58': 'Jet',
-    '59': 'Legend',
-    '60': 'Wave',
-    '61': 'Elite_Shauntal',
-    '62': 'Elite_Marshal',
-    '63': 'Elite_Grimsley',
-    '64': 'Elite_Caitlin',
-    '65': 'Elite_UnovaChampion',
-    '66': 'Bug',
-    '67': 'Cliff',
-    '68': 'Rumble',
-    '69': 'Plant',
-    '70': 'Voltage',
-    '71': 'Fairy',
-    '72': 'Psychic',
-    '73': 'Iceberg',
-    '74': 'Elite_Malva',
-    '75': 'Elite_Siebold',
-    '76': 'Elite_Wikstrom',
-    '77': 'Elite_Drasna',
-    '78': 'Elite_KalosChampion',
-    '79': 'NormaliumZ',
-    '80': 'FightiniumZ',
-    '81': 'WateriumZ',
-    '82': 'FiriumZ',
-    '83': 'GrassiumZ',
-    '84': 'RockiumZ',
-    '85': 'ElectriumZ',
-    '86': 'GhostiumZ',
-    '87': 'DarkiniumZ',
-    '88': 'DragoniumZ',
-    '89': 'FairiumZ',
-    '90': 'GroundiumZ',
-    '91': 'Elite_Olivia',
-    '92': 'Elite_Acerola',
-    '93': 'Elite_Molayne',
-    '94': 'Elite_Kahili',
-    '95': 'Elite_AlolaChampion',
-    '96': 'Galar_Grass',
-    '97': 'Galar_Water',
-    '98': 'Galar_Fire',
-    '99': 'Galar_Fighting',
-    '100': 'Galar_Ghost',
-    '101': 'Galar_Fairy',
-    '102': 'Galar_Rock',
-    '103': 'Galar_Ice',
-    '104': 'Galar_Dark',
-    '105': 'Galar_Dragon',
-    '106': 'Elite_Marnie',
-    '107': 'Elite_Bede',
-    '108': 'Elite_Hop',
-    '109': 'Elite_GalarChampion',
-    '110': 'Elite_ArmorPoison',
-    '111': 'Elite_ArmorPsychic',
-    '112': 'Elite_ArmorMatron',
-    '113': 'Elite_ArmorChampion',
-    '114': 'Elite_CrownChampion',
+    '40': 'Coral-Eye',
+    '41': 'Sea_Ruby',
+    '42': 'Spike_Shell',
+    '43': 'Jade_Star',
+    '44': 'Elite_OrangeChampion',
+    '45': 'Coal',
+    '46': 'Forest',
+    '47': 'Relic',
+    '48': 'Cobble',
+    '49': 'Fen',
+    '50': 'Mine',
+    '51': 'Icicle',
+    '52': 'Beacon',
+    '53': 'Elite_Aaron',
+    '54': 'Elite_Bertha',
+    '55': 'Elite_Flint',
+    '56': 'Elite_Lucian',
+    '57': 'Elite_SinnohChampion',
+    '58': 'Basic',
+    '59': 'Toxic',
+    '60': 'Insect',
+    '61': 'Bolt',
+    '62': 'Quake',
+    '63': 'Jet',
+    '64': 'Legend',
+    '65': 'Wave',
+    '66': 'Elite_Shauntal',
+    '67': 'Elite_Marshal',
+    '68': 'Elite_Grimsley',
+    '69': 'Elite_Caitlin',
+    '70': 'Elite_UnovaChampion',
+    '71': 'Bug',
+    '72': 'Cliff',
+    '73': 'Rumble',
+    '74': 'Plant',
+    '75': 'Voltage',
+    '76': 'Fairy',
+    '77': 'Psychic',
+    '78': 'Iceberg',
+    '79': 'Elite_Malva',
+    '80': 'Elite_Siebold',
+    '81': 'Elite_Wikstrom',
+    '82': 'Elite_Drasna',
+    '83': 'Elite_KalosChampion',
+    '84': 'NormaliumZ',
+    '85': 'FightiniumZ',
+    '86': 'WateriumZ',
+    '87': 'FiriumZ',
+    '88': 'GrassiumZ',
+    '89': 'RockiumZ',
+    '90': 'ElectriumZ',
+    '91': 'GhostiumZ',
+    '92': 'DarkiniumZ',
+    '93': 'DragoniumZ',
+    '94': 'FairiumZ',
+    '95': 'GroundiumZ',
+    '96': 'Elite_Olivia',
+    '97': 'Elite_Acerola',
+    '98': 'Elite_Molayne',
+    '99': 'Elite_Kahili',
+    '100': 'Elite_AlolaChampion',
+    '101': 'Galar_Grass',
+    '102': 'Galar_Water',
+    '103': 'Galar_Fire',
+    '104': 'Galar_Fighting',
+    '105': 'Galar_Ghost',
+    '106': 'Galar_Fairy',
+    '107': 'Galar_Rock',
+    '108': 'Galar_Ice',
+    '109': 'Galar_Dark',
+    '110': 'Galar_Dragon',
+    '111': 'Elite_Marnie',
+    '112': 'Elite_Bede',
+    '113': 'Elite_Hop',
+    '114': 'Elite_GalarChampion',
+    '115': 'Elite_ArmorPoison',
+    '116': 'Elite_ArmorPsychic',
+    '117': 'Elite_ArmorMatron',
+    '118': 'Elite_ArmorChampion',
+    '119': 'Elite_CrownChampion',
     'None': 0,
     'Boulder': 1,
     'Cascade': 2,
@@ -82458,81 +84823,86 @@ module.exports = {
     'Elite_Glacia': 37,
     'Elite_Drake': 38,
     'Elite_HoennChampion': 39,
-    'Coal': 40,
-    'Forest': 41,
-    'Relic': 42,
-    'Cobble': 43,
-    'Fen': 44,
-    'Mine': 45,
-    'Icicle': 46,
-    'Beacon': 47,
-    'Elite_Aaron': 48,
-    'Elite_Bertha': 49,
-    'Elite_Flint': 50,
-    'Elite_Lucian': 51,
-    'Elite_SinnohChampion': 52,
-    'Basic': 53,
-    'Toxic': 54,
-    'Insect': 55,
-    'Bolt': 56,
-    'Quake': 57,
-    'Jet': 58,
-    'Legend': 59,
-    'Wave': 60,
-    'Elite_Shauntal': 61,
-    'Elite_Marshal': 62,
-    'Elite_Grimsley': 63,
-    'Elite_Caitlin': 64,
-    'Elite_UnovaChampion': 65,
-    'Bug': 66,
-    'Cliff': 67,
-    'Rumble': 68,
-    'Plant': 69,
-    'Voltage': 70,
-    'Fairy': 71,
-    'Psychic': 72,
-    'Iceberg': 73,
-    'Elite_Malva': 74,
-    'Elite_Siebold': 75,
-    'Elite_Wikstrom': 76,
-    'Elite_Drasna': 77,
-    'Elite_KalosChampion': 78,
-    'NormaliumZ': 79,
-    'FightiniumZ': 80,
-    'WateriumZ': 81,
-    'FiriumZ': 82,
-    'GrassiumZ': 83,
-    'RockiumZ': 84,
-    'ElectriumZ': 85,
-    'GhostiumZ': 86,
-    'DarkiniumZ': 87,
-    'DragoniumZ': 88,
-    'FairiumZ': 89,
-    'GroundiumZ': 90,
-    'Elite_Olivia': 91,
-    'Elite_Acerola': 92,
-    'Elite_Molayne': 93,
-    'Elite_Kahili': 94,
-    'Elite_AlolaChampion': 95,
-    'Galar_Grass': 96,
-    'Galar_Water': 97,
-    'Galar_Fire': 98,
-    'Galar_Fighting': 99,
-    'Galar_Ghost': 100,
-    'Galar_Fairy': 101,
-    'Galar_Rock': 102,
-    'Galar_Ice': 103,
-    'Galar_Dark': 104,
-    'Galar_Dragon': 105,
-    'Elite_Marnie': 106,
-    'Elite_Bede': 107,
-    'Elite_Hop': 108,
-    'Elite_GalarChampion': 109,
-    'Elite_ArmorPoison': 110,
-    'Elite_ArmorPsychic': 111,
-    'Elite_ArmorMatron': 112,
-    'Elite_ArmorChampion': 113,
-    'Elite_CrownChampion': 114,
+    'Coral-Eye': 40,
+    'Sea_Ruby': 41,
+    'Spike_Shell': 42,
+    'Jade_Star': 43,
+    'Elite_OrangeChampion': 44,
+    'Coal': 45,
+    'Forest': 46,
+    'Relic': 47,
+    'Cobble': 48,
+    'Fen': 49,
+    'Mine': 50,
+    'Icicle': 51,
+    'Beacon': 52,
+    'Elite_Aaron': 53,
+    'Elite_Bertha': 54,
+    'Elite_Flint': 55,
+    'Elite_Lucian': 56,
+    'Elite_SinnohChampion': 57,
+    'Basic': 58,
+    'Toxic': 59,
+    'Insect': 60,
+    'Bolt': 61,
+    'Quake': 62,
+    'Jet': 63,
+    'Legend': 64,
+    'Wave': 65,
+    'Elite_Shauntal': 66,
+    'Elite_Marshal': 67,
+    'Elite_Grimsley': 68,
+    'Elite_Caitlin': 69,
+    'Elite_UnovaChampion': 70,
+    'Bug': 71,
+    'Cliff': 72,
+    'Rumble': 73,
+    'Plant': 74,
+    'Voltage': 75,
+    'Fairy': 76,
+    'Psychic': 77,
+    'Iceberg': 78,
+    'Elite_Malva': 79,
+    'Elite_Siebold': 80,
+    'Elite_Wikstrom': 81,
+    'Elite_Drasna': 82,
+    'Elite_KalosChampion': 83,
+    'NormaliumZ': 84,
+    'FightiniumZ': 85,
+    'WateriumZ': 86,
+    'FiriumZ': 87,
+    'GrassiumZ': 88,
+    'RockiumZ': 89,
+    'ElectriumZ': 90,
+    'GhostiumZ': 91,
+    'DarkiniumZ': 92,
+    'DragoniumZ': 93,
+    'FairiumZ': 94,
+    'GroundiumZ': 95,
+    'Elite_Olivia': 96,
+    'Elite_Acerola': 97,
+    'Elite_Molayne': 98,
+    'Elite_Kahili': 99,
+    'Elite_AlolaChampion': 100,
+    'Galar_Grass': 101,
+    'Galar_Water': 102,
+    'Galar_Fire': 103,
+    'Galar_Fighting': 104,
+    'Galar_Ghost': 105,
+    'Galar_Fairy': 106,
+    'Galar_Rock': 107,
+    'Galar_Ice': 108,
+    'Galar_Dark': 109,
+    'Galar_Dragon': 110,
+    'Elite_Marnie': 111,
+    'Elite_Bede': 112,
+    'Elite_Hop': 113,
+    'Elite_GalarChampion': 114,
+    'Elite_ArmorPoison': 115,
+    'Elite_ArmorPsychic': 116,
+    'Elite_ArmorMatron': 117,
+    'Elite_ArmorChampion': 118,
+    'Elite_CrownChampion': 119,
   },
   'GymList': {
     'Pewter City': {
@@ -83191,7 +85561,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 14,
+          'dungeonIndex': 22,
         },
       ],
       'leaderName': 'Falkner',
@@ -83224,7 +85594,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 17,
+          'dungeonIndex': 25,
         },
       ],
       'leaderName': 'Bugsy',
@@ -83407,7 +85777,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 23,
+          'dungeonIndex': 31,
         },
       ],
       'leaderName': 'Pryce',
@@ -84024,7 +86394,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 46,
+          'dungeonIndex': 54,
         },
       ],
       'leaderName': 'Juan',
@@ -84337,6 +86707,176 @@ module.exports = {
         },
       ],
     },
+    'Mikan Island': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
+      'leaderName': 'Cissy',
+      'town': 'Mikan Island',
+      'pokemons': [
+        {
+          'name': 'Seadra',
+          'maxHealth': 2307500,
+          'level': 24,
+        },
+        {
+          'name': 'Blastoise',
+          'maxHealth': 2307500,
+          'level': 24,
+        },
+      ],
+      'badgeReward': 40,
+      'moneyReward': 740,
+      'defeatMessage': "I can see why you made it so far in the Indigo League, and i bet you'll do pretty well in the Orange League.\nThis is the Coral-Eye Badge of the Mikan Gym, to prove that you won your match!",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Cissy's gym",
+    },
+    'Navel Island': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
+      'leaderName': 'Danny',
+      'town': 'Navel Island',
+      'pokemons': [
+        {
+          'name': 'Geodude',
+          'maxHealth': 923000,
+          'level': 24,
+        },
+        {
+          'name': 'Nidoqueen',
+          'maxHealth': 923000,
+          'level': 24,
+        },
+        {
+          'name': 'Machoke',
+          'maxHealth': 923000,
+          'level': 24,
+        },
+        {
+          'name': 'Scyther',
+          'maxHealth': 923000,
+          'level': 24,
+        },
+        {
+          'name': 'Electrode',
+          'maxHealth': 923000,
+          'level': 24,
+        },
+      ],
+      'badgeReward': 41,
+      'moneyReward': 740,
+      'defeatMessage': "You and the others were great.\nNow I'd like to give you and your fellow challengers something you really deserve. The Sea Ruby badge. It's yours.",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Danny's gym",
+    },
+    'Trovita Island': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
+      'leaderName': 'Rudy',
+      'town': 'Trovita Island',
+      'pokemons': [
+        {
+          'name': 'Electabuzz',
+          'maxHealth': 1538333,
+          'level': 24,
+        },
+        {
+          'name': 'Exeggutor',
+          'maxHealth': 1538333,
+          'level': 24,
+        },
+        {
+          'name': 'Starmie',
+          'maxHealth': 1538333,
+          'level': 24,
+        },
+      ],
+      'badgeReward': 42,
+      'moneyReward': 740,
+      'defeatMessage': 'Nice job, guys. Here are your Spike Shell badges, guys.',
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Rudy's gym",
+    },
+    'Kumquat Island': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
+      'leaderName': 'Luana',
+      'town': 'Kumquat Island',
+      'pokemons': [
+        {
+          'name': 'Alakazam',
+          'maxHealth': 2307500,
+          'level': 24,
+        },
+        {
+          'name': 'Marowak',
+          'maxHealth': 2307500,
+          'level': 24,
+        },
+      ],
+      'badgeReward': 43,
+      'moneyReward': 740,
+      'defeatMessage': 'You did a fine job.\nAnd now, as Kumquat Island gym leader, and a member of the Orange Crew, I happily present this token of your victory.',
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Luana's gym",
+    },
+    'Supreme Gym Leader Drake': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [],
+      'leaderName': 'Supreme Gym Leader Drake',
+      'town': 'Supreme Gym Leader Drake',
+      'pokemons': [
+        {
+          'name': 'Ditto',
+          'maxHealth': 899520,
+          'level': 38,
+        },
+        {
+          'name': 'Onix',
+          'maxHealth': 899520,
+          'level': 39,
+        },
+        {
+          'name': 'Gengar',
+          'maxHealth': 899520,
+          'level': 40,
+        },
+        {
+          'name': 'Venusaur',
+          'maxHealth': 899520,
+          'level': 40,
+        },
+        {
+          'name': 'Electabuzz',
+          'maxHealth': 899520,
+          'level': 41,
+        },
+        {
+          'name': 'Dragonite',
+          'maxHealth': 1124400,
+          'level': 37,
+        },
+      ],
+      'badgeReward': 44,
+      'moneyReward': 4800,
+      'defeatMessage': "You really deserve that trophy. You're a great Pokémon trainer.",
+      'flags': {
+        'quest': true,
+        'achievement': true,
+      },
+      'buttonText': "Supreme Gym Leader Drake's gym",
+    },
     'Oreburgh City': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
@@ -84365,7 +86905,7 @@ module.exports = {
           'level': 14,
         },
       ],
-      'badgeReward': 40,
+      'badgeReward': 45,
       'moneyReward': 250,
       'defeatMessage': "This is embarrassing... I went and lost to a Trainer who didn't have a single Gym Badge... But that's tough. You were strong, and I was weak. That's all there is. According to Pokémon League rules, I have to give you our Gym Badge since you've beaten me, the Leader. Heres your official Pokémon League Coal Badge.",
       'flags': {
@@ -84380,7 +86920,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 40,
+          'badge': 45,
         },
       ],
       'leaderName': 'Gardenia',
@@ -84402,7 +86942,7 @@ module.exports = {
           'level': 22,
         },
       ],
-      'badgeReward': 41,
+      'badgeReward': 46,
       'moneyReward': 400,
       'defeatMessage': "I might've said it before, but you're really tough! Wasn't it hard for you to raise your Pokémon to be so good? I guess that's a measure of how much you love your Pokémon. In recognition of that, I proudly grant you this!\"",
       'flags': {
@@ -84417,7 +86957,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 41,
+          'badge': 46,
         },
       ],
       'leaderName': 'Fantina',
@@ -84439,7 +86979,7 @@ module.exports = {
           'level': 26,
         },
       ],
-      'badgeReward': 42,
+      'badgeReward': 47,
       'moneyReward': 740,
       'defeatMessage': 'I am dumbfounded! So very, very strong! You, your Pokémon, so strong! Your power is admirable! I shall honor it with this Gym Badge!"',
       'flags': {
@@ -84454,7 +86994,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 42,
+          'badge': 47,
         },
       ],
       'leaderName': 'Maylene',
@@ -84476,7 +87016,7 @@ module.exports = {
           'level': 32,
         },
       ],
-      'badgeReward': 43,
+      'badgeReward': 48,
       'moneyReward': 1200,
       'defeatMessage': '...OK. You win. That was a tough loss. I learned a lot from it. Please, accept this Gym Badge.',
       'flags': {
@@ -84491,7 +87031,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 43,
+          'badge': 48,
         },
       ],
       'leaderName': 'Crasher Wake',
@@ -84513,7 +87053,7 @@ module.exports = {
           'level': 37,
         },
       ],
-      'badgeReward': 44,
+      'badgeReward': 49,
       'moneyReward': 2500,
       'defeatMessage': "It seems the undertow pulled me under... But I had a great time battling with you! You've earned this!",
       'flags': {
@@ -84528,7 +87068,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 44,
+          'badge': 49,
         },
       ],
       'leaderName': 'Byron',
@@ -84550,7 +87090,7 @@ module.exports = {
           'level': 41,
         },
       ],
-      'badgeReward': 45,
+      'badgeReward': 50,
       'moneyReward': 4800,
       'defeatMessage': 'You were strong enough to take down my prized team of Pokémon. In recognition of that power, I give you this: the Mine Badge!',
       'flags': {
@@ -84565,7 +87105,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 45,
+          'badge': 50,
         },
       ],
       'leaderName': 'Candice',
@@ -84592,7 +87132,7 @@ module.exports = {
           'level': 44,
         },
       ],
-      'badgeReward': 46,
+      'badgeReward': 51,
       'moneyReward': 8000,
       'defeatMessage': "Wow! You're great! You've earned my respect! I think your focus and will bowled us over totally. Oh, that's right! I'm supposed to give you this!",
       'flags': {
@@ -84607,7 +87147,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 46,
+          'badge': 51,
         },
       ],
       'leaderName': 'Volkner',
@@ -84634,7 +87174,7 @@ module.exports = {
           'level': 50,
         },
       ],
-      'badgeReward': 47,
+      'badgeReward': 52,
       'moneyReward': 12000,
       'defeatMessage': "...Hehehe. Hahahah! ...That was the most fun I've had in a battle since...I don't know when! It's also made me excited to know you and your team will keep battling to greater heights! This is your eighth Gym Badge. You've earned this!",
       'flags': {
@@ -84649,7 +87189,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 47,
+          'badge': 52,
         },
       ],
       'leaderName': 'Aaron',
@@ -84681,7 +87221,7 @@ module.exports = {
           'level': 53,
         },
       ],
-      'badgeReward': 48,
+      'badgeReward': 53,
       'moneyReward': 18000,
       'defeatMessage': "I lost with the most beautiful and toughest of the bug Pokémon... We lost because I wasn't good enough... That's it! Back to training camp! Let's hear it for me! No... That was wrong... Anyway... Go on to the next room! Three Trainers are waiting for you. They are all tougher than me.",
       'flags': {
@@ -84696,7 +87236,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 48,
+          'badge': 53,
         },
       ],
       'leaderName': 'Bertha',
@@ -84728,7 +87268,7 @@ module.exports = {
           'level': 55,
         },
       ],
-      'badgeReward': 49,
+      'badgeReward': 54,
       'moneyReward': 18000,
       'defeatMessage': "You're quite something, youngster. I like how you and your Pokémon earned the win by working as one. That's what makes you so strong. Ahahaha! I think that you can go as far as you want.",
       'flags': {
@@ -84743,7 +87283,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 49,
+          'badge': 54,
         },
       ],
       'leaderName': 'Flint',
@@ -84775,7 +87315,7 @@ module.exports = {
           'level': 57,
         },
       ],
-      'badgeReward': 50,
+      'badgeReward': 55,
       'moneyReward': 18000,
       'defeatMessage': '.........Keep going...I know your spirit burns hot. Your whole team does.',
       'flags': {
@@ -84790,7 +87330,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 50,
+          'badge': 55,
         },
       ],
       'leaderName': 'Lucian',
@@ -84822,7 +87362,7 @@ module.exports = {
           'level': 59,
         },
       ],
-      'badgeReward': 51,
+      'badgeReward': 56,
       'moneyReward': 18000,
       'defeatMessage': "Congratulations. You have beaten the Elite Four. However, that doesn't mean you're done with the Pokémon league. There remains the Champion. I should warn you—the Champion is far stronger than the Elite Four. Now, go on. Step through the doorway to your final battle.",
       'flags': {
@@ -84837,7 +87377,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 51,
+          'badge': 56,
         },
       ],
       'leaderName': 'Cynthia',
@@ -84874,7 +87414,7 @@ module.exports = {
           'level': 62,
         },
       ],
-      'badgeReward': 52,
+      'badgeReward': 57,
       'moneyReward': 32000,
       'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion!",
       'flags': {
@@ -84922,7 +87462,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 72,
+          'dungeonIndex': 80,
         },
       ],
       'leaderName': 'Cheren',
@@ -84944,7 +87484,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 53,
+      'badgeReward': 58,
       'moneyReward': 500,
       'defeatMessage': 'That battle has made me feel really glad you were my first challenger as a Gym Leader… I give you this in honor of the strength you and your Pokémon showed!',
       'flags': {
@@ -84959,7 +87499,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 53,
+          'badge': 58,
         },
       ],
       'leaderName': 'Roxie',
@@ -84981,7 +87521,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 54,
+      'badgeReward': 59,
       'moneyReward': 800,
       'defeatMessage': "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I feel revitalized and refreshed now! Here! Proof that you beat me!",
       'flags': {
@@ -84997,7 +87537,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 74,
+          'dungeonIndex': 82,
         },
       ],
       'leaderName': 'Burgh',
@@ -85024,7 +87564,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 55,
+      'badgeReward': 60,
       'moneyReward': 1500,
       'defeatMessage': "Oh hoo… You are very strong indeed! I guess it's no surprise I lost. Here! Take this Insect Badge! I think it'll suit you!",
       'flags': {
@@ -85039,7 +87579,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 55,
+          'badge': 60,
         },
       ],
       'leaderName': 'Elesa',
@@ -85066,7 +87606,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 56,
+      'badgeReward': 61,
       'moneyReward': 2600,
       'defeatMessage': "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my feet! Take this!",
       'flags': {
@@ -85081,7 +87621,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 56,
+          'badge': 61,
         },
       ],
       'leaderName': 'Clay',
@@ -85108,7 +87648,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 57,
+      'badgeReward': 62,
       'moneyReward': 4800,
       'defeatMessage': "Phew… You're really somethin'! Li'l whippersnapper Trainers who pack a real punch keep showin' up one after another. Mrmph. Here! Take this!",
       'flags': {
@@ -85123,7 +87663,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 57,
+          'badge': 62,
         },
       ],
       'leaderName': 'Skyla',
@@ -85150,7 +87690,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 58,
+      'badgeReward': 63,
       'moneyReward': 7600,
       'defeatMessage': "You're an amazing Pokémon Trainer. My Pokémon and I are happy because for the first time in quite a while--about two years, I'd say--we could fight with our full strength. This is an official League Gym Badge. But this is just a stepping-stone.",
       'flags': {
@@ -85165,7 +87705,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 58,
+          'badge': 63,
         },
       ],
       'leaderName': 'Drayden',
@@ -85192,7 +87732,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 59,
+      'badgeReward': 64,
       'moneyReward': 14000,
       'defeatMessage': "Wonderful. I'm grateful that we had a chance to meet and battle. It reminded me that Pokémon battles are about working with others to meet our challenges together.",
       'flags': {
@@ -85207,7 +87747,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 59,
+          'badge': 64,
         },
       ],
       'leaderName': 'Marlon',
@@ -85234,7 +87774,7 @@ module.exports = {
           'level': 58,
         },
       ],
-      'badgeReward': 60,
+      'badgeReward': 65,
       'moneyReward': 27000,
       'defeatMessage': "You don't just look strong, you're strong fo' reals! Eh, I was swept away, too! Oh yeah, yo. I was so surprised that I forgot! I gotta give this to you!",
       'flags': {
@@ -85249,7 +87789,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 60,
+          'badge': 65,
         },
       ],
       'leaderName': 'Shauntal',
@@ -85286,7 +87826,7 @@ module.exports = {
           'level': 53,
         },
       ],
-      'badgeReward': 61,
+      'badgeReward': 66,
       'moneyReward': 32000,
       'defeatMessage': "My Pokémon and the challenger's Pokémon. Everyone battled even though they were hurt... Thank you.",
       'flags': {
@@ -85301,7 +87841,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 61,
+          'badge': 66,
         },
       ],
       'leaderName': 'Marshal',
@@ -85338,7 +87878,7 @@ module.exports = {
           'level': 53,
         },
       ],
-      'badgeReward': 62,
+      'badgeReward': 67,
       'moneyReward': 32000,
       'defeatMessage': 'Whew! Well done! As your battles continue, aim for even greater heights!',
       'flags': {
@@ -85353,7 +87893,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 62,
+          'badge': 67,
         },
       ],
       'leaderName': 'Grimsley',
@@ -85390,7 +87930,7 @@ module.exports = {
           'level': 53,
         },
       ],
-      'badgeReward': 63,
+      'badgeReward': 68,
       'moneyReward': 32000,
       'defeatMessage': 'Whether or not you get to fight at full strength, whether or not luck smiles on you--none of that matters. Only results matter. And a loss is a loss. See, victory shines like a bright light. And right now, you and your Pokémon are shining brilliantly.',
       'flags': {
@@ -85405,7 +87945,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 63,
+          'badge': 68,
         },
       ],
       'leaderName': 'Caitlin',
@@ -85442,7 +87982,7 @@ module.exports = {
           'level': 53,
         },
       ],
-      'badgeReward': 64,
+      'badgeReward': 69,
       'moneyReward': 32000,
       'defeatMessage': 'You and your Pokémon are both excellent and elegant. To have been able to battle against such a splendid team... My Pokémon and I learned a lot! I offer you my thanks.',
       'flags': {
@@ -85457,7 +87997,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 64,
+          'badge': 69,
         },
       ],
       'leaderName': 'Iris',
@@ -85494,7 +88034,7 @@ module.exports = {
           'level': 62,
         },
       ],
-      'badgeReward': 65,
+      'badgeReward': 70,
       'moneyReward': 64000,
       'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
       'flags': {
@@ -85560,7 +88100,7 @@ module.exports = {
           'level': 12,
         },
       ],
-      'badgeReward': 66,
+      'badgeReward': 71,
       'moneyReward': 800,
       'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your Pokémon have shown me a whole new depth of field! Fantastic! Just fantastic!",
       'flags': {
@@ -85575,7 +88115,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 66,
+          'badge': 71,
         },
       ],
       'leaderName': 'Grant',
@@ -85592,7 +88132,7 @@ module.exports = {
           'level': 25,
         },
       ],
-      'badgeReward': 67,
+      'badgeReward': 72,
       'moneyReward': 1700,
       'defeatMessage': "There are some things that seem out of reach no matter how hard you try. However, it's important that you never give up--no matter the opponent or the odds. I could tell from our battle that you and your Pokémon understand that. To commemorate such an impressive show of teamwork, please accept the Cliff Badge!",
       'flags': {
@@ -85607,7 +88147,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 67,
+          'badge': 72,
         },
       ],
       'leaderName': 'Korrina',
@@ -85629,7 +88169,7 @@ module.exports = {
           'level': 32,
         },
       ],
-      'badgeReward': 68,
+      'badgeReward': 73,
       'moneyReward': 3800,
       'defeatMessage': "Oh! I have been defeated! Alack, alay! Lady Korrina gave a terrible display! This is it. I must give up my title and admit that your strength far exceeds-- Just teasing! But here's your Badge. Boy, you'll be rolling in 'em soon!",
       'flags': {
@@ -85644,7 +88184,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 68,
+          'badge': 73,
         },
       ],
       'leaderName': 'Ramos',
@@ -85666,7 +88206,7 @@ module.exports = {
           'level': 34,
         },
       ],
-      'badgeReward': 69,
+      'badgeReward': 74,
       'moneyReward': 5500,
       'defeatMessage': "Yeh believe in yer Pokémon... And they believe in yeh, too... Mighty oaks from acorns grow. Go on, then. Yeh've earned it. Here's yer own Plant Badge, sprout.",
       'flags': {
@@ -85682,7 +88222,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 101,
+          'dungeonIndex': 108,
         },
       ],
       'leaderName': 'Clemont',
@@ -85704,7 +88244,7 @@ module.exports = {
           'level': 37,
         },
       ],
-      'badgeReward': 70,
+      'badgeReward': 75,
       'moneyReward': 9000,
       'defeatMessage': "Oh, Bonnie... When will you learn there's no shame in losing? I'm glad whenever I get to learn something new thanks to strong challengers like you here.",
       'flags': {
@@ -85719,7 +88259,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 70,
+          'badge': 75,
         },
       ],
       'leaderName': 'Valerie',
@@ -85741,7 +88281,7 @@ module.exports = {
           'level': 42,
         },
       ],
-      'badgeReward': 71,
+      'badgeReward': 76,
       'moneyReward': 16000,
       'defeatMessage': 'Yes... That was a fine battle. I shall reward you for this great victory. This is the Fairy Badge. It is yours now. Its beauty is captivating, is it not? ... ... ... ... ... ... Ah... Do forgive me. I was so captivated, I forgot for a moment that it is yours.',
       'flags': {
@@ -85756,7 +88296,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 71,
+          'badge': 76,
         },
       ],
       'leaderName': 'Olympia',
@@ -85778,7 +88318,7 @@ module.exports = {
           'level': 48,
         },
       ],
-      'badgeReward': 72,
+      'badgeReward': 77,
       'moneyReward': 30000,
       'defeatMessage': 'Now, the Psychic Badge. A testament to your skill. Proof of your power.',
       'flags': {
@@ -85794,7 +88334,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 107,
+          'dungeonIndex': 114,
         },
       ],
       'leaderName': 'Wulfric',
@@ -85816,7 +88356,7 @@ module.exports = {
           'level': 59,
         },
       ],
-      'badgeReward': 73,
+      'badgeReward': 78,
       'moneyReward': 52000,
       'defeatMessage': "Impressive! Your Pokémon fought with great courage. I can tell that you've trained your Pokémon well.",
       'flags': {
@@ -85831,7 +88371,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 73,
+          'badge': 78,
         },
       ],
       'leaderName': 'Malva',
@@ -85858,7 +88398,7 @@ module.exports = {
           'level': 65,
         },
       ],
-      'badgeReward': 74,
+      'badgeReward': 79,
       'moneyReward': 64000,
       'defeatMessage': 'What news... So a new challenger has defeated Malva of the Elite Four!',
       'flags': {
@@ -85873,7 +88413,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 74,
+          'badge': 79,
         },
       ],
       'leaderName': 'Siebold',
@@ -85900,7 +88440,7 @@ module.exports = {
           'level': 65,
         },
       ],
-      'badgeReward': 75,
+      'badgeReward': 80,
       'moneyReward': 64000,
       'defeatMessage': 'I shall store my memory of you and your Pokémon forever away within my heart.',
       'flags': {
@@ -85915,7 +88455,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 75,
+          'badge': 80,
         },
       ],
       'leaderName': 'Wikstrom',
@@ -85942,7 +88482,7 @@ module.exports = {
           'level': 65,
         },
       ],
-      'badgeReward': 76,
+      'badgeReward': 81,
       'moneyReward': 64000,
       'defeatMessage': 'Glorious! The trust that you share with your honorable Pokémon surpasses even mine!',
       'flags': {
@@ -85957,7 +88497,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 76,
+          'badge': 81,
         },
       ],
       'leaderName': 'Drasna',
@@ -85984,7 +88524,7 @@ module.exports = {
           'level': 65,
         },
       ],
-      'badgeReward': 77,
+      'badgeReward': 82,
       'moneyReward': 64000,
       'defeatMessage': "Oh, dear me. That sure was a quick battle... I do hope you'll come back again sometime!",
       'flags': {
@@ -85999,7 +88539,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 77,
+          'badge': 82,
         },
       ],
       'leaderName': 'Diantha',
@@ -86036,7 +88576,7 @@ module.exports = {
           'level': 68,
         },
       ],
-      'badgeReward': 78,
+      'badgeReward': 83,
       'moneyReward': 128000,
       'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
       'flags': {
@@ -86084,7 +88624,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 112,
+          'dungeonIndex': 119,
         },
       ],
       'leaderName': 'Hala',
@@ -86106,7 +88646,7 @@ module.exports = {
           'level': 16,
         },
       ],
-      'badgeReward': 80,
+      'badgeReward': 85,
       'moneyReward': 128000,
       'defeatMessage': 'The results come as no surprise to me. What a fine Trainer...and what fine Pokémon, too!',
       'flags': {
@@ -86145,7 +88685,7 @@ module.exports = {
           'level': 28,
         },
       ],
-      'badgeReward': 84,
+      'badgeReward': 89,
       'moneyReward': 128000,
       'defeatMessage': 'How lovely.',
       'flags': {
@@ -86161,7 +88701,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 126,
+          'dungeonIndex': 133,
         },
       ],
       'leaderName': 'Nanu',
@@ -86183,7 +88723,7 @@ module.exports = {
           'level': 44,
         },
       ],
-      'badgeReward': 87,
+      'badgeReward': 92,
       'moneyReward': 128000,
       'defeatMessage': 'Hmph...',
       'flags': {
@@ -86199,7 +88739,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 130,
+          'dungeonIndex': 137,
         },
       ],
       'leaderName': 'Hapu',
@@ -86226,7 +88766,7 @@ module.exports = {
           'level': 54,
         },
       ],
-      'badgeReward': 90,
+      'badgeReward': 95,
       'moneyReward': 128000,
       'defeatMessage': 'You have succeeded in your final grand trial!',
       'flags': {
@@ -86257,7 +88797,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 79,
+      'badgeReward': 84,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Normalium-Z!',
       'flags': {
@@ -86288,7 +88828,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 81,
+      'badgeReward': 86,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Waterium-Z!',
       'flags': {
@@ -86319,7 +88859,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 82,
+      'badgeReward': 87,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Firium-Z!',
       'flags': {
@@ -86350,7 +88890,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 83,
+      'badgeReward': 88,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Grassium-Z!',
       'flags': {
@@ -86381,7 +88921,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 85,
+      'badgeReward': 90,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Electrium-Z!',
       'flags': {
@@ -86412,7 +88952,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 86,
+      'badgeReward': 91,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Ghostium-Z!',
       'flags': {
@@ -86443,7 +88983,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 88,
+      'badgeReward': 93,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Dragonium-Z!',
       'flags': {
@@ -86474,7 +89014,7 @@ module.exports = {
           'level': 51,
         },
       ],
-      'badgeReward': 89,
+      'badgeReward': 94,
       'moneyReward': 128000,
       'defeatMessage': 'You have received the Fairium-Z!',
       'flags': {
@@ -86489,7 +89029,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 90,
+          'badge': 95,
         },
       ],
       'leaderName': 'Molayne',
@@ -86521,7 +89061,7 @@ module.exports = {
           'level': 57,
         },
       ],
-      'badgeReward': 93,
+      'badgeReward': 98,
       'moneyReward': 64000,
       'defeatMessage': 'That Kukui... He certainly found an interesting Trainer for me to face!',
       'flags': {
@@ -86536,7 +89076,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 93,
+          'badge': 98,
         },
       ],
       'leaderName': 'Olivia',
@@ -86568,7 +89108,7 @@ module.exports = {
           'level': 57,
         },
       ],
-      'badgeReward': 91,
+      'badgeReward': 96,
       'moneyReward': 64000,
       'defeatMessage': "I don't see the same look in your eyes that I saw when we first met on Akala Island. Have you had some experiences that you'll carry with you in your heart forever? Well, it's time for you to move on.",
       'flags': {
@@ -86583,7 +89123,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 91,
+          'badge': 96,
         },
       ],
       'leaderName': 'Acerola',
@@ -86615,7 +89155,7 @@ module.exports = {
           'level': 57,
         },
       ],
-      'badgeReward': 92,
+      'badgeReward': 97,
       'moneyReward': 64000,
       'defeatMessage': "I'm...I'm speechless! You've done me in!",
       'flags': {
@@ -86630,7 +89170,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 92,
+          'badge': 97,
         },
       ],
       'leaderName': 'Kahili',
@@ -86662,7 +89202,7 @@ module.exports = {
           'level': 57,
         },
       ],
-      'badgeReward': 94,
+      'badgeReward': 99,
       'moneyReward': 64000,
       'defeatMessage': "It's frustrating to me as a member of the Elite Four, but it seems your strength is the real deal.",
       'flags': {
@@ -86677,7 +89217,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 94,
+          'badge': 99,
         },
       ],
       'leaderName': 'Hau',
@@ -86704,7 +89244,7 @@ module.exports = {
           'level': 59,
         },
       ],
-      'badgeReward': 95,
+      'badgeReward': 100,
       'moneyReward': 100000,
       'defeatMessage': "We're gonna keep moving forward, by staying at full power all the time!",
       'flags': {
@@ -86796,7 +89336,7 @@ module.exports = {
           'level': 20,
         },
       ],
-      'badgeReward': 96,
+      'badgeReward': 101,
       'moneyReward': 40000,
       'defeatMessage': 'The power of Grass has wilted... What an incredible Gym Challenger!',
       'flags': {
@@ -86810,7 +89350,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop4',
         },
       ],
@@ -86833,7 +89373,7 @@ module.exports = {
           'level': 24,
         },
       ],
-      'badgeReward': 97,
+      'badgeReward': 102,
       'moneyReward': 60000,
       'defeatMessage': 'I may proudly be the strongest member of this Gym, but I was totally washed away!',
       'flags': {
@@ -86847,7 +89387,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Marnie1',
         },
       ],
@@ -86870,7 +89410,7 @@ module.exports = {
           'level': 27,
         },
       ],
-      'badgeReward': 98,
+      'badgeReward': 103,
       'moneyReward': 60000,
       'defeatMessage': "I'm often regarded as the first real roadblock of the Gym Challenge, and yet you defeated me! Clearly, your talent surpassed my many years of experience. I still have much to learn!",
       'flags': {
@@ -86884,7 +89424,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop5',
         },
       ],
@@ -86912,7 +89452,7 @@ module.exports = {
           'level': 36,
         },
       ],
-      'badgeReward': 99,
+      'badgeReward': 104,
       'moneyReward': 80000,
       'defeatMessage': 'Your strength nearly made me want to turn and run in my bare feet',
       'flags': {
@@ -86926,7 +89466,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Hop5',
         },
       ],
@@ -86954,7 +89494,7 @@ module.exports = {
           'level': 36,
         },
       ],
-      'badgeReward': 100,
+      'badgeReward': 105,
       'moneyReward': 80000,
       'defeatMessage': 'Maybe my mask... kept me from seeing just how strong you really are...',
       'flags': {
@@ -86970,7 +89510,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 142,
+          'dungeonIndex': 149,
         },
       ],
       'leaderName': 'Opal',
@@ -86997,7 +89537,7 @@ module.exports = {
           'level': 38,
         },
       ],
-      'badgeReward': 101,
+      'badgeReward': 106,
       'moneyReward': 80000,
       'defeatMessage': "Your pink is still lacking, but you're an excellent Trainer with some excellent Pokémon.",
       'flags': {
@@ -87041,7 +89581,7 @@ module.exports = {
           'level': 42,
         },
       ],
-      'badgeReward': 102,
+      'badgeReward': 107,
       'moneyReward': 80000,
       'defeatMessage': "I just want to climb into a hole... Well, I guess it'd be more like falling from here.",
       'flags': {
@@ -87085,7 +89625,7 @@ module.exports = {
           'level': 42,
         },
       ],
-      'badgeReward': 103,
+      'badgeReward': 108,
       'moneyReward': 80000,
       'defeatMessage': 'I think you took breaking the ice a little too literally...',
       'flags': {
@@ -87099,7 +89639,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'Marnie2',
         },
       ],
@@ -87127,7 +89667,7 @@ module.exports = {
           'level': 46,
         },
       ],
-      'badgeReward': 104,
+      'badgeReward': 109,
       'moneyReward': 96000,
       'defeatMessage': "Me an' my team gave it our best. Let's meet up again for a battle some time...",
       'flags': {
@@ -87142,7 +89682,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 104,
+          'badge': 109,
         },
       ],
       'leaderName': 'Raihan',
@@ -87169,7 +89709,7 @@ module.exports = {
           'level': 48,
         },
       ],
-      'badgeReward': 105,
+      'badgeReward': 110,
       'moneyReward': 128000,
       'defeatMessage': 'I might have lost, but I still look good. Maybe I should snap a quick selfie...',
       'flags': {
@@ -87218,7 +89758,7 @@ module.exports = {
           'level': 49,
         },
       ],
-      'badgeReward': 106,
+      'badgeReward': 111,
       'moneyReward': 150000,
       'defeatMessage': 'OK, so I lost... but I got to see a lot of the good points of you and your Pokémon!',
       'flags': {
@@ -87233,7 +89773,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 106,
+          'badge': 111,
         },
       ],
       'leaderName': 'Bede',
@@ -87265,7 +89805,7 @@ module.exports = {
           'level': 53,
         },
       ],
-      'badgeReward': 107,
+      'badgeReward': 112,
       'moneyReward': 150000,
       'defeatMessage': "I couldn't win, but at least I was able to show everyone how great Fairy types are.",
       'flags': {
@@ -87280,7 +89820,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 107,
+          'badge': 112,
         },
       ],
       'leaderName': 'Hop',
@@ -87312,7 +89852,7 @@ module.exports = {
           'level': 60,
         },
       ],
-      'badgeReward': 108,
+      'badgeReward': 113,
       'moneyReward': 200000,
       'defeatMessage': "Thanks, mate. I'm really glad you were the one here with me.",
       'flags': {
@@ -87326,7 +89866,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
+          'option': 1,
           'battleName': 'The Darkest Day',
         },
       ],
@@ -87349,7 +89889,7 @@ module.exports = {
           'level': 63,
         },
       ],
-      'badgeReward': 109,
+      'badgeReward': 114,
       'moneyReward': 250000,
       'defeatMessage': "My time as Champion is over... But what a champion time it's been! Thank you for the greatest battle I've ever had!",
       'flags': {
@@ -87475,7 +90015,7 @@ module.exports = {
           'level': 70,
         },
       ],
-      'badgeReward': 110,
+      'badgeReward': 115,
       'moneyReward': 150000,
       'defeatMessage': 'Aww, come on! What a drag! But...I guess it was also kinda fun!',
       'flags': {
@@ -87533,7 +90073,7 @@ module.exports = {
           'level': 70,
         },
       ],
-      'badgeReward': 111,
+      'badgeReward': 116,
       'moneyReward': 150000,
       'defeatMessage': 'More! I require more! Show me your Stored Power!',
       'flags': {
@@ -87552,12 +90092,12 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'badge': 110,
+              'badge': 115,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'badge': 111,
+              'badge': 116,
             },
           ],
         },
@@ -87596,7 +90136,7 @@ module.exports = {
           'level': 75,
         },
       ],
-      'badgeReward': 112,
+      'badgeReward': 117,
       'moneyReward': 250000,
       'defeatMessage': 'That was a delight! Nice battling, love!',
       'flags': {
@@ -87611,7 +90151,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 112,
+          'badge': 117,
         },
       ],
       'leaderName': 'Mustard',
@@ -87648,7 +90188,7 @@ module.exports = {
           'level': 75,
         },
       ],
-      'badgeReward': 113,
+      'badgeReward': 118,
       'moneyReward': 250000,
       'defeatMessage': "That strength of yours doesn't bend easily!",
       'flags': {
@@ -87664,7 +90204,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 16,
-          'dungeonIndex': 159,
+          'dungeonIndex': 166,
         },
       ],
       'leaderName': 'Freezington',
@@ -87696,7 +90236,7 @@ module.exports = {
           'level': 74,
         },
       ],
-      'badgeReward': 114,
+      'badgeReward': 119,
       'moneyReward': 250000,
       'defeatMessage': 'Gone and got stronger again, have you? Ah well! Hats off to you-in more ways than one!',
       'flags': {
@@ -91889,6 +94429,7 @@ module.exports = {
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
+        'Detective Pikachu',
         'Oricorio (Sensu)',
       ],
       'hint': 'There is a Berry that requires a linked <u>Discord</u> account to appear...',
