@@ -21,6 +21,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Alola',
     },
     {
+      'title': 'Altering Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Altering_Cave',
+    },
+    {
       'title': 'Amulet Coin',
       'link': 'https://pokeclicker.miraheze.org/wiki/Amulet_Coin',
     },
@@ -593,6 +597,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Ice_Stone',
     },
     {
+      'title': 'Icefall Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Icefall_Cave',
+    },
+    {
       'title': 'Icicle Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Icicle_Plate',
     },
@@ -723,6 +731,10 @@ module.exports = {
     {
       'title': 'Linking Cord',
       'link': 'https://pokeclicker.miraheze.org/wiki/Linking_Cord',
+    },
+    {
+      'title': 'Lost Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lost_Cave',
     },
     {
       'title': 'Lost Hotel',
@@ -973,6 +985,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Passho',
     },
     {
+      'title': 'Pattern Bush',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pattern_Bush',
+    },
+    {
       'title': 'Payapa',
       'link': 'https://pokeclicker.miraheze.org/wiki/Payapa',
     },
@@ -1003,6 +1019,10 @@ module.exports = {
     {
       'title': 'Pink Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Shard',
+    },
+    {
+      'title': 'Pinkan Mountain',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pinkan_Mountain',
     },
     {
       'title': 'Pinwheel Forest',

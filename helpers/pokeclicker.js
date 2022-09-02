@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.9.13',
+  'gameVersion': '0.9.14',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -1565,6 +1565,7 @@ module.exports = {
           'Pinkan Paras',
           'Pinkan Venonat',
           'Pinkan Mankey',
+          'Pinkan Exeggutor',
         ],
         'water': [],
         'headbutt': [],
@@ -4222,7 +4223,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Galactic Boss Cyrus',
         },
       ],
@@ -4307,7 +4308,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Galactic Boss Cyrus',
         },
       ],
@@ -4813,7 +4814,7 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Team Plasma Grunt 1',
         },
         {
@@ -4984,12 +4985,12 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Team Plasma Grunt 2',
         },
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Team Plasma Grunt 3',
         },
         {
@@ -5165,7 +5166,7 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Zinzolin 1',
         },
         {
@@ -5334,7 +5335,7 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Ghetsis 2',
         },
         {
@@ -7376,7 +7377,7 @@ module.exports = {
         },
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Mirages',
         },
       ],
@@ -7553,7 +7554,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop2',
         },
       ],
@@ -9248,7 +9249,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop3',
         },
       ],
@@ -9287,7 +9288,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Bede1',
         },
       ],
@@ -9363,7 +9364,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Bede2',
         },
       ],
@@ -11063,7 +11064,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop6',
         },
       ],
@@ -11216,7 +11217,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop7',
         },
       ],
@@ -11509,12 +11510,12 @@ module.exports = {
           'requirements': [
             {
               'requiredValue': 1,
-              'option': 1,
+              'option': 2,
               'battleName': 'Klara1',
             },
             {
               'requiredValue': 1,
-              'option': 1,
+              'option': 2,
               'battleName': 'Avery1',
             },
           ],
@@ -13631,7 +13632,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Peony',
         },
       ],
@@ -15249,12 +15250,13 @@ module.exports = {
         '11': 18.18,
       },
       '41': {
-        '0': 14.29,
-        '4': 28.57,
-        '6': 14.29,
-        '7': 42.86,
-        '9': 14.29,
-        '11': 57.14,
+        '0': 12.5,
+        '4': 37.5,
+        '6': 12.5,
+        '7': 37.5,
+        '9': 12.5,
+        '10': 12.5,
+        '11': 50,
       },
       '42': {
         '0': 33.33,
@@ -20764,6 +20766,14 @@ module.exports = {
       'levelType': 2,
       'exp': 112,
       'eggCycles': 10,
+      'evolutions': [
+        {
+          'basePokemon': 'Detective Pikachu',
+          'type': [0],
+          'evolvedPokemon': 'Detective Raichu',
+          'level': 1234,
+        },
+      ],
       'base': {
         'hitpoints': 35,
         'attack': 55,
@@ -20888,7 +20898,7 @@ module.exports = {
       'type': [3],
       'levelType': 2,
       'exp': 218,
-      'eggCycles': 10,
+      'eggCycles': 15,
       'base': {
         'hitpoints': 60,
         'attack': 90,
@@ -20899,9 +20909,18 @@ module.exports = {
       },
       'attack': 108,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Detective Pikachu',
+            'type': [0],
+            'evolvedPokemon': 'Detective Raichu',
+            'level': 1234,
+          },
+        ],
+      },
       'catchRatePercent': 25,
-      'eggSteps': 400,
+      'eggSteps': 600,
     },
     {
       'id': 27,
@@ -21136,11 +21155,11 @@ module.exports = {
         'hitpoints': 55,
         'attack': 47,
         'specialAttack': 40,
-        'defense': 120,
+        'defense': 52,
         'specialDefense': 40,
         'speed': 41,
       },
-      'attack': 51,
+      'attack': 42,
       'nativeRegion': 0,
       'locations': {
         '0': {
@@ -21206,11 +21225,11 @@ module.exports = {
         'hitpoints': 55,
         'attack': 47,
         'specialAttack': 40,
-        'defense': 120,
+        'defense': 52,
         'specialDefense': 40,
         'speed': 41,
       },
-      'attack': 51,
+      'attack': 42,
       'nativeRegion': 0,
       'locations': {
         '0': {
@@ -27029,6 +27048,33 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 85.01,
+      'name': 'Pinkan Dodrio',
+      'catchRate': 45,
+      'type': [
+        0,
+        9,
+      ],
+      'levelType': 2,
+      'exp': 165,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 60,
+        'attack': 110,
+        'specialAttack': 60,
+        'defense': 70,
+        'specialDefense': 60,
+        'speed': 110,
+      },
+      'attack': 98,
+      'nativeRegion': 0,
+      'locations': {
+        '8': ['Tanoby Ruins'],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
       'id': 86,
       'name': 'Seel',
       'catchRate': 190,
@@ -28685,7 +28731,13 @@ module.exports = {
       'attack': 168,
       'nativeRegion': 0,
       'locations': {
-        '8': ['Tanoby Ruins'],
+        '0': {
+          '0': [
+            {
+              'route': 41,
+            },
+          ],
+        },
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -32053,7 +32105,7 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Union Cave',
-            'requirements': 'Requires the Fog badge and Come back on Friday.',
+            'requirements': 'Requires the Fog badge.',
           },
         ],
         '6': ['Water'],
@@ -59381,6 +59433,12 @@ module.exports = {
           'evolvedPokemon': 'Darmanitan',
           'level': 35,
         },
+        {
+          'basePokemon': 'Darumaka',
+          'type': [0],
+          'evolvedPokemon': 'Darmanitan (Zen)',
+          'level': 1234,
+        },
       ],
       'base': {
         'hitpoints': 70,
@@ -59422,6 +59480,12 @@ module.exports = {
           'type': [1],
           'evolvedPokemon': 'Galarian Darmanitan',
           'stone': 29,
+        },
+        {
+          'basePokemon': 'Galarian Darumaka',
+          'type': [0],
+          'evolvedPokemon': 'Galarian Darmanitan (Zen)',
+          'level': 1234,
         },
       ],
       'base': {
@@ -59494,7 +59558,7 @@ module.exports = {
         1,
         10,
       ],
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 3,
       'exp': 189,
       'catchRate': 60,
@@ -59514,9 +59578,17 @@ module.exports = {
             'dungeon': 'Relic Castle',
           },
         ],
+        '5': [
+          {
+            'basePokemon': 'Darumaka',
+            'type': [0],
+            'evolvedPokemon': 'Darmanitan (Zen)',
+            'level': 1234,
+          },
+        ],
       },
       'catchRatePercent': 21,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 555.2,
@@ -59557,7 +59629,7 @@ module.exports = {
         1,
         5,
       ],
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 3,
       'exp': 189,
       'catchRate': 60,
@@ -59570,9 +59642,18 @@ module.exports = {
         'speed': 135,
       },
       'attack': 108,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Galarian Darumaka',
+            'type': [0],
+            'evolvedPokemon': 'Galarian Darmanitan (Zen)',
+            'level': 1234,
+          },
+        ],
+      },
       'catchRatePercent': 21,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 556,
@@ -86726,7 +86807,7 @@ module.exports = {
       ],
       'badgeReward': 40,
       'moneyReward': 740,
-      'defeatMessage': "I can see why you made it so far in the Indigo League, and i bet you'll do pretty well in the Orange League.\nThis is the Coral-Eye Badge of the Mikan Gym, to prove that you won your match!",
+      'defeatMessage': "I can see why you made it so far in the Indigo League, and I bet you'll do pretty well in the Orange League.\nThis is the Coral-Eye Badge of the Mikan Gym, to prove that you won your match!",
       'flags': {
         'quest': true,
         'achievement': true,
@@ -89350,7 +89431,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop4',
         },
       ],
@@ -89387,7 +89468,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Marnie1',
         },
       ],
@@ -89424,7 +89505,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop5',
         },
       ],
@@ -89466,7 +89547,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Hop5',
         },
       ],
@@ -89639,7 +89720,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'Marnie2',
         },
       ],
@@ -89866,7 +89947,7 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 1,
+          'option': 2,
           'battleName': 'The Darkest Day',
         },
       ],
