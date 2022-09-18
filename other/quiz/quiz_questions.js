@@ -28,6 +28,8 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
+const pokemonNameNormalized = (name) => name.replace(/(Valencian|Pinkan|Pink)\s*/gi, '').replace(/\s?\(.+/, '').replace(/\W/g, '.?');
+const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
@@ -36,7 +38,7 @@ const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(Badge
 const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
-    const answer = new RegExp(`^\\W*${pokemon.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')}\\b`, 'i');
+    const answer = pokemonNameAnswer(pokemon.name);
     
     let amount = getAmount();
 
@@ -88,7 +90,7 @@ const whosThatPokemon = () => new Promise(resolve => {
 const whosThePokemonEvolution = () => new Promise(resolve => {
   (async () => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
-    const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => p.evolvedPokemon.replace(/\s?\(.+/, '').replace(/\W/g, '.?')).join('|')})\\b`, 'i');
+    const answer = new RegExp(`^\\W*(${pokemon.evolutions.map(p => pokemonNameNormalized(p.evolvedPokemon)).join('|')})\\b`, 'i');
     
     let amount = getAmount();
 
@@ -142,7 +144,7 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
     const prevolution = randomFromArray(pokemonListWithEvolution);
     const evolution = randomFromArray(prevolution.evolutions);
     const pokemon = pokemonList.find(p => p.name == evolution.evolvedPokemon);
-    const answer = new RegExp(`^\\W*(${prevolution.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?')})\\b`, 'i');
+    const answer = pokemonNameAnswer(prevolution.name);
     
     let amount = getAmount();
 
@@ -350,7 +352,7 @@ const pokemonRegion = () => new Promise(resolve => {
 
 const fossilPokemon = () => {
   const [fossil, pokemon] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = new RegExp(`^\\W*${pokemon.replace(/\s?\(.+/, '').replace(/\W/g, '.?')}\\b`, 'i');
+  const answer = pokemonNameAnswer(pokemon);
   
   let amount = getAmount();
 
@@ -571,7 +573,7 @@ const pokemonGymLeader = () => {
 
 const gymLeaderPokemon = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
-  const pokemon = gym.pokemons.map(p => p.name.replace(/\s?\(.+/, '').replace(/\W/g, '.?'));
+  const pokemon = gym.pokemons.map(p => pokemonNameNormalized(p.name));
   const answer = new RegExp(`^\\W*(${pokemon.join('|')})\\b`, 'i');
   
   let amount = getAmount();
