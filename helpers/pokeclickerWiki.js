@@ -245,10 +245,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Deep_Sea_Tooth',
     },
     {
-      'title': 'Devs',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Devs',
-    },
-    {
       'title': 'Diamonds',
       'link': 'https://pokeclicker.miraheze.org/wiki/Diamonds',
     },
@@ -977,10 +973,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Paniola_Ranch',
     },
     {
-      'title': 'Parfum Palace',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Parfum_Palace',
-    },
-    {
       'title': 'Passho',
       'link': 'https://pokeclicker.miraheze.org/wiki/Passho',
     },
@@ -1019,6 +1011,10 @@ module.exports = {
     {
       'title': 'Pink Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Shard',
+    },
+    {
+      'title': 'Pinkan',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pinkan',
     },
     {
       'title': 'Pinkan Mountain',
@@ -1153,6 +1149,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Quest_Points',
     },
     {
+      'title': 'Questlines',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Questlines',
+    },
+    {
       'title': 'Quests',
       'link': 'https://pokeclicker.miraheze.org/wiki/Quests',
     },
@@ -1271,6 +1271,10 @@ module.exports = {
     {
       'title': 'Rowap',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rowap',
+    },
+    {
+      'title': 'Ruby Path',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Ruby_Path',
     },
     {
       'title': 'Ruins of Abundance',
@@ -1493,6 +1497,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Sun_Stone',
     },
     {
+      'title': 'Sunburst Island',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Sunburst_Island',
+    },
+    {
       'title': 'Super Rod',
       'link': 'https://pokeclicker.miraheze.org/wiki/Super_Rod',
     },
@@ -1503,6 +1511,10 @@ module.exports = {
     {
       'title': 'Tanga',
       'link': 'https://pokeclicker.miraheze.org/wiki/Tanga',
+    },
+    {
+      'title': 'Tanoby Ruins',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tanoby_Ruins',
     },
     {
       'title': 'Teachy TV',
@@ -1519,10 +1531,6 @@ module.exports = {
     {
       'title': 'Team Galactic HQ',
       'link': 'https://pokeclicker.miraheze.org/wiki/Team_Galactic_HQ',
-    },
-    {
-      'title': 'Team Plasma Assault',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Team_Plasma_Assault',
     },
     {
       'title': 'Team Rockets Hideout',
@@ -1739,6 +1747,30 @@ module.exports = {
     {
       'title': 'Wiki',
       'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
+    },
+    {
+      'title': 'XAttack',
+      'link': 'https://pokeclicker.miraheze.org/wiki/XAttack',
+    },
+    {
+      'title': 'XClick',
+      'link': 'https://pokeclicker.miraheze.org/wiki/XClick',
+    },
+    {
+      'title': 'Yache',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Yache',
+    },
+    {
+      'title': 'Yellow Flute',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Flute',
+    },
+    {
+      'title': 'Yellow Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Yellow_Shard',
+    },
+    {
+      'title': 'Zap Plate',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Zap_Plate',
     },
   ],
 };

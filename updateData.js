@@ -127,19 +127,19 @@ const { website, wikiWebsite } = require('./config.js');
     let wikiLinks = [];
     wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
     let pageNumber = 1;
-    let nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
+    let nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].filter(e => /next/i.test(e.innerText)).map(e => [e.innerText, e.href])[0]);
     while (nextPage && nextPage.length && nextPage[0].startsWith('Next')) {
       ++pageNumber;
-      console.log(`navigate to page ${pageNumber}\nwaiting for page ${pageNumber} to load..`);
+      console.log(`navigate to page ${pageNumber} - ${nextPage[1]}\nwaiting for page ${pageNumber} to load..`);
       await page.goto(nextPage[1]);
       console.log(`page ${pageNumber} loaded!\nupdating data..`);
       wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
-      nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].map(e => [e.innerText, e.href])[0]);
+      nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].filter(e => /next/i.test(e.innerText)).map(e => [e.innerText, e.href])[0]);
     }
     // map to titles only, filter out duplicates, map to { title, link }
     wikiLinks = [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] }));
     // Filter out other language links
-    wikiLinks = wikiLinks.filter(w => !/\/\w{2,3}$/.test(w.title));
+    wikiLinks = wikiLinks.filter(w => !/\/\w{2,3}$/.test(w.title)).filter(w => !/Easter Egg/i.test(w.title));
 
     // set data
     const wikiData = { wikiLinks };
