@@ -65,7 +65,7 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}`)
-      .setDescription(`${pokemonTypeIcons[PokemonType[pokemon.type[0]]]} _\`${PokemonType[pokemon.type[0]]}\`_${pokemon.type[1] >= 0 ? `\n${pokemonTypeIcons[PokemonType[pokemon.type[1]]]} _\`${PokemonType[pokemon.type[1]]}\`_` : ''}`)
+      .setDescription(`${pokemonTypeIcons[PokemonType[pokemon.type[0]]]} *\`${PokemonType[pokemon.type[0]]} \`*${pokemon.type[1] >= 0 ? `\n${pokemonTypeIcons[PokemonType[pokemon.type[1]]]} *\`${PokemonType[pokemon.type[1]]}\`*` : ''}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` })
