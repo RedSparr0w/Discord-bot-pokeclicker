@@ -69,12 +69,12 @@ module.exports = {
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` })
-      .addField('<:xAttackSmall:733974450864652380> Base Attack', `${pokemon.attack}`,true)
+      .addField('<:xAttack:1032155850661429278> Base Attack', `${pokemon.attack}`,true)
       .addField('\u200b', '\u200b', true) // Spacing
       .addField('<:Pokeball:733980790718988348> Catch Rate', `${pokemon.catchRatePercent}%`, true)
-      .addField('<:RareCandySmall:733974449774133299> Level Type', `${LevelType[pokemon.levelType]}`, true)
+      .addField('<:RareCandy:1032155819489378325> Level Type', `${LevelType[pokemon.levelType]}`, true)
       .addField('\u200b', '\u200b', true) // Spacing
-      .addField('<:Pokemon_egg:733973219177922591> Egg Steps', `${pokemon.eggSteps}`, true);
+      .addField('<:Mystery_egg:1032155916688162836> Egg Steps', `${pokemon.eggSteps}`, true);
 
     if (pokemon.heldItem) {
       embed.addField('<:Amulet_Coin:662909955241803776> Rare Item Drop', `${pokemon.heldItem.type == 3 ? `${berryType[pokemon.heldItem.id]} Berry` : pokemon.heldItem.id.replace(/_/g, ' ')}`, true);
@@ -134,10 +134,10 @@ module.exports = {
         const descriptions = [];
         pokemon.locations[PokemonLocationType.Evolution].forEach(evolution => {
           let description = `\`${evolution.basePokemon.toUpperCase()}:\``;
-          description += evolution.type.includes(EvolutionType.Level) ? `\n<:RareCandy:733974449774133299> Above level ${evolution.level}` : '';
-          description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:740790300100001863> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
+          description += evolution.type.includes(EvolutionType.Level) ? `\n<:RareCandy:1032155819489378325> Above level ${evolution.level}` : '';
+          description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:1032156549914841108> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
           description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
-          description += evolution.type.includes(EvolutionType.Dungeon) ? `\n<:dungeonToken:737206932128923699> While in ${evolution.dungeon}` : '';
+          description += evolution.type.includes(EvolutionType.Dungeon) ? `\n<:dungeonToken:751765172657586177> While in ${evolution.dungeon}` : '';
           description += evolution.type.includes(EvolutionType.Region) ? `\n⛴️ While in ${evolution.regions.map(r => upperCaseFirstLetter(GameConstants.Region[r])).join(' or ')}` : '';
           description += evolution.type.includes(EvolutionType.Gym) ? `\n<:fighting_icon:774090473966403585> While fighting the ${evolution.town} Gym` : '';
           description += evolution.type.includes(EvolutionType.Environment) ? `\n🌳 While in a ${evolution.environment} environment` : '';

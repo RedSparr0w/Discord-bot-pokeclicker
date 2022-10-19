@@ -4,13 +4,13 @@ const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
 
 const slots = {
-  seven: '<:slots_7:751322075578499093>',
-  rocket: '<:slots_r:751322076115370044>',
-  pikachu: '<:slots_pikachu:751322076031483944>',
-  psyduck: '<:slots_psyduck:751322076052455444>',
-  magnemite: '<:slots_magnemite:751322076014706698>',
-  shelder: '<:slot_shelder:751322075481768027>',
-  berry: '<:slots_berry:751322075955724368>',
+  seven: '<:slots_7:1032158048577400833>',
+  rocket: '<:slots_r:1032158039526092890>',
+  pikachu: '<:slots_pikachu:1032158041338036335>',
+  psyduck: '<:slots_psyduck:1032158043129008238>',
+  magnemite: '<:slots_magnemite:1032158044919971921>',
+  shelder: '<:slot_shelder:1032158037349245009>',
+  berry: '<:slots_berry:1032158046736109579>',
 };
 
 const columnOptions = [
