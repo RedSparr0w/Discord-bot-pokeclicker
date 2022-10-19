@@ -89,12 +89,20 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Berry_Master',
     },
     {
+      'title': 'Black Belt',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Belt',
+    },
+    {
       'title': 'Black DNA',
       'link': 'https://pokeclicker.miraheze.org/wiki/Black_DNA',
     },
     {
       'title': 'Black Flute',
       'link': 'https://pokeclicker.miraheze.org/wiki/Black_Flute',
+    },
+    {
+      'title': 'Black Glasses',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Glasses',
     },
     {
       'title': 'Black Shard',
@@ -151,6 +159,10 @@ module.exports = {
     {
       'title': 'Challenge Mode',
       'link': 'https://pokeclicker.miraheze.org/wiki/Challenge_Mode',
+    },
+    {
+      'title': 'Charcoal',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Charcoal',
     },
     {
       'title': 'Chargestone Cave',
@@ -557,6 +569,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Heat_Rock',
     },
     {
+      'title': 'Held Items',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Held_Items',
+    },
+    {
       'title': 'Helix Fossil',
       'link': 'https://pokeclicker.miraheze.org/wiki/Helix_Fossil',
     },
@@ -753,6 +769,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Lum',
     },
     {
+      'title': 'Lunar Light',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lunar_Light',
+    },
+    {
       'title': 'Lureball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lureball',
     },
@@ -769,6 +789,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/MGW:RS',
     },
     {
+      'title': 'Macho Brace',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Macho_Brace',
+    },
+    {
       'title': 'Magic Ball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Magic_Ball',
     },
@@ -779,6 +803,10 @@ module.exports = {
     {
       'title': 'Magmarizer',
       'link': 'https://pokeclicker.miraheze.org/wiki/Magmarizer',
+    },
+    {
+      'title': 'Magnet',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Magnet',
     },
     {
       'title': 'Mago',
@@ -845,6 +873,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mind_Plate',
     },
     {
+      'title': 'Miracle Seed',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Miracle_Seed',
+    },
+    {
       'title': 'Mistralton Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Mistralton_Cave',
     },
@@ -897,6 +929,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg',
     },
     {
+      'title': 'Mystic Water',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mystic_Water',
+    },
+    {
       'title': 'NPCs',
       'link': 'https://pokeclicker.miraheze.org/wiki/NPCs',
     },
@@ -907,6 +943,10 @@ module.exports = {
     {
       'title': 'Nestball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Nestball',
+    },
+    {
+      'title': 'Never Melt Ice',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Never_Melt_Ice',
     },
     {
       'title': 'New Mauville',
@@ -1043,6 +1083,10 @@ module.exports = {
     {
       'title': 'Po Town',
       'link': 'https://pokeclicker.miraheze.org/wiki/Po_Town',
+    },
+    {
+      'title': 'Poison Barb',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Poison_Barb',
     },
     {
       'title': 'Pokemon Mansion',
@@ -1361,6 +1405,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Shards',
     },
     {
+      'title': 'Sharp Beak',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Sharp_Beak',
+    },
+    {
       'title': 'Shiny Chance',
       'link': 'https://pokeclicker.miraheze.org/wiki/Shiny_Chance',
     },
@@ -1393,8 +1441,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Shuca',
     },
     {
+      'title': 'Silk Scarf',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Silk_Scarf',
+    },
+    {
       'title': 'Silph Co',
       'link': 'https://pokeclicker.miraheze.org/wiki/Silph_Co',
+    },
+    {
+      'title': 'Silver Powder',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Silver_Powder',
     },
     {
       'title': 'Sinnoh',
@@ -1433,8 +1489,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Snowpoint_Temple',
     },
     {
+      'title': 'Soft Sand',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Soft_Sand',
+    },
+    {
       'title': 'Solaceon Ruins',
       'link': 'https://pokeclicker.miraheze.org/wiki/Solaceon_Ruins',
+    },
+    {
+      'title': 'Solar Light',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Solar_Light',
     },
     {
       'title': 'Soothe Bell',
@@ -1447,6 +1511,10 @@ module.exports = {
     {
       'title': 'Speedruns',
       'link': 'https://pokeclicker.miraheze.org/wiki/Speedruns',
+    },
+    {
+      'title': 'Spell Tag',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Spell_Tag',
     },
     {
       'title': 'Spelon',
@@ -1613,6 +1681,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Twist_Mountain',
     },
     {
+      'title': 'Twisted Spoon',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Twisted_Spoon',
+    },
+    {
       'title': 'Type Effectiveness',
       'link': 'https://pokeclicker.miraheze.org/wiki/Type_Effectiveness',
     },
@@ -1747,6 +1819,10 @@ module.exports = {
     {
       'title': 'Wiki',
       'link': 'https://pokeclicker.miraheze.org/wiki/Wiki',
+    },
+    {
+      'title': 'Wonder Chest',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Wonder_Chest',
     },
     {
       'title': 'XAttack',
