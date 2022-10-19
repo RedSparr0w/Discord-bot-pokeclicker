@@ -99,7 +99,7 @@ module.exports = {
                 if (routeData.number == route.route && routeData.region == region)
                   return routeData;
               });
-              const name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? `Route ${r.number}` : r.routeName;
+              const name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? r.routeName.replace(new RegExp(`^${GameConstants.Region[region]}\\s*`, 'i'), '') : r.routeName;
               return `${name}${route.requirements ? '🔒' : ''}`;
             })),
           ].join('\n');
