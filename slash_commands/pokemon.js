@@ -71,7 +71,7 @@ module.exports = {
       .setFooter({ text: `Data is up to date as of v${gameVersion}` })
       .addField('<:xAttack:1032155850661429278> Base Attack', `${pokemon.attack}`,true)
       .addField('\u200b', '\u200b', true) // Spacing
-      .addField('<:Pokeball:733980790718988348> Catch Rate', `${pokemon.catchRatePercent}%`, true)
+      .addField('<:Pokeball:974600141594034226> Catch Rate', `${pokemon.catchRatePercent}%`, true)
       .addField('<:RareCandy:1032155819489378325> Level Type', `${LevelType[pokemon.levelType]}`, true)
       .addField('\u200b', '\u200b', true) // Spacing
       .addField('<:Mystery_egg:1032155916688162836> Egg Steps', `${pokemon.eggSteps}`, true);
