@@ -25,9 +25,16 @@ module.exports = [
   },
   // soon™
   {
-    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|galar|hisui|paldea)\b|\b(released?|version|updated?|galar|hisui|paldea)\b.+\b(wh?ens?)\b)/i,
+    regex: /(\b(wh?ens?)\b.+\b(released?|version|updated?|hisui|paldea)\b|\b(released?|version|updated?|hisui|paldea)\b.+\b(wh?ens?)\b)/i,
     execute: (message, client) => {
       message.channel.send('soon™');
+    },
+  },
+  // galar™
+  {
+    regex: /(\b(wh?ens?)\s+(galar)\b|\b(galar)\s+(wh?ens?)\b)/i,
+    execute: (message, client) => {
+      message.channel.send('<t:1666428660:F>™');
     },
   },
   // alola™
