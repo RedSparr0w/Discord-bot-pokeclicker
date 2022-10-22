@@ -69,6 +69,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Battle_Points',
     },
     {
+      'title': 'Battle cafe',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Battle_cafe',
+    },
+    {
       'title': 'Beastball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Beastball',
     },
@@ -107,6 +111,10 @@ module.exports = {
     {
       'title': 'Black Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Black_Shard',
+    },
+    {
+      'title': 'Black mane hair',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_mane_hair',
     },
     {
       'title': 'Blaze Cassette',
@@ -219,6 +227,10 @@ module.exports = {
     {
       'title': 'Cover Fossil',
       'link': 'https://pokeclicker.miraheze.org/wiki/Cover_Fossil',
+    },
+    {
+      'title': 'Cracked pot',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Cracked_pot',
     },
     {
       'title': 'Crimson Shard',
@@ -485,6 +497,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Galar',
     },
     {
+      'title': 'Galarica cuff',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galarica_cuff',
+    },
+    {
+      'title': 'Galarica wreath',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galarica_wreath',
+    },
+    {
       'title': 'Ganlon',
       'link': 'https://pokeclicker.miraheze.org/wiki/Ganlon',
     },
@@ -719,6 +739,10 @@ module.exports = {
     {
       'title': 'Leaf Stone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Leaf_Stone',
+    },
+    {
+      'title': 'Leek',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Leek',
     },
     {
       'title': 'Leppa',
@@ -1341,6 +1365,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Life',
     },
     {
+      'title': 'Rusted shield',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rusted_shield',
+    },
+    {
+      'title': 'Rusted sword',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rusted_sword',
+    },
+    {
       'title': 'Rusturf Tunnel',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rusturf_Tunnel',
     },
@@ -1573,6 +1605,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Super_Rod',
     },
     {
+      'title': 'Sweet apple',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Sweet_apple',
+    },
+    {
       'title': 'Tamato',
       'link': 'https://pokeclicker.miraheze.org/wiki/Tamato',
     },
@@ -1583,6 +1619,10 @@ module.exports = {
     {
       'title': 'Tanoby Ruins',
       'link': 'https://pokeclicker.miraheze.org/wiki/Tanoby_Ruins',
+    },
+    {
+      'title': 'Tart apple',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tart_apple',
     },
     {
       'title': 'Teachy TV',
@@ -1815,6 +1855,10 @@ module.exports = {
     {
       'title': 'White Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/White_Shard',
+    },
+    {
+      'title': 'White mane hair',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_mane_hair',
     },
     {
       'title': 'Wiki',

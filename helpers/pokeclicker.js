@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.9.18',
+  'gameVersion': '0.10.0',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -100,7 +100,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 1,
         },
@@ -128,7 +128,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 1,
         },
@@ -158,7 +158,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 2,
         },
@@ -197,14 +197,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 3,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 1,
         },
       ],
@@ -240,7 +240,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 4,
         },
@@ -279,7 +279,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 24,
         },
@@ -307,7 +307,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 25,
         },
@@ -341,7 +341,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 5,
         },
@@ -374,7 +374,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 6,
         },
@@ -402,7 +402,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 6,
         },
@@ -440,14 +440,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 9,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 3,
         },
       ],
@@ -476,7 +476,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 10,
         },
@@ -506,7 +506,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 8,
         },
@@ -543,7 +543,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 10,
         },
@@ -590,7 +590,7 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 14,
             },
@@ -628,14 +628,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 13,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 15,
             },
@@ -673,14 +673,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 14,
             },
@@ -719,7 +719,7 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 17,
             },
@@ -754,14 +754,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 16,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 18,
             },
@@ -796,14 +796,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 17,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 15,
             },
@@ -865,14 +865,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 21,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 8,
             },
           ],
@@ -1108,7 +1108,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 22,
         },
@@ -1198,7 +1198,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 30,
         },
@@ -1278,7 +1278,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 32,
         },
@@ -1366,7 +1366,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 18,
         },
       ],
@@ -1402,7 +1402,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 35,
         },
@@ -1444,7 +1444,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 34,
         },
@@ -1516,7 +1516,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 38,
         },
@@ -1584,7 +1584,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 19,
         },
         {
@@ -1619,7 +1619,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 41,
         },
@@ -1682,7 +1682,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 29,
         },
@@ -1725,7 +1725,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 29,
         },
@@ -1773,7 +1773,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 30,
         },
@@ -1843,7 +1843,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 24,
         },
       ],
@@ -1883,7 +1883,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 26,
         },
       ],
@@ -1924,7 +1924,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 34,
         },
@@ -2030,7 +2030,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 37,
         },
@@ -2066,7 +2066,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 38,
         },
@@ -2096,7 +2096,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 39,
         },
@@ -2130,7 +2130,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 40,
         },
@@ -2209,7 +2209,7 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'achievementType': 16,
+                  'achievementType': 10,
                   'dungeonIndex': 30,
                 },
                 {
@@ -2222,7 +2222,7 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 1,
               'route': 42,
             },
@@ -2260,7 +2260,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 32,
         },
       ],
@@ -2296,7 +2296,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 33,
         },
       ],
@@ -2381,7 +2381,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 47,
         },
@@ -2424,7 +2424,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 35,
         },
       ],
@@ -2466,7 +2466,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 27,
         },
@@ -2561,7 +2561,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 101,
         },
@@ -2596,7 +2596,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 101,
         },
@@ -2628,7 +2628,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 102,
         },
@@ -2657,7 +2657,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 38,
         },
       ],
@@ -2691,7 +2691,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 40,
         },
       ],
@@ -2725,7 +2725,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 110,
         },
@@ -2780,7 +2780,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 111,
         },
@@ -2806,7 +2806,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 41,
         },
       ],
@@ -2840,7 +2840,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 113,
         },
@@ -2874,7 +2874,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 42,
         },
       ],
@@ -2931,14 +2931,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 105,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 107,
             },
@@ -2972,14 +2972,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 106,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 108,
             },
@@ -3013,14 +3013,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 107,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 109,
             },
@@ -3180,7 +3180,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 118,
         },
@@ -3216,14 +3216,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 119,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 46,
         },
       ],
@@ -3258,7 +3258,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 120,
         },
@@ -3287,7 +3287,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 121,
         },
@@ -3323,7 +3323,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 122,
         },
@@ -3354,7 +3354,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 49,
         },
       ],
@@ -3382,7 +3382,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 124,
         },
@@ -3413,7 +3413,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 124,
         },
@@ -3446,14 +3446,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 125,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 2,
               'route': 126,
             },
@@ -3485,7 +3485,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 127,
         },
@@ -3515,7 +3515,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 128,
         },
@@ -3544,7 +3544,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 129,
         },
@@ -3573,7 +3573,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 130,
         },
@@ -3603,7 +3603,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 131,
         },
@@ -3633,7 +3633,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 132,
         },
@@ -3663,7 +3663,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 2,
           'route': 133,
         },
@@ -3714,7 +3714,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 201,
         },
@@ -3750,7 +3750,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 202,
         },
@@ -3787,7 +3787,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 202,
         },
@@ -3835,7 +3835,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 57,
         },
       ],
@@ -3864,7 +3864,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 60,
         },
       ],
@@ -3891,7 +3891,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 206,
         },
@@ -3929,7 +3929,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 62,
         },
       ],
@@ -4007,7 +4007,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 209,
         },
@@ -4036,7 +4036,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 210,
         },
@@ -4072,7 +4072,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 215,
         },
@@ -4109,7 +4109,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 214,
         },
@@ -4152,7 +4152,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 213,
         },
@@ -4247,7 +4247,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 67,
         },
       ],
@@ -4273,7 +4273,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 216,
         },
@@ -4335,7 +4335,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 219,
         },
@@ -4375,7 +4375,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 220,
         },
@@ -4419,7 +4419,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 71,
         },
       ],
@@ -4563,7 +4563,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 225,
         },
@@ -4602,7 +4602,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 226,
         },
@@ -4638,7 +4638,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 226,
         },
@@ -4677,7 +4677,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 228,
         },
@@ -4719,7 +4719,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 3,
           'route': 229,
         },
@@ -4778,7 +4778,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 19,
         },
@@ -4846,7 +4846,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 4,
         },
@@ -4885,7 +4885,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 4,
         },
@@ -4924,7 +4924,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 4,
         },
@@ -4970,7 +4970,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 5,
         },
@@ -5022,7 +5022,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 86,
         },
         {
@@ -5066,7 +5066,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 89,
         },
       ],
@@ -5096,7 +5096,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 89,
         },
       ],
@@ -5128,7 +5128,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 89,
         },
       ],
@@ -5156,7 +5156,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 13,
         },
@@ -5202,7 +5202,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 12,
         },
@@ -5232,7 +5232,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 11,
         },
@@ -5259,7 +5259,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 90,
         },
       ],
@@ -5292,7 +5292,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 21,
         },
@@ -5326,7 +5326,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 92,
         },
         {
@@ -5368,7 +5368,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 96,
             },
             {
@@ -5378,7 +5378,7 @@ module.exports = {
                 {
                   'requiredValue': 10,
                   'option': 2,
-                  'achievementType': 14,
+                  'achievementType': 8,
                   'region': 4,
                   'route': 9,
                 },
@@ -5417,14 +5417,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 4,
               'route': 14,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 4,
               'route': 16,
             },
@@ -5459,7 +5459,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 100,
         },
       ],
@@ -5486,7 +5486,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 3,
         },
@@ -5516,7 +5516,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 2,
         },
@@ -5541,7 +5541,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 1,
         },
@@ -5572,7 +5572,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 4,
           'route': 17,
         },
@@ -5625,7 +5625,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 1,
         },
@@ -5662,7 +5662,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 103,
         },
       ],
@@ -5700,7 +5700,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 3,
         },
@@ -5761,7 +5761,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 4,
         },
@@ -5790,7 +5790,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 5,
         },
@@ -5823,7 +5823,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 6,
         },
@@ -5862,7 +5862,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 104,
         },
       ],
@@ -5887,7 +5887,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 8,
         },
@@ -5918,7 +5918,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 105,
         },
       ],
@@ -5954,7 +5954,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 10,
         },
@@ -6023,7 +6023,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 12,
         },
@@ -6049,7 +6049,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 12,
         },
@@ -6120,7 +6120,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 109,
         },
       ],
@@ -6159,7 +6159,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 15,
         },
@@ -6186,7 +6186,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 111,
         },
       ],
@@ -6216,7 +6216,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 112,
         },
       ],
@@ -6252,7 +6252,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 18,
         },
@@ -6281,7 +6281,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 19,
         },
@@ -6316,7 +6316,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 19,
         },
@@ -6377,7 +6377,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 1,
         },
@@ -6413,7 +6413,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 116,
         },
       ],
@@ -6443,7 +6443,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 118,
         },
       ],
@@ -6505,7 +6505,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 123,
         },
       ],
@@ -6538,7 +6538,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 124,
         },
       ],
@@ -6575,13 +6575,13 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 120,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 124,
         },
       ],
@@ -6612,7 +6612,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 124,
         },
       ],
@@ -6642,7 +6642,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 6,
         },
@@ -6679,7 +6679,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 125,
         },
       ],
@@ -6707,7 +6707,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 127,
         },
       ],
@@ -6740,7 +6740,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 128,
         },
       ],
@@ -6770,7 +6770,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 129,
         },
       ],
@@ -6808,7 +6808,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 10,
         },
@@ -6838,7 +6838,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 129,
         },
       ],
@@ -6867,14 +6867,14 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 11,
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 130,
         },
       ],
@@ -6900,7 +6900,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 12,
         },
@@ -6931,7 +6931,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 13,
         },
@@ -6967,7 +6967,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 131,
         },
       ],
@@ -6995,7 +6995,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 15,
         },
@@ -7037,7 +7037,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 132,
         },
       ],
@@ -7076,7 +7076,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 131,
         },
       ],
@@ -7104,7 +7104,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 134,
         },
       ],
@@ -7132,7 +7132,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 24,
         },
@@ -7165,7 +7165,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 25,
         },
@@ -7248,7 +7248,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 27,
         },
@@ -7271,7 +7271,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 28,
         },
@@ -7305,7 +7305,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 29,
         },
@@ -7373,7 +7373,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 1,
         },
@@ -7747,7 +7747,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 3,
         },
@@ -7963,7 +7963,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 3,
         },
@@ -8163,7 +8163,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 3,
         },
@@ -8354,14 +8354,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 8,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 9,
             },
@@ -8585,7 +8585,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 3,
         },
@@ -8813,21 +8813,21 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 6,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 7,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 8,
             },
@@ -9023,14 +9023,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 6,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 25,
             },
@@ -9212,21 +9212,21 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 4,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 5,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 6,
             },
@@ -9598,7 +9598,7 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 9,
             },
@@ -9855,7 +9855,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 16,
         },
@@ -10067,7 +10067,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 17,
         },
@@ -10302,14 +10302,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 18,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 152,
             },
           ],
@@ -10537,21 +10537,21 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 18,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 21,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 152,
             },
           ],
@@ -10795,14 +10795,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 20,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 25,
             },
@@ -11012,14 +11012,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 19,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 20,
             },
@@ -11136,7 +11136,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 24,
         },
@@ -11169,7 +11169,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 25,
         },
@@ -11211,7 +11211,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 25,
         },
@@ -11361,7 +11361,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 28,
         },
@@ -11394,7 +11394,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 29,
         },
@@ -11489,7 +11489,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 31,
         },
@@ -11807,44 +11807,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 1,
+          'requiredValue': 10,
           'option': 2,
-          'requirements': [
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 7,
-              'route': 33,
-            },
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 7,
-              'route': 35,
-            },
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 7,
-              'route': 36,
-            },
-            {
-              'requiredValue': 1,
-              'option': 2,
-              'achievementType': 16,
-              'dungeonIndex': 153,
-            },
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 7,
-              'route': 40,
-            },
-          ],
+          'achievementType': 8,
+          'region': 7,
+          'route': 33,
         },
       ],
       'orderNumber': 34,
@@ -12025,21 +11992,21 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 34,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 36,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 38,
             },
@@ -12257,28 +12224,28 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 34,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 35,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 42,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 44,
             },
@@ -12439,13 +12406,13 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 153,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 42,
             },
@@ -12642,20 +12609,20 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 35,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 154,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 44,
             },
@@ -12786,7 +12753,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 155,
         },
       ],
@@ -12951,14 +12918,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 38,
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'achievementType': 16,
+              'achievementType': 10,
               'dungeonIndex': 154,
             },
           ],
@@ -13091,30 +13058,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 1,
+          'requiredValue': 10,
           'option': 2,
-          'requirements': [
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 7,
-              'route': 33,
-            },
-            {
-              'requiredValue': 1,
-              'option': 2,
-              'achievementType': 16,
-              'dungeonIndex': 154,
-            },
-            {
-              'requiredValue': 10,
-              'option': 2,
-              'achievementType': 14,
-              'region': 7,
-              'route': 42,
-            },
-          ],
+          'achievementType': 8,
+          'region': 7,
+          'route': 33,
         },
       ],
       'orderNumber': 41,
@@ -13232,35 +13180,35 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 36,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 37,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 41,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 43,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 44,
             },
@@ -13385,14 +13333,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 42,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 44,
             },
@@ -13507,28 +13455,28 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 36,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 38,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 42,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 7,
               'route': 43,
             },
@@ -13649,7 +13597,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 44,
         },
@@ -13919,7 +13867,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 46,
         },
@@ -14136,7 +14084,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 47,
         },
@@ -14258,7 +14206,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 48,
         },
@@ -14436,7 +14384,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 48,
         },
@@ -14472,7 +14420,6 @@ module.exports = {
             'pokemon': [
               'Sealeo',
               'Walrein',
-              'Carracosta',
               'Eiscue (Ice Face)',
             ],
             'req': {
@@ -14501,7 +14448,6 @@ module.exports = {
               'Araquanid',
               'Dewpider',
               'Sealeo',
-              'Carracosta',
               'Eiscue (Ice Face)',
             ],
             'req': {
@@ -14519,7 +14465,6 @@ module.exports = {
               'Elekid',
               'Electivire',
               'Sealeo',
-              'Carracosta',
               'Eiscue (Ice Face)',
             ],
             'req': {
@@ -14601,13 +14546,36 @@ module.exports = {
               'pokemonID': 564,
             },
           },
+          {
+            'pokemon': ['Carracosta'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemonID': 565,
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'weather': [
+                    0,
+                    2,
+                    3,
+                  ],
+                },
+              ],
+            },
+          },
         ],
       },
       'requirements': [
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 158,
         },
       ],
@@ -14740,7 +14708,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 51,
         },
@@ -14760,7 +14728,6 @@ module.exports = {
           'Skwovet',
           'Yamper',
           'Mime Jr.',
-          'Tyrantrum',
           'Aron',
         ],
         'water': [
@@ -14821,7 +14788,6 @@ module.exports = {
               'Whimsicott',
               'Dragonite',
               'Eldegoss',
-              'Armaldo',
             ],
             'req': {
               'requiredValue': 1,
@@ -14839,7 +14805,6 @@ module.exports = {
               'Elekid',
               'Electivire',
               'Dragonite',
-              'Armaldo',
               'Coalossal',
               'Dragonair',
             ],
@@ -14903,11 +14868,41 @@ module.exports = {
             },
           },
           {
+            'pokemon': ['Armaldo'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemonID': 348,
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'weather': [
+                    2,
+                    3,
+                  ],
+                },
+              ],
+            },
+          },
+          {
             'pokemon': ['Tyrunt'],
             'req': {
               'requiredValue': 1,
               'option': 2,
               'pokemonID': 696,
+            },
+          },
+          {
+            'pokemon': ['Tyrantrum'],
+            'req': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemonID': 697,
             },
           },
         ],
@@ -14916,7 +14911,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 48,
         },
@@ -14951,7 +14946,6 @@ module.exports = {
               'Dubwool',
               'Druddigon',
               'Wooloo',
-              'Aurorus',
             ],
             'req': {
               'requiredValue': 1,
@@ -14965,7 +14959,6 @@ module.exports = {
               'Sneasel',
               'Weavile',
               'Trevenant',
-              'Aurorus',
             ],
             'req': {
               'requiredValue': 1,
@@ -14984,7 +14977,6 @@ module.exports = {
               'Glalie',
               'Vanilluxe',
               'Froslass',
-              'Aurorus',
             ],
             'req': {
               'requiredValue': 1,
@@ -15003,7 +14995,6 @@ module.exports = {
               'Glalie',
               'Vanilluxe',
               'Froslass',
-              'Aurorus',
               'Galarian Darumaka',
               'Absol',
             ],
@@ -15034,7 +15025,6 @@ module.exports = {
               'Clefairy',
               'Clefable',
               'Grimmsnarl',
-              'Aurorus',
             ],
             'req': {
               'requiredValue': 1,
@@ -15050,13 +15040,38 @@ module.exports = {
               'pokemonID': 698,
             },
           },
+          {
+            'pokemon': ['Aurorus'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemonID': 699,
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'weather': [
+                    0,
+                    1,
+                    4,
+                    6,
+                    9,
+                  ],
+                },
+              ],
+            },
+          },
         ],
       },
       'requirements': [
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 48,
         },
@@ -15123,7 +15138,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 165,
         },
       ],
@@ -17319,14 +17334,14 @@ module.exports = {
         '17': 3.45,
       },
       '51': {
-        '0': 4.76,
-        '2': 33.33,
-        '4': 4.76,
-        '5': 14.29,
-        '9': 4.76,
-        '10': 4.76,
-        '13': 4.76,
-        '17': 4.76,
+        '0': 4.55,
+        '2': 31.82,
+        '4': 4.55,
+        '5': 13.64,
+        '9': 4.55,
+        '10': 4.55,
+        '13': 4.55,
+        '17': 4.55,
       },
       '52': {
         '0': 6.25,
@@ -17338,26 +17353,26 @@ module.exports = {
         '17': 6.25,
       },
       '53': {
-        '0': 17.86,
-        '2': 28.57,
-        '3': 7.14,
-        '8': 7.14,
-        '9': 3.57,
-        '10': 3.57,
-        '12': 10.71,
-        '14': 7.14,
-        '16': 3.57,
-        '17': 3.57,
+        '0': 17.24,
+        '2': 27.59,
+        '3': 6.9,
+        '8': 6.9,
+        '9': 3.45,
+        '10': 3.45,
+        '12': 6.9,
+        '14': 3.45,
+        '16': 3.45,
+        '17': 3.45,
       },
       '54': {
-        '0': 5.88,
-        '2': 23.53,
-        '5': 5.88,
-        '9': 5.88,
-        '10': 23.53,
-        '11': 5.88,
-        '16': 17.65,
-        '17': 5.88,
+        '0': 5.56,
+        '2': 22.22,
+        '5': 5.56,
+        '9': 5.56,
+        '10': 22.22,
+        '11': 5.56,
+        '16': 16.67,
+        '17': 5.56,
       },
       '55': {
         '0': 14.29,
@@ -18144,6 +18159,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 53,
       'nativeRegion': 0,
       'locations': {
@@ -18180,6 +18200,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 53,
       'nativeRegion': 0,
       'locations': {},
@@ -18209,6 +18234,11 @@ module.exports = {
         'defense': 49,
         'specialDefense': 65,
         'speed': 45,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 53,
       'nativeRegion': 0,
@@ -18243,6 +18273,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 53,
       'nativeRegion': 0,
       'locations': {},
@@ -18275,6 +18310,11 @@ module.exports = {
         'defense': 63,
         'specialDefense': 80,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 85,
       'nativeRegion': 0,
@@ -18318,6 +18358,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 85,
       'nativeRegion': 0,
       'locations': {
@@ -18356,6 +18401,11 @@ module.exports = {
         'defense': 63,
         'specialDefense': 80,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 85,
       'nativeRegion': 0,
@@ -18399,6 +18449,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 85,
       'nativeRegion': 0,
       'locations': {
@@ -18432,6 +18487,11 @@ module.exports = {
         'defense': 83,
         'specialDefense': 100,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
       },
       'attack': 141,
       'nativeRegion': 0,
@@ -18467,6 +18527,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
+      },
       'attack': 141,
       'nativeRegion': 0,
       'locations': {
@@ -18501,6 +18566,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 141,
       'nativeRegion': 0,
       'locations': {
@@ -18534,6 +18604,11 @@ module.exports = {
         'defense': 83,
         'specialDefense': 100,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 141,
       'nativeRegion': 0,
@@ -18570,6 +18645,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 200,
       'locations': {},
       'catchRatePercent': 17,
@@ -18598,6 +18678,11 @@ module.exports = {
         'defense': 43,
         'specialDefense': 50,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 46,
       'nativeRegion': 0,
@@ -18632,6 +18717,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 65,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 46,
       'nativeRegion': 0,
       'locations': {},
@@ -18661,6 +18751,11 @@ module.exports = {
         'defense': 58,
         'specialDefense': 65,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 81,
       'nativeRegion': 0,
@@ -18701,6 +18796,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 81,
       'nativeRegion': 0,
       'locations': {
@@ -18735,6 +18835,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 100,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 142,
       'nativeRegion': 0,
       'locations': {
@@ -18768,6 +18873,11 @@ module.exports = {
         'defense': 78,
         'specialDefense': 85,
         'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 142,
       'nativeRegion': 0,
@@ -18804,6 +18914,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 100,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 202,
       'locations': {},
       'catchRatePercent': 17,
@@ -18832,6 +18947,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 64,
         'speed': 43,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 50,
       'nativeRegion': 0,
@@ -18866,6 +18986,11 @@ module.exports = {
         'specialDefense': 64,
         'speed': 43,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 50,
       'nativeRegion': 0,
       'locations': {},
@@ -18895,6 +19020,11 @@ module.exports = {
         'defense': 80,
         'specialDefense': 80,
         'speed': 58,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 83,
       'nativeRegion': 0,
@@ -18935,6 +19065,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 58,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 83,
       'nativeRegion': 0,
       'locations': {
@@ -18966,6 +19101,11 @@ module.exports = {
         'specialDefense': 105,
         'speed': 78,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 139,
       'nativeRegion': 0,
       'locations': {
@@ -18996,6 +19136,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 105,
         'speed': 78,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 139,
       'nativeRegion': 0,
@@ -19029,6 +19174,11 @@ module.exports = {
         'specialDefense': 105,
         'speed': 78,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 197,
       'locations': {},
       'catchRatePercent': 17,
@@ -19060,6 +19210,11 @@ module.exports = {
       },
       'attack': 19,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19129,6 +19284,11 @@ module.exports = {
       },
       'attack': 19,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19185,6 +19345,11 @@ module.exports = {
       },
       'attack': 20,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19256,6 +19421,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 70,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 75,
       'nativeRegion': 0,
       'locations': {
@@ -19323,6 +19493,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 70,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 75,
       'nativeRegion': 0,
       'locations': {
@@ -19364,6 +19539,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 70,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 75,
       'nativeRegion': 0,
       'locations': {
@@ -19403,6 +19583,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 80,
         'speed': 70,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 75,
       'nativeRegion': 0,
@@ -19446,6 +19631,11 @@ module.exports = {
         'speed': 70,
       },
       'attack': 107,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -19479,6 +19669,11 @@ module.exports = {
       },
       'attack': 19,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19537,6 +19732,11 @@ module.exports = {
       },
       'attack': 19,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19578,6 +19778,11 @@ module.exports = {
       },
       'attack': 21,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19639,6 +19844,11 @@ module.exports = {
       },
       'attack': 74,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -19693,6 +19903,11 @@ module.exports = {
       },
       'attack': 31,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19814,6 +20029,11 @@ module.exports = {
       },
       'attack': 31,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19858,6 +20078,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -19920,6 +20145,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -19958,6 +20188,11 @@ module.exports = {
       },
       'attack': 112,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -20000,6 +20235,11 @@ module.exports = {
         'defense': 35,
         'specialDefense': 35,
         'speed': 72,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 26,
       'nativeRegion': 0,
@@ -20118,6 +20358,11 @@ module.exports = {
         'speed': 72,
       },
       'attack': 26,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -20162,6 +20407,11 @@ module.exports = {
         'specialDefense': 35,
         'speed': 72,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 26,
       'nativeRegion': 0,
       'locations': {
@@ -20192,6 +20442,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 70,
         'speed': 97,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 75,
       'nativeRegion': 0,
@@ -20280,6 +20535,11 @@ module.exports = {
         'speed': 77,
       },
       'attack': 78,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -20347,6 +20607,11 @@ module.exports = {
         'speed': 77,
       },
       'attack': 81,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -20373,6 +20638,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 70,
         'speed': 97,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 75,
       'nativeRegion': 0,
@@ -20425,6 +20695,11 @@ module.exports = {
       },
       'attack': 32,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -20552,6 +20827,11 @@ module.exports = {
       },
       'attack': 32,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -20577,6 +20857,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -20694,6 +20979,11 @@ module.exports = {
       },
       'attack': 39,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -20752,6 +21042,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -20799,6 +21094,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -20857,6 +21157,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 50,
         'speed': 90,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -20946,6 +21251,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 43,
       'nativeRegion': 0,
       'locations': {
@@ -20973,6 +21283,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 50,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -21002,6 +21317,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 43,
       'nativeRegion': 0,
       'locations': {
@@ -21029,6 +21349,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 50,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -21058,6 +21383,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 43,
       'nativeRegion': 0,
       'locations': {
@@ -21085,6 +21415,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 50,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -21115,6 +21450,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 43,
       'nativeRegion': 0,
       'locations': {},
@@ -21142,6 +21482,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 18,
       'eggSteps': 400,
@@ -21167,6 +21512,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '13': [1500],
       },
@@ -21191,6 +21541,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 18,
       'eggSteps': 400,
@@ -21213,6 +21568,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 18,
       'eggSteps': 400,
@@ -21232,6 +21592,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 50,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -21264,6 +21629,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -21286,6 +21656,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 60,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -21316,6 +21691,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '12': ['Enigma'],
       },
@@ -21337,6 +21717,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 80,
         'speed': 110,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 108,
       'nativeRegion': 0,
@@ -21406,6 +21791,11 @@ module.exports = {
         'speed': 110,
       },
       'attack': 108,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -21441,6 +21831,11 @@ module.exports = {
       },
       'attack': 108,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -21480,6 +21875,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -21551,6 +21951,11 @@ module.exports = {
         'speed': 40,
       },
       'attack': 30,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Mount Lanakila'],
       },
@@ -21575,6 +21980,11 @@ module.exports = {
       },
       'attack': 96,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -21654,6 +22064,11 @@ module.exports = {
         'speed': 65,
       },
       'attack': 78,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -21690,6 +22105,11 @@ module.exports = {
         'defense': 52,
         'specialDefense': 40,
         'speed': 41,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 42,
       'nativeRegion': 0,
@@ -21761,6 +22181,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 41,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 42,
       'nativeRegion': 0,
       'locations': {
@@ -21799,6 +22224,11 @@ module.exports = {
         'defense': 67,
         'specialDefense': 55,
         'speed': 56,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 72,
       'nativeRegion': 0,
@@ -21851,6 +22281,11 @@ module.exports = {
         'defense': 87,
         'specialDefense': 85,
         'speed': 76,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 136,
       'nativeRegion': 0,
@@ -21923,6 +22358,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 50,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 40,
       'nativeRegion': 0,
       'locations': {
@@ -21993,6 +22433,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 50,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 40,
       'nativeRegion': 0,
       'locations': {
@@ -22037,6 +22482,11 @@ module.exports = {
         'defense': 57,
         'specialDefense': 55,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 70,
       'nativeRegion': 0,
@@ -22084,6 +22534,11 @@ module.exports = {
         'defense': 77,
         'specialDefense': 75,
         'speed': 85,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 135,
       'nativeRegion': 0,
@@ -22151,6 +22606,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 85,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 135,
       'nativeRegion': 0,
       'locations': {
@@ -22199,6 +22659,11 @@ module.exports = {
         'type': 1,
         'id': 'Moon_stone',
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 61,
       'nativeRegion': 0,
       'locations': {
@@ -22229,6 +22694,7 @@ module.exports = {
           'Spear Pillar',
           'Giant Chasm',
           'Lake of the Sunne and Moone',
+          'Tunnel to the Top',
         ],
         '5': [
           {
@@ -22263,6 +22729,11 @@ module.exports = {
         'type': 1,
         'id': 'Moon_stone',
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 130,
       'nativeRegion': 0,
       'locations': {
@@ -22282,7 +22753,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Dyna Tree Hill'],
+        '2': [
+          'Dyna Tree Hill',
+          'Tunnel to the Top',
+        ],
         '3': [
           {
             'dungeon': 'Fullmoon Island',
@@ -22323,6 +22797,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 65,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 40,
       'nativeRegion': 0,
@@ -22425,6 +22904,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 65,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 40,
       'locations': {
         '2': ['Mount Lanakila'],
@@ -22447,6 +22931,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 118,
       'nativeRegion': 0,
@@ -22491,6 +22980,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 109,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 113,
       'locations': {
         '5': [
@@ -22531,6 +23025,11 @@ module.exports = {
         'defense': 20,
         'specialDefense': 25,
         'speed': 20,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -22608,6 +23107,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 0,
       'locations': {
@@ -22681,6 +23185,11 @@ module.exports = {
         'defense': 35,
         'specialDefense': 40,
         'speed': 55,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 29,
       'nativeRegion': 0,
@@ -22807,6 +23316,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 90,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 102,
       'nativeRegion': 0,
       'locations': {
@@ -22832,7 +23346,6 @@ module.exports = {
           'Cave of Origin',
           'Seafloor Cavern',
           'Sky Pillar',
-          'Sealed Chamber',
           'Victory Road Hoenn',
           'Oreburgh Gate',
           'Iron Island',
@@ -22848,6 +23361,7 @@ module.exports = {
           'Thrifty Megamart',
           'Vast Poni Canyon',
           'Roaring-Sea Caves',
+          'Tunnel to the Top',
         ],
         '3': [
           {
@@ -22855,6 +23369,10 @@ module.exports = {
           },
           {
             'dungeon': 'Tohjo Falls',
+          },
+          {
+            'dungeon': 'Sealed Chamber',
+            'requirements': 'Progress further in questline The Three Golems.',
           },
           {
             'dungeon': 'Resolution Cave',
@@ -22901,6 +23419,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23051,6 +23574,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -23099,6 +23627,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 75,
         'speed': 40,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 89,
       'nativeRegion': 0,
@@ -23222,6 +23755,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 50,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 136,
       'nativeRegion': 0,
       'locations': {
@@ -23314,6 +23852,11 @@ module.exports = {
       },
       'attack': 136,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23352,6 +23895,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 90,
         'speed': 50,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 136,
       'nativeRegion': 0,
@@ -23404,6 +23952,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Mt. Moon',
@@ -23437,6 +23990,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23470,6 +24028,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23503,6 +24066,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -23559,6 +24127,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23613,6 +24186,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23646,6 +24224,11 @@ module.exports = {
       },
       'attack': 101,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -23690,6 +24273,11 @@ module.exports = {
       },
       'attack': 17,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -23752,6 +24340,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 18,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Verdant Cavern',
@@ -23779,6 +24372,11 @@ module.exports = {
       },
       'attack': 17,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -23809,6 +24407,11 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -23880,6 +24483,11 @@ module.exports = {
         'speed': 110,
       },
       'attack': 66,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -23933,6 +24541,11 @@ module.exports = {
       },
       'attack': 36,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24015,6 +24628,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 35,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -24057,6 +24675,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 48,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -24087,6 +24710,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 51,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -24109,6 +24737,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24171,6 +24804,11 @@ module.exports = {
         'speed': 115,
       },
       'attack': 85,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -24210,6 +24848,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24357,6 +25000,11 @@ module.exports = {
       },
       'attack': 130,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24506,6 +25154,11 @@ module.exports = {
       },
       'attack': 42,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24565,6 +25218,11 @@ module.exports = {
       },
       'attack': 42,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24596,6 +25254,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24638,6 +25301,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -24679,6 +25347,11 @@ module.exports = {
         'defense': 45,
         'specialDefense': 50,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 68,
       'nativeRegion': 0,
@@ -24772,6 +25445,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 95,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 165,
       'nativeRegion': 0,
       'locations': {
@@ -24827,6 +25505,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -24955,6 +25638,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -25070,6 +25758,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -25108,6 +25801,11 @@ module.exports = {
       },
       'attack': 137,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -25149,6 +25847,11 @@ module.exports = {
         'defense': 15,
         'specialDefense': 55,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 27,
       'nativeRegion': 0,
@@ -25232,6 +25935,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 105,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'visualDifference': true,
+        'type': 1,
+      },
       'attack': 56,
       'nativeRegion': 0,
       'locations': {
@@ -25293,6 +26001,11 @@ module.exports = {
         'specialDefense': 95,
         'speed': 120,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'visualDifference': true,
+        'type': 1,
+      },
       'attack': 96,
       'nativeRegion': 0,
       'locations': {
@@ -25351,6 +26064,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 35,
         'speed': 35,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 54,
       'nativeRegion': 0,
@@ -25446,6 +26164,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 60,
         'speed': 45,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 93,
       'nativeRegion': 0,
@@ -25580,6 +26303,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 142,
       'nativeRegion': 0,
       'locations': {
@@ -25644,6 +26372,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 190,
       'locations': {},
       'catchRatePercent': 17,
@@ -25684,6 +26417,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -25774,6 +26512,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -25815,6 +26558,11 @@ module.exports = {
       },
       'attack': 90,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -25899,6 +26647,11 @@ module.exports = {
       },
       'attack': 90,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -25940,6 +26693,11 @@ module.exports = {
       },
       'attack': 138,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -25982,6 +26740,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -26251,6 +27014,11 @@ module.exports = {
       },
       'attack': 120,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -26470,6 +27238,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -26576,6 +27349,11 @@ module.exports = {
         'speed': 20,
       },
       'attack': 41,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -26613,6 +27391,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -26650,6 +27433,11 @@ module.exports = {
       },
       'attack': 74,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -26764,6 +27552,11 @@ module.exports = {
         'speed': 35,
       },
       'attack': 74,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -26812,6 +27605,11 @@ module.exports = {
       },
       'attack': 125,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -26846,6 +27644,11 @@ module.exports = {
         'speed': 45,
       },
       'attack': 125,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -26885,6 +27688,11 @@ module.exports = {
       },
       'attack': 78,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -26950,6 +27758,11 @@ module.exports = {
         'speed': 90,
       },
       'attack': 78,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -26982,6 +27795,11 @@ module.exports = {
       },
       'attack': 118,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -27029,6 +27847,11 @@ module.exports = {
         'speed': 105,
       },
       'attack': 118,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -27094,6 +27917,11 @@ module.exports = {
       },
       'attack': 61,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -27224,6 +28052,11 @@ module.exports = {
         'speed': 15,
       },
       'attack': 61,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -27261,6 +28094,11 @@ module.exports = {
       },
       'attack': 142,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -27313,6 +28151,11 @@ module.exports = {
         'speed': 30,
       },
       'attack': 152,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -27356,6 +28199,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Metal_coat',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 42,
       'nativeRegion': 0,
@@ -27475,6 +28323,11 @@ module.exports = {
         'type': 1,
         'id': 'Metal_coat',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 99,
       'nativeRegion': 0,
       'locations': {
@@ -27539,6 +28392,11 @@ module.exports = {
       },
       'attack': 74,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -27607,6 +28465,11 @@ module.exports = {
         'id': 'Leek',
       },
       'attack': 76,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -27656,6 +28519,11 @@ module.exports = {
         'defense': 45,
         'specialDefense': 35,
         'speed': 75,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 41,
       'nativeRegion': 0,
@@ -27713,6 +28581,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 110,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 98,
       'nativeRegion': 0,
       'locations': {
@@ -27760,6 +28633,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 110,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 98,
       'nativeRegion': 0,
       'locations': {
@@ -27802,6 +28680,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -27847,6 +28730,11 @@ module.exports = {
       },
       'attack': 116,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Icefall Cave'],
         '3': [
@@ -27892,6 +28780,11 @@ module.exports = {
       },
       'attack': 65,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Pokémon Mansion',
@@ -27931,6 +28824,11 @@ module.exports = {
         'speed': 25,
       },
       'attack': 65,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ["Trainers' School"],
       },
@@ -27955,6 +28853,11 @@ module.exports = {
       },
       'attack': 143,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -28000,6 +28903,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 143,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -28039,6 +28947,11 @@ module.exports = {
       },
       'attack': 39,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -28124,6 +29037,11 @@ module.exports = {
       },
       'attack': 109,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -28206,6 +29124,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -28304,6 +29227,11 @@ module.exports = {
       },
       'attack': 70,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -28403,6 +29331,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -28473,6 +29406,11 @@ module.exports = {
         'speed': 110,
       },
       'attack': 157,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -28510,6 +29448,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -28608,6 +29551,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -28644,6 +29592,11 @@ module.exports = {
       },
       'attack': 53,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -28685,6 +29638,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 115,
         'speed': 67,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 118,
       'nativeRegion': 0,
@@ -28740,6 +29698,11 @@ module.exports = {
       },
       'attack': 37,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -28901,6 +29864,11 @@ module.exports = {
       },
       'attack': 96,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -29068,6 +30036,11 @@ module.exports = {
         'speed': 75,
       },
       'attack': 136,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -29095,6 +30068,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 55,
         'speed': 100,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 40,
       'nativeRegion': 0,
@@ -29136,6 +30114,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 80,
         'speed': 150,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 86,
       'nativeRegion': 0,
@@ -29235,6 +30218,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -29334,6 +30322,11 @@ module.exports = {
       },
       'attack': 168,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -29404,6 +30397,11 @@ module.exports = {
         'speed': 45,
       },
       'attack': 176,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -29442,6 +30440,11 @@ module.exports = {
       },
       'attack': 168,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -29517,6 +30520,11 @@ module.exports = {
       },
       'attack': 49,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -29564,6 +30572,11 @@ module.exports = {
       },
       'attack': 87,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -29638,6 +30651,11 @@ module.exports = {
         'speed': 45,
       },
       'attack': 87,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -29684,6 +30702,11 @@ module.exports = {
         'speed': 65,
       },
       'attack': 88,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -29710,6 +30733,11 @@ module.exports = {
         'defense': 53,
         'specialDefense': 110,
         'speed': 87,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 77,
       'nativeRegion': 0,
@@ -29743,6 +30771,11 @@ module.exports = {
         'defense': 79,
         'specialDefense': 110,
         'speed': 76,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 78,
       'nativeRegion': 0,
@@ -29787,6 +30820,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -29881,6 +30919,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -29925,6 +30968,11 @@ module.exports = {
       },
       'attack': 121,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -29984,6 +31032,11 @@ module.exports = {
       },
       'attack': 121,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -30018,6 +31071,11 @@ module.exports = {
         'speed': 60,
       },
       'attack': 121,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -30074,6 +31132,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 30,
         'speed': 25,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 59,
       'nativeRegion': 0,
@@ -30154,6 +31217,11 @@ module.exports = {
         'specialDefense': 30,
         'speed': 25,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 59,
       'nativeRegion': 0,
       'locations': {
@@ -30188,6 +31256,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 45,
         'speed': 40,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 121,
       'nativeRegion': 0,
@@ -30293,6 +31366,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 40,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 121,
       'nativeRegion': 0,
       'locations': {
@@ -30340,6 +31418,11 @@ module.exports = {
       'heldItem': {
         'type': 2,
         'id': 'Oval Stone',
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 27,
       'nativeRegion': 0,
@@ -30656,6 +31739,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -30712,6 +31800,11 @@ module.exports = {
         'defense': 80,
         'specialDefense': 80,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 109,
       'nativeRegion': 0,
@@ -30772,6 +31865,11 @@ module.exports = {
       },
       'attack': 37,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -30858,6 +31956,7 @@ module.exports = {
           'Sunburst Island',
           'Tanoby Ruins',
           'Whirl Islands',
+          'Sealed Chamber',
         ],
       },
       'catchRatePercent': 58,
@@ -30893,6 +31992,11 @@ module.exports = {
       },
       'attack': 90,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -30986,6 +32090,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 50,
         'speed': 63,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 47,
       'nativeRegion': 0,
@@ -31133,6 +32242,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 80,
         'speed': 68,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 110,
       'nativeRegion': 0,
@@ -31309,6 +32423,11 @@ module.exports = {
         'specialDefense': 55,
         'speed': 85,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 45,
       'nativeRegion': 0,
       'locations': {
@@ -31381,6 +32500,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 115,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 117,
       'nativeRegion': 0,
       'locations': {
@@ -31452,6 +32576,11 @@ module.exports = {
       },
       'attack': 77,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -31515,6 +32644,11 @@ module.exports = {
         'speed': 100,
       },
       'attack': 90,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -31574,6 +32708,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 105,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 111,
       'nativeRegion': 0,
       'locations': {
@@ -31623,6 +32762,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 105,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 111,
       'nativeRegion': 0,
       'locations': {},
@@ -31647,6 +32791,11 @@ module.exports = {
         'defense': 35,
         'specialDefense': 95,
         'speed': 95,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 90,
       'nativeRegion': 0,
@@ -31710,6 +32859,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Electirizer',
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 114,
       'nativeRegion': 0,
@@ -31787,6 +32941,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 105,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 114,
       'nativeRegion': 0,
       'locations': {},
@@ -31820,6 +32979,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Magmarizer',
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 122,
       'nativeRegion': 0,
@@ -31903,6 +33067,11 @@ module.exports = {
       },
       'attack': 114,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -31959,6 +33128,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 70,
         'speed': 110,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 98,
       'nativeRegion': 0,
@@ -32024,6 +33198,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 20,
         'speed': 80,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 10,
       'nativeRegion': 0,
@@ -32456,6 +33635,7 @@ module.exports = {
           'Meteor Falls',
           'Shoal Cave',
           'Seafloor Cavern',
+          'Sealed Chamber',
           'Victory Road Hoenn',
           'Oreburgh Gate',
           'Mt. Coronet South',
@@ -32496,6 +33676,11 @@ module.exports = {
         'defense': 79,
         'specialDefense': 100,
         'speed': 81,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 148,
       'nativeRegion': 0,
@@ -32786,6 +33971,11 @@ module.exports = {
       },
       'attack': 165,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -32926,6 +34116,11 @@ module.exports = {
         'speed': 60,
       },
       'attack': 233,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -32945,6 +34140,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 45,
       'nativeRegion': 0,
@@ -33169,6 +34369,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 54,
       'nativeRegion': 0,
       'locations': {
@@ -33226,6 +34431,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 54,
       'nativeRegion': 0,
       'locations': {},
@@ -33249,6 +34459,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 76,
       'locations': {},
       'catchRatePercent': 63,
@@ -33269,6 +34484,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 95,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 155,
       'nativeRegion': 0,
@@ -33313,6 +34533,11 @@ module.exports = {
         'specialDefense': 95,
         'speed': 130,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 115,
       'nativeRegion': 0,
       'locations': {
@@ -33355,6 +34580,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 110,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 144,
       'nativeRegion': 0,
@@ -33407,6 +34637,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 40,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 89,
       'nativeRegion': 0,
       'locations': {
@@ -33441,6 +34676,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 55,
         'speed': 35,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 55,
       'nativeRegion': 0,
@@ -33477,6 +34717,11 @@ module.exports = {
         'defense': 125,
         'specialDefense': 70,
         'speed': 55,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 121,
       'nativeRegion': 0,
@@ -33526,6 +34771,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 54,
       'nativeRegion': 0,
       'locations': {
@@ -33561,6 +34811,11 @@ module.exports = {
         'defense': 105,
         'specialDefense': 70,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 114,
       'nativeRegion': 0,
@@ -33602,6 +34857,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 130,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 117,
       'nativeRegion': 0,
       'locations': {
@@ -33634,6 +34894,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 110,
         'speed': 30,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 172,
       'nativeRegion': 0,
@@ -33759,6 +35024,11 @@ module.exports = {
         'specialDefense': 110,
         'speed': 30,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 172,
       'nativeRegion': 0,
       'locations': {
@@ -33791,6 +35061,11 @@ module.exports = {
         'specialDefense': 110,
         'speed': 30,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 244,
       'locations': {},
       'catchRatePercent': 11,
@@ -33814,6 +35089,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 125,
         'speed': 85,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 165,
       'nativeRegion': 0,
@@ -33853,6 +35133,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 95,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 173,
       'locations': {
         '1': [
@@ -33883,6 +35168,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 90,
         'speed': 100,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 173,
       'nativeRegion': 0,
@@ -33922,6 +35212,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 100,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 171,
       'locations': {
         '1': [
@@ -33952,6 +35247,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 85,
         'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 180,
       'nativeRegion': 0,
@@ -33990,6 +35290,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 125,
         'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 166,
       'locations': {
@@ -34033,6 +35338,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -34095,6 +35405,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -34146,6 +35461,11 @@ module.exports = {
       },
       'attack': 196,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -34193,6 +35513,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 130,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 235,
       'nativeRegion': 0,
       'locations': {
@@ -34221,6 +35546,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 130,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 246,
       'nativeRegion': 0,
       'locations': {},
@@ -34246,6 +35576,11 @@ module.exports = {
       'heldItem': {
         'type': 3,
         'id': 19,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 184,
       'nativeRegion': 0,
@@ -34284,6 +35619,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 51,
       'nativeRegion': 1,
       'locations': {
@@ -34317,6 +35657,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 81,
       'nativeRegion': 1,
       'locations': {
@@ -34347,6 +35692,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
       },
       'attack': 135,
       'nativeRegion': 1,
@@ -34387,6 +35737,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 65,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 46,
       'nativeRegion': 1,
       'locations': {
@@ -34420,6 +35775,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 81,
       'nativeRegion': 1,
       'locations': {
@@ -34450,6 +35810,11 @@ module.exports = {
         'defense': 78,
         'specialDefense': 85,
         'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 142,
       'nativeRegion': 1,
@@ -34490,6 +35855,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 43,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 53,
       'nativeRegion': 1,
       'locations': {
@@ -34523,6 +35893,11 @@ module.exports = {
         'specialDefense': 63,
         'speed': 58,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 87,
       'nativeRegion': 1,
       'locations': {
@@ -34553,6 +35928,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 83,
         'speed': 78,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 147,
       'nativeRegion': 1,
@@ -34595,6 +35975,11 @@ module.exports = {
       },
       'attack': 28,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -34642,6 +36027,11 @@ module.exports = {
       },
       'attack': 83,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Pledge Grove'],
         '5': [
@@ -34685,6 +36075,11 @@ module.exports = {
       },
       'attack': 34,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -34819,6 +36214,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -34957,6 +36357,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 55,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 27,
       'nativeRegion': 1,
       'locations': {
@@ -35046,6 +36451,11 @@ module.exports = {
         'specialDefense': 110,
         'speed': 85,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 57,
       'nativeRegion': 1,
       'locations': {
@@ -35113,6 +36523,11 @@ module.exports = {
       },
       'attack': 36,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -35197,6 +36612,11 @@ module.exports = {
       },
       'attack': 93,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -35253,6 +36673,11 @@ module.exports = {
       },
       'attack': 128,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -35299,6 +36724,11 @@ module.exports = {
       },
       'attack': 54,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -35402,6 +36832,11 @@ module.exports = {
       },
       'attack': 116,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -35516,6 +36951,11 @@ module.exports = {
       },
       'attack': 17,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -35552,6 +36992,11 @@ module.exports = {
         'specialDefense': 35,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 17,
       'nativeRegion': 1,
       'locations': {},
@@ -35586,6 +37031,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Moon_stone',
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 27,
       'nativeRegion': 1,
@@ -35631,6 +37081,11 @@ module.exports = {
         'specialDefense': 20,
         'speed': 15,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 27,
       'nativeRegion': 1,
       'locations': {
@@ -35674,6 +37129,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 20,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 25,
       'nativeRegion': 1,
       'locations': {
@@ -35716,6 +37176,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 20,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 28,
       'nativeRegion': 1,
       'locations': {},
@@ -35737,6 +37202,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 65,
         'speed': 20,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 28,
       'nativeRegion': 1,
@@ -35770,6 +37240,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 105,
         'speed': 40,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 75,
       'nativeRegion': 1,
@@ -35824,6 +37299,11 @@ module.exports = {
       },
       'attack': 50,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -35915,6 +37395,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 70,
         'speed': 95,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 108,
       'nativeRegion': 1,
@@ -36045,6 +37530,11 @@ module.exports = {
       },
       'attack': 46,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -36095,6 +37585,11 @@ module.exports = {
       },
       'attack': 78,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -36136,6 +37631,11 @@ module.exports = {
       },
       'attack': 147,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Ruins of Conflict'],
         '5': [
@@ -36168,6 +37668,11 @@ module.exports = {
       },
       'attack': 130,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -36218,6 +37723,11 @@ module.exports = {
       },
       'attack': 26,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -36343,6 +37853,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -36407,6 +37922,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 65,
         'speed': 30,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 77,
       'nativeRegion': 1,
@@ -36485,6 +38005,11 @@ module.exports = {
         'type': 1,
         'id': 'Kings_rock',
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 134,
       'nativeRegion': 1,
       'locations': {
@@ -36554,6 +38079,11 @@ module.exports = {
       },
       'attack': 29,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -36617,6 +38147,11 @@ module.exports = {
       },
       'attack': 52,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Flower Paradise'],
         '5': [
@@ -36652,6 +38187,11 @@ module.exports = {
       },
       'attack': 86,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -36688,6 +38228,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 55,
         'speed': 85,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 58,
       'nativeRegion': 1,
@@ -36748,6 +38293,11 @@ module.exports = {
       },
       'attack': 18,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -36783,6 +38333,11 @@ module.exports = {
       },
       'attack': 112,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -36825,6 +38380,11 @@ module.exports = {
       },
       'attack': 76,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -36874,6 +38434,11 @@ module.exports = {
         'defense': 45,
         'specialDefense': 25,
         'speed': 15,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 26,
       'nativeRegion': 1,
@@ -36958,6 +38523,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 65,
         'speed': 35,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 111,
       'nativeRegion': 1,
@@ -37106,6 +38676,11 @@ module.exports = {
         'specialDefense': 95,
         'speed': 110,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 122,
       'nativeRegion': 1,
       'locations': {
@@ -37153,6 +38728,11 @@ module.exports = {
         'defense': 110,
         'specialDefense': 130,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 125,
       'nativeRegion': 1,
@@ -37213,6 +38793,11 @@ module.exports = {
         'specialDefense': 42,
         'speed': 91,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 84,
       'nativeRegion': 1,
       'locations': {
@@ -37253,6 +38838,11 @@ module.exports = {
       },
       'attack': 142,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -37287,6 +38877,11 @@ module.exports = {
         'speed': 30,
       },
       'attack': 139,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -37326,6 +38921,11 @@ module.exports = {
       },
       'attack': 90,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Lost Cave',
@@ -37353,6 +38953,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37391,6 +38996,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37427,6 +39037,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37466,6 +39081,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37504,6 +39124,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37533,6 +39158,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37561,6 +39191,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37599,6 +39234,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37627,6 +39267,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37666,6 +39311,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37702,6 +39352,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37740,6 +39395,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37776,6 +39436,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37814,6 +39479,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37850,6 +39520,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37889,6 +39564,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -37917,6 +39597,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37954,6 +39639,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -37993,6 +39683,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38031,6 +39726,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38067,6 +39767,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -38105,6 +39810,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38141,6 +39851,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -38179,6 +39894,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38215,6 +39935,11 @@ module.exports = {
         'defense': 48,
         'specialDefense': 48,
         'speed': 48,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 1,
@@ -38253,6 +39978,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38290,6 +40020,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38319,6 +40054,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 48,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -38347,6 +40087,11 @@ module.exports = {
         'defense': 58,
         'specialDefense': 58,
         'speed': 33,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 68,
       'nativeRegion': 1,
@@ -38451,6 +40196,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 85,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 108,
       'nativeRegion': 1,
       'locations': {
@@ -38499,6 +40249,11 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -38579,6 +40334,11 @@ module.exports = {
       },
       'attack': 109,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['P2 Laboratory'],
         '4': [
@@ -38616,6 +40376,11 @@ module.exports = {
       },
       'attack': 101,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -38679,6 +40444,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 85,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 74,
       'nativeRegion': 1,
       'locations': {
@@ -38731,6 +40501,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Metal_coat',
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 111,
       'nativeRegion': 1,
@@ -38785,6 +40560,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 30,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 111,
       'nativeRegion': 1,
       'locations': {
@@ -38824,6 +40604,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 30,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 54,
       'nativeRegion': 1,
       'locations': {
@@ -38858,6 +40643,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 60,
         'speed': 45,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 120,
       'nativeRegion': 1,
@@ -38922,6 +40712,11 @@ module.exports = {
       },
       'attack': 93,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -38993,6 +40788,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 65,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 123,
       'nativeRegion': 1,
       'locations': {
@@ -39037,6 +40837,11 @@ module.exports = {
       },
       'attack': 13,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -39078,6 +40883,7 @@ module.exports = {
             'dungeon': 'Hall of Origin',
           },
         ],
+        '12': ['Tanga'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -39100,6 +40906,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 95,
         'speed': 85,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 110,
       'nativeRegion': 1,
@@ -39201,6 +41012,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 75,
         'speed': 115,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 69,
       'nativeRegion': 1,
@@ -39327,6 +41143,11 @@ module.exports = {
       },
       'attack': 64,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -39358,6 +41179,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 75,
         'speed': 55,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 145,
       'nativeRegion': 1,
@@ -39419,6 +41245,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -39458,6 +41289,11 @@ module.exports = {
       },
       'attack': 91,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Stark Mountain'],
         '3': [
@@ -39506,6 +41342,11 @@ module.exports = {
       },
       'attack': 33,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -39578,6 +41419,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 50,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 118,
       'nativeRegion': 1,
       'locations': {
@@ -39648,6 +41494,11 @@ module.exports = {
         'type': 2,
         'id': 'Hard Stone',
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 85,
       'nativeRegion': 1,
       'locations': {
@@ -39703,6 +41554,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 30,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 82,
       'locations': {
         '0': {
@@ -39742,6 +41598,11 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -39861,6 +41722,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 45,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 140,
       'nativeRegion': 1,
       'locations': {
@@ -39976,6 +41842,11 @@ module.exports = {
       },
       'attack': 53,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -40108,6 +41979,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -40162,6 +42038,11 @@ module.exports = {
       },
       'attack': 86,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -40243,6 +42124,11 @@ module.exports = {
       },
       'attack': 56,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -40280,6 +42166,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 80,
         'speed': 95,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 129,
       'nativeRegion': 1,
@@ -40328,6 +42219,11 @@ module.exports = {
       },
       'attack': 146,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -40375,6 +42271,11 @@ module.exports = {
       },
       'attack': 61,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -40411,6 +42312,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 60,
         'speed': 50,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 133,
       'nativeRegion': 1,
@@ -40463,6 +42369,11 @@ module.exports = {
         'type': 1,
         'id': 'Upgrade',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 146,
       'nativeRegion': 1,
       'locations': {
@@ -40496,6 +42407,11 @@ module.exports = {
       },
       'attack': 115,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '1': [
@@ -40535,6 +42451,11 @@ module.exports = {
       },
       'attack': 23,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -40594,6 +42515,11 @@ module.exports = {
         'defense': 35,
         'specialDefense': 35,
         'speed': 35,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 24,
       'nativeRegion': 1,
@@ -40663,6 +42589,11 @@ module.exports = {
         'specialDefense': 110,
         'speed': 70,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 78,
       'nativeRegion': 1,
       'locations': {
@@ -40713,6 +42644,11 @@ module.exports = {
         'defense': 15,
         'specialDefense': 65,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 39,
       'nativeRegion': 1,
@@ -40765,6 +42701,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Electirizer',
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 58,
       'nativeRegion': 1,
@@ -40838,6 +42779,11 @@ module.exports = {
         'type': 1,
         'id': 'Magmarizer',
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 64,
       'nativeRegion': 1,
       'locations': {
@@ -40900,6 +42846,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 100,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 102,
       'nativeRegion': 1,
       'locations': {
@@ -40959,6 +42910,11 @@ module.exports = {
       'heldItem': {
         'type': 2,
         'id': 'Oval Stone',
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 59,
       'nativeRegion': 1,
@@ -41044,6 +43000,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 115,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 164,
       'nativeRegion': 1,
       'locations': {
@@ -41077,6 +43038,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 100,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 182,
       'nativeRegion': 1,
       'locations': {
@@ -41109,6 +43075,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 115,
         'speed': 85,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 162,
       'nativeRegion': 1,
@@ -41152,6 +43123,11 @@ module.exports = {
       },
       'attack': 50,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '0': [
@@ -41212,6 +43188,11 @@ module.exports = {
       },
       'attack': 95,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -41265,6 +43246,11 @@ module.exports = {
       },
       'attack': 205,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -41305,12 +43291,18 @@ module.exports = {
         'specialDefense': 154,
         'speed': 110,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 203,
       'nativeRegion': 1,
       'locations': {
         '3': [
           {
             'dungeon': 'Whirl Islands',
+            'requirements': 'Progress further in questline Whirl Guardian.',
           },
           {
             'dungeon': "Sea Spirit's Den",
@@ -41339,13 +43331,18 @@ module.exports = {
         'specialDefense': 154,
         'speed': 90,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 239,
       'nativeRegion': 1,
       'locations': {
         '3': [
           {
             'dungeon': 'Tin Tower',
-            'requirements': 'Questline The Legendary Beasts needs to be completed.',
+            'requirements': 'Progress further in questline Rainbow Guardian.',
           },
         ],
       },
@@ -41374,6 +43371,11 @@ module.exports = {
       'heldItem': {
         'type': 3,
         'id': 19,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 184,
       'nativeRegion': 1,
@@ -41411,6 +43413,11 @@ module.exports = {
         'type': 3,
         'id': 19,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 184,
       'nativeRegion': 1,
       'locations': {},
@@ -41442,6 +43449,11 @@ module.exports = {
       },
       'attack': 184,
       'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -41469,6 +43481,11 @@ module.exports = {
         'defense': 35,
         'specialDefense': 55,
         'speed': 70,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 45,
       'nativeRegion': 2,
@@ -41503,6 +43520,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 95,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 76,
       'nativeRegion': 2,
       'locations': {
@@ -41533,6 +43555,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 85,
         'speed': 120,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 129,
       'nativeRegion': 2,
@@ -41573,6 +43600,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 55,
       'nativeRegion': 2,
       'locations': {
@@ -41609,6 +43641,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
+      },
       'attack': 93,
       'nativeRegion': 2,
       'locations': {
@@ -41642,6 +43679,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 70,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
       },
       'attack': 157,
       'nativeRegion': 2,
@@ -41682,6 +43724,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 40,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 55,
       'nativeRegion': 2,
       'locations': {
@@ -41718,6 +43765,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 50,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 91,
       'nativeRegion': 2,
       'locations': {
@@ -41751,6 +43803,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 90,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 164,
       'nativeRegion': 2,
@@ -41793,6 +43850,11 @@ module.exports = {
       },
       'attack': 27,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -41851,6 +43913,11 @@ module.exports = {
       },
       'attack': 93,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -41912,6 +43979,11 @@ module.exports = {
       },
       'attack': 26,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -41970,6 +44042,11 @@ module.exports = {
         'speed': 60,
       },
       'attack': 26,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -42045,6 +44122,11 @@ module.exports = {
       },
       'attack': 82,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42102,6 +44184,11 @@ module.exports = {
         'speed': 100,
       },
       'attack': 82,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -42186,6 +44273,11 @@ module.exports = {
       },
       'attack': 22,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42242,6 +44334,11 @@ module.exports = {
       },
       'attack': 23,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -42284,6 +44381,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 50,
         'speed': 65,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 86,
       'nativeRegion': 2,
@@ -42344,6 +44446,11 @@ module.exports = {
       },
       'attack': 23,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -42386,6 +44493,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 90,
         'speed': 65,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 67,
       'nativeRegion': 2,
@@ -42449,6 +44561,11 @@ module.exports = {
       },
       'attack': 26,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42525,6 +44642,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42608,6 +44730,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 70,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 120,
       'nativeRegion': 2,
       'locations': {
@@ -42669,6 +44796,11 @@ module.exports = {
       },
       'attack': 26,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42743,6 +44875,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 60,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 67,
       'nativeRegion': 2,
       'locations': {
@@ -42816,6 +44953,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 80,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 131,
       'nativeRegion': 2,
       'locations': {
@@ -42880,6 +45022,11 @@ module.exports = {
       },
       'attack': 31,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42920,6 +45067,11 @@ module.exports = {
       },
       'attack': 91,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -42969,6 +45121,11 @@ module.exports = {
       },
       'attack': 31,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -43243,6 +45400,11 @@ module.exports = {
       },
       'attack': 91,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -43596,6 +45758,11 @@ module.exports = {
       },
       'attack': 20,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -43654,6 +45821,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Payapa'],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -43693,6 +45861,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -43744,6 +45917,11 @@ module.exports = {
       },
       'attack': 127,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -43819,6 +45997,11 @@ module.exports = {
       },
       'attack': 33,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -43867,6 +46050,11 @@ module.exports = {
       },
       'attack': 102,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -43919,6 +46107,11 @@ module.exports = {
       },
       'attack': 46,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Petalburg Woods'],
       },
@@ -43946,6 +46139,11 @@ module.exports = {
       },
       'attack': 106,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Hall of Origin',
@@ -43994,6 +46192,11 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Hall of Origin'],
         '3': [
@@ -44032,6 +46235,11 @@ module.exports = {
       },
       'attack': 94,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Pinwheel Forest'],
         '5': [
@@ -44064,6 +46272,11 @@ module.exports = {
       },
       'attack': 248,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -44117,6 +46330,11 @@ module.exports = {
       },
       'attack': 29,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -44173,6 +46391,11 @@ module.exports = {
       },
       'attack': 77,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -44220,6 +46443,11 @@ module.exports = {
         'specialDefense': 30,
         'speed': 40,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 10,
       'nativeRegion': 2,
       'locations': {
@@ -44262,6 +46490,11 @@ module.exports = {
       },
       'attack': 37,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -44306,6 +46539,11 @@ module.exports = {
       },
       'attack': 80,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Victory Road Hoenn',
@@ -44341,6 +46579,11 @@ module.exports = {
       },
       'attack': 140,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -44383,6 +46626,11 @@ module.exports = {
         'specialDefense': 30,
         'speed': 25,
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 32,
       'nativeRegion': 2,
       'locations': {
@@ -44421,6 +46669,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Kings_rock',
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 119,
       'nativeRegion': 2,
@@ -44477,6 +46730,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 40,
         'speed': 20,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 18,
       'nativeRegion': 2,
@@ -44579,6 +46837,11 @@ module.exports = {
       },
       'attack': 47,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -44627,6 +46890,11 @@ module.exports = {
         'specialDefense': 35,
         'speed': 50,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 36,
       'nativeRegion': 2,
       'locations': {
@@ -44662,6 +46930,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 55,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 76,
       'nativeRegion': 2,
@@ -44699,6 +46972,11 @@ module.exports = {
       },
       'attack': 76,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Granite Cave',
@@ -44706,7 +46984,6 @@ module.exports = {
           'Sky Pillar',
           'Reflection Cave',
           'Lakeside Cave',
-          'Tunnel to the Top',
         ],
         '3': [
           {
@@ -44743,6 +47020,11 @@ module.exports = {
       },
       'attack': 73,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -44759,7 +47041,6 @@ module.exports = {
           'Ten Carat Hill',
           'Energy Plant',
           'Lakeside Cave',
-          'Tunnel to the Top',
         ],
         '3': [
           {
@@ -44810,6 +47091,11 @@ module.exports = {
       },
       'attack': 54,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -44824,7 +47110,6 @@ module.exports = {
           'Mistralton Cave',
           'Terminus Cave',
           'Lakeside Cave',
-          'Tunnel to the Top',
         ],
       },
       'catchRatePercent': 49,
@@ -44863,6 +47148,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -44876,7 +47166,6 @@ module.exports = {
           'Mistralton Cave',
           'Terminus Cave',
           'Lakeside Cave',
-          'Tunnel to the Top',
         ],
         '5': [
           {
@@ -44915,14 +47204,16 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Rock Peak Ruins'],
         '3': [
           {
             'dungeon': 'Lakeside Cave',
-          },
-          {
-            'dungeon': 'Tunnel to the Top',
           },
         ],
         '5': [
@@ -44963,6 +47254,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 55,
         'speed': 60,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 33,
       'nativeRegion': 2,
@@ -45015,6 +47311,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 80,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 78,
       'nativeRegion': 2,
       'locations': {
@@ -45065,6 +47366,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -45129,6 +47435,11 @@ module.exports = {
       },
       'attack': 110,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -45185,6 +47496,11 @@ module.exports = {
       },
       'attack': 74,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -45203,6 +47519,7 @@ module.exports = {
           'Pikachu Valley',
         ],
         '6': ['Electric'],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -45225,6 +47542,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -45243,6 +47565,7 @@ module.exports = {
           'Pikachu Valley',
         ],
         '6': ['Electric'],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -45262,6 +47585,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 85,
         'speed': 85,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 82,
       'nativeRegion': 2,
@@ -45304,6 +47632,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 85,
         'speed': 85,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 82,
       'nativeRegion': 2,
@@ -45357,6 +47690,11 @@ module.exports = {
         'defense': 45,
         'specialDefense': 80,
         'speed': 65,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 80,
       'nativeRegion': 2,
@@ -45497,6 +47835,11 @@ module.exports = {
         'specialDefense': 53,
         'speed': 40,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 50,
       'nativeRegion': 2,
       'locations': {
@@ -45532,6 +47875,11 @@ module.exports = {
         'defense': 83,
         'specialDefense': 83,
         'speed': 55,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 121,
       'nativeRegion': 2,
@@ -45581,6 +47929,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -45636,6 +47989,11 @@ module.exports = {
       },
       'attack': 110,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -45740,6 +48098,11 @@ module.exports = {
       },
       'attack': 93,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -45854,6 +48217,7 @@ module.exports = {
         '2': [
           'Shoal Cave',
           'Seafloor Cavern',
+          'Sealed Chamber',
         ],
       },
       'catchRatePercent': 37,
@@ -45877,6 +48241,11 @@ module.exports = {
       },
       'attack': 148,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -45941,6 +48310,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 35,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 58,
       'nativeRegion': 2,
       'locations': {
@@ -45986,6 +48360,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 40,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 129,
       'nativeRegion': 2,
       'locations': {
@@ -46030,6 +48409,11 @@ module.exports = {
       },
       'attack': 120,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -46102,6 +48486,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -46136,6 +48525,11 @@ module.exports = {
       },
       'attack': 101,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Reversal Mountain'],
         '5': [
@@ -46168,6 +48562,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46216,6 +48615,11 @@ module.exports = {
       },
       'attack': 52,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46282,6 +48686,11 @@ module.exports = {
       },
       'attack': 58,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -46316,6 +48725,11 @@ module.exports = {
       },
       'attack': 134,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -46368,6 +48782,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46403,6 +48822,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 60,
         'speed': 55,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 133,
       'nativeRegion': 2,
@@ -46460,6 +48884,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46545,6 +48974,11 @@ module.exports = {
       },
       'attack': 112,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -46622,6 +49056,11 @@ module.exports = {
       },
       'attack': 105,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46671,6 +49110,11 @@ module.exports = {
       },
       'attack': 121,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46718,6 +49162,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Moon_stone',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 112,
       'nativeRegion': 2,
@@ -46773,6 +49222,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Sun_stone',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 112,
       'nativeRegion': 2,
@@ -46835,6 +49289,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -46953,6 +49412,11 @@ module.exports = {
       },
       'attack': 127,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -47089,6 +49553,11 @@ module.exports = {
       },
       'attack': 53,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -47188,6 +49657,11 @@ module.exports = {
       },
       'attack': 122,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -47275,6 +49749,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 70,
         'speed': 55,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 39,
       'nativeRegion': 2,
@@ -47384,6 +49863,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 75,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 107,
       'nativeRegion': 2,
       'locations': {
@@ -47477,6 +49961,11 @@ module.exports = {
         'specialDefense': 87,
         'speed': 23,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 66,
       'nativeRegion': 2,
       'locations': {
@@ -47515,6 +50004,11 @@ module.exports = {
         'defense': 97,
         'specialDefense': 107,
         'speed': 43,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 135,
       'nativeRegion': 2,
@@ -47558,6 +50052,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 75,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 57,
       'nativeRegion': 2,
       'locations': {
@@ -47593,6 +50092,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
@@ -47600,11 +50104,7 @@ module.exports = {
           '7': [
             {
               'route': 53,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 53,
-              'requirements': 'The weather needs to be Thunderstorm',
+              'requirements': 'Armaldo needs to be caught and The weather needs to be Rain or Thunderstorm.',
             },
           ],
         },
@@ -47646,6 +50146,11 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -47692,6 +50197,11 @@ module.exports = {
         'defense': 79,
         'specialDefense': 125,
         'speed': 81,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 139,
       'nativeRegion': 2,
@@ -47742,6 +50252,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -47771,6 +50286,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -47802,6 +50322,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -47833,6 +50358,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -47864,6 +50394,11 @@ module.exports = {
       },
       'attack': 98,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -47919,6 +50454,11 @@ module.exports = {
       },
       'attack': 50,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -47961,6 +50501,11 @@ module.exports = {
       },
       'attack': 115,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -48023,6 +50568,11 @@ module.exports = {
       },
       'attack': 27,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -48090,6 +50640,11 @@ module.exports = {
       },
       'attack': 82,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -48160,6 +50715,11 @@ module.exports = {
       },
       'attack': 117,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -48202,6 +50762,11 @@ module.exports = {
       },
       'attack': 102,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Spear Pillar',
@@ -48251,6 +50816,11 @@ module.exports = {
       },
       'attack': 114,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -48349,6 +50919,11 @@ module.exports = {
       },
       'attack': 31,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -48394,6 +50969,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -48505,6 +51085,7 @@ module.exports = {
         '2': [
           'Lake Acuity',
           'Mount Lanakila',
+          'Tunnel to the Top',
         ],
         '3': [
           {
@@ -48533,6 +51114,11 @@ module.exports = {
       },
       'attack': 120,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -48645,6 +51231,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -48695,6 +51286,11 @@ module.exports = {
       },
       'attack': 98,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -48766,6 +51362,11 @@ module.exports = {
       },
       'attack': 157,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -48835,6 +51436,11 @@ module.exports = {
       },
       'attack': 60,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '2': [
@@ -48895,6 +51501,11 @@ module.exports = {
       },
       'attack': 123,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -48930,6 +51541,11 @@ module.exports = {
       },
       'attack': 122,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -48965,6 +51581,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Deepsea_scale',
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
       },
       'attack': 113,
       'nativeRegion': 2,
@@ -49023,6 +51644,11 @@ module.exports = {
       'heldItem': {
         'type': 2,
         'id': 'Heart Scale',
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 38,
       'nativeRegion': 2,
@@ -49099,6 +51725,11 @@ module.exports = {
       },
       'attack': 46,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -49115,6 +51746,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Tunnel to the Top'],
         '6': ['Dragon'],
         '12': ['Haban'],
       },
@@ -49151,6 +51783,11 @@ module.exports = {
       },
       'attack': 94,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -49190,6 +51827,11 @@ module.exports = {
       },
       'attack': 195,
       'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -49199,6 +51841,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Tunnel to the Top',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Shelgon',
@@ -49243,6 +51890,11 @@ module.exports = {
         'type': 1,
         'id': 'Metal_coat',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 42,
       'nativeRegion': 2,
       'locations': {
@@ -49259,6 +51911,7 @@ module.exports = {
           ],
         },
         '8': ['Mossdeep City'],
+        '12': ['Babiri'],
       },
       'catchRatePercent': 2,
       'eggSteps': 1600,
@@ -49293,6 +51946,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Metal_coat',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 86,
       'nativeRegion': 2,
@@ -49343,6 +52001,11 @@ module.exports = {
         'type': 1,
         'id': 'Metal_coat',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 188,
       'nativeRegion': 2,
       'locations': {
@@ -49387,12 +52050,18 @@ module.exports = {
         'specialDefense': 100,
         'speed': 50,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
         '3': [
           {
             'dungeon': 'Sealed Chamber',
+            'requirements': 'Progress further in questline The Three Golems.',
           },
           {
             'dungeon': 'Rock Peak Ruins',
@@ -49419,12 +52088,18 @@ module.exports = {
         'specialDefense': 200,
         'speed': 50,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
         '3': [
           {
             'dungeon': 'Sealed Chamber',
+            'requirements': 'Progress further in questline The Three Golems.',
           },
           {
             'dungeon': 'Iceberg Ruins',
@@ -49451,12 +52126,18 @@ module.exports = {
         'specialDefense': 150,
         'speed': 50,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 147,
       'nativeRegion': 2,
       'locations': {
         '3': [
           {
             'dungeon': 'Sealed Chamber',
+            'requirements': 'Progress further in questline The Three Golems.',
           },
           {
             'dungeon': 'Iron Ruins',
@@ -49485,6 +52166,15 @@ module.exports = {
         'defense': 90,
         'specialDefense': 130,
         'speed': 110,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Soul_Dew',
       },
       'attack': 162,
       'nativeRegion': 2,
@@ -49523,6 +52213,15 @@ module.exports = {
         'specialDefense': 110,
         'speed': 110,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Soul_Dew',
+      },
       'attack': 173,
       'nativeRegion': 2,
       'locations': {
@@ -49557,6 +52256,11 @@ module.exports = {
         'specialDefense': 140,
         'speed': 90,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 233,
       'nativeRegion': 2,
       'locations': {
@@ -49585,6 +52289,11 @@ module.exports = {
         'defense': 140,
         'specialDefense': 90,
         'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 233,
       'nativeRegion': 2,
@@ -49617,6 +52326,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 90,
         'speed': 95,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 2,
@@ -49653,6 +52367,11 @@ module.exports = {
         'type': 2,
         'id': 'Star Piece',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 184,
       'nativeRegion': 2,
       'locations': {
@@ -49683,6 +52402,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 150,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 144,
       'nativeRegion': 2,
       'locations': {
@@ -49706,6 +52430,11 @@ module.exports = {
         'defense': 20,
         'specialDefense': 20,
         'speed': 150,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 122,
       'nativeRegion': 2,
@@ -49731,6 +52460,11 @@ module.exports = {
         'specialDefense': 160,
         'speed': 90,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 2,
       'locations': {
@@ -49754,6 +52488,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 90,
         'speed': 180,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 124,
       'nativeRegion': 2,
@@ -49786,6 +52525,11 @@ module.exports = {
         'defense': 64,
         'specialDefense': 55,
         'speed': 31,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 58,
       'nativeRegion': 3,
@@ -49820,6 +52564,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 36,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 94,
       'nativeRegion': 3,
       'locations': {
@@ -49853,6 +52602,11 @@ module.exports = {
         'defense': 105,
         'specialDefense': 85,
         'speed': 56,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 154,
       'nativeRegion': 3,
@@ -49893,6 +52647,11 @@ module.exports = {
         'specialDefense': 44,
         'speed': 61,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 50,
       'nativeRegion': 3,
       'locations': {
@@ -49929,6 +52688,11 @@ module.exports = {
         'specialDefense': 52,
         'speed': 81,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 86,
       'nativeRegion': 3,
       'locations': {
@@ -49962,6 +52726,11 @@ module.exports = {
         'defense': 71,
         'specialDefense': 71,
         'speed': 108,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 143,
       'nativeRegion': 3,
@@ -50002,6 +52771,11 @@ module.exports = {
         'specialDefense': 56,
         'speed': 40,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 56,
       'nativeRegion': 3,
       'locations': {
@@ -50034,6 +52808,11 @@ module.exports = {
         'defense': 68,
         'specialDefense': 76,
         'speed': 50,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 91,
       'nativeRegion': 3,
@@ -50068,6 +52847,11 @@ module.exports = {
         'defense': 88,
         'specialDefense': 101,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 155,
       'nativeRegion': 3,
@@ -50110,6 +52894,11 @@ module.exports = {
         'defense': 30,
         'specialDefense': 30,
         'speed': 60,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 29,
       'nativeRegion': 3,
@@ -50161,6 +52950,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 40,
         'speed': 80,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 55,
       'nativeRegion': 3,
@@ -50221,6 +53015,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 100,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 111,
       'nativeRegion': 3,
       'locations': {
@@ -50259,6 +53058,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 40,
         'speed': 31,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 37,
       'nativeRegion': 3,
@@ -50323,6 +53127,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 71,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 90,
       'nativeRegion': 3,
       'locations': {
@@ -50385,6 +53194,11 @@ module.exports = {
         'specialDefense': 41,
         'speed': 25,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 19,
       'nativeRegion': 3,
       'locations': {
@@ -50431,6 +53245,11 @@ module.exports = {
         'specialDefense': 51,
         'speed': 65,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 81,
       'nativeRegion': 3,
       'locations': {
@@ -50476,6 +53295,11 @@ module.exports = {
         'defense': 34,
         'specialDefense': 34,
         'speed': 45,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 39,
       'nativeRegion': 3,
@@ -50544,6 +53368,11 @@ module.exports = {
         'specialDefense': 49,
         'speed': 60,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 73,
       'nativeRegion': 3,
       'locations': {
@@ -50603,6 +53432,11 @@ module.exports = {
         'defense': 79,
         'specialDefense': 79,
         'speed': 70,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 153,
       'nativeRegion': 3,
@@ -50687,6 +53521,11 @@ module.exports = {
       },
       'attack': 35,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -50773,6 +53612,11 @@ module.exports = {
         'specialDefense': 105,
         'speed': 90,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 122,
       'nativeRegion': 3,
       'locations': {
@@ -50825,6 +53669,11 @@ module.exports = {
         'specialDefense': 30,
         'speed': 58,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 58,
       'nativeRegion': 3,
       'locations': {
@@ -50848,6 +53697,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 50,
         'speed': 58,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 137,
       'nativeRegion': 3,
@@ -50891,6 +53745,11 @@ module.exports = {
         'specialDefense': 88,
         'speed': 30,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 42,
       'nativeRegion': 3,
       'locations': {
@@ -50917,6 +53776,11 @@ module.exports = {
         'defense': 168,
         'specialDefense': 138,
         'speed': 30,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 85,
       'nativeRegion': 3,
@@ -51015,6 +53879,11 @@ module.exports = {
       },
       'attack': 25,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -51061,6 +53930,11 @@ module.exports = {
       },
       'attack': 25,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -51120,6 +53994,11 @@ module.exports = {
       },
       'attack': 25,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -51176,6 +54055,11 @@ module.exports = {
         'specialDefense': 105,
         'speed': 36,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 91,
       'nativeRegion': 3,
       'locations': {
@@ -51209,6 +54093,11 @@ module.exports = {
         'defense': 105,
         'specialDefense': 85,
         'speed': 36,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 91,
       'nativeRegion': 3,
@@ -51244,6 +54133,11 @@ module.exports = {
         'specialDefense': 95,
         'speed': 36,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 93,
       'nativeRegion': 3,
       'locations': {
@@ -51277,6 +54171,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 50,
         'speed': 66,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 103,
       'nativeRegion': 3,
@@ -51332,6 +54231,11 @@ module.exports = {
         'specialDefense': 42,
         'speed': 70,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'visualDifference': true,
+        'type': 1,
+      },
       'attack': 23,
       'nativeRegion': 3,
       'locations': {
@@ -51382,6 +54286,11 @@ module.exports = {
         'specialDefense': 102,
         'speed': 40,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 119,
       'nativeRegion': 3,
       'locations': {
@@ -51421,6 +54330,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 95,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 64,
       'nativeRegion': 3,
       'locations': {
@@ -51433,6 +54347,7 @@ module.exports = {
         },
         '2': ['Pikachu Valley'],
         '6': ['Electric'],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 53,
       'eggSteps': 400,
@@ -51463,6 +54378,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -51512,6 +54432,11 @@ module.exports = {
       },
       'attack': 122,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -51592,6 +54517,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -51672,6 +54602,11 @@ module.exports = {
       },
       'attack': 98,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -51703,6 +54638,11 @@ module.exports = {
       },
       'attack': 98,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -51746,6 +54686,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -51793,6 +54738,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -51865,6 +54815,11 @@ module.exports = {
       },
       'attack': 142,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -51915,6 +54870,11 @@ module.exports = {
       },
       'attack': 142,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -51991,6 +54951,11 @@ module.exports = {
         'specialDefense': 66,
         'speed': 115,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 106,
       'nativeRegion': 3,
       'locations': {
@@ -52035,6 +55000,11 @@ module.exports = {
       },
       'attack': 65,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -52173,6 +55143,11 @@ module.exports = {
       },
       'attack': 140,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -52285,6 +55260,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -52327,6 +55307,11 @@ module.exports = {
       },
       'attack': 95,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -52402,6 +55387,11 @@ module.exports = {
       },
       'attack': 105,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -52436,6 +55426,11 @@ module.exports = {
       },
       'attack': 152,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -52473,6 +55468,11 @@ module.exports = {
         'specialDefense': 37,
         'speed': 85,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 44,
       'nativeRegion': 3,
       'locations': {
@@ -52505,6 +55505,11 @@ module.exports = {
         'defense': 64,
         'specialDefense': 59,
         'speed': 112,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 94,
       'nativeRegion': 3,
@@ -52563,6 +55568,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -52618,6 +55628,11 @@ module.exports = {
       },
       'attack': 54,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -52702,6 +55717,11 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -52798,6 +55818,11 @@ module.exports = {
         'type': 1,
         'id': 'Metal_coat',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 33,
       'nativeRegion': 3,
       'locations': {
@@ -52891,6 +55916,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Metal_coat',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 130,
       'nativeRegion': 3,
@@ -53014,6 +56044,11 @@ module.exports = {
       },
       'attack': 29,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -53090,6 +56125,11 @@ module.exports = {
       },
       'attack': 30,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -53167,6 +56207,11 @@ module.exports = {
         'type': 2,
         'id': 'Oval Stone',
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 10,
       'nativeRegion': 3,
       'locations': {
@@ -53233,6 +56278,11 @@ module.exports = {
       },
       'attack': 88,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -53283,6 +56333,11 @@ module.exports = {
       },
       'attack': 118,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Solaceon Town'],
       },
@@ -53316,6 +56371,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 42,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 51,
       'nativeRegion': 3,
       'locations': {
@@ -53326,6 +56386,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Tunnel to the Top'],
         '6': ['Dragon'],
       },
       'catchRatePercent': 17,
@@ -53357,6 +56418,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 55,
         'speed': 82,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 83,
       'nativeRegion': 3,
@@ -53400,6 +56466,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 102,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 186,
       'nativeRegion': 3,
       'locations': {
@@ -53412,6 +56483,11 @@ module.exports = {
           ],
         },
         '2': ['Hall of Origin'],
+        '3': [
+          {
+            'dungeon': 'Tunnel to the Top',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Gabite',
@@ -53450,6 +56526,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 5,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 88,
       'nativeRegion': 3,
       'locations': {
@@ -53465,7 +56546,7 @@ module.exports = {
           ],
         },
         '7': ['Snorlax'],
-        '12': ['Always'],
+        '12': ['Chilan'],
       },
       'catchRatePercent': 18,
       'eggSteps': 1280,
@@ -53494,6 +56575,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 85,
         'speed': 5,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 88,
       'nativeRegion': 3,
@@ -53532,6 +56618,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 40,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 39,
       'nativeRegion': 3,
@@ -53585,6 +56676,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 70,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 145,
       'nativeRegion': 3,
@@ -53643,6 +56739,11 @@ module.exports = {
         'specialDefense': 42,
         'speed': 32,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 60,
       'nativeRegion': 3,
       'locations': {
@@ -53678,6 +56779,11 @@ module.exports = {
         'defense': 118,
         'specialDefense': 72,
         'speed': 47,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 155,
       'nativeRegion': 3,
@@ -53743,6 +56849,11 @@ module.exports = {
       },
       'attack': 42,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -53839,6 +56950,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -53963,6 +57079,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 50,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 51,
       'nativeRegion': 3,
       'locations': {
@@ -54048,6 +57169,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 85,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 131,
       'nativeRegion': 3,
       'locations': {
@@ -54094,6 +57220,11 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -54138,6 +57269,11 @@ module.exports = {
         'defense': 56,
         'specialDefense': 61,
         'speed': 66,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 52,
       'nativeRegion': 3,
@@ -54208,6 +57344,11 @@ module.exports = {
         'defense': 76,
         'specialDefense': 86,
         'speed': 91,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 99,
       'nativeRegion': 3,
@@ -54283,6 +57424,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '3': [
@@ -54388,6 +57534,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 60,
         'speed': 40,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 65,
       'nativeRegion': 3,
@@ -54514,6 +57665,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 60,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 142,
       'nativeRegion': 3,
       'locations': {
@@ -54608,6 +57764,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 125,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 105,
       'nativeRegion': 3,
       'locations': {
@@ -54676,6 +57837,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Metal_coat',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 143,
       'nativeRegion': 3,
@@ -54780,6 +57946,11 @@ module.exports = {
       },
       'attack': 152,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -54840,6 +58011,11 @@ module.exports = {
         'specialDefense': 55,
         'speed': 40,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 153,
       'nativeRegion': 3,
       'locations': {
@@ -54891,6 +58067,11 @@ module.exports = {
         'defense': 125,
         'specialDefense': 50,
         'speed': 50,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 166,
       'nativeRegion': 3,
@@ -54944,6 +58125,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Electirizer',
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 150,
       'nativeRegion': 3,
@@ -55005,6 +58191,11 @@ module.exports = {
         'type': 1,
         'id': 'Magmarizer',
       },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 154,
       'nativeRegion': 3,
       'locations': {
@@ -55059,6 +58250,11 @@ module.exports = {
         'specialDefense': 115,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 134,
       'nativeRegion': 3,
       'locations': {
@@ -55095,6 +58291,11 @@ module.exports = {
       },
       'attack': 137,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -55123,6 +58324,11 @@ module.exports = {
         'defense': 130,
         'specialDefense': 65,
         'speed': 95,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 118,
       'nativeRegion': 3,
@@ -55210,6 +58416,11 @@ module.exports = {
         'defense': 110,
         'specialDefense': 95,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 129,
       'nativeRegion': 3,
@@ -55307,6 +58518,11 @@ module.exports = {
       },
       'attack': 107,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -55343,6 +58559,11 @@ module.exports = {
         'defense': 80,
         'specialDefense': 60,
         'speed': 80,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 154,
       'nativeRegion': 3,
@@ -55406,6 +58627,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 90,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 150,
       'nativeRegion': 3,
       'locations': {
@@ -55439,6 +58665,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 115,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 127,
       'nativeRegion': 3,
@@ -55508,6 +58739,11 @@ module.exports = {
       },
       'attack': 109,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -55583,6 +58819,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -55622,6 +58863,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 110,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 107,
       'nativeRegion': 3,
       'locations': {
@@ -55658,6 +58904,11 @@ module.exports = {
           ],
         },
         '2': ['Iceberg Ruins'],
+        '3': [
+          {
+            'dungeon': 'Tunnel to the Top',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Snorunt',
@@ -55688,6 +58939,11 @@ module.exports = {
         'defense': 77,
         'specialDefense': 77,
         'speed': 91,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 82,
       'nativeRegion': 3,
@@ -55743,6 +58999,11 @@ module.exports = {
         'specialDefense': 107,
         'speed': 86,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
@@ -55787,6 +59048,11 @@ module.exports = {
         'defense': 107,
         'specialDefense': 107,
         'speed': 86,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 112,
       'nativeRegion': 3,
@@ -55833,6 +59099,11 @@ module.exports = {
         'specialDefense': 107,
         'speed': 86,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
@@ -55877,6 +59148,11 @@ module.exports = {
         'defense': 107,
         'specialDefense': 107,
         'speed': 86,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 112,
       'nativeRegion': 3,
@@ -55923,6 +59199,11 @@ module.exports = {
         'specialDefense': 107,
         'speed': 86,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
@@ -55968,6 +59249,11 @@ module.exports = {
         'specialDefense': 107,
         'speed': 86,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 112,
       'nativeRegion': 3,
       'locations': {
@@ -55991,6 +59277,11 @@ module.exports = {
         'defense': 130,
         'specialDefense': 130,
         'speed': 95,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 139,
       'nativeRegion': 3,
@@ -56023,6 +59314,11 @@ module.exports = {
         'defense': 105,
         'specialDefense': 105,
         'speed': 80,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 174,
       'nativeRegion': 3,
@@ -56058,6 +59354,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 115,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 169,
       'nativeRegion': 3,
       'locations': {
@@ -56085,6 +59386,10 @@ module.exports = {
       'levelType': 4,
       'exp': 306,
       'catchRate': 3,
+      'heldItem': {
+        'type': 1,
+        'id': 'Adamant_Orb',
+      },
       'base': {
         'hitpoints': 100,
         'attack': 120,
@@ -56092,6 +59397,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 100,
         'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 251,
       'nativeRegion': 3,
@@ -56117,6 +59427,10 @@ module.exports = {
       'levelType': 4,
       'exp': 306,
       'catchRate': 3,
+      'heldItem': {
+        'type': 1,
+        'id': 'Lustrous_Orb',
+      },
       'base': {
         'hitpoints': 90,
         'attack': 120,
@@ -56124,6 +59438,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 120,
         'speed': 100,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 239,
       'nativeRegion': 3,
@@ -56159,6 +59478,11 @@ module.exports = {
       },
       'attack': 191,
       'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -56188,6 +59512,11 @@ module.exports = {
         'defense': 110,
         'specialDefense': 110,
         'speed': 100,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 226,
       'nativeRegion': 3,
@@ -56223,6 +59552,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 90,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 242,
       'nativeRegion': 3,
       'locations': {
@@ -56255,6 +59589,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 90,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 263,
       'nativeRegion': 3,
       'locations': {},
@@ -56276,6 +59615,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 130,
         'speed': 85,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 166,
       'nativeRegion': 3,
@@ -56315,6 +59659,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 80,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 120,
       'nativeRegion': 3,
       'locations': {
@@ -56338,6 +59687,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 184,
       'nativeRegion': 3,
@@ -56376,6 +59730,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 125,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 162,
       'nativeRegion': 3,
       'locations': {
@@ -56408,6 +59767,11 @@ module.exports = {
         'type': 3,
         'id': 19,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 184,
       'nativeRegion': 3,
       'locations': {
@@ -56439,6 +59803,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 127,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 181,
       'nativeRegion': 3,
       'locations': {
@@ -56468,6 +59837,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {
@@ -56496,6 +59870,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56517,6 +59896,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56540,6 +59924,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56561,6 +59950,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56584,6 +59978,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56605,6 +60004,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56628,6 +60032,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56649,6 +60058,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56672,6 +60086,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56693,6 +60112,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56716,6 +60140,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56737,6 +60166,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56760,6 +60194,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56781,6 +60220,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56804,6 +60248,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56826,6 +60275,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 262,
       'nativeRegion': 3,
       'locations': {},
@@ -56847,6 +60301,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 120,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 262,
       'nativeRegion': 3,
@@ -56872,6 +60331,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 100,
         'speed': 100,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 184,
       'nativeRegion': 4,
@@ -56909,6 +60373,11 @@ module.exports = {
         'specialDefense': 55,
         'speed': 63,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 45,
       'nativeRegion': 4,
       'locations': {
@@ -56942,6 +60411,11 @@ module.exports = {
         'specialDefense': 75,
         'speed': 83,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 78,
       'nativeRegion': 4,
       'locations': {
@@ -56972,6 +60446,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 95,
         'speed': 113,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 122,
       'nativeRegion': 4,
@@ -57012,6 +60491,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 55,
       'nativeRegion': 4,
       'locations': {
@@ -57048,6 +60532,11 @@ module.exports = {
         'specialDefense': 55,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 105,
       'nativeRegion': 4,
       'locations': {
@@ -57081,6 +60570,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 65,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 170,
       'nativeRegion': 4,
@@ -57121,6 +60615,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 56,
       'nativeRegion': 4,
       'locations': {
@@ -57154,6 +60653,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 99,
       'nativeRegion': 4,
       'locations': {
@@ -57184,6 +60688,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 70,
         'speed': 70,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 161,
       'nativeRegion': 4,
@@ -57226,6 +60735,11 @@ module.exports = {
       },
       'attack': 36,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -57260,6 +60774,11 @@ module.exports = {
       },
       'attack': 87,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -57324,6 +60843,11 @@ module.exports = {
       },
       'attack': 35,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -57377,6 +60901,11 @@ module.exports = {
       },
       'attack': 67,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -57431,6 +60960,11 @@ module.exports = {
       },
       'attack': 115,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -57478,6 +61012,11 @@ module.exports = {
       },
       'attack': 39,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -57597,6 +61136,11 @@ module.exports = {
       },
       'attack': 97,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -57683,6 +61227,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 64,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 51,
       'nativeRegion': 4,
       'locations': {
@@ -57707,6 +61256,11 @@ module.exports = {
         'defense': 63,
         'specialDefense': 63,
         'speed': 101,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 127,
       'nativeRegion': 4,
@@ -57747,6 +61301,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 64,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 51,
       'nativeRegion': 4,
       'locations': {
@@ -57771,6 +61330,11 @@ module.exports = {
         'defense': 63,
         'specialDefense': 63,
         'speed': 101,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 127,
       'nativeRegion': 4,
@@ -57811,6 +61375,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 64,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 51,
       'nativeRegion': 4,
       'locations': {
@@ -57835,6 +61404,11 @@ module.exports = {
         'defense': 63,
         'specialDefense': 63,
         'speed': 101,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 127,
       'nativeRegion': 4,
@@ -57877,6 +61451,11 @@ module.exports = {
       },
       'attack': 47,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -57945,6 +61524,11 @@ module.exports = {
       },
       'attack': 137,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -57999,6 +61583,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -58076,6 +61665,11 @@ module.exports = {
       },
       'attack': 67,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -58142,6 +61736,11 @@ module.exports = {
         'defense': 80,
         'specialDefense': 55,
         'speed': 93,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 119,
       'nativeRegion': 4,
@@ -58239,6 +61838,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '6': ['Electric'],
       },
@@ -58263,6 +61867,11 @@ module.exports = {
       },
       'attack': 119,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -58306,6 +61915,11 @@ module.exports = {
       },
       'attack': 39,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58357,6 +61971,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58438,6 +62057,11 @@ module.exports = {
       },
       'attack': 144,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Rock Peak Ruins'],
         '3': [
@@ -58489,6 +62113,11 @@ module.exports = {
       },
       'attack': 53,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58545,6 +62174,11 @@ module.exports = {
       },
       'attack': 81,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58600,6 +62234,11 @@ module.exports = {
       },
       'attack': 52,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58666,6 +62305,11 @@ module.exports = {
       },
       'attack': 130,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58722,6 +62366,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -58778,6 +62427,7 @@ module.exports = {
             'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
+        '12': ['Chilan'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -58805,6 +62455,11 @@ module.exports = {
         'defense': 55,
         'specialDefense': 35,
         'speed': 35,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 49,
       'nativeRegion': 4,
@@ -58840,6 +62495,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 50,
         'speed': 40,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 88,
       'nativeRegion': 4,
@@ -58915,6 +62575,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 65,
         'speed': 45,
+      },
+      'gender': {
+        'femaleRatio': 0.25,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 142,
       'nativeRegion': 4,
@@ -58993,6 +62658,11 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -59098,6 +62768,11 @@ module.exports = {
       },
       'attack': 80,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -59200,6 +62875,11 @@ module.exports = {
       },
       'attack': 147,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -59300,6 +62980,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 45,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 102,
       'nativeRegion': 4,
       'locations': {
@@ -59350,6 +63035,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 75,
         'speed': 85,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 88,
       'nativeRegion': 4,
@@ -59415,6 +63105,11 @@ module.exports = {
       },
       'attack': 47,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -59461,6 +63156,11 @@ module.exports = {
       },
       'attack': 71,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -59503,6 +63203,11 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -59545,6 +63250,11 @@ module.exports = {
       },
       'attack': 28,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -59592,6 +63302,11 @@ module.exports = {
       },
       'attack': 53,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Pinwheel Forest'],
         '5': [
@@ -59627,6 +63342,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -59682,6 +63402,11 @@ module.exports = {
       },
       'attack': 32,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -59740,6 +63465,11 @@ module.exports = {
       },
       'attack': 98,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -59789,6 +63519,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 30,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 43,
       'nativeRegion': 4,
       'locations': {
@@ -59834,6 +63569,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 75,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 111,
       'nativeRegion': 4,
@@ -59900,6 +63640,11 @@ module.exports = {
       },
       'attack': 107,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60005,6 +63750,11 @@ module.exports = {
       },
       'attack': 107,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60114,6 +63864,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60169,6 +63924,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -60225,6 +63985,11 @@ module.exports = {
       },
       'attack': 138,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -60286,6 +64051,11 @@ module.exports = {
       },
       'attack': 42,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60334,6 +64104,11 @@ module.exports = {
         'speed': 50,
       },
       'attack': 42,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -60375,6 +64150,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -60409,6 +64189,11 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '4': [
           {
@@ -60445,6 +64230,11 @@ module.exports = {
         'speed': 95,
       },
       'attack': 99,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -60479,6 +64269,11 @@ module.exports = {
         'speed': 135,
       },
       'attack': 108,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '4': [
           {
@@ -60515,6 +64310,11 @@ module.exports = {
       },
       'attack': 123,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60583,6 +64383,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60677,6 +64482,11 @@ module.exports = {
       },
       'attack': 121,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60788,6 +64598,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60846,6 +64661,7 @@ module.exports = {
         },
         '2': ['Galar Mine No. 2'],
         '6': ['Fighting'],
+        '12': ['Chople'],
       },
       'catchRatePercent': 49,
       'eggSteps': 600,
@@ -60871,6 +64687,11 @@ module.exports = {
       },
       'attack': 101,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60925,6 +64746,11 @@ module.exports = {
       },
       'attack': 112,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -60985,6 +64811,11 @@ module.exports = {
       },
       'attack': 40,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Relic Castle'],
       },
@@ -61024,6 +64855,11 @@ module.exports = {
         'speed': 30,
       },
       'attack': 40,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -61054,6 +64890,11 @@ module.exports = {
       },
       'attack': 102,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -61094,6 +64935,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 22,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 69,
       'nativeRegion': 4,
       'locations': {
@@ -61129,6 +64975,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 32,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 136,
       'nativeRegion': 4,
       'locations': {
@@ -61136,15 +64987,7 @@ module.exports = {
           '7': [
             {
               'route': 51,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 51,
-              'requirements': 'The weather needs to be Rain',
-            },
-            {
-              'route': 51,
-              'requirements': 'The weather needs to be Thunderstorm',
+              'requirements': 'Carracosta needs to be caught and The weather needs to be Clear or Rain or Thunderstorm.',
             },
           ],
         },
@@ -61187,6 +65030,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 70,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 85,
       'nativeRegion': 4,
       'locations': {
@@ -61221,6 +65069,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 65,
         'speed': 110,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 163,
       'nativeRegion': 4,
@@ -61263,6 +65116,11 @@ module.exports = {
       },
       'attack': 50,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -61310,6 +65168,11 @@ module.exports = {
       },
       'attack': 114,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -61381,6 +65244,11 @@ module.exports = {
         'speed': 75,
       },
       'attack': 162,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -61408,6 +65276,11 @@ module.exports = {
         'defense': 40,
         'specialDefense': 40,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 56,
       'nativeRegion': 4,
@@ -61465,6 +65338,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 60,
         'speed': 105,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 126,
       'nativeRegion': 4,
@@ -61545,6 +65423,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 75,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 44,
       'nativeRegion': 4,
       'locations': {
@@ -61624,6 +65507,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 115,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 103,
       'nativeRegion': 4,
       'locations': {
@@ -61678,6 +65566,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 65,
         'speed': 45,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 40,
       'nativeRegion': 4,
@@ -61734,6 +65627,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 55,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 75,
       'nativeRegion': 4,
       'locations': {
@@ -61787,6 +65685,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 110,
         'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 112,
       'nativeRegion': 4,
@@ -61845,6 +65748,11 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -61901,6 +65809,11 @@ module.exports = {
       },
       'attack': 75,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -61949,6 +65862,11 @@ module.exports = {
       },
       'attack': 148,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -62008,6 +65926,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62046,6 +65969,11 @@ module.exports = {
       },
       'attack': 114,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -62085,6 +66013,11 @@ module.exports = {
       },
       'attack': 47,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62270,6 +66203,11 @@ module.exports = {
       },
       'attack': 80,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -62402,6 +66340,11 @@ module.exports = {
       },
       'attack': 148,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -62533,6 +66476,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62574,6 +66522,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62615,6 +66568,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62656,6 +66614,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62689,6 +66652,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -62723,6 +66691,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -62757,6 +66730,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Dragonspiral Tower',
@@ -62795,6 +66773,11 @@ module.exports = {
       },
       'attack': 111,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Dragonspiral Tower',
@@ -62833,6 +66816,11 @@ module.exports = {
       },
       'attack': 84,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -62852,6 +66840,7 @@ module.exports = {
             'dungeon': 'Lostlorn Forest',
           },
         ],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 53,
       'eggSteps': 800,
@@ -62882,6 +66871,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -62966,6 +66960,11 @@ module.exports = {
       },
       'attack': 131,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -63020,6 +67019,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -63074,6 +67078,11 @@ module.exports = {
       },
       'attack': 137,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -63161,6 +67170,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 85,
         'speed': 40,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 57,
       'nativeRegion': 4,
@@ -63316,6 +67330,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 105,
         'speed': 60,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
       },
       'attack': 121,
       'nativeRegion': 4,
@@ -63514,6 +67533,11 @@ module.exports = {
       },
       'attack': 106,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -63559,6 +67583,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -63626,6 +67655,11 @@ module.exports = {
       },
       'attack': 108,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -63715,6 +67749,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -63738,7 +67777,6 @@ module.exports = {
           'Chargestone Cave',
           'P2 Laboratory',
           'Lakeside Cave',
-          'Tunnel to the Top',
         ],
       },
       'catchRatePercent': 63,
@@ -63765,6 +67803,11 @@ module.exports = {
       },
       'attack': 118,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -63813,6 +67856,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 60,
         'speed': 30,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 46,
       'nativeRegion': 4,
@@ -63876,6 +67924,11 @@ module.exports = {
         'specialDefense': 85,
         'speed': 50,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 100,
       'nativeRegion': 4,
       'locations': {
@@ -63930,6 +67983,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 85,
         'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 119,
       'nativeRegion': 4,
@@ -64000,6 +68058,11 @@ module.exports = {
       },
       'attack': 37,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Seaside Cave'],
         '3': [
@@ -64037,6 +68100,11 @@ module.exports = {
       },
       'attack': 96,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -64073,6 +68141,11 @@ module.exports = {
       },
       'attack': 160,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -64112,6 +68185,11 @@ module.exports = {
       },
       'attack': 68,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -64157,6 +68235,11 @@ module.exports = {
       },
       'attack': 136,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64231,6 +68314,11 @@ module.exports = {
       },
       'attack': 42,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64290,6 +68378,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64348,6 +68441,11 @@ module.exports = {
       },
       'attack': 120,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64403,6 +68501,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64469,6 +68572,11 @@ module.exports = {
       },
       'attack': 81,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -64500,6 +68608,11 @@ module.exports = {
       },
       'attack': 136,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64571,6 +68684,11 @@ module.exports = {
       },
       'attack': 57,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -64638,6 +68756,11 @@ module.exports = {
       },
       'attack': 148,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64704,6 +68827,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 135,
         'speed': 105,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 108,
       'nativeRegion': 4,
@@ -64826,6 +68954,11 @@ module.exports = {
       },
       'attack': 45,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -64917,6 +69050,11 @@ module.exports = {
       },
       'attack': 107,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -64963,6 +69101,11 @@ module.exports = {
       },
       'attack': 129,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -65006,6 +69149,11 @@ module.exports = {
         'speed': 32,
       },
       'attack': 129,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': [
           'Slumbering Weald Shrine',
@@ -65051,6 +69199,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -65096,6 +69249,11 @@ module.exports = {
       },
       'attack': 128,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Dragonspiral Tower'],
         '5': [
@@ -65128,6 +69286,11 @@ module.exports = {
       },
       'attack': 127,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -65153,6 +69316,7 @@ module.exports = {
           'Dragonspiral Tower',
           'Victory Road Kalos',
           'Resolution Cave',
+          'Tunnel to the Top',
         ],
         '3': [
           {
@@ -65165,6 +69329,7 @@ module.exports = {
             'dungeon': 'Brawlers Cave',
           },
         ],
+        '12': ['Haban'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -65195,6 +69360,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 50,
         'speed': 35,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 52,
       'nativeRegion': 4,
@@ -65279,6 +69449,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 55,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 126,
       'nativeRegion': 4,
       'locations': {
@@ -65358,6 +69533,11 @@ module.exports = {
       },
       'attack': 55,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -65437,6 +69617,11 @@ module.exports = {
       },
       'attack': 117,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -65492,6 +69677,11 @@ module.exports = {
       },
       'attack': 116,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '4': [
@@ -65538,6 +69728,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 50,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 64,
       'nativeRegion': 4,
@@ -65588,6 +69783,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 75,
         'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 136,
       'nativeRegion': 4,
@@ -65642,6 +69842,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 67,
       'nativeRegion': 4,
       'locations': {
@@ -65688,6 +69893,11 @@ module.exports = {
         'specialDefense': 95,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 120,
       'nativeRegion': 4,
       'locations': {
@@ -65732,6 +69942,11 @@ module.exports = {
       },
       'attack': 138,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -65795,6 +70010,11 @@ module.exports = {
       },
       'attack': 92,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -65874,6 +70094,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -65918,6 +70143,11 @@ module.exports = {
       },
       'attack': 98,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -65966,6 +70196,11 @@ module.exports = {
       },
       'attack': 190,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -66015,6 +70250,11 @@ module.exports = {
       },
       'attack': 68,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -66058,6 +70298,11 @@ module.exports = {
       },
       'attack': 142,
       'nativeRegion': 4,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -66112,6 +70357,11 @@ module.exports = {
         'specialDefense': 72,
         'speed': 108,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 157,
       'nativeRegion': 4,
       'locations': {
@@ -66142,6 +70392,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 90,
         'speed': 108,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 163,
       'nativeRegion': 4,
@@ -66174,6 +70429,11 @@ module.exports = {
         'specialDefense': 129,
         'speed': 108,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 157,
       'nativeRegion': 4,
       'locations': {
@@ -66201,6 +70461,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 80,
         'speed': 111,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 170,
       'nativeRegion': 4,
@@ -66231,6 +70496,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 121,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 161,
       'nativeRegion': 4,
       'locations': {},
@@ -66255,6 +70525,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 80,
         'speed': 111,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 170,
       'nativeRegion': 4,
@@ -66288,6 +70563,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 101,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 174,
       'nativeRegion': 4,
       'locations': {},
@@ -66316,6 +70596,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'White_DNA',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 251,
       'nativeRegion': 4,
@@ -66352,6 +70637,11 @@ module.exports = {
         'type': 1,
         'id': 'Black_DNA',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 251,
       'nativeRegion': 4,
       'locations': {
@@ -66383,6 +70673,11 @@ module.exports = {
         'specialDefense': 80,
         'speed': 101,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 191,
       'nativeRegion': 4,
       'locations': {
@@ -66413,6 +70708,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 80,
         'speed': 91,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 194,
       'nativeRegion': 4,
@@ -66453,6 +70753,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 95,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 250,
       'nativeRegion': 4,
       'locations': {
@@ -66484,6 +70789,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 100,
         'speed': 95,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 280,
       'nativeRegion': 4,
@@ -66519,6 +70829,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 95,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 280,
       'nativeRegion': 4,
       'locations': {
@@ -66553,6 +70868,11 @@ module.exports = {
         'specialDefense': 90,
         'speed': 108,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 163,
       'nativeRegion': 4,
       'locations': {
@@ -66583,6 +70903,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 90,
         'speed': 108,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 163,
       'nativeRegion': 4,
@@ -66619,6 +70944,11 @@ module.exports = {
         'type': 2,
         'id': 'Star Piece',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 182,
       'nativeRegion': 4,
       'locations': {
@@ -66651,6 +70981,11 @@ module.exports = {
         'specialDefense': 77,
         'speed': 128,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 173,
       'nativeRegion': 4,
       'locations': {
@@ -66677,6 +71012,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 95,
         'speed': 99,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 179,
       'nativeRegion': 4,
@@ -66715,6 +71055,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 38,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 55,
       'nativeRegion': 5,
       'locations': {
@@ -66747,6 +71092,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 58,
         'speed': 57,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 83,
       'nativeRegion': 5,
@@ -66781,6 +71131,11 @@ module.exports = {
         'defense': 122,
         'specialDefense': 75,
         'speed': 64,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 148,
       'nativeRegion': 5,
@@ -66821,6 +71176,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 60,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 46,
       'nativeRegion': 5,
       'locations': {
@@ -66853,6 +71213,11 @@ module.exports = {
         'defense': 58,
         'specialDefense': 70,
         'speed': 73,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 84,
       'nativeRegion': 5,
@@ -66887,6 +71252,11 @@ module.exports = {
         'defense': 72,
         'specialDefense': 100,
         'speed': 104,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 133,
       'nativeRegion': 5,
@@ -66927,6 +71297,11 @@ module.exports = {
         'specialDefense': 44,
         'speed': 71,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 48,
       'nativeRegion': 5,
       'locations': {
@@ -66959,6 +71334,11 @@ module.exports = {
         'defense': 52,
         'specialDefense': 56,
         'speed': 97,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 77,
       'nativeRegion': 5,
@@ -66994,6 +71374,11 @@ module.exports = {
         'specialDefense': 71,
         'speed': 122,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 133,
       'nativeRegion': 5,
       'locations': {
@@ -67028,6 +71413,11 @@ module.exports = {
         'specialDefense': 71,
         'speed': 132,
       },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 194,
       'nativeRegion': 5,
       'locations': {},
@@ -67060,6 +71450,11 @@ module.exports = {
       },
       'attack': 27,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -67162,6 +71557,11 @@ module.exports = {
       },
       'attack': 84,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -67255,6 +71655,11 @@ module.exports = {
       },
       'attack': 39,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -67321,6 +71726,11 @@ module.exports = {
       },
       'attack': 72,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -67399,6 +71809,11 @@ module.exports = {
       },
       'attack': 113,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -67458,6 +71873,11 @@ module.exports = {
       },
       'attack': 22,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -67498,6 +71918,11 @@ module.exports = {
       },
       'attack': 22,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -67532,6 +71957,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -67566,6 +71996,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67591,6 +72026,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67616,6 +72056,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67641,6 +72086,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67666,6 +72116,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67691,6 +72146,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67716,6 +72176,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67741,6 +72206,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67766,6 +72236,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67791,6 +72266,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67816,6 +72296,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67841,6 +72326,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67866,6 +72356,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67891,6 +72386,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67916,6 +72416,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67941,6 +72446,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67966,6 +72476,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -67991,6 +72506,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -68016,6 +72536,11 @@ module.exports = {
       },
       'attack': 85,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -68046,6 +72571,11 @@ module.exports = {
         'defense': 58,
         'specialDefense': 54,
         'speed': 72,
+      },
+      'gender': {
+        'femaleRatio': 0.875,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 69,
       'nativeRegion': 5,
@@ -68080,6 +72610,11 @@ module.exports = {
         'defense': 72,
         'specialDefense': 66,
         'speed': 106,
+      },
+      'gender': {
+        'femaleRatio': 0.875,
+        'visualDifference': true,
+        'type': 1,
       },
       'attack': 126,
       'nativeRegion': 5,
@@ -68119,6 +72654,11 @@ module.exports = {
         'defense': 39,
         'specialDefense': 79,
         'speed': 42,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 45,
       'nativeRegion': 5,
@@ -68162,6 +72702,11 @@ module.exports = {
         'defense': 39,
         'specialDefense': 79,
         'speed': 42,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 45,
       'nativeRegion': 5,
@@ -68208,6 +72753,11 @@ module.exports = {
         'specialDefense': 79,
         'speed': 42,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 45,
       'nativeRegion': 5,
       'locations': {
@@ -68248,6 +72798,11 @@ module.exports = {
         'defense': 39,
         'specialDefense': 79,
         'speed': 42,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 45,
       'nativeRegion': 5,
@@ -68290,6 +72845,11 @@ module.exports = {
         'specialDefense': 79,
         'speed': 42,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 45,
       'nativeRegion': 5,
       'locations': {
@@ -68330,6 +72890,11 @@ module.exports = {
         'defense': 47,
         'specialDefense': 98,
         'speed': 52,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 66,
       'nativeRegion': 5,
@@ -68384,6 +72949,11 @@ module.exports = {
         'specialDefense': 98,
         'speed': 52,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
@@ -68422,6 +72992,11 @@ module.exports = {
         'defense': 47,
         'specialDefense': 98,
         'speed': 52,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 66,
       'nativeRegion': 5,
@@ -68462,6 +73037,11 @@ module.exports = {
         'specialDefense': 98,
         'speed': 52,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
@@ -68501,6 +73081,11 @@ module.exports = {
         'specialDefense': 98,
         'speed': 52,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 66,
       'nativeRegion': 5,
       'locations': {
@@ -68532,6 +73117,11 @@ module.exports = {
         'specialDefense': 128,
         'speed': 92,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 139,
       'nativeRegion': 5,
       'locations': {},
@@ -68553,6 +73143,11 @@ module.exports = {
         'defense': 68,
         'specialDefense': 154,
         'speed': 75,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 139,
       'nativeRegion': 5,
@@ -68585,6 +73180,11 @@ module.exports = {
         'specialDefense': 154,
         'speed': 75,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
@@ -68615,6 +73215,11 @@ module.exports = {
         'defense': 68,
         'specialDefense': 154,
         'speed': 75,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 139,
       'nativeRegion': 5,
@@ -68647,6 +73252,11 @@ module.exports = {
         'specialDefense': 154,
         'speed': 75,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 139,
       'nativeRegion': 5,
       'locations': {
@@ -68677,6 +73287,11 @@ module.exports = {
         'defense': 68,
         'specialDefense': 154,
         'speed': 75,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 139,
       'nativeRegion': 5,
@@ -68719,6 +73334,11 @@ module.exports = {
       },
       'attack': 71,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -68750,6 +73370,11 @@ module.exports = {
       },
       'attack': 168,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -68789,6 +73414,11 @@ module.exports = {
       },
       'attack': 69,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -68871,6 +73501,11 @@ module.exports = {
       },
       'attack': 141,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -68954,6 +73589,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -68996,6 +73636,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -69018,6 +73663,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -69040,6 +73690,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Lumiose City'],
       },
@@ -69064,6 +73719,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Lumiose City'],
       },
@@ -69088,6 +73748,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Lumiose City'],
       },
@@ -69112,6 +73777,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Lumiose City'],
       },
@@ -69136,6 +73806,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 44,
       'eggSteps': 800,
@@ -69158,6 +73833,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Lumiose City'],
       },
@@ -69182,6 +73862,11 @@ module.exports = {
       },
       'attack': 104,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '8': ['Lumiose City'],
       },
@@ -69214,6 +73899,11 @@ module.exports = {
       },
       'attack': 63,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -69279,6 +73969,11 @@ module.exports = {
         'specialDefense': 81,
         'speed': 104,
       },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
       'attack': 94,
       'nativeRegion': 5,
       'locations': {
@@ -69331,6 +74026,11 @@ module.exports = {
       },
       'attack': 50,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -69388,6 +74088,11 @@ module.exports = {
       },
       'attack': 89,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -69463,6 +74168,11 @@ module.exports = {
       },
       'attack': 87,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -69505,6 +74215,11 @@ module.exports = {
       },
       'attack': 139,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -69544,6 +74259,11 @@ module.exports = {
       },
       'attack': 71,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -69591,6 +74311,11 @@ module.exports = {
       },
       'attack': 133,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -69630,6 +74355,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -69677,6 +74407,11 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -69719,6 +74454,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -69828,6 +74568,11 @@ module.exports = {
       },
       'attack': 123,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -69922,6 +74667,11 @@ module.exports = {
       },
       'attack': 44,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -69968,6 +74718,11 @@ module.exports = {
       },
       'attack': 118,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -70025,6 +74780,11 @@ module.exports = {
       },
       'attack': 59,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70076,6 +74836,11 @@ module.exports = {
       },
       'attack': 125,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -70134,6 +74899,11 @@ module.exports = {
       },
       'attack': 58,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70182,6 +74952,11 @@ module.exports = {
       },
       'attack': 133,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -70243,6 +75018,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70287,6 +75067,11 @@ module.exports = {
       },
       'attack': 99,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -70332,6 +75117,11 @@ module.exports = {
         'specialDefense': 45,
         'speed': 48,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 69,
       'nativeRegion': 5,
       'locations': {
@@ -70367,6 +75157,11 @@ module.exports = {
         'specialDefense': 59,
         'speed': 71,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 138,
       'nativeRegion': 5,
       'locations': {
@@ -70374,6 +75169,7 @@ module.exports = {
           '7': [
             {
               'route': 53,
+              'requirements': 'Tyrantrum needs to be caught.',
             },
           ],
         },
@@ -70426,6 +75222,11 @@ module.exports = {
         'specialDefense': 63,
         'speed': 46,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 78,
       'nativeRegion': 5,
       'locations': {
@@ -70469,6 +75270,11 @@ module.exports = {
         'specialDefense': 92,
         'speed': 58,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 159,
       'nativeRegion': 5,
       'locations': {
@@ -70476,23 +75282,7 @@ module.exports = {
           '7': [
             {
               'route': 54,
-              'requirements': 'The weather needs to be Clear',
-            },
-            {
-              'route': 54,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 54,
-              'requirements': 'The weather needs to be Snow',
-            },
-            {
-              'route': 54,
-              'requirements': 'The weather needs to be Blizzard',
-            },
-            {
-              'route': 54,
-              'requirements': 'The weather needs to be Fog',
+              'requirements': 'Aurorus needs to be caught.',
             },
           ],
         },
@@ -70529,6 +75319,11 @@ module.exports = {
         'defense': 65,
         'specialDefense': 130,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 143,
       'nativeRegion': 5,
@@ -70582,6 +75377,11 @@ module.exports = {
       },
       'attack': 117,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70633,6 +75433,11 @@ module.exports = {
       },
       'attack': 87,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70652,6 +75457,7 @@ module.exports = {
           'Ruins of Conflict',
         ],
         '6': ['Electric'],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -70674,6 +75480,11 @@ module.exports = {
         'defense': 150,
         'specialDefense': 150,
         'speed': 50,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 80,
       'nativeRegion': 5,
@@ -70720,6 +75531,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70797,6 +75613,11 @@ module.exports = {
       },
       'attack': 105,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70842,6 +75663,11 @@ module.exports = {
       },
       'attack': 182,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -70885,6 +75711,11 @@ module.exports = {
       },
       'attack': 106,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70938,6 +75769,11 @@ module.exports = {
       },
       'attack': 52,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -70998,6 +75834,11 @@ module.exports = {
       },
       'attack': 125,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -71066,6 +75907,11 @@ module.exports = {
       },
       'attack': 56,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -71119,6 +75965,11 @@ module.exports = {
       },
       'attack': 54,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -71172,6 +76023,11 @@ module.exports = {
       },
       'attack': 59,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -71225,6 +76081,11 @@ module.exports = {
       },
       'attack': 60,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '5': [
@@ -71270,6 +76131,11 @@ module.exports = {
       },
       'attack': 107,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71311,6 +76177,11 @@ module.exports = {
       },
       'attack': 97,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71352,6 +76223,11 @@ module.exports = {
       },
       'attack': 117,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71393,6 +76269,11 @@ module.exports = {
       },
       'attack': 125,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71439,6 +76320,11 @@ module.exports = {
       },
       'attack': 47,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71483,6 +76369,11 @@ module.exports = {
       },
       'attack': 118,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71543,6 +76434,11 @@ module.exports = {
       },
       'attack': 29,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71584,6 +76480,11 @@ module.exports = {
       },
       'attack': 130,
       'nativeRegion': 5,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -71640,9 +76541,6 @@ module.exports = {
           {
             'dungeon': 'Lakeside Cave',
           },
-          {
-            'dungeon': 'Tunnel to the Top',
-          },
         ],
         '5': [
           {
@@ -71671,6 +76569,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 98,
         'speed': 99,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 260,
       'nativeRegion': 5,
@@ -71704,6 +76607,11 @@ module.exports = {
         'specialDefense': 98,
         'speed': 99,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 260,
       'nativeRegion': 5,
       'locations': {
@@ -71735,6 +76643,11 @@ module.exports = {
         'defense': 121,
         'specialDefense': 95,
         'speed': 95,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 179,
       'nativeRegion': 5,
@@ -71768,6 +76681,11 @@ module.exports = {
         'specialDefense': 150,
         'speed': 50,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 151,
       'nativeRegion': 5,
       'locations': {
@@ -71800,6 +76718,11 @@ module.exports = {
         'specialDefense': 130,
         'speed': 70,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 193,
       'nativeRegion': 5,
       'locations': {
@@ -71831,6 +76754,11 @@ module.exports = {
         'defense': 120,
         'specialDefense': 90,
         'speed': 70,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 193,
       'nativeRegion': 5,
@@ -71872,6 +76800,11 @@ module.exports = {
         'specialDefense': 50,
         'speed': 42,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 59,
       'nativeRegion': 6,
       'locations': {
@@ -71908,6 +76841,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 52,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 101,
       'nativeRegion': 6,
       'locations': {
@@ -71941,6 +76879,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 100,
         'speed': 70,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 154,
       'nativeRegion': 6,
@@ -71981,6 +76924,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 70,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 52,
       'nativeRegion': 6,
       'locations': {
@@ -72013,6 +76961,11 @@ module.exports = {
         'defense': 50,
         'specialDefense': 50,
         'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 91,
       'nativeRegion': 6,
@@ -72047,6 +77000,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 90,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 160,
       'nativeRegion': 6,
@@ -72087,6 +77045,11 @@ module.exports = {
         'specialDefense': 56,
         'speed': 40,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 58,
       'nativeRegion': 6,
       'locations': {
@@ -72119,6 +77082,11 @@ module.exports = {
         'defense': 69,
         'specialDefense': 81,
         'speed': 50,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 96,
       'nativeRegion': 6,
@@ -72153,6 +77121,11 @@ module.exports = {
         'defense': 74,
         'specialDefense': 116,
         'speed': 60,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 148,
       'nativeRegion': 6,
@@ -72198,6 +77171,11 @@ module.exports = {
       },
       'attack': 32,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -72248,6 +77226,11 @@ module.exports = {
       },
       'attack': 61,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -72302,6 +77285,11 @@ module.exports = {
       },
       'attack': 134,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -72346,6 +77334,11 @@ module.exports = {
       },
       'attack': 35,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -72392,6 +77385,11 @@ module.exports = {
       },
       'attack': 103,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -72456,6 +77454,11 @@ module.exports = {
       },
       'attack': 106,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -72493,6 +77496,11 @@ module.exports = {
       },
       'attack': 51,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -72627,6 +77635,11 @@ module.exports = {
       },
       'attack': 83,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -72674,6 +77687,11 @@ module.exports = {
       },
       'attack': 141,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -72807,6 +77825,11 @@ module.exports = {
       },
       'attack': 166,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -72848,6 +77871,11 @@ module.exports = {
       },
       'attack': 56,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '6': ['Fighting'],
       },
@@ -72875,6 +77903,11 @@ module.exports = {
       },
       'attack': 134,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -72910,6 +77943,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 70,
         'speed': 93,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 114,
       'nativeRegion': 6,
@@ -72957,6 +77995,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 93,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 114,
       'nativeRegion': 6,
       'locations': {
@@ -73002,6 +78045,11 @@ module.exports = {
         'specialDefense': 70,
         'speed': 93,
       },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 114,
       'nativeRegion': 6,
       'locations': {
@@ -73039,6 +78087,11 @@ module.exports = {
         'defense': 70,
         'specialDefense': 70,
         'speed': 93,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 114,
       'nativeRegion': 6,
@@ -73094,6 +78147,11 @@ module.exports = {
       },
       'attack': 41,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -73176,6 +78234,11 @@ module.exports = {
       },
       'attack': 89,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -73267,6 +78330,11 @@ module.exports = {
       },
       'attack': 128,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -73342,6 +78410,11 @@ module.exports = {
       },
       'attack': 38,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -73372,6 +78445,7 @@ module.exports = {
             'dungeon': 'Ten Carat Hill',
           },
         ],
+        '12': ['Charti'],
       },
       'catchRatePercent': 51,
       'eggSteps': 600,
@@ -73394,6 +78468,11 @@ module.exports = {
       },
       'attack': 108,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Vast Poni Canyon'],
         '5': [
@@ -73431,6 +78510,11 @@ module.exports = {
       },
       'attack': 120,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Vast Poni Canyon'],
         '5': [
@@ -73468,6 +78552,11 @@ module.exports = {
       },
       'attack': 109,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -73523,6 +78612,11 @@ module.exports = {
       },
       'attack': 16,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -73606,6 +78700,11 @@ module.exports = {
       },
       'attack': 182,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -73642,6 +78741,11 @@ module.exports = {
       },
       'attack': 186,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -73682,6 +78786,11 @@ module.exports = {
       },
       'attack': 48,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -73737,6 +78846,11 @@ module.exports = {
       },
       'attack': 89,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -73826,6 +78940,11 @@ module.exports = {
       },
       'attack': 82,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -73912,6 +79031,11 @@ module.exports = {
       },
       'attack': 140,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -74011,6 +79135,11 @@ module.exports = {
       },
       'attack': 36,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -74101,6 +79230,11 @@ module.exports = {
       },
       'attack': 94,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -74205,6 +79339,11 @@ module.exports = {
       },
       'attack': 94,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -74247,6 +79386,11 @@ module.exports = {
       },
       'attack': 37,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -74305,6 +79449,11 @@ module.exports = {
       },
       'attack': 129,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -74358,6 +79507,11 @@ module.exports = {
       },
       'attack': 132,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -74398,6 +79552,11 @@ module.exports = {
       },
       'attack': 43,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -74437,6 +79596,11 @@ module.exports = {
       },
       'attack': 83,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -74494,6 +79658,11 @@ module.exports = {
         'specialDefense': 40,
         'speed': 77,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 50,
       'nativeRegion': 6,
       'locations': {
@@ -74514,6 +79683,7 @@ module.exports = {
         },
         '2': ['Wela Volcano Park'],
         '6': ['Fire'],
+        '12': ['Kebia'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -74536,6 +79706,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 60,
         'speed': 117,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 105,
       'nativeRegion': 6,
@@ -74575,6 +79750,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 70,
         'speed': 117,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 109,
       'nativeRegion': 6,
@@ -74618,6 +79798,11 @@ module.exports = {
       },
       'attack': 65,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -74731,6 +79916,11 @@ module.exports = {
       },
       'attack': 139,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -74822,6 +80012,11 @@ module.exports = {
         'specialDefense': 38,
         'speed': 32,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 24,
       'nativeRegion': 6,
       'locations': {
@@ -74887,6 +80082,11 @@ module.exports = {
         'specialDefense': 48,
         'speed': 62,
       },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 41,
       'nativeRegion': 6,
       'locations': {
@@ -74926,6 +80126,11 @@ module.exports = {
         'defense': 98,
         'specialDefense': 98,
         'speed': 72,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 120,
       'nativeRegion': 6,
@@ -74989,6 +80194,11 @@ module.exports = {
         'defense': 90,
         'specialDefense': 110,
         'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 89,
       'nativeRegion': 6,
@@ -75098,6 +80308,11 @@ module.exports = {
       },
       'attack': 124,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75132,6 +80347,11 @@ module.exports = {
       },
       'attack': 113,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75177,6 +80397,11 @@ module.exports = {
       },
       'attack': 18,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75229,6 +80454,11 @@ module.exports = {
       },
       'attack': 140,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75305,6 +80535,11 @@ module.exports = {
       },
       'attack': 62,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -75343,6 +80578,11 @@ module.exports = {
       },
       'attack': 135,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75390,6 +80630,11 @@ module.exports = {
       },
       'attack': 61,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -75441,6 +80686,11 @@ module.exports = {
         'specialDefense': 95,
         'speed': 59,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 163,
       'nativeRegion': 6,
       'locations': {
@@ -75455,7 +80705,7 @@ module.exports = {
       'type': [0],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 3,
       'base': {
         'hitpoints': 95,
@@ -75464,6 +80714,11 @@ module.exports = {
         'defense': 95,
         'specialDefense': 95,
         'speed': 95,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 167,
       'nativeRegion': 6,
@@ -75503,6 +80758,11 @@ module.exports = {
         'type': 2,
         'id': 'Star Piece',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 87,
       'nativeRegion': 6,
       'locations': {
@@ -75535,6 +80795,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 60,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 115,
       'nativeRegion': 6,
@@ -75569,6 +80834,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 115,
       'nativeRegion': 6,
       'locations': {
@@ -75601,6 +80871,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 60,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 115,
       'nativeRegion': 6,
@@ -75635,6 +80910,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 115,
       'nativeRegion': 6,
       'locations': {
@@ -75667,6 +80947,11 @@ module.exports = {
         'defense': 60,
         'specialDefense': 60,
         'speed': 120,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 115,
       'nativeRegion': 6,
@@ -75701,6 +80986,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 115,
       'nativeRegion': 6,
       'locations': {
@@ -75734,6 +81024,11 @@ module.exports = {
         'specialDefense': 60,
         'speed': 120,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 115,
       'nativeRegion': 6,
       'locations': {
@@ -75766,6 +81061,11 @@ module.exports = {
       },
       'attack': 121,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -75799,6 +81099,11 @@ module.exports = {
       },
       'attack': 118,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75834,6 +81139,11 @@ module.exports = {
       },
       'attack': 82,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75852,6 +81162,7 @@ module.exports = {
           },
         ],
         '6': ['Electric'],
+        '12': ['Wacan'],
       },
       'catchRatePercent': 49,
       'eggSteps': 400,
@@ -75877,6 +81188,11 @@ module.exports = {
       },
       'attack': 87,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -75909,6 +81225,11 @@ module.exports = {
       },
       'attack': 91,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -75988,6 +81309,11 @@ module.exports = {
       },
       'attack': 110,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -76024,6 +81350,11 @@ module.exports = {
       },
       'attack': 112,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '6': [
@@ -76063,6 +81394,11 @@ module.exports = {
       },
       'attack': 131,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -76073,6 +81409,7 @@ module.exports = {
           ],
         },
         '6': ['Dragon'],
+        '12': ['Haban'],
       },
       'catchRatePercent': 24,
       'eggSteps': 800,
@@ -76095,6 +81432,11 @@ module.exports = {
         'defense': 100,
         'specialDefense': 90,
         'speed': 40,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 150,
       'nativeRegion': 6,
@@ -76153,6 +81495,11 @@ module.exports = {
       },
       'attack': 46,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -76213,6 +81560,11 @@ module.exports = {
       },
       'attack': 86,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -76261,6 +81613,11 @@ module.exports = {
       },
       'attack': 175,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -76301,6 +81658,11 @@ module.exports = {
       },
       'attack': 200,
       'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '3': [
           {
@@ -76321,7 +81683,7 @@ module.exports = {
       ],
       'eggCycles': 15,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 3,
       'base': {
         'hitpoints': 70,
@@ -76330,6 +81692,11 @@ module.exports = {
         'defense': 85,
         'specialDefense': 75,
         'speed': 130,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 148,
       'nativeRegion': 6,
@@ -76352,7 +81719,7 @@ module.exports = {
       ],
       'eggCycles': 15,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 3,
       'base': {
         'hitpoints': 70,
@@ -76361,6 +81728,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 115,
         'speed': 95,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 156,
       'nativeRegion': 6,
@@ -76383,7 +81755,7 @@ module.exports = {
       ],
       'eggCycles': 15,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 3,
       'base': {
         'hitpoints': 70,
@@ -76392,6 +81764,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 95,
         'speed': 75,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 162,
       'nativeRegion': 6,
@@ -76414,7 +81791,7 @@ module.exports = {
       ],
       'eggCycles': 15,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 3,
       'base': {
         'hitpoints': 70,
@@ -76423,6 +81800,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 130,
         'speed': 85,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 144,
       'nativeRegion': 6,
@@ -76460,6 +81842,11 @@ module.exports = {
         'specialDefense': 31,
         'speed': 37,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 22,
       'nativeRegion': 6,
       'locations': {
@@ -76478,7 +81865,7 @@ module.exports = {
       'type': [10],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 140,
       'catchRate': 45,
       'evolutions': [
         {
@@ -76501,6 +81888,11 @@ module.exports = {
         'defense': 131,
         'specialDefense': 131,
         'speed': 37,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 42,
       'nativeRegion': 6,
@@ -76526,8 +81918,16 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 306,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Solgaleo',
+          'type': [1],
+          'evolvedPokemon': 'Solgaleo (Radiant Sun)',
+          'stone': 30,
+        },
+      ],
       'base': {
         'hitpoints': 137,
         'attack': 137,
@@ -76535,6 +81935,11 @@ module.exports = {
         'defense': 107,
         'specialDefense': 89,
         'speed': 97,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'heldItem': {
         'type': 1,
@@ -76562,6 +81967,49 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 791.1,
+      'name': 'Solgaleo (Radiant Sun)',
+      'type': [
+        10,
+        16,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': null,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 137,
+        'attack': 137,
+        'specialAttack': 113,
+        'defense': 107,
+        'specialDefense': 89,
+        'speed': 97,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Solar_light',
+      },
+      'attack': 259,
+      'nativeRegion': 6,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Solgaleo',
+            'type': [1],
+            'evolvedPokemon': 'Solgaleo (Radiant Sun)',
+            'stone': 30,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
+    },
+    {
       'id': 792,
       'name': 'Lunala',
       'type': [
@@ -76570,8 +82018,16 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 306,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Lunala',
+          'type': [1],
+          'evolvedPokemon': 'Lunala (Full Moon)',
+          'stone': 31,
+        },
+      ],
       'base': {
         'hitpoints': 137,
         'attack': 113,
@@ -76579,6 +82035,11 @@ module.exports = {
         'defense': 89,
         'specialDefense': 107,
         'speed': 97,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'heldItem': {
         'type': 1,
@@ -76606,6 +82067,49 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 792.1,
+      'name': 'Lunala (Full Moon)',
+      'type': [
+        10,
+        13,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': null,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 137,
+        'attack': 113,
+        'specialAttack': 137,
+        'defense': 89,
+        'specialDefense': 107,
+        'speed': 97,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Lunar_light',
+      },
+      'attack': 259,
+      'nativeRegion': 6,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Lunala',
+            'type': [1],
+            'evolvedPokemon': 'Lunala (Full Moon)',
+            'stone': 31,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 4800,
+    },
+    {
       'id': 793,
       'name': 'Nihilego',
       'type': [
@@ -76623,6 +82127,11 @@ module.exports = {
         'defense': 47,
         'specialDefense': 131,
         'speed': 103,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 144,
       'nativeRegion': 6,
@@ -76644,7 +82153,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 107,
@@ -76653,6 +82162,11 @@ module.exports = {
         'defense': 139,
         'specialDefense': 53,
         'speed': 79,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 153,
       'nativeRegion': 6,
@@ -76671,7 +82185,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 71,
@@ -76680,6 +82194,11 @@ module.exports = {
         'defense': 37,
         'specialDefense': 37,
         'speed': 151,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 140,
       'nativeRegion': 6,
@@ -76695,7 +82214,7 @@ module.exports = {
       'type': [3],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 83,
@@ -76704,6 +82223,11 @@ module.exports = {
         'defense': 71,
         'specialDefense': 71,
         'speed': 83,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 173,
       'nativeRegion': 6,
@@ -76725,7 +82249,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 97,
@@ -76734,6 +82258,11 @@ module.exports = {
         'defense': 103,
         'specialDefense': 101,
         'speed': 61,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 185,
       'nativeRegion': 6,
@@ -76760,7 +82289,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 59,
@@ -76769,6 +82298,11 @@ module.exports = {
         'defense': 131,
         'specialDefense': 31,
         'speed': 109,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 120,
       'nativeRegion': 6,
@@ -76795,7 +82329,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 257,
       'catchRate': 45,
       'base': {
         'hitpoints': 223,
@@ -76804,6 +82338,11 @@ module.exports = {
         'defense': 53,
         'specialDefense': 53,
         'speed': 43,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 196,
       'nativeRegion': 6,
@@ -76847,6 +82386,11 @@ module.exports = {
         'specialDefense': 89,
         'speed': 79,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 200,
       'nativeRegion': 6,
       'locations': {
@@ -76877,6 +82421,11 @@ module.exports = {
         'defense': 127,
         'specialDefense': 109,
         'speed': 77,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 251,
       'nativeRegion': 6,
@@ -76912,6 +82461,11 @@ module.exports = {
         'specialDefense': 127,
         'speed': 77,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 251,
       'nativeRegion': 6,
       'locations': {
@@ -76946,6 +82500,11 @@ module.exports = {
         'specialDefense': 97,
         'speed': 129,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 291,
       'nativeRegion': 6,
       'locations': {},
@@ -76961,7 +82520,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 270,
       'catchRate': 3,
       'base': {
         'hitpoints': 80,
@@ -76970,6 +82529,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 115,
         'speed': 65,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 188,
       'nativeRegion': 6,
@@ -76993,7 +82557,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 270,
       'catchRate': 3,
       'base': {
         'hitpoints': 80,
@@ -77002,6 +82566,11 @@ module.exports = {
         'defense': 115,
         'specialDefense': 115,
         'speed': 65,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 188,
       'nativeRegion': 6,
@@ -77018,7 +82587,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': null,
+      'exp': 270,
       'catchRate': 3,
       'base': {
         'hitpoints': 90,
@@ -77027,6 +82596,11 @@ module.exports = {
         'defense': 80,
         'specialDefense': 90,
         'speed': 125,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 174,
       'nativeRegion': 6,
@@ -77065,6 +82639,11 @@ module.exports = {
         'specialDefense': 67,
         'speed': 73,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 93,
       'nativeRegion': 6,
       'locations': {
@@ -77091,6 +82670,11 @@ module.exports = {
         'defense': 73,
         'specialDefense': 73,
         'speed': 121,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 134,
       'nativeRegion': 6,
@@ -77126,6 +82710,11 @@ module.exports = {
         'specialDefense': 101,
         'speed': 13,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 133,
       'nativeRegion': 6,
       'locations': {
@@ -77160,6 +82749,11 @@ module.exports = {
         'specialDefense': 79,
         'speed': 107,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 150,
       'nativeRegion': 6,
       'locations': {
@@ -77190,6 +82784,11 @@ module.exports = {
         'defense': 75,
         'specialDefense': 80,
         'speed': 143,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 168,
       'nativeRegion': 6,
@@ -77229,6 +82828,11 @@ module.exports = {
         'specialDefense': 35,
         'speed': 34,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 52,
       'locations': {},
       'catchRatePercent': 2,
@@ -77250,6 +82854,11 @@ module.exports = {
         'defense': 143,
         'specialDefense': 65,
         'speed': 34,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 212,
       'locations': {
@@ -77282,6 +82891,11 @@ module.exports = {
         'specialDefense': 65,
         'speed': 34,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 300,
       'locations': {},
       'catchRatePercent': 2,
@@ -77311,6 +82925,11 @@ module.exports = {
           'level': 16,
         },
       ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 48,
       'nativeRegion': 7,
       'locations': {
@@ -77344,6 +82963,11 @@ module.exports = {
           'level': 35,
         },
       ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 88,
       'nativeRegion': 7,
       'locations': {
@@ -77375,6 +82999,11 @@ module.exports = {
       'levelType': 3,
       'exp': 265,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 144,
       'nativeRegion': 7,
       'locations': {
@@ -77407,6 +83036,11 @@ module.exports = {
       'levelType': 3,
       'exp': 265,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 204,
       'locations': {},
       'catchRatePercent': 17,
@@ -77436,6 +83070,11 @@ module.exports = {
           'level': 16,
         },
       ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 48,
       'nativeRegion': 7,
       'locations': {
@@ -77469,6 +83108,11 @@ module.exports = {
           'level': 35,
         },
       ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 84,
       'nativeRegion': 7,
       'locations': {
@@ -77500,6 +83144,11 @@ module.exports = {
       'levelType': 3,
       'exp': 265,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 130,
       'nativeRegion': 7,
       'locations': {
@@ -77532,6 +83181,11 @@ module.exports = {
       'levelType': 3,
       'exp': 265,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 183,
       'locations': {},
       'catchRatePercent': 17,
@@ -77561,6 +83215,11 @@ module.exports = {
           'level': 16,
         },
       ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 47,
       'nativeRegion': 7,
       'locations': {
@@ -77594,6 +83253,11 @@ module.exports = {
           'level': 35,
         },
       ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 87,
       'nativeRegion': 7,
       'locations': {
@@ -77625,6 +83289,11 @@ module.exports = {
       'levelType': 3,
       'exp': 265,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 133,
       'nativeRegion': 7,
       'locations': {
@@ -77657,6 +83326,11 @@ module.exports = {
       'levelType': 3,
       'exp': 265,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 188,
       'locations': {},
       'catchRatePercent': 17,
@@ -77688,6 +83362,11 @@ module.exports = {
       ],
       'attack': 45,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -77774,6 +83453,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Chilan'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -77796,6 +83476,11 @@ module.exports = {
       'catchRate': 90,
       'attack': 127,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -77896,6 +83581,11 @@ module.exports = {
       ],
       'attack': 30,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -77944,6 +83634,11 @@ module.exports = {
       ],
       'attack': 65,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78002,6 +83697,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 122,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78068,6 +83768,11 @@ module.exports = {
       'exp': 248,
       'catchRate': 45,
       'attack': 172,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -78098,6 +83803,11 @@ module.exports = {
       ],
       'attack': 14,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78136,6 +83846,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Always'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -78169,6 +83880,11 @@ module.exports = {
       ],
       'attack': 50,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78262,6 +83978,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 95,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78311,6 +84032,11 @@ module.exports = {
       'exp': 253,
       'catchRate': 45,
       'attack': 134,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -78341,6 +84067,11 @@ module.exports = {
       ],
       'attack': 29,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78385,6 +84116,11 @@ module.exports = {
       'catchRate': 127,
       'attack': 98,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78461,6 +84197,11 @@ module.exports = {
       ],
       'attack': 34,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78485,6 +84226,7 @@ module.exports = {
           ],
         },
         '6': ['Grass'],
+        '12': ['Always'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -78507,6 +84249,11 @@ module.exports = {
       'catchRate': 75,
       'attack': 93,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78580,6 +84327,11 @@ module.exports = {
       ],
       'attack': 36,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78657,6 +84409,11 @@ module.exports = {
       'catchRate': 127,
       'attack': 109,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78756,6 +84513,11 @@ module.exports = {
       ],
       'attack': 44,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78824,6 +84586,11 @@ module.exports = {
       'catchRate': 75,
       'attack': 117,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -78956,6 +84723,11 @@ module.exports = {
       'exp': 170,
       'catchRate': 75,
       'attack': 166,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -78986,6 +84758,11 @@ module.exports = {
       ],
       'attack': 43,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79037,6 +84814,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 113,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79094,6 +84876,11 @@ module.exports = {
       ],
       'attack': 29,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79147,6 +84934,11 @@ module.exports = {
       ],
       'attack': 88,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79172,10 +84964,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Lakeside Cave',
-          'Tunnel to the Top',
-        ],
+        '2': ['Lakeside Cave'],
         '3': [
           {
             'dungeon': 'Galar Mine',
@@ -79219,6 +85008,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 148,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79251,9 +85045,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Lakeside Cave',
-          },
-          {
-            'dungeon': 'Tunnel to the Top',
           },
         ],
         '5': [
@@ -79289,6 +85080,11 @@ module.exports = {
       'exp': 255,
       'catchRate': 45,
       'attack': 210,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 600,
@@ -79328,6 +85124,11 @@ module.exports = {
       'catchRate': 255,
       'attack': 34,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79379,7 +85180,7 @@ module.exports = {
         },
         '2': ['Dusty Bowl'],
         '6': ['Grass'],
-        '12': ['Always'],
+        '12': ['Haban'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -79405,6 +85206,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 131,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -79439,6 +85245,11 @@ module.exports = {
       'exp': 170,
       'catchRate': 45,
       'attack': 185,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -79464,6 +85275,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 151,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -79498,6 +85314,11 @@ module.exports = {
       'exp': 170,
       'catchRate': 45,
       'attack': 214,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -79528,6 +85349,11 @@ module.exports = {
       ],
       'attack': 48,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79570,6 +85396,11 @@ module.exports = {
       'catchRate': 120,
       'attack': 126,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79624,6 +85455,11 @@ module.exports = {
       'exp': 179,
       'catchRate': 120,
       'attack': 178,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -79649,6 +85485,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 113,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79794,6 +85635,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 113,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79860,6 +85706,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 113,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79919,6 +85770,11 @@ module.exports = {
       ],
       'attack': 38,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -79962,6 +85818,11 @@ module.exports = {
       'catchRate': 60,
       'attack': 99,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -80084,12 +85945,18 @@ module.exports = {
       ],
       'attack': 33,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '6': ['Electric'],
         '7': [
           'Toxtricity (Amped)',
           'Toxtricity (Low Key)',
         ],
+        '12': ['Kebia'],
       },
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -80115,6 +85982,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 140,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -80149,6 +86021,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 140,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -80183,6 +86060,11 @@ module.exports = {
       'exp': 176,
       'catchRate': 45,
       'attack': 198,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -80216,6 +86098,11 @@ module.exports = {
       ],
       'attack': 53,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -80233,7 +86120,7 @@ module.exports = {
           ],
         },
         '6': ['Fire'],
-        '12': ['Always'],
+        '12': ['Tanga'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -80259,6 +86146,11 @@ module.exports = {
       'catchRate': 75,
       'attack': 162,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -80305,6 +86197,11 @@ module.exports = {
       'exp': 184,
       'catchRate': 75,
       'attack': 229,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 800,
@@ -80335,6 +86232,11 @@ module.exports = {
       ],
       'attack': 56,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '6': ['Fighting'],
       },
@@ -80359,6 +86261,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 132,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -80396,6 +86303,11 @@ module.exports = {
       'levelType': 2,
       'exp': 62,
       'catchRate': 120,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 49,
       'nativeRegion': 7,
       'locations': {
@@ -80427,6 +86339,11 @@ module.exports = {
       'levelType': 2,
       'exp': 178,
       'catchRate': 60,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 122,
       'nativeRegion': 7,
       'locations': {
@@ -80466,6 +86383,11 @@ module.exports = {
           'level': 32,
         },
       ],
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 36,
       'nativeRegion': 7,
       'locations': {
@@ -80544,6 +86466,11 @@ module.exports = {
           'level': 42,
         },
       ],
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 69,
       'nativeRegion': 7,
       'locations': {
@@ -80620,6 +86547,11 @@ module.exports = {
       'levelType': 4,
       'exp': 255,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 142,
       'nativeRegion': 7,
       'locations': {
@@ -80679,6 +86611,11 @@ module.exports = {
       'levelType': 4,
       'exp': 255,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 202,
       'locations': {},
       'catchRatePercent': 17,
@@ -80711,6 +86648,11 @@ module.exports = {
           'level': 32,
         },
       ],
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 39,
       'nativeRegion': 7,
       'locations': {
@@ -80802,6 +86744,11 @@ module.exports = {
           'level': 42,
         },
       ],
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 73,
       'nativeRegion': 7,
       'locations': {
@@ -80857,6 +86804,11 @@ module.exports = {
       'levelType': 2,
       'exp': 255,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 158,
       'nativeRegion': 7,
       'locations': {
@@ -80915,6 +86867,11 @@ module.exports = {
       'levelType': 2,
       'exp': 255,
       'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 223,
       'locations': {},
       'catchRatePercent': 17,
@@ -80941,6 +86898,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 128,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -81011,6 +86973,11 @@ module.exports = {
       'exp': 154,
       'catchRate': 90,
       'attack': 99,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -81058,6 +87025,11 @@ module.exports = {
       'levelType': 1,
       'exp': 179,
       'catchRate': 30,
+      'gender': {
+        'femaleRatio': 0.75,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 141,
       'nativeRegion': 7,
       'locations': {
@@ -81095,6 +87067,11 @@ module.exports = {
       },
       'attack': 128,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -81133,6 +87110,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 146,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '2': ['Crown Shrine'],
         '5': [
@@ -81168,6 +87150,11 @@ module.exports = {
       'catchRate': 90,
       'attack': 102,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -81201,6 +87188,11 @@ module.exports = {
       'levelType': 2,
       'exp': 54,
       'catchRate': 200,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 40,
       'nativeRegion': 7,
       'locations': {
@@ -81224,6 +87216,33 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 868.01,
+      'name': 'Milcery (Cheesy)',
+      'type': [17],
+      'base': {
+        'hitpoints': 45,
+        'attack': 40,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 61,
+        'speed': 34,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 54,
+      'catchRate': 200,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 40,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 53,
+      'eggSteps': 800,
+    },
+    {
       'id': 869,
       'name': 'Alcremie (Strawberry Vanilla)',
       'type': [17],
@@ -81239,6 +87258,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81261,6 +87285,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81283,6 +87312,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81305,6 +87339,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81327,6 +87366,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81349,6 +87393,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81371,6 +87420,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81393,6 +87447,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81415,6 +87474,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81437,6 +87501,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81459,6 +87528,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81481,6 +87555,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81503,6 +87582,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81525,6 +87609,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81547,6 +87636,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81569,6 +87663,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81591,6 +87690,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81613,6 +87717,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81635,6 +87744,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81657,6 +87771,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81679,6 +87798,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81701,6 +87825,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81723,6 +87852,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81745,6 +87879,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81767,6 +87906,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81789,6 +87933,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81811,6 +87960,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81833,6 +87987,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81855,6 +88014,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81877,6 +88041,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81899,6 +88068,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81921,6 +88095,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81943,6 +88122,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81965,6 +88149,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -81987,6 +88176,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82009,6 +88203,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82031,6 +88230,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82053,6 +88257,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82075,6 +88284,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82097,6 +88311,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82119,6 +88338,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82141,6 +88365,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82163,6 +88392,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82185,6 +88419,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82207,6 +88446,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82229,6 +88473,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82251,6 +88500,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82273,6 +88527,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82295,6 +88554,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82317,6 +88581,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82339,6 +88608,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82361,6 +88635,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82383,6 +88662,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82405,6 +88689,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82427,6 +88716,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82449,6 +88743,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82471,6 +88770,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82493,6 +88797,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82515,6 +88824,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82537,6 +88851,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82559,6 +88878,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82581,6 +88905,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82603,6 +88932,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 116,
       'nativeRegion': 7,
       'locations': {},
@@ -82626,6 +88960,11 @@ module.exports = {
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 164,
       'locations': {},
       'catchRatePercent': 31,
@@ -82647,6 +88986,11 @@ module.exports = {
       'levelType': 2,
       'exp': 165,
       'catchRate': 45,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 110,
       'nativeRegion': 7,
       'locations': {
@@ -82684,6 +89028,11 @@ module.exports = {
       'catchRate': 75,
       'attack': 107,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -82742,6 +89091,11 @@ module.exports = {
       ],
       'attack': 20,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -82769,6 +89123,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Yache'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -82794,6 +89149,11 @@ module.exports = {
       'catchRate': 75,
       'attack': 118,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -82837,6 +89197,11 @@ module.exports = {
       'catchRate': 60,
       'attack': 71,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -82885,6 +89250,11 @@ module.exports = {
       'catchRate': 60,
       'attack': 113,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -82956,6 +89326,11 @@ module.exports = {
       'catchRate': 60,
       'attack': 98,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -82988,6 +89363,11 @@ module.exports = {
       'levelType': 1,
       'exp': 166,
       'catchRate': 30,
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 103,
       'nativeRegion': 7,
       'locations': {
@@ -83019,6 +89399,11 @@ module.exports = {
       'levelType': 1,
       'exp': 166,
       'catchRate': 30,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 105,
       'nativeRegion': 7,
       'locations': {
@@ -83052,6 +89437,11 @@ module.exports = {
       'catchRate': 180,
       'attack': 91,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -83104,6 +89494,11 @@ module.exports = {
       'catchRate': 180,
       'attack': 91,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '12': ['Wacan'],
       },
@@ -83136,6 +89531,11 @@ module.exports = {
       ],
       'attack': 63,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -83160,6 +89560,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Babiri'],
       },
       'catchRatePercent': 51,
       'eggSteps': 1000,
@@ -83182,6 +89583,11 @@ module.exports = {
       'catchRate': 90,
       'attack': 162,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -83228,6 +89634,11 @@ module.exports = {
       'exp': 175,
       'catchRate': 90,
       'attack': 230,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 29,
       'eggSteps': 1000,
@@ -83251,6 +89662,11 @@ module.exports = {
       'levelType': 4,
       'exp': 177,
       'catchRate': 45,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 139,
       'nativeRegion': 7,
       'locations': {},
@@ -83276,6 +89692,11 @@ module.exports = {
       'levelType': 4,
       'exp': 177,
       'catchRate': 45,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 148,
       'nativeRegion': 7,
       'locations': {},
@@ -83301,6 +89722,11 @@ module.exports = {
       'levelType': 4,
       'exp': 177,
       'catchRate': 45,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 132,
       'nativeRegion': 7,
       'locations': {},
@@ -83326,6 +89752,11 @@ module.exports = {
       'levelType': 4,
       'exp': 177,
       'catchRate': 45,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 141,
       'nativeRegion': 7,
       'locations': {},
@@ -83353,6 +89784,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 143,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '0': {
           '7': [
@@ -83395,6 +89831,11 @@ module.exports = {
       'exp': 187,
       'catchRate': 45,
       'attack': 202,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -83428,6 +89869,11 @@ module.exports = {
       ],
       'attack': 30,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '6': ['Dragon'],
       },
@@ -83463,6 +89909,11 @@ module.exports = {
       ],
       'attack': 80,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -83498,6 +89949,11 @@ module.exports = {
       'catchRate': 45,
       'attack': 169,
       'nativeRegion': 7,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {
         '5': [
           {
@@ -83544,6 +90000,11 @@ module.exports = {
         'type': 1,
         'id': 'Rusted_Sword',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 197,
       'nativeRegion': 7,
       'locations': {
@@ -83579,6 +90040,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Rusted_Sword',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 223,
       'nativeRegion': 7,
@@ -83631,6 +90097,11 @@ module.exports = {
         'type': 1,
         'id': 'Rusted_Shield',
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 197,
       'nativeRegion': 7,
       'locations': {
@@ -83666,6 +90137,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Rusted_Shield',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 216,
       'nativeRegion': 7,
@@ -83705,6 +90181,11 @@ module.exports = {
       'levelType': 4,
       'exp': 345,
       'catchRate': 255,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 237,
       'nativeRegion': 7,
       'locations': {},
@@ -83731,6 +90212,11 @@ module.exports = {
       'levelType': 4,
       'exp': 345,
       'catchRate': 255,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 540,
       'locations': {},
       'catchRatePercent': 63,
@@ -83752,6 +90238,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 76,
       'nativeRegion': 7,
       'locations': {},
@@ -83777,6 +90268,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 149,
       'nativeRegion': 7,
       'locations': {},
@@ -83802,6 +90298,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 149,
       'nativeRegion': 7,
       'locations': {},
@@ -83828,6 +90329,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 211,
       'locations': {},
       'catchRatePercent': 2,
@@ -83853,6 +90359,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 211,
       'locations': {},
       'catchRatePercent': 2,
@@ -83877,6 +90388,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 175,
       'nativeRegion': 7,
       'locations': {
@@ -83909,6 +90425,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 175,
       'nativeRegion': 7,
       'locations': {
@@ -83933,6 +90454,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 130,
       'nativeRegion': 7,
       'locations': {
@@ -83961,6 +90487,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 189,
       'nativeRegion': 7,
       'locations': {
@@ -83992,6 +90523,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'White_mane_hair',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 184,
       'nativeRegion': 7,
@@ -84025,6 +90561,11 @@ module.exports = {
       'heldItem': {
         'type': 1,
         'id': 'Black_mane_hair',
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 155,
       'nativeRegion': 7,
@@ -84072,6 +90613,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 134,
       'nativeRegion': 7,
       'locations': {
@@ -84104,6 +90650,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 242,
       'nativeRegion': 7,
       'locations': {
@@ -84138,6 +90689,11 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 335,
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 211,
       'nativeRegion': 7,
       'locations': {
@@ -84173,6 +90729,11 @@ module.exports = {
         'specialDefense': 23,
         'speed': 0,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 17,
       'locations': {},
       'catchRatePercent': 17,
@@ -84198,6 +90759,11 @@ module.exports = {
         'specialDefense': 120,
         'speed': 80,
       },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
       'attack': 194,
       'locations': {},
       'catchRatePercent': 5,
@@ -84222,6 +90788,11 @@ module.exports = {
         'defense': 111,
         'specialDefense': 85,
         'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 204,
       'locations': {},
@@ -84249,6 +90820,11 @@ module.exports = {
         'speed': 81,
       },
       'attack': 199,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 5,
       'eggSteps': 4800,
@@ -84274,6 +90850,11 @@ module.exports = {
       },
       'attack': 172,
       'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'locations': {},
       'catchRatePercent': 1,
       'eggSteps': 4800,
@@ -84298,6 +90879,11 @@ module.exports = {
         'specialDefense': 100,
         'speed': 115,
       },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
       'attack': 329,
       'locations': {},
       'catchRatePercent': 1,
@@ -84321,6 +90907,11 @@ module.exports = {
         'defense': 88,
         'specialDefense': 70,
         'speed': 112,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
       },
       'attack': 193,
       'nativeRegion': 0,
@@ -84347,6 +90938,11 @@ module.exports = {
         'defense': 47,
         'specialDefense': 131,
         'speed': 103,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
       },
       'attack': 144,
       'locations': {},
@@ -84415,7 +91011,7 @@ module.exports = {
       'galar': 7,
       'final': 8,
     },
-    'MAX_AVAILABLE_REGION': 6,
+    'MAX_AVAILABLE_REGION': 7,
     'MaxIDPerRegion': [
       151,
       251,
@@ -84435,6 +91031,7 @@ module.exports = {
     'SHINY_CHANCE_STONE': 2048,
     'SHINY_CHANCE_SAFARI': 2048,
     'SHINY_CHANCE_SHOP': 1024,
+    'SHINY_CHANCE_BATTLEFRONTIER': 1024,
     'SHINY_CHANCE_BREEDING': 1024,
     'SHINY_CHANCE_FARM': 1024,
     'ITEM_PRICE_MULTIPLIER': 1.00045,
@@ -84486,52 +91083,46 @@ module.exports = {
       'more': 2,
     },
     'AchievementType': {
-      '0': 'Money',
-      '1': 'Token',
-      '2': 'Attack',
-      '3': 'Diamond',
-      '4': 'Underground Items Found',
-      '5': 'Underground Layers Mined',
-      '6': 'Max Level Oak Item',
-      '7': 'Captured',
-      '8': 'Defeated',
-      '9': 'Caught Pokemon',
-      '10': 'Shiny Pokemon',
-      '11': 'Hatch',
-      '12': 'Pokeball',
-      '13': 'Click',
-      '14': 'Route Defeat',
-      '15': 'Clear Gym',
-      '16': 'Clear Dungeon',
-      '17': 'Farming',
-      '18': 'Quest',
-      '19': 'Battle Frontier',
-      '20': 'Protein',
-      '21': 'Pokérus',
+      '0': 'Pokedollars',
+      '1': 'Dungeon Token',
+      '2': 'Caught Pokemon',
+      '3': 'Shiny Pokemon',
+      '4': 'Total Captured',
+      '5': 'Total Defeated',
+      '6': 'Attack',
+      '7': 'Poke Balls',
+      '8': 'Route Defeats',
+      '9': 'Clear Gym',
+      '10': 'Clear Dungeon',
+      '11': 'Quest',
+      '12': 'Max Level Oak Item',
+      '13': 'Hatchery',
+      '14': 'Farming',
+      '15': 'Underground',
+      '16': 'Battle Frontier',
+      '17': 'Protein',
+      '18': 'Pokerus',
       'None': -1,
       '-1': 'None',
-      'Money': 0,
-      'Token': 1,
-      'Attack': 2,
-      'Diamond': 3,
-      'Underground Items Found': 4,
-      'Underground Layers Mined': 5,
-      'Max Level Oak Item': 6,
-      'Captured': 7,
-      'Defeated': 8,
-      'Caught Pokemon': 9,
-      'Shiny Pokemon': 10,
-      'Hatch': 11,
-      'Pokeball': 12,
-      'Click': 13,
-      'Route Defeat': 14,
-      'Clear Gym': 15,
-      'Clear Dungeon': 16,
-      'Farming': 17,
-      'Quest': 18,
-      'Battle Frontier': 19,
-      'Protein': 20,
-      'Pokérus': 21,
+      'Pokedollars': 0,
+      'Dungeon Token': 1,
+      'Caught Pokemon': 2,
+      'Shiny Pokemon': 3,
+      'Total Captured': 4,
+      'Total Defeated': 5,
+      'Attack': 6,
+      'Poke Balls': 7,
+      'Route Defeats': 8,
+      'Clear Gym': 9,
+      'Clear Dungeon': 10,
+      'Quest': 11,
+      'Max Level Oak Item': 12,
+      'Hatchery': 13,
+      'Farming': 14,
+      'Underground': 15,
+      'Battle Frontier': 16,
+      'Protein': 17,
+      'Pokerus': 18,
     },
     'DungeonTile': {
       '0': 'empty',
@@ -85888,6 +92479,7 @@ module.exports = {
       'Scientist Gideon',
       'Pinkan Jessie & James',
       'Pinkan Officer Jenny',
+      'Kimono Girls',
       'Spiky-eared Pichu',
       'Rocket Boss Giovanni',
       'Galactic Boss Cyrus',
@@ -85993,6 +92585,15 @@ module.exports = {
       'Glastrier',
       'Spectrier',
       'Dyna Tree Birds',
+      'Galarian Articuno 1',
+      'Galarian Articuno 2',
+      'Galarian Articuno 3',
+      'Galarian Zapdos 1',
+      'Galarian Zapdos 2',
+      'Galarian Zapdos 3',
+      'Galarian Moltres 1',
+      'Galarian Moltres 2',
+      'Galarian Moltres 3',
       'Regigigas',
     ],
     'ShardTraderLocations': {
@@ -86253,6 +92854,24 @@ module.exports = {
       'IsleofArmor': 2,
       'CrownTundra': 3,
     },
+    'Genders': {
+      '0': 'Genderless',
+      '1': 'MaleFemale',
+      'Genderless': 0,
+      'MaleFemale': 1,
+    },
+    'BattlePokemonGender': {
+      '0': 'NoGender',
+      '1': 'Male',
+      '2': 'Female',
+      'NoGender': 0,
+      'Male': 1,
+      'Female': 2,
+    },
+    'STATISTIC_CAPTURED': 'Captured',
+    'STATISTIC_DEFEATED': 'Defeated',
+    'STATISTIC_ENCOUNTERED': 'Encountered',
+    'STATISTIC_HATCHED': 'Hatched',
     'AlcremieSweet': {
       '0': 'Strawberry Sweet',
       '1': 'Love Sweet',
@@ -86545,7 +93164,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 2,
         },
@@ -86579,7 +93198,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 4,
         },
@@ -86613,7 +93232,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 6,
         },
@@ -86657,7 +93276,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 0,
           'route': 7,
         },
@@ -86696,7 +93315,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 6,
         },
       ],
@@ -86743,14 +93362,14 @@ module.exports = {
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 18,
             },
             {
               'requiredValue': 10,
               'option': 2,
-              'achievementType': 14,
+              'achievementType': 8,
               'region': 0,
               'route': 15,
             },
@@ -86796,7 +93415,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 9,
         },
       ],
@@ -87194,7 +93813,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 22,
         },
       ],
@@ -87227,7 +93846,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 25,
         },
       ],
@@ -87265,7 +93884,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 1,
           'route': 34,
         },
@@ -87410,7 +94029,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 31,
         },
       ],
@@ -88026,7 +94645,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 54,
         },
       ],
@@ -89099,7 +95718,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 80,
         },
       ],
@@ -89174,7 +95793,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 82,
         },
       ],
@@ -89714,7 +96333,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 5,
           'route': 3,
         },
@@ -89854,7 +96473,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 108,
         },
       ],
@@ -89966,7 +96585,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 114,
         },
       ],
@@ -90271,7 +96890,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 119,
         },
       ],
@@ -90309,7 +96928,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 6,
           'route': 9,
         },
@@ -90348,7 +96967,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 133,
         },
       ],
@@ -90386,7 +97005,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 137,
         },
       ],
@@ -90980,7 +97599,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 13,
         },
@@ -91172,7 +97791,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'achievementType': 16,
+          'achievementType': 10,
           'dungeonIndex': 149,
         },
       ],
@@ -91215,7 +97834,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 26,
         },
@@ -91259,7 +97878,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 26,
         },
@@ -91387,7 +98006,7 @@ module.exports = {
         {
           'requiredValue': 10,
           'option': 2,
-          'achievementType': 14,
+          'achievementType': 8,
           'region': 7,
           'route': 26,
         },
@@ -92091,14 +98710,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
     },
@@ -92149,14 +98767,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
     },
@@ -92207,14 +98824,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
     },
@@ -92265,14 +98881,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
     },
     {
@@ -92322,14 +98937,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -92381,14 +98995,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
     },
@@ -92439,14 +99052,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Blue)',
       ],
     },
@@ -92497,14 +99109,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -92556,14 +99167,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that growing Pecha and Oran Berries near each other will produce something interesting!",
@@ -92615,14 +99225,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard that growing Cheri and Leppa Berries near each other will produce something interesting!",
@@ -92674,14 +99283,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that growing Chesto and Leppa Berries near each other will produce something interesting!",
@@ -92733,14 +99341,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that growing Pecha and Aspear Berries near each other will produce something interesting!",
@@ -92792,14 +99399,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard that growing Rawst and Oran Berries near each other will produce something interesting!",
     },
@@ -92850,14 +99456,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -92910,14 +99515,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings get too spicy!",
@@ -92969,14 +99573,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings get too dry!",
@@ -93028,14 +99631,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings get too sweet!",
@@ -93087,14 +99689,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings get too bitter!",
     },
@@ -93145,14 +99746,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -93216,14 +99816,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard that there's a legendary Berry that only appears when fully surrounded by unique ripe Berry plants!",
     },
@@ -93274,14 +99873,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard that growing Iapapa and Mago Berries near each other will produce something interesting!",
@@ -93333,14 +99931,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Chesto and Persim Berries near each other will produce something interesting!",
@@ -93392,14 +99989,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little spicy, a little sweet, and a little sour at the same time.",
@@ -93451,14 +100047,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted fairly spicy, dry, and bitter at the same time.",
     },
@@ -93509,14 +100104,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -93569,14 +100163,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard that growing Razz Berries near Pomeg Berries can cause it to change!",
@@ -93628,14 +100221,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that growing Leppa, Bluk and Wiki Berries near each other will produce something interesting!",
@@ -93687,14 +100279,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that growing Pecha, Nanab and Mago Berries near each other will produce something interesting!",
@@ -93746,14 +100337,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard that growing Aspear Berries near Aguav Berries can cause it to change!",
     },
@@ -93804,14 +100394,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -93864,14 +100453,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard that a Tamato berry will change if its surroundings get extremely spicy!",
@@ -93926,14 +100514,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that a Cornn berry will change if its surroundings get extremely dry!",
@@ -93985,14 +100572,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that a Magost berry will change if its surroundings get extremely sweet!",
@@ -94044,14 +100630,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard that a Rabuta berry will change if its surroundings get extremely bitter!",
     },
@@ -94102,14 +100687,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that a Nomel berry will change if its surroundings get extremely sour!",
@@ -94164,14 +100748,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that there's a special Pink Berry that only appears when surrounded by a bunch of different types of Pink Berries!",
@@ -94226,14 +100809,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Charmander',
         'Cyndaquil',
         'Torchic',
@@ -94304,14 +100886,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Squirtle',
         'Totodile',
         'Mudkip',
@@ -94382,15 +100963,20 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Pikachu',
+        'Plusle',
+        'Minun',
+        'Pachirisu',
+        'Emolga',
+        'Dedenne',
+        'Togedemaru',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
         'Morpeko (Hangry)',
@@ -94447,14 +101033,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Bulbasaur',
         'Chikorita',
         'Treecko',
@@ -94524,16 +101109,16 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Snover',
         'Flabébé (Blue)',
+        'Snom',
       ],
       'hint': "I've heard that growing a Passho Berry alone will cause it to change!",
     },
@@ -94595,15 +101180,15 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Riolu',
+        'Scraggy',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard that using the Blaze Cassette can cause Spelon Berries to change!",
@@ -94667,15 +101252,16 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Gulpin',
+        'Salandit',
+        'Toxel',
       ],
       'hint': "I've heard that using the Rocky Helmet can cause Pamtre Berries to change!",
     },
@@ -94737,14 +101323,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Larvitar',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
@@ -94798,14 +101383,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Tropius',
         'Flabébé (Blue)',
       ],
@@ -94869,15 +101453,15 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Natu',
+        'Ralts',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that growing Wiki, Bluk, Cornn and Pamtre Berries near each other will produce something interesting!",
@@ -94940,15 +101524,16 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
+        'Shuckle',
         'Nincada',
+        'Sizzlipede',
       ],
       'hint': "I've heard that a special Berry can appear after being surrounded by Rindo Berries!",
     },
@@ -95010,17 +101595,17 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Sudowoodo',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
+        'Rockruff',
       ],
       'hint': "I've heard that using the Cell Battery can cause Cornn Berries to change!",
     },
@@ -95082,14 +101667,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Shedinja',
         'Oricorio (Sensu)',
       ],
@@ -95153,16 +101737,18 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Bagon',
         'Oricorio (Baile)',
+        'Druddigon',
+        'Drampa',
+        'Applin',
       ],
       'hint': "I've heard that growing Occa, Rindo, Passho and Wacan Berries near each other will produce something interesting!",
     },
@@ -95216,14 +101802,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Absol',
         'Oricorio (Sensu)',
       ],
@@ -95287,15 +101872,16 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Skarmory',
+        'Beldum',
+        'Cufant',
       ],
       'hint': "I've heard that a special Berry can appear after being surrounded by Shuca and Charti Berries!",
     },
@@ -95346,16 +101932,18 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
+        'Munchlax',
+        'Audino',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
+        'Skwovet',
       ],
       'hint': "I've heard that Chople Berries will turn into a different Berry if surrounded by more than two of their own kind.",
     },
@@ -95417,14 +102005,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Togepi',
         "Oricorio (Pa'u)",
       ],
@@ -95477,14 +102064,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': "I've heard of a Berry that only appears in the driest of fields.",
     },
@@ -95535,14 +102121,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': "I've heard of a Berry that only appears in the sweetest of fields.",
@@ -95605,14 +102190,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -95676,14 +102260,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Blue)',
       ],
       'hint': "I've heard of a Berry that only appears in the most sour of fields.",
@@ -95735,14 +102318,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -95795,14 +102377,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Blue)',
       ],
       'hint': "I've heard that growing Salac and Petaya Berries near each other will produce something interesting!",
@@ -95854,14 +102435,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Manaphy',
         'Oricorio (Baile)',
       ],
@@ -95914,14 +102494,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Sensu)',
       ],
       'hint': 'Legends tell of a mysterious Berry that only appears in a field of Shuca Berries.',
@@ -95973,14 +102552,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
       ],
       'hint': 'Legends tell of a mysterious Berry that only appears in a field of Coba Berries.',
     },
@@ -96034,14 +102612,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Mew',
         "Oricorio (Pa'u)",
       ],
@@ -96094,14 +102671,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Flabébé (Blue)',
       ],
       'hint': 'Legends tell of a mysterious Berry that only appears in a field of Chilan Berries.',
@@ -96153,14 +102729,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Oricorio (Baile)',
       ],
       'hint': 'Legends tell of a mysterious Berry that only appears in a field of Roseli Berries.',
@@ -96220,14 +102795,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Jirachi',
       ],
       'hint': "I've heard that growing Haban Berries near Enigma Berries can cause it to change!",
@@ -96279,14 +102853,13 @@ module.exports = {
         'Burmy (Plant)',
         'Combee',
         'Cherubi',
-        'Munchlax',
         'Sewaddle',
         'Karrablast',
         'Scatterbug',
         'Cutiefly',
         'Bounsweet',
-        'Sizzlipede',
-        'Applin',
+        'Blipbug',
+        'Gossifleur',
         'Detective Pikachu',
         'Oricorio (Sensu)',
       ],
