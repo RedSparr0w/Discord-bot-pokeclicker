@@ -118,7 +118,10 @@ module.exports = {
       if (!pokemon.length) return;
       const desc = [];
       desc.push('```prolog');
-      pokemon.forEach(p => desc.push(type == 'special' ? p.pokemon.join('\n') : p));
+      if (type == 'special') {
+        pokemon = [...new Set(pokemon.map(p => p.pokemon).flat())];
+      }
+      pokemon.sort().forEach(p => desc.push(p));
       desc.push('```');
       embed.addField(`❯ ${type.toUpperCase()}`, desc.join('\n'), true);
     });
