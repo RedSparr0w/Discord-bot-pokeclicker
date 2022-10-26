@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const FuzzySet = require('fuzzyset');
 const {
   regionRoutes,
   pokemonList,
@@ -10,15 +11,17 @@ const {
 } = require('../helpers.js');
 const { website } = require('../config.js');
 
+const fuzzyRoutes = FuzzySet(regionRoutes.map(r => r.routeName.toLowerCase()), false);
+
 module.exports = {
   name        : 'route',
   aliases     : ['routes', 'routeinfo', 'r'],
   description : 'Get PokéClicker game info about a specific route',
   args        : [
     {
-      name: 'number',
-      type: 'INTEGER',
-      description: 'Route number',
+      name: 'name',
+      type: 'STRING',
+      description: 'Route number/name',
       required: true,
     },
     {
@@ -63,14 +66,6 @@ module.exports = {
           name: 'Galar',
           value: 7,
         },
-        {
-          name: 'Armor',
-          value: 8,
-        },
-        {
-          name: 'Crown',
-          value: 9,
-        },
       ],
     },
   ],
@@ -81,19 +76,29 @@ module.exports = {
   channels    : ['bot-commands'],
   execute     : async (interaction) => {
     const [
-      routeNumber,
+      routeNumberName,
       regionID,
     ] = [
-      interaction.options.get('number').value,
+      interaction.options.get('name').value,
       interaction.options.get('region')?.value,
     ];
 
-    const route = regionRoutes.find(routeData => {
-      if (routeData.number == routeNumber && (regionID == undefined || routeData.region == regionID))
+    const filteredRoutes = regionRoutes.filter(routeData => (regionID == undefined || routeData.region == regionID));
+    let route = filteredRoutes.find(routeData => {
+      if (routeData.routeName.endsWith(` ${routeNumberName}`))
         return routeData;
     });
+    if (!route) {
+      const newNames = fuzzyRoutes.get(routeNumberName);
+      if (newNames) {
+        route = filteredRoutes.find(routeData => {
+          if (routeData.routeName.toLowerCase() == newNames[0][1])
+            return routeData;
+        });
+      }
+    }
 
-    if (!route) return interaction.reply(`Route \`${routeNumber}\` not found${regionID != undefined ? ` in ${GameConstants.Region[regionID]}` : ''}..`);
+    if (!route) return interaction.reply(`Route not found${regionID != undefined ? ` in ${GameConstants.Region[regionID]}` : ''}..`);
 
     let pokemon = Object.values(route.pokemon).flat();
     pokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
@@ -123,7 +128,7 @@ module.exports = {
     // Gems:
     let gemsInfo;
     Object.entries(RouteGemTypes).forEach(([region, routes]) => {
-      if (region == route.region && routes[routeNumber]) gemsInfo = routes[routeNumber];
+      if (region == route.region && routes[routeNumberName]) gemsInfo = routes[routeNumberName];
     });
     if (gemsInfo) {
       const descIcon = [];
