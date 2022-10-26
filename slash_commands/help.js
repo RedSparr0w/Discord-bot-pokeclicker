@@ -50,7 +50,20 @@ module.exports = {
         const restrictedCommands = [];
         const anyCommands = [];
         const groupedCommands = {};
-        commands.forEach(command => {
+        commands.filter(command => {
+          // Check the user has the required permissions
+          if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+            return false;
+          }
+
+          // Check user has the required roles
+          if (interaction.channel.type === 'GUILD_TEXT' && command.userroles?.length) {
+            const hasRolePerms = command.userroles.some(r => interaction.member.roles.cache.find(role => role.id == r || role.name == r));
+            if (!hasRolePerms) return false;
+          }
+
+          return true;
+        }).forEach(command => {
           // Not restricted to any channels
           if (command.channels === undefined) {
             return anyCommands.push(formattedCommand(command));
