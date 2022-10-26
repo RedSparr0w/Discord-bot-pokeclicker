@@ -141,7 +141,7 @@ module.exports = {
         if (routeData.number == bestGemRoute.route && routeData.region == region)
           return routeData;
       });
-      let name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? `Route ${r.number}` : r.routeName;
+      let name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? r.routeName.replace(new RegExp(`^${GameConstants.Region[region]}\\s*`, 'i'), '') : r.routeName;
       const description = ['Best Route:', `${`[${name}]`} ${bestGemRoute.chance.toFixed(1).padStart(4,' ')}%`, '\nAll Routes:'];
       
       Object.entries(routes).sort(sortFunc).forEach(([route, chance]) => {
@@ -150,7 +150,7 @@ module.exports = {
           if (routeData.number == route && routeData.region == region)
             return routeData;
         });
-        name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? `Route ${r.number}` : r.routeName;
+        name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? r.routeName.replace(new RegExp(`^${GameConstants.Region[region]}\\s*`, 'i'), '') : r.routeName;
         description.push(`${`[${name}]`} ${chance.toFixed(1).padStart(4,' ')}%`);
       });
       embed.addField(`❯ ${GameConstants.Region[region].toUpperCase()}`, `\`\`\`ini\n${description.join('\n')}\n\`\`\``, true);
