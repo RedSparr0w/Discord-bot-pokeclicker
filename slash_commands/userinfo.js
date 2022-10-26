@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const { getStatistic } = require('../database');
 
 module.exports = {
   type        : 'USER',
@@ -34,6 +35,8 @@ module.exports = {
 
     const joinDiscord = new Date(user.createdTimestamp);
     const joinServer = new Date(member.joinedTimestamp);
+    const warnings = await getStatistic(user, 'warnings');
+
     const embed = new MessageEmbed()
       .setAuthor({
         name: user.tag,
@@ -43,6 +46,7 @@ module.exports = {
       .setDescription(user.toString())
       .setColor('RANDOM')
       .setThumbnail(user.displayAvatarURL())
+      .addField('Warnings:', warnings?.toString() || 'unknown')
       .addField('Status:', member?.presence?.status || 'offline')
       .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)
       .addField('Joined Server:', `<t:${Math.floor(+joinServer / 1000)}:R>`)
