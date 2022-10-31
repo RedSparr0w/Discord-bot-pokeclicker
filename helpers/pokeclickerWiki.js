@@ -9,6 +9,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Achievements',
     },
     {
+      'title': 'Adamant Orb',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Adamant_Orb',
+    },
+    {
       'title': 'Aether Foundation',
       'link': 'https://pokeclicker.miraheze.org/wiki/Aether_Foundation',
     },
@@ -57,6 +61,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Badge_(Discord)',
     },
     {
+      'title': 'Battle Café',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Battle_Caf%C3%A9',
+    },
+    {
       'title': 'Battle Frontier',
       'link': 'https://pokeclicker.miraheze.org/wiki/Battle_Frontier',
     },
@@ -67,10 +75,6 @@ module.exports = {
     {
       'title': 'Battle Points',
       'link': 'https://pokeclicker.miraheze.org/wiki/Battle_Points',
-    },
-    {
-      'title': 'Battle cafe',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Battle_cafe',
     },
     {
       'title': 'Beastball',
@@ -109,12 +113,12 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Black_Glasses',
     },
     {
-      'title': 'Black Shard',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Shard',
+      'title': 'Black Mane Hair',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Mane_Hair',
     },
     {
-      'title': 'Black mane hair',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Black_mane_hair',
+      'title': 'Black Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Black_Shard',
     },
     {
       'title': 'Blaze Cassette',
@@ -133,8 +137,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Bluk',
     },
     {
+      'title': "Brawlers' Cave",
+      'link': 'https://pokeclicker.miraheze.org/wiki/Brawlers%27_Cave',
+    },
+    {
       'title': 'Brooklet Hill',
       'link': 'https://pokeclicker.miraheze.org/wiki/Brooklet_Hill',
+    },
+    {
+      'title': 'Brown Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Brown_Shard',
     },
     {
       'title': 'Burned Tower',
@@ -225,16 +237,24 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Cornn',
     },
     {
+      'title': 'Courageous Cavern',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Courageous_Cavern',
+    },
+    {
       'title': 'Cover Fossil',
       'link': 'https://pokeclicker.miraheze.org/wiki/Cover_Fossil',
     },
     {
-      'title': 'Cracked pot',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Cracked_pot',
+      'title': 'Cracked Pot',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Cracked_Pot',
     },
     {
       'title': 'Crimson Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Crimson_Shard',
+    },
+    {
+      'title': 'Crown Shrine',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Crown_Shrine',
     },
     {
       'title': 'Custap',
@@ -317,6 +337,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Dragon_Egg',
     },
     {
+      'title': 'Dragon Fang',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Dragon_Fang',
+    },
+    {
       'title': 'Dragon Scale',
       'link': 'https://pokeclicker.miraheze.org/wiki/Dragon_Scale',
     },
@@ -361,6 +385,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Duskball',
     },
     {
+      'title': 'Dusty Bowl',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Dusty_Bowl',
+    },
+    {
+      'title': 'Dyna Tree Hill',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Dyna_Tree_Hill',
+    },
+    {
       'title': 'EXP Share',
       'link': 'https://pokeclicker.miraheze.org/wiki/EXP_Share',
     },
@@ -379,6 +411,10 @@ module.exports = {
     {
       'title': 'Electric Egg',
       'link': 'https://pokeclicker.miraheze.org/wiki/Electric_Egg',
+    },
+    {
+      'title': 'Energy Plant',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Energy_Plant',
     },
     {
       'title': 'Enigma',
@@ -481,6 +517,22 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Forum:Index',
     },
     {
+      'title': 'Fossilized Bird',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Fossilized_Bird',
+    },
+    {
+      'title': 'Fossilized Dino',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Fossilized_Dino',
+    },
+    {
+      'title': 'Fossilized Drake',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Fossilized_Drake',
+    },
+    {
+      'title': 'Fossilized Fish',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Fossilized_Fish',
+    },
+    {
       'title': 'Fossils',
       'link': 'https://pokeclicker.miraheze.org/wiki/Fossils',
     },
@@ -497,12 +549,20 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Galar',
     },
     {
-      'title': 'Galarica cuff',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Galarica_cuff',
+      'title': 'Galar Mine',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galar_Mine',
     },
     {
-      'title': 'Galarica wreath',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Galarica_wreath',
+      'title': 'Galar Mine No. 2',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galar_Mine_No._2',
+    },
+    {
+      'title': 'Galarica Cuff',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galarica_Cuff',
+    },
+    {
+      'title': 'Galarica Wreath',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Galarica_Wreath',
     },
     {
       'title': 'Ganlon',
@@ -527,6 +587,10 @@ module.exports = {
     {
       'title': 'Giant Chasm',
       'link': 'https://pokeclicker.miraheze.org/wiki/Giant_Chasm',
+    },
+    {
+      'title': 'Glimwood Tangle',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Glimwood_Tangle',
     },
     {
       'title': 'Glittering Cave',
@@ -629,6 +693,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Ice_Stone',
     },
     {
+      'title': 'Iceberg Ruins',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Iceberg_Ruins',
+    },
+    {
       'title': 'Icefall Cave',
       'link': 'https://pokeclicker.miraheze.org/wiki/Icefall_Cave',
     },
@@ -659,6 +727,10 @@ module.exports = {
     {
       'title': 'Iron Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Iron_Plate',
+    },
+    {
+      'title': 'Iron Ruins',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Iron_Ruins',
     },
     {
       'title': 'Jaboca',
@@ -727,6 +799,10 @@ module.exports = {
     {
       'title': 'Lake of the Sunne and Moone',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lake_of_the_Sunne_and_Moone',
+    },
+    {
+      'title': 'Lakeside Cave',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lakeside_Cave',
     },
     {
       'title': 'Lansat',
@@ -803,6 +879,10 @@ module.exports = {
     {
       'title': 'Lush Jungle',
       'link': 'https://pokeclicker.miraheze.org/wiki/Lush_Jungle',
+    },
+    {
+      'title': 'Lustrous Orb',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Lustrous_Orb',
     },
     {
       'title': 'Luxuryball',
@@ -949,8 +1029,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mt_Silver',
     },
     {
+      'title': 'Muscle Band',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Muscle_Band',
+    },
+    {
       'title': 'Mystery Egg',
       'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg',
+    },
+    {
+      'title': 'Mystery Egg Key Item',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg_Key_Item',
     },
     {
       'title': 'Mystic Water',
@@ -1073,6 +1161,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pinap',
     },
     {
+      'title': 'Pink Bow',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Bow',
+    },
+    {
       'title': 'Pink Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Shard',
     },
@@ -1175,6 +1267,10 @@ module.exports = {
     {
       'title': 'Pokérus',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus',
+    },
+    {
+      'title': 'Pokérus Virus',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus_Virus',
     },
     {
       'title': 'Pomeg',
@@ -1313,6 +1409,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Roaming_Pok%C3%A9mon',
     },
     {
+      'title': 'Roaring-Sea Caves',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Roaring-Sea_Caves',
+    },
+    {
+      'title': 'Rock Peak Ruins',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rock_Peak_Ruins',
+    },
+    {
       'title': 'Rock Tunnel',
       'link': 'https://pokeclicker.miraheze.org/wiki/Rock_Tunnel',
     },
@@ -1327,6 +1431,14 @@ module.exports = {
     {
       'title': 'Root Fossil',
       'link': 'https://pokeclicker.miraheze.org/wiki/Root_Fossil',
+    },
+    {
+      'title': 'Rose Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rose_Shard',
+    },
+    {
+      'title': 'Rose Tower',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rose_Tower',
     },
     {
       'title': 'Roseli',
@@ -1365,12 +1477,12 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Ruins_of_Life',
     },
     {
-      'title': 'Rusted shield',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Rusted_shield',
+      'title': 'Rusted Shield',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rusted_Shield',
     },
     {
-      'title': 'Rusted sword',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Rusted_sword',
+      'title': 'Rusted Sword',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Rusted_Sword',
     },
     {
       'title': 'Rusturf Tunnel',
@@ -1509,6 +1621,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Slowpoke_Well',
     },
     {
+      'title': 'Slumbering Weald Shrine',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Slumbering_Weald_Shrine',
+    },
+    {
       'title': 'Small Restore',
       'link': 'https://pokeclicker.miraheze.org/wiki/Small_Restore',
     },
@@ -1537,6 +1653,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Soothe_Bell',
     },
     {
+      'title': 'Soul Dew',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Soul_Dew',
+    },
+    {
       'title': 'Spear Pillar',
       'link': 'https://pokeclicker.miraheze.org/wiki/Spear_Pillar',
     },
@@ -1555,6 +1675,10 @@ module.exports = {
     {
       'title': 'Splash Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Splash_Plate',
+    },
+    {
+      'title': 'Split-Decision Ruins',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Split-Decision_Ruins',
     },
     {
       'title': 'Spooky Plate',
@@ -1605,8 +1729,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Super_Rod',
     },
     {
-      'title': 'Sweet apple',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Sweet_apple',
+      'title': 'Sweet Apple',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Sweet_Apple',
     },
     {
       'title': 'Tamato',
@@ -1621,8 +1745,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Tanoby_Ruins',
     },
     {
-      'title': 'Tart apple',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Tart_apple',
+      'title': 'Tart Apple',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tart_Apple',
     },
     {
       'title': 'Teachy TV',
@@ -1693,6 +1817,14 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Token_Collector',
     },
     {
+      'title': 'Tower of Darkness',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tower_of_Darkness',
+    },
+    {
+      'title': 'Tower of Waters',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tower_of_Waters',
+    },
+    {
       'title': 'Town Map',
       'link': 'https://pokeclicker.miraheze.org/wiki/Town_Map',
     },
@@ -1715,6 +1847,10 @@ module.exports = {
     {
       'title': 'Treasure Scanner',
       'link': 'https://pokeclicker.miraheze.org/wiki/Treasure_Scanner',
+    },
+    {
+      'title': 'Tunnel to the Top',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Tunnel_to_the_Top',
     },
     {
       'title': 'Twist Mountain',
@@ -1805,6 +1941,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Wandering_Pok%C3%A9mon',
     },
     {
+      'title': 'Warm-Up Tunnel',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Warm-Up_Tunnel',
+    },
+    {
       'title': 'Water Egg',
       'link': 'https://pokeclicker.miraheze.org/wiki/Water_Egg',
     },
@@ -1853,12 +1993,12 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/White_Flute',
     },
     {
-      'title': 'White Shard',
-      'link': 'https://pokeclicker.miraheze.org/wiki/White_Shard',
+      'title': 'White Mane Hair',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_Mane_Hair',
     },
     {
-      'title': 'White mane hair',
-      'link': 'https://pokeclicker.miraheze.org/wiki/White_mane_hair',
+      'title': 'White Shard',
+      'link': 'https://pokeclicker.miraheze.org/wiki/White_Shard',
     },
     {
       'title': 'Wiki',

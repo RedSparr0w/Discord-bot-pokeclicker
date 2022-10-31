@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.10.0',
+  'gameVersion': '0.10.1',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -3237,7 +3237,6 @@ module.exports = {
       'pokemon': {
         'land': [
           'Poochyena',
-          'Shuppet',
           'Mightyena',
           'Oddish',
           'Gloom',
@@ -3302,7 +3301,6 @@ module.exports = {
       'pokemon': {
         'land': [
           'Poochyena',
-          'Shuppet',
           'Mightyena',
           'Oddish',
           'Gloom',
@@ -7757,7 +7755,7 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
-      'routeName': 'West Lake Axwell',
+      'routeName': 'West Lake Axewell',
       'region': 7,
       'number': 5,
       'pokemon': {
@@ -7973,7 +7971,7 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
-      'routeName': 'East Lake Axwell',
+      'routeName': 'East Lake Axewell',
       'region': 7,
       'number': 6,
       'pokemon': {
@@ -11838,7 +11836,6 @@ module.exports = {
           'Goldeen',
           'Arrokuda',
           'Corphish',
-          'Cramorant',
         ],
         'headbutt': [
           'Skwovet',
@@ -12077,7 +12074,7 @@ module.exports = {
               'Crawdaunt',
               'Drifblim',
               'Swoobat',
-              'Cramorant (Gulping)',
+              'Cramorant',
               'Toxapex',
               'Starmie',
               'Tentacruel',
@@ -12096,7 +12093,7 @@ module.exports = {
               'Malamar',
               'Crawdaunt',
               'Golisopod',
-              'Cramorant',
+              'Cramorant (Gulping)',
               'Drapion',
               'Starmie',
               'Kingler',
@@ -13877,7 +13874,7 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
-      'routeName': 'Giants Bed',
+      'routeName': "Giant's Bed",
       'region': 7,
       'number': 48,
       'pokemon': {
@@ -14216,7 +14213,7 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
-      'routeName': 'Giants Foot',
+      'routeName': "Giant's Foot",
       'region': 7,
       'number': 50,
       'pokemon': {
@@ -14500,6 +14497,14 @@ module.exports = {
                 8,
                 10,
               ],
+            },
+          },
+          {
+            'pokemon': ['Eiscue (No Ice Face)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [7],
             },
           },
           {
@@ -15813,13 +15818,12 @@ module.exports = {
         '17': 16.67,
       },
       '121': {
-        '0': 8.33,
-        '2': 50,
-        '4': 16.67,
-        '7': 25,
-        '9': 25,
-        '13': 8.33,
-        '15': 16.67,
+        '0': 9.09,
+        '2': 54.55,
+        '4': 18.18,
+        '7': 27.27,
+        '9': 27.27,
+        '15': 18.18,
       },
       '122': {
         '2': 100,
@@ -15828,13 +15832,12 @@ module.exports = {
         '15': 16.67,
       },
       '123': {
-        '0': 8.33,
-        '2': 50,
-        '4': 16.67,
-        '7': 25,
-        '9': 25,
-        '13': 8.33,
-        '15': 16.67,
+        '0': 9.09,
+        '2': 54.55,
+        '4': 18.18,
+        '7': 27.27,
+        '9': 27.27,
+        '15': 18.18,
       },
       '124': {
         '2': 100,
@@ -17172,16 +17175,16 @@ module.exports = {
         '14': 5,
       },
       '35': {
-        '0': 12.5,
-        '2': 20.83,
-        '3': 8.33,
-        '4': 12.5,
-        '6': 4.17,
-        '7': 8.33,
-        '9': 8.33,
-        '10': 4.17,
-        '11': 8.33,
-        '14': 4.17,
+        '0': 13.04,
+        '2': 17.39,
+        '3': 8.7,
+        '4': 13.04,
+        '6': 4.35,
+        '7': 8.7,
+        '9': 4.35,
+        '10': 4.35,
+        '11': 8.7,
+        '14': 4.35,
       },
       '36': {
         '0': 16,
@@ -17334,14 +17337,14 @@ module.exports = {
         '17': 3.45,
       },
       '51': {
-        '0': 4.55,
-        '2': 31.82,
-        '4': 4.55,
-        '5': 13.64,
-        '9': 4.55,
-        '10': 4.55,
-        '13': 4.55,
-        '17': 4.55,
+        '0': 4.35,
+        '2': 30.43,
+        '4': 4.35,
+        '5': 13.04,
+        '9': 4.35,
+        '10': 4.35,
+        '13': 4.35,
+        '17': 4.35,
       },
       '52': {
         '0': 6.25,
@@ -21527,7 +21530,10 @@ module.exports = {
       'id': 25.1,
       'name': 'Pikachu (Gengar)',
       'catchRate': 50,
-      'type': [3],
+      'type': [
+        3,
+        13,
+      ],
       'levelType': 2,
       'exp': 112,
       'eggCycles': 10,
@@ -21539,13 +21545,13 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
-      'attack': 43,
-      'nativeRegion': 0,
       'gender': {
+        'femaleRatio': 0,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 43,
+      'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 18,
       'eggSteps': 400,
@@ -21566,13 +21572,13 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
-      'attack': 43,
-      'nativeRegion': 0,
       'gender': {
+        'femaleRatio': 1,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 43,
+      'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 18,
       'eggSteps': 400,
@@ -21627,13 +21633,13 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
-      'attack': 43,
-      'nativeRegion': 0,
       'gender': {
+        'femaleRatio': 0,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 43,
+      'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -21689,13 +21695,13 @@ module.exports = {
         'specialDefense': 50,
         'speed': 90,
       },
-      'attack': 43,
-      'nativeRegion': 0,
       'gender': {
+        'femaleRatio': 0,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 43,
+      'nativeRegion': 0,
       'locations': {
         '12': ['Enigma'],
       },
@@ -24975,7 +24981,7 @@ module.exports = {
           'Ten Carat Hill',
           'Brooklet Hill',
           'Malie Garden',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '6': ['Water'],
       },
@@ -25114,7 +25120,7 @@ module.exports = {
           'Sendoff Spring',
           'Seaside Cave',
           'Abundant Shrine',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '5': [
           {
@@ -25596,7 +25602,7 @@ module.exports = {
           'Victory Road Unova',
           'Victory Road Kalos',
           'Brooklet Hill',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
       },
       'catchRatePercent': 63,
@@ -25809,7 +25815,7 @@ module.exports = {
       'locations': {
         '3': [
           {
-            'dungeon': 'Brawlers Cave',
+            'dungeon': "Brawlers' Cave",
           },
         ],
         '5': [
@@ -30858,7 +30864,7 @@ module.exports = {
         },
         '2': [
           'Victory Road Kalos',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '8': ['Celadon City'],
       },
@@ -31697,7 +31703,7 @@ module.exports = {
         },
         '2': [
           "Mina's Houseboat",
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '5': [
           {
@@ -34371,8 +34377,8 @@ module.exports = {
       },
       'gender': {
         'femaleRatio': 0.125,
+        'visualDifference': true,
         'type': 1,
-        'visualDifference': false,
       },
       'attack': 54,
       'nativeRegion': 0,
@@ -34432,7 +34438,7 @@ module.exports = {
         'speed': 55,
       },
       'gender': {
-        'femaleRatio': 0.125,
+        'femaleRatio': 0,
         'type': 1,
         'visualDifference': false,
       },
@@ -35534,7 +35540,10 @@ module.exports = {
       'id': 150.1,
       'name': 'Armored Mewtwo',
       'catchRate': 2,
-      'type': [10],
+      'type': [
+        10,
+        16,
+      ],
       'levelType': 4,
       'exp': 306,
       'eggCycles': 120,
@@ -37164,10 +37173,19 @@ module.exports = {
       'id': 175.1,
       'name': 'Spooky Togepi',
       'catchRate': 30,
-      'type': [17],
+      'type': [13],
       'levelType': 1,
       'exp': 49,
       'eggCycles': 8,
+      'evolutions': [
+        {
+          'basePokemon': 'Spooky Togepi',
+          'type': [1],
+          'evolvedPokemon': 'Spooky Togetic',
+          'stone': 7,
+        },
+      ],
+      'baby': true,
       'base': {
         'hitpoints': 35,
         'attack': 25,
@@ -37183,7 +37201,9 @@ module.exports = {
       },
       'attack': 28,
       'nativeRegion': 1,
-      'locations': {},
+      'locations': {
+        '7': ['Spooky Togetic'],
+      },
       'catchRatePercent': 12,
       'eggSteps': 320,
     },
@@ -37266,6 +37286,54 @@ module.exports = {
           },
         ],
         '7': ['Togekiss'],
+      },
+      'catchRatePercent': 25,
+      'eggSteps': 400,
+    },
+    {
+      'id': 176.1,
+      'name': 'Spooky Togetic',
+      'catchRate': 75,
+      'type': [
+        13,
+        9,
+      ],
+      'levelType': 1,
+      'exp': 142,
+      'eggCycles': 10,
+      'evolutions': [
+        {
+          'basePokemon': 'Spooky Togetic',
+          'type': [1],
+          'evolvedPokemon': 'Spooky Togekiss',
+          'stone': 15,
+        },
+      ],
+      'base': {
+        'hitpoints': 55,
+        'attack': 40,
+        'specialAttack': 80,
+        'defense': 85,
+        'specialDefense': 105,
+        'speed': 40,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 75,
+      'nativeRegion': 1,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Spooky Togepi',
+            'type': [1],
+            'evolvedPokemon': 'Spooky Togetic',
+            'stone': 7,
+          },
+        ],
+        '7': ['Spooky Togekiss'],
       },
       'catchRatePercent': 25,
       'eggSteps': 400,
@@ -43395,7 +43463,7 @@ module.exports = {
       'name': 'Grinch Celebi',
       'catchRate': 45,
       'type': [
-        10,
+        15,
         4,
       ],
       'levelType': 3,
@@ -43447,13 +43515,13 @@ module.exports = {
         'type': 3,
         'id': 19,
       },
-      'attack': 184,
-      'nativeRegion': 1,
       'gender': {
-        'type': 1,
+        'type': 0,
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 184,
+      'nativeRegion': 1,
       'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -46507,7 +46575,7 @@ module.exports = {
           'Rusturf Tunnel',
           'Victory Road Hoenn',
           'Connecting Cave',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
       },
       'catchRatePercent': 51,
@@ -46547,7 +46615,7 @@ module.exports = {
       'locations': {
         '2': [
           'Victory Road Hoenn',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '5': [
           {
@@ -46756,7 +46824,7 @@ module.exports = {
         },
         '2': [
           'Floccesy Ranch',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '7': ['Marill'],
       },
@@ -49379,7 +49447,7 @@ module.exports = {
           'Poni Meadow',
           'Slumbering Weald Shrine',
           'Galar Mine No. 2',
-          'Brawlers Cave',
+          "Brawlers' Cave",
           'Roaring-Sea Caves',
         ],
         '3': [
@@ -49505,7 +49573,7 @@ module.exports = {
           'Victory Road Hoenn',
           'Slumbering Weald Shrine',
           'Courageous Cavern',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '3': [
           {
@@ -50460,16 +50528,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '2': [
-            {
-              'route': 121,
-            },
-            {
-              'route': 123,
-            },
-          ],
-        },
         '2': [
           'Mt. Pyre',
           'Thrifty Megamart',
@@ -58271,6 +58329,45 @@ module.exports = {
       'eggSteps': 600,
     },
     {
+      'id': 468.1,
+      'name': 'Spooky Togekiss',
+      'type': [
+        13,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 1,
+      'exp': 245,
+      'catchRate': 30,
+      'base': {
+        'hitpoints': 85,
+        'attack': 50,
+        'specialAttack': 120,
+        'defense': 95,
+        'specialDefense': 115,
+        'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 134,
+      'nativeRegion': 3,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Spooky Togetic',
+            'type': [1],
+            'evolvedPokemon': 'Spooky Togekiss',
+            'stone': 15,
+          },
+        ],
+      },
+      'catchRatePercent': 12,
+      'eggSteps': 600,
+    },
+    {
       'id': 469,
       'name': 'Yanmega',
       'type': [
@@ -62069,7 +62166,7 @@ module.exports = {
             'dungeon': 'Dusty Bowl',
           },
           {
-            'dungeon': 'Brawlers Cave',
+            'dungeon': "Brawlers' Cave",
           },
         ],
         '5': [
@@ -62142,7 +62239,7 @@ module.exports = {
           'Twist Mountain',
           "Sea Spirit's Den",
           'Galar Mine',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '4': [
           {
@@ -62194,7 +62291,7 @@ module.exports = {
         },
         '2': [
           'Courageous Cavern',
-          'Brawlers Cave',
+          "Brawlers' Cave",
         ],
         '5': [
           {
@@ -69326,7 +69423,7 @@ module.exports = {
             'dungeon': 'Courageous Cavern',
           },
           {
-            'dungeon': 'Brawlers Cave',
+            'dungeon': "Brawlers' Cave",
           },
         ],
         '12': ['Haban'],
@@ -85535,9 +85632,6 @@ module.exports = {
             },
             {
               'route': 35,
-            },
-            {
-              'route': 35,
               'requirements': 'The weather needs to be Clear',
             },
             {
@@ -85566,7 +85660,7 @@ module.exports = {
             },
             {
               'route': 36,
-              'requirements': 'The weather needs to be Rain',
+              'requirements': 'The weather needs to be Overcast',
             },
             {
               'route': 36,
@@ -85673,7 +85767,7 @@ module.exports = {
             },
             {
               'route': 36,
-              'requirements': 'The weather needs to be Overcast',
+              'requirements': 'The weather needs to be Rain',
             },
             {
               'route': 38,
@@ -89338,6 +89432,10 @@ module.exports = {
               'route': 32,
               'requirements': 'The weather needs to be Sunny',
             },
+            {
+              'route': 51,
+              'requirements': 'The weather needs to be Sunny',
+            },
           ],
         },
       },
@@ -92181,7 +92279,7 @@ module.exports = {
       'Energy Plant',
       'Dusty Bowl',
       'Courageous Cavern',
-      'Brawlers Cave',
+      "Brawlers' Cave",
       'Warm-Up Tunnel',
       'Tower of Darkness',
       'Tower of Waters',
@@ -92365,7 +92463,7 @@ module.exports = {
         'Energy Plant',
         'Dusty Bowl',
         'Courageous Cavern',
-        'Brawlers Cave',
+        "Brawlers' Cave",
         'Warm-Up Tunnel',
         'Tower of Darkness',
         'Tower of Waters',
