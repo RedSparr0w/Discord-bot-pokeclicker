@@ -2,14 +2,11 @@ const { MessageEmbed } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { website, serverIcons } = require('../config.js');
 const {
-  upperCaseFirstLetter,
   pokemonList,
   LevelType,
   PokemonType,
-  EvolutionType,
   EvoTrigger,
   GameConstants,
-  WeatherType,
   PokemonLocationType,
   pokemonTypeIcons,
   gameVersion,
