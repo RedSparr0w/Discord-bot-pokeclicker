@@ -1,9 +1,15 @@
 const { MessageEmbed } = require('discord.js');
 const {
-  upperCaseFirstLetter,
   getAvailableChannelList,
   formatChannelList,
 } = require('../helpers.js');
+
+const getCommandSuggestion = (map, name) => {
+  const cmd = map.find(c => c.name.toLowerCase() === name.toLowerCase()) || {id: 0, name};
+  return `</${cmd.name}:${cmd.id}>`;
+};
+
+const formattedCommand = (map, command) => `❯ **${getCommandSuggestion(map, command.name)}**: ${command.description.split('\n')[0]}`;
 
 module.exports = {
   name        : 'help',
@@ -30,12 +36,16 @@ module.exports = {
       commands = commands.filter(command => !interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length);
     }
 
+    const commandsMap = interaction.channel.type === 'DM' ?
+      [...interaction.client.commands.cache].map(c => c[1]) :
+      [...interaction.guild.commands.cache].map(c => c[1]);
+
     // Help on all commands
     if (!command) {
       const embed = new MessageEmbed()
         .setTitle('Help')
         .setDescription([
-          'For more detailed information about a command use:',
+          `For more detailed information about a command use ${getCommandSuggestion(commandsMap, 'help')}:`,
           '```css',
           '/help [command_name]',
           '```',
@@ -43,7 +53,7 @@ module.exports = {
         .setColor('#3498db');
 
       if (interaction.channel.type === 'DM'){
-        const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
+        const description = commands.map(command => formattedCommand(commandsMap, command)).join('\n');
         embed.addField('__***Commands:***__', description);
       } else if (interaction.channel.type === 'GUILD_TEXT'){
         // Group the commands by their primary channel
@@ -66,21 +76,21 @@ module.exports = {
         }).forEach(command => {
           // Not restricted to any channels
           if (command.channels === undefined) {
-            return anyCommands.push(formattedCommand(command));
+            return anyCommands.push(formattedCommand(commandsMap, command));
           }
           // No channels allowed, restricted to specific hidden channels
           if (command.channels.length === 0) {
-            return restrictedCommands.push(formattedCommand(command));
+            return restrictedCommands.push(formattedCommand(commandsMap, command));
           }
           const allowedChannels = getAvailableChannelList(interaction.guild, command.channels);
           // No channels allowed, restricted from this server
           if (allowedChannels.size === 0) {
-            return restrictedCommands.push(formattedCommand(command));
+            return restrictedCommands.push(formattedCommand(commandsMap, command));
           }
           // Use the first channel name in the list
           const channelName = allowedChannels.first().name;
           if (groupedCommands[channelName] === undefined) groupedCommands[channelName] = [];
-          groupedCommands[channelName].push(formattedCommand(command));
+          groupedCommands[channelName].push(formattedCommand(commandsMap, command));
         });
 
         // Add the commands to the embed
@@ -106,7 +116,7 @@ module.exports = {
     }
 
     const embed = new MessageEmbed()
-      .setTitle(`Help | ${upperCaseFirstLetter(command.name)}`)
+      .setTitle(`Help | ${getCommandSuggestion(commandsMap, command.name)}`)
       .setColor('#3498db')
       .addField('❯ Description', `${command.description || '---'}`, false)
       .addField('❯ Usage', `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg.name}${arg.required ? '' : '?'}]`).join('')}\`\`\``, false)
@@ -122,5 +132,3 @@ module.exports = {
     interaction.reply({ embeds: [embed] });
   },
 };
-
-const formattedCommand = command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`;

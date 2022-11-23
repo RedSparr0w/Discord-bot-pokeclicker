@@ -27,6 +27,7 @@ const { newQuiz } = require('./other/quiz/quiz.js');
 const { sendReminders } = require('./other/reminder/reminder.js');
 const { happyHourHours, startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
 const { checkScheduledItems } = require('./other/scheduled/scheduled.js');
+const { DAY } = require('./helpers/constants.js');
 
 const client = new Discord.Client({
   intents: [
@@ -100,12 +101,18 @@ client.once('ready', async() => {
   new RunOnInterval(HOUR, () => {
     // Set our status
     client.user.setActivity(`PokéClicker v${gameVersion}`);
-  }, { run_now: true });
+  }, { timezone_offset: 0, run_now: true });
 
   // Backup the database every 6 hours
   new RunOnInterval(6 * HOUR, () => {
     if (+backupChannelID) client.guilds.cache.forEach(guild => backupDB(guild));
   }, { timezone_offset: 0 });
+
+  // Update our commands cache every day
+  new RunOnInterval(DAY, () => {
+    client.application.commands.fetch();
+    client.guilds.cache.forEach(guild => guild.commands.fetch());
+  }, { timezone_offset: 0, run_now: true });
 
   // Start happy hour
   new RunOnInterval(happyHourHours * HOUR, () => {
