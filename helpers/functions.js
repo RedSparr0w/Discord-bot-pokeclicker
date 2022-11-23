@@ -83,6 +83,8 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
 
 const upperCaseFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
+const humanifyString = string => string.replace(/_/g, ' ');
+
 const randomFromArray = arr => arr[Math.floor(Math.random() * arr.length)];
 
 const addOrderedReactions = async (message, reactions) => {
@@ -175,6 +177,7 @@ const processSaveFile = (msg, file) => {
 module.exports = {
   postPages,
   upperCaseFirstLetter,
+  humanifyString,
   randomFromArray,
   addOrderedReactions,
   randomString,

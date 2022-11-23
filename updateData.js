@@ -65,6 +65,18 @@ const { website, wikiWebsite } = require('./config.js');
       gyms[key] = value;
     });
 
+    Requirement.prototype.toJSON = function() {
+      const req = this.__proto__.constructor.name === 'LazyRequirementWrapper'
+        ? this.unwrap()
+        : this;
+  
+      return {
+        ...Object.fromEntries(Object.entries(req)),
+        hint: req.hint(),
+        __class: req.__proto__.constructor.name,
+      };
+    };
+
     const pokeclickerData = {
       gameVersion: App.game.update.version,
       shopItems: App.game.discord.codes,
@@ -75,6 +87,7 @@ const { website, wikiWebsite } = require('./config.js');
       LevelType,
       levelRequirements,
       EvolutionType,
+      EvoTrigger,
       WeatherType,
       pokemonList: pokemonList.map(p => {
         p.locations = PokemonHelper.getPokemonLocations(p.name);

@@ -7,6 +7,7 @@ const {
   LevelType,
   PokemonType,
   EvolutionType,
+  EvoTrigger,
   GameConstants,
   WeatherType,
   PokemonLocationType,
@@ -134,19 +135,22 @@ module.exports = {
         const descriptions = [];
         pokemon.locations[PokemonLocationType.Evolution].forEach(evolution => {
           let description = `\`${evolution.basePokemon.toUpperCase()}:\``;
-          description += evolution.type.includes(EvolutionType.Level) ? `\n<:RareCandy:1032155819489378325> Above level ${evolution.level}` : '';
-          description += evolution.type.includes(EvolutionType.Stone) ? `\n<:Moon_stone:1032156549914841108> Using a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')}` : '';
-          description += evolution.type.includes(EvolutionType.Timed) ? `\n🕒 Between ${evolution.startHour > 12 ? evolution.startHour - 12 : evolution.startHour || 12}${evolution.startHour && evolution.startHour <= 12 ? 'am' : 'pm'} → ${evolution.endHour > 12 ? evolution.endHour - 12 : evolution.endHour || 12}${evolution.endHour && evolution.endHour <= 12 ? 'am' : 'pm'}` : '';
-          description += evolution.type.includes(EvolutionType.Dungeon) ? `\n<:dungeonToken:751765172657586177> While in ${evolution.dungeon}` : '';
-          description += evolution.type.includes(EvolutionType.Region) ? `\n⛴️ While in ${evolution.regions.map(r => upperCaseFirstLetter(GameConstants.Region[r])).join(' or ')}` : '';
-          description += evolution.type.includes(EvolutionType.Gym) ? `\n<:fighting_icon:774090473966403585> While fighting the ${evolution.town} Gym` : '';
-          description += evolution.type.includes(EvolutionType.Environment) ? `\n🌳 While in a ${evolution.environment} environment` : '';
-          description += evolution.type.includes(EvolutionType.Weather) ? `\n🌥️ While in ${evolution.weather.map(w => WeatherType[w]).join(' or ')} weather` : '';
-          description += evolution.type.includes(EvolutionType.Other) ? '\n🍍 With unknown requirement' : '';
+          evolution.restrictions.forEach(r => {
+            // Ignore self or evo caught restrictions
+            if (r.__class == 'ObtainedPokemonRequirement' && (r.pokemon == evolution.basePokemon || r.pokemon == evolution.evolvedPokemon)) return;
+            // Ignore evo cant already have happened restrictions
+            if (r.__class == 'CustomRequirement' && r.hint == 'The evolution can\'t have already happened') return;
+            // Ignore reached region restrictions
+            if (r.__class == 'MaxRegionRequirement') return;
+            description += `\n${r.hint}`;
+          });
+          if (evolution.trigger == EvoTrigger.STONE) {
+            description += `\nUsing a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')} evolution item`;
+          }
 
           descriptions.push(description);
         });
-        embed.addField('❯ Evolves From', descriptions.join('\n\n'));
+        embed.addField('❯ Evolves From', descriptions.join('\n\n').substring(0, 1000));
       }
       // Egg
       if (pokemon.locations[PokemonLocationType.Egg]) {
