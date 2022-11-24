@@ -226,6 +226,24 @@ module.exports = [
     },
   },
   {
+    // Telegram links
+    regex: /t\.me\//i,
+    execute: (message, client) => {
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.me.toString()}
+        **User:** ${message.member.toString()}
+        **Action:** _Deleted message_
+        **Reason:** _Telegram link_
+        **Channel:** ${message.channel.name}
+        **Message Link:** _[Here](${message.url})_
+        **Message Content:**
+        \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      );
+      message.delete().catch(e => {});
+    },
+  },
+  {
     // Figure out a better way to test for the bots own ID/Role
     regex: /(<@!?733927271726841887>|<@&751709977827082260>)/,
     execute: (message, client) => {
