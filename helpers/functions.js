@@ -108,6 +108,49 @@ const randomString = (length = 6) => {
   return str.substring(0, length);
 };
 
+const saveFileFlags = (saveData) => {
+  const flags = [];
+  // If Time Traveller flag
+  if (saveData.player?._timeTraveller) {
+    flags.push('Time Traveller');
+  }
+  // If Discord ID is invalid
+  if (saveData.save?.discord?.ID && saveData.save?.discord?.ID.length < 17) {
+    flags.push('Discord');
+  }
+  // Check if the player has more than 3 oak items active
+  if (Object.values(saveData.save?.oakItems || {}).filter(i => i.isActive).length > 3) {
+    flags.push('Oak Items');
+  }
+  // If more than 100 million of an item
+  if (Math.max(...Object.values(saveData.player?._itemList || {})) > 1e8) {
+    flags.push('Items');
+  }
+  // If more than 100 million of any underground items
+  if (Math.max(...saveData.player?.mineInventory?.map(i => i.amount) || []) > 1e8) {
+    flags.push('Underground Items');
+  }
+  // If more than 10 billion pokeballs
+  if (Math.max(...saveData.save?.pokeballs?.pokeballs || []) > 1e10) {
+    flags.push('Pokeballs');
+  }
+  // More gems than gems gained
+  const gemsCheck = saveData.save?.statistics?.gemsGained?.some((v, i) => (saveData.save?.gems?.gemWallet?.[i] || 0) > v);
+  if (gemsCheck) {
+    flags.push('Gems');
+  }
+  // A ton of dungeons cleared very fast
+  const dungeonSeconds = (saveData.save?.statistics?.secondsPlayed || 1) / (saveData.save?.statistics?.dungeonsCleared?.reduce((s, v) => s + v, 0) || 1);
+  if (dungeonSeconds < 30) {
+    flags.push(`Dungeons (${dungeonSeconds.toFixed(0)}s)`);
+  }
+  // If save has obtained MissingNo.
+  if (saveData.save?.party?.caughtPokemon?.find(p => p.id == 0)) {
+    flags.push('MissingNo.');
+  }
+  return flags;
+};
+
 const processSaveFile = (msg, file) => {
   https.get(file.url, (res) => {
     let body = '';
@@ -124,7 +167,7 @@ const processSaveFile = (msg, file) => {
         const saveData = JSON.parse(Buffer.from(body, 'base64').toString());
 
         // Gather data from the save file
-        const timeTraveller = saveData.player?._timeTraveller || false;
+        const saveFlags = saveFileFlags(saveData);
         const _lastSeen = saveData.player?._lastSeen || '0';
         const version = saveData.save?.update?.version || '0.0.0';
         const name = decodeURIComponent(saveData.save?.profile?.name || 'Trainer');
@@ -158,11 +201,15 @@ const processSaveFile = (msg, file) => {
           .addField('Pokemon Caught:', `${caughtPokemon} | ${caughtPokemonShiny} ✨`)
           .addField('Time Played:', formatSecondsFullLetters(timePlayed))
           .addField('Challenges:', `${challengesEnabled}/${challengesTotal}`)
-          .addField('Dungeon Clears:', maxDungeons.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
-          .addField('Pokemon Defeated:', maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n'))
-          .addField('Time Traveller:', upperCaseFirstLetter(timeTraveller.toString()))
-          .addField('Save File:', `[Download](${file.url})`)
-          .setFooter({ text: `Version: v${version} | Last Seen:` })
+          .addField('Dungeon Clears:', maxDungeons.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n') || 'Null')
+          .addField('Pokemon Defeated:', maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n') || 'Null')
+          .addField('Save File:', `[Download](${file.url})`);
+
+        if (saveFlags.length) {
+          embed.addField('Flags:', `[⚠](${msg.url} "${saveFlags.join('\n')}")`);
+        }
+
+        embed.setFooter({ text: `Version: v${version} | Last Seen:` })
           .setTimestamp(_lastSeen);
         msg.reply({ embeds: [embed] });
       } catch (e) {
