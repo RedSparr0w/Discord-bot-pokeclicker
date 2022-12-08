@@ -190,7 +190,7 @@ module.exports = {
         embed.addField('❯ Discord Shop', description);
       }
     } else {
-      embed.addField('\u200b', `\`\`\`diff\n- Currently Unobtainable\n${pokemon.id != Math.floor(pokemon.id) ? '- Possible Event Only\n' : ''}\`\`\``);
+      embed.addField('\u200b', `\`\`\`diff\n- Unknown Method\n${pokemon.id != Math.floor(pokemon.id) ? '- Possible Event Only\n' : ''}\`\`\``);
     }
 
     // Spacing for the footer
