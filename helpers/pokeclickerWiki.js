@@ -138,7 +138,7 @@ module.exports = {
     },
     {
       'title': "Brawlers' Cave",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Brawlers%27_Cave',
+      'link': "https://pokeclicker.miraheze.org/wiki/Brawlers'_Cave",
     },
     {
       'title': 'Brooklet Hill',
@@ -294,7 +294,7 @@ module.exports = {
     },
     {
       'title': "Diglett's Tunnel",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Diglett%27s_Tunnel',
+      'link': "https://pokeclicker.miraheze.org/wiki/Diglett's_Tunnel",
     },
     {
       'title': 'Digletts Cave',
@@ -351,6 +351,10 @@ module.exports = {
     {
       'title': 'Dread Plate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Dread_Plate',
+    },
+    {
+      'title': 'Dream Orbs',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Dream_Orbs',
     },
     {
       'title': 'Dreamyard',
@@ -513,10 +517,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Flutes',
     },
     {
-      'title': 'Forum:Index',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Forum:Index',
-    },
-    {
       'title': 'Fossilized Bird',
       'link': 'https://pokeclicker.miraheze.org/wiki/Fossilized_Bird',
     },
@@ -585,6 +585,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Gems',
     },
     {
+      'title': 'Genders',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Genders',
+    },
+    {
       'title': 'Giant Chasm',
       'link': 'https://pokeclicker.miraheze.org/wiki/Giant_Chasm',
     },
@@ -609,6 +613,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Greatball',
     },
     {
+      'title': 'Green Dream Orbs',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Green_Dream_Orbs',
+    },
+    {
       'title': 'Green Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Green_Shard',
     },
@@ -619,6 +627,10 @@ module.exports = {
     {
       'title': 'Grey Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Grey_Shard',
+    },
+    {
+      'title': 'Griseous Orb',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Griseous_Orb',
     },
     {
       'title': 'Gyms',
@@ -642,7 +654,7 @@ module.exports = {
     },
     {
       'title': "Hau'oli Cemetery",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Hau%27oli_Cemetery',
+      'link': "https://pokeclicker.miraheze.org/wiki/Hau'oli_Cemetery",
     },
     {
       'title': 'Heart Scale',
@@ -781,6 +793,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Key_Items',
     },
     {
+      'title': 'Key Stone',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Key_Stone',
+    },
+    {
       'title': 'Kings Rock',
       'link': 'https://pokeclicker.miraheze.org/wiki/Kings_Rock',
     },
@@ -889,10 +905,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Luxuryball',
     },
     {
-      'title': 'MGW:RS',
-      'link': 'https://pokeclicker.miraheze.org/wiki/MGW:RS',
-    },
-    {
       'title': 'Macho Brace',
       'link': 'https://pokeclicker.miraheze.org/wiki/Macho_Brace',
     },
@@ -945,16 +957,16 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Medium_Restore',
     },
     {
+      'title': 'Mega Evolution',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mega_Evolution',
+    },
+    {
       'title': 'Melemele Meadow',
       'link': 'https://pokeclicker.miraheze.org/wiki/Melemele_Meadow',
     },
     {
       'title': 'Memorial Hill',
       'link': 'https://pokeclicker.miraheze.org/wiki/Memorial_Hill',
-    },
-    {
-      'title': 'Message Wall:Anapple96',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Message_Wall:Anapple96',
     },
     {
       'title': 'Metal Coat',
@@ -970,7 +982,7 @@ module.exports = {
     },
     {
       'title': "Mina's Houseboat",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Mina%27s_Houseboat',
+      'link': "https://pokeclicker.miraheze.org/wiki/Mina's_Houseboat",
     },
     {
       'title': 'Mind Plate',
@@ -1037,8 +1049,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg',
     },
     {
-      'title': 'Mystery Egg Key Item',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg_Key_Item',
+      'title': 'Mystery Egg (Key Item)',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg_(Key_Item)',
     },
     {
       'title': 'Mystic Water',
@@ -1105,6 +1117,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Oran',
     },
     {
+      'title': 'Orange Dream Orbs',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Orange_Dream_Orbs',
+    },
+    {
       'title': 'Oreburgh Gate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Oreburgh_Gate',
     },
@@ -1165,6 +1181,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Bow',
     },
     {
+      'title': 'Pink Dream Orbs',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Dream_Orbs',
+    },
+    {
       'title': 'Pink Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Shard',
     },
@@ -1217,14 +1237,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9Clicker',
     },
     {
-      'title': 'PokéClicker Wiki:Directory',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9Clicker_Wiki:Directory',
-    },
-    {
-      'title': 'PokéClicker Wiki:Ruleset',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9Clicker_Wiki:Ruleset',
-    },
-    {
       'title': 'Pokéball',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9ball',
     },
@@ -1241,8 +1253,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9balls',
     },
     {
-      'title': 'Pokéclicker Team',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9clicker_Team',
+      'title': 'Pokéclicker Development Team',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9clicker_Development_Team',
     },
     {
       'title': 'Pokémon Day Care',
@@ -1267,10 +1279,6 @@ module.exports = {
     {
       'title': 'Pokérus',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus',
-    },
-    {
-      'title': 'Pokérus Virus',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus_Virus',
     },
     {
       'title': 'Pomeg',
@@ -1299,6 +1307,10 @@ module.exports = {
     {
       'title': 'Protein',
       'link': 'https://pokeclicker.miraheze.org/wiki/Protein',
+    },
+    {
+      'title': 'Pure Light',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pure_Light',
     },
     {
       'title': 'Purple Shard',
@@ -1514,7 +1526,7 @@ module.exports = {
     },
     {
       'title': "Sea Spirit's Den",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Sea_Spirit%27s_Den',
+      'link': "https://pokeclicker.miraheze.org/wiki/Sea_Spirit's_Den",
     },
     {
       'title': 'Seafloor Cavern',
@@ -1830,7 +1842,7 @@ module.exports = {
     },
     {
       'title': 'Towns & Cities',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Towns_%26_Cities',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Towns_&_Cities',
     },
     {
       'title': 'Toxic Plate',
@@ -1838,7 +1850,7 @@ module.exports = {
     },
     {
       'title': "Trainers' School",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Trainers%27_School',
+      'link': "https://pokeclicker.miraheze.org/wiki/Trainers'_School",
     },
     {
       'title': 'Translation Glossary',
@@ -1866,7 +1878,7 @@ module.exports = {
     },
     {
       'title': "Ula'ula Meadow",
-      'link': 'https://pokeclicker.miraheze.org/wiki/Ula%27ula_Meadow',
+      'link': "https://pokeclicker.miraheze.org/wiki/Ula'ula_Meadow",
     },
     {
       'title': 'Ultraball',

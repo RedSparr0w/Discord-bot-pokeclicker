@@ -1,7 +1,17 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const { website, wikiWebsite } = require('./config.js');
+const https = require('https');
+let { website, wikiWebsite } = require('./config.js');
+website = website.endsWith('/') ? website : `${website}/`;
+wikiWebsite = wikiWebsite.endsWith('/') ? wikiWebsite : `${wikiWebsite}/`;
+
+// Tidy up the result data with our eslint rules
+const { ESLint } = require('eslint');
+
+const cli = new ESLint({
+  fix: true,
+});
 
 (async () => {
 
@@ -109,13 +119,6 @@ const { website, wikiWebsite } = require('./config.js');
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
 
-  // Tidy up the result data with our eslint rules
-  const { ESLint } = require('eslint');
-
-  const cli = new ESLint({
-    fix: true,
-  });
-
   const results = await cli.lintText(result);
   const res = results[0];
 
@@ -133,26 +136,65 @@ const { website, wikiWebsite } = require('./config.js');
     console.log('=== PokéClicker Wiki ===');
     console.log(`navigate to ${wikiWebsite}\nwaiting for webpage to load..`);
 
-    await page.goto(`${wikiWebsite}Special:AllPages?hideredirects=1`);
+    const getPages = (apcontinue = '') => {
+      const params = {
+        action: 'query',
+        format: 'json',
+        formatversion: 2,
+        list: 'allpages',
+        aplimit: 500,
+        apnamespace: 0,
+        apfilterredir: 'nonredirects',
+        apcontinue: apcontinue,
+      };
+      
+      let url = `${wikiWebsite}w/api.php?origin=*`;
+      
+      Object.keys(params).forEach((key) => {
+        url += `&${key}=${params[key]}`;
+      });
 
-    console.log('webpage loaded!\nupdating data..');
+      return new Promise((resolve, reject) => {
+        https.get(url, (resp)=>{
 
-    let wikiLinks = [];
-    wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
-    let pageNumber = 1;
-    let nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].filter(e => /next/i.test(e.innerText)).map(e => [e.innerText, e.href])[0]);
-    while (nextPage && nextPage.length && nextPage[0].startsWith('Next')) {
-      ++pageNumber;
-      console.log(`navigate to page ${pageNumber} - ${nextPage[1]}\nwaiting for page ${pageNumber} to load..`);
-      await page.goto(nextPage[1]);
-      console.log(`page ${pageNumber} loaded!\nupdating data..`);
-      wikiLinks.push(...await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-body [href]')].map(e => [e.title, e.href])));
-      nextPage = await page.evaluate(() => [...document.querySelectorAll('.mw-allpages-nav [href]')].filter(e => /next/i.test(e.innerText)).map(e => [e.innerText, e.href])[0]);
-    }
-    // map to titles only, filter out duplicates, map to { title, link }
-    wikiLinks = [...new Set(wikiLinks.map(l => l[0]))].map(title => ({ title, link: wikiLinks.find(([t]) => t == title)[1] }));
-    // Filter out other language links
-    wikiLinks = wikiLinks.filter(w => !/\/\w{2,3}$/.test(w.title)).filter(w => !/Easter Egg/i.test(w.title));
+          let data = '';
+        
+          // A chunk of data has been received.
+          resp.on('data', (chunk) => {
+            data += chunk;
+          });
+        
+          // The whole response has been received. Print out the result.
+          resp.on('end', () => {
+            const jsonData = JSON.parse(data);
+            resolve(jsonData);
+          });
+          
+        }).on('error', (err) => {
+          reject(`Error: ${err.message}`);
+        });
+      });
+    };
+    
+    const pages = new Set();
+    let apcontinue = '';
+    let i = 0;
+
+    do {
+      const response = await getPages(apcontinue);
+      apcontinue = response?.continue?.apcontinue || '';
+      const allPages = response.query.allpages;
+      allPages.forEach(p => pages.add(p.title));
+      console.log(`processed page ${++i}`);
+    } while (apcontinue);
+    wikiLinks = [...pages]
+      .filter(p => !p.includes(':'))
+      .filter(p => !/\/\w{2,3}$/.test(p))
+      .filter(p => !/Easter Egg/i.test(p))
+      .map(title => ({
+        title,
+        link: `${wikiWebsite}wiki/${encodeURI(title.replace(/\s/g, '_'))}`,
+      }));
 
     // set data
     const wikiData = { wikiLinks };
@@ -167,7 +209,7 @@ const { website, wikiWebsite } = require('./config.js');
     await fs.writeFileSync('./helpers/pokeclickerWiki.js', wikiOutput);
 
     console.log('PokéClicker Wiki data updated!');
-    console.log({ fileSise: wikiOutput.length, errorCount: res.errorCount, warningCount: res.warningCount });
+    console.log({ fileSise: wikiOutput.length });
   }
 
   await browser.close();
