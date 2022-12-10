@@ -45,23 +45,39 @@ const cli = new ESLint({
     const getRouteTypes = () => {
       const regionRoutes = {};
       Routes.regionRoutes.forEach(routeData => {
+        // Check if data exist, otherwise create it as empty
         if (!regionRoutes[routeData.region]) regionRoutes[routeData.region] = {};
         if (!regionRoutes[routeData.region][routeData.number]) regionRoutes[routeData.region][routeData.number] = {};
+
+        let totalPokemon = 0;
+
+        // Go over all the pokemon in the route
         Object.values(routeData.pokemon).flat().forEach(pName => {
+          // Note that we are excluding any special encounters at the moment
+          // possibly add weather encounters later on (with an optional param on Discord)
           const pokemon = pokemonMap[pName];
+
+          // Ignore MissingNo. and other pokemon with negative IDs (also special encounters currently)
           if (!pokemon || pokemon.id <= 0) return;
+
+          // Make sure this types data exists on the route
           if (!regionRoutes[routeData.region][routeData.number][pokemon.type[0]]) {
             regionRoutes[routeData.region][routeData.number][pokemon.type[0]] = 0;
           }
+          // Increment this type on the route
           regionRoutes[routeData.region][routeData.number][pokemon.type[0]]++;
           if (pokemon.type[1]) {
+            // Make sure this types data exists on the route
             if (!regionRoutes[routeData.region][routeData.number][pokemon.type[1]]) {
               regionRoutes[routeData.region][routeData.number][pokemon.type[1]] = 0;
             }
+            // Increment the 2nd type on the route
             regionRoutes[routeData.region][routeData.number][pokemon.type[1]]++;
           }
+
+          totalPokemon++;
         });
-        totalPokemon = Object.values(routeData.pokemon).flat().length;
+        // Calculate percentage of each type on route
         Object.entries(regionRoutes[routeData.region][routeData.number]).forEach(([type, amount]) => {
           regionRoutes[routeData.region][routeData.number][type] = +((amount / totalPokemon) * 100).toFixed(2);
         });

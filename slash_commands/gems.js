@@ -131,6 +131,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle(`${pokemonTypeIcons[type]} ${type} Gem Routes`)
       .setColor('#3498db')
+      .setDescription('_this excludes special encounters_')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` });
 
     const gemRoutes = findGemRoutes(RouteGemTypes, PokemonType[type]);

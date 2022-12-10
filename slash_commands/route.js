@@ -102,6 +102,8 @@ module.exports = {
 
     let pokemon = Object.values(route.pokemon).flat();
     pokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
+    // Handle special encounters
+    pokemon = pokemon.pokemon ?? pokemon;
     pokemon = pokemonList.find(p => p.name == pokemon);
     if (!pokemon) pokemon = pokemonList[0];
 
@@ -131,25 +133,15 @@ module.exports = {
     // Gems:
     let gemsInfo;
     Object.entries(RouteGemTypes).forEach(([region, routes]) => {
-      if (region == route.region && routes[routeNumberName]) gemsInfo = routes[routeNumberName];
+      if (region == route.region && routes[route.number]) gemsInfo = routes[route.number];
     });
     if (gemsInfo) {
       const descIcon = [];
-      const descType = [];
-      const descChance = [];
-      descType.push('```prolog');
-      descChance.push('```prolog');
       Object.entries(gemsInfo).sort(([,a], [,b]) => b - a).forEach(([type, chance]) => {
-        // descIcon.push(pokemonTypeIcons[PokemonType[type]]);
-        // descType.push(PokemonType[type].padEnd(10, ' '));
-        // descChance.push(`${chance.toFixed(1).padStart(4, ' ')}%`);
         descIcon.push(`${pokemonTypeIcons[PokemonType[type]]} **\`${PokemonType[type].padEnd(10, ' ')} ${chance.toFixed(1).padStart(4, ' ')}%\`**`);
       });
-      descType.push('```');
-      descChance.push('```');
-      //embed.addField('\u200b', descIcon.join('\n'), true);
+      descIcon.push('_this excludes special encounters_');
       embed.addField('❯ GEMS', descIcon.join('\n'), true);
-      //embed.addField('\u200b', descChance.join('\n'), true);
     }
 
     interaction.reply({ embeds: [embed] });
