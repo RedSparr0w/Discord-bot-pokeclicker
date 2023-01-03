@@ -353,10 +353,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Dread_Plate',
     },
     {
-      'title': 'Dream Orbs',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Dream_Orbs',
-    },
-    {
       'title': 'Dreamyard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Dreamyard',
     },
@@ -613,10 +609,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Greatball',
     },
     {
-      'title': 'Green Dream Orbs',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Green_Dream_Orbs',
-    },
-    {
       'title': 'Green Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Green_Shard',
     },
@@ -627,10 +619,6 @@ module.exports = {
     {
       'title': 'Grey Shard',
       'link': 'https://pokeclicker.miraheze.org/wiki/Grey_Shard',
-    },
-    {
-      'title': 'Griseous Orb',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Griseous_Orb',
     },
     {
       'title': 'Gyms',
@@ -793,10 +781,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Key_Items',
     },
     {
-      'title': 'Key Stone',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Key_Stone',
-    },
-    {
       'title': 'Kings Rock',
       'link': 'https://pokeclicker.miraheze.org/wiki/Kings_Rock',
     },
@@ -957,10 +941,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Medium_Restore',
     },
     {
-      'title': 'Mega Evolution',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Mega_Evolution',
-    },
-    {
       'title': 'Melemele Meadow',
       'link': 'https://pokeclicker.miraheze.org/wiki/Melemele_Meadow',
     },
@@ -1049,8 +1029,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg',
     },
     {
-      'title': 'Mystery Egg (Key Item)',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg_(Key_Item)',
+      'title': 'Mystery Egg Key Item',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Mystery_Egg_Key_Item',
     },
     {
       'title': 'Mystic Water',
@@ -1117,10 +1097,6 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Oran',
     },
     {
-      'title': 'Orange Dream Orbs',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Orange_Dream_Orbs',
-    },
-    {
       'title': 'Oreburgh Gate',
       'link': 'https://pokeclicker.miraheze.org/wiki/Oreburgh_Gate',
     },
@@ -1179,10 +1155,6 @@ module.exports = {
     {
       'title': 'Pink Bow',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Bow',
-    },
-    {
-      'title': 'Pink Dream Orbs',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pink_Dream_Orbs',
     },
     {
       'title': 'Pink Shard',
@@ -1253,8 +1225,8 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9balls',
     },
     {
-      'title': 'Pokéclicker Development Team',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9clicker_Development_Team',
+      'title': 'Pokéclicker Team',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9clicker_Team',
     },
     {
       'title': 'Pokémon Day Care',
@@ -1279,6 +1251,10 @@ module.exports = {
     {
       'title': 'Pokérus',
       'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus',
+    },
+    {
+      'title': 'Pokérus Virus',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Pok%C3%A9rus_Virus',
     },
     {
       'title': 'Pomeg',
@@ -1307,10 +1283,6 @@ module.exports = {
     {
       'title': 'Protein',
       'link': 'https://pokeclicker.miraheze.org/wiki/Protein',
-    },
-    {
-      'title': 'Pure Light',
-      'link': 'https://pokeclicker.miraheze.org/wiki/Pure_Light',
     },
     {
       'title': 'Purple Shard',
@@ -1387,6 +1359,10 @@ module.exports = {
     {
       'title': 'Regions',
       'link': 'https://pokeclicker.miraheze.org/wiki/Regions',
+    },
+    {
+      'title': 'Reins of Unity',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Reins_of_Unity',
     },
     {
       'title': 'Relic Castle',

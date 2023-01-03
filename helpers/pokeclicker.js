@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.10.4',
+  'gameVersion': '0.10.6',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -45,14 +45,14 @@ module.exports = {
     },
     {
       'name': 'Surfing Pikachu',
-      'image': 'assets/images/pokemon/25.09.png',
+      'image': 'assets/images/pokemon/25.11.png',
       'price': 1500,
       'description': "It's a Pikachu on a surfboard!",
       'claimed': false,
     },
     {
       'name': 'Rotom (Discord)',
-      'image': 'assets/images/pokemon/479.6.png',
+      'image': 'assets/images/pokemon/479.06.png',
       'price': 10000,
       'description': 'A Discord-style Rotom!',
       'claimed': false,
@@ -1868,7 +1868,6 @@ module.exports = {
           'Bellsprout',
         ],
         'water': [
-          'Poliwag',
           'Poliwhirl',
           'Magikarp',
         ],
@@ -4413,7 +4412,6 @@ module.exports = {
           'Gyarados',
           'Remoraid',
           'Octillery',
-          'Wingull',
           'Gastrodon (East)',
         ],
         'headbutt': [],
@@ -5248,20 +5246,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 4,
-          'route': 4,
-          'hint': 'Unova Route 4 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-        {
           'requiredValue': 1,
           'option': 2,
-          'badge': 60,
-          'hint': 'Requires the Insect badge.',
-          '__class': 'GymBadgeRequirement',
+          'battleName': 'Colress 1',
+          'hint': 'Requires beating Colress.',
+          '__class': 'TemporaryBattleRequirement',
         },
         {
           'requiredValue': 1,
@@ -5293,20 +5282,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 4,
-          'route': 4,
-          'hint': 'Unova Route 4 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-        {
           'requiredValue': 1,
           'option': 2,
-          'badge': 60,
-          'hint': 'Requires the Insect badge.',
-          '__class': 'GymBadgeRequirement',
+          'battleName': 'Colress 1',
+          'hint': 'Requires beating Colress.',
+          '__class': 'TemporaryBattleRequirement',
         },
         {
           'requiredValue': 1,
@@ -6153,7 +6133,6 @@ module.exports = {
           'Burmy (Plant)',
           'Bunnelby',
           'Fletchling',
-          'Dunsparce',
         ],
         'water': [
           'Magikarp',
@@ -8326,7 +8305,7 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
-      'routeName': 'Friend League Route',
+      'routeName': 'Friend League Bridge',
       'region': 6,
       'number': 31,
       'pokemon': {
@@ -8337,18 +8316,25 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 69420,
-          'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Magikarp Jump',
+          'cachedQuest': {
+            'state': 0,
+            'name': 'Magikarp Jump',
+            'quest': 0,
+          },
+          'hint': 'Questline Magikarp Jump needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
         },
       ],
       'orderNumber': 31,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 33750,
     },
     {
-      'routeName': 'Quick League Route',
+      'routeName': 'Quick League Bridge',
       'region': 6,
       'number': 32,
       'pokemon': {
@@ -8359,191 +8345,266 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 101,
+          'hint': 'Requires the Friend League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 32,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 67500,
     },
     {
-      'routeName': 'Heavy League Route',
+      'routeName': 'Heavy League Bridge',
       'region': 6,
       'number': 33,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Calico (Orange, White)',
+          'Magikarp Orange Orca',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 102,
+          'hint': 'Requires the Quick League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 33,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 168750,
     },
     {
-      'routeName': 'Great League Route',
+      'routeName': 'Great League Bridge',
       'region': 6,
       'number': 34,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Orange Two-Tone',
+          'Magikarp Orange Dapples',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 103,
+          'hint': 'Requires the Heavy League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 34,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 270000,
     },
     {
-      'routeName': 'Fast League Route',
+      'routeName': 'Fast League Bridge',
       'region': 6,
       'number': 35,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Calico (Orange, White, Black)',
+          'Magikarp Orange Two-Tone',
+          'Magikarp Calico (Orange, White)',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 104,
+          'hint': 'Requires the Great League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 35,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 506250,
     },
     {
-      'routeName': 'Luxury League Route',
+      'routeName': 'Luxury League Bridge',
       'region': 6,
       'number': 36,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Pink Two-Tone',
+          'Magikarp Calico (Orange, White, Black)',
+          'Magikarp Orange Dapples',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 105,
+          'hint': 'Requires the Fast League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 36,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 675000,
     },
     {
-      'routeName': 'Heal League Route',
+      'routeName': 'Heal League Bridge',
       'region': 6,
       'number': 37,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Grey Bubbles',
+          'Magikarp Grey Patches',
+          'Magikarp Orange Dapples',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 106,
+          'hint': 'Requires the Luxury League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 37,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 1012500,
     },
     {
-      'routeName': 'Ultra League Route',
+      'routeName': 'Ultra League Bridge',
       'region': 6,
       'number': 38,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Calico (Orange, White, Black)',
+          'Magikarp Orange Two-Tone',
+          'Magikarp Calico (Orange, White)',
+          'Magikarp Apricot Tiger',
+          'Magikarp Apricot Zebra',
+          'Magikarp Brown Zebra',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 107,
+          'hint': 'Requires the Heal League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 38,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 1350000,
     },
     {
-      'routeName': 'Elite Four League Route',
+      'routeName': 'Elite Four League Pier',
       'region': 6,
       'number': 39,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Black Forehead',
+          'Magikarp Pink Orca',
+          'Magikarp Grey Patches',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 108,
+          'hint': 'Requires the Ultra League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 39,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 2025000,
     },
     {
-      'routeName': 'Master League Route',
+      'routeName': 'Master League Pier',
       'region': 6,
       'number': 40,
       'pokemon': {
         'land': [],
-        'water': ['Magikarp'],
+        'water': [
+          'Magikarp',
+          'Magikarp',
+          'Magikarp',
+          'Magikarp Orange Mask',
+          'Magikarp Calico (Orange, Gold)',
+          'Magikarp Grey Bubbles',
+        ],
         'headbutt': [],
         'special': [],
       },
       'requirements': [
         {
-          'requiredValue': 69420,
+          'requiredValue': 1,
           'option': 2,
-          'hint': 'This is probably still under development.',
-          '__class': 'NullRequirement',
+          'badge': 109,
+          'hint': 'Requires the E4 League badge.',
+          '__class': 'GymBadgeRequirement',
         },
       ],
       'orderNumber': 40,
       'subRegion': 4,
       'ignoreRouteInCalculations': true,
+      'routeHealth': 2700000,
     },
     {
       'routeName': 'Galar Route 1',
@@ -9762,7 +9823,6 @@ module.exports = {
           },
           {
             'pokemon': [
-              'Tyrogue',
               'Roselia',
               'Corphish',
               'Stunky',
@@ -9770,7 +9830,6 @@ module.exports = {
               'Lombre',
               'Nuzleaf',
               'Skuntank',
-              'Machoke',
               'Drifblim',
               'Seaking',
               'Gyarados',
@@ -9812,7 +9871,6 @@ module.exports = {
               'Stunky',
               'Krabby',
               'Tympole',
-              'Pyukumuku',
               'Palpitoad',
               'Kingler',
               'Crawdaunt',
@@ -9837,7 +9895,6 @@ module.exports = {
               'Snover',
               'Krabby',
               'Skuntank',
-              'Machoke',
               'Vanilluxe',
               'Gyarados',
             ],
@@ -9856,7 +9913,6 @@ module.exports = {
               'Vanillite',
               'Delibird',
               'Skuntank',
-              'Machoke',
               'Vanilluxe',
               'Drifblim',
               'Gyarados',
@@ -9879,7 +9935,6 @@ module.exports = {
               'Stunky',
               'Mudbray',
               'Crustle',
-              'Machoke',
               'Whiscash',
               'Pelipper',
               'Gyarados',
@@ -9903,7 +9958,6 @@ module.exports = {
               'Stunky',
               'Mudbray',
               'Skuntank',
-              'Machoke',
               'Whiscash',
               'Seaking',
               'Gyarados',
@@ -9923,7 +9977,6 @@ module.exports = {
               'Ralts',
               'Corphish',
               'Bronzor',
-              'Drifloon',
               'Skuntank',
               'Drifblim',
               'Jellicent',
@@ -10932,7 +10985,6 @@ module.exports = {
             'pokemon': [
               'Yamper',
               'Skorupi',
-              'Mareanie',
               'Chewtle',
               'Shellos (East)',
               'Wimpod',
@@ -12232,7 +12284,6 @@ module.exports = {
               'Shiinotic',
               'Seaking',
               'Lapras',
-              'Jellicent',
             ],
             'req': {
               'requiredValue': 1,
@@ -12497,7 +12548,6 @@ module.exports = {
               'Machoke',
               'Espurr',
               'Inkay',
-              'Hawlucha',
               'Thievul',
               'Wobbuffet',
               'Stufful',
@@ -16036,7 +16086,6 @@ module.exports = {
               'Glalie',
               'Froslass',
               'Glaceon',
-              'Greedent',
               'Nidoking',
               'Nidoqueen',
               'Vanilluxe',
@@ -16622,7 +16671,6 @@ module.exports = {
               'Walrein',
               'Cryogonal',
               'Lapras',
-              'Beartic',
               'Absol',
               'Eiscue (Ice Face)',
             ],
@@ -16874,7 +16922,6 @@ module.exports = {
         'land': [
           'Boltund',
           'Audino',
-          'Skwovet',
           'Yamper',
           'Mime Jr.',
           'Aron',
@@ -17056,7 +17103,7 @@ module.exports = {
                   '__class': 'WeatherRequirement',
                 },
               ],
-              'hint': 'Armaldo needs to be caught and The weather needs to be Rain or Thunderstorm.',
+              'hint': 'Armaldo needs to be caught.',
               '__class': 'MultiRequirement',
             },
           },
@@ -17712,14 +17759,14 @@ module.exports = {
         '11': 46.67,
       },
       '31': {
-        '0': 25,
-        '2': 20,
-        '4': 10,
-        '6': 5,
-        '7': 25,
-        '9': 25,
-        '10': 5,
-        '11': 40,
+        '0': 26.32,
+        '2': 15.79,
+        '4': 10.53,
+        '6': 5.26,
+        '7': 26.32,
+        '9': 26.32,
+        '10': 5.26,
+        '11': 42.11,
       },
       '32': {
         '0': 13.33,
@@ -18228,11 +18275,11 @@ module.exports = {
         '17': 16.67,
       },
       '213': {
-        '0': 8.33,
-        '2': 91.67,
-        '7': 16.67,
-        '8': 8.33,
-        '9': 33.33,
+        '0': 9.09,
+        '2': 90.91,
+        '7': 18.18,
+        '8': 9.09,
+        '9': 27.27,
       },
       '214': {
         '1': 8.33,
@@ -18579,12 +18626,12 @@ module.exports = {
         '11': 42.86,
       },
       '3': {
-        '0': 53.85,
-        '2': 23.08,
-        '3': 7.69,
-        '9': 23.08,
-        '11': 15.38,
-        '17': 15.38,
+        '0': 50,
+        '2': 25,
+        '3': 8.33,
+        '9': 25,
+        '11': 16.67,
+        '17': 16.67,
       },
       '4': {
         '0': 12.5,
@@ -19593,16 +19640,16 @@ module.exports = {
         '17': 12.5,
       },
       '53': {
-        '0': 27.78,
-        '2': 44.44,
-        '3': 11.11,
-        '8': 11.11,
-        '9': 5.56,
-        '10': 5.56,
-        '12': 11.11,
-        '14': 5.56,
-        '16': 5.56,
-        '17': 5.56,
+        '0': 23.53,
+        '2': 47.06,
+        '3': 11.76,
+        '8': 11.76,
+        '9': 5.88,
+        '10': 5.88,
+        '12': 11.76,
+        '14': 5.88,
+        '16': 5.88,
+        '17': 5.88,
       },
       '54': {
         '0': 10,
@@ -20348,10 +20395,12 @@ module.exports = {
     'Questline': 9,
   },
   'EvoTrigger': {
-    '0': 'LEVEL',
-    '1': 'STONE',
-    'LEVEL': 0,
-    'STONE': 1,
+    '0': 'NONE',
+    '1': 'LEVEL',
+    '2': 'STONE',
+    'NONE': 0,
+    'LEVEL': 1,
+    'STONE': 2,
   },
   'WeatherType': {
     '0': 'Clear',
@@ -20393,7 +20442,7 @@ module.exports = {
         {
           'basePokemon': 'Bulbasaur',
           'evolvedPokemon': 'Ivysaur',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20448,7 +20497,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 1.1,
+      'id': 1.01,
       'name': 'Bulbasaur (Clone)',
       'catchRate': 45,
       'type': [
@@ -20462,7 +20511,7 @@ module.exports = {
         {
           'basePokemon': 'Bulbasaur (Clone)',
           'evolvedPokemon': 'Ivysaur (Clone)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20514,7 +20563,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 1.2,
+      'id': 1.02,
       'name': 'Spooky Bulbasaur',
       'catchRate': 25,
       'type': [4],
@@ -20525,7 +20574,7 @@ module.exports = {
         {
           'basePokemon': 'Spooky Bulbasaur',
           'evolvedPokemon': 'Spooky Ivysaur',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20577,7 +20626,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 1.3,
+      'id': 1.03,
       'name': 'Bulbasaur (Rose)',
       'catchRate': 25,
       'type': [
@@ -20591,7 +20640,7 @@ module.exports = {
         {
           'basePokemon': 'Bulbasaur (Rose)',
           'evolvedPokemon': 'Ivysaur (Rose)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20657,7 +20706,7 @@ module.exports = {
         {
           'basePokemon': 'Ivysaur',
           'evolvedPokemon': 'Venusaur',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20709,7 +20758,7 @@ module.exports = {
           {
             'basePokemon': 'Bulbasaur',
             'evolvedPokemon': 'Ivysaur',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -20746,7 +20795,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 2.1,
+      'id': 2.01,
       'name': 'Ivysaur (Clone)',
       'catchRate': 45,
       'type': [
@@ -20760,7 +20809,7 @@ module.exports = {
         {
           'basePokemon': 'Ivysaur (Clone)',
           'evolvedPokemon': 'Venusaur (Clone)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20812,7 +20861,7 @@ module.exports = {
           {
             'basePokemon': 'Bulbasaur (Clone)',
             'evolvedPokemon': 'Ivysaur (Clone)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -20849,7 +20898,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 2.2,
+      'id': 2.02,
       'name': 'Spooky Ivysaur',
       'catchRate': 45,
       'type': [4],
@@ -20860,7 +20909,7 @@ module.exports = {
         {
           'basePokemon': 'Spooky Ivysaur',
           'evolvedPokemon': 'Spooky Venusaur',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -20912,7 +20961,7 @@ module.exports = {
           {
             'basePokemon': 'Spooky Bulbasaur',
             'evolvedPokemon': 'Spooky Ivysaur',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -20949,7 +20998,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 2.3,
+      'id': 2.03,
       'name': 'Ivysaur (Rose)',
       'catchRate': 45,
       'type': [
@@ -20963,7 +21012,7 @@ module.exports = {
         {
           'basePokemon': 'Ivysaur (Rose)',
           'evolvedPokemon': 'Venusaur (Rose)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21015,7 +21064,7 @@ module.exports = {
           {
             'basePokemon': 'Bulbasaur (Rose)',
             'evolvedPokemon': 'Ivysaur (Rose)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21082,7 +21131,7 @@ module.exports = {
           {
             'basePokemon': 'Ivysaur',
             'evolvedPokemon': 'Venusaur',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21119,7 +21168,67 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 3.1,
+      'id': 3.01,
+      'name': 'Mega Venusaur',
+      'type': [
+        4,
+        7,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 281,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 80,
+        'attack': 100,
+        'specialAttack': 122,
+        'defense': 123,
+        'specialDefense': 120,
+        'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 194,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 800,
+    },
+    {
+      'id': 3.02,
+      'name': 'Gigantamax Venusaur',
+      'nativeRegion': -1,
+      'catchRate': 45,
+      'type': [
+        4,
+        7,
+      ],
+      'levelType': 3,
+      'exp': 236,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 160,
+        'attack': 82,
+        'specialAttack': 100,
+        'defense': 83,
+        'specialDefense': 100,
+        'speed': 80,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 200,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 3.03,
       'name': 'Venusaur (Clone)',
       'catchRate': 45,
       'type': [
@@ -21149,7 +21258,7 @@ module.exports = {
           {
             'basePokemon': 'Ivysaur (Clone)',
             'evolvedPokemon': 'Venusaur (Clone)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21186,7 +21295,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 3.2,
+      'id': 3.04,
       'name': 'Spooky Venusaur',
       'catchRate': 45,
       'type': [
@@ -21216,7 +21325,7 @@ module.exports = {
           {
             'basePokemon': 'Spooky Ivysaur',
             'evolvedPokemon': 'Spooky Venusaur',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21253,7 +21362,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 3.3,
+      'id': 3.05,
       'name': 'Venusaur (Rose)',
       'catchRate': 45,
       'type': [
@@ -21283,7 +21392,7 @@ module.exports = {
           {
             'basePokemon': 'Ivysaur (Rose)',
             'evolvedPokemon': 'Venusaur (Rose)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21320,36 +21429,6 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 3.4,
-      'name': 'Gigantamax Venusaur',
-      'nativeRegion': -1,
-      'catchRate': 45,
-      'type': [
-        4,
-        7,
-      ],
-      'levelType': 3,
-      'exp': 236,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 160,
-        'attack': 82,
-        'specialAttack': 100,
-        'defense': 83,
-        'specialDefense': 100,
-        'speed': 80,
-      },
-      'gender': {
-        'femaleRatio': 0.125,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 200,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 800,
-    },
-    {
       'id': 4,
       'name': 'Charmander',
       'catchRate': 45,
@@ -21361,7 +21440,7 @@ module.exports = {
         {
           'basePokemon': 'Charmander',
           'evolvedPokemon': 'Charmeleon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21416,7 +21495,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 4.1,
+      'id': 4.01,
       'name': 'Charmander (Clone)',
       'catchRate': 45,
       'type': [1],
@@ -21427,7 +21506,7 @@ module.exports = {
         {
           'basePokemon': 'Charmander (Clone)',
           'evolvedPokemon': 'Charmeleon (Clone)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21490,7 +21569,7 @@ module.exports = {
         {
           'basePokemon': 'Charmeleon',
           'evolvedPokemon': 'Charizard',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21542,7 +21621,7 @@ module.exports = {
           {
             'basePokemon': 'Charmander',
             'evolvedPokemon': 'Charmeleon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21579,7 +21658,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 5.1,
+      'id': 5.01,
       'name': 'Charmeleon (Clone)',
       'catchRate': 45,
       'type': [1],
@@ -21590,7 +21669,7 @@ module.exports = {
         {
           'basePokemon': 'Charmeleon (Clone)',
           'evolvedPokemon': 'Charizard (Clone)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21642,7 +21721,7 @@ module.exports = {
           {
             'basePokemon': 'Charmander (Clone)',
             'evolvedPokemon': 'Charmeleon (Clone)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21709,7 +21788,7 @@ module.exports = {
           {
             'basePokemon': 'Charmeleon',
             'evolvedPokemon': 'Charizard',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21746,7 +21825,97 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 6.1,
+      'id': 6.01,
+      'name': 'Mega Charizard X',
+      'type': [
+        1,
+        14,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 285,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 78,
+        'attack': 130,
+        'specialAttack': 130,
+        'defense': 111,
+        'specialDefense': 85,
+        'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 204,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 800,
+    },
+    {
+      'id': 6.02,
+      'name': 'Mega Charizard Y',
+      'type': [
+        1,
+        9,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 285,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 78,
+        'attack': 104,
+        'specialAttack': 154,
+        'defense': 78,
+        'specialDefense': 115,
+        'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 198,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 800,
+    },
+    {
+      'id': 6.03,
+      'name': 'Gigantamax Charizard',
+      'nativeRegion': -1,
+      'catchRate': 45,
+      'type': [
+        1,
+        9,
+      ],
+      'levelType': 3,
+      'exp': 240,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 156,
+        'attack': 84,
+        'specialAttack': 109,
+        'defense': 78,
+        'specialDefense': 85,
+        'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 202,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 6.04,
       'name': 'Charizard (Clone)',
       'catchRate': 45,
       'type': [
@@ -21776,7 +21945,7 @@ module.exports = {
           {
             'basePokemon': 'Charmeleon (Clone)',
             'evolvedPokemon': 'Charizard (Clone)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -21813,36 +21982,6 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 6.2,
-      'name': 'Gigantamax Charizard',
-      'nativeRegion': -1,
-      'catchRate': 45,
-      'type': [
-        1,
-        9,
-      ],
-      'levelType': 3,
-      'exp': 240,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 156,
-        'attack': 84,
-        'specialAttack': 109,
-        'defense': 78,
-        'specialDefense': 85,
-        'speed': 100,
-      },
-      'gender': {
-        'femaleRatio': 0.125,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 202,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 800,
-    },
-    {
       'id': 7,
       'name': 'Squirtle',
       'catchRate': 45,
@@ -21854,7 +21993,7 @@ module.exports = {
         {
           'basePokemon': 'Squirtle',
           'evolvedPokemon': 'Wartortle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21909,7 +22048,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 7.1,
+      'id': 7.01,
       'name': 'Squirtle (Clone)',
       'catchRate': 45,
       'type': [2],
@@ -21920,7 +22059,7 @@ module.exports = {
         {
           'basePokemon': 'Squirtle (Clone)',
           'evolvedPokemon': 'Wartortle (Clone)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -21983,7 +22122,7 @@ module.exports = {
         {
           'basePokemon': 'Wartortle',
           'evolvedPokemon': 'Blastoise',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -22035,7 +22174,7 @@ module.exports = {
           {
             'basePokemon': 'Squirtle',
             'evolvedPokemon': 'Wartortle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -22072,7 +22211,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 8.1,
+      'id': 8.01,
       'name': 'Wartortle (Clone)',
       'catchRate': 45,
       'type': [2],
@@ -22083,7 +22222,7 @@ module.exports = {
         {
           'basePokemon': 'Wartortle (Clone)',
           'evolvedPokemon': 'Blastoise (Clone)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -22135,7 +22274,7 @@ module.exports = {
           {
             'basePokemon': 'Squirtle (Clone)',
             'evolvedPokemon': 'Wartortle (Clone)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -22199,7 +22338,7 @@ module.exports = {
           {
             'basePokemon': 'Wartortle',
             'evolvedPokemon': 'Blastoise',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -22236,7 +22375,61 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 9.1,
+      'id': 9.01,
+      'name': 'Mega Blastoise',
+      'type': [2],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 284,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 79,
+        'attack': 103,
+        'specialAttack': 135,
+        'defense': 120,
+        'specialDefense': 115,
+        'speed': 78,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 202,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 800,
+    },
+    {
+      'id': 9.02,
+      'name': 'Gigantamax Blastoise',
+      'nativeRegion': -1,
+      'catchRate': 45,
+      'type': [2],
+      'levelType': 3,
+      'exp': 239,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 158,
+        'attack': 83,
+        'specialAttack': 85,
+        'defense': 100,
+        'specialDefense': 105,
+        'speed': 78,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 197,
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 9.03,
       'name': 'Blastoise (Clone)',
       'catchRate': 45,
       'type': [2],
@@ -22263,7 +22456,7 @@ module.exports = {
           {
             'basePokemon': 'Wartortle (Clone)',
             'evolvedPokemon': 'Blastoise (Clone)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -22300,33 +22493,6 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 9.2,
-      'name': 'Gigantamax Blastoise',
-      'nativeRegion': -1,
-      'catchRate': 45,
-      'type': [2],
-      'levelType': 3,
-      'exp': 239,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 158,
-        'attack': 83,
-        'specialAttack': 85,
-        'defense': 100,
-        'specialDefense': 105,
-        'speed': 78,
-      },
-      'gender': {
-        'femaleRatio': 0.125,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 197,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 800,
-    },
-    {
       'id': 10,
       'name': 'Caterpie',
       'catchRate': 255,
@@ -22338,7 +22504,7 @@ module.exports = {
         {
           'basePokemon': 'Caterpie',
           'evolvedPokemon': 'Metapod',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -22483,7 +22649,7 @@ module.exports = {
         {
           'basePokemon': 'Metapod',
           'evolvedPokemon': 'Butterfree',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -22532,20 +22698,6 @@ module.exports = {
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
             },
-            {
-              'requiredValue': 10000,
-              'option': 2,
-              'pokemon': 'Metapod',
-              'hint': 'Your Metapod needs to be at least level 10000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Valencian Butterfree',
-              'hint': 'Valencian Butterfree cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
           ],
         },
         {
@@ -22566,20 +22718,6 @@ module.exports = {
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
             },
-            {
-              'requiredValue': 10000,
-              'option': 2,
-              'pokemon': 'Metapod',
-              'hint': 'Your Metapod needs to be at least level 10000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pink Butterfree',
-              'hint': 'Pink Butterfree cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
           ],
         },
         {
@@ -22599,20 +22737,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 10000,
-              'option': 2,
-              'pokemon': 'Metapod',
-              'hint': 'Your Metapod needs to be at least level 10000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': "Ash's Butterfree",
-              'hint': "Ash's Butterfree cannot be caught yet.",
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -22676,7 +22800,7 @@ module.exports = {
           {
             'basePokemon': 'Caterpie',
             'evolvedPokemon': 'Metapod',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -22776,7 +22900,7 @@ module.exports = {
           {
             'basePokemon': 'Metapod',
             'evolvedPokemon': 'Butterfree',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -22814,6 +22938,36 @@ module.exports = {
     },
     {
       'id': 12.01,
+      'name': 'Gigantamax Butterfree',
+      'nativeRegion': -1,
+      'catchRate': 45,
+      'type': [
+        11,
+        9,
+      ],
+      'levelType': 2,
+      'exp': 178,
+      'eggCycles': 15,
+      'base': {
+        'hitpoints': 120,
+        'attack': 45,
+        'specialAttack': 90,
+        'defense': 50,
+        'specialDefense': 80,
+        'speed': 70,
+      },
+      'attack': 107,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 17,
+      'eggSteps': 600,
+    },
+    {
+      'id': 12.02,
       'name': 'Valencian Butterfree',
       'catchRate': 45,
       'type': [
@@ -22846,48 +23000,12 @@ module.exports = {
             },
           ],
         },
-        '5': [
-          {
-            'basePokemon': 'Metapod',
-            'evolvedPokemon': 'Valencian Butterfree',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Metapod',
-                'hint': 'Metapod needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 10000,
-                'option': 2,
-                'pokemon': 'Metapod',
-                'hint': 'Your Metapod needs to be at least level 10000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Valencian Butterfree',
-                'hint': 'Valencian Butterfree cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
     },
     {
-      'id': 12.02,
+      'id': 12.03,
       'name': 'Pink Butterfree',
       'catchRate': 45,
       'type': [
@@ -22919,48 +23037,12 @@ module.exports = {
             'requirements': 'Requires the Elite Orange Champion badge.',
           },
         ],
-        '5': [
-          {
-            'basePokemon': 'Metapod',
-            'evolvedPokemon': 'Pink Butterfree',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Metapod',
-                'hint': 'Metapod needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 10000,
-                'option': 2,
-                'pokemon': 'Metapod',
-                'hint': 'Your Metapod needs to be at least level 10000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pink Butterfree',
-                'hint': 'Pink Butterfree cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
     },
     {
-      'id': 12.03,
+      'id': 12.04,
       'name': "Ash's Butterfree",
       'catchRate': 45,
       'type': [
@@ -22992,75 +23074,9 @@ module.exports = {
             'requirements': 'Requires the Elite Orange Champion badge.',
           },
         ],
-        '5': [
-          {
-            'basePokemon': 'Metapod',
-            'evolvedPokemon': "Ash's Butterfree",
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Metapod',
-                'hint': 'Metapod needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 10000,
-                'option': 2,
-                'pokemon': 'Metapod',
-                'hint': 'Your Metapod needs to be at least level 10000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': "Ash's Butterfree",
-                'hint': "Ash's Butterfree cannot be caught yet.",
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
-    },
-    {
-      'id': 12.04,
-      'name': 'Gigantamax Butterfree',
-      'nativeRegion': -1,
-      'catchRate': 45,
-      'type': [
-        11,
-        9,
-      ],
-      'levelType': 2,
-      'exp': 178,
-      'eggCycles': 15,
-      'base': {
-        'hitpoints': 120,
-        'attack': 45,
-        'specialAttack': 90,
-        'defense': 50,
-        'specialDefense': 80,
-        'speed': 70,
-      },
-      'attack': 107,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 600,
     },
     {
       'id': 13,
@@ -23077,7 +23093,7 @@ module.exports = {
         {
           'basePokemon': 'Weedle',
           'evolvedPokemon': 'Kakuna',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -23214,7 +23230,7 @@ module.exports = {
         {
           'basePokemon': 'Kakuna',
           'evolvedPokemon': 'Beedrill',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -23293,7 +23309,7 @@ module.exports = {
           {
             'basePokemon': 'Weedle',
             'evolvedPokemon': 'Kakuna',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -23372,7 +23388,7 @@ module.exports = {
           {
             'basePokemon': 'Kakuna',
             'evolvedPokemon': 'Beedrill',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -23409,6 +23425,36 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
+      'id': 15.01,
+      'name': 'Mega Beedrill',
+      'type': [
+        11,
+        7,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 223,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 65,
+        'attack': 150,
+        'specialAttack': 15,
+        'defense': 40,
+        'specialDefense': 80,
+        'speed': 145,
+      },
+      'attack': 63,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 600,
+    },
+    {
       'id': 16,
       'name': 'Pidgey',
       'catchRate': 255,
@@ -23423,7 +23469,7 @@ module.exports = {
         {
           'basePokemon': 'Pidgey',
           'evolvedPokemon': 'Pidgeotto',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -23573,7 +23619,7 @@ module.exports = {
         {
           'basePokemon': 'Pinkan Pidgey',
           'evolvedPokemon': 'Pinkan Pidgeotto',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -23657,7 +23703,7 @@ module.exports = {
         {
           'basePokemon': 'Pidgeotto',
           'evolvedPokemon': 'Pidgeot',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -23737,7 +23783,7 @@ module.exports = {
           {
             'basePokemon': 'Pidgey',
             'evolvedPokemon': 'Pidgeotto',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -23804,7 +23850,7 @@ module.exports = {
           {
             'basePokemon': 'Pinkan Pidgey',
             'evolvedPokemon': 'Pinkan Pidgeotto',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -23878,7 +23924,7 @@ module.exports = {
           {
             'basePokemon': 'Pidgeotto',
             'evolvedPokemon': 'Pidgeot',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -23915,6 +23961,36 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
+      'id': 18.01,
+      'name': 'Mega Pidgeot',
+      'type': [
+        0,
+        9,
+      ],
+      'eggCycles': 15,
+      'levelType': 2,
+      'exp': 261,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 83,
+        'attack': 80,
+        'specialAttack': 135,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 121,
+      },
+      'attack': 159,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 600,
+    },
+    {
       'id': 19,
       'name': 'Rattata',
       'catchRate': 255,
@@ -23926,7 +24002,7 @@ module.exports = {
         {
           'basePokemon': 'Rattata',
           'evolvedPokemon': 'Raticate',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -23974,20 +24050,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 20000,
-              'option': 2,
-              'pokemon': 'Rattata',
-              'hint': 'Your Rattata needs to be at least level 20000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Valencian Raticate',
-              'hint': 'Valencian Raticate cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -24104,7 +24166,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Rattata',
           'evolvedPokemon': 'Alolan Raticate',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -24301,7 +24363,7 @@ module.exports = {
           {
             'basePokemon': 'Rattata',
             'evolvedPokemon': 'Raticate',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -24396,7 +24458,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Rattata',
             'evolvedPokemon': 'Alolan Raticate',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -24508,42 +24570,6 @@ module.exports = {
             },
           ],
         },
-        '5': [
-          {
-            'basePokemon': 'Rattata',
-            'evolvedPokemon': 'Valencian Raticate',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Rattata',
-                'hint': 'Rattata needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 20000,
-                'option': 2,
-                'pokemon': 'Rattata',
-                'hint': 'Your Rattata needs to be at least level 20000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Valencian Raticate',
-                'hint': 'Valencian Raticate cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 37,
       'eggSteps': 920,
@@ -24563,7 +24589,7 @@ module.exports = {
         {
           'basePokemon': 'Spearow',
           'evolvedPokemon': 'Fearow',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -24708,7 +24734,7 @@ module.exports = {
       'eggSteps': 600,
     },
     {
-      'id': 21.1,
+      'id': 21.01,
       'name': 'Red Spearow',
       'catchRate': 255,
       'type': [
@@ -24840,7 +24866,7 @@ module.exports = {
           {
             'basePokemon': 'Spearow',
             'evolvedPokemon': 'Fearow',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -24888,7 +24914,7 @@ module.exports = {
         {
           'basePokemon': 'Ekans',
           'evolvedPokemon': 'Arbok',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -24936,20 +24962,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 22000,
-              'option': 2,
-              'pokemon': 'Ekans',
-              'hint': 'Your Ekans needs to be at least level 22000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Arbok',
-              'hint': 'Pinkan Arbok cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -25053,7 +25065,7 @@ module.exports = {
           {
             'basePokemon': 'Ekans',
             'evolvedPokemon': 'Arbok',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -25112,44 +25124,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Ekans',
-            'evolvedPokemon': 'Pinkan Arbok',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Ekans',
-                'hint': 'Ekans needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 22000,
-                'option': 2,
-                'pokemon': 'Ekans',
-                'hint': 'Your Ekans needs to be at least level 22000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Arbok',
-                'hint': 'Pinkan Arbok cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 29,
       'eggSteps': 1200,
     },
@@ -25165,7 +25140,7 @@ module.exports = {
         {
           'basePokemon': 'Pikachu',
           'evolvedPokemon': 'Raichu',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -25201,7 +25176,7 @@ module.exports = {
         {
           'basePokemon': 'Pikachu',
           'evolvedPokemon': 'Alolan Raichu',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -25298,7 +25273,7 @@ module.exports = {
           {
             'basePokemon': 'Pichu',
             'evolvedPokemon': 'Pikachu',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -25528,152 +25503,6 @@ module.exports = {
     },
     {
       'id': 25.07,
-      'name': 'Pikachu (Partner Cap)',
-      'catchRate': 190,
-      'type': [3],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 10,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'gender': {
-        'femaleRatio': 0,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 43,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 51,
-      'eggSteps': 400,
-    },
-    {
-      'id': 25.08,
-      'name': 'Flying Pikachu',
-      'catchRate': 50,
-      'type': [
-        3,
-        9,
-      ],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 10,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'attack': 43,
-      'nativeRegion': 0,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 400,
-    },
-    {
-      'id': 25.09,
-      'name': 'Surfing Pikachu',
-      'catchRate': 50,
-      'type': [
-        3,
-        2,
-      ],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 10,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'attack': 43,
-      'nativeRegion': 0,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {
-        '13': [1500],
-      },
-      'catchRatePercent': 18,
-      'eggSteps': 400,
-    },
-    {
-      'id': 25.1,
-      'name': 'Pikachu (Gengar)',
-      'catchRate': 50,
-      'type': [
-        3,
-        13,
-      ],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 10,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'gender': {
-        'femaleRatio': 0,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 43,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 400,
-    },
-    {
-      'id': 25.11,
-      'name': "Let's Go Pikachu",
-      'catchRate': 50,
-      'type': [3],
-      'levelType': 2,
-      'exp': 112,
-      'eggCycles': 10,
-      'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
-      },
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 43,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 400,
-    },
-    {
-      'id': 25.12,
       'name': 'Pikachu (World Cap)',
       'catchRate': 190,
       'type': [3],
@@ -25707,8 +25536,8 @@ module.exports = {
       'eggSteps': 400,
     },
     {
-      'id': 25.13,
-      'name': 'Pinkan Pikachu',
+      'id': 25.08,
+      'name': 'Pikachu (Partner Cap)',
       'catchRate': 190,
       'type': [3],
       'levelType': 2,
@@ -25734,7 +25563,7 @@ module.exports = {
       'eggSteps': 400,
     },
     {
-      'id': 25.14,
+      'id': 25.09,
       'name': 'Gigantamax Pikachu',
       'nativeRegion': -1,
       'catchRate': 190,
@@ -25756,6 +25585,152 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'locations': {},
+      'catchRatePercent': 51,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.1,
+      'name': 'Flying Pikachu',
+      'catchRate': 50,
+      'type': [
+        3,
+        9,
+      ],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.11,
+      'name': 'Surfing Pikachu',
+      'catchRate': 50,
+      'type': [
+        3,
+        2,
+      ],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '13': [1500],
+      },
+      'catchRatePercent': 18,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.12,
+      'name': 'Pikachu (Gengar)',
+      'catchRate': 50,
+      'type': [
+        3,
+        13,
+      ],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.13,
+      'name': "Let's Go Pikachu",
+      'catchRate': 50,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 18,
+      'eggSteps': 400,
+    },
+    {
+      'id': 25.14,
+      'name': 'Pinkan Pikachu',
+      'catchRate': 190,
+      'type': [3],
+      'levelType': 2,
+      'exp': 112,
+      'eggCycles': 10,
+      'base': {
+        'hitpoints': 35,
+        'attack': 55,
+        'specialAttack': 50,
+        'defense': 40,
+        'specialDefense': 50,
+        'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 43,
+      'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 400,
@@ -25786,20 +25761,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 1234,
-              'option': 2,
-              'pokemon': 'Detective Pikachu',
-              'hint': 'Your Detective Pikachu needs to be at least level 1234.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Detective Raichu',
-              'hint': 'Detective Raichu cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -25873,7 +25834,7 @@ module.exports = {
           {
             'basePokemon': 'Pikachu',
             'evolvedPokemon': 'Raichu',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -25942,7 +25903,7 @@ module.exports = {
           {
             'basePokemon': 'Pikachu',
             'evolvedPokemon': 'Alolan Raichu',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -25988,51 +25949,14 @@ module.exports = {
         'specialDefense': 80,
         'speed': 110,
       },
-      'attack': 108,
-      'nativeRegion': 0,
       'gender': {
+        'femaleRatio': 0,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Detective Pikachu',
-            'evolvedPokemon': 'Detective Raichu',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Detective Pikachu',
-                'hint': 'Detective Pikachu needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 1234,
-                'option': 2,
-                'pokemon': 'Detective Pikachu',
-                'hint': 'Your Detective Pikachu needs to be at least level 1234.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Detective Raichu',
-                'hint': 'Detective Raichu cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
+      'attack': 108,
+      'nativeRegion': 0,
+      'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 600,
     },
@@ -26048,7 +25972,7 @@ module.exports = {
         {
           'basePokemon': 'Sandshrew',
           'evolvedPokemon': 'Sandslash',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -26133,6 +26057,7 @@ module.exports = {
           'Relic Castle',
           'Warm-Up Tunnel',
         ],
+        '12': ['Shuca'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -26153,7 +26078,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Sandshrew',
           'evolvedPokemon': 'Alolan Sandslash',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -26265,7 +26190,7 @@ module.exports = {
           {
             'basePokemon': 'Sandshrew',
             'evolvedPokemon': 'Sandslash',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -26332,7 +26257,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Sandshrew',
             'evolvedPokemon': 'Alolan Sandslash',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -26367,7 +26292,7 @@ module.exports = {
         {
           'basePokemon': 'Nidoran(F)',
           'evolvedPokemon': 'Nidorina',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -26461,7 +26386,11 @@ module.exports = {
             },
           ],
         },
-        '10': '18.07%',
+        '10': {
+          '0': {
+            '0': 18.07,
+          },
+        },
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -26514,7 +26443,7 @@ module.exports = {
         {
           'basePokemon': 'Nidorina',
           'evolvedPokemon': 'Nidoqueen',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -26570,7 +26499,7 @@ module.exports = {
           {
             'basePokemon': 'Nidoran(F)',
             'evolvedPokemon': 'Nidorina',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -26602,7 +26531,11 @@ module.exports = {
             ],
           },
         ],
-        '10': '12.05%',
+        '10': {
+          '0': {
+            '0': 12.05,
+          },
+        },
       },
       'catchRatePercent': 36,
       'eggSteps': 1200,
@@ -26670,7 +26603,7 @@ module.exports = {
           {
             'basePokemon': 'Nidorina',
             'evolvedPokemon': 'Nidoqueen',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -26705,7 +26638,7 @@ module.exports = {
         {
           'basePokemon': 'Nidoran(M)',
           'evolvedPokemon': 'Nidorino',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -26799,7 +26732,11 @@ module.exports = {
             },
           ],
         },
-        '10': '30.12%',
+        '10': {
+          '0': {
+            '0': 30.12,
+          },
+        },
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -26852,7 +26789,7 @@ module.exports = {
         {
           'basePokemon': 'Nidorino',
           'evolvedPokemon': 'Nidoking',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -26887,20 +26824,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 33000,
-              'option': 2,
-              'pokemon': 'Nidorino',
-              'hint': 'Your Nidorino needs to be at least level 33000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Nidoking',
-              'hint': 'Pinkan Nidoking cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -26937,7 +26860,7 @@ module.exports = {
           {
             'basePokemon': 'Nidoran(M)',
             'evolvedPokemon': 'Nidorino',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -26969,7 +26892,11 @@ module.exports = {
             ],
           },
         ],
-        '10': '12.05%',
+        '10': {
+          '0': {
+            '0': 12.05,
+          },
+        },
       },
       'catchRatePercent': 36,
       'eggSteps': 1200,
@@ -27037,7 +26964,7 @@ module.exports = {
           {
             'basePokemon': 'Nidorino',
             'evolvedPokemon': 'Nidoking',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27092,42 +27019,6 @@ module.exports = {
             'dungeon': 'Pinkan Mountain',
           },
         ],
-        '5': [
-          {
-            'basePokemon': 'Nidorino',
-            'evolvedPokemon': 'Pinkan Nidoking',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Nidorino',
-                'hint': 'Nidorino needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 33000,
-                'option': 2,
-                'pokemon': 'Nidorino',
-                'hint': 'Your Nidorino needs to be at least level 33000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Nidoking',
-                'hint': 'Pinkan Nidoking cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -27144,7 +27035,7 @@ module.exports = {
         {
           'basePokemon': 'Clefairy',
           'evolvedPokemon': 'Clefable',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -27216,7 +27107,7 @@ module.exports = {
           {
             'basePokemon': 'Cleffa',
             'evolvedPokemon': 'Clefairy',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27236,6 +27127,7 @@ module.exports = {
           },
         ],
         '7': ['Clefable'],
+        '12': ['Roseli'],
       },
       'catchRatePercent': 42,
       'eggSteps': 400,
@@ -27297,7 +27189,7 @@ module.exports = {
           {
             'basePokemon': 'Clefairy',
             'evolvedPokemon': 'Clefable',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27332,7 +27224,7 @@ module.exports = {
         {
           'basePokemon': 'Vulpix',
           'evolvedPokemon': 'Ninetales',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -27453,7 +27345,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Vulpix',
           'evolvedPokemon': 'Alolan Ninetales',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -27528,7 +27420,7 @@ module.exports = {
           {
             'basePokemon': 'Vulpix',
             'evolvedPokemon': 'Ninetales',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27582,7 +27474,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Vulpix',
             'evolvedPokemon': 'Alolan Ninetales',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27620,7 +27512,7 @@ module.exports = {
         {
           'basePokemon': 'Jigglypuff',
           'evolvedPokemon': 'Wigglytuff',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -27700,7 +27592,7 @@ module.exports = {
           {
             'basePokemon': 'Igglybuff',
             'evolvedPokemon': 'Jigglypuff',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27787,7 +27679,7 @@ module.exports = {
           {
             'basePokemon': 'Jigglypuff',
             'evolvedPokemon': 'Wigglytuff',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -27825,7 +27717,7 @@ module.exports = {
         {
           'basePokemon': 'Zubat',
           'evolvedPokemon': 'Golbat',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -27983,7 +27875,7 @@ module.exports = {
         {
           'basePokemon': 'Golbat',
           'evolvedPokemon': 'Crobat',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -28076,7 +27968,7 @@ module.exports = {
           {
             'basePokemon': 'Zubat',
             'evolvedPokemon': 'Golbat',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -28127,7 +28019,7 @@ module.exports = {
         {
           'basePokemon': 'Oddish',
           'evolvedPokemon': 'Gloom',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -28348,7 +28240,7 @@ module.exports = {
         {
           'basePokemon': 'Gloom',
           'evolvedPokemon': 'Vileplume',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -28384,20 +28276,6 @@ module.exports = {
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
             },
-            {
-              'requiredValue': 44000,
-              'option': 2,
-              'pokemon': 'Gloom',
-              'hint': 'Your Gloom needs to be at least level 44000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Valencian Vileplume',
-              'hint': 'Valencian Vileplume cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
           ],
         },
         {
@@ -28418,26 +28296,12 @@ module.exports = {
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
             },
-            {
-              'requiredValue': 44000,
-              'option': 2,
-              'pokemon': 'Gloom',
-              'hint': 'Your Gloom needs to be at least level 44000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Vileplume',
-              'hint': 'Pinkan Vileplume cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
           ],
         },
         {
           'basePokemon': 'Gloom',
           'evolvedPokemon': 'Bellossom',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -28564,7 +28428,7 @@ module.exports = {
           {
             'basePokemon': 'Oddish',
             'evolvedPokemon': 'Gloom',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -28687,7 +28551,7 @@ module.exports = {
           {
             'basePokemon': 'Gloom',
             'evolvedPokemon': 'Vileplume',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -28744,42 +28608,6 @@ module.exports = {
             },
           ],
         },
-        '5': [
-          {
-            'basePokemon': 'Gloom',
-            'evolvedPokemon': 'Valencian Vileplume',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Gloom',
-                'hint': 'Gloom needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 44000,
-                'option': 2,
-                'pokemon': 'Gloom',
-                'hint': 'Your Gloom needs to be at least level 44000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Valencian Vileplume',
-                'hint': 'Valencian Vileplume cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -28818,42 +28646,6 @@ module.exports = {
             },
           ],
         },
-        '5': [
-          {
-            'basePokemon': 'Gloom',
-            'evolvedPokemon': 'Pinkan Vileplume',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Gloom',
-                'hint': 'Gloom needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 44000,
-                'option': 2,
-                'pokemon': 'Gloom',
-                'hint': 'Your Gloom needs to be at least level 44000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Vileplume',
-                'hint': 'Pinkan Vileplume cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -28873,7 +28665,7 @@ module.exports = {
         {
           'basePokemon': 'Paras',
           'evolvedPokemon': 'Parasect',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -28927,7 +28719,11 @@ module.exports = {
           'Brooklet Hill',
           'Lush Jungle',
         ],
-        '10': '6.02%',
+        '10': {
+          '0': {
+            '0': 6.02,
+          },
+        },
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -29052,7 +28848,7 @@ module.exports = {
           {
             'basePokemon': 'Paras',
             'evolvedPokemon': 'Parasect',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -29084,7 +28880,11 @@ module.exports = {
             ],
           },
         ],
-        '10': '18.07%',
+        '10': {
+          '0': {
+            '0': 18.07,
+          },
+        },
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
@@ -29104,7 +28904,7 @@ module.exports = {
         {
           'basePokemon': 'Venonat',
           'evolvedPokemon': 'Venomoth',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -29255,7 +29055,7 @@ module.exports = {
           {
             'basePokemon': 'Venonat',
             'evolvedPokemon': 'Venomoth',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -29303,7 +29103,7 @@ module.exports = {
         {
           'basePokemon': 'Diglett',
           'evolvedPokemon': 'Dugtrio',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -29399,7 +29199,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Diglett',
           'evolvedPokemon': 'Alolan Dugtrio',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -29554,7 +29354,7 @@ module.exports = {
           {
             'basePokemon': 'Diglett',
             'evolvedPokemon': 'Dugtrio',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -29635,7 +29435,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Diglett',
             'evolvedPokemon': 'Alolan Dugtrio',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -29683,7 +29483,7 @@ module.exports = {
         {
           'basePokemon': 'Meowth',
           'evolvedPokemon': 'Persian',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -29788,6 +29588,33 @@ module.exports = {
     },
     {
       'id': 52.01,
+      'name': 'Gigantamax Meowth',
+      'nativeRegion': -1,
+      'catchRate': 255,
+      'type': [0],
+      'levelType': 2,
+      'exp': 58,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 80,
+        'attack': 45,
+        'specialAttack': 40,
+        'defense': 35,
+        'specialDefense': 40,
+        'speed': 90,
+      },
+      'attack': 51,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 63,
+      'eggSteps': 800,
+    },
+    {
+      'id': 52.02,
       'name': 'Alolan Meowth',
       'nativeRegion': 6,
       'catchRate': 255,
@@ -29799,7 +29626,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Meowth',
           'evolvedPokemon': 'Alolan Persian',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -29849,7 +29676,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 52.2,
+      'id': 52.03,
       'name': 'Galarian Meowth',
       'nativeRegion': 7,
       'catchRate': 255,
@@ -29861,7 +29688,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Meowth',
           'evolvedPokemon': 'Perrserker',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -29916,33 +29743,6 @@ module.exports = {
           ],
         },
       },
-      'catchRatePercent': 63,
-      'eggSteps': 800,
-    },
-    {
-      'id': 52.3,
-      'name': 'Gigantamax Meowth',
-      'nativeRegion': -1,
-      'catchRate': 255,
-      'type': [0],
-      'levelType': 2,
-      'exp': 58,
-      'eggCycles': 20,
-      'base': {
-        'hitpoints': 80,
-        'attack': 45,
-        'specialAttack': 40,
-        'defense': 35,
-        'specialDefense': 40,
-        'speed': 90,
-      },
-      'attack': 51,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {},
       'catchRatePercent': 63,
       'eggSteps': 800,
     },
@@ -30005,7 +29805,7 @@ module.exports = {
           {
             'basePokemon': 'Meowth',
             'evolvedPokemon': 'Persian',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -30069,7 +29869,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Meowth',
             'evolvedPokemon': 'Alolan Persian',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -30104,7 +29904,7 @@ module.exports = {
         {
           'basePokemon': 'Psyduck',
           'evolvedPokemon': 'Golduck',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -30409,7 +30209,7 @@ module.exports = {
           {
             'basePokemon': 'Psyduck',
             'evolvedPokemon': 'Golduck',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -30457,7 +30257,7 @@ module.exports = {
         {
           'basePokemon': 'Mankey',
           'evolvedPokemon': 'Primeape',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -30533,6 +30333,7 @@ module.exports = {
         },
         '2': ['Rock Tunnel'],
         '6': ['Fighting'],
+        '12': ['Chople'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -30549,7 +30350,7 @@ module.exports = {
         {
           'basePokemon': 'Pinkan Mankey',
           'evolvedPokemon': 'Pinkan Primeape',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -30648,7 +30449,7 @@ module.exports = {
           {
             'basePokemon': 'Mankey',
             'evolvedPokemon': 'Primeape',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -30717,7 +30518,7 @@ module.exports = {
           {
             'basePokemon': 'Pinkan Mankey',
             'evolvedPokemon': 'Pinkan Primeape',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -30765,7 +30566,7 @@ module.exports = {
         {
           'basePokemon': 'Growlithe',
           'evolvedPokemon': 'Arcanine',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -30909,7 +30710,7 @@ module.exports = {
           {
             'basePokemon': 'Growlithe',
             'evolvedPokemon': 'Arcanine',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -30944,7 +30745,7 @@ module.exports = {
         {
           'basePokemon': 'Poliwag',
           'evolvedPokemon': 'Poliwhirl',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -30993,20 +30794,6 @@ module.exports = {
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
             },
-            {
-              'requiredValue': 25000,
-              'option': 2,
-              'pokemon': 'Poliwag',
-              'hint': 'Your Poliwag needs to be at least level 25000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Poliwhirl',
-              'hint': 'Pinkan Poliwhirl cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
           ],
         },
       ],
@@ -31053,9 +30840,6 @@ module.exports = {
           '1': [
             {
               'route': 30,
-            },
-            {
-              'route': 31,
             },
             {
               'route': 31,
@@ -31129,7 +30913,7 @@ module.exports = {
         {
           'basePokemon': 'Poliwhirl',
           'evolvedPokemon': 'Poliwrath',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -31150,7 +30934,7 @@ module.exports = {
         {
           'basePokemon': 'Poliwhirl',
           'evolvedPokemon': 'Politoed',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -31277,7 +31061,7 @@ module.exports = {
           {
             'basePokemon': 'Poliwag',
             'evolvedPokemon': 'Poliwhirl',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -31336,44 +31120,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Poliwag',
-            'evolvedPokemon': 'Pinkan Poliwhirl',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Poliwag',
-                'hint': 'Poliwag needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 25000,
-                'option': 2,
-                'pokemon': 'Poliwag',
-                'hint': 'Your Poliwag needs to be at least level 25000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Poliwhirl',
-                'hint': 'Pinkan Poliwhirl cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 36,
       'eggSteps': 1200,
     },
@@ -31417,7 +31164,7 @@ module.exports = {
           {
             'basePokemon': 'Poliwhirl',
             'evolvedPokemon': 'Poliwrath',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -31452,7 +31199,7 @@ module.exports = {
         {
           'basePokemon': 'Abra',
           'evolvedPokemon': 'Kadabra',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -31567,7 +31314,7 @@ module.exports = {
         {
           'basePokemon': 'Kadabra',
           'evolvedPokemon': 'Alakazam',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -31636,7 +31383,7 @@ module.exports = {
           {
             'basePokemon': 'Abra',
             'evolvedPokemon': 'Kadabra',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -31680,6 +31427,36 @@ module.exports = {
       'levelType': 3,
       'exp': 225,
       'eggCycles': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Alakazam',
+          'evolvedPokemon': 'Mega Alakazam',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Alakazam',
+              'hint': 'Alakazam needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Alakazam',
+              'hint': "Can't mega evolve Alakazam yet.",
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 55,
         'attack': 50,
@@ -31720,7 +31497,7 @@ module.exports = {
           {
             'basePokemon': 'Kadabra',
             'evolvedPokemon': 'Alakazam',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -31744,6 +31521,64 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 65.01,
+      'name': 'Mega Alakazam',
+      'type': [10],
+      'eggCycles': 68,
+      'levelType': 3,
+      'exp': 270,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 55,
+        'attack': 50,
+        'specialAttack': 175,
+        'defense': 65,
+        'specialDefense': 105,
+        'speed': 150,
+      },
+      'attack': 122,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Alakazam',
+            'evolvedPokemon': 'Mega Alakazam',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Alakazam',
+                'hint': 'Alakazam needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Alakazam',
+                'hint': "Can't mega evolve Alakazam yet.",
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 5,
+      'eggSteps': 2720,
+    },
+    {
       'id': 66,
       'name': 'Machop',
       'catchRate': 180,
@@ -31755,7 +31590,7 @@ module.exports = {
         {
           'basePokemon': 'Machop',
           'evolvedPokemon': 'Machoke',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -31883,7 +31718,7 @@ module.exports = {
         {
           'basePokemon': 'Machoke',
           'evolvedPokemon': 'Machamp',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -31946,26 +31781,6 @@ module.exports = {
               'route': 8,
             },
             {
-              'route': 8,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Snow',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Blizzard',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Sunny',
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Sandstorm',
-            },
-            {
               'route': 10,
               'requirements': 'The weather needs to be Clear',
             },
@@ -32024,7 +31839,7 @@ module.exports = {
           {
             'basePokemon': 'Machop',
             'evolvedPokemon': 'Machoke',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -32120,7 +31935,7 @@ module.exports = {
           {
             'basePokemon': 'Machoke',
             'evolvedPokemon': 'Machamp',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -32144,7 +31959,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 68.1,
+      'id': 68.01,
       'name': 'Gigantamax Machamp',
       'nativeRegion': -1,
       'catchRate': 45,
@@ -32185,7 +32000,7 @@ module.exports = {
         {
           'basePokemon': 'Bellsprout',
           'evolvedPokemon': 'Weepinbell',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -32233,20 +32048,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 21000,
-              'option': 2,
-              'pokemon': 'Bellsprout',
-              'hint': 'Your Bellsprout needs to be at least level 21000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Valencian Weepinbell',
-              'hint': 'Valencian Weepinbell cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -32388,7 +32189,7 @@ module.exports = {
         {
           'basePokemon': 'Weepinbell',
           'evolvedPokemon': 'Victreebel',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -32477,7 +32278,7 @@ module.exports = {
           {
             'basePokemon': 'Bellsprout',
             'evolvedPokemon': 'Weepinbell',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -32547,42 +32348,6 @@ module.exports = {
             },
           ],
         },
-        '5': [
-          {
-            'basePokemon': 'Bellsprout',
-            'evolvedPokemon': 'Valencian Weepinbell',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Bellsprout',
-                'hint': 'Bellsprout needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 21000,
-                'option': 2,
-                'pokemon': 'Bellsprout',
-                'hint': 'Your Bellsprout needs to be at least level 21000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Valencian Weepinbell',
-                'hint': 'Valencian Weepinbell cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 36,
       'eggSteps': 1200,
@@ -32618,7 +32383,7 @@ module.exports = {
           {
             'basePokemon': 'Weepinbell',
             'evolvedPokemon': 'Victreebel',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -32656,7 +32421,7 @@ module.exports = {
         {
           'basePokemon': 'Tentacool',
           'evolvedPokemon': 'Tentacruel',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -33155,7 +32920,7 @@ module.exports = {
           {
             'basePokemon': 'Tentacool',
             'evolvedPokemon': 'Tentacruel',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -33206,7 +32971,7 @@ module.exports = {
         {
           'basePokemon': 'Geodude',
           'evolvedPokemon': 'Graveler',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -33350,7 +33115,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Geodude',
           'evolvedPokemon': 'Alolan Graveler',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -33457,7 +33222,7 @@ module.exports = {
         {
           'basePokemon': 'Graveler',
           'evolvedPokemon': 'Golem',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -33572,7 +33337,7 @@ module.exports = {
           {
             'basePokemon': 'Geodude',
             'evolvedPokemon': 'Graveler',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -33624,7 +33389,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Graveler',
           'evolvedPokemon': 'Alolan Golem',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -33672,7 +33437,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Geodude',
             'evolvedPokemon': 'Alolan Graveler',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -33743,7 +33508,7 @@ module.exports = {
           {
             'basePokemon': 'Graveler',
             'evolvedPokemon': 'Golem',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -33797,7 +33562,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Graveler',
             'evolvedPokemon': 'Alolan Golem',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -33832,7 +33597,7 @@ module.exports = {
         {
           'basePokemon': 'Ponyta',
           'evolvedPokemon': 'Rapidash',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -33919,7 +33684,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 77.1,
+      'id': 77.01,
       'name': 'Galarian Ponyta',
       'nativeRegion': 7,
       'catchRate': 190,
@@ -33931,7 +33696,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Ponyta',
           'evolvedPokemon': 'Galarian Rapidash',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34032,7 +33797,7 @@ module.exports = {
           {
             'basePokemon': 'Ponyta',
             'evolvedPokemon': 'Rapidash',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -34069,7 +33834,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 78.1,
+      'id': 78.01,
       'name': 'Galarian Rapidash',
       'nativeRegion': 7,
       'catchRate': 60,
@@ -34112,7 +33877,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Ponyta',
             'evolvedPokemon': 'Galarian Rapidash',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -34163,7 +33928,7 @@ module.exports = {
         {
           'basePokemon': 'Slowpoke',
           'evolvedPokemon': 'Slowbro',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34197,7 +33962,7 @@ module.exports = {
         {
           'basePokemon': 'Slowpoke',
           'evolvedPokemon': 'Slowking',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34331,7 +34096,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 79.1,
+      'id': 79.01,
       'name': 'Galarian Slowpoke',
       'nativeRegion': 7,
       'catchRate': 190,
@@ -34343,7 +34108,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Slowpoke',
           'evolvedPokemon': 'Galarian Slowbro',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34364,7 +34129,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Slowpoke',
           'evolvedPokemon': 'Galarian Slowking',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34459,7 +34224,7 @@ module.exports = {
           {
             'basePokemon': 'Slowpoke',
             'evolvedPokemon': 'Slowbro',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -34496,7 +34261,37 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 80.1,
+      'id': 80.01,
+      'name': 'Mega Slowbro',
+      'type': [
+        2,
+        10,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 207,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 95,
+        'attack': 75,
+        'specialAttack': 130,
+        'defense': 180,
+        'specialDefense': 80,
+        'speed': 30,
+      },
+      'attack': 181,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 800,
+    },
+    {
+      'id': 80.02,
       'name': 'Galarian Slowbro',
       'nativeRegion': 7,
       'catchRate': 75,
@@ -34526,7 +34321,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Slowpoke',
             'evolvedPokemon': 'Galarian Slowbro',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -34564,7 +34359,7 @@ module.exports = {
         {
           'basePokemon': 'Magnemite',
           'evolvedPokemon': 'Magneton',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34642,6 +34437,7 @@ module.exports = {
           "Trainers' School",
         ],
         '6': ['Electric'],
+        '12': ['Babiri'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -34661,7 +34457,7 @@ module.exports = {
         {
           'basePokemon': 'Magneton',
           'evolvedPokemon': 'Magnezone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34709,7 +34505,7 @@ module.exports = {
         {
           'basePokemon': 'Magneton',
           'evolvedPokemon': 'Magnezone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34757,7 +34553,7 @@ module.exports = {
         {
           'basePokemon': 'Magneton',
           'evolvedPokemon': 'Magnezone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34805,7 +34601,7 @@ module.exports = {
         {
           'basePokemon': 'Magneton',
           'evolvedPokemon': 'Magnezone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34853,7 +34649,7 @@ module.exports = {
         {
           'basePokemon': 'Magneton',
           'evolvedPokemon': 'Magnezone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34901,7 +34697,7 @@ module.exports = {
         {
           'basePokemon': 'Magneton',
           'evolvedPokemon': 'Magnezone',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -34979,7 +34775,7 @@ module.exports = {
           {
             'basePokemon': 'Magnemite',
             'evolvedPokemon': 'Magneton',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -35071,12 +34867,13 @@ module.exports = {
             },
           ],
         },
+        '12': ['Coba'],
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
     {
-      'id': 83.1,
+      'id': 83.01,
       'name': "Galarian Farfetch'd",
       'nativeRegion': 7,
       'catchRate': 45,
@@ -35088,7 +34885,7 @@ module.exports = {
         {
           'basePokemon': "Galarian Farfetch'd",
           'evolvedPokemon': "Sirfetch'd",
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -35178,7 +34975,7 @@ module.exports = {
         {
           'basePokemon': 'Doduo',
           'evolvedPokemon': 'Dodrio',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -35226,20 +35023,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 31000,
-              'option': 2,
-              'pokemon': 'Doduo',
-              'hint': 'Your Doduo needs to be at least level 31000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Dodrio',
-              'hint': 'Pinkan Dodrio cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -35338,7 +35121,7 @@ module.exports = {
           {
             'basePokemon': 'Doduo',
             'evolvedPokemon': 'Dodrio',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -35401,42 +35184,6 @@ module.exports = {
       'attack': 98,
       'nativeRegion': 0,
       'locations': {
-        '5': [
-          {
-            'basePokemon': 'Doduo',
-            'evolvedPokemon': 'Pinkan Dodrio',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Doduo',
-                'hint': 'Doduo needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 31000,
-                'option': 2,
-                'pokemon': 'Doduo',
-                'hint': 'Your Doduo needs to be at least level 31000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Dodrio',
-                'hint': 'Pinkan Dodrio cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
         '8': ['Tanoby Ruins'],
       },
       'catchRatePercent': 17,
@@ -35454,7 +35201,7 @@ module.exports = {
         {
           'basePokemon': 'Seel',
           'evolvedPokemon': 'Dewgong',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -35562,7 +35309,7 @@ module.exports = {
           {
             'basePokemon': 'Seel',
             'evolvedPokemon': 'Dewgong',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -35610,7 +35357,7 @@ module.exports = {
         {
           'basePokemon': 'Grimer',
           'evolvedPokemon': 'Muk',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -35663,6 +35410,7 @@ module.exports = {
           'Fiery Path',
           'Castelia Sewers',
         ],
+        '12': ['Kebia'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -35683,7 +35431,7 @@ module.exports = {
         {
           'basePokemon': 'Alolan Grimer',
           'evolvedPokemon': 'Alolan Muk',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -35774,7 +35522,7 @@ module.exports = {
           {
             'basePokemon': 'Grimer',
             'evolvedPokemon': 'Muk',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -35841,7 +35589,7 @@ module.exports = {
           {
             'basePokemon': 'Alolan Grimer',
             'evolvedPokemon': 'Alolan Muk',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -35889,7 +35637,7 @@ module.exports = {
         {
           'basePokemon': 'Shellder',
           'evolvedPokemon': 'Cloyster',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -36058,7 +35806,7 @@ module.exports = {
           {
             'basePokemon': 'Shellder',
             'evolvedPokemon': 'Cloyster',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -36096,7 +35844,7 @@ module.exports = {
         {
           'basePokemon': 'Gastly',
           'evolvedPokemon': 'Haunter',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -36208,6 +35956,7 @@ module.exports = {
           'Memorial Hill',
           'Thrifty Megamart',
         ],
+        '12': ['Kasib'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -36227,7 +35976,7 @@ module.exports = {
         {
           'basePokemon': 'Haunter',
           'evolvedPokemon': 'Gengar',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -36331,7 +36080,7 @@ module.exports = {
           {
             'basePokemon': 'Gastly',
             'evolvedPokemon': 'Haunter',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -36434,7 +36183,7 @@ module.exports = {
           {
             'basePokemon': 'Haunter',
             'evolvedPokemon': 'Gengar',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -36458,7 +36207,37 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 94.1,
+      'id': 94.01,
+      'name': 'Mega Gengar',
+      'type': [
+        13,
+        7,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 207,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 60,
+        'attack': 65,
+        'specialAttack': 170,
+        'defense': 80,
+        'specialDefense': 95,
+        'speed': 130,
+      },
+      'attack': 144,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 800,
+    },
+    {
+      'id': 94.02,
       'name': 'Gigantamax Gengar',
       'nativeRegion': -1,
       'catchRate': 45,
@@ -36502,7 +36281,7 @@ module.exports = {
         {
           'basePokemon': 'Onix',
           'evolvedPokemon': 'Steelix',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -36620,7 +36399,7 @@ module.exports = {
         {
           'basePokemon': 'Crystal Onix',
           'evolvedPokemon': 'Crystal Steelix',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -36680,7 +36459,7 @@ module.exports = {
         {
           'basePokemon': 'Drowzee',
           'evolvedPokemon': 'Hypno',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -36794,7 +36573,7 @@ module.exports = {
           {
             'basePokemon': 'Drowzee',
             'evolvedPokemon': 'Hypno',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -36842,7 +36621,7 @@ module.exports = {
         {
           'basePokemon': 'Krabby',
           'evolvedPokemon': 'Kingler',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -37196,7 +36975,7 @@ module.exports = {
           {
             'basePokemon': 'Krabby',
             'evolvedPokemon': 'Kingler',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -37233,7 +37012,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 99.1,
+      'id': 99.01,
       'name': 'Gigantamax Kingler',
       'nativeRegion': -1,
       'catchRate': 60,
@@ -37271,7 +37050,7 @@ module.exports = {
         {
           'basePokemon': 'Voltorb',
           'evolvedPokemon': 'Electrode',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -37395,7 +37174,7 @@ module.exports = {
           {
             'basePokemon': 'Voltorb',
             'evolvedPokemon': 'Electrode',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -37446,7 +37225,7 @@ module.exports = {
         {
           'basePokemon': 'Exeggcute',
           'evolvedPokemon': 'Exeggutor',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -37482,7 +37261,7 @@ module.exports = {
         {
           'basePokemon': 'Exeggcute',
           'evolvedPokemon': 'Alolan Exeggutor',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -37524,20 +37303,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 31000,
-              'option': 2,
-              'pokemon': 'Exeggcute',
-              'hint': 'Your Exeggcute needs to be at least level 31000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Exeggutor',
-              'hint': 'Pinkan Exeggutor cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -37630,7 +37395,11 @@ module.exports = {
           'Berry Forest',
           'Exeggutor Island Hill',
         ],
-        '10': '24.1%',
+        '10': {
+          '0': {
+            '0': 24.1,
+          },
+        },
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -37690,7 +37459,7 @@ module.exports = {
           {
             'basePokemon': 'Exeggcute',
             'evolvedPokemon': 'Exeggutor',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -37759,7 +37528,7 @@ module.exports = {
           {
             'basePokemon': 'Exeggcute',
             'evolvedPokemon': 'Alolan Exeggutor',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -37823,42 +37592,6 @@ module.exports = {
             },
           ],
         },
-        '5': [
-          {
-            'basePokemon': 'Exeggcute',
-            'evolvedPokemon': 'Pinkan Exeggutor',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Exeggcute',
-                'hint': 'Exeggcute needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 31000,
-                'option': 2,
-                'pokemon': 'Exeggcute',
-                'hint': 'Your Exeggcute needs to be at least level 31000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Exeggutor',
-                'hint': 'Pinkan Exeggutor cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -37875,7 +37608,7 @@ module.exports = {
         {
           'basePokemon': 'Cubone',
           'evolvedPokemon': 'Marowak',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -37924,7 +37657,7 @@ module.exports = {
         {
           'basePokemon': 'Cubone',
           'evolvedPokemon': 'Alolan Marowak',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -38010,7 +37743,11 @@ module.exports = {
           'Wela Volcano Park',
           'Warm-Up Tunnel',
         ],
-        '10': '12.05%',
+        '10': {
+          '0': {
+            '0': 12.05,
+          },
+        },
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -38074,7 +37811,7 @@ module.exports = {
           {
             'basePokemon': 'Cubone',
             'evolvedPokemon': 'Marowak',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -38121,7 +37858,11 @@ module.exports = {
             ],
           },
         ],
-        '10': '6.02%',
+        '10': {
+          '0': {
+            '0': 6.02,
+          },
+        },
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
@@ -38162,7 +37903,7 @@ module.exports = {
           {
             'basePokemon': 'Cubone',
             'evolvedPokemon': 'Alolan Marowak',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -38279,7 +38020,7 @@ module.exports = {
           {
             'basePokemon': 'Tyrogue',
             'evolvedPokemon': 'Hitmonlee',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -38345,7 +38086,7 @@ module.exports = {
           {
             'basePokemon': 'Tyrogue',
             'evolvedPokemon': 'Hitmonchan',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -38393,7 +38134,7 @@ module.exports = {
         {
           'basePokemon': 'Lickitung',
           'evolvedPokemon': 'Lickilicky',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -38493,7 +38234,7 @@ module.exports = {
         {
           'basePokemon': 'Koffing',
           'evolvedPokemon': 'Weezing',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -38542,7 +38283,7 @@ module.exports = {
         {
           'basePokemon': 'Koffing',
           'evolvedPokemon': 'Galarian Weezing',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -38597,20 +38338,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kanto region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 35000,
-              'option': 2,
-              'pokemon': 'Koffing',
-              'hint': 'Your Koffing needs to be at least level 35000.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Pinkan Weezing',
-              'hint': 'Pinkan Weezing cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -38700,7 +38427,7 @@ module.exports = {
           {
             'basePokemon': 'Koffing',
             'evolvedPokemon': 'Weezing',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -38753,70 +38480,6 @@ module.exports = {
     },
     {
       'id': 110.01,
-      'name': 'Pinkan Weezing',
-      'catchRate': 60,
-      'type': [7],
-      'levelType': 2,
-      'exp': 172,
-      'eggCycles': 30,
-      'base': {
-        'hitpoints': 65,
-        'attack': 90,
-        'specialAttack': 85,
-        'defense': 120,
-        'specialDefense': 70,
-        'speed': 60,
-      },
-      'attack': 121,
-      'nativeRegion': 0,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Koffing',
-            'evolvedPokemon': 'Pinkan Weezing',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Koffing',
-                'hint': 'Koffing needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 35000,
-                'option': 2,
-                'pokemon': 'Koffing',
-                'hint': 'Your Koffing needs to be at least level 35000.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Pinkan Weezing',
-                'hint': 'Pinkan Weezing cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
-      'catchRatePercent': 21,
-      'eggSteps': 1200,
-    },
-    {
-      'id': 110.1,
       'name': 'Galarian Weezing',
       'nativeRegion': 7,
       'catchRate': 60,
@@ -38859,7 +38522,7 @@ module.exports = {
           {
             'basePokemon': 'Koffing',
             'evolvedPokemon': 'Galarian Weezing',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -38903,6 +38566,33 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 110.02,
+      'name': 'Pinkan Weezing',
+      'catchRate': 60,
+      'type': [7],
+      'levelType': 2,
+      'exp': 172,
+      'eggCycles': 30,
+      'base': {
+        'hitpoints': 65,
+        'attack': 90,
+        'specialAttack': 85,
+        'defense': 120,
+        'specialDefense': 70,
+        'speed': 60,
+      },
+      'attack': 121,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 21,
+      'eggSteps': 1200,
+    },
+    {
       'id': 111,
       'name': 'Rhyhorn',
       'catchRate': 120,
@@ -38917,7 +38607,7 @@ module.exports = {
         {
           'basePokemon': 'Rhyhorn',
           'evolvedPokemon': 'Rhydon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -39009,7 +38699,12 @@ module.exports = {
           'Stark Mountain',
           'Glittering Cave',
         ],
-        '10': '12.05%',
+        '10': {
+          '0': {
+            '0': 12.05,
+          },
+        },
+        '12': ['Charti'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -39029,7 +38724,7 @@ module.exports = {
         {
           'basePokemon': 'Pinkan Rhyhorn',
           'evolvedPokemon': 'Pinkan Rhydon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -39097,7 +38792,7 @@ module.exports = {
         {
           'basePokemon': 'Rhydon',
           'evolvedPokemon': 'Rhyperior',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -39206,7 +38901,7 @@ module.exports = {
           {
             'basePokemon': 'Rhyhorn',
             'evolvedPokemon': 'Rhydon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -39278,7 +38973,7 @@ module.exports = {
           {
             'basePokemon': 'Pinkan Rhyhorn',
             'evolvedPokemon': 'Pinkan Rhydon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -39326,7 +39021,7 @@ module.exports = {
         {
           'basePokemon': 'Chansey',
           'evolvedPokemon': 'Blissey',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -39641,7 +39336,7 @@ module.exports = {
           {
             'basePokemon': 'Happiny',
             'evolvedPokemon': 'Chansey',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -39661,7 +39356,11 @@ module.exports = {
           },
         ],
         '7': ['Blissey'],
-        '10': '4.82%',
+        '10': {
+          '0': {
+            '0': 4.82,
+          },
+        },
       },
       'catchRatePercent': 12,
       'eggSteps': 1600,
@@ -39678,7 +39377,7 @@ module.exports = {
         {
           'basePokemon': 'Charity Chansey',
           'evolvedPokemon': 'Blessing Blissey',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -39709,19 +39408,19 @@ module.exports = {
         'type': 2,
         'id': 'Oval Stone',
       },
-      'attack': 27,
-      'nativeRegion': 0,
       'gender': {
+        'femaleRatio': 1,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 27,
+      'nativeRegion': 0,
       'locations': {
         '5': [
           {
             'basePokemon': 'Handout Happiny',
             'evolvedPokemon': 'Charity Chansey',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -39758,7 +39457,7 @@ module.exports = {
         {
           'basePokemon': 'Tangela',
           'evolvedPokemon': 'Tangrowth',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -39840,7 +39539,11 @@ module.exports = {
           'Giant Chasm',
         ],
         '6': ['Grass'],
-        '10': '4.82%',
+        '10': {
+          '0': {
+            '0': 4.82,
+          },
+        },
         '12': ['Always'],
       },
       'catchRatePercent': 17,
@@ -39854,6 +39557,36 @@ module.exports = {
       'levelType': 2,
       'exp': 172,
       'eggCycles': 20,
+      'evolutions': [
+        {
+          'basePokemon': 'Kangaskhan',
+          'evolvedPokemon': 'Mega Kangaskhan',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Kangaskhan',
+              'hint': 'Kangaskhan needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Kangaskhan',
+              'hint': "Can't mega evolve Kangaskhan yet.",
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 105,
         'attack': 95,
@@ -39891,10 +39624,72 @@ module.exports = {
             'dungeon': 'Warm-Up Tunnel',
           },
         ],
-        '10': '18.07%',
+        '10': {
+          '0': {
+            '0': 18.07,
+          },
+        },
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
+    },
+    {
+      'id': 115.01,
+      'name': 'Mega Kangaskhan',
+      'type': [0],
+      'eggCycles': 30,
+      'levelType': 3,
+      'exp': 207,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 105,
+        'attack': 125,
+        'specialAttack': 60,
+        'defense': 100,
+        'specialDefense': 100,
+        'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 166,
+      'nativeRegion': 0,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Kangaskhan',
+            'evolvedPokemon': 'Mega Kangaskhan',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Kangaskhan',
+                'hint': 'Kangaskhan needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Kangaskhan',
+                'hint': "Can't mega evolve Kangaskhan yet.",
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 5,
+      'eggSteps': 1200,
     },
     {
       'id': 116,
@@ -39908,7 +39703,7 @@ module.exports = {
         {
           'basePokemon': 'Horsea',
           'evolvedPokemon': 'Seadra',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -40063,7 +39858,7 @@ module.exports = {
         {
           'basePokemon': 'Seadra',
           'evolvedPokemon': 'Kingdra',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -40163,7 +39958,7 @@ module.exports = {
           {
             'basePokemon': 'Horsea',
             'evolvedPokemon': 'Seadra',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -40211,7 +40006,7 @@ module.exports = {
         {
           'basePokemon': 'Goldeen',
           'evolvedPokemon': 'Seaking',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -40551,7 +40346,7 @@ module.exports = {
           {
             'basePokemon': 'Goldeen',
             'evolvedPokemon': 'Seaking',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -40599,7 +40394,7 @@ module.exports = {
         {
           'basePokemon': 'Staryu',
           'evolvedPokemon': 'Starmie',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -40750,7 +40545,7 @@ module.exports = {
           {
             'basePokemon': 'Staryu',
             'evolvedPokemon': 'Starmie',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -40812,7 +40607,7 @@ module.exports = {
           {
             'basePokemon': 'Mime Jr.',
             'evolvedPokemon': 'Mr. Mime',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -40860,12 +40655,13 @@ module.exports = {
           },
         ],
         '8': ['Celadon City'],
+        '12': ['Payapa'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
     },
     {
-      'id': 122.1,
+      'id': 122.01,
       'name': 'Galarian Mr. Mime',
       'nativeRegion': 7,
       'catchRate': 45,
@@ -40880,7 +40676,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Mr. Mime',
           'evolvedPokemon': 'Mr. Rime',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -40945,7 +40741,7 @@ module.exports = {
           {
             'basePokemon': 'Mime Jr.',
             'evolvedPokemon': 'Galarian Mr. Mime',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -41004,7 +40800,7 @@ module.exports = {
         {
           'basePokemon': 'Scyther',
           'evolvedPokemon': 'Scizor',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -41060,7 +40856,11 @@ module.exports = {
           ],
         },
         '2': ['P2 Laboratory'],
-        '10': '4.82%',
+        '10': {
+          '0': {
+            '0': 4.82,
+          },
+        },
         '12': ['Always'],
       },
       'catchRatePercent': 17,
@@ -41146,7 +40946,7 @@ module.exports = {
           {
             'basePokemon': 'Smoochum',
             'evolvedPokemon': 'Jynx',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -41179,6 +40979,7 @@ module.exports = {
           },
         ],
         '8': ['Celadon City'],
+        '12': ['Yache'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -41195,7 +40996,7 @@ module.exports = {
         {
           'basePokemon': 'Electabuzz',
           'evolvedPokemon': 'Electivire',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -41281,7 +41082,7 @@ module.exports = {
           {
             'basePokemon': 'Elekid',
             'evolvedPokemon': 'Electabuzz',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -41358,7 +41159,7 @@ module.exports = {
         {
           'basePokemon': 'Magmar',
           'evolvedPokemon': 'Magmortar',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -41449,7 +41250,7 @@ module.exports = {
           {
             'basePokemon': 'Magby',
             'evolvedPokemon': 'Magmar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -41545,9 +41346,44 @@ module.exports = {
             'dungeon': 'Exeggutor Island Hill',
           },
         ],
-        '10': '4.82%',
+        '10': {
+          '0': {
+            '0': 4.82,
+          },
+        },
+        '12': ['Tanga'],
       },
       'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 127.01,
+      'name': 'Mega Pinsir',
+      'type': [
+        11,
+        9,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 210,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 65,
+        'attack': 155,
+        'specialAttack': 65,
+        'defense': 120,
+        'specialDefense': 90,
+        'speed': 105,
+      },
+      'attack': 152,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 5,
       'eggSteps': 1000,
     },
     {
@@ -41607,7 +41443,11 @@ module.exports = {
             'dungeon': 'Paniola Ranch',
           },
         ],
-        '10': '12.05%',
+        '10': {
+          '0': {
+            '0': 12.05,
+          },
+        },
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -41624,7 +41464,7 @@ module.exports = {
         {
           'basePokemon': 'Magikarp',
           'evolvedPokemon': 'Gyarados',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -42203,7 +42043,21 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 33,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 38,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42230,7 +42084,21 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 35,
+            },
+            {
+              'route': 36,
+            },
+            {
+              'route': 38,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42284,13 +42152,21 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
     {
       'id': 129.06,
-      'name': 'Magikarp Orange Two Tone',
+      'name': 'Magikarp Orange Two-Tone',
       'catchRate': 255,
       'type': [2],
       'levelType': 4,
@@ -42311,7 +42187,21 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 34,
+            },
+            {
+              'route': 35,
+            },
+            {
+              'route': 38,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42338,7 +42228,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 33,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42365,13 +42263,27 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 34,
+            },
+            {
+              'route': 36,
+            },
+            {
+              'route': 37,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
     {
       'id': 129.09,
-      'name': 'Magikarp Pink Two Tone',
+      'name': 'Magikarp Pink Two-Tone',
       'catchRate': 255,
       'type': [2],
       'levelType': 4,
@@ -42392,7 +42304,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 36,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42419,7 +42339,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 39,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42473,7 +42401,18 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 37,
+            },
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42527,7 +42466,18 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 37,
+            },
+            {
+              'route': 39,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42581,7 +42531,14 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 6,
+            'requirements': 'Requires the Luxury League badge.',
+          },
+        ],
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42635,7 +42592,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 38,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42662,7 +42627,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 38,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42689,7 +42662,14 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 6,
+            'requirements': 'Requires the Heal League badge.',
+          },
+        ],
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42743,7 +42723,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 38,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42824,7 +42812,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 40,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42851,7 +42847,15 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 39,
+            },
+          ],
+        },
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -42884,6 +42888,35 @@ module.exports = {
     },
     {
       'id': 129.28,
+      'name': 'Magikarp Blue Raindrops',
+      'catchRate': 255,
+      'type': [2],
+      'levelType': 4,
+      'exp': 40,
+      'eggCycles': 5,
+      'base': {
+        'hitpoints': 20,
+        'attack': 10,
+        'specialAttack': 15,
+        'defense': 55,
+        'specialDefense': 20,
+        'speed': 80,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
+      'attack': 10,
+      'nativeRegion': 0,
+      'locations': {
+        '8': ["Magikarp's Eye"],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 200,
+    },
+    {
+      'id': 129.29,
       'name': 'Magikarp Saucy Blue',
       'catchRate': 255,
       'type': [2],
@@ -42910,61 +42943,7 @@ module.exports = {
       'eggSteps': 200,
     },
     {
-      'id': 129.29,
-      'name': 'Magikarp Blue Raindrops',
-      'catchRate': 255,
-      'type': [2],
-      'levelType': 4,
-      'exp': 40,
-      'eggCycles': 5,
-      'base': {
-        'hitpoints': 20,
-        'attack': 10,
-        'specialAttack': 15,
-        'defense': 55,
-        'specialDefense': 20,
-        'speed': 80,
-      },
-      'gender': {
-        'visualDifference': true,
-        'type': 1,
-        'femaleRatio': 0.5,
-      },
-      'attack': 10,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 63,
-      'eggSteps': 200,
-    },
-    {
       'id': 129.3,
-      'name': 'Magikarp Saucy Violet',
-      'catchRate': 255,
-      'type': [2],
-      'levelType': 4,
-      'exp': 40,
-      'eggCycles': 5,
-      'base': {
-        'hitpoints': 20,
-        'attack': 10,
-        'specialAttack': 15,
-        'defense': 55,
-        'specialDefense': 20,
-        'speed': 80,
-      },
-      'gender': {
-        'visualDifference': true,
-        'type': 1,
-        'femaleRatio': 0.5,
-      },
-      'attack': 10,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 63,
-      'eggSteps': 200,
-    },
-    {
-      'id': 129.31,
       'name': 'Magikarp Violet Raindrops',
       'catchRate': 255,
       'type': [2],
@@ -42986,7 +42965,43 @@ module.exports = {
       },
       'attack': 10,
       'nativeRegion': 0,
-      'locations': {},
+      'locations': {
+        '1': [
+          {
+            'region': 6,
+            'requirements': 'Requires the Master League badge.',
+          },
+        ],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 200,
+    },
+    {
+      'id': 129.31,
+      'name': 'Magikarp Saucy Violet',
+      'catchRate': 255,
+      'type': [2],
+      'levelType': 4,
+      'exp': 40,
+      'eggCycles': 5,
+      'base': {
+        'hitpoints': 20,
+        'attack': 10,
+        'specialAttack': 15,
+        'defense': 55,
+        'specialDefense': 20,
+        'speed': 80,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
+      'attack': 10,
+      'nativeRegion': 0,
+      'locations': {
+        '8': ["Magikarp's Eye"],
+      },
       'catchRatePercent': 63,
       'eggSteps': 200,
     },
@@ -43274,7 +43289,7 @@ module.exports = {
           {
             'basePokemon': 'Magikarp',
             'evolvedPokemon': 'Gyarados',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -43309,6 +43324,36 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 320,
+    },
+    {
+      'id': 130.01,
+      'name': 'Mega Gyarados',
+      'type': [
+        2,
+        15,
+      ],
+      'eggCycles': 5,
+      'levelType': 4,
+      'exp': 224,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 95,
+        'attack': 155,
+        'specialAttack': 70,
+        'defense': 109,
+        'specialDefense': 130,
+        'speed': 81,
+      },
+      'attack': 199,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 5,
+      'eggSteps': 200,
     },
     {
       'id': 131,
@@ -43456,7 +43501,7 @@ module.exports = {
       'eggSteps': 1600,
     },
     {
-      'id': 131.1,
+      'id': 131.01,
       'name': 'Gigantamax Lapras',
       'nativeRegion': -1,
       'catchRate': 45,
@@ -43577,7 +43622,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Vaporeon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43598,7 +43643,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Jolteon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43619,7 +43664,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Flareon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43640,7 +43685,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Espeon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43669,7 +43714,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Umbreon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43698,7 +43743,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Leafeon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43746,7 +43791,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Leafeon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43794,7 +43839,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Leafeon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43842,7 +43887,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Leafeon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43890,7 +43935,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Glaceon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43938,7 +43983,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Glaceon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -43986,7 +44031,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Glaceon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44034,7 +44079,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Glaceon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44082,7 +44127,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Sylveon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44116,7 +44161,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Leafeon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44144,7 +44189,7 @@ module.exports = {
         {
           'basePokemon': 'Eevee',
           'evolvedPokemon': 'Glaceon',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44225,34 +44270,7 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
-      'id': 133.1,
-      'name': "Let's Go Eevee",
-      'catchRate': 50,
-      'type': [0],
-      'levelType': 2,
-      'exp': 65,
-      'eggCycles': 35,
-      'base': {
-        'hitpoints': 55,
-        'attack': 55,
-        'specialAttack': 45,
-        'defense': 50,
-        'specialDefense': 65,
-        'speed': 55,
-      },
-      'gender': {
-        'femaleRatio': 0,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 54,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 18,
-      'eggSteps': 1400,
-    },
-    {
-      'id': 133.2,
+      'id': 133.01,
       'name': 'Gigantamax Eevee',
       'nativeRegion': -1,
       'catchRate': 255,
@@ -44276,6 +44294,33 @@ module.exports = {
       'attack': 76,
       'locations': {},
       'catchRatePercent': 63,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 133.02,
+      'name': "Let's Go Eevee",
+      'catchRate': 50,
+      'type': [0],
+      'levelType': 2,
+      'exp': 65,
+      'eggCycles': 35,
+      'base': {
+        'hitpoints': 55,
+        'attack': 55,
+        'specialAttack': 45,
+        'defense': 50,
+        'specialDefense': 65,
+        'speed': 55,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 54,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 18,
       'eggSteps': 1400,
     },
     {
@@ -44318,7 +44363,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Vaporeon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -44381,7 +44426,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Jolteon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -44444,7 +44489,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Flareon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -44479,7 +44524,7 @@ module.exports = {
         {
           'basePokemon': 'Porygon',
           'evolvedPokemon': 'Porygon2',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44534,7 +44579,7 @@ module.exports = {
         {
           'basePokemon': 'Omanyte',
           'evolvedPokemon': 'Omastar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44633,7 +44678,7 @@ module.exports = {
           {
             'basePokemon': 'Omanyte',
             'evolvedPokemon': 'Omastar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -44684,7 +44729,7 @@ module.exports = {
         {
           'basePokemon': 'Kabuto',
           'evolvedPokemon': 'Kabutops',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -44783,7 +44828,7 @@ module.exports = {
           {
             'basePokemon': 'Kabuto',
             'evolvedPokemon': 'Kabutops',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -44858,6 +44903,36 @@ module.exports = {
         '9': ['Old Amber'],
       },
       'catchRatePercent': 17,
+      'eggSteps': 1400,
+    },
+    {
+      'id': 142.01,
+      'name': 'Mega Aerodactyl',
+      'type': [
+        12,
+        9,
+      ],
+      'eggCycles': 35,
+      'levelType': 3,
+      'exp': 215,
+      'catchRate': 10,
+      'base': {
+        'hitpoints': 80,
+        'attack': 135,
+        'specialAttack': 70,
+        'defense': 85,
+        'specialDefense': 95,
+        'speed': 150,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 157,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 5,
       'eggSteps': 1400,
     },
     {
@@ -44981,7 +45056,7 @@ module.exports = {
           {
             'basePokemon': 'Munchlax',
             'evolvedPokemon': 'Snorlax',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -45000,12 +45075,40 @@ module.exports = {
             'stone': 7,
           },
         ],
+        '12': ['Chilan'],
       },
       'catchRatePercent': 11,
       'eggSteps': 1600,
     },
     {
-      'id': 143.1,
+      'id': 143.01,
+      'name': 'Gigantamax Snorlax',
+      'nativeRegion': -1,
+      'catchRate': 25,
+      'type': [0],
+      'levelType': 4,
+      'exp': 189,
+      'eggCycles': 40,
+      'base': {
+        'hitpoints': 320,
+        'attack': 110,
+        'specialAttack': 65,
+        'defense': 65,
+        'specialDefense': 110,
+        'speed': 30,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 244,
+      'locations': {},
+      'catchRatePercent': 11,
+      'eggSteps': 1600,
+    },
+    {
+      'id': 143.02,
       'name': 'Santa Snorlax',
       'catchRate': 25,
       'type': [0],
@@ -45032,7 +45135,7 @@ module.exports = {
           {
             'basePokemon': 'Elf Munchlax',
             'evolvedPokemon': 'Santa Snorlax',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -45052,33 +45155,6 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 11,
-      'eggSteps': 1600,
-    },
-    {
-      'id': 143.2,
-      'name': 'Gigantamax Snorlax',
-      'nativeRegion': -1,
-      'catchRate': 25,
-      'type': [0],
-      'levelType': 4,
-      'exp': 189,
-      'eggCycles': 40,
-      'base': {
-        'hitpoints': 320,
-        'attack': 110,
-        'specialAttack': 65,
-        'defense': 65,
-        'specialDefense': 110,
-        'speed': 30,
-      },
-      'gender': {
-        'femaleRatio': 0.125,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 244,
-      'locations': {},
       'catchRatePercent': 11,
       'eggSteps': 1600,
     },
@@ -45125,7 +45201,7 @@ module.exports = {
       'eggSteps': 3200,
     },
     {
-      'id': 144.1,
+      'id': 144.01,
       'name': 'Galarian Articuno',
       'nativeRegion': 7,
       'catchRate': 3,
@@ -45204,7 +45280,7 @@ module.exports = {
       'eggSteps': 3200,
     },
     {
-      'id': 145.1,
+      'id': 145.01,
       'name': 'Galarian Zapdos',
       'nativeRegion': 7,
       'catchRate': 3,
@@ -45283,7 +45359,7 @@ module.exports = {
       'eggSteps': 3200,
     },
     {
-      'id': 146.1,
+      'id': 146.01,
       'name': 'Galarian Moltres',
       'nativeRegion': 7,
       'catchRate': 3,
@@ -45331,7 +45407,7 @@ module.exports = {
         {
           'basePokemon': 'Dratini',
           'evolvedPokemon': 'Dragonair',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -45410,6 +45486,7 @@ module.exports = {
           'Poni Meadow',
         ],
         '6': ['Dragon'],
+        '12': ['Haban'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -45426,7 +45503,7 @@ module.exports = {
         {
           'basePokemon': 'Dragonair',
           'evolvedPokemon': 'Dragonite',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -45504,7 +45581,7 @@ module.exports = {
           {
             'basePokemon': 'Dratini',
             'evolvedPokemon': 'Dragonair',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -45593,7 +45670,7 @@ module.exports = {
           {
             'basePokemon': 'Dragonair',
             'evolvedPokemon': 'Dragonite',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -45664,7 +45741,64 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 150.1,
+      'id': 150.01,
+      'name': 'Mega Mewtwo X',
+      'type': [
+        10,
+        6,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 106,
+        'attack': 190,
+        'specialAttack': 154,
+        'defense': 100,
+        'specialDefense': 100,
+        'speed': 130,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 315,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 150.02,
+      'name': 'Mega Mewtwo Y',
+      'type': [10],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 106,
+        'attack': 150,
+        'specialAttack': 194,
+        'defense': 70,
+        'specialDefense': 120,
+        'speed': 140,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 304,
+      'nativeRegion': 0,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 150.03,
       'name': 'Armored Mewtwo',
       'catchRate': 2,
       'type': [
@@ -45743,7 +45877,7 @@ module.exports = {
         {
           'basePokemon': 'Chikorita',
           'evolvedPokemon': 'Bayleef',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -45809,7 +45943,7 @@ module.exports = {
         {
           'basePokemon': 'Bayleef',
           'evolvedPokemon': 'Meganium',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -45861,7 +45995,7 @@ module.exports = {
           {
             'basePokemon': 'Chikorita',
             'evolvedPokemon': 'Bayleef',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -45925,7 +46059,7 @@ module.exports = {
           {
             'basePokemon': 'Bayleef',
             'evolvedPokemon': 'Meganium',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -45973,7 +46107,7 @@ module.exports = {
         {
           'basePokemon': 'Cyndaquil',
           'evolvedPokemon': 'Quilava',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -46039,7 +46173,7 @@ module.exports = {
         {
           'basePokemon': 'Quilava',
           'evolvedPokemon': 'Typhlosion',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -46091,7 +46225,7 @@ module.exports = {
           {
             'basePokemon': 'Cyndaquil',
             'evolvedPokemon': 'Quilava',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -46155,7 +46289,7 @@ module.exports = {
           {
             'basePokemon': 'Quilava',
             'evolvedPokemon': 'Typhlosion',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -46203,7 +46337,7 @@ module.exports = {
         {
           'basePokemon': 'Totodile',
           'evolvedPokemon': 'Croconaw',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -46269,7 +46403,7 @@ module.exports = {
         {
           'basePokemon': 'Croconaw',
           'evolvedPokemon': 'Feraligatr',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -46321,7 +46455,7 @@ module.exports = {
           {
             'basePokemon': 'Totodile',
             'evolvedPokemon': 'Croconaw',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -46385,7 +46519,7 @@ module.exports = {
           {
             'basePokemon': 'Croconaw',
             'evolvedPokemon': 'Feraligatr',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -46433,7 +46567,7 @@ module.exports = {
         {
           'basePokemon': 'Sentret',
           'evolvedPokemon': 'Furret',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -46538,7 +46672,7 @@ module.exports = {
           {
             'basePokemon': 'Sentret',
             'evolvedPokemon': 'Furret',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -46589,7 +46723,7 @@ module.exports = {
         {
           'basePokemon': 'Hoothoot',
           'evolvedPokemon': 'Noctowl',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -46860,7 +46994,7 @@ module.exports = {
           {
             'basePokemon': 'Hoothoot',
             'evolvedPokemon': 'Noctowl',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -46911,7 +47045,7 @@ module.exports = {
         {
           'basePokemon': 'Ledyba',
           'evolvedPokemon': 'Ledian',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47071,7 +47205,7 @@ module.exports = {
           {
             'basePokemon': 'Ledyba',
             'evolvedPokemon': 'Ledian',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -47122,7 +47256,7 @@ module.exports = {
         {
           'basePokemon': 'Spinarak',
           'evolvedPokemon': 'Ariados',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47219,6 +47353,7 @@ module.exports = {
           ],
         },
         '2': ['Pattern Bush'],
+        '12': ['Kebia'],
       },
       'catchRatePercent': 63,
       'eggSteps': 600,
@@ -47276,7 +47411,7 @@ module.exports = {
           {
             'basePokemon': 'Spinarak',
             'evolvedPokemon': 'Ariados',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -47343,7 +47478,7 @@ module.exports = {
           {
             'basePokemon': 'Golbat',
             'evolvedPokemon': 'Crobat',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -47381,7 +47516,7 @@ module.exports = {
         {
           'basePokemon': 'Chinchou',
           'evolvedPokemon': 'Lanturn',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47619,7 +47754,7 @@ module.exports = {
           {
             'basePokemon': 'Chinchou',
             'evolvedPokemon': 'Lanturn',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -47667,7 +47802,7 @@ module.exports = {
         {
           'basePokemon': 'Pichu',
           'evolvedPokemon': 'Pikachu',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47723,7 +47858,7 @@ module.exports = {
       'eggSteps': 320,
     },
     {
-      'id': 172.1,
+      'id': 172.01,
       'name': 'Spiky-eared Pichu',
       'catchRate': 190,
       'type': [3],
@@ -47761,7 +47896,7 @@ module.exports = {
         {
           'basePokemon': 'Cleffa',
           'evolvedPokemon': 'Clefairy',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47829,7 +47964,7 @@ module.exports = {
         {
           'basePokemon': 'Igglybuff',
           'evolvedPokemon': 'Jigglypuff',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47892,7 +48027,7 @@ module.exports = {
         {
           'basePokemon': 'Togepi',
           'evolvedPokemon': 'Togetic',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -47952,7 +48087,7 @@ module.exports = {
       'eggSteps': 320,
     },
     {
-      'id': 175.1,
+      'id': 175.01,
       'name': 'Spooky Togepi',
       'catchRate': 30,
       'type': [13],
@@ -47963,7 +48098,7 @@ module.exports = {
         {
           'basePokemon': 'Spooky Togepi',
           'evolvedPokemon': 'Spooky Togetic',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48005,7 +48140,7 @@ module.exports = {
       'eggSteps': 320,
     },
     {
-      'id': 175.2,
+      'id': 175.02,
       'name': 'Surprise Togepi',
       'catchRate': 30,
       'type': [17],
@@ -48046,7 +48181,7 @@ module.exports = {
         {
           'basePokemon': 'Togetic',
           'evolvedPokemon': 'Togekiss',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48093,7 +48228,7 @@ module.exports = {
           {
             'basePokemon': 'Togepi',
             'evolvedPokemon': 'Togetic',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -48118,7 +48253,7 @@ module.exports = {
       'eggSteps': 400,
     },
     {
-      'id': 176.1,
+      'id': 176.01,
       'name': 'Spooky Togetic',
       'catchRate': 75,
       'type': [
@@ -48132,7 +48267,7 @@ module.exports = {
         {
           'basePokemon': 'Spooky Togetic',
           'evolvedPokemon': 'Spooky Togekiss',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48171,7 +48306,7 @@ module.exports = {
           {
             'basePokemon': 'Spooky Togepi',
             'evolvedPokemon': 'Spooky Togetic',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -48210,7 +48345,7 @@ module.exports = {
         {
           'basePokemon': 'Natu',
           'evolvedPokemon': 'Xatu',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48449,7 +48584,7 @@ module.exports = {
           {
             'basePokemon': 'Natu',
             'evolvedPokemon': 'Xatu',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -48497,7 +48632,7 @@ module.exports = {
         {
           'basePokemon': 'Mareep',
           'evolvedPokemon': 'Flaaffy',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48580,7 +48715,7 @@ module.exports = {
         {
           'basePokemon': 'Flaaffy',
           'evolvedPokemon': 'Ampharos',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48642,7 +48777,7 @@ module.exports = {
           {
             'basePokemon': 'Mareep',
             'evolvedPokemon': 'Flaaffy',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -48707,7 +48842,7 @@ module.exports = {
           {
             'basePokemon': 'Flaaffy',
             'evolvedPokemon': 'Ampharos',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -48742,6 +48877,36 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
+    },
+    {
+      'id': 181.01,
+      'name': 'Mega Ampharos',
+      'type': [
+        3,
+        14,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 90,
+        'attack': 95,
+        'specialAttack': 165,
+        'defense': 105,
+        'specialDefense': 110,
+        'speed': 45,
+      },
+      'attack': 213,
+      'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
     },
     {
       'id': 182,
@@ -48779,7 +48944,7 @@ module.exports = {
           {
             'basePokemon': 'Gloom',
             'evolvedPokemon': 'Bellossom',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -48817,7 +48982,7 @@ module.exports = {
         {
           'basePokemon': 'Marill',
           'evolvedPokemon': 'Azumarill',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -48952,7 +49117,7 @@ module.exports = {
           {
             'basePokemon': 'Azurill',
             'evolvedPokemon': 'Marill',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49041,7 +49206,7 @@ module.exports = {
           {
             'basePokemon': 'Marill',
             'evolvedPokemon': 'Azumarill',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49146,7 +49311,7 @@ module.exports = {
           {
             'basePokemon': 'Bonsly',
             'evolvedPokemon': 'Sudowoodo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49240,7 +49405,7 @@ module.exports = {
           {
             'basePokemon': 'Poliwhirl',
             'evolvedPokemon': 'Politoed',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49278,7 +49443,7 @@ module.exports = {
         {
           'basePokemon': 'Hoppip',
           'evolvedPokemon': 'Skiploom',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -49374,7 +49539,7 @@ module.exports = {
         {
           'basePokemon': 'Skiploom',
           'evolvedPokemon': 'Jumpluff',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -49427,7 +49592,7 @@ module.exports = {
           {
             'basePokemon': 'Hoppip',
             'evolvedPokemon': 'Skiploom',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49494,7 +49659,7 @@ module.exports = {
           {
             'basePokemon': 'Skiploom',
             'evolvedPokemon': 'Jumpluff',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49540,7 +49705,7 @@ module.exports = {
         {
           'basePokemon': 'Aipom',
           'evolvedPokemon': 'Ambipom',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -49632,7 +49797,7 @@ module.exports = {
         {
           'basePokemon': 'Sunkern',
           'evolvedPokemon': 'Sunflora',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -49711,7 +49876,7 @@ module.exports = {
           {
             'basePokemon': 'Sunkern',
             'evolvedPokemon': 'Sunflora',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -49749,7 +49914,7 @@ module.exports = {
         {
           'basePokemon': 'Yanma',
           'evolvedPokemon': 'Yanmega',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -49834,7 +49999,7 @@ module.exports = {
         {
           'basePokemon': 'Wooper',
           'evolvedPokemon': 'Quagsire',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -50091,7 +50256,7 @@ module.exports = {
           {
             'basePokemon': 'Wooper',
             'evolvedPokemon': 'Quagsire',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -50167,7 +50332,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Espeon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -50238,7 +50403,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Umbreon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -50284,7 +50449,7 @@ module.exports = {
         {
           'basePokemon': 'Murkrow',
           'evolvedPokemon': 'Honchkrow',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -50327,6 +50492,7 @@ module.exports = {
           ],
         },
         '2': ['Lost Cave'],
+        '12': ['Coba'],
       },
       'catchRatePercent': 12,
       'eggSteps': 800,
@@ -50366,7 +50532,7 @@ module.exports = {
           {
             'basePokemon': 'Slowpoke',
             'evolvedPokemon': 'Slowking',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -50390,7 +50556,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 199.1,
+      'id': 199.01,
       'name': 'Galarian Slowking',
       'nativeRegion': 7,
       'catchRate': 70,
@@ -50420,7 +50586,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Slowpoke',
             'evolvedPokemon': 'Galarian Slowking',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -50455,7 +50621,7 @@ module.exports = {
         {
           'basePokemon': 'Misdreavus',
           'evolvedPokemon': 'Mismagius',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -50497,6 +50663,7 @@ module.exports = {
           "Hau'oli Cemetery",
           'Poni Meadow',
         ],
+        '12': ['Kasib'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -51732,7 +51899,7 @@ module.exports = {
           {
             'basePokemon': 'Wynaut',
             'evolvedPokemon': 'Wobbuffet',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -51810,6 +51977,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Chilan'],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -51826,7 +51994,7 @@ module.exports = {
         {
           'basePokemon': 'Pineco',
           'evolvedPokemon': 'Forretress',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -51969,7 +52137,7 @@ module.exports = {
           {
             'basePokemon': 'Pineco',
             'evolvedPokemon': 'Forretress',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -52074,7 +52242,7 @@ module.exports = {
         {
           'basePokemon': 'Gligar',
           'evolvedPokemon': 'Gliscor',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -52198,7 +52366,7 @@ module.exports = {
           {
             'basePokemon': 'Onix',
             'evolvedPokemon': 'Steelix',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -52222,7 +52390,37 @@ module.exports = {
       'eggSteps': 1520,
     },
     {
-      'id': 208.1,
+      'id': 208.01,
+      'name': 'Mega Steelix',
+      'type': [
+        16,
+        8,
+      ],
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 75,
+        'attack': 125,
+        'specialAttack': 55,
+        'defense': 230,
+        'specialDefense': 95,
+        'speed': 30,
+      },
+      'attack': 150,
+      'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 208.02,
       'name': 'Crystal Steelix',
       'catchRate': 25,
       'type': [
@@ -52252,7 +52450,7 @@ module.exports = {
           {
             'basePokemon': 'Crystal Onix',
             'evolvedPokemon': 'Crystal Steelix',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -52287,7 +52485,7 @@ module.exports = {
         {
           'basePokemon': 'Snubbull',
           'evolvedPokemon': 'Granbull',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -52406,7 +52604,7 @@ module.exports = {
           {
             'basePokemon': 'Snubbull',
             'evolvedPokemon': 'Granbull',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -52559,7 +52757,7 @@ module.exports = {
           {
             'basePokemon': 'Scyther',
             'evolvedPokemon': 'Scizor',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -52581,6 +52779,36 @@ module.exports = {
       },
       'catchRatePercent': 11,
       'eggSteps': 1520,
+    },
+    {
+      'id': 212.01,
+      'name': 'Mega Scizor',
+      'type': [
+        11,
+        16,
+      ],
+      'eggCycles': 25,
+      'levelType': 2,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 70,
+        'attack': 150,
+        'specialAttack': 65,
+        'defense': 140,
+        'specialDefense': 100,
+        'speed': 75,
+      },
+      'attack': 161,
+      'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1000,
     },
     {
       'id': 213,
@@ -52665,6 +52893,36 @@ module.exports = {
       'levelType': 4,
       'exp': 175,
       'eggCycles': 25,
+      'evolutions': [
+        {
+          'basePokemon': 'Heracross',
+          'evolvedPokemon': 'Mega Heracross',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Heracross',
+              'hint': 'Heracross needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'hint': 'You need to reach the johto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Heracross',
+              'hint': "Can't mega evolve Heracross yet.",
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 80,
         'attack': 125,
@@ -52748,6 +53006,67 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
+      'id': 214.01,
+      'name': 'Mega Heracross',
+      'type': [
+        11,
+        6,
+      ],
+      'eggCycles': 38,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 80,
+        'attack': 185,
+        'specialAttack': 40,
+        'defense': 115,
+        'specialDefense': 105,
+        'speed': 75,
+      },
+      'attack': 148,
+      'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Heracross',
+            'evolvedPokemon': 'Mega Heracross',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Heracross',
+                'hint': 'Heracross needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'hint': 'You need to reach the johto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Heracross',
+                'hint': "Can't mega evolve Heracross yet.",
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 1,
+      'eggSteps': 1520,
+    },
+    {
       'id': 215,
       'name': 'Sneasel',
       'catchRate': 60,
@@ -52762,7 +53081,7 @@ module.exports = {
         {
           'basePokemon': 'Sneasel',
           'evolvedPokemon': 'Weavile',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -52913,7 +53232,7 @@ module.exports = {
         {
           'basePokemon': 'Teddiursa',
           'evolvedPokemon': 'Ursaring',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -53023,7 +53342,7 @@ module.exports = {
           {
             'basePokemon': 'Teddiursa',
             'evolvedPokemon': 'Ursaring',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -53071,7 +53390,7 @@ module.exports = {
         {
           'basePokemon': 'Slugma',
           'evolvedPokemon': 'Magcargo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -53173,7 +53492,7 @@ module.exports = {
           {
             'basePokemon': 'Slugma',
             'evolvedPokemon': 'Magcargo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -53224,7 +53543,7 @@ module.exports = {
         {
           'basePokemon': 'Swinub',
           'evolvedPokemon': 'Piloswine',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -53312,6 +53631,7 @@ module.exports = {
           'Icefall Cave',
           'Ice Path',
         ],
+        '12': ['Yache'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -53331,7 +53651,7 @@ module.exports = {
         {
           'basePokemon': 'Piloswine',
           'evolvedPokemon': 'Mamoswine',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -53415,7 +53735,7 @@ module.exports = {
           {
             'basePokemon': 'Swinub',
             'evolvedPokemon': 'Piloswine',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -53510,7 +53830,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 222.1,
+      'id': 222.01,
       'name': 'Galarian Corsola',
       'nativeRegion': 7,
       'catchRate': 60,
@@ -53522,7 +53842,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Corsola',
           'evolvedPokemon': 'Cursola',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -53592,7 +53912,7 @@ module.exports = {
         {
           'basePokemon': 'Remoraid',
           'evolvedPokemon': 'Octillery',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -53849,7 +54169,7 @@ module.exports = {
           {
             'basePokemon': 'Remoraid',
             'evolvedPokemon': 'Octillery',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54069,7 +54389,7 @@ module.exports = {
           {
             'basePokemon': 'Mantyke',
             'evolvedPokemon': 'Mantine',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54189,7 +54509,7 @@ module.exports = {
         {
           'basePokemon': 'Houndour',
           'evolvedPokemon': 'Houndoom',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -54251,6 +54571,7 @@ module.exports = {
         },
         '2': ['Altering Cave'],
         '6': ['Fire'],
+        '12': ['Colbur'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -54293,7 +54614,7 @@ module.exports = {
           {
             'basePokemon': 'Houndour',
             'evolvedPokemon': 'Houndoom',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54328,6 +54649,36 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
+    },
+    {
+      'id': 229.01,
+      'name': 'Mega Houndoom',
+      'type': [
+        1,
+        15,
+      ],
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 75,
+        'attack': 90,
+        'specialAttack': 140,
+        'defense': 90,
+        'specialDefense': 90,
+        'speed': 115,
+      },
+      'attack': 171,
+      'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
     },
     {
       'id': 230,
@@ -54372,7 +54723,7 @@ module.exports = {
           {
             'basePokemon': 'Seadra',
             'evolvedPokemon': 'Kingdra',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54407,7 +54758,7 @@ module.exports = {
         {
           'basePokemon': 'Phanpy',
           'evolvedPokemon': 'Donphan',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -54511,7 +54862,7 @@ module.exports = {
           {
             'basePokemon': 'Phanpy',
             'evolvedPokemon': 'Donphan',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54559,7 +54910,7 @@ module.exports = {
         {
           'basePokemon': 'Porygon2',
           'evolvedPokemon': 'Porygon-Z',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -54602,7 +54953,7 @@ module.exports = {
           {
             'basePokemon': 'Porygon',
             'evolvedPokemon': 'Porygon2',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54727,7 +55078,7 @@ module.exports = {
         {
           'basePokemon': 'Tyrogue',
           'evolvedPokemon': 'Hitmonlee',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -54761,7 +55112,7 @@ module.exports = {
         {
           'basePokemon': 'Tyrogue',
           'evolvedPokemon': 'Hitmonchan',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -54795,7 +55146,7 @@ module.exports = {
         {
           'basePokemon': 'Tyrogue',
           'evolvedPokemon': 'Hitmontop',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -54865,10 +55216,6 @@ module.exports = {
               'route': 8,
             },
             {
-              'route': 8,
-              'requirements': 'The weather needs to be Overcast',
-            },
-            {
               'route': 12,
             },
             {
@@ -54929,7 +55276,7 @@ module.exports = {
           {
             'basePokemon': 'Tyrogue',
             'evolvedPokemon': 'Hitmontop',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -54980,7 +55327,7 @@ module.exports = {
         {
           'basePokemon': 'Smoochum',
           'evolvedPokemon': 'Jynx',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -55061,7 +55408,7 @@ module.exports = {
         {
           'basePokemon': 'Elekid',
           'evolvedPokemon': 'Electabuzz',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -55166,7 +55513,7 @@ module.exports = {
         {
           'basePokemon': 'Magby',
           'evolvedPokemon': 'Magmar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -55408,7 +55755,7 @@ module.exports = {
           {
             'basePokemon': 'Chansey',
             'evolvedPokemon': 'Blissey',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -55451,19 +55798,19 @@ module.exports = {
         'type': 2,
         'id': 'Oval Stone',
       },
-      'attack': 59,
-      'nativeRegion': 1,
       'gender': {
+        'femaleRatio': 1,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 59,
+      'nativeRegion': 1,
       'locations': {
         '5': [
           {
             'basePokemon': 'Charity Chansey',
             'evolvedPokemon': 'Blessing Blissey',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -55611,7 +55958,7 @@ module.exports = {
         {
           'basePokemon': 'Larvitar',
           'evolvedPokemon': 'Pupitar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -55704,7 +56051,7 @@ module.exports = {
         {
           'basePokemon': 'Pupitar',
           'evolvedPokemon': 'Tyranitar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -55775,7 +56122,7 @@ module.exports = {
           {
             'basePokemon': 'Larvitar',
             'evolvedPokemon': 'Pupitar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -55850,7 +56197,7 @@ module.exports = {
           {
             'basePokemon': 'Pupitar',
             'evolvedPokemon': 'Tyranitar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -55885,6 +56232,36 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
+    },
+    {
+      'id': 248.01,
+      'name': 'Mega Tyranitar',
+      'type': [
+        12,
+        15,
+      ],
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 100,
+        'attack': 164,
+        'specialAttack': 95,
+        'defense': 150,
+        'specialDefense': 120,
+        'speed': 71,
+      },
+      'attack': 254,
+      'nativeRegion': 1,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1600,
     },
     {
       'id': 249,
@@ -56005,11 +56382,11 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 251.1,
-      'name': 'Grinch Celebi',
+      'id': 251.01,
+      'name': 'Flowering Celebi',
       'catchRate': 45,
       'type': [
-        15,
+        10,
         4,
       ],
       'levelType': 3,
@@ -56039,11 +56416,11 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 251.2,
-      'name': 'Flowering Celebi',
+      'id': 251.02,
+      'name': 'Grinch Celebi',
       'catchRate': 45,
       'type': [
-        10,
+        15,
         4,
       ],
       'levelType': 3,
@@ -56084,7 +56461,7 @@ module.exports = {
         {
           'basePokemon': 'Treecko',
           'evolvedPokemon': 'Grovyle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56150,7 +56527,7 @@ module.exports = {
         {
           'basePokemon': 'Grovyle',
           'evolvedPokemon': 'Sceptile',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56202,7 +56579,7 @@ module.exports = {
           {
             'basePokemon': 'Treecko',
             'evolvedPokemon': 'Grovyle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56266,7 +56643,7 @@ module.exports = {
           {
             'basePokemon': 'Grovyle',
             'evolvedPokemon': 'Sceptile',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56303,6 +56680,36 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 254.01,
+      'name': 'Mega Sceptile',
+      'type': [
+        4,
+        14,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 70,
+        'attack': 110,
+        'specialAttack': 145,
+        'defense': 75,
+        'specialDefense': 85,
+        'speed': 145,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 177,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 255,
       'name': 'Torchic',
       'type': [1],
@@ -56314,7 +56721,7 @@ module.exports = {
         {
           'basePokemon': 'Torchic',
           'evolvedPokemon': 'Combusken',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56383,7 +56790,7 @@ module.exports = {
         {
           'basePokemon': 'Combusken',
           'evolvedPokemon': 'Blaziken',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56435,7 +56842,7 @@ module.exports = {
           {
             'basePokemon': 'Torchic',
             'evolvedPokemon': 'Combusken',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56502,7 +56909,7 @@ module.exports = {
           {
             'basePokemon': 'Combusken',
             'evolvedPokemon': 'Blaziken',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56539,6 +56946,36 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 257.01,
+      'name': 'Mega Blaziken',
+      'type': [
+        1,
+        6,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 80,
+        'attack': 160,
+        'specialAttack': 130,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 209,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 258,
       'name': 'Mudkip',
       'type': [2],
@@ -56550,7 +56987,7 @@ module.exports = {
         {
           'basePokemon': 'Mudkip',
           'evolvedPokemon': 'Marshtomp',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56619,7 +57056,7 @@ module.exports = {
         {
           'basePokemon': 'Marshtomp',
           'evolvedPokemon': 'Swampert',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56671,7 +57108,7 @@ module.exports = {
           {
             'basePokemon': 'Mudkip',
             'evolvedPokemon': 'Marshtomp',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56738,7 +57175,7 @@ module.exports = {
           {
             'basePokemon': 'Marshtomp',
             'evolvedPokemon': 'Swampert',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56775,6 +57212,36 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 260.01,
+      'name': 'Mega Swampert',
+      'type': [
+        2,
+        8,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 100,
+        'attack': 150,
+        'specialAttack': 95,
+        'defense': 110,
+        'specialDefense': 110,
+        'speed': 70,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 222,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 261,
       'name': 'Poochyena',
       'type': [15],
@@ -56786,7 +57253,7 @@ module.exports = {
         {
           'basePokemon': 'Poochyena',
           'evolvedPokemon': 'Mightyena',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -56919,7 +57386,7 @@ module.exports = {
           {
             'basePokemon': 'Poochyena',
             'evolvedPokemon': 'Mightyena',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -56967,7 +57434,7 @@ module.exports = {
         {
           'basePokemon': 'Zigzagoon',
           'evolvedPokemon': 'Linoone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57048,7 +57515,7 @@ module.exports = {
       'eggSteps': 600,
     },
     {
-      'id': 263.1,
+      'id': 263.01,
       'name': 'Galarian Zigzagoon',
       'nativeRegion': 7,
       'type': [
@@ -57063,7 +57530,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Zigzagoon',
           'evolvedPokemon': 'Galarian Linoone',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57204,7 +57671,7 @@ module.exports = {
           {
             'basePokemon': 'Zigzagoon',
             'evolvedPokemon': 'Linoone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -57241,7 +57708,7 @@ module.exports = {
       'eggSteps': 920,
     },
     {
-      'id': 264.1,
+      'id': 264.01,
       'name': 'Galarian Linoone',
       'nativeRegion': 7,
       'type': [
@@ -57256,7 +57723,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Linoone',
           'evolvedPokemon': 'Obstagoon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57354,7 +57821,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Zigzagoon',
             'evolvedPokemon': 'Galarian Linoone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -57402,7 +57869,7 @@ module.exports = {
         {
           'basePokemon': 'Wurmple',
           'evolvedPokemon': 'Silcoon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57436,7 +57903,7 @@ module.exports = {
         {
           'basePokemon': 'Wurmple',
           'evolvedPokemon': 'Cascoon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57525,7 +57992,7 @@ module.exports = {
         {
           'basePokemon': 'Silcoon',
           'evolvedPokemon': 'Beautifly',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57588,7 +58055,7 @@ module.exports = {
           {
             'basePokemon': 'Wurmple',
             'evolvedPokemon': 'Silcoon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -57673,7 +58140,7 @@ module.exports = {
           {
             'basePokemon': 'Silcoon',
             'evolvedPokemon': 'Beautifly',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -57721,7 +58188,7 @@ module.exports = {
         {
           'basePokemon': 'Cascoon',
           'evolvedPokemon': 'Dustox',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -57784,7 +58251,7 @@ module.exports = {
           {
             'basePokemon': 'Wurmple',
             'evolvedPokemon': 'Cascoon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -57869,7 +58336,7 @@ module.exports = {
           {
             'basePokemon': 'Cascoon',
             'evolvedPokemon': 'Dustox',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -57920,7 +58387,7 @@ module.exports = {
         {
           'basePokemon': 'Lotad',
           'evolvedPokemon': 'Lombre',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -58029,7 +58496,7 @@ module.exports = {
         {
           'basePokemon': 'Lombre',
           'evolvedPokemon': 'Ludicolo',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -58119,7 +58586,7 @@ module.exports = {
           {
             'basePokemon': 'Lotad',
             'evolvedPokemon': 'Lombre',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -58206,7 +58673,7 @@ module.exports = {
           {
             'basePokemon': 'Lombre',
             'evolvedPokemon': 'Ludicolo',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -58241,7 +58708,7 @@ module.exports = {
         {
           'basePokemon': 'Seedot',
           'evolvedPokemon': 'Nuzleaf',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -58350,7 +58817,7 @@ module.exports = {
         {
           'basePokemon': 'Nuzleaf',
           'evolvedPokemon': 'Shiftry',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -58428,7 +58895,7 @@ module.exports = {
           {
             'basePokemon': 'Seedot',
             'evolvedPokemon': 'Nuzleaf',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -58515,7 +58982,7 @@ module.exports = {
           {
             'basePokemon': 'Nuzleaf',
             'evolvedPokemon': 'Shiftry',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -58553,7 +59020,7 @@ module.exports = {
         {
           'basePokemon': 'Taillow',
           'evolvedPokemon': 'Swellow',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -58657,7 +59124,7 @@ module.exports = {
           {
             'basePokemon': 'Taillow',
             'evolvedPokemon': 'Swellow',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -58708,7 +59175,7 @@ module.exports = {
         {
           'basePokemon': 'Wingull',
           'evolvedPokemon': 'Pelipper',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -58835,9 +59302,6 @@ module.exports = {
             },
           ],
           '3': [
-            {
-              'route': 213,
-            },
             {
               'route': 213,
             },
@@ -59311,7 +59775,7 @@ module.exports = {
           {
             'basePokemon': 'Wingull',
             'evolvedPokemon': 'Pelipper',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -59362,7 +59826,7 @@ module.exports = {
         {
           'basePokemon': 'Ralts',
           'evolvedPokemon': 'Kirlia',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -59467,7 +59931,10 @@ module.exports = {
             },
           ],
         },
-        '12': ['Payapa'],
+        '12': [
+          'Payapa',
+          'Roseli',
+        ],
       },
       'catchRatePercent': 60,
       'eggSteps': 800,
@@ -59487,7 +59954,7 @@ module.exports = {
         {
           'basePokemon': 'Kirlia',
           'evolvedPokemon': 'Gardevoir',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -59521,7 +59988,7 @@ module.exports = {
         {
           'basePokemon': 'Kirlia',
           'evolvedPokemon': 'Gallade',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -59577,7 +60044,7 @@ module.exports = {
           {
             'basePokemon': 'Ralts',
             'evolvedPokemon': 'Kirlia',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -59677,7 +60144,7 @@ module.exports = {
           {
             'basePokemon': 'Kirlia',
             'evolvedPokemon': 'Gardevoir',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -59714,6 +60181,36 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 282.01,
+      'name': 'Mega Gardevoir',
+      'type': [
+        10,
+        17,
+      ],
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 68,
+        'attack': 85,
+        'specialAttack': 165,
+        'defense': 65,
+        'specialDefense': 135,
+        'speed': 100,
+      },
+      'attack': 172,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 283,
       'name': 'Surskit',
       'type': [
@@ -59728,7 +60225,7 @@ module.exports = {
         {
           'basePokemon': 'Surskit',
           'evolvedPokemon': 'Masquerain',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -59846,7 +60343,7 @@ module.exports = {
           {
             'basePokemon': 'Surskit',
             'evolvedPokemon': 'Masquerain',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -59894,7 +60391,7 @@ module.exports = {
         {
           'basePokemon': 'Shroomish',
           'evolvedPokemon': 'Breloom',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -59987,7 +60484,7 @@ module.exports = {
           {
             'basePokemon': 'Shroomish',
             'evolvedPokemon': 'Breloom',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60035,7 +60532,7 @@ module.exports = {
         {
           'basePokemon': 'Slakoth',
           'evolvedPokemon': 'Vigoroth',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60106,7 +60603,7 @@ module.exports = {
         {
           'basePokemon': 'Vigoroth',
           'evolvedPokemon': 'Slaking',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60159,7 +60656,7 @@ module.exports = {
           {
             'basePokemon': 'Slakoth',
             'evolvedPokemon': 'Vigoroth',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60228,7 +60725,7 @@ module.exports = {
           {
             'basePokemon': 'Vigoroth',
             'evolvedPokemon': 'Slaking',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60279,7 +60776,7 @@ module.exports = {
         {
           'basePokemon': 'Nincada',
           'evolvedPokemon': 'Ninjask',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60313,7 +60810,7 @@ module.exports = {
         {
           'basePokemon': 'Nincada',
           'evolvedPokemon': 'Shedinja',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60441,7 +60938,7 @@ module.exports = {
           {
             'basePokemon': 'Nincada',
             'evolvedPokemon': 'Ninjask',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60508,7 +61005,7 @@ module.exports = {
           {
             'basePokemon': 'Nincada',
             'evolvedPokemon': 'Shedinja',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60557,7 +61054,7 @@ module.exports = {
         {
           'basePokemon': 'Whismur',
           'evolvedPokemon': 'Loudred',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60634,7 +61131,7 @@ module.exports = {
         {
           'basePokemon': 'Loudred',
           'evolvedPokemon': 'Exploud',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60690,7 +61187,7 @@ module.exports = {
           {
             'basePokemon': 'Whismur',
             'evolvedPokemon': 'Loudred',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60759,7 +61256,7 @@ module.exports = {
           {
             'basePokemon': 'Loudred',
             'evolvedPokemon': 'Exploud',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60807,7 +61304,7 @@ module.exports = {
         {
           'basePokemon': 'Makuhita',
           'evolvedPokemon': 'Hariyama',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -60867,6 +61364,7 @@ module.exports = {
           'Victory Road Hoenn',
         ],
         '6': ['Fighting'],
+        '12': ['Chople'],
       },
       'catchRatePercent': 49,
       'eggSteps': 800,
@@ -60920,7 +61418,7 @@ module.exports = {
           {
             'basePokemon': 'Makuhita',
             'evolvedPokemon': 'Hariyama',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -60971,7 +61469,7 @@ module.exports = {
         {
           'basePokemon': 'Azurill',
           'evolvedPokemon': 'Marill',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61043,7 +61541,7 @@ module.exports = {
         {
           'basePokemon': 'Nosepass',
           'evolvedPokemon': 'Probopass',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61091,7 +61589,7 @@ module.exports = {
         {
           'basePokemon': 'Nosepass',
           'evolvedPokemon': 'Probopass',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61139,7 +61637,7 @@ module.exports = {
         {
           'basePokemon': 'Nosepass',
           'evolvedPokemon': 'Probopass',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61187,7 +61685,7 @@ module.exports = {
         {
           'basePokemon': 'Nosepass',
           'evolvedPokemon': 'Probopass',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61235,7 +61733,7 @@ module.exports = {
         {
           'basePokemon': 'Nosepass',
           'evolvedPokemon': 'Probopass',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61336,7 +61834,7 @@ module.exports = {
         {
           'basePokemon': 'Skitty',
           'evolvedPokemon': 'Delcatty',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61416,7 +61914,7 @@ module.exports = {
           {
             'basePokemon': 'Skitty',
             'evolvedPokemon': 'Delcatty',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -61484,6 +61982,36 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
+      'id': 302.01,
+      'name': 'Mega Sableye',
+      'type': [
+        15,
+        13,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 50,
+        'attack': 85,
+        'specialAttack': 85,
+        'defense': 125,
+        'specialDefense': 115,
+        'speed': 20,
+      },
+      'attack': 112,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1000,
+    },
+    {
       'id': 303,
       'name': 'Mawile',
       'type': [
@@ -61547,6 +62075,36 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 303.01,
+      'name': 'Mega Mawile',
+      'type': [
+        16,
+        17,
+      ],
+      'eggCycles': 20,
+      'levelType': 1,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 50,
+        'attack': 105,
+        'specialAttack': 55,
+        'defense': 125,
+        'specialDefense': 95,
+        'speed': 50,
+      },
+      'attack': 101,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 304,
       'name': 'Aron',
       'type': [
@@ -61561,7 +62119,7 @@ module.exports = {
         {
           'basePokemon': 'Aron',
           'evolvedPokemon': 'Lairon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61627,6 +62185,7 @@ module.exports = {
           'Terminus Cave',
           'Lakeside Cave',
         ],
+        '12': ['Charti'],
       },
       'catchRatePercent': 49,
       'eggSteps': 1400,
@@ -61646,7 +62205,7 @@ module.exports = {
         {
           'basePokemon': 'Lairon',
           'evolvedPokemon': 'Aggron',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61715,7 +62274,7 @@ module.exports = {
           {
             'basePokemon': 'Aron',
             'evolvedPokemon': 'Lairon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -61792,7 +62351,7 @@ module.exports = {
           {
             'basePokemon': 'Lairon',
             'evolvedPokemon': 'Aggron',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -61829,6 +62388,33 @@ module.exports = {
       'eggSteps': 3200,
     },
     {
+      'id': 306.01,
+      'name': 'Mega Aggron',
+      'type': [16],
+      'eggCycles': 35,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 70,
+        'attack': 140,
+        'specialAttack': 60,
+        'defense': 230,
+        'specialDefense': 80,
+        'speed': 50,
+      },
+      'attack': 158,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1400,
+    },
+    {
       'id': 307,
       'name': 'Meditite',
       'type': [
@@ -61843,7 +62429,7 @@ module.exports = {
         {
           'basePokemon': 'Meditite',
           'evolvedPokemon': 'Medicham',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -61960,7 +62546,7 @@ module.exports = {
           {
             'basePokemon': 'Meditite',
             'evolvedPokemon': 'Medicham',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -61997,6 +62583,36 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 308.01,
+      'name': 'Mega Medicham',
+      'type': [
+        6,
+        10,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 60,
+        'attack': 100,
+        'specialAttack': 80,
+        'defense': 85,
+        'specialDefense': 85,
+        'speed': 100,
+      },
+      'attack': 119,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 309,
       'name': 'Electrike',
       'type': [3],
@@ -62008,7 +62624,7 @@ module.exports = {
         {
           'basePokemon': 'Electrike',
           'evolvedPokemon': 'Manectric',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -62170,7 +62786,7 @@ module.exports = {
           {
             'basePokemon': 'Electrike',
             'evolvedPokemon': 'Manectric',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -62205,6 +62821,33 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
+    },
+    {
+      'id': 310.01,
+      'name': 'Mega Manectric',
+      'type': [3],
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 70,
+        'attack': 75,
+        'specialAttack': 135,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 135,
+      },
+      'attack': 143,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
     },
     {
       'id': 311,
@@ -62407,7 +63050,7 @@ module.exports = {
         {
           'basePokemon': 'Roselia',
           'evolvedPokemon': 'Roserade',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -62545,7 +63188,7 @@ module.exports = {
           {
             'basePokemon': 'Budew',
             'evolvedPokemon': 'Roselia',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -62590,7 +63233,7 @@ module.exports = {
         {
           'basePokemon': 'Gulpin',
           'evolvedPokemon': 'Swalot',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -62690,7 +63333,7 @@ module.exports = {
           {
             'basePokemon': 'Gulpin',
             'evolvedPokemon': 'Swalot',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -62741,7 +63384,7 @@ module.exports = {
         {
           'basePokemon': 'Carvanha',
           'evolvedPokemon': 'Sharpedo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -62922,7 +63565,7 @@ module.exports = {
           {
             'basePokemon': 'Carvanha',
             'evolvedPokemon': 'Sharpedo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -62959,6 +63602,36 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 319.01,
+      'name': 'Mega Sharpedo',
+      'type': [
+        2,
+        15,
+      ],
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 70,
+        'attack': 140,
+        'specialAttack': 110,
+        'defense': 70,
+        'specialDefense': 65,
+        'speed': 105,
+      },
+      'attack': 158,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 320,
       'name': 'Wailmer',
       'type': [2],
@@ -62970,7 +63643,7 @@ module.exports = {
         {
           'basePokemon': 'Wailmer',
           'evolvedPokemon': 'Wailord',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -63189,7 +63862,7 @@ module.exports = {
           {
             'basePokemon': 'Wailmer',
             'evolvedPokemon': 'Wailord',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -63240,7 +63913,7 @@ module.exports = {
         {
           'basePokemon': 'Numel',
           'evolvedPokemon': 'Camerupt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -63307,6 +63980,7 @@ module.exports = {
           'Reversal Mountain',
         ],
         '6': ['Fire'],
+        '12': ['Shuca'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -63353,7 +64027,7 @@ module.exports = {
           {
             'basePokemon': 'Numel',
             'evolvedPokemon': 'Camerupt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -63388,6 +64062,36 @@ module.exports = {
       },
       'catchRatePercent': 42,
       'eggSteps': 1200,
+    },
+    {
+      'id': 323.01,
+      'name': 'Mega Camerupt',
+      'type': [
+        1,
+        8,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 70,
+        'attack': 120,
+        'specialAttack': 145,
+        'defense': 100,
+        'specialDefense': 105,
+        'speed': 20,
+      },
+      'attack': 188,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
     },
     {
       'id': 324,
@@ -63470,7 +64174,7 @@ module.exports = {
         {
           'basePokemon': 'Spoink',
           'evolvedPokemon': 'Grumpig',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -63562,7 +64266,7 @@ module.exports = {
           {
             'basePokemon': 'Spoink',
             'evolvedPokemon': 'Grumpig',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -63655,7 +64359,7 @@ module.exports = {
         {
           'basePokemon': 'Trapinch',
           'evolvedPokemon': 'Vibrava',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -63754,7 +64458,7 @@ module.exports = {
         {
           'basePokemon': 'Vibrava',
           'evolvedPokemon': 'Flygon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -63811,7 +64515,7 @@ module.exports = {
           {
             'basePokemon': 'Trapinch',
             'evolvedPokemon': 'Vibrava',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -63891,7 +64595,7 @@ module.exports = {
           {
             'basePokemon': 'Vibrava',
             'evolvedPokemon': 'Flygon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -63939,7 +64643,7 @@ module.exports = {
         {
           'basePokemon': 'Cacnea',
           'evolvedPokemon': 'Cacturne',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -64046,7 +64750,7 @@ module.exports = {
           {
             'basePokemon': 'Cacnea',
             'evolvedPokemon': 'Cacturne',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -64097,7 +64801,7 @@ module.exports = {
         {
           'basePokemon': 'Swablu',
           'evolvedPokemon': 'Altaria',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -64204,6 +64908,7 @@ module.exports = {
           ],
         },
         '2': ['Abundant Shrine'],
+        '12': ['Chilan'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -64285,7 +64990,7 @@ module.exports = {
           {
             'basePokemon': 'Swablu',
             'evolvedPokemon': 'Altaria',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -64320,6 +65025,36 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
+    },
+    {
+      'id': 334.01,
+      'name': 'Mega Altaria',
+      'type': [
+        14,
+        17,
+      ],
+      'eggCycles': 20,
+      'levelType': 0,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 75,
+        'attack': 110,
+        'specialAttack': 110,
+        'defense': 110,
+        'specialDefense': 105,
+        'speed': 80,
+      },
+      'attack': 177,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
     },
     {
       'id': 335,
@@ -64558,7 +65293,7 @@ module.exports = {
         {
           'basePokemon': 'Barboach',
           'evolvedPokemon': 'Whiscash',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -64832,7 +65567,7 @@ module.exports = {
           {
             'basePokemon': 'Barboach',
             'evolvedPokemon': 'Whiscash',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -64880,7 +65615,7 @@ module.exports = {
         {
           'basePokemon': 'Corphish',
           'evolvedPokemon': 'Crawdaunt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -65084,7 +65819,7 @@ module.exports = {
           {
             'basePokemon': 'Corphish',
             'evolvedPokemon': 'Crawdaunt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -65135,7 +65870,7 @@ module.exports = {
         {
           'basePokemon': 'Baltoy',
           'evolvedPokemon': 'Claydol',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -65351,7 +66086,7 @@ module.exports = {
           {
             'basePokemon': 'Baltoy',
             'evolvedPokemon': 'Claydol',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -65402,7 +66137,7 @@ module.exports = {
         {
           'basePokemon': 'Lileep',
           'evolvedPokemon': 'Cradily',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -65498,7 +66233,7 @@ module.exports = {
           {
             'basePokemon': 'Lileep',
             'evolvedPokemon': 'Cradily',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -65549,7 +66284,7 @@ module.exports = {
         {
           'basePokemon': 'Anorith',
           'evolvedPokemon': 'Armaldo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -65641,7 +66376,7 @@ module.exports = {
           '7': [
             {
               'route': 53,
-              'requirements': 'Armaldo needs to be caught and The weather needs to be Rain or Thunderstorm.',
+              'requirements': 'Armaldo needs to be caught.',
             },
           ],
         },
@@ -65649,7 +66384,7 @@ module.exports = {
           {
             'basePokemon': 'Anorith',
             'evolvedPokemon': 'Armaldo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -65697,7 +66432,7 @@ module.exports = {
         {
           'basePokemon': 'Feebas',
           'evolvedPokemon': 'Milotic',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -65806,7 +66541,7 @@ module.exports = {
           {
             'basePokemon': 'Feebas',
             'evolvedPokemon': 'Milotic',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -65864,7 +66599,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 351.1,
+      'id': 351.01,
       'name': 'Castform (Sunny)',
       'type': [1],
       'eggCycles': 25,
@@ -65900,7 +66635,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 351.2,
+      'id': 351.02,
       'name': 'Castform (Rainy)',
       'type': [2],
       'eggCycles': 25,
@@ -65927,7 +66662,7 @@ module.exports = {
           '2': [
             {
               'route': 119,
-              'requirements': 'Castform needs to be caught and The weather needs to be Rain or Thunderstorm.',
+              'requirements': 'Castform needs to be caught.',
             },
           ],
         },
@@ -65936,7 +66671,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 351.3,
+      'id': 351.03,
       'name': 'Castform (Snowy)',
       'type': [5],
       'eggCycles': 25,
@@ -66035,7 +66770,7 @@ module.exports = {
         {
           'basePokemon': 'Shuppet',
           'evolvedPokemon': 'Banette',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -66157,7 +66892,7 @@ module.exports = {
           {
             'basePokemon': 'Shuppet',
             'evolvedPokemon': 'Banette',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -66194,6 +66929,33 @@ module.exports = {
       'eggSteps': 1520,
     },
     {
+      'id': 354.01,
+      'name': 'Mega Banette',
+      'type': [13],
+      'eggCycles': 25,
+      'levelType': 1,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 64,
+        'attack': 115,
+        'specialAttack': 83,
+        'defense': 65,
+        'specialDefense': 63,
+        'speed': 65,
+      },
+      'attack': 115,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1000,
+    },
+    {
       'id': 355,
       'name': 'Duskull',
       'type': [13],
@@ -66205,7 +66967,7 @@ module.exports = {
         {
           'basePokemon': 'Duskull',
           'evolvedPokemon': 'Dusclops',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -66305,7 +67067,7 @@ module.exports = {
         {
           'basePokemon': 'Dusclops',
           'evolvedPokemon': 'Dusknoir',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -66380,7 +67142,7 @@ module.exports = {
           {
             'basePokemon': 'Duskull',
             'evolvedPokemon': 'Dusclops',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -66507,7 +67269,7 @@ module.exports = {
           {
             'basePokemon': 'Chingling',
             'evolvedPokemon': 'Chimecho',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -66550,7 +67312,7 @@ module.exports = {
         {
           'basePokemon': 'Absol',
           'evolvedPokemon': 'Mega Absol',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -66690,7 +67452,7 @@ module.exports = {
           {
             'basePokemon': 'Absol',
             'evolvedPokemon': 'Mega Absol',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -66732,7 +67494,7 @@ module.exports = {
         {
           'basePokemon': 'Wynaut',
           'evolvedPokemon': 'Wobbuffet',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -66805,7 +67567,7 @@ module.exports = {
         {
           'basePokemon': 'Snorunt',
           'evolvedPokemon': 'Glalie',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -66839,7 +67601,7 @@ module.exports = {
         {
           'basePokemon': 'Snorunt',
           'evolvedPokemon': 'Froslass',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67093,7 +67855,7 @@ module.exports = {
           {
             'basePokemon': 'Snorunt',
             'evolvedPokemon': 'Glalie',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -67130,6 +67892,33 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 362.01,
+      'name': 'Mega Glalie',
+      'type': [5],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 80,
+        'attack': 120,
+        'specialAttack': 120,
+        'defense': 80,
+        'specialDefense': 80,
+        'speed': 100,
+      },
+      'attack': 176,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
+    },
+    {
       'id': 363,
       'name': 'Spheal',
       'type': [
@@ -67144,7 +67933,7 @@ module.exports = {
         {
           'basePokemon': 'Spheal',
           'evolvedPokemon': 'Sealeo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67208,6 +67997,7 @@ module.exports = {
           ],
         },
         '2': ['Shoal Cave'],
+        '12': ['Yache'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -67227,7 +68017,7 @@ module.exports = {
         {
           'basePokemon': 'Sealeo',
           'evolvedPokemon': 'Walrein',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67316,7 +68106,7 @@ module.exports = {
           {
             'basePokemon': 'Spheal',
             'evolvedPokemon': 'Sealeo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -67407,7 +68197,7 @@ module.exports = {
           {
             'basePokemon': 'Sealeo',
             'evolvedPokemon': 'Walrein',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -67455,7 +68245,7 @@ module.exports = {
         {
           'basePokemon': 'Clamperl',
           'evolvedPokemon': 'Huntail',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67476,7 +68266,7 @@ module.exports = {
         {
           'basePokemon': 'Clamperl',
           'evolvedPokemon': 'Gorebyss',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67580,7 +68370,7 @@ module.exports = {
           {
             'basePokemon': 'Clamperl',
             'evolvedPokemon': 'Huntail',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -67635,7 +68425,7 @@ module.exports = {
           {
             'basePokemon': 'Clamperl',
             'evolvedPokemon': 'Gorebyss',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -67806,7 +68596,7 @@ module.exports = {
         {
           'basePokemon': 'Bagon',
           'evolvedPokemon': 'Shelgon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67892,7 +68682,7 @@ module.exports = {
         {
           'basePokemon': 'Shelgon',
           'evolvedPokemon': 'Salamence',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -67955,7 +68745,7 @@ module.exports = {
           {
             'basePokemon': 'Bagon',
             'evolvedPokemon': 'Shelgon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -68040,7 +68830,7 @@ module.exports = {
           {
             'basePokemon': 'Shelgon',
             'evolvedPokemon': 'Salamence',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -68078,6 +68868,36 @@ module.exports = {
       'eggSteps': 3600,
     },
     {
+      'id': 373.01,
+      'name': 'Mega Salamence',
+      'type': [
+        14,
+        9,
+      ],
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 95,
+        'attack': 145,
+        'specialAttack': 120,
+        'defense': 130,
+        'specialDefense': 90,
+        'speed': 120,
+      },
+      'attack': 243,
+      'nativeRegion': 2,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1600,
+    },
+    {
       'id': 374,
       'name': 'Beldum',
       'type': [
@@ -68092,7 +68912,7 @@ module.exports = {
         {
           'basePokemon': 'Beldum',
           'evolvedPokemon': 'Metang',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -68177,7 +68997,7 @@ module.exports = {
         {
           'basePokemon': 'Metang',
           'evolvedPokemon': 'Metagross',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -68244,7 +69064,7 @@ module.exports = {
           {
             'basePokemon': 'Beldum',
             'evolvedPokemon': 'Metang',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -68328,7 +69148,7 @@ module.exports = {
           {
             'basePokemon': 'Metang',
             'evolvedPokemon': 'Metagross',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -68363,6 +69183,36 @@ module.exports = {
       },
       'catchRatePercent': 2,
       'eggSteps': 3600,
+    },
+    {
+      'id': 376.01,
+      'name': 'Mega Metagross',
+      'type': [
+        16,
+        10,
+      ],
+      'eggCycles': 40,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 80,
+        'attack': 145,
+        'specialAttack': 105,
+        'defense': 150,
+        'specialDefense': 110,
+        'speed': 110,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 226,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1600,
     },
     {
       'id': 377,
@@ -68525,6 +69375,36 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 380.01,
+      'name': 'Mega Latias',
+      'type': [
+        14,
+        10,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 80,
+        'attack': 100,
+        'specialAttack': 140,
+        'defense': 120,
+        'specialDefense': 150,
+        'speed': 110,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 222,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
       'id': 381,
       'name': 'Latios',
       'type': [
@@ -68571,6 +69451,36 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 381.01,
+      'name': 'Mega Latios',
+      'type': [
+        14,
+        10,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 80,
+        'attack': 130,
+        'specialAttack': 160,
+        'defense': 100,
+        'specialDefense': 120,
+        'speed': 110,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 242,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
       'id': 382,
       'name': 'Kyogre',
       'type': [2],
@@ -68602,6 +69512,33 @@ module.exports = {
         ],
       },
       'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 382.01,
+      'name': 'Primal Kyogre',
+      'type': [2],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 347,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 100,
+        'attack': 150,
+        'specialAttack': 180,
+        'defense': 90,
+        'specialDefense': 160,
+        'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 316,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
       'eggSteps': 4800,
     },
     {
@@ -68639,6 +69576,36 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 383.01,
+      'name': 'Primal Groudon',
+      'type': [
+        8,
+        1,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 347,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 100,
+        'attack': 180,
+        'specialAttack': 150,
+        'defense': 160,
+        'specialDefense': 90,
+        'speed': 90,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 316,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
       'id': 384,
       'name': 'Rayquaza',
       'type': [
@@ -68672,6 +69639,36 @@ module.exports = {
         ],
       },
       'catchRatePercent': 17,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 384.01,
+      'name': 'Mega Rayquaza',
+      'type': [
+        14,
+        9,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 351,
+      'catchRate': 1,
+      'base': {
+        'hitpoints': 105,
+        'attack': 180,
+        'specialAttack': 180,
+        'defense': 100,
+        'specialDefense': 100,
+        'speed': 115,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 329,
+      'nativeRegion': 2,
+      'locations': {},
+      'catchRatePercent': 1,
       'eggSteps': 4800,
     },
     {
@@ -68746,7 +69743,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 386.1,
+      'id': 386.01,
       'name': 'Deoxys (Attack)',
       'type': [10],
       'eggCycles': 120,
@@ -68775,7 +69772,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 386.2,
+      'id': 386.02,
       'name': 'Deoxys (Defense)',
       'type': [10],
       'eggCycles': 120,
@@ -68804,7 +69801,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 386.3,
+      'id': 386.03,
       'name': 'Deoxys (Speed)',
       'type': [10],
       'eggCycles': 120,
@@ -68844,7 +69841,7 @@ module.exports = {
         {
           'basePokemon': 'Turtwig',
           'evolvedPokemon': 'Grotle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -68910,7 +69907,7 @@ module.exports = {
         {
           'basePokemon': 'Grotle',
           'evolvedPokemon': 'Torterra',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -68962,7 +69959,7 @@ module.exports = {
           {
             'basePokemon': 'Turtwig',
             'evolvedPokemon': 'Grotle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69029,7 +70026,7 @@ module.exports = {
           {
             'basePokemon': 'Grotle',
             'evolvedPokemon': 'Torterra',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69077,7 +70074,7 @@ module.exports = {
         {
           'basePokemon': 'Chimchar',
           'evolvedPokemon': 'Monferno',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69146,7 +70143,7 @@ module.exports = {
         {
           'basePokemon': 'Monferno',
           'evolvedPokemon': 'Infernape',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69198,7 +70195,7 @@ module.exports = {
           {
             'basePokemon': 'Chimchar',
             'evolvedPokemon': 'Monferno',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69265,7 +70262,7 @@ module.exports = {
           {
             'basePokemon': 'Monferno',
             'evolvedPokemon': 'Infernape',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69313,7 +70310,7 @@ module.exports = {
         {
           'basePokemon': 'Piplup',
           'evolvedPokemon': 'Prinplup',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69379,7 +70376,7 @@ module.exports = {
         {
           'basePokemon': 'Prinplup',
           'evolvedPokemon': 'Empoleon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69431,7 +70428,7 @@ module.exports = {
           {
             'basePokemon': 'Piplup',
             'evolvedPokemon': 'Prinplup',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69498,7 +70495,7 @@ module.exports = {
           {
             'basePokemon': 'Prinplup',
             'evolvedPokemon': 'Empoleon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69549,7 +70546,7 @@ module.exports = {
         {
           'basePokemon': 'Starly',
           'evolvedPokemon': 'Staravia',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69633,7 +70630,7 @@ module.exports = {
         {
           'basePokemon': 'Staravia',
           'evolvedPokemon': 'Staraptor',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69710,7 +70707,7 @@ module.exports = {
           {
             'basePokemon': 'Starly',
             'evolvedPokemon': 'Staravia',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69777,7 +70774,7 @@ module.exports = {
           {
             'basePokemon': 'Staravia',
             'evolvedPokemon': 'Staraptor',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -69825,7 +70822,7 @@ module.exports = {
         {
           'basePokemon': 'Bidoof',
           'evolvedPokemon': 'Bibarel',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -69968,7 +70965,7 @@ module.exports = {
           {
             'basePokemon': 'Bidoof',
             'evolvedPokemon': 'Bibarel',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70016,7 +71013,7 @@ module.exports = {
         {
           'basePokemon': 'Kricketot',
           'evolvedPokemon': 'Kricketune',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70126,7 +71123,7 @@ module.exports = {
           {
             'basePokemon': 'Kricketot',
             'evolvedPokemon': 'Kricketune',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70174,7 +71171,7 @@ module.exports = {
         {
           'basePokemon': 'Shinx',
           'evolvedPokemon': 'Luxio',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70274,7 +71271,7 @@ module.exports = {
         {
           'basePokemon': 'Luxio',
           'evolvedPokemon': 'Luxray',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70355,7 +71352,7 @@ module.exports = {
           {
             'basePokemon': 'Shinx',
             'evolvedPokemon': 'Luxio',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70452,7 +71449,7 @@ module.exports = {
           {
             'basePokemon': 'Luxio',
             'evolvedPokemon': 'Luxray',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70503,7 +71500,7 @@ module.exports = {
         {
           'basePokemon': 'Budew',
           'evolvedPokemon': 'Roselia',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70657,7 +71654,7 @@ module.exports = {
           {
             'basePokemon': 'Roselia',
             'evolvedPokemon': 'Roserade',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70692,7 +71689,7 @@ module.exports = {
         {
           'basePokemon': 'Cranidos',
           'evolvedPokemon': 'Rampardos',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70773,7 +71770,7 @@ module.exports = {
           {
             'basePokemon': 'Cranidos',
             'evolvedPokemon': 'Rampardos',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70824,7 +71821,7 @@ module.exports = {
         {
           'basePokemon': 'Shieldon',
           'evolvedPokemon': 'Bastiodon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70908,7 +71905,7 @@ module.exports = {
           {
             'basePokemon': 'Shieldon',
             'evolvedPokemon': 'Bastiodon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -70956,7 +71953,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Wormadam (Plant)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -70990,7 +71987,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Mothim',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71024,7 +72021,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Burmy (Sand)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71065,7 +72062,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Burmy (Sand)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71106,7 +72103,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Burmy (Trash)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71147,7 +72144,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Burmy (Trash)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71188,7 +72185,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Plant)',
           'evolvedPokemon': 'Burmy (Trash)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71257,7 +72254,7 @@ module.exports = {
       'eggSteps': 600,
     },
     {
-      'id': 412.1,
+      'id': 412.01,
       'name': 'Burmy (Sand)',
       'type': [11],
       'eggCycles': 23,
@@ -71268,7 +72265,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Sand)',
           'evolvedPokemon': 'Wormadam (Sand)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71302,7 +72299,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Sand)',
           'evolvedPokemon': 'Mothim',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71354,7 +72351,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Burmy (Sand)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71395,7 +72392,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Burmy (Sand)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71439,7 +72436,7 @@ module.exports = {
       'eggSteps': 920,
     },
     {
-      'id': 412.2,
+      'id': 412.02,
       'name': 'Burmy (Trash)',
       'type': [11],
       'eggCycles': 23,
@@ -71450,7 +72447,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Trash)',
           'evolvedPokemon': 'Wormadam (Trash)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71484,7 +72481,7 @@ module.exports = {
         {
           'basePokemon': 'Burmy (Trash)',
           'evolvedPokemon': 'Mothim',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -71536,7 +72533,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Burmy (Trash)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71577,7 +72574,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Burmy (Trash)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71618,7 +72615,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Burmy (Trash)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71692,7 +72689,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Wormadam (Plant)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71729,7 +72726,7 @@ module.exports = {
       'eggSteps': 920,
     },
     {
-      'id': 413.1,
+      'id': 413.01,
       'name': 'Wormadam (Sand)',
       'type': [
         11,
@@ -71759,7 +72756,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Sand)',
             'evolvedPokemon': 'Wormadam (Sand)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71796,7 +72793,7 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
-      'id': 413.2,
+      'id': 413.02,
       'name': 'Wormadam (Trash)',
       'type': [
         11,
@@ -71826,7 +72823,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Trash)',
             'evolvedPokemon': 'Wormadam (Trash)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71893,7 +72890,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Plant)',
             'evolvedPokemon': 'Mothim',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71927,7 +72924,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Sand)',
             'evolvedPokemon': 'Mothim',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -71961,7 +72958,7 @@ module.exports = {
           {
             'basePokemon': 'Burmy (Trash)',
             'evolvedPokemon': 'Mothim',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -72012,7 +73009,7 @@ module.exports = {
         {
           'basePokemon': 'Combee',
           'evolvedPokemon': 'Vespiquen',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -72083,7 +73080,7 @@ module.exports = {
         },
         '2': ['Lostlorn Forest'],
         '8': ['Pal Park'],
-        '12': ['Always'],
+        '12': ['Tanga'],
       },
       'catchRatePercent': 36,
       'eggSteps': 600,
@@ -72132,7 +73129,7 @@ module.exports = {
           {
             'basePokemon': 'Combee',
             'evolvedPokemon': 'Vespiquen',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -72218,7 +73215,7 @@ module.exports = {
         {
           'basePokemon': 'Buizel',
           'evolvedPokemon': 'Floatzel',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -72359,7 +73356,7 @@ module.exports = {
           {
             'basePokemon': 'Buizel',
             'evolvedPokemon': 'Floatzel',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -72407,7 +73404,7 @@ module.exports = {
         {
           'basePokemon': 'Cherubi',
           'evolvedPokemon': 'Cherrim (Overcast)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -72513,7 +73510,7 @@ module.exports = {
         {
           'basePokemon': 'Cherrim (Overcast)',
           'evolvedPokemon': 'Cherrim (Sunshine)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -72572,7 +73569,7 @@ module.exports = {
           {
             'basePokemon': 'Cherubi',
             'evolvedPokemon': 'Cherrim (Overcast)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -72609,7 +73606,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 421.1,
+      'id': 421.01,
       'name': 'Cherrim (Sunshine)',
       'type': [4],
       'eggCycles': 45,
@@ -72636,7 +73633,7 @@ module.exports = {
           {
             'basePokemon': 'Cherrim (Overcast)',
             'evolvedPokemon': 'Cherrim (Sunshine)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -72691,7 +73688,7 @@ module.exports = {
         {
           'basePokemon': 'Shellos (West)',
           'evolvedPokemon': 'Gastrodon (West)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -72757,7 +73754,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 422.1,
+      'id': 422.01,
       'name': 'Shellos (East)',
       'type': [2],
       'eggCycles': 20,
@@ -72768,7 +73765,7 @@ module.exports = {
         {
           'basePokemon': 'Shellos (East)',
           'evolvedPokemon': 'Gastrodon (East)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -72904,7 +73901,7 @@ module.exports = {
           {
             'basePokemon': 'Shellos (West)',
             'evolvedPokemon': 'Gastrodon (West)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -72941,7 +73938,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 423.1,
+      'id': 423.01,
       'name': 'Gastrodon (East)',
       'type': [
         2,
@@ -73015,7 +74012,7 @@ module.exports = {
           {
             'basePokemon': 'Shellos (East)',
             'evolvedPokemon': 'Gastrodon (East)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73086,7 +74083,7 @@ module.exports = {
           {
             'basePokemon': 'Aipom',
             'evolvedPokemon': 'Ambipom',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73137,7 +74134,7 @@ module.exports = {
         {
           'basePokemon': 'Drifloon',
           'evolvedPokemon': 'Drifblim',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -73194,10 +74191,6 @@ module.exports = {
           '7': [
             {
               'route': 8,
-            },
-            {
-              'route': 8,
-              'requirements': 'The weather needs to be Fog',
             },
             {
               'route': 9,
@@ -73297,6 +74290,7 @@ module.exports = {
             'dungeon': "Hau'oli Cemetery",
           },
         ],
+        '12': ['Kasib'],
       },
       'catchRatePercent': 37,
       'eggSteps': 1200,
@@ -73405,7 +74399,7 @@ module.exports = {
           {
             'basePokemon': 'Drifloon',
             'evolvedPokemon': 'Drifblim',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73453,7 +74447,7 @@ module.exports = {
         {
           'basePokemon': 'Buneary',
           'evolvedPokemon': 'Lopunny',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -73519,6 +74513,36 @@ module.exports = {
       'levelType': 2,
       'exp': 168,
       'catchRate': 60,
+      'evolutions': [
+        {
+          'basePokemon': 'Lopunny',
+          'evolvedPokemon': 'Mega Lopunny',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Lopunny',
+              'hint': 'Lopunny needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 3,
+              'option': 2,
+              'hint': 'You need to reach the sinnoh region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Lopunny',
+              'hint': "Can't mega evolve Lopunny yet.",
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 65,
         'attack': 76,
@@ -73583,7 +74607,7 @@ module.exports = {
           {
             'basePokemon': 'Buneary',
             'evolvedPokemon': 'Lopunny',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73605,6 +74629,67 @@ module.exports = {
       },
       'catchRatePercent': 21,
       'eggSteps': 1200,
+    },
+    {
+      'id': 428.01,
+      'name': 'Mega Lopunny',
+      'type': [
+        0,
+        6,
+      ],
+      'eggCycles': 45,
+      'levelType': 2,
+      'exp': 347,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 65,
+        'attack': 136,
+        'specialAttack': 54,
+        'defense': 94,
+        'specialDefense': 96,
+        'speed': 135,
+      },
+      'attack': 129,
+      'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Lopunny',
+            'evolvedPokemon': 'Mega Lopunny',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Lopunny',
+                'hint': 'Lopunny needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 3,
+                'option': 2,
+                'hint': 'You need to reach the sinnoh region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Lopunny',
+                'hint': "Can't mega evolve Lopunny yet.",
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 1,
+      'eggSteps': 1800,
     },
     {
       'id': 429,
@@ -73634,7 +74719,7 @@ module.exports = {
           {
             'basePokemon': 'Misdreavus',
             'evolvedPokemon': 'Mismagius',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73688,7 +74773,7 @@ module.exports = {
           {
             'basePokemon': 'Murkrow',
             'evolvedPokemon': 'Honchkrow',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73723,7 +74808,7 @@ module.exports = {
         {
           'basePokemon': 'Glameow',
           'evolvedPokemon': 'Purugly',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -73823,7 +74908,7 @@ module.exports = {
           {
             'basePokemon': 'Glameow',
             'evolvedPokemon': 'Purugly',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -73871,7 +74956,7 @@ module.exports = {
         {
           'basePokemon': 'Chingling',
           'evolvedPokemon': 'Chimecho',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -73936,6 +75021,7 @@ module.exports = {
           'Reflection Cave',
         ],
         '7': ['Chimecho'],
+        '12': ['Payapa'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -73955,7 +75041,7 @@ module.exports = {
         {
           'basePokemon': 'Stunky',
           'evolvedPokemon': 'Skuntank',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74061,6 +75147,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Colbur'],
       },
       'catchRatePercent': 58,
       'eggSteps': 800,
@@ -74148,7 +75235,7 @@ module.exports = {
           {
             'basePokemon': 'Stunky',
             'evolvedPokemon': 'Skuntank',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -74199,7 +75286,7 @@ module.exports = {
         {
           'basePokemon': 'Bronzor',
           'evolvedPokemon': 'Bronzong',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74315,6 +75402,7 @@ module.exports = {
             'dungeon': 'Mt. Coronet South',
           },
         ],
+        '12': ['Babiri'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -74434,7 +75522,7 @@ module.exports = {
           {
             'basePokemon': 'Bronzor',
             'evolvedPokemon': 'Bronzong',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -74482,7 +75570,7 @@ module.exports = {
         {
           'basePokemon': 'Bonsly',
           'evolvedPokemon': 'Sudowoodo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74550,6 +75638,7 @@ module.exports = {
         },
         '2': ['Lush Jungle'],
         '7': ['Sudowoodo'],
+        '12': ['Charti'],
       },
       'catchRatePercent': 63,
       'eggSteps': 640,
@@ -74569,7 +75658,7 @@ module.exports = {
         {
           'basePokemon': 'Mime Jr.',
           'evolvedPokemon': 'Mr. Mime',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74618,7 +75707,7 @@ module.exports = {
         {
           'basePokemon': 'Mime Jr.',
           'evolvedPokemon': 'Galarian Mr. Mime',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74733,7 +75822,7 @@ module.exports = {
         {
           'basePokemon': 'Happiny',
           'evolvedPokemon': 'Chansey',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74827,7 +75916,7 @@ module.exports = {
         {
           'basePokemon': 'Handout Happiny',
           'evolvedPokemon': 'Charity Chansey',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -74859,13 +75948,13 @@ module.exports = {
         'type': 2,
         'id': 'Oval Stone',
       },
-      'attack': 10,
-      'nativeRegion': 3,
       'gender': {
+        'femaleRatio': 1,
         'type': 1,
-        'femaleRatio': 0.5,
         'visualDifference': false,
       },
+      'attack': 10,
+      'nativeRegion': 3,
       'locations': {
         '7': ['Charity Chansey'],
       },
@@ -74923,6 +76012,7 @@ module.exports = {
             },
           ],
         },
+        '12': ['Coba'],
       },
       'catchRatePercent': 12,
       'eggSteps': 800,
@@ -74974,7 +76064,7 @@ module.exports = {
         {
           'basePokemon': 'Gible',
           'evolvedPokemon': 'Gabite',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75031,6 +76121,7 @@ module.exports = {
         },
         '2': ['Tunnel to the Top'],
         '6': ['Dragon'],
+        '12': ['Haban'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1600,
@@ -75050,7 +76141,7 @@ module.exports = {
         {
           'basePokemon': 'Gabite',
           'evolvedPokemon': 'Garchomp',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75109,7 +76200,7 @@ module.exports = {
           {
             'basePokemon': 'Gible',
             'evolvedPokemon': 'Gabite',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -75157,6 +76248,36 @@ module.exports = {
       'levelType': 4,
       'exp': 270,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Garchomp',
+          'evolvedPokemon': 'Mega Garchomp',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Garchomp',
+              'hint': 'Garchomp needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 3,
+              'option': 2,
+              'hint': 'You need to reach the sinnoh region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Garchomp',
+              'hint': "Can't mega evolve Garchomp yet.",
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 108,
         'attack': 130,
@@ -75191,7 +76312,7 @@ module.exports = {
           {
             'basePokemon': 'Gabite',
             'evolvedPokemon': 'Garchomp',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -75229,6 +76350,67 @@ module.exports = {
       'eggSteps': 3600,
     },
     {
+      'id': 445.01,
+      'name': 'Mega Garchomp',
+      'type': [
+        14,
+        8,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 347,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 108,
+        'attack': 170,
+        'specialAttack': 120,
+        'defense': 115,
+        'specialDefense': 95,
+        'speed': 92,
+      },
+      'attack': 269,
+      'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Garchomp',
+            'evolvedPokemon': 'Mega Garchomp',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Garchomp',
+                'hint': 'Garchomp needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 3,
+                'option': 2,
+                'hint': 'You need to reach the sinnoh region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Garchomp',
+                'hint': "Can't mega evolve Garchomp yet.",
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 1,
+      'eggSteps': 4800,
+    },
+    {
       'id': 446,
       'name': 'Munchlax',
       'type': [0],
@@ -75240,7 +76422,7 @@ module.exports = {
         {
           'basePokemon': 'Munchlax',
           'evolvedPokemon': 'Snorlax',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75294,7 +76476,7 @@ module.exports = {
       'eggSteps': 1280,
     },
     {
-      'id': 446.1,
+      'id': 446.01,
       'name': 'Elf Munchlax',
       'type': [0],
       'eggCycles': 32,
@@ -75305,7 +76487,7 @@ module.exports = {
         {
           'basePokemon': 'Elf Munchlax',
           'evolvedPokemon': 'Santa Snorlax',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75358,7 +76540,7 @@ module.exports = {
         {
           'basePokemon': 'Riolu',
           'evolvedPokemon': 'Lucario',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75448,7 +76630,7 @@ module.exports = {
         {
           'basePokemon': 'Lucario',
           'evolvedPokemon': 'Mega Lucario',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75507,7 +76689,7 @@ module.exports = {
           {
             'basePokemon': 'Riolu',
             'evolvedPokemon': 'Lucario',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -75570,7 +76752,7 @@ module.exports = {
           {
             'basePokemon': 'Lucario',
             'evolvedPokemon': 'Mega Lucario',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -75612,7 +76794,7 @@ module.exports = {
         {
           'basePokemon': 'Hippopotas',
           'evolvedPokemon': 'Hippowdon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75673,6 +76855,7 @@ module.exports = {
           ],
         },
         '2': ['Solaceon Ruins'],
+        '12': ['Shuca'],
       },
       'catchRatePercent': 40,
       'eggSteps': 1200,
@@ -75725,7 +76908,7 @@ module.exports = {
           {
             'basePokemon': 'Hippopotas',
             'evolvedPokemon': 'Hippowdon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -75776,7 +76959,7 @@ module.exports = {
         {
           'basePokemon': 'Skorupi',
           'evolvedPokemon': 'Drapion',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -75894,6 +77077,7 @@ module.exports = {
         },
         '2': ['Reversal Mountain'],
         '8': ['Pastoria City'],
+        '12': ['Kebia'],
       },
       'catchRatePercent': 36,
       'eggSteps': 800,
@@ -76013,7 +77197,7 @@ module.exports = {
           {
             'basePokemon': 'Skorupi',
             'evolvedPokemon': 'Drapion',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -76064,7 +77248,7 @@ module.exports = {
         {
           'basePokemon': 'Croagunk',
           'evolvedPokemon': 'Toxicroak',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -76219,7 +77403,7 @@ module.exports = {
           {
             'basePokemon': 'Croagunk',
             'evolvedPokemon': 'Toxicroak',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -76311,7 +77495,7 @@ module.exports = {
         {
           'basePokemon': 'Finneon',
           'evolvedPokemon': 'Lumineon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -76467,7 +77651,7 @@ module.exports = {
           {
             'basePokemon': 'Finneon',
             'evolvedPokemon': 'Lumineon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -76518,7 +77702,7 @@ module.exports = {
         {
           'basePokemon': 'Mantyke',
           'evolvedPokemon': 'Mantine',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -76647,7 +77831,7 @@ module.exports = {
         {
           'basePokemon': 'Snover',
           'evolvedPokemon': 'Abomasnow',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -76813,7 +77997,7 @@ module.exports = {
         {
           'basePokemon': 'Abomasnow',
           'evolvedPokemon': 'Mega Abomasnow',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -76919,7 +78103,7 @@ module.exports = {
           {
             'basePokemon': 'Snover',
             'evolvedPokemon': 'Abomasnow',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -76986,7 +78170,7 @@ module.exports = {
           {
             'basePokemon': 'Abomasnow',
             'evolvedPokemon': 'Mega Abomasnow',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77073,7 +78257,7 @@ module.exports = {
           {
             'basePokemon': 'Sneasel',
             'evolvedPokemon': 'Weavile',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77155,7 +78339,7 @@ module.exports = {
           {
             'basePokemon': 'Magneton',
             'evolvedPokemon': 'Magnezone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77203,7 +78387,7 @@ module.exports = {
           {
             'basePokemon': 'Magneton',
             'evolvedPokemon': 'Magnezone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77251,7 +78435,7 @@ module.exports = {
           {
             'basePokemon': 'Magneton',
             'evolvedPokemon': 'Magnezone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77299,7 +78483,7 @@ module.exports = {
           {
             'basePokemon': 'Magneton',
             'evolvedPokemon': 'Magnezone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77347,7 +78531,7 @@ module.exports = {
           {
             'basePokemon': 'Magneton',
             'evolvedPokemon': 'Magnezone',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77395,7 +78579,7 @@ module.exports = {
           {
             'basePokemon': 'Magneton',
             'evolvedPokemon': 'Magnezone',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77481,7 +78665,7 @@ module.exports = {
           {
             'basePokemon': 'Lickitung',
             'evolvedPokemon': 'Lickilicky',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77569,7 +78753,7 @@ module.exports = {
           {
             'basePokemon': 'Rhydon',
             'evolvedPokemon': 'Rhyperior',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77638,7 +78822,7 @@ module.exports = {
           {
             'basePokemon': 'Tangela',
             'evolvedPokemon': 'Tangrowth',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77731,7 +78915,7 @@ module.exports = {
           {
             'basePokemon': 'Electabuzz',
             'evolvedPokemon': 'Electivire',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77806,7 +78990,7 @@ module.exports = {
           {
             'basePokemon': 'Magmar',
             'evolvedPokemon': 'Magmortar',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77860,7 +79044,7 @@ module.exports = {
           {
             'basePokemon': 'Togetic',
             'evolvedPokemon': 'Togekiss',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77884,7 +79068,7 @@ module.exports = {
       'eggSteps': 600,
     },
     {
-      'id': 468.1,
+      'id': 468.01,
       'name': 'Spooky Togekiss',
       'type': [
         13,
@@ -77914,7 +79098,7 @@ module.exports = {
           {
             'basePokemon': 'Spooky Togetic',
             'evolvedPokemon': 'Spooky Togekiss',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -77975,7 +79159,7 @@ module.exports = {
           {
             'basePokemon': 'Yanma',
             'evolvedPokemon': 'Yanmega',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78051,7 +79235,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Leafeon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78099,7 +79283,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Leafeon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78147,7 +79331,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Leafeon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78195,7 +79379,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Leafeon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78243,7 +79427,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Leafeon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78317,7 +79501,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Glaceon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78365,7 +79549,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Glaceon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78413,7 +79597,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Glaceon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78461,7 +79645,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Glaceon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78509,7 +79693,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Glaceon',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78570,7 +79754,7 @@ module.exports = {
           {
             'basePokemon': 'Gligar',
             'evolvedPokemon': 'Gliscor',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78663,7 +79847,7 @@ module.exports = {
           {
             'basePokemon': 'Piloswine',
             'evolvedPokemon': 'Mamoswine',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78727,7 +79911,7 @@ module.exports = {
           {
             'basePokemon': 'Porygon2',
             'evolvedPokemon': 'Porygon-Z',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78809,7 +79993,7 @@ module.exports = {
           {
             'basePokemon': 'Kirlia',
             'evolvedPokemon': 'Gallade',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78831,6 +80015,36 @@ module.exports = {
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
+    },
+    {
+      'id': 475.01,
+      'name': 'Mega Gallade',
+      'type': [
+        10,
+        6,
+      ],
+      'eggCycles': 20,
+      'levelType': 4,
+      'exp': 347,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 68,
+        'attack': 165,
+        'specialAttack': 65,
+        'defense': 95,
+        'specialDefense': 115,
+        'speed': 110,
+      },
+      'gender': {
+        'femaleRatio': 0,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 161,
+      'nativeRegion': 3,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 800,
     },
     {
       'id': 476,
@@ -78867,7 +80081,7 @@ module.exports = {
           {
             'basePokemon': 'Nosepass',
             'evolvedPokemon': 'Probopass',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78915,7 +80129,7 @@ module.exports = {
           {
             'basePokemon': 'Nosepass',
             'evolvedPokemon': 'Probopass',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -78963,7 +80177,7 @@ module.exports = {
           {
             'basePokemon': 'Nosepass',
             'evolvedPokemon': 'Probopass',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -79011,7 +80225,7 @@ module.exports = {
           {
             'basePokemon': 'Nosepass',
             'evolvedPokemon': 'Probopass',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -79059,7 +80273,7 @@ module.exports = {
           {
             'basePokemon': 'Nosepass',
             'evolvedPokemon': 'Probopass',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -79144,7 +80358,7 @@ module.exports = {
           {
             'basePokemon': 'Dusclops',
             'evolvedPokemon': 'Dusknoir',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -79236,7 +80450,7 @@ module.exports = {
           {
             'basePokemon': 'Snorunt',
             'evolvedPokemon': 'Froslass',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -79319,7 +80533,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 479.1,
+      'id': 479.01,
       'name': 'Rotom (Heat)',
       'type': [
         3,
@@ -79369,7 +80583,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 479.2,
+      'id': 479.02,
       'name': 'Rotom (Wash)',
       'type': [
         3,
@@ -79419,7 +80633,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 479.3,
+      'id': 479.03,
       'name': 'Rotom (Frost)',
       'type': [
         3,
@@ -79469,7 +80683,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 479.4,
+      'id': 479.04,
       'name': 'Rotom (Fan)',
       'type': [
         3,
@@ -79519,7 +80733,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 479.5,
+      'id': 479.05,
       'name': 'Rotom (Mow)',
       'type': [
         3,
@@ -79569,7 +80783,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 479.6,
+      'id': 479.06,
       'name': 'Rotom (Discord)',
       'type': [
         3,
@@ -79802,7 +81016,7 @@ module.exports = {
         1,
         16,
       ],
-      'eggCycles': 80,
+      'eggCycles': 10,
       'levelType': 4,
       'exp': 270,
       'catchRate': 3,
@@ -79833,7 +81047,7 @@ module.exports = {
         ],
       },
       'catchRatePercent': 2,
-      'eggSteps': 3200,
+      'eggSteps': 400,
     },
     {
       'id': 486,
@@ -79886,7 +81100,7 @@ module.exports = {
         {
           'basePokemon': 'Giratina (Altered)',
           'evolvedPokemon': 'Giratina (Origin)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -79957,7 +81171,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 487.1,
+      'id': 487.01,
       'name': 'Giratina (Origin)',
       'type': [
         13,
@@ -79987,7 +81201,7 @@ module.exports = {
           {
             'basePokemon': 'Giratina (Altered)',
             'evolvedPokemon': 'Giratina (Origin)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -80043,8 +81257,8 @@ module.exports = {
         'hitpoints': 120,
         'attack': 70,
         'specialAttack': 75,
-        'defense': 120,
-        'specialDefense': 130,
+        'defense': 110,
+        'specialDefense': 120,
         'speed': 85,
       },
       'gender': {
@@ -80052,7 +81266,7 @@ module.exports = {
         'type': 1,
         'visualDifference': false,
       },
-      'attack': 166,
+      'attack': 160,
       'nativeRegion': 3,
       'locations': {
         '1': [
@@ -80090,20 +81304,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the sinnoh region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 69420,
-              'option': 2,
-              'pokemon': 'Phione',
-              'hint': 'Your Phione needs to be at least level 69420.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Manaphy',
-              'hint': 'Manaphy cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -80158,42 +81358,6 @@ module.exports = {
         '1': [
           {
             'region': 3,
-          },
-        ],
-        '5': [
-          {
-            'basePokemon': 'Phione',
-            'evolvedPokemon': 'Manaphy',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Phione',
-                'hint': 'Phione needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 3,
-                'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 69420,
-                'option': 2,
-                'pokemon': 'Phione',
-                'hint': 'Your Phione needs to be at least level 69420.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Manaphy',
-                'hint': 'Manaphy cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
           },
         ],
         '12': ['Liechi'],
@@ -80272,7 +81436,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 492.1,
+      'id': 492.01,
       'name': 'Shaymin (Sky)',
       'type': [
         4,
@@ -80848,7 +82012,7 @@ module.exports = {
         {
           'basePokemon': 'Snivy',
           'evolvedPokemon': 'Servine',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -80914,7 +82078,7 @@ module.exports = {
         {
           'basePokemon': 'Servine',
           'evolvedPokemon': 'Serperior',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -80966,7 +82130,7 @@ module.exports = {
           {
             'basePokemon': 'Snivy',
             'evolvedPokemon': 'Servine',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81030,7 +82194,7 @@ module.exports = {
           {
             'basePokemon': 'Servine',
             'evolvedPokemon': 'Serperior',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81078,7 +82242,7 @@ module.exports = {
         {
           'basePokemon': 'Tepig',
           'evolvedPokemon': 'Pignite',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81147,7 +82311,7 @@ module.exports = {
         {
           'basePokemon': 'Pignite',
           'evolvedPokemon': 'Emboar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81199,7 +82363,7 @@ module.exports = {
           {
             'basePokemon': 'Tepig',
             'evolvedPokemon': 'Pignite',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81266,7 +82430,7 @@ module.exports = {
           {
             'basePokemon': 'Pignite',
             'evolvedPokemon': 'Emboar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81314,7 +82478,7 @@ module.exports = {
         {
           'basePokemon': 'Oshawott',
           'evolvedPokemon': 'Dewott',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81380,7 +82544,7 @@ module.exports = {
         {
           'basePokemon': 'Dewott',
           'evolvedPokemon': 'Samurott',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81432,7 +82596,7 @@ module.exports = {
           {
             'basePokemon': 'Oshawott',
             'evolvedPokemon': 'Dewott',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81496,7 +82660,7 @@ module.exports = {
           {
             'basePokemon': 'Dewott',
             'evolvedPokemon': 'Samurott',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81544,7 +82708,7 @@ module.exports = {
         {
           'basePokemon': 'Patrat',
           'evolvedPokemon': 'Watchog',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81660,7 +82824,7 @@ module.exports = {
           {
             'basePokemon': 'Patrat',
             'evolvedPokemon': 'Watchog',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81708,7 +82872,7 @@ module.exports = {
         {
           'basePokemon': 'Lillipup',
           'evolvedPokemon': 'Herdier',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81794,7 +82958,7 @@ module.exports = {
         {
           'basePokemon': 'Herdier',
           'evolvedPokemon': 'Stoutland',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -81869,7 +83033,7 @@ module.exports = {
           {
             'basePokemon': 'Lillipup',
             'evolvedPokemon': 'Herdier',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81941,7 +83105,7 @@ module.exports = {
           {
             'basePokemon': 'Herdier',
             'evolvedPokemon': 'Stoutland',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -81989,7 +83153,7 @@ module.exports = {
         {
           'basePokemon': 'Purrloin',
           'evolvedPokemon': 'Liepard',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82214,7 +83378,7 @@ module.exports = {
           {
             'basePokemon': 'Purrloin',
             'evolvedPokemon': 'Liepard',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -82262,7 +83426,7 @@ module.exports = {
         {
           'basePokemon': 'Pansage',
           'evolvedPokemon': 'Simisage',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82331,7 +83495,7 @@ module.exports = {
           {
             'basePokemon': 'Pansage',
             'evolvedPokemon': 'Simisage',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -82366,7 +83530,7 @@ module.exports = {
         {
           'basePokemon': 'Pansear',
           'evolvedPokemon': 'Simisear',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82435,7 +83599,7 @@ module.exports = {
           {
             'basePokemon': 'Pansear',
             'evolvedPokemon': 'Simisear',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -82470,7 +83634,7 @@ module.exports = {
         {
           'basePokemon': 'Panpour',
           'evolvedPokemon': 'Simipour',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82539,7 +83703,7 @@ module.exports = {
           {
             'basePokemon': 'Panpour',
             'evolvedPokemon': 'Simipour',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -82574,7 +83738,7 @@ module.exports = {
         {
           'basePokemon': 'Munna',
           'evolvedPokemon': 'Musharna',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82698,7 +83862,7 @@ module.exports = {
           {
             'basePokemon': 'Munna',
             'evolvedPokemon': 'Musharna',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -82736,7 +83900,7 @@ module.exports = {
         {
           'basePokemon': 'Pidove',
           'evolvedPokemon': 'Tranquill',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82846,7 +84010,7 @@ module.exports = {
         {
           'basePokemon': 'Tranquill',
           'evolvedPokemon': 'Unfezant',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -82933,7 +84097,7 @@ module.exports = {
           {
             'basePokemon': 'Pidove',
             'evolvedPokemon': 'Tranquill',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83055,7 +84219,7 @@ module.exports = {
           {
             'basePokemon': 'Tranquill',
             'evolvedPokemon': 'Unfezant',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83103,7 +84267,7 @@ module.exports = {
         {
           'basePokemon': 'Blitzle',
           'evolvedPokemon': 'Zebstrika',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83192,7 +84356,7 @@ module.exports = {
           {
             'basePokemon': 'Blitzle',
             'evolvedPokemon': 'Zebstrika',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83240,7 +84404,7 @@ module.exports = {
         {
           'basePokemon': 'Roggenrola',
           'evolvedPokemon': 'Boldore',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83324,7 +84488,7 @@ module.exports = {
         {
           'basePokemon': 'Boldore',
           'evolvedPokemon': 'Gigalith',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83413,7 +84577,7 @@ module.exports = {
           {
             'basePokemon': 'Roggenrola',
             'evolvedPokemon': 'Boldore',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83490,7 +84654,7 @@ module.exports = {
           {
             'basePokemon': 'Boldore',
             'evolvedPokemon': 'Gigalith',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83528,7 +84692,7 @@ module.exports = {
         {
           'basePokemon': 'Woobat',
           'evolvedPokemon': 'Swoobat',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83644,7 +84808,7 @@ module.exports = {
           {
             'basePokemon': 'Woobat',
             'evolvedPokemon': 'Swoobat',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83679,7 +84843,7 @@ module.exports = {
         {
           'basePokemon': 'Drilbur',
           'evolvedPokemon': 'Excadrill',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83827,7 +84991,7 @@ module.exports = {
           {
             'basePokemon': 'Drilbur',
             'evolvedPokemon': 'Excadrill',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -83875,7 +85039,7 @@ module.exports = {
         {
           'basePokemon': 'Audino',
           'evolvedPokemon': 'Mega Audino',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83986,8 +85150,8 @@ module.exports = {
       ],
       'eggCycles': 30,
       'levelType': 1,
-      'exp': 425,
-      'catchRate': 255,
+      'exp': 390,
+      'catchRate': 2,
       'base': {
         'hitpoints': 103,
         'attack': 60,
@@ -84008,7 +85172,7 @@ module.exports = {
           {
             'basePokemon': 'Audino',
             'evolvedPokemon': 'Mega Audino',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -84035,7 +85199,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 63,
+      'catchRatePercent': 1,
       'eggSteps': 1200,
     },
     {
@@ -84050,7 +85214,7 @@ module.exports = {
         {
           'basePokemon': 'Timburr',
           'evolvedPokemon': 'Gurdurr',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -84118,7 +85282,7 @@ module.exports = {
         {
           'basePokemon': 'Gurdurr',
           'evolvedPokemon': 'Conkeldurr',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -84201,7 +85365,7 @@ module.exports = {
           {
             'basePokemon': 'Timburr',
             'evolvedPokemon': 'Gurdurr',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -84301,7 +85465,7 @@ module.exports = {
           {
             'basePokemon': 'Gurdurr',
             'evolvedPokemon': 'Conkeldurr',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -84336,7 +85500,7 @@ module.exports = {
         {
           'basePokemon': 'Tympole',
           'evolvedPokemon': 'Palpitoad',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -84474,7 +85638,7 @@ module.exports = {
         {
           'basePokemon': 'Palpitoad',
           'evolvedPokemon': 'Seismitoad',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -84594,7 +85758,7 @@ module.exports = {
           {
             'basePokemon': 'Tympole',
             'evolvedPokemon': 'Palpitoad',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -84732,7 +85896,7 @@ module.exports = {
           {
             'basePokemon': 'Palpitoad',
             'evolvedPokemon': 'Seismitoad',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -84915,7 +86079,7 @@ module.exports = {
         {
           'basePokemon': 'Sewaddle',
           'evolvedPokemon': 'Swadloon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -84994,7 +86158,7 @@ module.exports = {
         {
           'basePokemon': 'Swadloon',
           'evolvedPokemon': 'Leavanny',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -85041,7 +86205,7 @@ module.exports = {
           {
             'basePokemon': 'Sewaddle',
             'evolvedPokemon': 'Swadloon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -85108,7 +86272,7 @@ module.exports = {
           {
             'basePokemon': 'Swadloon',
             'evolvedPokemon': 'Leavanny',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -85146,7 +86310,7 @@ module.exports = {
         {
           'basePokemon': 'Venipede',
           'evolvedPokemon': 'Whirlipede',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -85226,7 +86390,7 @@ module.exports = {
         {
           'basePokemon': 'Whirlipede',
           'evolvedPokemon': 'Scolipede',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -85279,7 +86443,7 @@ module.exports = {
           {
             'basePokemon': 'Venipede',
             'evolvedPokemon': 'Whirlipede',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -85359,7 +86523,7 @@ module.exports = {
           {
             'basePokemon': 'Whirlipede',
             'evolvedPokemon': 'Scolipede',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -85410,7 +86574,7 @@ module.exports = {
         {
           'basePokemon': 'Cottonee',
           'evolvedPokemon': 'Whimsicott',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -85524,7 +86688,7 @@ module.exports = {
           {
             'basePokemon': 'Cottonee',
             'evolvedPokemon': 'Whimsicott',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -85559,7 +86723,7 @@ module.exports = {
         {
           'basePokemon': 'Petilil',
           'evolvedPokemon': 'Lilligant',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -85677,7 +86841,7 @@ module.exports = {
           {
             'basePokemon': 'Petilil',
             'evolvedPokemon': 'Lilligant',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -85932,7 +87096,7 @@ module.exports = {
         {
           'basePokemon': 'Sandile',
           'evolvedPokemon': 'Krokorok',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -86020,7 +87184,7 @@ module.exports = {
         {
           'basePokemon': 'Krokorok',
           'evolvedPokemon': 'Krookodile',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -86094,7 +87258,7 @@ module.exports = {
           {
             'basePokemon': 'Sandile',
             'evolvedPokemon': 'Krokorok',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -86177,7 +87341,7 @@ module.exports = {
           {
             'basePokemon': 'Krokorok',
             'evolvedPokemon': 'Krookodile',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -86225,7 +87389,7 @@ module.exports = {
         {
           'basePokemon': 'Darumaka',
           'evolvedPokemon': 'Darmanitan',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -86274,20 +87438,6 @@ module.exports = {
               'hint': 'You need to reach the unova region.',
               '__class': 'MaxRegionRequirement',
             },
-            {
-              'requiredValue': 1234,
-              'option': 2,
-              'pokemon': 'Darumaka',
-              'hint': 'Your Darumaka needs to be at least level 1234.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Darmanitan (Zen)',
-              'hint': 'Darmanitan (Zen) cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
           ],
         },
       ],
@@ -86323,7 +87473,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 554.1,
+      'id': 554.01,
       'name': 'Galarian Darumaka',
       'nativeRegion': 7,
       'type': [5],
@@ -86335,7 +87485,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Darumaka',
           'evolvedPokemon': 'Galarian Darmanitan',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -86370,20 +87520,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the galar region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 1234,
-              'option': 2,
-              'pokemon': 'Galarian Darumaka',
-              'hint': 'Your Galarian Darumaka needs to be at least level 1234.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Galarian Darmanitan (Zen)',
-              'hint': 'Galarian Darmanitan (Zen) cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -86453,7 +87589,7 @@ module.exports = {
           {
             'basePokemon': 'Darumaka',
             'evolvedPokemon': 'Darmanitan',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -86490,7 +87626,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 555.1,
+      'id': 555.01,
       'name': 'Darmanitan (Zen)',
       'type': [
         1,
@@ -86521,48 +87657,12 @@ module.exports = {
             'dungeon': 'Relic Castle',
           },
         ],
-        '5': [
-          {
-            'basePokemon': 'Darumaka',
-            'evolvedPokemon': 'Darmanitan (Zen)',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Darumaka',
-                'hint': 'Darumaka needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 4,
-                'option': 2,
-                'hint': 'You need to reach the unova region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 1234,
-                'option': 2,
-                'pokemon': 'Darumaka',
-                'hint': 'Your Darumaka needs to be at least level 1234.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Darmanitan (Zen)',
-                'hint': 'Darmanitan (Zen) cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 1200,
     },
     {
-      'id': 555.2,
+      'id': 555.02,
       'name': 'Galarian Darmanitan',
       'nativeRegion': 7,
       'type': [5],
@@ -86589,7 +87689,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Darumaka',
             'evolvedPokemon': 'Galarian Darmanitan',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -86613,7 +87713,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 555.3,
+      'id': 555.03,
       'name': 'Galarian Darmanitan (Zen)',
       'nativeRegion': 7,
       'type': [
@@ -86642,42 +87742,6 @@ module.exports = {
         '4': [
           {
             'dungeon': 'Crown Shrine',
-          },
-        ],
-        '5': [
-          {
-            'basePokemon': 'Galarian Darumaka',
-            'evolvedPokemon': 'Galarian Darmanitan (Zen)',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Galarian Darumaka',
-                'hint': 'Galarian Darumaka needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 7,
-                'option': 2,
-                'hint': 'You need to reach the galar region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 1234,
-                'option': 2,
-                'pokemon': 'Galarian Darumaka',
-                'hint': 'Your Galarian Darumaka needs to be at least level 1234.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Galarian Darmanitan (Zen)',
-                'hint': 'Galarian Darmanitan (Zen) cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
           },
         ],
       },
@@ -86757,7 +87821,7 @@ module.exports = {
         {
           'basePokemon': 'Dwebble',
           'evolvedPokemon': 'Crustle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -86981,7 +88045,7 @@ module.exports = {
           {
             'basePokemon': 'Dwebble',
             'evolvedPokemon': 'Crustle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -87032,7 +88096,7 @@ module.exports = {
         {
           'basePokemon': 'Scraggy',
           'evolvedPokemon': 'Scrafty',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -87193,7 +88257,7 @@ module.exports = {
           {
             'basePokemon': 'Scraggy',
             'evolvedPokemon': 'Scrafty',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -87301,7 +88365,7 @@ module.exports = {
         {
           'basePokemon': 'Yamask',
           'evolvedPokemon': 'Cofagrigus',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -87355,7 +88419,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 562.1,
+      'id': 562.01,
       'name': 'Galarian Yamask',
       'nativeRegion': 7,
       'type': [
@@ -87370,7 +88434,7 @@ module.exports = {
         {
           'basePokemon': 'Galarian Yamask',
           'evolvedPokemon': 'Runerigus',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -87470,7 +88534,7 @@ module.exports = {
           {
             'basePokemon': 'Yamask',
             'evolvedPokemon': 'Cofagrigus',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -87521,7 +88585,7 @@ module.exports = {
         {
           'basePokemon': 'Tirtouga',
           'evolvedPokemon': 'Carracosta',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -87621,7 +88685,7 @@ module.exports = {
           {
             'basePokemon': 'Tirtouga',
             'evolvedPokemon': 'Carracosta',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -87672,7 +88736,7 @@ module.exports = {
         {
           'basePokemon': 'Archen',
           'evolvedPokemon': 'Archeops',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -87764,7 +88828,7 @@ module.exports = {
           {
             'basePokemon': 'Archen',
             'evolvedPokemon': 'Archeops',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -87812,7 +88876,7 @@ module.exports = {
         {
           'basePokemon': 'Trubbish',
           'evolvedPokemon': 'Garbodor',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -87956,7 +89020,7 @@ module.exports = {
           {
             'basePokemon': 'Trubbish',
             'evolvedPokemon': 'Garbodor',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -87993,7 +89057,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 569.1,
+      'id': 569.01,
       'name': 'Gigantamax Garbodor',
       'nativeRegion': -1,
       'type': [7],
@@ -88031,7 +89095,7 @@ module.exports = {
         {
           'basePokemon': 'Zorua',
           'evolvedPokemon': 'Zoroark',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -88113,6 +89177,7 @@ module.exports = {
         },
         '2': ["Trainers' School"],
         '8': ['Driftveil City'],
+        '12': ['Colbur'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1000,
@@ -88185,7 +89250,7 @@ module.exports = {
           {
             'basePokemon': 'Zorua',
             'evolvedPokemon': 'Zoroark',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -88233,7 +89298,7 @@ module.exports = {
         {
           'basePokemon': 'Minccino',
           'evolvedPokemon': 'Cinccino',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -88372,7 +89437,7 @@ module.exports = {
           {
             'basePokemon': 'Minccino',
             'evolvedPokemon': 'Cinccino',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -88407,7 +89472,7 @@ module.exports = {
         {
           'basePokemon': 'Gothita',
           'evolvedPokemon': 'Gothorita',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -88495,7 +89560,7 @@ module.exports = {
         {
           'basePokemon': 'Gothorita',
           'evolvedPokemon': 'Gothitelle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -88570,7 +89635,7 @@ module.exports = {
           {
             'basePokemon': 'Gothita',
             'evolvedPokemon': 'Gothorita',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -88650,7 +89715,7 @@ module.exports = {
           {
             'basePokemon': 'Gothorita',
             'evolvedPokemon': 'Gothitelle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -88698,7 +89763,7 @@ module.exports = {
         {
           'basePokemon': 'Solosis',
           'evolvedPokemon': 'Duosion',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -88787,7 +89852,7 @@ module.exports = {
         {
           'basePokemon': 'Duosion',
           'evolvedPokemon': 'Reuniclus',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -88856,7 +89921,7 @@ module.exports = {
           {
             'basePokemon': 'Solosis',
             'evolvedPokemon': 'Duosion',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -88937,7 +90002,7 @@ module.exports = {
           {
             'basePokemon': 'Duosion',
             'evolvedPokemon': 'Reuniclus',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -88988,7 +90053,7 @@ module.exports = {
         {
           'basePokemon': 'Ducklett',
           'evolvedPokemon': 'Swanna',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -89083,7 +90148,7 @@ module.exports = {
           {
             'basePokemon': 'Ducklett',
             'evolvedPokemon': 'Swanna',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -89131,7 +90196,7 @@ module.exports = {
         {
           'basePokemon': 'Vanillite',
           'evolvedPokemon': 'Vanillish',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -89349,7 +90414,7 @@ module.exports = {
         {
           'basePokemon': 'Vanillish',
           'evolvedPokemon': 'Vanilluxe',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -89502,7 +90567,7 @@ module.exports = {
           {
             'basePokemon': 'Vanillite',
             'evolvedPokemon': 'Vanillish',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -89655,7 +90720,7 @@ module.exports = {
           {
             'basePokemon': 'Vanillish',
             'evolvedPokemon': 'Vanilluxe',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -89706,7 +90771,7 @@ module.exports = {
         {
           'basePokemon': 'Deerling (Spring)',
           'evolvedPokemon': 'Sawsbuck (Spring)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -89780,7 +90845,7 @@ module.exports = {
         {
           'basePokemon': 'Deerling (Summer)',
           'evolvedPokemon': 'Sawsbuck (Summer)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -89854,7 +90919,7 @@ module.exports = {
         {
           'basePokemon': 'Deerling (Autumn)',
           'evolvedPokemon': 'Sawsbuck (Autumn)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -89928,7 +90993,7 @@ module.exports = {
         {
           'basePokemon': 'Deerling (Winter)',
           'evolvedPokemon': 'Sawsbuck (Winter)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -90018,7 +91083,7 @@ module.exports = {
           {
             'basePokemon': 'Deerling (Spring)',
             'evolvedPokemon': 'Sawsbuck (Spring)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -90085,7 +91150,7 @@ module.exports = {
           {
             'basePokemon': 'Deerling (Summer)',
             'evolvedPokemon': 'Sawsbuck (Summer)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -90156,7 +91221,7 @@ module.exports = {
           {
             'basePokemon': 'Deerling (Autumn)',
             'evolvedPokemon': 'Sawsbuck (Autumn)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -90227,7 +91292,7 @@ module.exports = {
           {
             'basePokemon': 'Deerling (Winter)',
             'evolvedPokemon': 'Sawsbuck (Winter)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -90325,7 +91390,7 @@ module.exports = {
         {
           'basePokemon': 'Karrablast',
           'evolvedPokemon': 'Escavalier',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -90465,7 +91530,7 @@ module.exports = {
           {
             'basePokemon': 'Karrablast',
             'evolvedPokemon': 'Escavalier',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -90503,7 +91568,7 @@ module.exports = {
         {
           'basePokemon': 'Foongus',
           'evolvedPokemon': 'Amoonguss',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -90662,7 +91727,7 @@ module.exports = {
           {
             'basePokemon': 'Foongus',
             'evolvedPokemon': 'Amoonguss',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -90713,7 +91778,7 @@ module.exports = {
         {
           'basePokemon': 'Frillish',
           'evolvedPokemon': 'Jellicent',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91089,7 +92154,7 @@ module.exports = {
           {
             'basePokemon': 'Frillish',
             'evolvedPokemon': 'Jellicent',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -91179,7 +92244,7 @@ module.exports = {
         {
           'basePokemon': 'Joltik',
           'evolvedPokemon': 'Galvantula',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91350,7 +92415,7 @@ module.exports = {
           {
             'basePokemon': 'Joltik',
             'evolvedPokemon': 'Galvantula',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -91401,7 +92466,7 @@ module.exports = {
         {
           'basePokemon': 'Ferroseed',
           'evolvedPokemon': 'Ferrothorn',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91519,7 +92584,7 @@ module.exports = {
           {
             'basePokemon': 'Ferroseed',
             'evolvedPokemon': 'Ferrothorn',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -91567,7 +92632,7 @@ module.exports = {
         {
           'basePokemon': 'Klink',
           'evolvedPokemon': 'Klang',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91662,7 +92727,7 @@ module.exports = {
         {
           'basePokemon': 'Klang',
           'evolvedPokemon': 'Klinklang',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91738,7 +92803,7 @@ module.exports = {
           {
             'basePokemon': 'Klink',
             'evolvedPokemon': 'Klang',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -91830,7 +92895,7 @@ module.exports = {
           {
             'basePokemon': 'Klang',
             'evolvedPokemon': 'Klinklang',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -91878,7 +92943,7 @@ module.exports = {
         {
           'basePokemon': 'Tynamo',
           'evolvedPokemon': 'Eelektrik',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91948,7 +93013,7 @@ module.exports = {
         {
           'basePokemon': 'Eelektrik',
           'evolvedPokemon': 'Eelektross',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -91992,7 +93057,7 @@ module.exports = {
           {
             'basePokemon': 'Tynamo',
             'evolvedPokemon': 'Eelektrik',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92056,7 +93121,7 @@ module.exports = {
           {
             'basePokemon': 'Eelektrik',
             'evolvedPokemon': 'Eelektross',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92091,7 +93156,7 @@ module.exports = {
         {
           'basePokemon': 'Elgyem',
           'evolvedPokemon': 'Beheeyem',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -92225,7 +93290,7 @@ module.exports = {
           {
             'basePokemon': 'Elgyem',
             'evolvedPokemon': 'Beheeyem',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92276,7 +93341,7 @@ module.exports = {
         {
           'basePokemon': 'Litwick',
           'evolvedPokemon': 'Lampent',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -92368,7 +93433,7 @@ module.exports = {
         {
           'basePokemon': 'Lampent',
           'evolvedPokemon': 'Chandelure',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -92431,7 +93496,7 @@ module.exports = {
           {
             'basePokemon': 'Litwick',
             'evolvedPokemon': 'Lampent',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92514,7 +93579,7 @@ module.exports = {
           {
             'basePokemon': 'Lampent',
             'evolvedPokemon': 'Chandelure',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92549,7 +93614,7 @@ module.exports = {
         {
           'basePokemon': 'Axew',
           'evolvedPokemon': 'Fraxure',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -92648,7 +93713,7 @@ module.exports = {
         {
           'basePokemon': 'Fraxure',
           'evolvedPokemon': 'Haxorus',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -92700,7 +93765,7 @@ module.exports = {
           {
             'basePokemon': 'Axew',
             'evolvedPokemon': 'Fraxure',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92796,7 +93861,7 @@ module.exports = {
           {
             'basePokemon': 'Fraxure',
             'evolvedPokemon': 'Haxorus',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -92844,7 +93909,7 @@ module.exports = {
         {
           'basePokemon': 'Cubchoo',
           'evolvedPokemon': 'Beartic',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -93006,7 +94071,7 @@ module.exports = {
           {
             'basePokemon': 'Cubchoo',
             'evolvedPokemon': 'Beartic',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -93170,7 +94235,7 @@ module.exports = {
         {
           'basePokemon': 'Shelmet',
           'evolvedPokemon': 'Accelgor',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -93317,7 +94382,7 @@ module.exports = {
           {
             'basePokemon': 'Shelmet',
             'evolvedPokemon': 'Accelgor',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -93389,7 +94454,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 618.1,
+      'id': 618.01,
       'name': 'Galarian Stunfisk',
       'nativeRegion': 7,
       'type': [
@@ -93445,7 +94510,7 @@ module.exports = {
         {
           'basePokemon': 'Mienfoo',
           'evolvedPokemon': 'Mienshao',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -93548,7 +94613,7 @@ module.exports = {
           {
             'basePokemon': 'Mienfoo',
             'evolvedPokemon': 'Mienshao',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -93665,7 +94730,7 @@ module.exports = {
         {
           'basePokemon': 'Golett',
           'evolvedPokemon': 'Golurk',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -93840,7 +94905,7 @@ module.exports = {
           {
             'basePokemon': 'Golett',
             'evolvedPokemon': 'Golurk',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -93891,7 +94956,7 @@ module.exports = {
         {
           'basePokemon': 'Pawniard',
           'evolvedPokemon': 'Bisharp',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -94051,7 +95116,7 @@ module.exports = {
           {
             'basePokemon': 'Pawniard',
             'evolvedPokemon': 'Bisharp',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -94145,7 +95210,7 @@ module.exports = {
         {
           'basePokemon': 'Rufflet',
           'evolvedPokemon': 'Braviary',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -94263,7 +95328,7 @@ module.exports = {
           {
             'basePokemon': 'Rufflet',
             'evolvedPokemon': 'Braviary',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -94314,7 +95379,7 @@ module.exports = {
         {
           'basePokemon': 'Vullaby',
           'evolvedPokemon': 'Mandibuzz',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -94428,7 +95493,7 @@ module.exports = {
           {
             'basePokemon': 'Vullaby',
             'evolvedPokemon': 'Mandibuzz',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -94620,7 +95685,7 @@ module.exports = {
         {
           'basePokemon': 'Deino',
           'evolvedPokemon': 'Zweilous',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -94697,7 +95762,7 @@ module.exports = {
         {
           'basePokemon': 'Zweilous',
           'evolvedPokemon': 'Hydreigon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -94762,7 +95827,7 @@ module.exports = {
           {
             'basePokemon': 'Deino',
             'evolvedPokemon': 'Zweilous',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -94835,7 +95900,7 @@ module.exports = {
           {
             'basePokemon': 'Zweilous',
             'evolvedPokemon': 'Hydreigon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -94887,7 +95952,7 @@ module.exports = {
         {
           'basePokemon': 'Larvesta',
           'evolvedPokemon': 'Volcarona',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -95010,7 +96075,7 @@ module.exports = {
           {
             'basePokemon': 'Larvesta',
             'evolvedPokemon': 'Volcarona',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -95189,7 +96254,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 641.1,
+      'id': 641.01,
       'name': 'Tornadus (Therian)',
       'type': [9],
       'eggCycles': 120,
@@ -95253,7 +96318,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 642.1,
+      'id': 642.01,
       'name': 'Thundurus (Therian)',
       'type': [
         3,
@@ -95399,7 +96464,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 645.1,
+      'id': 645.01,
       'name': 'Landorus (Therian)',
       'type': [
         8,
@@ -95443,7 +96508,7 @@ module.exports = {
         {
           'basePokemon': 'Kyurem',
           'evolvedPokemon': 'Kyurem (Black)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -95464,7 +96529,7 @@ module.exports = {
         {
           'basePokemon': 'Kyurem',
           'evolvedPokemon': 'Kyurem (White)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -95510,7 +96575,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 646.1,
+      'id': 646.01,
       'name': 'Kyurem (White)',
       'type': [
         14,
@@ -95540,7 +96605,7 @@ module.exports = {
           {
             'basePokemon': 'Kyurem',
             'evolvedPokemon': 'Kyurem (White)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -95564,7 +96629,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 646.2,
+      'id': 646.02,
       'name': 'Kyurem (Black)',
       'type': [
         14,
@@ -95594,7 +96659,7 @@ module.exports = {
           {
             'basePokemon': 'Kyurem',
             'evolvedPokemon': 'Kyurem (Black)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -95654,7 +96719,7 @@ module.exports = {
       'eggSteps': 3200,
     },
     {
-      'id': 647.1,
+      'id': 647.01,
       'name': 'Keldeo (Resolute)',
       'type': [
         2,
@@ -95731,7 +96796,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 648.1,
+      'id': 648.01,
       'name': 'Meloetta (Pirouette)',
       'type': [
         0,
@@ -95811,7 +96876,7 @@ module.exports = {
         {
           'basePokemon': 'Chespin',
           'evolvedPokemon': 'Quilladin',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -95877,7 +96942,7 @@ module.exports = {
         {
           'basePokemon': 'Quilladin',
           'evolvedPokemon': 'Chesnaught',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -95929,7 +96994,7 @@ module.exports = {
           {
             'basePokemon': 'Chespin',
             'evolvedPokemon': 'Quilladin',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -95996,7 +97061,7 @@ module.exports = {
           {
             'basePokemon': 'Quilladin',
             'evolvedPokemon': 'Chesnaught',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -96044,7 +97109,7 @@ module.exports = {
         {
           'basePokemon': 'Fennekin',
           'evolvedPokemon': 'Braixen',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96110,7 +97175,7 @@ module.exports = {
         {
           'basePokemon': 'Braixen',
           'evolvedPokemon': 'Delphox',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96162,7 +97227,7 @@ module.exports = {
           {
             'basePokemon': 'Fennekin',
             'evolvedPokemon': 'Braixen',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -96229,7 +97294,7 @@ module.exports = {
           {
             'basePokemon': 'Braixen',
             'evolvedPokemon': 'Delphox',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -96277,7 +97342,7 @@ module.exports = {
         {
           'basePokemon': 'Froakie',
           'evolvedPokemon': 'Frogadier',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96343,7 +97408,7 @@ module.exports = {
         {
           'basePokemon': 'Frogadier',
           'evolvedPokemon': 'Greninja',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96395,7 +97460,7 @@ module.exports = {
           {
             'basePokemon': 'Froakie',
             'evolvedPokemon': 'Frogadier',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -96462,7 +97527,7 @@ module.exports = {
           {
             'basePokemon': 'Frogadier',
             'evolvedPokemon': 'Greninja',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -96540,7 +97605,7 @@ module.exports = {
         {
           'basePokemon': 'Bunnelby',
           'evolvedPokemon': 'Diggersby',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96750,7 +97815,7 @@ module.exports = {
           {
             'basePokemon': 'Bunnelby',
             'evolvedPokemon': 'Diggersby',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -96801,7 +97866,7 @@ module.exports = {
         {
           'basePokemon': 'Fletchling',
           'evolvedPokemon': 'Fletchinder',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96900,7 +97965,7 @@ module.exports = {
         {
           'basePokemon': 'Fletchinder',
           'evolvedPokemon': 'Talonflame',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -96996,7 +98061,7 @@ module.exports = {
           {
             'basePokemon': 'Fletchling',
             'evolvedPokemon': 'Fletchinder',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -97083,7 +98148,7 @@ module.exports = {
           {
             'basePokemon': 'Fletchinder',
             'evolvedPokemon': 'Talonflame',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -97131,7 +98196,7 @@ module.exports = {
         {
           'basePokemon': 'Scatterbug',
           'evolvedPokemon': 'Spewpa',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -97204,7 +98269,7 @@ module.exports = {
         {
           'basePokemon': 'Spewpa',
           'evolvedPokemon': 'Vivillon (Meadow)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -97256,7 +98321,7 @@ module.exports = {
           {
             'basePokemon': 'Scatterbug',
             'evolvedPokemon': 'Spewpa',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -97288,6 +98353,7 @@ module.exports = {
             ],
           },
         ],
+        '12': ['Tanga'],
       },
       'catchRatePercent': 36,
       'eggSteps': 920,
@@ -97323,7 +98389,7 @@ module.exports = {
           {
             'basePokemon': 'Spewpa',
             'evolvedPokemon': 'Vivillon (Meadow)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -97944,7 +99010,7 @@ module.exports = {
         {
           'basePokemon': 'Litleo',
           'evolvedPokemon': 'Pyroar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98042,7 +99108,7 @@ module.exports = {
           {
             'basePokemon': 'Litleo',
             'evolvedPokemon': 'Pyroar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -98090,7 +99156,7 @@ module.exports = {
         {
           'basePokemon': 'Flabébé (Red)',
           'evolvedPokemon': 'Floette (Red)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98166,7 +99232,7 @@ module.exports = {
         {
           'basePokemon': 'Flabébé (Yellow)',
           'evolvedPokemon': 'Floette (Yellow)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98244,7 +99310,7 @@ module.exports = {
         {
           'basePokemon': 'Flabébé (Orange)',
           'evolvedPokemon': 'Floette (Orange)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98318,7 +99384,7 @@ module.exports = {
         {
           'basePokemon': 'Flabébé (Blue)',
           'evolvedPokemon': 'Floette (Blue)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98392,7 +99458,7 @@ module.exports = {
         {
           'basePokemon': 'Flabébé (White)',
           'evolvedPokemon': 'Floette (White)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98466,7 +99532,7 @@ module.exports = {
         {
           'basePokemon': 'Floette (Red)',
           'evolvedPokemon': 'Florges (Red)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98516,7 +99582,7 @@ module.exports = {
           {
             'basePokemon': 'Flabébé (Red)',
             'evolvedPokemon': 'Floette (Red)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -98564,7 +99630,7 @@ module.exports = {
         {
           'basePokemon': 'Floette (Yellow)',
           'evolvedPokemon': 'Florges (Yellow)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98603,7 +99669,7 @@ module.exports = {
           {
             'basePokemon': 'Flabébé (Yellow)',
             'evolvedPokemon': 'Floette (Yellow)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -98651,7 +99717,7 @@ module.exports = {
         {
           'basePokemon': 'Floette (Orange)',
           'evolvedPokemon': 'Florges (Orange)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98690,7 +99756,7 @@ module.exports = {
           {
             'basePokemon': 'Flabébé (Orange)',
             'evolvedPokemon': 'Floette (Orange)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -98738,7 +99804,7 @@ module.exports = {
         {
           'basePokemon': 'Floette (Blue)',
           'evolvedPokemon': 'Florges (Blue)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98782,7 +99848,7 @@ module.exports = {
           {
             'basePokemon': 'Flabébé (Blue)',
             'evolvedPokemon': 'Floette (Blue)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -98830,7 +99896,7 @@ module.exports = {
         {
           'basePokemon': 'Floette (White)',
           'evolvedPokemon': 'Florges (White)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -98869,7 +99935,7 @@ module.exports = {
           {
             'basePokemon': 'Flabébé (White)',
             'evolvedPokemon': 'Floette (White)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -98960,7 +100026,7 @@ module.exports = {
           {
             'basePokemon': 'Floette (Red)',
             'evolvedPokemon': 'Florges (Red)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99011,7 +100077,7 @@ module.exports = {
           {
             'basePokemon': 'Floette (Yellow)',
             'evolvedPokemon': 'Florges (Yellow)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99062,7 +100128,7 @@ module.exports = {
           {
             'basePokemon': 'Floette (Orange)',
             'evolvedPokemon': 'Florges (Orange)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99113,7 +100179,7 @@ module.exports = {
           {
             'basePokemon': 'Floette (Blue)',
             'evolvedPokemon': 'Florges (Blue)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99164,7 +100230,7 @@ module.exports = {
           {
             'basePokemon': 'Floette (White)',
             'evolvedPokemon': 'Florges (White)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99199,7 +100265,7 @@ module.exports = {
         {
           'basePokemon': 'Skiddo',
           'evolvedPokemon': 'Gogoat',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -99287,7 +100353,7 @@ module.exports = {
           {
             'basePokemon': 'Skiddo',
             'evolvedPokemon': 'Gogoat',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99335,7 +100401,7 @@ module.exports = {
         {
           'basePokemon': 'Pancham',
           'evolvedPokemon': 'Pangoro',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -99526,7 +100592,7 @@ module.exports = {
           {
             'basePokemon': 'Pancham',
             'evolvedPokemon': 'Pangoro',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -99876,7 +100942,7 @@ module.exports = {
         {
           'basePokemon': 'Espurr',
           'evolvedPokemon': 'Meowstic',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -100008,7 +101074,7 @@ module.exports = {
           {
             'basePokemon': 'Espurr',
             'evolvedPokemon': 'Meowstic',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -100059,7 +101125,7 @@ module.exports = {
         {
           'basePokemon': 'Honedge',
           'evolvedPokemon': 'Doublade',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -100143,7 +101209,7 @@ module.exports = {
         {
           'basePokemon': 'Doublade',
           'evolvedPokemon': 'Aegislash (Shield)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -100178,20 +101244,6 @@ module.exports = {
               'option': 2,
               'hint': 'You need to reach the kalos region.',
               '__class': 'MaxRegionRequirement',
-            },
-            {
-              'requiredValue': 4777,
-              'option': 2,
-              'pokemon': 'Doublade',
-              'hint': 'Your Doublade needs to be at least level 4777.',
-              '__class': 'PokemonLevelRequirement',
-            },
-            {
-              'requiredValue': 1,
-              'option': 0,
-              'pokemon': 'Aegislash (Blade)',
-              'hint': 'Aegislash (Blade) cannot be caught yet.',
-              '__class': 'ObtainedPokemonRequirement',
             },
           ],
         },
@@ -100257,7 +101309,7 @@ module.exports = {
           {
             'basePokemon': 'Honedge',
             'evolvedPokemon': 'Doublade',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -100332,7 +101384,7 @@ module.exports = {
           {
             'basePokemon': 'Doublade',
             'evolvedPokemon': 'Aegislash (Shield)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -100356,7 +101408,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 681.1,
+      'id': 681.01,
       'name': 'Aegislash (Blade)',
       'type': [
         16,
@@ -100381,44 +101433,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Doublade',
-            'evolvedPokemon': 'Aegislash (Blade)',
-            'trigger': 0,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Doublade',
-                'hint': 'Doublade needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 5,
-                'option': 2,
-                'hint': 'You need to reach the kalos region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 4777,
-                'option': 2,
-                'pokemon': 'Doublade',
-                'hint': 'Your Doublade needs to be at least level 4777.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Aegislash (Blade)',
-                'hint': 'Aegislash (Blade) cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1800,
     },
@@ -100434,7 +101449,7 @@ module.exports = {
         {
           'basePokemon': 'Spritzee',
           'evolvedPokemon': 'Aromatisse',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -100525,7 +101540,7 @@ module.exports = {
           {
             'basePokemon': 'Spritzee',
             'evolvedPokemon': 'Aromatisse',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -100560,7 +101575,7 @@ module.exports = {
         {
           'basePokemon': 'Swirlix',
           'evolvedPokemon': 'Slurpuff',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -100651,7 +101666,7 @@ module.exports = {
           {
             'basePokemon': 'Swirlix',
             'evolvedPokemon': 'Slurpuff',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -100689,7 +101704,7 @@ module.exports = {
         {
           'basePokemon': 'Inkay',
           'evolvedPokemon': 'Malamar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -100907,7 +101922,7 @@ module.exports = {
           {
             'basePokemon': 'Inkay',
             'evolvedPokemon': 'Malamar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -100958,7 +101973,7 @@ module.exports = {
         {
           'basePokemon': 'Binacle',
           'evolvedPokemon': 'Barbaracle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -101076,7 +102091,7 @@ module.exports = {
           {
             'basePokemon': 'Binacle',
             'evolvedPokemon': 'Barbaracle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -101127,7 +102142,7 @@ module.exports = {
         {
           'basePokemon': 'Skrelp',
           'evolvedPokemon': 'Dragalge',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -101254,7 +102269,7 @@ module.exports = {
           {
             'basePokemon': 'Skrelp',
             'evolvedPokemon': 'Dragalge',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -101302,7 +102317,7 @@ module.exports = {
         {
           'basePokemon': 'Clauncher',
           'evolvedPokemon': 'Clawitzer',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -101426,7 +102441,7 @@ module.exports = {
           {
             'basePokemon': 'Clauncher',
             'evolvedPokemon': 'Clawitzer',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -101477,7 +102492,7 @@ module.exports = {
         {
           'basePokemon': 'Helioptile',
           'evolvedPokemon': 'Heliolisk',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -101565,7 +102580,7 @@ module.exports = {
           {
             'basePokemon': 'Helioptile',
             'evolvedPokemon': 'Heliolisk',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -101603,7 +102618,7 @@ module.exports = {
         {
           'basePokemon': 'Tyrunt',
           'evolvedPokemon': 'Tyrantrum',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -101711,7 +102726,7 @@ module.exports = {
           {
             'basePokemon': 'Tyrunt',
             'evolvedPokemon': 'Tyrantrum',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -101770,7 +102785,7 @@ module.exports = {
         {
           'basePokemon': 'Amaura',
           'evolvedPokemon': 'Aurorus',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -101887,7 +102902,7 @@ module.exports = {
           {
             'basePokemon': 'Amaura',
             'evolvedPokemon': 'Aurorus',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -101971,7 +102986,7 @@ module.exports = {
           {
             'basePokemon': 'Eevee',
             'evolvedPokemon': 'Sylveon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -102052,10 +103067,6 @@ module.exports = {
           '7': [
             {
               'route': 22,
-            },
-            {
-              'route': 22,
-              'requirements': 'The weather needs to be Overcast',
             },
             {
               'route': 23,
@@ -102172,7 +103183,7 @@ module.exports = {
         {
           'basePokemon': 'Goomy',
           'evolvedPokemon': 'Sliggoo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -102274,7 +103285,7 @@ module.exports = {
         {
           'basePokemon': 'Sliggoo',
           'evolvedPokemon': 'Goodra',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -102350,7 +103361,7 @@ module.exports = {
           {
             'basePokemon': 'Goomy',
             'evolvedPokemon': 'Sliggoo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -102415,7 +103426,7 @@ module.exports = {
           {
             'basePokemon': 'Sliggoo',
             'evolvedPokemon': 'Goodra',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -102528,7 +103539,7 @@ module.exports = {
         {
           'basePokemon': 'Phantump',
           'evolvedPokemon': 'Trevenant',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -102658,7 +103669,7 @@ module.exports = {
           {
             'basePokemon': 'Phantump',
             'evolvedPokemon': 'Trevenant',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -102696,7 +103707,7 @@ module.exports = {
         {
           'basePokemon': 'Pumpkaboo (Average)',
           'evolvedPokemon': 'Gourgeist (Average)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -102755,7 +103766,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 710.1,
+      'id': 710.01,
       'name': 'Pumpkaboo (Small)',
       'type': [
         13,
@@ -102769,7 +103780,7 @@ module.exports = {
         {
           'basePokemon': 'Pumpkaboo (Small)',
           'evolvedPokemon': 'Gourgeist (Small)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -102828,7 +103839,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 710.2,
+      'id': 710.02,
       'name': 'Pumpkaboo (Large)',
       'type': [
         13,
@@ -102842,7 +103853,7 @@ module.exports = {
         {
           'basePokemon': 'Pumpkaboo (Large)',
           'evolvedPokemon': 'Gourgeist (Large)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -102901,7 +103912,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 710.3,
+      'id': 710.03,
       'name': 'Pumpkaboo (Super Size)',
       'type': [
         13,
@@ -102915,7 +103926,7 @@ module.exports = {
         {
           'basePokemon': 'Pumpkaboo (Super Size)',
           'evolvedPokemon': 'Gourgeist (Super Size)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -103011,7 +104022,7 @@ module.exports = {
           {
             'basePokemon': 'Pumpkaboo (Average)',
             'evolvedPokemon': 'Gourgeist (Average)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -103035,7 +104046,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 711.1,
+      'id': 711.01,
       'name': 'Gourgeist (Small)',
       'type': [
         13,
@@ -103072,7 +104083,7 @@ module.exports = {
           {
             'basePokemon': 'Pumpkaboo (Small)',
             'evolvedPokemon': 'Gourgeist (Small)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -103096,7 +104107,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 711.2,
+      'id': 711.02,
       'name': 'Gourgeist (Large)',
       'type': [
         13,
@@ -103133,7 +104144,7 @@ module.exports = {
           {
             'basePokemon': 'Pumpkaboo (Large)',
             'evolvedPokemon': 'Gourgeist (Large)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -103157,7 +104168,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 711.3,
+      'id': 711.03,
       'name': 'Gourgeist (Super Size)',
       'type': [
         13,
@@ -103194,7 +104205,7 @@ module.exports = {
           {
             'basePokemon': 'Pumpkaboo (Super Size)',
             'evolvedPokemon': 'Gourgeist (Super Size)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -103229,7 +104240,7 @@ module.exports = {
         {
           'basePokemon': 'Bergmite',
           'evolvedPokemon': 'Avalugg',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -103348,7 +104359,7 @@ module.exports = {
           {
             'basePokemon': 'Bergmite',
             'evolvedPokemon': 'Avalugg',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -103399,7 +104410,7 @@ module.exports = {
         {
           'basePokemon': 'Noibat',
           'evolvedPokemon': 'Noivern',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -103553,7 +104564,7 @@ module.exports = {
           {
             'basePokemon': 'Noibat',
             'evolvedPokemon': 'Noivern',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -103735,6 +104746,36 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
+      'id': 719.01,
+      'name': 'Mega Diancie',
+      'type': [
+        12,
+        17,
+      ],
+      'eggCycles': 25,
+      'levelType': 4,
+      'exp': 347,
+      'catchRate': 2,
+      'base': {
+        'hitpoints': 50,
+        'attack': 160,
+        'specialAttack': 160,
+        'defense': 110,
+        'specialDefense': 110,
+        'speed': 110,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 210,
+      'nativeRegion': 5,
+      'locations': {},
+      'catchRatePercent': 1,
+      'eggSteps': 1000,
+    },
+    {
       'id': 720,
       'name': 'Hoopa',
       'type': [
@@ -103823,7 +104864,7 @@ module.exports = {
         {
           'basePokemon': 'Rowlet',
           'evolvedPokemon': 'Dartrix',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -103892,7 +104933,7 @@ module.exports = {
         {
           'basePokemon': 'Dartrix',
           'evolvedPokemon': 'Decidueye',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -103944,7 +104985,7 @@ module.exports = {
           {
             'basePokemon': 'Rowlet',
             'evolvedPokemon': 'Dartrix',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104011,7 +105052,7 @@ module.exports = {
           {
             'basePokemon': 'Dartrix',
             'evolvedPokemon': 'Decidueye',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104059,7 +105100,7 @@ module.exports = {
         {
           'basePokemon': 'Litten',
           'evolvedPokemon': 'Torracat',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104125,7 +105166,7 @@ module.exports = {
         {
           'basePokemon': 'Torracat',
           'evolvedPokemon': 'Incineroar',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104177,7 +105218,7 @@ module.exports = {
           {
             'basePokemon': 'Litten',
             'evolvedPokemon': 'Torracat',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104244,7 +105285,7 @@ module.exports = {
           {
             'basePokemon': 'Torracat',
             'evolvedPokemon': 'Incineroar',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104292,7 +105333,7 @@ module.exports = {
         {
           'basePokemon': 'Popplio',
           'evolvedPokemon': 'Brionne',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104358,7 +105399,7 @@ module.exports = {
         {
           'basePokemon': 'Brionne',
           'evolvedPokemon': 'Primarina',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104410,7 +105451,7 @@ module.exports = {
           {
             'basePokemon': 'Popplio',
             'evolvedPokemon': 'Brionne',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104477,7 +105518,7 @@ module.exports = {
           {
             'basePokemon': 'Brionne',
             'evolvedPokemon': 'Primarina',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104528,7 +105569,7 @@ module.exports = {
         {
           'basePokemon': 'Pikipek',
           'evolvedPokemon': 'Trumbeak',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104611,7 +105652,7 @@ module.exports = {
         {
           'basePokemon': 'Trumbeak',
           'evolvedPokemon': 'Toucannon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104683,7 +105724,7 @@ module.exports = {
           {
             'basePokemon': 'Pikipek',
             'evolvedPokemon': 'Trumbeak',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104763,7 +105804,7 @@ module.exports = {
           {
             'basePokemon': 'Trumbeak',
             'evolvedPokemon': 'Toucannon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -104811,7 +105852,7 @@ module.exports = {
         {
           'basePokemon': 'Yungoos',
           'evolvedPokemon': 'Gumshoos',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -104950,7 +105991,7 @@ module.exports = {
           {
             'basePokemon': 'Yungoos',
             'evolvedPokemon': 'Gumshoos',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105040,7 +106081,7 @@ module.exports = {
         {
           'basePokemon': 'Grubbin',
           'evolvedPokemon': 'Charjabug',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105153,7 +106194,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'evolvedPokemon': 'Vikavolt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105201,7 +106242,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'evolvedPokemon': 'Vikavolt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105249,7 +106290,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'evolvedPokemon': 'Vikavolt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105297,7 +106338,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'evolvedPokemon': 'Vikavolt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105345,7 +106386,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'evolvedPokemon': 'Vikavolt',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105393,7 +106434,7 @@ module.exports = {
         {
           'basePokemon': 'Charjabug',
           'evolvedPokemon': 'Vikavolt',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105452,7 +106493,7 @@ module.exports = {
           {
             'basePokemon': 'Grubbin',
             'evolvedPokemon': 'Charjabug',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105564,7 +106605,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'evolvedPokemon': 'Vikavolt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105612,7 +106653,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'evolvedPokemon': 'Vikavolt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105660,7 +106701,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'evolvedPokemon': 'Vikavolt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105708,7 +106749,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'evolvedPokemon': 'Vikavolt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105756,7 +106797,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'evolvedPokemon': 'Vikavolt',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105804,7 +106845,7 @@ module.exports = {
           {
             'basePokemon': 'Charjabug',
             'evolvedPokemon': 'Vikavolt',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -105883,7 +106924,7 @@ module.exports = {
         {
           'basePokemon': 'Crabrawler',
           'evolvedPokemon': 'Crabominable',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -105982,7 +107023,7 @@ module.exports = {
           {
             'basePokemon': 'Crabrawler',
             'evolvedPokemon': 'Crabominable',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -106240,7 +107281,7 @@ module.exports = {
         {
           'basePokemon': 'Cutiefly',
           'evolvedPokemon': 'Ribombee',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -106436,7 +107477,7 @@ module.exports = {
           {
             'basePokemon': 'Cutiefly',
             'evolvedPokemon': 'Ribombee',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -106521,7 +107562,7 @@ module.exports = {
         {
           'basePokemon': 'Rockruff',
           'evolvedPokemon': 'Lycanroc (Midday)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -106563,7 +107604,7 @@ module.exports = {
         {
           'basePokemon': 'Rockruff',
           'evolvedPokemon': 'Lycanroc (Dusk)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -106605,7 +107646,7 @@ module.exports = {
         {
           'basePokemon': 'Rockruff',
           'evolvedPokemon': 'Lycanroc (Midnight)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -106647,7 +107688,7 @@ module.exports = {
         {
           'basePokemon': 'Rockruff',
           'evolvedPokemon': 'Lycanroc (Dusk)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -106766,7 +107807,7 @@ module.exports = {
           {
             'basePokemon': 'Rockruff',
             'evolvedPokemon': 'Lycanroc (Midday)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -106839,7 +107880,7 @@ module.exports = {
           {
             'basePokemon': 'Rockruff',
             'evolvedPokemon': 'Lycanroc (Midnight)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -106911,7 +107952,7 @@ module.exports = {
           {
             'basePokemon': 'Rockruff',
             'evolvedPokemon': 'Lycanroc (Dusk)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -106953,7 +107994,7 @@ module.exports = {
           {
             'basePokemon': 'Rockruff',
             'evolvedPokemon': 'Lycanroc (Dusk)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -107009,7 +108050,7 @@ module.exports = {
         {
           'basePokemon': 'Wishiwashi (Solo)',
           'evolvedPokemon': 'Wishiwashi (School)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -107154,7 +108195,7 @@ module.exports = {
           {
             'basePokemon': 'Wishiwashi (Solo)',
             'evolvedPokemon': 'Wishiwashi (School)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -107239,7 +108280,7 @@ module.exports = {
         {
           'basePokemon': 'Mareanie',
           'evolvedPokemon': 'Toxapex',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -107296,10 +108337,6 @@ module.exports = {
           '7': [
             {
               'route': 16,
-            },
-            {
-              'route': 16,
-              'requirements': 'The weather needs to be Thunderstorm',
             },
             {
               'route': 19,
@@ -107401,7 +108438,7 @@ module.exports = {
           {
             'basePokemon': 'Mareanie',
             'evolvedPokemon': 'Toxapex',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -107449,7 +108486,7 @@ module.exports = {
         {
           'basePokemon': 'Mudbray',
           'evolvedPokemon': 'Mudsdale',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -107649,7 +108686,7 @@ module.exports = {
           {
             'basePokemon': 'Mudbray',
             'evolvedPokemon': 'Mudsdale',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -107700,7 +108737,7 @@ module.exports = {
         {
           'basePokemon': 'Dewpider',
           'evolvedPokemon': 'Araquanid',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -107917,7 +108954,7 @@ module.exports = {
           {
             'basePokemon': 'Dewpider',
             'evolvedPokemon': 'Araquanid',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -108002,7 +109039,7 @@ module.exports = {
         {
           'basePokemon': 'Fomantis',
           'evolvedPokemon': 'Lurantis',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -108142,7 +109179,7 @@ module.exports = {
           {
             'basePokemon': 'Fomantis',
             'evolvedPokemon': 'Lurantis',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -108235,7 +109272,7 @@ module.exports = {
         {
           'basePokemon': 'Morelull',
           'evolvedPokemon': 'Shiinotic',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -108354,7 +109391,7 @@ module.exports = {
           {
             'basePokemon': 'Morelull',
             'evolvedPokemon': 'Shiinotic',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -108405,7 +109442,7 @@ module.exports = {
         {
           'basePokemon': 'Salandit',
           'evolvedPokemon': 'Salazzle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -108517,7 +109554,7 @@ module.exports = {
           {
             'basePokemon': 'Salandit',
             'evolvedPokemon': 'Salazzle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -108605,7 +109642,7 @@ module.exports = {
         {
           'basePokemon': 'Stufful',
           'evolvedPokemon': 'Bewear',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -108829,7 +109866,7 @@ module.exports = {
           {
             'basePokemon': 'Stufful',
             'evolvedPokemon': 'Bewear',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -108877,7 +109914,7 @@ module.exports = {
         {
           'basePokemon': 'Bounsweet',
           'evolvedPokemon': 'Steenee',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -108975,7 +110012,7 @@ module.exports = {
         {
           'basePokemon': 'Steenee',
           'evolvedPokemon': 'Tsareena',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -109036,7 +110073,7 @@ module.exports = {
           {
             'basePokemon': 'Bounsweet',
             'evolvedPokemon': 'Steenee',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -109132,7 +110169,7 @@ module.exports = {
           {
             'basePokemon': 'Steenee',
             'evolvedPokemon': 'Tsareena',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -109372,7 +110409,7 @@ module.exports = {
         {
           'basePokemon': 'Wimpod',
           'evolvedPokemon': 'Golisopod',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -109521,7 +110558,7 @@ module.exports = {
           {
             'basePokemon': 'Wimpod',
             'evolvedPokemon': 'Golisopod',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -109572,7 +110609,7 @@ module.exports = {
         {
           'basePokemon': 'Sandygast',
           'evolvedPokemon': 'Palossand',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -109683,7 +110720,7 @@ module.exports = {
           {
             'basePokemon': 'Sandygast',
             'evolvedPokemon': 'Palossand',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -109757,10 +110794,6 @@ module.exports = {
               'route': 8,
             },
             {
-              'route': 8,
-              'requirements': 'The weather needs to be Thunderstorm',
-            },
-            {
               'route': 28,
             },
           ],
@@ -109781,7 +110814,7 @@ module.exports = {
         {
           'basePokemon': 'Type: Null',
           'evolvedPokemon': 'Silvally (Normal)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -109849,7 +110882,7 @@ module.exports = {
           {
             'basePokemon': 'Type: Null',
             'evolvedPokemon': 'Silvally (Normal)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111073,7 +112106,7 @@ module.exports = {
         {
           'basePokemon': 'Jangmo-o',
           'evolvedPokemon': 'Hakamo-o',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111166,7 +112199,7 @@ module.exports = {
         {
           'basePokemon': 'Hakamo-o',
           'evolvedPokemon': 'Kommo-o',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111231,7 +112264,7 @@ module.exports = {
           {
             'basePokemon': 'Jangmo-o',
             'evolvedPokemon': 'Hakamo-o',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111308,7 +112341,7 @@ module.exports = {
           {
             'basePokemon': 'Hakamo-o',
             'evolvedPokemon': 'Kommo-o',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111538,7 +112571,7 @@ module.exports = {
         {
           'basePokemon': 'Cosmog',
           'evolvedPokemon': 'Cosmoem',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111607,7 +112640,7 @@ module.exports = {
         {
           'basePokemon': 'Cosmoem',
           'evolvedPokemon': 'Solgaleo',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111641,7 +112674,7 @@ module.exports = {
         {
           'basePokemon': 'Cosmoem',
           'evolvedPokemon': 'Lunala',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111693,7 +112726,7 @@ module.exports = {
           {
             'basePokemon': 'Cosmog',
             'evolvedPokemon': 'Cosmoem',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111744,7 +112777,7 @@ module.exports = {
         {
           'basePokemon': 'Solgaleo',
           'evolvedPokemon': 'Solgaleo (Radiant Sun)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111793,7 +112826,7 @@ module.exports = {
           {
             'basePokemon': 'Cosmoem',
             'evolvedPokemon': 'Solgaleo',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111830,7 +112863,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 791.1,
+      'id': 791.01,
       'name': 'Solgaleo (Radiant Sun)',
       'type': [
         10,
@@ -111864,7 +112897,7 @@ module.exports = {
           {
             'basePokemon': 'Solgaleo',
             'evolvedPokemon': 'Solgaleo (Radiant Sun)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111902,7 +112935,7 @@ module.exports = {
         {
           'basePokemon': 'Lunala',
           'evolvedPokemon': 'Lunala (Full Moon)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -111951,7 +112984,7 @@ module.exports = {
           {
             'basePokemon': 'Cosmoem',
             'evolvedPokemon': 'Lunala',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -111988,7 +113021,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 792.1,
+      'id': 792.01,
       'name': 'Lunala (Full Moon)',
       'type': [
         10,
@@ -112022,7 +113055,7 @@ module.exports = {
           {
             'basePokemon': 'Lunala',
             'evolvedPokemon': 'Lunala (Full Moon)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -112304,7 +113337,7 @@ module.exports = {
         {
           'basePokemon': 'Necrozma',
           'evolvedPokemon': 'Necrozma (Dusk Mane)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -112325,7 +113358,7 @@ module.exports = {
         {
           'basePokemon': 'Necrozma',
           'evolvedPokemon': 'Necrozma (Dawn Wings)',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -112388,7 +113421,7 @@ module.exports = {
         {
           'basePokemon': 'Necrozma (Dusk Mane)',
           'evolvedPokemon': 'Ultra Necrozma',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -112427,7 +113460,7 @@ module.exports = {
           {
             'basePokemon': 'Necrozma',
             'evolvedPokemon': 'Necrozma (Dusk Mane)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -112465,7 +113498,7 @@ module.exports = {
         {
           'basePokemon': 'Necrozma (Dawn Wings)',
           'evolvedPokemon': 'Ultra Necrozma',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -112504,7 +113537,7 @@ module.exports = {
           {
             'basePokemon': 'Necrozma',
             'evolvedPokemon': 'Necrozma (Dawn Wings)',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -112558,7 +113591,7 @@ module.exports = {
           {
             'basePokemon': 'Necrozma (Dusk Mane)',
             'evolvedPokemon': 'Ultra Necrozma',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -112579,7 +113612,7 @@ module.exports = {
           {
             'basePokemon': 'Necrozma (Dawn Wings)',
             'evolvedPokemon': 'Ultra Necrozma',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -112640,7 +113673,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 801.1,
+      'id': 801.01,
       'name': 'Magearna (Original Color)',
       'type': [
         16,
@@ -112718,7 +113751,7 @@ module.exports = {
         {
           'basePokemon': 'Poipole',
           'evolvedPokemon': 'Naganadel',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -112802,7 +113835,7 @@ module.exports = {
           {
             'basePokemon': 'Poipole',
             'evolvedPokemon': 'Naganadel',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -112963,7 +113996,7 @@ module.exports = {
         {
           'basePokemon': 'Meltan',
           'evolvedPokemon': 'Melmetal',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113153,7 +114186,7 @@ module.exports = {
           {
             'basePokemon': 'Meltan',
             'evolvedPokemon': 'Melmetal',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113177,7 +114210,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 809.1,
+      'id': 809.01,
       'name': 'Gigantamax Melmetal',
       'nativeRegion': -1,
       'type': [16],
@@ -113223,7 +114256,7 @@ module.exports = {
         {
           'basePokemon': 'Grookey',
           'evolvedPokemon': 'Thwackey',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113289,7 +114322,7 @@ module.exports = {
         {
           'basePokemon': 'Thwackey',
           'evolvedPokemon': 'Rillaboom',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113333,7 +114366,7 @@ module.exports = {
           {
             'basePokemon': 'Grookey',
             'evolvedPokemon': 'Thwackey',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113397,7 +114430,7 @@ module.exports = {
           {
             'basePokemon': 'Thwackey',
             'evolvedPokemon': 'Rillaboom',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113434,7 +114467,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 812.1,
+      'id': 812.01,
       'name': 'Gigantamax Rillaboom',
       'nativeRegion': -1,
       'type': [4],
@@ -113480,7 +114513,7 @@ module.exports = {
         {
           'basePokemon': 'Scorbunny',
           'evolvedPokemon': 'Raboot',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113546,7 +114579,7 @@ module.exports = {
         {
           'basePokemon': 'Raboot',
           'evolvedPokemon': 'Cinderace',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113590,7 +114623,7 @@ module.exports = {
           {
             'basePokemon': 'Scorbunny',
             'evolvedPokemon': 'Raboot',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113654,7 +114687,7 @@ module.exports = {
           {
             'basePokemon': 'Raboot',
             'evolvedPokemon': 'Cinderace',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113691,7 +114724,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 815.1,
+      'id': 815.01,
       'name': 'Gigantamax Cinderace',
       'nativeRegion': -1,
       'type': [1],
@@ -113737,7 +114770,7 @@ module.exports = {
         {
           'basePokemon': 'Sobble',
           'evolvedPokemon': 'Drizzile',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113803,7 +114836,7 @@ module.exports = {
         {
           'basePokemon': 'Drizzile',
           'evolvedPokemon': 'Inteleon',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -113847,7 +114880,7 @@ module.exports = {
           {
             'basePokemon': 'Sobble',
             'evolvedPokemon': 'Drizzile',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113911,7 +114944,7 @@ module.exports = {
           {
             'basePokemon': 'Drizzile',
             'evolvedPokemon': 'Inteleon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -113948,7 +114981,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 818.1,
+      'id': 818.01,
       'name': 'Gigantamax Inteleon',
       'nativeRegion': -1,
       'type': [2],
@@ -113994,7 +115027,7 @@ module.exports = {
         {
           'basePokemon': 'Skwovet',
           'evolvedPokemon': 'Greedent',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -114114,9 +115147,6 @@ module.exports = {
             {
               'route': 53,
             },
-            {
-              'route': 53,
-            },
           ],
         },
         '12': ['Chilan'],
@@ -114193,10 +115223,6 @@ module.exports = {
               'route': 48,
             },
             {
-              'route': 48,
-              'requirements': 'The weather needs to be Blizzard',
-            },
-            {
               'route': 50,
             },
             {
@@ -114213,7 +115239,7 @@ module.exports = {
           {
             'basePokemon': 'Skwovet',
             'evolvedPokemon': 'Greedent',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -114269,7 +115295,7 @@ module.exports = {
         {
           'basePokemon': 'Rookidee',
           'evolvedPokemon': 'Corvisquire',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -114350,7 +115376,7 @@ module.exports = {
         {
           'basePokemon': 'Corvisquire',
           'evolvedPokemon': 'Corviknight',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -114418,7 +115444,7 @@ module.exports = {
           {
             'basePokemon': 'Rookidee',
             'evolvedPokemon': 'Corvisquire',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -114517,7 +115543,7 @@ module.exports = {
           {
             'basePokemon': 'Corvisquire',
             'evolvedPokemon': 'Corviknight',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -114554,7 +115580,7 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
-      'id': 823.1,
+      'id': 823.01,
       'name': 'Gigantamax Corviknight',
       'nativeRegion': -1,
       'type': [
@@ -114603,7 +115629,7 @@ module.exports = {
         {
           'basePokemon': 'Blipbug',
           'evolvedPokemon': 'Dottler',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -114708,7 +115734,7 @@ module.exports = {
         {
           'basePokemon': 'Dottler',
           'evolvedPokemon': 'Orbeetle',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -114811,7 +115837,7 @@ module.exports = {
           {
             'basePokemon': 'Blipbug',
             'evolvedPokemon': 'Dottler',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -114893,7 +115919,7 @@ module.exports = {
           {
             'basePokemon': 'Dottler',
             'evolvedPokemon': 'Orbeetle',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -114930,7 +115956,7 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
-      'id': 826.1,
+      'id': 826.01,
       'name': 'Gigantamax Orbeetle',
       'nativeRegion': -1,
       'type': [
@@ -114979,7 +116005,7 @@ module.exports = {
         {
           'basePokemon': 'Nickit',
           'evolvedPokemon': 'Thievul',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -115109,7 +116135,7 @@ module.exports = {
           {
             'basePokemon': 'Nickit',
             'evolvedPokemon': 'Thievul',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -115165,7 +116191,7 @@ module.exports = {
         {
           'basePokemon': 'Gossifleur',
           'evolvedPokemon': 'Eldegoss',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -115295,7 +116321,7 @@ module.exports = {
           {
             'basePokemon': 'Gossifleur',
             'evolvedPokemon': 'Eldegoss',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -115351,7 +116377,7 @@ module.exports = {
         {
           'basePokemon': 'Wooloo',
           'evolvedPokemon': 'Dubwool',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -115537,7 +116563,7 @@ module.exports = {
           {
             'basePokemon': 'Wooloo',
             'evolvedPokemon': 'Dubwool',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -115593,7 +116619,7 @@ module.exports = {
         {
           'basePokemon': 'Chewtle',
           'evolvedPokemon': 'Drednaw',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -115808,7 +116834,7 @@ module.exports = {
           {
             'basePokemon': 'Chewtle',
             'evolvedPokemon': 'Drednaw',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -115845,7 +116871,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 834.1,
+      'id': 834.01,
       'name': 'Gigantamax Drednaw',
       'nativeRegion': -1,
       'type': [
@@ -115894,7 +116920,7 @@ module.exports = {
         {
           'basePokemon': 'Yamper',
           'evolvedPokemon': 'Boltund',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -116012,7 +117038,7 @@ module.exports = {
           {
             'basePokemon': 'Yamper',
             'evolvedPokemon': 'Boltund',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -116068,7 +117094,7 @@ module.exports = {
         {
           'basePokemon': 'Rolycoly',
           'evolvedPokemon': 'Carkol',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -116154,7 +117180,7 @@ module.exports = {
         {
           'basePokemon': 'Carkol',
           'evolvedPokemon': 'Coalossal',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -116233,7 +117259,7 @@ module.exports = {
           {
             'basePokemon': 'Rolycoly',
             'evolvedPokemon': 'Carkol',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -116333,7 +117359,7 @@ module.exports = {
           {
             'basePokemon': 'Carkol',
             'evolvedPokemon': 'Coalossal',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -116370,7 +117396,7 @@ module.exports = {
       'eggSteps': 1400,
     },
     {
-      'id': 839.1,
+      'id': 839.01,
       'name': 'Gigantamax Coalossal',
       'nativeRegion': -1,
       'type': [
@@ -116419,7 +117445,7 @@ module.exports = {
         {
           'basePokemon': 'Applin',
           'evolvedPokemon': 'Flapple',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -116440,7 +117466,7 @@ module.exports = {
         {
           'basePokemon': 'Applin',
           'evolvedPokemon': 'Appletun',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -116556,7 +117582,7 @@ module.exports = {
           {
             'basePokemon': 'Applin',
             'evolvedPokemon': 'Flapple',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -116580,7 +117606,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 841.1,
+      'id': 841.01,
       'name': 'Gigantamax Flapple',
       'nativeRegion': -1,
       'type': [
@@ -116640,7 +117666,7 @@ module.exports = {
           {
             'basePokemon': 'Applin',
             'evolvedPokemon': 'Appletun',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -116664,7 +117690,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 842.1,
+      'id': 842.01,
       'name': 'Gigantamax Appletun',
       'nativeRegion': -1,
       'type': [
@@ -116713,7 +117739,7 @@ module.exports = {
         {
           'basePokemon': 'Silicobra',
           'evolvedPokemon': 'Sandaconda',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -116827,7 +117853,7 @@ module.exports = {
           {
             'basePokemon': 'Silicobra',
             'evolvedPokemon': 'Sandaconda',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -116864,7 +117890,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 844.1,
+      'id': 844.01,
       'name': 'Gigantamax Sandaconda',
       'nativeRegion': -1,
       'type': [8],
@@ -117038,7 +118064,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 845.1,
+      'id': 845.01,
       'name': 'Cramorant (Gulping)',
       'type': [
         9,
@@ -117109,7 +118135,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 845.2,
+      'id': 845.02,
       'name': 'Cramorant (Gorging)',
       'type': [
         9,
@@ -117187,7 +118213,7 @@ module.exports = {
         {
           'basePokemon': 'Arrokuda',
           'evolvedPokemon': 'Barraskewda',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -117352,7 +118378,7 @@ module.exports = {
           {
             'basePokemon': 'Arrokuda',
             'evolvedPokemon': 'Barraskewda',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -117412,7 +118438,7 @@ module.exports = {
         {
           'basePokemon': 'Toxel',
           'evolvedPokemon': 'Toxtricity (Amped)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -117446,7 +118472,7 @@ module.exports = {
         {
           'basePokemon': 'Toxel',
           'evolvedPokemon': 'Toxtricity (Low Key)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -117527,7 +118553,7 @@ module.exports = {
           {
             'basePokemon': 'Toxel',
             'evolvedPokemon': 'Toxtricity (Amped)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -117564,7 +118590,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 849.1,
+      'id': 849.01,
       'name': 'Toxtricity (Low Key)',
       'type': [
         3,
@@ -117594,7 +118620,7 @@ module.exports = {
           {
             'basePokemon': 'Toxel',
             'evolvedPokemon': 'Toxtricity (Low Key)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -117631,7 +118657,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 849.2,
+      'id': 849.02,
       'name': 'Gigantamax Toxtricity',
       'nativeRegion': -1,
       'type': [
@@ -117683,7 +118709,7 @@ module.exports = {
         {
           'basePokemon': 'Sizzlipede',
           'evolvedPokemon': 'Centiskorch',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -117787,7 +118813,7 @@ module.exports = {
           {
             'basePokemon': 'Sizzlipede',
             'evolvedPokemon': 'Centiskorch',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -117824,7 +118850,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 851.1,
+      'id': 851.01,
       'name': 'Gigantamax Centiskorch',
       'nativeRegion': -1,
       'type': [
@@ -117873,7 +118899,7 @@ module.exports = {
         {
           'basePokemon': 'Clobbopus',
           'evolvedPokemon': 'Grapploct',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -117962,7 +118988,7 @@ module.exports = {
           {
             'basePokemon': 'Clobbopus',
             'evolvedPokemon': 'Grapploct',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -118015,7 +119041,7 @@ module.exports = {
         {
           'basePokemon': 'Sinistea',
           'evolvedPokemon': 'Polteageist',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -118085,7 +119111,7 @@ module.exports = {
           {
             'basePokemon': 'Sinistea',
             'evolvedPokemon': 'Polteageist',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -118128,7 +119154,7 @@ module.exports = {
         {
           'basePokemon': 'Hatenna',
           'evolvedPokemon': 'Hattrem',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -118239,7 +119265,7 @@ module.exports = {
         {
           'basePokemon': 'Hattrem',
           'evolvedPokemon': 'Hatterene',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -118325,7 +119351,7 @@ module.exports = {
           {
             'basePokemon': 'Hatenna',
             'evolvedPokemon': 'Hattrem',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -118416,7 +119442,7 @@ module.exports = {
           {
             'basePokemon': 'Hattrem',
             'evolvedPokemon': 'Hatterene',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -118453,7 +119479,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 858.1,
+      'id': 858.01,
       'name': 'Gigantamax Hatterene',
       'nativeRegion': -1,
       'type': [
@@ -118505,7 +119531,7 @@ module.exports = {
         {
           'basePokemon': 'Impidimp',
           'evolvedPokemon': 'Morgrem',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -118602,6 +119628,7 @@ module.exports = {
             'dungeon': 'Glimwood Tangle',
           },
         ],
+        '12': ['Colbur'],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -118629,7 +119656,7 @@ module.exports = {
         {
           'basePokemon': 'Morgrem',
           'evolvedPokemon': 'Grimmsnarl',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -118694,7 +119721,7 @@ module.exports = {
           {
             'basePokemon': 'Impidimp',
             'evolvedPokemon': 'Morgrem',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -118784,7 +119811,7 @@ module.exports = {
           {
             'basePokemon': 'Morgrem',
             'evolvedPokemon': 'Grimmsnarl',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -118821,7 +119848,7 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
-      'id': 861.1,
+      'id': 861.01,
       'name': 'Gigantamax Grimmsnarl',
       'nativeRegion': -1,
       'type': [
@@ -118915,7 +119942,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Linoone',
             'evolvedPokemon': 'Obstagoon',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -119005,7 +120032,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Meowth',
             'evolvedPokemon': 'Perrserker',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -119069,7 +120096,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Corsola',
             'evolvedPokemon': 'Cursola',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -119137,7 +120164,7 @@ module.exports = {
           {
             'basePokemon': "Galarian Farfetch'd",
             'evolvedPokemon': "Sirfetch'd",
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -119213,7 +120240,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Mr. Mime',
             'evolvedPokemon': 'Mr. Rime',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -119280,7 +120307,7 @@ module.exports = {
           {
             'basePokemon': 'Galarian Yamask',
             'evolvedPokemon': 'Runerigus',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -119429,87 +120456,6 @@ module.exports = {
     },
     {
       'id': 869.01,
-      'name': 'Alcremie (Strawberry Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.02,
-      'name': 'Alcremie (Strawberry Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.03,
-      'name': 'Alcremie (Strawberry Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.04,
       'name': 'Alcremie (Strawberry Ruby Cream)',
       'type': [17],
       'base': {
@@ -119536,7 +120482,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.05,
+      'id': 869.02,
       'name': 'Alcremie (Strawberry Caramel)',
       'type': [17],
       'base': {
@@ -119563,34 +120509,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.06,
-      'name': 'Alcremie (Strawberry Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.07,
+      'id': 869.03,
       'name': 'Alcremie (Strawberry Ruby Swirl)',
       'type': [17],
       'base': {
@@ -119617,8 +120536,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.08,
+      'id': 869.04,
+      'name': 'Alcremie (Strawberry Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.05,
       'name': 'Alcremie (Strawberry Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.06,
+      'name': 'Alcremie (Strawberry Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.07,
+      'name': 'Alcremie (Strawberry Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.08,
+      'name': 'Alcremie (Strawberry Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -119672,87 +120699,6 @@ module.exports = {
     },
     {
       'id': 869.11,
-      'name': 'Alcremie (Berry Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.12,
-      'name': 'Alcremie (Berry Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.13,
-      'name': 'Alcremie (Berry Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.14,
       'name': 'Alcremie (Berry Ruby Cream)',
       'type': [17],
       'base': {
@@ -119779,7 +120725,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.15,
+      'id': 869.12,
       'name': 'Alcremie (Berry Caramel)',
       'type': [17],
       'base': {
@@ -119806,34 +120752,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.16,
-      'name': 'Alcremie (Berry Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.17,
+      'id': 869.13,
       'name': 'Alcremie (Berry Ruby Swirl)',
       'type': [17],
       'base': {
@@ -119860,8 +120779,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.18,
+      'id': 869.14,
+      'name': 'Alcremie (Berry Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.15,
       'name': 'Alcremie (Berry Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.16,
+      'name': 'Alcremie (Berry Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.17,
+      'name': 'Alcremie (Berry Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.18,
+      'name': 'Alcremie (Berry Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -119915,87 +120942,6 @@ module.exports = {
     },
     {
       'id': 869.21,
-      'name': 'Alcremie (Love Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.22,
-      'name': 'Alcremie (Love Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.23,
-      'name': 'Alcremie (Love Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.24,
       'name': 'Alcremie (Love Ruby Cream)',
       'type': [17],
       'base': {
@@ -120022,7 +120968,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.25,
+      'id': 869.22,
       'name': 'Alcremie (Love Caramel)',
       'type': [17],
       'base': {
@@ -120049,34 +120995,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.26,
-      'name': 'Alcremie (Love Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.27,
+      'id': 869.23,
       'name': 'Alcremie (Love Ruby Swirl)',
       'type': [17],
       'base': {
@@ -120103,8 +121022,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.28,
+      'id': 869.24,
+      'name': 'Alcremie (Love Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.25,
       'name': 'Alcremie (Love Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.26,
+      'name': 'Alcremie (Love Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.27,
+      'name': 'Alcremie (Love Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.28,
+      'name': 'Alcremie (Love Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -120158,87 +121185,6 @@ module.exports = {
     },
     {
       'id': 869.31,
-      'name': 'Alcremie (Star Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.32,
-      'name': 'Alcremie (Star Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.33,
-      'name': 'Alcremie (Star Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.34,
       'name': 'Alcremie (Star Ruby Cream)',
       'type': [17],
       'base': {
@@ -120265,7 +121211,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.35,
+      'id': 869.32,
       'name': 'Alcremie (Star Caramel)',
       'type': [17],
       'base': {
@@ -120292,34 +121238,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.36,
-      'name': 'Alcremie (Star Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.37,
+      'id': 869.33,
       'name': 'Alcremie (Star Ruby Swirl)',
       'type': [17],
       'base': {
@@ -120346,8 +121265,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.38,
+      'id': 869.34,
+      'name': 'Alcremie (Star Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.35,
       'name': 'Alcremie (Star Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.36,
+      'name': 'Alcremie (Star Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.37,
+      'name': 'Alcremie (Star Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.38,
+      'name': 'Alcremie (Star Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -120401,87 +121428,6 @@ module.exports = {
     },
     {
       'id': 869.41,
-      'name': 'Alcremie (Clover Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.42,
-      'name': 'Alcremie (Clover Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.43,
-      'name': 'Alcremie (Clover Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.44,
       'name': 'Alcremie (Clover Ruby Cream)',
       'type': [17],
       'base': {
@@ -120508,7 +121454,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.45,
+      'id': 869.42,
       'name': 'Alcremie (Clover Caramel)',
       'type': [17],
       'base': {
@@ -120535,34 +121481,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.46,
-      'name': 'Alcremie (Clover Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.47,
+      'id': 869.43,
       'name': 'Alcremie (Clover Ruby Swirl)',
       'type': [17],
       'base': {
@@ -120589,8 +121508,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.48,
+      'id': 869.44,
+      'name': 'Alcremie (Clover Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.45,
       'name': 'Alcremie (Clover Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.46,
+      'name': 'Alcremie (Clover Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.47,
+      'name': 'Alcremie (Clover Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.48,
+      'name': 'Alcremie (Clover Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -120644,87 +121671,6 @@ module.exports = {
     },
     {
       'id': 869.51,
-      'name': 'Alcremie (Flower Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.52,
-      'name': 'Alcremie (Flower Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.53,
-      'name': 'Alcremie (Flower Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.54,
       'name': 'Alcremie (Flower Ruby Cream)',
       'type': [17],
       'base': {
@@ -120751,7 +121697,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.55,
+      'id': 869.52,
       'name': 'Alcremie (Flower Caramel)',
       'type': [17],
       'base': {
@@ -120778,34 +121724,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.56,
-      'name': 'Alcremie (Flower Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.57,
+      'id': 869.53,
       'name': 'Alcremie (Flower Ruby Swirl)',
       'type': [17],
       'base': {
@@ -120832,8 +121751,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.58,
+      'id': 869.54,
+      'name': 'Alcremie (Flower Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.55,
       'name': 'Alcremie (Flower Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.56,
+      'name': 'Alcremie (Flower Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.57,
+      'name': 'Alcremie (Flower Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.58,
+      'name': 'Alcremie (Flower Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -120887,87 +121914,6 @@ module.exports = {
     },
     {
       'id': 869.61,
-      'name': 'Alcremie (Ribbon Lemon)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.62,
-      'name': 'Alcremie (Ribbon Mint)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.63,
-      'name': 'Alcremie (Ribbon Matcha)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.64,
       'name': 'Alcremie (Ribbon Ruby Cream)',
       'type': [17],
       'base': {
@@ -120994,7 +121940,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.65,
+      'id': 869.62,
       'name': 'Alcremie (Ribbon Caramel)',
       'type': [17],
       'base': {
@@ -121021,34 +121967,7 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.66,
-      'name': 'Alcremie (Ribbon Rainbow)',
-      'type': [17],
-      'base': {
-        'hitpoints': 65,
-        'attack': 60,
-        'specialAttack': 110,
-        'defense': 75,
-        'specialDefense': 121,
-        'speed': 64,
-      },
-      'eggCycles': 20,
-      'levelType': 2,
-      'exp': 173,
-      'catchRate': 100,
-      'gender': {
-        'femaleRatio': 1,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 116,
-      'nativeRegion': 7,
-      'locations': {},
-      'catchRatePercent': 31,
-      'eggSteps': 800,
-    },
-    {
-      'id': 869.67,
+      'id': 869.63,
       'name': 'Alcremie (Ribbon Ruby Swirl)',
       'type': [17],
       'base': {
@@ -121075,8 +121994,116 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': 869.68,
+      'id': 869.64,
+      'name': 'Alcremie (Ribbon Matcha)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.65,
       'name': 'Alcremie (Ribbon Salted)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.66,
+      'name': 'Alcremie (Ribbon Lemon)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.67,
+      'name': 'Alcremie (Ribbon Mint)',
+      'type': [17],
+      'base': {
+        'hitpoints': 65,
+        'attack': 60,
+        'specialAttack': 110,
+        'defense': 75,
+        'specialDefense': 121,
+        'speed': 64,
+      },
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 173,
+      'catchRate': 100,
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'attack': 116,
+      'nativeRegion': 7,
+      'locations': {},
+      'catchRatePercent': 31,
+      'eggSteps': 800,
+    },
+    {
+      'id': 869.68,
+      'name': 'Alcremie (Ribbon Rainbow)',
       'type': [17],
       'base': {
         'hitpoints': 65,
@@ -121238,7 +122265,7 @@ module.exports = {
         {
           'basePokemon': 'Snom',
           'evolvedPokemon': 'Frosmoth',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -121342,7 +122369,7 @@ module.exports = {
           {
             'basePokemon': 'Snom',
             'evolvedPokemon': 'Frosmoth',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -121503,7 +122530,7 @@ module.exports = {
       'eggSteps': 1000,
     },
     {
-      'id': 875.1,
+      'id': 875.01,
       'name': 'Eiscue (No Ice Face)',
       'type': [5],
       'base': {
@@ -121579,7 +122606,7 @@ module.exports = {
       'eggSteps': 1600,
     },
     {
-      'id': 876.1,
+      'id': 876.01,
       'name': 'Indeedee (Female)',
       'type': [
         10,
@@ -121672,7 +122699,7 @@ module.exports = {
       'eggSteps': 400,
     },
     {
-      'id': 877.1,
+      'id': 877.01,
       'name': 'Morpeko (Hangry)',
       'type': [
         3,
@@ -121723,7 +122750,7 @@ module.exports = {
         {
           'basePokemon': 'Cufant',
           'evolvedPokemon': 'Copperajah',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -121834,7 +122861,7 @@ module.exports = {
           {
             'basePokemon': 'Cufant',
             'evolvedPokemon': 'Copperajah',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -121871,7 +122898,7 @@ module.exports = {
       'eggSteps': 1520,
     },
     {
-      'id': 879.1,
+      'id': 879.01,
       'name': 'Gigantamax Copperajah',
       'nativeRegion': -1,
       'type': [16],
@@ -122065,7 +123092,7 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
-      'id': 884.1,
+      'id': 884.01,
       'name': 'Gigantamax Duraludon',
       'nativeRegion': -1,
       'type': [
@@ -122117,7 +123144,7 @@ module.exports = {
         {
           'basePokemon': 'Dreepy',
           'evolvedPokemon': 'Drakloak',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -122193,7 +123220,7 @@ module.exports = {
         {
           'basePokemon': 'Drakloak',
           'evolvedPokemon': 'Dragapult',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -122248,7 +123275,7 @@ module.exports = {
           {
             'basePokemon': 'Dreepy',
             'evolvedPokemon': 'Drakloak',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -122372,7 +123399,7 @@ module.exports = {
           {
             'basePokemon': 'Drakloak',
             'evolvedPokemon': 'Dragapult',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -122415,7 +123442,7 @@ module.exports = {
       'type': [17],
       'base': {
         'hitpoints': 92,
-        'attack': 130,
+        'attack': 120,
         'specialAttack': 80,
         'defense': 115,
         'specialDefense': 115,
@@ -122426,7 +123453,7 @@ module.exports = {
         {
           'basePokemon': 'Zacian (Battle Hero)',
           'evolvedPokemon': 'Zacian (Crowned Sword)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -122478,7 +123505,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'attack': 197,
+      'attack': 190,
       'nativeRegion': 7,
       'locations': {
         '3': [
@@ -122492,7 +123519,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 888.1,
+      'id': 888.01,
       'name': 'Zacian (Crowned Sword)',
       'type': [
         17,
@@ -122500,7 +123527,7 @@ module.exports = {
       ],
       'base': {
         'hitpoints': 92,
-        'attack': 170,
+        'attack': 150,
         'specialAttack': 80,
         'defense': 115,
         'specialDefense': 115,
@@ -122519,14 +123546,14 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'attack': 223,
+      'attack': 210,
       'nativeRegion': 7,
       'locations': {
         '5': [
           {
             'basePokemon': 'Zacian (Battle Hero)',
             'evolvedPokemon': 'Zacian (Crowned Sword)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -122576,7 +123603,7 @@ module.exports = {
       'type': [6],
       'base': {
         'hitpoints': 92,
-        'attack': 130,
+        'attack': 120,
         'specialAttack': 80,
         'defense': 115,
         'specialDefense': 115,
@@ -122587,7 +123614,7 @@ module.exports = {
         {
           'basePokemon': 'Zamazenta (Battle Hero)',
           'evolvedPokemon': 'Zamazenta (Crowned Shield)',
-          'trigger': 0,
+          'trigger': 1,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -122639,7 +123666,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'attack': 197,
+      'attack': 190,
       'nativeRegion': 7,
       'locations': {
         '3': [
@@ -122653,7 +123680,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 889.1,
+      'id': 889.01,
       'name': 'Zamazenta (Crowned Shield)',
       'type': [
         6,
@@ -122661,10 +123688,10 @@ module.exports = {
       ],
       'base': {
         'hitpoints': 92,
-        'attack': 130,
+        'attack': 120,
         'specialAttack': 80,
-        'defense': 145,
-        'specialDefense': 145,
+        'defense': 140,
+        'specialDefense': 140,
         'speed': 128,
       },
       'eggCycles': 120,
@@ -122680,14 +123707,14 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'attack': 216,
+      'attack': 205,
       'nativeRegion': 7,
       'locations': {
         '5': [
           {
             'basePokemon': 'Zamazenta (Battle Hero)',
             'evolvedPokemon': 'Zamazenta (Crowned Shield)',
-            'trigger': 0,
+            'trigger': 1,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -122762,7 +123789,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 890.1,
+      'id': 890.01,
       'name': 'Eternamax Eternatus',
       'nativeRegion': -1,
       'type': [
@@ -122849,7 +123876,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 892.1,
+      'id': 892.01,
       'name': 'Urshifu (Rapid Strike)',
       'type': [
         6,
@@ -122879,7 +123906,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 892.2,
+      'id': 892.02,
       'name': 'Gigantamax Urshifu (Single Strike)',
       'nativeRegion': -1,
       'type': [
@@ -122909,7 +123936,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 892.3,
+      'id': 892.03,
       'name': 'Gigantamax Urshifu (Rapid Strike)',
       'nativeRegion': -1,
       'type': [
@@ -122976,7 +124003,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 893.1,
+      'id': 893.01,
       'name': 'Zarude (Dada)',
       'type': [
         15,
@@ -123169,7 +124196,7 @@ module.exports = {
         {
           'basePokemon': 'Calyrex',
           'evolvedPokemon': 'Shadow Rider Calyrex',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -123190,7 +124217,7 @@ module.exports = {
         {
           'basePokemon': 'Calyrex',
           'evolvedPokemon': 'Ice Rider Calyrex',
-          'trigger': 1,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -123231,7 +124258,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 898.1,
+      'id': 898.01,
       'name': 'Ice Rider Calyrex',
       'type': [
         10,
@@ -123261,7 +124288,7 @@ module.exports = {
           {
             'basePokemon': 'Calyrex',
             'evolvedPokemon': 'Ice Rider Calyrex',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -123285,7 +124312,7 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
-      'id': 898.2,
+      'id': 898.02,
       'name': 'Shadow Rider Calyrex',
       'type': [
         10,
@@ -123315,7 +124342,7 @@ module.exports = {
           {
             'basePokemon': 'Calyrex',
             'evolvedPokemon': 'Shadow Rider Calyrex',
-            'trigger': 1,
+            'trigger': 2,
             'restrictions': [
               {
                 'requiredValue': 1,
@@ -123369,213 +124396,6 @@ module.exports = {
       'eggSteps': 800,
     },
     {
-      'id': -100,
-      'name': 'Mega Venusaur',
-      'nativeRegion': 0,
-      'type': [
-        4,
-        7,
-      ],
-      'eggCycles': 120,
-      'levelType': 3,
-      'exp': 281,
-      'catchRate': 10,
-      'base': {
-        'hitpoints': 80,
-        'attack': 100,
-        'specialAttack': 122,
-        'defense': 123,
-        'specialDefense': 120,
-        'speed': 80,
-      },
-      'gender': {
-        'femaleRatio': 0.125,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 194,
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -101,
-      'name': 'Mega Charizard X',
-      'nativeRegion': 0,
-      'type': [
-        1,
-        14,
-      ],
-      'eggCycles': 120,
-      'levelType': 3,
-      'exp': 285,
-      'catchRate': 10,
-      'base': {
-        'hitpoints': 78,
-        'attack': 130,
-        'specialAttack': 130,
-        'defense': 111,
-        'specialDefense': 85,
-        'speed': 100,
-      },
-      'gender': {
-        'femaleRatio': 0.125,
-        'type': 1,
-        'visualDifference': false,
-      },
-      'attack': 204,
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -111,
-      'name': 'Mega Gyarados',
-      'nativeRegion': 0,
-      'type': [
-        2,
-        15,
-      ],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 224,
-      'catchRate': 10,
-      'base': {
-        'hitpoints': 95,
-        'attack': 155,
-        'specialAttack': 70,
-        'defense': 109,
-        'specialDefense': 130,
-        'speed': 81,
-      },
-      'attack': 199,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -113,
-      'name': 'Mega Mewtwo X',
-      'type': [
-        10,
-        6,
-      ],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 351,
-      'catchRate': 2,
-      'base': {
-        'hitpoints': 106,
-        'attack': 190,
-        'specialAttack': 154,
-        'defense': 100,
-        'specialDefense': 100,
-        'speed': 130,
-      },
-      'gender': {
-        'type': 0,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'attack': 315,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 1,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -114,
-      'name': 'Mega Mewtwo Y',
-      'type': [10],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 351,
-      'catchRate': 2,
-      'base': {
-        'hitpoints': 106,
-        'attack': 150,
-        'specialAttack': 194,
-        'defense': 70,
-        'specialDefense': 120,
-        'speed': 140,
-      },
-      'gender': {
-        'type': 0,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'attack': 304,
-      'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 1,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -124,
-      'name': 'Mega Gardevoir',
-      'type': [
-        10,
-        17,
-      ],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 351,
-      'catchRate': 2,
-      'base': {
-        'hitpoints': 68,
-        'attack': 85,
-        'specialAttack': 165,
-        'defense': 65,
-        'specialDefense': 135,
-        'speed': 100,
-      },
-      'attack': 172,
-      'nativeRegion': 0,
-      'gender': {
-        'type': 1,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'locations': {},
-      'catchRatePercent': 1,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -142,
-      'name': 'Mega Rayquaza',
-      'nativeRegion': 2,
-      'type': [
-        14,
-        9,
-      ],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 351,
-      'catchRate': 1,
-      'base': {
-        'hitpoints': 105,
-        'attack': 180,
-        'specialAttack': 180,
-        'defense': 100,
-        'specialDefense': 100,
-        'speed': 115,
-      },
-      'gender': {
-        'type': 0,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'attack': 329,
-      'locations': {},
-      'catchRatePercent': 1,
-      'eggSteps': 4800,
-    },
-    {
       'id': -793,
       'name': '???',
       'nativeRegion': 6,
@@ -123621,115 +124441,27 @@ module.exports = {
     'EvolutionItem': 5,
   },
   'GameConstants': {
-    'SECOND': 1000,
-    'MINUTE': 60000,
-    'HOUR': 3600000,
-    'DAY': 86400000,
-    'WEEK': 604800000,
-    'TICK_TIME': 100,
-    'BATTLE_TICK': 1000,
-    'BATTLE_FRONTIER_TICK': 500,
-    'UNDERGROUND_TICK': 1000,
-    'DUNGEON_TIME': 60000,
-    'DUNGEON_TICK': 100,
-    'DUNGEON_LADDER_BONUS': 10000,
-    'EFFECT_ENGINE_TICK': 1000,
-    'SAVE_TICK': 10000,
-    'GYM_TIME': 30000,
-    'GYM_COUNTDOWN': 1000,
-    'GYM_TICK': 100,
+    'ACHIEVEMENT_DEFEAT_DUNGEON_VALUES': [
+      10,
+      100,
+      250,
+      500,
+    ],
+    'ACHIEVEMENT_DEFEAT_GYM_VALUES': [
+      10,
+      100,
+      1000,
+    ],
+    'ACHIEVEMENT_DEFEAT_ROUTE_VALUES': [
+      100,
+      1000,
+      10000,
+    ],
     'ACHIEVEMENT_TICK': 1000,
-    'MIN_LOAD_TIME': 500,
-    'MAX_LOAD_TIME': 20000,
-    'MUTATION_TICK': 1000,
-    'WANDER_TICK': 1500,
-    'TEMP_BATTLE_TIME': 60000,
-    'TEMP_BATTLE_TICK': 100,
-    'Region': {
-      '0': 'kanto',
-      '1': 'johto',
-      '2': 'hoenn',
-      '3': 'sinnoh',
-      '4': 'unova',
-      '5': 'kalos',
-      '6': 'alola',
-      '7': 'galar',
-      '8': 'final',
-      'none': -1,
-      '-1': 'none',
-      'kanto': 0,
-      'johto': 1,
-      'hoenn': 2,
-      'sinnoh': 3,
-      'unova': 4,
-      'kalos': 5,
-      'alola': 6,
-      'galar': 7,
-      'final': 8,
-    },
-    'MAX_AVAILABLE_REGION': 7,
-    'MaxIDPerRegion': [
-      151,
-      251,
-      386,
-      493,
-      649,
-      721,
-      809,
-      898,
-    ],
-    'ITEM_USE_TIME': 30,
-    'FLUTE_TYPE_ATTACK_MULTIPLIER': 1.005,
-    'ROAMING_MIN_CHANCE': 8192,
-    'ROAMING_MAX_CHANCE': 4096,
-    'SHINY_CHANCE_BATTLE': 8192,
-    'SHINY_CHANCE_DUNGEON': 4096,
-    'SHINY_CHANCE_STONE': 2048,
-    'SHINY_CHANCE_SAFARI': 2048,
-    'SHINY_CHANCE_SHOP': 1024,
-    'SHINY_CHANCE_BATTLEFRONTIER': 1024,
-    'SHINY_CHANCE_BREEDING': 1024,
-    'SHINY_CHANCE_FARM': 1024,
-    'ITEM_PRICE_MULTIPLIER': 1.00045,
-    'ITEM_PRICE_DEDUCT': 1.0005,
-    'PLATE_VALUE': 100,
-    'BREEDING_ATTACK_BONUS': 25,
-    'FARM_PLOT_WIDTH': 5,
-    'FARM_PLOT_HEIGHT': 5,
-    'BerryDistribution': [
-      0.39,
-      0.63,
-      0.78,
-      0.87,
-      0.93,
-      0.96,
-      0.98,
-      1,
-    ],
-    'MULCH_USE_TIME': 300,
-    'BOOST_MULCH_MULTIPLIER': 1.5,
-    'RICH_MULCH_MULTIPLIER': 2,
-    'SURPRISE_MULCH_MULTIPLIER': 1.5,
+    'ACTIVE_QUEST_MULTIPLIER': 4,
     'AMAZE_MULCH_GROWTH_MULTIPLIER': 1.25,
-    'AMAZE_MULCH_PRODUCE_MULTIPLIER': 1.5,
     'AMAZE_MULCH_MUTATE_MULTIPLIER': 1.25,
-    'FREEZE_MULCH_MULTIPLIER': 0,
-    'WANDER_RATE': 0.0005,
-    'BerryColor': [
-      '#EE8130',
-      '#A33EA1',
-      '#D685AD',
-      '#7AC74C',
-      '#F7D02C',
-      '#6390F0',
-      '#B7B7CE',
-      '#1C1C1C',
-    ],
-    'BASE_DUNGEON_SIZE': 5,
-    'MIN_DUNGEON_SIZE': 5,
-    'MAX_DUNGEON_SIZE': 10,
-    'DUNGEON_CHEST_SHOW': 2,
-    'DUNGEON_MAP_SHOW': 4,
+    'AMAZE_MULCH_PRODUCE_MULTIPLIER': 1.5,
     'AchievementOption': {
       '0': 'less',
       '1': 'equal',
@@ -123756,7 +124488,7 @@ module.exports = {
       '14': 'Farming',
       '15': 'Underground',
       '16': 'Battle Frontier',
-      '17': 'Protein',
+      '17': 'Vitamins',
       '18': 'Pokerus',
       'None': -1,
       '-1': 'None',
@@ -123777,9 +124509,247 @@ module.exports = {
       'Farming': 14,
       'Underground': 15,
       'Battle Frontier': 16,
-      'Protein': 17,
+      'Vitamins': 17,
       'Pokerus': 18,
     },
+    'AlcremieSpins': {
+      '0': 'dayClockwiseBelow5',
+      '1': 'dayCounterclockwiseBelow5',
+      '2': 'nightClockwiseBelow5',
+      '3': 'nightCounterclockwiseAbove5',
+      '4': 'nightClockwiseAbove5',
+      '5': 'nightCounterclockwiseBelow5',
+      '6': 'dayClockwiseAbove5',
+      '7': 'dayCounterclockwiseAbove5',
+      '8': 'at7Above10',
+      'dayClockwiseBelow5': 0,
+      'dayCounterclockwiseBelow5': 1,
+      'nightClockwiseBelow5': 2,
+      'nightCounterclockwiseAbove5': 3,
+      'nightClockwiseAbove5': 4,
+      'nightCounterclockwiseBelow5': 5,
+      'dayClockwiseAbove5': 6,
+      'dayCounterclockwiseAbove5': 7,
+      'at7Above10': 8,
+    },
+    'AlcremieSweet': {
+      '0': 'Strawberry Sweet',
+      '1': 'Love Sweet',
+      '2': 'Berry Sweet',
+      '3': 'Clover Sweet',
+      '4': 'Flower Sweet',
+      '5': 'Star Sweet',
+      '6': 'Ribbon Sweet',
+      'Strawberry Sweet': 0,
+      'Love Sweet': 1,
+      'Berry Sweet': 2,
+      'Clover Sweet': 3,
+      'Flower Sweet': 4,
+      'Star Sweet': 5,
+      'Ribbon Sweet': 6,
+    },
+    'AlolaDungeons': [
+      "Trainers' School",
+      "Hau'oli Cemetery",
+      'Verdant Cavern',
+      'Melemele Meadow',
+      'Seaward Cave',
+      'Ten Carat Hill',
+      'Pikachu Valley',
+      'Paniola Ranch',
+      'Brooklet Hill',
+      'Wela Volcano Park',
+      'Lush Jungle',
+      "Diglett's Tunnel",
+      'Memorial Hill',
+      'Malie Garden',
+      'Hokulani Observatory',
+      'Thrifty Megamart',
+      "Ula'ula Meadow",
+      'Po Town',
+      'Aether Foundation',
+      'Exeggutor Island Hill',
+      'Vast Poni Canyon',
+      "Mina's Houseboat",
+      'Mount Lanakila',
+      'Lake of the Sunne and Moone',
+      'Ruins of Conflict',
+      'Ruins of Life',
+      'Ruins of Abundance',
+      'Ruins of Hope',
+      'Poni Meadow',
+      'Resolution Cave',
+    ],
+    'AlolaGyms': [
+      "Ilima's Trial",
+      'Iki Town',
+      "Lana's Trial",
+      "Kiawe's Trial",
+      "Mallow's Trial",
+      'Konikoni City',
+      "Sophocles' Trial",
+      "Acerola's Trial",
+      'Malie City',
+      'Vast Poni Canyon Trial',
+      "Mina's Trial",
+      'Exeggutor Island',
+      'Elite Molayne',
+      'Elite Olivia',
+      'Elite Acerola',
+      'Elite Kahili',
+      'Champion Hau',
+    ],
+    'AlolaSubRegions': {
+      '0': 'MelemeleIsland',
+      '1': 'AkalaIsland',
+      '2': 'UlaulaIsland',
+      '3': 'PoniIsland',
+      '4': 'MagikarpJump',
+      'MelemeleIsland': 0,
+      'AkalaIsland': 1,
+      'UlaulaIsland': 2,
+      'PoniIsland': 3,
+      'MagikarpJump': 4,
+    },
+    'BASE_DUNGEON_SIZE': 5,
+    'BASE_EP_YIELD': 100,
+    'BATTLE_FRONTIER_TICK': 500,
+    'BATTLE_TICK': 1000,
+    'BOOST_MULCH_MULTIPLIER': 1.5,
+    'BREEDING_ATTACK_BONUS': 25,
+    'BattleItemType': {
+      'xAttack': 'xAttack',
+      'xClick': 'xClick',
+      'Lucky_egg': 'Lucky_egg',
+      'Token_collector': 'Token_collector',
+      'Dowsing_machine': 'Dowsing_machine',
+      'Lucky_incense': 'Lucky_incense',
+    },
+    'BattlePokemonGender': {
+      '0': 'NoGender',
+      '1': 'Male',
+      '2': 'Female',
+      'NoGender': 0,
+      'Male': 1,
+      'Female': 2,
+    },
+    'BerryColor': [
+      '#EE8130',
+      '#A33EA1',
+      '#D685AD',
+      '#7AC74C',
+      '#F7D02C',
+      '#6390F0',
+      '#B7B7CE',
+      '#1C1C1C',
+    ],
+    'BerryDistribution': [
+      0.39,
+      0.63,
+      0.78,
+      0.87,
+      0.93,
+      0.96,
+      0.98,
+      1,
+    ],
+    'BerryTraderLocations': {
+      '0': 'Goldenrod City',
+      '1': 'Mauville City',
+      '2': 'Pinkan Pokémon Reserve',
+      '3': 'Hearthome City',
+      'None': -1,
+      '-1': 'None',
+      'Goldenrod City': 0,
+      'Mauville City': 1,
+      'Pinkan Pokémon Reserve': 2,
+      'Hearthome City': 3,
+    },
+    'BulletinBoards': {
+      '0': 'Kanto',
+      '1': 'Johto',
+      '2': 'Hoenn',
+      '3': 'Sevii4567',
+      '4': 'Sinnoh',
+      '5': 'Kalos',
+      '6': 'Alola',
+      '7': 'Hoppy',
+      '8': 'Galar',
+      '9': 'Armor',
+      '10': 'Crown',
+      'None': -2,
+      '-2': 'None',
+      'All': -1,
+      '-1': 'All',
+      'Kanto': 0,
+      'Johto': 1,
+      'Hoenn': 2,
+      'Sevii4567': 3,
+      'Sinnoh': 4,
+      'Kalos': 5,
+      'Alola': 6,
+      'Hoppy': 7,
+      'Galar': 8,
+      'Armor': 9,
+      'Crown': 10,
+    },
+    'CAPTURE_POKEMONS_BASE_REWARD': 1.3513513513513513,
+    'Currency': {
+      '0': 'money',
+      '1': 'questPoint',
+      '2': 'dungeonToken',
+      '3': 'diamond',
+      '4': 'farmPoint',
+      '5': 'battlePoint',
+      '6': 'contestToken',
+      'money': 0,
+      'questPoint': 1,
+      'dungeonToken': 2,
+      'diamond': 3,
+      'farmPoint': 4,
+      'battlePoint': 5,
+      'contestToken': 6,
+    },
+    'DAY': 86400000,
+    'DEFEAT_POKEMONS_BASE_REWARD': 1,
+    'DNA_ITEM_CHANCE': 60,
+    'DUNGEON_BOSS_EP_MODIFIER': 10,
+    'DUNGEON_BOSS_GEMS': 20,
+    'DUNGEON_BOSS_HELD_ITEM_MODIFIER': 6,
+    'DUNGEON_CHEST_SHOW': 2,
+    'DUNGEON_EP_MODIFIER': 3,
+    'DUNGEON_GEMS': 3,
+    'DUNGEON_HELD_ITEM_MODIFIER': 4,
+    'DUNGEON_LADDER_BONUS': 10000,
+    'DUNGEON_MAP_SHOW': 4,
+    'DUNGEON_TICK': 100,
+    'DUNGEON_TIME': 60000,
+    'DayOfWeek': {
+      '0': 'Sunday',
+      '1': 'Monday',
+      '2': 'Tuesday',
+      '3': 'Wednesday',
+      '4': 'Thursday',
+      '5': 'Friday',
+      '6': 'Saturday',
+      'Sunday': 0,
+      'Monday': 1,
+      'Tuesday': 2,
+      'Wednesday': 3,
+      'Thursday': 4,
+      'Friday': 5,
+      'Saturday': 6,
+    },
+    'DockTowns': [
+      'Vermilion City',
+      'Olivine City',
+      'Slateport City',
+      'Canalave City',
+      'Castelia City',
+      'Coumarine City',
+      "Hau'oli City",
+      'Hulbury',
+    ],
     'DungeonTile': {
       '0': 'empty',
       '1': 'entrance',
@@ -123794,193 +124764,52 @@ module.exports = {
       'boss': 4,
       'ladder': 5,
     },
-    'ROUTE_HELD_ITEM_MODIFIER': 1,
-    'DUNGEON_HELD_ITEM_MODIFIER': 4,
-    'DUNGEON_BOSS_HELD_ITEM_MODIFIER': 6,
-    'HELD_ITEM_CHANCE': 512,
-    'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
-    'GRISEOUS_ITEM_CHANCE': 80,
-    'DNA_ITEM_CHANCE': 60,
-    'LIGHT_ITEM_CHANCE': 100,
-    'RUST_ITEM_CHANCE': 90,
-    'MANE_ITEM_CHANCE': 10,
-    'GEM_UPGRADE_COST': 500,
-    'GEM_UPGRADE_STEP': 0.1,
-    'MAX_GEM_UPGRADES': 10,
-    'DUNGEON_GEMS': 3,
-    'DUNGEON_BOSS_GEMS': 20,
-    'GYM_GEMS': 5,
-    'SAFARI_BATTLE_CHANCE': 5,
-    'SAFARI_BASE_POKEBALL_COUNT': 30,
-    'LEGAL_WALK_BLOCKS': [
-      0,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-    ],
-    'SAFARI_OUT_OF_BALLS': 'Game Over!<br>You have run out of safari balls to use.',
-    'GAIN_MONEY_BASE_REWARD': 0.0017,
-    'GAIN_TOKENS_BASE_REWARD': 0.0935,
-    'GAIN_FARM_POINTS_BASE_REWARD': 0.153,
-    'HATCH_EGGS_BASE_REWARD': 33,
-    'SHINY_BASE_REWARD': 3000,
-    'DEFEAT_POKEMONS_BASE_REWARD': 1,
-    'CAPTURE_POKEMONS_BASE_REWARD': 1.3513513513513513,
-    'MINE_LAYERS_BASE_REWARD': 720,
-    'MINE_ITEMS_BASE_REWARD': 210,
-    'USE_OAK_ITEM_BASE_REWARD': 1,
-    'ACTIVE_QUEST_MULTIPLIER': 4,
-    'QUEST_CLICKS_PER_SECOND': 5,
-    'QUESTS_PER_SET': 10,
-    'BASE_EP_YIELD': 100,
-    'STONE_EP_YIELD': 1000,
-    'WANDERER_EP_YIELD': 500,
-    'SHOPMON_EP_YIELD': 1000,
-    'SAFARI_EP_YIELD': 1000,
-    'SHINY_EP_MODIFIER': 5,
-    'REPEATBALL_EP_MODIFIER': 5,
-    'DUNGEON_EP_MODIFIER': 3,
-    'DUNGEON_BOSS_EP_MODIFIER': 10,
-    'ROAMER_EP_MODIFIER': 50,
-    'EP_EV_RATIO': 1000,
+    'EFFECT_ENGINE_TICK': 1000,
+    'EGG_CYCLE_MULTIPLIER': 40,
     'EP_CHALLENGE_MODIFIER': 10,
-    'GameState': {
-      '0': 'idle',
-      '1': 'paused',
-      '2': 'fighting',
-      '3': 'gym',
-      '4': 'dungeon',
-      '5': 'safari',
-      '6': 'town',
-      '7': 'shop',
-      '8': 'battleFrontier',
-      '9': 'temporaryBattle',
-      'idle': 0,
-      'paused': 1,
-      'fighting': 2,
-      'gym': 3,
-      'dungeon': 4,
-      'safari': 5,
-      'town': 6,
-      'shop': 7,
-      'battleFrontier': 8,
-      'temporaryBattle': 9,
+    'EP_EV_RATIO': 1000,
+    'EggItemType': {
+      '0': 'Fire_egg',
+      '1': 'Water_egg',
+      '2': 'Grass_egg',
+      '3': 'Fighting_egg',
+      '4': 'Electric_egg',
+      '5': 'Dragon_egg',
+      '6': 'Pokemon_egg',
+      '7': 'Mystery_egg',
+      'Fire_egg': 0,
+      'Water_egg': 1,
+      'Grass_egg': 2,
+      'Fighting_egg': 3,
+      'Electric_egg': 4,
+      'Dragon_egg': 5,
+      'Pokemon_egg': 6,
+      'Mystery_egg': 7,
     },
-    'Pokeball': {
-      '0': 'Pokeball',
-      '1': 'Greatball',
-      '2': 'Ultraball',
-      '3': 'Masterball',
-      '4': 'Fastball',
-      '5': 'Quickball',
-      '6': 'Timerball',
-      '7': 'Duskball',
-      '8': 'Luxuryball',
-      '9': 'Diveball',
-      '10': 'Lureball',
-      '11': 'Nestball',
-      '12': 'Repeatball',
-      '13': 'Beastball',
-      'None': -1,
-      '-1': 'None',
-      'Pokeball': 0,
-      'Greatball': 1,
-      'Ultraball': 2,
-      'Masterball': 3,
-      'Fastball': 4,
-      'Quickball': 5,
-      'Timerball': 6,
-      'Duskball': 7,
-      'Luxuryball': 8,
-      'Diveball': 9,
-      'Lureball': 10,
-      'Nestball': 11,
-      'Repeatball': 12,
-      'Beastball': 13,
+    'EnergyRestoreEffect': {
+      'SmallRestore': 0.1,
+      'MediumRestore': 0.2,
+      'LargeRestore': 0.5,
     },
-    'Currency': {
-      '0': 'money',
-      '1': 'questPoint',
-      '2': 'dungeonToken',
-      '3': 'diamond',
-      '4': 'farmPoint',
-      '5': 'battlePoint',
-      'money': 0,
-      'questPoint': 1,
-      'dungeonToken': 2,
-      'diamond': 3,
-      'farmPoint': 4,
-      'battlePoint': 5,
+    'EnergyRestoreSize': {
+      '0': 'SmallRestore',
+      '1': 'MediumRestore',
+      '2': 'LargeRestore',
+      'SmallRestore': 0,
+      'MediumRestore': 1,
+      'LargeRestore': 2,
     },
-    'TypeEffectiveness': {
-      '0': 'Immune',
-      '1': 'NotVery',
-      '2': 'Neutral',
-      '3': 'Very',
-      'Immune': 0,
-      'NotVery': 1,
-      'Neutral': 2,
-      'Very': 3,
+    'EnvironmentCssClass': {
+      'Water': 'water',
+      'Ice': 'ice',
+      'Fire': 'fire',
+      'Forest': 'forest',
+      'Cave': 'cave',
+      'GemCave': 'cave-gem',
+      'PowerPlant': 'power-plant',
+      'Mansion': 'mansion',
+      'Graveyard': 'graveyard',
     },
-    'TypeEffectivenessValue': {
-      '0': 'Immune',
-      '1': 'Neutral',
-      '2': 'Very',
-      'Immune': 0,
-      'NotVery': 0.5,
-      '0.5': 'NotVery',
-      'Neutral': 1,
-      'Very': 2,
-    },
-    'TypeColor': [
-      '#A8A77A',
-      '#EE8130',
-      '#6390F0',
-      '#F7D02C',
-      '#7AC74C',
-      '#96D9D6',
-      '#C22E28',
-      '#A33EA1',
-      '#E2BF65',
-      '#A98FF3',
-      '#F95587',
-      '#A6B91A',
-      '#B6A136',
-      '#735797',
-      '#6F35FC',
-      '#705746',
-      '#B7B7CE',
-      '#D685AD',
-    ],
-    'ROUTE_KILLS_NEEDED': 10,
-    'ACHIEVEMENT_DEFEAT_ROUTE_VALUES': [
-      100,
-      1000,
-      10000,
-    ],
-    'ACHIEVEMENT_DEFEAT_GYM_VALUES': [
-      10,
-      100,
-      1000,
-    ],
-    'ACHIEVEMENT_DEFEAT_DUNGEON_VALUES': [
-      10,
-      100,
-      250,
-      500,
-    ],
     'Environments': {
       'Water': {
         '0': {},
@@ -124073,114 +124902,29 @@ module.exports = {
         '7': {},
       },
     },
-    'EnvironmentCssClass': {
-      'Water': 'water',
-      'Ice': 'ice',
-      'Fire': 'fire',
-      'Forest': 'forest',
-      'Cave': 'cave',
-      'GemCave': 'cave-gem',
-      'PowerPlant': 'power-plant',
-      'Mansion': 'mansion',
-      'Graveyard': 'graveyard',
+    'ExtraAchievementCategories': {
+      '8': 'global',
+      '9': 'sevii',
+      '10': 'magikarpJump',
+      'global': 8,
+      'sevii': 9,
+      'magikarpJump': 10,
     },
-    'Starter': {
-      '0': 'Grass',
-      '1': 'Fire',
-      '2': 'Water',
-      '3': 'Special',
-      'None': -1,
-      '-1': 'None',
-      'Grass': 0,
-      'Fire': 1,
-      'Water': 2,
-      'Special': 3,
+    'FARM_PLOT_HEIGHT': 5,
+    'FARM_PLOT_WIDTH': 5,
+    'FLUTE_TYPE_ATTACK_MULTIPLIER': 1.005,
+    'FREEZE_MULCH_MULTIPLIER': 0,
+    'FinalSubRegions': {
+      '0': 'Final',
+      'Final': 0,
     },
-    'StoneType': {
-      '0': 'Leaf_stone',
-      '1': 'Fire_stone',
-      '2': 'Water_stone',
-      '3': 'Thunder_stone',
-      '4': 'Moon_stone',
-      '5': 'Linking_cord',
-      '6': 'Sun_stone',
-      '7': 'Soothe_bell',
-      '8': 'Metal_coat',
-      '9': 'Kings_rock',
-      '10': 'Upgrade',
-      '11': 'Dragon_scale',
-      '12': 'Prism_scale',
-      '13': 'Deepsea_tooth',
-      '14': 'Deepsea_scale',
-      '15': 'Shiny_stone',
-      '16': 'Dusk_stone',
-      '17': 'Dawn_stone',
-      '18': 'Razor_claw',
-      '19': 'Razor_fang',
-      '20': 'Electirizer',
-      '21': 'Magmarizer',
-      '22': 'Protector',
-      '23': 'Dubious_disc',
-      '24': 'Reaper_cloth',
-      '25': 'Black_DNA',
-      '26': 'White_DNA',
-      '27': 'Sachet',
-      '28': 'Whipped_dream',
-      '29': 'Key_stone',
-      '30': 'Ice_stone',
-      '31': 'Solar_light',
-      '32': 'Lunar_light',
-      '33': 'Pure_light',
-      '34': 'Sweet_apple',
-      '35': 'Tart_apple',
-      '36': 'Cracked_pot',
-      '37': 'Galarica_cuff',
-      '38': 'Galarica_wreath',
-      '39': 'Black_mane_hair',
-      '40': 'White_mane_hair',
-      'None': -1,
-      '-1': 'None',
-      'Leaf_stone': 0,
-      'Fire_stone': 1,
-      'Water_stone': 2,
-      'Thunder_stone': 3,
-      'Moon_stone': 4,
-      'Linking_cord': 5,
-      'Sun_stone': 6,
-      'Soothe_bell': 7,
-      'Metal_coat': 8,
-      'Kings_rock': 9,
-      'Upgrade': 10,
-      'Dragon_scale': 11,
-      'Prism_scale': 12,
-      'Deepsea_tooth': 13,
-      'Deepsea_scale': 14,
-      'Shiny_stone': 15,
-      'Dusk_stone': 16,
-      'Dawn_stone': 17,
-      'Razor_claw': 18,
-      'Razor_fang': 19,
-      'Electirizer': 20,
-      'Magmarizer': 21,
-      'Protector': 22,
-      'Dubious_disc': 23,
-      'Reaper_cloth': 24,
-      'Black_DNA': 25,
-      'White_DNA': 26,
-      'Sachet': 27,
-      'Whipped_dream': 28,
-      'Key_stone': 29,
-      'Ice_stone': 30,
-      'Solar_light': 31,
-      'Lunar_light': 32,
-      'Pure_light': 33,
-      'Sweet_apple': 34,
-      'Tart_apple': 35,
-      'Cracked_pot': 36,
-      'Galarica_cuff': 37,
-      'Galarica_wreath': 38,
-      'Black_mane_hair': 39,
-      'White_mane_hair': 40,
+    'FluteItemType': {
+      'Yellow_Flute': 'Yellow_Flute',
+      'Time_Flute': 'Time_Flute',
+      'Black_Flute': 'Black_Flute',
+      'Red_Flute': 'Red_Flute',
+      'White_Flute': 'White_Flute',
+      'Blue_Flute': 'Blue_Flute',
     },
     'FossilPieceType': {
       '0': 'Fossilized Bird',
@@ -124194,21 +124938,381 @@ module.exports = {
       'Fossilized Drake': 2,
       'Fossilized Dino': 3,
     },
-    'BattleItemType': {
-      'xAttack': 'xAttack',
-      'xClick': 'xClick',
-      'Lucky_egg': 'Lucky_egg',
-      'Token_collector': 'Token_collector',
-      'Dowsing_machine': 'Dowsing_machine',
-      'Lucky_incense': 'Lucky_incense',
+    'FossilToPokemon': {
+      'Helix Fossil': 'Omanyte',
+      'Dome Fossil': 'Kabuto',
+      'Old Amber': 'Aerodactyl',
+      'Root Fossil': 'Lileep',
+      'Claw Fossil': 'Anorith',
+      'Armor Fossil': 'Shieldon',
+      'Skull Fossil': 'Cranidos',
+      'Cover Fossil': 'Tirtouga',
+      'Plume Fossil': 'Archen',
+      'Jaw Fossil': 'Tyrunt',
+      'Sail Fossil': 'Amaura',
     },
-    'FluteItemType': {
-      'Yellow_Flute': 'Yellow_Flute',
-      'Time_Flute': 'Time_Flute',
-      'Black_Flute': 'Black_Flute',
-      'Red_Flute': 'Red_Flute',
-      'White_Flute': 'White_Flute',
-      'Blue_Flute': 'Blue_Flute',
+    'GAIN_FARM_POINTS_BASE_REWARD': 0.153,
+    'GAIN_MONEY_BASE_REWARD': 0.0017,
+    'GAIN_TOKENS_BASE_REWARD': 0.0935,
+    'GEM_UPGRADE_COST': 500,
+    'GEM_UPGRADE_STEP': 0.1,
+    'GRISEOUS_ITEM_CHANCE': 80,
+    'GYM_COUNTDOWN': 1000,
+    'GYM_GEMS': 5,
+    'GYM_TICK': 100,
+    'GYM_TIME': 30000,
+    'GalarDungeons': [
+      'Slumbering Weald Shrine',
+      'Galar Mine',
+      'Galar Mine No. 2',
+      'Glimwood Tangle',
+      'Rose Tower',
+      'Energy Plant',
+      'Dusty Bowl',
+      'Courageous Cavern',
+      "Brawlers' Cave",
+      'Warm-Up Tunnel',
+      'Tower of Darkness',
+      'Tower of Waters',
+      'Roaring-Sea Caves',
+      'Rock Peak Ruins',
+      'Iron Ruins',
+      'Iceberg Ruins',
+      'Split-Decision Ruins',
+      'Lakeside Cave',
+      'Dyna Tree Hill',
+      'Tunnel to the Top',
+      'Crown Shrine',
+    ],
+    'GalarGyms': [
+      'Turffield',
+      'Hulbury',
+      'Motostoke',
+      'Stow-on-Side1',
+      'Stow-on-Side2',
+      'Ballonlea',
+      'Circhester1',
+      'Circhester2',
+      'Spikemuth',
+      'Hammerlocke',
+      'Elite Trainer Marnie',
+      'Elite Gym Leader Bede',
+      'Elite Trainer Hop',
+      'Champion Leon',
+      'Elite Gym Leader Klara',
+      'Elite Gym Leader Avery',
+      'Elite Dojo Matron Honey',
+      'Elite Dojo Master Mustard',
+      'Elite Trainer Peony',
+    ],
+    'GalarSubRegions': {
+      '0': 'SouthGalar',
+      '1': 'NorthGalar',
+      '2': 'IsleofArmor',
+      '3': 'CrownTundra',
+      'SouthGalar': 0,
+      'NorthGalar': 1,
+      'IsleofArmor': 2,
+      'CrownTundra': 3,
+    },
+    'GameState': {
+      '0': 'idle',
+      '1': 'paused',
+      '2': 'fighting',
+      '3': 'gym',
+      '4': 'dungeon',
+      '5': 'safari',
+      '6': 'town',
+      '7': 'shop',
+      '8': 'battleFrontier',
+      '9': 'temporaryBattle',
+      'idle': 0,
+      'paused': 1,
+      'fighting': 2,
+      'gym': 3,
+      'dungeon': 4,
+      'safari': 5,
+      'town': 6,
+      'shop': 7,
+      'battleFrontier': 8,
+      'temporaryBattle': 9,
+    },
+    'Genders': {
+      '0': 'Genderless',
+      '1': 'MaleFemale',
+      'Genderless': 0,
+      'MaleFemale': 1,
+    },
+    'HATCH_EGGS_BASE_REWARD': 33,
+    'HELD_ITEM_CHANCE': 512,
+    'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
+    'HOUR': 3600000,
+    'HoennDungeons': [
+      'Petalburg Woods',
+      'Rusturf Tunnel',
+      'Granite Cave',
+      'Fiery Path',
+      'Meteor Falls',
+      'Mt. Chimney Crater',
+      'Jagged Pass',
+      'New Mauville',
+      'Weather Institute',
+      'Mt. Pyre',
+      'Magma Hideout',
+      'Aqua Hideout',
+      'Shoal Cave',
+      'Seafloor Cavern',
+      'Sealed Chamber',
+      'Cave of Origin',
+      'Sky Pillar',
+      'Victory Road Hoenn',
+    ],
+    'HoennGyms': [
+      'Rustboro City',
+      'Dewford Town',
+      'Mauville City',
+      'Lavaridge Town',
+      'Petalburg City',
+      'Fortree City',
+      'Mossdeep City',
+      'Sootopolis City',
+      'Elite Sidney',
+      'Elite Phoebe',
+      'Elite Glacia',
+      'Elite Drake',
+      'Champion Wallace',
+    ],
+    'HoennSubRegions': {
+      '0': 'Hoenn',
+      'Hoenn': 0,
+    },
+    'ITEM_PRICE_DEDUCT': 1.0005,
+    'ITEM_PRICE_MULTIPLIER': 1.00045,
+    'ITEM_USE_TIME': 30,
+    'JohtoDungeons': [
+      'Sprout Tower',
+      'Ruins of Alph',
+      'Union Cave',
+      'Slowpoke Well',
+      'Ilex Forest',
+      'Burned Tower',
+      'Tin Tower',
+      'Whirl Islands',
+      'Mt. Mortar',
+      "Team Rocket's Hideout",
+      'Radio Tower',
+      'Ice Path',
+      'Dark Cave',
+      'Tohjo Falls',
+      'Victory Road Johto',
+      'Mt. Silver',
+    ],
+    'JohtoGyms': [
+      'Violet City',
+      'Azalea Town',
+      'Goldenrod City',
+      'Ecruteak City',
+      'Cianwood City',
+      'Olivine City',
+      'Mahogany Town',
+      'Blackthorn City',
+      'Elite Will',
+      'Elite Koga',
+      'Elite Bruno2',
+      'Elite Karen',
+      'Champion Lance',
+    ],
+    'JohtoSubRegions': {
+      '0': 'Johto',
+      'Johto': 0,
+    },
+    'KalosDungeons': [
+      'Santalune Forest',
+      'Connecting Cave',
+      'Glittering Cave',
+      'Reflection Cave',
+      "Sea Spirit's Den",
+      'Kalos Power Plant',
+      'Poké Ball Factory',
+      'Lost Hotel',
+      'Frost Cavern',
+      'Team Flare Secret HQ',
+      'Terminus Cave',
+      'Pokémon Village',
+      'Victory Road Kalos',
+    ],
+    'KalosGyms': [
+      'Santalune City',
+      'Cyllage City',
+      'Shalour City',
+      'Coumarine City',
+      'Lumiose City',
+      'Laverre City',
+      'Anistar City',
+      'Snowbelle City',
+      'Elite Malva',
+      'Elite Siebold',
+      'Elite Wikstrom',
+      'Elite Drasna',
+      'Champion Diantha',
+    ],
+    'KalosSubRegions': {
+      '0': 'Kalos',
+      'Kalos': 0,
+    },
+    'KantoDungeons': [
+      'Viridian Forest',
+      'Mt. Moon',
+      "Diglett's Cave",
+      'Rock Tunnel',
+      'Rocket Game Corner',
+      'Pokémon Tower',
+      'Silph Co.',
+      'Power Plant',
+      'Seafoam Islands',
+      'Pokémon Mansion',
+      'Mt. Ember Summit',
+      'Berry Forest',
+      'Victory Road',
+      'Cerulean Cave',
+      'Ruby Path',
+      'Icefall Cave',
+      'Sunburst Island',
+      'Lost Cave',
+      'Pattern Bush',
+      'Altering Cave',
+      'Tanoby Ruins',
+      'Pinkan Mountain',
+    ],
+    'KantoGyms': [
+      'Pewter City',
+      'Cerulean City',
+      'Vermilion City',
+      'Celadon City',
+      'Saffron City',
+      'Fuchsia City',
+      'Cinnabar Island',
+      'Viridian City',
+      'Elite Lorelei',
+      'Elite Bruno',
+      'Elite Agatha',
+      'Elite Lance',
+      'Champion Blue',
+    ],
+    'KantoSubRegions': {
+      '0': 'Kanto',
+      '1': 'Sevii123',
+      '2': 'Sevii4567',
+      'Kanto': 0,
+      'Sevii123': 1,
+      'Sevii4567': 2,
+    },
+    'LEGAL_WALK_BLOCKS': [
+      0,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+    ],
+    'LIGHT_ITEM_CHANCE': 100,
+    'MANE_ITEM_CHANCE': 10,
+    'MAX_AVAILABLE_REGION': 7,
+    'MAX_DUNGEON_SIZE': 10,
+    'MAX_GEM_UPGRADES': 10,
+    'MAX_LOAD_TIME': 20000,
+    'MINE_ITEMS_BASE_REWARD': 210,
+    'MINE_LAYERS_BASE_REWARD': 720,
+    'MINUTE': 60000,
+    'MIN_DUNGEON_SIZE': 5,
+    'MIN_LOAD_TIME': 500,
+    'MULCH_USE_TIME': 300,
+    'MUTATION_TICK': 1000,
+    'MagikarpJumpGyms': [
+      'Friend League',
+      'Quick League',
+      'Heavy League',
+      'Great League',
+      'Fast League',
+      'Luxury League',
+      'Heal League',
+      'Ultra League',
+      'E4 League',
+      'Master League',
+    ],
+    'MaxIDPerRegion': [
+      151,
+      251,
+      386,
+      493,
+      649,
+      721,
+      809,
+      898,
+    ],
+    'OrangeGyms': [
+      'Mikan Island',
+      'Navel Island',
+      'Trovita Island',
+      'Kumquat Island',
+      'Supreme Gym Leader Drake',
+    ],
+    'PLATE_VALUE': 100,
+    'PokeBlockColor': {
+      '0': 'Black',
+      '1': 'Red',
+      '2': 'Gold',
+      '3': 'Purple',
+      '4': 'Gray',
+      '5': 'White',
+      'Black': 0,
+      'Red': 1,
+      'Gold': 2,
+      'Purple': 3,
+      'Gray': 4,
+      'White': 5,
+    },
+    'Pokeball': {
+      '0': 'Pokeball',
+      '1': 'Greatball',
+      '2': 'Ultraball',
+      '3': 'Masterball',
+      '4': 'Fastball',
+      '5': 'Quickball',
+      '6': 'Timerball',
+      '7': 'Duskball',
+      '8': 'Luxuryball',
+      '9': 'Diveball',
+      '10': 'Lureball',
+      '11': 'Nestball',
+      '12': 'Repeatball',
+      '13': 'Beastball',
+      'None': -1,
+      '-1': 'None',
+      'Pokeball': 0,
+      'Greatball': 1,
+      'Ultraball': 2,
+      'Masterball': 3,
+      'Fastball': 4,
+      'Quickball': 5,
+      'Timerball': 6,
+      'Duskball': 7,
+      'Luxuryball': 8,
+      'Diveball': 9,
+      'Lureball': 10,
+      'Nestball': 11,
+      'Repeatball': 12,
+      'Beastball': 13,
     },
     'PokemonItemType': {
       '0': 'Pinkan Arbok',
@@ -124272,119 +125376,11 @@ module.exports = {
       'Arctovish': 28,
       'Zarude (Dada)': 29,
     },
-    'UltraBeastType': {
-      '0': 'Nihilego',
-      '1': 'Buzzwole',
-      '2': 'Pheromosa',
-      '3': 'Xurkitree',
-      '4': 'Kartana',
-      '5': 'Celesteela',
-      '6': 'Blacephalon',
-      '7': 'Stakataka',
-      '8': 'Guzzlord',
-      '9': 'Poipole',
-      '10': 'Naganadel',
-      'Nihilego': 0,
-      'Buzzwole': 1,
-      'Pheromosa': 2,
-      'Xurkitree': 3,
-      'Kartana': 4,
-      'Celesteela': 5,
-      'Blacephalon': 6,
-      'Stakataka': 7,
-      'Guzzlord': 8,
-      'Poipole': 9,
-      'Naganadel': 10,
-    },
-    'PokeBlockColor': {
-      '0': 'Black',
-      '1': 'Red',
-      '2': 'Gold',
-      '3': 'Purple',
-      '4': 'Gray',
-      '5': 'White',
-      'Black': 0,
-      'Red': 1,
-      'Gold': 2,
-      'Purple': 3,
-      'Gray': 4,
-      'White': 5,
-    },
-    'VitaminType': {
-      '0': 'Protein',
-      '1': 'RareCandy',
-      'Protein': 0,
-      'RareCandy': 1,
-    },
-    'EnergyRestoreSize': {
-      '0': 'SmallRestore',
-      '1': 'MediumRestore',
-      '2': 'LargeRestore',
-      'SmallRestore': 0,
-      'MediumRestore': 1,
-      'LargeRestore': 2,
-    },
-    'EggItemType': {
-      '0': 'Fire_egg',
-      '1': 'Water_egg',
-      '2': 'Grass_egg',
-      '3': 'Fighting_egg',
-      '4': 'Electric_egg',
-      '5': 'Dragon_egg',
-      '6': 'Pokemon_egg',
-      '7': 'Mystery_egg',
-      'Fire_egg': 0,
-      'Water_egg': 1,
-      'Grass_egg': 2,
-      'Fighting_egg': 3,
-      'Electric_egg': 4,
-      'Dragon_egg': 5,
-      'Pokemon_egg': 6,
-      'Mystery_egg': 7,
-    },
-    'BulletinBoards': {
-      '0': 'Kanto',
-      '1': 'Johto',
-      '2': 'Hoenn',
-      '3': 'Sevii4567',
-      '4': 'Sinnoh',
-      '5': 'Kalos',
-      '6': 'Alola',
-      '7': 'Galar',
-      '8': 'Armor',
-      '9': 'Crown',
-      'None': -2,
-      '-2': 'None',
-      'All': -1,
-      '-1': 'All',
-      'Kanto': 0,
-      'Johto': 1,
-      'Hoenn': 2,
-      'Sevii4567': 3,
-      'Sinnoh': 4,
-      'Kalos': 5,
-      'Alola': 6,
-      'Galar': 7,
-      'Armor': 8,
-      'Crown': 9,
-    },
-    'EnergyRestoreEffect': {
-      'SmallRestore': 0.1,
-      'MediumRestore': 0.2,
-      'LargeRestore': 0.5,
-    },
-    'FossilToPokemon': {
-      'Helix Fossil': 'Omanyte',
-      'Dome Fossil': 'Kabuto',
-      'Old Amber': 'Aerodactyl',
-      'Root Fossil': 'Lileep',
-      'Claw Fossil': 'Anorith',
-      'Armor Fossil': 'Shieldon',
-      'Skull Fossil': 'Cranidos',
-      'Cover Fossil': 'Tirtouga',
-      'Plume Fossil': 'Archen',
-      'Jaw Fossil': 'Tyrunt',
-      'Sail Fossil': 'Amaura',
+    'PokemonStatiticsType': {
+      'Captured': 'Captured',
+      'Defeated': 'Defeated',
+      'Encountered': 'Encountered',
+      'Hatched': 'Hatched',
     },
     'PokemonToFossil': {
       'Omanyte': 'Helix Fossil',
@@ -124399,489 +125395,48 @@ module.exports = {
       'Tyrunt': 'Jaw Fossil',
       'Amaura': 'Sail Fossil',
     },
-    'KantoGyms': [
-      'Pewter City',
-      'Cerulean City',
-      'Vermilion City',
-      'Celadon City',
-      'Saffron City',
-      'Fuchsia City',
-      'Cinnabar Island',
-      'Viridian City',
-      'Elite Lorelei',
-      'Elite Bruno',
-      'Elite Agatha',
-      'Elite Lance',
-      'Champion Blue',
-    ],
-    'JohtoGyms': [
-      'Violet City',
-      'Azalea Town',
-      'Goldenrod City',
-      'Ecruteak City',
-      'Cianwood City',
-      'Olivine City',
-      'Mahogany Town',
-      'Blackthorn City',
-      'Elite Will',
-      'Elite Koga',
-      'Elite Bruno2',
-      'Elite Karen',
-      'Champion Lance',
-    ],
-    'HoennGyms': [
-      'Rustboro City',
-      'Dewford Town',
-      'Mauville City',
-      'Lavaridge Town',
-      'Petalburg City',
-      'Fortree City',
-      'Mossdeep City',
-      'Sootopolis City',
-      'Elite Sidney',
-      'Elite Phoebe',
-      'Elite Glacia',
-      'Elite Drake',
-      'Champion Wallace',
-    ],
-    'SinnohGyms': [
-      'Oreburgh City',
-      'Eterna City',
-      'Hearthome City',
-      'Veilstone City',
-      'Pastoria City',
-      'Canalave City',
-      'Snowpoint City',
-      'Sunyshore City',
-      'Elite Aaron',
-      'Elite Bertha',
-      'Elite Flint',
-      'Elite Lucian',
-      'Champion Cynthia',
-    ],
-    'UnovaGyms': [
-      'Aspertia City',
-      'Virbank City',
-      'Castelia City',
-      'Nimbasa City',
-      'Driftveil City',
-      'Mistralton City',
-      'Opelucid City',
-      'Humilau City',
-      'Elite Shauntal',
-      'Elite Marshal',
-      'Elite Grimsley',
-      'Elite Caitlin',
-      'Champion Iris',
-    ],
-    'KalosGyms': [
-      'Santalune City',
-      'Cyllage City',
-      'Shalour City',
-      'Coumarine City',
-      'Lumiose City',
-      'Laverre City',
-      'Anistar City',
-      'Snowbelle City',
-      'Elite Malva',
-      'Elite Siebold',
-      'Elite Wikstrom',
-      'Elite Drasna',
-      'Champion Diantha',
-    ],
-    'AlolaGyms': [
-      "Ilima's Trial",
-      'Iki Town',
-      "Lana's Trial",
-      "Kiawe's Trial",
-      "Mallow's Trial",
-      'Konikoni City',
-      "Sophocles' Trial",
-      "Acerola's Trial",
-      'Malie City',
-      'Vast Poni Canyon Trial',
-      "Mina's Trial",
-      'Exeggutor Island',
-      'Elite Molayne',
-      'Elite Olivia',
-      'Elite Acerola',
-      'Elite Kahili',
-      'Champion Hau',
-    ],
-    'GalarGyms': [
-      'Turffield',
-      'Hulbury',
-      'Motostoke',
-      'Stow-on-Side1',
-      'Stow-on-Side2',
-      'Ballonlea',
-      'Circhester1',
-      'Circhester2',
-      'Spikemuth',
-      'Hammerlocke',
-      'Elite Trainer Marnie',
-      'Elite Gym Leader Bede',
-      'Elite Trainer Hop',
-      'Champion Leon',
-      'Elite Gym Leader Klara',
-      'Elite Gym Leader Avery',
-      'Elite Dojo Matron Honey',
-      'Elite Dojo Master Mustard',
-      'Elite Trainer Peony',
-    ],
-    'OrangeGyms': [
-      'Mikan Island',
-      'Navel Island',
-      'Trovita Island',
-      'Kumquat Island',
-      'Supreme Gym Leader Drake',
-    ],
-    'MagikarpJumpGyms': [
-      'Friend League',
-      'Quick League',
-      'Heavy League',
-      'Great League',
-      'Fast League',
-      'Luxury League',
-      'Heal League',
-      'Ultra League',
-      'E4 League',
-      'Master League',
-    ],
-    'RegionGyms': [
-      [
-        'Pewter City',
-        'Cerulean City',
-        'Vermilion City',
-        'Celadon City',
-        'Saffron City',
-        'Fuchsia City',
-        'Cinnabar Island',
-        'Viridian City',
-        'Elite Lorelei',
-        'Elite Bruno',
-        'Elite Agatha',
-        'Elite Lance',
-        'Champion Blue',
-      ],
-      [
-        'Violet City',
-        'Azalea Town',
-        'Goldenrod City',
-        'Ecruteak City',
-        'Cianwood City',
-        'Olivine City',
-        'Mahogany Town',
-        'Blackthorn City',
-        'Elite Will',
-        'Elite Koga',
-        'Elite Bruno2',
-        'Elite Karen',
-        'Champion Lance',
-      ],
-      [
-        'Rustboro City',
-        'Dewford Town',
-        'Mauville City',
-        'Lavaridge Town',
-        'Petalburg City',
-        'Fortree City',
-        'Mossdeep City',
-        'Sootopolis City',
-        'Elite Sidney',
-        'Elite Phoebe',
-        'Elite Glacia',
-        'Elite Drake',
-        'Champion Wallace',
-      ],
-      [
-        'Oreburgh City',
-        'Eterna City',
-        'Hearthome City',
-        'Veilstone City',
-        'Pastoria City',
-        'Canalave City',
-        'Snowpoint City',
-        'Sunyshore City',
-        'Elite Aaron',
-        'Elite Bertha',
-        'Elite Flint',
-        'Elite Lucian',
-        'Champion Cynthia',
-      ],
-      [
-        'Aspertia City',
-        'Virbank City',
-        'Castelia City',
-        'Nimbasa City',
-        'Driftveil City',
-        'Mistralton City',
-        'Opelucid City',
-        'Humilau City',
-        'Elite Shauntal',
-        'Elite Marshal',
-        'Elite Grimsley',
-        'Elite Caitlin',
-        'Champion Iris',
-      ],
-      [
-        'Santalune City',
-        'Cyllage City',
-        'Shalour City',
-        'Coumarine City',
-        'Lumiose City',
-        'Laverre City',
-        'Anistar City',
-        'Snowbelle City',
-        'Elite Malva',
-        'Elite Siebold',
-        'Elite Wikstrom',
-        'Elite Drasna',
-        'Champion Diantha',
-      ],
-      [
-        "Ilima's Trial",
-        'Iki Town',
-        "Lana's Trial",
-        "Kiawe's Trial",
-        "Mallow's Trial",
-        'Konikoni City',
-        "Sophocles' Trial",
-        "Acerola's Trial",
-        'Malie City',
-        'Vast Poni Canyon Trial',
-        "Mina's Trial",
-        'Exeggutor Island',
-        'Elite Molayne',
-        'Elite Olivia',
-        'Elite Acerola',
-        'Elite Kahili',
-        'Champion Hau',
-      ],
-      [
-        'Turffield',
-        'Hulbury',
-        'Motostoke',
-        'Stow-on-Side1',
-        'Stow-on-Side2',
-        'Ballonlea',
-        'Circhester1',
-        'Circhester2',
-        'Spikemuth',
-        'Hammerlocke',
-        'Elite Trainer Marnie',
-        'Elite Gym Leader Bede',
-        'Elite Trainer Hop',
-        'Champion Leon',
-        'Elite Gym Leader Klara',
-        'Elite Gym Leader Avery',
-        'Elite Dojo Matron Honey',
-        'Elite Dojo Master Mustard',
-        'Elite Trainer Peony',
-      ],
-      [
-        'Mikan Island',
-        'Navel Island',
-        'Trovita Island',
-        'Kumquat Island',
-        'Supreme Gym Leader Drake',
-      ],
-      [
-        'Friend League',
-        'Quick League',
-        'Heavy League',
-        'Great League',
-        'Fast League',
-        'Luxury League',
-        'Heal League',
-        'Ultra League',
-        'E4 League',
-        'Master League',
-      ],
-    ],
-    'KantoDungeons': [
-      'Viridian Forest',
-      'Mt. Moon',
-      "Diglett's Cave",
-      'Rock Tunnel',
-      'Rocket Game Corner',
-      'Pokémon Tower',
-      'Silph Co.',
-      'Power Plant',
-      'Seafoam Islands',
-      'Pokémon Mansion',
-      'Mt. Ember Summit',
-      'Berry Forest',
-      'Victory Road',
-      'Cerulean Cave',
-      'Ruby Path',
-      'Icefall Cave',
-      'Sunburst Island',
-      'Lost Cave',
-      'Pattern Bush',
-      'Altering Cave',
-      'Tanoby Ruins',
-      'Pinkan Mountain',
-    ],
-    'JohtoDungeons': [
-      'Sprout Tower',
-      'Ruins of Alph',
-      'Union Cave',
-      'Slowpoke Well',
-      'Ilex Forest',
-      'Burned Tower',
-      'Tin Tower',
-      'Whirl Islands',
-      'Mt. Mortar',
-      "Team Rocket's Hideout",
-      'Radio Tower',
-      'Ice Path',
-      'Dark Cave',
-      'Tohjo Falls',
-      'Victory Road Johto',
-      'Mt. Silver',
-    ],
-    'HoennDungeons': [
-      'Petalburg Woods',
-      'Rusturf Tunnel',
-      'Granite Cave',
-      'Fiery Path',
-      'Meteor Falls',
-      'Mt. Chimney Crater',
-      'Jagged Pass',
-      'New Mauville',
-      'Weather Institute',
-      'Mt. Pyre',
-      'Magma Hideout',
-      'Aqua Hideout',
-      'Shoal Cave',
-      'Seafloor Cavern',
-      'Sealed Chamber',
-      'Cave of Origin',
-      'Sky Pillar',
-      'Victory Road Hoenn',
-    ],
-    'SinnohDungeons': [
-      'Oreburgh Gate',
-      'Valley Windworks',
-      'Eterna Forest',
-      'Old Chateau',
-      'Team Galactic Eterna Building',
-      'Wayward Cave',
-      'Mt. Coronet South',
-      'Solaceon Ruins',
-      'Iron Island',
-      'Lake Valor',
-      'Lake Verity',
-      'Mt. Coronet North',
-      'Lake Acuity',
-      'Team Galactic HQ',
-      'Spear Pillar',
-      'Distortion World',
-      'Victory Road Sinnoh',
-      'Sendoff Spring',
-      'Fullmoon Island',
-      'Newmoon Island',
-      'Flower Paradise',
-      'Snowpoint Temple',
-      'Stark Mountain',
-      'Hall of Origin',
-    ],
-    'UnovaDungeons': [
-      'Floccesy Ranch',
-      'Liberty Garden',
-      'Castelia Sewers',
-      'Relic Passage',
-      'Relic Castle',
-      'Lostlorn Forest',
-      'Chargestone Cave',
-      'Mistralton Cave',
-      'Celestial Tower',
-      'Reversal Mountain',
-      'Seaside Cave',
-      'Plasma Frigate',
-      'Giant Chasm',
-      'Cave of Being',
-      'Abundant Shrine',
-      'Victory Road Unova',
-      'Twist Mountain',
-      'Dragonspiral Tower',
-      'Moor of Icirrus',
-      'Pledge Grove',
-      'Pinwheel Forest',
-      'Dreamyard',
-      'P2 Laboratory',
-    ],
-    'KalosDungeons': [
-      'Santalune Forest',
-      'Connecting Cave',
-      'Glittering Cave',
-      'Reflection Cave',
-      "Sea Spirit's Den",
-      'Kalos Power Plant',
-      'Poké Ball Factory',
-      'Lost Hotel',
-      'Frost Cavern',
-      'Team Flare Secret HQ',
-      'Terminus Cave',
-      'Pokémon Village',
-      'Victory Road Kalos',
-    ],
-    'AlolaDungeons': [
-      "Trainers' School",
-      "Hau'oli Cemetery",
-      'Verdant Cavern',
-      'Melemele Meadow',
-      'Seaward Cave',
-      'Ten Carat Hill',
-      'Pikachu Valley',
-      'Paniola Ranch',
-      'Brooklet Hill',
-      'Wela Volcano Park',
-      'Lush Jungle',
-      "Diglett's Tunnel",
-      'Memorial Hill',
-      'Malie Garden',
-      'Hokulani Observatory',
-      'Thrifty Megamart',
-      "Ula'ula Meadow",
-      'Po Town',
-      'Aether Foundation',
-      'Exeggutor Island Hill',
-      'Vast Poni Canyon',
-      "Mina's Houseboat",
-      'Mount Lanakila',
-      'Lake of the Sunne and Moone',
-      'Ruins of Conflict',
-      'Ruins of Life',
-      'Ruins of Abundance',
-      'Ruins of Hope',
-      'Poni Meadow',
-      'Resolution Cave',
-    ],
-    'GalarDungeons': [
-      'Slumbering Weald Shrine',
-      'Galar Mine',
-      'Galar Mine No. 2',
-      'Glimwood Tangle',
-      'Rose Tower',
-      'Energy Plant',
-      'Dusty Bowl',
-      'Courageous Cavern',
-      "Brawlers' Cave",
-      'Warm-Up Tunnel',
-      'Tower of Darkness',
-      'Tower of Waters',
-      'Roaring-Sea Caves',
-      'Rock Peak Ruins',
-      'Iron Ruins',
-      'Iceberg Ruins',
-      'Split-Decision Ruins',
-      'Lakeside Cave',
-      'Dyna Tree Hill',
-      'Tunnel to the Top',
-      'Crown Shrine',
-    ],
+    'Pokerus': {
+      '0': 'Uninfected',
+      '1': 'Infected',
+      '2': 'Contagious',
+      '3': 'Resistant',
+      'Uninfected': 0,
+      'Infected': 1,
+      'Contagious': 2,
+      'Resistant': 3,
+    },
+    'QUESTS_PER_SET': 10,
+    'QUEST_CLICKS_PER_SECOND': 5,
+    'REPEATBALL_EP_MODIFIER': 5,
+    'RICH_MULCH_MULTIPLIER': 2,
+    'ROAMER_EP_MODIFIER': 50,
+    'ROAMING_MAX_CHANCE': 4096,
+    'ROAMING_MIN_CHANCE': 8192,
+    'ROUTE_HELD_ITEM_MODIFIER': 1,
+    'ROUTE_KILLS_NEEDED': 10,
+    'RUST_ITEM_CHANCE': 90,
+    'Region': {
+      '0': 'kanto',
+      '1': 'johto',
+      '2': 'hoenn',
+      '3': 'sinnoh',
+      '4': 'unova',
+      '5': 'kalos',
+      '6': 'alola',
+      '7': 'galar',
+      '8': 'final',
+      'none': -1,
+      '-1': 'none',
+      'kanto': 0,
+      'johto': 1,
+      'hoenn': 2,
+      'sinnoh': 3,
+      'unova': 4,
+      'kalos': 5,
+      'alola': 6,
+      'galar': 7,
+      'final': 8,
+    },
     'RegionDungeons': [
       [
         'Viridian Forest',
@@ -125067,36 +125622,156 @@ module.exports = {
         'Crown Shrine',
       ],
     ],
-    'StartingTowns': [
-      'Pallet Town',
-      'New Bark Town',
-      'Littleroot Town',
-      'Twinleaf Town',
-      'Aspertia City',
-      'Vaniville Town',
-      'Iki Town Outskirts',
-      'Postwick',
-      'Final Region Town',
-    ],
-    'StartingRoutes': [
-      1,
-      29,
-      101,
-      201,
-      19,
-      1,
-      1,
-      1,
-    ],
-    'DockTowns': [
-      'Vermilion City',
-      'Olivine City',
-      'Slateport City',
-      'Canalave City',
-      'Castelia City',
-      'Coumarine City',
-      "Hau'oli City",
-      'Hulbury',
+    'RegionGyms': [
+      [
+        'Pewter City',
+        'Cerulean City',
+        'Vermilion City',
+        'Celadon City',
+        'Saffron City',
+        'Fuchsia City',
+        'Cinnabar Island',
+        'Viridian City',
+        'Elite Lorelei',
+        'Elite Bruno',
+        'Elite Agatha',
+        'Elite Lance',
+        'Champion Blue',
+      ],
+      [
+        'Violet City',
+        'Azalea Town',
+        'Goldenrod City',
+        'Ecruteak City',
+        'Cianwood City',
+        'Olivine City',
+        'Mahogany Town',
+        'Blackthorn City',
+        'Elite Will',
+        'Elite Koga',
+        'Elite Bruno2',
+        'Elite Karen',
+        'Champion Lance',
+      ],
+      [
+        'Rustboro City',
+        'Dewford Town',
+        'Mauville City',
+        'Lavaridge Town',
+        'Petalburg City',
+        'Fortree City',
+        'Mossdeep City',
+        'Sootopolis City',
+        'Elite Sidney',
+        'Elite Phoebe',
+        'Elite Glacia',
+        'Elite Drake',
+        'Champion Wallace',
+      ],
+      [
+        'Oreburgh City',
+        'Eterna City',
+        'Hearthome City',
+        'Veilstone City',
+        'Pastoria City',
+        'Canalave City',
+        'Snowpoint City',
+        'Sunyshore City',
+        'Elite Aaron',
+        'Elite Bertha',
+        'Elite Flint',
+        'Elite Lucian',
+        'Champion Cynthia',
+      ],
+      [
+        'Aspertia City',
+        'Virbank City',
+        'Castelia City',
+        'Nimbasa City',
+        'Driftveil City',
+        'Mistralton City',
+        'Opelucid City',
+        'Humilau City',
+        'Elite Shauntal',
+        'Elite Marshal',
+        'Elite Grimsley',
+        'Elite Caitlin',
+        'Champion Iris',
+      ],
+      [
+        'Santalune City',
+        'Cyllage City',
+        'Shalour City',
+        'Coumarine City',
+        'Lumiose City',
+        'Laverre City',
+        'Anistar City',
+        'Snowbelle City',
+        'Elite Malva',
+        'Elite Siebold',
+        'Elite Wikstrom',
+        'Elite Drasna',
+        'Champion Diantha',
+      ],
+      [
+        "Ilima's Trial",
+        'Iki Town',
+        "Lana's Trial",
+        "Kiawe's Trial",
+        "Mallow's Trial",
+        'Konikoni City',
+        "Sophocles' Trial",
+        "Acerola's Trial",
+        'Malie City',
+        'Vast Poni Canyon Trial',
+        "Mina's Trial",
+        'Exeggutor Island',
+        'Elite Molayne',
+        'Elite Olivia',
+        'Elite Acerola',
+        'Elite Kahili',
+        'Champion Hau',
+      ],
+      [
+        'Turffield',
+        'Hulbury',
+        'Motostoke',
+        'Stow-on-Side1',
+        'Stow-on-Side2',
+        'Ballonlea',
+        'Circhester1',
+        'Circhester2',
+        'Spikemuth',
+        'Hammerlocke',
+        'Elite Trainer Marnie',
+        'Elite Gym Leader Bede',
+        'Elite Trainer Hop',
+        'Champion Leon',
+        'Elite Gym Leader Klara',
+        'Elite Gym Leader Avery',
+        'Elite Dojo Matron Honey',
+        'Elite Dojo Master Mustard',
+        'Elite Trainer Peony',
+      ],
+      [
+        'Mikan Island',
+        'Navel Island',
+        'Trovita Island',
+        'Kumquat Island',
+        'Supreme Gym Leader Drake',
+      ],
+      [
+        'Friend League',
+        'Quick League',
+        'Heavy League',
+        'Great League',
+        'Fast League',
+        'Luxury League',
+        'Heal League',
+        'Ultra League',
+        'E4 League',
+        'Master League',
+      ],
     ],
     'RegionalStarters': [
       [
@@ -125141,229 +125816,26 @@ module.exports = {
         816,
       ],
     ],
-    'TemporaryBattles': [
-      'Blue 1',
-      'Blue 2',
-      'Blue 3',
-      'Blue 4',
-      'Fighting Dojo',
-      'Snorlax route 12',
-      'Snorlax route 16',
-      'Blue 5',
-      'Biker Goon 1',
-      'Biker Goon 2',
-      'Biker Goon 3',
-      'Cue Ball Paxton',
-      'Blue 6',
-      'Silver 1',
-      'Silver 2',
-      'Sudowoodo',
-      'Silver 3',
-      'Silver 4',
-      'Silver 5',
-      'Suicune 1',
-      'Eusine',
-      'Suicune 2',
-      'Suicune 3',
-      'Suicune 4',
-      'Suicune 5',
-      'Suicune 6',
-      'Silver 6',
-      'Silver 7',
-      'May 1',
-      'May 2',
-      'May 3',
-      'Wally 1',
-      'May 4',
-      'Kecleon 1',
-      'Kecleon 2',
-      'Kecleon 3',
-      'May 5',
-      'Wally 2',
-      'Sevii Rocket Grunt 1',
-      'Sevii Rocket Grunt 2',
-      'Sevii Rocket Grunt 3',
-      'Sevii Rocket Grunt 4',
-      'Sevii Rocket Grunt 5',
-      'Sevii Rocket Ariana',
-      'Sevii Rocket Archer',
-      'Scientist Gideon',
-      'Pinkan Jessie & James',
-      'Pinkan Officer Jenny',
-      'Kimono Girls',
-      'Spiky-eared Pichu',
-      'Rocket Boss Giovanni',
-      'Barry 1',
-      'Barry 2',
-      'Barry 3',
-      'Barry 4',
-      'Galactic Boss Cyrus',
-      'Barry 5',
-      'Barry 6',
-      'Barry 7',
-      'Zero',
-      'Hugh 1',
-      'Hugh 2',
-      'Team Plasma Grunt 1',
-      'Colress 1',
-      'Team Plasma Grunt 2',
-      'Team Plasma Grunt 3',
-      'Hugh 3',
-      'Cheren',
-      'Colress 2',
-      'Team Plasma Grunt 4',
-      'Team Plasma Grunt 5',
-      'Team Plasma Grunts 1',
-      'Team Plasma Grunts 2',
-      'Hugh 4',
-      'Team Plasma Grunt 6',
-      'Zinzolin 1',
-      'Team Plasma Grunt 7',
-      'Team Plasma Grunt 8',
-      'Team Plasma Grunt 9',
-      'Zinzolin 2',
-      'Plasma Shadow 1',
-      'Colress 3',
-      'Plasma Shadow 2',
-      'Plasma Shadow 3',
-      'Plasma Shadow 4',
-      'Ghetsis 1',
-      'Ghetsis 2',
-      'Hugh 5',
-      'Hugh 6',
-      'Hugh 7',
-      'Dream Researcher',
-      'Shauna 1',
-      'Sycamore 1',
-      'Tierno 1',
-      'Trevor & Tierno',
-      'Calem 1',
-      'Korrina',
-      'Aipom Alley',
-      'Mime Interview',
-      'Underground Fighting Ring',
-      'Lab Ambush',
-      'Imposter',
-      'Possessed Mewtwo',
-      'Calem 2',
-      'Calem 3',
-      'Calem 4',
-      'Sycamore 2',
-      'Shauna 2',
-      'Tierno 2',
-      'Trevor',
-      'Calem 5',
-      'Riot',
-      'Merilyn',
-      'Millis and Argus Steel',
-      'AZ',
-      'Ash Ketchum Kanto',
-      'Ash Ketchum Johto',
-      'Ash Ketchum Hoenn',
-      'Ash Ketchum Sinnoh',
-      'Ash Ketchum Unova',
-      'Ash Ketchum Kalos',
-      'Ash Ketchum Pinkan',
-      'Calem 6',
-      'Hau 1',
-      'Hau 2',
-      'Hau 3',
-      'Dexio',
-      'Sina',
-      'Hau 4',
-      'Gladion 1',
-      'Battle Royal',
-      'Plumeria 1',
-      'Ultra Wormhole',
-      'Hau 5',
-      'Plumeria 2',
-      'Gladion 2',
-      'Necrozma',
-      'Ultra Megalopolis',
-      'Captain Mina',
-      'Captain Ilima',
-      'Captain Mallow',
-      'Captain Lana',
-      'Captain Kiawe',
-      'Captain Sophocles',
-      'Kahuna Nanu',
-      'Gladion 3',
-      'Anabel',
-      'Captain Mina UB',
-      'Kahuna Nanu UB',
-      'Ash Ketchum Alola',
-      'Rainbow Rocket Grunt 1',
-      'Rainbow Rocket Grunt 2',
-      'Aether Branch Chief Faba',
-      'Team Aqua Leader Archie',
-      'Team Magma Leader Maxie',
-      'Team Galactic Leader Cyrus',
-      'Team Flare Leader Lysandre',
-      'Team Plasma Leader Ghetsis',
-      'Team Rainbow Leader Giovanni',
-      'Hop 1',
-      'Mirages',
-      'Hop 2',
-      'Hop 3',
-      'Bede 1',
-      'Hop 4',
-      'Bede 2',
-      'Marnie 1',
-      'Hop 5',
-      'Bede 3',
-      'Hop 6',
-      'Hop 7',
-      'Marnie 2',
-      'Eternatus',
-      'The Darkest Day',
-      'Hop 8',
-      'Sordward 1',
-      'Shielbert 1',
-      'Rampaging Tsareena',
-      'Rampaging Gyarados',
-      'Rampaging Torkoal',
-      'Sordward & Shielbert',
-      'Rampaging Conkeldurr',
-      'Rampaging Dusknoir',
-      'Gym Leader Bede',
-      'Rampaging Gigalith',
-      'Rampaging Froslass',
-      'Gym Leader Marnie',
-      'Rampaging Haxorus',
-      'Sordward 2',
-      'Shielbert 2',
-      'Rampaging Zacian',
-      'Rampaging Zamazenta',
-      'Klara 1',
-      'Avery 1',
-      'Mustard',
-      'Klara 2',
-      'Avery 2',
-      'Klara 3',
-      'Avery 3',
-      'Kubfu',
-      'Zarude Tribe 1',
-      'Zarude Tribe 2',
-      'Zarude Tribe 3',
-      'Ash Ketchum Galar',
-      'Zarude (Dada)',
-      'Flowering Celebi',
-      'Peony',
-      'Calyrex',
-      'Glastrier',
-      'Spectrier',
-      'Dyna Tree Birds',
-      'Galarian Articuno 1',
-      'Galarian Articuno 2',
-      'Galarian Articuno 3',
-      'Galarian Zapdos 1',
-      'Galarian Zapdos 2',
-      'Galarian Zapdos 3',
-      'Galarian Moltres 1',
-      'Galarian Moltres 2',
-      'Galarian Moltres 3',
-      'Regigigas',
-    ],
+    'SAFARI_BASE_POKEBALL_COUNT': 30,
+    'SAFARI_BATTLE_CHANCE': 5,
+    'SAFARI_EP_YIELD': 1000,
+    'SAFARI_OUT_OF_BALLS': 'Game Over!<br>You have run out of safari balls to use.',
+    'SAVE_TICK': 10000,
+    'SECOND': 1000,
+    'SHINY_BASE_REWARD': 3000,
+    'SHINY_CHANCE_BATTLE': 8192,
+    'SHINY_CHANCE_BATTLEFRONTIER': 1024,
+    'SHINY_CHANCE_BREEDING': 1024,
+    'SHINY_CHANCE_DUNGEON': 4096,
+    'SHINY_CHANCE_FARM': 1024,
+    'SHINY_CHANCE_REWARD': 1024,
+    'SHINY_CHANCE_SAFARI': 1024,
+    'SHINY_CHANCE_SHOP': 1024,
+    'SHINY_CHANCE_STONE': 2048,
+    'SHINY_EP_MODIFIER': 5,
+    'SHOPMON_EP_YIELD': 1000,
+    'STONE_EP_YIELD': 1000,
+    'SURPRISE_MULCH_MULTIPLIER': 1.5,
     'ShardTraderLocations': {
       '0': 'Cerulean City',
       '1': 'Vermilion City',
@@ -125536,158 +126008,541 @@ module.exports = {
       'Spikemuth': 82,
       'Master Dojo': 83,
     },
-    'BerryTraderLocations': {
-      '0': 'Goldenrod City',
-      '1': 'Mauville City',
-      '2': 'Pinkan Pokémon Reserve',
-      '3': 'Hearthome City',
-      'None': -1,
-      '-1': 'None',
-      'Goldenrod City': 0,
-      'Mauville City': 1,
-      'Pinkan Pokémon Reserve': 2,
-      'Hearthome City': 3,
-    },
-    'DayOfWeek': {
-      '0': 'Sunday',
-      '1': 'Monday',
-      '2': 'Tuesday',
-      '3': 'Wednesday',
-      '4': 'Thursday',
-      '5': 'Friday',
-      '6': 'Saturday',
-      'Sunday': 0,
-      'Monday': 1,
-      'Tuesday': 2,
-      'Wednesday': 3,
-      'Thursday': 4,
-      'Friday': 5,
-      'Saturday': 6,
-    },
-    'Pokerus': {
-      '0': 'Uninfected',
-      '1': 'Infected',
-      '2': 'Contagious',
-      '3': 'Resistant',
-      'Uninfected': 0,
-      'Infected': 1,
-      'Contagious': 2,
-      'Resistant': 3,
-    },
-    'KantoSubRegions': {
-      '0': 'Kanto',
-      '1': 'Sevii123',
-      '2': 'Sevii4567',
-      'Kanto': 0,
-      'Sevii123': 1,
-      'Sevii4567': 2,
-    },
-    'JohtoSubRegions': {
-      '0': 'Johto',
-      'Johto': 0,
-    },
-    'HoennSubRegions': {
-      '0': 'Hoenn',
-      'Hoenn': 0,
-    },
+    'SinnohDungeons': [
+      'Oreburgh Gate',
+      'Valley Windworks',
+      'Eterna Forest',
+      'Old Chateau',
+      'Team Galactic Eterna Building',
+      'Wayward Cave',
+      'Mt. Coronet South',
+      'Solaceon Ruins',
+      'Iron Island',
+      'Lake Valor',
+      'Lake Verity',
+      'Mt. Coronet North',
+      'Lake Acuity',
+      'Team Galactic HQ',
+      'Spear Pillar',
+      'Distortion World',
+      'Victory Road Sinnoh',
+      'Sendoff Spring',
+      'Fullmoon Island',
+      'Newmoon Island',
+      'Flower Paradise',
+      'Snowpoint Temple',
+      'Stark Mountain',
+      'Hall of Origin',
+    ],
+    'SinnohGyms': [
+      'Oreburgh City',
+      'Eterna City',
+      'Hearthome City',
+      'Veilstone City',
+      'Pastoria City',
+      'Canalave City',
+      'Snowpoint City',
+      'Sunyshore City',
+      'Elite Aaron',
+      'Elite Bertha',
+      'Elite Flint',
+      'Elite Lucian',
+      'Champion Cynthia',
+    ],
     'SinnohSubRegions': {
       '0': 'Sinnoh',
       'Sinnoh': 0,
     },
+    'Starter': {
+      '0': 'Grass',
+      '1': 'Fire',
+      '2': 'Water',
+      '3': 'Special',
+      'None': -1,
+      '-1': 'None',
+      'Grass': 0,
+      'Fire': 1,
+      'Water': 2,
+      'Special': 3,
+    },
+    'StartingRoutes': [
+      1,
+      29,
+      101,
+      201,
+      19,
+      1,
+      1,
+      1,
+    ],
+    'StartingTowns': [
+      'Pallet Town',
+      'New Bark Town',
+      'Littleroot Town',
+      'Twinleaf Town',
+      'Aspertia City',
+      'Vaniville Town',
+      'Iki Town Outskirts',
+      'Postwick',
+      'Final Region Town',
+    ],
+    'StoneType': {
+      '0': 'Leaf_stone',
+      '1': 'Fire_stone',
+      '2': 'Water_stone',
+      '3': 'Thunder_stone',
+      '4': 'Moon_stone',
+      '5': 'Linking_cord',
+      '6': 'Sun_stone',
+      '7': 'Soothe_bell',
+      '8': 'Metal_coat',
+      '9': 'Kings_rock',
+      '10': 'Upgrade',
+      '11': 'Dragon_scale',
+      '12': 'Prism_scale',
+      '13': 'Deepsea_tooth',
+      '14': 'Deepsea_scale',
+      '15': 'Shiny_stone',
+      '16': 'Dusk_stone',
+      '17': 'Dawn_stone',
+      '18': 'Razor_claw',
+      '19': 'Razor_fang',
+      '20': 'Electirizer',
+      '21': 'Magmarizer',
+      '22': 'Protector',
+      '23': 'Dubious_disc',
+      '24': 'Reaper_cloth',
+      '25': 'Black_DNA',
+      '26': 'White_DNA',
+      '27': 'Sachet',
+      '28': 'Whipped_dream',
+      '29': 'Key_stone',
+      '30': 'Ice_stone',
+      '31': 'Solar_light',
+      '32': 'Lunar_light',
+      '33': 'Pure_light',
+      '34': 'Sweet_apple',
+      '35': 'Tart_apple',
+      '36': 'Cracked_pot',
+      '37': 'Galarica_cuff',
+      '38': 'Galarica_wreath',
+      '39': 'Black_mane_hair',
+      '40': 'White_mane_hair',
+      'None': -1,
+      '-1': 'None',
+      'Leaf_stone': 0,
+      'Fire_stone': 1,
+      'Water_stone': 2,
+      'Thunder_stone': 3,
+      'Moon_stone': 4,
+      'Linking_cord': 5,
+      'Sun_stone': 6,
+      'Soothe_bell': 7,
+      'Metal_coat': 8,
+      'Kings_rock': 9,
+      'Upgrade': 10,
+      'Dragon_scale': 11,
+      'Prism_scale': 12,
+      'Deepsea_tooth': 13,
+      'Deepsea_scale': 14,
+      'Shiny_stone': 15,
+      'Dusk_stone': 16,
+      'Dawn_stone': 17,
+      'Razor_claw': 18,
+      'Razor_fang': 19,
+      'Electirizer': 20,
+      'Magmarizer': 21,
+      'Protector': 22,
+      'Dubious_disc': 23,
+      'Reaper_cloth': 24,
+      'Black_DNA': 25,
+      'White_DNA': 26,
+      'Sachet': 27,
+      'Whipped_dream': 28,
+      'Key_stone': 29,
+      'Ice_stone': 30,
+      'Solar_light': 31,
+      'Lunar_light': 32,
+      'Pure_light': 33,
+      'Sweet_apple': 34,
+      'Tart_apple': 35,
+      'Cracked_pot': 36,
+      'Galarica_cuff': 37,
+      'Galarica_wreath': 38,
+      'Black_mane_hair': 39,
+      'White_mane_hair': 40,
+    },
+    'TEMP_BATTLE_TICK': 100,
+    'TEMP_BATTLE_TIME': 60000,
+    'TICK_TIME': 100,
+    'TemporaryBattles': [
+      'Blue 1',
+      'Blue 2',
+      'Blue 3',
+      'Blue 4',
+      'Fighting Dojo',
+      'Snorlax route 12',
+      'Snorlax route 16',
+      'Blue 5',
+      'Biker Goon 1',
+      'Biker Goon 2',
+      'Biker Goon 3',
+      'Cue Ball Paxton',
+      'Blue 6',
+      'Silver 1',
+      'Silver 2',
+      'Sudowoodo',
+      'Silver 3',
+      'Silver 4',
+      'Silver 5',
+      'Suicune 1',
+      'Eusine',
+      'Suicune 2',
+      'Red Gyarados',
+      'Suicune 3',
+      'Suicune 4',
+      'Suicune 5',
+      'Suicune 6',
+      'Silver 6',
+      'Silver 7',
+      'Red',
+      'May 1',
+      'May 2',
+      'May 3',
+      'Wally 1',
+      'May 4',
+      'Kecleon 1',
+      'Kecleon 2',
+      'Kecleon 3',
+      'May 5',
+      'Wally 2',
+      'Sevii Rocket Grunt 1',
+      'Sevii Rocket Grunt 2',
+      'Sevii Rocket Grunt 3',
+      'Sevii Rocket Grunt 4',
+      'Sevii Rocket Grunt 5',
+      'Sevii Rocket Ariana',
+      'Sevii Rocket Archer',
+      'Scientist Gideon',
+      'Pinkan Jessie & James',
+      'Pinkan Officer Jenny',
+      'Kimono Girls',
+      'Spiky-eared Pichu',
+      'Rocket Boss Giovanni',
+      'Barry 1',
+      'Barry 2',
+      'Barry 3',
+      'Barry 4',
+      'Galactic Boss Cyrus',
+      'Barry 5',
+      'Barry 6',
+      'Barry 7',
+      'Zero',
+      'Hugh 1',
+      'Hugh 2',
+      'Team Plasma Grunt 1',
+      'Colress 1',
+      'Team Plasma Grunt 2',
+      'Team Plasma Grunt 3',
+      'Hugh 3',
+      'Cheren',
+      'Colress 2',
+      'Team Plasma Grunt 4',
+      'Team Plasma Grunt 5',
+      'Team Plasma Grunts 1',
+      'Team Plasma Grunts 2',
+      'Hugh 4',
+      'Team Plasma Grunt 6',
+      'Zinzolin 1',
+      'Team Plasma Grunt 7',
+      'Team Plasma Grunt 8',
+      'Team Plasma Grunt 9',
+      'Zinzolin 2',
+      'Plasma Shadow 1',
+      'Colress 3',
+      'Plasma Shadow 2',
+      'Plasma Shadow 3',
+      'Plasma Shadow 4',
+      'Ghetsis 1',
+      'Ghetsis 2',
+      'Hugh 5',
+      'Hugh 6',
+      'Hugh 7',
+      'Dream Researcher',
+      'Shauna 1',
+      'Sycamore 1',
+      'Tierno 1',
+      'Trevor & Tierno',
+      'Calem 1',
+      'Korrina',
+      'Aipom Alley',
+      'Mime Interview',
+      'Underground Fighting Ring',
+      'Lab Ambush',
+      'Imposter',
+      'Possessed Mewtwo',
+      'Calem 2',
+      'Calem 3',
+      'Calem 4',
+      'Sycamore 2',
+      'Shauna 2',
+      'Tierno 2',
+      'Trevor',
+      'Calem 5',
+      'Riot',
+      'Merilyn',
+      'Millis and Argus Steel',
+      'AZ',
+      'Ash Ketchum Kanto',
+      'Ash Ketchum Johto',
+      'Ash Ketchum Hoenn',
+      'Ash Ketchum Sinnoh',
+      'Ash Ketchum Unova',
+      'Ash Ketchum Kalos',
+      'Ash Ketchum Pinkan',
+      'Calem 6',
+      'Hau 1',
+      'Hau 2',
+      'Hau 3',
+      'Dexio',
+      'Sina',
+      'Hau 4',
+      'Gladion 1',
+      'Battle Royal',
+      'Plumeria 1',
+      'Ultra Wormhole',
+      'Hau 5',
+      'Plumeria 2',
+      'Gladion 2',
+      'Necrozma',
+      'Ultra Megalopolis',
+      'Captain Mina',
+      'Captain Ilima',
+      'Captain Mallow',
+      'Captain Lana',
+      'Captain Kiawe',
+      'Captain Sophocles',
+      'Kahuna Nanu',
+      'Gladion 3',
+      'Anabel',
+      'Captain Mina UB',
+      'Kahuna Nanu UB',
+      'Ash Ketchum Alola',
+      'Rainbow Rocket Grunt 1',
+      'Rainbow Rocket Grunt 2',
+      'Aether Branch Chief Faba',
+      'Team Aqua Leader Archie',
+      'Team Magma Leader Maxie',
+      'Team Galactic Leader Cyrus',
+      'Team Flare Leader Lysandre',
+      'Team Plasma Leader Ghetsis',
+      'Team Rainbow Leader Giovanni',
+      'Magikarp Jump Koylee',
+      'Magikarp Jump Karpella',
+      'Magikarp Jump Karpen',
+      'Magikarp Jump Tykarp',
+      'Magikarp Jump Karpress',
+      'Magikarp Jump Karami',
+      'Magikarp Jump Karson',
+      'Magikarp Jump Karpress 2',
+      'Magikarp Jump Karpen 2',
+      'Magikarp Jump Karbuck',
+      'Magikarp Jump Skyhopper',
+      'Magikarp Jump Karpen 3',
+      'Magikarp Jump Karpella 2',
+      'Magikarp Jump Karbuck 2',
+      'Magikarp Jump Kareign',
+      'Magikarp Jump Koylee 2',
+      'Magikarp Jump Karpress 3',
+      'Magikarp Jump Karpen 4',
+      'Magikarp Jump Karpella 3',
+      'Magikarp Jump Skyhopper 2',
+      'Magikarp Jump Tykarp 2',
+      'Hop 1',
+      'Mirages',
+      'Hop 2',
+      'Hop 3',
+      'Bede 1',
+      'Hop 4',
+      'Bede 2',
+      'Marnie 1',
+      'Hop 5',
+      'Bede 3',
+      'Hop 6',
+      'Hop 7',
+      'Marnie 2',
+      'Eternatus',
+      'The Darkest Day',
+      'Hop 8',
+      'Sordward 1',
+      'Shielbert 1',
+      'Rampaging Tsareena',
+      'Rampaging Gyarados',
+      'Rampaging Torkoal',
+      'Sordward & Shielbert',
+      'Rampaging Conkeldurr',
+      'Rampaging Dusknoir',
+      'Gym Leader Bede',
+      'Rampaging Gigalith',
+      'Rampaging Froslass',
+      'Gym Leader Marnie',
+      'Rampaging Haxorus',
+      'Sordward 2',
+      'Shielbert 2',
+      'Rampaging Zacian',
+      'Rampaging Zamazenta',
+      'Klara 1',
+      'Avery 1',
+      'Mustard',
+      'Klara 2',
+      'Avery 2',
+      'Klara 3',
+      'Avery 3',
+      'Kubfu',
+      'Zarude Tribe 1',
+      'Zarude Tribe 2',
+      'Zarude Tribe 3',
+      'Ash Ketchum Galar',
+      'Zarude (Dada)',
+      'Flowering Celebi',
+      'Peony',
+      'Calyrex',
+      'Glastrier',
+      'Spectrier',
+      'Dyna Tree Birds',
+      'Galarian Articuno 1',
+      'Galarian Articuno 2',
+      'Galarian Articuno 3',
+      'Galarian Zapdos 1',
+      'Galarian Zapdos 2',
+      'Galarian Zapdos 3',
+      'Galarian Moltres 1',
+      'Galarian Moltres 2',
+      'Galarian Moltres 3',
+      'Regigigas',
+    ],
+    'TypeColor': [
+      '#A8A77A',
+      '#EE8130',
+      '#6390F0',
+      '#F7D02C',
+      '#7AC74C',
+      '#96D9D6',
+      '#C22E28',
+      '#A33EA1',
+      '#E2BF65',
+      '#A98FF3',
+      '#F95587',
+      '#A6B91A',
+      '#B6A136',
+      '#735797',
+      '#6F35FC',
+      '#705746',
+      '#B7B7CE',
+      '#D685AD',
+    ],
+    'TypeEffectiveness': {
+      '0': 'Immune',
+      '1': 'NotVery',
+      '2': 'Neutral',
+      '3': 'Very',
+      'Immune': 0,
+      'NotVery': 1,
+      'Neutral': 2,
+      'Very': 3,
+    },
+    'TypeEffectivenessValue': {
+      '0': 'Immune',
+      '1': 'Neutral',
+      '2': 'Very',
+      'Immune': 0,
+      'NotVery': 0.5,
+      '0.5': 'NotVery',
+      'Neutral': 1,
+      'Very': 2,
+    },
+    'UNDERGROUND_TICK': 1000,
+    'USE_OAK_ITEM_BASE_REWARD': 1,
+    'UltraBeastType': {
+      '0': 'Nihilego',
+      '1': 'Buzzwole',
+      '2': 'Pheromosa',
+      '3': 'Xurkitree',
+      '4': 'Kartana',
+      '5': 'Celesteela',
+      '6': 'Blacephalon',
+      '7': 'Stakataka',
+      '8': 'Guzzlord',
+      '9': 'Poipole',
+      '10': 'Naganadel',
+      'Nihilego': 0,
+      'Buzzwole': 1,
+      'Pheromosa': 2,
+      'Xurkitree': 3,
+      'Kartana': 4,
+      'Celesteela': 5,
+      'Blacephalon': 6,
+      'Stakataka': 7,
+      'Guzzlord': 8,
+      'Poipole': 9,
+      'Naganadel': 10,
+    },
+    'UnovaDungeons': [
+      'Floccesy Ranch',
+      'Liberty Garden',
+      'Castelia Sewers',
+      'Relic Passage',
+      'Relic Castle',
+      'Lostlorn Forest',
+      'Chargestone Cave',
+      'Mistralton Cave',
+      'Celestial Tower',
+      'Reversal Mountain',
+      'Seaside Cave',
+      'Plasma Frigate',
+      'Giant Chasm',
+      'Cave of Being',
+      'Abundant Shrine',
+      'Victory Road Unova',
+      'Twist Mountain',
+      'Dragonspiral Tower',
+      'Moor of Icirrus',
+      'Pledge Grove',
+      'Pinwheel Forest',
+      'Dreamyard',
+      'P2 Laboratory',
+    ],
+    'UnovaGyms': [
+      'Aspertia City',
+      'Virbank City',
+      'Castelia City',
+      'Nimbasa City',
+      'Driftveil City',
+      'Mistralton City',
+      'Opelucid City',
+      'Humilau City',
+      'Elite Shauntal',
+      'Elite Marshal',
+      'Elite Grimsley',
+      'Elite Caitlin',
+      'Champion Iris',
+    ],
     'UnovaSubRegions': {
       '0': 'Unova',
       'Unova': 0,
     },
-    'KalosSubRegions': {
-      '0': 'Kalos',
-      'Kalos': 0,
+    'VitaminType': {
+      '0': 'Protein',
+      '1': 'Calcium',
+      '2': 'Carbos',
+      'Protein': 0,
+      'Calcium': 1,
+      'Carbos': 2,
     },
-    'AlolaSubRegions': {
-      '0': 'MelemeleIsland',
-      '1': 'AkalaIsland',
-      '2': 'UlaulaIsland',
-      '3': 'PoniIsland',
-      '4': 'MagikarpJump',
-      'MelemeleIsland': 0,
-      'AkalaIsland': 1,
-      'UlaulaIsland': 2,
-      'PoniIsland': 3,
-      'MagikarpJump': 4,
-    },
-    'GalarSubRegions': {
-      '0': 'SouthGalar',
-      '1': 'NorthGalar',
-      '2': 'IsleofArmor',
-      '3': 'CrownTundra',
-      'SouthGalar': 0,
-      'NorthGalar': 1,
-      'IsleofArmor': 2,
-      'CrownTundra': 3,
-    },
-    'FinalSubRegions': {
-      '0': 'Final',
-      'Final': 0,
-    },
-    'Genders': {
-      '0': 'Genderless',
-      '1': 'MaleFemale',
-      'Genderless': 0,
-      'MaleFemale': 1,
-    },
-    'BattlePokemonGender': {
-      '0': 'NoGender',
-      '1': 'Male',
-      '2': 'Female',
-      'NoGender': 0,
-      'Male': 1,
-      'Female': 2,
-    },
-    'STATISTIC_CAPTURED': 'Captured',
-    'STATISTIC_DEFEATED': 'Defeated',
-    'STATISTIC_ENCOUNTERED': 'Encountered',
-    'STATISTIC_HATCHED': 'Hatched',
-    'AlcremieSweet': {
-      '0': 'Strawberry Sweet',
-      '1': 'Love Sweet',
-      '2': 'Berry Sweet',
-      '3': 'Clover Sweet',
-      '4': 'Flower Sweet',
-      '5': 'Star Sweet',
-      '6': 'Ribbon Sweet',
-      'Strawberry Sweet': 0,
-      'Love Sweet': 1,
-      'Berry Sweet': 2,
-      'Clover Sweet': 3,
-      'Flower Sweet': 4,
-      'Star Sweet': 5,
-      'Ribbon Sweet': 6,
-    },
-    'AlcremieSpins': {
-      '0': 'dayClockwiseBelow5',
-      '1': 'dayCounterclockwiseBelow5',
-      '2': 'nightClockwiseBelow5',
-      '3': 'nightCounterclockwiseAbove5',
-      '4': 'nightClockwiseAbove5',
-      '5': 'nightCounterclockwiseBelow5',
-      '6': 'dayClockwiseAbove5',
-      '7': 'dayCounterclockwiseAbove5',
-      '8': 'at7Above10',
-      'dayClockwiseBelow5': 0,
-      'dayCounterclockwiseBelow5': 1,
-      'nightClockwiseBelow5': 2,
-      'nightCounterclockwiseAbove5': 3,
-      'nightClockwiseAbove5': 4,
-      'nightCounterclockwiseBelow5': 5,
-      'dayClockwiseAbove5': 6,
-      'dayCounterclockwiseAbove5': 7,
-      'at7Above10': 8,
-    },
-    'ExtraAchievementCategories': {
-      '8': 'global',
-      '9': 'sevii',
-      'global': 8,
-      'sevii': 9,
-    },
+    'WANDERER_EP_YIELD': 500,
+    'WANDER_RATE': 0.0005,
+    'WANDER_TICK': 1500,
+    'WEEK': 604800000,
   },
   'BadgeEnums': {
     '0': 'None',
@@ -125983,7 +126838,7 @@ module.exports = {
       ],
       'badgeReward': 1,
       'moneyReward': 250,
-      'defeatMessage': 'I took you for granted, and so I lost. As proof of your victory, I confer on you this... the official Pokémon League Boulder Badge.',
+      'defeatMessage': 'I took you for granted, and so I lost. As proof of your victory, I confer on you this... the official Pokémon League BoulderBadge.',
       'flags': {
         'quest': true,
         'achievement': true,
@@ -126022,7 +126877,7 @@ module.exports = {
       ],
       'badgeReward': 2,
       'moneyReward': 500,
-      'defeatMessage': "Wow! You're too much, all right! You can have the Cascade Badge to show that you beat me.",
+      'defeatMessage': "Wow! You're too much, all right! You can have the CascadeBadge to show that you beat me.",
       'flags': {
         'quest': true,
         'achievement': true,
@@ -131081,7 +131936,7 @@ module.exports = {
           'achievementType': 8,
           'region': 6,
           'route': 31,
-          'hint': 'Friend League Route in Alola still needs to be completed.',
+          'hint': 'Friend League Bridge in Alola still needs to be completed.',
           '__class': 'RouteKillRequirement',
         },
       ],
@@ -131090,14 +131945,14 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Magikarp',
-          'maxHealth': 1,
+          'maxHealth': 337500,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 101,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 10000,
+      'defeatMessage': 'Your Karp is really Magic!',
       'flags': {
         'quest': true,
         'achievement': true,
@@ -131109,28 +131964,26 @@ module.exports = {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 32,
-          'hint': 'Quick League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Koylee',
+          'hint': 'Requires beating Magikarp Jump Koylee.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Koichiro',
       'town': 'Quick League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Skelly',
+          'maxHealth': 675000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 102,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 10500,
+      'defeatMessage': 'Looks like I flailed...',
       'flags': {
         'quest': true,
         'achievement': true,
@@ -131142,46 +131995,43 @@ module.exports = {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 33,
-          'hint': 'Heavy League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Karpen',
+          'hint': 'Requires beating Magikarp Jump Karpen.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Kareign',
       'town': 'Heavy League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Orange Two-Tone',
+          'maxHealth': 1687500,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 103,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 11000,
+      'defeatMessage': 'Karpe Diem',
+      'displayName': "Kareign's Heavy League Gym",
       'flags': {
         'quest': true,
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Kareign's Gym",
+      'buttonText': "Kareign's Heavy League Gym",
     },
     'Great League': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 34,
-          'hint': 'Great League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Karpress',
+          'hint': 'Requires beating Magikarp Jump Karpress.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Karbuck',
@@ -131189,14 +132039,14 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Magikarp',
-          'maxHealth': 1,
+          'maxHealth': 2700000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 104,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 11500,
+      'defeatMessage': 'Guess ya got me. Hook, line and sinker!',
       'flags': {
         'quest': true,
         'achievement': true,
@@ -131208,94 +132058,90 @@ module.exports = {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 35,
-          'hint': 'Fast League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Karson',
+          'hint': 'Requires beating Magikarp Jump Karson.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Kareign 2',
       'town': 'Fast League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Pink Dapples',
+          'maxHealth': 5062500,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 105,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 12000,
+      'defeatMessage': 'This life is not for me... I will become a Karpenter now...',
+      'displayName': "Kareign's Fast League Gym",
       'flags': {
         'quest': true,
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Kareign 2's Gym",
+      'buttonText': "Kareign's Fast League Gym",
     },
     'Luxury League': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 36,
-          'hint': 'Luxury League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Karbuck',
+          'hint': 'Requires beating Magikarp Jump Karbuck.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Jump Champ',
       'town': 'Luxury League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Pink Orca',
+          'maxHealth': 6750000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 106,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 12500,
+      'defeatMessage': "Just wait 'til my Magikarp evolves and you will all see how great I am! <i>Cries</i>",
+      'displayName': "Jump Champ's Luxury League Gym",
       'flags': {
         'quest': true,
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Jump Champ's Gym",
+      'buttonText': "Jump Champ's Luxury League Gym",
     },
     'Heal League': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 37,
-          'hint': 'Heal League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Karpella 2',
+          'hint': 'Requires beating Magikarp Jump Karpella.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Karami',
       'town': 'Heal League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Purple Bubbles',
+          'maxHealth': 10125000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 107,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 12500,
+      'defeatMessage': "I'm getting more old than my rod...",
       'flags': {
         'quest': true,
         'achievement': true,
@@ -131307,79 +132153,75 @@ module.exports = {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 38,
-          'hint': 'Ultra League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Koylee 2',
+          'hint': 'Requires beating Magikarp Jump Koylee.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Jump Champ 2',
       'town': 'Ultra League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Brown Tiger',
+          'maxHealth': 13500000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 108,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 12500,
+      'defeatMessage': 'I knew I smelled something fishy...',
+      'displayName': "Jump Champ's Ultra League Gym",
       'flags': {
         'quest': true,
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Jump Champ 2's Gym",
+      'buttonText': "Jump Champ's Ultra League Gym",
     },
     'E4 League': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 39,
-          'hint': 'Elite Four League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Karpella 3',
+          'hint': 'Requires beating Magikarp Jump Karpella.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Jump Champ 3',
       'town': 'E4 League',
       'pokemons': [
         {
-          'name': 'Magikarp',
-          'maxHealth': 1,
+          'name': 'Magikarp Orange Forehead',
+          'maxHealth': 20250000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 109,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 12500,
+      'defeatMessage': 'That jump really splashed!',
+      'displayName': "Jump Champ's Elite League Gym",
       'flags': {
         'quest': true,
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Jump Champ 3's Gym",
+      'buttonText': "Jump Champ's Elite League Gym",
     },
     'Master League': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 6,
-          'route': 40,
-          'hint': 'Master League Route in Alola still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Magikarp Jump Tykarp 2',
+          'hint': 'Requires beating Magikarp Jump Tykarp.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'leaderName': 'Magikarp',
@@ -131387,14 +132229,14 @@ module.exports = {
       'pokemons': [
         {
           'name': 'Magikarp',
-          'maxHealth': 1,
+          'maxHealth': 27000000,
           'level': 20,
           'requirements': [],
         },
       ],
       'badgeReward': 110,
-      'moneyReward': 0,
-      'defeatMessage': 'TODO',
+      'moneyReward': 13000,
+      'defeatMessage': 'Mayor Karp will be proud of you!',
       'flags': {
         'quest': true,
         'achievement': true,
@@ -131575,7 +132417,7 @@ module.exports = {
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Bea's Gym",
+      'buttonText': "Bea's Stow-on-Side Gym",
     },
     'Stow-on-Side2': {
       'tooltip': 'Battle Gym Leaders to earn badges',
@@ -131625,7 +132467,7 @@ module.exports = {
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Allister's Gym",
+      'buttonText': "Allister's Stow-on-Side Gym",
     },
     'Ballonlea': {
       'tooltip': 'Battle Gym Leaders to earn badges',
@@ -131727,7 +132569,7 @@ module.exports = {
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Gordie's Gym",
+      'buttonText': "Gordie's Circhester Gym",
     },
     'Circhester2': {
       'tooltip': 'Battle Gym Leaders to earn badges',
@@ -131812,7 +132654,7 @@ module.exports = {
         'achievement': true,
         'champion': false,
       },
-      'buttonText': "Melony's Gym",
+      'buttonText': "Melony's Circhester Gym",
     },
     'Spikemuth': {
       'tooltip': 'Battle Gym Leaders to earn badges',
@@ -132070,9 +132912,9 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 1,
-              'region': 0,
+              'region': 7,
               'starter': 0,
-              'hint': 'Requires Bulbasaur to be chosen as your kanto starter Pokémon',
+              'hint': 'Requires Grookey to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132085,9 +132927,9 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 1,
-              'region': 0,
+              'region': 7,
               'starter': 1,
-              'hint': 'Requires Charmander to be chosen as your kanto starter Pokémon',
+              'hint': 'Requires Scorbunny to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132100,9 +132942,9 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 1,
-              'region': 0,
+              'region': 7,
               'starter': 2,
-              'hint': 'Requires Squirtle to be chosen as your kanto starter Pokémon',
+              'hint': 'Requires Sobble to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132159,9 +133001,9 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 1,
-              'region': 6,
+              'region': 7,
               'starter': 0,
-              'hint': 'Requires Rowlet to be chosen as your alola starter Pokémon',
+              'hint': 'Requires Grookey to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132174,9 +133016,9 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 1,
-              'region': 6,
+              'region': 7,
               'starter': 0,
-              'hint': 'Requires Rowlet to be chosen as your alola starter Pokémon',
+              'hint': 'Requires Grookey to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132189,9 +133031,9 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 1,
-              'region': 6,
+              'region': 7,
               'starter': 1,
-              'hint': 'Requires Litten to be chosen as your alola starter Pokémon',
+              'hint': 'Requires Scorbunny to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132204,9 +133046,9 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 1,
-              'region': 6,
+              'region': 7,
               'starter': 1,
-              'hint': 'Requires Litten to be chosen as your alola starter Pokémon',
+              'hint': 'Requires Scorbunny to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132219,9 +133061,9 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 1,
-              'region': 6,
+              'region': 7,
               'starter': 2,
-              'hint': 'Requires Popplio to be chosen as your alola starter Pokémon',
+              'hint': 'Requires Sobble to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132234,9 +133076,9 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 1,
-              'region': 6,
+              'region': 7,
               'starter': 2,
-              'hint': 'Requires Popplio to be chosen as your alola starter Pokémon',
+              'hint': 'Requires Sobble to be chosen as your galar starter Pokémon',
               '__class': 'StarterRequirement',
             },
           ],
@@ -132784,7 +133626,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -132841,7 +133682,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -132898,7 +133738,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -132955,7 +133794,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133011,7 +133849,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133069,7 +133906,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133126,7 +133962,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133183,7 +134018,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133241,7 +134075,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133299,7 +134132,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133357,7 +134189,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133415,7 +134246,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133473,7 +134303,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133530,7 +134359,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133589,7 +134417,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133647,7 +134474,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133705,7 +134531,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133763,7 +134588,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133820,7 +134644,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133890,7 +134713,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -133947,7 +134769,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134005,7 +134826,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134063,7 +134883,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134121,7 +134940,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134178,7 +134996,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134237,7 +135054,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134295,7 +135111,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134353,7 +135168,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134411,7 +135225,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134468,7 +135281,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134527,7 +135339,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134588,7 +135399,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134646,7 +135456,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134704,7 +135513,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134761,7 +135569,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134822,7 +135629,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134883,7 +135689,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -134960,7 +135765,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135037,7 +135841,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135107,7 +135910,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135183,7 +135985,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135192,6 +135993,9 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Jynx',
+        'Swinub',
+        'Spheal',
         'Snover',
         'Flabébé (Blue)',
         'Snom',
@@ -135254,7 +136058,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135263,6 +136066,8 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Mankey',
+        'Makuhita',
         'Riolu',
         'Scraggy',
         'Crabrawler',
@@ -135327,7 +136132,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135336,7 +136140,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Grimer',
+        'Spinarak',
         'Gulpin',
+        'Skorupi',
         'Salandit',
         'Toxel',
       ],
@@ -135398,7 +136205,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135407,7 +136213,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Sandshrew',
         'Larvitar',
+        'Numel',
+        'Hippopotas',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
       ],
@@ -135458,7 +136267,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135467,7 +136275,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        "Farfetch'd",
+        'Murkrow',
         'Tropius',
+        'Chatot',
         'Flabébé (Blue)',
       ],
       'hint': "I've heard that a special Berry can appear if its surroundings match its flavor profile! If I recall, it tasted a little dry and fairly bitter at the same time.",
@@ -135528,7 +136339,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135537,8 +136347,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Mr. Mime',
         'Natu',
         'Ralts',
+        'Chingling',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard that growing Wiki, Bluk, Cornn and Pamtre Berries near each other will produce something interesting!",
@@ -135599,7 +136411,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135608,8 +136419,11 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Pinsir',
         'Shuckle',
         'Nincada',
+        'Combee',
+        'Spewpa',
         'Sizzlipede',
       ],
       'hint': "I've heard that a special Berry can appear after being surrounded by Rindo Berries!",
@@ -135670,7 +136484,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135679,7 +136492,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Rhyhorn',
         'Sudowoodo',
+        'Aron',
+        'Bonsly',
         'Flabébé (Yellow)',
         'Oricorio (Pom-Pom)',
         'Rockruff',
@@ -135742,7 +136558,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135751,7 +136566,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Gastly',
+        'Misdreavus',
         'Shedinja',
+        'Drifloon',
         'Oricorio (Sensu)',
       ],
       'hint': "I've heard of a Berry that only appears after a Berry plant has withered, but is repelled by Colbur plants.",
@@ -135812,7 +136630,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135821,9 +136638,11 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Dratini',
         'Bagon',
-        'Oricorio (Baile)',
+        'Gible',
         'Druddigon',
+        'Oricorio (Baile)',
         'Drampa',
         'Applin',
       ],
@@ -135877,7 +136696,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135886,8 +136704,12 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Houndour',
         'Absol',
+        'Stunky',
+        'Zorua',
         'Oricorio (Sensu)',
+        'Impidimp',
       ],
       'hint': "I've heard that growing Rabuta, Kasib and Payapa Berries near each other will produce something interesting!",
     },
@@ -135947,7 +136769,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -135956,8 +136777,10 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Magnemite',
         'Skarmory',
         'Beldum',
+        'Bronzor',
         'Cufant',
       ],
       'hint': "I've heard that a special Berry can appear after being surrounded by Shuca and Charti Berries!",
@@ -136007,7 +136830,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136016,6 +136838,9 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Snorlax',
+        'Girafarig',
+        'Swablu',
         'Munchlax',
         'Audino',
         'Flabébé (Yellow)',
@@ -136080,7 +136905,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136089,7 +136913,9 @@ module.exports = {
         'Bounsweet',
         'Blipbug',
         'Gossifleur',
+        'Clefairy',
         'Togepi',
+        'Ralts',
         "Oricorio (Pa'u)",
       ],
       'hint': "I've heard that growing Mago, Nanab, Magost and Watmel Berries near each other will produce something interesting!",
@@ -136108,7 +136934,18 @@ module.exports = {
       'farmValue': 2600,
       'exp': 20,
       'color': 3,
-      'description': ['This Berry has a very dry flavor. It has the effect of making other food eaten at the same time taste sweet.'],
+      'description': [
+        'This Berry has a very dry flavor. It has the effect of making other food eaten at the same time taste sweet.',
+        'The scent of this Berry plant repels wild Pokémon.',
+      ],
+      'aura': {
+        'auraType': 11,
+        'auraMultipliers': [
+          0.1,
+          0.2,
+          0.3,
+        ],
+      },
       'flavors': [
         {
           'type': 0,
@@ -136139,7 +136976,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136196,7 +137032,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136265,7 +137100,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136335,7 +137169,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136393,7 +137226,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136452,7 +137284,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136510,7 +137341,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136569,7 +137399,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136627,7 +137456,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136687,7 +137515,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136746,7 +137573,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136804,7 +137630,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136870,7 +137695,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',
@@ -136928,7 +137752,6 @@ module.exports = {
         'Volbeat',
         'Illumise',
         'Burmy (Plant)',
-        'Combee',
         'Cherubi',
         'Sewaddle',
         'Karrablast',

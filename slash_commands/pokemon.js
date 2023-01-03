@@ -171,8 +171,13 @@ module.exports = {
       }
       // Safari Zone
       if (pokemon.locations[PokemonLocationType.Safari]) {
-        const description = pokemon.locations[PokemonLocationType.Safari];
-        embed.addField('❯ Safari Zone Chance', description);
+        const description = [];
+        Object.entries(pokemon.locations[PokemonLocationType.Safari]).forEach(([region, zones]) => {
+          Object.entries(zones).forEach(([zone, chance]) => {
+            description.push(`${GameConstants.Region[region].toUpperCase()} - Zone ${zone}: ${chance}%\n`);
+          });
+        });
+        embed.addField('❯ Safari Zone Chance', description.join('\n'));
       }
       // Battle Frontier
       if (pokemon.locations[PokemonLocationType.BattleFrontier]) {

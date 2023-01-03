@@ -27,8 +27,8 @@ RUN pm2 install pm2-auto-pull
 RUN mkdir -p /usr/src/bot
 WORKDIR /usr/src/bot
 # Copy and Install our bot
-COPY ./package.json /usr/src/bot
-RUN npm install --production
+COPY ./package.json /usr/src/bot/package.json
+RUN npm install
 
 # NOTES:
 # To re-build without cache:
