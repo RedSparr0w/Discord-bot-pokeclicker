@@ -144,10 +144,6 @@ const saveFileFlags = (saveData) => {
   if (dungeonSeconds < 30) {
     flags.push(`Dungeons (${dungeonSeconds.toFixed(0)}s)`);
   }
-  // If save has obtained MissingNo.
-  if (saveData.save?.party?.caughtPokemon?.find(p => p.id == 0)) {
-    flags.push('MissingNo.');
-  }
   return flags;
 };
 
