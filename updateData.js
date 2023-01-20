@@ -91,6 +91,9 @@ const cli = new ESLint({
       gyms[key] = value;
     });
 
+    // So we always get the correct weather requirements
+    Weather.currentWeather = () => -1;
+
     Requirement.prototype.toJSON = function() {
       const req = this.__proto__.constructor.name === 'LazyRequirementWrapper'
         ? this.unwrap()

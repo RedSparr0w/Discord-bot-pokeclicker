@@ -833,6 +833,10 @@ module.exports = {
       'link': 'https://pokeclicker.miraheze.org/wiki/Liechi',
     },
     {
+      'title': 'Light Ball',
+      'link': 'https://pokeclicker.miraheze.org/wiki/Light_Ball',
+    },
+    {
       'title': 'Light Clay',
       'link': 'https://pokeclicker.miraheze.org/wiki/Light_Clay',
     },
