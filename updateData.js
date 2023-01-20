@@ -91,8 +91,9 @@ const cli = new ESLint({
       gyms[key] = value;
     });
 
-    // So we always get the correct weather requirements
+    // So we always get the correct weather/day requirements
     Weather.currentWeather = () => -1;
+    DayOfWeekRequirement.prototype.getProgress = () => 0;
 
     Requirement.prototype.toJSON = function() {
       const req = this.__proto__.constructor.name === 'LazyRequirementWrapper'
