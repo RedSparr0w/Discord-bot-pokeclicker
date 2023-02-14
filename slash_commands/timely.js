@@ -61,8 +61,8 @@ module.exports = {
       });
     }
 
-    // Should the claim streak be reset (if more than 2 days, or 14 days if paused)
-    if (last_claim < (Date.now() - ((paused ? 14 : 2) * DAY))) {
+    // Should the claim streak be reset (if more than 4 days, or 14 days if paused)
+    if (last_claim < (Date.now() - ((paused ? 14 : 4) * DAY))) {
       await resetClaimStreak(interaction.user, 'timely_claim');
       streak = 0;
     }
