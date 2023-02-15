@@ -22,7 +22,7 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 30,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'KICK_MEMBERS'],
   userroles   : ['Moderator'],
   execute     : async (interaction) => {
     const id = interaction.options.get('user').value;
