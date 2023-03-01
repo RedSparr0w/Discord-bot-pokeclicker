@@ -132,7 +132,7 @@ module.exports = [
         message.member.guild,
         `**Mod:** ${message.member.guild.me.toString()}
         **User:** ${message.member.toString()}
-        **Action:** Deleted message
+        **Action:** _Deleted message_
         **Reason:** _Invite link_
         **Channel:** ${message.channel.name}
         **Message Content:**
@@ -144,17 +144,19 @@ module.exports = [
   // Try remove some of the fake free nitro stuff
   {
     regex: /(https?:\/\/)?(www\.)?(([a-c]|[e-z])iscord|d[a-z]iscord|d([a-h]|[j-z])scord|di[a-z]scord|di([a-r]|[t-z])cord|dis[a-z]cord|dis([a-b]|[d-z])ord|disc[a-z]ord|disc([a-n]|[p-z])rd|disco[a-z]rd|disco([a-q]|[s-z])d|discor[a-z]d|discor([a-c]|[e-z])|discord[a-z])[\w-]+\.\w{1,10}\//i,
-    execute: (message, client) => {
-      if (message.content.test(/(https?:\/\/)?(www\.)?(discord\.\w{1,3}|discordapp\.\w{1,3})\//i)) {
+    execute: async (message, client) => {
+      if (/(https?:\/\/)?(www\.)?(discord\.\w{1,3}|discordapp\.\w{1,3})\//i.test(message.content)) {
         return;
       }
-      mute(message.member, 2 * HOUR);
+      let time = 2 * HOUR;
+      time = await mute(message.member, time);
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Deleted message, Muted_
         **Reason:** _Fake Discord link_
+        **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
@@ -165,14 +167,14 @@ module.exports = [
   // Remove @everyone & @here tags
   {
     regex: /@(everyone|here)/i,
-    execute: (message, client) => {
-      const time = 2 * HOUR;
-      mute(message.member, time);
+    execute: async (message, client) => {
+      let time = 2 * HOUR;
+      time = await mute(message.member, time);
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.me.toString()}
         **User:** ${message.member.toString()}
-        **Action:** Muted
+        **Action:** _Muted_
         **Reason:** _Tagging \\@everyone or \\@here_
         **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
@@ -180,7 +182,8 @@ module.exports = [
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Do not attempt to tag \\@everyone\n\nYou will be unmuted in ${formatDateToString(time)}`);
+      const embedDescription = `Please do not attempt to tag \\@everyone\n\nYou will be unmuted in ${formatDateToString(time)}.`;
+      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(embedDescription);
       message.reply({ embeds: [embed] });
       message.delete().catch(e => {});
     },
@@ -188,14 +191,14 @@ module.exports = [
   // Try remove some of the fake free nitro stuff
   {
     regex: /https?:\/\/dis.*(\.gift\/|\/nitro)/i,
-    execute: (message, client) => {
-      const time = 2 * HOUR;
-      mute(message.member, time);
+    execute: async (message, client) => {
+      let time = 2 * HOUR;
+      time = await mute(message.member, time);
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.me.toString()}
         **User:** ${message.member.toString()}
-        **Action:** _Deleted message_
+        **Action:** _Deleted message, Muted_
         **Reason:** _Nitro scam link_
         **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
@@ -203,8 +206,6 @@ module.exports = [
         **Message Content:**
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Possible nitro scam link..\n\nYou will be unmuted in ${formatDateToString(time)}`);
-      message.reply({ embeds: [embed] });
       message.delete().catch(e => {});
     },
   },
