@@ -162,9 +162,9 @@ module.exports = [
       message.delete().catch(e => {});
     },
   },
-  // Remove @everyone tags
+  // Remove @everyone & @here tags
   {
-    regex: /@everyone/i,
+    regex: /@(everyone|here)/i,
     execute: (message, client) => {
       const time = 2 * HOUR;
       mute(message.member, time);
@@ -173,7 +173,7 @@ module.exports = [
         `**Mod:** ${message.member.guild.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** Muted
-        **Reason:** _Tagging \\@everyone_
+        **Reason:** _Tagging \\@everyone or \\@here_
         **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
         **Message Link:** _[Here](${message.url})_
