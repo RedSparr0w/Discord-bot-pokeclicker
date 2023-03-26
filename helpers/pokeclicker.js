@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.10.9',
+  'gameVersion': '0.10.10',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -2076,9 +2076,26 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 16,
-          'hint': 'Requires the Plain badge.',
-          '__class': 'GymBadgeRequirement',
+          'requirements': [
+            {
+              'requiredValue': 10,
+              'option': 2,
+              'achievementType': 8,
+              'region': 1,
+              'route': 35,
+              'hint': 'Johto Route 35 still needs to be completed.',
+              '__class': 'RouteKillRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'battleName': 'Sudowoodo',
+              'hint': 'Requires beating Sudowoodo.',
+              '__class': 'TemporaryBattleRequirement',
+            },
+          ],
+          'hint': 'Johto Route 35 still needs to be completed or Requires beating Sudowoodo.',
+          '__class': 'OneFromManyRequirement',
         },
       ],
       'orderNumber': 36,
@@ -2113,6 +2130,15 @@ module.exports = {
           'battleName': 'Sudowoodo',
           'hint': 'Requires beating Sudowoodo.',
           '__class': 'TemporaryBattleRequirement',
+        },
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 1,
+          'route': 36,
+          'hint': 'Johto Route 36 still needs to be completed.',
+          '__class': 'RouteKillRequirement',
         },
       ],
       'orderNumber': 37,
@@ -2748,13 +2774,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 2,
-          'route': 101,
-          'hint': 'Hoenn Route 101 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'May 1',
+          'hint': 'Requires beating May.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'orderNumber': 102,
@@ -2904,13 +2928,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 2,
-          'route': 110,
-          'hint': 'Hoenn Route 110 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'May 3',
+          'hint': 'Requires beating May.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'orderNumber': 110.1,
@@ -4135,7 +4157,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 57,
+          'dungeonIndex': 58,
           'hint': 'Valley Windworks needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -4166,7 +4188,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 60,
+          'dungeonIndex': 61,
           'hint': 'Team Galactic Eterna Building needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -4235,7 +4257,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 62,
+          'dungeonIndex': 63,
           'hint': 'Mt. Coronet South needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -4566,7 +4588,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 67,
+          'dungeonIndex': 68,
           'hint': 'Mt. Coronet North needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -4746,7 +4768,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 71,
+          'dungeonIndex': 72,
           'hint': 'Distortion World needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -5401,7 +5423,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 86,
+          'dungeonIndex': 87,
           'hint': 'Chargestone Cave needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -5482,7 +5504,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 89,
+          'dungeonIndex': 90,
           'hint': 'Reversal Mountain needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -5516,7 +5538,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 89,
+          'dungeonIndex': 90,
           'hint': 'Reversal Mountain needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -5661,7 +5683,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 90,
+          'dungeonIndex': 91,
           'hint': 'Seaside Cave needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -5753,7 +5775,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 92,
+          'dungeonIndex': 93,
           'hint': 'Giant Chasm needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -5801,7 +5823,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 96,
+              'dungeonIndex': 97,
               'hint': 'Twist Mountain needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -5911,7 +5933,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 100,
+          'dungeonIndex': 101,
           'hint': 'Pinwheel Forest needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6148,7 +6170,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 103,
+          'dungeonIndex': 104,
           'hint': 'Santalune Forest needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6278,13 +6300,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 5,
-          'route': 5,
-          'hint': 'Kalos Route 5 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Tierno 1',
+          'hint': 'Requires beating Tierno.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'orderNumber': 6,
@@ -6357,7 +6377,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 104,
+          'dungeonIndex': 105,
           'hint': 'Connecting Cave needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6417,7 +6437,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 105,
+          'dungeonIndex': 106,
           'hint': 'Glittering Cave needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6633,7 +6653,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 109,
+          'dungeonIndex': 110,
           'hint': 'Poké Ball Factory needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6702,7 +6722,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 111,
+          'dungeonIndex': 112,
           'hint': 'Frost Cavern needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6734,7 +6754,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 112,
+          'dungeonIndex': 113,
           'hint': 'Team Flare Secret HQ needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -6798,13 +6818,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 5,
-          'route': 19,
-          'hint': 'Kalos Route 19 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Trevor',
+          'hint': 'Requires beating Trevor.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'orderNumber': 20,
@@ -6835,13 +6853,11 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 5,
-          'route': 19,
-          'hint': 'Kalos Route 19 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'battleName': 'Trevor',
+          'hint': 'Requires beating Trevor.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'orderNumber': 21,
@@ -6975,7 +6991,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 116,
+          'dungeonIndex': 117,
           'hint': "Trainers' School needs to be completed.",
           '__class': 'ClearDungeonRequirement',
         },
@@ -7019,7 +7035,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 118,
+          'dungeonIndex': 119,
           'hint': 'Verdant Cavern needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7116,7 +7132,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 123,
+          'dungeonIndex': 124,
           'hint': 'Paniola Ranch needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7163,7 +7179,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 124,
+          'dungeonIndex': 125,
           'hint': 'Brooklet Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7214,7 +7230,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 120,
+          'dungeonIndex': 121,
           'hint': 'Seaward Cave needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7222,7 +7238,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 124,
+          'dungeonIndex': 125,
           'hint': 'Brooklet Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7267,7 +7283,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 124,
+          'dungeonIndex': 125,
           'hint': 'Brooklet Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7380,7 +7396,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 125,
+          'dungeonIndex': 126,
           'hint': 'Wela Volcano Park needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7422,7 +7438,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 127,
+          'dungeonIndex': 128,
           'hint': "Diglett's Tunnel needs to be completed.",
           '__class': 'ClearDungeonRequirement',
         },
@@ -7469,7 +7485,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 128,
+          'dungeonIndex': 129,
           'hint': 'Memorial Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7513,7 +7529,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 129,
+          'dungeonIndex': 130,
           'hint': 'Malie Garden needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7620,7 +7636,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 129,
+          'dungeonIndex': 130,
           'hint': 'Malie Garden needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7672,7 +7688,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 130,
+          'dungeonIndex': 131,
           'hint': 'Hokulani Observatory needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -7905,7 +7921,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 132,
+          'dungeonIndex': 133,
           'hint': "Ula'ula Meadow needs to be completed.",
           '__class': 'ClearDungeonRequirement',
         },
@@ -7959,7 +7975,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 131,
+          'dungeonIndex': 132,
           'hint': 'Thrifty Megamart needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -8001,7 +8017,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 134,
+          'dungeonIndex': 135,
           'hint': 'Aether Foundation needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11889,7 +11905,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 152,
+              'dungeonIndex': 153,
               'hint': 'Dusty Bowl needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -12157,7 +12173,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 152,
+              'dungeonIndex': 153,
               'hint': 'Dusty Bowl needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -14286,7 +14302,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 153,
+              'dungeonIndex': 154,
               'hint': 'Courageous Cavern needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -14520,7 +14536,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 154,
+              'dungeonIndex': 155,
               'hint': "Brawlers' Cave needs to be completed.",
               '__class': 'ClearDungeonRequirement',
             },
@@ -14677,7 +14693,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 155,
+          'dungeonIndex': 156,
           'hint': 'Warm-Up Tunnel needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -14867,7 +14883,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 154,
+              'dungeonIndex': 155,
               'hint': "Brawlers' Cave needs to be completed.",
               '__class': 'ClearDungeonRequirement',
             },
@@ -16746,7 +16762,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 158,
+          'dungeonIndex': 159,
           'hint': 'Roaring-Sea Caves needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -17393,7 +17409,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 165,
+          'dungeonIndex': 166,
           'hint': 'Tunnel to the Top needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -20462,7 +20478,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20531,7 +20547,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20597,7 +20613,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20663,7 +20679,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20729,7 +20745,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20781,7 +20797,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -20832,7 +20848,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20884,7 +20900,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -20935,7 +20951,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -20987,7 +21003,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21038,7 +21054,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -21090,7 +21106,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21157,7 +21173,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21284,7 +21300,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21351,7 +21367,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21418,7 +21434,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21466,7 +21482,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -21532,7 +21548,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -21595,7 +21611,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -21647,7 +21663,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21695,7 +21711,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -21747,7 +21763,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21814,7 +21830,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -21971,7 +21987,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -22019,7 +22035,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -22085,7 +22101,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -22148,7 +22164,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -22200,7 +22216,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -22248,7 +22264,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -22300,7 +22316,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -22364,7 +22380,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -22482,7 +22498,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -22530,7 +22546,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -22675,7 +22691,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -22709,7 +22725,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -22729,7 +22745,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -22749,7 +22765,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -22826,7 +22842,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -22926,7 +22942,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -23049,6 +23065,13 @@ module.exports = {
           {
             'region': 0,
             'requirements': 'Requires the Elite Orange Champion badge.',
+            'roamingGroup': {
+              'name': 'Kanto - Sevii Islands',
+              'subRegions': [
+                1,
+                2,
+              ],
+            },
           },
         ],
       },
@@ -23086,6 +23109,13 @@ module.exports = {
           {
             'region': 0,
             'requirements': 'Requires the Elite Orange Champion badge.',
+            'roamingGroup': {
+              'name': 'Kanto - Sevii Islands',
+              'subRegions': [
+                1,
+                2,
+              ],
+            },
           },
         ],
       },
@@ -23119,7 +23149,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -23256,7 +23286,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -23335,7 +23365,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -23370,6 +23400,36 @@ module.exports = {
       'levelType': 2,
       'exp': 178,
       'eggCycles': 35,
+      'evolutions': [
+        {
+          'basePokemon': 'Beedrill',
+          'evolvedPokemon': 'Mega Beedrill',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Beedrill',
+              'hint': 'Beedrill needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Beedrill',
+              'hint': 'Beedrill holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 65,
         'attack': 90,
@@ -23414,7 +23474,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -23434,6 +23494,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Delta Giovanni'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -23445,7 +23506,7 @@ module.exports = {
         11,
         7,
       ],
-      'eggCycles': 15,
+      'eggCycles': 53,
       'levelType': 2,
       'exp': 223,
       'catchRate': 10,
@@ -23464,9 +23525,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Beedrill',
+            'evolvedPokemon': 'Mega Beedrill',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Beedrill',
+                'hint': 'Beedrill needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Beedrill',
+                'hint': 'Beedrill holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 5,
-      'eggSteps': 600,
+      'eggSteps': 2120,
     },
     {
       'id': 16,
@@ -23495,7 +23587,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -23645,7 +23737,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -23729,7 +23821,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -23809,7 +23901,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -23876,7 +23968,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -23918,6 +24010,36 @@ module.exports = {
       'levelType': 3,
       'exp': 216,
       'eggCycles': 35,
+      'evolutions': [
+        {
+          'basePokemon': 'Pidgeot',
+          'evolvedPokemon': 'Mega Pidgeot',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Pidgeot',
+              'hint': 'Pidgeot needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Pidgeot',
+              'hint': 'Pidgeot holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 83,
         'attack': 80,
@@ -23950,7 +24072,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -23970,6 +24092,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Mr. Stone'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1400,
@@ -23981,7 +24104,7 @@ module.exports = {
         0,
         9,
       ],
-      'eggCycles': 15,
+      'eggCycles': 53,
       'levelType': 2,
       'exp': 261,
       'catchRate': 10,
@@ -24000,9 +24123,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Pidgeot',
+            'evolvedPokemon': 'Mega Pidgeot',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Pidgeot',
+                'hint': 'Pidgeot needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Pidgeot',
+                'hint': 'Pidgeot holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 5,
-      'eggSteps': 600,
+      'eggSteps': 2120,
     },
     {
       'id': 19,
@@ -24028,7 +24182,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -24062,7 +24216,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -24192,7 +24346,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -24391,7 +24545,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -24486,7 +24640,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -24619,7 +24773,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -24896,7 +25050,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -24944,7 +25098,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -24978,7 +25132,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -25095,7 +25249,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -25170,7 +25324,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -25206,7 +25360,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -25303,7 +25457,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -25710,19 +25864,19 @@ module.exports = {
       'exp': 112,
       'eggCycles': 10,
       'base': {
-        'hitpoints': 35,
-        'attack': 55,
-        'specialAttack': 50,
-        'defense': 40,
-        'specialDefense': 50,
-        'speed': 90,
+        'hitpoints': 45,
+        'attack': 80,
+        'specialAttack': 75,
+        'defense': 50,
+        'specialDefense': 60,
+        'speed': 120,
       },
       'gender': {
         'femaleRatio': 1,
         'type': 1,
         'visualDifference': false,
       },
-      'attack': 43,
+      'attack': 76,
       'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 18,
@@ -25769,7 +25923,7 @@ module.exports = {
         {
           'basePokemon': 'Detective Pikachu',
           'evolvedPokemon': 'Detective Raichu',
-          'trigger': 0,
+          'trigger': 2,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -25781,10 +25935,18 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'questLineName': 'Detective Pikachu',
+              'hint': 'The Detective Pikachu quest line needs to be completed first.',
+              '__class': 'QuestLineRequirement',
+            },
           ],
+          'stone': 3,
         },
       ],
       'base': {
@@ -25868,7 +26030,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -25937,7 +26099,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -25979,6 +26141,36 @@ module.exports = {
       'attack': 108,
       'nativeRegion': 0,
       'locations': {
+        '5': [
+          {
+            'basePokemon': 'Detective Pikachu',
+            'evolvedPokemon': 'Detective Raichu',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Detective Pikachu',
+                'hint': 'Detective Pikachu needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'questLineName': 'Detective Pikachu',
+                'hint': 'The Detective Pikachu quest line needs to be completed first.',
+                '__class': 'QuestLineRequirement',
+              },
+            ],
+            'stone': 3,
+          },
+        ],
         '14': ['Detective Pikachu'],
       },
       'catchRatePercent': 25,
@@ -26008,7 +26200,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -26114,7 +26306,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -26226,7 +26418,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -26293,7 +26485,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -26328,7 +26520,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -26479,7 +26671,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -26535,7 +26727,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -26639,7 +26831,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -26674,7 +26866,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -26825,7 +27017,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -26846,7 +27038,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -26896,7 +27088,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -27000,7 +27192,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27071,7 +27263,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -27143,7 +27335,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27225,7 +27417,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27260,7 +27452,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -27381,7 +27573,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -27456,7 +27648,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27510,7 +27702,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27548,7 +27740,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -27628,7 +27820,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27716,7 +27908,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -27754,7 +27946,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -27912,7 +28104,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -28005,7 +28197,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -28056,7 +28248,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -28277,7 +28469,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -28298,7 +28490,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -28318,7 +28510,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -28338,7 +28530,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -28465,7 +28657,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -28588,7 +28780,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -28702,7 +28894,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -28890,7 +29082,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -28946,7 +29138,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -29097,7 +29289,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -29145,7 +29337,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -29241,7 +29433,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -29396,7 +29588,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -29477,7 +29669,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -29525,7 +29717,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -29668,7 +29860,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -29730,7 +29922,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -29847,7 +30039,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -29911,7 +30103,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -29946,7 +30138,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -30250,7 +30442,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -30298,7 +30490,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -30391,7 +30583,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -30490,7 +30682,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -30559,7 +30751,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -30607,7 +30799,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -30751,7 +30943,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -30786,7 +30978,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -30820,7 +31012,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -30954,7 +31146,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -30975,7 +31167,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -31102,7 +31294,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -31205,7 +31397,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -31240,7 +31432,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -31355,7 +31547,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -31424,7 +31616,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -31472,14 +31664,14 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Alakazam',
-              'hint': "Can't mega evolve Alakazam yet.",
+              'hint': 'Alakazam holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -31538,7 +31730,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -31589,14 +31781,14 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Alakazam',
-                'hint': "Can't mega evolve Alakazam yet.",
+                'hint': 'Alakazam holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -31631,7 +31823,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -31759,7 +31951,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -31880,7 +32072,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -31976,7 +32168,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -32041,7 +32233,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -32075,7 +32267,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -32229,7 +32421,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -32318,7 +32510,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -32423,7 +32615,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -32461,7 +32653,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -32960,7 +33152,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -33011,7 +33203,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -33156,7 +33348,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -33263,7 +33455,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -33378,7 +33570,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -33430,7 +33622,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -33478,7 +33670,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -33549,7 +33741,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -33603,7 +33795,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -33638,7 +33830,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -33737,7 +33929,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -33838,7 +34030,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -33918,7 +34110,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -33969,7 +34161,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34003,7 +34195,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -34150,7 +34342,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -34171,7 +34363,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -34215,6 +34407,36 @@ module.exports = {
       'levelType': 2,
       'exp': 172,
       'eggCycles': 30,
+      'evolutions': [
+        {
+          'basePokemon': 'Slowbro',
+          'evolvedPokemon': 'Mega Slowbro',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Slowbro',
+              'hint': 'Slowbro needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Slowbro',
+              'hint': 'Slowbro holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 95,
         'attack': 75,
@@ -34266,7 +34488,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -34286,6 +34508,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Shoal Fisherman'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
@@ -34297,7 +34520,7 @@ module.exports = {
         2,
         10,
       ],
-      'eggCycles': 20,
+      'eggCycles': 45,
       'levelType': 2,
       'exp': 207,
       'catchRate': 10,
@@ -34316,9 +34539,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Slowbro',
+            'evolvedPokemon': 'Mega Slowbro',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Slowbro',
+                'hint': 'Slowbro needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Slowbro',
+                'hint': 'Slowbro holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 5,
-      'eggSteps': 800,
+      'eggSteps': 1800,
     },
     {
       'id': 80.02,
@@ -34363,7 +34617,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -34401,7 +34655,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34499,7 +34753,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34547,7 +34801,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34595,7 +34849,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34643,7 +34897,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34691,7 +34945,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34739,7 +34993,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -34817,7 +35071,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -34927,7 +35181,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -35017,7 +35271,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -35051,7 +35305,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -35164,7 +35418,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -35244,7 +35498,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -35352,7 +35606,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -35400,7 +35654,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -35474,7 +35728,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -35565,7 +35819,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -35632,7 +35886,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -35680,7 +35934,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -35849,7 +36103,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -35887,7 +36141,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -36020,7 +36274,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -36124,7 +36378,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -36175,14 +36429,14 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Gengar',
-              'hint': "Can't mega evolve Gengar yet.",
+              'hint': 'Gengar holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -36257,7 +36511,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -36312,14 +36566,14 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Gengar',
-                'hint': "Can't mega evolve Gengar yet.",
+                'hint': 'Gengar holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -36387,7 +36641,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -36505,7 +36759,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -36565,7 +36819,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -36679,7 +36933,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -36727,7 +36981,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -37081,7 +37335,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -37156,7 +37410,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -37280,7 +37534,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -37331,7 +37585,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -37367,7 +37621,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -37395,7 +37649,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -37565,7 +37819,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -37634,7 +37888,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -37714,7 +37968,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -37763,7 +38017,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -37919,7 +38173,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -38015,7 +38269,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -38138,7 +38392,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -38204,7 +38458,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -38252,7 +38506,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -38352,7 +38606,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -38401,7 +38655,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -38442,7 +38696,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -38545,7 +38799,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -38640,7 +38894,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -38725,7 +38979,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -38842,7 +39096,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -38910,7 +39164,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -39019,7 +39273,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -39091,7 +39345,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -39139,7 +39393,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -39454,7 +39708,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -39495,7 +39749,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -39538,7 +39792,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -39575,7 +39829,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -39679,14 +39933,14 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Kangaskhan',
-              'hint': "Can't mega evolve Kangaskhan yet.",
+              'hint': 'Kangaskhan holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -39779,14 +40033,14 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Kangaskhan',
-                'hint': "Can't mega evolve Kangaskhan yet.",
+                'hint': 'Kangaskhan holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -39821,7 +40075,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -39976,7 +40230,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -40076,7 +40330,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -40124,7 +40378,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -40464,7 +40718,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -40512,7 +40766,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -40663,7 +40917,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -40725,7 +40979,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -40794,7 +41048,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -40859,7 +41113,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -40918,7 +41172,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -41064,7 +41318,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -41114,7 +41368,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -41200,7 +41454,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -41277,7 +41531,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -41368,7 +41622,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -41582,7 +41836,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -42657,6 +42911,10 @@ module.exports = {
           {
             'region': 6,
             'requirements': 'Requires the Luxury League badge.',
+            'roamingGroup': {
+              'name': 'Alola - Magikarp Jump',
+              'subRegions': [4],
+            },
           },
         ],
       },
@@ -42790,6 +43048,10 @@ module.exports = {
           {
             'region': 6,
             'requirements': 'Requires the Heal League badge.',
+            'roamingGroup': {
+              'name': 'Alola - Magikarp Jump',
+              'subRegions': [4],
+            },
           },
         ],
       },
@@ -43101,6 +43363,10 @@ module.exports = {
           {
             'region': 6,
             'requirements': 'Requires the Master League badge.',
+            'roamingGroup': {
+              'name': 'Alola - Magikarp Jump',
+              'subRegions': [4],
+            },
           },
         ],
       },
@@ -43461,7 +43727,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -43796,7 +44062,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -43817,7 +44083,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -43838,7 +44104,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -43859,7 +44125,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -43890,7 +44156,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -43921,7 +44187,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -43969,7 +44235,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44017,7 +44283,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44065,7 +44331,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44113,7 +44379,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44161,7 +44427,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44209,7 +44475,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44257,7 +44523,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44305,7 +44571,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44339,7 +44605,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44367,7 +44633,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44431,6 +44697,7 @@ module.exports = {
         },
         '2': ['Hall of Origin'],
         '8': ['Celadon City'],
+        '14': ["Bill's Grandpa Treasure Hunt"],
       },
       'catchRatePercent': 63,
       'eggSteps': 1400,
@@ -44471,19 +44738,19 @@ module.exports = {
       'exp': 65,
       'eggCycles': 35,
       'base': {
-        'hitpoints': 55,
-        'attack': 55,
-        'specialAttack': 45,
-        'defense': 50,
-        'specialDefense': 65,
-        'speed': 55,
+        'hitpoints': 65,
+        'attack': 75,
+        'specialAttack': 65,
+        'defense': 70,
+        'specialDefense': 85,
+        'speed': 75,
       },
       'gender': {
         'femaleRatio': 0,
         'type': 1,
         'visualDifference': false,
       },
-      'attack': 54,
+      'attack': 93,
       'nativeRegion': 0,
       'locations': {},
       'catchRatePercent': 18,
@@ -44541,7 +44808,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -44604,7 +44871,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -44667,7 +44934,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -44702,7 +44969,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -44757,7 +45024,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -44856,7 +45123,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -44907,7 +45174,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -45006,7 +45273,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -45057,14 +45324,14 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Aerodactyl',
-              'hint': "Can't mega evolve Aerodactyl yet.",
+              'hint': 'Aerodactyl holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -45144,14 +45411,14 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Aerodactyl',
-                'hint': "Can't mega evolve Aerodactyl yet.",
+                'hint': 'Aerodactyl holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -45295,7 +45562,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -45378,7 +45645,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -45420,6 +45687,10 @@ module.exports = {
           {
             'region': 5,
             'requirements': "Sea Spirit's Den needs to be completed.",
+            'roamingGroup': {
+              'name': 'Kalos',
+              'subRegions': [0],
+            },
           },
         ],
         '3': [
@@ -45462,6 +45733,10 @@ module.exports = {
           {
             'region': 7,
             'requirements': 'Progress further in questline The Birds of the Dyna Tree.',
+            'roamingGroup': {
+              'name': 'Galar - Crown Tundra',
+              'subRegions': [3],
+            },
           },
         ],
       },
@@ -45499,6 +45774,10 @@ module.exports = {
           {
             'region': 5,
             'requirements': "Sea Spirit's Den needs to be completed.",
+            'roamingGroup': {
+              'name': 'Kalos',
+              'subRegions': [0],
+            },
           },
         ],
         '3': [
@@ -45541,6 +45820,10 @@ module.exports = {
           {
             'region': 7,
             'requirements': 'Progress further in questline The Birds of the Dyna Tree.',
+            'roamingGroup': {
+              'name': 'Galar - South',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -45578,6 +45861,10 @@ module.exports = {
           {
             'region': 5,
             'requirements': "Sea Spirit's Den needs to be completed.",
+            'roamingGroup': {
+              'name': 'Kalos',
+              'subRegions': [0],
+            },
           },
         ],
         '3': [
@@ -45620,6 +45907,10 @@ module.exports = {
           {
             'region': 7,
             'requirements': 'Progress further in questline The Birds of the Dyna Tree.',
+            'roamingGroup': {
+              'name': 'Galar - Isle of Armor',
+              'subRegions': [2],
+            },
           },
         ],
       },
@@ -45650,7 +45941,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -45746,7 +46037,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -45824,7 +46115,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -45913,7 +46204,7 @@ module.exports = {
               {
                 'requiredValue': 0,
                 'option': 2,
-                'hint': 'You need to reach the kanto region.',
+                'hint': 'You need to reach the Kanto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46089,6 +46380,10 @@ module.exports = {
         '1': [
           {
             'region': 0,
+            'roamingGroup': {
+              'name': 'Kanto',
+              'subRegions': [0],
+            },
           },
         ],
         '12': ['Petaya'],
@@ -46120,7 +46415,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46186,7 +46481,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46238,7 +46533,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46302,7 +46597,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46350,7 +46645,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46416,7 +46711,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46468,7 +46763,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46532,7 +46827,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46580,7 +46875,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46646,7 +46941,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46698,7 +46993,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46762,7 +47057,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46810,7 +47105,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -46915,7 +47210,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -46966,7 +47261,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -47237,7 +47532,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -47288,7 +47583,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -47463,7 +47758,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -47514,7 +47809,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -47669,7 +47964,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -47736,7 +48031,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -47774,7 +48069,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -48012,7 +48307,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -48060,7 +48355,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48156,7 +48451,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48224,7 +48519,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48287,7 +48582,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48358,7 +48653,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48443,7 +48738,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48490,7 +48785,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -48529,7 +48824,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -48568,7 +48863,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -48607,7 +48902,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -48846,7 +49141,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -48894,7 +49189,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -48977,7 +49272,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -49039,7 +49334,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -49087,14 +49382,14 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Ampharos',
-              'hint': "Can't mega evolve Ampharos yet.",
+              'hint': 'Ampharos holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -49134,7 +49429,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -49201,14 +49496,14 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Ampharos',
-                'hint': "Can't mega evolve Ampharos yet.",
+                'hint': 'Ampharos holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -49267,7 +49562,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -49305,7 +49600,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -49440,7 +49735,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -49529,7 +49824,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -49634,7 +49929,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -49729,7 +50024,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -49767,7 +50062,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -49895,7 +50190,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -49948,7 +50243,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -50015,7 +50310,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -50061,7 +50356,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -50153,7 +50448,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -50232,7 +50527,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -50270,7 +50565,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -50356,7 +50651,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -50613,7 +50908,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -50689,7 +50984,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -50762,7 +51057,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -50810,7 +51105,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -50893,7 +51188,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -50947,7 +51242,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -50982,7 +51277,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -52260,7 +52555,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -52355,7 +52650,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -52498,7 +52793,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -52603,7 +52898,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -52674,6 +52969,36 @@ module.exports = {
       'levelType': 2,
       'exp': 179,
       'eggCycles': 38,
+      'evolutions': [
+        {
+          'basePokemon': 'Steelix',
+          'evolvedPokemon': 'Mega Steelix',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Steelix',
+              'hint': 'Steelix needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'hint': 'You need to reach the Johto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Steelix',
+              'hint': 'Steelix holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 75,
         'attack': 85,
@@ -52729,13 +53054,14 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
             'stone': 8,
           },
         ],
+        '15': ['Delta Brock'],
       },
       'catchRatePercent': 11,
       'eggSteps': 1520,
@@ -52747,7 +53073,7 @@ module.exports = {
         16,
         8,
       ],
-      'eggCycles': 25,
+      'eggCycles': 57,
       'levelType': 2,
       'exp': 351,
       'catchRate': 2,
@@ -52766,9 +53092,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Steelix',
+            'evolvedPokemon': 'Mega Steelix',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Steelix',
+                'hint': 'Steelix needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'hint': 'You need to reach the Johto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Steelix',
+                'hint': 'Steelix holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 1000,
+      'eggSteps': 2280,
     },
     {
       'id': 208.02,
@@ -52813,7 +53170,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -52848,7 +53205,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -52967,7 +53324,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -53120,7 +53477,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -53260,14 +53617,14 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Heracross',
-              'hint': "Can't mega evolve Heracross yet.",
+              'hint': 'Heracross holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -53399,14 +53756,14 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Heracross',
-                'hint': "Can't mega evolve Heracross yet.",
+                'hint': 'Heracross holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -53444,7 +53801,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -53597,7 +53954,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -53707,7 +54064,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -53755,7 +54112,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -53857,7 +54214,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -53908,7 +54265,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -54016,7 +54373,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -54100,7 +54457,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -54207,7 +54564,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -54277,7 +54634,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -54534,7 +54891,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -54754,7 +55111,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -54874,7 +55231,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -54940,6 +55297,36 @@ module.exports = {
       'levelType': 4,
       'exp': 175,
       'eggCycles': 30,
+      'evolutions': [
+        {
+          'basePokemon': 'Houndoom',
+          'evolvedPokemon': 'Mega Houndoom',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Houndoom',
+              'hint': 'Houndoom needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'hint': 'You need to reach the Johto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Houndoom',
+              'hint': 'Houndoom holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 75,
         'attack': 90,
@@ -54979,7 +55366,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -54999,6 +55386,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Wild Houndour Horde'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -55010,7 +55398,7 @@ module.exports = {
         1,
         15,
       ],
-      'eggCycles': 20,
+      'eggCycles': 45,
       'levelType': 4,
       'exp': 351,
       'catchRate': 2,
@@ -55029,9 +55417,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Houndoom',
+            'evolvedPokemon': 'Mega Houndoom',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Houndoom',
+                'hint': 'Houndoom needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'hint': 'You need to reach the Johto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Houndoom',
+                'hint': 'Houndoom holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 800,
+      'eggSteps': 1800,
     },
     {
       'id': 230,
@@ -55088,7 +55507,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -55123,7 +55542,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -55227,7 +55646,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -55275,7 +55694,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -55318,7 +55737,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -55444,7 +55863,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -55478,7 +55897,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -55512,7 +55931,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -55642,7 +56061,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -55693,7 +56112,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -55774,7 +56193,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -55879,7 +56298,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -56121,7 +56540,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -56176,7 +56595,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -56215,10 +56634,21 @@ module.exports = {
           {
             'region': 0,
             'requirements': "Questline Celio's Errand needs to be completed.",
+            'roamingGroup': {
+              'name': 'Kanto - Sevii Islands',
+              'subRegions': [
+                1,
+                2,
+              ],
+            },
           },
           {
             'region': 1,
             'requirements': 'Progress further in questline The Legendary Beasts.',
+            'roamingGroup': {
+              'name': 'Johto',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -56253,10 +56683,21 @@ module.exports = {
           {
             'region': 0,
             'requirements': "Questline Celio's Errand needs to be completed.",
+            'roamingGroup': {
+              'name': 'Kanto - Sevii Islands',
+              'subRegions': [
+                1,
+                2,
+              ],
+            },
           },
           {
             'region': 1,
             'requirements': 'Progress further in questline The Legendary Beasts.',
+            'roamingGroup': {
+              'name': 'Johto',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -56291,6 +56732,13 @@ module.exports = {
           {
             'region': 0,
             'requirements': "Questline Celio's Errand needs to be completed and Suicune needs to be caught.",
+            'roamingGroup': {
+              'name': 'Kanto - Sevii Islands',
+              'subRegions': [
+                1,
+                2,
+              ],
+            },
           },
         ],
         '15': ['Suicune 6'],
@@ -56325,7 +56773,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -56418,7 +56866,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -56489,7 +56937,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -56540,14 +56988,14 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Tyranitar',
-              'hint': "Can't mega evolve Tyranitar yet.",
+              'hint': 'Tyranitar holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -56594,7 +57042,7 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -56662,14 +57110,14 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 2,
-                'hint': 'You need to reach the johto region.',
+                'hint': 'You need to reach the Johto region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Tyranitar',
-                'hint': "Can't mega evolve Tyranitar yet.",
+                'hint': 'Tyranitar holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -56892,7 +57340,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -56958,7 +57406,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57010,7 +57458,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57074,7 +57522,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57152,7 +57600,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57221,7 +57669,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57273,7 +57721,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57340,7 +57788,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57418,7 +57866,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57487,7 +57935,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57539,7 +57987,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57606,7 +58054,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57684,7 +58132,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57817,7 +58265,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -57865,7 +58313,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -57961,7 +58409,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58102,7 +58550,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -58154,7 +58602,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58254,7 +58702,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -58302,7 +58750,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58336,7 +58784,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58425,7 +58873,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58488,7 +58936,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -58574,7 +59022,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -58622,7 +59070,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58685,7 +59133,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -58771,7 +59219,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -58822,7 +59270,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -58931,7 +59379,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -59021,7 +59469,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -59108,7 +59556,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -59143,7 +59591,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -59252,7 +59700,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -59330,7 +59778,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -59417,7 +59865,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -59455,7 +59903,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -59559,7 +60007,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -59610,7 +60058,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -60210,7 +60658,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -60261,7 +60709,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -60389,7 +60837,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -60423,7 +60871,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -60479,7 +60927,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -60530,14 +60978,14 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Gardevoir',
-              'hint': "Can't mega evolve Gardevoir yet.",
+              'hint': 'Gardevoir holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -60609,7 +61057,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -60677,14 +61125,14 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Gardevoir',
-                'hint': "Can't mega evolve Gardevoir yet.",
+                'hint': 'Gardevoir holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -60722,7 +61170,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -60840,7 +61288,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -60888,7 +61336,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -60981,7 +61429,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61029,7 +61477,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61100,7 +61548,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61153,7 +61601,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61222,7 +61670,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61273,7 +61721,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61307,7 +61755,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61435,7 +61883,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61502,7 +61950,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61551,7 +61999,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61628,7 +62076,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61684,7 +62132,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61753,7 +62201,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61801,7 +62249,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -61915,7 +62363,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -61966,7 +62414,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -62038,7 +62486,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62086,7 +62534,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62134,7 +62582,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62182,7 +62630,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62230,7 +62678,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62331,7 +62779,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -62411,7 +62859,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -62449,14 +62897,14 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Sableye',
-              'hint': "Can't mega evolve Sableye yet.",
+              'hint': 'Sableye holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -62540,14 +62988,14 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Sableye',
-                'hint': "Can't mega evolve Sableye yet.",
+                'hint': 'Sableye holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -62585,14 +63033,14 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Mawile',
-              'hint': "Can't mega evolve Mawile yet.",
+              'hint': 'Mawile holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -62694,14 +63142,14 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Mawile',
-                'hint': "Can't mega evolve Mawile yet.",
+                'hint': 'Mawile holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -62739,7 +63187,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62825,7 +63273,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -62894,7 +63342,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -62945,14 +63393,14 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Aggron',
-              'hint': "Can't mega evolve Aggron yet.",
+              'hint': 'Aggron holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -63001,7 +63449,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -63066,14 +63514,14 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Aggron',
-                'hint': "Can't mega evolve Aggron yet.",
+                'hint': 'Aggron holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -63111,7 +63559,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -63228,7 +63676,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -63306,7 +63754,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -63405,6 +63853,36 @@ module.exports = {
       'levelType': 4,
       'exp': 166,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Manectric',
+          'evolvedPokemon': 'Mega Manectric',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Manectric',
+              'hint': 'Manectric needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Manectric',
+              'hint': 'Manectric holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 70,
         'attack': 75,
@@ -63468,7 +63946,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -63488,6 +63966,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Wild Electrike Horde'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1200,
@@ -63496,7 +63975,7 @@ module.exports = {
       'id': 310.01,
       'name': 'Mega Manectric',
       'type': [3],
-      'eggCycles': 20,
+      'eggCycles': 45,
       'levelType': 4,
       'exp': 351,
       'catchRate': 2,
@@ -63515,9 +63994,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Manectric',
+            'evolvedPokemon': 'Mega Manectric',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Manectric',
+                'hint': 'Manectric needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Manectric',
+                'hint': 'Manectric holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 800,
+      'eggSteps': 1800,
     },
     {
       'id': 311,
@@ -63753,7 +64263,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -63891,7 +64401,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -63938,7 +64448,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -64038,7 +64548,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -64089,7 +64599,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -64169,6 +64679,36 @@ module.exports = {
       'levelType': 4,
       'exp': 161,
       'catchRate': 60,
+      'evolutions': [
+        {
+          'basePokemon': 'Sharpedo',
+          'evolvedPokemon': 'Mega Sharpedo',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Sharpedo',
+              'hint': 'Sharpedo needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Sharpedo',
+              'hint': 'Sharpedo holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 70,
         'attack': 120,
@@ -64270,7 +64810,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -64290,6 +64830,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Delta Shelly'],
       },
       'catchRatePercent': 21,
       'eggSteps': 1200,
@@ -64301,7 +64842,7 @@ module.exports = {
         2,
         15,
       ],
-      'eggCycles': 20,
+      'eggCycles': 45,
       'levelType': 4,
       'exp': 351,
       'catchRate': 2,
@@ -64320,9 +64861,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Sharpedo',
+            'evolvedPokemon': 'Mega Sharpedo',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Sharpedo',
+                'hint': 'Sharpedo needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Sharpedo',
+                'hint': 'Sharpedo holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 800,
+      'eggSteps': 1800,
     },
     {
       'id': 320,
@@ -64348,7 +64920,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -64567,7 +65139,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -64618,7 +65190,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -64689,6 +65261,36 @@ module.exports = {
       'levelType': 2,
       'exp': 161,
       'catchRate': 150,
+      'evolutions': [
+        {
+          'basePokemon': 'Camerupt',
+          'evolvedPokemon': 'Mega Camerupt',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Camerupt',
+              'hint': 'Camerupt needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Camerupt',
+              'hint': 'Camerupt holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 70,
         'attack': 100,
@@ -64732,7 +65334,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -64752,6 +65354,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Delta Tabitha'],
       },
       'catchRatePercent': 42,
       'eggSteps': 1200,
@@ -64763,7 +65366,7 @@ module.exports = {
         1,
         8,
       ],
-      'eggCycles': 20,
+      'eggCycles': 45,
       'levelType': 2,
       'exp': 351,
       'catchRate': 2,
@@ -64782,9 +65385,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Camerupt',
+            'evolvedPokemon': 'Mega Camerupt',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Camerupt',
+                'hint': 'Camerupt needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Camerupt',
+                'hint': 'Camerupt holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 800,
+      'eggSteps': 1800,
     },
     {
       'id': 324,
@@ -64879,7 +65513,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -64972,7 +65606,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -65065,7 +65699,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -65165,7 +65799,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -65222,7 +65856,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -65302,7 +65936,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -65350,7 +65984,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -65457,7 +66091,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -65508,7 +66142,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -65697,7 +66331,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -65900,6 +66534,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Near Space',
           'Giant Chasm',
           'Glittering Cave',
           'Lake of the Sunne and Moone',
@@ -65960,6 +66595,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Near Space',
           'Giant Chasm',
           'Glittering Cave',
           'Lake of the Sunne and Moone',
@@ -66000,7 +66636,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -66274,7 +66910,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -66322,7 +66958,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -66526,7 +67162,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -66577,7 +67213,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -66793,7 +67429,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -66844,7 +67480,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -66940,7 +67576,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -66991,7 +67627,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -67091,7 +67727,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -67139,7 +67775,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -67248,7 +67884,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -67482,7 +68118,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -67604,7 +68240,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -67679,7 +68315,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -67779,7 +68415,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -67854,7 +68490,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -67981,7 +68617,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -68026,14 +68662,14 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Absol',
-              'hint': "Can't mega evolve Absol yet.",
+              'hint': 'Absol holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -68167,14 +68803,14 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Absol',
-                'hint': "Can't mega evolve Absol yet.",
+                'hint': 'Absol holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -68209,7 +68845,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -68282,7 +68918,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -68316,7 +68952,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -68468,6 +69104,36 @@ module.exports = {
       'levelType': 2,
       'exp': 168,
       'catchRate': 75,
+      'evolutions': [
+        {
+          'basePokemon': 'Glalie',
+          'evolvedPokemon': 'Mega Glalie',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Glalie',
+              'hint': 'Glalie needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Glalie',
+              'hint': 'Glalie holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 80,
         'attack': 80,
@@ -68548,6 +69214,10 @@ module.exports = {
         ],
         '3': [
           {
+            'dungeon': 'Shoal Cave',
+            'requirements': 'Requires beating Icy Boulder.',
+          },
+          {
             'dungeon': 'Mount Lanakila',
           },
           {
@@ -68570,7 +69240,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -68590,6 +69260,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Icy Boulder'],
       },
       'catchRatePercent': 25,
       'eggSteps': 1200,
@@ -68598,7 +69269,7 @@ module.exports = {
       'id': 362.01,
       'name': 'Mega Glalie',
       'type': [5],
-      'eggCycles': 20,
+      'eggCycles': 45,
       'levelType': 2,
       'exp': 351,
       'catchRate': 2,
@@ -68617,9 +69288,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Glalie',
+            'evolvedPokemon': 'Mega Glalie',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Glalie',
+                'hint': 'Glalie needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Glalie',
+                'hint': 'Glalie holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 800,
+      'eggSteps': 1800,
     },
     {
       'id': 363,
@@ -68648,7 +69350,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -68732,7 +69434,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -68821,7 +69523,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -68912,7 +69614,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -68960,7 +69662,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -68981,7 +69683,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -69085,7 +69787,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -69140,7 +69842,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -69311,7 +70013,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -69397,7 +70099,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -69460,7 +70162,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -69496,6 +70198,36 @@ module.exports = {
       'levelType': 4,
       'exp': 270,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Salamence',
+          'evolvedPokemon': 'Mega Salamence',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Salamence',
+              'hint': 'Salamence needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Salamence',
+              'hint': 'Salamence holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 95,
         'attack': 135,
@@ -69545,7 +70277,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -69566,6 +70298,7 @@ module.exports = {
           },
         ],
         '6': ['Dragon'],
+        '15': ['Mega Draconid Elder'],
       },
       'catchRatePercent': 17,
       'eggSteps': 3600,
@@ -69577,7 +70310,7 @@ module.exports = {
         14,
         9,
       ],
-      'eggCycles': 40,
+      'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
       'catchRate': 2,
@@ -69596,9 +70329,40 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Salamence',
+            'evolvedPokemon': 'Mega Salamence',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Salamence',
+                'hint': 'Salamence needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Salamence',
+                'hint': 'Salamence holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 1600,
+      'eggSteps': 4800,
     },
     {
       'id': 374,
@@ -69627,7 +70391,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -69712,7 +70476,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -69779,7 +70543,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -69814,6 +70578,36 @@ module.exports = {
       'levelType': 4,
       'exp': 270,
       'catchRate': 3,
+      'evolutions': [
+        {
+          'basePokemon': 'Metagross',
+          'evolvedPokemon': 'Mega Metagross',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Metagross',
+              'hint': 'Metagross needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Metagross',
+              'hint': 'Metagross holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 80,
         'attack': 135,
@@ -69863,7 +70657,7 @@ module.exports = {
               {
                 'requiredValue': 2,
                 'option': 2,
-                'hint': 'You need to reach the hoenn region.',
+                'hint': 'You need to reach the Hoenn region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -69883,6 +70677,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Delta Steven'],
       },
       'catchRatePercent': 2,
       'eggSteps': 3600,
@@ -69894,7 +70689,7 @@ module.exports = {
         16,
         10,
       ],
-      'eggCycles': 40,
+      'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
       'catchRate': 2,
@@ -69913,9 +70708,40 @@ module.exports = {
       },
       'attack': 226,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Metagross',
+            'evolvedPokemon': 'Mega Metagross',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Metagross',
+                'hint': 'Metagross needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Metagross',
+                'hint': 'Metagross holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 1600,
+      'eggSteps': 4800,
     },
     {
       'id': 377,
@@ -70042,6 +70868,36 @@ module.exports = {
       'levelType': 4,
       'exp': 270,
       'catchRate': 3,
+      'evolutions': [
+        {
+          'basePokemon': 'Latias',
+          'evolvedPokemon': 'Mega Latias',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Latias',
+              'hint': 'Latias needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Latias',
+              'hint': 'Latias holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 80,
         'attack': 80,
@@ -70066,6 +70922,10 @@ module.exports = {
           {
             'region': 2,
             'requirements': 'Progress further in questline The Eon Duo.',
+            'roamingGroup': {
+              'name': 'Hoenn',
+              'subRegions': [0],
+            },
           },
         ],
         '3': [
@@ -70073,7 +70933,10 @@ module.exports = {
             'dungeon': 'Dreamyard',
           },
         ],
-        '15': ['Latias'],
+        '15': [
+          'Latias',
+          'Matt 3',
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -70104,7 +70967,38 @@ module.exports = {
       },
       'attack': 222,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Latias',
+            'evolvedPokemon': 'Mega Latias',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Latias',
+                'hint': 'Latias needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Latias',
+                'hint': 'Latias holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
       'eggSteps': 4800,
     },
@@ -70119,6 +71013,36 @@ module.exports = {
       'levelType': 4,
       'exp': 270,
       'catchRate': 3,
+      'evolutions': [
+        {
+          'basePokemon': 'Latios',
+          'evolvedPokemon': 'Mega Latios',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Latios',
+              'hint': 'Latios needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Latios',
+              'hint': 'Latios holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 80,
         'attack': 90,
@@ -70143,6 +71067,10 @@ module.exports = {
           {
             'region': 2,
             'requirements': 'Progress further in questline The Eon Duo.',
+            'roamingGroup': {
+              'name': 'Hoenn',
+              'subRegions': [0],
+            },
           },
         ],
         '3': [
@@ -70150,7 +71078,10 @@ module.exports = {
             'dungeon': 'Dreamyard',
           },
         ],
-        '15': ['Latios'],
+        '15': [
+          'Latios',
+          'Courtney 3',
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -70181,7 +71112,38 @@ module.exports = {
       },
       'attack': 242,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Latios',
+            'evolvedPokemon': 'Mega Latios',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Latios',
+                'hint': 'Latios needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Latios',
+                'hint': 'Latios holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
       'eggSteps': 4800,
     },
@@ -70350,6 +71312,36 @@ module.exports = {
       'levelType': 4,
       'exp': 306,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Rayquaza',
+          'evolvedPokemon': 'Mega Rayquaza',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Rayquaza',
+              'hint': 'Rayquaza needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Rayquaza',
+              'hint': 'Rayquaza holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 105,
         'attack': 150,
@@ -70372,6 +71364,7 @@ module.exports = {
             'requirements': 'Progress further in questline The Weather Trio.',
           },
         ],
+        '14': ['The Delta Episode'],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -70402,7 +71395,38 @@ module.exports = {
       },
       'attack': 329,
       'nativeRegion': 2,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Rayquaza',
+            'evolvedPokemon': 'Mega Rayquaza',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Rayquaza',
+                'hint': 'Rayquaza needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Rayquaza',
+                'hint': 'Rayquaza holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
       'eggSteps': 4800,
     },
@@ -70441,6 +71465,10 @@ module.exports = {
           {
             'region': 2,
             'requirements': 'Progress further in questline Wish Maker.',
+            'roamingGroup': {
+              'name': 'Hoenn',
+              'subRegions': [0],
+            },
           },
         ],
         '12': ['Starf'],
@@ -70472,6 +71500,11 @@ module.exports = {
       'attack': 144,
       'nativeRegion': 2,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Near Space',
+          },
+        ],
         '11': [100],
       },
       'catchRatePercent': 2,
@@ -70501,6 +71534,11 @@ module.exports = {
       'attack': 122,
       'nativeRegion': 2,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Near Space',
+          },
+        ],
         '11': [151],
       },
       'catchRatePercent': 2,
@@ -70530,6 +71568,11 @@ module.exports = {
       'attack': 116,
       'nativeRegion': 2,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Near Space',
+          },
+        ],
         '11': [251],
       },
       'catchRatePercent': 2,
@@ -70559,6 +71602,11 @@ module.exports = {
       'attack': 124,
       'nativeRegion': 2,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Near Space',
+          },
+        ],
         '11': [386],
       },
       'catchRatePercent': 2,
@@ -70588,7 +71636,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -70654,7 +71702,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -70706,7 +71754,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -70773,7 +71821,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -70821,7 +71869,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -70890,7 +71938,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -70942,7 +71990,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71009,7 +72057,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71057,7 +72105,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -71123,7 +72171,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -71175,7 +72223,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71242,7 +72290,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71293,7 +72341,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -71377,7 +72425,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -71454,7 +72502,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71521,7 +72569,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71569,7 +72617,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -71712,7 +72760,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71760,7 +72808,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -71870,7 +72918,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -71918,7 +72966,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72018,7 +73066,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72099,7 +73147,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -72196,7 +73244,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -72247,7 +73295,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72403,7 +73451,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -72438,7 +73486,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72519,7 +73567,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -72570,7 +73618,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72654,7 +73702,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -72702,7 +73750,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72736,7 +73784,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72770,7 +73818,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72811,7 +73859,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72852,7 +73900,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72893,7 +73941,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -72934,7 +73982,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -73029,7 +74077,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -73063,7 +74111,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -73115,7 +74163,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73156,7 +74204,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73211,7 +74259,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -73245,7 +74293,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -73297,7 +74345,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73338,7 +74386,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73379,7 +74427,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73453,7 +74501,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73520,7 +74568,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73587,7 +74635,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73654,7 +74702,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73688,7 +74736,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73722,7 +74770,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73773,7 +74821,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -73906,7 +74954,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -73992,7 +75040,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -74133,7 +75181,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -74181,7 +75229,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -74287,7 +75335,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -74346,7 +75394,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -74410,7 +75458,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -74465,7 +75513,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -74542,7 +75590,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -74678,7 +75726,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -74789,7 +75837,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -74860,7 +75908,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -74911,7 +75959,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -75176,7 +76224,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -75224,7 +76272,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -75294,14 +76342,14 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Lopunny',
-              'hint': "Can't mega evolve Lopunny yet.",
+              'hint': 'Lopunny holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -75384,7 +76432,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -75438,14 +76486,14 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Lopunny',
-                'hint': "Can't mega evolve Lopunny yet.",
+                'hint': 'Lopunny holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -75496,7 +76544,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -75550,7 +76598,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -75585,7 +76633,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -75685,7 +76733,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -75733,7 +76781,7 @@ module.exports = {
             {
               'requiredValue': 2,
               'option': 2,
-              'hint': 'You need to reach the hoenn region.',
+              'hint': 'You need to reach the Hoenn region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -75820,7 +76868,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76015,7 +77063,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -76066,7 +77114,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76303,7 +77351,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -76351,7 +77399,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76439,7 +77487,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76488,7 +77536,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76603,7 +77651,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -76697,7 +77745,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -76845,7 +77893,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76922,7 +77970,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -76981,7 +78029,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -77033,14 +78081,14 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Garchomp',
-              'hint': "Can't mega evolve Garchomp yet.",
+              'hint': 'Garchomp holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -77093,7 +78141,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -77161,14 +78209,14 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Garchomp',
-                'hint': "Can't mega evolve Garchomp yet.",
+                'hint': 'Garchomp holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -77203,7 +78251,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -77268,7 +78316,7 @@ module.exports = {
             {
               'requiredValue': 0,
               'option': 2,
-              'hint': 'You need to reach the kanto region.',
+              'hint': 'You need to reach the Kanto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -77321,7 +78369,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -77413,14 +78461,14 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Lucario',
-              'hint': "Can't mega evolve Lucario yet.",
+              'hint': 'Lucario holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -77472,7 +78520,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -77538,14 +78586,14 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Lucario',
-                'hint': "Can't mega evolve Lucario yet.",
+                'hint': 'Lucario holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -77580,7 +78628,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -77694,7 +78742,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -77745,7 +78793,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -77983,7 +79031,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -78034,7 +79082,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -78189,7 +79237,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -78281,7 +79329,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -78437,7 +79485,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -78488,7 +79536,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'hint': 'You need to reach the johto region.',
+              'hint': 'You need to reach the Johto region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -78617,7 +79665,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -78783,14 +79831,14 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Abomasnow',
-              'hint': "Can't mega evolve Abomasnow yet.",
+              'hint': 'Abomasnow holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -78889,7 +79937,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -78956,14 +80004,14 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Abomasnow',
-                'hint': "Can't mega evolve Abomasnow yet.",
+                'hint': 'Abomasnow holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -79043,7 +80091,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79127,7 +80175,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79175,7 +80223,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79223,7 +80271,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79271,7 +80319,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79319,7 +80367,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79367,7 +80415,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79453,7 +80501,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79541,7 +80589,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -79610,7 +80658,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -79703,7 +80751,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -79778,7 +80826,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -79832,7 +80880,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -79886,7 +80934,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -79947,7 +80995,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80023,7 +81071,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80071,7 +81119,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80119,7 +81167,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80167,7 +81215,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80215,7 +81263,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80289,7 +81337,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80337,7 +81385,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80385,7 +81433,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80433,7 +81481,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80481,7 +81529,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80542,7 +81590,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80637,7 +81685,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80701,7 +81749,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -80723,6 +81771,36 @@ module.exports = {
       'levelType': 4,
       'exp': 233,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Gallade',
+          'evolvedPokemon': 'Mega Gallade',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Gallade',
+              'hint': 'Gallade needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 3,
+              'option': 2,
+              'hint': 'You need to reach the Sinnoh region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Gallade',
+              'hint': 'Gallade holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 68,
         'attack': 125,
@@ -80783,13 +81861,14 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
             'stone': 17,
           },
         ],
+        '15': ['Dr Cozmo'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -80801,7 +81880,7 @@ module.exports = {
         10,
         6,
       ],
-      'eggCycles': 20,
+      'eggCycles': 68,
       'levelType': 4,
       'exp': 347,
       'catchRate': 2,
@@ -80820,9 +81899,40 @@ module.exports = {
       },
       'attack': 161,
       'nativeRegion': 3,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Gallade',
+            'evolvedPokemon': 'Mega Gallade',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Gallade',
+                'hint': 'Gallade needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 3,
+                'option': 2,
+                'hint': 'You need to reach the Sinnoh region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Gallade',
+                'hint': 'Gallade holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 800,
+      'eggSteps': 2720,
     },
     {
       'id': 476,
@@ -80871,7 +81981,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80919,7 +82029,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -80967,7 +82077,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -81015,7 +82125,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -81063,7 +82173,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -81148,7 +82258,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -81240,7 +82350,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -81657,6 +82767,10 @@ module.exports = {
           {
             'region': 3,
             'requirements': 'Distortion World needs to be completed.',
+            'roamingGroup': {
+              'name': 'Sinnoh',
+              'subRegions': [0],
+            },
           },
         ],
         '3': [
@@ -81891,7 +83005,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -81992,7 +83106,7 @@ module.exports = {
               {
                 'requiredValue': 3,
                 'option': 2,
-                'hint': 'You need to reach the sinnoh region.',
+                'hint': 'You need to reach the Sinnoh region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -82052,6 +83166,10 @@ module.exports = {
           {
             'region': 3,
             'requirements': 'Fullmoon Island needs to be completed.',
+            'roamingGroup': {
+              'name': 'Sinnoh',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -82081,7 +83199,7 @@ module.exports = {
             {
               'requiredValue': 3,
               'option': 2,
-              'hint': 'You need to reach the sinnoh region.',
+              'hint': 'You need to reach the Sinnoh region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -82138,8 +83256,13 @@ module.exports = {
           {
             'region': 3,
             'requirements': 'Questline Recover the Precious Egg! needs to be completed.',
+            'roamingGroup': {
+              'name': 'Sinnoh',
+              'subRegions': [0],
+            },
           },
         ],
+        '12': ['Liechi'],
         '15': ['Manaphy Egg Protectors'],
       },
       'catchRatePercent': 2,
@@ -82804,7 +83927,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -82870,7 +83993,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -82922,7 +84045,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -82986,7 +84109,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83034,7 +84157,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83103,7 +84226,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83155,7 +84278,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83222,7 +84345,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83270,7 +84393,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83336,7 +84459,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83388,7 +84511,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83452,7 +84575,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83500,7 +84623,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83616,7 +84739,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83664,7 +84787,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83750,7 +84873,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -83825,7 +84948,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83897,7 +85020,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -83945,7 +85068,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -84170,7 +85293,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -84218,7 +85341,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -84287,7 +85410,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -84322,7 +85445,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -84391,7 +85514,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -84426,7 +85549,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -84495,7 +85618,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -84530,7 +85653,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -84654,7 +85777,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -84692,7 +85815,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -84802,7 +85925,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -84889,7 +86012,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -85011,7 +86134,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -85059,7 +86182,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -85148,7 +86271,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -85196,7 +86319,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -85280,7 +86403,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -85369,7 +86492,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -85446,7 +86569,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -85484,7 +86607,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -85600,7 +86723,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -85635,7 +86758,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -85784,7 +86907,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -85832,14 +86955,14 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
               'name': 'Audino',
-              'hint': "Can't mega evolve Audino yet.",
+              'hint': 'Audino holds no Mega Stone.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -85966,14 +87089,14 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
                 'requiredValue': 1,
                 'option': 1,
                 'name': 'Audino',
-                'hint': "Can't mega evolve Audino yet.",
+                'hint': 'Audino holds no Mega Stone.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -86008,7 +87131,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -86076,7 +87199,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -86159,7 +87282,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -86259,7 +87382,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -86294,7 +87417,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -86432,7 +87555,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -86552,7 +87675,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -86690,7 +87813,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -86873,7 +87996,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -86952,7 +88075,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -86999,7 +88122,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -87066,7 +88189,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -87104,7 +88227,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -87184,7 +88307,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -87237,7 +88360,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -87317,7 +88440,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -87368,7 +88491,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -87482,7 +88605,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -87517,7 +88640,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -87635,7 +88758,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -87890,7 +89013,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -87978,7 +89101,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -88052,7 +89175,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -88135,7 +89258,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -88183,7 +89306,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -88217,7 +89340,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -88279,7 +89402,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -88300,7 +89423,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -88383,7 +89506,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -88483,7 +89606,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -88615,7 +89738,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -88839,7 +89962,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -88890,7 +90013,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -89051,7 +90174,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -89159,7 +90282,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -89228,7 +90351,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -89328,7 +90451,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -89379,7 +90502,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -89479,7 +90602,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -89530,7 +90653,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -89622,7 +90745,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -89670,7 +90793,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -89814,7 +90937,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -89889,7 +91012,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -90044,7 +91167,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -90092,7 +91215,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -90231,7 +91354,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -90266,7 +91389,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -90354,7 +91477,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -90429,7 +91552,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -90509,7 +91632,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -90557,7 +91680,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -90646,7 +91769,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -90715,7 +91838,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -90796,7 +91919,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -90847,7 +91970,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -90942,7 +92065,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -90990,7 +92113,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -91209,7 +92332,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -91362,7 +92485,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -91515,7 +92638,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -91566,7 +92689,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -91640,7 +92763,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -91714,7 +92837,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -91788,7 +92911,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -91878,7 +93001,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -91945,7 +93068,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -92016,7 +93139,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -92087,7 +93210,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -92185,7 +93308,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -92325,7 +93448,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -92363,7 +93486,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -92522,7 +93645,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -92573,7 +93696,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -92949,7 +94072,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -93039,7 +94162,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -93210,7 +94333,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -93261,7 +94384,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -93379,7 +94502,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -93427,7 +94550,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -93522,7 +94645,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -93598,7 +94721,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -93690,7 +94813,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -93738,7 +94861,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -93808,7 +94931,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -93852,7 +94975,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -93916,7 +95039,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -93951,7 +95074,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -94008,7 +95131,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Celestial Tower'],
+        '2': [
+          'Near Space',
+          'Celestial Tower',
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 800,
@@ -94069,6 +95195,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['Near Space'],
         '5': [
           {
             'basePokemon': 'Elgyem',
@@ -94085,7 +95212,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -94136,7 +95263,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -94228,7 +95355,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -94291,7 +95418,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -94374,7 +95501,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -94409,7 +95536,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -94508,7 +95635,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -94560,7 +95687,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -94656,7 +95783,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -94704,7 +95831,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -94866,7 +95993,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -95030,7 +96157,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -95177,7 +96304,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -95305,7 +96432,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -95408,7 +96535,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -95525,7 +96652,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -95700,7 +96827,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -95751,7 +96878,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -95911,7 +97038,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -96005,7 +97132,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -96123,7 +97250,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -96174,7 +97301,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -96288,7 +97415,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -96480,7 +97607,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -96557,7 +97684,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -96622,7 +97749,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -96695,7 +97822,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -96747,7 +97874,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -96870,7 +97997,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -97030,6 +98157,10 @@ module.exports = {
           {
             'region': 4,
             'requirements': 'Requires the Legend badge.',
+            'roamingGroup': {
+              'name': 'Unova',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -97094,6 +98225,10 @@ module.exports = {
           {
             'region': 4,
             'requirements': 'Requires the Legend badge.',
+            'roamingGroup': {
+              'name': 'Unova',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -97303,7 +98438,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -97324,7 +98459,7 @@ module.exports = {
             {
               'requiredValue': 4,
               'option': 2,
-              'hint': 'You need to reach the unova region.',
+              'hint': 'You need to reach the Unova region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -97400,7 +98535,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -97454,7 +98589,7 @@ module.exports = {
               {
                 'requiredValue': 4,
                 'option': 2,
-                'hint': 'You need to reach the unova region.',
+                'hint': 'You need to reach the Unova region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -97572,6 +98707,10 @@ module.exports = {
           {
             'region': 4,
             'requirements': 'Requires the Elite Unova Champion badge.',
+            'roamingGroup': {
+              'name': 'Unova',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -97671,7 +98810,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -97737,7 +98876,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -97789,7 +98928,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -97856,7 +98995,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -97904,7 +99043,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -97970,7 +99109,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -98022,7 +99161,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98089,7 +99228,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98137,7 +99276,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -98203,7 +99342,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -98255,7 +99394,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98322,7 +99461,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98402,7 +99541,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -98612,7 +99751,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98663,7 +99802,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -98762,7 +99901,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -98858,7 +99997,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98945,7 +100084,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -98993,7 +100132,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -99066,7 +100205,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -99118,7 +100257,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -99197,7 +100336,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -99818,7 +100957,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -99916,7 +101055,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -99964,7 +101103,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -100055,7 +101194,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -100133,7 +101272,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -100207,7 +101346,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -100281,7 +101420,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -100355,7 +101494,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -100405,7 +101544,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -100453,7 +101592,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -100492,7 +101631,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -100540,7 +101679,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -100579,7 +101718,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -100627,7 +101766,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -100671,7 +101810,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -100719,7 +101858,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -100758,7 +101897,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -100851,7 +101990,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -100902,7 +102041,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -100953,7 +102092,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -101004,7 +102143,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -101055,7 +102194,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -101090,7 +102229,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -101178,7 +102317,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -101226,7 +102365,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -101420,7 +102559,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -101770,7 +102909,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -101902,7 +103041,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -101953,7 +103092,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -102038,7 +103177,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -102059,7 +103198,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -102138,7 +103277,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -102213,7 +103352,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -102280,7 +103419,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -102371,7 +103510,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -102406,7 +103545,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -102497,7 +103636,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -102535,7 +103674,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -102753,7 +103892,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -102804,7 +103943,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -102922,7 +104061,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -102973,7 +104112,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -103100,7 +104239,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -103148,7 +104287,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -103272,7 +104411,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -103323,7 +104462,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -103411,7 +104550,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -103449,7 +104588,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -103559,7 +104698,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -103620,7 +104759,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -103739,7 +104878,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -103825,7 +104964,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -104022,7 +105161,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -104124,7 +105263,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -104200,7 +105339,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -104265,7 +105404,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -104378,7 +105517,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -104508,7 +105647,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -104546,7 +105685,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -104619,7 +105758,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -104692,7 +105831,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -104765,7 +105904,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -104861,7 +106000,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -104922,7 +106061,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -104983,7 +106122,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -105044,7 +106183,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -105079,7 +106218,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -105198,7 +106337,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -105249,7 +106388,7 @@ module.exports = {
             {
               'requiredValue': 5,
               'option': 2,
-              'hint': 'You need to reach the kalos region.',
+              'hint': 'You need to reach the Kalos region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -105403,7 +106542,7 @@ module.exports = {
               {
                 'requiredValue': 5,
                 'option': 2,
-                'hint': 'You need to reach the kalos region.',
+                'hint': 'You need to reach the Kalos region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -105546,6 +106685,36 @@ module.exports = {
       'levelType': 4,
       'exp': 270,
       'catchRate': 3,
+      'evolutions': [
+        {
+          'basePokemon': 'Diancie',
+          'evolvedPokemon': 'Mega Diancie',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Diancie',
+              'hint': 'Diancie needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Diancie',
+              'hint': 'Diancie holds no Mega Stone.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 50,
         'attack': 100,
@@ -105568,6 +106737,7 @@ module.exports = {
             'requirements': 'Progress further in questline Princess Diancie.',
           },
         ],
+        '15': ['Rampaging Yveltal'],
       },
       'catchRatePercent': 2,
       'eggSteps': 1000,
@@ -105579,7 +106749,7 @@ module.exports = {
         12,
         17,
       ],
-      'eggCycles': 25,
+      'eggCycles': 38,
       'levelType': 4,
       'exp': 347,
       'catchRate': 2,
@@ -105598,9 +106768,40 @@ module.exports = {
       },
       'attack': 210,
       'nativeRegion': 5,
-      'locations': {},
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Diancie',
+            'evolvedPokemon': 'Mega Diancie',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Diancie',
+                'hint': 'Diancie needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 5,
+                'option': 2,
+                'hint': 'You need to reach the Kalos region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Diancie',
+                'hint': 'Diancie holds no Mega Stone.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
       'catchRatePercent': 1,
-      'eggSteps': 1000,
+      'eggSteps': 1520,
     },
     {
       'id': 720,
@@ -105633,6 +106834,10 @@ module.exports = {
           {
             'region': 5,
             'requirements': 'Requires the Elite Kalos Champion badge.',
+            'roamingGroup': {
+              'name': 'Kalos',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -105703,7 +106908,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -105772,7 +106977,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -105824,7 +107029,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -105891,7 +107096,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -105939,7 +107144,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106005,7 +107210,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106057,7 +107262,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106124,7 +107329,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106172,7 +107377,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106238,7 +107443,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106290,7 +107495,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106357,7 +107562,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106408,7 +107613,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106491,7 +107696,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106563,7 +107768,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106643,7 +107848,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106691,7 +107896,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -106832,7 +108037,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -106924,7 +108129,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107037,7 +108242,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107085,7 +108290,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107133,7 +108338,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107181,7 +108386,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107229,7 +108434,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107277,7 +108482,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107336,7 +108541,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107448,7 +108653,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107496,7 +108701,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107544,7 +108749,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107592,7 +108797,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107640,7 +108845,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107688,7 +108893,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -107767,7 +108972,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -107866,7 +109071,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -108124,7 +109329,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -108320,7 +109525,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -108405,7 +109610,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -108446,7 +109651,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -108487,7 +109692,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -108528,7 +109733,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -108647,7 +109852,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -108719,7 +109924,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -108790,7 +109995,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -108831,7 +110036,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -108886,7 +110091,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -109031,7 +110236,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -109116,7 +110321,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -109274,7 +110479,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -109322,7 +110527,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -109523,7 +110728,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -109574,7 +110779,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -109791,7 +110996,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -109876,7 +111081,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -110018,7 +111223,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -110113,7 +111318,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -110232,7 +111437,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -110283,7 +111488,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -110395,7 +111600,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -110483,7 +111688,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -110707,7 +111912,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -110755,7 +111960,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -110853,7 +112058,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -110914,7 +112119,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -111010,7 +112215,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -111250,7 +112455,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -111399,7 +112604,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -111450,7 +112655,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -111561,7 +112766,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -111655,7 +112860,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -111723,7 +112928,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -112947,7 +114152,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -113040,7 +114245,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -113105,7 +114310,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -113182,7 +114387,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -113412,7 +114617,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -113481,7 +114686,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -113515,7 +114720,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -113567,7 +114772,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -113618,7 +114823,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -113667,7 +114872,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -113738,7 +114943,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -113776,7 +114981,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -113825,7 +115030,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -113896,7 +115101,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -114178,7 +115383,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -114199,7 +115404,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -114262,7 +115467,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -114301,7 +115506,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -114339,7 +115544,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -114378,7 +115583,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -114432,7 +115637,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -114453,7 +115658,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -114495,6 +115700,15 @@ module.exports = {
           {
             'region': 6,
             'requirements': 'Requires the Elite Alola Champion badge.',
+            'roamingGroup': {
+              'name': 'Alola',
+              'subRegions': [
+                0,
+                1,
+                2,
+                3,
+              ],
+            },
           },
         ],
       },
@@ -114564,6 +115778,15 @@ module.exports = {
           {
             'region': 6,
             'requirements': 'Requires the Elite Alola Champion badge.',
+            'roamingGroup': {
+              'name': 'Alola',
+              'subRegions': [
+                0,
+                1,
+                2,
+                3,
+              ],
+            },
           },
         ],
       },
@@ -114594,7 +115817,7 @@ module.exports = {
             {
               'requiredValue': 6,
               'option': 2,
-              'hint': 'You need to reach the alola region.',
+              'hint': 'You need to reach the Alola region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -114678,7 +115901,7 @@ module.exports = {
               {
                 'requiredValue': 6,
                 'option': 2,
-                'hint': 'You need to reach the alola region.',
+                'hint': 'You need to reach the Alola region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -114808,6 +116031,15 @@ module.exports = {
           {
             'region': 6,
             'requirements': 'Requires the Elite Alola Champion badge.',
+            'roamingGroup': {
+              'name': 'Alola',
+              'subRegions': [
+                0,
+                1,
+                2,
+                3,
+              ],
+            },
           },
         ],
       },
@@ -114839,7 +116071,7 @@ module.exports = {
             {
               'requiredValue': -1,
               'option': 2,
-              'hint': 'You need to reach the none region.',
+              'hint': 'You need to reach the None region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -115029,7 +116261,7 @@ module.exports = {
               {
                 'requiredValue': -1,
                 'option': 2,
-                'hint': 'You need to reach the none region.',
+                'hint': 'You need to reach the None region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -115100,7 +116332,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -115166,7 +116398,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -115210,7 +116442,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -115274,7 +116506,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -115357,7 +116589,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -115423,7 +116655,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -115467,7 +116699,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -115531,7 +116763,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -115614,7 +116846,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -115680,7 +116912,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -115724,7 +116956,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -115788,7 +117020,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -115871,7 +117103,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -116083,7 +117315,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -116139,7 +117371,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -116220,7 +117452,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -116288,7 +117520,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -116387,7 +117619,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -116473,7 +117705,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -116578,7 +117810,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -116681,7 +117913,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -116763,7 +117995,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -116849,7 +118081,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -116979,7 +118211,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -117035,7 +118267,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -117165,7 +118397,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -117221,7 +118453,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -117407,7 +118639,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -117463,7 +118695,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -117678,7 +118910,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -117764,7 +118996,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -117882,7 +119114,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -117938,7 +119170,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -118025,7 +119257,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -118104,7 +119336,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -118204,7 +119436,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -118290,7 +119522,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -118311,7 +119543,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -118427,7 +119659,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -118511,7 +119743,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -118584,7 +119816,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -118698,7 +119930,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -119058,7 +120290,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -119223,7 +120455,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -119283,7 +120515,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -119317,7 +120549,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -119398,7 +120630,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -119465,7 +120697,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -119554,7 +120786,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -119658,7 +120890,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -119744,7 +120976,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -119833,7 +121065,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -119886,7 +121118,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -119956,7 +121188,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -119999,7 +121231,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -120110,7 +121342,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -120196,7 +121428,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -120287,7 +121519,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -120376,7 +121608,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -120501,7 +121733,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -120566,7 +121798,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -120656,7 +121888,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -120787,7 +122019,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -120879,7 +122111,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -120943,7 +122175,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -121011,7 +122243,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -121087,7 +122319,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -121154,7 +122386,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -121208,6 +122440,1268 @@ module.exports = {
       'levelType': 2,
       'exp': 54,
       'catchRate': 200,
+      'evolutions': [
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Strawberry Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Berry Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Love Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Star Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Clover Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Flower Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Vanilla)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Ruby Cream)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Caramel)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Ruby Swirl)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Matcha)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Salted)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Lemon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Mint)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Milcery',
+          'evolvedPokemon': 'Alcremie (Ribbon Rainbow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Milcery',
+              'hint': 'Milcery needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+      ],
       'gender': {
         'femaleRatio': 1,
         'type': 1,
@@ -121275,7 +123769,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121288,7 +123782,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.01,
@@ -121302,7 +123796,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121315,7 +123809,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.02,
@@ -121329,7 +123823,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121342,7 +123836,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.03,
@@ -121356,7 +123850,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121369,7 +123863,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.04,
@@ -121383,7 +123877,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121396,7 +123890,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.05,
@@ -121410,7 +123904,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121423,7 +123917,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.06,
@@ -121437,7 +123931,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121450,7 +123944,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.07,
@@ -121464,7 +123958,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121477,7 +123971,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.08,
@@ -121491,7 +123985,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121504,7 +123998,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.1,
@@ -121518,7 +124012,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121531,7 +124025,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.11,
@@ -121545,7 +124039,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121558,7 +124052,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.12,
@@ -121572,7 +124066,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121585,7 +124079,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.13,
@@ -121599,7 +124093,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121612,7 +124106,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.14,
@@ -121626,7 +124120,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121639,7 +124133,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.15,
@@ -121653,7 +124147,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121666,7 +124160,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.16,
@@ -121680,7 +124174,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121693,7 +124187,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.17,
@@ -121707,7 +124201,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121720,7 +124214,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.18,
@@ -121734,7 +124228,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121747,7 +124241,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.2,
@@ -121761,7 +124255,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121774,7 +124268,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.21,
@@ -121788,7 +124282,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121801,7 +124295,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.22,
@@ -121815,7 +124309,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121828,7 +124322,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.23,
@@ -121842,7 +124336,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121855,7 +124349,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.24,
@@ -121869,7 +124363,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121882,7 +124376,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.25,
@@ -121896,7 +124390,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121909,7 +124403,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.26,
@@ -121923,7 +124417,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121936,7 +124430,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.27,
@@ -121950,7 +124444,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121963,7 +124457,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.28,
@@ -121977,7 +124471,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -121990,7 +124484,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.3,
@@ -122004,7 +124498,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122017,7 +124511,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.31,
@@ -122031,7 +124525,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122044,7 +124538,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.32,
@@ -122058,7 +124552,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122071,7 +124565,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.33,
@@ -122085,7 +124579,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122098,7 +124592,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.34,
@@ -122112,7 +124606,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122125,7 +124619,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.35,
@@ -122139,7 +124633,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122152,7 +124646,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.36,
@@ -122166,7 +124660,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122179,7 +124673,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.37,
@@ -122193,7 +124687,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122206,7 +124700,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.38,
@@ -122220,7 +124714,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122233,7 +124727,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.4,
@@ -122247,7 +124741,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122260,7 +124754,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.41,
@@ -122274,7 +124768,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122287,7 +124781,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.42,
@@ -122301,7 +124795,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122314,7 +124808,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.43,
@@ -122328,7 +124822,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122341,7 +124835,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.44,
@@ -122355,7 +124849,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122368,7 +124862,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.45,
@@ -122382,7 +124876,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122395,7 +124889,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.46,
@@ -122409,7 +124903,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122422,7 +124916,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.47,
@@ -122436,7 +124930,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122449,7 +124943,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.48,
@@ -122463,7 +124957,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122476,7 +124970,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.5,
@@ -122490,7 +124984,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122503,7 +124997,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.51,
@@ -122517,7 +125011,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122530,7 +125024,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.52,
@@ -122544,7 +125038,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122557,7 +125051,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.53,
@@ -122571,7 +125065,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122584,7 +125078,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.54,
@@ -122598,7 +125092,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122611,7 +125105,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.55,
@@ -122625,7 +125119,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122638,7 +125132,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.56,
@@ -122652,7 +125146,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122665,7 +125159,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.57,
@@ -122679,7 +125173,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122692,7 +125186,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.58,
@@ -122706,7 +125200,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122719,7 +125213,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.6,
@@ -122733,7 +125227,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122746,7 +125240,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.61,
@@ -122760,7 +125254,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122773,7 +125267,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.62,
@@ -122787,7 +125281,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122800,7 +125294,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.63,
@@ -122814,7 +125308,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122827,7 +125321,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.64,
@@ -122841,7 +125335,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122854,7 +125348,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.65,
@@ -122868,7 +125362,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122881,7 +125375,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.66,
@@ -122895,7 +125389,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122908,7 +125402,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.67,
@@ -122922,7 +125416,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122935,7 +125429,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.68,
@@ -122949,7 +125443,7 @@ module.exports = {
         'specialDefense': 121,
         'speed': 64,
       },
-      'eggCycles': 20,
+      'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
       'catchRate': 100,
@@ -122962,7 +125456,7 @@ module.exports = {
       'nativeRegion': 7,
       'locations': {},
       'catchRatePercent': 31,
-      'eggSteps': 800,
+      'eggSteps': 1200,
     },
     {
       'id': 869.7,
@@ -123113,7 +125607,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -123219,7 +125713,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -123602,7 +126096,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -123713,7 +126207,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -123996,7 +126490,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -124072,7 +126566,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -124127,7 +126621,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -124251,7 +126745,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -124305,7 +126799,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -124405,7 +126899,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -124466,7 +126960,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
             {
@@ -124566,7 +127060,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
               {
@@ -124844,6 +127338,10 @@ module.exports = {
           {
             'region': 7,
             'requirements': 'Progress further in questline Secrets of the Jungle.',
+            'roamingGroup': {
+              'name': 'Galar - Isle of Armor',
+              'subRegions': [2],
+            },
           },
         ],
       },
@@ -124980,6 +127478,10 @@ module.exports = {
           {
             'region': 7,
             'requirements': 'Progress further in questline The Crown of Galar.',
+            'roamingGroup': {
+              'name': 'Galar - Crown Tundra',
+              'subRegions': [3],
+            },
           },
         ],
       },
@@ -125018,6 +127520,10 @@ module.exports = {
           {
             'region': 7,
             'requirements': 'Progress further in questline The Crown of Galar.',
+            'roamingGroup': {
+              'name': 'Galar - Crown Tundra',
+              'subRegions': [3],
+            },
           },
         ],
       },
@@ -125056,7 +127562,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -125077,7 +127583,7 @@ module.exports = {
             {
               'requiredValue': 7,
               'option': 2,
-              'hint': 'You need to reach the galar region.',
+              'hint': 'You need to reach the Galar region.',
               '__class': 'MaxRegionRequirement',
             },
           ],
@@ -125148,7 +127654,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -125202,7 +127708,7 @@ module.exports = {
               {
                 'requiredValue': 7,
                 'option': 2,
-                'hint': 'You need to reach the galar region.',
+                'hint': 'You need to reach the Galar region.',
                 '__class': 'MaxRegionRequirement',
               },
             ],
@@ -125490,6 +127996,8 @@ module.exports = {
       '#7AC74C',
       '#F7D02C',
       '#6390F0',
+      '#B1CBDC',
+      '#FFE48E',
       '#B7B7CE',
       '#1C1C1C',
     ],
@@ -125922,6 +128430,7 @@ module.exports = {
       'Cave of Origin',
       'Sky Pillar',
       'Victory Road Hoenn',
+      'Near Space',
     ],
     'HoennGyms': [
       'Rustboro City',
@@ -125940,7 +128449,9 @@ module.exports = {
     ],
     'HoennSubRegions': {
       '0': 'Hoenn',
+      '1': 'Orre',
       'Hoenn': 0,
+      'Orre': 1,
     },
     'ITEM_PRICE_DEDUCT': 1.0005,
     'ITEM_PRICE_MULTIPLIER': 1.00045,
@@ -126136,16 +128647,34 @@ module.exports = {
     'PokeBlockColor': {
       '0': 'Black',
       '1': 'Red',
-      '2': 'Gold',
-      '3': 'Purple',
-      '4': 'Gray',
-      '5': 'White',
+      '2': 'Blue',
+      '3': 'Pink',
+      '4': 'Green',
+      '5': 'Yellow',
+      '6': 'Gold',
+      '7': 'Purple',
+      '8': 'Indigo',
+      '9': 'Brown',
+      '10': 'LiteBlue',
+      '11': 'Olive',
+      '12': 'Flaxen',
+      '13': 'Gray',
+      '14': 'White',
       'Black': 0,
       'Red': 1,
-      'Gold': 2,
-      'Purple': 3,
-      'Gray': 4,
-      'White': 5,
+      'Blue': 2,
+      'Pink': 3,
+      'Green': 4,
+      'Yellow': 5,
+      'Gold': 6,
+      'Purple': 7,
+      'Indigo': 8,
+      'Brown': 9,
+      'LiteBlue': 10,
+      'Olive': 11,
+      'Flaxen': 12,
+      'Gray': 13,
+      'White': 14,
     },
     'Pokeball': {
       '0': 'Pokeball',
@@ -126365,6 +128894,7 @@ module.exports = {
         'Cave of Origin',
         'Sky Pillar',
         'Victory Road Hoenn',
+        'Near Space',
       ],
       [
         'Oreburgh Gate',
@@ -126702,6 +129232,14 @@ module.exports = {
     'SHOPMON_EP_YIELD': 1000,
     'STONE_EP_YIELD': 1000,
     'SURPRISE_MULCH_MULTIPLIER': 1.5,
+    'ShadowStatus': {
+      '0': 'None',
+      '1': 'Shadow',
+      '2': 'Purified',
+      'None': 0,
+      'Shadow': 1,
+      'Purified': 2,
+    },
     'ShardTraderLocations': {
       '0': 'Cerulean City',
       '1': 'Vermilion City',
@@ -127054,6 +129592,7 @@ module.exports = {
       'Biker Goon 2',
       'Biker Goon 3',
       'Cue Ball Paxton',
+      "Bill's Grandpa",
       'Blue 6',
       'Silver 1',
       'Silver 2',
@@ -127072,6 +129611,7 @@ module.exports = {
       'Silver 6',
       'Silver 7',
       'Red',
+      'Youngster Joey',
       'May 1',
       'May 2',
       'May 3',
@@ -127156,6 +129696,29 @@ module.exports = {
       'Trevor & Tierno',
       'Calem 1',
       'Korrina',
+      'Courtney 1',
+      'Matt 1',
+      'Zinnia 1',
+      'Draconid Elder',
+      'Aqua Grunt',
+      'Magma Grunt',
+      'Courtney 2',
+      'Matt 2',
+      'Delta Wallace',
+      'Zinnia 2',
+      'Deoxys',
+      'Delta Giovanni',
+      'Mr. Stone',
+      'Shoal Fisherman',
+      'Delta Brock',
+      'Delta Tabitha',
+      'Delta Shelly',
+      'Icy Boulder',
+      'Mega Draconid Elder',
+      'Delta Steven',
+      'Dr Cozmo',
+      'Matt 3',
+      'Courtney 3',
       'Aipom Alley',
       'Mime Interview',
       'Underground Fighting Ring',
@@ -127174,6 +129737,7 @@ module.exports = {
       'Riot',
       'Merilyn',
       'Millis and Argus Steel',
+      'Rampaging Yveltal',
       'AZ',
       'Ash Ketchum Kanto',
       'Ash Ketchum Johto',
@@ -127185,6 +129749,8 @@ module.exports = {
       'Calem 6',
       'Marquis Grant',
       'Grand Duchess Diantha',
+      'Wild Houndour Horde',
+      'Wild Electrike Horde',
       'Hau 1',
       'Hau 2',
       'Hau 3',
@@ -127869,10 +130435,16 @@ module.exports = {
       'requirements': [
         {
           'requiredValue': 1,
-          'option': 2,
-          'battleName': 'Blue 5',
-          'hint': 'Requires beating Blue.',
-          '__class': 'TemporaryBattleRequirement',
+          'option': 1,
+          'questLineName': 'Team Rocket',
+          'questIndex': 3,
+          'cachedQuest': {
+            'state': 0,
+            'name': 'Team Rocket',
+            'quest': 0,
+          },
+          'hint': 'Progress further in questline Team Rocket.',
+          '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
       'leaderName': 'Sabrina',
@@ -130677,7 +133249,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 80,
+          'dungeonIndex': 81,
           'hint': 'Floccesy Ranch needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -130764,7 +133336,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 82,
+          'dungeonIndex': 83,
           'hint': 'Castelia Sewers needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -131523,7 +134095,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 108,
+          'dungeonIndex': 109,
           'hint': 'Kalos Power Plant needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -131653,7 +134225,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 114,
+          'dungeonIndex': 115,
           'hint': 'Pokémon Village needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -132107,7 +134679,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 137,
+          'dungeonIndex': 138,
           'hint': "Mina's Houseboat needs to be completed.",
           '__class': 'ClearDungeonRequirement',
         },
@@ -132353,7 +134925,7 @@ module.exports = {
       ],
       'badgeReward': 91,
       'moneyReward': 128000,
-      'defeatMessage': "Welcome back Now let's see how you did... Yup! You passed my trial! Here you go!",
+      'defeatMessage': "Welcome back! Now let's see how you did... Yup! You passed my trial! Here you go!",
       'flags': {
         'quest': false,
         'achievement': false,
@@ -132388,7 +134960,7 @@ module.exports = {
       ],
       'badgeReward': 93,
       'moneyReward': 128000,
-      'defeatMessage': 'You obtained a Dragon-Type Z-Crystal. The Dragonium Z is yours!',
+      'defeatMessage': '<i>You obtained a Dragon-Type Z-Crystal. The Dragonium Z is yours!<i>',
       'flags': {
         'quest': false,
         'achievement': false,
@@ -133360,7 +135932,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 149,
+          'dungeonIndex': 150,
           'hint': 'Glimwood Tangle needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -134478,7 +137050,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 5,
       'exp': 1,
+      'smoothness': 25,
       'color': 0,
+      'size': 2,
+      'firmness': 1,
       'description': ['This bright red Berry is very spicy and has a provocative flavor. It blooms with delicate, pretty flowers.'],
       'flavors': [
         {
@@ -134533,7 +137108,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 6,
       'exp': 2,
+      'smoothness': 25,
       'color': 1,
+      'size': 8,
+      'firmness': 4,
       'description': ["This Berry's thick skin and fruit are very tough and dry-tasting. However, every bit of it can be eaten."],
       'flavors': [
         {
@@ -134587,7 +137165,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 7,
       'exp': 3,
+      'smoothness': 25,
       'color': 2,
+      'size': 4,
+      'firmness': 0,
       'description': ["Because of its hollow inside pocket, there isn't a lot to eat. What can be eaten is very sweet and delicious."],
       'flavors': [
         {
@@ -134641,7 +137222,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 8,
       'exp': 4,
+      'smoothness': 25,
       'color': 3,
+      'size': 3.2,
+      'firmness': 2,
       'description': ['If the leaves grow longer and curlier than average, this Berry will have a somewhat-bitter taste.'],
       'flavors': [
         {
@@ -134694,7 +137278,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 9,
       'exp': 5,
+      'smoothness': 25,
       'color': 4,
+      'size': 5,
+      'firmness': 4,
       'description': ["This Berry's peel is hard, but the flesh inside is very juicy. It is distinguished by its bracing sourness."],
       'flavors': [
         {
@@ -134749,7 +137336,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 10,
       'exp': 6,
+      'smoothness': 20,
       'color': 0,
+      'size': 2.8,
+      'firmness': 3,
       'description': ['It takes longer to grow than Berries such as Cheri. The smaller Berries taste better.'],
       'flavors': [
         {
@@ -134804,7 +137394,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 20,
       'exp': 7,
+      'smoothness': 20,
       'color': 5,
+      'size': 3.5,
+      'firmness': 4,
       'description': ["Nature's gifts came together as one in this Berry. It has a wondrous mix of flavors that spread in the mouth."],
       'flavors': [
         {
@@ -134858,7 +137451,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 30,
       'exp': 8,
+      'smoothness': 20,
       'color': 4,
+      'size': 9.5,
+      'firmness': 3,
       'description': ['Sitrus came from the same family as Oran. It is larger and smoother-tasting than Oran.'],
       'flavors': [
         {
@@ -134913,7 +137509,10 @@ module.exports = {
       'replantRate': 0.4,
       'farmValue': 10,
       'exp': 2,
+      'smoothness': 20,
       'color': 2,
+      'size': 4.7,
+      'firmness': 2,
       'description': ['The more this Berry absorbs energy from sunlight, the more vividly colorful it grows.'],
       'flavors': [
         {
@@ -134968,7 +137567,10 @@ module.exports = {
       'replantRate': 0.4,
       'farmValue': 15,
       'exp': 2,
+      'smoothness': 20,
       'color': 0,
+      'size': 12,
+      'firmness': 3,
       'description': ['A small hint of spiciness lingers in the red granules surrounding this Berry. Their centers have a dry taste.'],
       'flavors': [
         {
@@ -135024,7 +137626,10 @@ module.exports = {
       'replantRate': 0.4,
       'farmValue': 20,
       'exp': 2,
+      'smoothness': 20,
       'color': 1,
+      'size': 10.8,
+      'firmness': 1,
       'description': ['Though this small, delicately-skinned Berry is blue in color, it dyes the mouth black when eaten.'],
       'flavors': [
         {
@@ -135079,7 +137684,10 @@ module.exports = {
       'replantRate': 0.4,
       'farmValue': 25,
       'exp': 2,
+      'smoothness': 20,
       'color': 2,
+      'size': 7.7,
+      'firmness': 3,
       'description': ['Bitter, but with a trace of sweetness, the Nanab Berry was the seventh to be discovered in the world.'],
       'flavors': [
         {
@@ -135134,7 +137742,10 @@ module.exports = {
       'replantRate': 0.4,
       'farmValue': 30,
       'exp': 2,
+      'smoothness': 20,
       'color': 3,
+      'size': 7.4,
+      'firmness': 4,
       'description': ['The potent mix of bitter and sour in this Berry seems to promote digestion. The flower is white and beautiful.'],
       'flavors': [
         {
@@ -135188,7 +137799,10 @@ module.exports = {
       'replantRate': 0.4,
       'farmValue': 35,
       'exp': 2,
+      'smoothness': 20,
       'color': 4,
+      'size': 8,
+      'firmness': 2,
       'description': ['It is said that when the sour skin is peeled, this spicy Berry can be crushed to make medicine.'],
       'flavors': [
         {
@@ -135244,7 +137858,10 @@ module.exports = {
       'replantRate': 0.3,
       'farmValue': 40,
       'exp': 3,
+      'smoothness': 25,
       'color': 0,
+      'size': 10,
+      'firmness': 1,
       'description': ['This Berry is oddly shaped, appearing as if someone took a bite out of it. It is packed full of spicy substances.'],
       'flavors': [
         {
@@ -135300,7 +137917,10 @@ module.exports = {
       'replantRate': 0.3,
       'farmValue': 45,
       'exp': 3,
+      'smoothness': 25,
       'color': 1,
+      'size': 11.5,
+      'firmness': 2,
       'description': ['It is said that this Berry grew lumps to help Pokémon grip it, allowing propagation farther afield.'],
       'flavors': [
         {
@@ -135355,7 +137975,10 @@ module.exports = {
       'replantRate': 0.3,
       'farmValue': 50,
       'exp': 3,
+      'smoothness': 25,
       'color': 2,
+      'size': 12.6,
+      'firmness': 2,
       'description': ['This Berry progressively curves as it grows. The curvier the Berry, the sweeter and tastier.'],
       'flavors': [
         {
@@ -135410,7 +138033,10 @@ module.exports = {
       'replantRate': 0.3,
       'farmValue': 55,
       'exp': 3,
+      'smoothness': 25,
       'color': 3,
+      'size': 6.4,
+      'firmness': 4,
       'description': ["This Berry turns bitter toward the stem. The dainty flower it grows from doesn't absorb much sunlight."],
       'flavors': [
         {
@@ -135464,7 +138090,10 @@ module.exports = {
       'replantRate': 0.3,
       'farmValue': 60,
       'exp': 3,
+      'smoothness': 25,
       'color': 4,
+      'size': 22.3,
+      'firmness': 1,
       'description': ['This Berry is very big and sour. The juiciness of the pulp accentuates the sourness.'],
       'flavors': [
         {
@@ -135520,7 +138149,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 540,
       'exp': 3,
+      'smoothness': 25,
       'color': 3,
+      'size': 3.4,
+      'firmness': 4,
       'description': [
         "This Berry's gradual process of storing nutrients beneficial to Pokémon health causes it to mature slowly.",
         'This Berry multiplies the effect of Berry plants around it.',
@@ -135585,7 +138217,10 @@ module.exports = {
       'replantRate': 0.2,
       'farmValue': 500,
       'exp': 10,
+      'smoothness': 20,
       'color': 0,
+      'size': 13.5,
+      'firmness': 3,
       'description': ["When this sweetly spicy Berry's thick skin is peeled, many pieces of the fruit spill out."],
       'flavors': [
         {
@@ -135641,7 +138276,10 @@ module.exports = {
       'replantRate': 0.2,
       'farmValue': 525,
       'exp': 10,
+      'smoothness': 20,
       'color': 5,
+      'size': 15,
+      'firmness': 2,
       'description': ['This Berry can be eaten as is or boiled to obtain an extract that adds a dash of flavor to food.'],
       'flavors': [
         {
@@ -135696,7 +138334,10 @@ module.exports = {
       'replantRate': 0.2,
       'farmValue': 550,
       'exp': 10,
+      'smoothness': 20,
       'color': 2,
+      'size': 11,
+      'firmness': 2,
       'description': ["Even in places of constant rain and high humidity, this Berry's plant grows healthy and strong."],
       'flavors': [
         {
@@ -135751,7 +138392,10 @@ module.exports = {
       'replantRate': 0.2,
       'farmValue': 2000,
       'exp': 10,
+      'smoothness': 20,
       'color': 3,
+      'size': 16.2,
+      'firmness': 2,
       'description': ['This somewhat-rare Berry projects an image of luxury, so it is favored as a gift item.'],
       'flavors': [
         {
@@ -135805,7 +138449,10 @@ module.exports = {
       'replantRate': 0.2,
       'farmValue': 600,
       'exp': 10,
+      'smoothness': 20,
       'color': 4,
+      'size': 14.9,
+      'firmness': 1,
       'description': ['One bite of this very tender Berry fills the mouth with its sweet and tangy flavor.'],
       'flavors': [
         {
@@ -135861,7 +138508,10 @@ module.exports = {
       'replantRate': 0.2,
       'farmValue': 625,
       'exp': 10,
+      'smoothness': 30,
       'color': 0,
+      'size': 20,
+      'firmness': 1,
       'description': ['This Berry is large and spicy. When eaten during the cold season, it warms the body from inside.'],
       'flavors': [
         {
@@ -135917,7 +138567,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 700,
       'exp': 10,
+      'smoothness': 30,
       'color': 1,
+      'size': 7.5,
+      'firmness': 2,
       'description': ["Its dryness is quite strong. As a result, its true deliciousness can't be appreciated by just eating one or two."],
       'flavors': [
         {
@@ -135972,7 +138625,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 750,
       'exp': 10,
+      'smoothness': 30,
       'color': 2,
+      'size': 14,
+      'firmness': 2,
       'description': ['The grown-up flavor and dreamy sweetness of this Berry make it a favorite of Pokémon everywhere.'],
       'flavors': [
         {
@@ -136027,7 +138683,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 800,
       'exp': 10,
+      'smoothness': 30,
       'color': 3,
+      'size': 22.6,
+      'firmness': 1,
       'description': ['Even though it is bitter, it should be eaten peel and all. The hair on the peel cleans the stomach from the inside.'],
       'flavors': [
         {
@@ -136081,7 +138740,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 850,
       'exp': 10,
+      'smoothness': 30,
       'color': 4,
+      'size': 28.5,
+      'firmness': 4,
       'description': ['This Berry is quite sour overall, with the sourness especially concentrated at the pointed end.'],
       'flavors': [
         {
@@ -136137,7 +138799,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 900,
       'exp': 10,
+      'smoothness': 35,
       'color': 0,
+      'size': 13.3,
+      'firmness': 1,
       'description': ['So spicy is the Spelon Berry that, Fire type or not, Pokémon will try to breathe fire after eating a single one.'],
       'flavors': [
         {
@@ -136193,7 +138858,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 950,
       'exp': 10,
+      'smoothness': 35,
       'color': 1,
+      'size': 24.4,
+      'firmness': 0,
       'description': [
         'This Berry drifted from a faraway sea. It is now cultivated in the Sinnoh region.',
         'It has a tendency to expand into nearby plots.',
@@ -136251,7 +138919,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 1000,
       'exp': 10,
+      'smoothness': 35,
       'color': 2,
+      'size': 25,
+      'firmness': 1,
       'description': ['A bounty of nature that is exceedingly sweet. The Berry is huge, with some discovered that exceed 20 inches.'],
       'flavors': [
         {
@@ -136306,7 +138977,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 1050,
       'exp': 10,
+      'smoothness': 35,
       'color': 3,
+      'size': 28,
+      'firmness': 2,
       'description': ['This Berry is tremendously bitter. Just one bite is enough to instantly stop hiccups.'],
       'flavors': [
         {
@@ -136360,7 +139034,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 1100,
       'exp': 10,
+      'smoothness': 35,
       'color': 1,
+      'size': 30,
+      'firmness': 0,
       'description': ['This glossy and colorful Berry has a mouthwateringly delicious appearance. However, it is awfully sour.'],
       'flavors': [
         {
@@ -136415,7 +139092,10 @@ module.exports = {
       'replantRate': 0.1,
       'farmValue': 2500,
       'exp': 15,
+      'smoothness': 30,
       'color': 2,
+      'size': 3.5,
+      'firmness': 2,
       'description': [
         'This Berry endemic to Pinkan Island has an incredibly sweet taste.',
         'It has a vibrant pink pigment, and it is found in such abundance on Pinkan Island that all Pokémon found there are colored Pink!',
@@ -136473,7 +139153,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1200,
       'exp': 15,
+      'smoothness': 30,
       'color': 0,
+      'size': 8.9,
+      'firmness': 4,
       'description': [
         'This Berry is said to have grown plentiful in the tropics of the past. It boasts an intensely hot spiciness.',
         'It has a tendency to overtake nearby plants.',
@@ -136540,7 +139223,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1300,
       'exp': 15,
+      'smoothness': 30,
       'color': 5,
+      'size': 3.3,
+      'firmness': 1,
       'description': [
         "This Berry's flesh is dotted with countless tiny bubbles of air that keep it afloat in water.",
         'This Berry promotes the fruiting of nearby Berry plants.',
@@ -136614,7 +139300,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 250,
       'exp': 1,
+      'smoothness': 30,
       'color': 4,
+      'size': 25,
+      'firmness': 0,
       'description': [
         'Energy from lightning strikes is drawn into the plant, making the Berries grow big and rich.',
         'The same energy promotes the growth of nearby Berries.',
@@ -136689,7 +139378,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1400,
       'exp': 15,
+      'smoothness': 30,
       'color': 3,
+      'size': 15.5,
+      'firmness': 1,
       'description': [
         'This Berry has a disagreeable "green" flavor and scent typical of vegetables. It is rich in health-promoting fiber.',
         'It has a tendency to expand into nearby plots.',
@@ -136754,13 +139446,16 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1500,
       'exp': 15,
+      'smoothness': 30,
       'color': 5,
+      'size': 13.5,
+      'firmness': 3,
       'description': [
         'This Berry has a refreshing flavor that strikes a good balance of dryness and sourness. It tastes better chilled.',
-        'This Berry slows the growth of nearby Berries.',
+        'This Berry slows the decay of nearby Berries.',
       ],
       'aura': {
-        'auraType': 0,
+        'auraType': 12,
         'auraMultipliers': [
           0.9,
           0.8,
@@ -136825,7 +139520,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1600,
       'exp': 15,
+      'smoothness': 30,
       'color': 0,
+      'size': 7.7,
+      'firmness': 1,
       'description': [
         'This Berry contains a substance that generates heat. It can even heat up a chilly heart.',
         'Growing these Berries will promote Egg growth.',
@@ -136897,7 +139595,10 @@ module.exports = {
       'replantRate': 1,
       'farmValue': 50,
       'exp': 1,
+      'smoothness': 30,
       'color': 3,
+      'size': 8.9,
+      'firmness': 2,
       'description': [
         'This Berry is a brilliant green on the outside. Inside, it is packed with a dry-flavored, black-colored flesh.',
         'It has a tendency to overtake nearby plants.',
@@ -136969,7 +139670,10 @@ module.exports = {
       'replantRate': 1,
       'farmValue': 1700,
       'exp': 15,
+      'smoothness': 30,
       'color': 4,
+      'size': 4.2,
+      'firmness': 1,
       'description': [
         'The sweetness-laden pulp has just the hint of a hard-edged and fragrant bite to it.',
         'Growing these Berries will soften the ground around it, increasing the chances of replanting.',
@@ -137040,7 +139744,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1800,
       'exp': 15,
+      'smoothness': 30,
       'color': 5,
+      'size': 27.7,
+      'firmness': 3,
       'description': ['This Berry is said to be a new kind that is a cross of two Berries brought together by winds from far away.'],
       'flavors': [
         {
@@ -137099,7 +139806,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 1900,
       'exp': 15,
+      'smoothness': 30,
       'color': 1,
+      'size': 25.1,
+      'firmness': 1,
       'description': [
         'This Berry is said to sense human emotions for the way it swells roundly when a person approaches.',
         'The same behavior affects nearby plants, causing additional mutations.',
@@ -137169,7 +139879,10 @@ module.exports = {
       'replantRate': 0.5,
       'farmValue': 500,
       'exp': 15,
+      'smoothness': 35,
       'color': 3,
+      'size': 4.3,
+      'firmness': 0,
       'description': [
         'The flower grows at the tip of this Berry. It attracts Bug Pokémon by letting its stringy petals stream out.',
         'The attracted Bug Pokémon decrease the amount of harvestable Berries in nearby plants.',
@@ -137238,7 +139951,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2000,
       'exp': 15,
+      'smoothness': 35,
       'color': 4,
+      'size': 2.8,
+      'firmness': 0,
       'description': [
         'It is often used for pickles because of its very dry flavor. It can also be eaten raw for its provocative taste.',
         'This Berry plant hardens the surrounding soil, decreasing the chances of replanting.',
@@ -137310,7 +140026,10 @@ module.exports = {
       'replantRate': 1,
       'farmValue': 25,
       'exp': 1,
+      'smoothness': 35,
       'color': 1,
+      'size': 14.4,
+      'firmness': 2,
       'description': [
         'Considered to have a special power from the olden days, this Berry is sometimes dried and used as a good-luck charm.',
         'This Berry causes other nearby Berries to wither away faster.',
@@ -137380,13 +140099,16 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 4000,
       'exp': 15,
+      'smoothness': 35,
       'color': 0,
+      'size': 2.3,
+      'firmness': 1,
       'description': [
         'If a large enough volume of this Berry is boiled down, its bitterness fades away. It makes a good jam.',
-        'This Berry requires a lot of energy to grow, stealing away nutrients from nearby plots.',
+        "This Berry requires a lot of energy to grow, but isn't fussy about what it consumes, it helps other plants by removing toxins from the soil.",
       ],
       'aura': {
-        'auraType': 0,
+        'auraType': 12,
         'auraMultipliers': [
           0.8,
           0.6,
@@ -137453,7 +140175,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2300,
       'exp': 15,
+      'smoothness': 35,
       'color': 1,
+      'size': 3.8,
+      'firmness': 4,
       'description': [
         'Tiny hooks grow on the surface of this Berry. It latches on to Pokémon so it can be carried to far-off places.',
         'It has a tendency to overtake nearby plants.',
@@ -137516,7 +140241,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2400,
       'exp': 15,
+      'smoothness': 35,
       'color': 3,
+      'size': 26.5,
+      'firmness': 4,
       'description': [
         'This Berry is very tough with a strong flavor. It was used to make medicine by people in the past.',
         'This Berry plant is very hardy and resistant, making it resistant to mutations, and also decreasing the chance of mutations around it.',
@@ -137586,7 +140314,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 500,
       'exp': 15,
+      'smoothness': 35,
       'color': 4,
+      'size': 3.3,
+      'firmness': 0,
       'description': ['This Berry can be cored out and dried to make a whistle. Blowing through its hole makes an indescribable sound.'],
       'flavors': [
         {
@@ -137648,7 +140379,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2500,
       'exp': 15,
+      'smoothness': 35,
       'color': 2,
+      'size': 3.3,
+      'firmness': 2,
       'description': [
         'This Berry is sweet with a hint of bitterness and has a lingering sweet scent. It is often dried and used to make tea.',
         'The scent of this Berry plant attracts wild Pokémon.',
@@ -137717,7 +140451,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2600,
       'exp': 20,
+      'smoothness': 60,
       'color': 3,
+      'size': 4.1,
+      'firmness': 1,
       'description': [
         'This Berry has a very dry flavor. It has the effect of making other food eaten at the same time taste sweet.',
         'The scent of this Berry plant repels wild Pokémon.',
@@ -137782,7 +140519,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2700,
       'exp': 20,
+      'smoothness': 60,
       'color': 0,
+      'size': 26.7,
+      'firmness': 4,
       'description': ["The flesh underneath the Custap Berry's tough skin is sweet and creamy soft."],
       'flavors': [
         {
@@ -137838,7 +140578,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2800,
       'exp': 20,
+      'smoothness': 60,
       'color': 4,
+      'size': 3.3,
+      'firmness': 1,
       'description': [
         'The cluster of drupelets that make up this Berry pop rhythmically if the Berry is handled roughly.',
         'The sound of these Berries attracts rare wild Pokémon.',
@@ -137905,7 +140648,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 2900,
       'exp': 20,
+      'smoothness': 60,
       'color': 5,
+      'size': 5.2,
+      'firmness': 0,
       'description': [
         'In days of old, people worked the top-shaped pieces of this Berry free and used them as toys.',
         'These berries make catching efforts worth more.',
@@ -137971,7 +140717,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 3000,
       'exp': 20,
+      'smoothness': 60,
       'color': 4,
+      'size': 5.7,
+      'firmness': 3,
       'description': ['This Berry remains poisonous until fully ripened. Once ripe it has a spicy and sweet complex flavor.'],
       'flavors': [
         {
@@ -138027,7 +140776,10 @@ module.exports = {
       'replantRate': 0.05,
       'farmValue': 8000,
       'exp': 20,
+      'smoothness': 60,
       'color': 5,
+      'size': 19.4,
+      'firmness': 3,
       'description': ['This Berry resembles the Durin Berry, though its spikes are less pronounced. It is quite delicious when roasted.'],
       'flavors': [
         {
@@ -138082,7 +140834,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 10000,
       'exp': 20,
+      'smoothness': 40,
       'color': 0,
+      'size': 11.1,
+      'firmness': 3,
       'description': ['This Berry is surrounded by mystery. It is rumored to be imbued with the power of the sea.'],
       'flavors': [
         {
@@ -138122,6 +140877,7 @@ module.exports = {
         'Ledyba',
         'Flabébé (Red)',
         'Oricorio (Baile)',
+        'Manaphy',
       ],
       'hint': 'Legends tell of a mysterious Berry that only appears in a field of Passho Berries.',
     },
@@ -138138,7 +140894,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 10000,
       'exp': 20,
+      'smoothness': 40,
       'color': 1,
+      'size': 3.3,
+      'firmness': 3,
       'description': ['This Berry is surrounded by mystery. It is rumored to be imbued with the power of the land.'],
       'flavors': [
         {
@@ -138193,7 +140952,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 10000,
       'exp': 20,
+      'smoothness': 40,
       'color': 3,
+      'size': 9.5,
+      'firmness': 3,
       'description': ['This Berry is surrounded by mystery. It is rumored to be imbued with the power of the sky.'],
       'flavors': [
         {
@@ -138247,7 +141009,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 15000,
       'exp': 20,
+      'smoothness': 40,
       'color': 2,
+      'size': 23.7,
+      'firmness': 3,
       'description': [
         'This Berry is surrounded by mystery. It is rumored to be imbued with the power of all living things.',
         'This power keeps other Berries alive for longer.',
@@ -138306,7 +141071,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 15000,
       'exp': 20,
+      'smoothness': 40,
       'color': 5,
+      'size': 7.5,
+      'firmness': 2,
       'description': ['This is a very, very mystifying Berry. There is no telling how it can be used, or what may happen if it is used.'],
       'flavors': [
         {
@@ -138361,7 +141129,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 15000,
       'exp': 20,
+      'smoothness': 50,
       'color': 0,
+      'size': 9.7,
+      'firmness': 1,
       'description': ['This is said to be a legendary Berry. Holding it supposedly brings great joy.'],
       'flavors': [
         {
@@ -138417,7 +141188,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 15000,
       'exp': 20,
+      'smoothness': 50,
       'color': 3,
+      'size': 15.3,
+      'firmness': 4,
       'description': ["This Berry is considered a mirage. It was said to be so strong that it had to be abandoned at the world's edge."],
       'aura': {
         'auraType': 6,
@@ -138480,7 +141254,10 @@ module.exports = {
       'replantRate': 0,
       'farmValue': 15000,
       'exp': 20,
+      'smoothness': 60,
       'color': 1,
+      'size': 15.5,
+      'firmness': 2,
       'description': ['A completely enigmatic Berry. It apparently has the power of the stars that fill the night sky.'],
       'flavors': [
         {
@@ -138521,7 +141298,7 @@ module.exports = {
         'Oricorio (Sensu)',
         'Detective Pikachu',
       ],
-      'hint': 'There is a Berry that requires a linked <u>Discord</u> account to appear...',
+      'hint': "There's a mysterious berry that requires a specific configuration of Berries. However, there's still something missing...",
     },
   ],
 };
