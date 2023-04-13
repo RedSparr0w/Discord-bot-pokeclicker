@@ -194,6 +194,26 @@ module.exports = {
         const description = pokemon.locations[PokemonLocationType.Discord].map(price => `${serverIcons.money} ${price.toLocaleString()}`).join('\n');
         embed.addField('❯ Discord Shop', description);
       }
+      // Quest Line
+      if (pokemon.locations[PokemonLocationType.QuestLineReward]) {
+        const description = pokemon.locations[PokemonLocationType.QuestLineReward].join('\n');
+        embed.addField('❯ Quest Line', description);
+      }
+      // Temp Battle Reward
+      if (pokemon.locations[PokemonLocationType.TempBattleReward]) {
+        const description = pokemon.locations[PokemonLocationType.TempBattleReward].join('\n');
+        embed.addField('❯ Temp Battle', description);
+      }
+      // Gym Reward
+      if (pokemon.locations[PokemonLocationType.GymReward]) {
+        const description = pokemon.locations[PokemonLocationType.GymReward].join('\n');
+        embed.addField('❯ Defeat Gym', description);
+      }
+      // Dungeon Clear
+      if (pokemon.locations[PokemonLocationType.DungeonReward]) {
+        const description = pokemon.locations[PokemonLocationType.DungeonReward].join('\n');
+        embed.addField('❯ Dungeon Reward', description);
+      }
     } else {
       embed.addField('\u200b', `\`\`\`diff\n- Unknown Method\n${pokemon.id != Math.floor(pokemon.id) ? '- Possible Event Only\n' : ''}\`\`\``);
     }
