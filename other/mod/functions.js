@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const { modLogChannelID, mutedRoleID } = require('../../config');
-const { addScheduleItem } = require('../../database');
+const { addScheduleItem, addStatistic } = require('../../database');
 const { HOUR, error, formatDateToString } = require('../../helpers.js');
 
 const modLog = (guild, logMessage) => {
@@ -10,15 +10,19 @@ const modLog = (guild, logMessage) => {
   }
 };
 
-const mute = (member, time = 0) => {
+const mute = async (member, time = 0) => {
+  let mutes = 1;
   try {
     member.roles.add(mutedRoleID, `User muted by ${member.guild.me.displayName}-${member.guild.me.id}`);
+    mutes = await addStatistic(member.user, 'mutes', 1) || 1;
     if (time) {
+      time *= mutes;
       unmute(member, time);
     }
   } catch (e) {
     error('Unable to mute member\n', e);
   }
+  return time;
 };
 
 const unmute = (member, time = 1 * HOUR) => {

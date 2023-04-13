@@ -6,7 +6,7 @@ const { MessageEmbed } = require('discord.js');
 
 let messageLog = [];
 
-const check = (message) => {
+const check = async (message) => {
   // If message is empty or a command, ignore it
   if (message.content.startsWith('/') || !message.content) {
     return;
@@ -17,8 +17,8 @@ const check = (message) => {
 
   // Check if user has been spomming
   if (isSpam(message, spamDetection?.spam?.amount, spamDetection?.spam?.time)) {
-    const time = spamDetection?.spam?.mute || 2 * HOUR;
-    mute(message.member, time);
+    let time = spamDetection?.spam?.mute || 2 * HOUR;
+    time = await mute(message.member, time);
     modLog(
       message.member.guild,
       `**Mod:** ${message.member.guild.me.toString()}
@@ -37,8 +37,8 @@ const check = (message) => {
 
   // Check if user has been spomming the same message
   if (isDupe(message, spamDetection?.dupe?.amount, spamDetection?.dupe?.time)) {
-    const time = spamDetection?.dupe?.mute || 2 * HOUR;
-    mute(message.member, time);
+    let time = spamDetection?.dupe?.mute || 2 * HOUR;
+    time = await mute(message.member, time);
     modLog(
       message.member.guild,
       `**Mod:** ${message.member.guild.me.toString()}

@@ -163,6 +163,11 @@ const processSaveFile = (msg, file) => {
         const saveData = JSON.parse(Buffer.from(body, 'base64').toString());
 
         // Gather data from the save file
+        const timePlayed = saveData.save?.statistics?.secondsPlayed || 0;
+        // Don't process save files with no time played
+        if (!timePlayed) {
+          return;
+        }
         const saveFlags = saveFileFlags(saveData);
         const _lastSeen = saveData.player?._lastSeen || '0';
         const version = saveData.save?.update?.version || '0.0.0';
@@ -172,7 +177,6 @@ const processSaveFile = (msg, file) => {
         const pokemonShiny = saveData.save?.profile?.pokemonShiny || false;
         const caughtPokemon = saveData.save?.party?.caughtPokemon?.length || 0;
         const caughtPokemonShiny = saveData.save?.party?.caughtPokemon?.filter(p => p[5])?.length || 0;
-        const timePlayed = saveData.save?.statistics?.secondsPlayed || 0;
         const discordID = saveData.save?.discord?.ID || false;
         const challengesTotal = Object.values(saveData.save?.challenges?.list || {}).length || 0;
         const challengesEnabled = Object.values(saveData.save?.challenges?.list || {}).filter(a=>a).length || 0;

@@ -80,6 +80,16 @@ module.exports = {
 
     if (pokemon.locations && Object.keys(pokemon.locations).length) {
       embed.addField('\u200b', '\u200b'); // Spacing
+      // Egg
+      if (pokemon.locations[PokemonLocationType.Egg]) {
+        const description = pokemon.locations[PokemonLocationType.Egg].join('\n');
+        embed.addField('❯ Egg Types', description);
+      }
+      // Baby
+      if (pokemon.locations[PokemonLocationType.Baby]) {
+        const description = pokemon.locations[PokemonLocationType.Baby].join('\n');
+        embed.addField('❯ Breeding', description);
+      }
       // Routes
       if (pokemon.locations[PokemonLocationType.Route]) {
         let description = '';
@@ -148,16 +158,6 @@ module.exports = {
           descriptions.push(description);
         });
         embed.addField('❯ Evolves From', descriptions.join('\n\n').substring(0, 1000));
-      }
-      // Egg
-      if (pokemon.locations[PokemonLocationType.Egg]) {
-        const description = pokemon.locations[PokemonLocationType.Egg].join('\n');
-        embed.addField('❯ Egg Types', description);
-      }
-      // Baby
-      if (pokemon.locations[PokemonLocationType.Baby]) {
-        const description = pokemon.locations[PokemonLocationType.Baby].join('\n');
-        embed.addField('❯ Breeding', description);
       }
       // Fossil
       if (pokemon.locations[PokemonLocationType.Fossil]) {
