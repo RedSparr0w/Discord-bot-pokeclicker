@@ -115,7 +115,10 @@ module.exports = {
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` });
 
-    //embed.addField('❯ Pokemon', '\u200b');
+    // embed.addFields({
+    //   name: '❯ Pokemon',
+    //   value:  '\u200b',
+    // });
     Object.entries(route.pokemon).forEach(([type, pokemon]) => {
       if (!pokemon.length) return;
       const desc = [];
@@ -125,10 +128,18 @@ module.exports = {
       }
       pokemon.sort().forEach(p => desc.push(p));
       desc.push('```');
-      embed.addField(`❯ ${type.toUpperCase()}`, desc.join('\n'), true);
+      embed.addFields({
+        name: `❯ ${type.toUpperCase()}`,
+        value:  desc.join('\n'),
+        inline:  true,
+      });
     });
 
-    embed.addField('\u200b', '\u200b', false);
+    embed.addFields({
+      name: '\u200b',
+      value:  '\u200b',
+      inline:  false,
+    });
 
     // Gems:
     let gemsInfo;
@@ -141,7 +152,11 @@ module.exports = {
         descIcon.push(`${pokemonTypeIcons[PokemonType[type]]} **\`${PokemonType[type].padEnd(10, ' ')} ${chance.toFixed(1).padStart(4, ' ')}%\`**`);
       });
       descIcon.push('_this excludes special encounters_');
-      embed.addField('❯ GEMS', descIcon.join('\n'), true);
+      embed.addFields({
+        name: '❯ GEMS',
+        value:  descIcon.join('\n'),
+        inline:  true,
+      });
     }
 
     interaction.reply({ embeds: [embed] });
