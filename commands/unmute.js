@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
 const { modLog } = require('../other/mod/functions.js');
 
@@ -12,7 +12,7 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
   userperms   : ['MUTE_MEMBERS'], // Voice mute permission
   execute     : async (msg, args) => {
-    const embed = new MessageEmbed().setColor('#e74c3c');
+    const embed = new EmbedBuilder().setColor('#e74c3c');
 
     if (!msg.mentions.members.size) {
       embed.setDescription('No users mentioned..');
@@ -27,7 +27,7 @@ module.exports = {
           `**Mod:** ${msg.author.toString()}
           **User:** ${member.toString()}
           **Action:** Attempted to unmute themselves`);
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot un-mute yourself!');
+        const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot un-mute yourself!');
         return msg.reply({ embeds: [embed] });
       }
       await member.roles.remove(mutedRoleID, `User unmuted by ${msg.member.displayName}-${msg.author.id}`);

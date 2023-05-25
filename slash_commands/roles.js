@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
+const { EmbedBuilder, MessageActionRow, MessageButton } = require('discord.js');
 const { notificationRoles } = require('../config.js');
 const { SECOND, MINUTE, randomString } = require('../helpers.js');
 
@@ -37,7 +37,7 @@ module.exports = {
       return buttons;
     };
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setColor('#3498db')
       .setDescription([user, 'Click the buttons to toggle the roles', ''].join('\n'));
     const buttons = getButtons();

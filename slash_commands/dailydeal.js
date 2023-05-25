@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const {
   DailyDeal,
   UndergroundItem,
@@ -31,7 +31,7 @@ module.exports = {
       date[1]--;
     }
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('Upcoming Daily Deals')
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` });

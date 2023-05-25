@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
@@ -29,7 +29,7 @@ module.exports = {
 
     const member = await interaction.guild.members.fetch(id).catch(e => {});
     if (!member) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -39,7 +39,7 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to kick the bot
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot kick me trainer!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot kick me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -49,7 +49,7 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to kick user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('The user you tried to kick has higher or equal roles than you!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to kick has higher or equal roles than you!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -57,7 +57,7 @@ module.exports = {
 
     const joinDiscord = new Date(user.createdTimestamp);
     const joinServer = new Date(member.joinedTimestamp);
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('USER KICKED')
       .setAuthor({
         name: user?.tag,

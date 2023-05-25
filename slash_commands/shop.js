@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageButton } = require('discord.js');
+const { EmbedBuilder, MessageButton } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand, randomString } = require('../helpers.js');
 const { website, serverIcons } = require('../config.js');
@@ -83,7 +83,7 @@ module.exports = {
     const pages = [];
 
     allShopItems.forEach((item, index) => {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setColor('#3498db')
         .setDescription(interaction.user.toString())
         .addField('Name', item.name, true)
@@ -123,7 +123,7 @@ module.exports = {
 
       // Item doesn't exist or couldn't get item ID
       if (!itemID || !allShopItems[itemID - 1]) {
-        const embed = new MessageEmbed()
+        const embed = new EmbedBuilder()
           .setColor('#e74c3c')
           .setDescription([
             interaction.user,
@@ -138,7 +138,7 @@ module.exports = {
       const currentBalance = await getAmount(interaction.user);
 
       // Create the embed now and edit as needed
-      const embed = new MessageEmbed().setFooter({ text: `Balance: ${currentBalance.toLocaleString('en-US')}` });
+      const embed = new EmbedBuilder().setFooter({ text: `Balance: ${currentBalance.toLocaleString('en-US')}` });
       if (item.image) embed.setThumbnail(website + item.image);
 
       // Item too expensive

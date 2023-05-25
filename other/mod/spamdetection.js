@@ -1,7 +1,7 @@
 const { spamDetection } = require('../../config.js');
 const { SECOND, HOUR, formatDateToString } = require('../../helpers.js');
 const { mute, modLog } = require('./functions');
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 
 let messageLog = [];
@@ -31,7 +31,7 @@ const check = async (message) => {
       **Message Content:**
       \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
     );
-    const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Stop spamming!\n\nYou will be unmuted in ${formatDateToString(time)}`);
+    const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Stop spamming!\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
   }
 
@@ -51,7 +51,7 @@ const check = async (message) => {
       **Message Content:**
       \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
     );
-    const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`Stop spamming!\n_(duplicate message)_\n\nYou will be unmuted in ${formatDateToString(time)}`);
+    const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Stop spamming!\n_(duplicate message)_\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
   }
 };

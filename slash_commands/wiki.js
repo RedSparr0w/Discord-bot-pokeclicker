@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { wikiWebsite } = require('../config.js');
 const { wikiLinks } = require('../helpers.js');
@@ -24,7 +24,7 @@ module.exports = {
     const search = interaction.options.get('query')?.value;
 
     if (!search) {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('PokéClicker wiki')
         .setDescription(`Wiki: ${wikiWebsite}\nBeta Wiki: https://wiki.pokeclicker.com\n\nTo search for a specific page, use \`/wiki <query>\``)
         .setColor('#e74c3c');
@@ -34,7 +34,7 @@ module.exports = {
     const title = fuzzyWiki.get(search);
 
     if (!title) {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('PokéClicker wiki')
         .setDescription('No matching pages found')
         .setColor('#e74c3c');
@@ -44,7 +44,7 @@ module.exports = {
     const links = title.map(([match, title]) => wikiLinks.find((link) => link.title.toLowerCase() == title));
     const topLink = links.shift();
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('PokéClicker wiki')
       .setDescription(`**Top result:**
       **[${topLink.title}](${topLink.link})**

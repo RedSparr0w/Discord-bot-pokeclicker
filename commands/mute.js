@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
 const { MessageActionRow, MessageSelectMenu } = require('discord.js');
 const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
@@ -15,7 +15,7 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['MUTE_MEMBERS'], // Voice mute permission
   execute     : async (msg, args) => {
-    const embed = new MessageEmbed().setColor('#e74c3c');
+    const embed = new EmbedBuilder().setColor('#e74c3c');
 
     if (!msg.mentions.members.size) {
       embed.setDescription('No users mentioned..');
@@ -27,7 +27,7 @@ module.exports = {
 
     for (const [, m] of [...msg.mentions.members]) {
       if (m == msg.guild.me) {
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
+        const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
         return msg.reply({ embeds: [embed] });
       }
       await m.roles.add(mutedRoleID, `User muted by ${msg.member.displayName}-${msg.author.id}`);

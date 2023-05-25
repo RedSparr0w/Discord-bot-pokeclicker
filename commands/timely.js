@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { addAmount, addReminder } = require('../database.js');
 const { bonusRoles, serverIcons, autoReminderRoleID } = require('../config.js');
 const {
@@ -52,7 +52,7 @@ module.exports = {
       timeRemaining += `${seconds} second${s(seconds)}`;
       return msg.reply({
         embeds: [
-          new MessageEmbed()
+          new EmbedBuilder()
             .setColor('#e74c3c')
             .setFooter({ text: 'Next timely' })
             .setTimestamp(time_between_claims + (+last_claim))
@@ -119,7 +119,7 @@ module.exports = {
     }
 
     return msg.reply({
-      embeds: [new MessageEmbed().setColor('#2ecc71').setDescription(message.join('\n'))],
+      embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(message.join('\n'))],
       allowedMentions: { repliedUser: false },
     });
   },

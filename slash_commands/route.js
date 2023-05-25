@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const {
   regionRoutes,
@@ -109,7 +109,7 @@ module.exports = {
 
     const shiny = !Math.floor(Math.random() * 512);
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | ${route.routeName}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')

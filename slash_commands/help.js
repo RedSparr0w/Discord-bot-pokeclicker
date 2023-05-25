@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const {
   getAvailableChannelList,
   formatChannelList,
@@ -42,7 +42,7 @@ module.exports = {
 
     // Help on all commands
     if (!command) {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('Help')
         .setDescription([
           `For more detailed information about a command use ${getCommandSuggestion(commandsMap, 'help')}:`,
@@ -115,7 +115,7 @@ module.exports = {
       return interaction.reply('That is not a valid command!');
     }
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle(`Help | ${getCommandSuggestion(commandsMap, command.name)}`)
       .setColor('#3498db')
       .addField('❯ Description', `${command.description || '---'}`, false)

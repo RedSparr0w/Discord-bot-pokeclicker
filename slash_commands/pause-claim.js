@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { pauseClaimStreak, DAY } = require('../helpers.js');
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
 
     return interaction.reply({
       embeds: [
-        new MessageEmbed()
+        new EmbedBuilder()
           .setColor('RANDOM')
           .setDescription(`${interaction.user}\nI've paused your streaks for up to 14 days _(from the time of your last claim)_,\nWhen you next do a claim or timely it will be un-paused automatically.`),
       ],

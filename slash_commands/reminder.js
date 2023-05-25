@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const {
   MINUTE,
   HOUR,
@@ -81,7 +81,7 @@ const reminderRemove = async (interaction) => {
 
   clearReminders(remindersToClear.map(r => r.id));
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Cleared Reminders:')
     .setFooter({ text: 'Note that times are displayed in UTC' })
     .setColor('#3498db');
@@ -111,7 +111,7 @@ const reminderAdd = async (interaction, options) => {
 
   await addReminder(interaction.user, reminderTime, reminderMessage);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setDescription(`I will send you a reminder in ${formatDateToString(remindInTime)}
 
     > ${reminderMessage.replace(/\n/g, '\n> ')}
@@ -127,7 +127,7 @@ const reminderAdd = async (interaction, options) => {
 const reminderView = async (interaction) => {
   const reminders = await getUserReminders(interaction.user);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Pending Reminders:')
     .setColor('#3498db');
 

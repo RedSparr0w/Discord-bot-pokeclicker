@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const {
   upperCaseFirstLetter,
   getAvailableChannelList,
@@ -25,7 +25,7 @@ module.exports = {
 
     // Help on all commands
     if (!args.length) {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('Help')
         .setDescription([
           'For more detailed information about a command use',
@@ -37,7 +37,10 @@ module.exports = {
 
       if (msg.channel.type === 'DM'){
         const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
-        embed.addField('__***Commands:***__', description);
+        embed.addFields({
+          name: '__***Commands:***__',
+          value: description,
+        });
       } else if (msg.channel.type === 'GUILD_TEXT'){
         // Group the commands by their primary channel
         const restrictedCommands = [];
@@ -68,11 +71,20 @@ module.exports = {
         // #anywhere
         // #channel-specific
         // #restricted
-        if (anyCommands.length) embed.addField('__***#anywhere***__', anyCommands.join('\n'));
-        Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
-          embed.addField(`__***#${channel}***__`, commands.join('\n'));
+        if (anyCommands.length) embed.addFields({
+          name: '__***#anywhere***__',
+          value: anyCommands.join('\n'),
         });
-        if (restrictedCommands.length) embed.addField('__***#restricted-channel***__', restrictedCommands.join('\n'));
+        Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
+          embed.addFields({
+            name: `__***#${channel}***__`,
+            value: commands.join('\n'),
+          });
+        });
+        if (restrictedCommands.length) embed.addFields({
+          name: '__***#restricted-channel***__',
+          value: restrictedCommands.join('\n'),
+        });
       }
       return msg.channel.send({ embeds: [embed] });
     }
@@ -85,19 +97,50 @@ module.exports = {
       return msg.channel.send({ content: 'That is not a valid command!', ephemeral: true });
     }
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle(`Help | ${upperCaseFirstLetter(command.name)}`)
       .setColor('#3498db')
-      .addField('❯ Description', `${command.description}`)
-      .addField('❯ Usage', `\`\`\`css\n${prefix}${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``)
-      .addField('❯ Aliases', `\`${command.aliases.join('`, `') || '-'}\``, true)
-      .addField('❯ Cooldown', `\`${command.cooldown || 3} second(s)\``, true)
-      .addField('❯ Guild Only', `\`${command.guildOnly}\``, true)
-      .addField('❯ Channels', formatChannelList(msg.guild, command.channels), true);
+      .addFields([
+        {
+          name: '❯ Description',
+          value: `${command.description}`,
+        },
+        {
+          name: '❯ Usage',
+          value: `\`\`\`css\n${prefix}${command.name}${command.args.map(arg=>` [${arg}]`).join('')}\`\`\``,
+        },
+        {
+          name: '❯ Aliases',
+          value: `\`${command.aliases.join('`, `') || '-'}\``,
+          inline: true,
+        },
+        {
+          name: '❯ Cooldown',
+          value: `\`${command.cooldown || 3} second(s)\``,
+          inline: true,
+        },
+        {
+          name: '❯ Guild Only',
+          value: `\`${command.guildOnly}\``,
+          inline: true,
+        },
+        {
+          name: '❯ Channels',
+          value: formatChannelList(msg.guild, command.channels),
+          inline: true,
+        },
+      ]);
 
     if (command.helpFields) {
-      embed.addField('\u200b\n═══ More Information ═══', '\u200b');
-      command.helpFields.forEach(([header, body, inline]) => embed.addField(header, body, !!inline));
+      embed.addFields({
+        name: '\u200b\n═══ More Information ═══',
+        value: '\u200b',
+      });
+      command.helpFields.forEach(([header, body, inline]) => embed.addFields({
+        name: header,
+        value: body,
+        inline: !!inline,
+      }));
     }
 
     msg.channel.send({ embeds: [embed] });

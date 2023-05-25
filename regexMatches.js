@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { serverIcons } = require('./config.js');
 const { addOrderedReactions, formatDateToString } = require('./helpers.js');
 const { HOUR } = require('./helpers/constants.js');
@@ -119,7 +119,7 @@ module.exports = [
       description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
 
       // Create the embed
-      const embed = new MessageEmbed().setDescription(description.join('\n')).setColor('RANDOM');
+      const embed = new EmbedBuilder().setDescription(description.join('\n')).setColor('RANDOM');
 
       message.reply({embeds: [embed]});
     },
@@ -183,7 +183,7 @@ module.exports = [
         \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
       );
       const embedDescription = `Please do not attempt to tag \\@everyone\n\nYou will be unmuted in ${formatDateToString(time)}.`;
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(embedDescription);
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(embedDescription);
       message.reply({ embeds: [embed] });
       message.delete().catch(e => {});
     },

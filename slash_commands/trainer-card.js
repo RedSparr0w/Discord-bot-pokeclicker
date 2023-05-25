@@ -1,4 +1,4 @@
-const { MessageAttachment, MessageEmbed } = require('discord.js');
+const { AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const { getAmount, getRank, getTrainerCard, getPurchased } = require('../database.js');
 const { trainerCardColors, trainerCardBadges, getLastClaim } = require('../helpers.js');
 const { Canvas, Image } = require('canvas');
@@ -34,7 +34,7 @@ module.exports = {
     if (id) {
       member = await interaction.guild.members.fetch(id).catch(e => {});
       if (!member) {
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+        const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
         return interaction.reply({ embeds: [embed], ephemeral: true });
       }
       user = member.user;
@@ -144,11 +144,11 @@ module.exports = {
       const base64Image = b64.split(';base64,').pop();
       
       fs.writeFile('trainer_card.png', base64Image, {encoding: 'base64'}, async function(err) {
-        const attachment = await new MessageAttachment().setFile('trainer_card.png');
+        const attachment = await new AttachmentBuilder().setFile('trainer_card.png');
 
         return interaction.reply({ files: [attachment] });
 
-        // const embed = new MessageEmbed()
+        // const embed = new EmbedBuilder()
         //   .setColor('#3498db')
         //   .attachFiles(attachment)
         //   .setImage('attachment://trainer_card.png');

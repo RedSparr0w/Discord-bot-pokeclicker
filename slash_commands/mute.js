@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
 const { MessageActionRow, MessageSelectMenu } = require('discord.js');
 const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
@@ -34,7 +34,7 @@ module.exports = {
 
     const member = await interaction.guild.members.fetch(id).catch(e => {});
     if (!member) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
     const user = member.user;
@@ -45,7 +45,7 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to mute the bot
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -55,7 +55,7 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to mute user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('The user you tried to mute has higher or equal roles than you!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to mute has higher or equal roles than you!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -64,7 +64,7 @@ module.exports = {
     await member.roles.add(mutedRoleID, `User muted by ${interaction.member.displayName}-${interaction.user.id}`);
     output.push(member);
 
-    const embed = new MessageEmbed().setColor('#3498db').setDescription(output.join('\n'));
+    const embed = new EmbedBuilder().setColor('#3498db').setDescription(output.join('\n'));
     const customID = randomString();
     const select = new MessageActionRow()
       .addComponents(

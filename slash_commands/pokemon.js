@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { website, serverIcons } = require('../config.js');
 const {
@@ -61,7 +61,7 @@ module.exports = {
     if (!pokemon) pokemon = pokemonList.find(p => p.id == 0);
     if (!pokemon) return;
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle(`#${pokemon.id >= 0 ? pokemon.id.toString().padStart(3, 0) : '???'} ${pokemon.name.toUpperCase()}`)
       .setDescription(`${pokemonTypeIcons[PokemonType[pokemon.type[0]]]} *\`${PokemonType[pokemon.type[0]]}\`*${pokemon.type[1] >= 0 ? `\n${pokemonTypeIcons[PokemonType[pokemon.type[1]]]} *\`${PokemonType[pokemon.type[1]]}\`*` : ''}`)
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)

@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageButton } = require('discord.js');
+const { EmbedBuilder, MessageButton } = require('discord.js');
 const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
 const {
   upperCaseFirstLetter,
@@ -41,7 +41,7 @@ module.exports = {
     let pages = [];
 
     trainerCardColors.forEach((color, index) => {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setColor('#3498db')
         .setDescription(interaction.user.toString())
         .addField('Color', upperCaseFirstLetter(color), true)
@@ -53,7 +53,7 @@ module.exports = {
     });
 
     for (let trainerID = 0; trainerID <= totalTrainerImages; trainerID++) {
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setColor('#3498db')
         .setDescription(interaction.user.toString())
         .addField('Trainer ID', `#${trainerID.toString().padStart(3, 0)}`, true)
@@ -103,7 +103,7 @@ module.exports = {
         const itemIndex = pageNumber <= trainerCardColors.length ? pageNumber - 1 : (pageNumber - trainerCardColors.length) - 1;
 
         // Initial embed object, with red color
-        const embed = new MessageEmbed().setColor('#e74c3c');
+        const embed = new EmbedBuilder().setColor('#e74c3c');
 
         // Couldn't read the price correctly
         if (isNaN(price)) throw new Error('Price is NaN');
@@ -145,7 +145,7 @@ module.exports = {
         return interaction.followUp({ embeds: [embed] });
       } catch (e) {
         error('Failed to purchase item', e);
-        const embed = new MessageEmbed()
+        const embed = new EmbedBuilder()
           .setColor('#e74c3c')
           .setDescription([
             interaction.user,

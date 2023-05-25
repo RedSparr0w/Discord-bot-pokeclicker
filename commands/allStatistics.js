@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { getStatisticTypes, getOverallStatistic } = require('../database.js');
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
   execute     : async (msg, args) => {
     const type = args[0];
 
-    const embed = new MessageEmbed().setColor('#e74c3c');
+    const embed = new EmbedBuilder().setColor('#e74c3c');
 
     const statTypes = await getStatisticTypes();
 

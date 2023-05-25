@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { getStatistic } = require('../database');
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
     if (id) {
       member = await interaction.guild.members.fetch(id).catch(e => {});
       if (!member) {
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+        const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
         return interaction.reply({ embeds: [embed], ephemeral: true });
       }
       user = member.user;
@@ -37,7 +37,7 @@ module.exports = {
     const joinServer = new Date(member.joinedTimestamp);
     const warnings = await getStatistic(user, 'warnings');
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setAuthor({
         name: user.tag,
         url: `https://discordapp.com/users/${user.id}`,

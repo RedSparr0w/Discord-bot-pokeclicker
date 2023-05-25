@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { addStatistic } = require('../database.js');
 const { modLog } = require('../other/mod/functions.js');
 
@@ -30,7 +30,7 @@ module.exports = {
 
     const member = await interaction.guild.members.fetch(id).catch(e => {});
     if (!member) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
     const user = member?.user;
@@ -41,7 +41,7 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to warn the bot
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot warn me trainer!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot warn me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -49,7 +49,7 @@ module.exports = {
     const joinServer = new Date(member?.joinedTimestamp);
     const warnings = await addStatistic(user, 'warnings', 1);
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('USER WARNED')
       .setAuthor({
         name: user?.tag,

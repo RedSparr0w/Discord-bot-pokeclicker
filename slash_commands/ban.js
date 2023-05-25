@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
@@ -34,7 +34,7 @@ module.exports = {
         const kickInfo = await interaction.guild.members.ban(id);
         user = kickInfo?.user || kickInfo || {};
       } catch (e) {
-        const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+        const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
         return interaction.reply({ embeds: [embed], ephemeral: true });
       }
     }
@@ -45,7 +45,7 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to ban the bot
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot ban me trainer!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot ban me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -55,13 +55,13 @@ module.exports = {
         **User:** ${member.toString()}
         **Action:** Attempted to ban user (failed as higher roles)
         **Reason:** ${reason || 'Unknown'}`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('The user you tried to kick has higher or equal roles than you!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('The user you tried to kick has higher or equal roles than you!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
     const joinDiscord = new Date(user?.createdTimestamp);
     const joinServer = new Date(member?.joinedTimestamp);
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle('USER BANNED')
       .setAuthor({
         name: user?.tag,

@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { addAmount } = require('../database.js');
 const { serverIcons } = require('../config.js');
 
@@ -15,7 +15,7 @@ module.exports = {
   execute     : async (msg, args) => {
     const amount = +(args.find(arg=>/^-?\d+$/.test(arg)) || 10);
     
-    const embed = new MessageEmbed().setColor('#e74c3c');
+    const embed = new EmbedBuilder().setColor('#e74c3c');
 
     if (isNaN(amount)) {
       embed.setDescription('Invalid amount specified..');

@@ -1,4 +1,4 @@
-const { MessageEmbed, MessageAttachment } = require('discord.js');
+const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const fs =  require('fs');
 const { website, serverIcons } = require('../../config.js');
 const {
@@ -20,7 +20,7 @@ const getShinyAmount = () => 100 + getAmount();
 const shinyChance = 54;
 const isShiny = (chance = shinyChance) => !Math.floor(Math.random() * (isHappyHour() ? chance / happyHourBonus : chance));
 const defaultEndFunction = (title, image, description) => async (m, e) => {
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle(title)
     .setThumbnail(image)
     .setColor('#e74c3c');
@@ -57,9 +57,9 @@ const whosThatPokemon = () => new Promise(resolve => {
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
     
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new MessageAttachment().setFile('who.png');
+      const attachment = await new AttachmentBuilder().setFile('who.png');
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('Who\'s that Pokémon?')
         .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
@@ -74,8 +74,8 @@ const whosThatPokemon = () => new Promise(resolve => {
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
-            const embed = new MessageEmbed()
+            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
+            const embed = new EmbedBuilder()
               .setTitle(`It's ${pokemon.name}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
@@ -109,9 +109,9 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
     
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new MessageAttachment().setFile('who.png');
+      const attachment = await new AttachmentBuilder().setFile('who.png');
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('Name the Evolution!')
         .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
@@ -126,8 +126,8 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0].evolvedPokemon), shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
-            const embed = new MessageEmbed()
+            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
+            const embed = new EmbedBuilder()
               .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
@@ -163,9 +163,9 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
     
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new MessageAttachment().setFile('who.png');
+      const attachment = await new AttachmentBuilder().setFile('who.png');
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('Name the Prevolution!')
         .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
@@ -180,8 +180,8 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(prevolution, shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
-            const embed = new MessageEmbed()
+            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
+            const embed = new EmbedBuilder()
               .setTitle(`It's ${prevolution.name}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
@@ -216,9 +216,9 @@ const pokemonType = () => new Promise(resolve => {
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
     
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new MessageAttachment().setFile('who.png');
+      const attachment = await new AttachmentBuilder().setFile('who.png');
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('What\'s the type?')
         .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
@@ -233,8 +233,8 @@ const pokemonType = () => new Promise(resolve => {
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
-            const embed = new MessageEmbed()
+            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
+            const embed = new EmbedBuilder()
               .setTitle(`It's ${types.join(' & ')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
@@ -268,9 +268,9 @@ const pokemonID = () => new Promise(resolve => {
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
   
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new MessageAttachment().setFile('who.png');
+      const attachment = await new AttachmentBuilder().setFile('who.png');
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('What\'s the ID?')
         .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
@@ -285,8 +285,8 @@ const pokemonID = () => new Promise(resolve => {
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
-            const embed = new MessageEmbed()
+            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
+            const embed = new EmbedBuilder()
               .setTitle(`It's ${pokemon.id < 0 ? '-': ''}#${Math.floor(Math.abs(pokemon.id)).toString().padStart(3, '0')}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
@@ -320,9 +320,9 @@ const pokemonRegion = () => new Promise(resolve => {
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
   
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new MessageAttachment().setFile('who.png');
+      const attachment = await new AttachmentBuilder().setFile('who.png');
 
-      const embed = new MessageEmbed()
+      const embed = new EmbedBuilder()
         .setTitle('What\'s the Region?')
         .setDescription(description.join('\n'))
         .setImage('attachment://who.png')
@@ -337,8 +337,8 @@ const pokemonRegion = () => new Promise(resolve => {
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
           fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new MessageAttachment().setFile('whoFinal.png');
-            const embed = new MessageEmbed()
+            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
+            const embed = new EmbedBuilder()
               .setTitle(`It's ${upperCaseFirstLetter(GameConstants.Region[pokemon.nativeRegion])}!`)
               .setImage('attachment://whoFinal.png')
               .setColor('#e74c3c');
@@ -370,7 +370,7 @@ const fossilPokemon = () => {
 
   const image = encodeURI(`${website}assets/images/breeding/${fossil}.png`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Who\'s that Pokémon?')
     .setDescription(description.join('\n'))
     .setThumbnail(image)
@@ -407,7 +407,7 @@ const pokemonFossil = () => {
     amount += shiny_amount;
   }
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('What\'s the fossil?')
     .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
@@ -434,7 +434,7 @@ const dockTown = () => {
   const description = [`Where abouts is the Dock located in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Setting sail!')
     .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/ship.png`)
@@ -460,7 +460,7 @@ const startingTown = () => {
   const description = [`Where does the player start in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Getting started!')
     .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/ship.png`)
@@ -487,7 +487,7 @@ const badgeGymLeader = () => {
   description.push(`||${badge} Badge||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Who\'s the Gym Leader?')
     .setDescription(description.join('\n'))
     .setThumbnail(encodeURI(`${website}assets/images/badges/${badge}.png`))
@@ -516,7 +516,7 @@ const badgeGymLocation = () => {
 
   const image = encodeURI(`${website}assets/images/badges/${badge}.png`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Where\'s the Gym?')
     .setDescription(description.join('\n'))
     .setThumbnail(image)
@@ -554,7 +554,7 @@ const pokemonGymLeader = () => {
     amount += shiny_amount;
   }
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Who\'s the Gym Leader?')
     .setDescription(description.join('\n'))
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
@@ -593,7 +593,7 @@ const gymLeaderPokemon = () => {
 
   const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Which Pokemon?')
     .setDescription(description.join('\n'))
     .setThumbnail(image)
@@ -622,7 +622,7 @@ const gymLeaderLocation = () => {
 
   const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Where are they?')
     .setDescription(description.join('\n'))
     .setThumbnail(image)
@@ -650,7 +650,7 @@ const gymLeaderBadge = () => {
 
   const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('What\'s the Badge?')
     .setDescription(description.join('\n'))
     .setThumbnail(image)
@@ -685,7 +685,7 @@ const gymLeaderType = () => {
 
   const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('What\'s the Type?')
     .setDescription(description.join('\n'))
     .setThumbnail(image)

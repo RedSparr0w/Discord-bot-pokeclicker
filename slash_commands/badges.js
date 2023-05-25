@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { trainerCardBadges } = require('../helpers.js');
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
   userperms   : [],
   channels    : ['bot-commands'],
   execute     : async (interaction) => {
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setDescription(
         trainerCardBadges.map(b => `**${b.icon} ${b.name} Badge:**\n_${b.description}_`).join('\n')
       )

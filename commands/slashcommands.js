@@ -7,7 +7,7 @@ return `'${msg.client.slashCommands.map(c => [c.name, ...c.aliases]).flat().filt
 ```
 */
 
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { prefix } = require('../config');
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
     const commandName = msg.content.slice(prefix.length).trim().split(/,?\s+/).shift()?.toLowerCase();
     const command = msg.client.slashCommands.find(c => c.name == commandName || c.aliases?.includes(commandName));
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setDescription(`It looks like you are trying to use a command,
 This command has likely moved to a slash command.
 Try using \`/${command ? command.name : 'help'}\` instead`)

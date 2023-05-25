@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 const donatelink = 'https://www.paypal.com/donate?hosted_button_id=AYMCC237K8VR4';
 
@@ -18,7 +18,7 @@ module.exports = {
     [PayPal Donate Link](${donatelink}):
     ${donatelink}`;
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setColor('#3498db')
       .setDescription(description);
     

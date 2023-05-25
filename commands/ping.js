@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name        : 'ping',
@@ -10,7 +10,7 @@ module.exports = {
   botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
   userperms   : ['SEND_MESSAGES'],
   execute     : async (msg, args) => {
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setDescription([
         '```yaml',
         'Pong: --ms',

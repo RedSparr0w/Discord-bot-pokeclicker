@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name        : 'roleinfo',
@@ -19,7 +19,7 @@ module.exports = {
       return `${r}: ${members.size}`;
     }).join('\n');
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setColor('RANDOM')
       .addField('Role Members:', roleMemberCount)
       .setTimestamp();

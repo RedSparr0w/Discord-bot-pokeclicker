@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { quizChannelID, ownerID, serverIcons } = require('../../config.js');
 const { addAmount, addStatistic, addPurchased } = require('../../database.js');
 const {
@@ -94,7 +94,7 @@ const newQuiz = async (guild, reoccur = false) => {
     // If user has answered more than 100 questions, give them the Marsh Badge
     if (answered == 100) {
       await addPurchased(user, 'badge', trainerCardBadgeTypes.Marsh);
-      const congratsEmbed = new MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('RANDOM').setDescription([
         m.author.toString(),
         `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Marsh].icon} Marsh badge for having ${answered} questions answered!`,
       ].join('\n'));
@@ -102,7 +102,7 @@ const newQuiz = async (guild, reoccur = false) => {
     }
 
     if (answered % 1000 == 0) {
-      const congratsEmbed = new MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('RANDOM').setDescription([
         m.author.toString(),
         `You just reached ${answered.toLocaleString('en-US')} questions answered!`,
       ].join('\n'));
@@ -133,7 +133,7 @@ const newQuiz = async (guild, reoccur = false) => {
         // Send out the correct users and amounts
         if (winner_data.length) {
           const description = winner_data.sort((a,b) => b.amount - a.amount).map(w => `${w.user}: **+${w.amount} ${serverIcons.money}**`);
-          const embed = new MessageEmbed()
+          const embed = new EmbedBuilder()
             .setTitle('**Correct:**')
             .setDescription(description.join('\n'))
             .setColor('#2ecc71');

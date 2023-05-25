@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { HOUR } = require('../helpers.js');
 const { happyHourHours } = require('../other/quiz/happy_hour.js');
 
@@ -16,7 +16,7 @@ module.exports = {
     const now = Date.now();
     const happy_hour = new Date((now - (now % (happyHourHours * HOUR))) + happyHourHours * HOUR);
     
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setDescription('Next happy hour:')
       .setTimestamp(happy_hour)
       .setColor('#3498db');

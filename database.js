@@ -1,7 +1,7 @@
 const sqlite = require('sqlite');
 const sqlite3 = require('sqlite3');
 const { backupChannelID } = require('./config.js');
-const { MessageAttachment } = require('discord.js');
+const { AttachmentBuilder } = require('discord.js');
 const { warn } = require('./helpers/logging.js');
 const { trainerCardBadgeTypes } = require('./helpers/trainer_card.js');
 const { version: botVersion } = require('./package.json');
@@ -80,7 +80,7 @@ async function backupDB(guild){
   const backup_channel = await guild.channels.cache.find(c => c.id == backupChannelID);
   if (!backup_channel) return warn('Backup channel not found!');
 
-  const attachment = await new MessageAttachment().setFile(database_fullpath, 'database.backup.sqlite');
+  const attachment = await new AttachmentBuilder().setFile(database_fullpath, { name: 'database.backup.sqlite' });
 
   backup_channel.send({
     content: `__***Database Backup:***__\n_${new Date().toJSON().replace(/T/g,' ').replace(/\.\w+$/,'')}_`,

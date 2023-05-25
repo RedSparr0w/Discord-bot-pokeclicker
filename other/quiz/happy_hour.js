@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { quizChannelID } = require('../../config.js');
 const { HOUR } = require('../../helpers.js');
 
@@ -16,7 +16,7 @@ const startHappyHour = async (guild) => {
   quiz_channel.setRateLimitPerUser(0, 'Happy Hour!').catch(O_o=>{});
   setTimeout(() => quiz_channel.setRateLimitPerUser(5, 'Happy Hour!').catch(O_o=>{}), HOUR);
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('It\'s Happy Hour!')
     .setDescription(['Happy Hour is on for the next 1 hour!', `Questions are posted ${happyHourBonus} × as often`, `Shiny chances are ${happyHourBonus} × higher`, '', 'Good Luck!'].join('\n'))
     .setColor('#2ecc71');
@@ -32,7 +32,7 @@ const endHappyHour = async (guild) => {
   // players can only type once per 5 seconds
   quiz_channel.setRateLimitPerUser(5, 'Happy Hour!').catch(O_o=>{});
 
-  const embed = new MessageEmbed()
+  const embed = new EmbedBuilder()
     .setTitle('Happy Hour is over!')
     .setDescription(['The next happy hour will be:'].join('\n'))
     .setTimestamp(nextHappyHour())

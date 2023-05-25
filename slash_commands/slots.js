@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
@@ -208,7 +208,7 @@ module.exports = {
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -217,7 +217,7 @@ module.exports = {
     bet = calcBetAmount(bet, balance);
 
     if (bet > balance || !balance || balance <= 0) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -242,7 +242,7 @@ module.exports = {
     addAmount(interaction.user, winnings);
     addBetStatistics(interaction.user, bet, winnings);
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setColor(multiplier >= 1 ? '#2ecc71' : '#e74c3c')
       .setDescription(output.join('\n'))
       .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });

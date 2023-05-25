@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const {
   PokemonType,
   GameConstants,
@@ -128,7 +128,7 @@ module.exports = {
     
     const sortFunc = order == 'chance' ? (a, b) => b[1] - a[1] : (a, b) => a[0] - b[0];
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle(`${pokemonTypeIcons[type]} ${type} Gem Routes`)
       .setColor('#3498db')
       .setDescription('_this excludes special encounters_')

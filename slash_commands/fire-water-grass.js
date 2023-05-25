@@ -1,5 +1,5 @@
 const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { serverIcons } = require('../config.js');
 
@@ -69,14 +69,14 @@ module.exports = {
 
     // Check player has selected a type
     if (!type || types[type.toLowerCase()] == undefined) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid type selected.`);
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid type selected.`);
       return interaction.reply({ embeds: [embed] });
     }
     type = types[type.toLowerCase()];
 
     // Check the bet amount is correct
     if (!validBet(bet)) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid bet amount.`);
       return interaction.reply({ embeds: [embed] });
     }
 
@@ -85,7 +85,7 @@ module.exports = {
     bet = calcBetAmount(bet, balance);
 
     if (bet > balance || !balance || balance <= 0) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nNot enough coins.`);
       return interaction.reply({ embeds: [embed] });
     }
 
@@ -106,7 +106,7 @@ module.exports = {
     addAmount(interaction.user, winnings);
     addBetStatistics(interaction.user, bet, winnings);
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setColor(multiplier == 0 ? '#e74c3c' : multiplier == 1 ? '#3498db' : '#2ecc71')
       .setDescription(output)
       .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });

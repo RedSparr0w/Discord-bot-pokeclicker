@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { getAmount } = require('../database.js');
 const { serverIcons } = require('../config.js');
 
@@ -20,7 +20,7 @@ module.exports = {
       `**Balance: ${balance.toLocaleString('en-US')} ${serverIcons.money}**`,
     ].join('\n');
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setColor('#3498db')
       .setDescription(output);
 

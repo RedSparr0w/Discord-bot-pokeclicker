@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name        : 'userinfo',
@@ -16,7 +16,7 @@ module.exports = {
 
     const joinDiscord = new Date(user.createdTimestamp);
     const joinServer = new Date(member.joinedTimestamp);
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setAuthor({
         name: user.tag,
         url: `https://discordapp.com/users/${user.id}`,

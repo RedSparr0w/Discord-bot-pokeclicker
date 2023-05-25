@@ -1,4 +1,4 @@
-const { MessageActionRow, MessageButton, MessageEmbed } = require('discord.js');
+const { MessageActionRow, MessageButton, EmbedBuilder } = require('discord.js');
 const https = require('https');
 const { error } = require('./logging');
 const { formatSecondsFullLetters } = require('./conversion');
@@ -190,7 +190,7 @@ const processSaveFile = (msg, file) => {
           ?.slice(0, 5) || [];
 
         // Create the embed
-        const embed = new MessageEmbed()
+        const embed = new EmbedBuilder()
           .setAuthor({
             name: name,
             iconURL: `${website}assets/images/profile/trainer-${trainer}.png`,

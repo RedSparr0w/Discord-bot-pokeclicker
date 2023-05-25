@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { addPurchased } = require('../database.js');
 const { trainerCardBadges } = require('../helpers.js');
 
@@ -17,7 +17,7 @@ module.exports = {
     const badgeIndex = trainerCardBadges.findIndex(b=>b.icon == badgeIcon);
     const badge = trainerCardBadges[badgeIndex];
     
-    const embed = new MessageEmbed().setColor('#e74c3c');
+    const embed = new EmbedBuilder().setColor('#e74c3c');
 
     if (!badge) {
       embed.setDescription('Invalid badge icon specified..');

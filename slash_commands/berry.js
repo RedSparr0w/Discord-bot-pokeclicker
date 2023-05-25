@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { website } = require('../config.js');
 const {
@@ -65,7 +65,7 @@ module.exports = {
     }
     if (!berry) return interaction.reply('Berry not found..', { ephemeral: true });
 
-    const embed = new MessageEmbed()
+    const embed = new EmbedBuilder()
       .setTitle(`#${berry.type >= 0 ? (berry.type + 1).toString().padStart(2, 0) : '???'} ${berryType[berry.type].toUpperCase()}`)
       .setThumbnail(`${website}assets/images/items/berry/${berryType[berry.type]}.png`)
       .setColor('#3498db')

@@ -1,5 +1,5 @@
 # docker-compose build --no-cache
-FROM node:16-alpine
+FROM node:18-alpine
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
