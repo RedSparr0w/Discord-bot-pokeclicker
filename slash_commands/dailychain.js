@@ -208,7 +208,10 @@ module.exports = {
       if (embed.length + title.length + description.length >= 5950) {
         return tooLong = true;
       }
-      embed.addField(title, description);
+      embed.addFields({
+        name: title,
+        value:  description,
+      });
 
       // Deals Output
       const dates = [];
@@ -226,13 +229,29 @@ module.exports = {
         const date_str = ['```ini', ...dates.splice(0, max_size), '```'].join('\n');
         const deal_1_str = ['```ini', ...deal_output1.splice(0, max_size), '```'].join('\n');
         const deal_2_str = ['```ini', ...deal_output2.splice(0, max_size), '```'].join('\n');
-        if (embed.length + date_str.length + deal_1_str.length + deal_2_str.length + 50 /* account for title + too long message lengths */ >= 6000) {
-          embed.addField('...chain length too long...', '\u200b', false);
+        if (embed.length + date_str.length + deal_1_str.length + deal_2_str.length + 50 /* account for title + too long message lengths */ >= 6000 || embed.data.fields.length >= 21) {
+          embed.addFields({
+            name: '...chain length too long...',
+            value:  '\u200b',
+            inline: false,
+          });
           return tooLong = true;
         }
-        embed.addField('_Date_', date_str, true);
-        embed.addField('_Give_', deal_1_str, true);
-        embed.addField('_Receive_', deal_2_str, true);
+        embed.addFields({
+          name: '_Date_',
+          value:  date_str,
+          inline: true,
+        });
+        embed.addFields({
+          name: '_Give_',
+          value:  deal_1_str,
+          inline: true,
+        });
+        embed.addFields({
+          name: '_Receive_',
+          value:  deal_2_str,
+          inline: true,
+        });
       }
     });
 
