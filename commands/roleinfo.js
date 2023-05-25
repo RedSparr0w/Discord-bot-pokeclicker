@@ -21,7 +21,10 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor('Random')
-      .addField('Role Members:', roleMemberCount)
+      .addFields({
+        name: 'Role Members:',
+        value: roleMemberCount,
+      })
       .setTimestamp();
 
     return msg.channel.send({ embeds: [embed] });

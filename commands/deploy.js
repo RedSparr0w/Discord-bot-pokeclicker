@@ -1,3 +1,5 @@
+// TODO: Make sure this still works!!
+// Maybe also remove the auto perms stuff from the slash command handler
 const { error } = require('../helpers.js');
 const { ownerID } = require('../config.js');
 
