@@ -67,28 +67,65 @@ module.exports = {
       .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` })
-      .addField('<:xAttack:1032155850661429278> Base Attack', `${pokemon.attack}`,true)
-      .addField('\u200b', '\u200b', true) // Spacing
-      .addField('<:Pokeball:974600141594034226> Catch Rate', `${pokemon.catchRatePercent}%`, true)
-      .addField('<:RareCandy:1032155819489378325> Level Type', `${LevelType[pokemon.levelType]}`, true)
-      .addField('\u200b', '\u200b', true) // Spacing
-      .addField('<:Mystery_egg:1032155916688162836> Egg Steps', `${pokemon.eggSteps}`, true);
+      .addFields({
+        name: '<:xAttack:1032155850661429278> Base Attack',
+        value:  `${pokemon.attack}`,
+        inline: true,
+      })
+      .addFields({
+        name: '\u200b',
+        value:  '\u200b',
+        inline:  true,
+      }) // Spacing
+      .addFields({
+        name: '<:Pokeball:974600141594034226> Catch Rate',
+        value:  `${pokemon.catchRatePercent}%`,
+        inline:  true,
+      })
+      .addFields({
+        name: '<:RareCandy:1032155819489378325> Level Type',
+        value:  `${LevelType[pokemon.levelType]}`,
+        inline:  true,
+      })
+      .addFields({
+        name: '\u200b',
+        value:  '\u200b',
+        inline:  true,
+      }) // Spacing
+      .addFields({
+        name: '<:Mystery_egg:1032155916688162836> Egg Steps',
+        value:  `${pokemon.eggSteps}`,
+        inline:  true,
+      });
 
     if (pokemon.heldItem) {
-      embed.addField('<:Amulet_Coin:662909955241803776> Rare Item Drop', `${pokemon.heldItem.type == 3 ? `${berryType[pokemon.heldItem.id]} Berry` : pokemon.heldItem.id.replace(/_/g, ' ')}`, true);
+      embed.addFields({
+        name: '<:Amulet_Coin:662909955241803776> Rare Item Drop',
+        value: `${pokemon.heldItem.type == 3 ? `${berryType[pokemon.heldItem.id]} Berry` : pokemon.heldItem.id.replace(/_/g, ' ')}`,
+        inline:  true,
+      });
     }
 
     if (pokemon.locations && Object.keys(pokemon.locations).length) {
-      embed.addField('\u200b', '\u200b'); // Spacing
+      embed.addFields({
+        name: '\u200b',
+        value:  '\u200b',
+      }); // Spacing
       // Egg
       if (pokemon.locations[PokemonLocationType.Egg]) {
         const description = pokemon.locations[PokemonLocationType.Egg].join('\n');
-        embed.addField('❯ Egg Types', description);
+        embed.addFields({
+          name: '❯ Egg Types',
+          value:  description,
+        });
       }
       // Baby
       if (pokemon.locations[PokemonLocationType.Baby]) {
         const description = pokemon.locations[PokemonLocationType.Baby].join('\n');
-        embed.addField('❯ Breeding', description);
+        embed.addFields({
+          name: '❯ Breeding',
+          value:  description,
+        });
       }
       // Routes
       if (pokemon.locations[PokemonLocationType.Route]) {
@@ -115,27 +152,42 @@ module.exports = {
         if (description.length >= 1024) {
           description = `${description.substring(0, 1010).replace(/\n.+$/, '')}\n... and more`;
         }
-        embed.addField('❯ Routes', description);
+        embed.addFields({
+          name: '❯ Routes',
+          value:  description,
+        });
       }
       // Roaming
       if (pokemon.locations[PokemonLocationType.Roaming]) {
         const description = pokemon.locations[PokemonLocationType.Roaming].map(r => `${GameConstants.Region[r.region].toUpperCase()}${r.requirements ? `🔒\n***Unlock Requirements:***\n_${r.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
-        embed.addField('❯ Roaming', description);
+        embed.addFields({
+          name: '❯ Roaming',
+          value:  description,
+        });
       }
       // Dungeon
       if (pokemon.locations[PokemonLocationType.Dungeon]) {
         const description = pokemon.locations[PokemonLocationType.Dungeon].join('\n');
-        embed.addField('❯ Dungeons', description);
+        embed.addFields({
+          name: '❯ Dungeons',
+          value:  description,
+        });
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
         const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
-        embed.addField('❯ Dungeon Boss', description);
+        embed.addFields({
+          name: '❯ Dungeon Boss',
+          value:  description,
+        });
       }
       // Dungeon Chest
       if (pokemon.locations[PokemonLocationType.DungeonChest]) {
         const description = pokemon.locations[PokemonLocationType.DungeonChest].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
-        embed.addField('❯ Dungeon Chest', description);
+        embed.addFields({
+          name: '❯ Dungeon Chest',
+          value:  description,
+        });
       }
       // Evolutions
       if (pokemon.locations[PokemonLocationType.Evolution]) {
@@ -157,17 +209,26 @@ module.exports = {
 
           descriptions.push(description);
         });
-        embed.addField('❯ Evolves From', descriptions.join('\n\n').substring(0, 1000));
+        embed.addFields({
+          name: '❯ Evolves From',
+          value:  descriptions.join('\n\n').substring(0, 1000),
+        });
       }
       // Fossil
       if (pokemon.locations[PokemonLocationType.Fossil]) {
         const description = pokemon.locations[PokemonLocationType.Fossil].join('\n');
-        embed.addField('❯ Fossils', description);
+        embed.addFields({
+          name: '❯ Fossils',
+          value:  description,
+        });
       }
       // Shop
       if (pokemon.locations[PokemonLocationType.Shop]) {
         const description = pokemon.locations[PokemonLocationType.Shop].join('\n');
-        embed.addField('❯ Shops', description);
+        embed.addFields({
+          name: '❯ Shops',
+          value:  description,
+        });
       }
       // Safari Zone
       if (pokemon.locations[PokemonLocationType.Safari]) {
@@ -177,49 +238,79 @@ module.exports = {
             description.push(`${GameConstants.Region[region].toUpperCase()} - Zone ${zone}: ${chance}%\n`);
           });
         });
-        embed.addField('❯ Safari Zone Chance', description.join('\n'));
+        embed.addFields({
+          name: '❯ Safari Zone Chance',
+          value:  description.join('\n'),
+        });
       }
       // Battle Frontier
       if (pokemon.locations[PokemonLocationType.BattleFrontier]) {
         const description = pokemon.locations[PokemonLocationType.BattleFrontier].map(stage => `Stage ${stage}`).join('\n');
-        embed.addField('❯ Battle Frontier', description);
+        embed.addFields({
+          name: '❯ Battle Frontier',
+          value:  description,
+        });
       }
       // Wandering
       if (pokemon.locations[PokemonLocationType.Wandering]) {
         const description = pokemon.locations[PokemonLocationType.Wandering].join('\n');
-        embed.addField('❯ Farm Wandering', description);
+        embed.addFields({
+          name: '❯ Farm Wandering',
+          value:  description,
+        });
       }
       // Discord
       if (pokemon.locations[PokemonLocationType.Discord]) {
         const description = pokemon.locations[PokemonLocationType.Discord].map(price => `${serverIcons.money} ${price.toLocaleString()}`).join('\n');
-        embed.addField('❯ Discord Shop', description);
+        embed.addFields({
+          name: '❯ Discord Shop',
+          value:  description,
+        });
       }
       // Quest Line
       if (pokemon.locations[PokemonLocationType.QuestLineReward]) {
         const description = pokemon.locations[PokemonLocationType.QuestLineReward].join('\n');
-        embed.addField('❯ Quest Line', description);
+        embed.addFields({
+          name: '❯ Quest Line',
+          value:  description,
+        });
       }
       // Temp Battle Reward
       if (pokemon.locations[PokemonLocationType.TempBattleReward]) {
         const description = pokemon.locations[PokemonLocationType.TempBattleReward].join('\n');
-        embed.addField('❯ Temp Battle', description);
+        embed.addFields({
+          name: '❯ Temp Battle',
+          value:  description,
+        });
       }
       // Gym Reward
       if (pokemon.locations[PokemonLocationType.GymReward]) {
         const description = pokemon.locations[PokemonLocationType.GymReward].join('\n');
-        embed.addField('❯ Defeat Gym', description);
+        embed.addFields({
+          name: '❯ Defeat Gym',
+          value:  description,
+        });
       }
       // Dungeon Clear
       if (pokemon.locations[PokemonLocationType.DungeonReward]) {
         const description = pokemon.locations[PokemonLocationType.DungeonReward].join('\n');
-        embed.addField('❯ Dungeon Reward', description);
+        embed.addFields({
+          name: '❯ Dungeon Reward',
+          value:  description,
+        });
       }
     } else {
-      embed.addField('\u200b', `\`\`\`diff\n- Unknown Method\n${pokemon.id != Math.floor(pokemon.id) ? '- Possible Event Only\n' : ''}\`\`\``);
+      embed.addFields({
+        name: '\u200b',
+        value:  `\`\`\`diff\n- Unknown Method\n${pokemon.id != Math.floor(pokemon.id) ? '- Possible Event Only\n' : ''}\`\`\``,
+      });
     }
 
     // Spacing for the footer
-    embed.addField('\u200b', '\u200b');
+    embed.addFields({
+      name: '\u200b',
+      value:  '\u200b',
+    });
 
     interaction.reply({ embeds: [embed] });
   },
