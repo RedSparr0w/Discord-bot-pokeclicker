@@ -72,9 +72,21 @@ module.exports = {
       });
       description.push('```');
       profit.push('```');
-      embed.addField(`❯ ${dateToString(dateToCheck)}`, description.join('\n'), true);
-      embed.addField('Profit', profit.join('\n'), true);
-      embed.addField('\u200b', '\u200b', true); // To take up the third row
+      embed.addFields({
+        name: `❯ ${dateToString(dateToCheck)}`,
+        value:  description.join('\n'),
+        inline:  true,
+      });
+      embed.addFields({
+        name: 'Profit',
+        value:  profit.join('\n'),
+        inline:  true,
+      });
+      embed.addFields({
+        name: '\u200b',
+        value:  '\u200b',
+        inline:  true,
+      }); // To take up the third row
       dateToCheck.setDate(dateToCheck.getDate() + 1);
     }
 
