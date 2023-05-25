@@ -1,5 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
+const { DAY, SECOND } = require('../helpers/constants.js');
 
 module.exports = {
   name        : 'ban',
@@ -71,9 +72,20 @@ module.exports = {
       .setDescription(user?.toString?.())
       .setColor('Random')
       .setThumbnail(user?.displayAvatarURL?.())
-      .addField('Status:', member?.presence?.status || 'offline')
-      .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)
-      .addField('Joined Server:', `<t:${Math.floor(+joinServer / 1000)}:R>`)
+      .addFields([
+        {
+          name: 'Status:',
+          value: member?.presence?.status || 'offline',
+        },
+        {
+          name: 'Joined Discord:',
+          value: `<t:${Math.floor(+joinDiscord / 1000)}:R>`,
+        },
+        {
+          name: 'Joined Server:',
+          value: `<t:${Math.floor(+joinServer / 1000)}:R>`,
+        },
+      ])
       .setFooter({ text: `ID: ${user?.id}` })
       .setTimestamp();
 
@@ -85,7 +97,7 @@ module.exports = {
 
     interaction.reply({ embeds: [embed], ephemeral: true });
     if (member) {
-      member.ban({ days: 7, reason: reason || 'Unknown' });
+      member.ban({ deleteMessageSeconds: 7 * DAY / SECOND, reason: reason || 'Unknown' });
     }
   },
 };

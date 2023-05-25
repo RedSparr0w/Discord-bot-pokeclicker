@@ -70,33 +70,96 @@ module.exports = {
       .setThumbnail(`${website}assets/images/items/berry/${berryType[berry.type]}.png`)
       .setColor('#3498db')
       .setFooter({ text: `Data is up to date as of v${gameVersion}` })
-      .addField('\u200b', '\u200b', false) // Spacing
-      .addField('Description', `${berry.description.join('\n')}`, false)
-      .addField('\u200b', '\u200b', false) // Spacing
-      .addField('<:farmPoint:751765173089468448> Farm Points', `${berry.farmValue.toLocaleString('en-US')}`, true)
-      .addField('🍒 Harvest Amount', `${berry.harvestAmount}`, true)
-      .addField('🌷 Replant Rate', `${Math.floor(berry.replantRate * 100)}%`, true)
-      .addField('\u200b', '\u200b', false) // Spacing
-      .addField('🌱 Growth Time', berry.growthTime.map((s, i) => `**${berryStages[i]}:** ${formatSecondsFullLetters(s, true)}`).join('\n'), true)
-      .addField('🌶️ Flavor', berry.flavors.map((f) => `**${flavorTypes[f.type]}:** ${f.value}`).join('\n'), true);
+      .addFields({
+        name: '\u200b',
+        value: '\u200b',
+        inline: false,
+      }) // Spacing
+      .addFields({
+        name: 'Description',
+        value: `${berry.description.join('\n')}`,
+        inline: false,
+      })
+      .addFields({
+        name: '\u200b',
+        value: '\u200b',
+        inline: false,
+      }) // Spacing
+      .addFields({
+        name: '<:farmPoint:751765173089468448> Farm Points',
+        value: `${berry.farmValue.toLocaleString('en-US')}`,
+        inline: true,
+      })
+      .addFields({
+        name: '🍒 Harvest Amount',
+        value: `${berry.harvestAmount}`,
+        inline: true,
+      })
+      .addFields({
+        name: '🌷 Replant Rate',
+        value: `${Math.floor(berry.replantRate * 100)}%`,
+        inline: true,
+      })
+      .addFields({
+        name: '\u200b',
+        value: '\u200b',
+        inline: false,
+      }) // Spacing
+      .addFields({
+        name: '🌱 Growth Time',
+        value: berry.growthTime.map((s, i) => `**${berryStages[i]}:** ${formatSecondsFullLetters(s, true)}`).join('\n'),
+        inline: true,
+      })
+      .addFields({
+        name: '🌶️ Flavor',
+        value: berry.flavors.map((f) => `**${flavorTypes[f.type]}:** ${f.value}`).join('\n'),
+        inline: true,
+      });
 
-    if (berry.aura) embed.addField('✨ Aura', `__**${auraType[berry.aura.auraType]} Bonus**__\n${berry.aura.auraMultipliers.map((m, i) => `**${berryStages[i+1]}**: ${m}×`).join('\n')}`, true);
-    else embed.addField('\u200b', '\u200b', true); // Spacing
+    if (berry.aura) embed.addFields({
+      name: '✨ Aura',
+      value: `__**${auraType[berry.aura.auraType]} Bonus**__\n${berry.aura.auraMultipliers.map((m, i) => `**${berryStages[i+1]}**: ${m}×`).join('\n')}`,
+      inline: true,
+    });
+    else embed.addFields({
+      name: '\u200b',
+      value: '\u200b',
+      inline: true,
+    }); // Spacing
 
-    embed.addField('\u200b', '\u200b', false); // Spacing
+    embed.addFields({
+      name: '\u200b',
+      value: '\u200b',
+      inline: false,
+    }); // Spacing
 
     // Add the wanderers in 3 columns
     const wanderers = [[], [], []];
     berry.wander.forEach((p, i) => wanderers[i % 3].push(p));
-    wanderers.forEach((w, i) => embed.addField(!i ? '<:Pokeball:974600141594034226> Wanderers' : '\u200b', `${w.join('\n')}`, true));
+    wanderers.forEach((w, i) => embed.addFields({
+      name: !i ? '<:Pokeball:974600141594034226> Wanderers' : '\u200b',
+      value: `${w.join('\n')}`,
+      inline: true,
+    }));
 
     if (berry.hint) {
-      embed.addField('\u200b', '\u200b', false); // Spacing
-      embed.addField('❔ Hint', berry.hint, false);
+      embed.addFields({
+        name: '\u200b',
+        value: '\u200b',
+        inline: false,
+      }); // Spacing
+      embed.addField({
+        name: '❔ Hint',
+        value: berry.hint,
+        inline: false,
+      });
     }
 
     // Spacing for the footer
-    embed.addField('\u200b', '\u200b');
+    embed.addFields({
+      name: '\u200b',
+      value: '\u200b',
+    }); // Spacing
 
     interaction.reply({ embeds: [embed] });
   },
