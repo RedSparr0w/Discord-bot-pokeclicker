@@ -154,7 +154,11 @@ module.exports = {
         name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? r.routeName.replace(new RegExp(`^${GameConstants.Region[region]}\\s*`, 'i'), '') : r.routeName;
         description.push(`${`[${name}]`} ${chance.toFixed(1).padStart(4,' ')}%`);
       });
-      embed.addField(`❯ ${GameConstants.Region[region].toUpperCase()}`, `\`\`\`ini\n${description.join('\n')}\n\`\`\``, true);
+      embed.addFields({
+        name: `❯ ${GameConstants.Region[region].toUpperCase()}`,
+        value:  `\`\`\`ini\n${description.join('\n')}\n\`\`\``,
+        inline:  true,
+      });
     });
 
     interaction.reply({ embeds: [embed] });
