@@ -17,8 +17,8 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['SendMessages'],
   execute     : async (msg, args) => {
     const commandName = msg.content.slice(prefix.length).trim().split(/,?\s+/).shift()?.toLowerCase();
     const command = msg.client.slashCommands.find(c => c.name == commandName || c.aliases?.includes(commandName));
@@ -27,7 +27,7 @@ module.exports = {
       .setDescription(`It looks like you are trying to use a command,
 This command has likely moved to a slash command.
 Try using \`/${command ? command.name : 'help'}\` instead`)
-      .setColor('RANDOM');
+      .setColor('Random');
 
     return msg.reply({ embeds: [embed] });
   },

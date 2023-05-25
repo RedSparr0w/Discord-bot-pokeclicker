@@ -9,8 +9,8 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 0.1,
-  botperms    : ['ATTACH_FILES'],
-  userperms   : ['MANAGE_GUILD'],
+  botperms    : ['AttachFiles'],
+  userperms   : ['ManageGuild'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     msg.channel.send({

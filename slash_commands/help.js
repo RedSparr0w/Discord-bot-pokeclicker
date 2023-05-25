@@ -25,7 +25,7 @@ module.exports = {
   ],
   guildOnly   : false,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   execute     : async (interaction) => {
     let command = interaction.options.get('command')?.value;

@@ -7,8 +7,8 @@ module.exports = {
   args        : [],
   guildOnly   : false,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['SendMessages'],
   execute     : async (msg, args) => {
     const embed = new EmbedBuilder()
       .setDescription([

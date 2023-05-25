@@ -7,8 +7,8 @@ module.exports = {
   args        : ['channel', 'message ID?'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES'],
-  userperms   : ['MANAGE_GUILD'],
+  botperms    : ['SendMessages'],
+  userperms   : ['ManageGuild'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     const [, message_id] = args;
@@ -17,7 +17,7 @@ module.exports = {
       return msg.reply({ content: 'You didn\'t specify a channel..' });
     }
     const channel = msg.mentions.channels.first();
-    if (channel.permissionsFor(msg.guild.members.me).missing(['VIEW_CHANNEL', 'SEND_MESSAGES']).length){
+    if (channel.permissionsFor(msg.guild.members.me).missing(['ViewChannel', 'SendMessages']).length){
       return msg.reply(`I don't have permission to post in ${channel}..`);
     }
 

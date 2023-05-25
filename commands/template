@@ -7,8 +7,8 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['SendMessages'],
   // If you provide `channels`, it will limit the command's usage to those
   // channels (as well as `#dev-bot` automatically). To allow in all channels,
   // remove the option entirely, and to restrict usage to only users with the

@@ -195,7 +195,7 @@ const processSaveFile = (msg, file) => {
             name: name,
             iconURL: `${website}assets/images/profile/trainer-${trainer}.png`,
           })
-          .setColor('RANDOM')
+          .setColor('Random')
           .setThumbnail(`${website}assets/images/${pokemonShiny ? 'shiny' : ''}pokemon/${pokemon}.png`)
           .addField('Discord:', discordID ? `<@${discordID}>` : 'False')
           .addField('Pokemon Caught:', `${caughtPokemon} | ${caughtPokemonShiny} ✨`)

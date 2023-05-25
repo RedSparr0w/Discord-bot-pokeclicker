@@ -94,7 +94,7 @@ const newQuiz = async (guild, reoccur = false) => {
     // If user has answered more than 100 questions, give them the Marsh Badge
     if (answered == 100) {
       await addPurchased(user, 'badge', trainerCardBadgeTypes.Marsh);
-      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('Random').setDescription([
         m.author.toString(),
         `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Marsh].icon} Marsh badge for having ${answered} questions answered!`,
       ].join('\n'));
@@ -102,7 +102,7 @@ const newQuiz = async (guild, reoccur = false) => {
     }
 
     if (answered % 1000 == 0) {
-      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('Random').setDescription([
         m.author.toString(),
         `You just reached ${answered.toLocaleString('en-US')} questions answered!`,
       ].join('\n'));

@@ -7,7 +7,7 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : ['MUTE_MEMBERS'],
   channels    : [],
   execute     : async (msg, args) => {
@@ -23,7 +23,7 @@ module.exports = {
         iconURL: user.displayAvatarURL(),
       })
       .setDescription(user.toString())
-      .setColor('RANDOM')
+      .setColor('Random')
       .setThumbnail(user.displayAvatarURL())
       .addField('Status:', member.presence.status)
       .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)

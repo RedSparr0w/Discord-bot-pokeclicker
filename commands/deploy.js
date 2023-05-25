@@ -8,8 +8,8 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 0.1,
-  botperms    : ['SEND_MESSAGES'],
-  userperms   : ['MANAGE_GUILD'],
+  botperms    : ['SendMessages'],
+  userperms   : ['ManageGuild'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     if (!ownerID || msg.author.id !== ownerID) return;

@@ -7,8 +7,8 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['MANAGE_GUILD'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['ManageGuild'],
   channels    : [],
   execute     : async (msg, args) => {
     const guild = msg.guild;
@@ -20,7 +20,7 @@ module.exports = {
     }).join('\n');
 
     const embed = new EmbedBuilder()
-      .setColor('RANDOM')
+      .setColor('Random')
       .addField('Role Members:', roleMemberCount)
       .setTimestamp();
 

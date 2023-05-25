@@ -22,7 +22,7 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 30,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'KICK_MEMBERS'],
+  botperms    : ['SendMessages', 'EmbedLinks', 'KickMembers'],
   userroles   : ['Moderator'],
   execute     : async (interaction) => {
     const id = interaction.options.get('user').value;
@@ -57,7 +57,7 @@ module.exports = {
         iconURL: user?.displayAvatarURL?.(),
       })
       .setDescription(user?.toString?.())
-      .setColor('RANDOM')
+      .setColor('Random')
       .setThumbnail(user?.displayAvatarURL?.())
       .addField('Warnings:', warnings?.toString() || 'unknown')
       .addField('Status:', member?.presence?.status || 'offline')

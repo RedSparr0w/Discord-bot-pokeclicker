@@ -9,7 +9,7 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   channels    : ['bot-coins', 'game-corner', 'bot-commands'],
   execute     : async (interaction) => {

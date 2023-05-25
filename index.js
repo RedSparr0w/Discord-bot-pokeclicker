@@ -169,7 +169,7 @@ client.on('error', e => error('Client error thrown:', e))
       if (!timeLeft) {
         const messagesSent = await addStatistic(message.author, 'messages');
         if (messagesSent == 2500) {
-          const congratsEmbed = new Discord.EmbedBuilder().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+          const congratsEmbed = new Discord.EmbedBuilder().setTitle('Congratulations!').setColor('Random').setDescription([
             message.author.toString(),
             `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Thunder].icon} Thunder badge for sending ${messagesSent.toLocaleString('en-US')} messages on the server!`,
           ].join('\n'));
@@ -227,7 +227,7 @@ client.on('error', e => error('Client error thrown:', e))
 
     const commandAllowedHere = (
       // User can manage the guild, and can use bot commands anywhere
-      //message.channel.permissionsFor(message.member).missing(['MANAGE_GUILD']).length === 0 ||
+      //message.channel.permissionsFor(message.member).missing(['ManageGuild']).length === 0 ||
       // Command was run in `#****-bot`
       message.channel.name?.endsWith('-bot') ||
       // Command is allowed in this channel
@@ -288,7 +288,7 @@ client.on('error', e => error('Client error thrown:', e))
 
       const commandAllowedHere = (
         // User can manage the guild, and can use bot commands anywhere
-        //interaction.channel.permissionsFor(interaction.member).missing(['MANAGE_GUILD']).length === 0 ||
+        //interaction.channel.permissionsFor(interaction.member).missing(['ManageGuild']).length === 0 ||
         // Command was run in `#****-bot`
         interaction.channel.name?.endsWith('-bot') ||
         // Command is allowed in this channel

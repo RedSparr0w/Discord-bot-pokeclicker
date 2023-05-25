@@ -119,7 +119,7 @@ module.exports = [
       description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
 
       // Create the embed
-      const embed = new EmbedBuilder().setDescription(description.join('\n')).setColor('RANDOM');
+      const embed = new EmbedBuilder().setDescription(description.join('\n')).setColor('Random');
 
       message.reply({embeds: [embed]});
     },

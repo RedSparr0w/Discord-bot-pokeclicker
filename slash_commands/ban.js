@@ -21,7 +21,7 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 120,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'BAN_MEMBERS'],
+  botperms    : ['SendMessages', 'EmbedLinks', 'BanMembers'],
   userroles   : ['Moderator'],
   execute     : async (interaction) => {
     const id = interaction.options.get('user').value;
@@ -69,7 +69,7 @@ module.exports = {
         iconURL: user?.displayAvatarURL?.(),
       })
       .setDescription(user?.toString?.())
-      .setColor('RANDOM')
+      .setColor('Random')
       .setThumbnail(user?.displayAvatarURL?.())
       .addField('Status:', member?.presence?.status || 'offline')
       .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)

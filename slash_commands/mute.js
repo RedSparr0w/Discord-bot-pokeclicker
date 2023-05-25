@@ -26,7 +26,7 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userroles   : ['Moderator'],
   execute     : async (interaction, args) => {
     const id = interaction.options.get('user').value;

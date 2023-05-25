@@ -18,7 +18,7 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   execute     : async (interaction) => {
     const search = interaction.options.get('query')?.value;

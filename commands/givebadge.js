@@ -9,8 +9,8 @@ module.exports = {
   args        : ['badge icon', '@user'],
   guildOnly   : true,
   cooldown    : 1,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['MANAGE_GUILD'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['ManageGuild'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     const badgeIcon = args.find(arg=>new RegExp(trainerCardBadges.map(b=>b.icon).join('|')).test(arg));

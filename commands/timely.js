@@ -33,8 +33,8 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['SendMessages'],
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (msg, args) => {
     // Check if user claimed within the last 24 hours

@@ -8,7 +8,7 @@ module.exports = {
   args        : [],
   guildOnly   : true,
   cooldown    : 7 * DAY / 1000,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (interaction) => {
@@ -17,7 +17,7 @@ module.exports = {
     return interaction.reply({
       embeds: [
         new EmbedBuilder()
-          .setColor('RANDOM')
+          .setColor('Random')
           .setDescription(`${interaction.user}\nI've paused your streaks for up to 14 days _(from the time of your last claim)_,\nWhen you next do a claim or timely it will be un-paused automatically.`),
       ],
     });

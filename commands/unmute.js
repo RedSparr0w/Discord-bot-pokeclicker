@@ -9,7 +9,7 @@ module.exports = {
   args        : ['@users'],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
+  botperms    : ['SendMessages', 'EmbedLinks', 'ManageRoles'],
   userperms   : ['MUTE_MEMBERS'], // Voice mute permission
   execute     : async (msg, args) => {
     const embed = new EmbedBuilder().setColor('#e74c3c');

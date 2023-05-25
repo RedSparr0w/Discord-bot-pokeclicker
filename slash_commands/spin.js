@@ -23,7 +23,7 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 0.5,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   channels    : ['game-corner'],
   execute     : async (interaction) => {
