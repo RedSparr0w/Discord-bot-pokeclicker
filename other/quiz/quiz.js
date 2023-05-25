@@ -132,7 +132,7 @@ const newQuiz = async (guild, reoccur = false) => {
       setTimeout(() => {
         // Send out the correct users and amounts
         if (winner_data.length) {
-          const description = winner_data.sort((a,b) => b.amount - a.amount).map(w => `[${w.user}](${w.url} "Answered: ${w.answered.toLocaleString('en-US')}\nBalance: ${w.balance.toLocaleString('en-US')}"): **+${w.amount} ${serverIcons.money}**`);
+          const description = winner_data.sort((a,b) => b.amount - a.amount).map(w => `${w.user}: **+${w.amount} ${serverIcons.money}**`);
           const embed = new MessageEmbed()
             .setTitle('**Correct:**')
             .setDescription(description.join('\n'))
