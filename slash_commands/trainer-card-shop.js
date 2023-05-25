@@ -1,4 +1,4 @@
-const { EmbedBuilder, MessageButton } = require('discord.js');
+const { EmbedBuilder, ButtonBuilder } = require('discord.js');
 const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
 const {
   upperCaseFirstLetter,
@@ -74,10 +74,10 @@ module.exports = {
     const customID = randomString(6);
 
     buttons.addComponents(
-      new MessageButton()
+      new ButtonBuilder()
         .setCustomId(`purchase${customID}`)
         .setLabel('Purchase')
-        .setStyle('PRIMARY')
+        .setStyle('Primary')
         .setEmoji('751765172523106377')
     );
 

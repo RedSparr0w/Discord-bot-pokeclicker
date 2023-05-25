@@ -1,6 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
-const { MessageActionRow, MessageSelectMenu } = require('discord.js');
+const { ActionRowBuilder, StringSelectMenuBuilder } = require('discord.js');
 const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
 const { addScheduleItem } = require('../database.js');
 const { modLog } = require('../other/mod/functions.js');
@@ -39,9 +39,9 @@ module.exports = {
 
     embed.setColor('#3498db').setDescription(output.join('\n'));
     const customID = randomString();
-    const select = new MessageActionRow()
+    const select = new ActionRowBuilder()
       .addComponents(
-        new MessageSelectMenu()
+        new StringSelectMenuBuilder()
           .setCustomId(`mute-time-${customID}`)
           .setPlaceholder('Mute user(s) for x time')
           .addOptions([

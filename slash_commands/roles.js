@@ -1,4 +1,4 @@
-const { EmbedBuilder, MessageActionRow, MessageButton } = require('discord.js');
+const { EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const { notificationRoles } = require('../config.js');
 const { SECOND, MINUTE, randomString } = require('../helpers.js');
 
@@ -23,14 +23,14 @@ module.exports = {
     const customID = randomString(6);
 
     const getButtons = () => {
-      const buttons = new MessageActionRow();
+      const buttons = new ActionRowBuilder();
       notificationRoles.forEach(role => {
         if (!member.guild.roles.cache.get(role.id)) return;
         buttons.addComponents(
-          new MessageButton()
+          new ButtonBuilder()
             .setCustomId(`${role.id}-role${customID}`)
             .setLabel(role.name)
-            .setStyle(member.roles.cache.has(role.id) ? 'SUCCESS' : 'DANGER')
+            .setStyle(member.roles.cache.has(role.id) ? 'Success' : 'Danger')
             .setEmoji((role.emoji?.match(/:(\d+)>/) ?? [role.emoji])[1])
         );
       });

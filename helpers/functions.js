@@ -1,4 +1,4 @@
-const { MessageActionRow, MessageButton, EmbedBuilder } = require('discord.js');
+const { ActionRowBuilder, ButtonBuilder, EmbedBuilder } = require('discord.js');
 const https = require('https');
 const { error } = require('./logging');
 const { formatSecondsFullLetters } = require('./conversion');
@@ -36,17 +36,17 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   // Don't add the reactions if only 1 page
   if (pages.length <= 1) return;
 
-  const buttons = new MessageActionRow()
+  const buttons = new ActionRowBuilder()
     .addComponents(
-      new MessageButton()
+      new ButtonBuilder()
         .setCustomId(`prev${customID}`)
         .setLabel('Prev')
-        .setStyle('SECONDARY')
+        .setStyle('Secondary')
         .setEmoji('⬅'),
-      new MessageButton()
+      new ButtonBuilder()
         .setCustomId(`next${customID}`)
         .setLabel('Next')
-        .setStyle('SECONDARY')
+        .setStyle('Secondary')
         .setEmoji('➡')
     );
 

@@ -1,4 +1,4 @@
-const { EmbedBuilder, MessageButton } = require('discord.js');
+const { EmbedBuilder, ButtonBuilder } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand, randomString } = require('../helpers.js');
 const { website, serverIcons } = require('../config.js');
@@ -101,10 +101,10 @@ module.exports = {
     const customID = randomString(6);
 
     buttons.addComponents(
-      new MessageButton()
+      new ButtonBuilder()
         .setCustomId(`purchase${customID}`)
         .setLabel('Purchase')
-        .setStyle('PRIMARY')
+        .setStyle('Primary')
         .setEmoji('751765172523106377')
     );
 
