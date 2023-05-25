@@ -100,9 +100,16 @@ const cli = new ESLint({
         ? this.unwrap()
         : this;
   
+      let hint = '';
+      try {
+        hint = req.hint();
+      } catch (e) {
+        hint = 'unknown method';
+      }
+
       return {
         ...Object.fromEntries(Object.entries(req)),
-        hint: req.hint(),
+        hint,
         __class: req.__proto__.constructor.name,
       };
     };
