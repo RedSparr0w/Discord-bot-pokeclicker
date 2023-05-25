@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ChannelType } = require('discord.js');
 const {
   upperCaseFirstLetter,
   getAvailableChannelList,
@@ -13,13 +13,13 @@ module.exports = {
   args        : ['command_name?'],
   guildOnly   : false,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS'],
-  userperms   : ['SEND_MESSAGES'],
+  botperms    : ['SendMessages', 'EmbedLinks'],
+  userperms   : ['SendMessages'],
   execute     : async (msg, args) => {
     let commands = msg.client.commands;
-    if (msg.channel.type === 'DM'){
+    if (msg.channel.type === ChannelType.DM){
       commands = commands.filter(command => !command.guildOnly);
-    } else if (msg.channel.type === 'GUILD_TEXT'){
+    } else if (msg.channel.type === ChannelType.GuildText){
       commands = commands.filter(command => !msg.channel.permissionsFor(msg.member).missing(command.userperms).length);
     }
 
@@ -35,13 +35,15 @@ module.exports = {
         ].join('\n'))
         .setColor('#3498db');
 
-      if (msg.channel.type === 'DM'){
+      console.log(msg.channel.type, ChannelType.DM, ChannelType.GuildText);
+
+      if (msg.channel.type === ChannelType.DM){
         const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
         embed.addFields({
           name: '__***Commands:***__',
           value: description,
         });
-      } else if (msg.channel.type === 'GUILD_TEXT'){
+      } else if (msg.channel.type === ChannelType.GuildText){
         // Group the commands by their primary channel
         const restrictedCommands = [];
         const anyCommands = [];

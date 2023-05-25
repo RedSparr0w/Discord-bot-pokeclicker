@@ -17,7 +17,7 @@ module.exports = {
       return msg.reply({ content: 'You didn\'t specify a channel..' });
     }
     const channel = msg.mentions.channels.first();
-    if (channel.permissionsFor(msg.guild.me).missing(['VIEW_CHANNEL', 'SEND_MESSAGES']).length){
+    if (channel.permissionsFor(msg.guild.members.me).missing(['VIEW_CHANNEL', 'SEND_MESSAGES']).length){
       return msg.reply(`I don't have permission to post in ${channel}..`);
     }
 

@@ -130,7 +130,7 @@ module.exports = [
     execute: (message, client) => {
       modLog(
         message.member.guild,
-        `**Mod:** ${message.member.guild.me.toString()}
+        `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Deleted message_
         **Reason:** _Invite link_
@@ -152,7 +152,7 @@ module.exports = [
       time = await mute(message.member, time);
       modLog(
         message.member.guild,
-        `**Mod:** ${message.member.guild.me.toString()}
+        `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Deleted message, Muted_
         **Reason:** _Fake Discord link_
@@ -172,7 +172,7 @@ module.exports = [
       time = await mute(message.member, time);
       modLog(
         message.member.guild,
-        `**Mod:** ${message.member.guild.me.toString()}
+        `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Muted_
         **Reason:** _Tagging \\@everyone_
@@ -196,7 +196,7 @@ module.exports = [
       time = await mute(message.member, time);
       modLog(
         message.member.guild,
-        `**Mod:** ${message.member.guild.me.toString()}
+        `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Deleted message, Muted_
         **Reason:** _Nitro scam link_
@@ -214,7 +214,7 @@ module.exports = [
     execute: (message, client) => {
       modLog(
         message.member.guild,
-        `**Mod:** ${message.member.guild.me.toString()}
+        `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Deleted message_
         **Reason:** _Github.io link_
@@ -232,7 +232,7 @@ module.exports = [
     execute: (message, client) => {
       modLog(
         message.member.guild,
-        `**Mod:** ${message.member.guild.me.toString()}
+        `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()}
         **Action:** _Deleted message_
         **Reason:** _Telegram link_

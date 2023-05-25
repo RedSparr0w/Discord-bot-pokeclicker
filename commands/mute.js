@@ -26,7 +26,7 @@ module.exports = {
     const users = [];
 
     for (const [, m] of [...msg.mentions.members]) {
-      if (m == msg.guild.me) {
+      if (m == msg.guild.members.me) {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot mute me trainer!');
         return msg.reply({ embeds: [embed] });
       }

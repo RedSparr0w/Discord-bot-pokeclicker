@@ -21,7 +21,7 @@ const check = async (message) => {
     time = await mute(message.member, time);
     modLog(
       message.member.guild,
-      `**Mod:** ${message.member.guild.me.toString()}
+      `**Mod:** ${message.member.guild.members.me.toString()}
       **User:** ${message.member.toString()}
       **Action:** Muted
       **Reason:** _spamming_
@@ -41,7 +41,7 @@ const check = async (message) => {
     time = await mute(message.member, time);
     modLog(
       message.member.guild,
-      `**Mod:** ${message.member.guild.me.toString()}
+      `**Mod:** ${message.member.guild.members.me.toString()}
       **User:** ${message.member.toString()}
       **Action:** Muted
       **Reason:** _spamming (duplicate messages)_

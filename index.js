@@ -1,3 +1,4 @@
+const { InteractionType } = require('discord.js');
 const fs = require('fs');
 const Discord = require('discord.js');
 const SpamDetection = require('./other/mod/spamdetection.js');
@@ -31,14 +32,15 @@ const { DAY } = require('./helpers/constants.js');
 
 const client = new Discord.Client({
   intents: [
-    Discord.Intents.FLAGS.GUILDS,
-    Discord.Intents.FLAGS.GUILD_MEMBERS,
-    Discord.Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS,
-    Discord.Intents.FLAGS.GUILD_PRESENCES,
-    Discord.Intents.FLAGS.GUILD_MESSAGES,
-    Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-    Discord.Intents.FLAGS.DIRECT_MESSAGES,
-    Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+    Discord.GatewayIntentBits.Guilds,
+    Discord.GatewayIntentBits.GuildMembers,
+    Discord.GatewayIntentBits.GuildEmojisAndStickers,
+    Discord.GatewayIntentBits.GuildPresences,
+    Discord.GatewayIntentBits.GuildMessages,
+    Discord.GatewayIntentBits.GuildMessageReactions,
+    Discord.GatewayIntentBits.DirectMessages,
+    Discord.GatewayIntentBits.DirectMessageReactions,
+    Discord.GatewayIntentBits.MessageContent,
   ],
 });
 
@@ -160,13 +162,14 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Non command messages
     if (!message.content.startsWith(prefix)) {
+      console.log(message);
       SpamDetection.check(message);
       // Add points for each message sent (every 30 seconds)
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {
         const messagesSent = await addStatistic(message.author, 'messages');
         if (messagesSent == 2500) {
-          const congratsEmbed = new Discord.MessageEmbed().setTitle('Congratulations!').setColor('RANDOM').setDescription([
+          const congratsEmbed = new Discord.EmbedBuilder().setTitle('Congratulations!').setColor('RANDOM').setDescription([
             message.author.toString(),
             `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Thunder].icon} Thunder badge for sending ${messagesSent.toLocaleString('en-US')} messages on the server!`,
           ].join('\n'));
@@ -202,23 +205,23 @@ client.on('error', e => error('Client error thrown:', e))
 
 
     // Check if command needs to be executed inside a guild channel
-    if (message.channel.type !== 'GUILD_TEXT' && command.guildOnly) {
+    if (message.channel.type !== Discord.ChannelType.GuildText && command.guildOnly) {
       return message.channel.send('This command can only be executed within guild channels!');
     }
 
     // Check the user has the required permissions
-    if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
+    if (message.channel.type === Discord.ChannelType.GuildText && message.channel.permissionsFor(message.member).missing(command.userperms).length) {
       return message.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
     }
     
     // Check user has the required roles
-    if (message.channel.type === 'GUILD_TEXT' && command.userroles?.length) {
+    if (message.channel.type === Discord.ChannelType.GuildText && command.userroles?.length) {
       const hasRolePerms = command.userroles.some(r => message.member.roles.cache.find(role => role.id == r || role.name == r));
       if (!hasRolePerms) return message.reply({ content: 'You do not have the required roles to run this command.', ephemeral: true });
     }
 
     // Check the bot has the required permissions
-    if (message.channel.type === 'GUILD_TEXT' && message.channel.permissionsFor(message.guild.me).missing(command.botperms).length) {
+    if (message.channel.type === Discord.ChannelType.GuildText && message.channel.permissionsFor(message.guild.members.me).missing(command.botperms).length) {
       return message.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
     }
 
@@ -260,7 +263,7 @@ client.on('error', e => error('Client error thrown:', e))
     }
   })
   .on('interactionCreate', async interaction => {
-    if (interaction.isCommand() || interaction.isContextMenu()) {
+    if (interaction.type === InteractionType.ApplicationCommand || interaction.isContextMenu()) {
 
       const command = client.slashCommands.find(cmd => cmd.name === interaction.commandName);
 
@@ -268,18 +271,18 @@ client.on('error', e => error('Client error thrown:', e))
       if (!command) return interaction.reply({ content: 'Command not found..', ephemeral: true });
 
       // Check the user has the required permissions
-      if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+      if (interaction.channel.type === Discord.ChannelType.GuildText && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
         return interaction.reply({ content: 'You do not have the required permissions to run this command.', ephemeral: true });
       }
 
       // Check user has the required roles
-      if (interaction.channel.type === 'GUILD_TEXT' && command.userroles?.length) {
+      if (interaction.channel.type === Discord.ChannelType.GuildText && command.userroles?.length) {
         const hasRolePerms = command.userroles.some(r => interaction.member.roles.cache.find(role => role.id == r || role.name == r));
         if (!hasRolePerms) return interaction.reply({ content: 'You do not have the required roles to run this command.', ephemeral: true });
       }
 
       // Check the bot has the required permissions
-      if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.guild.me).missing(command.botperms).length) {
+      if (interaction.channel.type === Discord.ChannelType.GuildText && interaction.channel.permissionsFor(interaction.guild.members.me).missing(command.botperms).length) {
         return interaction.reply({ content: 'I do not have the required permissions to run this command.', ephemeral: true });
       }
 

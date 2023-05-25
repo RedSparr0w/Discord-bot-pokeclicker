@@ -27,11 +27,11 @@ module.exports = {
     const id = interaction.options.get('user').value;
     const reason = interaction.options.get('reason')?.value;
 
-    const member = await interaction.guild.members.fetch(id).catch(e => {});
+    const member = await interaction.guild.members.members.fetch(id).catch(e => {});
     let user = member?.user;
     if (!member) {
       try {
-        const kickInfo = await interaction.guild.members.ban(id);
+        const kickInfo = await interaction.guild.members.members.ban(id);
         user = kickInfo?.user || kickInfo || {};
       } catch (e) {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
@@ -39,7 +39,7 @@ module.exports = {
       }
     }
 
-    if (member && member == interaction.guild.me) {
+    if (member && member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
         **User:** ${member.toString()}

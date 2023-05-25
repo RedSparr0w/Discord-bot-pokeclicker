@@ -23,7 +23,7 @@ module.exports = {
     const output = [msg.author, '', `Applied <@&${externalScriptsRoleID}> role to the following users:`];
 
     for (const [, member] of [...msg.mentions.members]) {
-      if (member == msg.guild.me) {
+      if (member == msg.guild.members.me) {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Good try, But I\'m not cheating trainer!');
         return msg.reply({ embeds: [embed] });
       }

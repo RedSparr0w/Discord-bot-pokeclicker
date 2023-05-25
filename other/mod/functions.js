@@ -13,7 +13,7 @@ const modLog = (guild, logMessage) => {
 const mute = async (member, time = 0) => {
   let mutes = 1;
   try {
-    member.roles.add(mutedRoleID, `User muted by ${member.guild.me.displayName}-${member.guild.me.id}`);
+    member.roles.add(mutedRoleID, `User muted by ${member.guild.members.me.displayName}-${member.guild.members.me.id}`);
     mutes = await addStatistic(member.user, 'mutes', 1) || 1;
     if (time) {
       time *= mutes;

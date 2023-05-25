@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ChannelType } = require('discord.js');
 const {
   getAvailableChannelList,
   formatChannelList,
@@ -30,13 +30,13 @@ module.exports = {
   execute     : async (interaction) => {
     let command = interaction.options.get('command')?.value;
     let commands = interaction.client.slashCommands;
-    if (interaction.channel.type === 'DM'){
+    if (interaction.channel.type === ChannelType.DM){
       commands = commands.filter(command => !command.guildOnly);
-    } else if (interaction.channel.type === 'GUILD_TEXT'){
+    } else if (interaction.channel.type === ChannelType.GuildText){
       commands = commands.filter(command => !interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length);
     }
 
-    const commandsMap = interaction.channel.type === 'DM' ?
+    const commandsMap = interaction.channel.type === ChannelType.DM ?
       [...interaction.client.commands.cache].map(c => c[1]) :
       [...interaction.guild.commands.cache].map(c => c[1]);
 
@@ -52,22 +52,22 @@ module.exports = {
         ].join('\n'))
         .setColor('#3498db');
 
-      if (interaction.channel.type === 'DM'){
+      if (interaction.channel.type === ChannelType.DM){
         const description = commands.map(command => formattedCommand(commandsMap, command)).join('\n');
         embed.addField('__***Commands:***__', description);
-      } else if (interaction.channel.type === 'GUILD_TEXT'){
+      } else if (interaction.channel.type === ChannelType.GuildText){
         // Group the commands by their primary channel
         const restrictedCommands = [];
         const anyCommands = [];
         const groupedCommands = {};
         commands.filter(command => {
           // Check the user has the required permissions
-          if (interaction.channel.type === 'GUILD_TEXT' && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+          if (interaction.channel.type === ChannelType.GuildText && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
             return false;
           }
 
           // Check user has the required roles
-          if (interaction.channel.type === 'GUILD_TEXT' && command.userroles?.length) {
+          if (interaction.channel.type === ChannelType.GuildText && command.userroles?.length) {
             const hasRolePerms = command.userroles.some(r => interaction.member.roles.cache.find(role => role.id == r || role.name == r));
             if (!hasRolePerms) return false;
           }

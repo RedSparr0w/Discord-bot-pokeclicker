@@ -20,7 +20,7 @@ module.exports = {
   execute     : async (interaction, args) => {
     const id = interaction.options.get('user').value;
 
-    const member = await interaction.guild.members.fetch(id).catch(e => {});
+    const member = await interaction.guild.members.members.fetch(id).catch(e => {});
     if (!member) {
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
       return interaction.reply({ embeds: [embed], ephemeral: true });
@@ -33,7 +33,7 @@ module.exports = {
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
-    if (member == interaction.guild.me) {
+    if (member == interaction.guild.members.me) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}
         **User:** ${member.toString()}

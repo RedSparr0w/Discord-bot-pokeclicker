@@ -32,7 +32,7 @@ module.exports = {
     let user = interaction.user;
 
     if (id) {
-      member = await interaction.guild.members.fetch(id).catch(e => {});
+      member = await interaction.guild.members.members.fetch(id).catch(e => {});
       if (!member) {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
         return interaction.reply({ embeds: [embed], ephemeral: true });
