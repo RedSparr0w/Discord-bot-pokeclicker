@@ -25,7 +25,7 @@ module.exports = {
     let user = interaction.user;
 
     if (id) {
-      const member = await interaction.member.guild.members.members.fetch(id).catch(e => {});
+      const member = await interaction.member.guild.members.fetch(id).catch(e => {});
       if (!member) {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`${interaction.user}\nInvalid user ID specified.`);
         return interaction.reply({ embeds: [embed] });

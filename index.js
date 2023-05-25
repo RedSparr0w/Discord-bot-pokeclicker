@@ -263,7 +263,7 @@ client.on('error', e => error('Client error thrown:', e))
     }
   })
   .on('interactionCreate', async interaction => {
-    if (interaction.type === InteractionType.ApplicationCommand || interaction.isContextMenu()) {
+    if (interaction.type === InteractionType.ApplicationCommand || interaction.type === InteractionType.ContextMenu) {
 
       const command = client.slashCommands.find(cmd => cmd.name === interaction.commandName);
 
