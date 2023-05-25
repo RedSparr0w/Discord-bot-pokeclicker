@@ -54,7 +54,10 @@ module.exports = {
 
       if (interaction.channel.type === ChannelType.DM){
         const description = commands.map(command => formattedCommand(commandsMap, command)).join('\n');
-        embed.addField('__***Commands:***__', description);
+        embed.addFields({
+          name: '__***Commands:***__',
+          value:  description,
+        });
       } else if (interaction.channel.type === ChannelType.GuildText){
         // Group the commands by their primary channel
         const restrictedCommands = [];
@@ -98,11 +101,20 @@ module.exports = {
         // #anywhere
         // #channel-specific
         // #restricted
-        if (anyCommands.length) embed.addField('__***#anywhere***__', anyCommands.join('\n'));
-        Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
-          embed.addField(`__***#${channel}***__`, commands.join('\n'));
+        if (anyCommands.length) embed.addFields({
+          name: '__***#anywhere***__',
+          value:  anyCommands.join('\n'),
         });
-        if (restrictedCommands.length) embed.addField('__***#restricted-channel***__', restrictedCommands.join('\n'));
+        Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
+          embed.addFields({
+            name: `__***#${channel}***__`,
+            value:  commands.join('\n'),
+          });
+        });
+        if (restrictedCommands.length) embed.addFields({
+          name: '__***#restricted-channel***__',
+          value:  restrictedCommands.join('\n'),
+        });
       }
       return interaction.reply({ embeds: [embed] });
     }
@@ -118,15 +130,42 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setTitle(`Help | ${getCommandSuggestion(commandsMap, command.name)}`)
       .setColor('#3498db')
-      .addField('❯ Description', `${command.description || '---'}`, false)
-      .addField('❯ Usage', `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg.name}${arg.required ? '' : '?'}]`).join('')}\`\`\``, false)
-      .addField('❯ Cooldown', `\`${command.cooldown || 3} second(s)\``, true)
-      .addField('❯ Guild Only', `\`${command.guildOnly}\``, true)
-      .addField('❯ Channels', formatChannelList(interaction.guild, command.channels), true);
+      .addFields({
+        name: '❯ Description',
+        value:  `${command.description || '---'}`,
+        inline:  false,
+      })
+      .addFields({
+        name: '❯ Usage',
+        value:  `\`\`\`css\n/${command.name}${command.args.map(arg=>` [${arg.name}${arg.required ? '' : '?'}]`).join('')}\`\`\``,
+        inline:  false,
+      })
+      .addFields({
+        name: '❯ Cooldown',
+        value:  `\`${command.cooldown || 3} second(s)\``,
+        inline:  true,
+      })
+      .addFields({
+        name: '❯ Guild Only',
+        value:  `\`${command.guildOnly}\``,
+        inline:  true,
+      })
+      .addFields({
+        name: '❯ Channels',
+        value: formatChannelList(interaction.guild, command.channels),
+        inline:  true,
+      });
 
     if (command.helpFields) {
-      embed.addField('\u200b\n═══ More Information ═══', '\u200b');
-      command.helpFields.forEach(([header, body, inline]) => embed.addField(header, body, !!inline));
+      embed.addFields({
+        name: '\u200b\n═══ More Information ═══',
+        value:  '\u200b',
+      });
+      command.helpFields.forEach(([header, body, inline]) => embed.addFields({
+        name: header,
+        value:  body,
+        inline:  !!inline,
+      }));
     }
 
     interaction.reply({ embeds: [embed] });
