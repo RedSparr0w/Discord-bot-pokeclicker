@@ -148,7 +148,7 @@ module.exports = {
         value: '\u200b',
         inline: false,
       }); // Spacing
-      embed.addField({
+      embed.addFields({
         name: '❔ Hint',
         value: berry.hint,
         inline: false,
