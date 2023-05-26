@@ -6,21 +6,22 @@ const { GameConstants, pokemonList } = require('./pokeclicker');
 const { website } = require('../config.js');
 
 const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
+  let buttons = {};
   const updateButtons = async (i, editPost = true) => {
-    const prev = buttons.components.find(b => b.label == 'Prev');
+    const prev = buttons.components.find(b => b.data.label == 'Prev');
     if (page <= 0) {
-      prev.disabled = true;
+      prev.setDisabled(true);
       if (editPost) await i.editReply({ components: [buttons] });
     } else {
-      prev.disabled = false;
+      prev.setDisabled(false);
       if (editPost) await i.editReply({ components: [buttons] });
     }
-    const next = buttons.components.find(b => b.label == 'Next');
+    const next = buttons.components.find(b => b.data.label == 'Next');
     if (page >= pages.length - 1) {
-      next.disabled = true;
+      next.setDisabled(true);
       if (editPost) await i.editReply({ components: [buttons] });
     } else {
-      next.disabled = false;
+      next.setDisabled(false);
       if (editPost) await i.editReply({ components: [buttons] });
     }
   };
@@ -36,7 +37,7 @@ const postPages = async (interaction, pages, page = 1, msgEdit = false) => {
   // Don't add the reactions if only 1 page
   if (pages.length <= 1) return;
 
-  const buttons = new ActionRowBuilder()
+  buttons = new ActionRowBuilder()
     .addComponents(
       new ButtonBuilder()
         .setCustomId(`prev${customID}`)

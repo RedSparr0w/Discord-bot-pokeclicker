@@ -86,9 +86,20 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setColor('#3498db')
         .setDescription(interaction.user.toString())
-        .addField('Name', item.name, true)
-        .addField('Price', `${item.price.toLocaleString('en-US')} ${serverIcons.money}`, true)
-        .addField('Description', item.description)
+        .addFields({
+          name: 'Name',
+          value: item.name,
+          inline: true,
+        })
+        .addFields({
+          name: 'Price',
+          value: `${item.price.toLocaleString('en-US')} ${serverIcons.money}`,
+          inline: true,
+        })
+        .addFields({
+          name: 'Description',
+          value: item.description,
+        })
         .setFooter({ text: `Balance: ${balance.toLocaleString('en-US')} | Page: ${index + 1}/${allShopItems.length}` });
 
       if (item.image) embed.setThumbnail(website + item.image);
