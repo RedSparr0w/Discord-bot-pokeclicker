@@ -46,11 +46,26 @@ module.exports = {
       .setDescription(user.toString())
       .setColor('Random')
       .setThumbnail(user.displayAvatarURL())
-      .addField('Warnings:', warnings?.toString() || 'unknown')
-      .addField('Status:', member?.presence?.status || 'offline')
-      .addField('Joined Discord:', `<t:${Math.floor(+joinDiscord / 1000)}:R>`)
-      .addField('Joined Server:', `<t:${Math.floor(+joinServer / 1000)}:R>`)
-      .addField('Roles:', member?.roles?.cache?.map(r => `${r}`)?.join('\n') || 'unknown')
+      .addFields({
+        name: 'Warnings:',
+        value: warnings?.toString() || 'unknown',
+      })
+      .addFields({
+        name: 'Status:',
+        value: member?.presence?.status || 'offline',
+      })
+      .addFields({
+        name: 'Joined Discord:',
+        value: `<t:${Math.floor(+joinDiscord / 1000)}:R>`,
+      })
+      .addFields({
+        name: 'Joined Server:',
+        value: `<t:${Math.floor(+joinServer / 1000)}:R>`,
+      })
+      .addFields({
+        name: 'Roles:',
+        value: member?.roles?.cache?.map(r => `${r}`)?.join('\n') || 'unknown',
+      })
       .setFooter({ text: `ID: ${user.id}` })
       .setTimestamp();
 
