@@ -44,9 +44,20 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setColor('#3498db')
         .setDescription(interaction.user.toString())
-        .addField('Color', upperCaseFirstLetter(color), true)
-        .addField('Price', `${purchasedBackgrounds[index] ? '0' : '1000'} ${serverIcons.money}`, true)
-        .addField('Description', 'Update your trainer card background')
+        .addFields({
+          name: 'Color',
+          value: upperCaseFirstLetter(color),
+          inline: true,
+        })
+        .addFields({
+          name: 'Price',
+          value: `${purchasedBackgrounds[index] ? '0' : '1000'} ${serverIcons.money}`,
+          inline: true,
+        })
+        .addFields({
+          name: 'Description',
+          value: 'Update your trainer card background',
+        })
         .setThumbnail(`${imageBaseLink}/trainer_card/${color}.png`);
 
       pages.push({ embeds: [embed] });
@@ -56,9 +67,20 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setColor('#3498db')
         .setDescription(interaction.user.toString())
-        .addField('Trainer ID', `#${trainerID.toString().padStart(3, 0)}`, true)
-        .addField('Price', `${purchasedTrainers[trainerID] ? '0' : '500'} ${serverIcons.money}`, true)
-        .addField('Description', 'Set your displayed trainer')
+        .addFields({
+          name: 'Trainer ID',
+          value: `#${trainerID.toString().padStart(3, 0)}`,
+          inline: true,
+        })
+        .addFields({
+          name: 'Price',
+          value: `${purchasedTrainers[trainerID] ? '0' : '500'} ${serverIcons.money}`,
+          inline: true,
+        })
+        .addFields({
+          name: 'Description',
+          value: 'Set your displayed trainer',
+        })
         .setThumbnail(`${imageBaseLink}/trainers/${trainerID}.png`);
 
       pages.push({ embeds: [embed] });
