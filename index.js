@@ -162,7 +162,6 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Non command messages
     if (!message.content.startsWith(prefix)) {
-      console.log(message);
       SpamDetection.check(message);
       // Add points for each message sent (every 30 seconds)
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
