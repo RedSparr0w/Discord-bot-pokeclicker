@@ -1,4 +1,4 @@
-// TODO: Fixup text on images
+// Note: You may need to install the font to your system first
 const { AttachmentBuilder, EmbedBuilder } = require('discord.js');
 const { getAmount, getRank, getTrainerCard, getPurchased } = require('../database.js');
 const { trainerCardColors, trainerCardBadges, getLastClaim } = require('../helpers.js');
