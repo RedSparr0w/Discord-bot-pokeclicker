@@ -174,6 +174,7 @@ const processSaveFile = (msg, file) => {
         const version = saveData.save?.update?.version || '0.0.0';
         const name = decodeURIComponent(saveData.save?.profile?.name || 'Trainer');
         const trainer = saveData.save?.profile?.trainer || 0;
+        const trainerID = saveData.player?.trainerId || '000000';
         const pokemon = saveData.save?.profile?.pokemon || 0;
         const pokemonShiny = saveData.save?.profile?.pokemonShiny || false;
         const caughtPokemon = saveData.save?.party?.caughtPokemon?.length || 0;
@@ -198,16 +199,46 @@ const processSaveFile = (msg, file) => {
           })
           .setColor('Random')
           .setThumbnail(`${website}assets/images/${pokemonShiny ? 'shiny' : ''}pokemon/${pokemon}.png`)
-          .addField('Discord:', discordID ? `<@${discordID}>` : 'False')
-          .addField('Pokemon Caught:', `${caughtPokemon} | ${caughtPokemonShiny} ✨`)
-          .addField('Time Played:', formatSecondsFullLetters(timePlayed))
-          .addField('Challenges:', `${challengesEnabled}/${challengesTotal}`)
-          .addField('Dungeon Clears:', maxDungeons.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n') || 'Null')
-          .addField('Pokemon Defeated:', maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n') || 'Null')
-          .addField('Save File:', `[Download](${file.url})`);
+          .addFields([
+            {
+              name: 'Trainer ID:',
+              value: trainerID,
+            },
+            {
+              name: 'Discord:',
+              value: discordID ? `<@${discordID}>` : 'False',
+            },
+            {
+              name: 'Pokemon Caught:',
+              value: `${caughtPokemon} | ${caughtPokemonShiny} ✨`,
+            },
+            {
+              name: 'Time Played:',
+              value: formatSecondsFullLetters(timePlayed),
+            },
+            {
+              name: 'Challenges:',
+              value: `${challengesEnabled}/${challengesTotal}`,
+            },
+            {
+              name: 'Dungeon Clears:',
+              value: maxDungeons.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n') || 'Null',
+            },
+            {
+              name: 'Pokemon Defeated:',
+              value: maxPokemon.map(d => `${d.name}: ${d.amt.toLocaleString('en-US')}`).join('\n') || 'Null',
+            },
+            {
+              name: 'Save File:',
+              value: `[Download](${file.url})`,
+            },
+          ]);
 
         if (saveFlags.length) {
-          embed.addField('Flags:', `[⚠](${msg.url} "${saveFlags.join('\n')}")`);
+          embed.addFields({
+            name: 'Flags:',
+            value: `[⚠](${msg.url} "${saveFlags.join('\n')}")`,
+          });
         }
 
         embed.setFooter({ text: `Version: v${version} | Last Seen:` })
