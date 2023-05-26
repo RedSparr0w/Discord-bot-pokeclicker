@@ -35,8 +35,6 @@ module.exports = {
         ].join('\n'))
         .setColor('#3498db');
 
-      console.log(msg.channel.type, ChannelType.DM, ChannelType.GuildText);
-
       if (msg.channel.type === ChannelType.DM){
         const description = commands.map(command => `❯ **${upperCaseFirstLetter(command.name)}**: ${command.description.split('\n')[0]}`).join('\n');
         embed.addFields({
