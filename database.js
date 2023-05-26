@@ -456,7 +456,6 @@ async function getUserReminders(user){
 }
 
 async function clearReminders(ids = []){
-  // TODO: allow users to cancel their own reminders
   const db = await getDB();
 
   const results = await db.run(`DELETE FROM reminders WHERE reminders.id IN (${ids.join(',')})`);
