@@ -26,7 +26,7 @@ module.exports = {
     if (!search) {
       const embed = new EmbedBuilder()
         .setTitle('PokéClicker wiki')
-        .setDescription(`Wiki: ${wikiWebsite}\nTo search for a specific page, use \`/wiki <query>\``)
+        .setDescription(`Wiki: ${wikiWebsite}\n\nTo search for a specific page, use \`/wiki <query>\``)
         .setColor('#3498db');
       return interaction.reply({ embeds: [embed] });
     }
