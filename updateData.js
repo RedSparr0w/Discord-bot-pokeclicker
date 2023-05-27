@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const https = require('https');
 let { website, wikiWebsite } = require('./config.js');
 website = website.endsWith('/') ? website : `${website}/`;
 wikiWebsite = wikiWebsite.endsWith('/') ? wikiWebsite : `${wikiWebsite}/`;
@@ -163,70 +162,13 @@ const cli = new ESLint({
     console.log('=== PokéClicker Wiki ===');
     console.log(`navigate to ${wikiWebsite}\nwaiting for webpage to load..`);
 
-    const getPages = (apcontinue = '') => {
-      const params = {
-        action: 'query',
-        format: 'json',
-        formatversion: 2,
-        list: 'allpages',
-        aplimit: 500,
-        apnamespace: 0,
-        apfilterredir: 'nonredirects',
-        apcontinue: apcontinue,
-      };
-      
-      let url = `${wikiWebsite}w/api.php?origin=*`;
-      
-      Object.keys(params).forEach((key) => {
-        url += `&${key}=${params[key]}`;
-      });
+    await page.goto(wikiWebsite);
 
-      return new Promise((resolve, reject) => {
-        https.get(url, (resp)=>{
-
-          let data = '';
-        
-          // A chunk of data has been received.
-          resp.on('data', (chunk) => {
-            data += chunk;
-          });
-        
-          // The whole response has been received. Print out the result.
-          resp.on('end', () => {
-            const jsonData = JSON.parse(data);
-            resolve(jsonData);
-          });
-          
-        }).on('error', (err) => {
-          reject(`Error: ${err.message}`);
-        });
-      });
-    };
+    console.log('webpage loaded!\ngathering data...');
     
-    const pages = new Set();
-    let apcontinue = '';
-    let i = 0;
+    const wikiData = await page.evaluate(() => Wiki.searchOptions);
 
-    do {
-      const response = await getPages(apcontinue);
-      apcontinue = response?.continue?.apcontinue || '';
-      const allPages = response.query.allpages;
-      allPages.forEach(p => pages.add(p.title));
-      console.log(`processed page ${++i}`);
-    } while (apcontinue);
-    wikiLinks = [...pages]
-      .filter(p => !p.includes(':'))
-      .filter(p => !/\/\w{2,3}$/.test(p))
-      .filter(p => !/Easter Egg/i.test(p))
-      .map(title => ({
-        title,
-        link: `${wikiWebsite}wiki/${encodeURI(title.replace(/\s/g, '_'))}`,
-      }));
-
-    // set data
-    const wikiData = { wikiLinks };
-
-    const wikiResults = await cli.lintText(`module.exports = ${JSON.stringify(wikiData, null, 2)}`);
+    const wikiResults = await cli.lintText(`module.exports = {\nwikiLinks: ${JSON.stringify(wikiData, null, 2)}}`);
     const wikiResult = wikiResults[0];
 
     // Get the output after running through eslint
