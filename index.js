@@ -1,7 +1,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const SpamDetection = require('./other/mod/spamdetection.js');
-const { development, prefix, token, backupChannelID, mutedRoleID } = require('./config.js');
+const { development, prefix, token, backupChannelID } = require('./config.js');
 const {
   log,
   info,
