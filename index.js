@@ -133,17 +133,6 @@ client.on('error', e => error('Client error thrown:', e))
   .on('messageCreate', async message => {
     // Either not a command or a bot, ignore
     if (message.author.bot) return;
-
-    // Mute users who mass ping (4 or more users)
-    if (message.mentions.users.size >= 4) {
-      try {
-        message.delete().catch(e=>{});
-        message.member.roles.add(mutedRoleID, `User muted for mass ping (${message.mentions.users.size} users)`);
-        return message.reply('You have been muted, Do not mass ping!');
-      } catch (e) {
-        error('Unable to mute user for mass ping:\n', e);
-      }
-    }
     
     if (!client.application || !client.application.owner) await client.application.fetch();
 
