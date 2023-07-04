@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.10.11',
+  'gameVersion': '0.10.12',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -3981,6 +3981,129 @@ module.exports = {
       'ignoreRouteInCalculations': false,
     },
     {
+      'routeName': 'Rock Poké Spot',
+      'region': 2,
+      'number': 135,
+      'pokemon': {
+        'land': [
+          'Sandshrew',
+          'Gligar',
+          'Trapinch',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': -1,
+          'development': true,
+          'hint': 'This is probably still under development.',
+          '__class': 'DevelopmentRequirement',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'cachedQuest': {
+            'state': 0,
+            'name': 'Shadows in the Desert',
+            'quest': 0,
+          },
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'orderNumber': 135,
+      'subRegion': 1,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1500000,
+    },
+    {
+      'routeName': 'Oasis Poké Spot',
+      'region': 2,
+      'number': 136,
+      'pokemon': {
+        'land': [
+          'Hoppip',
+          'Phanpy',
+          'Surskit',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': -1,
+          'development': true,
+          'hint': 'This is probably still under development.',
+          '__class': 'DevelopmentRequirement',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'cachedQuest': {
+            'state': 0,
+            'name': 'Shadows in the Desert',
+            'quest': 0,
+          },
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'orderNumber': 136,
+      'subRegion': 1,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1500000,
+    },
+    {
+      'routeName': 'Cave Poké Spot',
+      'region': 2,
+      'number': 137,
+      'pokemon': {
+        'land': [
+          'Zubat',
+          'Aron',
+          'Wooper',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': -1,
+          'development': true,
+          'hint': 'This is probably still under development.',
+          '__class': 'DevelopmentRequirement',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'cachedQuest': {
+            'state': 0,
+            'name': 'Shadows in the Desert',
+            'quest': 0,
+          },
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'orderNumber': 137,
+      'subRegion': 1,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1500000,
+    },
+    {
       'routeName': 'Sinnoh Route 201',
       'region': 3,
       'number': 201,
@@ -4522,7 +4645,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 49,
+          'badge': 53,
           'hint': 'Requires the Fen badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -4800,7 +4923,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 52,
+          'badge': 56,
           'hint': 'Requires the Beacon badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -4841,7 +4964,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 57,
+          'badge': 61,
           'hint': 'Requires the Elite Sinnoh Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -4879,7 +5002,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 57,
+          'badge': 61,
           'hint': 'Requires the Elite Sinnoh Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -5109,7 +5232,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 57,
+          'badge': 61,
           'hint': 'Requires the Elite Sinnoh Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -5179,7 +5302,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 59,
+          'badge': 63,
           'hint': 'Requires the Toxic badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -5193,9 +5316,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 1,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5241,9 +5364,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 2,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5277,9 +5400,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 2,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5313,9 +5436,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 2,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5358,7 +5481,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 61,
+          'badge': 65,
           'hint': 'Requires the Bolt badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -5379,9 +5502,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 4,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5437,9 +5560,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 7,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5584,9 +5707,9 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
+          'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 10,
-          'hint': 'Progress further in questline Quest for the DNA Splicers.',
+          'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
       ],
@@ -5789,8 +5912,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
-          'questLineName': 'Quest for the DNA Splicers',
-          'hint': 'Questline Quest for the DNA Splicers needs to be completed.',
+          'questLineName': 'Hollow Truth and Ideals',
+          'hint': 'Questline Hollow Truth and Ideals needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
       ],
@@ -5843,7 +5966,7 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'badge': 70,
+                  'badge': 74,
                   'hint': 'Requires the Elite Unova Champion badge.',
                   '__class': 'GymBadgeRequirement',
                 },
@@ -5925,7 +6048,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 70,
+          'badge': 74,
           'hint': 'Requires the Elite Unova Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -6134,7 +6257,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 70,
+          'badge': 74,
           'hint': 'Requires the Elite Unova Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -6274,7 +6397,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 71,
+          'badge': 75,
           'hint': 'Requires the Bug badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -6508,7 +6631,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 72,
+          'badge': 76,
           'hint': 'Requires the Cliff badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -6562,7 +6685,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 73,
+          'badge': 77,
           'hint': 'Requires the Rumble badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -6961,7 +7084,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 83,
+          'badge': 87,
           'hint': 'Requires the Elite Kalos Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8245,7 +8368,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 100,
+          'badge': 104,
           'hint': 'Requires the Elite Alola Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8436,7 +8559,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 101,
+          'badge': 105,
           'hint': 'Requires the Friend League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8466,7 +8589,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 102,
+          'badge': 106,
           'hint': 'Requires the Quick League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8496,7 +8619,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 103,
+          'badge': 107,
           'hint': 'Requires the Heavy League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8527,7 +8650,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 104,
+          'badge': 108,
           'hint': 'Requires the Great League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8558,7 +8681,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 105,
+          'badge': 109,
           'hint': 'Requires the Fast League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8589,7 +8712,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 106,
+          'badge': 110,
           'hint': 'Requires the Luxury League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8623,7 +8746,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 107,
+          'badge': 111,
           'hint': 'Requires the Heal League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8654,7 +8777,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 108,
+          'badge': 112,
           'hint': 'Requires the Ultra League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8685,7 +8808,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 109,
+          'badge': 113,
           'hint': 'Requires the E4 League badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -8718,7 +8841,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 100,
+          'badge': 104,
           'hint': 'Requires the Elite Alola Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -10968,7 +11091,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 111,
+          'badge': 115,
           'hint': 'Requires the Galar Grass badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -11242,7 +11365,7 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'badge': 113,
+              'badge': 117,
               'hint': 'Requires the Galar Fire badge.',
               '__class': 'GymBadgeRequirement',
             },
@@ -12909,7 +13032,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 113,
+          'badge': 117,
           'hint': 'Requires the Galar Fire badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -13343,7 +13466,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 120,
+          'badge': 124,
           'hint': 'Requires the Galar Dragon badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -17604,7 +17727,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 124,
+          'badge': 128,
           'hint': 'Requires the Elite Galar Champion badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -17639,7 +17762,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17672,7 +17795,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17710,7 +17833,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17742,7 +17865,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17778,7 +17901,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17813,7 +17936,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17849,7 +17972,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17875,7 +17998,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17907,7 +18030,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17942,7 +18065,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -17965,7 +18088,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18002,7 +18125,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18038,7 +18161,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18071,7 +18194,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18111,7 +18234,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18144,7 +18267,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18178,7 +18301,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18215,7 +18338,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18245,7 +18368,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18292,7 +18415,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18326,7 +18449,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18366,7 +18489,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18402,7 +18525,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18439,7 +18562,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18475,7 +18598,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18516,7 +18639,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18550,7 +18673,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18586,7 +18709,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18619,7 +18742,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18654,7 +18777,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18684,7 +18807,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18715,7 +18838,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18743,7 +18866,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18785,7 +18908,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18817,7 +18940,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18853,7 +18976,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18883,7 +19006,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18919,7 +19042,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18953,7 +19076,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -18983,7 +19106,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19015,7 +19138,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19046,7 +19169,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19079,7 +19202,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19114,7 +19237,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19147,7 +19270,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19180,7 +19303,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19209,7 +19332,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19251,7 +19374,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19299,7 +19422,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19343,7 +19466,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19379,7 +19502,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19416,7 +19539,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19450,7 +19573,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -19486,7 +19609,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -20252,6 +20375,25 @@ module.exports = {
         '7': 14.29,
         '9': 28.57,
         '15': 14.29,
+      },
+      '135': {
+        '8': 100,
+        '9': 33.33,
+      },
+      '136': {
+        '2': 33.33,
+        '4': 33.33,
+        '8': 33.33,
+        '9': 33.33,
+        '11': 33.33,
+      },
+      '137': {
+        '2': 33.33,
+        '7': 33.33,
+        '8': 33.33,
+        '9': 33.33,
+        '12': 33.33,
+        '16': 33.33,
       },
     },
     '3': {
@@ -23193,7 +23335,7 @@ module.exports = {
     {
       'id': 1.02,
       'name': 'Spooky Bulbasaur',
-      'catchRate': 25,
+      'catchRate': 45,
       'type': [
         4,
         15,
@@ -23253,13 +23395,13 @@ module.exports = {
       'attack': 53,
       'nativeRegion': 0,
       'locations': {},
-      'catchRatePercent': 11,
+      'catchRatePercent': 17,
       'eggSteps': 800,
     },
     {
       'id': 1.03,
       'name': 'Bulbasaur (Rose)',
-      'catchRate': 25,
+      'catchRate': 45,
       'type': [
         4,
         17,
@@ -23326,7 +23468,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 11,
+      'catchRatePercent': 17,
       'eggSteps': 800,
     },
     {
@@ -23752,6 +23894,37 @@ module.exports = {
       'levelType': 3,
       'exp': 236,
       'eggCycles': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Venusaur',
+          'evolvedPokemon': 'Mega Venusaur',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Venusaur',
+              'hint': 'Venusaur needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Venusaur',
+              'megaStone': 49,
+              'hint': 'Venusaur needs the Venusaurite Mega Stone.<br />Needs at least 70,500 attack to Mega Evolve.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 80,
         'attack': 82,
@@ -23804,6 +23977,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Kalos Stone Salesman'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -23815,10 +23989,10 @@ module.exports = {
         4,
         7,
       ],
-      'eggCycles': 20,
+      'eggCycles': 68,
       'levelType': 3,
       'exp': 281,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 80,
         'attack': 100,
@@ -23834,9 +24008,41 @@ module.exports = {
       },
       'attack': 194,
       'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 800,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Venusaur',
+            'evolvedPokemon': 'Mega Venusaur',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Venusaur',
+                'hint': 'Venusaur needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Venusaur',
+                'megaStone': 49,
+                'hint': 'Venusaur needs the Venusaurite Mega Stone.<br />Needs at least 70,500 attack to Mega Evolve.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 2720,
     },
     {
       'id': 3.02,
@@ -24420,6 +24626,86 @@ module.exports = {
       'levelType': 3,
       'exp': 240,
       'eggCycles': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Charizard',
+          'evolvedPokemon': 'Mega Charizard X',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Charizard',
+              'hint': 'Charizard needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Charizard',
+              'megaStone': 14,
+              'hint': 'Charizard needs the Charizardite X Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
+              '__class': 'MegaEvolveRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'dayCycleParts': [
+                1,
+                2,
+              ],
+              'hint': 'Your local part of the day must be Day or Dusk',
+              '__class': 'DayCyclePartRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+        {
+          'basePokemon': 'Charizard',
+          'evolvedPokemon': 'Mega Charizard Y',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Charizard',
+              'hint': 'Charizard needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Charizard',
+              'megaStone': 15,
+              'hint': 'Charizard needs the Charizardite Y Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
+              '__class': 'MegaEvolveRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'dayCycleParts': [
+                3,
+                0,
+              ],
+              'hint': 'Your local part of the day must be Night or Dawn',
+              '__class': 'DayCyclePartRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 78,
         'attack': 84,
@@ -24472,6 +24758,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Kalos Stone Salesman'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -24483,10 +24770,10 @@ module.exports = {
         1,
         14,
       ],
-      'eggCycles': 20,
+      'eggCycles': 68,
       'levelType': 3,
       'exp': 285,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 78,
         'attack': 130,
@@ -24502,9 +24789,51 @@ module.exports = {
       },
       'attack': 204,
       'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 800,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Charizard',
+            'evolvedPokemon': 'Mega Charizard X',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Charizard',
+                'hint': 'Charizard needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Charizard',
+                'megaStone': 14,
+                'hint': 'Charizard needs the Charizardite X Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
+                '__class': 'MegaEvolveRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'dayCycleParts': [
+                  1,
+                  2,
+                ],
+                'hint': 'Your local part of the day must be Day or Dusk',
+                '__class': 'DayCyclePartRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 2720,
     },
     {
       'id': 6.02,
@@ -24513,10 +24842,10 @@ module.exports = {
         1,
         9,
       ],
-      'eggCycles': 20,
+      'eggCycles': 68,
       'levelType': 3,
       'exp': 285,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 78,
         'attack': 104,
@@ -24532,9 +24861,51 @@ module.exports = {
       },
       'attack': 198,
       'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 800,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Charizard',
+            'evolvedPokemon': 'Mega Charizard Y',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Charizard',
+                'hint': 'Charizard needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Charizard',
+                'megaStone': 15,
+                'hint': 'Charizard needs the Charizardite Y Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
+                '__class': 'MegaEvolveRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'dayCycleParts': [
+                  3,
+                  0,
+                ],
+                'hint': 'Your local part of the day must be Night or Dawn',
+                '__class': 'DayCyclePartRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 2720,
     },
     {
       'id': 6.03,
@@ -24981,6 +25352,37 @@ module.exports = {
       'levelType': 3,
       'exp': 239,
       'eggCycles': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Blastoise',
+          'evolvedPokemon': 'Mega Blastoise',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Blastoise',
+              'hint': 'Blastoise needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Blastoise',
+              'megaStone': 10,
+              'hint': 'Blastoise needs the Blastoisinite Mega Stone.<br />Needs at least 69,500 attack to Mega Evolve.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 79,
         'attack': 83,
@@ -25033,6 +25435,7 @@ module.exports = {
             ],
           },
         ],
+        '15': ['Kalos Stone Salesman'],
       },
       'catchRatePercent': 17,
       'eggSteps': 1800,
@@ -25041,10 +25444,10 @@ module.exports = {
       'id': 9.01,
       'name': 'Mega Blastoise',
       'type': [2],
-      'eggCycles': 20,
+      'eggCycles': 68,
       'levelType': 3,
       'exp': 284,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 79,
         'attack': 103,
@@ -25060,9 +25463,41 @@ module.exports = {
       },
       'attack': 202,
       'nativeRegion': 0,
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 800,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Blastoise',
+            'evolvedPokemon': 'Mega Blastoise',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Blastoise',
+                'hint': 'Blastoise needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Blastoise',
+                'megaStone': 10,
+                'hint': 'Blastoise needs the Blastoisinite Mega Stone.<br />Needs at least 69,500 attack to Mega Evolve.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 2720,
     },
     {
       'id': 9.02,
@@ -26057,8 +26492,7 @@ module.exports = {
               'option': 1,
               'name': 'Beedrill',
               'megaStone': 9,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Beedrill needs the Beedrillite Mega Stone.<br />Needs at least 37,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -26143,7 +26577,7 @@ module.exports = {
       'eggCycles': 53,
       'levelType': 2,
       'exp': 223,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 65,
         'attack': 150,
@@ -26184,8 +26618,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Beedrill',
                 'megaStone': 9,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Beedrill needs the Beedrillite Mega Stone.<br />Needs at least 37,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -26193,7 +26626,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 17,
       'eggSteps': 2120,
     },
     {
@@ -26670,8 +27103,7 @@ module.exports = {
               'option': 1,
               'name': 'Pidgeot',
               'megaStone': 37,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Pidgeot needs the Pidgeotite Mega Stone.<br />Needs at least 56,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -26751,7 +27183,7 @@ module.exports = {
       'eggCycles': 53,
       'levelType': 2,
       'exp': 261,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 83,
         'attack': 80,
@@ -26792,8 +27224,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Pidgeot',
                 'megaStone': 37,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Pidgeot needs the Pidgeotite Mega Stone.<br />Needs at least 56,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -26801,7 +27232,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 17,
       'eggSteps': 2120,
     },
     {
@@ -28086,11 +28517,6 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 8,
-            },
-          ],
         },
         '2': [
           'Power Plant',
@@ -28429,7 +28855,7 @@ module.exports = {
     {
       'id': 25.1,
       'name': 'Flying Pikachu',
-      'catchRate': 50,
+      'catchRate': 190,
       'type': [
         3,
         9,
@@ -28464,13 +28890,13 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 18,
+      'catchRatePercent': 51,
       'eggSteps': 400,
     },
     {
       'id': 25.11,
       'name': 'Surfing Pikachu',
-      'catchRate': 50,
+      'catchRate': 190,
       'type': [
         3,
         2,
@@ -28496,13 +28922,13 @@ module.exports = {
       'locations': {
         '13': [1500],
       },
-      'catchRatePercent': 18,
+      'catchRatePercent': 51,
       'eggSteps': 400,
     },
     {
       'id': 25.12,
       'name': 'Pikachu (Gengar)',
-      'catchRate': 50,
+      'catchRate': 190,
       'type': [
         3,
         13,
@@ -28526,13 +28952,13 @@ module.exports = {
       'attack': 43,
       'nativeRegion': 0,
       'locations': {},
-      'catchRatePercent': 18,
+      'catchRatePercent': 51,
       'eggSteps': 400,
     },
     {
       'id': 25.13,
       'name': "Let's Go Pikachu",
-      'catchRate': 50,
+      'catchRate': 190,
       'type': [3],
       'levelType': 2,
       'exp': 112,
@@ -28564,7 +28990,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 18,
+      'catchRatePercent': 51,
       'eggSteps': 400,
     },
     {
@@ -28946,6 +29372,9 @@ module.exports = {
           '2': [
             {
               'route': 111,
+            },
+            {
+              'route': 135,
             },
           ],
           '4': [
@@ -29995,11 +30424,6 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 44,
-            },
-          ],
         },
         '2': [
           'Mt. Moon',
@@ -30080,11 +30504,6 @@ module.exports = {
             {
               'route': 54,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 44,
             },
           ],
         },
@@ -30238,7 +30657,6 @@ module.exports = {
           'Mt. Pyre',
           'Liberty Garden',
           'Abundant Shrine',
-          'Veilstone Cape',
         ],
         '6': ['Fire'],
       },
@@ -30329,11 +30747,6 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Firespit Island',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Vulpix',
@@ -30702,6 +31115,11 @@ module.exports = {
               'route': 42,
             },
           ],
+          '2': [
+            {
+              'route': 137,
+            },
+          ],
           '3': [
             {
               'route': 203,
@@ -30729,41 +31147,6 @@ module.exports = {
             },
             {
               'route': 216,
-            },
-          ],
-          '8': [
-            {
-              'route': 5,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 9,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 17,
-            },
-            {
-              'route': 20,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 40,
             },
           ],
         },
@@ -30809,10 +31192,6 @@ module.exports = {
           'Roaring-Sea Caves',
           'Lakeside Cave',
           'Tunnel to the Top',
-          'Oreburrow Tunnel',
-          'Heartwood',
-          'Ancient Wayward Cave',
-          'Ancient Snowpoint Temple',
         ],
       },
       'catchRatePercent': 63,
@@ -30874,29 +31253,6 @@ module.exports = {
               'route': 227,
             },
           ],
-          '8': [
-            {
-              'route': 6,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 17,
-            },
-            {
-              'route': 20,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 40,
-            },
-          ],
         },
         '2': [
           'Seafoam Islands',
@@ -30929,9 +31285,6 @@ module.exports = {
           'Vast Poni Canyon',
           'Roaring-Sea Caves',
           'Tunnel to the Top',
-          'Heartwood',
-          'Ancient Wayward Cave',
-          'Ancient Snowpoint Temple',
         ],
         '3': [
           {
@@ -30943,6 +31296,9 @@ module.exports = {
           {
             'dungeon': 'Sealed Chamber',
             'requirements': 'Progress further in questline The Three Golems.',
+          },
+          {
+            'dungeon': 'Mount Lanakila',
           },
           {
             'dungeon': 'Resolution Cave',
@@ -31406,7 +31762,6 @@ module.exports = {
         '2': [
           'Berry Forest',
           'Flower Paradise',
-          'Ruins of Abundance',
         ],
         '5': [
           {
@@ -31697,31 +32052,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 8,
-            },
-            {
-              'route': 14,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 17,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 40,
-            },
-          ],
-        },
         '2': [
           'Mt. Moon',
           'Ilex Forest',
@@ -31845,32 +32175,6 @@ module.exports = {
           '6': [
             {
               'route': 11,
-            },
-          ],
-          '8': [
-            {
-              'route': 8,
-            },
-            {
-              'route': 14,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 17,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 32,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 40,
             },
           ],
         },
@@ -33117,26 +33421,6 @@ module.exports = {
               'route': 36,
             },
           ],
-          '8': [
-            {
-              'route': 14,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 40,
-            },
-            {
-              'route': 41,
-            },
-          ],
         },
         '2': [
           'Seafoam Islands',
@@ -33155,7 +33439,6 @@ module.exports = {
           'Brooklet Hill',
           'Malie Garden',
           "Brawlers' Cave",
-          'Heartwood',
         ],
       },
       'catchRatePercent': 51,
@@ -33276,20 +33559,6 @@ module.exports = {
             {
               'route': 38,
               'requirements': 'The weather needs to be Sunny',
-            },
-          ],
-          '8': [
-            {
-              'route': 23,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 40,
-            },
-            {
-              'route': 41,
             },
           ],
         },
@@ -33824,20 +34093,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 32,
-            },
-          ],
-        },
-        '3': [
-          {
-            'dungeon': 'Veilstone Cape',
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -33926,31 +34182,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Hisuian Growlithe',
-            'evolvedPokemon': 'Hisuian Arcanine',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Hisuian Growlithe',
-                'hint': 'Hisuian Growlithe needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-            ],
-            'stone': 1,
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 1200,
     },
@@ -34543,20 +34775,11 @@ module.exports = {
               'route': 33,
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 7,
-            },
-          ],
         },
         '2': [
           'Granite Cave',
           'Liberty Garden',
           "Trainers' School",
-          'Ancient Lake Acuity',
         ],
       },
       'catchRatePercent': 53,
@@ -34629,16 +34852,8 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-          ],
         },
-        '2': [
-          'Cave of Being',
-          'Ancient Lake Acuity',
-        ],
+        '2': ['Cave of Being'],
         '3': [
           {
             'dungeon': 'Cerulean Cave',
@@ -34719,8 +34934,7 @@ module.exports = {
               'option': 1,
               'name': 'Alakazam',
               'megaStone': 4,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Alakazam needs the Alakazite Mega Stone.<br />Needs at least 48,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -34762,11 +34976,6 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-          ],
         },
         '5': [
           {
@@ -34802,7 +35011,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 3,
       'exp': 270,
-      'catchRate': 10,
+      'catchRate': 50,
       'base': {
         'hitpoints': 55,
         'attack': 50,
@@ -34843,8 +35052,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Alakazam',
                 'megaStone': 4,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Alakazam needs the Alakazite Mega Stone.<br />Needs at least 48,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -34852,7 +35060,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 18,
       'eggSteps': 2720,
     },
     {
@@ -34965,23 +35173,6 @@ module.exports = {
               'route': 19,
             },
           ],
-          '8': [
-            {
-              'route': 31,
-            },
-            {
-              'route': 45,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 54,
-            },
-          ],
         },
         '2': [
           'Rock Tunnel',
@@ -34994,7 +35185,6 @@ module.exports = {
           'Mt. Coronet North',
           'Glittering Cave',
           'Ten Carat Hill',
-          'Oreburrow Tunnel',
         ],
         '6': ['Fighting'],
       },
@@ -35116,26 +35306,6 @@ module.exports = {
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
-          '8': [
-            {
-              'route': 25,
-            },
-            {
-              'route': 31,
-            },
-            {
-              'route': 45,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 54,
-            },
-          ],
         },
         '2': [
           'Mt. Ember Summit',
@@ -35243,11 +35413,6 @@ module.exports = {
             {
               'route': 19,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 50,
             },
           ],
         },
@@ -36049,14 +36214,6 @@ module.exports = {
               'route': 45,
             },
           ],
-          '8': [
-            {
-              'route': 36,
-            },
-            {
-              'route': 37,
-            },
-          ],
         },
         '2': [
           'Icefall Cave',
@@ -36265,14 +36422,6 @@ module.exports = {
               'requirements': 'The weather needs to be Overcast',
             },
           ],
-          '8': [
-            {
-              'route': 36,
-            },
-            {
-              'route': 37,
-            },
-          ],
         },
         '2': [
           'Icefall Cave',
@@ -36427,86 +36576,6 @@ module.exports = {
               'route': 214,
             },
           ],
-          '8': [
-            {
-              'route': 5,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 9,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 14,
-            },
-            {
-              'route': 15,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 17,
-            },
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 20,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 29,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 31,
-            },
-            {
-              'route': 35,
-            },
-            {
-              'route': 45,
-            },
-          ],
         },
         '2': [
           'Mt. Moon',
@@ -36528,13 +36597,6 @@ module.exports = {
           'Mt. Coronet North',
           'Terminus Cave',
           'Victory Road Kalos',
-          'Oreburrow Tunnel',
-          'Heartwood',
-          'Shrouded Ruins',
-          'Veilstone Cape',
-          'Clamberclaw Cliffs',
-          'Celestica Ruins',
-          'Sacred Plaza',
         ],
         '4': [
           {
@@ -36750,98 +36812,6 @@ module.exports = {
               'route': 18,
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 13,
-            },
-            {
-              'route': 14,
-            },
-            {
-              'route': 15,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 17,
-            },
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 20,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 28,
-            },
-            {
-              'route': 29,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 31,
-            },
-            {
-              'route': 32,
-            },
-            {
-              'route': 33,
-            },
-            {
-              'route': 35,
-            },
-            {
-              'route': 38,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 43,
-            },
-            {
-              'route': 44,
-            },
-            {
-              'route': 45,
-            },
-            {
-              'route': 45,
-            },
-            {
-              'route': 46,
-            },
-          ],
         },
         '2': [
           'Mt. Ember Summit',
@@ -36858,21 +36828,10 @@ module.exports = {
           'Cave of Being',
           'Terminus Cave',
           'Victory Road Kalos',
-          'Shrouded Ruins',
-          'Veilstone Cape',
-          'Firespit Island',
-          'Clamberclaw Cliffs',
-          'Celestica Ruins',
-          'Sacred Plaza',
-          'Ancient Snowpoint Temple',
-          'Ancient Lake Valor',
         ],
         '3': [
           {
             'dungeon': 'Mt. Coronet North',
-          },
-          {
-            'dungeon': 'Oreburrow Tunnel',
           },
         ],
         '4': [
@@ -37060,13 +37019,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 45,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Graveler',
@@ -37236,11 +37188,6 @@ module.exports = {
               'route': 210,
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-          ],
         },
         '2': [
           'Mt. Ember Summit',
@@ -37357,11 +37304,6 @@ module.exports = {
           '1': [
             {
               'route': 28,
-            },
-          ],
-          '8': [
-            {
-              'route': 2,
             },
           ],
         },
@@ -37783,8 +37725,7 @@ module.exports = {
               'option': 1,
               'name': 'Slowbro',
               'megaStone': 45,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Slowbro needs the Slowbronite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -37876,7 +37817,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 2,
       'exp': 207,
-      'catchRate': 10,
+      'catchRate': 75,
       'base': {
         'hitpoints': 95,
         'attack': 75,
@@ -37917,8 +37858,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Slowbro',
                 'megaStone': 45,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Slowbro needs the Slowbronite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -37926,7 +37866,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 25,
       'eggSteps': 1800,
     },
     {
@@ -38403,6 +38343,7 @@ module.exports = {
           'Power Plant',
           'Cerulean Cave',
           'Victory Road Sinnoh',
+          'P2 Laboratory',
           'Lost Hotel',
         ],
         '3': [
@@ -39583,35 +39524,6 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 14,
-            },
-            {
-              'route': 15,
-            },
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 45,
-            },
-            {
-              'route': 49,
-            },
-          ],
         },
         '2': [
           'Pokémon Tower',
@@ -39624,10 +39536,6 @@ module.exports = {
           "Hau'oli Cemetery",
           'Memorial Hill',
           'Thrifty Megamart',
-          'Shrouded Ruins',
-          'Clamberclaw Cliffs',
-          'Celestica Ruins',
-          'Sacred Plaza',
         ],
         '6': ['Mystery'],
         '12': ['Kasib'],
@@ -39735,32 +39643,6 @@ module.exports = {
               'route': 25,
             },
           ],
-          '8': [
-            {
-              'route': 15,
-            },
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 45,
-            },
-            {
-              'route': 49,
-            },
-          ],
         },
         '2': [
           'Pokémon Tower',
@@ -39770,10 +39652,6 @@ module.exports = {
           'Frost Cavern',
           'Victory Road Kalos',
           'Thrifty Megamart',
-          'Shrouded Ruins',
-          'Clamberclaw Cliffs',
-          'Celestica Ruins',
-          'Sacred Plaza',
         ],
         '3': [
           {
@@ -39855,8 +39733,7 @@ module.exports = {
               'option': 1,
               'name': 'Gengar',
               'megaStone': 20,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Gengar needs the Gengarite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -39952,7 +39829,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 3,
       'exp': 207,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 60,
         'attack': 65,
@@ -39993,8 +39870,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Gengar',
                 'megaStone': 20,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Gengar needs the Gengarite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -40002,7 +39878,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -40156,11 +40032,6 @@ module.exports = {
             {
               'route': 16,
               'requirements': 'The weather needs to be Sandstorm',
-            },
-          ],
-          '8': [
-            {
-              'route': 43,
             },
           ],
         },
@@ -41007,9 +40878,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '2': ['Sacred Plaza'],
-      },
+      'locations': {},
       'catchRatePercent': 51,
       'eggSteps': 800,
     },
@@ -41041,7 +40910,6 @@ module.exports = {
           'Power Plant',
           'Cerulean Cave',
           "Team Rocket's Hideout",
-          'P2 Laboratory',
           'Lost Hotel',
         ],
         '3': [
@@ -41129,31 +40997,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Hisuian Voltorb',
-            'evolvedPokemon': 'Hisuian Electrode',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Hisuian Voltorb',
-                'hint': 'Hisuian Voltorb needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-            ],
-            'stone': 0,
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 1200,
     },
@@ -41379,6 +41223,36 @@ module.exports = {
           },
         },
       },
+      'catchRatePercent': 29,
+      'eggSteps': 800,
+    },
+    {
+      'id': 102.01,
+      'name': 'Exeggcute (Single)',
+      'catchRate': 90,
+      'type': [
+        4,
+        10,
+      ],
+      'levelType': 4,
+      'exp': 65,
+      'eggCycles': 20,
+      'base': {
+        'hitpoints': 60,
+        'attack': 40,
+        'specialAttack': 60,
+        'defense': 80,
+        'specialDefense': 45,
+        'speed': 40,
+      },
+      'attack': 55,
+      'nativeRegion': 0,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {},
       'catchRatePercent': 29,
       'eggSteps': 800,
     },
@@ -42205,22 +42079,10 @@ module.exports = {
               'route': 40,
             },
           ],
-          '8': [
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 54,
-            },
-          ],
         },
         '2': [
           'Victory Road Kalos',
           "Brawlers' Cave",
-          'Shrouded Ruins',
         ],
         '8': ['Celadon City'],
       },
@@ -42423,6 +42285,7 @@ module.exports = {
         '2': [
           'Pokémon Mansion',
           'Stark Mountain',
+          'P2 Laboratory',
         ],
         '3': [
           {
@@ -42699,25 +42562,12 @@ module.exports = {
               'route': 39,
             },
           ],
-          '8': [
-            {
-              'route': 17,
-            },
-            {
-              'route': 20,
-            },
-            {
-              'route': 43,
-            },
-          ],
         },
         '2': [
           'Victory Road Johto',
           'Victory Road Sinnoh',
           'Stark Mountain',
           'Glittering Cave',
-          'Shrouded Ruins',
-          'Sacred Plaza',
         ],
         '10': {
           '0': {
@@ -42907,11 +42757,6 @@ module.exports = {
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
-          '8': [
-            {
-              'route': 43,
-            },
-          ],
         },
         '2': ['Stark Mountain'],
         '3': [
@@ -42920,9 +42765,6 @@ module.exports = {
           },
           {
             'dungeon': 'Victory Road Sinnoh',
-          },
-          {
-            'dungeon': 'Sacred Plaza',
           },
         ],
         '5': [
@@ -43355,44 +43197,10 @@ module.exports = {
               'requirements': 'The weather needs to be Sunny',
             },
           ],
-          '8': [
-            {
-              'route': 28,
-            },
-            {
-              'route': 38,
-            },
-            {
-              'route': 51,
-            },
-          ],
         },
         '2': [
           "Mina's Houseboat",
           "Brawlers' Cave",
-        ],
-        '5': [
-          {
-            'basePokemon': 'Happiny',
-            'evolvedPokemon': 'Chansey',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Happiny',
-                'hint': 'Happiny needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the Kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-            ],
-            'stone': -1,
-          },
         ],
         '7': ['Blissey'],
         '10': {
@@ -43455,29 +43263,6 @@ module.exports = {
       'attack': 27,
       'nativeRegion': 0,
       'locations': {
-        '5': [
-          {
-            'basePokemon': 'Handout Happiny',
-            'evolvedPokemon': 'Charity Chansey',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Handout Happiny',
-                'hint': 'Handout Happiny needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 0,
-                'option': 2,
-                'hint': 'You need to reach the Kanto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-            ],
-            'stone': -1,
-          },
-        ],
         '7': ['Blessing Blissey'],
         '8': ['Client Island'],
       },
@@ -43571,11 +43356,6 @@ module.exports = {
               'route': 35,
             },
           ],
-          '8': [
-            {
-              'route': 21,
-            },
-          ],
         },
         '2': [
           'Mt. Silver',
@@ -43652,8 +43432,7 @@ module.exports = {
               'option': 1,
               'name': 'Kangaskhan',
               'megaStone': 25,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Kangaskhan needs the Kangaskhanite Mega Stone.<br />Needs at least 54,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -43713,7 +43492,7 @@ module.exports = {
       'eggCycles': 30,
       'levelType': 3,
       'exp': 207,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 105,
         'attack': 125,
@@ -43754,8 +43533,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Kangaskhan',
                 'megaStone': 25,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Kangaskhan needs the Kangaskhanite Mega Stone.<br />Needs at least 54,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -43763,7 +43541,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 17,
       'eggSteps': 1200,
     },
     {
@@ -43916,6 +43694,7 @@ module.exports = {
           'Tanoby Ruins',
           'Whirl Islands',
           'Sealed Chamber',
+          'P2 Laboratory',
         ],
       },
       'catchRatePercent': 58,
@@ -44703,11 +44482,6 @@ module.exports = {
               'route': 218,
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-          ],
         },
         '2': ['Reflection Cave'],
         '5': [
@@ -44984,12 +44758,6 @@ module.exports = {
             },
           ],
         },
-        '2': ['P2 Laboratory'],
-        '3': [
-          {
-            'dungeon': 'Heartwood',
-          },
-        ],
         '10': {
           '0': {
             '0': 4.82,
@@ -45201,17 +44969,6 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 47,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 52,
-            },
-          ],
         },
         '2': [
           'Hokulani Observatory',
@@ -45382,7 +45139,6 @@ module.exports = {
         '2': [
           'Wela Volcano Park',
           'Dyna Tree Hill',
-          'Firespit Island',
         ],
         '3': [
           {
@@ -45441,6 +45197,37 @@ module.exports = {
       'levelType': 4,
       'exp': 175,
       'eggCycles': 25,
+      'evolutions': [
+        {
+          'basePokemon': 'Pinsir',
+          'evolvedPokemon': 'Mega Pinsir',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Pinsir',
+              'hint': 'Pinsir needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Pinsir',
+              'megaStone': 38,
+              'hint': 'Pinsir needs the Pinsirite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 65,
         'attack': 125,
@@ -45509,10 +45296,10 @@ module.exports = {
         11,
         9,
       ],
-      'eggCycles': 25,
+      'eggCycles': 38,
       'levelType': 3,
       'exp': 210,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 65,
         'attack': 155,
@@ -45528,9 +45315,41 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
-      'catchRatePercent': 5,
-      'eggSteps': 1000,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Pinsir',
+            'evolvedPokemon': 'Mega Pinsir',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Pinsir',
+                'hint': 'Pinsir needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Pinsir',
+                'megaStone': 38,
+                'hint': 'Pinsir needs the Pinsirite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1520,
     },
     {
       'id': 128,
@@ -46102,11 +45921,6 @@ module.exports = {
               'route': 54,
             },
           ],
-          '8': [
-            {
-              'route': 12,
-            },
-          ],
         },
         '2': [
           'Seafoam Islands',
@@ -46138,7 +45952,6 @@ module.exports = {
           'Slumbering Weald Shrine',
           'Courageous Cavern',
           'Roaring-Sea Caves',
-          'Ancient Lake Verity',
         ],
         '8': ['Route 3 Pokémon Center'],
       },
@@ -47258,8 +47071,7 @@ module.exports = {
               'option': 1,
               'name': 'Gyarados',
               'megaStone': 22,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Gyarados needs the Gyaradosite Mega Stone.<br />Needs at least 74,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -47519,11 +47331,6 @@ module.exports = {
               'route': 54,
             },
           ],
-          '8': [
-            {
-              'route': 12,
-            },
-          ],
         },
         '2': [
           'Icefall Cave',
@@ -47531,7 +47338,6 @@ module.exports = {
           'Tanoby Ruins',
           'Lake Acuity',
           'Malie Garden',
-          'Ancient Lake Verity',
         ],
         '3': [
           {
@@ -47592,7 +47398,7 @@ module.exports = {
       'eggCycles': 12,
       'levelType': 4,
       'exp': 224,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 95,
         'attack': 155,
@@ -47633,8 +47439,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Gyarados',
                 'megaStone': 22,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Gyarados needs the Gyaradosite Mega Stone.<br />Needs at least 74,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -47642,7 +47447,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 17,
       'eggSteps': 480,
     },
     {
@@ -47904,7 +47709,7 @@ module.exports = {
     {
       'id': 133,
       'name': 'Eevee',
-      'catchRate': 255,
+      'catchRate': 45,
       'type': [0],
       'levelType': 2,
       'exp': 65,
@@ -48557,24 +48362,19 @@ module.exports = {
               'requirements': 'The weather needs to be Clear',
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-          ],
         },
         '2': ['Hall of Origin'],
         '8': ['Celadon City'],
         '14': ["Bill's Grandpa Treasure Hunt"],
       },
-      'catchRatePercent': 63,
+      'catchRatePercent': 17,
       'eggSteps': 1400,
     },
     {
       'id': 133.01,
       'name': 'Gigantamax Eevee',
       'nativeRegion': -1,
-      'catchRate': 255,
+      'catchRate': 45,
       'type': [0],
       'levelType': 2,
       'exp': 65,
@@ -48594,13 +48394,13 @@ module.exports = {
       },
       'attack': 76,
       'locations': {},
-      'catchRatePercent': 63,
+      'catchRatePercent': 17,
       'eggSteps': 1400,
     },
     {
       'id': 133.02,
       'name': "Let's Go Eevee",
-      'catchRate': 50,
+      'catchRate': 45,
       'type': [0],
       'levelType': 2,
       'exp': 65,
@@ -48632,7 +48432,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 18,
+      'catchRatePercent': 17,
       'eggSteps': 1400,
     },
     {
@@ -49211,8 +49011,7 @@ module.exports = {
               'option': 1,
               'name': 'Aerodactyl',
               'megaStone': 2,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Aerodactyl needs the Aerodactylite Mega Stone.<br />Needs at least 58,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -49259,7 +49058,7 @@ module.exports = {
       'eggCycles': 53,
       'levelType': 3,
       'exp': 215,
-      'catchRate': 10,
+      'catchRate': 45,
       'base': {
         'hitpoints': 80,
         'attack': 135,
@@ -49300,8 +49099,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Aerodactyl',
                 'megaStone': 2,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Aerodactyl needs the Aerodactylite Mega Stone.<br />Needs at least 58,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -49309,7 +49107,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 5,
+      'catchRatePercent': 17,
       'eggSteps': 2120,
     },
     {
@@ -49421,14 +49219,6 @@ module.exports = {
             {
               'route': 48,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 50,
-            },
-            {
-              'route': 54,
             },
           ],
         },
@@ -49557,6 +49347,14 @@ module.exports = {
             },
           },
           {
+            'region': 2,
+            'requirements': 'Event Merry Christmas! has not started.',
+            'roamingGroup': {
+              'name': 'Orre',
+              'subRegions': [1],
+            },
+          },
+          {
             'region': 3,
             'requirements': 'Event Merry Christmas! has not started.',
             'roamingGroup': {
@@ -49623,14 +49421,6 @@ module.exports = {
             'roamingGroup': {
               'name': 'Galar - Crown Tundra',
               'subRegions': [3],
-            },
-          },
-          {
-            'region': 8,
-            'requirements': 'Event Merry Christmas! has not started.',
-            'roamingGroup': {
-              'name': 'Hisui',
-              'subRegions': [0],
             },
           },
         ],
@@ -50286,7 +50076,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 106,
         'attack': 190,
@@ -50303,7 +50093,7 @@ module.exports = {
       'attack': 315,
       'nativeRegion': 0,
       'locations': {},
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -50313,7 +50103,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 106,
         'attack': 150,
@@ -50330,13 +50120,13 @@ module.exports = {
       'attack': 304,
       'nativeRegion': 0,
       'locations': {},
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
       'id': 150.03,
       'name': 'Armored Mewtwo',
-      'catchRate': 2,
+      'catchRate': 3,
       'type': [
         10,
         16,
@@ -50367,7 +50157,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -52067,6 +51857,7 @@ module.exports = {
           ],
         },
         '2': [
+          'Sky Pillar',
           'Malie Garden',
           "Ula'ula Meadow",
         ],
@@ -52137,18 +51928,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 52,
-            },
-          ],
-        },
-        '3': [
-          {
-            'dungeon': 'Ancient Wayward Cave',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Golbat',
@@ -52525,14 +52304,6 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 3,
-            },
-            {
-              'route': 8,
-            },
-          ],
         },
         '2': ['Pikachu Valley'],
         '7': ['Pikachu'],
@@ -52625,11 +52396,6 @@ module.exports = {
           '6': [
             {
               'route': 22,
-            },
-          ],
-          '8': [
-            {
-              'route': 44,
             },
           ],
         },
@@ -52768,17 +52534,6 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 18,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 35,
-            },
-          ],
         },
         '7': ['Togetic'],
         '8': ['Violet City'],
@@ -52790,7 +52545,7 @@ module.exports = {
     {
       'id': 175.01,
       'name': 'Spooky Togepi',
-      'catchRate': 30,
+      'catchRate': 190,
       'type': [13],
       'levelType': 1,
       'exp': 49,
@@ -52837,13 +52592,13 @@ module.exports = {
       'locations': {
         '7': ['Spooky Togetic'],
       },
-      'catchRatePercent': 12,
+      'catchRatePercent': 51,
       'eggSteps': 320,
     },
     {
       'id': 175.02,
       'name': 'Surprise Togepi',
-      'catchRate': 30,
+      'catchRate': 190,
       'type': [17],
       'levelType': 1,
       'exp': 49,
@@ -52866,7 +52621,7 @@ module.exports = {
       'locations': {
         '14': ['Togepi Egg Hunt'],
       },
-      'catchRatePercent': 12,
+      'catchRatePercent': 51,
       'eggSteps': 320,
     },
     {
@@ -52924,11 +52679,6 @@ module.exports = {
             {
               'route': 18,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 35,
             },
           ],
         },
@@ -53553,8 +53303,7 @@ module.exports = {
               'option': 1,
               'name': 'Ampharos',
               'megaStone': 6,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Ampharos needs the Ampharosite Mega Stone.<br />Needs at least 73,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -53628,7 +53377,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 3,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 90,
         'attack': 95,
@@ -53669,8 +53418,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Ampharos',
                 'megaStone': 6,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Ampharos needs the Ampharosite Mega Stone.<br />Needs at least 73,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -53678,7 +53426,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -53971,9 +53719,11 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Abundant Shrine',
-          'Ruins of Hope',
+        '2': ['Abundant Shrine'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Hope',
+          },
         ],
         '5': [
           {
@@ -54080,11 +53830,6 @@ module.exports = {
           ],
         },
         '2': ['Pledge Grove'],
-        '3': [
-          {
-            'dungeon': 'Celestica Ruins',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Bonsly',
@@ -54180,6 +53925,11 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Pledge Grove',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Poliwhirl',
@@ -54294,6 +54044,11 @@ module.exports = {
             },
             {
               'route': 48,
+            },
+          ],
+          '2': [
+            {
+              'route': 136,
             },
           ],
         },
@@ -54590,38 +54345,6 @@ module.exports = {
               'route': 28,
             },
           ],
-          '8': [
-            {
-              'route': 13,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 28,
-            },
-            {
-              'route': 48,
-            },
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 54,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
         '2': ['Altering Cave'],
       },
@@ -54821,20 +54544,6 @@ module.exports = {
               'route': 3,
             },
           ],
-          '8': [
-            {
-              'route': 19,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 39,
-            },
-          ],
         },
         '2': ['Pinwheel Forest'],
         '6': ['Mystery'],
@@ -54914,6 +54623,11 @@ module.exports = {
           '1': [
             {
               'route': 32,
+            },
+          ],
+          '2': [
+            {
+              'route': 137,
             },
           ],
           '7': [
@@ -55352,37 +55066,8 @@ module.exports = {
               'route': 28,
             },
           ],
-          '8': [
-            {
-              'route': 16,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 28,
-            },
-            {
-              'route': 31,
-            },
-            {
-              'route': 34,
-            },
-          ],
         },
-        '2': [
-          'Lost Cave',
-          'Veilstone Cape',
-        ],
+        '2': ['Lost Cave'],
         '12': ['Coba'],
       },
       'catchRatePercent': 12,
@@ -55547,23 +55232,12 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 46,
-            },
-          ],
-        },
         '2': [
           'Lost Cave',
           'Mt. Silver',
           'Celestial Tower',
           "Hau'oli Cemetery",
           'Poni Meadow',
-          'Celestica Ruins',
-          'Sacred Plaza',
-          'Ice Column Chamber',
-          'Icepeak Cavern',
         ],
         '12': ['Kasib'],
       },
@@ -56993,10 +56667,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Altering Cave',
-          'P2 Laboratory',
-        ],
+        '2': ['Altering Cave'],
         '12': ['Always'],
       },
       'catchRatePercent': 51,
@@ -57029,12 +56700,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '2': ['P2 Laboratory'],
-        '4': [
-          {
-            'dungeon': 'P2 Laboratory',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Pineco',
@@ -57195,6 +56860,11 @@ module.exports = {
               'route': 45,
             },
           ],
+          '2': [
+            {
+              'route': 135,
+            },
+          ],
           '3': [
             {
               'route': 206,
@@ -57211,19 +56881,7 @@ module.exports = {
               'route': 15,
             },
           ],
-          '8': [
-            {
-              'route': 50,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
-        '2': [
-          'Clamberclaw Cliffs',
-          'Celestica Ruins',
-        ],
       },
       'catchRatePercent': 21,
       'eggSteps': 800,
@@ -57263,8 +56921,7 @@ module.exports = {
               'option': 1,
               'name': 'Steelix',
               'megaStone': 46,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Steelix needs the Steelixite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -57300,11 +56957,6 @@ module.exports = {
               'route': 19,
             },
           ],
-          '8': [
-            {
-              'route': 43,
-            },
-          ],
         },
         '2': [
           'Iron Island',
@@ -57313,6 +56965,9 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Victory Road Sinnoh',
+          },
+          {
+            'dungeon': 'Snowpoint Temple',
           },
         ],
         '5': [
@@ -57352,7 +57007,7 @@ module.exports = {
       'eggCycles': 57,
       'levelType': 2,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 25,
       'base': {
         'hitpoints': 75,
         'attack': 125,
@@ -57393,8 +57048,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Steelix',
                 'megaStone': 46,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Steelix needs the Steelixite Mega Stone.<br />Needs at least 55,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -57402,7 +57056,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 11,
       'eggSteps': 2280,
     },
     {
@@ -57766,18 +57420,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 35,
-            },
-            {
-              'route': 36,
-            },
-          ],
-        },
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 800,
     },
@@ -57792,6 +57435,37 @@ module.exports = {
       'levelType': 2,
       'exp': 175,
       'eggCycles': 38,
+      'evolutions': [
+        {
+          'basePokemon': 'Scizor',
+          'evolvedPokemon': 'Mega Scizor',
+          'trigger': 2,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Scizor',
+              'hint': 'Scizor needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'hint': 'You need to reach the Johto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'name': 'Scizor',
+              'megaStone': 43,
+              'hint': 'Scizor needs the Scizorite Mega Stone.<br />Needs at least 61,500 attack to Mega Evolve.',
+              '__class': 'MegaEvolveRequirement',
+            },
+          ],
+          'stone': 29,
+        },
+      ],
       'base': {
         'hitpoints': 70,
         'attack': 130,
@@ -57850,10 +57524,10 @@ module.exports = {
         11,
         16,
       ],
-      'eggCycles': 25,
+      'eggCycles': 57,
       'levelType': 2,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 25,
       'base': {
         'hitpoints': 70,
         'attack': 150,
@@ -57869,9 +57543,41 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {},
-      'catchRatePercent': 1,
-      'eggSteps': 1000,
+      'locations': {
+        '5': [
+          {
+            'basePokemon': 'Scizor',
+            'evolvedPokemon': 'Mega Scizor',
+            'trigger': 2,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Scizor',
+                'hint': 'Scizor needs to be caught.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'hint': 'You need to reach the Johto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'name': 'Scizor',
+                'megaStone': 43,
+                'hint': 'Scizor needs the Scizorite Mega Stone.<br />Needs at least 61,500 attack to Mega Evolve.',
+                '__class': 'MegaEvolveRequirement',
+              },
+            ],
+            'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 11,
+      'eggSteps': 2280,
     },
     {
       'id': 213,
@@ -57980,8 +57686,7 @@ module.exports = {
               'option': 1,
               'name': 'Heracross',
               'megaStone': 23,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Heracross needs the Heracronite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -58055,17 +57760,6 @@ module.exports = {
               'route': 38,
             },
           ],
-          '8': [
-            {
-              'route': 10,
-            },
-            {
-              'route': 40,
-            },
-            {
-              'route': 42,
-            },
-          ],
         },
         '3': [
           {
@@ -58091,7 +57785,7 @@ module.exports = {
       'eggCycles': 38,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 80,
         'attack': 185,
@@ -58132,8 +57826,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Heracross',
                 'megaStone': 23,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Heracross needs the Heracronite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -58141,7 +57834,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1520,
     },
     {
@@ -58292,6 +57985,7 @@ module.exports = {
           'Icefall Cave',
           'Mt. Silver',
           'Lake Acuity',
+          'Newmoon Island',
           'Snowpoint Temple',
           'Giant Chasm',
           'Mount Lanakila',
@@ -58359,15 +58053,7 @@ module.exports = {
         'femaleRatio': 0.5,
       },
       'attack': 69,
-      'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 55,
-            },
-          ],
-        },
-      },
+      'locations': {},
       'catchRatePercent': 21,
       'eggSteps': 800,
     },
@@ -58437,14 +58123,6 @@ module.exports = {
               'route': 45,
             },
           ],
-          '8': [
-            {
-              'route': 22,
-            },
-            {
-              'route': 42,
-            },
-          ],
         },
         '2': [
           'Altering Cave',
@@ -58512,22 +58190,8 @@ module.exports = {
               'route': 21,
             },
           ],
-          '8': [
-            {
-              'route': 22,
-            },
-            {
-              'route': 42,
-            },
-          ],
         },
         '2': ['Mt. Silver'],
-        '3': [
-          {
-            'dungeon': 'P2 Laboratory',
-            'requirements': 'P2 Laboratory needs to be completed.',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Teddiursa',
@@ -58816,19 +58480,10 @@ module.exports = {
               'route': 46,
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 51,
-            },
-          ],
         },
         '2': [
           'Icefall Cave',
           'Ice Path',
-          "Avalugg's Legacy",
         ],
         '12': ['Yache'],
       },
@@ -58924,23 +58579,11 @@ module.exports = {
               'route': 46,
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-          ],
         },
         '2': [
           'Giant Chasm',
           'Frost Cavern',
           'Roaring-Sea Caves',
-          "Avalugg's Legacy",
         ],
         '5': [
           {
@@ -59264,17 +58907,6 @@ module.exports = {
               'route': 41,
             },
           ],
-          '8': [
-            {
-              'route': 28,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 35,
-            },
-          ],
         },
         '2': [
           'Sunburst Island',
@@ -59386,13 +59018,7 @@ module.exports = {
               'route': 41,
             },
           ],
-          '8': [
-            {
-              'route': 31,
-            },
-          ],
         },
-        '2': ['Seaside Hollow'],
         '5': [
           {
             'basePokemon': 'Remoraid',
@@ -59611,36 +59237,8 @@ module.exports = {
               'route': 29,
             },
           ],
-          '8': [
-            {
-              'route': 35,
-            },
-          ],
         },
         '2': ['Tanoby Ruins'],
-        '5': [
-          {
-            'basePokemon': 'Mantyke',
-            'evolvedPokemon': 'Mantine',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Mantyke',
-                'hint': 'Mantyke needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'hint': 'You need to reach the Johto region.',
-                '__class': 'MaxRegionRequirement',
-              },
-            ],
-            'stone': -1,
-          },
-        ],
       },
       'catchRatePercent': 11,
       'eggSteps': 1000,
@@ -59844,8 +59442,7 @@ module.exports = {
               'option': 1,
               'name': 'Houndoom',
               'megaStone': 24,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Houndoom needs the Houndoominite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -59925,7 +59522,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 75,
         'attack': 90,
@@ -59966,8 +59563,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Houndoom',
                 'megaStone': 24,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Houndoom needs the Houndoominite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -59975,7 +59571,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1800,
     },
     {
@@ -60116,6 +59712,11 @@ module.exports = {
           '1': [
             {
               'route': 45,
+            },
+          ],
+          '2': [
+            {
+              'route': 136,
             },
           ],
         },
@@ -60341,17 +59942,6 @@ module.exports = {
             },
             {
               'route': 37,
-            },
-          ],
-          '8': [
-            {
-              'route': 6,
-            },
-            {
-              'route': 32,
-            },
-            {
-              'route': 40,
             },
           ],
         },
@@ -60839,17 +60429,6 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 47,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 52,
-            },
-          ],
         },
         '2': ['Hokulani Observatory'],
         '6': ['Electric'],
@@ -60959,10 +60538,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Wela Volcano Park',
-          'Firespit Island',
-        ],
+        '2': ['Wela Volcano Park'],
         '6': ['Fire'],
         '7': ['Magmar'],
       },
@@ -61103,11 +60679,6 @@ module.exports = {
             {
               'route': 45,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 51,
             },
           ],
         },
@@ -61588,8 +61159,7 @@ module.exports = {
               'option': 1,
               'name': 'Tyranitar',
               'megaStone': 48,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Tyranitar needs the Tyranitarite Mega Stone.<br />Needs at least 102,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -61670,7 +61240,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 100,
         'attack': 164,
@@ -61711,8 +61281,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Tyranitar',
                 'megaStone': 48,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Tyranitar needs the Tyranitarite Mega Stone.<br />Needs at least 102,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -61720,7 +61289,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 4800,
     },
     {
@@ -61820,6 +61389,16 @@ module.exports = {
       'attack': 239,
       'nativeRegion': 1,
       'locations': {
+        '1': [
+          {
+            'region': 2,
+            'requirements': 'Questline Shadows in the Desert needs to be completed.',
+            'roamingGroup': {
+              'name': 'Orre',
+              'subRegions': [1],
+            },
+          },
+        ],
         '3': [
           {
             'dungeon': 'Tin Tower',
@@ -62146,8 +61725,7 @@ module.exports = {
               'option': 1,
               'name': 'Sceptile',
               'megaStone': 42,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Sceptile needs the Sceptilite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -62221,7 +61799,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 3,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 70,
         'attack': 110,
@@ -62262,8 +61840,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Sceptile',
                 'megaStone': 42,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Sceptile needs the Sceptilite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -62271,7 +61848,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -62478,8 +62055,7 @@ module.exports = {
               'option': 1,
               'name': 'Blaziken',
               'megaStone': 11,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Blaziken needs the Blazikenite Mega Stone.<br />Needs at least 78,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -62553,7 +62129,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 3,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 80,
         'attack': 160,
@@ -62594,8 +62170,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Blaziken',
                 'megaStone': 11,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Blaziken needs the Blazikenite Mega Stone.<br />Needs at least 78,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -62603,7 +62178,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -62810,8 +62385,7 @@ module.exports = {
               'option': 1,
               'name': 'Swampert',
               'megaStone': 47,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Swampert needs the Swampertite Mega Stone.<br />Needs at least 82,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -62885,7 +62459,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 3,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 100,
         'attack': 150,
@@ -62926,8 +62500,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Swampert',
                 'megaStone': 47,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Swampert needs the Swampertite Mega Stone.<br />Needs at least 82,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -62935,7 +62508,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -63670,19 +63243,10 @@ module.exports = {
               'route': 205,
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-            {
-              'route': 3,
-            },
-          ],
         },
         '2': [
           'Petalburg Woods',
           'Eterna Forest',
-          'Heartwood',
         ],
       },
       'catchRatePercent': 63,
@@ -63754,19 +63318,10 @@ module.exports = {
               'route': 205,
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-            {
-              'route': 3,
-            },
-          ],
         },
         '2': [
           'Petalburg Woods',
           'Eterna Forest',
-          'Heartwood',
         ],
         '5': [
           {
@@ -63847,27 +63402,10 @@ module.exports = {
               'route': 229,
             },
           ],
-          '8': [
-            {
-              'route': 3,
-            },
-            {
-              'route': 10,
-            },
-            {
-              'route': 27,
-            },
-          ],
         },
         '3': [
           {
             'dungeon': 'Eterna Forest',
-          },
-          {
-            'dungeon': 'Heartwood',
-          },
-          {
-            'dungeon': 'Veilstone Cape',
           },
         ],
         '5': [
@@ -63976,19 +63514,10 @@ module.exports = {
               'route': 205,
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-            {
-              'route': 3,
-            },
-          ],
         },
         '2': [
           'Petalburg Woods',
           'Eterna Forest',
-          'Heartwood',
         ],
         '5': [
           {
@@ -64069,27 +63598,10 @@ module.exports = {
               'route': 229,
             },
           ],
-          '8': [
-            {
-              'route': 3,
-            },
-            {
-              'route': 10,
-            },
-            {
-              'route': 27,
-            },
-          ],
         },
         '3': [
           {
             'dungeon': 'Eterna Forest',
-          },
-          {
-            'dungeon': 'Heartwood',
-          },
-          {
-            'dungeon': 'Veilstone Cape',
           },
         ],
         '5': [
@@ -65690,19 +65202,7 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 21,
-            },
-            {
-              'route': 53,
-            },
-          ],
         },
-        '2': [
-          'Shrouded Ruins',
-          'Ancient Snowpoint Temple',
-        ],
         '12': [
           'Payapa',
           'Roseli',
@@ -65811,16 +65311,7 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 53,
-            },
-          ],
         },
-        '2': [
-          'Shrouded Ruins',
-          'Ancient Snowpoint Temple',
-        ],
         '5': [
           {
             'basePokemon': 'Ralts',
@@ -65896,8 +65387,7 @@ module.exports = {
               'option': 1,
               'name': 'Gardevoir',
               'megaStone': 19,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Gardevoir needs the Gardevoirite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -65951,13 +65441,12 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 53,
-            },
-          ],
         },
-        '2': ['Ruins of Life'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Life',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Kirlia',
@@ -66008,7 +65497,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 68,
         'attack': 85,
@@ -66049,8 +65538,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Gardevoir',
                 'megaStone': 19,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Gardevoir needs the Gardevoirite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -66058,7 +65546,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -66137,6 +65625,9 @@ module.exports = {
             },
             {
               'route': 120,
+            },
+            {
+              'route': 136,
             },
           ],
           '3': [
@@ -67656,17 +67147,10 @@ module.exports = {
               'route': 21,
             },
           ],
-          '8': [
-            {
-              'route': 47,
-            },
-          ],
         },
         '2': [
           'Spear Pillar',
           'Chargestone Cave',
-          'Celestica Ruins',
-          'Sacred Plaza',
         ],
         '3': [
           {
@@ -67674,9 +67158,6 @@ module.exports = {
           },
           {
             'dungeon': 'Mt. Coronet South',
-          },
-          {
-            'dungeon': 'Primeval Grotto',
           },
         ],
       },
@@ -67833,8 +67314,7 @@ module.exports = {
               'option': 1,
               'name': 'Sableye',
               'megaStone': 40,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Sableye needs the Sablenite Mega Stone.<br />Needs at least 38,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -67864,12 +67344,6 @@ module.exports = {
           'Reflection Cave',
           'Lakeside Cave',
         ],
-        '3': [
-          {
-            'dungeon': 'P2 Laboratory',
-            'requirements': 'P2 Laboratory needs to be completed.',
-          },
-        ],
         '6': ['Mystery'],
       },
       'catchRatePercent': 17,
@@ -67885,7 +67359,7 @@ module.exports = {
       'eggCycles': 38,
       'levelType': 3,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 50,
         'attack': 85,
@@ -67926,8 +67400,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Sableye',
                 'megaStone': 40,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Sableye needs the Sablenite Mega Stone.<br />Needs at least 38,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -67935,7 +67408,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1520,
     },
     {
@@ -67973,8 +67446,7 @@ module.exports = {
               'option': 1,
               'name': 'Mawile',
               'megaStone': 31,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Mawile needs the Mawilite Mega Stone.<br />Needs at least 36,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -68022,10 +67494,6 @@ module.exports = {
             'dungeon': 'Granite Cave',
           },
           {
-            'dungeon': 'P2 Laboratory',
-            'requirements': 'P2 Laboratory needs to be completed.',
-          },
-          {
             'dungeon': 'Glittering Cave',
           },
         ],
@@ -68043,7 +67511,7 @@ module.exports = {
       'eggCycles': 30,
       'levelType': 1,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 50,
         'attack': 105,
@@ -68084,8 +67552,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Mawile',
                 'megaStone': 31,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Mawile needs the Mawilite Mega Stone.<br />Needs at least 36,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -68093,7 +67560,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1200,
     },
     {
@@ -68164,6 +67631,11 @@ module.exports = {
       },
       'locations': {
         '0': {
+          '2': [
+            {
+              'route': 137,
+            },
+          ],
           '7': [
             {
               'route': 53,
@@ -68337,8 +67809,7 @@ module.exports = {
               'option': 1,
               'name': 'Aggron',
               'megaStone': 3,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Aggron needs the Aggronite Mega Stone.<br />Needs at least 62,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -68418,7 +67889,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 70,
         'attack': 140,
@@ -68459,8 +67930,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Aggron',
                 'megaStone': 3,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Aggron needs the Aggronite Mega Stone.<br />Needs at least 62,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -68468,7 +67938,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 4800,
     },
     {
@@ -68649,7 +68119,7 @@ module.exports = {
       'eggCycles': 20,
       'levelType': 2,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 90,
       'base': {
         'hitpoints': 60,
         'attack': 100,
@@ -68666,7 +68136,7 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {},
-      'catchRatePercent': 1,
+      'catchRatePercent': 29,
       'eggSteps': 800,
     },
     {
@@ -68816,8 +68286,7 @@ module.exports = {
               'option': 1,
               'name': 'Manectric',
               'megaStone': 30,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Manectric needs the Manectite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -68918,7 +68387,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 70,
         'attack': 75,
@@ -68959,8 +68428,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Manectric',
                 'megaStone': 30,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Manectric needs the Manectite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -68968,7 +68436,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1800,
     },
     {
@@ -69321,17 +68789,6 @@ module.exports = {
               'requirements': 'The weather needs to be Overcast',
             },
           ],
-          '8': [
-            {
-              'route': 16,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 44,
-            },
-          ],
         },
         '2': [
           'Flower Paradise',
@@ -69656,8 +69113,7 @@ module.exports = {
               'option': 1,
               'name': 'Sharpedo',
               'megaStone': 44,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Sharpedo needs the Sharpedonite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -69799,7 +69255,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 60,
       'base': {
         'hitpoints': 70,
         'attack': 140,
@@ -69840,8 +69296,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Sharpedo',
                 'megaStone': 44,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Sharpedo needs the Sharpedonite Mega Stone.<br />Needs at least 55,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -69849,7 +69304,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 21,
       'eggSteps': 1800,
     },
     {
@@ -70241,8 +69696,7 @@ module.exports = {
               'option': 1,
               'name': 'Camerupt',
               'megaStone': 13,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Camerupt needs the Cameruptite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -70272,9 +69726,11 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Stark Mountain',
-          'Reversal Mountain',
+        '2': ['Reversal Mountain'],
+        '3': [
+          {
+            'dungeon': 'Stark Mountain',
+          },
         ],
         '5': [
           {
@@ -70326,7 +69782,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 2,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 150,
       'base': {
         'hitpoints': 70,
         'attack': 120,
@@ -70367,8 +69823,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Camerupt',
                 'megaStone': 13,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Camerupt needs the Cameruptite Mega Stone.<br />Needs at least 64,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -70376,7 +69831,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 42,
       'eggSteps': 1800,
     },
     {
@@ -70698,6 +70153,9 @@ module.exports = {
           '2': [
             {
               'route': 111,
+            },
+            {
+              'route': 135,
             },
           ],
           '4': [
@@ -71195,7 +70653,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Abundant Shrine'],
+        '2': [
+          'Sky Pillar',
+          'Abundant Shrine',
+        ],
         '12': ['Chilan'],
       },
       'catchRatePercent': 63,
@@ -71262,11 +70723,11 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Sky Pillar',
-          'Victory Road Unova',
-        ],
+        '2': ['Victory Road Unova'],
         '3': [
+          {
+            'dungeon': 'Sky Pillar',
+          },
           {
             'dungeon': 'Abundant Shrine',
           },
@@ -71324,7 +70785,7 @@ module.exports = {
       'eggCycles': 20,
       'levelType': 0,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 75,
         'attack': 110,
@@ -71341,7 +70802,7 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {},
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 800,
     },
     {
@@ -71388,12 +70849,6 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'P2 Laboratory',
-            'requirements': 'P2 Laboratory needs to be completed.',
-          },
-        ],
       },
       'catchRatePercent': 29,
       'eggSteps': 800,
@@ -71501,6 +70956,12 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Meteor Falls',
+          },
+          {
+            'dungeon': 'Fullmoon Island',
+          },
+          {
+            'dungeon': 'Newmoon Island',
           },
         ],
       },
@@ -71703,11 +71164,6 @@ module.exports = {
               'route': 53,
             },
           ],
-          '8': [
-            {
-              'route': 21,
-            },
-          ],
         },
         '2': [
           'Meteor Falls',
@@ -71722,8 +71178,6 @@ module.exports = {
           'Galar Mine No. 2',
           "Brawlers' Cave",
           'Roaring-Sea Caves',
-          'Ancient Wayward Cave',
-          'Ancient Lake Valor',
         ],
         '3': [
           {
@@ -71843,18 +71297,11 @@ module.exports = {
               'route': 53,
             },
           ],
-          '8': [
-            {
-              'route': 21,
-            },
-          ],
         },
         '2': [
           'Slumbering Weald Shrine',
           'Courageous Cavern',
           "Brawlers' Cave",
-          'Ancient Wayward Cave',
-          'Ancient Lake Valor',
         ],
         '3': [
           {
@@ -72385,7 +71832,11 @@ module.exports = {
             },
           ],
         },
-        '2': ['Sky Pillar'],
+        '3': [
+          {
+            'dungeon': 'Sky Pillar',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Baltoy',
@@ -73244,7 +72695,7 @@ module.exports = {
       'eggCycles': 25,
       'levelType': 1,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 64,
         'attack': 115,
@@ -73261,7 +72712,7 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {},
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1000,
     },
     {
@@ -73350,17 +72801,6 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
-            {
-              'route': 29,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-          ],
         },
         '2': [
           'Mt. Pyre',
@@ -73446,17 +72886,6 @@ module.exports = {
             },
             {
               'route': 25,
-            },
-          ],
-          '8': [
-            {
-              'route': 29,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
             },
           ],
         },
@@ -73583,19 +73012,10 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 43,
-            },
-          ],
-        },
         '2': [
           'Spear Pillar',
           'Distortion World',
           'Ruins of Life',
-          'Sacred Plaza',
-          'Ancient Lake Acuity',
         ],
         '3': [
           {
@@ -73674,8 +73094,7 @@ module.exports = {
               'option': 1,
               'name': 'Absol',
               'megaStone': 1,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Absol needs the Absolite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -73755,10 +73174,12 @@ module.exports = {
         '2': [
           'Spear Pillar',
           'Hall of Origin',
-          'Newmoon Island',
           'Dyna Tree Hill',
         ],
         '3': [
+          {
+            'dungeon': 'Newmoon Island',
+          },
           {
             'dungeon': 'Mount Lanakila',
           },
@@ -73775,7 +73196,7 @@ module.exports = {
       'eggCycles': 38,
       'levelType': 3,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 30,
       'base': {
         'hitpoints': 65,
         'attack': 150,
@@ -73816,8 +73237,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Absol',
                 'megaStone': 1,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Absol needs the Absolite Mega Stone.<br />Needs at least 57,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -73825,7 +73245,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 12,
       'eggSteps': 1520,
     },
     {
@@ -74088,29 +73508,6 @@ module.exports = {
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
-          '8': [
-            {
-              'route': 48,
-            },
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
         '2': [
           'Lake Acuity',
@@ -74158,8 +73555,7 @@ module.exports = {
               'option': 1,
               'name': 'Glalie',
               'megaStone': 21,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Glalie needs the Glalitite Mega Stone.<br />Needs at least 60,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -74239,32 +73635,10 @@ module.exports = {
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
         '2': [
           'Split-Decision Ruins',
           'Dyna Tree Hill',
-          "Avalugg's Legacy",
-          'Ancient Snowpoint Temple',
         ],
         '3': [
           {
@@ -74325,7 +73699,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 2,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 75,
       'base': {
         'hitpoints': 80,
         'attack': 120,
@@ -74366,8 +73740,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Glalie',
                 'megaStone': 21,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Glalie needs the Glalitite Mega Stone.<br />Needs at least 60,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -74375,7 +73748,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 25,
       'eggSteps': 1800,
     },
     {
@@ -74453,14 +73826,6 @@ module.exports = {
           '7': [
             {
               'route': 51,
-            },
-          ],
-          '8': [
-            {
-              'route': 25,
-            },
-            {
-              'route': 28,
             },
           ],
         },
@@ -74569,14 +73934,6 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 28,
-            },
-            {
-              'route': 34,
-            },
-          ],
         },
         '5': [
           {
@@ -74666,14 +74023,6 @@ module.exports = {
             {
               'route': 51,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 25,
-            },
-            {
-              'route': 34,
             },
           ],
         },
@@ -75301,8 +74650,7 @@ module.exports = {
               'option': 1,
               'name': 'Salamence',
               'megaStone': 41,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Salamence needs the Salamencite Mega Stone.<br />Needs at least 97,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -75393,7 +74741,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 95,
         'attack': 145,
@@ -75434,8 +74782,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Salamence',
                 'megaStone': 41,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Salamence needs the Salamencite Mega Stone.<br />Needs at least 97,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -75443,7 +74790,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 4800,
     },
     {
@@ -75605,10 +74952,7 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Giant Chasm',
-          'P2 Laboratory',
-        ],
+        '2': ['Giant Chasm'],
         '5': [
           {
             'basePokemon': 'Beldum',
@@ -75684,8 +75028,7 @@ module.exports = {
               'option': 1,
               'name': 'Metagross',
               'megaStone': 33,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Metagross needs the Metagrossite Mega Stone.<br />Needs at least 94,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -75775,7 +75118,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 80,
         'attack': 145,
@@ -75816,8 +75159,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Metagross',
                 'megaStone': 33,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Metagross needs the Metagrossite Mega Stone.<br />Needs at least 94,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -75825,7 +75167,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -75977,8 +75319,7 @@ module.exports = {
               'option': 1,
               'name': 'Latias',
               'megaStone': 26,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Latias needs the Latiasite Mega Stone.<br />Needs at least 81,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -76035,7 +75376,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 80,
         'attack': 100,
@@ -76076,8 +75417,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Latias',
                 'megaStone': 26,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Latias needs the Latiasite Mega Stone.<br />Needs at least 81,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -76085,7 +75425,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -76123,8 +75463,7 @@ module.exports = {
               'option': 1,
               'name': 'Latios',
               'megaStone': 27,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Latios needs the Latiosite Mega Stone.<br />Needs at least 86,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -76181,7 +75520,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 80,
         'attack': 130,
@@ -76222,8 +75561,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Latios',
                 'megaStone': 27,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Latios needs the Latiosite Mega Stone.<br />Needs at least 86,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -76231,7 +75569,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -76266,8 +75604,7 @@ module.exports = {
               'option': 1,
               'name': 'Kyogre',
               'megaStone': 12,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Kyogre needs the Blue Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -76307,7 +75644,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 100,
         'attack': 150,
@@ -76354,8 +75691,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Kyogre',
                 'megaStone': 12,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Kyogre needs the Blue Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -76363,7 +75699,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -76398,8 +75734,7 @@ module.exports = {
               'option': 1,
               'name': 'Groudon',
               'megaStone': 39,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Groudon needs the Red Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -76442,7 +75777,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 100,
         'attack': 180,
@@ -76489,8 +75824,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Groudon',
                 'megaStone': 39,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Groudon needs the Red Orb Mega Stone.<br />Needs at least 116,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -76498,7 +75832,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 4800,
     },
     {
@@ -76565,8 +75899,7 @@ module.exports = {
               'option': 1,
               'name': 'Rayquaza',
               'megaStone': 34,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Rayquaza needs the Meteorite Mega Stone.<br />Needs at least 131,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -76609,7 +75942,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 351,
-      'catchRate': 1,
+      'catchRate': 45,
       'base': {
         'hitpoints': 105,
         'attack': 180,
@@ -76650,8 +75983,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Rayquaza',
                 'megaStone': 34,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Rayquaza needs the Meteorite Mega Stone.<br />Needs at least 131,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -76659,7 +75991,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 4800,
     },
     {
@@ -77040,13 +76372,6 @@ module.exports = {
       'attack': 154,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 23,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Grotle',
@@ -77147,16 +76472,6 @@ module.exports = {
       'attack': 50,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 6,
-            },
-            {
-              'route': 13,
-            },
-          ],
-        },
         '6': ['Fire'],
         '12': ['Occa'],
       },
@@ -77226,16 +76541,6 @@ module.exports = {
       'attack': 86,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 6,
-            },
-            {
-              'route': 13,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Chimchar',
@@ -77303,13 +76608,6 @@ module.exports = {
       'attack': 143,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 13,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Monferno',
@@ -77543,13 +76841,6 @@ module.exports = {
       'attack': 155,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 34,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Prinplup',
@@ -77668,44 +76959,6 @@ module.exports = {
               'route': 204,
             },
           ],
-          '8': [
-            {
-              'route': 1,
-            },
-            {
-              'route': 2,
-            },
-            {
-              'route': 5,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 13,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 29,
-            },
-            {
-              'route': 30,
-            },
-          ],
         },
         '2': ['Lake Verity'],
       },
@@ -77795,41 +77048,6 @@ module.exports = {
               'route': 11,
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 13,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 29,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 35,
-            },
-          ],
         },
         '2': [
           'Lake Valor',
@@ -77902,16 +77120,6 @@ module.exports = {
       'attack': 111,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 29,
-            },
-            {
-              'route': 35,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Staravia',
@@ -78044,23 +77252,6 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
-            {
-              'route': 1,
-            },
-            {
-              'route': 2,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 21,
-            },
-          ],
         },
         '2': [
           'Eterna Forest',
@@ -78114,26 +77305,11 @@ module.exports = {
               'route': 22,
             },
           ],
-          '8': [
-            {
-              'route': 11,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 33,
-            },
-          ],
         },
         '2': [
           'Lake Valor',
           'Lake Acuity',
           'Sendoff Spring',
-          "Avalugg's Legacy",
         ],
         '5': [
           {
@@ -78256,26 +77432,6 @@ module.exports = {
               'route': 207,
             },
           ],
-          '8': [
-            {
-              'route': 5,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 14,
-            },
-            {
-              'route': 16,
-            },
-          ],
         },
         '2': ['Eterna Forest'],
       },
@@ -78310,23 +77466,6 @@ module.exports = {
           '3': [
             {
               'route': 206,
-            },
-          ],
-          '8': [
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 14,
-            },
-            {
-              'route': 16,
             },
           ],
         },
@@ -78465,20 +77604,6 @@ module.exports = {
               'requirements': 'The weather needs to be Rain',
             },
           ],
-          '8': [
-            {
-              'route': 1,
-            },
-            {
-              'route': 3,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 42,
-            },
-          ],
         },
         '6': ['Electric'],
       },
@@ -78573,28 +77698,7 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 3,
-            },
-            {
-              'route': 4,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 42,
-            },
-            {
-              'route': 47,
-            },
-          ],
         },
-        '2': [
-          'Sacred Plaza',
-          'Ancient Lake Verity',
-        ],
         '5': [
           {
             'basePokemon': 'Shinx',
@@ -78686,28 +77790,10 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 42,
-            },
-            {
-              'route': 47,
-            },
-          ],
         },
-        '2': ['Ancient Lake Verity'],
         '3': [
           {
             'dungeon': 'Ruins of Conflict',
-          },
-          {
-            'dungeon': 'Sacred Plaza',
           },
         ],
         '5': [
@@ -78869,17 +77955,6 @@ module.exports = {
               'requirements': 'The weather needs to be Clear',
             },
           ],
-          '8': [
-            {
-              'route': 14,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 44,
-            },
-          ],
         },
         '2': ['Eterna Forest'],
         '6': ['Grass'],
@@ -78924,11 +77999,6 @@ module.exports = {
             {
               'route': 22,
               'requirements': 'The weather needs to be Fog',
-            },
-          ],
-          '8': [
-            {
-              'route': 16,
             },
           ],
         },
@@ -79529,32 +78599,6 @@ module.exports = {
               'route': 3,
             },
           ],
-          '8': [
-            {
-              'route': 5,
-            },
-            {
-              'route': 6,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 8,
-            },
-            {
-              'route': 9,
-            },
-            {
-              'route': 10,
-            },
-            {
-              'route': 11,
-            },
-            {
-              'route': 12,
-            },
-          ],
         },
         '8': ['Pal Park'],
         '12': [
@@ -79671,46 +78715,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 14,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 20,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 39,
-            },
-            {
-              'route': 44,
-            },
-            {
-              'route': 46,
-            },
-            {
-              'route': 47,
-            },
-          ],
-        },
-        '2': [
-          'Shrouded Ruins',
-          'Clamberclaw Cliffs',
-          'Celestica Ruins',
-          'Sacred Plaza',
-        ],
         '5': [
           {
             'basePokemon': 'Burmy (Plant)',
@@ -79893,71 +78897,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 24,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 28,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 31,
-            },
-            {
-              'route': 33,
-            },
-            {
-              'route': 35,
-            },
-            {
-              'route': 36,
-            },
-            {
-              'route': 37,
-            },
-            {
-              'route': 38,
-            },
-            {
-              'route': 48,
-            },
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 55,
-            },
-          ],
-        },
-        '2': [
-          'Veilstone Cape',
-          'Ancient Lake Acuity',
-        ],
         '5': [
           {
             'basePokemon': 'Burmy (Plant)',
@@ -80114,17 +79053,6 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 10,
-            },
-          ],
-        },
-        '2': ['Ancient Lake Verity'],
         '5': [
           {
             'basePokemon': 'Burmy (Plant)',
@@ -80192,31 +79120,6 @@ module.exports = {
       'attack': 91,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 39,
-            },
-            {
-              'route': 44,
-            },
-            {
-              'route': 46,
-            },
-            {
-              'route': 47,
-            },
-          ],
-        },
-        '2': [
-          'Clamberclaw Cliffs',
-          'Sacred Plaza',
-        ],
-        '3': [
-          {
-            'dungeon': 'Celestica Ruins',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Burmy (Sand)',
@@ -80284,74 +79187,6 @@ module.exports = {
       'attack': 93,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 24,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 28,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 31,
-            },
-            {
-              'route': 32,
-            },
-            {
-              'route': 33,
-            },
-            {
-              'route': 35,
-            },
-            {
-              'route': 36,
-            },
-            {
-              'route': 37,
-            },
-            {
-              'route': 38,
-            },
-            {
-              'route': 48,
-            },
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 55,
-            },
-          ],
-        },
-        '2': [
-          'Veilstone Cape',
-          'Ancient Lake Acuity',
-        ],
         '5': [
           {
             'basePokemon': 'Burmy (Trash)',
@@ -80419,23 +79254,6 @@ module.exports = {
       'attack': 103,
       'nativeRegion': 3,
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 10,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 33,
-            },
-            {
-              'route': 40,
-            },
-          ],
-        },
-        '2': ['Veilstone Cape'],
         '5': [
           {
             'basePokemon': 'Burmy (Plant)',
@@ -80627,31 +79445,8 @@ module.exports = {
               'route': 45,
             },
           ],
-          '8': [
-            {
-              'route': 10,
-            },
-            {
-              'route': 13,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 26,
-            },
-          ],
         },
-        '2': [
-          'Lostlorn Forest',
-          'Heartwood',
-        ],
+        '2': ['Lostlorn Forest'],
         '8': ['Pal Park'],
         '12': [
           'Aspear',
@@ -80708,14 +79503,6 @@ module.exports = {
             {
               'route': 3,
               'requirements': 'The weather needs to be Clear',
-            },
-          ],
-          '8': [
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
             },
           ],
         },
@@ -80788,23 +79575,6 @@ module.exports = {
           '5': [
             {
               'route': 12,
-            },
-          ],
-          '8': [
-            {
-              'route': 18,
-            },
-            {
-              'route': 19,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 22,
-            },
-            {
-              'route': 23,
             },
           ],
         },
@@ -80898,23 +79668,6 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
-            },
-          ],
         },
         '2': ['Victory Road Unova'],
         '6': ['Water'],
@@ -80973,17 +79726,6 @@ module.exports = {
             },
             {
               'route': 21,
-            },
-          ],
-          '8': [
-            {
-              'route': 25,
-            },
-            {
-              'route': 26,
-            },
-            {
-              'route': 27,
             },
           ],
         },
@@ -81131,14 +79873,6 @@ module.exports = {
               'route': 21,
             },
           ],
-          '8': [
-            {
-              'route': 41,
-            },
-            {
-              'route': 45,
-            },
-          ],
         },
         '8': ['Pal Park'],
         '12': ['Always'],
@@ -81213,16 +79947,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 41,
-            },
-            {
-              'route': 45,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Cherubi',
@@ -81406,14 +80130,6 @@ module.exports = {
               'route': 221,
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 13,
-            },
-          ],
         },
       },
       'catchRatePercent': 51,
@@ -81517,14 +80233,6 @@ module.exports = {
               'requirements': 'The weather needs to be Thunderstorm',
             },
           ],
-          '8': [
-            {
-              'route': 35,
-            },
-            {
-              'route': 37,
-            },
-          ],
         },
         '2': ['Galar Mine No. 2'],
       },
@@ -81568,14 +80276,6 @@ module.exports = {
             },
             {
               'route': 221,
-            },
-          ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 13,
             },
           ],
         },
@@ -81683,11 +80383,6 @@ module.exports = {
               'route': 29,
             },
           ],
-          '8': [
-            {
-              'route': 37,
-            },
-          ],
         },
         '2': ['Exeggutor Island Hill'],
         '3': [
@@ -81763,17 +80458,6 @@ module.exports = {
           '6': [
             {
               'route': 28,
-            },
-          ],
-          '8': [
-            {
-              'route': 26,
-            },
-            {
-              'route': 51,
-            },
-            {
-              'route': 53,
             },
           ],
         },
@@ -81978,61 +80662,7 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 1,
-            },
-            {
-              'route': 2,
-            },
-            {
-              'route': 3,
-            },
-            {
-              'route': 5,
-            },
-            {
-              'route': 7,
-            },
-            {
-              'route': 13,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 25,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 29,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 35,
-            },
-            {
-              'route': 36,
-            },
-            {
-              'route': 37,
-            },
-            {
-              'route': 49,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
-        '2': ["Avalugg's Legacy"],
         '3': [
           {
             'dungeon': 'Valley Windworks',
@@ -82145,50 +80775,8 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 4,
-            },
-            {
-              'route': 13,
-            },
-            {
-              'route': 24,
-            },
-            {
-              'route': 27,
-            },
-            {
-              'route': 29,
-            },
-            {
-              'route': 30,
-            },
-            {
-              'route': 35,
-            },
-            {
-              'route': 36,
-            },
-            {
-              'route': 37,
-            },
-            {
-              'route': 49,
-            },
-            {
-              'route': 53,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
-        '2': [
-          'Reversal Mountain',
-          "Avalugg's Legacy",
-          'Ancient Lake Verity',
-        ],
+        '2': ['Reversal Mountain'],
         '5': [
           {
             'basePokemon': 'Drifloon',
@@ -82293,22 +80881,8 @@ module.exports = {
               'route': 36,
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 54,
-            },
-          ],
         },
-        '2': [
-          'Eterna Forest',
-          'Heartwood',
-        ],
+        '2': ['Eterna Forest'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -82345,8 +80919,7 @@ module.exports = {
               'option': 1,
               'name': 'Lopunny',
               'megaStone': 28,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Lopunny needs the Lopunnite Mega Stone.<br />Needs at least 47,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -82412,17 +80985,6 @@ module.exports = {
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 54,
-            },
-          ],
         },
         '5': [
           {
@@ -82461,7 +81023,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 2,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 60,
       'base': {
         'hitpoints': 65,
         'attack': 136,
@@ -82502,8 +81064,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Lopunny',
                 'megaStone': 28,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Lopunny needs the Lopunnite Mega Stone.<br />Needs at least 47,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -82511,7 +81072,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 21,
       'eggSteps': 1800,
     },
     {
@@ -82538,13 +81099,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 46,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Misdreavus',
@@ -82573,6 +81127,35 @@ module.exports = {
       'eggSteps': 1520,
     },
     {
+      'id': 429.01,
+      'name': 'Mismagius (Illusion)',
+      'type': [13],
+      'eggCycles': 25,
+      'levelType': 1,
+      'exp': 173,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 60,
+        'attack': 60,
+        'specialAttack': 105,
+        'defense': 60,
+        'specialDefense': 105,
+        'speed': 105,
+      },
+      'attack': 105,
+      'nativeRegion': 3,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '11': [2000],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
       'id': 430,
       'name': 'Honchkrow',
       'type': [
@@ -82599,13 +81182,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 16,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Murkrow',
@@ -82702,13 +81278,7 @@ module.exports = {
               'route': 222,
             },
           ],
-          '8': [
-            {
-              'route': 24,
-            },
-          ],
         },
-        '2': ['Veilstone Cape'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -82746,17 +81316,7 @@ module.exports = {
               'route': 229,
             },
           ],
-          '8': [
-            {
-              'route': 24,
-            },
-          ],
         },
-        '3': [
-          {
-            'dungeon': 'Veilstone Cape',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Glameow',
@@ -82874,8 +81434,6 @@ module.exports = {
           'Distortion World',
           'Sendoff Spring',
           'Reflection Cave',
-          'Sacred Plaza',
-          'Ancient Lake Acuity',
         ],
         '7': ['Chimecho'],
         '12': ['Payapa'],
@@ -83003,11 +81561,6 @@ module.exports = {
               'requirements': 'The weather needs to be Clear',
             },
           ],
-          '8': [
-            {
-              'route': 15,
-            },
-          ],
         },
         '6': ['Mystery'],
         '12': ['Colbur'],
@@ -83091,11 +81644,6 @@ module.exports = {
             {
               'route': 21,
               'requirements': 'The weather needs to be Overcast',
-            },
-          ],
-          '8': [
-            {
-              'route': 15,
             },
           ],
         },
@@ -83255,30 +81803,12 @@ module.exports = {
               'route': 52,
             },
           ],
-          '8': [
-            {
-              'route': 40,
-            },
-            {
-              'route': 41,
-            },
-            {
-              'route': 42,
-            },
-            {
-              'route': 46,
-            },
-          ],
         },
         '2': [
           'Solaceon Ruins',
           'Mt. Coronet North',
           'Distortion World',
           'Abundant Shrine',
-          'Ancient Quarry',
-          'Primeval Grotto',
-          'Clamberclaw Cliffs',
-          'Ancient Snowpoint Temple',
         ],
         '3': [
           {
@@ -83392,11 +81922,6 @@ module.exports = {
               'route': 52,
             },
           ],
-          '8': [
-            {
-              'route': 46,
-            },
-          ],
         },
         '2': [
           'Spear Pillar',
@@ -83404,17 +81929,10 @@ module.exports = {
           'Energy Plant',
           'Iron Ruins',
           'Split-Decision Ruins',
-          'Ancient Snowpoint Temple',
         ],
         '3': [
           {
             'dungeon': 'Abundant Shrine',
-          },
-          {
-            'dungeon': 'Ancient Quarry',
-          },
-          {
-            'dungeon': 'Clamberclaw Cliffs',
           },
         ],
         '5': [
@@ -83534,16 +82052,8 @@ module.exports = {
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
-          '8': [
-            {
-              'route': 17,
-            },
-          ],
         },
-        '2': [
-          'Lush Jungle',
-          'Celestica Ruins',
-        ],
+        '2': ['Lush Jungle'],
         '7': ['Sudowoodo'],
         '12': ['Charti'],
       },
@@ -83705,14 +82215,6 @@ module.exports = {
               'route': 54,
             },
           ],
-          '8': [
-            {
-              'route': 2,
-            },
-            {
-              'route': 4,
-            },
-          ],
         },
         '2': [
           'Reflection Cave',
@@ -83738,7 +82240,7 @@ module.exports = {
         {
           'basePokemon': 'Happiny',
           'evolvedPokemon': 'Chansey',
-          'trigger': 2,
+          'trigger': 0,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83754,7 +82256,6 @@ module.exports = {
               '__class': 'MaxRegionRequirement',
             },
           ],
-          'stone': -1,
         },
       ],
       'baby': true,
@@ -83814,19 +82315,7 @@ module.exports = {
               'route': 45,
             },
           ],
-          '8': [
-            {
-              'route': 28,
-            },
-            {
-              'route': 38,
-            },
-            {
-              'route': 51,
-            },
-          ],
         },
-        '2': ['Oreburrow Tunnel'],
         '7': ['Chansey'],
       },
       'catchRatePercent': 38,
@@ -83844,7 +82333,7 @@ module.exports = {
         {
           'basePokemon': 'Handout Happiny',
           'evolvedPokemon': 'Charity Chansey',
-          'trigger': 2,
+          'trigger': 0,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -83860,7 +82349,6 @@ module.exports = {
               '__class': 'MaxRegionRequirement',
             },
           ],
-          'stone': -1,
         },
       ],
       'baby': true,
@@ -83939,11 +82427,6 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
-            {
-              'route': 29,
-            },
-          ],
         },
         '12': ['Coba'],
       },
@@ -83977,11 +82460,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '3': [
-          {
-            'dungeon': 'Shrouded Ruins',
-          },
-        ],
         '8': ['Solaceon Town'],
       },
       'catchRatePercent': 31,
@@ -84056,17 +82534,8 @@ module.exports = {
               'route': 13,
             },
           ],
-          '8': [
-            {
-              'route': 51,
-            },
-          ],
         },
-        '2': [
-          'Tunnel to the Top',
-          'Ancient Wayward Cave',
-          'Clamberclaw Cliffs',
-        ],
+        '2': ['Tunnel to the Top'],
         '6': ['Dragon'],
         '12': ['Haban'],
       },
@@ -84142,17 +82611,7 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
-            {
-              'route': 51,
-            },
-          ],
         },
-        '3': [
-          {
-            'dungeon': 'Clamberclaw Cliffs',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Gible',
@@ -84229,8 +82688,7 @@ module.exports = {
               'option': 1,
               'name': 'Garchomp',
               'megaStone': 18,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Garchomp needs the Garchompite Mega Stone.<br />Needs at least 93,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -84258,11 +82716,6 @@ module.exports = {
             {
               'route': 55,
               'requirements': 'The weather needs to be Sunny',
-            },
-          ],
-          '8': [
-            {
-              'route': 51,
             },
           ],
         },
@@ -84323,7 +82776,7 @@ module.exports = {
       'eggCycles': 120,
       'levelType': 4,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 108,
         'attack': 170,
@@ -84364,8 +82817,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Garchomp',
                 'megaStone': 18,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Garchomp needs the Garchompite Mega Stone.<br />Needs at least 93,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -84373,7 +82825,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 4800,
     },
     {
@@ -84432,17 +82884,6 @@ module.exports = {
             },
             {
               'route': 53,
-            },
-          ],
-          '8': [
-            {
-              'route': 5,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 54,
             },
           ],
         },
@@ -84580,17 +83021,6 @@ module.exports = {
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
-          '8': [
-            {
-              'route': 50,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 54,
-            },
-          ],
         },
         '2': ['Roaring-Sea Caves'],
         '3': [
@@ -84640,8 +83070,7 @@ module.exports = {
               'option': 1,
               'name': 'Lucario',
               'megaStone': 29,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Lucario needs the Lucarionite Mega Stone.<br />Needs at least 72,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -84669,17 +83098,6 @@ module.exports = {
             {
               'route': 9,
               'requirements': 'The weather needs to be Clear',
-            },
-          ],
-          '8': [
-            {
-              'route': 50,
-            },
-            {
-              'route': 52,
-            },
-            {
-              'route': 54,
             },
           ],
         },
@@ -84736,7 +83154,7 @@ module.exports = {
       'eggCycles': 38,
       'levelType': 3,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 70,
         'attack': 145,
@@ -84777,8 +83195,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Lucario',
                 'megaStone': 29,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Lucario needs the Lucarionite Mega Stone.<br />Needs at least 72,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -84786,7 +83203,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 1520,
     },
     {
@@ -84860,17 +83277,6 @@ module.exports = {
               'route': 23,
             },
           ],
-          '8': [
-            {
-              'route': 15,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 43,
-            },
-          ],
         },
         '2': ['Solaceon Ruins'],
         '12': ['Shuca'],
@@ -84919,17 +83325,6 @@ module.exports = {
             },
             {
               'route': 25,
-            },
-          ],
-          '8': [
-            {
-              'route': 15,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 43,
             },
           ],
         },
@@ -85103,14 +83498,6 @@ module.exports = {
               'route': 40,
             },
           ],
-          '8': [
-            {
-              'route': 25,
-            },
-            {
-              'route': 31,
-            },
-          ],
         },
         '2': ['Reversal Mountain'],
         '8': ['Pastoria City'],
@@ -85227,11 +83614,6 @@ module.exports = {
             {
               'route': 40,
               'requirements': 'The weather needs to be Sandstorm',
-            },
-          ],
-          '8': [
-            {
-              'route': 31,
             },
           ],
         },
@@ -85391,17 +83773,6 @@ module.exports = {
               'requirements': 'The weather needs to be Overcast',
             },
           ],
-          '8': [
-            {
-              'route': 15,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 23,
-            },
-          ],
         },
         '2': [
           'Moor of Icirrus',
@@ -85448,14 +83819,6 @@ module.exports = {
             {
               'route': 38,
               'requirements': 'The weather needs to be Thunderstorm',
-            },
-          ],
-          '8': [
-            {
-              'route': 23,
-            },
-            {
-              'route': 33,
             },
           ],
         },
@@ -85538,25 +83901,7 @@ module.exports = {
               'route': 19,
             },
           ],
-          '8': [
-            {
-              'route': 14,
-            },
-            {
-              'route': 16,
-            },
-            {
-              'route': 21,
-            },
-            {
-              'route': 23,
-            },
-            {
-              'route': 41,
-            },
-          ],
         },
-        '2': ['Shrouded Ruins'],
         '6': ['Grass'],
       },
       'catchRatePercent': 53,
@@ -85663,14 +84008,10 @@ module.exports = {
               'route': 15,
             },
           ],
-          '8': [
-            {
-              'route': 37,
-            },
-          ],
         },
         '2': [
           'Iron Island',
+          'P2 Laboratory',
           'Brooklet Hill',
         ],
         '6': ['Water'],
@@ -85723,11 +84064,6 @@ module.exports = {
           '6': [
             {
               'route': 26,
-            },
-          ],
-          '8': [
-            {
-              'route': 37,
             },
           ],
         },
@@ -85791,7 +84127,7 @@ module.exports = {
         {
           'basePokemon': 'Mantyke',
           'evolvedPokemon': 'Mantine',
-          'trigger': 2,
+          'trigger': 0,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -85807,7 +84143,6 @@ module.exports = {
               '__class': 'MaxRegionRequirement',
             },
           ],
-          'stone': -1,
         },
       ],
       'baby': true,
@@ -85897,11 +84232,6 @@ module.exports = {
             {
               'route': 45,
               'requirements': 'The weather needs to be Clear or Sandstorm',
-            },
-          ],
-          '8': [
-            {
-              'route': 35,
             },
           ],
         },
@@ -86065,14 +84395,6 @@ module.exports = {
               'route': 47,
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
         '2': [
           'Mt. Coronet North',
@@ -86119,8 +84441,7 @@ module.exports = {
               'option': 1,
               'name': 'Abomasnow',
               'megaStone': 0,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Abomasnow needs the Abomasite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -86193,14 +84514,6 @@ module.exports = {
               'route': 47,
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 55,
-            },
-          ],
         },
         '2': ['Spear Pillar'],
         '3': [
@@ -86262,7 +84575,7 @@ module.exports = {
       'eggCycles': 45,
       'levelType': 4,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 60,
       'base': {
         'hitpoints': 90,
         'attack': 132,
@@ -86303,8 +84616,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Abomasnow',
                 'megaStone': 0,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Abomasnow needs the Abomasite Mega Stone.<br />Needs at least 71,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -86312,7 +84624,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 21,
       'eggSteps': 1800,
     },
     {
@@ -86452,6 +84764,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Magneton',
@@ -86777,17 +85095,7 @@ module.exports = {
               'requirements': 'The weather needs to be Sandstorm',
             },
           ],
-          '8': [
-            {
-              'route': 51,
-            },
-          ],
         },
-        '3': [
-          {
-            'dungeon': 'Shrouded Ruins',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Lickitung',
@@ -86938,11 +85246,6 @@ module.exports = {
               'requirements': 'The weather needs to be Sunny',
             },
           ],
-          '8': [
-            {
-              'route': 21,
-            },
-          ],
         },
         '3': [
           {
@@ -87035,11 +85338,6 @@ module.exports = {
             {
               'route': 53,
               'requirements': 'The weather needs to be Thunderstorm',
-            },
-          ],
-          '8': [
-            {
-              'route': 47,
             },
           ],
         },
@@ -87177,7 +85475,6 @@ module.exports = {
       'attack': 134,
       'nativeRegion': 3,
       'locations': {
-        '2': ['Ancient Lake Verity'],
         '5': [
           {
             'basePokemon': 'Togetic',
@@ -87290,11 +85587,6 @@ module.exports = {
           '4': [
             {
               'route': 3,
-            },
-          ],
-          '8': [
-            {
-              'route': 39,
             },
           ],
         },
@@ -87988,9 +86280,6 @@ module.exports = {
             'dungeon': 'Giant Chasm',
             'requirements': 'Requires beating Ghetsis.',
           },
-          {
-            'dungeon': "Avalugg's Legacy",
-          },
         ],
         '5': [
           {
@@ -88118,8 +86407,7 @@ module.exports = {
               'option': 1,
               'name': 'Gallade',
               'megaStone': 17,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Gallade needs the Galladite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -88170,11 +86458,6 @@ module.exports = {
             },
           ],
         },
-        '3': [
-          {
-            'dungeon': 'Ancient Snowpoint Temple',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Kirlia',
@@ -88212,7 +86495,7 @@ module.exports = {
       'eggCycles': 68,
       'levelType': 4,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 45,
       'base': {
         'hitpoints': 68,
         'attack': 165,
@@ -88253,8 +86536,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Gallade',
                 'megaStone': 17,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Gallade needs the Galladite Mega Stone.<br />Needs at least 63,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -88262,7 +86544,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 17,
       'eggSteps': 2720,
     },
     {
@@ -88572,11 +86854,6 @@ module.exports = {
               'route': 18,
             },
           ],
-          '8': [
-            {
-              'route': 29,
-            },
-          ],
         },
         '5': [
           {
@@ -88663,26 +86940,11 @@ module.exports = {
               'requirements': 'The weather needs to be Blizzard',
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 51,
-            },
-          ],
         },
-        '2': [
-          'Iceberg Ruins',
-          "Avalugg's Legacy",
-          'Ancient Snowpoint Temple',
-        ],
+        '2': ['Iceberg Ruins'],
         '3': [
           {
             'dungeon': 'Tunnel to the Top',
-          },
-          {
-            'dungeon': 'Ice Column Chamber',
           },
         ],
         '5': [
@@ -88758,13 +87020,7 @@ module.exports = {
               'requirements': 'The weather needs to be Fog',
             },
           ],
-          '8': [
-            {
-              'route': 46,
-            },
-          ],
         },
-        '2': ['Sacred Plaza'],
         '3': [
           {
             'dungeon': 'Old Chateau',
@@ -89091,9 +87347,6 @@ module.exports = {
           {
             'dungeon': 'Cave of Being',
           },
-          {
-            'dungeon': 'Ancient Lake Acuity',
-          },
         ],
       },
       'catchRatePercent': 2,
@@ -89137,9 +87390,6 @@ module.exports = {
           {
             'dungeon': 'Cave of Being',
           },
-          {
-            'dungeon': 'Ancient Lake Verity',
-          },
         ],
       },
       'catchRatePercent': 2,
@@ -89176,9 +87426,6 @@ module.exports = {
           },
           {
             'dungeon': 'Cave of Being',
-          },
-          {
-            'dungeon': 'Ancient Lake Valor',
           },
         ],
       },
@@ -89401,9 +87648,6 @@ module.exports = {
           },
           {
             'dungeon': 'Twist Mountain',
-          },
-          {
-            'dungeon': 'Ancient Snowpoint Temple',
           },
         ],
         '15': ['Regigigas'],
@@ -89657,7 +87901,6 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 3,
       'locations': {
-        '2': ['Seaside Hollow'],
         '7': ['Manaphy'],
       },
       'catchRatePercent': 12,
@@ -89697,11 +87940,6 @@ module.exports = {
             },
           },
         ],
-        '3': [
-          {
-            'dungeon': 'Seaside Hollow',
-          },
-        ],
         '12': ['Liechi'],
         '15': ['Manaphy Egg Protectors'],
       },
@@ -89735,9 +87973,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Newmoon Island',
-          },
-          {
-            'dungeon': 'Clamberclaw Cliffs',
           },
         ],
       },
@@ -91266,7 +89501,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Dreamyard'],
+        '2': [
+          'Dreamyard',
+          'P2 Laboratory',
+        ],
         '5': [
           {
             'basePokemon': 'Patrat',
@@ -91476,6 +89714,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['P2 Laboratory'],
         '5': [
           {
             'basePokemon': 'Lillipup',
@@ -91548,6 +89787,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Herdier',
@@ -92658,9 +90903,11 @@ module.exports = {
             },
           ],
         },
-        '2': [
-          'Victory Road Unova',
-          'Pledge Grove',
+        '2': ['Victory Road Unova'],
+        '3': [
+          {
+            'dungeon': 'Pledge Grove',
+          },
         ],
         '5': [
           {
@@ -93511,8 +91758,7 @@ module.exports = {
               'option': 1,
               'name': 'Audino',
               'megaStone': 7,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Audino needs the Audinite Mega Stone.<br />Needs at least 52,000 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -93570,6 +91816,7 @@ module.exports = {
           ],
         },
         '2': [
+          'P2 Laboratory',
           'Roaring-Sea Caves',
           'Lakeside Cave',
           'Tunnel to the Top',
@@ -93584,10 +91831,6 @@ module.exports = {
           },
           {
             'dungeon': 'Dreamyard',
-          },
-          {
-            'dungeon': 'P2 Laboratory',
-            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
         '12': ['Chilan'],
@@ -93605,7 +91848,7 @@ module.exports = {
       'eggCycles': 30,
       'levelType': 1,
       'exp': 390,
-      'catchRate': 2,
+      'catchRate': 255,
       'base': {
         'hitpoints': 103,
         'attack': 60,
@@ -93646,8 +91889,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Audino',
                 'megaStone': 7,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Audino needs the Audinite Mega Stone.<br />Needs at least 52,000 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -93655,7 +91897,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 63,
       'eggSteps': 1200,
     },
     {
@@ -95285,14 +93527,6 @@ module.exports = {
               'route': 45,
             },
           ],
-          '8': [
-            {
-              'route': 18,
-            },
-            {
-              'route': 23,
-            },
-          ],
         },
         '2': [
           'Lostlorn Forest',
@@ -95805,22 +94039,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 35,
-            },
-            {
-              'route': 44,
-            },
-            {
-              'route': 53,
-            },
-          ],
-        },
-        '2': ['Ancient Lake Acuity'],
-      },
+      'locations': {},
       'catchRatePercent': 11,
       'eggSteps': 1600,
     },
@@ -96996,6 +95215,7 @@ module.exports = {
             },
           ],
         },
+        '2': ['P2 Laboratory'],
         '5': [
           {
             'basePokemon': 'Scraggy',
@@ -97987,9 +96207,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '2': ['Icepeak Cavern'],
-      },
+      'locations': {},
       'catchRatePercent': 25,
       'eggSteps': 1000,
     },
@@ -98123,52 +96341,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '3': [
-          {
-            'dungeon': 'Icepeak Cavern',
-          },
-          {
-            'dungeon': 'Ancient Lake Acuity',
-          },
-        ],
-        '5': [
-          {
-            'basePokemon': 'Hisuian Zorua',
-            'evolvedPokemon': 'Hisuian Zoroark',
-            'trigger': 1,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Hisuian Zorua',
-                'hint': 'Hisuian Zorua needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 30,
-                'option': 2,
-                'pokemon': 'Hisuian Zorua',
-                'hint': 'Your Hisuian Zorua needs to be at least level 30.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Hisuian Zoroark',
-                'hint': 'Hisuian Zoroark cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 1520,
     },
@@ -99973,7 +98146,10 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '2': ['Dragonspiral Tower'],
+        '2': [
+          'Dragonspiral Tower',
+          'Pledge Grove',
+        ],
         '5': [
           {
             'basePokemon': 'Deerling (Spring)',
@@ -100041,7 +98217,10 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '2': ['Dragonspiral Tower'],
+        '2': [
+          'Dragonspiral Tower',
+          'Pledge Grove',
+        ],
         '5': [
           {
             'basePokemon': 'Deerling (Summer)',
@@ -100850,7 +99029,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Seaside Cave'],
+        '2': [
+          'Seaside Cave',
+          'P2 Laboratory',
+        ],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -101430,7 +99612,6 @@ module.exports = {
         },
         '2': [
           'Chargestone Cave',
-          'P2 Laboratory',
           'Lakeside Cave',
         ],
       },
@@ -101472,7 +99653,6 @@ module.exports = {
           ],
         },
         '2': [
-          'P2 Laboratory',
           'Dusty Bowl',
           'Iron Ruins',
         ],
@@ -101694,7 +99874,10 @@ module.exports = {
             },
           ],
         },
-        '2': ['Dusty Bowl'],
+        '2': [
+          'P2 Laboratory',
+          'Dusty Bowl',
+        ],
         '5': [
           {
             'basePokemon': 'Klink',
@@ -101787,6 +99970,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'P2 Laboratory',
+            'requirements': 'P2 Laboratory needs to be completed.',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Klang',
@@ -103594,14 +101783,14 @@ module.exports = {
           ],
         },
         '2': [
-          'Dragonspiral Tower',
+          'Victory Road Unova',
           'Victory Road Kalos',
           'Resolution Cave',
           'Tunnel to the Top',
         ],
         '3': [
           {
-            'dungeon': 'Victory Road Unova',
+            'dungeon': 'Dragonspiral Tower',
           },
           {
             'dungeon': 'Courageous Cavern',
@@ -104215,13 +102404,7 @@ module.exports = {
               'route': 39,
             },
           ],
-          '8': [
-            {
-              'route': 53,
-            },
-          ],
         },
-        '2': ['Ancient Lake Acuity'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -104667,10 +102850,6 @@ module.exports = {
         '3': [
           {
             'dungeon': 'Twist Mountain',
-          },
-          {
-            'dungeon': 'P2 Laboratory',
-            'requirements': 'P2 Laboratory needs to be completed.',
           },
         ],
       },
@@ -105259,14 +103438,6 @@ module.exports = {
               'subRegions': [0],
             },
           },
-          {
-            'region': 8,
-            'requirements': 'Progress further in questline Incarnate Forces of Hisui.',
-            'roamingGroup': {
-              'name': 'Hisui',
-              'subRegions': [0],
-            },
-          },
         ],
         '15': ['Tornadus 3'],
       },
@@ -105333,14 +103504,6 @@ module.exports = {
             'requirements': 'Requires the Legend badge.',
             'roamingGroup': {
               'name': 'Unova',
-              'subRegions': [0],
-            },
-          },
-          {
-            'region': 8,
-            'requirements': 'Progress further in questline Incarnate Forces of Hisui.',
-            'roamingGroup': {
-              'name': 'Hisui',
               'subRegions': [0],
             },
           },
@@ -105487,16 +103650,6 @@ module.exports = {
       'attack': 191,
       'nativeRegion': 4,
       'locations': {
-        '1': [
-          {
-            'region': 8,
-            'requirements': 'Progress further in questline Incarnate Forces of Hisui.',
-            'roamingGroup': {
-              'name': 'Hisui',
-              'subRegions': [0],
-            },
-          },
-        ],
         '3': [
           {
             'dungeon': 'Abundant Shrine',
@@ -107347,6 +105500,386 @@ module.exports = {
               'pokemon': 'Vivillon (Meadow)',
               'hint': 'Vivillon (Meadow) cannot be caught yet.',
               '__class': 'ObtainedPokemonRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Icy Snow)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Polar)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Tundra)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Continental)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Garden)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Elegant)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Modern)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Marine)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Archipelago)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (High Plains)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Sandstorm)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (River)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Monsoon)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Savanna)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Sun)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Ocean)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Jungle)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Poké Ball)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+        },
+        {
+          'basePokemon': 'Spewpa',
+          'evolvedPokemon': 'Vivillon (Fancy)',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be caught.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 5,
+              'option': 2,
+              'hint': 'You need to reach the Kalos region.',
+              '__class': 'MaxRegionRequirement',
             },
           ],
         },
@@ -112403,7 +110936,11 @@ module.exports = {
         '2': [
           'Pikachu Valley',
           'Hokulani Observatory',
-          'Ruins of Conflict',
+        ],
+        '3': [
+          {
+            'dungeon': 'Ruins of Conflict',
+          },
         ],
         '6': ['Electric'],
         '12': ['Wacan'],
@@ -112582,11 +111119,6 @@ module.exports = {
             {
               'route': 40,
               'requirements': 'The weather needs to be Thunderstorm',
-            },
-          ],
-          '8': [
-            {
-              'route': 23,
             },
           ],
         },
@@ -112794,13 +111326,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '0': {
-          '8': [
-            {
-              'route': 23,
-            },
-          ],
-        },
         '5': [
           {
             'basePokemon': 'Goomy',
@@ -112943,60 +111468,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '3': [
-          {
-            'dungeon': 'Ancient Lake Verity',
-          },
-        ],
-        '5': [
-          {
-            'basePokemon': 'Hisuian Sliggoo',
-            'evolvedPokemon': 'Hisuian Goodra',
-            'trigger': 1,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Hisuian Sliggoo',
-                'hint': 'Hisuian Sliggoo needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 50,
-                'option': 2,
-                'pokemon': 'Hisuian Sliggoo',
-                'hint': 'Your Hisuian Sliggoo needs to be at least level 50.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Hisuian Goodra',
-                'hint': 'Hisuian Goodra cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 1,
-                'weather': [
-                  2,
-                  9,
-                  3,
-                ],
-                'hint': 'The weather needs to be Rain or Fog or Thunderstorm',
-                '__class': 'WeatherRequirement',
-              },
-            ],
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 17,
       'eggSteps': 3600,
     },
@@ -113301,7 +111773,7 @@ module.exports = {
       'eggCycles': 20,
       'levelType': 2,
       'exp': 67,
-      'catchRate': 130,
+      'catchRate': 120,
       'evolutions': [
         {
           'basePokemon': 'Pumpkaboo (Small)',
@@ -113361,7 +111833,7 @@ module.exports = {
           ],
         },
       },
-      'catchRatePercent': 38,
+      'catchRatePercent': 36,
       'eggSteps': 800,
     },
     {
@@ -113374,7 +111846,7 @@ module.exports = {
       'eggCycles': 20,
       'levelType': 2,
       'exp': 67,
-      'catchRate': 110,
+      'catchRate': 120,
       'evolutions': [
         {
           'basePokemon': 'Pumpkaboo (Large)',
@@ -113434,7 +111906,7 @@ module.exports = {
           ],
         },
       },
-      'catchRatePercent': 33,
+      'catchRatePercent': 36,
       'eggSteps': 800,
     },
     {
@@ -113447,7 +111919,7 @@ module.exports = {
       'eggCycles': 20,
       'levelType': 2,
       'exp': 67,
-      'catchRate': 100,
+      'catchRate': 120,
       'evolutions': [
         {
           'basePokemon': 'Pumpkaboo (Super Size)',
@@ -113507,7 +111979,7 @@ module.exports = {
           ],
         },
       },
-      'catchRatePercent': 31,
+      'catchRatePercent': 36,
       'eggSteps': 800,
     },
     {
@@ -113581,7 +112053,7 @@ module.exports = {
       'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
-      'catchRate': 65,
+      'catchRate': 60,
       'base': {
         'hitpoints': 55,
         'attack': 85,
@@ -113629,7 +112101,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 22,
+      'catchRatePercent': 21,
       'eggSteps': 1200,
     },
     {
@@ -113642,7 +112114,7 @@ module.exports = {
       'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
-      'catchRate': 55,
+      'catchRate': 60,
       'base': {
         'hitpoints': 75,
         'attack': 95,
@@ -113690,7 +112162,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 20,
+      'catchRatePercent': 21,
       'eggSteps': 1200,
     },
     {
@@ -113703,7 +112175,7 @@ module.exports = {
       'eggCycles': 30,
       'levelType': 2,
       'exp': 173,
-      'catchRate': 50,
+      'catchRate': 60,
       'base': {
         'hitpoints': 85,
         'attack': 100,
@@ -113751,7 +112223,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 18,
+      'catchRatePercent': 21,
       'eggSteps': 1200,
     },
     {
@@ -113867,30 +112339,8 @@ module.exports = {
               'route': 52,
             },
           ],
-          '8': [
-            {
-              'route': 49,
-            },
-            {
-              'route': 50,
-            },
-            {
-              'route': 50,
-            },
-          ],
         },
-        '2': [
-          'Frost Cavern',
-          'Crevasse Passage',
-          "Avalugg's Legacy",
-          'Ice Column Chamber',
-          'Icepeak Cavern',
-        ],
-        '3': [
-          {
-            'dungeon': 'Crevasse Passage',
-          },
-        ],
+        '2': ['Frost Cavern'],
       },
       'catchRatePercent': 51,
       'eggSteps': 800,
@@ -114004,11 +112454,6 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
-        '3': [
-          {
-            'dungeon': "Avalugg's Legacy",
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Bergmite',
@@ -114387,6 +112832,9 @@ module.exports = {
             'dungeon': 'Terminus Cave',
             'requirements': 'Requires the Elite Kalos Champion badge.',
           },
+          {
+            'dungeon': 'Resolution Cave',
+          },
         ],
       },
       'catchRatePercent': 2,
@@ -114427,8 +112875,7 @@ module.exports = {
               'option': 1,
               'name': 'Diancie',
               'megaStone': 16,
-              'baseAttackMultiplier': 500,
-              'hint': 'unknown method',
+              'hint': 'Diancie needs the Diancite Mega Stone.<br />Needs at least 75,500 attack to Mega Evolve.',
               '__class': 'MegaEvolveRequirement',
             },
           ],
@@ -114471,7 +112918,7 @@ module.exports = {
       'eggCycles': 38,
       'levelType': 4,
       'exp': 347,
-      'catchRate': 2,
+      'catchRate': 3,
       'base': {
         'hitpoints': 50,
         'attack': 160,
@@ -114512,8 +112959,7 @@ module.exports = {
                 'option': 1,
                 'name': 'Diancie',
                 'megaStone': 16,
-                'baseAttackMultiplier': 500,
-                'hint': 'unknown method',
+                'hint': 'Diancie needs the Diancite Mega Stone.<br />Needs at least 75,500 attack to Mega Evolve.',
                 '__class': 'MegaEvolveRequirement',
               },
             ],
@@ -114521,7 +112967,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 1,
+      'catchRatePercent': 2,
       'eggSteps': 1520,
     },
     {
@@ -119243,6 +117689,11 @@ module.exports = {
           ],
         },
         '2': ['Glimwood Tangle'],
+        '3': [
+          {
+            'dungeon': 'Ruins of Abundance',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Morelull',
@@ -121262,6 +119713,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Lake of the Sunne and Moone',
+            'requirements': 'Cosmog cannot be caught yet.',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -121376,6 +119833,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Lake of the Sunne and Moone',
+            'requirements': 'Cosmog cannot be caught yet.',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -121528,6 +119991,12 @@ module.exports = {
             },
           ],
         },
+        '3': [
+          {
+            'dungeon': 'Lake of the Sunne and Moone',
+            'requirements': 'Cosmog cannot be caught yet.',
+          },
+        ],
       },
       'catchRatePercent': 12,
       'eggSteps': 1000,
@@ -122582,6 +121051,12 @@ module.exports = {
       'attack': 42,
       'nativeRegion': 6,
       'locations': {
+        '3': [
+          {
+            'dungeon': 'Lake of the Sunne and Moone',
+            'requirements': 'Cosmoem needs to be caught.',
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Cosmog',
@@ -123885,7 +122360,7 @@ module.exports = {
         {
           'basePokemon': 'Meltan',
           'evolvedPokemon': 'Melmetal',
-          'trigger': 2,
+          'trigger': 0,
           'restrictions': [
             {
               'requiredValue': 1,
@@ -123901,7 +122376,6 @@ module.exports = {
               '__class': 'MaxRegionRequirement',
             },
           ],
-          'stone': -1,
         },
       ],
       'base': {
@@ -124071,29 +122545,6 @@ module.exports = {
       },
       'attack': 212,
       'locations': {
-        '5': [
-          {
-            'basePokemon': 'Meltan',
-            'evolvedPokemon': 'Melmetal',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Meltan',
-                'hint': 'Meltan needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': -1,
-                'option': 2,
-                'hint': 'You need to reach the None region.',
-                '__class': 'MaxRegionRequirement',
-              },
-            ],
-            'stone': -1,
-          },
-        ],
         '14': ["Let's Go, Meltan!"],
       },
       'catchRatePercent': 2,
@@ -135579,7 +134030,7 @@ module.exports = {
         10,
       ],
       'levelType': 4,
-      'exp': 163,
+      'exp': 263,
       'eggCycles': 30,
       'base': {
         'hitpoints': 103,
@@ -135640,7 +134091,7 @@ module.exports = {
     {
       'id': 900,
       'name': 'Kleavor',
-      'catchRate': 25,
+      'catchRate': 15,
       'type': [
         11,
         12,
@@ -135688,13 +134139,13 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 11,
+      'catchRatePercent': 7,
       'eggSteps': 1520,
     },
     {
       'id': 900.01,
       'name': 'Noble Kleavor',
-      'catchRate': 25,
+      'catchRate': 15,
       'type': [
         11,
         12,
@@ -135718,19 +134169,19 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {},
-      'catchRatePercent': 11,
+      'catchRatePercent': 7,
       'eggSteps': 1000,
     },
     {
       'id': 901,
       'name': 'Ursaluna',
-      'catchRate': 75,
+      'catchRate': 20,
       'type': [
         8,
         0,
       ],
       'levelType': 2,
-      'exp': 175,
+      'exp': 275,
       'eggCycles': 45,
       'base': {
         'hitpoints': 130,
@@ -135772,7 +134223,7 @@ module.exports = {
           },
         ],
       },
-      'catchRatePercent': 25,
+      'catchRatePercent': 9,
       'eggSteps': 1800,
     },
     {
@@ -135784,8 +134235,8 @@ module.exports = {
       ],
       'eggCycles': 60,
       'levelType': 2,
-      'exp': 161,
-      'catchRate': 25,
+      'exp': 265,
+      'catchRate': 45,
       'base': {
         'hitpoints': 120,
         'attack': 112,
@@ -135801,45 +134252,8 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Basculin (White-Striped)',
-            'evolvedPokemon': 'Basculegion (Male)',
-            'trigger': 1,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Basculin (White-Striped)',
-                'hint': 'Basculin (White-Striped) needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 45,
-                'option': 2,
-                'pokemon': 'Basculin (White-Striped)',
-                'hint': 'Your Basculin (White-Striped) needs to be at least level 45.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Basculegion (Male)',
-                'hint': 'Basculegion (Male) cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
-      'catchRatePercent': 11,
+      'locations': {},
+      'catchRatePercent': 17,
       'eggSteps': 2400,
     },
     {
@@ -135851,8 +134265,8 @@ module.exports = {
       ],
       'eggCycles': 60,
       'levelType': 2,
-      'exp': 161,
-      'catchRate': 25,
+      'exp': 265,
+      'catchRate': 45,
       'base': {
         'hitpoints': 120,
         'attack': 92,
@@ -135868,45 +134282,8 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Basculin (White-Striped)',
-            'evolvedPokemon': 'Basculegion (Female)',
-            'trigger': 1,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Basculin (White-Striped)',
-                'hint': 'Basculin (White-Striped) needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 45,
-                'option': 2,
-                'pokemon': 'Basculin (White-Striped)',
-                'hint': 'Your Basculin (White-Striped) needs to be at least level 45.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Basculegion (Female)',
-                'hint': 'Basculegion (Female) cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
-      'catchRatePercent': 11,
+      'locations': {},
+      'catchRatePercent': 17,
       'eggSteps': 2400,
     },
     {
@@ -135918,8 +134295,8 @@ module.exports = {
       ],
       'eggCycles': 30,
       'levelType': 3,
-      'exp': 179,
-      'catchRate': 135,
+      'exp': 102,
+      'catchRate': 20,
       'base': {
         'hitpoints': 80,
         'attack': 130,
@@ -135935,54 +134312,20 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '5': [
-          {
-            'basePokemon': 'Hisuian Sneasel',
-            'evolvedPokemon': 'Sneasler',
-            'trigger': 2,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Hisuian Sneasel',
-                'hint': 'Hisuian Sneasel needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'dayCycleParts': [
-                  1,
-                  2,
-                ],
-                'hint': 'Your local part of the day must be Day or Dusk',
-                '__class': 'DayCyclePartRequirement',
-              },
-            ],
-            'stone': 18,
-          },
-        ],
-      },
-      'catchRatePercent': 39,
+      'locations': {},
+      'catchRatePercent': 9,
       'eggSteps': 1200,
     },
     {
       'id': 904,
       'name': 'Overqwil',
-      'catchRate': 135,
+      'catchRate': 45,
       'type': [
         15,
         7,
       ],
       'levelType': 2,
-      'exp': 88,
+      'exp': 179,
       'eggCycles': 30,
       'base': {
         'hitpoints': 85,
@@ -135999,50 +134342,8 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '3': [
-          {
-            'dungeon': 'Ancient Lake Valor',
-          },
-        ],
-        '5': [
-          {
-            'basePokemon': 'Hisuian Qwilfish',
-            'evolvedPokemon': 'Overqwil',
-            'trigger': 1,
-            'restrictions': [
-              {
-                'requiredValue': 1,
-                'option': 2,
-                'pokemon': 'Hisuian Qwilfish',
-                'hint': 'Hisuian Qwilfish needs to be caught.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-              {
-                'requiredValue': 8,
-                'option': 2,
-                'hint': 'You need to reach the Hisui region.',
-                '__class': 'MaxRegionRequirement',
-              },
-              {
-                'requiredValue': 25,
-                'option': 2,
-                'pokemon': 'Hisuian Qwilfish',
-                'hint': 'Your Hisuian Qwilfish needs to be at least level 25.',
-                '__class': 'PokemonLevelRequirement',
-              },
-              {
-                'requiredValue': 1,
-                'option': 0,
-                'pokemon': 'Overqwil',
-                'hint': 'Overqwil cannot be caught yet.',
-                '__class': 'ObtainedPokemonRequirement',
-              },
-            ],
-          },
-        ],
-      },
-      'catchRatePercent': 39,
+      'locations': {},
+      'catchRatePercent': 17,
       'eggSteps': 1200,
     },
     {
@@ -136054,7 +134355,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': 270,
+      'exp': 116,
       'catchRate': 3,
       'base': {
         'hitpoints': 74,
@@ -136071,18 +134372,7 @@ module.exports = {
         'femaleRatio': 0.5,
         'visualDifference': false,
       },
-      'locations': {
-        '1': [
-          {
-            'region': 8,
-            'requirements': 'Progress further in questline Incarnate Forces of Hisui.',
-            'roamingGroup': {
-              'name': 'Hisui',
-              'subRegions': [0],
-            },
-          },
-        ],
-      },
+      'locations': {},
       'catchRatePercent': 2,
       'eggSteps': 4800,
     },
@@ -136095,7 +134385,7 @@ module.exports = {
       ],
       'eggCycles': 120,
       'levelType': 4,
-      'exp': 270,
+      'exp': 116,
       'catchRate': 3,
       'base': {
         'hitpoints': 74,
@@ -136240,10 +134530,11 @@ module.exports = {
       '13': 'Hatchery',
       '14': 'Farming',
       '15': 'Underground',
-      '16': 'Battle Frontier',
-      '17': 'Vitamins',
-      '18': 'Pokerus',
-      '19': 'Shadow',
+      '16': 'Safari',
+      '17': 'Battle Frontier',
+      '18': 'Vitamins',
+      '19': 'Pokerus',
+      '20': 'Shadow',
       'None': -1,
       '-1': 'None',
       'Pokedollars': 0,
@@ -136262,10 +134553,11 @@ module.exports = {
       'Hatchery': 13,
       'Farming': 14,
       'Underground': 15,
-      'Battle Frontier': 16,
-      'Vitamins': 17,
-      'Pokerus': 18,
-      'Shadow': 19,
+      'Safari': 16,
+      'Battle Frontier': 17,
+      'Vitamins': 18,
+      'Pokerus': 19,
+      'Shadow': 20,
     },
     'AlcremieSpins': {
       '0': 'dayClockwiseBelow5',
@@ -136473,7 +134765,7 @@ module.exports = {
     },
     'DAY': 86400000,
     'DEFEAT_POKEMONS_BASE_REWARD': 1,
-    'DNA_ITEM_CHANCE': 60,
+    'DNA_ITEM_CHANCE': 45,
     'DUNGEON_BOSS_EP_MODIFIER': 10,
     'DUNGEON_BOSS_GEMS': 20,
     'DUNGEON_BOSS_HELD_ITEM_MODIFIER': 6,
@@ -136518,6 +134810,14 @@ module.exports = {
       'Hulbury',
       'Prelude Beach',
     ],
+    'DungeonInteractionSource': {
+      '0': 'Click',
+      '1': 'Keybind',
+      '2': 'HeldKeybind',
+      'Click': 0,
+      'Keybind': 1,
+      'HeldKeybind': 2,
+    },
     'DungeonTile': {
       '0': 'empty',
       '1': 'entrance',
@@ -136723,12 +135023,12 @@ module.exports = {
       'Jaw Fossil': 'Tyrunt',
       'Sail Fossil': 'Amaura',
     },
-    'GAIN_FARM_POINTS_BASE_REWARD': 0.153,
-    'GAIN_MONEY_BASE_REWARD': 0.0017,
-    'GAIN_TOKENS_BASE_REWARD': 0.0935,
+    'GAIN_FARM_POINTS_BASE_REWARD': 0.612,
+    'GAIN_MONEY_BASE_REWARD': 80,
+    'GAIN_TOKENS_BASE_REWARD': 200,
     'GEM_UPGRADE_COST': 500,
     'GEM_UPGRADE_STEP': 0.1,
-    'GRISEOUS_ITEM_CHANCE': 80,
+    'GRISEOUS_ITEM_CHANCE': 50,
     'GYM_COUNTDOWN': 1000,
     'GYM_GEMS': 5,
     'GYM_TICK': 100,
@@ -136798,6 +135098,8 @@ module.exports = {
       '7': 'shop',
       '8': 'battleFrontier',
       '9': 'temporaryBattle',
+      'loading': -1,
+      '-1': 'loading',
       'idle': 0,
       'paused': 1,
       'fighting': 2,
@@ -136809,13 +135111,29 @@ module.exports = {
       'battleFrontier': 8,
       'temporaryBattle': 9,
     },
+    'GemShops': {
+      '0': 'HoennFluteMaster',
+      '1': 'HoennStoneSalesman',
+      '2': 'UnovaFluteMaster',
+      '3': 'FurfrouGemTrader',
+      '4': 'KalosStoneSalesman',
+      '5': 'SilvallyTrader',
+      '6': 'MagikarpJumpGemTrader',
+      'HoennFluteMaster': 0,
+      'HoennStoneSalesman': 1,
+      'UnovaFluteMaster': 2,
+      'FurfrouGemTrader': 3,
+      'KalosStoneSalesman': 4,
+      'SilvallyTrader': 5,
+      'MagikarpJumpGemTrader': 6,
+    },
     'Genders': {
       '0': 'Genderless',
       '1': 'MaleFemale',
       'Genderless': 0,
       'MaleFemale': 1,
     },
-    'HATCH_EGGS_BASE_REWARD': 33,
+    'HATCH_EGGS_BASE_REWARD': 25,
     'HELD_ITEM_CHANCE': 512,
     'HELD_UNDERGROUND_ITEM_CHANCE': 2048,
     'HOUR': 3600000,
@@ -136875,20 +135193,20 @@ module.exports = {
       'Near Space',
       'Phenac City Battles',
       'Pyrite Town Battles',
-      'Pyrite Colosseum Battles',
+      'Pyrite Colosseum',
       'Pyrite Building',
       'Pyrite Cave',
       'Relic Cave',
-      'Mt. Battle Battles',
-      'The Under Subway',
-      'Cipher Lab Battles',
+      'Mt. Battle',
+      'The Under',
+      'Cipher Lab',
       'Realgam Tower Battles',
-      'Realgam Colosseum Battles',
+      'Realgam Colosseum',
       'Snagem Hideout',
-      'Deep Colosseum Battles',
-      'Phenac Stadium Battles',
-      'Under Colosseum Battles',
-      'Orre Colosseum Battles',
+      'Deep Colosseum',
+      'Phenac Stadium',
+      'Under Colosseum',
+      'Orre Colosseum',
     ],
     'HoennGyms': [
       'Rustboro City',
@@ -137050,7 +135368,7 @@ module.exports = {
       23,
       24,
     ],
-    'LIGHT_ITEM_CHANCE': 100,
+    'LIGHT_ITEM_CHANCE': 75,
     'LuxuryBallCurrencyRate': {
       '0': 300000,
       '1': 900,
@@ -137065,6 +135383,7 @@ module.exports = {
     'MAX_DUNGEON_SIZE': 10,
     'MAX_GEM_UPGRADES': 10,
     'MAX_LOAD_TIME': 20000,
+    'MEGA_REQUIRED_ATTACK_MULTIPLIER': 500,
     'MINE_ITEMS_BASE_REWARD': 210,
     'MINE_LAYERS_BASE_REWARD': 720,
     'MINUTE': 60000,
@@ -137197,12 +135516,29 @@ module.exports = {
       'Tyranitarite': 48,
       'Venusaurite': 49,
     },
+    'ModalCollapseList': [
+      'achievementTrackerBody',
+      'battleItemContainerBody',
+      'dailyQuestDisplayBody',
+      'eggList',
+      'fluteItemContainerBody',
+      'oakItemsBody',
+      'pokeballSelectorBody',
+      'pokemonListBody',
+      'shortcutsBody',
+    ],
     'OrangeGyms': [
       'Mikan Island',
       'Navel Island',
       'Trovita Island',
       'Kumquat Island',
       'Supreme Gym Leader Drake',
+    ],
+    'OrreGyms': [
+      'Cipher Admin Ein',
+      'Cipher Admin Miror B.',
+      'Cipher Admin Dakim',
+      'Cipher Admin Venus',
     ],
     'PLATE_VALUE': 100,
     'PokeBlockColor': {
@@ -137216,9 +135552,9 @@ module.exports = {
       '7': 'Purple',
       '8': 'Indigo',
       '9': 'Brown',
-      '10': 'LiteBlue',
+      '10': 'Light_Blue',
       '11': 'Olive',
-      '12': 'Flaxen',
+      '12': 'Beige',
       '13': 'Gray',
       '14': 'White',
       'Black': 0,
@@ -137231,9 +135567,9 @@ module.exports = {
       'Purple': 7,
       'Indigo': 8,
       'Brown': 9,
-      'LiteBlue': 10,
+      'Light_Blue': 10,
       'Olive': 11,
-      'Flaxen': 12,
+      'Beige': 12,
       'Gray': 13,
       'White': 14,
     },
@@ -137295,11 +135631,45 @@ module.exports = {
       '22': 'Meloetta (Pirouette)',
       '23': 'Type: Null',
       '24': 'Poipole',
-      '25': 'Dracozolt',
-      '26': 'Arctozolt',
-      '27': 'Dracovish',
-      '28': 'Arctovish',
-      '29': 'Zarude (Dada)',
+      '25': 'Silvally (Fighting) 1',
+      '26': 'Silvally (Rock) 1',
+      '27': 'Silvally (Dark) 1',
+      '28': 'Silvally (Fairy) 1',
+      '29': 'Silvally (Water) 1',
+      '30': 'Silvally (Grass) 1',
+      '31': 'Silvally (Fire) 1',
+      '32': 'Silvally (Electric) 1',
+      '33': 'Silvally (Ice) 1',
+      '34': 'Silvally (Ground) 1',
+      '35': 'Silvally (Bug) 1',
+      '36': 'Silvally (Flying) 1',
+      '37': 'Silvally (Poison) 1',
+      '38': 'Silvally (Ghost) 1',
+      '39': 'Silvally (Psychic) 1',
+      '40': 'Silvally (Steel) 1',
+      '41': 'Silvally (Dragon) 1',
+      '42': 'Silvally (Fighting) 2',
+      '43': 'Silvally (Rock) 2',
+      '44': 'Silvally (Dark) 2',
+      '45': 'Silvally (Fairy) 2',
+      '46': 'Silvally (Water) 2',
+      '47': 'Silvally (Grass) 2',
+      '48': 'Silvally (Fire) 2',
+      '49': 'Silvally (Electric) 2',
+      '50': 'Silvally (Ice) 2',
+      '51': 'Silvally (Ground) 2',
+      '52': 'Silvally (Bug) 2',
+      '53': 'Silvally (Flying) 2',
+      '54': 'Silvally (Poison) 2',
+      '55': 'Silvally (Ghost) 2',
+      '56': 'Silvally (Psychic) 2',
+      '57': 'Silvally (Steel) 2',
+      '58': 'Silvally (Dragon) 2',
+      '59': 'Dracozolt',
+      '60': 'Arctozolt',
+      '61': 'Dracovish',
+      '62': 'Arctovish',
+      '63': 'Zarude (Dada)',
       'Pinkan Arbok': 0,
       'Pinkan Oddish': 1,
       'Pinkan Poliwhirl': 2,
@@ -137325,11 +135695,45 @@ module.exports = {
       'Meloetta (Pirouette)': 22,
       'Type: Null': 23,
       'Poipole': 24,
-      'Dracozolt': 25,
-      'Arctozolt': 26,
-      'Dracovish': 27,
-      'Arctovish': 28,
-      'Zarude (Dada)': 29,
+      'Silvally (Fighting) 1': 25,
+      'Silvally (Rock) 1': 26,
+      'Silvally (Dark) 1': 27,
+      'Silvally (Fairy) 1': 28,
+      'Silvally (Water) 1': 29,
+      'Silvally (Grass) 1': 30,
+      'Silvally (Fire) 1': 31,
+      'Silvally (Electric) 1': 32,
+      'Silvally (Ice) 1': 33,
+      'Silvally (Ground) 1': 34,
+      'Silvally (Bug) 1': 35,
+      'Silvally (Flying) 1': 36,
+      'Silvally (Poison) 1': 37,
+      'Silvally (Ghost) 1': 38,
+      'Silvally (Psychic) 1': 39,
+      'Silvally (Steel) 1': 40,
+      'Silvally (Dragon) 1': 41,
+      'Silvally (Fighting) 2': 42,
+      'Silvally (Rock) 2': 43,
+      'Silvally (Dark) 2': 44,
+      'Silvally (Fairy) 2': 45,
+      'Silvally (Water) 2': 46,
+      'Silvally (Grass) 2': 47,
+      'Silvally (Fire) 2': 48,
+      'Silvally (Electric) 2': 49,
+      'Silvally (Ice) 2': 50,
+      'Silvally (Ground) 2': 51,
+      'Silvally (Bug) 2': 52,
+      'Silvally (Flying) 2': 53,
+      'Silvally (Poison) 2': 54,
+      'Silvally (Ghost) 2': 55,
+      'Silvally (Psychic) 2': 56,
+      'Silvally (Steel) 2': 57,
+      'Silvally (Dragon) 2': 58,
+      'Dracozolt': 59,
+      'Arctozolt': 60,
+      'Dracovish': 61,
+      'Arctovish': 62,
+      'Zarude (Dada)': 63,
     },
     'PokemonStatisticsType': {
       'Captured': 'Captured',
@@ -137460,20 +135864,20 @@ module.exports = {
         'Near Space',
         'Phenac City Battles',
         'Pyrite Town Battles',
-        'Pyrite Colosseum Battles',
+        'Pyrite Colosseum',
         'Pyrite Building',
         'Pyrite Cave',
         'Relic Cave',
-        'Mt. Battle Battles',
-        'The Under Subway',
-        'Cipher Lab Battles',
+        'Mt. Battle',
+        'The Under',
+        'Cipher Lab',
         'Realgam Tower Battles',
-        'Realgam Colosseum Battles',
+        'Realgam Colosseum',
         'Snagem Hideout',
-        'Deep Colosseum Battles',
-        'Phenac Stadium Battles',
-        'Under Colosseum Battles',
-        'Orre Colosseum Battles',
+        'Deep Colosseum',
+        'Phenac Stadium',
+        'Under Colosseum',
+        'Orre Colosseum',
       ],
       [
         'Oreburgh Gate',
@@ -137777,6 +136181,12 @@ module.exports = {
         'E4 League',
         'Master League',
       ],
+      [
+        'Cipher Admin Ein',
+        'Cipher Admin Miror B.',
+        'Cipher Admin Dakim',
+        'Cipher Admin Venus',
+      ],
     ],
     'RegionalStarters': [
       [
@@ -137832,6 +136242,8 @@ module.exports = {
     'SAFARI_OUT_OF_BALLS': 'Game Over!<br>You have run out of safari balls to use.',
     'SAVE_TICK': 10000,
     'SECOND': 1000,
+    'SHADOW_BASE_REWARD': 500,
+    'SHADOW_EP_MODIFIER': 2,
     'SHINY_BASE_REWARD': 3000,
     'SHINY_CHANCE_BATTLE': 8192,
     'SHINY_CHANCE_BATTLEFRONTIER': 1024,
@@ -137844,6 +136256,7 @@ module.exports = {
     'SHINY_CHANCE_STONE': 2048,
     'SHINY_EP_MODIFIER': 5,
     'SHOPMON_EP_YIELD': 1000,
+    'SPECIAL_EVENT_TICK': 1000,
     'STONE_EP_YIELD': 1000,
     'SURPRISE_MULCH_MULTIPLIER': 1.5,
     'ShadowStatus': {
@@ -138248,6 +136661,11 @@ module.exports = {
       'Meta Groudon',
       'Latios',
       'Latias',
+      'Willie',
+      'Folly',
+      'Cipher Peon Doven',
+      'Cipher Peon Silton',
+      'Cipher Peon Kass',
       'Sevii Rocket Grunt 1',
       'Sevii Rocket Grunt 2',
       'Sevii Rocket Grunt 3',
@@ -138342,6 +136760,7 @@ module.exports = {
       'Matt 3',
       'Courtney 3',
       'Hoenn Stone Salesman',
+      'Kalos Stone Salesman',
       'Captain Stern',
       'Archie Primal',
       'Maxie Primal',
@@ -138409,6 +136828,13 @@ module.exports = {
       'Captain Sophocles',
       'Kahuna Nanu',
       'Gladion 3',
+      'Guzma Bug Memory',
+      'Kahili Flying Memory',
+      'Plumeria Poison Memory',
+      'Acerola Ghost Memory',
+      'Faba Psychic Memory',
+      'Molayne Steel Memory',
+      'Ryuki Dragon Memory',
       'Anabel',
       'Captain Mina UB',
       'Kahuna Nanu UB',
@@ -138726,97 +137152,101 @@ module.exports = {
     '42': 'Spike_Shell',
     '43': 'Jade_Star',
     '44': 'Elite_OrangeChampion',
-    '45': 'Coal',
-    '46': 'Forest',
-    '47': 'Relic',
-    '48': 'Cobble',
-    '49': 'Fen',
-    '50': 'Mine',
-    '51': 'Icicle',
-    '52': 'Beacon',
-    '53': 'Elite_Aaron',
-    '54': 'Elite_Bertha',
-    '55': 'Elite_Flint',
-    '56': 'Elite_Lucian',
-    '57': 'Elite_SinnohChampion',
-    '58': 'Basic',
-    '59': 'Toxic',
-    '60': 'Insect',
-    '61': 'Bolt',
-    '62': 'Quake',
-    '63': 'Jet',
-    '64': 'Legend',
-    '65': 'Wave',
-    '66': 'Elite_Shauntal',
-    '67': 'Elite_Marshal',
-    '68': 'Elite_Grimsley',
-    '69': 'Elite_Caitlin',
-    '70': 'Elite_UnovaChampion',
-    '71': 'Bug',
-    '72': 'Cliff',
-    '73': 'Rumble',
-    '74': 'Plant',
-    '75': 'Voltage',
-    '76': 'Fairy',
-    '77': 'Psychic',
-    '78': 'Iceberg',
-    '79': 'Elite_Malva',
-    '80': 'Elite_Siebold',
-    '81': 'Elite_Wikstrom',
-    '82': 'Elite_Drasna',
-    '83': 'Elite_KalosChampion',
-    '84': 'NormaliumZ',
-    '85': 'FightiniumZ',
-    '86': 'WateriumZ',
-    '87': 'FiriumZ',
-    '88': 'GrassiumZ',
-    '89': 'RockiumZ',
-    '90': 'ElectriumZ',
-    '91': 'GhostiumZ',
-    '92': 'DarkiniumZ',
-    '93': 'DragoniumZ',
-    '94': 'FairiumZ',
-    '95': 'GroundiumZ',
-    '96': 'Elite_Olivia',
-    '97': 'Elite_Acerola',
-    '98': 'Elite_Molayne',
-    '99': 'Elite_Kahili',
-    '100': 'Elite_AlolaChampion',
-    '101': 'Friend_League',
-    '102': 'Quick_League',
-    '103': 'Heavy_League',
-    '104': 'Great_League',
-    '105': 'Fast_League',
-    '106': 'Luxury_League',
-    '107': 'Heal_League',
-    '108': 'Ultra_League',
-    '109': 'E4_League',
-    '110': 'Master_League',
-    '111': 'Galar_Grass',
-    '112': 'Galar_Water',
-    '113': 'Galar_Fire',
-    '114': 'Galar_Fighting',
-    '115': 'Galar_Ghost',
-    '116': 'Galar_Fairy',
-    '117': 'Galar_Rock',
-    '118': 'Galar_Ice',
-    '119': 'Galar_Dark',
-    '120': 'Galar_Dragon',
-    '121': 'Elite_Marnie',
-    '122': 'Elite_Bede',
-    '123': 'Elite_Hop',
-    '124': 'Elite_GalarChampion',
-    '125': 'Elite_ArmorPoison',
-    '126': 'Elite_ArmorPsychic',
-    '127': 'Elite_ArmorMatron',
-    '128': 'Elite_ArmorChampion',
-    '129': 'Elite_CrownChampion',
-    '130': 'Elite_NobleKleavor',
-    '131': 'Elite_NobleLilligant',
-    '132': 'Elite_NobleArcanine',
-    '133': 'Elite_NobleElectrode',
-    '134': 'Elite_NobleAvalugg',
-    '135': 'Elite_Volo',
+    '45': 'Elite_F_Disk',
+    '46': 'Elite_L_Disk',
+    '47': 'Elite_R_Disk',
+    '48': 'Elite_U_Disk',
+    '49': 'Coal',
+    '50': 'Forest',
+    '51': 'Relic',
+    '52': 'Cobble',
+    '53': 'Fen',
+    '54': 'Mine',
+    '55': 'Icicle',
+    '56': 'Beacon',
+    '57': 'Elite_Aaron',
+    '58': 'Elite_Bertha',
+    '59': 'Elite_Flint',
+    '60': 'Elite_Lucian',
+    '61': 'Elite_SinnohChampion',
+    '62': 'Basic',
+    '63': 'Toxic',
+    '64': 'Insect',
+    '65': 'Bolt',
+    '66': 'Quake',
+    '67': 'Jet',
+    '68': 'Legend',
+    '69': 'Wave',
+    '70': 'Elite_Shauntal',
+    '71': 'Elite_Marshal',
+    '72': 'Elite_Grimsley',
+    '73': 'Elite_Caitlin',
+    '74': 'Elite_UnovaChampion',
+    '75': 'Bug',
+    '76': 'Cliff',
+    '77': 'Rumble',
+    '78': 'Plant',
+    '79': 'Voltage',
+    '80': 'Fairy',
+    '81': 'Psychic',
+    '82': 'Iceberg',
+    '83': 'Elite_Malva',
+    '84': 'Elite_Siebold',
+    '85': 'Elite_Wikstrom',
+    '86': 'Elite_Drasna',
+    '87': 'Elite_KalosChampion',
+    '88': 'NormaliumZ',
+    '89': 'FightiniumZ',
+    '90': 'WateriumZ',
+    '91': 'FiriumZ',
+    '92': 'GrassiumZ',
+    '93': 'RockiumZ',
+    '94': 'ElectriumZ',
+    '95': 'GhostiumZ',
+    '96': 'DarkiniumZ',
+    '97': 'DragoniumZ',
+    '98': 'FairiumZ',
+    '99': 'GroundiumZ',
+    '100': 'Elite_Olivia',
+    '101': 'Elite_Acerola',
+    '102': 'Elite_Molayne',
+    '103': 'Elite_Kahili',
+    '104': 'Elite_AlolaChampion',
+    '105': 'Friend_League',
+    '106': 'Quick_League',
+    '107': 'Heavy_League',
+    '108': 'Great_League',
+    '109': 'Fast_League',
+    '110': 'Luxury_League',
+    '111': 'Heal_League',
+    '112': 'Ultra_League',
+    '113': 'E4_League',
+    '114': 'Master_League',
+    '115': 'Galar_Grass',
+    '116': 'Galar_Water',
+    '117': 'Galar_Fire',
+    '118': 'Galar_Fighting',
+    '119': 'Galar_Ghost',
+    '120': 'Galar_Fairy',
+    '121': 'Galar_Rock',
+    '122': 'Galar_Ice',
+    '123': 'Galar_Dark',
+    '124': 'Galar_Dragon',
+    '125': 'Elite_Marnie',
+    '126': 'Elite_Bede',
+    '127': 'Elite_Hop',
+    '128': 'Elite_GalarChampion',
+    '129': 'Elite_ArmorPoison',
+    '130': 'Elite_ArmorPsychic',
+    '131': 'Elite_ArmorMatron',
+    '132': 'Elite_ArmorChampion',
+    '133': 'Elite_CrownChampion',
+    '134': 'Elite_NobleKleavor',
+    '135': 'Elite_NobleLilligant',
+    '136': 'Elite_NobleArcanine',
+    '137': 'Elite_NobleElectrode',
+    '138': 'Elite_NobleAvalugg',
+    '139': 'Elite_Volo',
     'None': 0,
     'Boulder': 1,
     'Cascade': 2,
@@ -138862,97 +137292,101 @@ module.exports = {
     'Spike_Shell': 42,
     'Jade_Star': 43,
     'Elite_OrangeChampion': 44,
-    'Coal': 45,
-    'Forest': 46,
-    'Relic': 47,
-    'Cobble': 48,
-    'Fen': 49,
-    'Mine': 50,
-    'Icicle': 51,
-    'Beacon': 52,
-    'Elite_Aaron': 53,
-    'Elite_Bertha': 54,
-    'Elite_Flint': 55,
-    'Elite_Lucian': 56,
-    'Elite_SinnohChampion': 57,
-    'Basic': 58,
-    'Toxic': 59,
-    'Insect': 60,
-    'Bolt': 61,
-    'Quake': 62,
-    'Jet': 63,
-    'Legend': 64,
-    'Wave': 65,
-    'Elite_Shauntal': 66,
-    'Elite_Marshal': 67,
-    'Elite_Grimsley': 68,
-    'Elite_Caitlin': 69,
-    'Elite_UnovaChampion': 70,
-    'Bug': 71,
-    'Cliff': 72,
-    'Rumble': 73,
-    'Plant': 74,
-    'Voltage': 75,
-    'Fairy': 76,
-    'Psychic': 77,
-    'Iceberg': 78,
-    'Elite_Malva': 79,
-    'Elite_Siebold': 80,
-    'Elite_Wikstrom': 81,
-    'Elite_Drasna': 82,
-    'Elite_KalosChampion': 83,
-    'NormaliumZ': 84,
-    'FightiniumZ': 85,
-    'WateriumZ': 86,
-    'FiriumZ': 87,
-    'GrassiumZ': 88,
-    'RockiumZ': 89,
-    'ElectriumZ': 90,
-    'GhostiumZ': 91,
-    'DarkiniumZ': 92,
-    'DragoniumZ': 93,
-    'FairiumZ': 94,
-    'GroundiumZ': 95,
-    'Elite_Olivia': 96,
-    'Elite_Acerola': 97,
-    'Elite_Molayne': 98,
-    'Elite_Kahili': 99,
-    'Elite_AlolaChampion': 100,
-    'Friend_League': 101,
-    'Quick_League': 102,
-    'Heavy_League': 103,
-    'Great_League': 104,
-    'Fast_League': 105,
-    'Luxury_League': 106,
-    'Heal_League': 107,
-    'Ultra_League': 108,
-    'E4_League': 109,
-    'Master_League': 110,
-    'Galar_Grass': 111,
-    'Galar_Water': 112,
-    'Galar_Fire': 113,
-    'Galar_Fighting': 114,
-    'Galar_Ghost': 115,
-    'Galar_Fairy': 116,
-    'Galar_Rock': 117,
-    'Galar_Ice': 118,
-    'Galar_Dark': 119,
-    'Galar_Dragon': 120,
-    'Elite_Marnie': 121,
-    'Elite_Bede': 122,
-    'Elite_Hop': 123,
-    'Elite_GalarChampion': 124,
-    'Elite_ArmorPoison': 125,
-    'Elite_ArmorPsychic': 126,
-    'Elite_ArmorMatron': 127,
-    'Elite_ArmorChampion': 128,
-    'Elite_CrownChampion': 129,
-    'Elite_NobleKleavor': 130,
-    'Elite_NobleLilligant': 131,
-    'Elite_NobleArcanine': 132,
-    'Elite_NobleElectrode': 133,
-    'Elite_NobleAvalugg': 134,
-    'Elite_Volo': 135,
+    'Elite_F_Disk': 45,
+    'Elite_L_Disk': 46,
+    'Elite_R_Disk': 47,
+    'Elite_U_Disk': 48,
+    'Coal': 49,
+    'Forest': 50,
+    'Relic': 51,
+    'Cobble': 52,
+    'Fen': 53,
+    'Mine': 54,
+    'Icicle': 55,
+    'Beacon': 56,
+    'Elite_Aaron': 57,
+    'Elite_Bertha': 58,
+    'Elite_Flint': 59,
+    'Elite_Lucian': 60,
+    'Elite_SinnohChampion': 61,
+    'Basic': 62,
+    'Toxic': 63,
+    'Insect': 64,
+    'Bolt': 65,
+    'Quake': 66,
+    'Jet': 67,
+    'Legend': 68,
+    'Wave': 69,
+    'Elite_Shauntal': 70,
+    'Elite_Marshal': 71,
+    'Elite_Grimsley': 72,
+    'Elite_Caitlin': 73,
+    'Elite_UnovaChampion': 74,
+    'Bug': 75,
+    'Cliff': 76,
+    'Rumble': 77,
+    'Plant': 78,
+    'Voltage': 79,
+    'Fairy': 80,
+    'Psychic': 81,
+    'Iceberg': 82,
+    'Elite_Malva': 83,
+    'Elite_Siebold': 84,
+    'Elite_Wikstrom': 85,
+    'Elite_Drasna': 86,
+    'Elite_KalosChampion': 87,
+    'NormaliumZ': 88,
+    'FightiniumZ': 89,
+    'WateriumZ': 90,
+    'FiriumZ': 91,
+    'GrassiumZ': 92,
+    'RockiumZ': 93,
+    'ElectriumZ': 94,
+    'GhostiumZ': 95,
+    'DarkiniumZ': 96,
+    'DragoniumZ': 97,
+    'FairiumZ': 98,
+    'GroundiumZ': 99,
+    'Elite_Olivia': 100,
+    'Elite_Acerola': 101,
+    'Elite_Molayne': 102,
+    'Elite_Kahili': 103,
+    'Elite_AlolaChampion': 104,
+    'Friend_League': 105,
+    'Quick_League': 106,
+    'Heavy_League': 107,
+    'Great_League': 108,
+    'Fast_League': 109,
+    'Luxury_League': 110,
+    'Heal_League': 111,
+    'Ultra_League': 112,
+    'E4_League': 113,
+    'Master_League': 114,
+    'Galar_Grass': 115,
+    'Galar_Water': 116,
+    'Galar_Fire': 117,
+    'Galar_Fighting': 118,
+    'Galar_Ghost': 119,
+    'Galar_Fairy': 120,
+    'Galar_Rock': 121,
+    'Galar_Ice': 122,
+    'Galar_Dark': 123,
+    'Galar_Dragon': 124,
+    'Elite_Marnie': 125,
+    'Elite_Bede': 126,
+    'Elite_Hop': 127,
+    'Elite_GalarChampion': 128,
+    'Elite_ArmorPoison': 129,
+    'Elite_ArmorPsychic': 130,
+    'Elite_ArmorMatron': 131,
+    'Elite_ArmorChampion': 132,
+    'Elite_CrownChampion': 133,
+    'Elite_NobleKleavor': 134,
+    'Elite_NobleLilligant': 135,
+    'Elite_NobleArcanine': 136,
+    'Elite_NobleElectrode': 137,
+    'Elite_NobleAvalugg': 138,
+    'Elite_Volo': 139,
   },
   'GymList': {
     'Pewter City': {
@@ -141548,6 +139982,258 @@ module.exports = {
       },
       'buttonText': 'Supreme Gym Leader Drake',
     },
+    'Cipher Admin Ein': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'leaderName': 'Cipher Admin Ein',
+      'town': 'Cipher Admin Ein',
+      'pokemons': [
+        {
+          'name': 'Crobat',
+          'maxHealth': 12099520,
+          'level': 48,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Pelipper',
+          'maxHealth': 12099520,
+          'level': 49,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Rhydon',
+          'maxHealth': 12099520,
+          'level': 50,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Starmie',
+          'maxHealth': 12099520,
+          'level': 49,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Manectric',
+          'maxHealth': 12099520,
+          'level': 50,
+          'requirements': [],
+          'shadow': 0,
+        },
+      ],
+      'badgeReward': 45,
+      'moneyReward': 10000,
+      'defeatMessage': 'Urrrgh… What unbelievable power…',
+      'optionalArgs': {
+        'displayName': 'Challenge Ein',
+      },
+      'flags': {
+        'quest': true,
+        'achievement': true,
+        'champion': false,
+      },
+      'buttonText': 'Challenge Ein',
+    },
+    'Cipher Admin Miror B.': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'leaderName': 'Cipher Admin Miror B',
+      'town': 'Cipher Admin Miror B.',
+      'pokemons': [
+        {
+          'name': 'Ludicolo',
+          'maxHealth': 11599520,
+          'level': 44,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Ludicolo',
+          'maxHealth': 11599520,
+          'level': 45,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Loudred',
+          'maxHealth': 11599520,
+          'level': 46,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Golduck',
+          'maxHealth': 11599520,
+          'level': 45,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Armaldo',
+          'maxHealth': 11599520,
+          'level': 43,
+          'requirements': [],
+          'shadow': 0,
+        },
+      ],
+      'badgeReward': 46,
+      'moneyReward': 10000,
+      'defeatMessage': "I'm an awesome dancer… But I can't win in battles!",
+      'optionalArgs': {
+        'displayName': 'Challenge Miror B.',
+      },
+      'flags': {
+        'quest': true,
+        'achievement': true,
+        'champion': false,
+      },
+      'buttonText': 'Challenge Miror B.',
+    },
+    'Cipher Admin Dakim': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'leaderName': 'Cipher Admin Dakim',
+      'town': 'Cipher Admin Dakim',
+      'pokemons': [
+        {
+          'name': 'Claydol',
+          'maxHealth': 11999520,
+          'level': 46,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Forretress',
+          'maxHealth': 11999520,
+          'level': 45,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Flygon',
+          'maxHealth': 11999520,
+          'level': 46,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Whiscash',
+          'maxHealth': 11999520,
+          'level': 46,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Houndoom',
+          'maxHealth': 11999520,
+          'level': 47,
+          'requirements': [],
+          'shadow': 0,
+        },
+      ],
+      'badgeReward': 47,
+      'moneyReward': 10000,
+      'defeatMessage': "This can't be! The mighty Dakim loses again?",
+      'optionalArgs': {
+        'displayName': 'Challenge Dakim',
+      },
+      'flags': {
+        'quest': true,
+        'achievement': true,
+        'champion': false,
+      },
+      'buttonText': 'Challenge Dakim',
+    },
+    'Cipher Admin Venus': {
+      'tooltip': 'Battle Gym Leaders to earn badges',
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': 'Shadows in the Desert',
+          'hint': 'Questline Shadows in the Desert needs to be completed.',
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'leaderName': 'Cipher Admin Venus',
+      'town': 'Cipher Admin Venus',
+      'pokemons': [
+        {
+          'name': 'Bellossom',
+          'maxHealth': 12299520,
+          'level': 47,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Misdreavus',
+          'maxHealth': 12299520,
+          'level': 47,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Raichu',
+          'maxHealth': 12299520,
+          'level': 48,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Wigglytuff',
+          'maxHealth': 12299520,
+          'level': 48,
+          'requirements': [],
+          'shadow': 0,
+        },
+        {
+          'name': 'Milotic',
+          'maxHealth': 12299520,
+          'level': 48,
+          'requirements': [],
+          'shadow': 0,
+        },
+      ],
+      'badgeReward': 48,
+      'moneyReward': 10000,
+      'defeatMessage': "I shall forget that I ever battled with you. Yes, that's what I'll do. Ohohohoh!",
+      'optionalArgs': {
+        'displayName': 'Challenge Venus',
+      },
+      'flags': {
+        'quest': true,
+        'achievement': true,
+        'champion': false,
+      },
+      'buttonText': 'Challenge Venus',
+    },
     'Oreburgh City': {
       'tooltip': 'Battle Gym Leaders to earn badges',
       'requirements': [
@@ -141584,7 +140270,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 45,
+      'badgeReward': 49,
       'moneyReward': 250,
       'defeatMessage': "This is embarrassing... I went and lost to a Trainer who didn't have a single Gym Badge... But that's tough. You were strong, and I was weak. That's all there is. According to Pokémon League rules, I have to give you our Gym Badge since you've beaten me, the Leader. Heres your official Pokémon League Coal Badge.",
       'optionalArgs': {},
@@ -141601,7 +140287,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 45,
+          'badge': 49,
           'hint': 'Requires the Coal badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -141631,7 +140317,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 46,
+      'badgeReward': 50,
       'moneyReward': 400,
       'defeatMessage': "I might've said it before, but you're really tough! Wasn't it hard for you to raise your Pokémon to be so good? I guess that's a measure of how much you love your Pokémon. In recognition of that, I proudly grant you this!\"",
       'optionalArgs': {},
@@ -141648,7 +140334,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 46,
+          'badge': 50,
           'hint': 'Requires the Forest badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -141678,7 +140364,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 47,
+      'badgeReward': 51,
       'moneyReward': 740,
       'defeatMessage': 'I am dumbfounded! So very, very strong! You, your Pokémon, so strong! Your power is admirable! I shall honor it with this Gym Badge!"',
       'optionalArgs': {},
@@ -141695,7 +140381,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 47,
+          'badge': 51,
           'hint': 'Requires the Relic badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -141725,7 +140411,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 48,
+      'badgeReward': 52,
       'moneyReward': 1200,
       'defeatMessage': '...OK. You win. That was a tough loss. I learned a lot from it. Please, accept this Gym Badge.',
       'optionalArgs': {},
@@ -141772,7 +140458,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 49,
+      'badgeReward': 53,
       'moneyReward': 2500,
       'defeatMessage': "It seems the undertow pulled me under... But I had a great time battling with you! You've earned this!",
       'optionalArgs': {},
@@ -141819,7 +140505,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 50,
+      'badgeReward': 54,
       'moneyReward': 4800,
       'defeatMessage': 'You were strong enough to take down my prized team of Pokémon. In recognition of that power, I give you this: the Mine Badge!',
       'optionalArgs': {},
@@ -141836,7 +140522,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 50,
+          'badge': 54,
           'hint': 'Requires the Mine badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -141873,7 +140559,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 51,
+      'badgeReward': 55,
       'moneyReward': 8000,
       'defeatMessage': "Wow! You're great! You've earned my respect! I think your focus and will bowled us over totally. Oh, that's right! I'm supposed to give you this!",
       'optionalArgs': {},
@@ -141890,7 +140576,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 51,
+          'badge': 55,
           'hint': 'Requires the Icicle badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -141927,7 +140613,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 52,
+      'badgeReward': 56,
       'moneyReward': 12000,
       'defeatMessage': "...Hehehe. Hahahah! ...That was the most fun I've had in a battle since...I don't know when! It's also made me excited to know you and your team will keep battling to greater heights! This is your eighth Gym Badge. You've earned this!",
       'optionalArgs': {},
@@ -141988,7 +140674,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 53,
+      'badgeReward': 57,
       'moneyReward': 18000,
       'defeatMessage': "I lost with the most beautiful and toughest of the bug Pokémon... We lost because I wasn't good enough... That's it! Back to training camp! Let's hear it for me! No... That was wrong... Anyway... Go on to the next room! Three Trainers are waiting for you. They are all tougher than me.",
       'optionalArgs': {},
@@ -142005,7 +140691,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 53,
+          'badge': 57,
           'hint': 'Requires the Elite Aaron badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142049,7 +140735,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 54,
+      'badgeReward': 58,
       'moneyReward': 18000,
       'defeatMessage': "You're quite something, youngster. I like how you and your Pokémon earned the win by working as one. That's what makes you so strong. Ahahaha! I think that you can go as far as you want.",
       'optionalArgs': {},
@@ -142066,7 +140752,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 54,
+          'badge': 58,
           'hint': 'Requires the Elite Bertha badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142110,7 +140796,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 55,
+      'badgeReward': 59,
       'moneyReward': 18000,
       'defeatMessage': '.........Keep going...I know your spirit burns hot. Your whole team does.',
       'optionalArgs': {},
@@ -142127,7 +140813,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 55,
+          'badge': 59,
           'hint': 'Requires the Elite Flint badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142171,7 +140857,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 56,
+      'badgeReward': 60,
       'moneyReward': 18000,
       'defeatMessage': "Congratulations. You have beaten the Elite Four. However, that doesn't mean you're done with the Pokémon league. There remains the Champion. I should warn you—the Champion is far stronger than the Elite Four. Now, go on. Step through the doorway to your final battle.",
       'optionalArgs': {},
@@ -142188,7 +140874,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 56,
+          'badge': 60,
           'hint': 'Requires the Elite Lucian badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142239,7 +140925,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 57,
+      'badgeReward': 61,
       'moneyReward': 32000,
       'defeatMessage': "That was excellent. Truly, an outstanding battle. You gave the support your Pokémon needed to maximize their power. And you guided them with certainty to secure victory. You have both passion and calculating coolness. Together, you and your Pokémon can overcome any challenge that may come your way. Those are the impressions I got from our battle. I'm glad I got to take part in the crowning of Sinnoh's new Champion!",
       'optionalArgs': {},
@@ -142287,7 +140973,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 58,
+      'badgeReward': 62,
       'moneyReward': 500,
       'defeatMessage': 'That battle has made me feel really glad you were my first challenger as a Gym Leader… I give you this in honor of the strength you and your Pokémon showed!',
       'optionalArgs': {},
@@ -142304,7 +140990,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 58,
+          'badge': 62,
           'hint': 'Requires the Basic badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142334,7 +141020,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 59,
+      'badgeReward': 63,
       'moneyReward': 800,
       'defeatMessage': "Sigh! What are you doing losing, Roxie?! Well…I guess that means you're strong! This stinks, but I gave it everything I had, and I feel revitalized and refreshed now! Here! Proof that you beat me!",
       'optionalArgs': {},
@@ -142389,7 +141075,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 60,
+      'badgeReward': 64,
       'moneyReward': 1500,
       'defeatMessage': "Oh hoo… You are very strong indeed! I guess it's no surprise I lost. Here! Take this Insect Badge! I think it'll suit you!",
       'optionalArgs': {},
@@ -142406,7 +141092,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 60,
+          'badge': 64,
           'hint': 'Requires the Insect badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142443,7 +141129,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 61,
+      'badgeReward': 65,
       'moneyReward': 2600,
       'defeatMessage': "Well… Now you… you're an even more wonderful Trainer than I expected. Your sweet fighting style swept me off my feet! Take this!",
       'optionalArgs': {},
@@ -142460,7 +141146,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 61,
+          'badge': 65,
           'hint': 'Requires the Bolt badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142497,7 +141183,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 62,
+      'badgeReward': 66,
       'moneyReward': 4800,
       'defeatMessage': "Phew… You're really somethin'! Li'l whippersnapper Trainers who pack a real punch keep showin' up one after another. Mrmph. Here! Take this!",
       'optionalArgs': {},
@@ -142514,7 +141200,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 62,
+          'badge': 66,
           'hint': 'Requires the Quake badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142551,7 +141237,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 63,
+      'badgeReward': 67,
       'moneyReward': 7600,
       'defeatMessage': "You're an amazing Pokémon Trainer. My Pokémon and I are happy because for the first time in quite a while--about two years, I'd say--we could fight with our full strength. This is an official League Gym Badge. But this is just a stepping-stone.",
       'optionalArgs': {},
@@ -142568,7 +141254,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 63,
+          'badge': 67,
           'hint': 'Requires the Jet badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142605,7 +141291,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 64,
+      'badgeReward': 68,
       'moneyReward': 14000,
       'defeatMessage': "Wonderful. I'm grateful that we had a chance to meet and battle. It reminded me that Pokémon battles are about working with others to meet our challenges together.",
       'optionalArgs': {},
@@ -142622,7 +141308,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 64,
+          'badge': 68,
           'hint': 'Requires the Legend badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142659,7 +141345,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 65,
+      'badgeReward': 69,
       'moneyReward': 27000,
       'defeatMessage': "You don't just look strong, you're strong fo' reals! Eh, I was swept away, too! Oh yeah, yo. I was so surprised that I forgot! I gotta give this to you!",
       'optionalArgs': {},
@@ -142676,7 +141362,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 65,
+          'badge': 69,
           'hint': 'Requires the Wave badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142720,7 +141406,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 66,
+      'badgeReward': 70,
       'moneyReward': 32000,
       'defeatMessage': "My Pokémon and the challenger's Pokémon. Everyone battled even though they were hurt... Thank you.",
       'optionalArgs': {},
@@ -142737,7 +141423,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 65,
+          'badge': 69,
           'hint': 'Requires the Wave badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142781,7 +141467,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 67,
+      'badgeReward': 71,
       'moneyReward': 32000,
       'defeatMessage': 'Whew! Well done! As your battles continue, aim for even greater heights!',
       'optionalArgs': {},
@@ -142798,7 +141484,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 65,
+          'badge': 69,
           'hint': 'Requires the Wave badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142842,7 +141528,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 68,
+      'badgeReward': 72,
       'moneyReward': 32000,
       'defeatMessage': 'Whether or not you get to fight at full strength, whether or not luck smiles on you--none of that matters. Only results matter. And a loss is a loss. See, victory shines like a bright light. And right now, you and your Pokémon are shining brilliantly.',
       'optionalArgs': {},
@@ -142859,7 +141545,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 65,
+          'badge': 69,
           'hint': 'Requires the Wave badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142903,7 +141589,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 69,
+      'badgeReward': 73,
       'moneyReward': 32000,
       'defeatMessage': 'You and your Pokémon are both excellent and elegant. To have been able to battle against such a splendid team... My Pokémon and I learned a lot! I offer you my thanks.',
       'optionalArgs': {},
@@ -142920,28 +141606,28 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 66,
+          'badge': 70,
           'hint': 'Requires the Elite Shauntal badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 67,
+          'badge': 71,
           'hint': 'Requires the Elite Marshal badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 68,
+          'badge': 72,
           'hint': 'Requires the Elite Grimsley badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 69,
+          'badge': 73,
           'hint': 'Requires the Elite Caitlin badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -142992,7 +141678,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 70,
+      'badgeReward': 74,
       'moneyReward': 64000,
       'defeatMessage': "I'm upset I couldn't win! But you know what? More than that, I'm happy! I mean, come on. By having a serious battle, you and your Pokémon, and me and my Pokémon, we all got to know one another better than before! Yep, we sure did! OK, let's go!",
       'optionalArgs': {},
@@ -143034,7 +141720,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 71,
+      'badgeReward': 75,
       'moneyReward': 800,
       'defeatMessage': "Young Trainer, you... No, it wasn't you alone. You and your Pokémon have shown me a whole new depth of field! Fantastic! Just fantastic!",
       'optionalArgs': {},
@@ -143051,7 +141737,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 71,
+          'badge': 75,
           'hint': 'Requires the Bug badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143074,7 +141760,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 72,
+      'badgeReward': 76,
       'moneyReward': 1700,
       'defeatMessage': "There are some things that seem out of reach no matter how hard you try. However, it's important that you never give up--no matter the opponent or the odds. I could tell from our battle that you and your Pokémon understand that. To commemorate such an impressive show of teamwork, please accept the Cliff Badge!",
       'optionalArgs': {},
@@ -143121,7 +141807,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 73,
+      'badgeReward': 77,
       'moneyReward': 3800,
       'defeatMessage': "Oh! I have been defeated! Alack, alay! Lady Korrina gave a terrible display! This is it. I must give up my title and admit that your strength far exceeds-- Just teasing! But here's your Badge. Boy, you'll be rolling in 'em soon!",
       'optionalArgs': {},
@@ -143168,7 +141854,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 74,
+      'badgeReward': 78,
       'moneyReward': 5500,
       'defeatMessage': "Yeh believe in yer Pokémon... And they believe in yeh, too... Mighty oaks from acorns grow. Go on, then. Yeh've earned it. Here's yer own Plant Badge, sprout.",
       'optionalArgs': {},
@@ -143216,7 +141902,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 75,
+      'badgeReward': 79,
       'moneyReward': 9000,
       'defeatMessage': "Oh, Bonnie... When will you learn there's no shame in losing? I'm glad whenever I get to learn something new thanks to strong challengers like you here.",
       'optionalArgs': {},
@@ -143233,7 +141919,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 75,
+          'badge': 79,
           'hint': 'Requires the Voltage badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143263,7 +141949,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 76,
+      'badgeReward': 80,
       'moneyReward': 16000,
       'defeatMessage': 'Yes... That was a fine battle. I shall reward you for this great victory. This is the Fairy Badge. It is yours now. Its beauty is captivating, is it not? ... ... ... ... ... ... Ah... Do forgive me. I was so captivated, I forgot for a moment that it is yours.',
       'optionalArgs': {},
@@ -143310,7 +141996,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 77,
+      'badgeReward': 81,
       'moneyReward': 30000,
       'defeatMessage': 'Now, the Psychic Badge. A testament to your skill. Proof of your power.',
       'optionalArgs': {},
@@ -143358,7 +142044,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 78,
+      'badgeReward': 82,
       'moneyReward': 52000,
       'defeatMessage': "Impressive! Your Pokémon fought with great courage. I can tell that you've trained your Pokémon well.",
       'optionalArgs': {},
@@ -143375,7 +142061,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 78,
+          'badge': 82,
           'hint': 'Requires the Iceberg badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143412,7 +142098,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 79,
+      'badgeReward': 83,
       'moneyReward': 64000,
       'defeatMessage': 'What news... So a new challenger has defeated Malva of the Elite Four!',
       'optionalArgs': {},
@@ -143429,7 +142115,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 78,
+          'badge': 82,
           'hint': 'Requires the Iceberg badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143466,7 +142152,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 80,
+      'badgeReward': 84,
       'moneyReward': 64000,
       'defeatMessage': 'I shall store my memory of you and your Pokémon forever away within my heart.',
       'optionalArgs': {},
@@ -143483,7 +142169,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 78,
+          'badge': 82,
           'hint': 'Requires the Iceberg badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143520,7 +142206,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 81,
+      'badgeReward': 85,
       'moneyReward': 64000,
       'defeatMessage': 'Glorious! The trust that you share with your honorable Pokémon surpasses even mine!',
       'optionalArgs': {},
@@ -143537,7 +142223,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 78,
+          'badge': 82,
           'hint': 'Requires the Iceberg badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143574,7 +142260,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 82,
+      'badgeReward': 86,
       'moneyReward': 64000,
       'defeatMessage': "Oh, dear me. That sure was a quick battle... I do hope you'll come back again sometime!",
       'optionalArgs': {},
@@ -143591,28 +142277,28 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 79,
+          'badge': 83,
           'hint': 'Requires the Elite Malva badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 80,
+          'badge': 84,
           'hint': 'Requires the Elite Siebold badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 81,
+          'badge': 85,
           'hint': 'Requires the Elite Wikstrom badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 82,
+          'badge': 86,
           'hint': 'Requires the Elite Drasna badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -143663,7 +142349,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 83,
+      'badgeReward': 87,
       'moneyReward': 128000,
       'defeatMessage': 'Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart...',
       'optionalArgs': {},
@@ -143710,7 +142396,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 85,
+      'badgeReward': 89,
       'moneyReward': 128000,
       'defeatMessage': 'The results come as no surprise to me. What a fine Trainer...and what fine Pokémon, too! Accept this Z-Crystal! It allows Trainers to share their power with their partner Pokémon!',
       'optionalArgs': {
@@ -143759,7 +142445,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 89,
+      'badgeReward': 93,
       'moneyReward': 128000,
       'defeatMessage': 'How lovely. Diamonds only sparkle after coal is pushed to its absolute limit. Here. The Rock-type Z-Crystal... The Rockium Z is all yours!',
       'optionalArgs': {
@@ -143808,7 +142494,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 92,
+      'badgeReward': 96,
       'moneyReward': 128000,
       'defeatMessage': 'Hmph... heh. Let me fix your team up for you. Here. This is yours.',
       'optionalArgs': {
@@ -143865,7 +142551,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 95,
+      'badgeReward': 99,
       'moneyReward': 128000,
       'defeatMessage': 'You have succeeded in your final grand trial! That was enjoyable. Looks like I cannot beat you even when I am not holding back... Take your Ground-type Z-Crystal then... This Groundium Z is yours!',
       'optionalArgs': {
@@ -143906,7 +142592,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 84,
+      'badgeReward': 88,
       'moneyReward': 128000,
       'defeatMessage': 'What an incredible Trainer you are! The Z-Crystal from the pedestal is yours now! It is known as Normalium Z!',
       'optionalArgs': {},
@@ -143945,7 +142631,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 86,
+      'badgeReward': 90,
       'moneyReward': 128000,
       'defeatMessage': "Very well done! You do know what this is, don't you? Please take this Waterium Z.",
       'optionalArgs': {},
@@ -143984,7 +142670,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 87,
+      'badgeReward': 91,
       'moneyReward': 128000,
       'defeatMessage': 'Whoa! S-spectacular! That Pokémon was protecting this Firium Z. Now it is yours.',
       'optionalArgs': {},
@@ -144023,7 +142709,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 88,
+      'badgeReward': 92,
       'moneyReward': 128000,
       'defeatMessage': "Wow, you're even stronger than I thought! Looks like you've cleared all three of Akala's trials! Here! A gift for such an inspiring young Trainer!",
       'optionalArgs': {},
@@ -144062,7 +142748,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 90,
+      'badgeReward': 94,
       'moneyReward': 128000,
       'defeatMessage': "That Pokémon was really something else! Here, I'll give you this Electrium Z to reward you for beating it.",
       'optionalArgs': {},
@@ -144101,7 +142787,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 91,
+      'badgeReward': 95,
       'moneyReward': 128000,
       'defeatMessage': "Welcome back! Now let's see how you did... Yup! You passed my trial! Here you go!",
       'optionalArgs': {},
@@ -144140,7 +142826,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 93,
+      'badgeReward': 97,
       'moneyReward': 128000,
       'defeatMessage': '<i>You obtained a Dragon-Type Z-Crystal. The Dragonium Z is yours!<i>',
       'optionalArgs': {
@@ -144181,7 +142867,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 94,
+      'badgeReward': 98,
       'moneyReward': 128000,
       'defeatMessage': "That's a pretty great picture. You and your Pokémon! You're a great Pokémon Trainer! So here you go! A piece of Fairium Z for you!",
       'optionalArgs': {},
@@ -144198,7 +142884,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 95,
+          'badge': 99,
           'hint': 'Requires the Groundium Z badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -144242,7 +142928,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 98,
+      'badgeReward': 102,
       'moneyReward': 64000,
       'defeatMessage': 'That Kukui... He certainly found an interesting Trainer for me to face!',
       'optionalArgs': {},
@@ -144259,7 +142945,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 95,
+          'badge': 99,
           'hint': 'Requires the Groundium Z badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -144303,7 +142989,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 96,
+      'badgeReward': 100,
       'moneyReward': 64000,
       'defeatMessage': "I don't see the same look in your eyes that I saw when we first met on Akala Island. Have you had some experiences that you'll carry with you in your heart forever? Well, it's time for you to move on.",
       'optionalArgs': {},
@@ -144320,7 +143006,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 95,
+          'badge': 99,
           'hint': 'Requires the Groundium Z badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -144364,7 +143050,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 97,
+      'badgeReward': 101,
       'moneyReward': 64000,
       'defeatMessage': "I'm...I'm speechless! You've done me in!",
       'optionalArgs': {},
@@ -144381,7 +143067,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 95,
+          'badge': 99,
           'hint': 'Requires the Groundium Z badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -144425,7 +143111,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 99,
+      'badgeReward': 103,
       'moneyReward': 64000,
       'defeatMessage': "It's frustrating to me as a member of the Elite Four, but it seems your strength is the real deal.",
       'optionalArgs': {},
@@ -144442,28 +143128,28 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 98,
+          'badge': 102,
           'hint': 'Requires the Elite Molayne badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 96,
+          'badge': 100,
           'hint': 'Requires the Elite Olivia badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 97,
+          'badge': 101,
           'hint': 'Requires the Elite Acerola badge.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 99,
+          'badge': 103,
           'hint': 'Requires the Elite Kahili badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -144596,7 +143282,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 100,
+      'badgeReward': 104,
       'moneyReward': 100000,
       'defeatMessage': "We're gonna keep moving forward, by staying at full power all the time!",
       'optionalArgs': {},
@@ -144631,7 +143317,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 101,
+      'badgeReward': 105,
       'moneyReward': 10000,
       'defeatMessage': 'Your Karp is really Magic!',
       'optionalArgs': {
@@ -144666,7 +143352,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 102,
+      'badgeReward': 106,
       'moneyReward': 10500,
       'defeatMessage': 'Looks like I flailed...',
       'optionalArgs': {
@@ -144701,7 +143387,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 103,
+      'badgeReward': 107,
       'moneyReward': 11000,
       'defeatMessage': 'Karpe Diem',
       'optionalArgs': {
@@ -144737,7 +143423,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 104,
+      'badgeReward': 108,
       'moneyReward': 11500,
       'defeatMessage': 'Guess ya got me. Hook, line and sinker!',
       'optionalArgs': {
@@ -144772,7 +143458,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 105,
+      'badgeReward': 109,
       'moneyReward': 12000,
       'defeatMessage': 'This life is not for me... I will become a Karpenter now...',
       'optionalArgs': {
@@ -144808,7 +143494,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 106,
+      'badgeReward': 110,
       'moneyReward': 12500,
       'defeatMessage': "Just wait 'til my Magikarp evolves and you will all see how great I am! <i>Cries</i>",
       'optionalArgs': {
@@ -144844,7 +143530,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 107,
+      'badgeReward': 111,
       'moneyReward': 12500,
       'defeatMessage': "I'm getting more old than my rod...",
       'optionalArgs': {
@@ -144879,7 +143565,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 108,
+      'badgeReward': 112,
       'moneyReward': 12500,
       'defeatMessage': 'I knew I smelled something fishy...',
       'optionalArgs': {
@@ -144915,7 +143601,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 109,
+      'badgeReward': 113,
       'moneyReward': 12500,
       'defeatMessage': 'That jump really splashed!',
       'optionalArgs': {
@@ -144951,7 +143637,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 110,
+      'badgeReward': 114,
       'moneyReward': 13000,
       'defeatMessage': 'Mayor Karp will be proud of you!',
       'optionalArgs': {},
@@ -144993,7 +143679,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 111,
+      'badgeReward': 115,
       'moneyReward': 40000,
       'defeatMessage': 'The power of Grass has wilted... What an incredible Gym Challenger!',
       'optionalArgs': {},
@@ -145040,7 +143726,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 112,
+      'badgeReward': 116,
       'moneyReward': 60000,
       'defeatMessage': 'I may proudly be the strongest member of this Gym, but I was totally washed away!',
       'optionalArgs': {},
@@ -145087,7 +143773,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 113,
+      'badgeReward': 117,
       'moneyReward': 60000,
       'defeatMessage': "I'm often regarded as the first real roadblock of the Gym Challenge, and yet you defeated me! Clearly, your talent surpassed my many years of experience. I still have much to learn!",
       'optionalArgs': {},
@@ -145141,7 +143827,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 114,
+      'badgeReward': 118,
       'moneyReward': 80000,
       'defeatMessage': 'Your strength nearly made me want to turn and run in my bare feet.',
       'optionalArgs': {
@@ -145197,7 +143883,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 115,
+      'badgeReward': 119,
       'moneyReward': 80000,
       'defeatMessage': 'Maybe my mask... kept me from seeing just how strong you really are...',
       'optionalArgs': {
@@ -145254,7 +143940,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 116,
+      'badgeReward': 120,
       'moneyReward': 80000,
       'defeatMessage': "Your pink is still lacking, but you're an excellent Trainer with some excellent Pokémon.",
       'optionalArgs': {},
@@ -145310,7 +143996,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 117,
+      'badgeReward': 121,
       'moneyReward': 80000,
       'defeatMessage': "I just want to climb into a hole... Well, I guess it'd be more like falling from here.",
       'optionalArgs': {
@@ -145402,7 +144088,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 118,
+      'badgeReward': 122,
       'moneyReward': 80000,
       'defeatMessage': 'I think you took breaking the ice a little too literally...',
       'optionalArgs': {
@@ -145458,7 +144144,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 119,
+      'badgeReward': 123,
       'moneyReward': 96000,
       'defeatMessage': "Me an' my team gave it our best. Let's meet up again for a battle some time...",
       'optionalArgs': {},
@@ -145475,7 +144161,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 119,
+          'badge': 123,
           'hint': 'Requires the Galar Dark badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -145512,7 +144198,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 120,
+      'badgeReward': 124,
       'moneyReward': 128000,
       'defeatMessage': 'I might have lost, but I still look good. Maybe I should snap a quick selfie...',
       'optionalArgs': {},
@@ -145575,7 +144261,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 121,
+      'badgeReward': 125,
       'moneyReward': 150000,
       'defeatMessage': 'OK, so I lost... but I got to see a lot of the good points of you and your Pokémon!',
       'optionalArgs': {},
@@ -145592,7 +144278,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 121,
+          'badge': 125,
           'hint': 'Requires the Elite Marnie badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -145636,7 +144322,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 122,
+      'badgeReward': 126,
       'moneyReward': 150000,
       'defeatMessage': "I couldn't win, but at least I was able to show everyone how great Fairy types are.",
       'optionalArgs': {
@@ -145655,7 +144341,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 122,
+          'badge': 126,
           'hint': 'Requires the Elite Bede badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -145740,7 +144426,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 123,
+      'badgeReward': 127,
       'moneyReward': 200000,
       'defeatMessage': "Thanks, mate. I'm really glad you were the one here with me.",
       'optionalArgs': {},
@@ -145891,7 +144577,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 124,
+      'badgeReward': 128,
       'moneyReward': 250000,
       'defeatMessage': "My time as Champion is over... But what a champion time it's been! Thank you for the greatest battle I've ever had!",
       'optionalArgs': {},
@@ -145952,7 +144638,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 125,
+      'badgeReward': 129,
       'moneyReward': 150000,
       'defeatMessage': 'Aww, come on! What a drag! But...I guess it was also kinda fun!',
       'optionalArgs': {},
@@ -146013,7 +144699,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 126,
+      'badgeReward': 130,
       'moneyReward': 150000,
       'defeatMessage': 'More! I require more! Show me your Stored Power!',
       'optionalArgs': {},
@@ -146034,14 +144720,14 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 2,
-              'badge': 125,
+              'badge': 129,
               'hint': 'Requires the Elite Armor Poison badge.',
               '__class': 'GymBadgeRequirement',
             },
             {
               'requiredValue': 1,
               'option': 2,
-              'badge': 126,
+              'badge': 130,
               'hint': 'Requires the Elite Armor Psychic badge.',
               '__class': 'GymBadgeRequirement',
             },
@@ -146096,7 +144782,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 127,
+      'badgeReward': 131,
       'moneyReward': 250000,
       'defeatMessage': 'That was a delight! Nice battling, love!',
       'optionalArgs': {},
@@ -146113,7 +144799,7 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 2,
-          'badge': 127,
+          'badge': 131,
           'hint': 'Requires the Elite Armor Matron badge.',
           '__class': 'GymBadgeRequirement',
         },
@@ -146164,7 +144850,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 128,
+      'badgeReward': 132,
       'moneyReward': 250000,
       'defeatMessage': "That strength of yours doesn't bend easily!",
       'optionalArgs': {
@@ -146264,7 +144950,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 129,
+      'badgeReward': 133,
       'moneyReward': 250000,
       'defeatMessage': 'Gone and got stronger again, have you? Ah well! Hats off to you-in more ways than one!',
       'optionalArgs': {
@@ -146284,7 +144970,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -146300,11 +144986,12 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 130,
+      'badgeReward': 134,
       'moneyReward': 128000,
       'defeatMessage': 'You defeated Lord Kleavor once again!',
       'optionalArgs': {
         'displayName': 'Lord Kleavor',
+        'imageName': '../pokemon/900.01',
       },
       'flags': {
         'quest': true,
@@ -146320,7 +145007,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -146336,11 +145023,12 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 131,
+      'badgeReward': 135,
       'moneyReward': 128000,
       'defeatMessage': 'You defeated Lady Lilligant once again!',
       'optionalArgs': {
         'displayName': 'Lady Lilligant',
+        'imageName': '../pokemon/549.02',
       },
       'flags': {
         'quest': true,
@@ -146356,7 +145044,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -146372,11 +145060,12 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 132,
+      'badgeReward': 136,
       'moneyReward': 128000,
       'defeatMessage': 'You defeated Lord Arcanine once again!',
       'optionalArgs': {
         'displayName': 'Lord Arcanine',
+        'imageName': '../pokemon/59.02',
       },
       'flags': {
         'quest': true,
@@ -146392,7 +145081,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -146408,11 +145097,12 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 133,
+      'badgeReward': 137,
       'moneyReward': 128000,
       'defeatMessage': 'You defeated Lord Electrode once again!',
       'optionalArgs': {
         'displayName': 'Lord Electrode',
+        'imageName': '../pokemon/101.02',
       },
       'flags': {
         'quest': true,
@@ -146428,7 +145118,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -146444,11 +145134,12 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 134,
+      'badgeReward': 138,
       'moneyReward': 128000,
       'defeatMessage': 'You defeated Lord Avalugg once again!',
       'optionalArgs': {
         'displayName': 'Lord Avalugg',
+        'imageName': '../pokemon/713.02',
       },
       'flags': {
         'quest': true,
@@ -146464,7 +145155,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': -1,
-          'development': false,
+          'development': true,
           'hint': 'This is probably still under development.',
           '__class': 'DevelopmentRequirement',
         },
@@ -146545,7 +145236,7 @@ module.exports = {
           'shadow': 0,
         },
       ],
-      'badgeReward': 135,
+      'badgeReward': 139,
       'moneyReward': 128000,
       'defeatMessage': 'Why? Why you?! Why do you have the blessing of Arceus?!',
       'optionalArgs': {
@@ -151020,7 +149711,7 @@ module.exports = {
         'Gossifleur',
         'Flabébé (Orange)',
       ],
-      'hint': "I've heard that there's a mythical Berry that only appears in a field of Lansat, Apicot, Micle, Custap, Rowap and Jaboca!",
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Lansat, Apicot, Micle, Custap, Jaboca, Rowap Berries.',
     },
   ],
 };
