@@ -493,7 +493,7 @@ const badgeGymLeader = () => {
     .setThumbnail(encodeURI(`${website}assets/images/badges/${badge}.png`))
     .setColor('#3498db');
 
-  const gymLeaderImage = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
+  const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
 
   return {
     embed,
@@ -560,7 +560,7 @@ const pokemonGymLeader = () => {
     .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
     .setColor('#3498db');
 
-  const gymLeaderImage = encodeURI(`${website}assets/images/gymLeaders/${leaders[0]}.png`);
+  const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${leaders[0]}.png`);
 
   return {
     embed,
@@ -591,7 +591,7 @@ const gymLeaderPokemon = () => {
     amount += shiny_amount;
   }
 
-  const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('Which Pokemon?')
@@ -620,7 +620,7 @@ const gymLeaderLocation = () => {
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('Where are they?')
@@ -648,7 +648,7 @@ const gymLeaderBadge = () => {
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('What\'s the Badge?')
@@ -683,7 +683,7 @@ const gymLeaderType = () => {
   description.push(`||${gym.leaderName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/gymLeaders/${gym.leaderName}.png`);
+  const image = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
 
   const embed = new EmbedBuilder()
     .setTitle('What\'s the Type?')
