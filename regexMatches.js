@@ -116,7 +116,7 @@ module.exports = [
       if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
     
       // wiki
-      description.push('The [PokéClicker Wiki](https://pokeclicker.miraheze.org/) also contains a lot of valuable information.');
+      description.push('The [PokéClicker Wiki](https://wiki.pokeclicker.com/) also contains a lot of valuable information.');
 
       // Create the embed
       const embed = new EmbedBuilder().setDescription(description.join('\n')).setColor('Random');
