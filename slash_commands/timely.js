@@ -40,6 +40,10 @@ module.exports = {
     // Check if user claimed within the last 24 hours
     let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'timely_claim');
 
+    if (last_claim > Date.now()) {
+      last_claim = Date.now() - (time_between_claims + 1000);
+    }
+
     // User already claimed within last 2 hours
     if (last_claim >= (Date.now() - time_between_claims)) {
       const time_left = (+last_claim + time_between_claims) - Date.now();
