@@ -11,7 +11,7 @@ const basePokemonIDs = [...new Set(pokemonList.map(p => Math.floor(p.id)))];
 
 const getRandomPokemon = () => {
   const baseID = randomFromArray(basePokemonIDs);
-  return randomFromArray(pokemonList.filter(p => Math.floor(p.id) == baseID));
+  return randomFromArray(pokemonList.filter(p => Math.floor(p.id) == baseID && p.id <= 906)); // Update when new gen images added
 };
 
 const getWhosThatPokemonImage = (pokemon) => new Promise((resolve) => {
