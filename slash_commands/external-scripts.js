@@ -3,7 +3,7 @@ const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
   name        : 'external-scripts',
-  aliases     : [],
+  aliases     : ['scripting','scripter','scripts'],
   description : 'Apply the @external scripts role to a user',
   args        : [
     {
