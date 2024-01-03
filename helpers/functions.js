@@ -139,6 +139,11 @@ const saveFileFlags = (saveData) => {
   if (gemsCheck) {
     flags.push('Gems');
   }
+  // Check sites the save has come from
+  const originCheck = saveData.player?._origins?.every((v, i) => ['https://www.pokeclicker.com', 'file://'].includes(v));
+  if (!originCheck) {
+    flags.push('Origins');
+  }
   // A ton of dungeons cleared very fast
   const dungeonSeconds = (saveData.save?.statistics?.secondsPlayed || 1) / (saveData.save?.statistics?.dungeonsCleared?.reduce((s, v) => s + v, 0) || 1);
   if (dungeonSeconds < 30) {
