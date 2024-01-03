@@ -40,6 +40,10 @@ module.exports = {
     // Check if user claimed within the last 24 hours
     let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'daily_claim');
 
+    if (last_claim > Date.now()) {
+      last_claim = Date.now() - (time_between_claims + 1000);
+    }
+
     // User already claimed within last 23 hours
     if (last_claim >= (Date.now() - time_between_claims)) {
       const time_left = (+last_claim + time_between_claims) - Date.now();
@@ -61,8 +65,8 @@ module.exports = {
       });
     }
 
-    // Should the claim streak be reset (if more than 7 days, or 14 days if paused)
-    if (last_claim < (Date.now() - ((paused ? 14 : 7) * DAY))) {
+    // Should the claim streak be reset (if more than 14 days, or 61 days if paused)
+    if (last_claim < (Date.now() - ((paused ? 61 : 14) * DAY))) {
       await resetClaimStreak(interaction.user, 'daily_claim');
       streak = 0;
     }

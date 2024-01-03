@@ -37,7 +37,7 @@ const cli = new ESLint({
   console.log('data loaded!\nupdating data..');
 
   const result = await page.evaluate(() => {
-    SpecialEvents.events.forEach(event => {
+    App.game.specialEvents.events.forEach(event => {
       if (event.hasStarted()) event.end();
     });
 
