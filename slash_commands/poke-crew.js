@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
@@ -15,21 +15,21 @@ module.exports = {
   ],
   guildOnly   : true,
   cooldown    : 3,
-  botperms    : ['SEND_MESSAGES', 'EMBED_LINKS', 'MANAGE_ROLES'],
+  botperms    : ['SendMessages', 'EmbedLinks', 'ManageRoles'],
   userroles   : ['Moderator'],
   execute     : async (interaction, args) => {
     const id = interaction.options.get('user').value;
 
     const member = await interaction.guild.members.fetch(id).catch(e => {});
     if (!member) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Invalid user ID specified.');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
     const role = member.guild.roles.cache.find(role => role.name === 'Poké Crew');
 
     if (!role) {
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('Poké Crew role not found,\ntry again later..');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Poké Crew role not found,\ntry again later..');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -38,7 +38,7 @@ module.exports = {
         `**Mod:** ${interaction.member.toString()}
         **User:** ${member.toString()}
         **Action:** Attempted to apply ${role} to the bot`);
-      const embed = new MessageEmbed().setColor('#e74c3c').setDescription('You cannot apply that role to me trainer!');
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot apply that role to me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
@@ -46,7 +46,7 @@ module.exports = {
 
     await member.roles.add(role, `Role applied by ${interaction.member.displayName}-${interaction.user.id}`);
 
-    const embed = new MessageEmbed().setColor('#3498db').setDescription(output.join('\n'));
+    const embed = new EmbedBuilder().setColor('#3498db').setDescription(output.join('\n'));
 
     modLog(interaction.guild,
       `**Mod:** ${interaction.member.toString()}
