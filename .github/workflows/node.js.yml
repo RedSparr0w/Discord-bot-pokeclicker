@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ v13 ]
+    branches: [ v14 ]
   pull_request:
-    branches: [ v13 ]
+    branches: [ v14 ]
 
 jobs:
   build:
@@ -16,6 +16,6 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 16.x
+        node-version: 18.x
     - run: npm i eslint -g
     - run: npm run test
