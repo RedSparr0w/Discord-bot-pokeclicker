@@ -167,7 +167,7 @@ module.exports = {
       }
       // Dungeon
       if (pokemon.locations[PokemonLocationType.Dungeon]) {
-        const description = pokemon.locations[PokemonLocationType.Dungeon].join('\n');
+        const description = pokemon.locations[PokemonLocationType.Dungeon].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addFields({
           name: '❯ Dungeons',
           value:  description,
