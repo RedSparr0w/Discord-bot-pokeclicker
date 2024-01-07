@@ -490,7 +490,7 @@ const badgeGymLeader = () => {
   const embed = new EmbedBuilder()
     .setTitle('Who\'s the Gym Leader?')
     .setDescription(description.join('\n'))
-    .setThumbnail(encodeURI(`${website}assets/images/badges/${badge}.png`))
+    .setThumbnail(encodeURI(`${website}assets/images/badges/${badge}.svg`))
     .setColor('#3498db');
 
   const gymLeaderImage = encodeURI(`${website}assets/images/npcs/${gym.leaderName}.png`);
@@ -514,7 +514,7 @@ const badgeGymLocation = () => {
   description.push(`||${badge} Badge||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
-  const image = encodeURI(`${website}assets/images/badges/${badge}.png`);
+  const image = encodeURI(`${website}assets/images/badges/${badge}.svg`);
 
   const embed = new EmbedBuilder()
     .setTitle('Where\'s the Gym?')
@@ -656,7 +656,7 @@ const gymLeaderBadge = () => {
     .setThumbnail(image)
     .setColor('#3498db');
 
-  const badgeImage = encodeURI(`${website}assets/images/badges/${badge}.png`);
+  const badgeImage = encodeURI(`${website}assets/images/badges/${badge}.svg`);
 
   return {
     embed,
