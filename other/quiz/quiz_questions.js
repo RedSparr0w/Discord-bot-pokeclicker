@@ -28,7 +28,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/\W/g, '.?').replace(/(Valencian|Pinkan|Pink|Noble|Totem|Titan|Alolan|Galarian|Hisuian)\s*/gi, '($1)?');
+const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/\W/g, '.?').replace(/(Valencian|Pinkan|Pink|Noble|Handout|Charity|Blessing|Crystal)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
