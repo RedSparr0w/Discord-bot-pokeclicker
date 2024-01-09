@@ -212,6 +212,10 @@ module.exports = [
   {
     regex: /\.github\.io\/pokeclicker/i,
     execute: (message, client) => {
+      // Add an exception for companion app
+      if (message.content.includes('cypherx.github.io/pokeclicker-companion')) {
+        return;
+      }
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.members.me.toString()}
