@@ -93,10 +93,7 @@ module.exports = {
     await updateClaimDate(msg.author, 'daily_claim');
     await bumpClaimStreak(msg.author, 'daily_claim');
 
-    const message = [
-      msg.author,
-      `Daily Claim: **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`,
-    ];
+    const message = [`Daily Claim: **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`];
 
     if (streakBonus) {
       message.push(`Streak Bonus: **+${streakBonus.toLocaleString('en-US')}** ${serverIcons.money} `);
