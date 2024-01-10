@@ -106,6 +106,7 @@ module.exports = {
     });
 
     message.push(
+      `Total: **+${totalAmount.toLocaleString('en-US')} ${serverIcons.money}**`,
       '',
       `Current Balance: **${balance.toLocaleString('en-US')}** ${serverIcons.money}`,
       `Current Streak: **${streak + 1}**`
