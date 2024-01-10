@@ -717,7 +717,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 14),
+  new WeightedOption(whosThatPokemon, 15),
   new WeightedOption(pokemonType, 10),
   new WeightedOption(whosThePokemonEvolution, 8),
   new WeightedOption(whosThePokemonPrevolution, 8),
@@ -730,7 +730,7 @@ const quizTypes = [
   new WeightedOption(badgeGymLeader, 1),
   new WeightedOption(badgeGymLocation, 1),
   new WeightedOption(pokemonGymLeader, 1),
-  new WeightedOption(gymLeaderType, 3),
+  new WeightedOption(gymLeaderType, 2),
   new WeightedOption(gymLeaderPokemon, 2),
   new WeightedOption(gymLeaderLocation, 1),
   new WeightedOption(gymLeaderBadge, 1),
