@@ -109,18 +109,19 @@ module.exports = {
       `Current Streak: **${streak + 1}**`
     );
     
+    let footer = '';
     if (interaction.member.roles.cache.has(autoReminderRoleID)) {
       const reminderTime = new Date(Date.now() + time_between_claims);
 
       addReminder(interaction.user, reminderTime, '/claim\n<#456798288893706241>');
 
-      message.push('', 'Auto reminder will be sent in 23 hours');
+      footer = 'Auto reminder will be sent in 23 hours';
     } else {
-      message.push('', '_You can use the `/roles` command to be automatically reminded_');
+      footer = 'You can use the /roles command to be automatically reminded';
     }
 
     return interaction.reply({
-      embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(message.join('\n'))],
+      embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(message.join('\n')).setFooter({ text: footer })],
     });
   },
 };
