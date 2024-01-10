@@ -94,19 +94,19 @@ module.exports = {
 
     const message = [
       interaction.user,
-      `_Daily Claim:_ **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`,
+      `Daily Claim: **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`,
     ];
 
     if (streakBonus) {
-      message.push(`_Streak Bonus:_ **+${streakBonus.toLocaleString('en-US')}** ${serverIcons.money} `);
+      message.push(`Streak Bonus: **+${streakBonus.toLocaleString('en-US')}** ${serverIcons.money} `);
     }
 
     roleBonuses.forEach(([r, b]) => {
-      message.push(`_<@&${r}>:_ **+${b.toLocaleString('en-US')}** ${serverIcons.money}`);
+      message.push(`<@&${r}>: **+${b.toLocaleString('en-US')}** ${serverIcons.money}`);
     });
 
     message.push(
-      `Total: **+${totalAmount.toLocaleString('en-US')} ${serverIcons.money}**`,
+      `Total Coins: **+${totalAmount.toLocaleString('en-US')} ${serverIcons.money}**`,
       '',
       `Current Balance: **${balance.toLocaleString('en-US')}** ${serverIcons.money}`,
       `Current Streak: **${streak + 1}**`
