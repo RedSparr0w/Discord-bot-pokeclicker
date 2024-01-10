@@ -110,7 +110,7 @@ module.exports = {
     );
     
     if (interaction.member.roles.cache.has(autoReminderRoleID)) {
-      const reminderTime = new Date(Date.now() + HOUR * 23);
+      const reminderTime = new Date(Date.now() + time_between_claims);
 
       addReminder(interaction.user, reminderTime, '/claim\n<#456798288893706241>');
 
