@@ -90,7 +90,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor(win ? '#2ecc71' : '#e74c3c')
-      .setThumbnail(`attachment://coin.png`)
+      .setThumbnail('attachment://coin.png')
       .setDescription(output)
       .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
 
