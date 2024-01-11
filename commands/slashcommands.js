@@ -12,7 +12,7 @@ const { prefix } = require('../config');
 
 module.exports = {
   name        : 'slashcommandinfo',
-  aliases     : ['badges','balance','bal','$','berry','berries','bery','berri','beri','berrie','dailychain','dc','dailychains','chain','chains','daily-chain','dailydeal','dd','deals','dailydeals','ug','underground','daily-deals','donate','fire-water-grass', 'fwg','fgw','gfw','gwf','wfg','wgf','fire-water-grass','flip','coin','happyhour','hh','happy-hour','commands','pokemon','p','poke','pinfo','pokeinfo','reminder','remind','remindme','rm','roles','role','route','routes','routeinfo','shards','shard','shop','slots','slot','spin','wheel','statistics','stats','top','leaderboard','lb','trainer-card-shop','trainercardshop','tcshop','profileshop','trainer-card','trainercard','tc','profile','scripting','scripter','scripts'],
+  aliases     : ['badges','balance','bal','$','berry','berries','bery','berri','beri','berrie','dailychain','dc','dailychains','chain','chains','daily-chain','dailydeal','dd','deals','dailydeals','ug','underground','daily-deals','donate','fire-water-grass', 'fwg','fgw','gfw','gwf','wfg','wgf','fire-water-grass','flip','coin','happyhour','hh','happy-hour','commands','pokemon','p','poke','pinfo','pokeinfo','reminder','remind','remindme','rm','roles','role','route','routes','routeinfo','shards','shard','shop','slots','slot','spin','wheel','statistics','stats','top','leaderboard','lb','trainer-card-shop','trainercardshop','tcshop','profileshop','trainer-card','trainercard','tc','profile','scripting','scripter','scripts', 'mute', 'unmute'],
   description : 'Slash command info',
   args        : [],
   guildOnly   : true,
