@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { addStatistic } = require('../database.js');
 const { modLog } = require('../other/mod/functions.js');
 
@@ -9,13 +9,13 @@ module.exports = {
   args        : [
     {
       name: 'user',
-      type: 'USER',
+      type: ApplicationCommandOptionType.User,
       description: 'The user to be warned',
       required: true,
     },
     {
       name: 'reason',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'The reason this user is being warned',
       required: false,
     },

@@ -2,7 +2,6 @@ const { EmbedBuilder } = require('discord.js');
 const { backupDB } = require('../database.js');
 
 module.exports = {
-  type        : 'message',
   name        : 'backup',
   aliases     : [],
   description : 'Backup database',

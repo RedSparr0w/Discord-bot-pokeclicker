@@ -1,4 +1,4 @@
-const { EmbedBuilder, ButtonBuilder } = require('discord.js');
+const { EmbedBuilder, ButtonBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { getAmount, removeAmount } = require('../database.js');
 const { shopItems, postPages, SeededRand, randomString } = require('../helpers.js');
 const { website, serverIcons } = require('../config.js');
@@ -63,7 +63,7 @@ module.exports = {
   args        : [
     {
       name: 'page',
-      type: 'INTEGER',
+      type: ApplicationCommandOptionType.Integer,
       description: 'Which start page',
       required: false,
     },

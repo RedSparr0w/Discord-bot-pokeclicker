@@ -1,4 +1,4 @@
-const { EmbedBuilder, ButtonBuilder } = require('discord.js');
+const { EmbedBuilder, ButtonBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { getAmount, removeAmount, getPurchased, addPurchased, setTrainerCard } = require('../database.js');
 const {
   upperCaseFirstLetter,
@@ -19,7 +19,7 @@ module.exports = {
   args        : [
     {
       name: 'page',
-      type: 'INTEGER',
+      type: ApplicationCommandOptionType.Integer,
       description: 'Which start page',
       required: false,
     },

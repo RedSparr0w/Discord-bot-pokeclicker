@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
   args        : [
     {
       name: 'user',
-      type: 'USER',
+      type: ApplicationCommandOptionType.User,
       description: 'User to apply the role to',
       required: true,
     },

@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { website, serverIcons } = require('../config.js');
 const {
@@ -23,13 +23,13 @@ module.exports = {
   args        : [
     {
       name: 'name-id',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Name or Pokédex ID of the Pokémon',
       required: true,
     },
     {
       name: 'shiny',
-      type: 'BOOLEAN',
+      type: ApplicationCommandOptionType.Boolean,
       description: 'Shiny image',
       required: false,
     },

@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const {
   regionRoutes,
@@ -20,13 +20,13 @@ module.exports = {
   args        : [
     {
       name: 'name',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Route number/name',
       required: true,
     },
     {
       name: 'region',
-      type: 'INTEGER',
+      type: ApplicationCommandOptionType.Integer,
       description: 'Region name',
       required: false,
       choices: [

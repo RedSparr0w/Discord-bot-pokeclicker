@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const {
   MINUTE,
   HOUR,
@@ -15,23 +15,23 @@ module.exports = {
   args        : [
     {
       name: 'view',
-      type: 'SUB_COMMAND',
+      type: ApplicationCommandOptionType.Subcommand,
       description: 'View pending reminders',
     },
     {
       name: 'add',
-      type: 'SUB_COMMAND',
+      type: ApplicationCommandOptionType.Subcommand,
       description: 'Add a new reminder',
       options: [
         {
           name: 'time',
-          type: 'STRING',
+          type: ApplicationCommandOptionType.String,
           description: 'How long until you want to be reminded',
           required: true,
         },
         {
           name: 'message',
-          type: 'STRING',
+          type: ApplicationCommandOptionType.String,
           description: 'What you want to be reminded about',
           required: true,
         },
@@ -39,12 +39,12 @@ module.exports = {
     },
     {
       name: 'remove',
-      type: 'SUB_COMMAND',
+      type: ApplicationCommandOptionType.Subcommand,
       description: 'Remove reminder(s)',
       options: [
         {
           name: 'ids',
-          type: 'STRING',
+          type: ApplicationCommandOptionType.String,
           description: 'Reminder ID(s) to remove',
           required: true,
         },

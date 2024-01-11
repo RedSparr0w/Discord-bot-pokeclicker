@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
@@ -16,7 +16,7 @@ module.exports = {
   args        : [
     {
       name: 'bet-amount',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'How much money you want to bet',
       required: true,
     },

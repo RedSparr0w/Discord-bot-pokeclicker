@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
@@ -8,13 +8,13 @@ module.exports = {
   args        : [
     {
       name: 'user',
-      type: 'USER',
+      type: ApplicationCommandOptionType.User,
       description: 'The user to be kicked',
       required: true,
     },
     {
       name: 'reason',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'The reason this user is being kicked',
       required: false,
     },

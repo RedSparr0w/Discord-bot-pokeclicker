@@ -1,4 +1,4 @@
-const { EmbedBuilder, ChannelType } = require('discord.js');
+const { EmbedBuilder, ChannelType, ApplicationCommandOptionType } = require('discord.js');
 const {
   getAvailableChannelList,
   formatChannelList,
@@ -18,7 +18,7 @@ module.exports = {
   args        : [
     {
       name: 'command',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Get help on a specific command',
       required: false,
     },

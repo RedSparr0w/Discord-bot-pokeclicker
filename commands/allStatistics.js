@@ -2,7 +2,6 @@ const { EmbedBuilder } = require('discord.js');
 const { getStatisticTypes, getOverallStatistic } = require('../database.js');
 
 module.exports = {
-  type        : 'message',
   name        : 'allstatistics',
   aliases     : ['allstats'],
   description : 'Get an overview of your statistics for this server',

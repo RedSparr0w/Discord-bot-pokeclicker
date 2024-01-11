@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const {
   DailyDeal,
   UndergroundItem,
@@ -14,19 +14,19 @@ module.exports = {
   args        : [
     {
       name: 'max-slots',
-      type: 'INTEGER',
+      type: ApplicationCommandOptionType.Integer,
       description: 'Maximum number of slots you have unlocked in the Underground (default 5)',
       required: false,
     },
     {
       name: 'days',
-      type: 'INTEGER',
+      type: ApplicationCommandOptionType.Integer,
       description: 'Maximum number of days would you like to complete a chain for (default 14)',
       required: false,
     },
     {
       name: 'from-date',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'YYYY-MM-DD - Starting date for the daily chain (default today UTC)',
       required: false,
     },

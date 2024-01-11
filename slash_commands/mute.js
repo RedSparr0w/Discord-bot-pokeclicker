@@ -1,25 +1,25 @@
 const { EmbedBuilder } = require('discord.js');
 const { mutedRoleID } = require('../config.js');
-const { ActionRowBuilder, StringSelectMenuBuilder } = require('discord.js');
+const { ActionRowBuilder, StringSelectMenuBuilder, ApplicationCommandType, ApplicationCommandOptionType } = require('discord.js');
 const { randomString, HOUR, WEEK, DAY, MINUTE, formatDateToString } = require('../helpers.js');
 const { addScheduleItem } = require('../database.js');
 const { modLog } = require('../other/mod/functions.js');
 
 module.exports = {
-  type        : 'USER',
+  type        : ApplicationCommandType.User,
   name        : 'mute',
   aliases     : [],
   description : 'Apply the @Muted role to users',
   args        : [
     {
       name: 'user',
-      type: 'USER',
+      type: ApplicationCommandOptionType.User,
       description: 'User to mute',
       required: true,
     },
     {
       name: 'reason',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'The reason this user is being muted',
       required: false,
     },

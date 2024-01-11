@@ -1,3 +1,4 @@
+const { ApplicationCommandOptionType } = require('discord.js');
 const { getTop } = require('../database.js');
 const { postPages } = require('../helpers.js');
 const { serverIcons } = require('../config.js');
@@ -9,7 +10,7 @@ module.exports = {
   args        : [
     {
       name: 'type',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'How many lines you want to play (default 3)',
       required: false,
       choices: [

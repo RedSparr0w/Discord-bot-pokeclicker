@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const {
   DailyDeal,
   UndergroundItem,
@@ -13,7 +13,7 @@ module.exports = {
   args        : [
     {
       name: 'from-date',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'YYYY-MM-DD - Starting date for the daily chain (default today UTC)',
       required: false,
     },

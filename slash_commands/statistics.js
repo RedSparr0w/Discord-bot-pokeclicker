@@ -1,15 +1,15 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandType, ApplicationCommandOptionType } = require('discord.js');
 const { getStatistic } = require('../database.js');
 
 module.exports = {
-  type        : 'USER',
+  type        : ApplicationCommandType.User,
   name        : 'statistics',
   aliases     : ['stats'],
   description : 'Get an overview of your statistics for this server',
   args        : [
     {
       name: 'user',
-      type: 'USER',
+      type: ApplicationCommandOptionType.User,
       description: 'Get another users statistics',
       required: false,
     },

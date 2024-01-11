@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { wikiWebsite } = require('../config.js');
 const { wikiLinks } = require('../helpers.js');
@@ -11,7 +11,7 @@ module.exports = {
   args        : [
     {
       name: 'query',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Link to something specifically on the wiki',
       required: false,
     },

@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const FuzzySet = require('fuzzyset');
 const { website } = require('../config.js');
 const {
@@ -43,7 +43,7 @@ module.exports = {
   args        : [
     {
       name: 'berryname',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Which berry you want info on (can be an ID or name)',
       required: true,
     },

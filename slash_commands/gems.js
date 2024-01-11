@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const {
   PokemonType,
   GameConstants,
@@ -17,7 +17,7 @@ module.exports = {
   args        : [
     {
       name: 'type',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Gem type',
       required: true,
       choices: [
@@ -97,7 +97,7 @@ module.exports = {
     },
     {
       name: 'order',
-      type: 'STRING',
+      type: ApplicationCommandOptionType.String,
       description: 'Order by',
       required: false,
       choices: [
