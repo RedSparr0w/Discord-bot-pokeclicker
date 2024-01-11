@@ -1,27 +1,16 @@
-const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
+const { EmbedBuilder, AttachmentBuilder, ApplicationCommandOptionType } = require('discord.js');
 const { getAmount, addAmount } = require('../database.js');
 const { validBet, calcBetAmount, addBetStatistics } = require('../helpers.js');
-const { website, serverIcons } = require('../config.js');
+const { serverIcons } = require('../config.js');
 
 const coinSides = {
   heads: 1,
-  h: 1,
   tails: 0,
-  t: 0,
-  // Game currency
-  dungeon: 1,
-  dungeontoken: 1,
-  d: 1,
-  dt: 1,
-  farm: 0,
-  farmpoint: 0,
-  f: 0,
-  fp: 0,
 };
 
 const coinImage = {
-  1: `${website}assets/images/currency/dungeonToken.png`,
-  0: `${website}assets/images/currency/farmPoint.png`,
+  [coinSides.heads]: 'assets/images/currency/dungeonToken.png',
+  [coinSides.tails]: 'assets/images/currency/farmPoint.png',
 };
 
 const flipCoin = () => Math.round(Math.random());
@@ -97,12 +86,14 @@ module.exports = {
     addAmount(interaction.user, winnings);
     addBetStatistics(interaction.user, bet, winnings);
 
+    const files = await new AttachmentBuilder().setFile(coinImage[coinSide]).setName('coin.png');
+
     const embed = new EmbedBuilder()
       .setColor(win ? '#2ecc71' : '#e74c3c')
-      .setThumbnail(coinImage[coinSide])
+      .setThumbnail(`attachment://coin.png`)
       .setDescription(output)
       .setFooter({ text: `Balance: ${(balance + winnings).toLocaleString('en-US')}` });
 
-    return interaction.reply({ embeds: [embed] });
+    return interaction.reply({ embeds: [embed], files: [files] });
   },
 };
