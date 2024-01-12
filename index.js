@@ -61,6 +61,14 @@ for (const file of slashCommandsFiles) {
   client.slashCommands.set(command.name, command);
 }
 
+// Gather our available button commands (interactions)
+client.buttonCommands = new Discord.Collection();
+const buttonCommandsFiles = fs.readdirSync('./button_commands').filter(file => file.endsWith('.js'));
+for (const file of buttonCommandsFiles) {
+  const command = require(`./button_commands/${file}`);
+  client.buttonCommands.set(command.name, command);
+}
+
 const cooldowns = new Discord.Collection();
 
 const cooldownTimeLeft = (type, seconds, userID) => {
@@ -315,83 +323,46 @@ client.on('error', e => error('Client error thrown:', e))
         interaction.replied ? interaction.followUp({ content: 'There was an error trying to execute that command!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to execute that command!', ephemeral: true });
       }
     }
-    // Buttons
+    // Button interactions
     if (interaction.isButton()) {
-      // TODO: Move these out of our main file
-      // Apply user for beta tester role
-      if (interaction.customId == 'apply-beta-tester') {
-        // Create the modal
-        const modal = new Discord.ModalBuilder()
-          .setCustomId('apply-beta-tester')
-          .setTitle('Apply for Beta Tester role');
-    
-        const reasonInput = new Discord.TextInputBuilder()
-          .setCustomId('apply-beta-tester-reason')
-          .setLabel('Why do you want to be a beta tester?')
-          .setStyle(Discord.TextInputStyle.Paragraph)
-          .setMaxLength(400)
-          .setRequired(true);
-    
-        // An action row only holds one text input,
-        // so you need one action row per text input.
-        const actionRow = new Discord.ActionRowBuilder().addComponents(reasonInput);
-    
-        // Add inputs to the modal
-        modal.addComponents(actionRow);
-    
-        // Show the modal to the user
-        await interaction.showModal(modal);
-        return;
+      const command = client.buttonCommands.find(cmd => cmd.name === interaction.customId);
+
+      // Not a valid command
+      if (!command) return;
+
+      // Check the user has the required permissions
+      if (interaction.channel.type === Discord.ChannelType.GuildText && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+        return interaction.reply({ content: 'You do not have the required permissions to use this button.', ephemeral: true });
       }
-      // Approve beta tester role
-      if (interaction.customId == 'approve-beta-tester') {
-        // Get the embeds attached to this interaction
-        const embeds = interaction.message.embeds.map(e => Discord.EmbedBuilder.from(e));
-        const user_id = embeds[0].toJSON().description.match(/<@!?(\d+)>/)[1];
-        const member = await interaction.guild.members.fetch(user_id).catch(error);
-        // Check they are still a member of the server
-        if (!member) {
-          embeds.forEach(e => e.setColor('#e74c3c'));
-          embeds[embeds.length - 1].setFooter({ text: '🚫 No longer member..' }).setTimestamp()
-          interaction.message.edit({ embeds, components: [] });
-          interaction.reply({ content: `Unable to find member <@!${user_id}>..`, ephemeral: true });
-          return;
-        };
-        const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
-        // Check the role exists in this server
-        if (!role) {
-          interaction.reply({ content: 'Unable to find Beta Tester role, try again later..', ephemeral: true });
-          return;
-        }
-        // Apply the beta tester role
-        member.roles.add(role);
-        // Update our embed, remove the buttons
-        embeds.forEach(e => e.setColor('#2ecc71'));
-        embeds[embeds.length - 1].setFooter({ text: '☑️ Application approved!' }).setTimestamp()
-        interaction.update({ embeds, components: [] });
-        // Delete the application after x time
-        setTimeout(() => interaction.message.delete().catch(e => console.error('Unable to delete approved application')), 1 * MINUTE);
-        // Upadte the history channel
-        const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
-        historyChannel.send({ embeds: [new Discord.EmbedBuilder().setColor('#2ecc71').setDescription(`☑️ Application approved!\nMember: <@!${user_id}>\nApproved by: ${interaction.user}`).setTimestamp()] });
-        return;
+
+      // Check user has the required roles
+      if (interaction.channel.type === Discord.ChannelType.GuildText && command.userroles?.length) {
+        const hasRolePerms = command.userroles.some(r => interaction.member.roles.cache.find(role => role.id == r || role.name == r));
+        if (!hasRolePerms) return interaction.reply({ content: 'You do not have the required roles to use this button.', ephemeral: true });
       }
-      // Decline beta tester role
-      if (interaction.customId == 'decline-beta-tester') {
-        // Get the embeds attached to this interaction
-        const embeds = interaction.message.embeds.map(e => Discord.EmbedBuilder.from(e));
-        // Update our embed, remove the buttons
-        embeds.forEach(e => e.setColor('#e74c3c'));
-        embeds[embeds.length - 1].setFooter({ text: '🚫 Application declined..' }).setTimestamp()
-        interaction.update({ embeds, components: [] });
-        // Delete the application after x time
-        setTimeout(() => interaction.message.delete().catch(e => console.error('Unable to delete declined application')), 1 * MINUTE);
-        // Upadte the history channel
-        const user_id = embeds[0].toJSON().description.match(/<@!?(\d+)>/)[1];
-        const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
-        historyChannel.send({ embeds: [new Discord.EmbedBuilder().setColor('#e74c3c').setDescription(`🚫 Application declined..\nMember: <@!${user_id}>\nApproved by: ${interaction.user}`).setTimestamp()] });
-        return;
+
+      // Check the bot has the required permissions
+      if (interaction.channel.type === Discord.ChannelType.GuildText && interaction.channel.permissionsFor(interaction.guild.members.me).missing(command.botperms).length) {
+        return interaction.reply({ content: 'I do not have the required permissions to process this interaction.', ephemeral: true });
       }
+
+      // Apply command cooldowns
+      const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
+      if (timeLeft > 0) {
+        return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing this button.`, ephemeral: true });
+      }
+
+      // Run the command
+      try {
+        // Send the message object
+        await command.execute(interaction).catch(e => {
+          throw(e);
+        });
+      } catch (err) {
+        error(`Error executing command "${command.name}":\n`, err);
+        interaction.replied ? interaction.followUp({ content: 'There was an error trying to process this interaction!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to process this interaction!', ephemeral: true });
+      }
+      return;
     }
     // Modals
     if (interaction.isModalSubmit()) {
@@ -493,7 +464,7 @@ client.on('error', e => error('Client error thrown:', e))
             .setStyle(Discord.ButtonStyle.Danger),
         );
 
-        interaction.guild.channels.cache.find(c => c.name === 'approval-queue').send({ embeds: [embed], components: [buttons] });
+        interaction.guild.channels.cache.find(c => c.name === 'approval-queue')?.send({ embeds: [embed], components: [buttons] });
         interaction.reply({ content: 'Your application has been submitted for review!', ephemeral: true });
         return;
       }
