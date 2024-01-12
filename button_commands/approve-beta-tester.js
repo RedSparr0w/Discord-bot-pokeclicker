@@ -7,7 +7,7 @@ module.exports = {
   description : 'Approve user for beta tester role',
   args        : [],
   guildOnly   : true,
-  cooldown    : 0,
+  cooldown    : 0.1,
   botperms    : ['SendMessages', 'ManageMessages', 'EmbedLinks'],
   userperms   : [],
   execute     : async (interaction) => {

@@ -3,7 +3,7 @@ const { ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder } = req
 module.exports = {
   name        : 'apply-beta-tester',
   aliases     : [],
-  description : 'apply for the Beta Tester role',
+  description : 'Apply for the Beta Tester role',
   args        : [],
   guildOnly   : true,
   cooldown    : 10,
@@ -17,7 +17,7 @@ module.exports = {
 
     const reasonInput = new TextInputBuilder()
       .setCustomId('apply-beta-tester-reason')
-      .setLabel('Why do you want to be a beta tester?')
+      .setLabel('Why would you like to be a beta tester?')
       .setStyle(TextInputStyle.Paragraph)
       .setMaxLength(400)
       .setRequired(true);

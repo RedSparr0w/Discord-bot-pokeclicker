@@ -5,10 +5,10 @@ const { getStatistic } = require('../database.js');
 module.exports = {
   name        : 'apply-beta-tester',
   aliases     : [],
-  description : 'apply for the Beta Tester role',
+  description : 'Apply for the Beta Tester role',
   args        : [],
   guildOnly   : true,
-  cooldown    : 10,
+  cooldown    : DAY / 1000,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   execute     : async (interaction) => {
