@@ -22,7 +22,6 @@ const {
   backupDB,
   addPurchased,
   addStatistic,
-  getStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 const { newQuiz } = require('./other/quiz/quiz.js');
@@ -67,6 +66,14 @@ const buttonCommandsFiles = fs.readdirSync('./button_commands').filter(file => f
 for (const file of buttonCommandsFiles) {
   const command = require(`./button_commands/${file}`);
   client.buttonCommands.set(command.name, command);
+}
+
+// Gather our available button commands (interactions)
+client.modalCommands = new Discord.Collection();
+const modalCommandsFiles = fs.readdirSync('./modal_commands').filter(file => file.endsWith('.js'));
+for (const file of modalCommandsFiles) {
+  const command = require(`./modal_commands/${file}`);
+  client.modalCommands.set(command.name, command);
 }
 
 const cooldowns = new Discord.Collection();
@@ -347,7 +354,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
 
       // Apply command cooldowns
-      const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
+      const timeLeft = Math.ceil(cooldownTimeLeft(`button-${command.name}`, command.cooldown, interaction.user.id) * 10) / 10;
       if (timeLeft > 0) {
         return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing this button.`, ephemeral: true });
       }
@@ -364,110 +371,46 @@ client.on('error', e => error('Client error thrown:', e))
       }
       return;
     }
-    // Modals
+    // Modal interactions
     if (interaction.isModalSubmit()) {
-      if (interaction.customId == 'apply-beta-tester') {
-        const member = interaction.member;
-        const user = member.user;
+      const command = client.modalCommands.find(cmd => cmd.name === interaction.customId);
 
-        const joinDiscord = new Date(user.createdTimestamp);
-        const joinServer = new Date(member.joinedTimestamp);
-        const today = new Date();
+      // Not a valid command
+      if (!command) return;
 
-        // Auto decline if member is new to the server (< 14 days)
-        // TODO: maybe enable this at some point
-        if (false && today - joinServer < 14 * DAY) {
-          interaction.reply({ content: 'Please apply again later once you have been in the server for at least 2 weeks', ephemeral: true });
-          return;
-        }
-
-        // Auto accept if member of server for more than 1 year
-        // TODO: maybe enable this at some point
-        if (false && today - joinServer > 365 * DAY) {
-          const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
-          if (!role) return;
-
-          member.roles.add(role);
-          interaction.reply({ content: 'Welcome!\nYou are now a beta tester.', ephemeral: true });
-          return;
-        }
-
-        // Send user to approval queue
-        const warnings = await getStatistic(user, 'warnings');
-        const messages = await getStatistic(user, 'messages');
-        const reason = interaction.fields.getTextInputValue('apply-beta-tester-reason');
-    
-        const embed = new Discord.EmbedBuilder()
-          .setAuthor({
-            name: user.tag,
-            url: `https://discordapp.com/users/${user.id}`,
-            iconURL: user.displayAvatarURL(),
-          })
-          .setDescription(user.toString())
-          .setColor('#3498db')
-          .setThumbnail(user.displayAvatarURL())
-          .addFields(
-            {
-              name: 'Joined Discord:',
-              value: `<t:${Math.floor(+joinDiscord / 1000)}:R>`,
-              inline: true,
-            },
-            {
-              name: 'Joined Server:',
-              value: `<t:${Math.floor(+joinServer / 1000)}:R>`,
-              inline: true,
-            },
-            {
-              name: '\u200b',
-              value: '\u200b',
-              inline: true,
-            },
-            {
-              name: 'Warnings:',
-              value: warnings?.toLocaleString() || 'unknown',
-              inline: true,
-            },
-            {
-              name: 'Message count:',
-              value: messages?.toLocaleString() || 'unknown',
-              inline: true,
-            },
-            {
-              name: '\u200b',
-              value: '\u200b',
-              inline: true,
-            },
-            {
-              name: 'Roles:',
-              value: member?.roles?.cache?.sort((a, b) => b.rawPosition - a.rawPosition)?.map(r => `${r}`)?.join('\n') || 'unknown',
-              inline: false,
-            },
-            {
-              name: 'Reason:',
-              value: ['```', reason, '```'].join('\n') || 'unknown',
-              inline: false,
-            }
-          )
-          .setFooter({ text: `ID: ${user.id}` })
-          .setTimestamp();
-
-        const buttons = new Discord.ActionRowBuilder();
-        buttons.addComponents(
-          new Discord.ButtonBuilder()
-            .setCustomId('approve-beta-tester')
-            .setLabel('Approve')
-            .setStyle(Discord.ButtonStyle.Success)
-            .setEmoji('☑️'),
-          new Discord.ButtonBuilder()
-            .setCustomId('decline-beta-tester')
-            .setLabel('Decline')
-            .setStyle(Discord.ButtonStyle.Danger),
-        );
-
-        interaction.guild.channels.cache.find(c => c.name === 'approval-queue')?.send({ embeds: [embed], components: [buttons] });
-        interaction.reply({ content: 'Your application has been submitted for review!', ephemeral: true });
-        return;
+      // Check the user has the required permissions
+      if (interaction.channel.type === Discord.ChannelType.GuildText && interaction.channel.permissionsFor(interaction.member).missing(command.userperms).length) {
+        return interaction.reply({ content: 'You do not have the required permissions to use this modal.', ephemeral: true });
       }
+
+      // Check user has the required roles
+      if (interaction.channel.type === Discord.ChannelType.GuildText && command.userroles?.length) {
+        const hasRolePerms = command.userroles.some(r => interaction.member.roles.cache.find(role => role.id == r || role.name == r));
+        if (!hasRolePerms) return interaction.reply({ content: 'You do not have the required roles to use this modal.', ephemeral: true });
+      }
+
+      // Check the bot has the required permissions
+      if (interaction.channel.type === Discord.ChannelType.GuildText && interaction.channel.permissionsFor(interaction.guild.members.me).missing(command.botperms).length) {
+        return interaction.reply({ content: 'I do not have the required permissions to process this interaction.', ephemeral: true });
+      }
+
+      // Apply command cooldowns
+      const timeLeft = Math.ceil(cooldownTimeLeft(`modal-${command.name}`, command.cooldown, interaction.user.id) * 10) / 10;
+      if (timeLeft > 0) {
+        return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing this modal.`, ephemeral: true });
+      }
+
+      // Run the command
+      try {
+        // Send the message object
+        await command.execute(interaction).catch(e => {
+          throw(e);
+        });
+      } catch (err) {
+        error(`Error executing command "${command.name}":\n`, err);
+        interaction.replied ? interaction.followUp({ content: 'There was an error trying to process this interaction!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to process this interaction!', ephemeral: true });
+      }
+      return;
     }
   });
 
