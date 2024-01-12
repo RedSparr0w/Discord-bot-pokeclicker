@@ -79,6 +79,7 @@ const newQuiz = async (guild, reoccur = false) => {
     m.react(serverIcons.money.match(/:(\d+)>/)[1]);
     if (quiz.shiny) {
       m.react('✨');
+      addStatistic(user, 'qz_answered_shiny');
     }
 
     // Add coins to the users balance
