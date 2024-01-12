@@ -22,6 +22,7 @@ const {
   backupDB,
   addPurchased,
   addStatistic,
+  getStatistic,
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 const { newQuiz } = require('./other/quiz/quiz.js');
@@ -251,6 +252,7 @@ client.on('error', e => error('Client error thrown:', e))
     }
   })
   .on('interactionCreate', async interaction => {
+    // Slash commands, or right click commands
     if (interaction.type === InteractionType.ApplicationCommand || interaction.type === InteractionType.ContextMenu) {
 
       const command = client.slashCommands.find(cmd => cmd.name === interaction.commandName);
@@ -311,6 +313,156 @@ client.on('error', e => error('Client error thrown:', e))
       } catch (err) {
         error(`Error executing command "${command.name}":\n`, err);
         interaction.replied ? interaction.followUp({ content: 'There was an error trying to execute that command!', ephemeral: true }) : interaction.reply({ content: 'There was an error trying to execute that command!', ephemeral: true });
+      }
+    }
+    // Buttons
+    if (interaction.isButton()) {
+      // TODO: Move these out of our main file
+      // Apply user for beta tester role
+      if (interaction.customId == 'apply-beta-tester') {
+        const member = interaction.member;
+        const user = member.user;
+
+        const joinDiscord = new Date(user.createdTimestamp);
+        const joinServer = new Date(member.joinedTimestamp);
+        const today = new Date();
+
+        // Auto decline if member is new to the server (< 14 days)
+        // TODO: maybe enable this at some point
+        if (false && today - joinServer < 14 * DAY) {
+          interaction.reply({ content: 'Please apply again later once you have been in the server for at least 2 weeks', ephemeral: true });
+          return;
+        }
+
+        // Auto accept if member of server for more than 1 year
+        // TODO: maybe enable this at some point
+        if (false && today - joinServer > 365 * DAY) {
+          const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
+          if (!role) return;
+
+          member.roles.add(role);
+          interaction.reply({ content: 'Welcome!\nYou are now a beta tester.', ephemeral: true });
+          return;
+        }
+
+        // Send user to approval queue
+        const warnings = await getStatistic(user, 'warnings');
+        const messages = await getStatistic(user, 'messages');
+    
+        const embed = new Discord.EmbedBuilder()
+          .setAuthor({
+            name: user.tag,
+            url: `https://discordapp.com/users/${user.id}`,
+            iconURL: user.displayAvatarURL(),
+          })
+          .setDescription(user.toString())
+          .setColor('#3498db')
+          .setThumbnail(user.displayAvatarURL())
+          .addFields(
+            {
+              name: 'Joined Discord:',
+              value: `<t:${Math.floor(+joinDiscord / 1000)}:R>`,
+              inline: true,
+            },
+            {
+              name: 'Joined Server:',
+              value: `<t:${Math.floor(+joinServer / 1000)}:R>`,
+              inline: true,
+            },
+            {
+              name: '\u200b',
+              value: '\u200b',
+              inline: true,
+            },
+            {
+              name: 'Warnings:',
+              value: warnings?.toLocaleString() || 'unknown',
+              inline: true,
+            },
+            {
+              name: 'Message count:',
+              value: messages?.toLocaleString() || 'unknown',
+              inline: true,
+            },
+            {
+              name: '\u200b',
+              value: '\u200b',
+              inline: true,
+            },
+            {
+              name: 'Roles:',
+              value: member?.roles?.cache?.sort((a, b) => b.rawPosition - a.rawPosition)?.map(r => `${r}`)?.join('\n') || 'unknown',
+              inline: false,
+            }
+          )
+          .setFooter({ text: `ID: ${user.id}` })
+          .setTimestamp();
+
+        const buttons = new Discord.ActionRowBuilder();
+        buttons.addComponents(
+          new Discord.ButtonBuilder()
+            .setCustomId('approve-beta-tester')
+            .setLabel('Approve')
+            .setStyle(Discord.ButtonStyle.Success)
+            .setEmoji('☑️'),
+          new Discord.ButtonBuilder()
+            .setCustomId('decline-beta-tester')
+            .setLabel('Decline')
+            .setStyle(Discord.ButtonStyle.Danger),
+        );
+
+        interaction.guild.channels.cache.find(c => c.name === 'approval-queue').send({ embeds: [embed], components: [buttons] });
+        interaction.reply({ content: 'Your application has been submitted for review!', ephemeral: true });
+        return;
+      }
+      // Approve beta tester role
+      if (interaction.customId == 'approve-beta-tester') {
+        // Get the embeds attached to this interaction
+        const embeds = interaction.message.embeds.map(e => Discord.EmbedBuilder.from(e));
+        const user_id = embeds[0].toJSON().description.match(/<@!?(\d+)>/)[1];
+        const member = await interaction.guild.members.fetch(user_id).catch(error);
+        // Check they are still a member of the server
+        if (!member) {
+          embeds.forEach(e => e.setColor('#e74c3c'));
+          embeds[embeds.length - 1].setFooter({ text: '🚫 No longer member..' }).setTimestamp()
+          interaction.message.edit({ embeds, components: [] });
+          interaction.reply({ content: `Unable to find member <@!${user_id}>..`, ephemeral: true });
+          return;
+        };
+        const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
+        // Check the role exists in this server
+        if (!role) {
+          interaction.reply({ content: 'Unable to find Beta Tester role, try again later..', ephemeral: true });
+          return;
+        }
+        // Apply the beta tester role
+        member.roles.add(role);
+        // Update our embed, remove the buttons
+        embeds.forEach(e => e.setColor('#2ecc71'));
+        embeds[embeds.length - 1].setFooter({ text: '☑️ Application approved!' }).setTimestamp()
+        interaction.update({ embeds, components: [] });
+        // Delete the application after x time
+        setTimeout(() => interaction.message.delete().catch(e => console.error('Unable to delete approved application')), 1 * MINUTE);
+        // Upadte the history channel
+        const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
+        historyChannel.send({ embeds: [new Discord.EmbedBuilder().setColor('#2ecc71').setDescription(`☑️ Application approved!\nMember: <@!${user_id}>\nApproved by: ${interaction.user}`).setTimestamp()] });
+        return;
+      }
+      // Decline beta tester role
+      if (interaction.customId == 'decline-beta-tester') {
+        // Get the embeds attached to this interaction
+        const embeds = interaction.message.embeds.map(e => Discord.EmbedBuilder.from(e));
+        // Update our embed, remove the buttons
+        embeds.forEach(e => e.setColor('#e74c3c'));
+        embeds[embeds.length - 1].setFooter({ text: '🚫 Application declined..' }).setTimestamp()
+        interaction.update({ embeds, components: [] });
+        // Delete the application after x time
+        setTimeout(() => interaction.message.delete().catch(e => console.error('Unable to delete declined application')), 1 * MINUTE);
+        // Upadte the history channel
+        const user_id = embeds[0].toJSON().description.match(/<@!?(\d+)>/)[1];
+        const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
+        historyChannel.send({ embeds: [new Discord.EmbedBuilder().setColor('#e74c3c').setDescription(`🚫 Application declined..\nMember: <@!${user_id}>\nApproved by: ${interaction.user}`).setTimestamp()] });
+        return;
       }
     }
   });
