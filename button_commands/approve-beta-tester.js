@@ -14,6 +14,7 @@ module.exports = {
     // Get the embeds attached to this interaction
     const embeds = interaction.message.embeds.map(e => EmbedBuilder.from(e));
     const user_id = embeds[0].toJSON().description.match(/<@!?(\d+)>/)[1];
+    const user_reason = interaction.message.embeds[0].fields[7].value;
     // Check they are still a member of the server
     const member = await interaction.guild.members.fetch(user_id).catch(error);
     if (!member) {
@@ -41,7 +42,7 @@ module.exports = {
     setTimeout(() => interaction.message.delete().catch(e => error('Unable to delete approved application')), 1 * MINUTE);
     // Upadte the history channel
     const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
-    historyChannel?.send({ embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(`☑️ Application approved!\nMember: <@!${user_id}>\nApproved by: ${interaction.user}`).setTimestamp()] });
+    historyChannel?.send({ embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(`☑️ Application approved!\nMember: <@!${user_id}>\nReason: \n${user_reason}\n\nApproved by: ${interaction.user}`).setTimestamp()] });
     return;
   },
 };

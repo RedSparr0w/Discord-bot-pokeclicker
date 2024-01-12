@@ -13,6 +13,7 @@ module.exports = {
   execute     : async (interaction) => {
     // Get the embeds attached to this interaction
     const embeds = interaction.message.embeds.map(e => EmbedBuilder.from(e));
+    const user_reason = interaction.message.embeds[0].fields[7].value;
     // Update our embed, remove the buttons
     embeds.forEach(e => e.setColor('#e74c3c'));
     embeds[embeds.length - 1].setFooter({ text: '🚫 Application declined..' }).setTimestamp()
@@ -22,7 +23,7 @@ module.exports = {
     // Upadte the history channel
     const user_id = embeds[0].toJSON().description.match(/<@!?(\d+)>/)[1];
     const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
-    historyChannel?.send({ embeds: [new EmbedBuilder().setColor('#e74c3c').setDescription(`🚫 Application declined..\nMember: <@!${user_id}>\nDeclined by: ${interaction.user}`).setTimestamp()] });
+    historyChannel?.send({ embeds: [new EmbedBuilder().setColor('#e74c3c').setDescription(`🚫 Application declined..\nMember: <@!${user_id}>\nReason: \n${user_reason}\n\nDeclined by: ${interaction.user}`).setTimestamp()] });
     return;
   },
 };
