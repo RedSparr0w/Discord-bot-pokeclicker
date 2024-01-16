@@ -19,13 +19,13 @@ module.exports = {
     const member = await interaction.guild.members.fetch(user_id).catch(error);
     if (!member) {
       embeds.forEach(e => e.setColor('#e74c3c'));
-      embeds[embeds.length - 1].setFooter({ text: '🚫 No longer member of server..' }).setTimestamp()
+      embeds[embeds.length - 1].setFooter({ text: '🚫 No longer member of server..' }).setTimestamp();
       interaction.message.edit({ embeds, components: [] });
       interaction.reply({ content: `User is no longer a server member <@!${user_id}>..`, ephemeral: true });
       // Delete the application after x time
       setTimeout(() => interaction.message.delete().catch(e => error('Unable to delete missing member application')), 1 * MINUTE);
       return;
-    };
+    }
     // Check the role exists in this server
     const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
     if (!role) {
@@ -36,7 +36,7 @@ module.exports = {
     member.roles.add(role);
     // Update our embed, remove the buttons
     embeds.forEach(e => e.setColor('#2ecc71'));
-    embeds[embeds.length - 1].setFooter({ text: '☑️ Application approved!' }).setTimestamp()
+    embeds[embeds.length - 1].setFooter({ text: '☑️ Application approved!' }).setTimestamp();
     interaction.update({ embeds, components: [] });
     // Delete the application after x time
     setTimeout(() => interaction.message.delete().catch(e => error('Unable to delete approved application')), 1 * MINUTE);

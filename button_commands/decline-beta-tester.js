@@ -16,7 +16,7 @@ module.exports = {
     const user_reason = interaction.message.embeds[0].fields[7].value;
     // Update our embed, remove the buttons
     embeds.forEach(e => e.setColor('#e74c3c'));
-    embeds[embeds.length - 1].setFooter({ text: '🚫 Application declined..' }).setTimestamp()
+    embeds[embeds.length - 1].setFooter({ text: '🚫 Application declined..' }).setTimestamp();
     interaction.update({ embeds, components: [] });
     // Delete the application after x time
     setTimeout(() => interaction.message.delete().catch(e => error('Unable to delete declined application')), 1 * MINUTE);

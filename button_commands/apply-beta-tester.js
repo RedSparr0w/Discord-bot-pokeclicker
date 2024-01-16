@@ -27,14 +27,14 @@ module.exports = {
 
     // Auto accept if member of server for more than 1 year
     // TODO: maybe enable this at some point
-    if (false && today - joinServer > 365 * DAY) {
-      const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
-      if (!role) return;
+    // if (today - joinServer > 365 * DAY) {
+    //   const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
+    //   if (!role) return;
 
-      member.roles.add(role);
-      interaction.reply({ content: 'Welcome!\nYou are now a beta tester.', ephemeral: true });
-      return;
-    }
+    //   member.roles.add(role);
+    //   interaction.reply({ content: 'Welcome!\nYou are now a beta tester.', ephemeral: true });
+    //   return;
+    // }
 
     // Create the modal
     const modal = new ModalBuilder()

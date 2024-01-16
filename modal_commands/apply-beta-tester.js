@@ -87,7 +87,7 @@ module.exports = {
       new ButtonBuilder()
         .setCustomId('decline-beta-tester')
         .setLabel('Decline')
-        .setStyle(ButtonStyle.Danger),
+        .setStyle(ButtonStyle.Danger)
     );
 
     interaction.guild.channels.cache.find(c => c.name === 'approval-queue')?.send({ embeds: [embed], components: [buttons] });
