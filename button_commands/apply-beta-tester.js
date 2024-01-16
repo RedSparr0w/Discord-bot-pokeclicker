@@ -1,4 +1,5 @@
-const { ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder } = require('discord.js');
+const { ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder, EmbedBuilder } = require('discord.js');
+const { DAY } = require('../helpers.js');
 
 module.exports = {
   name        : 'apply-beta-tester',
@@ -10,6 +11,31 @@ module.exports = {
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   execute     : async (interaction) => {
+    const member = interaction.member;
+    const user = member.user;
+    const joinServer = new Date(member.joinedTimestamp);
+    const today = new Date();
+
+    // Auto decline if member is new to the server (< 14 days)
+    if (today - joinServer < 14 * DAY) {
+      interaction.reply({ content: 'Please apply again later once you have been in the server for at least 2 weeks.', ephemeral: true });
+      // Upadte the history channel
+      const historyChannel = interaction.guild.channels.cache.find(c => c.name === 'approval-history');
+      historyChannel?.send({ embeds: [new EmbedBuilder().setColor('#e74c3c').setDescription(`🚫 Application auto declined..\nMember: ${user}\nReason: \n${'```\nMember is too new to the server\n```'}\n\nDeclined by: ${member.guild.members.me.toString()}`).setTimestamp()] });
+      return;
+    }
+
+    // Auto accept if member of server for more than 1 year
+    // TODO: maybe enable this at some point
+    if (false && today - joinServer > 365 * DAY) {
+      const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
+      if (!role) return;
+
+      member.roles.add(role);
+      interaction.reply({ content: 'Welcome!\nYou are now a beta tester.', ephemeral: true });
+      return;
+    }
+
     // Create the modal
     const modal = new ModalBuilder()
       .setCustomId('apply-beta-tester')

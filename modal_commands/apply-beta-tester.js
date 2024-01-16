@@ -17,25 +17,6 @@ module.exports = {
 
     const joinDiscord = new Date(user.createdTimestamp);
     const joinServer = new Date(member.joinedTimestamp);
-    const today = new Date();
-
-    // Auto decline if member is new to the server (< 14 days)
-    // TODO: maybe enable this at some point
-    if (false && today - joinServer < 14 * DAY) {
-      interaction.reply({ content: 'Please apply again later once you have been in the server for at least 2 weeks', ephemeral: true });
-      return;
-    }
-
-    // Auto accept if member of server for more than 1 year
-    // TODO: maybe enable this at some point
-    if (false && today - joinServer > 365 * DAY) {
-      const role = interaction.guild.roles.cache.find(r => r.name === 'Beta Tester');
-      if (!role) return;
-
-      member.roles.add(role);
-      interaction.reply({ content: 'Welcome!\nYou are now a beta tester.', ephemeral: true });
-      return;
-    }
 
     // Send user to approval queue
     const warnings = await getStatistic(user, 'warnings');
