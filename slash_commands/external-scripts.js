@@ -7,10 +7,30 @@ module.exports = {
   description : 'Apply the @external scripts role to a user',
   args        : [
     {
-      name: 'user',
-      type: ApplicationCommandOptionType.User,
-      description: 'User to apply the role to',
-      required: true,
+      name: 'add',
+      type: ApplicationCommandOptionType.Subcommand,
+      description: 'Remove the role from a user',
+      options: [
+        {
+          name: 'user',
+          type: ApplicationCommandOptionType.User,
+          description: 'User to remove the role from',
+          required: true,
+        },
+      ],
+    },
+    {
+      name: 'remove',
+      type: ApplicationCommandOptionType.Subcommand,
+      description: 'Remove the role from a user',
+      options: [
+        {
+          name: 'user',
+          type: ApplicationCommandOptionType.User,
+          description: 'User to remove the role from',
+          required: true,
+        },
+      ],
     },
   ],
   guildOnly   : true,
@@ -42,17 +62,38 @@ module.exports = {
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }
 
-    const output = [`${role} applied to ${member}!`];
+    const subcommand = interaction.options.getSubcommand();
 
-    await member.roles.add(role, `Role applied by ${interaction.member.displayName}-${interaction.user.id}`);
+    // remove the external scripts role from someone
+    if (subcommand === 'add') {
+      const output = [`${role} applied to ${member}!`];
 
-    const embed = new EmbedBuilder().setColor('#3498db').setDescription(output.join('\n'));
+      await member.roles.add(role, `Role applied by ${interaction.member.displayName}-${interaction.user.id}`);
 
-    modLog(interaction.guild,
-      `**Mod:** ${interaction.member.toString()}
-      **User:** ${member.toString()}
-      **Action:** Applied ${role}`);
+      const embed = new EmbedBuilder().setColor('#3498db').setDescription(output.join('\n'));
 
-    interaction.reply({ embeds: [embed] });
+      modLog(interaction.guild,
+        `**Mod:** ${interaction.member.toString()}
+        **User:** ${member.toString()}
+        **Action:** Applied ${role}`);
+
+      return interaction.reply({ embeds: [embed] });
+    }
+
+    // remove the external scripts role from someone
+    if (subcommand === 'remove') {
+      const output = [`${role} removed from ${member}!`];
+
+      await member.roles.remove(role, `Role removed by ${interaction.member.displayName}-${interaction.user.id}`);
+
+      const embed = new EmbedBuilder().setColor('#3498db').setDescription(output.join('\n'));
+
+      modLog(interaction.guild,
+        `**Mod:** ${interaction.member.toString()}
+        **User:** ${member.toString()}
+        **Action:** Removed  ${role}`);
+
+      return interaction.reply({ embeds: [embed] });
+    }
   },
 };
