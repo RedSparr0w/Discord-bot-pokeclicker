@@ -9,12 +9,12 @@ module.exports = {
     {
       name: 'add',
       type: ApplicationCommandOptionType.Subcommand,
-      description: 'Remove the role from a user',
+      description: 'Add the role to a user',
       options: [
         {
           name: 'user',
           type: ApplicationCommandOptionType.User,
-          description: 'User to remove the role from',
+          description: 'User to add the role to',
           required: true,
         },
       ],
