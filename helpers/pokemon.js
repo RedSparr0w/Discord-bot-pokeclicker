@@ -1,3 +1,4 @@
+const { MINUTE, HOUR } = require('./constants.js');
 const { UndergroundItemValueType } = require('./pokeclicker.js');
 
 const pokemonTypeIcons = {
@@ -51,33 +52,98 @@ const findGemRoutes = (RouteGemTypes, type) => {
 
 class SeededRand {
   static next() {
-    this.state = (this.state * this.MULTIPLIER + this.OFFSET) % this.MOD;
-    return this.state / this.MOD;
+    this.state ^= this.state << 13;
+    this.state ^= this.state >> 17;
+    this.state ^= this.state << 5;
+    this.state = Math.abs(this.state * this.MULTIPLIER) % this.MAX_UINT_32;
+    return this.state / this.MAX_UINT_32;
   }
   static seedWithDate(d) {
     this.state = Number((d.getFullYear() - 1900) * d.getDate() + 1000 * d.getMonth() + 100000 * d.getDate());
   }
+  // hours specifies how many hours the seed should remain the same
+  static seedWithDateHour(d, hours = 1) {
+    // Adjust date for timezone offset and hours rounded
+    const time = d.getTime();
+    const offset = -(d.getTimezoneOffset() * (MINUTE));
+    const offsetTime = time + offset;
+    const newDate = new Date(time - (offsetTime % (HOUR * hours)));
+    const newHour = newDate.getHours();
+    // Set state based on adjusted date
+    this.seedWithDate(newDate);
+    // Update state based on current hour
+    this.state += 1000000 * newHour;
+  }
   static seed(state) {
-    this.state = state;
+    this.state = Math.abs(state);
   }
+  // get a number between min and max (both inclusive)
   static intBetween(min, max) {
-    return Math.floor((max - min + 1) * SeededRand.next() + min);
+    return Math.floor((max - min + 1) * this.next() + min);
   }
+  // get a floored number from 0 to max (excluding max)
+  static floor(max) {
+    return Math.floor(this.next() * max);
+  }
+  // get a number from 0 to max (excluding max)
+  static float(max) {
+    return this.next() * max;
+  }
+  // 50/50 chance of true or false
   static boolean() {
     return !!this.intBetween(0, 1);
   }
-  static fromArray(arr) {
-    return arr[SeededRand.intBetween(0, arr.length - 1)];
+  // If number is more than one, the chance is 1/chance otherwise the chance is a percentage
+  static chance(chance) {
+    return this.next() <= (chance >= 1 ? 1 / chance : chance);
   }
-  static fromEnum(arr) {
-    arr = Object.keys(arr).map(Number).filter(item => item >= 0);
+  // Pick an element from an array
+  static fromArray(arr) {
+    return arr[this.intBetween(0, arr.length - 1)];
+  }
+  // Pick an element from an array with specified weights
+  static fromWeightedArray(arr, weights) {
+    const max = weights.reduce((acc, weight) => acc + weight, 0);
+    let rand = this.next() * max;
+    return arr.find((_e, i) => (rand -= weights[i]) <= 0) || arr[0];
+  }
+  // Filters out any enum values that are less than 0 (for None)
+  static fromEnum(_enum) {
+    const arr = Object.keys(_enum).map(Number).filter((item) => item >= 0);
     return this.fromArray(arr);
   }
+  // Get a string of letters and numbers (lowercase)
+  static string(length) {
+    return [...Array(length)].map(() => this.next().toString(36)[2]).join('');
+  }
+  // Shuffle an array
+  static shuffleArray(arr) {
+    const output = [...arr];
+    for (let i = output.length; i; i--) {
+      const j = this.floor(i);
+      const x = output[i - 1];
+      output[i - 1] = output[j];
+      output[j] = x;
+    }
+    return output;
+  }
+  // Shuffle an array based on the weights of the items
+  static shuffleWeightedArray(arr, weights) {
+    const output = [];
+    for (let i = 0; arr.length; i++) {
+      const item = this.fromWeightedArray(arr, weights);
+      const ind = arr.findIndex(a => a == item);
+      arr.splice(ind, 1);
+      weights.splice(ind, 1);
+      output.push(item);
+    }
+    return output;
+  }
 }
-SeededRand.state = 12345;
-SeededRand.MOD = 233280;
-SeededRand.OFFSET = 49297;
-SeededRand.MULTIPLIER = 9301;
+SeededRand.state = 1234567890;
+SeededRand.MAX_UINT_32 = Math.pow(2, 32) - 1;
+SeededRand.MULTIPLIER = 987654321;
+
 class DailyDeal {
   constructor() {
     this.item1 = DailyDeal.randomItem();
@@ -101,7 +167,8 @@ class DailyDeal {
     DailyDeal.list.push(...temp);
   }
   static randomItem() {
-    return SeededRand.fromArray(UndergroundItem.list);
+    // Exclude mega stones from daily deals
+    return SeededRand.fromArray(UndergroundItem.list.filter(item => item.valueType !== UndergroundItemValueType.MegaStone));
   }
   static randomAmount() {
     return SeededRand.intBetween(1, 3);
@@ -109,27 +176,20 @@ class DailyDeal {
   isValid(dealList) {
     const item1Name = this.item1.name;
     const item2Name = this.item2.name;
-
     if (item1Name == item2Name) {
       return false;
     }
-
     // Left side item cannot be Evolution Item or Shard
-    if (
-      this.item1.valueType == UndergroundItemValueType.EvolutionItem
-          || this.item1.valueType == UndergroundItemValueType.Shard
-    ) {
+    if (this.item1.valueType == UndergroundItemValueType.EvolutionItem
+          || this.item1.valueType == UndergroundItemValueType.Shard) {
       return false;
     }
-
     if (DailyDeal.sameDealExists(item1Name, item2Name, dealList)) {
       return false;
     }
-
     if (DailyDeal.reverseDealExists(item1Name, item2Name, dealList)) {
       return false;
     }
-
     return true;
   }
   static sameDealExists(name1, name2, dealList) {
@@ -351,6 +411,12 @@ const UndergroundItem = {
       'valueType': 1,
     },
     {
+      'name': 'Blank Plate',
+      'id': 117,
+      'value': 100,
+      'valueType': 1,
+    },
+    {
       'name': 'Helix Fossil',
       'id': 200,
       'value': 0,
@@ -501,6 +567,18 @@ const UndergroundItem = {
       'valueType': 5,
     },
     {
+      'name': 'Black Augurite',
+      'id': 310,
+      'value': 1,
+      'valueType': 5,
+    },
+    {
+      'name': 'Peat Block',
+      'id': 311,
+      'value': 1,
+      'valueType': 5,
+    },
+    {
       'name': 'Red Shard',
       'id': 400,
       'value': 0,
@@ -589,6 +667,36 @@ const UndergroundItem = {
       'id': 414,
       'value': 0,
       'valueType': 2,
+    },
+    {
+      'name': 'Beige Shard',
+      'id': 415,
+      'value': 0,
+      'valueType': 2,
+    },
+    {
+      'name': 'Slate Shard',
+      'id': 416,
+      'value': 0,
+      'valueType': 2,
+    },
+    {
+      'name': 'Aerodactylite',
+      'id': 500,
+      'value': 0,
+      'valueType': 6,
+    },
+    {
+      'name': 'Mawilite',
+      'id': 501,
+      'value': 0,
+      'valueType': 6,
+    },
+    {
+      'name': 'Sablenite',
+      'id': 502,
+      'value': 0,
+      'valueType': 6,
     },
   ],
 };
