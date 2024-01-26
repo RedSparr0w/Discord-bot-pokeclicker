@@ -43,6 +43,8 @@ module.exports = {
 
     const links = title.map(([match, title]) => wikiLinks.find((link) => link.display.toLowerCase() == title));
     const topLink = links.shift();
+    // Limit to 15 extra links
+    links.splice(15);
 
     const embed = new EmbedBuilder()
       .setTitle('PokéClicker wiki')
