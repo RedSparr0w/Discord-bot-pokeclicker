@@ -83,7 +83,7 @@ module.exports = {
             {
               label: '4 Hours',
               description: 'Un-mute user in 4 Hours',
-              value: (3 * HOUR).toString(),
+              value: (4 * HOUR).toString(),
             },
             {
               label: '12 Hours',
