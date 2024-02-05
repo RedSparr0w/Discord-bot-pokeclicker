@@ -86,13 +86,20 @@ module.exports = [
       message.react('🐱');
     },
   },
-  // cats > dogs
+  // kabuto
   {
     regex: /\b(kabuto)\b/i,
     execute: (message, client) => {
       if (serverIcons?.kabuto) {
         message.react(serverIcons.kabuto.match(/:(\d+)>/)[1]);
       }
+    },
+  },
+  // pants
+  {
+    regex: /\b(infin(ite|eat).wealth)\b/i,
+    execute: (message, client) => {
+      message.react('👖');
     },
   },
   // FAQ
