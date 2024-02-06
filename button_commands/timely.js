@@ -12,6 +12,7 @@ const {
   HOUR,
   DAY,
 } = require('../helpers.js');
+const { getRecentClaims } = require('../helpers/claim.js');
 const time_between_claims = 2 * HOUR;
 
 const timelyAmount = 10;
@@ -32,14 +33,14 @@ module.exports = {
   description : 'Claim your 2 hourly PokéCoins',
   args        : [],
   guildOnly   : true,
-  cooldown    : 3,
+  cooldown    : 60,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (interaction) => {
-    // Check if user claimed within the last 24 hours
     let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'timely_claim');
 
+    // If last claim is newer than now, just reset it to now
     if (last_claim > Date.now()) {
       last_claim = Date.now() - (time_between_claims + 1000);
     }
@@ -62,6 +63,7 @@ module.exports = {
             .setTimestamp(time_between_claims + (+last_claim))
             .setDescription(`${interaction.user}\nYou've already claimed your ${serverIcons.money} too recently\nYou can claim again in ${timeRemaining}`),
         ],
+        ephemeral: true,
       });
     }
 
@@ -120,8 +122,15 @@ module.exports = {
       footer = 'You can use the /roles command to be automatically reminded';
     }
 
-    return interaction.reply({
+    interaction.reply({
       embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(message.join('\n')).setFooter({ text: footer })],
+      ephemeral: true,
     });
+
+    // Update the bot message with the new claim amount
+    const recentClaims = await getRecentClaims('timely_claim', HOUR * 2);
+    const mainEmbed = EmbedBuilder.from(interaction.message.embeds[0]);
+    mainEmbed.setDescription(mainEmbed.toJSON().description.replace(/2 hours: [`\d\,]+/i, `2 hours: \`${recentClaims}\``));
+    interaction.message.edit({ embeds: [mainEmbed] });
   },
 };

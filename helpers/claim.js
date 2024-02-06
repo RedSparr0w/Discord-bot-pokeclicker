@@ -90,10 +90,20 @@ const pauseClaimStreak = async (user) => {
   db.close();
 };
 
+const getRecentClaims = async (table, offset) => {
+  const db = await getDB();
+  const date = new Date();
+  date.setTime(date.getTime() - offset);
+  const claims = await db.all(`SELECT COUNT(*) AS count FROM ${table} WHERE last_claim >= ?`, date.toJSON());
+  db.close();
+  return claims.map((claim) => claim.count)[0];
+};
+
 module.exports = {
   getLastClaim,
   updateClaimDate,
   bumpClaimStreak,
   resetClaimStreak,
   pauseClaimStreak,
+  getRecentClaims,
 };

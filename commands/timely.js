@@ -114,7 +114,7 @@ module.exports = {
     if (msg.member.roles.cache.has(autoReminderRoleID)) {
       const reminderTime = new Date(Date.now() + time_between_claims);
 
-      addReminder(msg.author, reminderTime, '/timely\n<#456798288893706241>');
+      addReminder(msg.author, reminderTime, '/timely\n<#1204292652871450696>');
 
       footer = 'Auto reminder will be sent in 2 hours';
     } else {

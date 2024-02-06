@@ -12,39 +12,40 @@ const {
   HOUR,
   DAY,
 } = require('../helpers.js');
-const time_between_claims = 2 * HOUR;
+const { getRecentClaims } = require('../helpers/claim.js');
+const time_between_claims = 23 * HOUR;
 
-const timelyAmount = 10;
+const claimAmount = 100;
 
 const calcStreakBonus = (streak) => {
-  const bigStreak = Math.max(0, Math.min(10, streak));
+  const bigStreak = Math.max(0, Math.min(5, streak));
   streak -= bigStreak;
-  const midStreak = Math.max(0, Math.min(50, streak));
+  const midStreak = Math.max(0, Math.min(10, streak));
   streak -= midStreak;
-  return bigStreak + Math.floor(midStreak * 0.2) + Math.floor(streak * 0.05);
+  return (bigStreak * 10) + (midStreak * 5) + streak;
 };
 
 const s = (amt) => amt != 1 ? 's' : '';
 
 module.exports = {
-  name        : 'timely',
-  aliases     : [],
-  description : 'Claim your 2 hourly PokéCoins',
+  name        : 'claim',
+  aliases     : ['daily'],
+  description : 'Claim your daily PokéCoins',
   args        : [],
   guildOnly   : true,
-  cooldown    : 3,
+  cooldown    : 60,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
   channels    : ['game-corner', 'bot-commands'],
   execute     : async (interaction) => {
-    // Check if user claimed within the last 24 hours
-    let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'timely_claim');
+    let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'daily_claim');
 
+    // If last claim is newer than now, just reset it to now
     if (last_claim > Date.now()) {
       last_claim = Date.now() - (time_between_claims + 1000);
     }
 
-    // User already claimed within last 2 hours
+    // User already claimed within last 23 hours
     if (last_claim >= (Date.now() - time_between_claims)) {
       const time_left = (+last_claim + time_between_claims) - Date.now();
       const hours = Math.floor(time_left % DAY / HOUR);
@@ -58,22 +59,23 @@ module.exports = {
         embeds: [
           new EmbedBuilder()
             .setColor('#e74c3c')
-            .setFooter({ text: 'Next timely' })
+            .setFooter({ text: 'Next claim' })
             .setTimestamp(time_between_claims + (+last_claim))
-            .setDescription(`${interaction.user}\nYou've already claimed your ${serverIcons.money} too recently\nYou can claim again in ${timeRemaining}`),
+            .setDescription(`${interaction.user}\nYou've already claimed your ${serverIcons.money} for today\nYou can claim again in ${timeRemaining}`),
         ],
+        ephemeral: true,
       });
     }
 
     // Should the claim streak be reset (if more than 14 days, or 61 days if paused)
     if (last_claim < (Date.now() - ((paused ? 61 : 14) * DAY))) {
-      await resetClaimStreak(interaction.user, 'timely_claim');
+      await resetClaimStreak(interaction.user, 'daily_claim');
       streak = 0;
     }
 
     // Calculate bonuses
     const streakBonus = calcStreakBonus(streak);
-    let totalAmount = timelyAmount + streakBonus;
+    let totalAmount = claimAmount + streakBonus;
     const roleBonuses = [];
     try {
       interaction.member.roles.cache.map(r => r.id).forEach(roleID => {
@@ -89,10 +91,10 @@ module.exports = {
 
     // Add the coins to the users balance then set last claim time (incase the user doesn't exist yet)
     const balance = await addAmount(interaction.user, totalAmount, 'coins');
-    await updateClaimDate(interaction.user, 'timely_claim');
-    await bumpClaimStreak(interaction.user, 'timely_claim');
+    await updateClaimDate(interaction.user, 'daily_claim');
+    await bumpClaimStreak(interaction.user, 'daily_claim');
 
-    const message = [`Timely Claim: **+${timelyAmount.toLocaleString('en-US')}** ${serverIcons.money}`];
+    const message = [`Daily Claim: **+${claimAmount.toLocaleString('en-US')}** ${serverIcons.money}`];
 
     if (streakBonus) {
       message.push(`Streak Bonus: **+${streakBonus.toLocaleString('en-US')}** ${serverIcons.money} `);
@@ -113,15 +115,22 @@ module.exports = {
     if (interaction.member.roles.cache.has(autoReminderRoleID)) {
       const reminderTime = new Date(Date.now() + time_between_claims);
 
-      addReminder(interaction.user, reminderTime, '/timely\n<#1204292652871450696>');
+      addReminder(interaction.user, reminderTime, '/claim\n<#1204292652871450696>');
 
-      footer = 'Auto reminder will be sent in 2 hours';
+      footer = 'Auto reminder will be sent in 23 hours';
     } else {
       footer = 'You can use the /roles command to be automatically reminded';
     }
 
-    return interaction.reply({
+    interaction.reply({
       embeds: [new EmbedBuilder().setColor('#2ecc71').setDescription(message.join('\n')).setFooter({ text: footer })],
+      ephemeral: true,
     });
+
+    // Update the bot message with the new claim amount
+    const recentClaims = await getRecentClaims('daily_claim', HOUR * 23);
+    const mainEmbed = EmbedBuilder.from(interaction.message.embeds[0]);
+    mainEmbed.setDescription(mainEmbed.toJSON().description.replace(/23 hours: [`\d\,]+/i, `23 hours: \`${recentClaims}\``));
+    interaction.message.edit({ embeds: [mainEmbed] });
   },
 };
