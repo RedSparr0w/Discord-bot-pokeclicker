@@ -137,7 +137,7 @@ const saveFileFlags = (saveData) => {
   }
   // If more than 100k Master balls, or more obtained than obtained
   const masterballsObtained = saveData.save?.statistics?.pokeballsObtained?.[GameConstants.Pokeball.Masterball] || 0;
-  const masterballsTotal = (saveData.save?.pokeballs?.pokeballs?.[GameConstants.Pokeball.Masterball] || 0) + (saveData.save?.statistics.pokeballsUsed?.[GameConstants.Pokeball.Masterball] || 0)
+  const masterballsTotal = (saveData.save?.pokeballs?.pokeballs?.[GameConstants.Pokeball.Masterball] || 0) + (saveData.save?.statistics.pokeballsUsed?.[GameConstants.Pokeball.Masterball] || 0);
   if (masterballsTotal > masterballsObtained || masterballsTotal > 1e5) {
     flags.push('Masterballs');
   }
