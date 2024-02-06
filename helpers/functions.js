@@ -131,9 +131,15 @@ const saveFileFlags = (saveData) => {
   if (Math.max(...saveData.player?.mineInventory?.map(i => i.amount) || []) > 1e8) {
     flags.push('Underground Items');
   }
-  // If more than 10 billion pokeballs
+  // If more than 10 billion of any ball type
   if (Math.max(...saveData.save?.pokeballs?.pokeballs || []) > 1e10) {
     flags.push('Pokeballs');
+  }
+  // If more than 100k Master balls, or more obtained than obtained
+  const masterballsObtained = saveData.save?.statistics?.pokeballsObtained?.[GameConstants.Pokeball.Masterball] || 0;
+  const masterballsTotal = (saveData.save?.pokeballs?.pokeballs?.[GameConstants.Pokeball.Masterball] || 0) + (saveData.save?.statistics.pokeballsUsed?.[GameConstants.Pokeball.Masterball] || 0)
+  if (masterballsTotal > masterballsObtained || masterballsTotal > 1e5) {
+    flags.push('Masterballs');
   }
   // More gems than gems gained
   const gemsCheck = saveData.save?.statistics?.gemsGained?.some((v, i) => (saveData.save?.gems?.gemWallet?.[i] || 0) > v);
