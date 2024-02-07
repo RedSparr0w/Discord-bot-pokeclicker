@@ -113,7 +113,7 @@ module.exports = {
     if (interaction.member.roles.cache.has(autoReminderRoleID)) {
       const reminderTime = new Date(Date.now() + time_between_claims);
 
-      addReminder(interaction.user, reminderTime, '/claim\n<#1204292652871450696>');
+      addReminder(interaction.user, reminderTime, '/claim\nhttps://discord.com/channels/450412847017754644/1204292652871450696/1204293235472867338');
 
       footer = 'Auto reminder will be sent in 23 hours';
     } else {
