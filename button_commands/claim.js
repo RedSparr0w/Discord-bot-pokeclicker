@@ -130,7 +130,7 @@ module.exports = {
     // Update the bot message with the new claim amount
     const recentClaims = await getRecentClaims('daily_claim', HOUR * 23);
     const mainEmbed = EmbedBuilder.from(interaction.message.embeds[0]);
-    mainEmbed.setDescription(mainEmbed.toJSON().description.replace(/23 hours: [`\d\,]+/i, `23 hours: \`${recentClaims}\``));
+    mainEmbed.setDescription(mainEmbed.toJSON().description.replace(/23 hours: [`\d,]+/i, `23 hours: \`${recentClaims}\``));
     interaction.message.edit({ embeds: [mainEmbed] });
   },
 };
