@@ -202,7 +202,7 @@ module.exports = {
         ].join('\n'));
 
         let error;
-        await interaction.user.send({ embeds: [embed] }).catch(e => error = e);
+        await interaction.user.send({ embeds: [embed] }).catch(e => error = e).then(m => m.pin().catch(() => {}));
         // Error sending the code to the user, DM's might be disabled
         if (error) {
           embed.setColor('#e74c3c')
