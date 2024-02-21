@@ -249,7 +249,7 @@ const pokemonType = () => new Promise(resolve => {
 const pokemonID = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
-    const answer = new RegExp(`^\\W*#?${Math.floor(+pokemon.id)}\\b`, 'i');
+    const answer = new RegExp(`^\\W*#?${Math.trunc(+pokemon.id)}\\b`, 'i');
     
     let amount = getAmount();
 
