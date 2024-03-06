@@ -167,7 +167,9 @@ client.on('error', e => error('Client error thrown:', e))
 
     // Non command messages
     if (!message.content.startsWith(prefix)) {
+      // Spam checking
       SpamDetection.check(message);
+
       // Add points for each message sent (every 30 seconds)
       const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {
@@ -205,7 +207,24 @@ client.on('error', e => error('Client error thrown:', e))
       || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
     // Not a valid command
-    if (!command) return;
+    if (!command) {
+      // Spam checking
+      SpamDetection.check(message);
+
+      // Auto replies etc
+      try {
+        regexMatches.forEach(match => {
+          if (match.regex.test(message.content)) {
+            match.execute(message, client);
+          }
+        });
+      } catch (err) {
+        error('Regex Match Error:\n', err);
+      }
+
+      // We don't want to process anything else now
+      return;
+    }
 
 
     // Check if command needs to be executed inside a guild channel
