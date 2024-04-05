@@ -34,6 +34,7 @@ const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(nam
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
 const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]));
+const allGyms = Object.keys(GymList);
 
 const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
@@ -533,7 +534,7 @@ const badgeGymLocation = () => {
 };
 
 const pokemonGymLeader = () => {
-  const gym = GymList[randomFromArray(gymsWithBadges)];
+  const gym = GymList[randomFromArray(allGyms)];
   const pokemonName = randomFromArray(gym.pokemons).name;
   const pokemon = pokemonList.find(p => p.name == pokemonName);
   const leaders = Object.values(GymList).filter(g => g.pokemons.find(p => p.name == pokemonName)).map(l => l.leaderName);
@@ -572,7 +573,7 @@ const pokemonGymLeader = () => {
 };
 
 const gymLeaderPokemon = () => {
-  const gym = GymList[randomFromArray(gymsWithBadges)];
+  const gym = GymList[randomFromArray(allGyms)];
   const pokemon = gym.pokemons.map(p => pokemonNameNormalized(p.name));
   const answer = new RegExp(`^\\W*(${pokemon.join('|')})\\b`, 'i');
   
@@ -667,7 +668,7 @@ const gymLeaderBadge = () => {
 };
 
 const gymLeaderType = () => {
-  const gym = GymList[randomFromArray(gymsWithBadges)];
+  const gym = GymList[randomFromArray(allGyms)];
   const pokemonNames = gym.pokemons.map(p => p.name);
   const pokemon = pokemonList.filter(p => pokemonNames.includes(p.name));
   const types = pokemon.map(p => p.type).flat();
