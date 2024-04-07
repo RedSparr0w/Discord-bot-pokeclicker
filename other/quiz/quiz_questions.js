@@ -197,7 +197,11 @@ const pokemonType = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const types = pokemon.type.map(t => PokemonType[t]);
-    const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')})\\b`, 'i');
+    let memeAnswer = null;
+    if (types.includes('Flying') && types.includes('Normal')) {
+      memeAnswer = 'bir[bd]';
+    }
+    const answer = new RegExp(`^\\W*(${types.join('\\W*')}|${types.reverse().join('\\W*')}${memeAnswer && `|${memeAnswer}`})\\b`, 'i');
 
     let amount = getAmount();
 
