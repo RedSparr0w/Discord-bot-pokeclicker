@@ -197,7 +197,7 @@ const pokemonType = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const types = pokemon.type.map(t => PokemonType[t]);
-    let memeAnswer = null;
+    let memeAnswer = '';
     if (types.includes('Flying') && types.includes('Normal')) {
       memeAnswer = 'bir[bd]';
     }
