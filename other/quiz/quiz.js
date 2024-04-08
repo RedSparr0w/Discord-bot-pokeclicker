@@ -112,6 +112,15 @@ const newQuiz = async (guild, reoccur = false) => {
 
     winner_data.push({user, amount, balance, answered, url: m.url});
   });
+
+  const incorrectFilter = quiz_channel.createMessageCollector({ filter: (m) => !filter(m), time: time_limit});
+  incorrectFilter.on('collect', async m => {
+    const reaction = quiz.incorrectReaction?.(m.content);
+
+    if (reaction) {
+      m.react(reaction);
+    }
+  });
     
   // If code reaction, console log the expected answer
   const answerFilter = (reaction, user) => reaction.emoji.id === '761083768614027265' && user.id === ownerID;

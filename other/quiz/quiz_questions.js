@@ -271,6 +271,21 @@ const pokemonID = () => new Promise(resolve => {
     }
 
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+
+    const incorrectReaction = (m) => {
+      const guessedID = parseFloat(m);
+      if (Number.isNaN(guessedID)) {
+        return undefined;
+      }
+
+      if (guessedID < pokemon.id) {
+        return '⬆️';
+      }
+
+      if (guessedID > pokemon.id) {
+        return '⬇️';
+      }
+    };
   
     fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
       const attachment = await new AttachmentBuilder().setFile('who.png');
@@ -286,6 +301,7 @@ const pokemonID = () => new Promise(resolve => {
         answer,
         amount,
         shiny,
+        incorrectReaction,
         files: [attachment],
         end: async (m, e) => {
           const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
