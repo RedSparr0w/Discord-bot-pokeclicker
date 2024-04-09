@@ -115,8 +115,9 @@ const newQuiz = async (guild, reoccur = false) => {
 
   const incorrectFilter = quiz_channel.createMessageCollector({ filter: (m) => !filter(m), time: time_limit});
   incorrectFilter.on('collect', async m => {
+    const user = m.author;
     // stop doing emoji when we're already done pls thx you
-    if (winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT) {
+    if (finished && (winners.has(user.id) || m.createdTimestamp - finished > ANSWER_TIME_LIMIT)) {
       return;
     }
 
