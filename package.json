@@ -13,17 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.11.2",
+    "@napi-rs/canvas": "^0.1.51",
     "discord.js": "^14.14.1",
     "eslint": "^7.32.0",
     "fuzzyset": "^1.0.7",
-    "merge-images": "git+https://github.com/RedSparr0w/merge-images#develop-build",
     "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7-rc.0",
-    "text2png": "^2.3.0"
+    "sqlite3": "^5.1.7-rc.0"
   },
   "devDependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.11",
     "puppeteer": "^21.6.1"
   }
 }
