@@ -28,7 +28,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/0.png',
     left: 27,
-    bottom: 11,
+    top: 123,
   },
   { // 1
     name: 'Cascade',
@@ -37,7 +37,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/1.png',
     left: 53,
-    bottom: 11,
+    top: 123,
   },
   { // 2
     name: 'Thunder',
@@ -46,7 +46,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/2.png',
     left: 74,
-    bottom: 10,
+    top: 122,
   },
   { // 3
     name: 'Rainbow',
@@ -55,7 +55,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/3.png',
     left: 98,
-    bottom: 10,
+    top: 122,
   },
   { // 4
     name: 'Marsh',
@@ -64,7 +64,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/4.png',
     left: 123,
-    bottom: 11,
+    top: 123,
   },
   { // 5
     name: 'Soul',
@@ -73,7 +73,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/5.png',
     left: 147,
-    bottom: 11,
+    top: 123,
   },
   { // 6
     name: 'Volcano',
@@ -82,7 +82,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/6.png',
     left: 171,
-    bottom: 11,
+    top: 122,
   },
   { // 7
     name: 'Earth',
@@ -91,7 +91,7 @@ const trainerCardBadges = [
     // card stuff
     src: './assets/images/badges/7.png',
     left: 194,
-    bottom: 11,
+    top: 122,
   },
 ];
 

@@ -2,12 +2,11 @@
 const { AttachmentBuilder, EmbedBuilder, ApplicationCommandType, ApplicationCommandOptionType } = require('discord.js');
 const { getAmount, getRank, getTrainerCard, getPurchased } = require('../database.js');
 const { trainerCardColors, trainerCardBadges, getLastClaim } = require('../helpers.js');
-const { Canvas, Image } = require('canvas');
-const mergeImages = require('merge-images');
-const text2png = require('text2png');
-const fs =  require('fs');
+const { createCanvas, loadImage, GlobalFonts } = require('@napi-rs/canvas');
 
 const numStr = num => num.toLocaleString('en-US');
+
+GlobalFonts.registerFromPath('./assets/fonts/pokemon_fire_red.ttf', 'Fire Red');
 
 module.exports = {
   type        : ApplicationCommandType.User,
@@ -47,115 +46,41 @@ module.exports = {
     const badges = await getPurchased(user, 'badge');
     const { streak: daily_streak } = await getLastClaim(user, 'daily_claim');
     const { streak: timely_streak } = await getLastClaim(user, 'timely_claim');
-
-    mergeImages([
-      // Base image
-      `./assets/images/trainer_card/${trainerCardColors[trainerCard.background]}.png`,
-      { // player image
-        src: `./assets/images/trainers/${trainerCard.trainer}.png`,
-        right: 20,
-        bottom: 45,
-      },
-      { // Discord ID
-        src: text2png(`RANK No. ${rank.toString().padStart(3, 0)}`, {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        left: 140,
-        top: 14,
-      },
-      { // Discord tag
-        // eslint-disable-next-line no-control-regex
-        src: text2png((member.displayName).replace(/[^\x00-\x7F]/g, '').trim().substr(0, 33).toUpperCase() || 'TRAINER UNKNOWN', {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        left: 21,
-        bottom: 106,
-      },
-      { // Money
-        src: text2png('MONEY', {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        left: 21,
-        bottom: 78,
-      },
-      {
-        src: text2png(`$ ${numStr(balance)}`, {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        right: 85,
-        bottom: 77,
-      },
-      { // Daily Streak
-        src: text2png('DAILY STREAK', {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        left: 21,
-        top: 78,
-      },
-      {
-        src: text2png(numStr(daily_streak), {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        right: 85,
-        top: 77,
-      },
-      { // Timely Streak
-        src: text2png('TIMELY STREAK', {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        left: 21,
-        top: 94,
-      },
-      {
-        src: text2png(numStr(timely_streak), {
-          font: '16px "pokemon_fire_red"',
-          localFontPath: './assets/fonts/pokemon_fire_red.ttf',
-          localFontName: 'pokemon_fire_red',
-          color: '#333',
-        }),
-        right: 85,
-        top: 93,
-      },
-      ...badges.map((b, i) => b ? trainerCardBadges[i] : b).filter(b => b),
-    ], {
-      Canvas,
-      Image,
-    }).then(b64 => {
-      const base64Image = b64.split(';base64,').pop();
-      
-      fs.writeFile('trainer_card.png', base64Image, {encoding: 'base64'}, async function(err) {
-        const attachment = await new AttachmentBuilder().setFile('trainer_card.png');
-
-        return interaction.reply({ files: [attachment] });
-
-        // const embed = new EmbedBuilder()
-        //   .setColor('#3498db')
-        //   .attachFiles(attachment)
-        //   .setImage('attachment://trainer_card.png');
+    
+    const backgroundImage = await loadImage(`./assets/images/trainer_card/${trainerCardColors[trainerCard.background]}.png`);
+    
+    const canvas = createCanvas(backgroundImage.width, backgroundImage.height);
+    const ctx = canvas.getContext('2d');
   
-        // return interaction.reply({ embeds: [embed] });
-      });
-    });
+    ctx.drawImage(backgroundImage, 0, 0, backgroundImage.width, backgroundImage.height);
+
+    // Player image
+    const playerImage = await loadImage(`./assets/images/trainers/${trainerCard.trainer}.png`);
+    ctx.drawImage(playerImage, 160, 40, playerImage.width, playerImage.height);
+
+    // Add our text
+    ctx.font = '16px Fire Red';
+    ctx.fillStyle = '#333';
+    ctx.fillText(`RANK No. ${rank.toString().padStart(3, 0)}`, 140, 22);
+    // eslint-disable-next-line no-control-regex
+    ctx.fillText((member.displayName).replace(/[^\x00-\x7F]/g, '').trim().substr(0, 33).toUpperCase() || 'TRAINER UNKNOWN', 21, 42);
+    ctx.fillText('MONEY', 21, 70);
+    ctx.fillText('DAILY STREAK', 21, 86);
+    ctx.fillText('TIMELY STREAK', 21, 102);
+    ctx.textAlign = 'right';
+    ctx.fillText(`$ ${numStr(balance)}`, 145, 70);
+    ctx.fillText(numStr(daily_streak), 145, 86);
+    ctx.fillText(numStr(timely_streak), 145, 102);
+
+    // Add our badges
+    for (const badge of badges.map((b, i) => b ? trainerCardBadges[i] : b).filter(b => b)) {
+      const badgeImage = await loadImage(badge.src);
+      ctx.drawImage(badgeImage, badge.left, badge.top, badgeImage.width, badgeImage.height);
+    }
+
+    // export canvas as image
+    const base64Image = await canvas.encode('png');
+    const attachment = new AttachmentBuilder(base64Image, { name: 'trainer-card.png' });
+    return interaction.reply({ files: [attachment] });
   },
 };
