@@ -6,6 +6,7 @@ const { createCanvas, loadImage, GlobalFonts } = require('@napi-rs/canvas');
 
 const numStr = num => num.toLocaleString('en-US');
 
+// Register our font
 GlobalFonts.registerFromPath('./assets/fonts/pokemon_fire_red.ttf', 'Fire Red');
 
 module.exports = {
