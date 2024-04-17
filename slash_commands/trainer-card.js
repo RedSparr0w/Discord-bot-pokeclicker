@@ -47,16 +47,21 @@ module.exports = {
     const { streak: daily_streak } = await getLastClaim(user, 'daily_claim');
     const { streak: timely_streak } = await getLastClaim(user, 'timely_claim');
     
+    // Create our base canvas
     const backgroundImage = await loadImage(`./assets/images/trainer_card/${trainerCardColors[trainerCard.background]}.png`);
-    
     const canvas = createCanvas(backgroundImage.width, backgroundImage.height);
     const ctx = canvas.getContext('2d');
-  
     ctx.drawImage(backgroundImage, 0, 0, backgroundImage.width, backgroundImage.height);
 
     // Player image
     const playerImage = await loadImage(`./assets/images/trainers/${trainerCard.trainer}.png`);
     ctx.drawImage(playerImage, 160, 40, playerImage.width, playerImage.height);
+
+    // Add our badge images
+    for (const badge of badges.map((b, i) => b ? trainerCardBadges[i] : b).filter(b => b)) {
+      const badgeImage = await loadImage(badge.src);
+      ctx.drawImage(badgeImage, badge.left, badge.top, badgeImage.width, badgeImage.height);
+    }
 
     // Add our text
     ctx.font = '16px Fire Red';
@@ -71,12 +76,6 @@ module.exports = {
     ctx.fillText(`$ ${numStr(balance)}`, 145, 70);
     ctx.fillText(numStr(daily_streak), 145, 86);
     ctx.fillText(numStr(timely_streak), 145, 102);
-
-    // Add our badges
-    for (const badge of badges.map((b, i) => b ? trainerCardBadges[i] : b).filter(b => b)) {
-      const badgeImage = await loadImage(badge.src);
-      ctx.drawImage(badgeImage, badge.left, badge.top, badgeImage.width, badgeImage.height);
-    }
 
     // export canvas as image
     const base64Image = await canvas.encode('png');
