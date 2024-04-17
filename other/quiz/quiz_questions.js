@@ -737,13 +737,13 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 1500),
-  new WeightedOption(pokemonType, 1000),
-  new WeightedOption(whosThePokemonEvolution, 800),
-  new WeightedOption(whosThePokemonPrevolution, 800),
-  new WeightedOption(pokemonRegion, 500),
-  new WeightedOption(pokemonID, 500),
-  new WeightedOption(fossilPokemon, 100),
+  new WeightedOption(whosThatPokemon, 150),
+  new WeightedOption(pokemonType, 100),
+  new WeightedOption(whosThePokemonEvolution, 80),
+  new WeightedOption(whosThePokemonPrevolution, 80),
+  new WeightedOption(pokemonRegion, 50),
+  new WeightedOption(pokemonID, 50),
+  new WeightedOption(fossilPokemon, 10),
   new WeightedOption(pokemonFossil, 10),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
