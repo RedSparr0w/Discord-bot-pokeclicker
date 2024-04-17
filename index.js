@@ -16,6 +16,7 @@ const {
   processSaveFile,
   MINUTE,
   HOUR,
+  DAY,
 } = require('./helpers.js');
 const {
   setupDB,
@@ -25,10 +26,10 @@ const {
 } = require('./database.js');
 const regexMatches = require('./regexMatches.js');
 const { newQuiz } = require('./other/quiz/quiz.js');
-const { sendReminders } = require('./other/reminder/reminder.js');
+const { loadQuizImages } = require('./other/quiz/quiz_functions.js');
 const { happyHourHours, startHappyHour, endHappyHour } = require('./other/quiz/happy_hour.js');
 const { checkScheduledItems } = require('./other/scheduled/scheduled.js');
-const { DAY } = require('./helpers/constants.js');
+const { sendReminders } = require('./other/reminder/reminder.js');
 
 const client = new Discord.Client({
   intents: [
@@ -107,6 +108,8 @@ client.once('ready', async() => {
   log(`Invite Link: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot%20applications.commands`);
   // Check the database is setup
   await setupDB();
+
+  await loadQuizImages();
 
   // Check for and send any reminders every minute
   new RunOnInterval(MINUTE, () => {
