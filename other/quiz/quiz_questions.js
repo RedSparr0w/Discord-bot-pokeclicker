@@ -1,5 +1,4 @@
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
-const fs =  require('fs');
 const { website, serverIcons } = require('../../config.js');
 const {
   pokemonList,
@@ -58,34 +57,29 @@ const whosThatPokemon = () => new Promise(resolve => {
     }
 
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
-    
-    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new AttachmentBuilder().setFile('who.png');
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
-      const embed = new EmbedBuilder()
-        .setTitle('Who\'s that Pokémon?')
-        .setDescription(description.join('\n'))
-        .setImage('attachment://who.png')
-        .setColor('#3498db');
-    
-      resolve({
-        embed,
-        answer,
-        amount,
-        shiny,
-        files: [attachment],
-        end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
-          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
-            const embed = new EmbedBuilder()
-              .setTitle(`It's ${pokemon.name}!`)
-              .setImage('attachment://whoFinal.png')
-              .setColor('#e74c3c');
-            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
-          });
-        },
-      });
+    const embed = new EmbedBuilder()
+      .setTitle('Who\'s that Pokémon?')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${pokemon.name}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
     });
   })();
 });
@@ -110,34 +104,29 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     }
 
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
-    
-    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new AttachmentBuilder().setFile('who.png');
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
-      const embed = new EmbedBuilder()
-        .setTitle('Name the Evolution!')
-        .setDescription(description.join('\n'))
-        .setImage('attachment://who.png')
-        .setColor('#3498db');
-    
-      resolve({
-        embed,
-        answer,
-        amount,
-        shiny,
-        files: [attachment],
-        end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0].evolvedPokemon), shiny);
-          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
-            const embed = new EmbedBuilder()
-              .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
-              .setImage('attachment://whoFinal.png')
-              .setColor('#e74c3c');
-            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
-          });
-        },
-      });
+    const embed = new EmbedBuilder()
+      .setTitle('Name the Evolution!')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(getPokemonByName(pokemon.evolutions[0].evolvedPokemon), shiny);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${[...new Set(pokemon.evolutions.map(p => p.evolvedPokemon))].join(' or ')}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
     });
   })();
 });
@@ -164,34 +153,29 @@ const whosThePokemonPrevolution = () => new Promise(resolve => {
     }
 
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
-    
-    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new AttachmentBuilder().setFile('who.png');
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
-      const embed = new EmbedBuilder()
-        .setTitle('Name the Prevolution!')
-        .setDescription(description.join('\n'))
-        .setImage('attachment://who.png')
-        .setColor('#3498db');
-    
-      resolve({
-        embed,
-        answer,
-        amount,
-        shiny,
-        files: [attachment],
-        end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(prevolution, shiny);
-          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
-            const embed = new EmbedBuilder()
-              .setTitle(`It's ${prevolution.name}!`)
-              .setImage('attachment://whoFinal.png')
-              .setColor('#e74c3c');
-            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
-          });
-        },
-      });
+    const embed = new EmbedBuilder()
+      .setTitle('Name the Prevolution!')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(prevolution, shiny);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${prevolution.name}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
     });
   })();
 });
@@ -221,34 +205,29 @@ const pokemonType = () => new Promise(resolve => {
     }
 
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
-    
-    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new AttachmentBuilder().setFile('who.png');
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
-      const embed = new EmbedBuilder()
-        .setTitle('What\'s the type?')
-        .setDescription(description.join('\n'))
-        .setImage('attachment://who.png')
-        .setColor('#3498db');
-    
-      resolve({
-        embed,
-        answer,
-        amount,
-        shiny,
-        files: [attachment],
-        end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
-          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
-            const embed = new EmbedBuilder()
-              .setTitle(`It's ${types.join(' & ')}!`)
-              .setImage('attachment://whoFinal.png')
-              .setColor('#e74c3c');
-            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
-          });
-        },
-      });
+    const embed = new EmbedBuilder()
+      .setTitle('What\'s the type?')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${types.join(' & ')}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
     });
   })();
 });
@@ -272,8 +251,6 @@ const pokemonID = () => new Promise(resolve => {
       amount += shiny_amount;
     }
 
-    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
-
     const incorrectReaction = (m) => {
       const guessedID = parseFloat(m);
       if (Number.isNaN(guessedID)) {
@@ -289,34 +266,31 @@ const pokemonID = () => new Promise(resolve => {
       }
     };
   
-    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new AttachmentBuilder().setFile('who.png');
+    const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
-      const embed = new EmbedBuilder()
-        .setTitle('What\'s the ID?')
-        .setDescription(description.join('\n'))
-        .setImage('attachment://who.png')
-        .setColor('#3498db');
-    
-      resolve({
-        embed,
-        answer,
-        amount,
-        shiny,
-        incorrectReaction,
-        files: [attachment],
-        end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
-          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
-            const embed = new EmbedBuilder()
-              .setTitle(`It's ${pokemon.id < 0 ? '-': ''}#${Math.floor(Math.abs(pokemon.id)).toString().padStart(3, '0')}!`)
-              .setImage('attachment://whoFinal.png')
-              .setColor('#e74c3c');
-            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
-          });
-        },
-      });
+    const embed = new EmbedBuilder()
+      .setTitle('What\'s the ID?')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      incorrectReaction,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${pokemon.id < 0 ? '-': ''}#${Math.floor(Math.abs(pokemon.id)).toString().padStart(3, '0')}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
     });
   })();
 });
@@ -341,34 +315,29 @@ const pokemonRegion = () => new Promise(resolve => {
     }
 
     const base64Image = await getWhosThatPokemonImage(pokemon, shiny);
-  
-    fs.writeFile('who.png', base64Image, {encoding: 'base64'}, async function(err) {
-      const attachment = await new AttachmentBuilder().setFile('who.png');
+    const attachment = new AttachmentBuilder(base64Image, { name: 'who.png' });
 
-      const embed = new EmbedBuilder()
-        .setTitle('What\'s the Region?')
-        .setDescription(description.join('\n'))
-        .setImage('attachment://who.png')
-        .setColor('#3498db');
-    
-      resolve({
-        embed,
-        answer,
-        amount,
-        shiny,
-        files: [attachment],
-        end: async (m, e) => {
-          const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
-          fs.writeFile('whoFinal.png', base64ImageFinal, {encoding: 'base64'}, async function(err) {
-            const attachmentFinal = await new AttachmentBuilder().setFile('whoFinal.png');
-            const embed = new EmbedBuilder()
-              .setTitle(`It's ${upperCaseFirstLetter(GameConstants.Region[pokemon.nativeRegion])}!`)
-              .setImage('attachment://whoFinal.png')
-              .setColor('#e74c3c');
-            m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
-          });
-        },
-      });
+    const embed = new EmbedBuilder()
+      .setTitle('What\'s the Region?')
+      .setDescription(description.join('\n'))
+      .setImage('attachment://who.png')
+      .setColor('#3498db');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      files: [attachment],
+      end: async (m, e) => {
+        const base64ImageFinal = await getWhosThatPokemonFinalImage(pokemon, shiny);
+        const attachmentFinal = new AttachmentBuilder(base64ImageFinal, { name: 'whoFinal.png' });
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${upperCaseFirstLetter(GameConstants.Region[pokemon.nativeRegion])}!`)
+          .setImage('attachment://whoFinal.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
     });
   })();
 });
@@ -768,13 +737,13 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 150),
-  new WeightedOption(pokemonType, 100),
-  new WeightedOption(whosThePokemonEvolution, 80),
-  new WeightedOption(whosThePokemonPrevolution, 80),
-  new WeightedOption(pokemonRegion, 50),
-  new WeightedOption(pokemonID, 50),
-  new WeightedOption(fossilPokemon, 10),
+  new WeightedOption(whosThatPokemon, 1500),
+  new WeightedOption(pokemonType, 1000),
+  new WeightedOption(whosThePokemonEvolution, 800),
+  new WeightedOption(whosThePokemonPrevolution, 800),
+  new WeightedOption(pokemonRegion, 500),
+  new WeightedOption(pokemonID, 500),
+  new WeightedOption(fossilPokemon, 100),
   new WeightedOption(pokemonFossil, 10),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),

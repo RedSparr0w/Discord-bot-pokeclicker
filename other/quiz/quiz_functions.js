@@ -1,6 +1,5 @@
 const { createCanvas, loadImage } = require('@napi-rs/canvas');
 const {
-  error,
   pokemonList,
   randomFromArray,
 } = require('../../helpers.js');
