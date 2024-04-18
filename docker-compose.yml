@@ -18,3 +18,5 @@ services:
       - /usr/src/bot/node_modules/
     working_dir: /usr/src/bot
     restart: "no"
+
+# docker-compose up --force-recreate --build -d
