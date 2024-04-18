@@ -17,5 +17,4 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 18.x
-    - run: npm i eslint -g
     - run: npm run test
