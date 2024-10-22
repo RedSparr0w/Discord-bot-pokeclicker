@@ -15,6 +15,12 @@ module.exports = {
       description: 'Link to something specifically on the wiki',
       required: false,
     },
+    {
+      name: 'top-only',
+      type: ApplicationCommandOptionType.Boolean,
+      description: 'Return the top link only (default false)',
+      required: false,
+    },
   ],
   guildOnly   : true,
   cooldown    : 3,
@@ -22,6 +28,7 @@ module.exports = {
   userperms   : [],
   execute     : async (interaction) => {
     const search = interaction.options.get('query')?.value;
+    const topOnly = interaction.options.get('top-only')?.value || false;
 
     if (!search) {
       const embed = new EmbedBuilder()
@@ -50,7 +57,7 @@ module.exports = {
       .setTitle('PokéClicker wiki')
       .setDescription(`**Top result:**
       **[${topLink.display}](${wikiWebsite}#!${encodeURI(`${topLink.type}/${topLink.page}`)})**
-      ${!links.length ? '' : `\nSimilar:\n${links.map(link => `[${link.display}](${wikiWebsite}#!${encodeURI(`${link.type}/${link.page}`)})`).join('\n')}`}`)
+      ${!links.length || topOnly ? '' : `\nSimilar:\n${links.map(link => `[${link.display}](${wikiWebsite}#!${encodeURI(`${link.type}/${link.page}`)})`).join('\n')}`}`)
       .setColor('#3498db');
     return interaction.reply({ embeds: [embed] });
   },
