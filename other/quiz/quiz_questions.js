@@ -42,6 +42,7 @@ const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').rep
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 
+const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
 const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]));
@@ -882,6 +883,98 @@ const gymLeaderType = () => {
   };
 };
 
+const typeRegionPokemon = () => {
+  const randomRegionIndex = Math.floor(Math.random() * regionListWithoutFinalAndNone.length);
+  const selectedRegion = regionListWithoutFinalAndNone[randomRegionIndex].replace(/^[a-z]/, match => match.toUpperCase());
+  const pokemonInRegion = pokemonList.filter(pokemon => pokemon.nativeRegion === randomRegionIndex);
+  const randomTypeIndex = randomFromArray(randomFromArray(pokemonInRegion).type);
+  const selectedType = enumStrings(PokemonType).filter(type => type !== 'None')[randomTypeIndex];
+  const eligiblePokemon = pokemonList.filter(pokemon =>
+    pokemon.type.includes(randomTypeIndex) &&
+    pokemon.nativeRegion === randomRegionIndex &&
+    !pokemon.name.includes('Arceus') &&
+    !pokemon.name.includes('Silvally')
+  );
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
+  
+  let amount = getAmount();
+
+  const description = [`Name a ${pokemonTypeIcons[selectedType]} ${selectedType} Type Pokémon from ${selectedRegion}`];
+  description.push(`**+${amount} ${serverIcons.money}**`);
+  const shiny = isShiny();
+
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ *(shiny)*`);
+    amount += shiny_amount;
+  }
+
+  const pokemonData = randomFromArray(eligiblePokemon);
+  const female = isFemale(pokemonData);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}${female ? '-f' : ''}.png`;
+
+  const eligibleNames = eligiblePokemon.map(p => p.name);
+
+  const embed = new EmbedBuilder()
+    .setTitle('Name a Pokémon!')
+    .setDescription(description.join('\n'))
+    .setColor('#7b21a9');
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are', pokemonImage, `${eligibleNames.splice(0, 10).join('\n')}${eligibleNames.length ? '\nand more..' : '!'}`),
+  };
+};
+
+
+const dualTypePokemon = () => {
+  const selectedPokemon = randomFromArray(pokemonList.filter(p => p.type.length > 1));
+  
+  const types = selectedPokemon.type.map(t => enumStrings(PokemonType).filter(type => type !== 'None')[t]);
+  const eligiblePokemon = pokemonList.filter(pokemon =>
+    pokemon.type.every(t => selectedPokemon.type.includes(t)) && pokemon.type.length == selectedPokemon.type.length);
+
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
+  
+  let amount = getAmount();
+
+  const description = [`Name a Pokémon that is ${pokemonTypeIcons[types[0]]} ${types[0]} Type & ${pokemonTypeIcons[types[1]]} ${types[1]} Type`];
+  description.push(`**+${amount} ${serverIcons.money}**`);
+  const shiny = isShiny();
+
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ *(shiny)*`);
+    amount += shiny_amount;
+  }
+
+  const pokemonData = randomFromArray(eligiblePokemon);
+  const female = isFemale(pokemonData);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}${female ? '-f' : ''}.png`;
+
+  const eligibleNames = eligiblePokemon.map(p => p.name);
+
+  const embed = new EmbedBuilder()
+    .setTitle('Name a Dual Type Pokémon!')
+    .setDescription(description.join('\n'))
+    .setColor('#b8791d');
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are', pokemonImage, `${eligibleNames.splice(0, 10).join('\n')}${eligibleNames.length ? '\nand more..' : '!'}`),
+  };
+};
+
 class WeightedOption {
   constructor(option, weight) {
     this.option = option;
@@ -906,6 +999,8 @@ const quizTypes = [
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
   new WeightedOption(pokemonRegion, 45),
+  new WeightedOption(typeRegionPokemon, 45),
+  new WeightedOption(dualTypePokemon, 60),
   new WeightedOption(pokemonID, 60),
   new WeightedOption(fossilPokemon, 5),
   new WeightedOption(pokemonFossil, 5),
