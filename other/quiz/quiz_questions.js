@@ -511,6 +511,7 @@ const fossilPokemon = () => {
   const shiny = isShiny();
 
   const description = ['What Pokémon comes from this fossil?'];
+  description.push(`||${fossil}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
@@ -551,6 +552,7 @@ const pokemonFossil = () => {
   const shiny = isShiny();
 
   const description = ['What fossil does this Pokémon come from?'];
+  description.push(`||${pokemonName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   // If shiny award more coins
