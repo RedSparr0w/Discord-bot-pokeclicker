@@ -12,6 +12,7 @@ const {
   gameVersion,
   berryType,
   regionRoutes,
+  StoneType,
 } = require('../helpers.js');
 
 const fuzzyPokemon = FuzzySet(pokemonList.map(p => p.name.toLowerCase()), false);
@@ -204,7 +205,7 @@ module.exports = {
             description += `\n${r.hint}`;
           });
           if (evolution.trigger == EvoTrigger.STONE) {
-            description += `\nUsing a ${GameConstants.StoneType[evolution.stone].replace(/_/g, ' ')} evolution item`;
+            description += `\nUsing a ${StoneType[evolution.stone].replace(/_/g, ' ')} evolution item`;
           }
 
           descriptions.push(description);

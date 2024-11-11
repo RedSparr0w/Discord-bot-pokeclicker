@@ -12,6 +12,7 @@ const {
   warn,
   pokemonTypeIcons,
   StoneType,
+  berryType,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
 const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
@@ -36,9 +37,10 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*');
+const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
+const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
@@ -104,7 +106,52 @@ const whosThatPokemon = () => new Promise(resolve => {
   })();
 });
 
-const howDoesThisPokemonEvole = () => new Promise(resolve => {
+const whatIsThatBerry = () => new Promise(resolve => {
+  (async () => {
+
+    const berry = randomFromArray(berryList);
+    const answer = new RegExp(`^\\W*#?${berry}.?(Berry)?\\b`, 'i');
+
+    const amount = getAmount();
+
+    const description = ['What is the name of this Berry?'];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    const imageUrl = encodeURI(`${website}assets/images/items/berry/${berry}.png`);
+    
+    const response = await fetch(imageUrl);
+    if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+
+    // Create the attachment
+    const attachment = new AttachmentBuilder(buffer, { name: 'berry.png' });
+
+    const embed = new EmbedBuilder()
+      .setTitle('Name the Berry!')
+      .setDescription(description.join('\n'))
+      .setThumbnail('attachment://berry.png')
+      .setColor('#0690fe');
+  
+    resolve({
+      embed,
+      answer,
+      amount,
+      files: [attachment],
+      end: async (m, e) => {
+        const embed = new EmbedBuilder()
+          .setTitle(`It's ${berry} Berry!`)
+          .setThumbnail('attachment://berry.png')
+          .setColor('#e74c3c');
+        m.channel.send({ embeds: [embed], files: [attachment] }).catch((...args) => warn('Unable to post quiz answer', ...args));
+      },
+    });
+  })();
+});
+
+
+
+const howDoesThisPokemonEvolve = () => new Promise(resolve => {
   (async () => {
     const pokemon = randomFromArray(pokemonListWithEvolution.filter(p => p.evolutions.some(e => e.trigger === 1 || e.trigger === 2)));
     const allEligableEvolutions = pokemon.evolutions.filter(e => e.trigger === 1 || e.trigger === 2);
@@ -129,7 +176,11 @@ const howDoesThisPokemonEvole = () => new Promise(resolve => {
     const shiny = isShiny();
     const female = isFemale(pokemon);
 
-    const description = ['What is needed to evolve this Pokémon?'];
+
+    const title = `${levelEvolution.length > 0 ? 'Level' : ''}` +
+                  `${levelEvolution.length > 0 && itemEvolution.length > 0 ? ' or ' : ''}` +
+                  `${itemEvolution.length > 0 ? 'Item' : ''}`;
+    const description = [`What ${title} is needed to evolve this Pokémon?`];
     description.push(`**+${amount} ${serverIcons.money}**`);
 
     // If shiny award more coins
@@ -581,7 +632,7 @@ const badgeGymLeader = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
   const answer = new RegExp(`^\\W*${gym.leaderName.replace(/\d/g, '').replace(/\W/g, '.?').replace(/(Cipher\.\?Admin)/gi, '($1)?')}\\b`, 'i');
-  
+
   const amount = getAmount();
 
   const description = ['Which Gym Leader awards this badge?'];
@@ -612,7 +663,7 @@ const badgeGymLocation = () => {
   const amount = getAmount();
 
   const description = ['Which location has a Gym that awards this badge?'];
-  description.push(`||${badge} Badge||`);
+  description.push(`***${badge} Badge***`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   const image = encodeURI(`${website}assets/images/badges/${badge}.svg`);
@@ -639,12 +690,13 @@ const pokemonGymLeader = () => {
   const pokemon = pokemonList.find(p => p.name == pokemonName);
   const gyms = allGyms.filter(g => GymList[g].pokemons.find(p => p.name == pokemonName));
   const leaders = gyms.map(g => GymList[g].leaderName);
-  const leadersRegex = leaders.map(l => l.replace(/\W/g, '.?').replace(/(Cipher\.\?Admin)/gi, '($1)?')).join('|');
+  const leadersRegex = leaders.map(l => l.replace(/\d/g, '.?').replace(/\W/g, '.?').replace(/(Cipher\.\?Admin)/gi, '($1)?')).join('|');
   const answer = new RegExp(`^\\W*(${leadersRegex})\\b`, 'i');
   
   let amount = getAmount();
 
   const description = ['Which Gym Leader uses this Pokémon?'];
+  description.push(`||${pokemonName}||`);
   description.push(`**+${amount} ${serverIcons.money}**`);
 
   const shiny = isShiny();
@@ -850,7 +902,7 @@ const selectWeightedOption = (options_array) => {
 const quizTypes = [
   new WeightedOption(whosThatPokemon, 150),
   new WeightedOption(pokemonType, 85),
-  new WeightedOption(howDoesThisPokemonEvole, 80),
+  new WeightedOption(howDoesThisPokemonEvolve, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
   new WeightedOption(pokemonRegion, 45),
@@ -859,6 +911,7 @@ const quizTypes = [
   new WeightedOption(pokemonFossil, 5),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
+  new WeightedOption(whatIsThatBerry, 15),
   new WeightedOption(badgeGymLeader, 10),
   new WeightedOption(badgeGymLocation, 5),
   new WeightedOption(pokemonGymLeader, 45),
