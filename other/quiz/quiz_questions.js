@@ -1001,7 +1001,7 @@ const quizTypes = [
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
   new WeightedOption(pokemonRegion, 45),
-  new WeightedOption(typeRegionPokemon, 4500000),
+  new WeightedOption(typeRegionPokemon, 45),
   new WeightedOption(dualTypePokemon, 60),
   new WeightedOption(pokemonID, 60),
   new WeightedOption(fossilPokemon, 5),
