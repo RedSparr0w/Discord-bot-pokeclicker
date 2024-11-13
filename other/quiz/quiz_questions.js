@@ -945,7 +945,7 @@ const dualTypePokemon = () => {
   
   let amount = getAmount();
 
-  const description = [`Name a Pokémon that is ${pokemonTypeIcons[types[0]]} ${types[0]} Type & ${pokemonTypeIcons[types[1]]} ${types[1]} Type`];
+  const description = [`Name a Pokémon that is both ${pokemonTypeIcons[types[0]]} ${types[0]} Type & ${pokemonTypeIcons[types[1]]} ${types[1]} Type`];
   description.push(`**+${amount} ${serverIcons.money}**`);
   const shiny = isShiny();
 
