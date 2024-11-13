@@ -8,7 +8,7 @@ module.exports = {
   guildOnly   : true,
   cooldown    : 3,
   botperms    : ['SendMessages'],
-  userperms   : ['ManageGuild'],
+  userroles   : ['Developer'],
   channels    : [], // default restricted channels
   execute     : async (msg, args) => {
     const [, message_id] = args;
