@@ -894,8 +894,8 @@ const typeRegionPokemon = () => {
   const eligiblePokemon = pokemonList.filter(pokemon =>
     pokemon.type.includes(randomTypeIndex) &&
     pokemon.nativeRegion === randomRegionIndex &&
-    !pokemon.name.includes('Arceus') &&
-    !pokemon.name.includes('Silvally')
+    (!pokemon.name.includes('Arceus') || pokemon.name == 'Arceus (Normal)') &&
+    (!pokemon.name.includes('Silvally') || pokemon.name == 'Silvally (Normal)')
   );
   const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
   
@@ -1001,7 +1001,7 @@ const quizTypes = [
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
   new WeightedOption(pokemonRegion, 45),
-  new WeightedOption(typeRegionPokemon, 45),
+  new WeightedOption(typeRegionPokemon, 4500000),
   new WeightedOption(dualTypePokemon, 60),
   new WeightedOption(pokemonID, 60),
   new WeightedOption(fossilPokemon, 5),
