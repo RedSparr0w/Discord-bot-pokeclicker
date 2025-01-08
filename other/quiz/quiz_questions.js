@@ -12,7 +12,7 @@ const {
   warn,
   pokemonTypeIcons,
   StoneType,
-  berryType
+  berryType,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
 const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
