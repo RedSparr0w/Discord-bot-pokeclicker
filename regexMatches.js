@@ -103,7 +103,7 @@ module.exports = [
         message.react(serverIcons.shuckle.match(/:(\d+)>/)[1]);
       }
     },
-    },
+  },
   // skarmory
   {
     regex: /\b(skarmory)\b/i,
