@@ -1123,7 +1123,7 @@ const quizTypes = [
 ];
 
 const getQuizQuestion = async () => {
-    const selected = selectWeightedOption(quizTypes);
+  const selected = selectWeightedOption(quizTypes);
   return await selected.option();
 };
 

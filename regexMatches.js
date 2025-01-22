@@ -103,6 +103,15 @@ module.exports = [
         message.react(serverIcons.shuckle.match(/:(\d+)>/)[1]);
       }
     },
+    },
+  // skarmory
+  {
+    regex: /\b(skarmory)\b/i,
+    execute: (message, client) => {
+      if (serverIcons?.skarmory) {
+        message.react(serverIcons.skarmory.match(/:(\d+)>/)[1]);
+      }
+    },
   },
   // pants
   {
