@@ -672,7 +672,7 @@ const badgeGymLeader = () => {
 const badgeGymLocation = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/\d/g, '.?')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/(\d)/, '($1)?')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -785,10 +785,9 @@ const gymLeaderPokemon = () => {
 
 const gymLeaderLocation = () => {
 
-  //const gym = GymList[randomFromArray(gymsWithBadges)];
-  const gym = GymList["Circhester1"];
-  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/\d/g, '.?')}\\b`, 'i');
-  
+  const gym = GymList[randomFromArray(gymsWithBadges)];
+  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/(\d)/, '($1)?')}\\b`, 'i');
+
   const amount = getAmount();
 
   const description = ['Which location can you find this Gym Leader?'];
