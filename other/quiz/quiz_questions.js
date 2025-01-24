@@ -182,7 +182,6 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
 
     const allAnswers = [...levelEvolution, ...itemEvolution].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
     const answer = new RegExp(`^\\W*(${(allAnswers.map(e => evolutionsNormalized(e)).join('|'))}${megaStone && `|${megaStone}`})\\b`, 'i');
-    console.log(answer);
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -253,7 +252,6 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
     const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
-    console.log(answer);
 
     let amount = getAmount();
 
