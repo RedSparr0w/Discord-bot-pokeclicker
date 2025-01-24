@@ -12,7 +12,7 @@ const {
   warn,
   pokemonTypeIcons,
   StoneType,
-    berryType,
+  berryType,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
 const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
@@ -158,8 +158,8 @@ const whatIsThatBerry = () => new Promise(resolve => {
 
 const howDoesThisPokemonEvolve = () => new Promise(resolve => {
   (async () => {
-      const pokemon = randomFromArray(pokemonListWithEvolution.filter(p => p.evolutions.some(e => e.trigger === 1 || e.trigger === 2)));
-        const allEligableEvolutions = pokemon.evolutions.filter(e => e.trigger === 1 || e.trigger === 2);
+    const pokemon = randomFromArray(pokemonListWithEvolution.filter(p => p.evolutions.some(e => e.trigger === 1 || e.trigger === 2)));
+    const allEligableEvolutions = pokemon.evolutions.filter(e => e.trigger === 1 || e.trigger === 2);
     const allEvolvedNames = [... new Set(allEligableEvolutions.map(e => e.evolvedPokemon))];
     const levelEvolution = [
       ... new Set(allEligableEvolutions
@@ -174,15 +174,15 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
         .filter(e => e != undefined)),
     ];
 
-      const megaEvolveRestriction = allEligableEvolutions.flatMap(e => e.restrictions).filter(restriction => restriction.__class === 'MegaEvolveRequirement');
-      let megaStone = '';
-      if (megaEvolveRestriction.length > 0) {
-          megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1];
-      }
+    const megaEvolveRestriction = allEligableEvolutions.flatMap(e => e.restrictions).filter(restriction => restriction.__class === 'MegaEvolveRequirement');
+    let megaStone = '';
+    if (megaEvolveRestriction.length > 0) {
+      megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1];
+    }
 
     const allAnswers = [...levelEvolution, ...itemEvolution].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
     const answer = new RegExp(`^\\W*(${(allAnswers.map(e => evolutionsNormalized(e)).join('|'))}${megaStone && `|${megaStone}`})\\b`, 'i');
-      console.log(answer);
+    console.log(answer);
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -253,7 +253,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
     const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
-    console.log(answer)
+    console.log(answer);
 
     let amount = getAmount();
 
