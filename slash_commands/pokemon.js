@@ -136,7 +136,7 @@ module.exports = {
           /* TO BE FIXED: Too large for Discord for some mons
           routes.forEach(route => {
             description += `\n${route.route}`;
-            description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
+            description += `${route.requirements ? `🔒\n***Unlock Requirements:***\n_${route.requirements.hint.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`;
           });
           */
           description += [
@@ -160,7 +160,7 @@ module.exports = {
       }
       // Roaming
       if (pokemon.locations[PokemonLocationType.Roaming]) {
-        const description = pokemon.locations[PokemonLocationType.Roaming].map(r => `${GameConstants.Region[r.region].toUpperCase()}${r.requirements ? `🔒\n***Unlock Requirements:***\n_${r.requirements.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
+        const description = pokemon.locations[PokemonLocationType.Roaming].map(r => `${GameConstants.Region[r.region].toUpperCase()}${r.requirements ? `🔒\n***Unlock Requirements:***\n_${r.requirements.hint.replace(/\band\b/g, '\nand').replace(/or/g, '\nor')}_` : ''}`).join('\n');
         embed.addFields({
           name: '❯ Roaming',
           value:  description,
@@ -168,7 +168,7 @@ module.exports = {
       }
       // Dungeon
       if (pokemon.locations[PokemonLocationType.Dungeon]) {
-        const description = pokemon.locations[PokemonLocationType.Dungeon].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
+        const description = pokemon.locations[PokemonLocationType.Dungeon].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.hint.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addFields({
           name: '❯ Dungeons',
           value:  description,
@@ -176,7 +176,7 @@ module.exports = {
       }
       // Dungeon Boss
       if (pokemon.locations[PokemonLocationType.DungeonBoss]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonBoss].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.hint.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addFields({
           name: '❯ Dungeon Boss',
           value:  description,
@@ -184,7 +184,7 @@ module.exports = {
       }
       // Dungeon Chest
       if (pokemon.locations[PokemonLocationType.DungeonChest]) {
-        const description = pokemon.locations[PokemonLocationType.DungeonChest].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
+        const description = pokemon.locations[PokemonLocationType.DungeonChest].map(d => `${d.dungeon}${d.requirements ? `🔒\n***Unlock Requirements:***\n_${d.requirements.hint.replace(/\band\b/g, '\nand').replace(/\bor\b/g, '\nor')}_` : ''}`).join('\n');
         embed.addFields({
           name: '❯ Dungeon Chest',
           value:  description,
