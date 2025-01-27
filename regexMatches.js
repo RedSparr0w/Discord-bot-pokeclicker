@@ -104,6 +104,15 @@ module.exports = [
       }
     },
   },
+  // skarmory
+  {
+    regex: /\b(skarmory)\b/i,
+    execute: (message, client) => {
+      if (serverIcons?.skarmory) {
+        message.react(serverIcons.skarmory.match(/:(\d+)>/)[1]);
+      }
+    },
+  },
   // pants
   {
     regex: /\b(infin(ite|eat).wealth)\b/i,

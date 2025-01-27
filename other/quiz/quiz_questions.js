@@ -12,6 +12,7 @@ const {
   warn,
   pokemonTypeIcons,
   StoneType,
+  PokemonLocationType,
   berryType,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
@@ -37,7 +38,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city');
+const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
@@ -45,7 +46,7 @@ const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
-const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]));
+const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]) && GymList[t].town != GymList[t].leaderName);
 const allGyms = Object.keys(GymList);
 const allGymTypes = {};
 Object.keys(GymList).forEach(gym => {
@@ -58,6 +59,10 @@ Object.keys(GymList).forEach(gym => {
   const mainTypes = Object.entries(typeCount).filter(([t, c]) => c >= maxTypeAmount).map(([t]) => PokemonType[t]);
   allGymTypes[gym] = mainTypes;
 });
+
+const uniqueTypings = Array.from(new Set(pokemonList.filter(p => p.type.length > 1).map(p => JSON.stringify(p.type.sort((a, b) => a - b)))), JSON.parse);
+const dungeonEncounterKeys = [PokemonLocationType['Dungeon'], PokemonLocationType['DungeonBoss'], PokemonLocationType['DungeonChest']];
+const dungeonsWithEncounters = [...new Set(pokemonList.flatMap((pokemon) => dungeonEncounterKeys.flatMap((key) => pokemon.locations?.[key] ?? [])).map((item) => item.dungeon))];
 
 const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
@@ -170,8 +175,14 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
         .filter(e => e != undefined)),
     ];
 
+    const megaEvolveRestriction = allEligableEvolutions.flatMap(e => e.restrictions).filter(restriction => restriction.__class === 'MegaEvolveRequirement');
+    let megaStone = '';
+    if (megaEvolveRestriction.length > 0) {
+      megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1];
+    }
+
     const allAnswers = [...levelEvolution, ...itemEvolution].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
-    const answer = new RegExp(`^\\W*#?${(allAnswers.map(e => evolutionsNormalized(e)).join('|'))}\\b`, 'i');
+    const answer = new RegExp(`^\\W*(${(allAnswers.map(e => evolutionsNormalized(e)).join('|'))}${megaStone && `|${megaStone}`})\\b`, 'i');
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -242,7 +253,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
     const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
-    
+
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -615,10 +626,17 @@ const startingTown = () => {
   const description = [`Where does the player start in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
   description.push(`**+${amount} ${serverIcons.money}**`);
 
+  const blimps = [
+    new WeightedOption(() => 'blimp_empty.png', 10),
+    new WeightedOption(() => 'blimp_pikachu.png', 3),
+    new WeightedOption(() => 'blimp_meowth.png', 1),
+  ];
+  const chosenBlimp = selectWeightedOption(blimps).option();
+
   const embed = new EmbedBuilder()
     .setTitle('Getting started!')
     .setDescription(description.join('\n'))
-    .setThumbnail(`${website}assets/images/ship.png`)
+    .setThumbnail(`${website}assets/images/map/${chosenBlimp}`)
     .setColor('#3498db');
 
   const townImage = encodeURI(`${website}assets/images/towns/${town}.png`);
@@ -661,7 +679,7 @@ const badgeGymLeader = () => {
 const badgeGymLocation = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/(\d)/, '($1)?')}\\b`, 'i');
   
   const amount = getAmount();
 
@@ -773,9 +791,10 @@ const gymLeaderPokemon = () => {
 };
 
 const gymLeaderLocation = () => {
+
   const gym = GymList[randomFromArray(gymsWithBadges)];
-  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?')}\\b`, 'i');
-  
+  const answer = new RegExp(`^\\W*${gym.town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/(\d)/, '($1)?')}\\b`, 'i');
+
   const amount = getAmount();
 
   const description = ['Which location can you find this Gym Leader?'];
@@ -886,14 +905,13 @@ const gymLeaderType = () => {
 };
 
 const typeRegionPokemon = () => {
-  const randomRegionIndex = Math.floor(Math.random() * regionListWithoutFinalAndNone.length);
-  const selectedRegion = regionListWithoutFinalAndNone[randomRegionIndex].replace(/^[a-z]/, match => match.toUpperCase());
-  const pokemonInRegion = pokemonList.filter(pokemon => pokemon.nativeRegion === randomRegionIndex);
-  const randomTypeIndex = randomFromArray(randomFromArray(pokemonInRegion).type);
+  const selectedRegion = randomFromArray(regionListWithoutFinalAndNone);
+  const selectedRegionIndex = regionListWithoutFinalAndNone.indexOf(selectedRegion);
+  const pokemonInRegion = pokemonList.filter(pokemon => pokemon.nativeRegion === selectedRegionIndex);
+  const randomTypeIndex = randomFromArray([...new Set(pokemonInRegion.flatMap(p => p.type))]);
   const selectedType = enumStrings(PokemonType).filter(type => type !== 'None')[randomTypeIndex];
-  const eligiblePokemon = pokemonList.filter(pokemon =>
+  const eligiblePokemon = pokemonInRegion.filter(pokemon =>
     pokemon.type.includes(randomTypeIndex) &&
-    pokemon.nativeRegion === randomRegionIndex &&
     (!pokemon.name.includes('Arceus') || pokemon.name == 'Arceus (Normal)') &&
     (!pokemon.name.includes('Silvally') || pokemon.name == 'Silvally (Normal)')
   );
@@ -901,7 +919,7 @@ const typeRegionPokemon = () => {
   
   let amount = getAmount();
 
-  const description = [`Name a ${pokemonTypeIcons[selectedType]} ${selectedType} Type Pokémon from ${selectedRegion}`];
+  const description = [`Name a ${pokemonTypeIcons[selectedType]} ${selectedType} Type Pokémon from ${upperCaseFirstLetter(selectedRegion)}`];
   description.push(`**+${amount} ${serverIcons.money}**`);
   const shiny = isShiny();
 
@@ -935,11 +953,11 @@ const typeRegionPokemon = () => {
 
 
 const dualTypePokemon = () => {
-  const selectedPokemon = randomFromArray(pokemonList.filter(p => p.type.length > 1));
+  const selectedTyping = randomFromArray(uniqueTypings);
   
-  const types = selectedPokemon.type.map(t => enumStrings(PokemonType).filter(type => type !== 'None')[t]);
+  const types = selectedTyping.map(t => enumStrings(PokemonType).filter(type => type !== 'None')[t]);
   const eligiblePokemon = pokemonList.filter(pokemon =>
-    pokemon.type.every(t => selectedPokemon.type.includes(t)) && pokemon.type.length == selectedPokemon.type.length);
+    pokemon.type.every(t => selectedTyping.includes(t)) && pokemon.type.length == selectedTyping.length);
 
   const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
   
@@ -977,6 +995,94 @@ const dualTypePokemon = () => {
   };
 };
 
+const dungeonPokemon = () => {
+    
+  const dungeon = randomFromArray(dungeonsWithEncounters);
+  const eligiblePokemon = pokemonList.filter((pokemon) => {
+    const allDungeons = dungeonEncounterKeys.flatMap((key) => (pokemon.locations?.[key] ?? []).map(loc => loc.dungeon)); return allDungeons.includes(dungeon);
+  });
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
+  
+  let amount = getAmount();
+
+  const description = [`Name a Pokémon that can be caught in ${dungeon}!`];
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ *(shiny)*`);
+    amount += shiny_amount;
+  }
+
+  const pokemonData = randomFromArray(eligiblePokemon);
+  const female = isFemale(pokemonData);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}${female ? '-f' : ''}.png`;
+
+  const eligibleNames = eligiblePokemon.map(p => p.name);
+
+  const embed = new EmbedBuilder()
+    .setTitle('Name a Dungeon\'s Pokémon!')
+    .setDescription(description.join('\n'))
+    .setImage(`${website}assets/images/towns/${encodeURIComponent(dungeon)}.png`)
+    .setColor('#f06ded');
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are', pokemonImage, `${eligibleNames.splice(0, 10).join('\n')}${eligibleNames.length ? '\nand more..' : '!'}`),
+  };
+};
+
+const pokemonDungeon = () => {
+
+  const pokemon = randomFromArray(pokemonList.filter((pokemon) => {
+    const allDungeons = dungeonEncounterKeys.flatMap((key) => (pokemon.locations?.[key] ?? []).map(loc => loc.dungeon)); return allDungeons.length > 0;
+  }));
+
+  const dungeons = [...new Set (dungeonEncounterKeys.flatMap((key) => (pokemon.locations?.[key] ?? []).map(loc => loc.dungeon)))];
+  const answer = new RegExp(`^\\W*(${dungeons.map(d => d.replace(/\W/g, '.?')).join('|')})\\b`, 'i');
+  
+  let amount = getAmount();
+
+  const description = ['In which **Dungeon** can this Pokémon be caught?'];
+  description.push(`||${pokemon.name}||`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ *(shiny)*`);
+    amount += shiny_amount;
+  }
+
+  const female = isFemale(pokemon);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`;
+
+  const dungeonData = randomFromArray(dungeons);
+  const dungeonImage = `${website}assets/images/towns/${encodeURIComponent(dungeonData)}.png`;
+
+  const embed = new EmbedBuilder()
+    .setTitle('Name a Pokémon\'s Dungeon!')
+    .setDescription(description.join('\n'))
+    .setThumbnail(pokemonImage)
+    .setColor('#6da4ff');
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Dungeons are', dungeonImage, `${dungeons.splice(0, 10).join('\n')}${dungeons.length ? '\nand more..' : '!'}`),
+  };
+};
+
 class WeightedOption {
   constructor(option, weight) {
     this.option = option;
@@ -1008,7 +1114,7 @@ const quizTypes = [
   new WeightedOption(pokemonFossil, 5),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
-  new WeightedOption(whatIsThatBerry, 15),
+  new WeightedOption(whatIsThatBerry, 20),
   new WeightedOption(badgeGymLeader, 10),
   new WeightedOption(badgeGymLocation, 5),
   new WeightedOption(pokemonGymLeader, 45),
@@ -1017,6 +1123,8 @@ const quizTypes = [
   new WeightedOption(gymLeaderPokemon, 40),
   new WeightedOption(gymLeaderLocation, 10),
   new WeightedOption(gymLeaderBadge, 10),
+  new WeightedOption(dungeonPokemon, 40),
+  new WeightedOption(pokemonDungeon, 20),
   // new WeightedOption(___, 1),
 ];
 
