@@ -127,15 +127,15 @@ module.exports = [
       const faq = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'faq') || '#faq' : '#faq';
       if (faq) description.push(`You might be able to find the answer you are looking for in the ${faq}.`);
 
-      // #bot-commands
-      const botCommands = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'bot-commands') || '#bot-commands' : '#bot-commands';
-      if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
-
+      // wiki
+      description.push('The [PokéClicker Wiki](https://wiki.pokeclicker.com/) also contains a lot of valuable information.');
+      S
       // companion
       description.push('The [PokéClicker Companion](https://companion.pokeclicker.com/) has some useful tools.');
     
-      // wiki
-      description.push('The [PokéClicker Wiki](https://wiki.pokeclicker.com/) also contains a lot of valuable information.');
+      // #bot-commands
+      const botCommands = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'bot-commands') || '#bot-commands' : '#bot-commands';
+      if (botCommands) description.push(`There may be a command available in ${botCommands}.`);
 
       // Create the embed
       const embed = new EmbedBuilder().setDescription(description.join('\n')).setColor('Random');
