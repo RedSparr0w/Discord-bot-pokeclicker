@@ -69,3 +69,6 @@ config*.js
 database.sqlite
 # any images in the base folder
 /*.png
+
+# visual studio
+/.vs
