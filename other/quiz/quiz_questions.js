@@ -166,7 +166,7 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
       ... new Set(allEligableEvolutions
         .flatMap(evolution => evolution.restrictions)
         .filter(restriction => restriction.__class === 'PokemonLevelRequirement')
-        .map(restriction => `Level ${restriction.requiredValue}`)),
+        .map(restriction => `${restriction.requiredValue}`)),
     ];
 
     const itemEvolution = [
@@ -203,17 +203,15 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
     }
 
     const incorrectReaction = (m) => {
-      const levelRegEx = /^(Level\s*)?(\d+).*/i;
-      const match = m.match(levelRegEx);
-      const guessedLvl = match ? match[2] : 'no match';
+      const guessedLvl = parseFloat(m);
       if (isNaN(guessedLvl) || levelEvolution.length == 0) {
         return undefined;
       }
-      if (levelEvolution.some(e => parseFloat(e.match(levelRegEx)[2]) > guessedLvl)) {
+      if (levelEvolution.some(e => e > guessedLvl)) {
         return '⬆️';
       }
 
-      if (levelEvolution.some(e => parseFloat(e.match(levelRegEx)[2]) < guessedLvl)) {
+      if (levelEvolution.some(e => e < guessedLvl)) {
         return '⬇️';
       }
     };
@@ -1103,7 +1101,7 @@ const selectWeightedOption = (options_array) => {
 const quizTypes = [
   new WeightedOption(whosThatPokemon, 150),
   new WeightedOption(pokemonType, 85),
-  new WeightedOption(howDoesThisPokemonEvolve, 80),
+  new WeightedOption(howDoesThisPokemonEvolve, 800000),
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
   new WeightedOption(pokemonRegion, 45),
