@@ -1112,7 +1112,7 @@ const quizTypes = [
   new WeightedOption(pokemonID, 60),
   new WeightedOption(fossilPokemon, 5),
   new WeightedOption(pokemonFossil, 5),
-  new WeightedOption(startingTown, 10000000),
+  new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
   new WeightedOption(whatIsThatBerry, 20),
   new WeightedOption(badgeGymLeader, 10),
