@@ -14,6 +14,7 @@ const {
   StoneType,
   PokemonLocationType,
   berryType,
+  getAttackModifier,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
 const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
@@ -397,6 +398,66 @@ const pokemonType = () => new Promise(resolve => {
           .setColor('#e74c3c');
         m.channel.send({ embeds: [embed], files: [attachmentFinal] }).catch((...args) => warn('Unable to post quiz answer', ...args));
       },
+    });
+  })();
+});
+
+
+const effectiveType = () => new Promise(resolve => {
+  (async () => {
+
+    const selectedTyping = randomFromArray(uniqueTypings);
+    
+    const types = selectedTyping.map(t => enumStrings(PokemonType).filter(type => type !== 'None')[t]);
+
+    const picturePokemon = randomFromArray(
+      pokemonList.filter((pokemon) =>
+        pokemon.type.length === selectedTyping.length &&
+      pokemon.type.every((t) => selectedTyping.includes(t))
+      )
+    );
+
+    const effectiveness = [];
+    for (let i = 0; i < Object.values(PokemonType).length / 2 -1; i++) {
+      const multiplier = getAttackModifier(i, i, selectedTyping[0], selectedTyping[1]);
+      effectiveness.push({ name: PokemonType[i], multiplier: multiplier });
+    }
+
+    const askForSE = Math.random() > 0.5;
+
+    const eligibleTypes = effectiveness
+      .filter((e) => (askForSE ? e.multiplier > 1 : e.multiplier < 1))
+      .map((e) => e.name);
+
+    const answer = new RegExp(`^\\W*(${eligibleTypes.join('|')})\\b`, 'i');
+
+    let amount = getAmount();
+    const shiny = isShiny();
+
+    const description = [`Name a Type that is ${askForSE ? 'Super Effective' : 'Not Very Effective or Deals No Damage to'} towards a ${pokemonTypeIcons[types[0]]} ${types[0]} & ${pokemonTypeIcons[types[1]]} ${types[1]} Type Pokémon`];
+    description.push(`**+${amount} ${serverIcons.money}**`);
+
+    if (shiny) {
+      const shinyAmount = getShinyAmount();
+      description.push(`**+${shinyAmount}** ✨ _(shiny)_`);
+      amount += shinyAmount;
+    }
+
+    const female = isFemale(picturePokemon);
+    const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${picturePokemon.id}${female ? '-f' : ''}.png`;
+
+    const embed = new EmbedBuilder()
+      .setTitle('Name a Type!')
+      .setDescription(description.join('\n'))
+      .setColor('#b8791d');
+
+
+    resolve({
+      embed,
+      answer,
+      amount,
+      shiny,
+      end: defaultEndFunction('The Types are', pokemonImage, `${eligibleTypes.splice(0, 10).join('\n')}${eligibleTypes.length ? '\nand more..' : '!'}`),
     });
   })();
 });
@@ -1125,6 +1186,7 @@ const quizTypes = [
   new WeightedOption(gymLeaderBadge, 10),
   new WeightedOption(dungeonPokemon, 40),
   new WeightedOption(pokemonDungeon, 20),
+  new WeightedOption(effectiveType, 60),
   // new WeightedOption(___, 1),
 ];
 
