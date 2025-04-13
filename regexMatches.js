@@ -136,7 +136,7 @@ module.exports = [
     
       // #bot-commands
       const botCommands = message.guild ? message.guild.channels.cache.find(channel => channel.name == 'bot-commands') || '#bot-commands' : '#bot-commands';
-      if (botCommands) description.push(`Check out There may be a command available in ${botCommands}.`);
+      if (botCommands) description.push(`There may be a command available in ${botCommands} to help you. Do /help in that Channel for a list of available commands.`);
 
       // Create the embed
       const embed = new EmbedBuilder().setDescription(description.join('\n')).setColor('Random');
