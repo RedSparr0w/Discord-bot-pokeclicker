@@ -27,6 +27,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
+  channels    : ['bot-commands', 'game-corner'],
   execute     : async (interaction) => {
     let command = interaction.options.get('command')?.value;
     let commands = interaction.client.slashCommands;
