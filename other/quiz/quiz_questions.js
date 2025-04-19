@@ -421,7 +421,7 @@ const effectiveType = () => new Promise(resolve => {
       effectiveness.push({ name: PokemonType[i], multiplier: multiplier });
     }
 
-    const askForSE = Math.random() > 0.5;
+    const askForSE = Math.random() > 0.3;
 
     const eligibleTypes = effectiveness
       .filter((e) => (askForSE ? e.multiplier > 1 : e.multiplier < 1))
@@ -432,7 +432,7 @@ const effectiveType = () => new Promise(resolve => {
     let amount = getAmount();
     const shiny = isShiny();
 
-    const description = [`Name a Type that is ${askForSE ? 'Super Effective' : 'Not Very Effective or Deals No Damage to'} towards a ${pokemonTypeIcons[types[0]]} ${types[0]} & ${pokemonTypeIcons[types[1]]} ${types[1]} Type Pokémon`];
+    const description = [`Name a Type that is ${askForSE ? 'Super Effective' : 'Not Very Effective or Deals No Damage'} towards a ${pokemonTypeIcons[types[0]]} ${types[0]} & ${pokemonTypeIcons[types[1]]} ${types[1]} Type Pokémon`];
     description.push(`**+${amount} ${serverIcons.money}**`);
 
     if (shiny) {
@@ -1184,7 +1184,7 @@ const quizTypes = [
   new WeightedOption(gymLeaderBadge, 10),
   new WeightedOption(dungeonPokemon, 40),
   new WeightedOption(pokemonDungeon, 20),
-  new WeightedOption(effectiveType, 60),
+  new WeightedOption(effectiveType, 35),
   // new WeightedOption(___, 1),
 ];
 
