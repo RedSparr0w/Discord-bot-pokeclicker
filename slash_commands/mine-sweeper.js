@@ -16,6 +16,7 @@ const iconMap = {
 };
 const shinyChance = 54;
 const getBombType = () => !Math.floor(Math.random() * shinyChance) ? -2 : -1;
+const revealTime = 3 * 60; // Three minutes
 
 module.exports = {
   name        : 'minesweeper',
@@ -23,10 +24,10 @@ module.exports = {
   description : 'Generate a game of Minesweeper to play',
   args        : [
     {
-      name: 'x-size',
+      name: 'width',
       type: ApplicationCommandOptionType.Integer,
       description: 'How big you want the board to be',
-      required: true,
+      required: false,
     },
     {
       name: 'bombs',
@@ -35,7 +36,7 @@ module.exports = {
       required: false,
     },
     {
-      name: 'y-size',
+      name: 'height',
       type: ApplicationCommandOptionType.Integer,
       description: 'How big you want the board to be',
       required: false,
@@ -47,11 +48,13 @@ module.exports = {
   userperms   : [],
   channels    : ['game-corner'],
   execute     : async (interaction) => {
-    const xSize = interaction.options.get('x-size').value;
-    let ySize = interaction.options.get('y-size')?.value;
+    let xSize = interaction.options.get('width')?.value;
+    let ySize = interaction.options.get('height')?.value;
     let bombs = interaction.options.get('bombs')?.value;
 
-    // Either the player specified the y-size, or we set it equal to the xSize
+    // Either the player specified the width, or we set it to 5
+    xSize = xSize ?? 5;
+    // Either the player specified the height, or we set it equal to the xSize
     ySize = ySize ?? xSize;
     // Either the player specified the amount of bombs, or we randomly set it to 10-20% of the board
     bombs = bombs ?? Math.round((Math.random() * 10 + 10) / 100 * xSize * ySize);
@@ -82,23 +85,28 @@ module.exports = {
       row.forEach((cell, x) => {
         if (cell >= 0) {
           board[y][x] = [
-          [y - 1, x - 1],
-          [y - 1, x],
-          [y - 1, x + 1],
-          [y, x + 1],
-          [y + 1, x + 1],
-          [y + 1, x],
-          [y + 1, x - 1],
-          [y, x - 1],
+            [y - 1, x - 1],
+            [y - 1, x],
+            [y - 1, x + 1],
+            [y, x + 1],
+            [y + 1, x + 1],
+            [y + 1, x],
+            [y + 1, x - 1],
+            [y, x - 1],
           ].reduce((b, coos) => b + (board[coos[0]]?.[coos[1]] < 0), 0);
         }
       });
     });
-    const stringified = `Tiles: ${xSize * ySize}, Bombs: ${bombs}\n${board.map(row => row.map(c => `||${iconMap[c]}||`).join('')).join('\n')}`;
+    const stringified = `Tiles: ${xSize * ySize}, Bombs: ${bombs}\nReveal <t:${Math.floor(Date.now() / 1000 + revealTime)}:R>\n${board.map(row => row.map(c => `||${iconMap[c]}||`).join('')).join('\n')}`;
 
     if (stringified.length >= 2000) {
       return interaction.reply({ content : '❌ The board is too large to be displayed in Discord.', ephemeral : true });
     }
-    return interaction.reply({ content :  stringified });
+    interaction.reply({ content :  stringified }).then(msg => {
+      setTimeout(_ => {
+        const answer = `${iconMap[getBombType()]} Time is up!\nDid you win this game?\n${board.map(row => row.map(c => `${iconMap[c]}`).join('')).join('\n')}`;
+        msg.edit({content : answer});
+      }, revealTime * 1000);
+    });
   },
 };
