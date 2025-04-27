@@ -1,4 +1,4 @@
-const { EmbedBuilder, AttachmentBuilder, ApplicationCommandOptionType } = require('discord.js');
+const { ApplicationCommandOptionType } = require('discord.js');
 const { serverIcons } = require('../config.js');
 
 const iconMap = {
@@ -20,7 +20,7 @@ const getBombType = () => !Math.floor(Math.random() * shinyChance) ? -2 : -1;
 module.exports = {
   name        : 'minesweeper',
   aliases     : ['mine', 'mine-sweeper'],
-  description : 'Generate a game of Mine Sweeper to play',
+  description : 'Generate a game of Minesweeper to play',
   args        : [
     {
       name: 'x-size',
@@ -58,11 +58,11 @@ module.exports = {
 
     // Check the amount of bombs is valid
     if (xSize * ySize - bombs <= 1) {
-      return interaction.reply({ content : `❌ Too many bombs: retry with different parameters.`, ephemeral : true });
+      return interaction.reply({ content : '❌ Too many bombs: retry with different parameters.', ephemeral : true });
     }
     // Unfortunately, Discord limits messages to 99 spoiler tags.
     if (xSize * ySize >= 100) {
-      return interaction.reply({ content : `❌ Board is too large: At most 99 tiles allowed.`, ephemeral : true });
+      return interaction.reply({ content : '❌ Board is too large: At most 99 tiles allowed.', ephemeral : true });
     }
 
     const d2Map = [...new Array(bombs).fill(-1).map(_ => getBombType()), ...new Array(xSize * ySize - bombs).fill(0)];
@@ -82,14 +82,14 @@ module.exports = {
       row.forEach((cell, x) => {
         if (cell >= 0) {
           board[y][x] = [
-              [y - 1, x - 1],
-              [y - 1, x],
-              [y - 1, x + 1],
-              [y, x + 1],
-              [y + 1, x + 1],
-              [y + 1, x],
-              [y + 1, x - 1],
-              [y, x - 1],
+          [y - 1, x - 1],
+          [y - 1, x],
+          [y - 1, x + 1],
+          [y, x + 1],
+          [y + 1, x + 1],
+          [y + 1, x],
+          [y + 1, x - 1],
+          [y, x - 1],
           ].reduce((b, coos) => b + (board[coos[0]]?.[coos[1]] < 0), 0);
         }
       });
@@ -97,7 +97,7 @@ module.exports = {
     const stringified = `Tiles: ${xSize * ySize}, Bombs: ${bombs}\n${board.map(row => row.map(c => `||${iconMap[c]}||`).join('')).join('\n')}`;
 
     if (stringified.length >= 2000) {
-      return interaction.reply({ content : `❌ The board is too large to be displayed in Discord.`, ephemeral : true });
+      return interaction.reply({ content : '❌ The board is too large to be displayed in Discord.', ephemeral : true });
     }
     return interaction.reply({ content :  stringified });
   },
