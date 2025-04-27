@@ -2,8 +2,8 @@ const { ApplicationCommandOptionType } = require('discord.js');
 const { serverIcons } = require('../config.js');
 
 const iconMap = {
-  '-2' : serverIcons.mineBombShiny ?? '<a:v:1365757752856678591>',
-  '-1' : serverIcons.mineBomb ?? '<a:v:1365757505841528853>',
+  '-2' : serverIcons.mineBombShiny ?? '💥',
+  '-1' : serverIcons.mineBomb ?? '🧨',
   '0' : '🟩',
   '1' : '1️⃣',
   '2' : '2️⃣',
