@@ -652,8 +652,8 @@ const pokemonFossil = () => {
 const dockTown = () => {
   const town = randomFromArray(GameConstants.DockTowns);
   const region = GameConstants.DockTowns.findIndex(t => t == town);
-  const answer = new RegExp(`^\\W*${town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?')}\\b`, 'i');
-  
+  const answer = new RegExp(`^\\W*${town.replace(/\W/g, '.?').replace(/(town|city|island)/i, '($1)?')}\\b`, 'i');
+
   const amount = getAmount();
 
   const description = [`Where abouts is the Dock located in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
@@ -678,8 +678,8 @@ const dockTown = () => {
 const startingTown = () => {
   const town = randomFromArray(GameConstants.StartingTowns);
   const region = GameConstants.StartingTowns.findIndex(t => t == town);
-  const answer = new RegExp(`^\\W*${town.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?')}\\b`, 'i');
-  
+  const answer = new RegExp(`^\\W*${town.replace(/\W/g, '.?').replace(/(town|city|island)/i, '($1)?')}\\b`, 'i');
+
   const amount = getAmount();
 
   const description = [`Where does the player start in the ${upperCaseFirstLetter(GameConstants.Region[region])} region?`];
