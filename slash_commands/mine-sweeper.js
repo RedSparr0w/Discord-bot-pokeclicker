@@ -67,6 +67,9 @@ module.exports = {
     if (xSize * ySize >= 100) {
       return interaction.reply({ content : '❌ Board is too large: At most 99 tiles allowed.', ephemeral : true });
     }
+    if (xSize <= 0 || ySize <= 0 || bombs <= 0) {
+      return interaction.reply({ content : '❌ Null or negative parameter.' });
+    }
 
     const d2Map = [...new Array(bombs).fill(-1).map(_ => getBombType()), ...new Array(xSize * ySize - bombs).fill(0)];
     const board = [];
