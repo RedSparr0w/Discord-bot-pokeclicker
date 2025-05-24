@@ -33,15 +33,15 @@ module.exports = {
       required: false,
     },
     {
-      name: 'bombs',
-      type: ApplicationCommandOptionType.Integer,
-      description: 'How many bombs on the field',
-      required: false,
-    },
-    {
       name: 'height',
       type: ApplicationCommandOptionType.Integer,
       description: 'How big you want the board to be',
+      required: false,
+    },
+    {
+      name: 'bombs',
+      type: ApplicationCommandOptionType.Integer,
+      description: 'How many bombs on the field',
       required: false,
     },
   ],
