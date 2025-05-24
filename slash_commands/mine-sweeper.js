@@ -17,6 +17,9 @@ const iconMap = {
 const shinyChance = 54;
 const getBombType = () => !Math.floor(Math.random() * shinyChance) ? -2 : -1;
 const revealTime = 3 * 60; // Three minutes
+const resetCooldown = (interaction) => {
+  interaction.client.cooldownTimeLeft('minesweeper', -1, interaction.member.id);
+};
 
 module.exports = {
   name        : 'minesweeper',
@@ -61,14 +64,17 @@ module.exports = {
 
     // Check the amount of bombs is valid
     if (xSize * ySize - bombs <= 1) {
-      return interaction.reply({ content : '❌ Too many bombs: retry with different parameters.', ephemeral : true });
+      interaction.reply({ content : '❌ Too many bombs: retry with different parameters.', ephemeral : true });
+      return resetCooldown(interaction);
     }
     // Unfortunately, Discord limits messages to 99 spoiler tags.
     if (xSize * ySize >= 100) {
-      return interaction.reply({ content : '❌ Board is too large: At most 99 tiles allowed.', ephemeral : true });
+      interaction.reply({ content : '❌ Board is too large: At most 99 tiles allowed.', ephemeral : true });
+      return resetCooldown(interaction);
     }
     if (xSize <= 0 || ySize <= 0 || bombs <= 0) {
-      return interaction.reply({ content : '❌ Null or negative parameter.' });
+      interaction.reply({ content : '❌ Null or negative parameter.' });
+      return resetCooldown(interaction);
     }
 
     const d2Map = [...new Array(bombs).fill(-1).map(_ => getBombType()), ...new Array(xSize * ySize - bombs).fill(0)];
@@ -103,7 +109,8 @@ module.exports = {
     const stringified = `Tiles: ${xSize * ySize}, Bombs: ${bombs}\nReveal <t:${Math.floor(Date.now() / 1000 + revealTime)}:R>\n${board.map(row => row.map(c => `||${iconMap[c]}||`).join('')).join('\n')}`;
 
     if (stringified.length >= 2000) {
-      return interaction.reply({ content : '❌ The board is too large to be displayed in Discord.', ephemeral : true });
+      interaction.reply({ content : '❌ The board is too large to be displayed in Discord.', ephemeral : true });
+      return resetCooldown(interaction);
     }
     interaction.reply({ content :  stringified }).then(msg => {
       setTimeout(_ => {

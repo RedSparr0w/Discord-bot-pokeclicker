@@ -80,7 +80,7 @@ for (const file of modalCommandsFiles) {
 
 const cooldowns = new Discord.Collection();
 
-const cooldownTimeLeft = (type, seconds, userID) => {
+client.cooldownTimeLeft = (type, seconds, userID) => {
   // Apply command cooldowns
   if (!cooldowns.has(type)) {
     cooldowns.set(type, new Discord.Collection());
@@ -175,7 +175,7 @@ client.on('error', e => error('Client error thrown:', e))
       SpamDetection.check(message);
 
       // Add points for each message sent (every 30 seconds)
-      const timeLeft = cooldownTimeLeft('messages', 30, message.author.id);
+      const timeLeft = client.cooldownTimeLeft('messages', 30, message.author.id);
       if (!timeLeft) {
         const messagesSent = await addStatistic(message.author, 'messages');
         if (message.channel.id !== quizChannelID) {
@@ -273,7 +273,7 @@ client.on('error', e => error('Client error thrown:', e))
     }
 
     // Apply command cooldowns
-    const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;
+    const timeLeft = Math.ceil(client.cooldownTimeLeft(command.name, command.cooldown, message.author.id) * 10) / 10;
     if (timeLeft > 0) {
       return message.reply({ content: `Please wait ${timeLeft} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
     }
@@ -335,7 +335,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
 
       // Apply command cooldowns
-      const timeLeft = Math.ceil(cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
+      const timeLeft = Math.ceil(client.cooldownTimeLeft(command.name, command.cooldown, interaction.user.id) * 10) / 10;
       if (timeLeft > 0) {
         return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing the \`${command.name}\` command.`, ephemeral: true });
       }
@@ -380,7 +380,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
 
       // Apply command cooldowns
-      const timeLeft = Math.ceil(cooldownTimeLeft(`button-${command.name}`, command.cooldown, interaction.user.id) * 10) / 10;
+      const timeLeft = Math.ceil(client.cooldownTimeLeft(`button-${command.name}`, command.cooldown, interaction.user.id) * 10) / 10;
       if (timeLeft > 0) {
         return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing this button.`, ephemeral: true });
       }
@@ -427,7 +427,7 @@ client.on('error', e => error('Client error thrown:', e))
       }
 
       // Apply command cooldowns
-      const timeLeft = Math.ceil(cooldownTimeLeft(`modal-${command.name}`, command.cooldown, interaction.user.id) * 10) / 10;
+      const timeLeft = Math.ceil(client.cooldownTimeLeft(`modal-${command.name}`, command.cooldown, interaction.user.id) * 10) / 10;
       if (timeLeft > 0) {
         return interaction.reply({ content: `Please wait ${timeLeft} more second(s) before reusing this modal.`, ephemeral: true });
       }
