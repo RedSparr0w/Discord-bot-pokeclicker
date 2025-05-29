@@ -61,8 +61,8 @@ module.exports = {
         });
       } else if (interaction.channel.type === ChannelType.GuildText){
         // Group the commands by their primary channel
-        const restrictedCommands = [];
-        const anyCommands = [];
+        let restrictedCommands = [];
+        let anyCommands = [];
         const groupedCommands = {};
         commands.filter(command => {
           // Check the user has the required permissions
@@ -102,19 +102,29 @@ module.exports = {
         // #anywhere
         // #channel-specific
         // #restricted
-        if (anyCommands.length) embed.addFields({
-          name: '__***#anywhere***__',
-          value:  anyCommands.join('\n'),
-        });
-        Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)).forEach(([channel, commands]) => {
-          embed.addFields({
-            name: `__***#${channel}***__`,
-            value:  commands.join('\n'),
-          });
-        });
-        if (restrictedCommands.length) embed.addFields({
-          name: '__***#restricted-channel***__',
-          value:  restrictedCommands.join('\n'),
+        if (anyCommands.length) {
+          anyCommands = [['anywhere', anyCommands]];
+        }
+        if (restrictedCommands.length) {
+          restrictedCommands = [['restricted-channel', restrictedCommands]];
+        }
+        [... anyCommands, ...Object.entries(groupedCommands).sort(([a], [b]) => `${a}`.localeCompare(`${b}`)), ...restrictedCommands].forEach(([channel, commands]) => {
+          // We spread ~equally into multiple fields so that the list looks nicer
+          const avgingLength = commands.join('\n').length / Math.ceil(commands.join('\n').length / 1024);
+          const fields = commands.reduce((f, c) => {
+            if (f[f.length - 1]?.join('\n').length < avgingLength && f[f.length - 1]?.join('\n').length + c.length + 1 <= 1024) {
+              f[f.length - 1].push(c);
+            } else {
+              f.push([c]);
+            }
+            return f;
+          }, []);
+          embed.addFields(...fields.map((f, i) => (
+            {
+              name: i ? '\u17B5' : `__***#${channel}***__`, // \u17B5 is null-length whitespace
+              value:  f.join('\n'),
+            }
+          )));
         });
       }
       return interaction.reply({ embeds: [embed] });
