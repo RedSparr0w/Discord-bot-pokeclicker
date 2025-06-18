@@ -19,7 +19,7 @@ module.exports = {
     const rolesWithColorsAvailable = member.roles.cache.filter(role => member.guild.roles.cache.find(r => r.name == `color-${role.name.toLowerCase().replace(/\s+/g, '-')}` || r.name == `gradient-${role.name.toLowerCase().replace(/\s+/g, '-')}`));
 
     // If no or only 1 role with colors/gradients assigned, return
-    if (rolesWithColorsAvailable.size <= 1) {
+    if (rolesWithColorsAvailable.size < 1) {
       return interaction.reply({ content: 'No other roles with a color available.', ephemeral: true }).catch(O_o=>{});
     }
 
