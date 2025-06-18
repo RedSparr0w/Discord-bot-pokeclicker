@@ -45,6 +45,16 @@ module.exports = {
     const rank = await getRank(user);
     const trainerCard = await getTrainerCard(user);
     const badges = await getPurchased(user, 'badge');
+
+    // Check if the user has all the badges and apply the poke league role if they do
+    const allBadges = badges.length === trainerCardBadges.length && badges.every(i => i);
+    if (allBadges) {
+      const leagueRole = interaction.guild.roles.cache.find(role => role.name === 'Poké League');
+      if (leagueRole && !member.roles.cache.has(leagueRole.id)) {
+        await member.roles.add(leagueRole).catch(() => {});
+      }
+    }
+
     const { streak: daily_streak } = await getLastClaim(user, 'daily_claim');
     const { streak: timely_streak } = await getLastClaim(user, 'timely_claim');
     
