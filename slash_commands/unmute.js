@@ -41,7 +41,7 @@ module.exports = {
 
     // Check if user has higher roles than the mod (ignore color-roles)
     if (
-      Math.max(...member.roles.cache.filter(r => !r.name.includes('color')).map(r => r.position)) >= Math.max(...interaction.member.roles.cache.filter(r => !r.name.includes('color')).map(r => r.position))
+      Math.max(...member.roles.cache.filter(r => !(r.name.includes('color') || r.name.includes('gradient'))).map(r => r.position)) >= Math.max(...interaction.member.roles.cache.filter(r => !r.name.includes('color')).map(r => r.position))
     ) {
       modLog(interaction.guild,
         `**Mod:** ${interaction.member.toString()}

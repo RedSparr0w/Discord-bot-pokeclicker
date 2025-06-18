@@ -15,9 +15,10 @@ module.exports = {
     const user = interaction.user;
     const member = interaction.member;
     
-    const rolesWithColorsAvailable = member.roles.cache.filter(role => member.guild.roles.cache.find(r => r.name == `color-${role.name.toLowerCase().replace(/\s+/g, '-')}`));
+    // Check any matching roles that start with color or gradient
+    const rolesWithColorsAvailable = member.roles.cache.filter(role => member.guild.roles.cache.find(r => r.name == `color-${role.name.toLowerCase().replace(/\s+/g, '-')}` || r.name == `gradient-${role.name.toLowerCase().replace(/\s+/g, '-')}`));
 
-    // If no or only 1 role with colors assigned, return
+    // If no or only 1 role with colors/gradients assigned, return
     if (rolesWithColorsAvailable.size <= 1) {
       return interaction.reply({ content: 'No other roles with a color available.', ephemeral: true }).catch(O_o=>{});
     }
@@ -31,19 +32,33 @@ module.exports = {
         .setCustomId(`select-color-${customID}`);
 
       rolesWithColorsAvailable.sort((a, b) => b.rawPosition - a.rawPosition).forEach(role => {
+        // Check for color role
         const colorRole = member.guild.roles.cache.find(r => r.name == `color-${role.name.toLowerCase().replace(/\s+/g, '-')}`);
-        select.addOptions(
-          new StringSelectMenuOptionBuilder()
-            .setLabel(role.name)
-            .setValue(colorRole.name)
-            .setDefault(member.roles.cache.has(colorRole.id))
-        );
+        if (colorRole) {
+          select.addOptions(
+            new StringSelectMenuOptionBuilder()
+              .setLabel(role.name)
+              .setValue(colorRole.name)
+              .setDefault(member.roles.cache.has(colorRole.id))
+          );
+        }
+
+        // Check for gradient role
+        const gradientRole = member.guild.roles.cache.find(r => r.name == `gradient-${role.name.toLowerCase().replace(/\s+/g, '-')}`);
+        if (gradientRole) {
+          select.addOptions(
+            new StringSelectMenuOptionBuilder()
+              .setLabel(role.name + ' (gradient)')
+              .setValue(gradientRole.name)
+              .setDefault(member.roles.cache.has(gradientRole.id))
+          );
+        }
       });
       select.addOptions(
         new StringSelectMenuOptionBuilder()
           .setLabel('None')
           .setValue('none')
-          .setDefault(!member.roles.cache.find(r => r.name.startsWith('color-')))
+          .setDefault(!member.roles.cache.find(r => r.name.startsWith('color-') || r.name.startsWith('gradient-')))
       );
       selects.addComponents(select);
       return selects;
@@ -69,7 +84,7 @@ module.exports = {
       const role = member.guild.roles.cache.find(r => r.name == i.values[0]);
 
       // Remove other role colors
-      const rolesToRemove = member.roles.cache.filter(r => r.name.startsWith('color-'));
+      const rolesToRemove = member.roles.cache.filter(r => r.name.startsWith('color-') || r.name.startsWith('gradient-'));
       if (rolesToRemove.size > 0) {
         await member.roles.remove(rolesToRemove.map(r => r.id), 'Applied new role color').catch(O_o=>{});
       }
