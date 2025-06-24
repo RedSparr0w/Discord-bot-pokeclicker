@@ -147,12 +147,11 @@ module.exports = {
         if (price > 0) {
           await addPurchased(interaction.user, itemType, itemIndex);
           remainingBalance = await removeAmount(interaction.user, price);
+          // If user updated their profile, give them the Boulder Badge
+          await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Boulder);
         } else {
           remainingBalance = currentBalance;
         }
-
-        // If user updated their profile, give them the Boulder Badge
-        await addPurchased(interaction.user, 'badge', trainerCardBadgeTypes.Boulder);
 
         await setTrainerCard(interaction.user, itemType, itemIndex);
 
