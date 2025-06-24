@@ -1,9 +1,10 @@
 const { EmbedBuilder } = require('discord.js');
 const { serverIcons } = require('../config.js');
 const HangmanRunner = require('../other/hangmon/hangmon_functions');
+const { SECOND, MINUTE } =  require('../helpers/constants');
 
-const GAME_TIME = 3 * 60 * 1000; // Minutes a game lasts for
-const GUESS_COOLDOWN = 5 * 1000; // Seconds between two allowed guesses
+const GAME_TIME = 3 * MINUTE; // Minutes a game lasts for
+const GUESS_COOLDOWN = 5 * SECOND; // Seconds between two allowed guesses
 const REACTIONS = { WAIT: '⏳', SUCCESS: '🟢', FAILURE: '🔴' };
 const COLORS = { NEUTRAL: '#3498DB', SUCCESS: '#00BC8C', FAILURE: '#E74C3C' };
 
@@ -27,7 +28,7 @@ const generateGameDisplay = (endDate) => {
   const letters = HangmanRunner.getLetters();
   const scaffold = formatScaffold(HangmanRunner.getScaffold());
   const embed = new EmbedBuilder().setTitle('Who\'s that Pokémon?').setColor(COLORS.NEUTRAL)
-    .setDescription(`${formatWord(word)}\n${scaffold}\n${letters.length ? `Previous attempts: ${letters.join('')}\n` : ''}Game Over <t:${Math.ceil(endDate / 1000)}:R>`);
+    .setDescription(`${formatWord(word)}\n${scaffold}\n${letters.length ? `Previous attempts: ${letters.join('')}\n` : ''}Game Over <t:${Math.ceil(endDate / SECOND)}:R>`);
   return { embeds: [embed] };
 };
 
@@ -60,7 +61,7 @@ module.exports = {
   execute     : async (interaction) => {
     if (HangmanRunner.isRunning()) {
       const embed = new EmbedBuilder().setDescription('❌ The game already started\nℹ️ Write any letter or the name of a Pokémon, preceded by "guess", to participate').setColor(COLORS.FAILURE);
-      interaction.reply({embeds: [embed]}).then(m => setTimeout(() => m.delete(), 10000));
+      interaction.reply({embeds: [embed]}).then(m => setTimeout(() => m.delete(), 10 * SECOND));
 
     } else {
       HangmanRunner.startHangman();
