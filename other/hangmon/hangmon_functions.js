@@ -126,6 +126,7 @@ const tryGuessPokemon = (guess, msg) => {
   if (new RegExp(`^${hangman.guess}$`, 'i').test(guess)) {
     hangman.guesser = msg.author;
     increaseScore(msg, true);
+    addStatistic(msg.author, 'hm_pokemon_guessed');
     return true;
   }
   return false;
@@ -140,8 +141,8 @@ const increaseScore = (msg, guessed = false) => {
   const value = guessed ? wordGuesses(hangman.word).length / 2 : 1;
   userData.score += value;
   addStatistic(msg.author, 'hm_correct_guesses').then(async stat => {
-    // If user has made 100 correct guesses, give them the Marsh Badge
-    if (stat == 100) {
+    // If user has made 200 correct guesses, give them the Marsh Badge
+    if (stat == 200) {
       await addPurchased(msg.author, 'badge', trainerCardBadgeTypes.Marsh);
       const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('Random').setDescription([
         msg.author.toString(),
