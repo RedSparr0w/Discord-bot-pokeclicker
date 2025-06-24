@@ -2,8 +2,11 @@ const {
   pokemonList,
   randomFromArray,
 } = require('../../helpers.js');
-const { addAmount } = require('../../database.js');
+const { addAmount, addStatistic, addPurchased } = require('../../database.js');
 const { website } = require('../../config.js');
+const { trainerCardBadgeTypes } = require('../../helpers.js');
+const { trainerCardBadges } = require('../../helpers/trainer_card.js');
+const { EmbedBuilder } = require('discord.js');
 
 let hangman = null;
 
@@ -86,18 +89,19 @@ const startHangman = () => {
   return true;
 };
 
-const tryNewGuess = (guess, guesser) => {
+const tryNewGuess = (guess, msg) => {
   if (!isRunning()) {
     return false;
   }
   let res;
   if (guess.length == 1) {
-    res = tryGuessLetter(guess.toUpperCase(), guesser);
+    res = tryGuessLetter(guess.toUpperCase(), msg);
   } else {
-    res = tryGuessPokemon(guess.toUpperCase(), guesser);
+    res = tryGuessPokemon(guess.toUpperCase(), msg);
   }
   if (!res) {
     hangman.misses++;
+    addStatistic(msg.author, 'hm_wrong_guesses');
   }
   if (isLost() || isWon()) {
     hangman.finished = true;
@@ -106,35 +110,46 @@ const tryNewGuess = (guess, guesser) => {
   return res;
 };
 
-const tryGuessLetter = (guess, guesser) => {
+const tryGuessLetter = (guess, msg) => {
   if (guess == 'É') {
     guess = 'E';
   }
   const res = hangman.word.includes(guess);
   hangman.letters.push(guess);
   if (res) {
-    increaseScore(guesser);
+    increaseScore(msg);
   }
   return res;
 };
 
-const tryGuessPokemon = (guess, guesser) => {
+const tryGuessPokemon = (guess, msg) => {
   if (new RegExp(`^${hangman.guess}$`, 'i').test(guess)) {
-    hangman.guesser = guesser;
-    increaseScore(hangman.guesser, true);
+    hangman.guesser = msg.author;
+    increaseScore(msg, true);
     return true;
   }
   return false;
 };
 
-const increaseScore = (user, guessed = false) => {
-  let userData = hangman.scores.find(d => d.user.id === user.id);
+const increaseScore = (msg, guessed = false) => {
+  let userData = hangman.scores.find(d => d.user.id === msg.author.id);
   if (!userData) {
-    userData = {user, score: 0};
+    userData = {user: msg.author, score: 0};
     hangman.scores.push(userData);
   }
   const value = guessed ? wordGuesses(hangman.word).length / 2 : 1;
   userData.score += value;
+  addStatistic(msg.author, 'hm_correct_guesses').then(async stat => {
+    // If user has made 100 correct guesses, give them the Marsh Badge
+    if (stat == 100) {
+      await addPurchased(msg.author, 'badge', trainerCardBadgeTypes.Marsh);
+      const congratsEmbed = new EmbedBuilder().setTitle('Congratulations!').setColor('Random').setDescription([
+        msg.author.toString(),
+        `You just earned the ${trainerCardBadges[trainerCardBadgeTypes.Marsh].icon} Marsh badge for making ${stat} correct guesses!`,
+      ].join('\n'));
+      msg.channel.send({ embeds: [congratsEmbed] });
+    }
+  });
 };
 
 // forcibly lose the current game

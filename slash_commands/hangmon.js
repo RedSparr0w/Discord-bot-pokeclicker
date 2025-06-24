@@ -19,7 +19,7 @@ const canGuessNow = (user) => {
 };
 
 const formatWord = (word) => word.map(l => l == '_' ? `__\\${l}__` : (l == ' ' ? `\u17B5${l}\u17B5` : l)).join(' ');
-// Because Discord embeding uses trimming and removes trailing spaces...
+// Because Discord embeding uses trimming and squeezes repeated spaces chars...
 const formatScaffold = (scaffold) => `\n${scaffold}`.replace(/(?<=\s) /g, '\u200B ');
 
 const generateGameDisplay = (endDate) => {
@@ -87,7 +87,7 @@ module.exports = {
           msg.react(REACTIONS.WAIT);
           return;
         }
-        const res = HangmanRunner.tryNewGuess(guess, msg.author);
+        const res = HangmanRunner.tryNewGuess(guess, msg);
         msg.react(res ? REACTIONS.SUCCESS : REACTIONS.FAILURE);
 
         if (HangmanRunner.isFinished()) {

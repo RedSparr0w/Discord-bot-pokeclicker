@@ -53,6 +53,8 @@ module.exports = {
       gc_games_lost,
       gc_coins_bet,
       gc_coins_won,
+      hm_correct_guesses,
+      hm_wrong_guesses,
       // Quiz
       qz_answered,
       qz_coins_won,
@@ -69,6 +71,8 @@ module.exports = {
       getStatistic(user, 'gc_games_lost'),
       getStatistic(user, 'gc_coins_bet'),
       getStatistic(user, 'gc_coins_won'),
+      getStatistic(user, 'hm_correct_guesses'),
+      getStatistic(user, 'hm_wrong_guesses'),
       // Quiz
       getStatistic(user, 'qz_answered'),
       getStatistic(user, 'qz_coins_won'),
@@ -100,6 +104,8 @@ module.exports = {
         `**❯ Games Lost:** ${gc_games_lost.toLocaleString('en-US')}`,
         `**❯ Coins Bet:** ${gc_coins_bet.toLocaleString('en-US')}`,
         `**❯ Coins Won:** ${gc_coins_won.toLocaleString('en-US')}`,
+        `**❯ Hangmon 🟢:** ${hm_correct_guesses.toLocaleString('en-US')}`,
+        `**❯ Hangmon 🔴:** ${hm_wrong_guesses.toLocaleString('en-US')}`,
       ].join('\n'),
     });
 
