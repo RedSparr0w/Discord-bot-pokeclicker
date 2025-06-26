@@ -52,7 +52,9 @@ const getRandomPokemon = () => {
 const wordGuesses = (word) => [... new Set(word.split(/\s*/))];
 
 // Compute letter frequency, final score is based on that
-const letterScore = eligiblePokemon.reduce((f, p) => {
+let maxFrequency = -Infinity, minFrequency = Infinity;
+const letterScore = {};
+const letterFrequency = eligiblePokemon.reduce((f, p) => {
   const nameLetters = wordGuesses(formatHangmanWord(p.name));
   nameLetters.forEach(l => {
     f[l] = (f[l] ?? 0);
@@ -60,7 +62,11 @@ const letterScore = eligiblePokemon.reduce((f, p) => {
   });
   return f;
 }, {});
-Object.keys(letterScore).forEach(k => letterScore[k] = 2 + Math.pow(4 ** 3 / letterScore[k], 1 / 3));
+Object.values(letterFrequency).forEach(v => {
+  maxFrequency = Math.max(maxFrequency, v);
+  minFrequency = Math.min(minFrequency, v);
+});
+Object.entries(letterFrequency).forEach(([letter, frequency]) => letterScore[letter] = 2 + 4 * ((maxFrequency - frequency) / (maxFrequency - minFrequency)) ** 1.5);
 
 const calculateRewards = () => {
   const wonMultiplier = isWon() ? 3 : 2;
