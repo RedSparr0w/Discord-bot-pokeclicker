@@ -18,7 +18,8 @@ const unownList = 'AEIYFMX?'.split('').map(l => `Unown (${l})`);
 // NIDORANF → NIDORAN F, PORYGONZ → PORYGON Z
 const formatHangmanWord = (pokemon) => pokemon.toUpperCase().replace(/-(.)$/, ' $1').replace(/É/g, 'E').replace(/[^0-9A-Z ?]/g, '').replace(/NIDORAN(F|M)/, 'NIDORAN $1');
 
-const formatHangmanGuess = (pokemon) => pokemon.toUpperCase().replace(/(\?)/g, '\\?').replace(/[^0-9A-ZÉ?\\]/g, '.?').replace(/É/g, '(E|É)');
+// Any UNOWN letter works
+const formatHangmanGuess = (pokemon) => /unown \(.\)/i.test(pokemon) ? 'UNOWN.?.' : pokemon.toUpperCase().replace(/(\?)/g, '\\?').replace(/[^0-9A-ZÉ?\\]/g, '.?').replace(/É/g, '(E|É)');
 
 // Generate a list with all valid Pokémon
 const pokemonByLength = {};
