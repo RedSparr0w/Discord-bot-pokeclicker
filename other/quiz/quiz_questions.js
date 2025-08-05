@@ -15,6 +15,7 @@ const {
   PokemonLocationType,
   berryType,
   getAttackModifier,
+  TranslatedPokemon,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
 const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
@@ -42,6 +43,7 @@ const getPokemonByName = name => pokemonList.find(p => p.name == name);
 const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
+
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
@@ -1160,7 +1162,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 150),
+  new WeightedOption(whosThatPokemon, 15000000000000000),
   new WeightedOption(pokemonType, 85),
   new WeightedOption(howDoesThisPokemonEvolve, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
@@ -1190,6 +1192,7 @@ const quizTypes = [
 
 const getQuizQuestion = async () => {
   const selected = selectWeightedOption(quizTypes);
+  console.log(TranslatedPokemon);
   return await selected.option();
 };
 

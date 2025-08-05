@@ -41,6 +41,28 @@ const cli = new ESLint({
       if (event.hasStarted()) event.end();
     });
 
+    const supportedLanguages = ['en', 'de', 'fr'];
+
+    const getTranslatedNames = () => {
+      const result = {};
+
+      supportedLanguages.forEach(lang => {
+
+        const iteration = App.translation.languageUpdated();
+        const breakP = 0;
+        
+        const translations = {};
+        //Settings.setSettingByName('translation.language', lang);
+
+        pokemonList.forEach(p => {
+          translations[p.name] = App.translation.get(p.name, 'pokemon', { lng: lang })();
+        });
+        result[lang] = translations;
+      });
+      return result;
+    };
+      
+
     const getRouteTypes = () => {
       const regionRoutes = {};
       Routes.regionRoutes.forEach(routeData => {
@@ -112,6 +134,7 @@ const cli = new ESLint({
         __class: req.__proto__.constructor.name,
       };
     };
+      
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
@@ -143,6 +166,9 @@ const cli = new ESLint({
       }),
       StoneType: GameConstants.StoneType,
       RegionDungeons: GameConstants.RegionDungeons,
+      TranslatedPokemon: getTranslatedNames(),
+      language: Settings.getSetting('translation.language'),
+      test: App.translation.get('Bulbasaur', 'pokemon')(),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });

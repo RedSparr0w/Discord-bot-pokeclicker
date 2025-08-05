@@ -8376,17 +8376,17 @@ module.exports = {
       'page': 'Yache',
     },
     {
-      'display': 'Chople Berry (Berries)',
+      'display': 'Chople Berry',
       'type': 'Berries',
       'page': 'Chople',
     },
     {
-      'display': 'Kebia Berry (Berries)',
+      'display': 'Kebia Berry',
       'type': 'Berries',
       'page': 'Kebia',
     },
     {
-      'display': 'Shuca Berry (Berries)',
+      'display': 'Shuca Berry',
       'type': 'Berries',
       'page': 'Shuca',
     },
@@ -8406,7 +8406,7 @@ module.exports = {
       'page': 'Tanga',
     },
     {
-      'display': 'Charti Berry (Berries)',
+      'display': 'Charti Berry',
       'type': 'Berries',
       'page': 'Charti',
     },
@@ -8561,26 +8561,6 @@ module.exports = {
       'page': 'Lucky Incense',
     },
     {
-      'display': 'Chople Berry (Items)',
-      'type': 'Items',
-      'page': 'Chople Berry',
-    },
-    {
-      'display': 'Kebia Berry (Items)',
-      'type': 'Items',
-      'page': 'Kebia Berry',
-    },
-    {
-      'display': 'Shuca Berry (Items)',
-      'type': 'Items',
-      'page': 'Shuca Berry',
-    },
-    {
-      'display': 'Charti Berry (Items)',
-      'type': 'Items',
-      'page': 'Charti Berry',
-    },
-    {
       'display': 'Small Restore',
       'type': 'Items',
       'page': 'Small Restore',
@@ -8594,41 +8574,6 @@ module.exports = {
       'display': 'Large Restore',
       'type': 'Items',
       'page': 'Large Restore',
-    },
-    {
-      'display': 'Dungeon Ticket (Items)',
-      'type': 'Items',
-      'page': 'Dungeon Ticket',
-    },
-    {
-      'display': 'Explorer Kit (Items)',
-      'type': 'Items',
-      'page': 'Explorer Kit',
-    },
-    {
-      'display': 'Event Calendar (Items)',
-      'type': 'Items',
-      'page': 'Event Calendar',
-    },
-    {
-      'display': 'Squirtbottle (Items)',
-      'type': 'Items',
-      'page': 'Squirtbottle',
-    },
-    {
-      'display': 'Sprinklotad (Items)',
-      'type': 'Items',
-      'page': 'Sprinklotad',
-    },
-    {
-      'display': 'Explosive Charge (Items)',
-      'type': 'Items',
-      'page': 'Explosive Charge',
-    },
-    {
-      'display': 'Treasure Scanner (Items)',
-      'type': 'Items',
-      'page': 'Treasure Scanner',
     },
     {
       'display': 'Yellow Flute',
@@ -9016,7 +8961,7 @@ module.exports = {
       'page': 'Metagrossite',
     },
     {
-      'display': 'Meteorite (Items) (Items)',
+      'display': 'Meteorite',
       'type': 'Items',
       'page': 'Meteorite',
     },
@@ -9126,19 +9071,14 @@ module.exports = {
       'page': 'Dragon Egg',
     },
     {
-      'display': 'Pokémon Egg',
-      'type': 'Items',
-      'page': 'Pokémon Egg',
-    },
-    {
       'display': 'Mystery Egg (Items)',
       'type': 'Items',
       'page': 'Mystery Egg',
     },
     {
-      'display': 'Meteorite (Items) (Items)',
+      'display': 'Meteorite for Celio',
       'type': 'Items',
-      'page': 'Meteorite',
+      'page': 'Meteorite for Celio',
     },
     {
       'display': 'Tidal Bell',
@@ -9284,11 +9224,6 @@ module.exports = {
       'display': 'Prison Bottle',
       'type': 'Items',
       'page': 'Prison Bottle',
-    },
-    {
-      'display': 'Great Twisted Spoon',
-      'type': 'Items',
-      'page': 'Great Twisted Spoon',
     },
     {
       'display': 'Island Challenge Amulet',
@@ -10136,6 +10071,11 @@ module.exports = {
       'page': 'Griseous Orb',
     },
     {
+      'display': 'Gracidea',
+      'type': 'Items',
+      'page': 'Gracidea',
+    },
+    {
       'display': 'Burn Drive',
       'type': 'Items',
       'page': 'Burn Drive',
@@ -10154,6 +10094,11 @@ module.exports = {
       'display': 'Shock Drive',
       'type': 'Items',
       'page': 'Shock Drive',
+    },
+    {
+      'display': 'Great Twisted Spoon',
+      'type': 'Items',
+      'page': 'Great Twisted Spoon',
     },
     {
       'display': 'Leek',
@@ -10679,11 +10624,6 @@ module.exports = {
       'display': 'The Lair of Giants',
       'type': 'Quest Lines',
       'page': 'The Lair of Giants',
-    },
-    {
-      'display': 'A Mystery Gift',
-      'type': 'Quest Lines',
-      'page': 'A Mystery Gift',
     },
     {
       'display': 'Incarnate Forces of Hisui',
@@ -12382,7 +12322,7 @@ module.exports = {
       'page': 'Iki Town',
     },
     {
-      'display': 'Olivia (Gyms) (Gyms)',
+      'display': "Olivia (Olivia's Grand Trial)",
       'type': 'Gyms',
       'page': 'Konikoni City',
     },
@@ -12402,7 +12342,7 @@ module.exports = {
       'page': 'Elite Molayne',
     },
     {
-      'display': 'Olivia (Gyms) (Gyms)',
+      'display': 'Olivia (Elite Olivia)',
       'type': 'Gyms',
       'page': 'Elite Olivia',
     },
@@ -12617,7 +12557,7 @@ module.exports = {
       'page': 'Cascarrafa',
     },
     {
-      'display': 'Larry (Gyms) (Gyms)',
+      'display': 'Larry (Medali Gym)',
       'type': 'Gyms',
       'page': 'Medali',
     },
@@ -12647,7 +12587,7 @@ module.exports = {
       'page': 'Elite Poppy',
     },
     {
-      'display': 'Larry (Gyms) (Gyms)',
+      'display': 'Larry (Elite Larry)',
       'type': 'Gyms',
       'page': 'Elite Larry',
     },
@@ -14263,22 +14203,22 @@ module.exports = {
       'page': 'Cell Battery',
     },
     {
-      'display': 'Squirtbottle (Oak Items)',
+      'display': 'Squirtbottle',
       'type': 'Oak Items',
       'page': 'Squirtbottle',
     },
     {
-      'display': 'Sprinklotad (Oak Items)',
+      'display': 'Sprinklotad',
       'type': 'Oak Items',
       'page': 'Sprinklotad',
     },
     {
-      'display': 'Explosive Charge (Oak Items)',
+      'display': 'Explosive Charge',
       'type': 'Oak Items',
       'page': 'Explosive Charge',
     },
     {
-      'display': 'Treasure Scanner (Oak Items)',
+      'display': 'Treasure Scanner',
       'type': 'Oak Items',
       'page': 'Treasure Scanner',
     },
@@ -14333,7 +14273,7 @@ module.exports = {
       'page': '',
     },
     {
-      'display': 'Dungeon Ticket (Key Items)',
+      'display': 'Dungeon Ticket',
       'type': 'Key Items',
       'page': '',
     },
@@ -14363,7 +14303,7 @@ module.exports = {
       'page': '',
     },
     {
-      'display': 'Explorer Kit (Key Items)',
+      'display': 'Explorer Kit',
       'type': 'Key Items',
       'page': '',
     },
@@ -14373,7 +14313,7 @@ module.exports = {
       'page': '',
     },
     {
-      'display': 'Event Calendar (Key Items)',
+      'display': 'Event Calendar',
       'type': 'Key Items',
       'page': '',
     },
@@ -14426,7 +14366,6 @@ module.exports = {
       'display': 'Diamonds',
       'type': 'Diamonds',
       'page': '',
-      'redirects': ['Underground'],
     },
     {
       'display': 'Battle Points',
@@ -14501,6 +14440,110 @@ module.exports = {
     {
       'display': 'Click Attack',
       'type': 'Click Attack',
+      'page': '',
+    },
+    {
+      'display': 'Environments',
+      'type': 'Environments',
+      'page': '',
+    },
+    {
+      'display': 'Magnetic Field (Environment)',
+      'type': 'Environments',
+      'page': 'Magnetic Field',
+    },
+    {
+      'display': 'Moss Rock (Environment)',
+      'type': 'Environments',
+      'page': 'Moss Rock',
+    },
+    {
+      'display': 'Ice Rock (Environment)',
+      'type': 'Environments',
+      'page': 'Ice Rock',
+    },
+    {
+      'display': 'Plant Cloak (Environment)',
+      'type': 'Environments',
+      'page': 'Plant Cloak',
+    },
+    {
+      'display': 'Sandy Cloak (Environment)',
+      'type': 'Environments',
+      'page': 'Sandy Cloak',
+    },
+    {
+      'display': 'Trash Cloak (Environment)',
+      'type': 'Environments',
+      'page': 'Trash Cloak',
+    },
+    {
+      'display': 'Water (Environment)',
+      'type': 'Environments',
+      'page': 'Water',
+    },
+    {
+      'display': 'Cave (Environment)',
+      'type': 'Environments',
+      'page': 'Cave',
+    },
+    {
+      'display': 'Jubilife Village (Environment)',
+      'type': 'Environments',
+      'page': 'Jubilife Village',
+    },
+    {
+      'display': 'Obsidian Fieldlands (Environment)',
+      'type': 'Environments',
+      'page': 'Obsidian Fieldlands',
+    },
+    {
+      'display': 'Crimson Mirelands (Environment)',
+      'type': 'Environments',
+      'page': 'Crimson Mirelands',
+    },
+    {
+      'display': 'Cobalt Coastlands (Environment)',
+      'type': 'Environments',
+      'page': 'Cobalt Coastlands',
+    },
+    {
+      'display': 'Coronet Highlands (Environment)',
+      'type': 'Environments',
+      'page': 'Coronet Highlands',
+    },
+    {
+      'display': 'Alabaster Icelands (Environment)',
+      'type': 'Environments',
+      'page': 'Alabaster Icelands',
+    },
+    {
+      'display': 'Desktop Client',
+      'type': 'Desktop Client',
+      'page': '',
+    },
+    {
+      'display': 'Underground',
+      'type': 'Underground',
+      'page': '',
+      'redirects': [
+        'Mine',
+        'Mining',
+      ],
+    },
+    {
+      'display': 'Underground Helpers',
+      'type': 'Underground Helpers',
+      'page': '',
+    },
+    {
+      'display': 'Berry Masters',
+      'type': 'Berry Masters',
+      'page': '',
+    },
+    {
+      'display': 'Game Updates',
+      'type': 'Game Updates',
       'page': '',
     },
     {
@@ -14596,10 +14639,23 @@ module.exports = {
       'redirect': 'Resistant',
     },
     {
-      'display': 'Diamonds',
-      'type': 'Diamonds',
+      'display': 'Underground',
+      'type': 'Underground',
       'page': '',
-      'redirects': ['Underground'],
-      'redirect': 'Underground',
+      'redirects': [
+        'Mine',
+        'Mining',
+      ],
+      'redirect': 'Mine',
+    },
+    {
+      'display': 'Underground',
+      'type': 'Underground',
+      'page': '',
+      'redirects': [
+        'Mine',
+        'Mining',
+      ],
+      'redirect': 'Mining',
     },
   ]};
