@@ -47,10 +47,6 @@ const cli = new ESLint({
       const result = {};
 
       supportedLanguages.forEach(lang => {
-
-        const iteration = App.translation.languageUpdated();
-        const breakP = 0;
-        
         const translations = {};
         //Settings.setSettingByName('translation.language', lang);
 
@@ -167,8 +163,6 @@ const cli = new ESLint({
       StoneType: GameConstants.StoneType,
       RegionDungeons: GameConstants.RegionDungeons,
       TranslatedPokemon: getTranslatedNames(),
-      language: Settings.getSetting('translation.language'),
-      test: App.translation.get('Bulbasaur', 'pokemon')(),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
