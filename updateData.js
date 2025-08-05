@@ -36,25 +36,34 @@ const cli = new ESLint({
 
   console.log('data loaded!\nupdating data..');
 
-  const result = await page.evaluate(() => {
+  const result = await page.evaluate(async () => {
     App.game.specialEvents.events.forEach(event => {
       if (event.hasStarted()) event.end();
     });
-
+    
+    const sleep = async (ms) => new Promise(resolve => setTimeout(resolve, ms));
     const supportedLanguages = ['en', 'de', 'fr'];
-
-    const getTranslatedNames = () => {
+    
+    const getTranslatedNames = async () => {
       const result = {};
+      const names = pokemonList.reduce((dict, p) => {
+        dict[p.name] = App.translation.get(p.name, 'pokemon');
+        return dict;
+      }, {});
 
-      supportedLanguages.forEach(lang => {
-        const translations = {};
-        //Settings.setSettingByName('translation.language', lang);
+      for (lang of supportedLanguages) {
+        const lastTranslationUpdate = App.translation.languageUpdated();
+        Settings.setSettingByName('translation.language', lang);
 
-        pokemonList.forEach(p => {
-          translations[p.name] = App.translation.get(p.name, 'pokemon', { lng: lang })();
-        });
-        result[lang] = translations;
-      });
+        // wait for language to update
+        if (lang !== 'en') {
+          while (lastTranslationUpdate === App.translation.languageUpdated()) {
+            await sleep(200);
+          }
+        }
+
+        result[lang] = ko.toJS(names);
+      }
       return result;
     };
       
@@ -162,7 +171,7 @@ const cli = new ESLint({
       }),
       StoneType: GameConstants.StoneType,
       RegionDungeons: GameConstants.RegionDungeons,
-      TranslatedPokemon: getTranslatedNames(),
+      TranslatedPokemon: await getTranslatedNames(),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });
