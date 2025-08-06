@@ -52,8 +52,7 @@ const translatePokemonName = (name) => {
       translatedNames.add(translated);
     }
   }
-  console.log(Array.from(translatedNames).join('|'));
-  console.log(Array.from(translatedNames).join('|').replace(/\s?\([^|)]+\)/g, ''));
+
   return Array.from(translatedNames).join('|');
 };
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
@@ -83,7 +82,6 @@ const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const answer = pokemonNameAnswer(pokemon.name);
-    console.log(answer);
       
     let amount = getAmount();
 
