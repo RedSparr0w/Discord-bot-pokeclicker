@@ -1096,7 +1096,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 15000000000000),
+  new WeightedOption(whosThatPokemon, 150),
   new WeightedOption(pokemonType, 85),
   new WeightedOption(howDoesThisPokemonEvolve, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
