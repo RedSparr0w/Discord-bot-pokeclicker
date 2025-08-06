@@ -42,7 +42,7 @@ const cli = new ESLint({
     });
     
     const sleep = async (ms) => new Promise(resolve => setTimeout(resolve, ms));
-    const supportedLanguages = ['en', 'de', 'fr'];
+    const supportedLanguages = ['de','fr'];
     
     const getTranslatedNames = async () => {
       const result = {};

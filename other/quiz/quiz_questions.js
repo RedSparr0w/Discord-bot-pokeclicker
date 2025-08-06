@@ -40,10 +40,20 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
+const pokemonNameNormalized = (name) => translatePokemonName(name).replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/(?!\|)\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
-
+const translatePokemonName = (name) => {
+  const translatedNames = new Set();
+  translatedNames.add(name);
+  for (const lang in TranslatedPokemon) {
+    const translated = TranslatedPokemon[lang][name];
+    if (translated) {
+      translatedNames.add(translated);
+    }
+  }
+  return Array.from(translatedNames).join('|');
+};
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
@@ -71,7 +81,7 @@ const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const answer = pokemonNameAnswer(pokemon.name);
-    
+      
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -254,7 +264,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
     const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
-
+    
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -1063,7 +1073,7 @@ const dungeonPokemon = () => {
     const allDungeons = dungeonEncounterKeys.flatMap((key) => (pokemon.locations?.[key] ?? []).map(loc => loc.dungeon)); return allDungeons.includes(dungeon);
   });
   const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
-  
+
   let amount = getAmount();
 
   const description = [`Name a Pokémon that can be caught in ${dungeon}!`];
@@ -1162,7 +1172,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 15000000000000000),
+  new WeightedOption(whosThatPokemon, 150),
   new WeightedOption(pokemonType, 85),
   new WeightedOption(howDoesThisPokemonEvolve, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
@@ -1192,7 +1202,6 @@ const quizTypes = [
 
 const getQuizQuestion = async () => {
   const selected = selectWeightedOption(quizTypes);
-  console.log(TranslatedPokemon);
   return await selected.option();
 };
 
