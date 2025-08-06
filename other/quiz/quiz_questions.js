@@ -40,7 +40,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => translatePokemonName(name).replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/(?!\|)\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
+const pokemonNameNormalized = (name) => translatePokemonName(name).replace(/\s?\([^|)]+\)/g, '').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/(?!\|)\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 const translatePokemonName = (name) => {
@@ -52,6 +52,8 @@ const translatePokemonName = (name) => {
       translatedNames.add(translated);
     }
   }
+  console.log(Array.from(translatedNames).join('|'));
+  console.log(Array.from(translatedNames).join('|').replace(/\s?\([^|)]+\)/g, ''));
   return Array.from(translatedNames).join('|');
 };
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
@@ -81,6 +83,7 @@ const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const answer = pokemonNameAnswer(pokemon.name);
+    console.log(answer);
       
     let amount = getAmount();
 
@@ -583,83 +586,6 @@ const pokemonRegion = () => new Promise(resolve => {
     });
   })();
 });
-
-const fossilPokemon = () => {
-  const [fossil, pokemon] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = pokemonNameAnswer(pokemon);
-  
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What Pokémon comes from this fossil?'];
-  description.push(`||${fossil}||`);
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const image = encodeURI(`${website}assets/images/breeding/${fossil}.png`);
-
-  const embed = new EmbedBuilder()
-    .setTitle('Who\'s that Pokémon?')
-    .setDescription(description.join('\n'))
-    .setThumbnail(image)
-    .setColor('#3498db');
-  
-  const pokemonData = getPokemonByName(pokemon);
-  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}.png`;
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-    end: defaultEndFunction(`It's ${pokemon}!`, pokemonImage),
-  };
-};
-
-const pokemonFossil = () => {
-  const [fossil, pokemonName] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = new RegExp(`^\\W*${fossil.replace(/\s*fossil/i, '').replace(/\W/g, '.?')}\\b`, 'i');
-  
-  const pokemon = pokemonList.find(p => p.name == pokemonName);
-  
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What fossil does this Pokémon come from?'];
-  description.push(`||${pokemonName}||`);
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const embed = new EmbedBuilder()
-    .setTitle('What\'s the fossil?')
-    .setDescription(description.join('\n'))
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
-
-  const fossilImage = encodeURI(`${website}assets/images/breeding/${fossil}.png`);
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-    end: defaultEndFunction(`It's the ${fossil}!`, fossilImage),
-  };
-};
 
 const dockTown = () => {
   const town = randomFromArray(GameConstants.DockTowns);
@@ -1172,7 +1098,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 150),
+  new WeightedOption(whosThatPokemon, 15000000000000),
   new WeightedOption(pokemonType, 85),
   new WeightedOption(howDoesThisPokemonEvolve, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
@@ -1181,8 +1107,6 @@ const quizTypes = [
   new WeightedOption(typeRegionPokemon, 45),
   new WeightedOption(dualTypePokemon, 60),
   new WeightedOption(pokemonID, 60),
-  new WeightedOption(fossilPokemon, 5),
-  new WeightedOption(pokemonFossil, 5),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
   new WeightedOption(whatIsThatBerry, 20),

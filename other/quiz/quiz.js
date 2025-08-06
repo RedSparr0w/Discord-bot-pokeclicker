@@ -13,7 +13,7 @@ const { happyHourBonus, isHappyHour, nextHappyHour } = require('./happy_hour.js'
 const { trainerCardBadges } = require('../../helpers/trainer_card.js');
 
 // Between 1 and 6 minutes until the next question
-const getTimeLimit = () => Math.floor(Math.random() * (5 * MINUTE)) + (1 * MINUTE);
+const getTimeLimit = () => Math.floor(Math.random() * (0.5 * MINUTE)) + (0.1 * MINUTE);
 const ANSWER_TIME_LIMIT = 5 * SECOND;
 
 const newQuiz = async (guild, reoccur = false) => {
