@@ -22,7 +22,7 @@ module.exports = {
     const id = interaction.options.get('user')?.value;
 
     let member = interaction.member;
-    let user = interaction.user;
+    //let user = interaction.user;
 
 
 
@@ -38,7 +38,7 @@ module.exports = {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
         return interaction.reply({ embeds: [embed], ephemeral: true });
       }
-      user = member.user;
+      //user = member.user;
     }
 
     const role = member.guild.roles.cache.find(role => role.name === 'Beta Tester');
