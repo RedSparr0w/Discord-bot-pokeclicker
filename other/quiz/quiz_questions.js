@@ -40,7 +40,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => translatePokemonName(name).replace(/\s?\([^|)]+\)/g, '').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/(?!\|)\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
+const pokemonNameNormalized = (name) => translatePokemonName(name).replace(/\s?\([^|)]+\)/g, '').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/(\?!\|-_♂♀)/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
 const translatePokemonName = (name) => {
