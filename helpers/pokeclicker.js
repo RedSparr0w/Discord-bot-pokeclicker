@@ -114683,7 +114683,7 @@ module.exports = {
                   '__class': 'MoonCyclePhaseRequirement',
                 },
               ],
-              'hint': 'Fullmoon Island needs to be completed.',
+              'hint': 'Fullmoon Island needs to be completed and The moon phase must be Full Moon Or Waxing Gibbous Or Waning Gibbous Or First Quarter Or Third Quarter.',
               '__class': 'MultiRequirement',
             },
             'roamingGroup': {
@@ -114910,7 +114910,7 @@ module.exports = {
                   '__class': 'CustomRequirement',
                 },
               ],
-              'hint': 'Newmoon Island needs to be completed.',
+              'hint': 'Newmoon Island needs to be completed and Darkrai roams Sinnoh around New Moon, and lives on the island during other moon phases.',
               '__class': 'MultiRequirement',
             },
           },
