@@ -36,10 +36,37 @@ const cli = new ESLint({
 
   console.log('data loaded!\nupdating data..');
 
-  const result = await page.evaluate(() => {
+  const result = await page.evaluate(async () => {
     App.game.specialEvents.events.forEach(event => {
       if (event.hasStarted()) event.end();
     });
+    
+    const sleep = async (ms) => new Promise(resolve => setTimeout(resolve, ms));
+    const supportedLanguages = ['de','fr'];
+    
+    const getTranslatedNames = async () => {
+      const result = {};
+      const names = pokemonList.reduce((dict, p) => {
+        dict[p.name] = App.translation.get(p.name, 'pokemon');
+        return dict;
+      }, {});
+
+      for (lang of supportedLanguages) {
+        const lastTranslationUpdate = App.translation.languageUpdated();
+        Settings.setSettingByName('translation.language', lang);
+
+        // wait for language to update
+        if (lang !== 'en') {
+          while (lastTranslationUpdate === App.translation.languageUpdated()) {
+            await sleep(200);
+          }
+        }
+
+        result[lang] = ko.toJS(names);
+      }
+      return result;
+    };
+      
 
     const getRouteTypes = () => {
       const regionRoutes = {};
@@ -112,6 +139,7 @@ const cli = new ESLint({
         __class: req.__proto__.constructor.name,
       };
     };
+      
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
@@ -143,6 +171,7 @@ const cli = new ESLint({
       }),
       StoneType: GameConstants.StoneType,
       RegionDungeons: GameConstants.RegionDungeons,
+      TranslatedPokemon: await getTranslatedNames(),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });

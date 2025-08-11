@@ -48,7 +48,7 @@ module.exports = {
         if (gradientRole) {
           select.addOptions(
             new StringSelectMenuOptionBuilder()
-              .setLabel(role.name + ' (gradient)')
+              .setLabel(`${role.name} (gradient)`)
               .setValue(gradientRole.name)
               .setDefault(member.roles.cache.has(gradientRole.id))
           );
