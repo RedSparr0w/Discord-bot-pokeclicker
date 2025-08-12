@@ -64,7 +64,7 @@ const cli = new ESLint({
 
         result[lang] = ko.toJS(names);
         // Filter out any names that are the same
-        const pokemonNameNormalized = (name) => name.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/\s?\([^|)]+\)/g, '').replace(/([?!|\-_♂♀])/g, '');
+        const pokemonNameNormalized = (name) => name.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/\s?\([^|)]+\)/g, '').replace(/([?!\-_♂♀])/g, '');
         Object.keys(result[lang]).forEach(key => {
           if (pokemonNameNormalized(result[lang][key]) == pokemonNameNormalized(key) || pokemonNameNormalized(result[lang][key]) == '') {
             delete result[lang][key];
