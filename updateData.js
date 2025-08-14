@@ -71,6 +71,12 @@ const cli = new ESLint({
           }
         });
       }
+      // Go back to english to ensure our hints etc are in english
+      const lastTranslationUpdate = App.translation.languageUpdated();
+      Settings.setSettingByName('translation.language', 'en');
+      while (lastTranslationUpdate === App.translation.languageUpdated()) {
+        await sleep(200);
+      }
       return result;
     };
       
