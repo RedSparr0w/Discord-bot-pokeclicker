@@ -133,6 +133,8 @@ const cli = new ESLint({
     // So we always get the correct weather/day requirements
     Weather.currentWeather = () => -1;
     DayOfWeekRequirement.prototype.getProgress = () => 0;
+    MoonCyclePhaseRequirement.prototype.getProgress = () => 0;
+    DayCyclePartRequirement.prototype.getProgress = () => 0;
 
     Requirement.prototype.toJSON = function() {
       const req = this.__proto__.constructor.name === 'LazyRequirementWrapper'

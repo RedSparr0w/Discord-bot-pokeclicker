@@ -116345,7 +116345,7 @@ module.exports = {
                   '__class': 'MoonCyclePhaseRequirement',
                 },
               ],
-              'hint': 'Fullmoon Island needs to be completed.',
+              'hint': 'Fullmoon Island needs to be completed and The moon phase must be Full Moon Or Waxing Gibbous Or Waning Gibbous Or First Quarter Or Third Quarter.',
               '__class': 'MultiRequirement',
             },
             'roamingGroup': {
@@ -137260,7 +137260,7 @@ module.exports = {
                   '__class': 'MoonCyclePhaseRequirement',
                 },
               ],
-              'hint': 'Genesect (Chill) needs to be owned.',
+              'hint': 'Genesect (Chill) needs to be owned and The moon phase must be First Quarter Or Third Quarter.',
               '__class': 'MultiRequirement',
             },
           },
