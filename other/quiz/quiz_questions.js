@@ -746,7 +746,7 @@ const pokemonGymLeader = () => {
 const gymLeaderPokemon = () => {
   const gym = GymList[randomFromArray(allGyms)];
   const pokemon = gym.pokemons.map(p => pokemonNameNormalized(p.name));
-  const answer = new RegExp(`^\\W*(${pokemon.join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${pokemon.join('|')})(?!\\S)`, 'i');
   
   let amount = getAmount();
 
@@ -910,7 +910,7 @@ const typeRegionPokemon = () => {
     (!pokemon.name.includes('Arceus') || pokemon.name == 'Arceus (Normal)') &&
     (!pokemon.name.includes('Silvally') || pokemon.name == 'Silvally (Normal)')
   );
-  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})(?!\\S)`, 'i');
   
   let amount = getAmount();
 
@@ -954,8 +954,8 @@ const dualTypePokemon = () => {
   const eligiblePokemon = pokemonList.filter(pokemon =>
     pokemon.type.every(t => selectedTyping.includes(t)) && pokemon.type.length == selectedTyping.length);
 
-  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
-  
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})(?!\\S)`, 'i');
+
   let amount = getAmount();
 
   const description = [`Name a Pokémon that is both ${pokemonTypeIcons[types[0]]} ${types[0]} Type & ${pokemonTypeIcons[types[1]]} ${types[1]} Type`];
@@ -996,7 +996,7 @@ const dungeonPokemon = () => {
   const eligiblePokemon = pokemonList.filter((pokemon) => {
     const allDungeons = dungeonEncounterKeys.flatMap((key) => (pokemon.locations?.[key] ?? []).map(loc => loc.dungeon)); return allDungeons.includes(dungeon);
   });
-  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})(?!\\S)`, 'i');
 
   let amount = getAmount();
 
