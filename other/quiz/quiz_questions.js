@@ -42,7 +42,7 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
 const pokemonNameNormalized = (name) => translatePokemonName(name).normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/\s?\([^|)]+\)/g, '').replace(/([?!\-_♂♀.'\s])/g, '.?').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, `$1|${translatePokemonName('Revavroom')}`).replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
-const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})\\b`, 'i');
+const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})(?!\\S)`, 'i');
 const translatePokemonName = (name) => {
   const translatedNames = new Set();
   translatedNames.add(name);
@@ -264,8 +264,8 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
   (async () => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
-    const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
-    
+    const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})(?!\\S)`, 'i');
+
     let amount = getAmount();
 
     const shiny = isShiny();
