@@ -146,6 +146,11 @@ module.exports = {
       'page': 'Squirtle (Clone)',
     },
     {
+      'display': '#007 - Squad Leader Squirtle',
+      'type': 'Pokémon',
+      'page': 'Squad Leader Squirtle',
+    },
+    {
       'display': '#008 - Wartortle',
       'type': 'Pokémon',
       'page': 'Wartortle',
@@ -3184,6 +3189,16 @@ module.exports = {
       'display': '#386 - Deoxys (Speed)',
       'type': 'Pokémon',
       'page': 'Deoxys (Speed)',
+    },
+    {
+      'display': '#386 - Deoxys (Green Core)',
+      'type': 'Pokémon',
+      'page': 'Deoxys (Green Core)',
+    },
+    {
+      'display': '#386 - Deoxys (Clone)',
+      'type': 'Pokémon',
+      'page': 'Deoxys (Clone)',
     },
     {
       'display': '#387 - Turtwig',
@@ -10484,6 +10499,11 @@ module.exports = {
       'display': 'Hollow Truth and Ideals',
       'type': 'Quest Lines',
       'page': 'Hollow Truth and Ideals',
+    },
+    {
+      'display': 'Destiny Deoxys',
+      'type': 'Quest Lines',
+      'page': 'Destiny Deoxys',
     },
     {
       'display': 'Swords of Justice',
