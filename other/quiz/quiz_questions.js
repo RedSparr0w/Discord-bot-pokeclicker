@@ -39,10 +39,8 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   if (description) embed.setDescription(typeof description == 'string' ? description : description.join('\n'));
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
-const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => translatePokemonName(name).normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/\s?\([^|)]+\)/g, '').replace(/([?!\-_♂♀.'\s])/g, '.?').replace(/.*(Magikarp).*/, translatePokemonName('Magikarp')).replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, `$1|${translatePokemonName('Revavroom')}`).replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
-const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
-const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})\\P{L}*$`, 'iu');
+
+
 const translatePokemonName = (name) => {
   const translatedNames = new Set();
   translatedNames.add(name);
@@ -55,6 +53,31 @@ const translatePokemonName = (name) => {
 
   return Array.from(translatedNames).join('|');
 };
+const normalizations = [
+  [/\p{Diacritic}/gu, ''],
+  [/\s?\([^|)]+\)/g, ''],
+  [/([?!\-_♂♀.'\s])/g, '.?'],
+  [/.*(Magikarp).*/, translatePokemonName('Magikarp')],
+  [/.*((Segin|Schedar|Ruchbah|Caph)\.\?Starmobile).*/, `$1|${translatePokemonName('Revavroom')}`],
+  [/\b(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/giu, '($1)?'],
+  [/Noble\s*/gu, '(Noble|Hisuian)?\\s*'],
+  [/Toxtricity/gu, 'Toxtri(city|town|island)?city'],
+  [/Cosmog/gu, 'Cosmog|Nebby'],
+  [/Marill/gu, 'Marill|Pikablu'],
+  [/Omanyte/gu, 'Omanyte|Lord Helix'],
+];
+
+String.prototype.addNormalizations = function () {
+  let out = String(this);
+  for (const [pattern, replacement] of normalizations) {
+    out = out.replace(pattern, replacement);
+  }
+  return out;
+};
+const getPokemonByName = name => pokemonList.find(p => p.name == name);
+const pokemonNameNormalized = (name) => translatePokemonName(name).normalize('NFD').addNormalizations();
+const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
+const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})\\P{L}*$`, 'iu');
 const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
