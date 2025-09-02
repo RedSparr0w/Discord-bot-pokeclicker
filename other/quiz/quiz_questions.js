@@ -65,6 +65,7 @@ const normalizations = [
   [/Cosmog/gu, 'Cosmog|Nebby'],
   [/Marill/gu, 'Marill|Pikablu'],
   [/Omanyte/gu, 'Omanyte|Lord Helix'],
+  [/\.\?\.\?\.\?/gu, '.*'],
 ];
 
 String.prototype.addNormalizations = function () {
@@ -105,7 +106,6 @@ const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const answer = pokemonNameAnswer(pokemon.name);
-      
     let amount = getAmount();
 
     const shiny = isShiny();
