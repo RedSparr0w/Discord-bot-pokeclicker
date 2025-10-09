@@ -1,4 +1,5 @@
 const { spamDetection } = require('../../config.js');
+const { getStatistic } = require('../../database.js');
 const { SECOND, HOUR, formatDateToString } = require('../../helpers.js');
 const { mute, modLog } = require('./functions');
 const { EmbedBuilder } = require('discord.js');
@@ -8,15 +9,15 @@ let messageLog = [];
 
 const check = async (message) => {
   // If message is empty or a command, ignore it
-  if (message.content.startsWith('/') || !message.content) {
+  if (message.content.startsWith('/')) {
     return;
   }
 
   // Log the message
   log(message);
 
-  // Check if user has been spomming
-  if (isSpam(message, spamDetection?.spam?.amount, spamDetection?.spam?.time)) {
+  // Check if user has been spamming
+  if (message.content && isSpam(message, spamDetection?.spam?.amount, spamDetection?.spam?.time)) {
     let time = spamDetection?.spam?.mute || 2 * HOUR;
     time = await mute(message.member, time);
     modLog(
@@ -35,8 +36,8 @@ const check = async (message) => {
     return message.reply({ embeds: [embed] });
   }
 
-  // Check if user has been spomming the same message
-  if (isDupe(message, spamDetection?.dupe?.amount, spamDetection?.dupe?.time)) {
+  // Check if user has been spamming the same message
+  if (message.content && isDupe(message, spamDetection?.dupe?.amount, spamDetection?.dupe?.time)) {
     let time = spamDetection?.dupe?.mute || 2 * HOUR;
     time = await mute(message.member, time);
     modLog(
@@ -53,6 +54,40 @@ const check = async (message) => {
     );
     const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Stop spamming!\n_(duplicate message)_\n\nYou will be unmuted in ${formatDateToString(time)}`);
     return message.reply({ embeds: [embed] });
+  }
+
+  // Check if user has sent less than 10 messages and their message contains 3 images or more
+  const messagesSentCount = await getStatistic(message.member.user, 'messages') || 0;
+  const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif)/gi) || []).length;
+  const attachmentCount = message.attachments?.size || 0;
+  const totalImageCount = imageCount + attachmentCount;
+  
+  console.log('messagesSentCount:', messagesSentCount);
+  console.log('totalImageCount:', totalImageCount);
+
+  if (messagesSentCount < 10 && totalImageCount >= 3) {
+    let time = spamDetection?.imageSpam?.mute || 6 * HOUR;
+    time = await mute(message.member, time);
+    modLog(
+      message.member.guild,
+      `**Mod:** ${message.member.guild.members.me.toString()}
+      **User:** ${message.member.toString()} (${message.member.id})
+      **Action:** Muted
+      **Reason:** _suspected crypto scam_
+      **Duration:** _${formatDateToString(time)}_
+      **Channel:** ${message.channel.name}
+      **Message Link:** _[Here](${message.url})_
+      **Message Content:**
+      \
+      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+    );
+    const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam messages!
+Message deleted.
+
+You will be unmuted in ${formatDateToString(time)}`);
+    await message.reply({ embeds: [embed] });
+    
+    return message.delete().catch(() => {});
   }
 };
 
