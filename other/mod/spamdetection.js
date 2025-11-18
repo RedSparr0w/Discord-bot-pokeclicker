@@ -61,9 +61,6 @@ const check = async (message) => {
   const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif)/gi) || []).length;
   const attachmentCount = message.attachments?.size || 0;
   const totalImageCount = imageCount + attachmentCount;
-  
-  console.log('messagesSentCount:', messagesSentCount);
-  console.log('totalImageCount:', totalImageCount);
 
   if (messagesSentCount < 10 && totalImageCount >= 3) {
     let time = spamDetection?.imageSpam?.mute || 6 * HOUR;
