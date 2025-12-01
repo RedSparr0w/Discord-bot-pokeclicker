@@ -58,6 +58,37 @@ const check = async (message) => {
 
   // Check if user has sent less than 10 messages and their message contains 3 images or more
   const messagesSentCount = await getStatistic(message.member.user, 'messages') || 0;
+  
+  // New: If a new user (<10 msgs) sends an empty message with an image of 828x616, mute and delete
+  if (messagesSentCount < 10) {
+    const isEmptyContent = !message.content || message.content.trim().length === 0;
+    const imageAttachments = [...(message.attachments?.values?.() ?? [])]
+      .filter(att => att && typeof att.width === 'number' && typeof att.height === 'number');
+
+    const hasSuspiciousSize = imageAttachments.some(att => att.width === 828 && att.height === 616);
+
+    if (isEmptyContent && hasSuspiciousSize) {
+      let time = spamDetection?.imageSpam?.mute || 6 * HOUR;
+      time = await mute(message.member, time);
+      modLog(
+        message.member.guild,
+        `**Mod:** ${message.member.guild.members.me.toString()}
+        **User:** ${message.member.toString()} (${message.member.id})
+        **Action:** Deleted message, Muted
+        **Reason:** _suspected telegram scam (image 828x616)_
+        **Duration:** _${formatDateToString(time)}_
+        **Channel:** ${message.channel.name}
+        **Message Link:** _[Here](${message.url})_`
+      );
+      const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam messages!
+Message deleted.
+
+You will be unmuted in ${formatDateToString(time)}`);
+      await message.reply({ embeds: [embed] });
+      return message.delete().catch(() => {});
+    }
+  }
+
   const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif)/gi) || []).length;
   const attachmentCount = message.attachments?.size || 0;
   const totalImageCount = imageCount + attachmentCount;
