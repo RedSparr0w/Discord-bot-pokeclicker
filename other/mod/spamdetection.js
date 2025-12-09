@@ -89,7 +89,7 @@ You will be unmuted in ${formatDateToString(time)}`);
     }
   }
 
-  const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif)/gi) || []).length;
+  const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif|webp|webm)/gi) || []).length;
   const attachmentCount = message.attachments?.size || 0;
   const totalImageCount = imageCount + attachmentCount;
 
