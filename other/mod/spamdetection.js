@@ -58,6 +58,11 @@ const check = async (message) => {
 
   // Check if user has sent less than 10 messages and their message contains 3 images or more
   const messagesSentCount = await getStatistic(message.member.user, 'messages') || 0;
+
+  // Count images in message content and attachments
+  const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif|webp|webm)/gi) || []).length;
+  const attachmentCount = message.attachments?.size || 0;
+  const totalImageCount = imageCount + attachmentCount;
   
   // New: If a new user (<10 msgs) sends an empty message with an image of 828x616, mute and delete
   if (messagesSentCount < 10) {
@@ -89,10 +94,7 @@ You will be unmuted in ${formatDateToString(time)}`);
     }
   }
 
-  const imageCount = (message.content.match(/https?:\/\/\S+\.(?:jpg|jpeg|png|gif|webp|webm)/gi) || []).length;
-  const attachmentCount = message.attachments?.size || 0;
-  const totalImageCount = imageCount + attachmentCount;
-
+  // If a new user (<10 msgs) sends 3 or more images, mute and delete (probable crypto scam)
   if (messagesSentCount < 10 && totalImageCount >= 3) {
     let time = spamDetection?.imageSpam?.mute || 6 * HOUR;
     time = await mute(message.member, time);
@@ -116,6 +118,33 @@ You will be unmuted in ${formatDateToString(time)}`);
     await message.reply({ embeds: [embed] });
     
     return message.delete().catch(() => {});
+  }
+
+  // Check for key spam/scam, words
+  if (messagesSentCount < 10 && message.content.match(/(\$|dms?|bio|profile)/)) {
+    let time = spamDetection?.keywordScamMessage?.mute || 3 * HOUR;
+    // time = await mute(message.member, time);
+    modLog(
+      message.member.guild,
+      `**Mod:** ${message.member.guild.members.me.toString()}
+      **User:** ${message.member.toString()} (${message.member.id})
+      **Action:** Nothing just logging
+      **Reason:** _suspected scam (keywords)_
+      **Duration:** _${formatDateToString(time)}_
+      **Channel:** ${message.channel.name}
+      **Message Link:** _[Here](${message.url})_
+      **Message Content:**
+      \
+      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+    );
+    /*
+    const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam message deleted..
+
+You will be unmuted in ${formatDateToString(time)}`);
+    await message.reply({ embeds: [embed] });
+    
+    return message.delete().catch(() => {});
+    */
   }
 };
 
