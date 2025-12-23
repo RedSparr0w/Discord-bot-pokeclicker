@@ -121,9 +121,9 @@ You will be unmuted in ${formatDateToString(time)}`);
   }
 
   // Check for key spam/scam, words
-  if (messagesSentCount < 10 && message.content.match(/(\$|dms?|bio|profile)/)) {
+  if (messagesSentCount < 10 && message.content.match(/(\$|crypto|dms?|bio|profile)/)) {
     let time = spamDetection?.keywordScamMessage?.mute || 3 * HOUR;
-    // time = await mute(message.member, time);
+    time = await mute(message.member, time);
     modLog(
       message.member.guild,
       `**Mod:** ${message.member.guild.members.me.toString()}
@@ -137,14 +137,13 @@ You will be unmuted in ${formatDateToString(time)}`);
       \
       \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
     );
-    /*
+    
     const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam message deleted..
 
 You will be unmuted in ${formatDateToString(time)}`);
     await message.reply({ embeds: [embed] });
     
     return message.delete().catch(() => {});
-    */
   }
 };
 
