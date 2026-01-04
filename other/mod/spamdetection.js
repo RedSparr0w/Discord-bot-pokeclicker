@@ -121,7 +121,7 @@ You will be unmuted in ${formatDateToString(time)}`);
   }
 
   // Check for key spam/scam, words
-  if (messagesSentCount < 10 && message.content.match(/(\$|crypto|blockchain|dms?|bio|profile)/)) {
+  if (messagesSentCount < 10 && message.content.match(/\b(crypto|blockchain|dms?|bio|profile)\b/)) {
     let time = spamDetection?.keywordScamMessage?.mute || 3 * HOUR;
     time = await mute(message.member, time);
     modLog(
