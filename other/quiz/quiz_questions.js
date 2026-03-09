@@ -1144,7 +1144,7 @@ const whichWandererFromBerry = () => {
     answer,
     amount,
     shiny,
-    end: defaultEndFunction('The Pokémon are:', pokemonImage, [...new Set(wanderers)].join('\n')),
+    end: defaultEndFunction('The Pokémon are:', pokemonImage, `${wanderers.splice(0, 10).join('\n')}${wanderers.length ? '\nand more..' : '!'}`),
   };
 };
 
@@ -1187,7 +1187,7 @@ const whichBerryFromWanderer = () => {
     answer,
     amount,
     shiny,
-    end: defaultEndFunction('The Berries are: ', berryImage, [...new Set(berries)].join('\n')),
+    end: defaultEndFunction('The Berries are: ', berryImage, `${berries.splice(0, 10).join('\n')}${berries.length ? '\nand more..' : '!'}`),
   };
 };
 
