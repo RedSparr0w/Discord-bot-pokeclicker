@@ -83,7 +83,8 @@ const check = async (message) => {
         **Reason:** _suspected telegram scam (image 828x616)_
         **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
-        **Message Link:** _[Here](${message.url})_`
+        **Message Link:** _[Here](${message.url})_`,
+        message.attachments,
       );
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam messages!
 Message deleted.
@@ -109,7 +110,8 @@ You will be unmuted in ${formatDateToString(time)}`);
       **Message Link:** _[Here](${message.url})_
       **Message Content:**
       \
-      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000),
+      message.attachments,
     );
     const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam messages!
 Message deleted.
