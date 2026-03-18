@@ -63,7 +63,7 @@ const newQuiz = async (guild, reoccur = false) => {
   if (reoccur) setTimeout(() => newQuiz(guild, reoccur), time_limit + ANSWER_TIME_LIMIT);
 
   // Which messages are we trying to catch
-  const filter = m => quiz.answer.test(m.content.normalize('NFD').replace(/\p{Diacritic}/gu, ''));
+  const filter = m => quiz.answer.test(m.content.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/<a?:(\w+):(\d+)>/g, ':$1:'));
 
   // Our finished timestamp
   let finished = 0;

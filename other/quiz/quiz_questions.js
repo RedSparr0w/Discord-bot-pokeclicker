@@ -66,6 +66,7 @@ const normalizations = [
   [/Cosmog/gu, 'Cosmog|Nebby'],
   [/Marill/gu, 'Marill|Pikablu'],
   [/Omanyte/gu, 'Omanyte|Lord Helix'],
+  [/Nihilego/gu, 'Nihilego|Gustavo'],
   [/\.\?\.\?\.\?/gu, '.*'],
 ];
 
@@ -221,7 +222,7 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
     const megaEvolveRestriction = allEligableEvolutions.flatMap(e => e.restrictions).filter(restriction => restriction.__class === 'MegaEvolveRequirement');
     let megaStone = '';
     if (megaEvolveRestriction.length > 0) {
-      megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1];
+      megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1].replace(/\s/g, '\\s*'); //optional space e.g. for charizardite x;
     }
 
     const allAnswers = [...levelEvolution, ...itemEvolution].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
