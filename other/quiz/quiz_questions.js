@@ -14,6 +14,7 @@ const {
   StoneType,
   PokemonLocationType,
   berryType,
+  berryList,
   getAttackModifier,
   TranslatedPokemon,
 } = require('../../helpers.js');
@@ -56,7 +57,7 @@ const translatePokemonName = (name) => {
 const normalizations = [
   [/\p{Diacritic}/gu, ''],
   [/\s?\([^|)]+\)/g, ''],
-  [/([?!\-_♂♀.'\s])/g, '.?'],
+  [/([?!\-_♂♀.'\s:])/g, '.?'],
   [/.*(Magikarp).*/, translatePokemonName('Magikarp')],
   [/.*((Segin|Schedar|Ruchbah|Caph)\.\?Starmobile).*/, `$1|${translatePokemonName('Revavroom')}`],
   [/\b(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/giu, '($1)?'],
@@ -79,7 +80,10 @@ const getPokemonByName = name => pokemonList.find(p => p.name == name);
 const pokemonNameNormalized = (name) => translatePokemonName(name).normalize('NFD').addNormalizations();
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
-const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
+const berryNameList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
+const berryWanderers = berryList.map(berry => berry.wander);
+const baseWanderers = ['Tangela', 'Scyther', 'Pineco', 'Heracross', 'Cherubi', 'Sewaddle', 'Karrablast', 'Scatterbug', 'Cutiefly', 'Bounsweet', 'Blipbug', 'Gossifleur'];
+const colourWanderers = ['Ledyba', 'Flabébé (Red)', 'Oricorio (Baile)', 'Illumise', 'Oricorio (Sensu)', 'Spewpa', 'Oricorio (Pa\'u)', 'Burmy (Plant)', 'Combee', 'Flabébé (Yellow)', 'Oricorio (Pom-Pom)', 'Volbeat', 'Flabébé (Blue)', 'Flabébé (Orange)', 'Flabébé (White)'];
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
@@ -87,6 +91,7 @@ const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith(
 const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]) && GymList[t].town != GymList[t].leaderName);
 const allGyms = Object.keys(GymList);
 const allGymTypes = {};
+
 Object.keys(GymList).forEach(gym => {
   const pokemonNames = GymList[gym].pokemons.map(p => p.name);
   const pokemon = pokemonList.filter(p => pokemonNames.includes(p.name));
@@ -153,7 +158,7 @@ const whosThatPokemon = () => new Promise(resolve => {
 const whatIsThatBerry = () => new Promise(resolve => {
   (async () => {
 
-    const berry = randomFromArray(berryList);
+    const berry = randomFromArray(berryNameList);
     const answer = new RegExp(`^\\W*#?${berry}.?(Berry)?\\b`, 'i');
 
     const amount = getAmount();
@@ -1102,6 +1107,90 @@ const pokemonDungeon = () => {
   };
 };
 
+const whichWandererFromBerry = () => {
+  const possibleBerries = berryNameList.filter((_, i) => berryWanderers[i].some(w => !baseWanderers.includes(w) && !colourWanderers.includes(w))); //so doesnt just get an empty list of removed wanderers
+  const berry = randomFromArray(possibleBerries);
+  const wanderers = berryWanderers[berryNameList.indexOf(berry)].filter(w => !baseWanderers.includes(w) && !colourWanderers.includes(w)); //list of wanderers for the berry, excluding the common ones
+
+  const answer = new RegExp(`^\\W*(${wanderers.map(w => pokemonNameNormalized(w)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu'); //a
+  
+  let amount = getAmount();
+  
+  const description = ['Name a unique Wanderer that can be found on this berry'];
+  description.push(`||${berry} Berry ||`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const image = encodeURI(`${website}assets/images/items/berry/${berry}.png`);
+
+  const shiny = isShiny();
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Wanderer?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(image)
+    .setColor('#3498db');
+
+  const pokemon = getPokemonByName(randomFromArray(wanderers));
+  const female = isFemale(pokemon);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`;
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are:', pokemonImage, `${wanderers.splice(0, 10).join('\n')}${wanderers.length ? '\nand more..' : '!'}`),
+  };
+};
+
+const whichBerryFromWanderer = () => {
+
+  const pokemonName = randomFromArray([ ...new Set(berryWanderers.flat().filter(w => !baseWanderers.includes(w)))]); //random equal chance of any not base wanderer being picked, coloured wanderers are fine
+  const pokemon = getPokemonByName(pokemonName);
+
+  const berries = berryNameList.filter((_, i) => berryWanderers[i].includes(pokemonName)); //get all berries that have pkmn as wanderer
+  const berry = randomFromArray(berries); //purely for displaying image at end
+
+  const answer = new RegExp(`^\\W*(${berries.join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu'); //A
+
+  let amount = getAmount();
+
+  const description = ['Which Berry does this Pokemon wander on?'];
+  description.push(`||${pokemonName}||`); //incase image fails randomly
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+  const female = isFemale(pokemon);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Berry?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`)
+    .setColor('#3498db');
+
+  const berryImage = encodeURI(`${website}assets/images/items/berry/${berry}.png`);
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Berries are: ', berryImage, `${berries.splice(0, 10).join('\n')}${berries.length ? '\nand more..' : '!'}`),
+  };
+};
+
 class WeightedOption {
   constructor(option, weight) {
     this.option = option;
@@ -1143,6 +1232,8 @@ const quizTypes = [
   new WeightedOption(dungeonPokemon, 40),
   new WeightedOption(pokemonDungeon, 20),
   new WeightedOption(effectiveType, 35),
+  new WeightedOption(whichWandererFromBerry, 10),
+  new WeightedOption(whichBerryFromWanderer, 10),
   // new WeightedOption(___, 1),
 ];
 
