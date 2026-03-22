@@ -1192,6 +1192,118 @@ const whichBerryFromWanderer = () => {
   };
 };
 
+const whichPokemonFromFossil = () => {
+
+  const fossilItem = randomFromArray([...new Set(pokemonList.filter(p => p.locations['9']).flatMap(p => p.locations['9']))]);
+  const fossilPokemon = (pokemonList.filter(p => p.locations['9']?.includes(fossilItem)));
+
+  const answer = new RegExp(`^\\W*(${fossilPokemon.map(p => pokemonNameNormalized(p.name)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
+
+  let amount = getAmount();
+
+  const description = ['Which Pokémon comes from this Fossil?'];
+  description.push(`||${fossilItem}||`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ *(shiny)*`);
+    amount += shiny_amount;
+  }
+
+  const pokemon = randomFromArray(fossilPokemon);
+  const female = isFemale(pokemon);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`;
+  const fossilImage = encodeURI(`${website}assets/images/${fossilItem.startsWith('Fossilized') ? 'items/underground' : 'breeding'}/${fossilItem}.png`);
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Pokémon?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(fossilImage)
+    .setColor('#6da4ff');
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are:', pokemonImage, fossilPokemon.map(p => p.name).join('\n')),
+  };
+};
+
+
+const whichFossilFromPokemon = () => {
+
+  const pokemon = randomFromArray(pokemonList.filter(p => p.locations['9']));
+  const fossilItems = pokemon.locations['9'].map(f => f.replace(/\s+Fossil$/i, ''));
+  const fossil = randomFromArray(fossilItems);
+  const answer = new RegExp(`^\\W*(${fossilItems.join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
+  let amount = getAmount();
+
+  const description = ['Which Fossil does this Pokémon come from?'];
+  description.push(`||${pokemon.name}||`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ *(shiny)*`);
+    amount += shiny_amount;
+  }
+
+  const female = isFemale(pokemon);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`;
+  const fossilImage = encodeURI(`${website}assets/images/${fossil.startsWith('Fossilized') ? 'items/underground' : 'breeding'}/${fossil}${fossil.startsWith('Fossilized') ? '' : ' Fossil'}.png`);
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Fossil?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(pokemonImage)
+    .setColor('#6da4ff');
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: fossilItems.length > 1
+      ? defaultEndFunction('The Fossils are:', fossilImage, fossilItems.join('\n'))
+      : defaultEndFunction(`It's the ${fossil} Fossil!`, fossilImage),
+  };
+};
+
+const fossilRevivalLocation = () => {
+
+  const pokemon = randomFromArray(pokemonList.filter(p => p.locations['9']));
+  const fossil = randomFromArray(pokemon.locations['9']);
+  const location = pokemon.locations['18'][0];
+
+  const answer = new RegExp(`^\\W*${location.replace(/\s*(town|city|island)/i, '').replace(/\W/g, '.?').replace(/(\d)/, '($1)?')}\\b`, 'i');
+  const amount = getAmount();
+
+  const description = ['Where can this Fossil be revived?'];
+  description.push(`||${fossil}||`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const fossilImage = encodeURI(`${website}assets/images/${fossil.startsWith('Fossilized') ? 'items/underground' : 'breeding'}/${fossil}.png`);
+  const locationImage = encodeURI(`${website}assets/images/towns/${location}.png`);
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Location?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(fossilImage)
+    .setColor('#6da4ff');
+
+  return {
+    embed,
+    answer,
+    amount,
+    end: defaultEndFunction(`It's ${location}!`, locationImage),
+  };
+};
+
 class WeightedOption {
   constructor(option, weight) {
     this.option = option;
@@ -1235,6 +1347,9 @@ const quizTypes = [
   new WeightedOption(effectiveType, 35),
   new WeightedOption(whichWandererFromBerry, 10),
   new WeightedOption(whichBerryFromWanderer, 10),
+  new WeightedOption(whichPokemonFromFossil, 35),
+  new WeightedOption(whichFossilFromPokemon, 30),
+  new WeightedOption(fossilRevivalLocation, 5),
   // new WeightedOption(___, 1),
 ];
 
