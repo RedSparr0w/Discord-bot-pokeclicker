@@ -14,7 +14,9 @@ const {
   StoneType,
   PokemonLocationType,
   berryType,
+  berryList,
   getAttackModifier,
+  TranslatedPokemon,
 } = require('../../helpers.js');
 const { isHappyHour, happyHourBonus, incrementHappyHourShinyCount } = require('./happy_hour.js');
 const { getRandomPokemon, getWhosThatPokemonImage, getWhosThatPokemonFinalImage, isFemale } = require('./quiz_functions.js');
@@ -38,11 +40,51 @@ const defaultEndFunction = (title, image, description) => async (m, e) => {
   if (description) embed.setDescription(typeof description == 'string' ? description : description.join('\n'));
   m.channel.send({ embeds: [embed] }).catch((...args) => warn('Unable to post quiz answer', ...args));
 };
+
+
+const translatePokemonName = (name) => {
+  const translatedNames = new Set();
+  translatedNames.add(name);
+  for (const lang in TranslatedPokemon) {
+    const translated = TranslatedPokemon[lang][name];
+    if (translated) {
+      translatedNames.add(translated);
+    }
+  }
+
+  return Array.from(translatedNames).join('|');
+};
+const normalizations = [
+  [/\p{Diacritic}/gu, ''],
+  [/\s?\([^|)]+\)/g, ''],
+  [/([?!\-_♂♀.'\s:])/g, '.?'],
+  [/.*(Magikarp).*/, translatePokemonName('Magikarp')],
+  [/.*((Segin|Schedar|Ruchbah|Caph)\.\?Starmobile).*/, `$1|${translatePokemonName('Revavroom')}`],
+  [/\b(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/giu, '($1)?'],
+  [/Noble\s*/gu, '(Noble|Hisuian)?\\s*'],
+  [/Toxtricity/gu, 'Toxtri(city|town|island)?city'],
+  [/Cosmog/gu, 'Cosmog|Nebby'],
+  [/Marill/gu, 'Marill|Pikablu'],
+  [/Omanyte/gu, 'Omanyte|Lord Helix'],
+  [/Nihilego/gu, 'Nihilego|Gustavo'],
+  [/\.\?\.\?\.\?/gu, '.*'],
+];
+
+String.prototype.addNormalizations = function () {
+  let out = String(this);
+  for (const [pattern, replacement] of normalizations) {
+    out = out.replace(pattern, replacement);
+  }
+  return out;
+};
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
-const pokemonNameNormalized = (name) => name.replace(/\s?\(.+\)$/, '').replace(/.*(Magikarp).*/, '$1').replace(/\W/g, '.?').replace(/.*((Segin|Schedar|Segin|Ruchbah|Caph)\.\?Starmobile).*/, '($1)|(Revavroom)').replace(/(Valencian|Pinkan|Pink|Handout|Charity|Blessing|Crystal|Titan)\s*/gi, '($1)?').replace(/Noble\s*/g, '(Noble|Hisuian)?\\s*').replace('Toxtricity', 'Toxtri(city|town|island)?city').replace('Cosmog', 'Cosmog|Nebby');
+const pokemonNameNormalized = (name) => translatePokemonName(name).normalize('NFD').addNormalizations();
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
-const pokemonNameAnswer = (name) => new RegExp(`^\\W*${pokemonNameNormalized(name)}\\b`, 'i');
-const berryList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
+const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
+const berryNameList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
+const berryWanderers = berryList.map(berry => berry.wander);
+const baseWanderers = ['Tangela', 'Scyther', 'Pineco', 'Heracross', 'Cherubi', 'Sewaddle', 'Karrablast', 'Scatterbug', 'Cutiefly', 'Bounsweet', 'Blipbug', 'Gossifleur'];
+const colourWanderers = ['Ledyba', 'Flabébé (Red)', 'Oricorio (Baile)', 'Illumise', 'Oricorio (Sensu)', 'Spewpa', 'Oricorio (Pa\'u)', 'Burmy (Plant)', 'Combee', 'Flabébé (Yellow)', 'Oricorio (Pom-Pom)', 'Volbeat', 'Flabébé (Blue)', 'Flabébé (Orange)', 'Flabébé (White)'];
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
@@ -50,6 +92,7 @@ const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith(
 const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]) && GymList[t].town != GymList[t].leaderName);
 const allGyms = Object.keys(GymList);
 const allGymTypes = {};
+
 Object.keys(GymList).forEach(gym => {
   const pokemonNames = GymList[gym].pokemons.map(p => p.name);
   const pokemon = pokemonList.filter(p => pokemonNames.includes(p.name));
@@ -69,7 +112,7 @@ const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const answer = pokemonNameAnswer(pokemon.name);
-    
+
     let amount = getAmount();
 
     const shiny = isShiny();
@@ -116,7 +159,7 @@ const whosThatPokemon = () => new Promise(resolve => {
 const whatIsThatBerry = () => new Promise(resolve => {
   (async () => {
 
-    const berry = randomFromArray(berryList);
+    const berry = randomFromArray(berryNameList);
     const answer = new RegExp(`^\\W*#?${berry}.?(Berry)?\\b`, 'i');
 
     const amount = getAmount();
@@ -179,7 +222,7 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
     const megaEvolveRestriction = allEligableEvolutions.flatMap(e => e.restrictions).filter(restriction => restriction.__class === 'MegaEvolveRequirement');
     let megaStone = '';
     if (megaEvolveRestriction.length > 0) {
-      megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1];
+      megaStone = megaEvolveRestriction[0].hint.match(/needs the ([^ ].*) Mega Stone/)[1].replace(/\s/g, '\\s*'); //optional space e.g. for charizardite x;
     }
 
     const allAnswers = [...levelEvolution, ...itemEvolution].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
@@ -251,7 +294,7 @@ const whosThePokemonEvolution = () => new Promise(resolve => {
   (async () => {
     const pokemon = randomFromArray(pokemonListWithEvolution);
     const evolutions = [... new Set(pokemon.evolutions.map(p => p.evolvedPokemon))];
-    const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})\\b`, 'i');
+    const answer = new RegExp(`^\\W*(${evolutions.map(p => pokemonNameNormalized(p)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
 
     let amount = getAmount();
 
@@ -572,83 +615,6 @@ const pokemonRegion = () => new Promise(resolve => {
   })();
 });
 
-const fossilPokemon = () => {
-  const [fossil, pokemon] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = pokemonNameAnswer(pokemon);
-  
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What Pokémon comes from this fossil?'];
-  description.push(`||${fossil}||`);
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const image = encodeURI(`${website}assets/images/breeding/${fossil}.png`);
-
-  const embed = new EmbedBuilder()
-    .setTitle('Who\'s that Pokémon?')
-    .setDescription(description.join('\n'))
-    .setThumbnail(image)
-    .setColor('#3498db');
-  
-  const pokemonData = getPokemonByName(pokemon);
-  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemonData.id}.png`;
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-    end: defaultEndFunction(`It's ${pokemon}!`, pokemonImage),
-  };
-};
-
-const pokemonFossil = () => {
-  const [fossil, pokemonName] = randomFromArray(Object.entries(GameConstants.FossilToPokemon));
-  const answer = new RegExp(`^\\W*${fossil.replace(/\s*fossil/i, '').replace(/\W/g, '.?')}\\b`, 'i');
-  
-  const pokemon = pokemonList.find(p => p.name == pokemonName);
-  
-  let amount = getAmount();
-
-  const shiny = isShiny();
-
-  const description = ['What fossil does this Pokémon come from?'];
-  description.push(`||${pokemonName}||`);
-  description.push(`**+${amount} ${serverIcons.money}**`);
-
-  // If shiny award more coins
-  if (shiny) {
-    const shiny_amount = getShinyAmount();
-    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
-    amount += shiny_amount;
-  }
-
-  const embed = new EmbedBuilder()
-    .setTitle('What\'s the fossil?')
-    .setDescription(description.join('\n'))
-    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-    .setColor('#3498db');
-
-  const fossilImage = encodeURI(`${website}assets/images/breeding/${fossil}.png`);
-
-  return {
-    embed,
-    answer,
-    amount,
-    shiny,
-    end: defaultEndFunction(`It's the ${fossil}!`, fossilImage),
-  };
-};
-
 const dockTown = () => {
   const town = randomFromArray(GameConstants.DockTowns);
   const region = GameConstants.DockTowns.findIndex(t => t == town);
@@ -810,7 +776,7 @@ const pokemonGymLeader = () => {
 const gymLeaderPokemon = () => {
   const gym = GymList[randomFromArray(allGyms)];
   const pokemon = gym.pokemons.map(p => pokemonNameNormalized(p.name));
-  const answer = new RegExp(`^\\W*(${pokemon.join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${pokemon.join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
   
   let amount = getAmount();
 
@@ -974,7 +940,7 @@ const typeRegionPokemon = () => {
     (!pokemon.name.includes('Arceus') || pokemon.name == 'Arceus (Normal)') &&
     (!pokemon.name.includes('Silvally') || pokemon.name == 'Silvally (Normal)')
   );
-  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
   
   let amount = getAmount();
 
@@ -1018,8 +984,8 @@ const dualTypePokemon = () => {
   const eligiblePokemon = pokemonList.filter(pokemon =>
     pokemon.type.every(t => selectedTyping.includes(t)) && pokemon.type.length == selectedTyping.length);
 
-  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
-  
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
+
   let amount = getAmount();
 
   const description = [`Name a Pokémon that is both ${pokemonTypeIcons[types[0]]} ${types[0]} Type & ${pokemonTypeIcons[types[1]]} ${types[1]} Type`];
@@ -1060,8 +1026,8 @@ const dungeonPokemon = () => {
   const eligiblePokemon = pokemonList.filter((pokemon) => {
     const allDungeons = dungeonEncounterKeys.flatMap((key) => (pokemon.locations?.[key] ?? []).map(loc => loc.dungeon)); return allDungeons.includes(dungeon);
   });
-  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})\\b`, 'i');
-  
+  const answer = new RegExp(`^\\W*(${eligiblePokemon.map(p => pokemonNameNormalized(p.name)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
+
   let amount = getAmount();
 
   const description = [`Name a Pokémon that can be caught in ${dungeon}!`];
@@ -1142,6 +1108,90 @@ const pokemonDungeon = () => {
   };
 };
 
+const whichWandererFromBerry = () => {
+  const possibleBerries = berryNameList.filter((_, i) => berryWanderers[i].some(w => !baseWanderers.includes(w) && !colourWanderers.includes(w))); //so doesnt just get an empty list of removed wanderers
+  const berry = randomFromArray(possibleBerries);
+  const wanderers = berryWanderers[berryNameList.indexOf(berry)].filter(w => !baseWanderers.includes(w) && !colourWanderers.includes(w)); //list of wanderers for the berry, excluding the common ones
+
+  const answer = new RegExp(`^\\W*(${wanderers.map(w => pokemonNameNormalized(w)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu'); //a
+  
+  let amount = getAmount();
+  
+  const description = ['Name a unique Wanderer that can be found on this berry'];
+  description.push(`||${berry} Berry ||`);
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const image = encodeURI(`${website}assets/images/items/berry/${berry}.png`);
+
+  const shiny = isShiny();
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Wanderer?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(image)
+    .setColor('#3498db');
+
+  const pokemon = getPokemonByName(randomFromArray(wanderers));
+  const female = isFemale(pokemon);
+  const pokemonImage = `${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`;
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are:', pokemonImage, `${wanderers.splice(0, 10).join('\n')}${wanderers.length ? '\nand more..' : '!'}`),
+  };
+};
+
+const whichBerryFromWanderer = () => {
+
+  const pokemonName = randomFromArray([ ...new Set(berryWanderers.flat().filter(w => !baseWanderers.includes(w)))]); //random equal chance of any not base wanderer being picked, coloured wanderers are fine
+  const pokemon = getPokemonByName(pokemonName);
+
+  const berries = berryNameList.filter((_, i) => berryWanderers[i].includes(pokemonName)); //get all berries that have pkmn as wanderer
+  const berry = randomFromArray(berries); //purely for displaying image at end
+
+  const answer = new RegExp(`^\\W*(${berries.join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu'); //A
+
+  let amount = getAmount();
+
+  const description = ['Which Berry does this Pokemon wander on?'];
+  description.push(`||${pokemonName}||`); //incase image fails randomly
+  description.push(`**+${amount} ${serverIcons.money}**`);
+
+  const shiny = isShiny();
+  const female = isFemale(pokemon);
+
+  // If shiny award more coins
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new EmbedBuilder()
+    .setTitle('Which Berry?')
+    .setDescription(description.join('\n'))
+    .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`)
+    .setColor('#3498db');
+
+  const berryImage = encodeURI(`${website}assets/images/items/berry/${berry}.png`);
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Berries are: ', berryImage, `${berries.splice(0, 10).join('\n')}${berries.length ? '\nand more..' : '!'}`),
+  };
+};
+
 class WeightedOption {
   constructor(option, weight) {
     this.option = option;
@@ -1169,8 +1219,6 @@ const quizTypes = [
   new WeightedOption(typeRegionPokemon, 45),
   new WeightedOption(dualTypePokemon, 60),
   new WeightedOption(pokemonID, 60),
-  new WeightedOption(fossilPokemon, 5),
-  new WeightedOption(pokemonFossil, 5),
   new WeightedOption(startingTown, 10),
   new WeightedOption(dockTown, 10),
   new WeightedOption(whatIsThatBerry, 20),
@@ -1185,6 +1233,8 @@ const quizTypes = [
   new WeightedOption(dungeonPokemon, 40),
   new WeightedOption(pokemonDungeon, 20),
   new WeightedOption(effectiveType, 35),
+  new WeightedOption(whichWandererFromBerry, 10),
+  new WeightedOption(whichBerryFromWanderer, 10),
   // new WeightedOption(___, 1),
 ];
 

@@ -36,10 +36,50 @@ const cli = new ESLint({
 
   console.log('data loaded!\nupdating data..');
 
-  const result = await page.evaluate(() => {
+  const result = await page.evaluate(async () => {
     App.game.specialEvents.events.forEach(event => {
       if (event.hasStarted()) event.end();
     });
+    
+    const sleep = async (ms) => new Promise(resolve => setTimeout(resolve, ms));
+    const supportedLanguages = ['de','fr', 'es', 'it', 'ru', 'tr', 'ja', 'ko', 'zh-Hans', 'zh-Hant'];
+    
+    const getTranslatedNames = async () => {
+      const result = {};
+      const names = pokemonList.reduce((dict, p) => {
+        dict[p.name] = App.translation.get(p.name, 'pokemon');
+        return dict;
+      }, {});
+
+      for (lang of supportedLanguages) {
+        const lastTranslationUpdate = App.translation.languageUpdated();
+        Settings.setSettingByName('translation.language', lang);
+
+        // wait for language to update
+        if (lang !== 'en') {
+          while (lastTranslationUpdate === App.translation.languageUpdated()) {
+            await sleep(200);
+          }
+        }
+
+        result[lang] = ko.toJS(names);
+        // Filter out any names that are the same
+        const pokemonNameNormalized = (name) => name.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/\s?\([^|)]+\)/g, '').replace(/([?!\-_♂♀.'\s])/g, '.?');
+        Object.keys(result[lang]).forEach(key => {
+          if (pokemonNameNormalized(result[lang][key]) == pokemonNameNormalized(key) || pokemonNameNormalized(result[lang][key]) == '') {
+            delete result[lang][key];
+          }
+        });
+      }
+      // Go back to english to ensure our hints etc are in english
+      const lastTranslationUpdate = App.translation.languageUpdated();
+      Settings.setSettingByName('translation.language', 'en');
+      while (lastTranslationUpdate === App.translation.languageUpdated()) {
+        await sleep(200);
+      }
+      return result;
+    };
+      
 
     const getRouteTypes = () => {
       const regionRoutes = {};
@@ -93,6 +133,8 @@ const cli = new ESLint({
     // So we always get the correct weather/day requirements
     Weather.currentWeather = () => -1;
     DayOfWeekRequirement.prototype.getProgress = () => 0;
+    MoonCyclePhaseRequirement.prototype.getProgress = () => 0;
+    DayCyclePartRequirement.prototype.getProgress = () => 0;
 
     Requirement.prototype.toJSON = function() {
       const req = this.__proto__.constructor.name === 'LazyRequirementWrapper'
@@ -112,6 +154,7 @@ const cli = new ESLint({
         __class: req.__proto__.constructor.name,
       };
     };
+      
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
@@ -143,6 +186,7 @@ const cli = new ESLint({
       }),
       StoneType: GameConstants.StoneType,
       RegionDungeons: GameConstants.RegionDungeons,
+      TranslatedPokemon: await getTranslatedNames(),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
   });

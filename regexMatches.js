@@ -262,13 +262,16 @@ module.exports = [
   {
     // Telegram links
     regex: /t\.me\//i,
-    execute: (message, client) => {
+    execute: async (message, client) => {
+      let time = 2 * HOUR;
+      time = await mute(message.member, time);
       modLog(
         message.member.guild,
         `**Mod:** ${message.member.guild.members.me.toString()}
         **User:** ${message.member.toString()} (${message.member.id})
-        **Action:** _Deleted message_
+        **Action:** _Deleted message, Muted_
         **Reason:** _Telegram link_
+        **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
         **Message Link:** _[Here](${message.url})_
         **Message Content:**

@@ -22,7 +22,6 @@ module.exports = {
     const id = interaction.options.get('user')?.value;
 
     let member = interaction.member;
-    let user = interaction.user;
 
 
 
@@ -38,7 +37,6 @@ module.exports = {
         const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('Invalid user ID specified.');
         return interaction.reply({ embeds: [embed], ephemeral: true });
       }
-      user = member.user;
     }
 
     const role = member.guild.roles.cache.find(role => role.name === 'Beta Tester');
@@ -50,9 +48,9 @@ module.exports = {
 
     if (member.id === interaction.guild.members.me.id) {
       modLog(interaction.guild,
-      `**Mod:** ${interaction.member.toString()}
-      **User:** ${member.toString()} (${member.id})
-      **Action:** Attempted to remove ${role} from the bot`);
+        `**Mod:** ${interaction.member.toString()}
+        **User:** ${member.toString()} (${member.id})
+        **Action:** Attempted to remove ${role} from the bot`);
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription('You cannot remove that role from me trainer!');
       return interaction.reply({ embeds: [embed], ephemeral: true });
     }

@@ -53,13 +53,17 @@ const newQuiz = async (guild, reoccur = false) => {
   const bot_message = await quiz_channel.send({ embeds: [quiz.embed], files: quiz.files }).catch((...args) => warn('Unable to send quiz question', ...args));
 
   // If no bot message for whatever reason, try again in 1 minute
-  if (!bot_message) return setTimeout(() => newQuiz(guild, reoccur), MINUTE);
+  if (!bot_message) {
+    warn('Failed to send Quiz Question, trying again in 1 minute...');
+    setTimeout(() => newQuiz(guild, reoccur), MINUTE);
+    return;
+  }
 
   // Post another question once the timer finishes
   if (reoccur) setTimeout(() => newQuiz(guild, reoccur), time_limit + ANSWER_TIME_LIMIT);
 
   // Which messages are we trying to catch
-  const filter = m => quiz.answer.test(m.content);
+  const filter = m => quiz.answer.test(m.content.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/<a?:(\w+):(\d+)>/g, ':$1:'));
 
   // Our finished timestamp
   let finished = 0;
