@@ -99,7 +99,7 @@ const log = (message, maxLog = 500) => {
   messageLog.splice(maxLog);
 };
 
-const isThisTheHoneyPotChannelOnlyBotsAndDumbussesWouldPostIn = (message) => {
+const isThisTheHoneyPotChannelOnlyBotsAndDumbassesWouldPostIn = (message) => {
   return message.channel.id == spamDetection?.honeyPotChannelID;
 }
 
