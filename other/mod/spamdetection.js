@@ -1,10 +1,11 @@
 const { spamDetection } = require('../../config.js');
-const { SECOND, HOUR, formatDateToString } = require('../../helpers.js');
+const { SECOND, HOUR, MINUTE, formatDateToString } = require('../../helpers.js');
 const { mute, modLog } = require('./functions');
 const { EmbedBuilder } = require('discord.js');
 
 
 let messageLog = [];
+let fellForHoneypot = [];
 
 const check = async (message) => {
   // If message is empty or a command, ignore it
@@ -14,6 +15,31 @@ const check = async (message) => {
 
   // Log the message
   log(message);
+
+  // 🍯
+  if (isThisTheHoneyPotChannelOnlyBotsAndDumbassesWouldPostIn(message)) {
+    let time = spamDetection?.spam?.mute || 2 * HOUR;
+    time = await mute(message.member, time);
+    modLog(
+      message.member.guild,
+      `**Mod:** ${message.member.guild.members.me.toString()}
+      **User:** ${message.member.toString()} (${message.member.id})
+      **Action:** Muted
+      **Reason:** 🍯
+      **Duration:** _${formatDateToString(time)}_
+      **Channel:** ${message.channel.name}
+      **Message Content:**
+      \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000)
+    );
+    const authorID = message.author.id;
+    fellForHoneypot.push(authorID);
+    setTimeout(() => fellForHoneypot = fellForHoneypot.filter(id => id !== authorID), MINUTE);
+    return message.delete();
+  }
+  // In case the scam bot posts in some other places before the mute role kicks in
+  if (hasAuthorPostedInHoneyPotChannel(message)) {
+    return message.delete();
+  }
 
   // Check if user has been spomming
   if (isSpam(message, spamDetection?.spam?.amount, spamDetection?.spam?.time)) {
@@ -72,6 +98,14 @@ const log = (message, maxLog = 500) => {
   // Clean up the log, don't want it getting too large
   messageLog.splice(maxLog);
 };
+
+const isThisTheHoneyPotChannelOnlyBotsAndDumbussesWouldPostIn = (message) => {
+  return message.channel.id == spamDetection?.honeyPotChannelID;
+}
+
+const hasAuthorPostedInHoneyPotChannel = (message) => {
+  return fellForHoneypot.includes(message.author.id);
+}
 
 const isSpam = (message, amount = 4, interval = 3 * SECOND) => {
   // If disabled always return false

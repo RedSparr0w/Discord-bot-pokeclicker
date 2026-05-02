@@ -61,5 +61,6 @@ module.exports = {
       time: 30 * SECOND, // message count within x ms
       mute: 1 * HOUR, // how long to mute the user in ms
     },
+    honeyPotChannelID: 'DISCORD_HONEYPOT_CHANNEL_ID (optional)',
   },
 };
