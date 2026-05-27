@@ -84,7 +84,7 @@ const check = async (message) => {
         **Duration:** _${formatDateToString(time)}_
         **Channel:** ${message.channel.name}
         **Message Link:** _[Here](${message.url})_`,
-        message.attachments,
+        message.attachments
       );
       const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam messages!
 Message deleted.
@@ -111,7 +111,7 @@ You will be unmuted in ${formatDateToString(time)}`);
       **Message Content:**
       \
       \`\`\`\n${message.content.replace(/```/g, '``')}\n\`\`\``.substring(0, 4000),
-      message.attachments,
+      message.attachments
     );
     const embed = new EmbedBuilder().setColor('#e74c3c').setDescription(`Possible scam messages!
 Message deleted.

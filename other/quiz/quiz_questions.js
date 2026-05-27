@@ -67,6 +67,7 @@ const normalizations = [
   [/Marill/gu, 'Marill|Pikablu'],
   [/Omanyte/gu, 'Omanyte|Lord Helix'],
   [/Nihilego/gu, 'Nihilego|Gustavo'],
+  [/\(Muk/gu, '(Muk|Milk'],
   [/\.\?\.\?\.\?/gu, '.*'],
 ];
 
@@ -1210,7 +1211,7 @@ const selectWeightedOption = (options_array) => {
 };
 
 const quizTypes = [
-  new WeightedOption(whosThatPokemon, 150),
+  new WeightedOption(whosThatPokemon, 1500000),
   new WeightedOption(pokemonType, 85),
   new WeightedOption(howDoesThisPokemonEvolve, 80),
   new WeightedOption(whosThePokemonEvolution, 80),
