@@ -13,6 +13,12 @@ module.exports = {
       'sort': 'Wiki Guide',
     },
     {
+      'display': 'FAQ',
+      'type': 'FAQ',
+      'page': '',
+      'sort': 'FAQ',
+    },
+    {
       'display': 'Battle Frontier (Battle Frontier)',
       'type': 'Battle Frontier',
       'page': '',
@@ -17182,6 +17188,7 @@ module.exports = {
       'display': 'Roaming Pokémon',
       'type': 'Roaming Pokémon',
       'page': '',
+      'redirects': ['Boosted Route'],
       'sort': 'Roaming Pokémon',
     },
     {
@@ -17647,6 +17654,14 @@ module.exports = {
       ],
       'sort': 'Pokérus',
       'redirect': 'Resistant',
+    },
+    {
+      'display': 'Roaming Pokémon',
+      'type': 'Roaming Pokémon',
+      'page': '',
+      'redirects': ['Boosted Route'],
+      'sort': 'Roaming Pokémon',
+      'redirect': 'Boosted Route',
     },
     {
       'display': 'Underground',
