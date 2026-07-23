@@ -29,8 +29,13 @@ rules:
   prefer-template: 'error'
   template-curly-spacing: ['error', 'never']
   brace-style: 'error'
-  comma-dangle: ['error', { 'arrays': 'always-multiline', 'objects': 'always-multiline', 'imports': 'always-multiline', 'exports': 'always-multiline' }]
-
+  comma-dangle: ['error', {
+    'arrays': 'always-multiline',
+    'objects': 'always-multiline',
+    'imports': 'always-multiline',
+    'exports': 'always-multiline',
+    'functions': 'only-multiline'
+  }]
   # Keep whitespace cleaned up.
   no-trailing-spaces: ['error', { 'skipBlankLines': true }]
   eol-last: 'error'
