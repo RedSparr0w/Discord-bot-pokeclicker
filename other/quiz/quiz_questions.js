@@ -67,6 +67,7 @@ const normalizations = [
   [/Marill/gu, 'Marill|Pikablu'],
   [/Omanyte/gu, 'Omanyte|Lord Helix'],
   [/Nihilego/gu, 'Nihilego|Gustavo'],
+  [/Muk/gu, 'Muk|Milk'],
   [/\.\?\.\?\.\?/gu, '.*'],
 ];
 
