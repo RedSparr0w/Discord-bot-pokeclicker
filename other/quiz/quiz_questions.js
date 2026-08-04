@@ -89,6 +89,22 @@ const colourWanderers = ['Ledyba', 'Flabébé (Red)', 'Oricorio (Baile)', 'Illum
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
+const pokemonEvolutionMethods = {};
+pokemonListWithEvolution.forEach(p => {
+  p.evolutions.forEach(e => {
+    const method = e.trigger === 1
+      ? e.restrictions.find(r => r.__class === 'PokemonLevelRequirement')?.requiredValue
+      : StoneType[e.stone];
+
+    if (method !== undefined) {
+      if (!pokemonEvolutionMethods[method]) {
+        pokemonEvolutionMethods[method] = new Set();
+      }
+      pokemonEvolutionMethods[method].add(p.name);
+    }
+  });
+});
+
 const badgeList = Object.keys(BadgeEnums).filter(b => isNaN(b) && !b.startsWith('Elite'));
 const gymsWithBadges = Object.keys(GymList).filter(t => badgeList.includes(BadgeEnums[GymList[t].badgeReward]) && GymList[t].town != GymList[t].leaderName);
 const allGyms = Object.keys(GymList);
@@ -290,6 +306,50 @@ const howDoesThisPokemonEvolve = () => new Promise(resolve => {
     });
   })();
 });
+
+const pokemonEvolvesBy = () => {
+
+  const evolutionMethod = randomFromArray(Object.keys(pokemonEvolutionMethods)); //level or item
+  const allAnswers = [...pokemonEvolutionMethods[evolutionMethod]].map(e => e.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`));
+  const pokemon = getPokemonByName(randomFromArray(allAnswers));
+  const answer = new RegExp(`^\\W*(${allAnswers.map(w => pokemonNameNormalized(w)).join('|')})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu'); //a
+
+
+  let amount = getAmount();
+
+  const description = [
+    `Name a Pokémon that evolves ${isNaN(evolutionMethod) ? 'with this item' : `at Level ${evolutionMethod}`}!`,
+    ...(isNaN(evolutionMethod) ? [`||${evolutionMethod.replace(/_([a-z])/g, (_, p1) => ` ${p1.toUpperCase()}`)}||`] : []),
+    `**+${amount} ${serverIcons.money}**`,
+  ];
+
+  const shiny = isShiny();
+  const female = isFemale(pokemon);
+  if (shiny) {
+    const shiny_amount = getShinyAmount();
+    description.push(`**+${shiny_amount}** ✨ _(shiny)_`);
+    amount += shiny_amount;
+  }
+
+  const embed = new EmbedBuilder()
+    .setTitle('Name a Pokémon!')
+    .setDescription(description.join('\n'))
+    .setThumbnail(isNaN(evolutionMethod)
+      ? encodeURI(`${website}assets/images/items/evolution/${evolutionMethod}.png`)
+      : encodeURI(`${website}assets/images/npcs/Professor Oak.png`))
+    .setColor('#3498db');
+
+    
+  const pokemonImg = encodeURI(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}${female ? '-f' : ''}.png`); //for end screen only
+
+  return {
+    embed,
+    answer,
+    amount,
+    shiny,
+    end: defaultEndFunction('The Pokémon are:', pokemonImg, `${allAnswers.splice(0, 10).join('\n')}${allAnswers.length ? '\nand more..' : '!'}`),
+  };
+};
 
 const whosThePokemonEvolution = () => new Promise(resolve => {
   (async () => {
@@ -1214,6 +1274,7 @@ const quizTypes = [
   new WeightedOption(whosThatPokemon, 150),
   new WeightedOption(pokemonType, 85),
   new WeightedOption(howDoesThisPokemonEvolve, 80),
+  new WeightedOption(pokemonEvolvesBy, 25),
   new WeightedOption(whosThePokemonEvolution, 80),
   new WeightedOption(whosThePokemonPrevolution, 80),
   new WeightedOption(pokemonRegion, 45),
