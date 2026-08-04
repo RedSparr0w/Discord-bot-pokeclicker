@@ -8,7 +8,7 @@ const modLog = (guild, logMessage, attachments = []) => {
     const embed = new EmbedBuilder().setColor('#3498db').setDescription(logMessage);
 
     // Normalize attachments into an array of { url, name }
-    let urls = attachments.map(a => (typeof a === 'string' ? { url: a, name: null } : { url: a.url || a.proxyURL || a.attachment, name: a.name || a.filename }));
+    const urls = attachments.map(a => (typeof a === 'string' ? { url: a, name: null } : { url: a.url || a.proxyURL || a.attachment, name: a.name || a.filename }));
 
     let files;
     if (urls.length) {
