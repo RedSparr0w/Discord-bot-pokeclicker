@@ -84,8 +84,13 @@ const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').rep
 const pokemonNameAnswer = (name) => new RegExp(`^\\W*(${pokemonNameNormalized(name)})[^\\p{L}\\p{N}_]*(?:$|\\s)`, 'iu');
 const berryNameList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None');
 const berryWanderers = berryList.map(berry => berry.wander);
-const baseWanderers = ['Tangela', 'Scyther', 'Pineco', 'Heracross', 'Cherubi', 'Sewaddle', 'Karrablast', 'Scatterbug', 'Cutiefly', 'Bounsweet', 'Blipbug', 'Gossifleur'];
-const colourWanderers = ['Ledyba', 'Flabébé (Red)', 'Oricorio (Baile)', 'Illumise', 'Oricorio (Sensu)', 'Spewpa', 'Oricorio (Pa\'u)', 'Burmy (Plant)', 'Combee', 'Flabébé (Yellow)', 'Oricorio (Pom-Pom)', 'Volbeat', 'Flabébé (Blue)', 'Flabébé (Orange)', 'Flabébé (White)'];
+const baseWanderers = [...new Set(berryWanderers.flat())].filter(w => berryList.every(b => b.wander.includes(w)));
+const colourWanderers = [
+  ...new Set([...new Set(berryList.map(berry => berry.color))].flatMap(color => {
+    const colouredBerries = berryList.filter(b => b.color === color);
+    return colouredBerries[0].wander.filter(w => colouredBerries.every(b => b.wander.includes(w)));
+  })),
+].filter(w => !baseWanderers.includes(w));
 
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
 const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
@@ -907,7 +912,7 @@ const regionRegex = new RegExp(`^(${Object.keys(GameConstants.Region).filter(v =
 const gymLeaderBadge = () => {
   const gym = GymList[randomFromArray(gymsWithBadges)];
   const badge = BadgeEnums[gym.badgeReward];
-  const answer = new RegExp(`^\\W*${badge.replace(regionRegex, '').replace(/\W|_/g, '.?')}\\b`, 'i');
+  const answer = new RegExp(`^\\W*(?:${badge.replace(/\W|_/g, '.?')}|${badge.replace(regionRegex, '').replace(/\W|_/g, '.?')})\\b`, 'i');
   
   const amount = getAmount();
   const description = ['Which Badge does this Gym Leader award?'];
@@ -1291,12 +1296,12 @@ const quizTypes = [
   new WeightedOption(gymLeaderType, 35),
   new WeightedOption(gymLeaderPokemon, 40),
   new WeightedOption(gymLeaderLocation, 10),
-  new WeightedOption(gymLeaderBadge, 10),
+  new WeightedOption(gymLeaderBadge, 100000),
   new WeightedOption(dungeonPokemon, 40),
   new WeightedOption(pokemonDungeon, 20),
   new WeightedOption(effectiveType, 35),
-  new WeightedOption(whichWandererFromBerry, 10),
-  new WeightedOption(whichBerryFromWanderer, 10),
+  new WeightedOption(whichWandererFromBerry, 100000),
+  new WeightedOption(whichBerryFromWanderer, 100000),
   // new WeightedOption(___, 1),
 ];
 
