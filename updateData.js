@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const path = require('path');
 let { website, wikiWebsite } = require('./config.js');
 website = website.endsWith('/') ? website : `${website}/`;
 wikiWebsite = wikiWebsite.endsWith('/') ? wikiWebsite : `${wikiWebsite}/`;
@@ -35,6 +36,11 @@ const cli = new ESLint({
   await page.waitForFunction(() => App.game &&  App.game.update && App.game.update.version);
 
   console.log('data loaded!\nupdating data..');
+
+  const pokemonImageNames = await page.evaluate(() => pokemonList.flatMap(pokemon => [
+    `${pokemon.id}.png`,
+    ...(pokemon.gender.visualDifference ? [`${pokemon.id}-f.png`] : []),
+  ]));
 
   const result = await page.evaluate(async () => {
     App.game.specialEvents.events.forEach(event => {
@@ -81,49 +87,6 @@ const cli = new ESLint({
     };
       
 
-    const getRouteTypes = () => {
-      const regionRoutes = {};
-      Routes.regionRoutes.forEach(routeData => {
-        // Check if data exist, otherwise create it as empty
-        if (!regionRoutes[routeData.region]) regionRoutes[routeData.region] = {};
-        if (!regionRoutes[routeData.region][routeData.number]) regionRoutes[routeData.region][routeData.number] = {};
-
-        let totalPokemon = 0;
-
-        // Go over all the pokemon in the route
-        Object.values(routeData.pokemon).flat().forEach(pName => {
-          // Note that we are excluding any special encounters at the moment
-          // possibly add weather encounters later on (with an optional param on Discord)
-          const pokemon = pokemonMap[pName];
-
-          // Ignore MissingNo. and other pokemon with negative IDs (also special encounters currently)
-          if (!pokemon || pokemon.id <= 0) return;
-
-          // Make sure this types data exists on the route
-          if (!regionRoutes[routeData.region][routeData.number][pokemon.type[0]]) {
-            regionRoutes[routeData.region][routeData.number][pokemon.type[0]] = 0;
-          }
-          // Increment this type on the route
-          regionRoutes[routeData.region][routeData.number][pokemon.type[0]]++;
-          if (pokemon.type[1]) {
-            // Make sure this types data exists on the route
-            if (!regionRoutes[routeData.region][routeData.number][pokemon.type[1]]) {
-              regionRoutes[routeData.region][routeData.number][pokemon.type[1]] = 0;
-            }
-            // Increment the 2nd type on the route
-            regionRoutes[routeData.region][routeData.number][pokemon.type[1]]++;
-          }
-
-          totalPokemon++;
-        });
-        // Calculate percentage of each type on route
-        Object.entries(regionRoutes[routeData.region][routeData.number]).forEach(([type, amount]) => {
-          regionRoutes[routeData.region][routeData.number][type] = +((amount / totalPokemon) * 100).toFixed(2);
-        });
-      });
-      return regionRoutes;
-    };
-
     const gyms = {};
     Object.entries(GymList).map(([key, value]) => {
       delete value.parent;
@@ -154,38 +117,27 @@ const cli = new ESLint({
         __class: req.__proto__.constructor.name,
       };
     };
-      
 
     const pokeclickerData = {
       gameVersion: App.game.update.version,
       shopItems: App.game.discord.codes,
-      regionRoutes: Routes.regionRoutes,
-      RouteGemTypes: getRouteTypes(),
+      regionRoutes: Routes.regionRoutes.map(route => ({
+        routeName: route.routeName,
+        region: route.region,
+      })),
       PokemonLocationType,
       PokemonType,
-      LevelType,
-      levelRequirements,
-      EvolutionType,
-      EvoTrigger,
-      WeatherType,
-      pokemonList: pokemonList.map(p => {
-        p.locations = PokemonLocations.getPokemonLocations(p.name);
-        p.catchRatePercent = PokemonFactory.catchRateHelper(p.catchRate, true);
-        p.eggSteps = App.game.breeding.getSteps(p.eggCycles);
-        return p;
+      pokemonList: pokemonList.map(pokemon => {
+        pokemon.locations = PokemonLocations.getPokemonLocations(pokemon.name);
+        return pokemon;
       }),
       UndergroundItemValueType,
       GameConstants,
       BadgeEnums,
       GymList: gyms,
       berryType: BerryType,
-      berryList: App.game.farming.berryData.map(b => {
-        const mutation = App.game.farming.mutations.find(m => m.mutatedBerry == b.type);
-        if (mutation) b.hint = mutation.hint;
-        return b;
-      }),
+      berryList: BerryList.map(berry => ({ type: berry.type, wander: berry.wander })),
       StoneType: GameConstants.StoneType,
-      RegionDungeons: GameConstants.RegionDungeons,
       TranslatedPokemon: await getTranslatedNames(),
     };
     return `module.exports = ${JSON.stringify(pokeclickerData, null, 2)}`;
@@ -203,6 +155,25 @@ const cli = new ESLint({
   console.log('PokéClicker Game data updated!');
   console.log({ fileSise: output.length, errorCount: res.errorCount, warningCount: res.warningCount });
 
+  let downloadedImages = 0;
+  for (const directory of ['pokemon', 'shinypokemon']) {
+    for (const imageName of pokemonImageNames) {
+      const imagePath = path.join('assets', 'images', directory, imageName);
+      if (fs.existsSync(imagePath)) continue;
+
+      try {
+        const response = await page.goto(`${website}assets/images/${directory}/${imageName}`);
+        if (response?.ok()) {
+          fs.writeFileSync(imagePath, await response.buffer());
+          downloadedImages++;
+        }
+      } catch (e) {
+        // The game does not have an image available at this path.
+      }
+    }
+  }
+  console.log(`Downloaded ${downloadedImages} missing Pokémon images`);
+
   // Update wiki data:
   if (wikiWebsite) {
     console.log('=== PokéClicker Wiki ===');
@@ -212,7 +183,7 @@ const cli = new ESLint({
 
     console.log('webpage loaded!\ngathering data...');
     
-    const wikiData = await page.evaluate(() => Wiki.searchOptions);
+    const wikiData = await page.evaluate(() => Wiki.searchOptions.map(({ display, type, page }) => ({ display, type, page })));
 
     const wikiResults = await cli.lintText(`module.exports = {\nwikiLinks: ${JSON.stringify(wikiData, null, 2)}}`);
     const wikiResult = wikiResults[0];

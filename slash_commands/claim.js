@@ -37,7 +37,7 @@ module.exports = {
   cooldown    : 3,
   botperms    : ['SendMessages', 'EmbedLinks'],
   userperms   : [],
-  channels    : ['game-corner', 'bot-commands'],
+  channels    : ['claims'],
   execute     : async (interaction) => {
     // Check if user claimed within the last 24 hours
     let { last_claim, streak, paused } = await getLastClaim(interaction.user, 'daily_claim');

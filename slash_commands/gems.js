@@ -1,19 +1,10 @@
 const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
-const {
-  PokemonType,
-  GameConstants,
-  pokemonTypeIcons,
-  RouteGemTypes,
-  findGemRoutes,
-  findGemBestRoute,
-  gameVersion,
-  regionRoutes,
-} = require('../helpers.js');
+const { wikiWebsite } = require('../config.js');
 
 module.exports = {
   name        : 'gems',
   aliases     : ['gem', 's', 'shard'],
-  description : 'Get a list of routes where you can obtain a particular type of gem',
+  description : 'Get the PokéClicker wiki page for a particular type of gem',
   args        : [
     {
       name: 'type',
@@ -21,94 +12,24 @@ module.exports = {
       description: 'Gem type',
       required: true,
       choices: [
-        {
-          name: 'Normal',
-          value: 'Normal',
-        },
-        {
-          name: 'Fire',
-          value: 'Fire',
-        },
-        {
-          name: 'Water',
-          value: 'Water',
-        },
-        {
-          name: 'Electric',
-          value: 'Electric',
-        },
-        {
-          name: 'Grass',
-          value: 'Grass',
-        },
-        {
-          name: 'Ice',
-          value: 'Ice',
-        },
-        {
-          name: 'Fighting',
-          value: 'Fighting',
-        },
-        {
-          name: 'Poison',
-          value: 'Poison',
-        },
-        {
-          name: 'Ground',
-          value: 'Ground',
-        },
-        {
-          name: 'Flying',
-          value: 'Flying',
-        },
-        {
-          name: 'Psychic',
-          value: 'Psychic',
-        },
-        {
-          name: 'Bug',
-          value: 'Bug',
-        },
-        {
-          name: 'Rock',
-          value: 'Rock',
-        },
-        {
-          name: 'Ghost',
-          value: 'Ghost',
-        },
-        {
-          name: 'Dragon',
-          value: 'Dragon',
-        },
-        {
-          name: 'Dark',
-          value: 'Dark',
-        },
-        {
-          name: 'Steel',
-          value: 'Steel',
-        },
-        {
-          name: 'Fairy',
-          value: 'Fairy',
-        },
-      ],
-    },
-    {
-      name: 'order',
-      type: ApplicationCommandOptionType.String,
-      description: 'Order by',
-      required: false,
-      choices: [
-        {
-          name: 'Chance',
-          value: 'chance',
-        },
-        {
-          name: 'Route',
-          value: 'route',
-        },
+        { name: 'Normal', value: 'Normal' },
+        { name: 'Fire', value: 'Fire' },
+        { name: 'Water', value: 'Water' },
+        { name: 'Electric', value: 'Electric' },
+        { name: 'Grass', value: 'Grass' },
+        { name: 'Ice', value: 'Ice' },
+        { name: 'Fighting', value: 'Fighting' },
+        { name: 'Poison', value: 'Poison' },
+        { name: 'Ground', value: 'Ground' },
+        { name: 'Flying', value: 'Flying' },
+        { name: 'Psychic', value: 'Psychic' },
+        { name: 'Bug', value: 'Bug' },
+        { name: 'Rock', value: 'Rock' },
+        { name: 'Ghost', value: 'Ghost' },
+        { name: 'Dragon', value: 'Dragon' },
+        { name: 'Dark', value: 'Dark' },
+        { name: 'Steel', value: 'Steel' },
+        { name: 'Fairy', value: 'Fairy' },
       ],
     },
   ],
@@ -118,49 +39,12 @@ module.exports = {
   userperms   : [],
   channels    : ['bot-commands'],
   execute     : async (interaction) => {
-    const [
-      type,
-      order,
-    ] = [
-      interaction.options.get('type').value,
-      interaction.options.get('order')?.value || 'chance',
-    ];
-    
-    const sortFunc = order == 'chance' ? (a, b) => b[1] - a[1] : (a, b) => a[0] - b[0];
-
+    const type = interaction.options.get('type').value;
+    const url = `${wikiWebsite}#!${encodeURI(`Gems/${type}`)}`;
     const embed = new EmbedBuilder()
-      .setTitle(`${pokemonTypeIcons[type]} ${type} Gem Routes`)
-      .setColor('#3498db')
-      .setDescription('_this excludes special encounters_')
-      .setFooter({ text: `Data is up to date as of v${gameVersion}` });
-
-    const gemRoutes = findGemRoutes(RouteGemTypes, PokemonType[type]);
-    Object.entries(gemRoutes).forEach(([region, routes]) => {
-      if (!Object.entries(routes).length) return;
-      const bestGemRoute = findGemBestRoute(RouteGemTypes, PokemonType[type], region);
-      let r = regionRoutes.find(routeData => {
-        if (routeData.number == bestGemRoute.route && routeData.region == region)
-          return routeData;
-      });
-      let name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? r.routeName.replace(new RegExp(`^${GameConstants.Region[region]}\\s*`, 'i'), '') : r.routeName;
-      const description = ['Best Route:', `${`[${name}]`} ${bestGemRoute.chance.toFixed(1).padStart(4,' ')}%`, '\nAll Routes:'];
-      
-      Object.entries(routes).sort(sortFunc).forEach(([route, chance]) => {
-        if (description.join('\r\n').length >= 900) return;
-        r = regionRoutes.find(routeData => {
-          if (routeData.number == route && routeData.region == region)
-            return routeData;
-        });
-        name = r.routeName.toLowerCase().startsWith(`${GameConstants.Region[region]} route`) ? r.routeName.replace(new RegExp(`^${GameConstants.Region[region]}\\s*`, 'i'), '') : r.routeName;
-        description.push(`${`[${name}]`} ${chance.toFixed(1).padStart(4,' ')}%`);
-      });
-      embed.addFields({
-        name: `❯ ${GameConstants.Region[region].toUpperCase()}`,
-        value:  `\`\`\`ini\n${description.join('\n')}\n\`\`\``,
-        inline:  true,
-      });
-    });
-
+      .setTitle('PokéClicker wiki')
+      .setDescription(`**[${type} Gem](${url})**`)
+      .setColor('#3498db');
     interaction.reply({ embeds: [embed] });
   },
 };

@@ -1,22 +1,15 @@
 const { EmbedBuilder, ApplicationCommandOptionType } = require('discord.js');
 const FuzzySet = require('fuzzyset');
-const {
-  regionRoutes,
-  pokemonList,
-  RouteGemTypes,
-  PokemonType,
-  pokemonTypeIcons,
-  gameVersion,
-  GameConstants,
-} = require('../helpers.js');
-const { website } = require('../config.js');
+const { wikiWebsite } = require('../config.js');
+const { regionRoutes, GameConstants } = require('../helpers.js');
 
 const fuzzyRoutes = FuzzySet(regionRoutes.map(r => r.routeName.toLowerCase()), false);
+const regions = ['Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola', 'Galar'];
 
 module.exports = {
   name        : 'route',
   aliases     : ['routes', 'routeinfo', 'r'],
-  description : 'Get PokéClicker game info about a specific route',
+  description : 'Get the PokéClicker wiki page for a specific route',
   args        : [
     {
       name: 'name',
@@ -29,44 +22,7 @@ module.exports = {
       type: ApplicationCommandOptionType.Integer,
       description: 'Region name',
       required: false,
-      choices: [
-        // copy(GameHelper.enumStrings(GameConstants.Region).filter(r => r != 'none').map(r => `{
-        //   name: '${r.replace(/\b\w/g, m => m.toUpperCase())}',
-        //   value: ${GameConstants.Region[r]},
-        // },`).join('\n'))
-        {
-          name: 'Kanto',
-          value: 0,
-        },
-        {
-          name: 'Johto',
-          value: 1,
-        },
-        {
-          name: 'Hoenn',
-          value: 2,
-        },
-        {
-          name: 'Sinnoh',
-          value: 3,
-        },
-        {
-          name: 'Unova',
-          value: 4,
-        },
-        {
-          name: 'Kalos',
-          value: 5,
-        },
-        {
-          name: 'Alola',
-          value: 6,
-        },
-        {
-          name: 'Galar',
-          value: 7,
-        },
-      ],
+      choices: regions.map((name, value) => ({ name, value })),
     },
   ],
   guildOnly   : true,
@@ -75,90 +31,26 @@ module.exports = {
   userperms   : [],
   channels    : ['bot-commands'],
   execute     : async (interaction) => {
-    const [
-      routeNumberName,
-      regionID,
-    ] = [
-      interaction.options.get('name').value,
-      interaction.options.get('region')?.value,
-    ];
+    const input = interaction.options.get('name').value.trim();
+    const regionID = interaction.options.get('region')?.value;
+    const routes = regionRoutes.filter(route => regionID == undefined || route.region == regionID);
+    let route = routes.find(route => route.routeName.toLowerCase().endsWith(` ${input.toLowerCase()}`));
 
-    const filteredRoutes = regionRoutes.filter(routeData => (regionID == undefined || routeData.region == regionID));
-    let route = filteredRoutes.find(routeData => {
-      if (routeData.routeName.endsWith(` ${routeNumberName}`))
-        return routeData;
-    });
     if (!route) {
-      const newNames = fuzzyRoutes.get(routeNumberName);
-      if (newNames) {
-        route = filteredRoutes.find(routeData => {
-          if (routeData.routeName.toLowerCase() == newNames[0][1])
-            return routeData;
-        });
-      }
+      const matches = fuzzyRoutes.get(input);
+      if (matches) route = routes.find(route => route.routeName.toLowerCase() == matches[0][1]);
     }
 
-    if (!route) return interaction.reply(`Route not found${regionID != undefined ? ` in ${GameConstants.Region[regionID]}` : ''}..`);
+    if (!route) {
+      const region = regionID == undefined ? '' : ` in ${GameConstants.Region[regionID]}`;
+      return interaction.reply({ content: `Route not found${region}..`, ephemeral: true });
+    }
 
-    let pokemon = Object.values(route.pokemon).flat();
-    pokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
-    // Handle special encounters
-    pokemon = pokemon.pokemon ?? pokemon;
-    pokemon = pokemonList.find(p => p.name == pokemon);
-    if (!pokemon) pokemon = pokemonList[0];
-
-    const shiny = !Math.floor(Math.random() * 512);
-
+    const url = `${wikiWebsite}#!${encodeURI(`Routes/${route.routeName}`)}`;
     const embed = new EmbedBuilder()
-      .setTitle(`${GameConstants.Region[route.region].toUpperCase()} | ${route.routeName}`)
-      .setThumbnail(`${website}assets/images/${shiny ? 'shiny' : ''}pokemon/${pokemon.id}.png`)
-      .setColor('#3498db')
-      .setFooter({ text: `Data is up to date as of v${gameVersion}` });
-
-    // embed.addFields({
-    //   name: '❯ Pokemon',
-    //   value:  '\u200b',
-    // });
-    Object.entries(route.pokemon).forEach(([type, pokemon]) => {
-      if (!pokemon.length) return;
-      const desc = [];
-      desc.push('```prolog');
-      if (type == 'special') {
-        pokemon = [...new Set(pokemon.map(p => p.pokemon).flat())];
-      }
-      pokemon.sort().forEach(p => desc.push(p));
-      desc.push('```');
-      embed.addFields({
-        name: `❯ ${type.toUpperCase()}`,
-        value:  desc.join('\n'),
-        inline:  true,
-      });
-    });
-
-    embed.addFields({
-      name: '\u200b',
-      value:  '\u200b',
-      inline:  false,
-    });
-
-    // Gems:
-    let gemsInfo;
-    Object.entries(RouteGemTypes).forEach(([region, routes]) => {
-      if (region == route.region && routes[route.number]) gemsInfo = routes[route.number];
-    });
-    if (gemsInfo) {
-      const descIcon = [];
-      Object.entries(gemsInfo).sort(([,a], [,b]) => b - a).forEach(([type, chance]) => {
-        descIcon.push(`${pokemonTypeIcons[PokemonType[type]]} **\`${PokemonType[type].padEnd(10, ' ')} ${chance.toFixed(1).padStart(4, ' ')}%\`**`);
-      });
-      descIcon.push('_this excludes special encounters_');
-      embed.addFields({
-        name: '❯ GEMS',
-        value:  descIcon.join('\n'),
-        inline:  true,
-      });
-    }
-
+      .setTitle('PokéClicker wiki')
+      .setDescription(`**[${route.routeName}](${url})**`)
+      .setColor('#3498db');
     interaction.reply({ embeds: [embed] });
   },
 };
