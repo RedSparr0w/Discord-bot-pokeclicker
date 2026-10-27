@@ -1,5 +1,5 @@
 module.exports = {
-  'gameVersion': '0.10.25',
+  'gameVersion': '0.10.26',
   'shopItems': [
     {
       'name': 'Unown (D)',
@@ -88,6 +88,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -99,6 +100,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -126,11 +128,12 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
       'requirements': [],
-      'orderNumber': 1,
+      'orderNumber': 0,
       'ignoreRouteInCalculations': false,
     },
     {
@@ -153,6 +156,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -162,6 +177,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -173,6 +189,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -200,6 +217,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -242,6 +260,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -253,6 +272,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -280,6 +300,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -324,6 +345,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -335,6 +357,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -362,6 +385,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -408,6 +432,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -417,6 +453,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -428,6 +465,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -455,6 +493,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -521,13 +560,26 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 26,
-                  'hint': 'Requires the Elite Johto Champion badge.',
+                  'hint': 'Requires having beaten Champion Lance.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Sunkern needs to be owned and Requires the Elite Johto Champion badge.',
+              'hint': 'Sunkern needs to be owned and Requires having beaten Champion Lance.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -539,6 +591,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -550,6 +603,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -577,6 +631,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -620,6 +675,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -629,6 +696,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -640,6 +708,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -667,6 +736,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -709,6 +779,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -720,6 +791,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -747,6 +819,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -786,6 +859,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -795,6 +880,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -806,6 +892,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -833,6 +920,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -879,6 +967,19 @@ module.exports = {
               'hint': 'Squad Leader Squirtle needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -890,6 +991,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -901,6 +1003,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -928,6 +1031,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -970,6 +1074,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -981,6 +1086,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1008,6 +1114,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1052,6 +1159,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -1061,6 +1180,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1072,6 +1192,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1099,6 +1220,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1143,6 +1265,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1154,6 +1277,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1181,6 +1305,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1231,13 +1356,14 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 26,
-                  'hint': 'Requires the Elite Johto Champion badge.',
+                  'hint': 'Requires having beaten Champion Lance.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Houndour needs to be owned and Requires the Elite Johto Champion badge.',
+              'hint': 'Houndour needs to be owned and Requires having beaten Champion Lance.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -1249,6 +1375,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1260,6 +1387,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1287,6 +1415,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1329,6 +1458,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -1338,6 +1479,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1349,6 +1491,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1376,6 +1519,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1418,6 +1562,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -1427,6 +1583,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1438,6 +1595,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1465,6 +1623,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1527,6 +1686,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1538,6 +1698,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1565,6 +1726,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1628,6 +1790,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1639,6 +1802,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1666,6 +1830,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1732,13 +1897,14 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 26,
-                  'hint': 'Requires the Elite Johto Champion badge.',
+                  'hint': 'Requires having beaten Champion Lance.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Slugma needs to be owned and Requires the Elite Johto Champion badge.',
+              'hint': 'Slugma needs to be owned and Requires having beaten Champion Lance.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -1750,6 +1916,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1761,6 +1928,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1788,6 +1956,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1854,13 +2023,14 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 26,
-                  'hint': 'Requires the Elite Johto Champion badge.',
+                  'hint': 'Requires having beaten Champion Lance.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Slugma needs to be owned and Requires the Elite Johto Champion badge.',
+              'hint': 'Slugma needs to be owned and Requires having beaten Champion Lance.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -1872,6 +2042,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -1883,6 +2054,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -1910,6 +2082,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -1977,13 +2150,14 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 26,
-                  'hint': 'Requires the Elite Johto Champion badge.',
+                  'hint': 'Requires having beaten Champion Lance.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Slugma needs to be owned and Requires the Elite Johto Champion badge.',
+              'hint': 'Slugma needs to be owned and Requires having beaten Champion Lance.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -1995,6 +2169,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2006,6 +2181,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2033,6 +2209,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2091,6 +2268,19 @@ module.exports = {
               'hint': 'Surfing Pikachu needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Bulbasaur'],
@@ -2102,6 +2292,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2113,6 +2304,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2140,6 +2332,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2173,6 +2366,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2182,6 +2387,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2193,6 +2399,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2220,6 +2427,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2271,6 +2479,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2280,6 +2500,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2291,6 +2512,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2318,6 +2540,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2358,6 +2581,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2367,6 +2602,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2378,6 +2614,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2405,6 +2642,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2448,6 +2686,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2457,6 +2707,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2468,6 +2719,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2495,6 +2747,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2539,6 +2792,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2548,6 +2813,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2559,6 +2825,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2586,6 +2853,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2595,11 +2863,6 @@ module.exports = {
           'option': 1,
           'questLineName': "Bill's Errand",
           'questIndex': 0,
-          'cachedQuest': {
-            'state': 0,
-            'name': "Bill's Errand",
-            'quest': 0,
-          },
           'hint': "Progress further in questline Bill's Errand.",
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -2637,6 +2900,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2646,6 +2921,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2657,6 +2933,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2684,6 +2961,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2693,11 +2971,6 @@ module.exports = {
           'option': 1,
           'questLineName': "Bill's Errand",
           'questIndex': 3,
-          'cachedQuest': {
-            'state': 0,
-            'name': "Bill's Errand",
-            'quest': 0,
-          },
           'hint': "Progress further in questline Bill's Errand.",
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -2732,6 +3005,18 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Spooky Bulbasaur'],
             'req': {
               'requiredValue': 1,
@@ -2741,6 +3026,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -2752,6 +3038,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Santa Jynx'],
@@ -2779,6 +3066,7 @@ module.exports = {
               'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -2804,1206 +3092,6 @@ module.exports = {
       'orderNumber': 23,
       'subRegion': 0,
       'ignoreRouteInCalculations': false,
-    },
-    {
-      'routeName': 'Five Isle Meadow',
-      'region': 0,
-      'number': 30,
-      'pokemon': {
-        'land': [
-          'Sentret',
-          'Pidgey',
-          'Pidgeotto',
-          'Hoppip',
-          'Meowth',
-          'Persian',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'water': [
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 1,
-          'questLineName': "Celio's Errand",
-          'questIndex': 5,
-          'cachedQuest': {
-            'state': 0,
-            'name': "Celio's Errand",
-            'quest': 0,
-          },
-          'hint': "Progress further in questline Celio's Errand.",
-          '__class': 'QuestLineStepCompletedRequirement',
-        },
-      ],
-      'orderNumber': 30,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Memorial Pillar',
-      'region': 0,
-      'number': 31,
-      'pokemon': {
-        'land': [],
-        'water': [
-          'Hoppip',
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 0,
-          'route': 30,
-          'hint': 'Five Isle Meadow in Kanto still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-      ],
-      'orderNumber': 31,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Water Labyrinth',
-      'region': 0,
-      'number': 32,
-      'pokemon': {
-        'land': [],
-        'water': [
-          'Hoppip',
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 1,
-          'questLineName': "Celio's Errand",
-          'questIndex': 5,
-          'cachedQuest': {
-            'state': 0,
-            'name': "Celio's Errand",
-            'quest': 0,
-          },
-          'hint': "Progress further in questline Celio's Errand.",
-          '__class': 'QuestLineStepCompletedRequirement',
-        },
-      ],
-      'orderNumber': 32,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Resort Gorgeous',
-      'region': 0,
-      'number': 33,
-      'pokemon': {
-        'land': [],
-        'water': [
-          'Hoppip',
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 0,
-          'route': 32,
-          'hint': 'Water Labyrinth in Kanto still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-      ],
-      'orderNumber': 33,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Water Path',
-      'region': 0,
-      'number': 34,
-      'pokemon': {
-        'land': [
-          'Sentret',
-          'Spearow',
-          'Fearow',
-          'Oddish',
-          'Bellsprout',
-          'Meowth',
-          'Gloom',
-          'Weepinbell',
-          'Persian',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'water': [
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 1,
-          'questLineName': "Celio's Errand",
-          'questIndex': 5,
-          'cachedQuest': {
-            'state': 0,
-            'name': "Celio's Errand",
-            'quest': 0,
-          },
-          'hint': "Progress further in questline Celio's Errand.",
-          '__class': 'QuestLineStepCompletedRequirement',
-        },
-      ],
-      'orderNumber': 34,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Green Path',
-      'region': 0,
-      'number': 35,
-      'pokemon': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 10,
-          'dungeonIndex': 19,
-          'hint': 'Pattern Bush needs to be completed.',
-          '__class': 'ClearDungeonRequirement',
-        },
-      ],
-      'orderNumber': 35,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Outcast Island',
-      'region': 0,
-      'number': 36,
-      'pokemon': {
-        'land': [],
-        'water': [
-          'Tentacool',
-          'Tentacruel',
-          'Magikarp',
-          'Horsea',
-          'Krabby',
-          'Qwilfish',
-          'Remoraid',
-          'Gyarados',
-          'Seadra',
-          'Kingler',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 0,
-          'route': 35,
-          'hint': 'Green Path in Kanto still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-      ],
-      'orderNumber': 36,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Ruin Valley',
-      'region': 0,
-      'number': 37,
-      'pokemon': {
-        'land': [
-          'Natu',
-          'Spearow',
-          'Fearow',
-          'Meowth',
-          'Yanma',
-          'Wooper',
-          'Marill',
-          'Persian',
-          'Psyduck',
-          'Slowpoke',
-          'Wobbuffet',
-        ],
-        'water': [
-          'Magikarp',
-          'Poliwag',
-          'Goldeen',
-          'Poliwhirl',
-          'Gyarados',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 0,
-          'route': 34,
-          'hint': 'Water Path in Kanto still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-      ],
-      'orderNumber': 37,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Canyon Entrance',
-      'region': 0,
-      'number': 38,
-      'pokemon': {
-        'land': [
-          'Sentret',
-          'Spearow',
-          'Fearow',
-          'Phanpy',
-          'Meowth',
-          'Persian',
-          'Psyduck',
-          'Slowpoke',
-        ],
-        'water': [],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 1,
-          'questLineName': "Celio's Errand",
-          'questIndex': 5,
-          'cachedQuest': {
-            'state': 0,
-            'name': "Celio's Errand",
-            'quest': 0,
-          },
-          'hint': "Progress further in questline Celio's Errand.",
-          '__class': 'QuestLineStepCompletedRequirement',
-        },
-      ],
-      'orderNumber': 38,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Sevault Canyon',
-      'region': 0,
-      'number': 39,
-      'pokemon': {
-        'land': [
-          'Geodude',
-          'Phanpy',
-          'Fearow',
-          'Meowth',
-          'Cubone',
-          'Marowak',
-          'Persian',
-          'Onix',
-          'Skarmory',
-          'Larvitar',
-        ],
-        'water': [],
-        'headbutt': ['Graveler'],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 0,
-          'route': 38,
-          'hint': 'Canyon Entrance in Kanto still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-      ],
-      'orderNumber': 39,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1050000,
-    },
-    {
-      'routeName': 'Valencia Island',
-      'region': 0,
-      'number': 40,
-      'pokemon': {
-        'land': [
-          'Valencian Butterfree',
-          'Valencian Raticate',
-          'Valencian Vileplume',
-          'Valencian Paras',
-          'Valencian Weepinbell',
-          'Nidoran(M)',
-          'Nidoran(F)',
-          'Nidorina',
-        ],
-        'water': [
-          'Gyarados',
-          'Cloyster',
-          'Poliwhirl',
-        ],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'badge': 43,
-          'hint': 'Requires the Jade Star badge.',
-          '__class': 'GymBadgeRequirement',
-        },
-      ],
-      'orderNumber': 40,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1250000,
-    },
-    {
-      'routeName': 'Pinkan Forest',
-      'region': 0,
-      'number': 41,
-      'pokemon': {
-        'land': [
-          'Pinkan Caterpie',
-          'Pinkan Weedle',
-          'Pinkan Pidgey',
-          'Pinkan Vileplume',
-          'Pinkan Paras',
-          'Pinkan Venonat',
-          'Pinkan Mankey',
-          'Pinkan Exeggutor',
-        ],
-        'water': [],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': true,
-              'hint': 'Halloween! must be started.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 1,
-          'option': 2,
-          'achievementType': 10,
-          'dungeonIndex': 20,
-          'hint': 'Altering Cave needs to be completed.',
-          '__class': 'ClearDungeonRequirement',
-        },
-        {
-          'requiredValue': 1,
-          'option': 1,
-          'questLineName': "Celio's Errand",
-          'cachedQuest': {
-            'state': 0,
-            'name': "Celio's Errand",
-            'quest': 0,
-          },
-          'hint': "Questline Celio's Errand needs to be completed.",
-          '__class': 'QuestLineCompletedRequirement',
-        },
-      ],
-      'orderNumber': 41,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1250000,
-    },
-    {
-      'routeName': 'Pinkan Plains',
-      'region': 0,
-      'number': 42,
-      'pokemon': {
-        'land': [
-          'Pinkan Pidgey',
-          'Pinkan Rattata',
-          'Pinkan Nidoran(M)',
-          'Pinkan Nidoran(F)',
-          'Pinkan Diglett',
-          'Pinkan Bellsprout',
-        ],
-        'water': [],
-        'headbutt': [],
-        'special': [
-          {
-            'pokemon': ['Pinkan Pidgeotto'],
-            'req': {
-              'requiredValue': 1,
-              'option': 2,
-              'pokemon': 'Pinkan Pidgeotto',
-              'hint': 'Pinkan Pidgeotto needs to be owned.',
-              '__class': 'ObtainedPokemonRequirement',
-            },
-          },
-          {
-            'pokemon': ['Spooky Bulbasaur'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Gastly'],
-            'req': {
-              'requiredValue': 1,
-              'option': 1,
-              'specialEventName': 'Halloween!',
-              'isAvailable': false,
-              'hint': 'The Pokémon seems to be avoiding the area this year.',
-              '__class': 'SpecialEventRandomRequirement',
-            },
-          },
-          {
-            'pokemon': ['Santa Jynx'],
-            'req': {
-              'requiredValue': 2,
-              'option': 2,
-              'requirements': [
-                {
-                  'requiredValue': 1,
-                  'option': 1,
-                  'specialEventName': 'Merry Christmas!',
-                  'hint': 'Merry Christmas! must be started.',
-                  '__class': 'SpecialEventRequirement',
-                },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'achievementType': -1,
-                  'required': true,
-                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-                  '__class': 'CustomRequirement',
-                },
-              ],
-              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
-              '__class': 'MultiRequirement',
-            },
-          },
-        ],
-      },
-      'requirements': [
-        {
-          'requiredValue': 10,
-          'option': 2,
-          'achievementType': 8,
-          'region': 0,
-          'route': 41,
-          'hint': 'Pinkan Forest in Kanto still needs to be completed.',
-          '__class': 'RouteKillRequirement',
-        },
-      ],
-      'orderNumber': 42,
-      'subRegion': 2,
-      'ignoreRouteInCalculations': true,
-      'routeHealth': 1250000,
     },
     {
       'routeName': 'Johto Route 29',
@@ -4034,6 +3122,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4045,6 +3134,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4053,7 +3143,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 13,
-          'hint': 'Requires the Elite Kanto Champion badge.',
+          'hint': 'Requires having beaten Champion Blue.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -4086,6 +3176,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4097,6 +3188,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4126,7 +3218,6 @@ module.exports = {
           'Metapod',
           'Weedle',
           'Kakuna',
-          'Zubat',
           'Hoothoot',
           'Ledyba',
           'Spinarak',
@@ -4151,6 +3242,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4162,6 +3254,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4191,14 +3284,13 @@ module.exports = {
           'Metapod',
           'Weedle',
           'Kakuna',
-          'Zubat',
-          'Poliwag',
           'Hoothoot',
           'Ledyba',
           'Spinarak',
           'Bellsprout',
         ],
         'water': [
+          'Poliwag',
           'Poliwhirl',
           'Magikarp',
         ],
@@ -4220,6 +3312,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4231,6 +3324,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4284,6 +3378,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4295,6 +3390,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4338,6 +3434,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4349,6 +3446,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4403,6 +3501,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4414,6 +3513,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4468,6 +3568,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4479,6 +3580,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4528,6 +3630,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4539,6 +3642,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4603,6 +3707,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4614,6 +3719,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4673,6 +3779,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4684,6 +3791,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4734,6 +3842,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4745,6 +3854,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4789,6 +3899,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4800,6 +3911,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4850,6 +3962,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4861,6 +3974,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4911,6 +4025,7 @@ module.exports = {
               'hint': "Have Phanpy newly hatched and at level below 21, or 51 if you cleared the Team Rocket's Hideout 250 times or more.",
               '__class': 'CustomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spooky Togepi'],
@@ -4922,6 +4037,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -4933,6 +4049,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -4997,6 +4114,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5008,6 +4126,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5058,6 +4177,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5069,6 +4189,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5120,6 +4241,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5131,6 +4253,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5194,6 +4317,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5205,6 +4329,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5255,6 +4380,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5266,6 +4392,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5323,6 +4450,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5334,6 +4462,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5390,6 +4519,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5401,6 +4531,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5455,6 +4586,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Misdreavus'],
@@ -5466,6 +4598,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5474,7 +4607,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 26,
-          'hint': 'Requires the Elite Johto Champion badge.',
+          'hint': 'Requires having beaten Champion Lance.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -5504,6 +4637,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5515,6 +4649,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5526,6 +4661,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5534,7 +4670,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 26,
-          'hint': 'Requires the Elite Johto Champion badge.',
+          'hint': 'Requires having beaten Champion Lance.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -5570,6 +4706,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5581,6 +4718,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5592,6 +4730,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5641,6 +4780,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5652,6 +4792,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5663,6 +4804,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5707,6 +4849,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5718,6 +4861,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5729,6 +4873,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5772,6 +4917,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5783,6 +4929,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5794,6 +4941,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5840,6 +4988,7 @@ module.exports = {
               'hint': 'Electrike needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pikachu (Gengar)'],
@@ -5851,6 +5000,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5862,6 +5012,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5873,6 +5024,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5919,6 +5071,7 @@ module.exports = {
               'hint': 'Roselia needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pikachu (Gengar)'],
@@ -5930,6 +5083,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -5941,6 +5095,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -5952,6 +5107,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -5997,6 +5153,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6008,6 +5165,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6019,6 +5177,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6056,6 +5215,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6067,6 +5227,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6078,6 +5239,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6118,6 +5280,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6129,6 +5292,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6140,6 +5304,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6188,6 +5353,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6199,6 +5365,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6210,6 +5377,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6257,6 +5425,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6268,6 +5437,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6279,6 +5449,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6320,6 +5491,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6331,6 +5503,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6342,6 +5515,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6382,6 +5556,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6393,6 +5568,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6404,6 +5580,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6463,6 +5640,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6474,6 +5652,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6485,6 +5664,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6544,6 +5724,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6555,6 +5736,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6566,6 +5748,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6625,6 +5808,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6636,6 +5820,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6647,6 +5832,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6691,6 +5877,7 @@ module.exports = {
               'hint': 'Electrike needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Manectric'],
@@ -6701,6 +5888,7 @@ module.exports = {
               'hint': 'Manectric needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pikachu (Gengar)'],
@@ -6712,6 +5900,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6723,6 +5912,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6734,6 +5924,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6771,6 +5962,17 @@ module.exports = {
         'headbutt': [],
         'special': [
           {
+            'pokemon': ['Feebas'],
+            'req': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Feebas',
+              'hint': 'Feebas needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            'weight': 1,
+          },
+          {
             'pokemon': ['Pikachu (Gengar)'],
             'req': {
               'requiredValue': 1,
@@ -6780,6 +5982,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6791,6 +5994,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6802,6 +6006,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6851,6 +6056,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6862,6 +6068,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6873,6 +6080,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6929,6 +6137,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -6940,6 +6149,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -6951,6 +6161,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -6994,6 +6205,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7005,6 +6217,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7016,6 +6229,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7065,6 +6279,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7076,6 +6291,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7087,6 +6303,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7132,6 +6349,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7143,6 +6361,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7154,6 +6373,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7196,6 +6416,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7207,6 +6428,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7218,6 +6440,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7263,6 +6486,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7274,6 +6498,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7285,6 +6510,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7328,6 +6554,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7339,6 +6566,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7350,6 +6578,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7411,6 +6640,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7422,6 +6652,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7433,6 +6664,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7477,6 +6709,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7488,6 +6721,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7499,6 +6733,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7542,6 +6777,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7553,6 +6789,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7564,6 +6801,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7607,6 +6845,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7618,6 +6857,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7629,6 +6869,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7673,6 +6914,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7684,6 +6926,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7695,6 +6938,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7739,6 +6983,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7750,6 +6995,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7761,6 +7007,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7805,6 +7052,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7816,6 +7064,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7827,6 +7076,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7843,6 +7093,1330 @@ module.exports = {
       ],
       'orderNumber': 134,
       'ignoreRouteInCalculations': false,
+    },
+    {
+      'routeName': 'Five Isle Meadow',
+      'region': 0,
+      'number': 30,
+      'pokemon': {
+        'land': [
+          'Sentret',
+          'Pidgey',
+          'Pidgeotto',
+          'Hoppip',
+          'Meowth',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'hint': "Progress further in questline Celio's Errand.",
+          '__class': 'QuestLineStepCompletedRequirement',
+        },
+      ],
+      'orderNumber': 30,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Memorial Pillar',
+      'region': 0,
+      'number': 31,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Hoppip',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 0,
+          'route': 30,
+          'hint': 'Five Isle Meadow in Kanto still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 31,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Water Labyrinth',
+      'region': 0,
+      'number': 32,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Hoppip',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'hint': "Progress further in questline Celio's Errand.",
+          '__class': 'QuestLineStepCompletedRequirement',
+        },
+      ],
+      'orderNumber': 32,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Resort Gorgeous',
+      'region': 0,
+      'number': 33,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Hoppip',
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 0,
+          'route': 32,
+          'hint': 'Water Labyrinth in Kanto still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 33,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Water Path',
+      'region': 0,
+      'number': 34,
+      'pokemon': {
+        'land': [
+          'Sentret',
+          'Spearow',
+          'Fearow',
+          'Oddish',
+          'Bellsprout',
+          'Meowth',
+          'Gloom',
+          'Weepinbell',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'hint': "Progress further in questline Celio's Errand.",
+          '__class': 'QuestLineStepCompletedRequirement',
+        },
+      ],
+      'orderNumber': 34,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Green Path',
+      'region': 0,
+      'number': 35,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 10,
+          'dungeonIndex': 19,
+          'hint': 'Pattern Bush needs to be completed.',
+          '__class': 'ClearDungeonRequirement',
+        },
+      ],
+      'orderNumber': 35,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Outcast Island',
+      'region': 0,
+      'number': 36,
+      'pokemon': {
+        'land': [],
+        'water': [
+          'Tentacool',
+          'Tentacruel',
+          'Magikarp',
+          'Horsea',
+          'Krabby',
+          'Qwilfish',
+          'Remoraid',
+          'Gyarados',
+          'Seadra',
+          'Kingler',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 0,
+          'route': 35,
+          'hint': 'Green Path in Kanto still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 36,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Ruin Valley',
+      'region': 0,
+      'number': 37,
+      'pokemon': {
+        'land': [
+          'Natu',
+          'Spearow',
+          'Fearow',
+          'Meowth',
+          'Yanma',
+          'Wooper',
+          'Marill',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+          'Wobbuffet',
+        ],
+        'water': [
+          'Magikarp',
+          'Poliwag',
+          'Goldeen',
+          'Poliwhirl',
+          'Gyarados',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 0,
+          'route': 34,
+          'hint': 'Water Path in Kanto still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 37,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Canyon Entrance',
+      'region': 0,
+      'number': 38,
+      'pokemon': {
+        'land': [
+          'Sentret',
+          'Spearow',
+          'Fearow',
+          'Phanpy',
+          'Meowth',
+          'Persian',
+          'Psyduck',
+          'Slowpoke',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'questLineName': "Celio's Errand",
+          'questIndex': 5,
+          'hint': "Progress further in questline Celio's Errand.",
+          '__class': 'QuestLineStepCompletedRequirement',
+        },
+      ],
+      'orderNumber': 38,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Sevault Canyon',
+      'region': 0,
+      'number': 39,
+      'pokemon': {
+        'land': [
+          'Geodude',
+          'Phanpy',
+          'Fearow',
+          'Meowth',
+          'Cubone',
+          'Marowak',
+          'Persian',
+          'Onix',
+          'Skarmory',
+          'Larvitar',
+        ],
+        'water': [],
+        'headbutt': ['Graveler'],
+        'special': [
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 0,
+          'route': 38,
+          'hint': 'Canyon Entrance in Kanto still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 39,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1050000,
+    },
+    {
+      'routeName': 'Valencia Island',
+      'region': 0,
+      'number': 40,
+      'pokemon': {
+        'land': [
+          'Valencian Butterfree',
+          'Valencian Raticate',
+          'Valencian Vileplume',
+          'Valencian Paras',
+          'Valencian Weepinbell',
+          'Nidoran(M)',
+          'Nidoran(F)',
+          'Nidorina',
+        ],
+        'water': [
+          'Gyarados',
+          'Cloyster',
+          'Poliwhirl',
+        ],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Magikarp (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'badge': 43,
+          'hint': 'Requires the Jade Star badge.',
+          '__class': 'GymBadgeRequirement',
+        },
+      ],
+      'orderNumber': 40,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1250000,
+    },
+    {
+      'routeName': 'Pinkan Forest',
+      'region': 0,
+      'number': 41,
+      'pokemon': {
+        'land': [
+          'Pinkan Caterpie',
+          'Pinkan Weedle',
+          'Pinkan Pidgey',
+          'Pinkan Vileplume',
+          'Pinkan Paras',
+          'Pinkan Venonat',
+          'Pinkan Mankey',
+          'Pinkan Exeggutor',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': true,
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 1,
+          'option': 2,
+          'achievementType': 10,
+          'dungeonIndex': 20,
+          'hint': 'Altering Cave needs to be completed.',
+          '__class': 'ClearDungeonRequirement',
+        },
+        {
+          'requiredValue': 1,
+          'option': 1,
+          'achievementType': 11,
+          'questLineName': "Celio's Errand",
+          'hint': "Questline Celio's Errand needs to be completed.",
+          '__class': 'QuestLineCompletedRequirement',
+        },
+      ],
+      'orderNumber': 41,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1250000,
+    },
+    {
+      'routeName': 'Pinkan Plains',
+      'region': 0,
+      'number': 42,
+      'pokemon': {
+        'land': [
+          'Pinkan Pidgey',
+          'Pinkan Rattata',
+          'Pinkan Nidoran(M)',
+          'Pinkan Nidoran(F)',
+          'Pinkan Diglett',
+          'Pinkan Bellsprout',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Pinkan Pidgeotto'],
+            'req': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Pinkan Pidgeotto',
+              'hint': 'Pinkan Pidgeotto needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Spooky Bulbasaur'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Gastly'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Santa Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'specialEventName': 'Merry Christmas!',
+                  'hint': 'Merry Christmas! must be started.',
+                  '__class': 'SpecialEventRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'achievementType': -1,
+                  'required': true,
+                  'hintText': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  'hint': "Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+                  '__class': 'CustomRequirement',
+                },
+              ],
+              'hint': "Merry Christmas! must be started and Santa Jynx appears for the day after defeating its Band at Bill's House, and will remain until the maximum number of Christmas presents have been collected.",
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 0,
+          'route': 41,
+          'hint': 'Pinkan Forest in Kanto still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 42,
+      'subRegion': 2,
+      'ignoreRouteInCalculations': true,
+      'routeHealth': 1250000,
     },
     {
       'routeName': 'Rock Poké Spot',
@@ -7867,6 +8441,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7878,6 +8453,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7889,6 +8465,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7898,11 +8475,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Shadows in the Desert',
           'questIndex': 1,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Shadows in the Desert.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -7935,6 +8507,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -7946,6 +8519,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -7957,6 +8531,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -7966,11 +8541,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Shadows in the Desert',
           'questIndex': 14,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Shadows in the Desert.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -8003,6 +8573,7 @@ module.exports = {
               'hint': 'Halloween! must be started.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuppet'],
@@ -8014,6 +8585,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Duskull'],
@@ -8025,6 +8597,7 @@ module.exports = {
               'hint': 'The Pokémon seems to be avoiding the area this year.',
               '__class': 'SpecialEventRandomRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -8034,11 +8607,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Shadows in the Desert',
           'questIndex': 17,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Shadows in the Desert.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -8067,7 +8635,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 39,
-          'hint': 'Requires the Elite Hoenn Champion badge.',
+          'hint': 'Requires having beaten Champion Wallace.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -8133,7 +8701,20 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8171,7 +8752,20 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8220,7 +8814,31 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Pachirisu'],
+            'req': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Pachirisu',
+              'hint': 'Pachirisu needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8320,7 +8938,20 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8358,7 +8989,20 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8402,7 +9046,20 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8471,7 +9128,20 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8508,7 +9178,20 @@ module.exports = {
           'Gastrodon (East)',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8552,7 +9235,20 @@ module.exports = {
           'Gastrodon (East)',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8566,6 +9262,961 @@ module.exports = {
         },
       ],
       'orderNumber': 210.4,
+      'ignoreRouteInCalculations': false,
+    },
+    {
+      'routeName': 'Trophy Garden',
+      'region': 3,
+      'number': 231,
+      'pokemon': {
+        'land': [
+          'Pikachu',
+          'Pichu',
+          'Roselia',
+          'Staravia',
+          'Kricketune',
+        ],
+        'water': [],
+        'headbutt': [],
+        'special': [
+          {
+            'pokemon': ['Clefairy'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 0,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Clefairy',
+                  'hint': 'Clefairy needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Clefairy needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Jigglypuff'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 1,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Jigglypuff',
+                  'hint': 'Jigglypuff needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Jigglypuff needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Meowth'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 2,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Meowth',
+                  'hint': 'Meowth needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Meowth needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Chansey'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 3,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Chansey',
+                  'hint': 'Chansey needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Chansey needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Baby Kangaskhan'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 4,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Baby Kangaskhan',
+                  'hint': 'Baby Kangaskhan needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Baby Kangaskhan needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Mr. Mime'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 5,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Mr. Mime',
+                  'hint': 'Mr. Mime needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Mr Mime needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Jynx'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 6,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Jynx',
+                  'hint': 'Jynx needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Jynx needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Ditto'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 7,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Ditto',
+                  'hint': 'Ditto needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Ditto needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Eevee'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 8,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Eevee',
+                  'hint': 'Eevee needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Eevee needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Porygon'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 9,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Porygon',
+                  'hint': 'Porygon needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Porygon needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Cleffa'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 10,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Cleffa',
+                  'hint': 'Cleffa needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Cleffa needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Igglybuff'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 11,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Igglybuff',
+                  'hint': 'Igglybuff needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Igglybuff needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Togepi'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 12,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Togepi',
+                  'hint': 'Togepi needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Togepi needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Marill'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 13,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Marill',
+                  'hint': 'Marill needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Marill needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Tyrogue'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 14,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Tyrogue',
+                  'hint': 'Tyrogue needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Tyrogue needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Smoochum'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 15,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Smoochum',
+                  'hint': 'Smoochum needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Smoochum needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Elekid'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 16,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Elekid',
+                  'hint': 'Elekid needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Elekid needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Magby'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 17,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Magby',
+                  'hint': 'Magby needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Magby needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Azurill'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 18,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Azurill',
+                  'hint': 'Azurill needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Azurill needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Plusle'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 19,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Plusle',
+                  'hint': 'Plusle needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Plusle needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Minun'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 20,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Minun',
+                  'hint': 'Minun needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Minun needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Castform'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 21,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Castform',
+                  'hint': 'Castform needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Castform needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Budew'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 22,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Budew',
+                  'hint': 'Budew needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Budew needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Chingling'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 23,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Chingling',
+                  'hint': 'Chingling needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Chingling needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bonsly'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 24,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Bonsly',
+                  'hint': 'Bonsly needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Bonsly needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Mime Jr.'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 25,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Mime Jr.',
+                  'hint': 'Mime Jr. needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Mime Jr needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Happiny'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 26,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Happiny',
+                  'hint': 'Happiny needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Happiny needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Handout Happiny'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 27,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Handout Happiny',
+                  'hint': 'Handout Happiny needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Handout Happiny needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Munchlax'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 28,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Munchlax',
+                  'hint': 'Munchlax needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Munchlax needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Riolu'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 29,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Riolu',
+                  'hint': 'Riolu needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Riolu needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Mantyke'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 30,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Mantyke',
+                  'hint': 'Mantyke needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Mantyke needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Phione'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 31,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Phione',
+                  'hint': 'Phione needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Phione needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Toxel'],
+            'req': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'index': 32,
+                  'total': 33,
+                  'select': 3,
+                  'hint': 'Try again another day.',
+                  '__class': 'SeededDateSelectNRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Toxel',
+                  'hint': 'Toxel needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+              ],
+              'hint': 'Try again another day and Toxel needs to be owned.',
+              '__class': 'MultiRequirement',
+            },
+            'weight': 1,
+          },
+        ],
+      },
+      'requirements': [
+        {
+          'requiredValue': 10,
+          'option': 2,
+          'achievementType': 8,
+          'region': 3,
+          'route': 212,
+          'hint': 'Sinnoh Route 212 still needs to be completed.',
+          '__class': 'RouteKillRequirement',
+        },
+      ],
+      'orderNumber': 210.5,
       'ignoreRouteInCalculations': false,
     },
     {
@@ -8598,7 +10249,7 @@ module.exports = {
           '__class': 'GymBadgeRequirement',
         },
       ],
-      'orderNumber': 210.5,
+      'orderNumber': 210.6,
       'ignoreRouteInCalculations': false,
     },
     {
@@ -8623,7 +10274,20 @@ module.exports = {
           'Lumineon',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8635,7 +10299,7 @@ module.exports = {
           '__class': 'TemporaryBattleRequirement',
         },
       ],
-      'orderNumber': 210.6,
+      'orderNumber': 210.7,
       'ignoreRouteInCalculations': false,
     },
     {
@@ -8715,7 +10379,20 @@ module.exports = {
           'Lumineon',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8748,7 +10425,20 @@ module.exports = {
           'Lumineon',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8790,7 +10480,20 @@ module.exports = {
           'Lumineon',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8819,7 +10522,6 @@ module.exports = {
           'Pelipper',
           'Luxio',
           'Floatzel',
-          'Gastrodon (East)',
           'Glameow',
           'Purugly',
           'Chatot',
@@ -8834,7 +10536,20 @@ module.exports = {
           'Sharpedo',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8867,7 +10582,20 @@ module.exports = {
           'Mantyke',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -8896,7 +10624,6 @@ module.exports = {
           'Roselia',
           'Floatzel',
           'Gastrodon (East)',
-          'Chatot',
         ],
         'water': [
           'Tentacruel',
@@ -8908,14 +10635,27 @@ module.exports = {
           'Luvdisc',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 66,
-          'hint': 'Requires the Elite Sinnoh Champion badge.',
+          'hint': 'Requires having beaten Champion Cynthia.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -8946,14 +10686,27 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 66,
-          'hint': 'Requires the Elite Sinnoh Champion badge.',
+          'hint': 'Requires having beaten Champion Cynthia.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -8984,7 +10737,20 @@ module.exports = {
           'Relicanth',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -9025,7 +10791,20 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -9063,7 +10842,20 @@ module.exports = {
           'Whiscash',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -9104,7 +10896,20 @@ module.exports = {
           'Gyarados',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -9146,7 +10951,20 @@ module.exports = {
           'Sealeo',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Captain Lucario'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -9183,7 +11001,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 66,
-          'hint': 'Requires the Elite Sinnoh Champion badge.',
+          'hint': 'Requires having beaten Champion Cynthia.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -9270,11 +11088,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 1,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9324,11 +11137,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 2,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9366,11 +11174,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 2,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9408,11 +11211,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 2,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9481,11 +11279,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 4,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9520,6 +11313,7 @@ module.exports = {
               'hint': 'Zebstrika needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -9545,11 +11339,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 7,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9710,6 +11499,7 @@ module.exports = {
               'hint': 'Cherrim (Overcast) needs to be owned and The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Hail or Blizzard or Sandstorm or Fog or Windy.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cherrim (Sunshine)'],
@@ -9735,6 +11525,7 @@ module.exports = {
               'hint': 'Cherrim (Sunshine) needs to be owned and The weather needs to be Harsh Sunlight.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -9761,11 +11552,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Hollow Truth and Ideals',
           'questIndex': 10,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Hollow Truth and Ideals.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -9937,6 +11723,7 @@ module.exports = {
               'hint': 'Sawk needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Throh'],
@@ -9947,6 +11734,7 @@ module.exports = {
               'hint': 'Throh needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -9970,12 +11758,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Hollow Truth and Ideals',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Hollow Truth and Ideals',
-            'quest': 0,
-          },
           'hint': 'Questline Hollow Truth and Ideals needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -10030,15 +11814,15 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 79,
-                  'hint': 'Requires the Elite Unova Champion badge.',
+                  'hint': 'Requires having beaten Champion Iris.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Unova Route 9 still needs to be completed and Requires the Elite Unova Champion badge.',
+              'hint': 'Unova Route 9 still needs to be completed and Requires having beaten Champion Iris.',
               '__class': 'MultiRequirement',
             },
           ],
-          'hint': 'Twist Mountain needs to be completed or Unova Route 9 still needs to be completed and Requires the Elite Unova Champion badge.',
+          'hint': 'Twist Mountain needs to be completed or Unova Route 9 still needs to be completed and Requires having beaten Champion Iris.',
           '__class': 'OneFromManyRequirement',
         },
       ],
@@ -10068,6 +11852,7 @@ module.exports = {
               'hint': 'Sawk needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Throh'],
@@ -10078,6 +11863,7 @@ module.exports = {
               'hint': 'Throh needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -10112,7 +11898,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 79,
-          'hint': 'Requires the Elite Unova Champion badge.',
+          'hint': 'Requires having beaten Champion Iris.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -10144,6 +11930,7 @@ module.exports = {
               'hint': 'Zebstrika needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Blitzle'],
@@ -10154,6 +11941,7 @@ module.exports = {
               'hint': 'Blitzle needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -10286,6 +12074,7 @@ module.exports = {
               'hint': 'Sawk needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Throh'],
@@ -10296,6 +12085,7 @@ module.exports = {
               'hint': 'Throh needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -10331,7 +12121,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 79,
-          'hint': 'Requires the Elite Unova Champion badge.',
+          'hint': 'Requires having beaten Champion Iris.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -10358,13 +12148,12 @@ module.exports = {
       },
       'requirements': [
         {
-          'requiredValue': 10,
+          'requiredValue': 1,
           'option': 2,
-          'achievementType': 8,
-          'region': 5,
-          'route': 1,
-          'hint': 'Kalos Route 1 still needs to be completed.',
-          '__class': 'RouteKillRequirement',
+          'achievementType': -1,
+          'battleName': 'Shauna 1',
+          'hint': 'Requires beating Pokémon Trainer Shauna near Aquacorde Town.',
+          '__class': 'TemporaryBattleRequirement',
         },
       ],
       'orderNumber': 2,
@@ -10504,11 +12293,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'A Beautiful World',
           'questIndex': 1,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'A Beautiful World',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline A Beautiful World.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -10539,7 +12323,7 @@ module.exports = {
           'option': 2,
           'achievementType': -1,
           'battleName': 'Tierno 1',
-          'hint': 'Requires beating Pokémon Trainer Tierno near Camphrier Town.',
+          'hint': 'Requires beating Pokémon Trainer Tierno near Lumiose City.',
           '__class': 'TemporaryBattleRequirement',
         },
       ],
@@ -10723,11 +12507,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'A Beautiful World',
           'questIndex': 8,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'A Beautiful World',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline A Beautiful World.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -10805,7 +12584,7 @@ module.exports = {
           '__class': 'RouteKillRequirement',
         },
       ],
-      'orderNumber': 12,
+      'orderNumber': 12.1,
       'ignoreRouteInCalculations': false,
     },
     {
@@ -10904,11 +12683,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'A Beautiful World',
           'questIndex': 15,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'A Beautiful World',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline A Beautiful World.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -10978,11 +12752,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'A Beautiful World',
           'questIndex': 17,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'A Beautiful World',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline A Beautiful World.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -11015,11 +12784,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'A Beautiful World',
           'questIndex': 32,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'A Beautiful World',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline A Beautiful World.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -11157,18 +12921,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -11177,7 +12933,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 92,
-          'hint': 'Requires the Elite Kalos Champion badge.',
+          'hint': 'Requires having beaten Champion Diantha.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -11209,18 +12965,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11267,18 +13039,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -11292,6 +13056,7 @@ module.exports = {
               'hint': 'Come back on Friday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -11333,18 +13098,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -11358,6 +13115,7 @@ module.exports = {
               'hint': 'Come back on Sunday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -11366,7 +13124,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 140,
+          'dungeonIndex': 141,
           'hint': 'Verdant Cavern needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11400,18 +13158,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -11425,6 +13175,7 @@ module.exports = {
               'hint': 'Come back on Thursday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -11434,11 +13185,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Symbiotic Relations',
           'questIndex': 0,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Symbiotic Relations',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Symbiotic Relations.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -11473,18 +13219,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -11498,6 +13236,7 @@ module.exports = {
               'hint': 'Come back on Friday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -11506,7 +13245,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 145,
+          'dungeonIndex': 146,
           'hint': 'Paniola Ranch needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11542,18 +13281,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11562,7 +13317,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 146,
+          'dungeonIndex': 147,
           'hint': 'Brooklet Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11602,18 +13357,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Horsea'],
@@ -11624,6 +13371,31 @@ module.exports = {
               'hint': 'Come back on Wednesday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11632,7 +13404,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 142,
+          'dungeonIndex': 143,
           'hint': 'Seaward Cave needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11640,7 +13412,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 146,
+          'dungeonIndex': 147,
           'hint': 'Brooklet Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11674,18 +13446,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -11699,6 +13463,7 @@ module.exports = {
               'hint': 'Come back on Sunday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -11740,18 +13505,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spheal'],
@@ -11762,6 +13519,31 @@ module.exports = {
               'hint': 'Come back on Monday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11809,18 +13591,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Salandit'],
@@ -11831,6 +13605,7 @@ module.exports = {
               'hint': 'Salandit needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wimpod'],
@@ -11841,6 +13616,7 @@ module.exports = {
               'hint': 'Wimpod needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -11854,6 +13630,31 @@ module.exports = {
               'hint': 'Come back on Tuesday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11862,7 +13663,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 147,
+          'dungeonIndex': 148,
           'hint': 'Wela Volcano Park needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -11893,18 +13694,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11913,7 +13730,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 149,
+          'dungeonIndex': 150,
           'hint': "Diglett's Tunnel needs to be completed.",
           '__class': 'ClearDungeonRequirement',
         },
@@ -11949,18 +13766,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Honedge'],
@@ -11971,6 +13780,31 @@ module.exports = {
               'hint': 'Come back on Wednesday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -11979,7 +13813,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 150,
+          'dungeonIndex': 151,
           'hint': 'Memorial Hill needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -12012,18 +13846,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -12037,6 +13863,7 @@ module.exports = {
               'hint': 'Come back on Thursday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12086,18 +13913,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Axew'],
@@ -12108,6 +13927,7 @@ module.exports = {
               'hint': 'Come back on Saturday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12158,18 +13978,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shiinotic'],
@@ -12180,6 +13992,7 @@ module.exports = {
               'hint': 'Shiinotic needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -12193,6 +14006,7 @@ module.exports = {
               'hint': 'Come back on Friday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12233,18 +14047,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12262,7 +14068,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 152,
+          'dungeonIndex': 153,
           'hint': 'Hokulani Observatory needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -12291,18 +14097,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -12345,18 +14167,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -12404,18 +14242,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -12456,18 +14310,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -12481,6 +14327,7 @@ module.exports = {
               'hint': 'Come back on Tuesday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12523,14 +14370,10 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 11,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Meltan'],
@@ -12539,18 +14382,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12559,7 +14394,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 154,
+          'dungeonIndex': 155,
           'hint': "Ula'ula Meadow needs to be completed.",
           '__class': 'ClearDungeonRequirement',
         },
@@ -12591,14 +14426,10 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 11,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Meltan'],
@@ -12607,18 +14438,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12627,7 +14450,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 153,
+          'dungeonIndex': 154,
           'hint': 'Thrifty Megamart needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -12658,18 +14481,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -12683,6 +14498,7 @@ module.exports = {
               'hint': 'Come back on Friday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12691,11 +14507,6 @@ module.exports = {
           'requiredValue': 1,
           'option': 1,
           'questLineName': 'Emissary of Light',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Emissary of Light',
-            'quest': 0,
-          },
           'hint': 'Questline Emissary of Light needs to be started.',
           '__class': 'QuestLineStartedRequirement',
         },
@@ -12726,18 +14537,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -12751,6 +14554,7 @@ module.exports = {
               'hint': 'Come back on Saturday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12797,6 +14601,7 @@ module.exports = {
               'hint': 'Wimpod needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Meltan'],
@@ -12805,18 +14610,34 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -12859,14 +14680,10 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 15,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Stakataka'],
@@ -12875,14 +14692,10 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 15,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Meltan'],
@@ -12891,18 +14704,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Eelektross'],
@@ -12913,6 +14718,7 @@ module.exports = {
               'hint': 'Come back on Sunday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -12961,18 +14767,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -12986,6 +14784,7 @@ module.exports = {
               'hint': 'Come back on Monday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -13020,18 +14819,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -13078,18 +14869,10 @@ module.exports = {
               'option': 1,
               'questLineName': "Let's Go, Meltan!",
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Let's Go, Meltan!",
-                'quest': 0,
-                'initial': [
-                  null,
-                  null,
-                ],
-              },
               'hint': "Progress further in questline Let's Go, Meltan!.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13103,6 +14886,31 @@ module.exports = {
               'hint': 'Come back on Tuesday.',
               '__class': 'DayOfWeekRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Bounsweet (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Steenee (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -13135,12 +14943,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Magikarp Jump',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Magikarp Jump',
-            'quest': 0,
-          },
           'hint': 'Questline Magikarp Jump needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -13180,15 +14984,18 @@ module.exports = {
       'number': 33,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Calico (Orange, White)',
-          'Magikarp Orange Orca',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Calico (Orange, White)',
+              'Magikarp Orange Orca',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13210,15 +15017,18 @@ module.exports = {
       'number': 34,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Orange Two-Tone',
-          'Magikarp Orange Dapples',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Orange Two-Tone',
+              'Magikarp Orange Dapples',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13240,16 +15050,19 @@ module.exports = {
       'number': 35,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Calico (Orange, White, Black)',
-          'Magikarp Orange Two-Tone',
-          'Magikarp Calico (Orange, White)',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Calico (Orange, White, Black)',
+              'Magikarp Orange Two-Tone',
+              'Magikarp Calico (Orange, White)',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13271,16 +15084,19 @@ module.exports = {
       'number': 36,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Pink Two-Tone',
-          'Magikarp Calico (Orange, White, Black)',
-          'Magikarp Orange Dapples',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Pink Two-Tone',
+              'Magikarp Calico (Orange, White, Black)',
+              'Magikarp Orange Dapples',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13302,16 +15118,19 @@ module.exports = {
       'number': 37,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Grey Bubbles',
-          'Magikarp Grey Patches',
-          'Magikarp Orange Dapples',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Grey Bubbles',
+              'Magikarp Grey Patches',
+              'Magikarp Orange Dapples',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13333,19 +15152,22 @@ module.exports = {
       'number': 38,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Calico (Orange, White, Black)',
-          'Magikarp Orange Two-Tone',
-          'Magikarp Calico (Orange, White)',
-          'Magikarp Apricot Tiger',
-          'Magikarp Apricot Zebra',
-          'Magikarp Brown Zebra',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Calico (Orange, White, Black)',
+              'Magikarp Orange Two-Tone',
+              'Magikarp Calico (Orange, White)',
+              'Magikarp Apricot Tiger',
+              'Magikarp Apricot Zebra',
+              'Magikarp Brown Zebra',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13367,16 +15189,19 @@ module.exports = {
       'number': 39,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Black Forehead',
-          'Magikarp Pink Orca',
-          'Magikarp Grey Patches',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Black Forehead',
+              'Magikarp Pink Orca',
+              'Magikarp Grey Patches',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13398,16 +15223,19 @@ module.exports = {
       'number': 40,
       'pokemon': {
         'land': [],
-        'water': [
-          'Magikarp',
-          'Magikarp',
-          'Magikarp',
-          'Magikarp Orange Mask',
-          'Magikarp Calico (Orange, Gold)',
-          'Magikarp Grey Bubbles',
-        ],
+        'water': ['Magikarp'],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': [
+              'Magikarp Orange Mask',
+              'Magikarp Calico (Orange, Gold)',
+              'Magikarp Grey Bubbles',
+            ],
+            'req': null,
+            'weight': 0.3333333333333333,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13478,7 +15306,32 @@ module.exports = {
           'Arrokuda',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -13541,6 +15394,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Mudsdale'],
@@ -13557,6 +15411,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pangoro'],
@@ -13573,6 +15428,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Roselia'],
@@ -13591,6 +15447,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Minccino'],
@@ -13604,6 +15461,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Ralts'],
@@ -13617,6 +15475,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13630,6 +15489,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13644,6 +15504,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13660,6 +15521,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13675,6 +15537,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13692,6 +15555,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13706,6 +15570,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13720,6 +15585,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Baltoy'],
@@ -13733,6 +15599,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13747,6 +15614,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13762,6 +15630,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -13816,6 +15685,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vileplume'],
@@ -13829,6 +15699,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bunnelby'],
@@ -13846,6 +15717,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Hoothoot'],
@@ -13861,6 +15733,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bounsweet'],
@@ -13874,6 +15747,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Budew'],
@@ -13890,6 +15764,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13904,6 +15779,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13921,6 +15797,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13934,6 +15811,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -13952,6 +15830,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Snover'],
@@ -13962,6 +15841,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pangoro'],
@@ -13977,6 +15857,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Klink'],
@@ -13987,6 +15868,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14001,6 +15883,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14017,6 +15900,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Golett'],
@@ -14027,6 +15911,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14045,6 +15930,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -14095,6 +15981,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wooper'],
@@ -14112,6 +15999,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wingull'],
@@ -14128,6 +16016,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Snow or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14141,6 +16030,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Purrloin'],
@@ -14158,6 +16048,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tympole'],
@@ -14176,6 +16067,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Frillish'],
@@ -14195,6 +16087,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Quagsire'],
@@ -14211,6 +16104,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -14227,6 +16121,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cloyster'],
@@ -14240,6 +16135,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lapras'],
@@ -14257,6 +16153,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seaking'],
@@ -14271,6 +16168,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14286,6 +16184,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pancham'],
@@ -14299,6 +16198,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Palpitoad'],
@@ -14315,6 +16215,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -14329,6 +16230,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14344,6 +16246,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14361,6 +16264,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14374,6 +16278,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Diggersby'],
@@ -14388,6 +16293,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Klink'],
@@ -14398,6 +16304,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bunnelby'],
@@ -14412,6 +16319,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14425,6 +16333,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14441,6 +16350,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14454,6 +16364,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14467,6 +16378,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Grapploct'],
@@ -14500,6 +16412,31 @@ module.exports = {
               'hint': 'Grapploct needs to be owned and The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -14556,6 +16493,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14569,6 +16507,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Frillish'],
@@ -14587,6 +16526,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Xatu'],
@@ -14605,6 +16545,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Garbodor'],
@@ -14620,6 +16561,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seaking'],
@@ -14635,6 +16577,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -14651,6 +16594,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lanturn'],
@@ -14665,6 +16609,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cloyster'],
@@ -14678,6 +16623,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Budew'],
@@ -14688,6 +16634,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Minccino'],
@@ -14705,6 +16652,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pancham'],
@@ -14722,6 +16670,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Grubbin'],
@@ -14732,6 +16681,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14746,6 +16696,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14765,6 +16716,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14778,6 +16730,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14795,6 +16748,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14808,6 +16762,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14822,6 +16777,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -14880,6 +16860,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14894,6 +16875,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Machop'],
@@ -14909,6 +16891,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Machoke'],
@@ -14922,6 +16905,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14938,6 +16922,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Stufful'],
@@ -14951,6 +16936,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -14964,6 +16950,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gastly'],
@@ -14979,6 +16966,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bronzong'],
@@ -14993,6 +16981,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15006,6 +16995,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Galvantula'],
@@ -15019,6 +17009,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15034,6 +17025,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15054,6 +17046,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15070,6 +17063,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15084,6 +17078,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15097,6 +17092,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15115,6 +17111,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -15189,6 +17210,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tympole'],
@@ -15204,6 +17226,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Stunky'],
@@ -15221,6 +17244,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Krabby'],
@@ -15237,6 +17261,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15253,6 +17278,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Skuntank'],
@@ -15270,6 +17296,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15286,6 +17313,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifblim'],
@@ -15301,6 +17329,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seaking'],
@@ -15317,6 +17346,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gyarados'],
@@ -15336,6 +17366,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Octillery'],
@@ -15351,6 +17382,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Roselia'],
@@ -15364,6 +17396,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -15379,6 +17412,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Palpitoad'],
@@ -15392,6 +17426,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -15405,6 +17440,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15419,6 +17455,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Snorunt'],
@@ -15429,6 +17466,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15446,6 +17484,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15459,6 +17498,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15473,6 +17513,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15491,6 +17532,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15504,6 +17546,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15519,6 +17562,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -15573,6 +17641,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Stufful'],
@@ -15591,6 +17660,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bunnelby'],
@@ -15605,6 +17675,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifloon'],
@@ -15624,6 +17695,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wingull'],
@@ -15641,6 +17713,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Xatu'],
@@ -15659,6 +17732,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lapras'],
@@ -15676,6 +17750,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -15692,6 +17767,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifblim'],
@@ -15707,6 +17783,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Whiscash'],
@@ -15723,6 +17800,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15736,6 +17814,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Purrloin'],
@@ -15753,6 +17832,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seismitoad'],
@@ -15766,6 +17846,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gyarados'],
@@ -15780,6 +17861,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tympole'],
@@ -15790,6 +17872,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15806,6 +17889,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Skuntank'],
@@ -15820,6 +17904,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -15834,6 +17919,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seaking'],
@@ -15848,6 +17934,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Joltik'],
@@ -15858,6 +17945,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15878,6 +17966,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Klink'],
@@ -15888,6 +17977,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15905,6 +17995,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Golett'],
@@ -15915,6 +18006,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -15928,6 +18020,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -16005,6 +18122,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Axew'],
@@ -16020,6 +18138,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Machoke'],
@@ -16033,6 +18152,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Unfezant'],
@@ -16051,6 +18171,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Steenee'],
@@ -16061,6 +18182,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Haxorus'],
@@ -16078,6 +18200,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant'],
@@ -16098,6 +18221,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Hail or Windy or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16111,6 +18235,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16127,6 +18252,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16141,6 +18267,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16154,6 +18281,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16172,6 +18300,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16185,6 +18314,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16201,6 +18331,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16214,6 +18345,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Claydol'],
@@ -16227,6 +18359,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Baltoy'],
@@ -16237,6 +18370,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16251,6 +18385,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -16316,6 +18475,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifloon'],
@@ -16333,6 +18493,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Snow or Blizzard or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bounsweet'],
@@ -16346,6 +18507,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pidove'],
@@ -16362,6 +18524,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifblim'],
@@ -16376,6 +18539,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Golurk'],
@@ -16390,6 +18554,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16410,6 +18575,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16423,6 +18589,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dusclops'],
@@ -16438,6 +18605,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16451,6 +18619,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Purrloin'],
@@ -16467,6 +18636,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16480,6 +18650,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16498,6 +18669,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16511,6 +18683,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shuckle'],
@@ -16524,6 +18697,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dwebble'],
@@ -16534,6 +18708,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Ralts'],
@@ -16544,6 +18719,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -16658,7 +18834,32 @@ module.exports = {
           'Chewtle',
         ],
         'headbutt': ['Skwovet'],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -16702,7 +18903,32 @@ module.exports = {
           'Goldeen',
         ],
         'headbutt': ['Skwovet'],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -16797,6 +19023,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16810,6 +19037,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wooloo'],
@@ -16823,6 +19051,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Noctowl'],
@@ -16840,6 +19069,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dubwool'],
@@ -16853,6 +19083,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Snorlax'],
@@ -16872,6 +19103,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drapion'],
@@ -16887,6 +19119,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Conkeldurr'],
@@ -16905,6 +19138,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16920,6 +19154,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cutiefly'],
@@ -16935,6 +19170,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Ribombee'],
@@ -16951,6 +19187,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16967,6 +19204,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16982,6 +19220,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -16996,6 +19235,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17012,6 +19252,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17025,6 +19266,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17042,6 +19284,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17056,6 +19299,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17069,6 +19313,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17086,6 +19331,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxel'],
@@ -17111,6 +19357,31 @@ module.exports = {
               'hint': 'Toxel needs to be owned and The weather needs to be Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -17192,6 +19463,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wobbuffet'],
@@ -17205,6 +19477,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Liepard'],
@@ -17215,6 +19488,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Togepi'],
@@ -17229,6 +19503,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Golisopod'],
@@ -17243,6 +19518,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Bewear'],
@@ -17262,6 +19538,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seismitoad'],
@@ -17278,6 +19555,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Beheeyem'],
@@ -17295,6 +19573,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Noivern'],
@@ -17314,6 +19593,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gallade'],
@@ -17331,6 +19611,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seaking'],
@@ -17345,6 +19626,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cufant'],
@@ -17360,6 +19642,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Blizzard or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17376,6 +19659,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17393,6 +19677,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Elgyem'],
@@ -17406,6 +19691,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Thievul'],
@@ -17421,6 +19707,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Snow or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pangoro'],
@@ -17434,6 +19721,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Stufful'],
@@ -17450,6 +19738,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Snow or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17463,6 +19752,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17481,6 +19771,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -17494,6 +19785,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Frillish'],
@@ -17504,6 +19796,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17522,6 +19815,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17535,6 +19829,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17548,6 +19843,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17562,6 +19858,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17578,6 +19875,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Litwick'],
@@ -17591,6 +19889,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17607,6 +19906,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17622,6 +19922,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxel'],
@@ -17651,6 +19952,31 @@ module.exports = {
               'hint': 'Toxel needs to be owned and The weather needs to be Clear or Rain or Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -17705,6 +20031,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Ninjask'],
@@ -17718,6 +20045,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17731,6 +20059,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gurdurr'],
@@ -17746,6 +20075,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Thunderstorm or Snow or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Boldore'],
@@ -17762,6 +20092,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Thunderstorm or Snow or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Ribombee'],
@@ -17775,6 +20106,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Impidimp'],
@@ -17794,6 +20126,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Claydol'],
@@ -17809,6 +20142,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17830,6 +20164,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17848,6 +20183,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dewpider'],
@@ -17861,6 +20197,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17875,6 +20212,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17894,6 +20232,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17910,6 +20249,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17923,6 +20263,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17939,6 +20280,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17952,6 +20294,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17966,6 +20309,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drilbur'],
@@ -17979,6 +20323,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -17994,6 +20339,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18011,6 +20357,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxel'],
@@ -18036,6 +20383,7 @@ module.exports = {
               'hint': 'Toxel needs to be owned and The weather needs to be Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -18102,6 +20450,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gloom'],
@@ -18119,6 +20468,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Skorupi'],
@@ -18135,6 +20485,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dottler'],
@@ -18150,6 +20501,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Machamp'],
@@ -18168,6 +20520,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Unfezant'],
@@ -18182,6 +20535,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Frillish'],
@@ -18201,6 +20555,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18217,6 +20572,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vileplume'],
@@ -18234,6 +20590,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18249,6 +20606,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Natu'],
@@ -18265,6 +20623,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Xatu'],
@@ -18282,6 +20641,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18297,6 +20657,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18315,6 +20676,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18329,6 +20691,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vikavolt'],
@@ -18345,6 +20708,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pawniard'],
@@ -18355,6 +20719,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18370,6 +20735,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Sudowoodo'],
@@ -18383,6 +20749,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18398,6 +20765,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18416,6 +20784,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -18437,7 +20830,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 174,
+              'dungeonIndex': 175,
               'hint': 'Dusty Bowl needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -18494,6 +20887,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Galarian Linoone'],
@@ -18511,6 +20905,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18526,6 +20921,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18542,6 +20938,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dottler'],
@@ -18561,6 +20958,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Eldegoss'],
@@ -18576,6 +20974,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Doublade'],
@@ -18595,6 +20994,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cinccino'],
@@ -18609,6 +21009,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gengar'],
@@ -18627,6 +21028,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18641,6 +21043,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Munna'],
@@ -18654,6 +21057,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18670,6 +21074,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18684,6 +21089,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18698,6 +21104,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18717,6 +21124,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18730,6 +21138,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18743,6 +21152,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18762,6 +21172,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18776,6 +21187,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18789,6 +21201,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -18805,6 +21218,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxel'],
@@ -18830,6 +21244,31 @@ module.exports = {
               'hint': 'Toxel needs to be owned and The weather needs to be Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -18860,7 +21299,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 174,
+              'dungeonIndex': 175,
               'hint': 'Dusty Bowl needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -18914,6 +21353,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Obstagoon'],
@@ -18928,6 +21368,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Gardevoir'],
@@ -18942,6 +21383,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seaking'],
@@ -18959,6 +21401,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lapras'],
@@ -18976,6 +21419,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -18992,6 +21436,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19012,6 +21457,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jangmo-o'],
@@ -19025,6 +21471,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shiinotic'],
@@ -19039,6 +21486,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19059,6 +21507,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Rotom'],
@@ -19072,6 +21521,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -19085,6 +21535,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19105,6 +21556,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Zweilous'],
@@ -19118,6 +21570,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19135,6 +21588,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19153,6 +21607,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19171,6 +21626,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19194,6 +21650,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19210,6 +21667,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19227,6 +21685,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19245,6 +21704,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dreepy'],
@@ -19274,6 +21734,7 @@ module.exports = {
               'hint': 'Dreepy needs to be owned and The weather needs to be Overcast or Thunderstorm or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drakloak'],
@@ -19304,6 +21765,7 @@ module.exports = {
               'hint': 'Drakloak needs to be owned and The weather needs to be Overcast or Rain or Thunderstorm or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Grapploct'],
@@ -19314,6 +21776,31 @@ module.exports = {
               'hint': 'Grapploct needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -19390,6 +21877,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Snow or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Inkay'],
@@ -19408,6 +21896,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dubwool'],
@@ -19418,6 +21907,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Machoke'],
@@ -19436,6 +21926,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Sudowoodo'],
@@ -19450,6 +21941,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Wobbuffet'],
@@ -19469,6 +21961,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Stufful'],
@@ -19482,6 +21975,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vileplume'],
@@ -19498,6 +21992,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Klang'],
@@ -19513,6 +22008,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Thievul'],
@@ -19523,6 +22019,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Roserade'],
@@ -19536,6 +22033,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19549,6 +22047,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19565,6 +22064,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19578,6 +22078,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Klinklang'],
@@ -19594,6 +22095,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19611,6 +22113,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cubchoo'],
@@ -19621,6 +22124,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Honedge'],
@@ -19634,6 +22138,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vanillite'],
@@ -19644,6 +22149,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19659,6 +22165,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19675,6 +22182,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -19690,6 +22198,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxel'],
@@ -19715,6 +22224,7 @@ module.exports = {
               'hint': 'Toxel needs to be owned and The weather needs to be Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -19777,7 +22287,32 @@ module.exports = {
           'Drednaw',
         ],
         'headbutt': ['Greedent'],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -19822,6 +22357,7 @@ module.exports = {
               'hint': 'Toxel needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -19945,7 +22481,32 @@ module.exports = {
           'Feebas',
         ],
         'headbutt': [],
-        'special': [],
+        'special': [
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+        ],
       },
       'requirements': [
         {
@@ -20004,6 +22565,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Hail or Blizzard or Harsh Sunlight or Sandstorm or Fog or Windy',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant (Gulping)'],
@@ -20014,6 +22576,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant (Gorging)'],
@@ -20024,6 +22587,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Clobbopus'],
@@ -20034,6 +22598,31 @@ module.exports = {
               'hint': 'Clobbopus needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -20043,11 +22632,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'The Darkest Day',
           'questIndex': 5,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'The Darkest Day',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline The Darkest Day.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -20100,6 +22684,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Hail or Blizzard or Harsh Sunlight or Sandstorm or Fog or Windy',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant (Gulping)'],
@@ -20110,6 +22695,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant (Gorging)'],
@@ -20120,6 +22706,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Clobbopus'],
@@ -20130,6 +22717,7 @@ module.exports = {
               'hint': 'Clobbopus needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Grapploct'],
@@ -20140,6 +22728,31 @@ module.exports = {
               'hint': 'Grapploct needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -20186,6 +22799,7 @@ module.exports = {
               'hint': 'Clobbopus needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -20279,6 +22893,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Hail or Blizzard or Sandstorm or Fog or Windy',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Eiscue (Noice Face)'],
@@ -20289,6 +22904,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -20343,6 +22959,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -20362,6 +22979,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Kingler'],
@@ -20378,6 +22996,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Starmie'],
@@ -20395,6 +23014,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxapex'],
@@ -20409,6 +23029,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20425,6 +23046,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20438,6 +23060,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Malamar'],
@@ -20451,6 +23074,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Zorua'],
@@ -20464,6 +23088,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Marill'],
@@ -20474,6 +23099,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20490,6 +23116,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20503,6 +23130,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20517,6 +23145,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20533,6 +23162,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -20603,6 +23257,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drapion'],
@@ -20617,6 +23272,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -20636,6 +23292,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Quagsire'],
@@ -20652,6 +23309,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drednaw'],
@@ -20666,6 +23324,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lickilicky'],
@@ -20679,6 +23338,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Comfey'],
@@ -20693,6 +23353,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20707,6 +23368,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Malamar'],
@@ -20720,6 +23382,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Zorua'],
@@ -20733,6 +23396,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Marill'],
@@ -20743,6 +23407,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20760,6 +23425,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Poliwhirl'],
@@ -20774,6 +23440,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20789,6 +23456,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20804,6 +23472,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20819,6 +23488,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -20882,6 +23576,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Amoonguss'],
@@ -20897,6 +23592,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant'],
@@ -20917,6 +23613,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Snow or Hail or Blizzard or Windy or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tangrowth'],
@@ -20930,6 +23627,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20944,6 +23642,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Crawdaunt'],
@@ -20958,6 +23657,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20972,6 +23672,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -20988,6 +23689,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21003,6 +23705,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21019,6 +23722,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Comfey'],
@@ -21032,6 +23736,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21047,6 +23752,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21063,6 +23769,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -21149,6 +23880,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -21168,6 +23900,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21189,6 +23922,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drednaw'],
@@ -21205,6 +23939,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant'],
@@ -21225,6 +23960,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Snow or Hail or Blizzard or Windy or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Barraskewda'],
@@ -21238,6 +23974,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Comfey'],
@@ -21252,6 +23989,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Marill'],
@@ -21265,6 +24003,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lopunny'],
@@ -21279,6 +24018,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21293,6 +24033,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21311,6 +24052,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxapex'],
@@ -21326,6 +24068,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifblim'],
@@ -21339,6 +24082,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21352,6 +24096,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shinx'],
@@ -21365,6 +24110,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21379,6 +24125,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Golduck'],
@@ -21392,6 +24139,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21405,6 +24153,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21420,6 +24169,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -21507,6 +24281,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -21526,6 +24301,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Alakazam'],
@@ -21539,6 +24315,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drednaw'],
@@ -21552,6 +24329,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21565,6 +24343,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Malamar'],
@@ -21578,6 +24357,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Toxapex'],
@@ -21592,6 +24372,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21608,6 +24389,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21624,6 +24406,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21638,6 +24421,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21653,6 +24437,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21667,6 +24452,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Grapploct'],
@@ -21697,6 +24483,7 @@ module.exports = {
               'hint': 'Grapploct needs to be owned and The weather needs to be Clear or Overcast or Harsh Sunlight or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Clobbopus'],
@@ -21707,6 +24494,31 @@ module.exports = {
               'hint': 'Clobbopus needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -21719,7 +24531,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 175,
+              'dungeonIndex': 176,
               'hint': 'Courageous Cavern needs to be completed.',
               '__class': 'ClearDungeonRequirement',
             },
@@ -21778,6 +24590,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Kangaskhan'],
@@ -21791,6 +24604,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -21810,6 +24624,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Kingler'],
@@ -21827,6 +24642,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cramorant'],
@@ -21847,6 +24663,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Harsh Sunlight or Snow or Hail or Blizzard or Windy or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Barraskewda'],
@@ -21864,6 +24681,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Herdier'],
@@ -21877,6 +24695,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21893,6 +24712,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Malamar'],
@@ -21906,6 +24726,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drapion'],
@@ -21919,6 +24740,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21933,6 +24755,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21950,6 +24773,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21966,6 +24790,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21981,6 +24806,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -21998,6 +24824,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22015,6 +24842,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -22036,7 +24888,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 176,
+              'dungeonIndex': 177,
               'hint': "Brawlers' Cave needs to be completed.",
               '__class': 'ClearDungeonRequirement',
             },
@@ -22093,6 +24945,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Rhydon'],
@@ -22109,6 +24962,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Rhyperior'],
@@ -22126,6 +24980,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22145,6 +25000,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22158,6 +25014,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22175,6 +25032,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Shinx'],
@@ -22185,6 +25043,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22198,6 +25057,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22212,6 +25072,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Blissey'],
@@ -22222,6 +25083,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -22230,7 +25092,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 177,
+          'dungeonIndex': 178,
           'hint': 'Warm-Up Tunnel needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -22268,6 +25130,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -22287,6 +25150,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22303,6 +25167,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jangmo-o'],
@@ -22318,6 +25183,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22335,6 +25201,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Magneton'],
@@ -22345,6 +25212,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22360,6 +25228,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22375,6 +25244,7 @@ module.exports = {
               'hint': 'The weather needs to be Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22389,6 +25259,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -22410,7 +25281,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'achievementType': 10,
-              'dungeonIndex': 176,
+              'dungeonIndex': 177,
               'hint': "Brawlers' Cave needs to be completed.",
               '__class': 'ClearDungeonRequirement',
             },
@@ -22463,6 +25334,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Exeggutor'],
@@ -22476,6 +25348,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -22495,6 +25368,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22508,6 +25382,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -22521,6 +25396,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Rotom (Frost)'],
@@ -22531,6 +25407,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -22544,6 +25421,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22558,6 +25436,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22571,6 +25450,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22585,6 +25465,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Rotom (Discord)'],
@@ -22610,6 +25491,31 @@ module.exports = {
               'hint': 'Rotom (Discord) needs to be owned and The weather needs to be Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -22676,6 +25582,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Mantyke'],
@@ -22691,6 +25598,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tentacruel'],
@@ -22701,6 +25609,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -22714,6 +25623,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -22727,6 +25637,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22740,6 +25651,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Fletchinder'],
@@ -22750,6 +25662,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22763,6 +25676,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -22871,6 +25809,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Exeggutor'],
@@ -22885,6 +25824,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Mantyke'],
@@ -22900,6 +25840,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22913,6 +25854,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -22927,6 +25869,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -22940,6 +25883,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22954,6 +25898,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22967,6 +25912,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -22982,6 +25928,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -23052,6 +26023,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Seadra'],
@@ -23069,6 +26041,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tentacruel'],
@@ -23079,6 +26052,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -23092,6 +26066,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -23105,6 +26080,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23119,6 +26095,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Fletchinder'],
@@ -23129,6 +26106,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Drifloon'],
@@ -23139,6 +26117,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -23229,6 +26232,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Chansey'],
@@ -23248,6 +26252,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Mantyke'],
@@ -23263,6 +26268,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tentacruel'],
@@ -23273,6 +26279,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jellicent'],
@@ -23286,6 +26293,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Pelipper'],
@@ -23299,6 +26307,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23312,6 +26321,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Fletchinder'],
@@ -23322,6 +26332,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23336,6 +26347,31 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -23387,6 +26423,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Jynx'],
@@ -23405,6 +26442,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23427,6 +26465,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23444,6 +26483,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23457,6 +26497,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23474,6 +26515,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Swablu'],
@@ -23489,6 +26531,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm or Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cryogonal'],
@@ -23505,6 +26548,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Abomasnow'],
@@ -23518,6 +26562,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23534,6 +26579,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23548,6 +26594,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23570,6 +26617,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Amaura'],
@@ -23580,6 +26628,7 @@ module.exports = {
               'hint': 'Amaura needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -23633,6 +26682,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Snorlax'],
@@ -23649,6 +26699,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Abomasnow'],
@@ -23667,6 +26718,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23688,6 +26740,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23704,6 +26757,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Sneasel'],
@@ -23714,6 +26768,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23731,6 +26786,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Cryogonal'],
@@ -23747,6 +26803,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23763,6 +26820,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vanilluxe'],
@@ -23777,6 +26835,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Absol'],
@@ -23787,6 +26846,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Eevee'],
@@ -23800,6 +26860,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23813,6 +26874,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23834,6 +26896,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Amaura'],
@@ -23867,6 +26930,7 @@ module.exports = {
               'hint': 'Amaura needs to be owned and The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -23927,6 +26991,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -23950,6 +27015,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Nidoking'],
@@ -23969,6 +27035,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Nidoqueen'],
@@ -23988,6 +27055,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24004,6 +27072,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24019,6 +27088,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Obstagoon'],
@@ -24032,6 +27102,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24048,6 +27119,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Vaporeon'],
@@ -24058,6 +27130,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24074,6 +27147,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24090,6 +27164,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Espeon'],
@@ -24100,6 +27175,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24117,6 +27193,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24136,6 +27213,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24152,6 +27230,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24169,6 +27248,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24190,6 +27270,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Aerodactyl'],
@@ -24200,6 +27281,7 @@ module.exports = {
               'hint': 'Aerodactyl needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lileep'],
@@ -24210,6 +27292,31 @@ module.exports = {
               'hint': 'Lileep needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -24264,6 +27371,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dragapult'],
@@ -24281,6 +27389,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Polteageist'],
@@ -24299,6 +27408,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain or Thunderstorm or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24312,6 +27422,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lampent'],
@@ -24325,6 +27436,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24341,6 +27453,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24355,6 +27468,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24373,6 +27487,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Absol'],
@@ -24383,6 +27498,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24398,6 +27514,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24414,6 +27531,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -24468,6 +27586,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24493,6 +27612,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24509,6 +27629,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24523,6 +27644,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24539,6 +27661,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24553,6 +27676,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24571,6 +27695,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Absol'],
@@ -24584,6 +27709,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24597,6 +27723,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24612,6 +27739,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Omanyte'],
@@ -24622,6 +27750,7 @@ module.exports = {
               'hint': 'Omanyte needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Kabuto'],
@@ -24632,6 +27761,7 @@ module.exports = {
               'hint': 'Kabuto needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Lileep'],
@@ -24642,6 +27772,7 @@ module.exports = {
               'hint': 'Lileep needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Archen'],
@@ -24652,6 +27783,31 @@ module.exports = {
               'hint': 'Archen needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -24709,6 +27865,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Hail or Sandstorm or Windy or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24730,6 +27887,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Walrein'],
@@ -24747,6 +27905,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24761,6 +27920,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24777,6 +27937,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24792,6 +27953,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24810,6 +27972,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Beartic'],
@@ -24824,6 +27987,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Absol'],
@@ -24834,6 +27998,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Eiscue (Noice Face)'],
@@ -24844,6 +28009,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Magmortar'],
@@ -24854,6 +28020,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24869,6 +28036,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tirtouga'],
@@ -24879,6 +28047,7 @@ module.exports = {
               'hint': 'Tirtouga needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Carracosta'],
@@ -24909,6 +28078,31 @@ module.exports = {
               'hint': 'Carracosta needs to be owned and The weather needs to be Clear or Rain or Thunderstorm or Harsh Sunlight.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': false,
+              'hint': 'The Pokémon seems to be avoiding the area this year.',
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -24917,7 +28111,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 180,
+          'dungeonIndex': 181,
           'hint': 'Roaring-Sea Caves needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -24963,6 +28157,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dragapult'],
@@ -24982,6 +28177,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -24998,6 +28194,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25011,6 +28208,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25027,6 +28225,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25042,6 +28241,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25059,6 +28259,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Absol'],
@@ -25069,6 +28270,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25085,6 +28287,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25099,6 +28302,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -25154,6 +28358,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Yamper'],
@@ -25172,6 +28377,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25188,6 +28394,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Coalossal'],
@@ -25206,6 +28413,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Sandstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Corvisquire'],
@@ -25219,6 +28427,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Corviknight'],
@@ -25234,6 +28443,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25250,6 +28460,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25266,6 +28477,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25281,6 +28493,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Noivern'],
@@ -25294,6 +28507,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Morpeko'],
@@ -25307,6 +28521,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25324,6 +28539,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Eldegoss'],
@@ -25337,6 +28553,7 @@ module.exports = {
               'hint': 'The weather needs to be Rain or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25352,6 +28569,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Dragonair'],
@@ -25365,6 +28583,7 @@ module.exports = {
               'hint': 'The weather needs to be Thunderstorm or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25378,6 +28597,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25395,6 +28615,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25410,6 +28631,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25425,6 +28647,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Anorith'],
@@ -25435,6 +28658,7 @@ module.exports = {
               'hint': 'Anorith needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Armaldo'],
@@ -25463,6 +28687,7 @@ module.exports = {
               'hint': 'Armaldo needs to be owned and The weather needs to be Rain or Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tyrunt'],
@@ -25473,6 +28698,7 @@ module.exports = {
               'hint': 'Tyrunt needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Tyrantrum'],
@@ -25483,6 +28709,7 @@ module.exports = {
               'hint': 'Tyrantrum needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Spiritomb'],
@@ -25493,6 +28720,31 @@ module.exports = {
               'hint': 'Spiritomb needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -25548,6 +28800,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Audino'],
@@ -25565,6 +28818,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25582,6 +28836,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25595,6 +28850,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25612,6 +28868,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast or Rain or Thunderstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Delibird'],
@@ -25622,6 +28879,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25639,6 +28897,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25659,6 +28918,7 @@ module.exports = {
               'hint': 'The weather needs to be Snow or Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Galarian Darumaka'],
@@ -25669,6 +28929,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25685,6 +28946,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25699,6 +28961,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25715,6 +28978,7 @@ module.exports = {
               'hint': 'The weather needs to be Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Amaura'],
@@ -25749,6 +29013,7 @@ module.exports = {
               'hint': 'Amaura needs to be owned and The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Harsh Sunlight or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Aurorus'],
@@ -25783,6 +29048,31 @@ module.exports = {
               'hint': 'Aurorus needs to be owned and The weather needs to be Clear or Overcast or Rain or Thunderstorm or Snow or Blizzard or Sandstorm or Fog.',
               '__class': 'MultiRequirement',
             },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Scorbunny (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
+          },
+          {
+            'pokemon': ['Raboot (Pirate)'],
+            'req': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'isAvailable': true,
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRandomRequirement',
+            },
+            'weight': 1,
           },
         ],
       },
@@ -25829,6 +29119,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Overcast or Snow or Blizzard or Harsh Sunlight or Fog',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Druddigon'],
@@ -25842,6 +29133,7 @@ module.exports = {
               'hint': 'The weather needs to be Clear or Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25855,6 +29147,7 @@ module.exports = {
               'hint': 'The weather needs to be Overcast',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Absol'],
@@ -25868,6 +29161,7 @@ module.exports = {
               'hint': 'The weather needs to be Blizzard or Sandstorm',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': [
@@ -25881,6 +29175,7 @@ module.exports = {
               'hint': 'The weather needs to be Harsh Sunlight',
               '__class': 'WeatherRequirement',
             },
+            'weight': 1,
           },
           {
             'pokemon': ['Archeops'],
@@ -25891,6 +29186,7 @@ module.exports = {
               'hint': 'Archeops needs to be owned.',
               '__class': 'ObtainedPokemonRequirement',
             },
+            'weight': 1,
           },
         ],
       },
@@ -25899,7 +29195,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 187,
+          'dungeonIndex': 188,
           'hint': 'Tunnel to the Top needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -25928,7 +29224,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 125,
-          'hint': 'Requires the Elite Galar Champion badge.',
+          'hint': 'Requires having beaten Champion Leon.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -27923,7 +31219,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 125,
-          'hint': 'Requires the Elite Galar Champion badge.',
+          'hint': 'Requires having beaten Champion Leon.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -27998,7 +31294,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 125,
-          'hint': 'Requires the Elite Galar Champion badge.',
+          'hint': 'Requires having beaten Champion Leon.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -28051,7 +31347,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 125,
-          'hint': 'Requires the Elite Galar Champion badge.',
+          'hint': 'Requires having beaten Champion Leon.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -28406,23 +31702,23 @@ module.exports = {
         '11': 37.5,
       },
       '30': {
-        '0': 20,
-        '2': 20,
-        '4': 6.67,
-        '7': 26.67,
-        '9': 26.67,
-        '10': 6.67,
-        '11': 46.67,
+        '0': 21.43,
+        '2': 21.43,
+        '4': 7.14,
+        '7': 21.43,
+        '9': 21.43,
+        '10': 7.14,
+        '11': 50,
       },
       '31': {
-        '0': 26.32,
-        '2': 15.79,
-        '4': 10.53,
-        '6': 5.26,
-        '7': 26.32,
-        '9': 26.32,
-        '10': 5.26,
-        '11': 42.11,
+        '0': 27.78,
+        '2': 16.67,
+        '4': 11.11,
+        '6': 5.56,
+        '7': 22.22,
+        '9': 22.22,
+        '10': 5.56,
+        '11': 44.44,
       },
       '32': {
         '0': 13.33,
@@ -29022,14 +32318,13 @@ module.exports = {
         '15': 12.5,
       },
       '222': {
-        '0': 16.67,
-        '2': 61.11,
-        '3': 22.22,
-        '7': 11.11,
-        '8': 5.56,
-        '9': 22.22,
-        '15': 5.56,
-        '16': 11.11,
+        '0': 17.65,
+        '2': 58.82,
+        '3': 23.53,
+        '7': 11.76,
+        '9': 23.53,
+        '15': 5.88,
+        '16': 11.76,
       },
       '223': {
         '2': 100,
@@ -29037,13 +32332,12 @@ module.exports = {
         '9': 33.33,
       },
       '224': {
-        '0': 5.88,
-        '2': 52.94,
-        '4': 29.41,
-        '7': 41.18,
-        '8': 5.88,
-        '9': 23.53,
-        '11': 11.76,
+        '2': 56.25,
+        '4': 31.25,
+        '7': 43.75,
+        '8': 6.25,
+        '9': 18.75,
+        '11': 12.5,
       },
       '225': {
         '0': 28.57,
@@ -29098,6 +32392,14 @@ module.exports = {
         '5': 6.25,
         '7': 37.5,
         '9': 18.75,
+      },
+      '231': {
+        '0': 20,
+        '3': 40,
+        '4': 20,
+        '7': 20,
+        '9': 20,
+        '11': 20,
       },
     },
     '4': {
@@ -31823,6 +35125,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Mewtwo strikes back!',
+              'hint': 'Mewtwo strikes back! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -31931,6 +35240,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -31947,6 +35263,10 @@ module.exports = {
         'femaleRatio': 0.125,
         'type': 1,
         'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Rare_Candy',
       },
       'attack': 53,
       'nativeRegion': 0,
@@ -32473,6 +35793,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Golden Week',
+              'hint': 'Golden Week must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -32724,6 +36051,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Mewtwo strikes back!',
+              'hint': 'Mewtwo strikes back! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -32744,6 +36078,34 @@ module.exports = {
       'attack': 85,
       'nativeRegion': 0,
       'locations': {
+        '2': [
+          {
+            'dungeon': 'New Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Venusaur (Clone)',
+                  'hint': 'Venusaur (Clone) needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+                {
+                  'requiredValue': 50,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 12,
+                  'hint': 'New Island needs to be completed 50 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'Venusaur (Clone) needs to be owned and New Island needs to be completed 50 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Bulbasaur (Clone)',
@@ -32784,6 +36146,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Mewtwo strikes back!',
+                'hint': 'Mewtwo strikes back! must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -32844,6 +36213,13 @@ module.exports = {
               'itemName': 'Everstone',
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRequirement',
             },
           ],
           'ignoreECChange': false,
@@ -32906,6 +36282,13 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Halloween!',
+                'hint': 'Halloween! must be started.',
+                '__class': 'SpecialEventRequirement',
+              },
             ],
             'ignoreECChange': false,
           },
@@ -32965,6 +36348,13 @@ module.exports = {
               'itemName': 'Everstone',
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Golden Week',
+              'hint': 'Golden Week must be started.',
+              '__class': 'SpecialEventRequirement',
             },
           ],
           'ignoreECChange': false,
@@ -33026,6 +36416,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Golden Week',
+                'hint': 'Golden Week must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -33260,11 +36657,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -33322,6 +36714,34 @@ module.exports = {
       'attack': 141,
       'nativeRegion': 0,
       'locations': {
+        '2': [
+          {
+            'dungeon': 'New Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Venusaur (Clone)',
+                  'hint': 'Venusaur (Clone) needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+                {
+                  'requiredValue': 50,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 12,
+                  'hint': 'New Island needs to be completed 50 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'Venusaur (Clone) needs to be owned and New Island needs to be completed 50 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Ivysaur (Clone)',
@@ -33362,6 +36782,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Mewtwo strikes back!',
+                'hint': 'Mewtwo strikes back! must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -33439,6 +36866,13 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Halloween!',
+                'hint': 'Halloween! must be started.',
+                '__class': 'SpecialEventRequirement',
+              },
             ],
             'ignoreECChange': false,
           },
@@ -33514,6 +36948,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Golden Week',
+                'hint': 'Golden Week must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -33661,6 +37102,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Mewtwo strikes back!',
+              'hint': 'Mewtwo strikes back! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -33772,6 +37220,27 @@ module.exports = {
         {
           'basePokemon': 'Charmeleon',
           'evolvedPokemon': 'Gigantamax Charizard',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Charmeleon',
+              'hint': 'Charmeleon needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
+        {
+          'basePokemon': 'Charmeleon',
+          'evolvedPokemon': 'Captain Charizard',
           'trigger': 0,
           'restrictions': [
             {
@@ -33910,6 +37379,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Mewtwo strikes back!',
+              'hint': 'Mewtwo strikes back! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -33930,6 +37406,34 @@ module.exports = {
       'attack': 81,
       'nativeRegion': 0,
       'locations': {
+        '2': [
+          {
+            'dungeon': 'New Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Charizard (Clone)',
+                  'hint': 'Charizard (Clone) needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+                {
+                  'requiredValue': 50,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 12,
+                  'hint': 'New Island needs to be completed 50 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'Charizard (Clone) needs to be owned and New Island needs to be completed 50 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Charmander (Clone)',
@@ -33970,6 +37474,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Mewtwo strikes back!',
+                'hint': 'Mewtwo strikes back! must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -34353,11 +37864,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -34415,6 +37921,34 @@ module.exports = {
       'attack': 142,
       'nativeRegion': 0,
       'locations': {
+        '2': [
+          {
+            'dungeon': 'New Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Charizard (Clone)',
+                  'hint': 'Charizard (Clone) needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+                {
+                  'requiredValue': 50,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 12,
+                  'hint': 'New Island needs to be completed 50 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'Charizard (Clone) needs to be owned and New Island needs to be completed 50 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Charmeleon (Clone)',
@@ -34456,8 +37990,67 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Mewtwo strikes back!',
+                'hint': 'Mewtwo strikes back! must be started.',
+                '__class': 'SpecialEventRequirement',
+              },
             ],
             'ignoreECChange': false,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 6.05,
+      'name': 'Captain Charizard',
+      'catchRate': 45,
+      'type': [
+        1,
+        15,
+      ],
+      'levelType': 3,
+      'exp': 240,
+      'eggCycles': 45,
+      'base': {
+        'hitpoints': 78,
+        'attack': 84,
+        'specialAttack': 109,
+        'defense': 78,
+        'specialDefense': 85,
+        'speed': 100,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 10,
+      },
+      'attack': 142,
+      'nativeRegion': 0,
+      'locations': {
+        '1': [
+          {
+            'region': 0,
+            'requirements': {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': "A Pirate's Life",
+              'hint': "A Pirate's Life must be started.",
+              '__class': 'SpecialEventRequirement',
+            },
+            'roamingGroup': {
+              'name': 'Kanto',
+              'subRegions': [0],
+            },
           },
         ],
       },
@@ -34650,6 +38243,13 @@ module.exports = {
               'itemName': 'Everstone',
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Mewtwo strikes back!',
+              'hint': 'Mewtwo strikes back! must be started.',
+              '__class': 'SpecialEventRequirement',
             },
           ],
           'ignoreECChange': false,
@@ -34998,6 +38598,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Mewtwo strikes back!',
+              'hint': 'Mewtwo strikes back! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -35018,6 +38625,34 @@ module.exports = {
       'attack': 83,
       'nativeRegion': 0,
       'locations': {
+        '2': [
+          {
+            'dungeon': 'New Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Blastoise (Clone)',
+                  'hint': 'Blastoise (Clone) needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+                {
+                  'requiredValue': 50,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 12,
+                  'hint': 'New Island needs to be completed 50 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'Blastoise (Clone) needs to be owned and New Island needs to be completed 50 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Squirtle (Clone)',
@@ -35058,6 +38693,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Mewtwo strikes back!',
+                'hint': 'Mewtwo strikes back! must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -35283,11 +38925,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -35342,6 +38979,34 @@ module.exports = {
       'attack': 139,
       'nativeRegion': 0,
       'locations': {
+        '2': [
+          {
+            'dungeon': 'New Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 1,
+                  'option': 2,
+                  'pokemon': 'Blastoise (Clone)',
+                  'hint': 'Blastoise (Clone) needs to be owned.',
+                  '__class': 'ObtainedPokemonRequirement',
+                },
+                {
+                  'requiredValue': 50,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 12,
+                  'hint': 'New Island needs to be completed 50 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'Blastoise (Clone) needs to be owned and New Island needs to be completed 50 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
         '5': [
           {
             'basePokemon': 'Wartortle (Clone)',
@@ -35382,6 +39047,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Mewtwo strikes back!',
+                'hint': 'Mewtwo strikes back! must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -35518,7 +39190,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
           },
         },
       },
@@ -35811,7 +39485,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
           },
         },
       },
@@ -35935,7 +39611,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
           },
         },
         '20': ['Cipher Key Lair'],
@@ -35981,11 +39659,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -36088,7 +39761,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 44,
-              'hint': 'Requires the Elite Orange Champion badge.',
+              'hint': 'Requires having beaten Supreme Gym Leader Drake.',
               '__class': 'GymBadgeRequirement',
             },
             'roamingGroup': {
@@ -36138,7 +39811,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 44,
-              'hint': 'Requires the Elite Orange Champion badge.',
+              'hint': 'Requires having beaten Supreme Gym Leader Drake.',
               '__class': 'GymBadgeRequirement',
             },
             'roamingGroup': {
@@ -36268,7 +39941,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
           },
         },
       },
@@ -36467,7 +40142,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
           },
         },
       },
@@ -36612,7 +40289,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
           },
         },
         '20': ['Cipher Key Lair'],
@@ -36909,12 +40588,8 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': "Team Rocket's Pinkan Theme Park",
-              'cachedQuest': {
-                'state': 0,
-                'name': "Team Rocket's Pinkan Theme Park",
-                'quest': 0,
-              },
               'hint': "Questline Team Rocket's Pinkan Theme Park needs to be completed.",
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -37103,7 +40778,9 @@ module.exports = {
         ],
         '10': {
           '6': {
-            '0': 22.78,
+            'chances': {
+              '0': 90,
+            },
           },
         },
         '20': ['Cipher Key Lair'],
@@ -37196,12 +40873,8 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 1,
+                'achievementType': 11,
                 'questLineName': "Team Rocket's Pinkan Theme Park",
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Team Rocket's Pinkan Theme Park",
-                  'quest': 0,
-                },
                 'hint': "Questline Team Rocket's Pinkan Theme Park needs to be completed.",
                 '__class': 'QuestLineCompletedRequirement',
               },
@@ -38054,12 +41727,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Welcome to Paradise, Cousin!',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Welcome to Paradise, Cousin!',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Welcome to Paradise, Cousin! needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -38845,6 +42514,11 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+            },
+          ],
           '5': [
             {
               'route': 3,
@@ -39192,7 +42866,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 125,
-              'hint': 'Requires the Elite Galar Champion badge.',
+              'hint': 'Requires having beaten Champion Leon.',
               '__class': 'GymBadgeRequirement',
             },
           },
@@ -39408,6 +43082,10 @@ module.exports = {
         'femaleRatio': 0,
         'type': 1,
         'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Rare_Candy',
       },
       'attack': 43,
       'nativeRegion': 0,
@@ -39956,12 +43634,8 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'Detective Pikachu',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Detective Pikachu',
-                'quest': 0,
-              },
               'hint': 'Questline Detective Pikachu needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -40252,12 +43926,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -40292,12 +43962,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -40332,12 +43998,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -40372,12 +44034,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -40412,12 +44070,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -40452,12 +44106,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -40731,12 +44381,8 @@ module.exports = {
               {
                 'requiredValue': 1,
                 'option': 1,
+                'achievementType': 11,
                 'questLineName': 'Detective Pikachu',
-                'cachedQuest': {
-                  'state': 0,
-                  'name': 'Detective Pikachu',
-                  'quest': 0,
-                },
                 'hint': 'Questline Detective Pikachu needs to be completed.',
                 '__class': 'QuestLineCompletedRequirement',
               },
@@ -41285,7 +44931,9 @@ module.exports = {
         },
         '10': {
           '0': {
-            '0': 10.91,
+            'chances': {
+              '0': 9.04,
+            },
           },
         },
       },
@@ -41452,7 +45100,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 7.27,
+            'chances': {
+              '0': 6.02,
+            },
           },
         },
       },
@@ -41677,7 +45327,9 @@ module.exports = {
         },
         '10': {
           '0': {
-            '0': 18.18,
+            'chances': {
+              '0': 15.06,
+            },
           },
         },
       },
@@ -41860,7 +45512,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 7.27,
+            'chances': {
+              '0': 6.02,
+            },
           },
         },
       },
@@ -42050,6 +45704,35 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 0,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Clefairy',
+                    'hint': 'Clefairy needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Clefairy needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 16,
@@ -42728,6 +46411,35 @@ module.exports = {
               'route': 115,
             },
           ],
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 1,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Jigglypuff',
+                    'hint': 'Jigglypuff needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Jigglypuff needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '4': [
             {
               'route': 2,
@@ -42996,12 +46708,6 @@ module.exports = {
       'locations': {
         '0': {
           '1': [
-            {
-              'route': 30,
-            },
-            {
-              'route': 31,
-            },
             {
               'route': 32,
             },
@@ -44197,13 +47903,19 @@ module.exports = {
         '6': ['Grass_egg'],
         '10': {
           '0': {
-            '0': 3.64,
+            'chances': {
+              '0': 3.01,
+            },
           },
           '1': {
-            '0': 4.84,
+            'chances': {
+              '0': 2.78,
+            },
           },
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '20': ['Cipher Key Lair'],
@@ -44338,11 +48050,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Recover the Precious Egg!',
                   'questIndex': 8,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Recover the Precious Egg!',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Recover the Precious Egg! has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -44351,11 +48058,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'Recover the Precious Egg!',
                   'questIndex': 7,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Recover the Precious Egg!',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline Recover the Precious Egg!.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -44415,7 +48117,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 10.91,
+            'chances': {
+              '0': 9.04,
+            },
           },
         },
       },
@@ -44525,7 +48229,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 4.84,
+            'chances': {
+              '0': 2.78,
+            },
           },
         },
       },
@@ -45280,6 +48986,35 @@ module.exports = {
               'route': 39,
             },
           ],
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 2,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Meowth',
+                    'hint': 'Meowth needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Meowth needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
         },
         '20': ['Phenac City Battles'],
       },
@@ -45329,11 +49064,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -45949,7 +49679,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 14.55,
+            'chances': {
+              '1': 18.35,
+            },
           },
         },
       },
@@ -47131,7 +50863,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 10.91,
+            'chances': {
+              '1': 13.76,
+            },
           },
         },
       },
@@ -48450,11 +52184,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -51002,7 +54731,9 @@ module.exports = {
         '6': ['Water_egg'],
         '10': {
           '0': {
-            '0': 14.55,
+            'chances': {
+              '1': 18.35,
+            },
           },
         },
       },
@@ -54020,11 +57751,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -55020,11 +58746,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -55597,11 +59318,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 2,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -55609,10 +59325,14 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 14.55,
+            'chances': {
+              '0': 12.05,
+            },
           },
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
       },
@@ -55853,11 +59573,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -55884,11 +59599,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -55915,11 +59625,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -55946,11 +59651,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -55977,11 +59677,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -56008,11 +59703,6 @@ module.exports = {
                   'option': 0,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light has progressed past this point.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -56311,7 +60001,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 7.27,
+            'chances': {
+              '0': 6.02,
+            },
           },
         },
       },
@@ -56445,7 +60137,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 3.64,
+            'chances': {
+              '0': 3.01,
+            },
           },
         },
         '20': ['Citadark Isle Dome'],
@@ -56603,12 +60297,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Symbiotic Relations',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Symbiotic Relations',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Symbiotic Relations needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -57483,7 +61173,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 7.27,
+            'chances': {
+              '0': 6.02,
+            },
           },
         },
         '12': ['Charti'],
@@ -57929,6 +61621,33 @@ module.exports = {
             {
               'route': 210,
             },
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 3,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Chansey',
+                    'hint': 'Chansey needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Chansey needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
           ],
           '7': [
             {
@@ -58171,7 +61890,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 2.91,
+            'chances': {
+              '0': 2.41,
+            },
           },
         },
         '20': ['Citadark Isle'],
@@ -58355,10 +62076,14 @@ module.exports = {
         '6': ['Grass_egg'],
         '10': {
           '0': {
-            '0': 2.91,
+            'chances': {
+              '0': 2.41,
+            },
           },
           '3': {
-            '0': 14.04,
+            'chances': {
+              '0': 9.76,
+            },
           },
         },
         '12': ['Always'],
@@ -58491,11 +62216,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'A Beautiful World',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Beautiful World',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline A Beautiful World.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -58506,10 +62226,14 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 10.91,
+            'chances': {
+              '0': 9.04,
+            },
           },
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '20': ['Citadark Isle'],
@@ -58633,6 +62357,37 @@ module.exports = {
       'attack': 44,
       'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 4,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Baby Kangaskhan',
+                    'hint': 'Baby Kangaskhan needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Baby Kangaskhan needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
+        },
         '7': [
           'Kangaskhan',
           'Mega Kangaskhan',
@@ -59226,7 +62981,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 10.91,
+            'chances': {
+              '1': 13.76,
+            },
           },
         },
       },
@@ -59464,7 +63221,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 3.64,
+            'chances': {
+              '1': 4.59,
+            },
           },
         },
       },
@@ -59714,6 +63473,33 @@ module.exports = {
       'locations': {
         '0': {
           '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 5,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Mr. Mime',
+                    'hint': 'Mr. Mime needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Mr Mime needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
             {
               'route': 218,
             },
@@ -60052,10 +63838,14 @@ module.exports = {
         },
         '10': {
           '0': {
-            '0': 2.91,
+            'chances': {
+              '0': 2.41,
+            },
           },
           '1': {
-            '0': 4.84,
+            'chances': {
+              '0': 2.78,
+            },
           },
         },
         '12': ['Always'],
@@ -60125,6 +63915,35 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 6,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Jynx',
+                    'hint': 'Jynx needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Jynx needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 46,
@@ -61958,11 +65777,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 2,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -61970,10 +65784,14 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 2.91,
+            'chances': {
+              '0': 2.41,
+            },
           },
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
           },
         },
         '12': ['Tanga'],
@@ -62112,7 +65930,9 @@ module.exports = {
         ],
         '10': {
           '0': {
-            '0': 7.27,
+            'chances': {
+              '0': 6.02,
+            },
           },
         },
         '20': ['Citadark Isle Dome'],
@@ -62810,13 +66630,19 @@ module.exports = {
         '8': ['Route 4 Pokémon Center'],
         '10': {
           '0': {
-            '0': 14.55,
+            'chances': {
+              '1': 18.35,
+            },
           },
           '3': {
-            '0': 14.04,
+            'chances': {
+              '1': 25,
+            },
           },
           '6': {
-            '0': 5.91,
+            'chances': {
+              '1': 3.33,
+            },
           },
         },
       },
@@ -62849,7 +66675,16 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 103,
+              'hint': 'Requires the Quick League badge.',
+              '__class': 'GymBadgeRequirement',
+            },
           },
         },
       },
@@ -62888,12 +66723,15 @@ module.exports = {
           '6': [
             {
               'route': 33,
+              'requirements': null,
             },
             {
               'route': 35,
+              'requirements': null,
             },
             {
               'route': 38,
+              'requirements': null,
             },
           ],
         },
@@ -62933,12 +66771,15 @@ module.exports = {
           '6': [
             {
               'route': 35,
+              'requirements': null,
             },
             {
               'route': 36,
+              'requirements': null,
             },
             {
               'route': 38,
+              'requirements': null,
             },
           ],
         },
@@ -62972,7 +66813,17 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'achievementType': -1,
+              'battleName': 'Magikarp Jump Karpen',
+              'hint': 'Requires beating Karpen in Heavy League.',
+              '__class': 'TemporaryBattleRequirement',
+            },
           },
         },
       },
@@ -63011,6 +66862,7 @@ module.exports = {
           '6': [
             {
               'route': 40,
+              'requirements': null,
             },
           ],
         },
@@ -63050,12 +66902,15 @@ module.exports = {
           '6': [
             {
               'route': 34,
+              'requirements': null,
             },
             {
               'route': 35,
+              'requirements': null,
             },
             {
               'route': 38,
+              'requirements': null,
             },
           ],
         },
@@ -63095,6 +66950,7 @@ module.exports = {
           '6': [
             {
               'route': 33,
+              'requirements': null,
             },
           ],
         },
@@ -63134,12 +66990,15 @@ module.exports = {
           '6': [
             {
               'route': 34,
+              'requirements': null,
             },
             {
               'route': 36,
+              'requirements': null,
             },
             {
               'route': 37,
+              'requirements': null,
             },
           ],
         },
@@ -63179,6 +67038,7 @@ module.exports = {
           '6': [
             {
               'route': 36,
+              'requirements': null,
             },
           ],
         },
@@ -63218,6 +67078,7 @@ module.exports = {
           '6': [
             {
               'route': 39,
+              'requirements': null,
             },
           ],
         },
@@ -63251,7 +67112,16 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 106,
+              'hint': 'Requires the Fast League badge.',
+              '__class': 'GymBadgeRequirement',
+            },
           },
         },
       },
@@ -63290,9 +67160,11 @@ module.exports = {
           '6': [
             {
               'route': 37,
+              'requirements': null,
             },
             {
               'route': 40,
+              'requirements': null,
             },
           ],
         },
@@ -63326,7 +67198,17 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'achievementType': -1,
+              'battleName': 'Magikarp Jump Karpress 3',
+              'hint': 'Requires beating Karpress in Elite Four League.',
+              '__class': 'TemporaryBattleRequirement',
+            },
           },
         },
       },
@@ -63365,9 +67247,11 @@ module.exports = {
           '6': [
             {
               'route': 37,
+              'requirements': null,
             },
             {
               'route': 39,
+              'requirements': null,
             },
           ],
         },
@@ -63401,7 +67285,16 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 108,
+              'hint': 'Requires the Heal League badge.',
+              '__class': 'GymBadgeRequirement',
+            },
           },
         },
       },
@@ -63478,7 +67371,17 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'achievementType': -1,
+              'battleName': 'Magikarp Jump Karpella 3',
+              'hint': 'Requires beating Karpella in Elite Four League.',
+              '__class': 'TemporaryBattleRequirement',
+            },
           },
         },
       },
@@ -63517,6 +67420,7 @@ module.exports = {
           '6': [
             {
               'route': 38,
+              'requirements': null,
             },
           ],
         },
@@ -63556,6 +67460,7 @@ module.exports = {
           '6': [
             {
               'route': 38,
+              'requirements': null,
             },
           ],
         },
@@ -63633,7 +67538,16 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 109,
+              'hint': 'Requires the Ultra League badge.',
+              '__class': 'GymBadgeRequirement',
+            },
           },
         },
       },
@@ -63672,6 +67586,7 @@ module.exports = {
           '6': [
             {
               'route': 38,
+              'requirements': null,
             },
           ],
         },
@@ -63734,7 +67649,16 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'badge': 110,
+              'hint': 'Requires the E4 League badge.',
+              '__class': 'GymBadgeRequirement',
+            },
           },
         },
       },
@@ -63773,6 +67697,7 @@ module.exports = {
           '6': [
             {
               'route': 40,
+              'requirements': null,
             },
           ],
         },
@@ -63812,6 +67737,7 @@ module.exports = {
           '6': [
             {
               'route': 39,
+              'requirements': null,
             },
           ],
         },
@@ -63845,7 +67771,17 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'achievementType': -1,
+              'battleName': 'Magikarp Jump Tykarp 2',
+              'hint': 'Requires beating Tykarp in Master League.',
+              '__class': 'TemporaryBattleRequirement',
+            },
           },
         },
       },
@@ -63907,7 +67843,17 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 16.88,
+            'chances': {
+              '1': 9.52,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 1,
+              'achievementType': 11,
+              'questLineName': "Dr. Splash's Research Project",
+              'hint': "Questline Dr. Splash's Research Project needs to be completed.",
+              '__class': 'QuestLineCompletedRequirement',
+            },
           },
         },
         '14': ["Dr. Splash's Research Project"],
@@ -64013,6 +67959,378 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '8': ['Fish Shop'],
+      },
+      'catchRatePercent': 63,
+      'eggSteps': 200,
+    },
+    {
+      'id': 129.33,
+      'name': 'Magikarp (Pirate)',
+      'catchRate': 255,
+      'type': [2],
+      'levelType': 4,
+      'exp': 40,
+      'eggCycles': 5,
+      'evolutions': [
+        {
+          'basePokemon': 'Magikarp (Pirate)',
+          'evolvedPokemon': 'Gyarados (Captain)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Magikarp (Pirate)',
+              'hint': 'Magikarp (Pirate) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 0,
+              'option': 2,
+              'hint': 'You need to reach the Kanto region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 20,
+              'option': 2,
+              'pokemon': 'Magikarp (Pirate)',
+              'hint': 'Your Magikarp (Pirate) needs to be at least level 20.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Gyarados (Captain)',
+              'hint': 'Gyarados (Captain) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Magikarp (Pirate)',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
+      ],
+      'base': {
+        'hitpoints': 20,
+        'attack': 10,
+        'specialAttack': 15,
+        'defense': 55,
+        'specialDefense': 20,
+        'speed': 80,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+      },
+      'attack': 10,
+      'nativeRegion': 0,
+      'locations': {
+        '0': {
+          '0': [
+            {
+              'route': 22,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 4,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 24,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 25,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 6,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 11,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 10,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 12,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 13,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 19,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 20,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 21,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 26,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 27,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 28,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 29,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 23,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 30,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 31,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 32,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 33,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 34,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 35,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 36,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 37,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 40,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+          ],
+        },
+        '2': [
+          {
+            'dungeon': 'Pirate Island',
+          },
+        ],
       },
       'catchRatePercent': 63,
       'eggSteps': 200,
@@ -64357,7 +68675,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '1': 12.5,
+            },
           },
         },
         '15': ['Red Gyarados'],
@@ -64430,6 +68750,91 @@ module.exports = {
             ],
             'ignoreECChange': true,
             'stone': 29,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 320,
+    },
+    {
+      'id': 130.02,
+      'name': 'Gyarados (Captain)',
+      'catchRate': 45,
+      'type': [
+        2,
+        13,
+      ],
+      'levelType': 4,
+      'exp': 189,
+      'eggCycles': 8,
+      'base': {
+        'hitpoints': 95,
+        'attack': 125,
+        'specialAttack': 60,
+        'defense': 79,
+        'specialDefense': 100,
+        'speed': 81,
+      },
+      'gender': {
+        'visualDifference': true,
+        'type': 1,
+        'femaleRatio': 0.5,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+      },
+      'attack': 148,
+      'nativeRegion': 0,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pirate Island',
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Magikarp (Pirate)',
+            'evolvedPokemon': 'Gyarados (Captain)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Magikarp (Pirate)',
+                'hint': 'Magikarp (Pirate) needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 0,
+                'option': 2,
+                'hint': 'You need to reach the Kanto region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 20,
+                'option': 2,
+                'pokemon': 'Magikarp (Pirate)',
+                'hint': 'Your Magikarp (Pirate) needs to be at least level 20.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Gyarados (Captain)',
+                'hint': 'Gyarados (Captain) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Magikarp (Pirate)',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+            ],
+            'ignoreECChange': false,
           },
         ],
       },
@@ -64658,11 +69063,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -64740,6 +69140,35 @@ module.exports = {
               'route': 47,
             },
           ],
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 7,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Ditto',
+                    'hint': 'Ditto needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Ditto needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '6': [
             {
               'route': 22,
@@ -64805,7 +69234,55 @@ module.exports = {
       'locations': {
         '10': {
           '6': {
-            '0': 2.53,
+            'chances': {
+              '0': 10,
+              '1': 1.43,
+            },
+            'requirement': {
+              'requiredValue': 6,
+              'option': 2,
+              'achievementType': 2,
+              'hintText': 'Catch more Magikarp species.',
+              'shiny': false,
+              'list': [
+                'Magikarp',
+                'Magikarp Skelly',
+                'Magikarp Calico (Orange, White)',
+                'Magikarp Calico (Orange, White, Black)',
+                'Magikarp Calico (White, Orange)',
+                'Magikarp Calico (Orange, Gold)',
+                'Magikarp Orange Two-Tone',
+                'Magikarp Orange Orca',
+                'Magikarp Orange Dapples',
+                'Magikarp Pink Two-Tone',
+                'Magikarp Pink Orca',
+                'Magikarp Pink Dapples',
+                'Magikarp Grey Bubbles',
+                'Magikarp Grey Diamonds',
+                'Magikarp Grey Patches',
+                'Magikarp Purple Bubbles',
+                'Magikarp Purple Diamonds',
+                'Magikarp Purple Patches',
+                'Magikarp Apricot Tiger',
+                'Magikarp Apricot Zebra',
+                'Magikarp Apricot Stripes',
+                'Magikarp Brown Tiger',
+                'Magikarp Brown Zebra',
+                'Magikarp Brown Stripes',
+                'Magikarp Orange Forehead',
+                'Magikarp Orange Mask',
+                'Magikarp Black Forehead',
+                'Magikarp Black Mask',
+                'Magikarp Blue Raindrops',
+                'Magikarp Saucy Blue',
+                'Magikarp Violet Raindrops',
+                'Magikarp Saucy Violet',
+                'Magikarp (Feebas)',
+                'Magikarp (Pirate)',
+              ],
+              'hint': 'Catch more Magikarp species.',
+              '__class': 'CaughtUniquePokemonByFilterRequirement',
+            },
           },
         },
       },
@@ -65226,6 +69703,35 @@ module.exports = {
       'nativeRegion': 0,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 8,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Eevee',
+                    'hint': 'Eevee needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Eevee needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '5': [
             {
               'route': 10,
@@ -65332,11 +69838,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -65715,6 +70216,37 @@ module.exports = {
       'attack': 89,
       'nativeRegion': 0,
       'locations': {
+        '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 9,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Porygon',
+                    'hint': 'Porygon needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Porygon needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
+        },
         '8': ['Celadon City'],
       },
       'catchRatePercent': 17,
@@ -66434,11 +70966,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -66715,6 +71242,13 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Merry Christmas!',
+                'hint': 'Merry Christmas! must be started.',
+                '__class': 'SpecialEventRequirement',
+              },
             ],
             'ignoreECChange': true,
             'stone': 7,
@@ -66872,11 +71406,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Birds of the Dyna Tree',
               'questIndex': 5,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Birds of the Dyna Tree',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Birds of the Dyna Tree.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -66995,11 +71524,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Birds of the Dyna Tree',
               'questIndex': 5,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Birds of the Dyna Tree',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Birds of the Dyna Tree.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -67118,11 +71642,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Birds of the Dyna Tree',
               'questIndex': 5,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Birds of the Dyna Tree',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Birds of the Dyna Tree.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -67242,7 +71761,16 @@ module.exports = {
         '6': ['Dragon_egg'],
         '10': {
           '0': {
-            '0': 7.27,
+            'chances': {
+              '1': 9.17,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Dratini',
+              'hint': 'Dratini needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Haban'],
@@ -67418,7 +71946,16 @@ module.exports = {
         '6': ['Dragon_egg'],
         '10': {
           '0': {
-            '0': 2.91,
+            'chances': {
+              '1': 3.67,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Dragonair',
+              'hint': 'Dragonair needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -69171,7 +73708,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 10.53,
+            'chances': {
+              '0': 7.32,
+            },
           },
         },
       },
@@ -69342,7 +73881,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '20': ['Pyrite Town Battles'],
@@ -69482,7 +74023,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 4.84,
+            'chances': {
+              '0': 2.78,
+            },
           },
         },
         '12': [
@@ -69738,7 +74281,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 4.84,
+            'chances': {
+              '0': 2.78,
+            },
           },
         },
         '12': ['Kebia'],
@@ -70359,6 +74904,11 @@ module.exports = {
       },
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+            },
+          ],
           '6': [
             {
               'route': 1,
@@ -70423,11 +74973,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Unfinished Business',
               'questIndex': 7,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Unfinished Business',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Unfinished Business.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -70499,6 +75044,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 10,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Cleffa',
+                    'hint': 'Cleffa needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Cleffa needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '6': [
             {
               'route': 22,
@@ -70579,6 +75153,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 11,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Igglybuff',
+                    'hint': 'Igglybuff needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Igglybuff needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '6': [
             {
               'route': 4,
@@ -70655,6 +75258,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 12,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Togepi',
+                    'hint': 'Togepi needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Togepi needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 17,
@@ -70718,6 +75350,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
           'stone': 7,
@@ -70736,6 +75375,10 @@ module.exports = {
         'femaleRatio': 0.125,
         'type': 1,
         'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Rare_Candy',
       },
       'attack': 25,
       'nativeRegion': 1,
@@ -71059,12 +75702,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -71099,12 +75738,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -71139,12 +75774,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -71179,12 +75810,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -71219,12 +75846,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -71259,12 +75882,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -71426,6 +76045,13 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Halloween!',
+              'hint': 'Halloween! must be started.',
+              '__class': 'SpecialEventRequirement',
+            },
           ],
           'ignoreECChange': false,
           'stone': 16,
@@ -71473,6 +76099,13 @@ module.exports = {
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Halloween!',
+                'hint': 'Halloween! must be started.',
+                '__class': 'SpecialEventRequirement',
               },
             ],
             'ignoreECChange': false,
@@ -72408,6 +77041,33 @@ module.exports = {
             },
             {
               'route': 212,
+            },
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 13,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Marill',
+                    'hint': 'Marill needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Marill needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
             },
           ],
           '4': [
@@ -73461,11 +78121,11 @@ module.exports = {
                     'requiredValue': 1,
                     'option': 2,
                     'badge': 26,
-                    'hint': 'Requires the Elite Johto Champion badge.',
+                    'hint': 'Requires having beaten Champion Lance.',
                     '__class': 'GymBadgeRequirement',
                   },
                 ],
-                'hint': 'Sunkern needs to be owned and Requires the Elite Johto Champion badge.',
+                'hint': 'Sunkern needs to be owned and Requires having beaten Champion Lance.',
                 '__class': 'MultiRequirement',
               },
             },
@@ -73647,10 +78307,14 @@ module.exports = {
         '6': ['Mystery_egg'],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '1': 6.25,
+            },
           },
           '3': {
-            '0': 17.54,
+            'chances': {
+              '0': 12.2,
+            },
           },
         },
         '20': ['Pyrite Building'],
@@ -73803,7 +78467,9 @@ module.exports = {
         '6': ['Water_egg'],
         '10': {
           '3': {
-            '0': 14.04,
+            'chances': {
+              '1': 25,
+            },
           },
         },
       },
@@ -74060,7 +78726,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 3.51,
+            'chances': {
+              '1': 6.25,
+            },
           },
         },
         '20': ['Pyrite Town Battles'],
@@ -76897,7 +81565,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 4.84,
+            'chances': {
+              '0': 2.78,
+            },
           },
         },
         '12': ['Always'],
@@ -78094,7 +82764,9 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
           },
         },
         '12': ['Tanga'],
@@ -78990,11 +83662,11 @@ module.exports = {
                     'requiredValue': 1,
                     'option': 2,
                     'badge': 26,
-                    'hint': 'Requires the Elite Johto Champion badge.',
+                    'hint': 'Requires having beaten Champion Lance.',
                     '__class': 'GymBadgeRequirement',
                   },
                 ],
-                'hint': 'Slugma needs to be owned and Requires the Elite Johto Champion badge.',
+                'hint': 'Slugma needs to be owned and Requires having beaten Champion Lance.',
                 '__class': 'MultiRequirement',
               },
             },
@@ -79015,11 +83687,11 @@ module.exports = {
                     'requiredValue': 1,
                     'option': 2,
                     'badge': 26,
-                    'hint': 'Requires the Elite Johto Champion badge.',
+                    'hint': 'Requires having beaten Champion Lance.',
                     '__class': 'GymBadgeRequirement',
                   },
                 ],
-                'hint': 'Slugma needs to be owned and Requires the Elite Johto Champion badge.',
+                'hint': 'Slugma needs to be owned and Requires having beaten Champion Lance.',
                 '__class': 'MultiRequirement',
               },
             },
@@ -79040,11 +83712,11 @@ module.exports = {
                     'requiredValue': 1,
                     'option': 2,
                     'badge': 26,
-                    'hint': 'Requires the Elite Johto Champion badge.',
+                    'hint': 'Requires having beaten Champion Lance.',
                     '__class': 'GymBadgeRequirement',
                   },
                 ],
-                'hint': 'Slugma needs to be owned and Requires the Elite Johto Champion badge.',
+                'hint': 'Slugma needs to be owned and Requires having beaten Champion Lance.',
                 '__class': 'MultiRequirement',
               },
             },
@@ -80394,11 +85066,11 @@ module.exports = {
                     'requiredValue': 1,
                     'option': 2,
                     'badge': 26,
-                    'hint': 'Requires the Elite Johto Champion badge.',
+                    'hint': 'Requires having beaten Champion Lance.',
                     '__class': 'GymBadgeRequirement',
                   },
                 ],
-                'hint': 'Houndour needs to be owned and Requires the Elite Johto Champion badge.',
+                'hint': 'Houndour needs to be owned and Requires having beaten Champion Lance.',
                 '__class': 'MultiRequirement',
               },
             },
@@ -81336,6 +86008,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 14,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Tyrogue',
+                    'hint': 'Tyrogue needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Tyrogue needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 3,
@@ -81573,6 +86274,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 15,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Smoochum',
+                    'hint': 'Smoochum needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Smoochum needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 46,
@@ -81702,6 +86432,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 16,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Elekid',
+                    'hint': 'Elekid needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Elekid needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '6': [
             {
               'route': 22,
@@ -81859,6 +86618,35 @@ module.exports = {
       'nativeRegion': 1,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 17,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Magby',
+                    'hint': 'Magby needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Magby needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 46,
@@ -82305,12 +87093,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': "Celio's Errand",
-              'cachedQuest': {
-                'state': 0,
-                'name': "Celio's Errand",
-                'quest': 0,
-              },
               'hint': "Questline Celio's Errand needs to be completed.",
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -82329,11 +87113,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Legendary Beasts',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Legendary Beasts',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Legendary Beasts.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -82378,12 +87157,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': "Celio's Errand",
-              'cachedQuest': {
-                'state': 0,
-                'name': "Celio's Errand",
-                'quest': 0,
-              },
               'hint': "Questline Celio's Errand needs to be completed.",
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -82402,11 +87177,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Legendary Beasts',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Legendary Beasts',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Legendary Beasts.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -82455,12 +87225,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': "Celio's Errand",
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': "Celio's Errand",
-                    'quest': 0,
-                  },
                   'hint': "Questline Celio's Errand needs to be completed.",
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -82983,11 +87749,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Whirl Guardian',
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Whirl Guardian',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Whirl Guardian.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -83065,12 +87826,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'Shadows in the Desert',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Shadows in the Desert',
-                'quest': 0,
-              },
               'hint': 'Questline Shadows in the Desert needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -83088,11 +87845,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Rainbow Guardian',
               'questIndex': 1,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Rainbow Guardian',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Rainbow Guardian.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -83141,11 +87893,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Unfinished Business',
               'questIndex': 12,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Unfinished Business',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Unfinished Business.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -83194,11 +87941,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Secrets of the Jungle',
               'questIndex': 13,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Secrets of the Jungle',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Secrets of the Jungle.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -83250,7 +87992,7 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 26,
-                  'hint': 'Requires the Elite Johto Champion badge.',
+                  'hint': 'Requires having beaten Champion Lance.',
                   '__class': 'GymBadgeRequirement',
                 },
                 {
@@ -83261,7 +88003,7 @@ module.exports = {
                   '__class': 'SpecialEventRequirement',
                 },
               ],
-              'hint': 'Requires the Elite Johto Champion badge and Merry Christmas! must be started.',
+              'hint': 'Requires having beaten Champion Lance and Merry Christmas! must be started.',
               '__class': 'MultiRequirement',
             },
           },
@@ -83800,12 +88542,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -83840,12 +88578,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -83880,12 +88614,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -83920,12 +88650,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -83960,12 +88686,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -84000,12 +88722,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Egg Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Egg Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Egg Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -85575,7 +90293,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Wurmple',
+              'hint': 'Wurmple needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -85713,7 +90440,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Silcoon',
+              'hint': 'Silcoon needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -85812,7 +90548,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Beautifly',
+              'hint': 'Beautifly needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -85950,7 +90695,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Cascoon',
+              'hint': 'Cascoon needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -86049,7 +90803,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Dustox',
+              'hint': 'Dustox needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -87721,11 +92484,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 2,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -88508,7 +93266,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '1': 31.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Surskit',
+              'hint': 'Surskit needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -88606,7 +93373,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '1': 6.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Masquerain',
+              'hint': 'Masquerain needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -88689,7 +93465,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '20': ['Cipher Lab'],
@@ -89249,7 +94027,16 @@ module.exports = {
         },
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Nincada',
+              'hint': 'Nincada needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Tanga'],
@@ -89977,6 +94764,35 @@ module.exports = {
       'nativeRegion': 2,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 18,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Azurill',
+                    'hint': 'Azurill needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Azurill needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '4': [
             {
               'route': 20,
@@ -90530,11 +95346,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'A Beautiful World',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Beautiful World',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline A Beautiful World.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -91845,6 +96656,35 @@ module.exports = {
               'route': 110,
             },
           ],
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 19,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Plusle',
+                    'hint': 'Plusle needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Plusle needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '5': [
             {
               'route': 5,
@@ -91893,6 +96733,35 @@ module.exports = {
           '2': [
             {
               'route': 110,
+            },
+          ],
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 20,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Minun',
+                    'hint': 'Minun needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Minun needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
             },
           ],
           '5': [
@@ -92122,6 +96991,9 @@ module.exports = {
             },
             {
               'route': 212,
+            },
+            {
+              'route': 231,
             },
             {
               'route': 221,
@@ -92364,7 +97236,9 @@ module.exports = {
         },
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '12': ['Kebia'],
@@ -92556,7 +97430,9 @@ module.exports = {
         },
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '1': 12.5,
+            },
           },
         },
         '20': ['Cipher Lab'],
@@ -95061,7 +99937,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '1': 12.5,
+            },
           },
         },
       },
@@ -95229,7 +100107,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 3.51,
+            'chances': {
+              '1': 6.25,
+            },
           },
         },
       },
@@ -96037,11 +100917,6 @@ module.exports = {
       'attack': 135,
       'nativeRegion': 2,
       'locations': {
-        '2': [
-          {
-            'dungeon': 'Max Lair',
-          },
-        ],
         '5': [
           {
             'basePokemon': 'Lileep',
@@ -96349,6 +101224,18 @@ module.exports = {
       },
       'locations': {
         '0': {
+          '2': [
+            {
+              'route': 119,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Feebas',
+                'hint': 'Feebas needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 27,
@@ -96516,6 +101403,165 @@ module.exports = {
       'levelType': 2,
       'exp': 147,
       'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Castform',
+          'evolvedPokemon': 'Castform (Sunny)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Castform',
+              'hint': 'Castform needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Castform',
+              'hint': 'Your Castform needs to be at least level 1.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Castform (Sunny)',
+              'hint': 'Castform (Sunny) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Castform',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [7],
+              'hint': 'The weather needs to be Harsh Sunlight',
+              '__class': 'WeatherRequirement',
+            },
+          ],
+          'ignoreECChange': true,
+        },
+        {
+          'basePokemon': 'Castform',
+          'evolvedPokemon': 'Castform (Rainy)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Castform',
+              'hint': 'Castform needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Castform',
+              'hint': 'Your Castform needs to be at least level 1.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Castform (Rainy)',
+              'hint': 'Castform (Rainy) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Castform',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [
+                2,
+                3,
+              ],
+              'hint': 'The weather needs to be Rain or Thunderstorm',
+              '__class': 'WeatherRequirement',
+            },
+          ],
+          'ignoreECChange': true,
+        },
+        {
+          'basePokemon': 'Castform',
+          'evolvedPokemon': 'Castform (Snowy)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Castform',
+              'hint': 'Castform needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 2,
+              'option': 2,
+              'hint': 'You need to reach the Hoenn region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Castform',
+              'hint': 'Your Castform needs to be at least level 1.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Castform (Snowy)',
+              'hint': 'Castform (Snowy) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Castform',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'weather': [
+                4,
+                5,
+                6,
+              ],
+              'hint': 'The weather needs to be Snow or Hail or Blizzard',
+              '__class': 'WeatherRequirement',
+            },
+          ],
+          'ignoreECChange': true,
+        },
+      ],
       'base': {
         'hitpoints': 70,
         'attack': 70,
@@ -96532,6 +101578,37 @@ module.exports = {
         'visualDifference': false,
       },
       'locations': {
+        '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 21,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Castform',
+                    'hint': 'Castform needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Castform needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
+        },
         '3': [
           {
             'dungeon': 'Weather Institute',
@@ -96583,8 +101660,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'pokemon': 'Castform',
-                  'hint': 'Castform needs to be owned.',
+                  'pokemon': 'Castform (Sunny)',
+                  'hint': 'Castform (Sunny) needs to be owned.',
                   '__class': 'ObtainedPokemonRequirement',
                 },
                 {
@@ -96595,9 +101672,61 @@ module.exports = {
                   '__class': 'WeatherRequirement',
                 },
               ],
-              'hint': 'Castform needs to be owned and The weather needs to be Harsh Sunlight.',
+              'hint': 'Castform (Sunny) needs to be owned and The weather needs to be Harsh Sunlight.',
               '__class': 'MultiRequirement',
             },
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Castform',
+            'evolvedPokemon': 'Castform (Sunny)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Castform',
+                'hint': 'Castform needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Castform',
+                'hint': 'Your Castform needs to be at least level 1.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Castform (Sunny)',
+                'hint': 'Castform (Sunny) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Castform',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'weather': [7],
+                'hint': 'The weather needs to be Harsh Sunlight',
+                '__class': 'WeatherRequirement',
+              },
+            ],
+            'ignoreECChange': true,
           },
         ],
       },
@@ -96638,8 +101767,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'pokemon': 'Castform',
-                  'hint': 'Castform needs to be owned.',
+                  'pokemon': 'Castform (Rainy)',
+                  'hint': 'Castform (Rainy) needs to be owned.',
                   '__class': 'ObtainedPokemonRequirement',
                 },
                 {
@@ -96653,9 +101782,64 @@ module.exports = {
                   '__class': 'WeatherRequirement',
                 },
               ],
-              'hint': 'Castform needs to be owned and The weather needs to be Rain or Thunderstorm.',
+              'hint': 'Castform (Rainy) needs to be owned and The weather needs to be Rain or Thunderstorm.',
               '__class': 'MultiRequirement',
             },
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Castform',
+            'evolvedPokemon': 'Castform (Rainy)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Castform',
+                'hint': 'Castform needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Castform',
+                'hint': 'Your Castform needs to be at least level 1.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Castform (Rainy)',
+                'hint': 'Castform (Rainy) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Castform',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'weather': [
+                  2,
+                  3,
+                ],
+                'hint': 'The weather needs to be Rain or Thunderstorm',
+                '__class': 'WeatherRequirement',
+              },
+            ],
+            'ignoreECChange': true,
           },
         ],
       },
@@ -96696,8 +101880,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 2,
-                  'pokemon': 'Castform',
-                  'hint': 'Castform needs to be owned.',
+                  'pokemon': 'Castform (Snowy)',
+                  'hint': 'Castform (Snowy) needs to be owned.',
                   '__class': 'ObtainedPokemonRequirement',
                 },
                 {
@@ -96712,9 +101896,65 @@ module.exports = {
                   '__class': 'WeatherRequirement',
                 },
               ],
-              'hint': 'Castform needs to be owned and The weather needs to be Snow or Blizzard or Hail.',
+              'hint': 'Castform (Snowy) needs to be owned and The weather needs to be Snow or Blizzard or Hail.',
               '__class': 'MultiRequirement',
             },
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Castform',
+            'evolvedPokemon': 'Castform (Snowy)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Castform',
+                'hint': 'Castform needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 2,
+                'option': 2,
+                'hint': 'You need to reach the Hoenn region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Castform',
+                'hint': 'Your Castform needs to be at least level 1.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Castform (Snowy)',
+                'hint': 'Castform (Snowy) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Castform',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'weather': [
+                  4,
+                  5,
+                  6,
+                ],
+                'hint': 'The weather needs to be Snow or Hail or Blizzard',
+                '__class': 'WeatherRequirement',
+              },
+            ],
+            'ignoreECChange': true,
           },
         ],
       },
@@ -96771,7 +102011,9 @@ module.exports = {
         },
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '15': [
@@ -98235,11 +103477,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 2,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -98248,7 +103485,9 @@ module.exports = {
         '6': ['Grass_egg'],
         '10': {
           '3': {
-            '0': 10.53,
+            'chances': {
+              '0': 7.32,
+            },
           },
         },
         '12': ['Coba'],
@@ -100966,11 +106205,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Three Golems',
               'questIndex': 8,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Three Golems',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Three Golems.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -100982,11 +106216,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Ancient Golems',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Ancient Golems',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Ancient Golems.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -101028,11 +106257,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Three Golems',
               'questIndex': 8,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Three Golems',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Three Golems.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -101044,11 +106268,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Ancient Golems',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Ancient Golems',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Ancient Golems.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -101090,11 +106309,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Three Golems',
               'questIndex': 8,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Three Golems',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Three Golems.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -101106,11 +106320,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Ancient Golems',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Ancient Golems',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Ancient Golems.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -101196,16 +106405,42 @@ module.exports = {
             'region': 2,
             'requirements': {
               'requiredValue': 1,
-              'option': 1,
-              'questLineName': 'The Eon Duo',
-              'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Eon Duo',
-                'quest': 0,
-              },
-              'hint': 'Progress further in questline The Eon Duo.',
-              '__class': 'QuestLineStepCompletedRequirement',
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 2,
+                  'option': 2,
+                  'requirements': [
+                    {
+                      'requiredValue': 1,
+                      'option': 1,
+                      'questLineName': 'The Eon Duo',
+                      'questIndex': 3,
+                      'hint': 'Progress further in questline The Eon Duo.',
+                      '__class': 'QuestLineStepCompletedRequirement',
+                    },
+                    {
+                      'requiredValue': 1,
+                      'option': 2,
+                      'pokemon': 'Latios',
+                      'hint': 'Latios needs to be owned.',
+                      '__class': 'ObtainedPokemonRequirement',
+                    },
+                  ],
+                  'hint': 'Progress further in questline The Eon Duo and Latios needs to be owned.',
+                  '__class': 'MultiRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'achievementType': 11,
+                  'questLineName': 'The Eon Duo',
+                  'hint': 'Questline The Eon Duo needs to be completed.',
+                  '__class': 'QuestLineCompletedRequirement',
+                },
+              ],
+              'hint': 'Progress further in questline The Eon Duo and Latios needs to be owned or Questline The Eon Duo needs to be completed.',
+              '__class': 'OneFromManyRequirement',
             },
             'roamingGroup': {
               'name': 'Hoenn',
@@ -101370,16 +106605,42 @@ module.exports = {
             'region': 2,
             'requirements': {
               'requiredValue': 1,
-              'option': 1,
-              'questLineName': 'The Eon Duo',
-              'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Eon Duo',
-                'quest': 0,
-              },
-              'hint': 'Progress further in questline The Eon Duo.',
-              '__class': 'QuestLineStepCompletedRequirement',
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 2,
+                  'option': 2,
+                  'requirements': [
+                    {
+                      'requiredValue': 1,
+                      'option': 1,
+                      'questLineName': 'The Eon Duo',
+                      'questIndex': 3,
+                      'hint': 'Progress further in questline The Eon Duo.',
+                      '__class': 'QuestLineStepCompletedRequirement',
+                    },
+                    {
+                      'requiredValue': 1,
+                      'option': 2,
+                      'pokemon': 'Latias',
+                      'hint': 'Latias needs to be owned.',
+                      '__class': 'ObtainedPokemonRequirement',
+                    },
+                  ],
+                  'hint': 'Progress further in questline The Eon Duo and Latias needs to be owned.',
+                  '__class': 'MultiRequirement',
+                },
+                {
+                  'requiredValue': 1,
+                  'option': 1,
+                  'achievementType': 11,
+                  'questLineName': 'The Eon Duo',
+                  'hint': 'Questline The Eon Duo needs to be completed.',
+                  '__class': 'QuestLineCompletedRequirement',
+                },
+              ],
+              'hint': 'Progress further in questline The Eon Duo and Latias needs to be owned or Questline The Eon Duo needs to be completed.',
+              '__class': 'OneFromManyRequirement',
             },
             'roamingGroup': {
               'name': 'Hoenn',
@@ -101543,7 +106804,7 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 39,
-                  'hint': 'Requires the Elite Hoenn Champion badge.',
+                  'hint': 'Requires having beaten Champion Wallace.',
                   '__class': 'GymBadgeRequirement',
                 },
                 {
@@ -101551,16 +106812,11 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'The Weather Trio',
                   'questIndex': 5,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Weather Trio',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Weather Trio.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
               ],
-              'hint': 'Requires the Elite Hoenn Champion badge and Progress further in questline The Weather Trio.',
+              'hint': 'Requires having beaten Champion Wallace and Progress further in questline The Weather Trio.',
               '__class': 'MultiRequirement',
             },
           },
@@ -101603,12 +106859,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Primal Reversion',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Primal Reversion',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Primal Reversion needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -101744,7 +106996,7 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 39,
-                  'hint': 'Requires the Elite Hoenn Champion badge.',
+                  'hint': 'Requires having beaten Champion Wallace.',
                   '__class': 'GymBadgeRequirement',
                 },
                 {
@@ -101752,16 +107004,11 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'The Weather Trio',
                   'questIndex': 5,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Weather Trio',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Weather Trio.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
               ],
-              'hint': 'Requires the Elite Hoenn Champion badge and Progress further in questline The Weather Trio.',
+              'hint': 'Requires having beaten Champion Wallace and Progress further in questline The Weather Trio.',
               '__class': 'MultiRequirement',
             },
           },
@@ -101807,12 +107054,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Primal Reversion',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Primal Reversion',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Primal Reversion needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -101905,11 +107148,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'A Meta Discovery',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Meta Discovery',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline A Meta Discovery.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -101994,11 +107232,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Weather Trio',
               'questIndex': 5,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Weather Trio',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Weather Trio.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -102118,11 +107351,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Wish Maker',
               'questIndex': 8,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Wish Maker',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Wish Maker.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -102343,11 +107571,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'Destiny Deoxys',
                   'questIndex': 8,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Destiny Deoxys',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline Destiny Deoxys.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -103480,6 +108703,9 @@ module.exports = {
             {
               'route': 212,
             },
+            {
+              'route': 231,
+            },
           ],
           '5': [
             {
@@ -103854,7 +109080,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 14.04,
+            'chances': {
+              '0': 9.76,
+            },
           },
         },
       },
@@ -103959,7 +109187,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Kricketot',
+              'hint': 'Kricketot needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -103994,6 +109231,9 @@ module.exports = {
           '3': [
             {
               'route': 206,
+            },
+            {
+              'route': 231,
             },
           ],
         },
@@ -104044,7 +109284,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Kricketune',
+              'hint': 'Kricketune needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '15': ['Alpha Kricketune'],
@@ -104571,6 +109820,33 @@ module.exports = {
             },
             {
               'route': 208,
+            },
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 22,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Budew',
+                    'hint': 'Budew needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Budew needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
             },
           ],
           '5': [
@@ -106547,7 +111823,16 @@ module.exports = {
         '8': ['Pal Park'],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Combee',
+              'hint': 'Combee needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': [
@@ -106673,7 +111958,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Vespiquen',
+              'hint': 'Vespiquen needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -106709,6 +112003,18 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 205,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Pachirisu',
+                'hint': 'Pachirisu needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+            },
+          ],
           '5': [
             {
               'route': 12,
@@ -107703,9 +113009,6 @@ module.exports = {
               'route': 212,
             },
             {
-              'route': 222,
-            },
-            {
               'route': 224,
             },
           ],
@@ -107740,11 +113043,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 2,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -108975,6 +114273,33 @@ module.exports = {
         '0': {
           '3': [
             {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 23,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Chingling',
+                    'hint': 'Chingling needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Chingling needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+            {
               'route': 211,
             },
           ],
@@ -109752,6 +115077,35 @@ module.exports = {
       },
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 24,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Bonsly',
+                    'hint': 'Bonsly needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Bonsly needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '6': [
             {
               'route': 5,
@@ -109786,12 +115140,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'Gale of Darkness',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Gale of Darkness',
-                'quest': 0,
-              },
               'hint': 'Questline Gale of Darkness needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -109953,6 +115303,35 @@ module.exports = {
       },
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 25,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Mime Jr.',
+                    'hint': 'Mime Jr. needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Mime Jr needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 3,
@@ -110063,6 +115442,35 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 26,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Happiny',
+                    'hint': 'Happiny needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Happiny needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 33,
@@ -110159,6 +115567,37 @@ module.exports = {
       'attack': 10,
       'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 27,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Handout Happiny',
+                    'hint': 'Handout Happiny needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Handout Happiny needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
+        },
         '7': [
           'Charity Chansey',
           'Blessing Blissey',
@@ -110204,9 +115643,6 @@ module.exports = {
             },
             {
               'route': 222,
-            },
-            {
-              'route': 224,
             },
           ],
           '5': [
@@ -110802,6 +116238,35 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 28,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Munchlax',
+                    'hint': 'Munchlax needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Munchlax needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 16,
@@ -110864,6 +116329,13 @@ module.exports = {
               'itemName': 'Everstone',
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 1,
+              'specialEventName': 'Merry Christmas!',
+              'hint': 'Merry Christmas! must be started.',
+              '__class': 'SpecialEventRequirement',
             },
           ],
           'ignoreECChange': true,
@@ -110940,6 +116412,27 @@ module.exports = {
           'ignoreECChange': false,
           'stone': 7,
         },
+        {
+          'basePokemon': 'Riolu',
+          'evolvedPokemon': 'Captain Lucario',
+          'trigger': 0,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Riolu',
+              'hint': 'Riolu needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 3,
+              'option': 2,
+              'hint': 'You need to reach the Sinnoh region.',
+              '__class': 'MaxRegionRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
       ],
       'baby': true,
       'base': {
@@ -110959,6 +116452,35 @@ module.exports = {
       'nativeRegion': 3,
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 29,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Riolu',
+                    'hint': 'Riolu needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Riolu needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '5': [
             {
               'route': 22,
@@ -110996,6 +116518,7 @@ module.exports = {
         '7': [
           'Lucario',
           'Mega Lucario',
+          'Captain Lucario',
         ],
         '12': ['Chople'],
         '21': ['Pink'],
@@ -111202,6 +116725,288 @@ module.exports = {
             'stone': 29,
           },
         ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 448.02,
+      'name': 'Captain Lucario',
+      'type': [
+        6,
+        2,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 184,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 70,
+        'attack': 110,
+        'specialAttack': 115,
+        'defense': 70,
+        'specialDefense': 70,
+        'speed': 90,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 10,
+      },
+      'attack': 145,
+      'nativeRegion': 3,
+      'locations': {
+        '0': {
+          '3': [
+            {
+              'route': 203,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 204,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 205,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 208,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 209,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 210,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 214,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 213,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 212,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 218,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 219,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 220,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 221,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 222,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 223,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 224,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 225,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 226,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 227,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 228,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 229,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 230,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+          ],
+        },
       },
       'catchRatePercent': 17,
       'eggSteps': 1000,
@@ -111535,7 +117340,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
         '12': ['Kebia'],
@@ -111704,7 +117511,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 3.51,
+            'chances': {
+              '0': 2.44,
+            },
           },
         },
       },
@@ -111872,7 +117681,9 @@ module.exports = {
         '6': ['Fighting_egg'],
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
       },
@@ -111988,7 +117799,9 @@ module.exports = {
         ],
         '10': {
           '3': {
-            '0': 3.51,
+            'chances': {
+              '0': 2.44,
+            },
           },
         },
       },
@@ -112036,7 +117849,9 @@ module.exports = {
         },
         '10': {
           '3': {
-            '0': 7.02,
+            'chances': {
+              '0': 4.88,
+            },
           },
         },
       },
@@ -112326,6 +118141,33 @@ module.exports = {
         '0': {
           '3': [
             {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 30,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Mantyke',
+                    'hint': 'Mantyke needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Mantyke needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+            {
               'route': 223,
             },
           ],
@@ -112508,6 +118350,18 @@ module.exports = {
         'defense': 50,
         'specialDefense': 60,
         'speed': 40,
+      },
+      'heldItem': {
+        'type': 3,
+        'id': 54,
+        'requirement': {
+          'requiredValue': 1,
+          'option': 2,
+          'berry': 54,
+          'requireUnlocked': false,
+          'hint': 'Your farm must be arranged so a Snover Berry mutation is possible.',
+          '__class': 'BerryMutationPossibleRequirement',
+        },
       },
       'gender': {
         'visualDifference': true,
@@ -112707,14 +118561,14 @@ module.exports = {
         'specialDefense': 60,
         'speed': 40,
       },
+      'heldItem': {
+        'type': 3,
+        'id': 54,
+      },
       'gender': {
         'femaleRatio': 0,
         'type': 1,
         'visualDifference': false,
-      },
-      'heldItem': {
-        'type': 3,
-        'id': 54,
       },
       'attack': 65,
       'nativeRegion': 3,
@@ -112906,11 +118760,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'A Beautiful World',
               'questIndex': 17,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Beautiful World',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline A Beautiful World.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -113993,6 +119842,13 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': 'Halloween!',
+                'hint': 'Halloween! must be started.',
+                '__class': 'SpecialEventRequirement',
+              },
             ],
             'ignoreECChange': false,
             'stone': 16,
@@ -114095,7 +119951,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '1': 6.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Yanmega',
+              'hint': 'Yanmega needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -115737,12 +121602,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'A New World',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A New World',
-                'quest': 0,
-              },
               'hint': 'Questline A New World needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -115835,12 +121696,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'A New World',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A New World',
-                'quest': 0,
-              },
               'hint': 'Questline A New World needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -115891,7 +121748,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 66,
-              'hint': 'Requires the Elite Sinnoh Champion badge.',
+              'hint': 'Requires having beaten Champion Cynthia.',
               '__class': 'GymBadgeRequirement',
             },
           },
@@ -115972,7 +121829,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 66,
-              'hint': 'Requires the Elite Sinnoh Champion badge.',
+              'hint': 'Requires having beaten Champion Cynthia.',
               '__class': 'GymBadgeRequirement',
             },
           },
@@ -116052,7 +121909,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 79,
-              'hint': 'Requires the Elite Unova Champion badge.',
+              'hint': 'Requires having beaten Champion Iris.',
               '__class': 'GymBadgeRequirement',
             },
           },
@@ -116190,11 +122047,6 @@ module.exports = {
               'option': 1,
               'questLineName': "Zero's Ambition",
               'questIndex': 13,
-              'cachedQuest': {
-                'state': 0,
-                'name': "Zero's Ambition",
-                'quest': 0,
-              },
               'hint': "Progress further in questline Zero's Ambition.",
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -116436,6 +122288,37 @@ module.exports = {
       'attack': 120,
       'nativeRegion': 3,
       'locations': {
+        '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 31,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Phione',
+                    'hint': 'Phione needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Phione needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
+        },
         '7': ['Manaphy'],
       },
       'catchRatePercent': 12,
@@ -116471,12 +122354,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'Recover the Precious Egg!',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Recover the Precious Egg!',
-                'quest': 0,
-              },
               'hint': 'Questline Recover the Precious Egg! needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -117540,11 +123419,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline Emissary of Light.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -122691,7 +128565,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Sewaddle',
+              'hint': 'Sewaddle needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Always'],
@@ -122817,7 +128700,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Swadloon',
+              'hint': 'Swadloon needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -122897,7 +128789,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Leavanny',
+              'hint': 'Leavanny needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -123007,7 +128908,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Venipede',
+              'hint': 'Venipede needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -123138,7 +129048,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Whirlipede',
+              'hint': 'Whirlipede needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -123238,7 +129157,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Scolipede',
+              'hint': 'Scolipede needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -125213,7 +131141,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Dwebble',
+              'hint': 'Dwebble needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -126666,11 +132603,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -126893,6 +132825,45 @@ module.exports = {
       },
       'attack': 52,
       'locations': {},
+      'catchRatePercent': 25,
+      'eggSteps': 1000,
+    },
+    {
+      'id': 570.02,
+      'name': 'Zorua (Pirate)',
+      'type': [
+        15,
+        7,
+      ],
+      'eggCycles': 25,
+      'levelType': 3,
+      'exp': 66,
+      'catchRate': 75,
+      'base': {
+        'hitpoints': 40,
+        'attack': 65,
+        'specialAttack': 80,
+        'defense': 40,
+        'specialDefense': 40,
+        'speed': 65,
+      },
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+      },
+      'attack': 56,
+      'nativeRegion': 4,
+      'locations': {
+        '18': [
+          'Gyarados Galleon',
+          'Pirate Island',
+        ],
+      },
       'catchRatePercent': 25,
       'eggSteps': 1000,
     },
@@ -135353,7 +141324,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Durant',
+              'hint': 'Durant needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -135974,11 +141954,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Swords of Justice',
               'questIndex': 21,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Swords of Justice',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Swords of Justice.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -136023,11 +141998,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Swords of Justice',
               'questIndex': 21,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Swords of Justice',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Swords of Justice.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -136072,11 +142042,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Swords of Justice',
               'questIndex': 21,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Swords of Justice',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Swords of Justice.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -136482,18 +142447,14 @@ module.exports = {
           {
             'dungeon': 'Giant Chasm',
             'requirements': {
-              'requiredValue': 3,
+              'requiredValue': 2,
               'option': 2,
               'requirements': [
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Hollow Truth and Ideals',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Hollow Truth and Ideals',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Hollow Truth and Ideals needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -136501,43 +142462,11 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 79,
-                  'hint': 'Requires the Elite Unova Champion badge.',
+                  'hint': 'Requires having beaten Champion Iris.',
                   '__class': 'GymBadgeRequirement',
                 },
-                {
-                  'requiredValue': 1,
-                  'option': 2,
-                  'requirements': [
-                    {
-                      'requiredValue': 1,
-                      'option': 1,
-                      'questLineName': 'Swords of Justice',
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'Swords of Justice',
-                        'quest': 0,
-                      },
-                      'hint': 'Questline Swords of Justice needs to be completed.',
-                      '__class': 'QuestLineCompletedRequirement',
-                    },
-                    {
-                      'requiredValue': 1,
-                      'option': 0,
-                      'questLineName': 'Swords of Justice',
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'Swords of Justice',
-                        'quest': 0,
-                      },
-                      'hint': 'Questline Swords of Justice needs to not be started yet.',
-                      '__class': 'QuestLineStartedRequirement',
-                    },
-                  ],
-                  'hint': 'Questline Swords of Justice needs to be completed.',
-                  '__class': 'OneFromManyRequirement',
-                },
               ],
-              'hint': 'Questline Hollow Truth and Ideals needs to be completed and Requires the Elite Unova Champion badge.',
+              'hint': 'Questline Hollow Truth and Ideals needs to be completed and Requires having beaten Champion Iris.',
               '__class': 'MultiRequirement',
             },
           },
@@ -136705,12 +142634,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'Swords of Justice',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Swords of Justice',
-                'quest': 0,
-              },
               'hint': 'Questline Swords of Justice needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -136794,7 +142719,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 79,
-              'hint': 'Requires the Elite Unova Champion badge.',
+              'hint': 'Requires having beaten Champion Iris.',
               '__class': 'GymBadgeRequirement',
             },
             'roamingGroup': {
@@ -137080,11 +143005,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Legend Awakened',
               'questIndex': 7,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Legend Awakened',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Legend Awakened.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -137789,12 +143709,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'The Legend Awakened',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Legend Awakened',
-                'quest': 0,
-              },
               'hint': 'Questline The Legend Awakened needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -138839,11 +144755,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'Emissary of Light',
                   'questIndex': 2,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline Emissary of Light.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -140368,7 +146279,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Scatterbug',
+              'hint': 'Scatterbug needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Always'],
@@ -140891,7 +146811,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Spewpa',
+              'hint': 'Spewpa needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': [
@@ -141064,11 +146993,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 32,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141077,11 +147001,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 33,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141164,11 +147083,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 22,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141177,11 +147091,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 23,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141264,11 +147173,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 8,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141277,11 +147181,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 9,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141364,11 +147263,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 18,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141377,11 +147271,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 19,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141464,11 +147353,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 26,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141477,11 +147361,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 27,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141564,11 +147443,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 14,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141577,11 +147451,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 15,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141664,11 +147533,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 2,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141677,11 +147541,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 3,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141764,11 +147623,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 0,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141777,11 +147631,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 1,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141831,11 +147680,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 0,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141844,11 +147688,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 1,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141898,11 +147737,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 0,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141911,11 +147745,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 1,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -141998,11 +147827,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 12,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142011,11 +147835,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 13,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142098,11 +147917,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 28,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142111,11 +147925,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 29,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142198,11 +148007,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 24,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142211,11 +148015,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 25,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142298,11 +148097,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 20,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142311,11 +148105,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 21,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142398,11 +148187,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 6,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142411,11 +148195,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 7,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142498,11 +148277,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 30,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142511,11 +148285,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 31,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142598,11 +148367,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 10,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142611,11 +148375,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 11,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142698,11 +148457,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 16,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142711,11 +148465,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 17,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142798,11 +148547,6 @@ module.exports = {
                       'option': 1,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 4,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Progress further in questline The Great Vivillon Hunt!.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142811,11 +148555,6 @@ module.exports = {
                       'option': 0,
                       'questLineName': 'The Great Vivillon Hunt!',
                       'questIndex': 5,
-                      'cachedQuest': {
-                        'state': 0,
-                        'name': 'The Great Vivillon Hunt!',
-                        'quest': 0,
-                      },
                       'hint': 'Questline The Great Vivillon Hunt! has progressed past this point.',
                       '__class': 'QuestLineStepCompletedRequirement',
                     },
@@ -142906,12 +148645,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Child of the Stars',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Child of the Stars',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Child of the Stars needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -144205,12 +149940,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'A Beautiful World',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Beautiful World',
-                'quest': 0,
-              },
               'hint': 'Questline A Beautiful World needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -145828,7 +151559,7 @@ module.exports = {
         '19': [
           {
             'town': 'Shalour City',
-            'npc': "Millis and Argus Steels' Aeglislash",
+            'npc': "Millis and Argus Steels' Aegislash",
             'requirements': {
               'requiredValue': 2,
               'option': 2,
@@ -145838,11 +151569,6 @@ module.exports = {
                   'option': 2,
                   'questLineName': 'Princess Diancie',
                   'questIndex': 4,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Princess Diancie',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline Princess Diancie.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -150174,11 +155900,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'A Beautiful World',
               'questIndex': 31,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Beautiful World',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline A Beautiful World.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -150305,11 +156026,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'A Beautiful World',
               'questIndex': 31,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'A Beautiful World',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline A Beautiful World.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -150353,7 +156069,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 92,
-              'hint': 'Requires the Elite Kalos Champion badge.',
+              'hint': 'Requires having beaten Champion Diantha.',
               '__class': 'GymBadgeRequirement',
             },
           },
@@ -150440,11 +156156,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Princess Diancie',
               'questIndex': 7,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Princess Diancie',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Princess Diancie.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -150559,7 +156270,7 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 92,
-              'hint': 'Requires the Elite Kalos Champion badge.',
+              'hint': 'Requires having beaten Champion Diantha.',
               '__class': 'GymBadgeRequirement',
             },
             'roamingGroup': {
@@ -150601,6 +156312,46 @@ module.exports = {
       'nativeRegion': 5,
       'locations': {
         '15': ['Hoopa 6'],
+      },
+      'catchRatePercent': 2,
+      'eggSteps': 4800,
+    },
+    {
+      'id': 720.02,
+      'name': 'Captain Hoopa',
+      'type': [
+        2,
+        13,
+      ],
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 270,
+      'catchRate': 3,
+      'base': {
+        'hitpoints': 80,
+        'attack': 110,
+        'specialAttack': 150,
+        'defense': 60,
+        'specialDefense': 130,
+        'speed': 70,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+      },
+      'attack': 193,
+      'nativeRegion': 5,
+      'locations': {
+        '4': [
+          {
+            'dungeon': 'Pirate Island',
+          },
+        ],
       },
       'catchRatePercent': 2,
       'eggSteps': 4800,
@@ -150651,11 +156402,11 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'badge': 92,
-                  'hint': 'Requires the Elite Kalos Champion badge.',
+                  'hint': 'Requires having beaten Champion Diantha.',
                   '__class': 'GymBadgeRequirement',
                 },
               ],
-              'hint': 'Kalos Power Plant needs to be completed 5 times and Requires the Elite Kalos Champion badge.',
+              'hint': 'Kalos Power Plant needs to be completed 5 times and Requires having beaten Champion Diantha.',
               '__class': 'MultiRequirement',
             },
           },
@@ -152142,12 +157893,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Welcome to Paradise, Cousin!',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Welcome to Paradise, Cousin!',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Welcome to Paradise, Cousin! needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -152304,7 +158051,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Grubbin',
+              'hint': 'Grubbin needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -152503,7 +158259,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Charjabug',
+              'hint': 'Charjabug needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -152668,7 +158433,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Vikavolt',
+              'hint': 'Vikavolt needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -152719,12 +158493,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Child of the Stars',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Child of the Stars',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Child of the Stars needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -153247,7 +159017,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Cutiefly',
+              'hint': 'Cutiefly needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Always'],
@@ -153436,12 +159215,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Eater of Light',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Eater of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Eater of Light needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -154312,12 +160087,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Symbiotic Relations',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Symbiotic Relations',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Symbiotic Relations needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -155081,7 +160852,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '1': 31.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Dewpider',
+              'hint': 'Dewpider needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -155277,7 +161057,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '1': 6.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Araquanid',
+              'hint': 'Araquanid needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -155328,12 +161117,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Symbiotic Relations',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Symbiotic Relations',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Symbiotic Relations needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -155638,12 +161423,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Symbiotic Relations',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Symbiotic Relations',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Symbiotic Relations needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -156160,12 +161941,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Symbiotic Relations',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Symbiotic Relations',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Symbiotic Relations needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -156607,6 +162384,223 @@ module.exports = {
       'eggSteps': 800,
     },
     {
+      'id': 761.01,
+      'name': 'Bounsweet (Pirate)',
+      'type': [
+        4,
+        15,
+      ],
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 42,
+      'catchRate': 235,
+      'evolutions': [
+        {
+          'basePokemon': 'Bounsweet (Pirate)',
+          'evolvedPokemon': 'Steenee (Pirate)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Bounsweet (Pirate)',
+              'hint': 'Bounsweet (Pirate) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 6,
+              'option': 2,
+              'hint': 'You need to reach the Alola region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 18,
+              'option': 2,
+              'pokemon': 'Bounsweet (Pirate)',
+              'hint': 'Your Bounsweet (Pirate) needs to be at least level 18.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Steenee (Pirate)',
+              'hint': 'Steenee (Pirate) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Bounsweet (Pirate)',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
+      ],
+      'base': {
+        'hitpoints': 42,
+        'attack': 30,
+        'specialAttack': 30,
+        'defense': 38,
+        'specialDefense': 38,
+        'speed': 32,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 10,
+      },
+      'attack': 24,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 18,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 19,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 20,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 7,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 8,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 9,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 21,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 13,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 14,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 15,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 26,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 30,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+          ],
+        },
+      },
+      'catchRatePercent': 60,
+      'eggSteps': 800,
+    },
+    {
       'id': 762,
       'name': 'Steenee',
       'type': [4],
@@ -156744,6 +162738,268 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 762.01,
+      'name': 'Steenee (Pirate)',
+      'type': [
+        4,
+        15,
+      ],
+      'eggCycles': 30,
+      'levelType': 3,
+      'exp': 102,
+      'catchRate': 120,
+      'evolutions': [
+        {
+          'basePokemon': 'Steenee (Pirate)',
+          'evolvedPokemon': 'Tsareena (Captain)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Steenee (Pirate)',
+              'hint': 'Steenee (Pirate) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 6,
+              'option': 2,
+              'hint': 'You need to reach the Alola region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 29,
+              'option': 2,
+              'pokemon': 'Steenee (Pirate)',
+              'hint': 'Your Steenee (Pirate) needs to be at least level 29.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Tsareena (Captain)',
+              'hint': 'Tsareena (Captain) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Steenee (Pirate)',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
+      ],
+      'base': {
+        'hitpoints': 52,
+        'attack': 40,
+        'specialAttack': 40,
+        'defense': 48,
+        'specialDefense': 48,
+        'speed': 62,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 10,
+      },
+      'attack': 41,
+      'nativeRegion': 6,
+      'locations': {
+        '0': {
+          '6': [
+            {
+              'route': 18,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 19,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 20,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 7,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 8,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 9,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 21,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 13,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 14,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 15,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 26,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 30,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+          ],
+        },
+        '5': [
+          {
+            'basePokemon': 'Bounsweet (Pirate)',
+            'evolvedPokemon': 'Steenee (Pirate)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Bounsweet (Pirate)',
+                'hint': 'Bounsweet (Pirate) needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 6,
+                'option': 2,
+                'hint': 'You need to reach the Alola region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 18,
+                'option': 2,
+                'pokemon': 'Bounsweet (Pirate)',
+                'hint': 'Your Bounsweet (Pirate) needs to be at least level 18.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Steenee (Pirate)',
+                'hint': 'Steenee (Pirate) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Bounsweet (Pirate)',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+            ],
+            'ignoreECChange': false,
+          },
+        ],
+      },
+      'catchRatePercent': 36,
+      'eggSteps': 1200,
+    },
+    {
       'id': 763,
       'name': 'Tsareena',
       'type': [4],
@@ -156826,6 +163082,99 @@ module.exports = {
                 'requiredValue': 1,
                 'option': 0,
                 'pokemon': 'Steenee',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+            ],
+            'ignoreECChange': false,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
+      'id': 763.01,
+      'name': 'Tsareena (Captain)',
+      'type': [
+        4,
+        15,
+      ],
+      'eggCycles': 45,
+      'levelType': 3,
+      'exp': 230,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 72,
+        'attack': 120,
+        'specialAttack': 50,
+        'defense': 98,
+        'specialDefense': 98,
+        'speed': 72,
+      },
+      'gender': {
+        'femaleRatio': 1,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 10,
+      },
+      'attack': 120,
+      'nativeRegion': 6,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pirate Island',
+            'requirements': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Tsareena (Captain)',
+              'hint': 'Tsareena (Captain) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Steenee (Pirate)',
+            'evolvedPokemon': 'Tsareena (Captain)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Steenee (Pirate)',
+                'hint': 'Steenee (Pirate) needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 6,
+                'option': 2,
+                'hint': 'You need to reach the Alola region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 29,
+                'option': 2,
+                'pokemon': 'Steenee (Pirate)',
+                'hint': 'Your Steenee (Pirate) needs to be at least level 29.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Tsareena (Captain)',
+                'hint': 'Tsareena (Captain) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Steenee (Pirate)',
                 'itemName': 'Everstone',
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
@@ -157209,7 +163558,16 @@ module.exports = {
         '6': ['Water_egg'],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '1': 6.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Wimpod',
+              'hint': 'Wimpod needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -157348,7 +163706,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '1': 6.25,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Golisopod',
+              'hint': 'Golisopod needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -158750,12 +165117,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Child of the Stars',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Child of the Stars',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Child of the Stars needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -158963,18 +165326,71 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Child of the Stars',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Child of the Stars',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Child of the Stars needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
               ],
               'hint': 'Requires the Champion Stamp badge and Questline Child of the Stars needs to be completed.',
               '__class': 'MultiRequirement',
+            },
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 778.02,
+      'name': 'Mimikyu (Busted)',
+      'type': [
+        13,
+        17,
+      ],
+      'eggCycles': 20,
+      'levelType': 2,
+      'exp': 167,
+      'catchRate': 45,
+      'base': {
+        'hitpoints': 55,
+        'attack': 90,
+        'specialAttack': 50,
+        'defense': 80,
+        'specialDefense': 105,
+        'speed': 96,
+      },
+      'attack': 91,
+      'nativeRegion': 6,
+      'gender': {
+        'type': 1,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'locations': {
+        '1': [
+          {
+            'region': 6,
+            'requirements': {
+              'requiredValue': 5,
+              'option': 2,
+              'achievementType': -1,
+              'statistic': [
+                'shinyPokemonDefeated',
+                778,
+              ],
+              'hintText': 'Defeat 5 shiny Mimikyu',
+              'hint': 'Defeat 5 shiny Mimikyu',
+              '__class': 'StatisticRequirement',
+            },
+            'roamingGroup': {
+              'name': 'Alola',
+              'subRegions': [
+                0,
+                1,
+                2,
+                3,
+              ],
             },
           },
         ],
@@ -159071,6 +165487,18 @@ module.exports = {
             },
           ],
         },
+        '2': [
+          {
+            'dungeon': 'Mount Lanakila',
+            'requirements': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Drampa',
+              'hint': 'Drampa needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+          },
+        ],
         '6': ['Dragon_egg'],
         '12': ['Haban'],
       },
@@ -159542,12 +165970,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Emissary of Light',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Emissary of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Emissary of Light needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -159832,6 +166256,16 @@ module.exports = {
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
             },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'dayCycleParts': [
+                1,
+                2,
+              ],
+              'hint': 'Your local part of the day must be Day or Dusk',
+              '__class': 'DayCyclePartRequirement',
+            },
           ],
           'ignoreECChange': false,
         },
@@ -159874,6 +166308,16 @@ module.exports = {
               'itemName': 'Everstone',
               'hint': 'Your pokemon must not be holding an Everstone.',
               '__class': 'HoldingItemRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'dayCycleParts': [
+                3,
+                0,
+              ],
+              'hint': 'Your local part of the day must be Night or Dawn',
+              '__class': 'DayCyclePartRequirement',
             },
           ],
           'ignoreECChange': false,
@@ -160087,10 +166531,21 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'dayCycleParts': [
+                  1,
+                  2,
+                ],
+                'hint': 'Your local part of the day must be Day or Dusk',
+                '__class': 'DayCyclePartRequirement',
+              },
             ],
             'ignoreECChange': false,
           },
         ],
+        '15': ['Lillie'],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -160293,10 +166748,21 @@ module.exports = {
                 'hint': 'Your pokemon must not be holding an Everstone.',
                 '__class': 'HoldingItemRequirement',
               },
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'dayCycleParts': [
+                  3,
+                  0,
+                ],
+                'hint': 'Your local part of the day must be Night or Dawn',
+                '__class': 'DayCyclePartRequirement',
+              },
             ],
             'ignoreECChange': false,
           },
         ],
+        '15': ['Lillie'],
       },
       'catchRatePercent': 17,
       'eggSteps': 4800,
@@ -160403,11 +166869,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160419,11 +166880,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 3,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160468,11 +166924,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 5,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160517,11 +166968,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 5,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160563,11 +167009,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160579,11 +167020,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 9,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160629,11 +167065,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': 'Ultra Beast Hunt',
                 'questIndex': 11,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': 'Ultra Beast Hunt',
-                  'quest': 0,
-                },
                 'hint': 'Progress further in questline Ultra Beast Hunt.',
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -160648,11 +167079,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 11,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160698,11 +167124,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': 'Ultra Beast Hunt',
                 'questIndex': 11,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': 'Ultra Beast Hunt',
-                  'quest': 0,
-                },
                 'hint': 'Progress further in questline Ultra Beast Hunt.',
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -160717,11 +167138,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Ultra Beast Hunt',
               'questIndex': 11,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Ultra Beast Hunt',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Ultra Beast Hunt.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -160867,12 +167283,8 @@ module.exports = {
                 {
                   'requiredValue': 1,
                   'option': 1,
+                  'achievementType': 11,
                   'questLineName': 'Ultra Beast Hunt',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Ultra Beast Hunt',
-                    'quest': 0,
-                  },
                   'hint': 'Questline Ultra Beast Hunt needs to be completed.',
                   '__class': 'QuestLineCompletedRequirement',
                 },
@@ -160906,11 +167318,6 @@ module.exports = {
                   'option': 1,
                   'questLineName': 'Eater of Light',
                   'questIndex': 5,
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'Eater of Light',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline Eater of Light.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -161653,11 +168060,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': 'Ultra Beast Hunt',
                 'questIndex': 15,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': 'Ultra Beast Hunt',
-                  'quest': 0,
-                },
                 'hint': 'Progress further in questline Ultra Beast Hunt.',
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161704,11 +168106,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': 'Ultra Beast Hunt',
                 'questIndex': 15,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': 'Ultra Beast Hunt',
-                  'quest': 0,
-                },
                 'hint': 'Progress further in questline Ultra Beast Hunt.',
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161845,15 +168242,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161865,15 +168253,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161885,15 +168264,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161905,15 +168275,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161925,15 +168286,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161945,15 +168297,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161965,15 +168308,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -161985,15 +168319,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162005,15 +168330,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162025,15 +168341,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162045,15 +168352,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162065,15 +168363,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162085,15 +168374,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162105,15 +168385,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162125,15 +168396,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162145,15 +168407,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162165,15 +168418,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162185,15 +168429,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162205,15 +168440,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162225,15 +168451,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162245,15 +168462,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162265,15 +168473,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162285,15 +168484,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162305,15 +168495,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162325,15 +168506,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162345,15 +168517,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162365,15 +168528,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162385,15 +168539,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162405,15 +168550,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162425,15 +168561,6 @@ module.exports = {
                 'option': 1,
                 'questLineName': "Let's Go, Meltan!",
                 'questIndex': 9,
-                'cachedQuest': {
-                  'state': 0,
-                  'name': "Let's Go, Meltan!",
-                  'quest': 0,
-                  'initial': [
-                    null,
-                    null,
-                  ],
-                },
                 'hint': "Progress further in questline Let's Go, Meltan!.",
                 '__class': 'QuestLineStepCompletedRequirement',
               },
@@ -162508,11 +168635,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -162865,11 +168987,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -162971,6 +169088,465 @@ module.exports = {
       'locations': {
         '6': ['Fire_egg'],
         '12': ['Occa'],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 800,
+    },
+    {
+      'id': 813.01,
+      'name': 'Scorbunny (Pirate)',
+      'type': [
+        1,
+        2,
+      ],
+      'base': {
+        'hitpoints': 50,
+        'attack': 71,
+        'specialAttack': 40,
+        'defense': 40,
+        'specialDefense': 40,
+        'speed': 69,
+      },
+      'eggCycles': 20,
+      'levelType': 3,
+      'exp': 62,
+      'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Scorbunny (Pirate)',
+          'evolvedPokemon': 'Raboot (Pirate)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Scorbunny (Pirate)',
+              'hint': 'Scorbunny (Pirate) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 16,
+              'option': 2,
+              'pokemon': 'Scorbunny (Pirate)',
+              'hint': 'Your Scorbunny (Pirate) needs to be at least level 16.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Raboot (Pirate)',
+              'hint': 'Raboot (Pirate) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Scorbunny (Pirate)',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
+      ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 25,
+      },
+      'attack': 48,
+      'nativeRegion': 7,
+      'locations': {
+        '0': {
+          '7': [
+            {
+              'route': 2,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 5,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 6,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 7,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 8,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 9,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 10,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 13,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 14,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 16,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 17,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 19,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 20,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 21,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 23,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 27,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 28,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 29,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 33,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 34,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 35,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 36,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 37,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 38,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 41,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 42,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 43,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 44,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 45,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 48,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 50,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 51,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 53,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 54,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+          ],
+        },
       },
       'catchRatePercent': 17,
       'eggSteps': 800,
@@ -163115,6 +169691,510 @@ module.exports = {
       'eggSteps': 1200,
     },
     {
+      'id': 814.01,
+      'name': 'Raboot (Pirate)',
+      'type': [
+        1,
+        2,
+      ],
+      'base': {
+        'hitpoints': 65,
+        'attack': 86,
+        'specialAttack': 55,
+        'defense': 60,
+        'specialDefense': 60,
+        'speed': 94,
+      },
+      'eggCycles': 30,
+      'levelType': 3,
+      'exp': 147,
+      'catchRate': 45,
+      'evolutions': [
+        {
+          'basePokemon': 'Raboot (Pirate)',
+          'evolvedPokemon': 'Cinderace (Captain)',
+          'trigger': 1,
+          'restrictions': [
+            {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Raboot (Pirate)',
+              'hint': 'Raboot (Pirate) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 7,
+              'option': 2,
+              'hint': 'You need to reach the Galar region.',
+              '__class': 'MaxRegionRequirement',
+            },
+            {
+              'requiredValue': 35,
+              'option': 2,
+              'pokemon': 'Raboot (Pirate)',
+              'hint': 'Your Raboot (Pirate) needs to be at least level 35.',
+              '__class': 'PokemonLevelRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Cinderace (Captain)',
+              'hint': 'Cinderace (Captain) cannot be owned yet.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+            {
+              'requiredValue': 1,
+              'option': 0,
+              'pokemon': 'Raboot (Pirate)',
+              'itemName': 'Everstone',
+              'hint': 'Your pokemon must not be holding an Everstone.',
+              '__class': 'HoldingItemRequirement',
+            },
+          ],
+          'ignoreECChange': false,
+        },
+      ],
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 25,
+      },
+      'attack': 84,
+      'nativeRegion': 7,
+      'locations': {
+        '0': {
+          '7': [
+            {
+              'route': 2,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 5,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 6,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 7,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 8,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 9,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 10,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 13,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 14,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 16,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 17,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 19,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 20,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 21,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 23,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 27,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 28,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 29,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 33,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 34,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 35,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 36,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 37,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 38,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 41,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 42,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 43,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 44,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 45,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 48,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 50,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 51,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': false,
+                'hint': 'The Pokémon seems to be avoiding the area this year.',
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 53,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+            {
+              'route': 54,
+              'requirements': {
+                'requiredValue': 1,
+                'option': 1,
+                'specialEventName': "A Pirate's Life",
+                'isAvailable': true,
+                'hint': "A Pirate's Life must be started.",
+                '__class': 'SpecialEventRandomRequirement',
+              },
+            },
+          ],
+        },
+        '5': [
+          {
+            'basePokemon': 'Scorbunny (Pirate)',
+            'evolvedPokemon': 'Raboot (Pirate)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Scorbunny (Pirate)',
+                'hint': 'Scorbunny (Pirate) needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 7,
+                'option': 2,
+                'hint': 'You need to reach the Galar region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 16,
+                'option': 2,
+                'pokemon': 'Scorbunny (Pirate)',
+                'hint': 'Your Scorbunny (Pirate) needs to be at least level 16.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Raboot (Pirate)',
+                'hint': 'Raboot (Pirate) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Scorbunny (Pirate)',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+            ],
+            'ignoreECChange': false,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1200,
+    },
+    {
       'id': 815,
       'name': 'Cinderace',
       'type': [1],
@@ -163188,6 +170268,99 @@ module.exports = {
       'eggSteps': 1800,
     },
     {
+      'id': 815.02,
+      'name': 'Cinderace (Captain)',
+      'type': [
+        1,
+        2,
+      ],
+      'base': {
+        'hitpoints': 80,
+        'attack': 116,
+        'specialAttack': 65,
+        'defense': 75,
+        'specialDefense': 75,
+        'speed': 119,
+      },
+      'eggCycles': 45,
+      'levelType': 3,
+      'exp': 265,
+      'catchRate': 45,
+      'gender': {
+        'femaleRatio': 0.125,
+        'type': 1,
+        'visualDifference': false,
+      },
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 25,
+      },
+      'attack': 130,
+      'nativeRegion': 7,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pirate Island',
+            'requirements': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Cinderace (Captain)',
+              'hint': 'Cinderace (Captain) needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
+          },
+        ],
+        '5': [
+          {
+            'basePokemon': 'Raboot (Pirate)',
+            'evolvedPokemon': 'Cinderace (Captain)',
+            'trigger': 1,
+            'restrictions': [
+              {
+                'requiredValue': 1,
+                'option': 2,
+                'pokemon': 'Raboot (Pirate)',
+                'hint': 'Raboot (Pirate) needs to be owned.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 7,
+                'option': 2,
+                'hint': 'You need to reach the Galar region.',
+                '__class': 'MaxRegionRequirement',
+              },
+              {
+                'requiredValue': 35,
+                'option': 2,
+                'pokemon': 'Raboot (Pirate)',
+                'hint': 'Your Raboot (Pirate) needs to be at least level 35.',
+                '__class': 'PokemonLevelRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Cinderace (Captain)',
+                'hint': 'Cinderace (Captain) cannot be owned yet.',
+                '__class': 'ObtainedPokemonRequirement',
+              },
+              {
+                'requiredValue': 1,
+                'option': 0,
+                'pokemon': 'Raboot (Pirate)',
+                'itemName': 'Everstone',
+                'hint': 'Your pokemon must not be holding an Everstone.',
+                '__class': 'HoldingItemRequirement',
+              },
+            ],
+            'ignoreECChange': false,
+          },
+        ],
+      },
+      'catchRatePercent': 17,
+      'eggSteps': 1800,
+    },
+    {
       'id': 815.01,
       'name': 'Gigantamax Cinderace',
       'type': [1],
@@ -163222,11 +170395,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -163579,11 +170747,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -164319,11 +171482,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -164465,7 +171623,16 @@ module.exports = {
         },
         '10': {
           '1': {
-            '0': 8.06,
+            'chances': {
+              '0': 4.63,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Blipbug',
+              'hint': 'Blipbug needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Always'],
@@ -164664,7 +171831,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Dottler',
+              'hint': 'Dottler needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -164770,7 +171946,16 @@ module.exports = {
         ],
         '10': {
           '1': {
-            '0': 1.61,
+            'chances': {
+              '0': 0.93,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Orbeetle',
+              'hint': 'Orbeetle needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
       },
@@ -164815,11 +172000,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -165985,11 +173165,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -166722,11 +173897,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -167123,11 +174293,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -167266,11 +174431,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -167583,11 +174743,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -168343,6 +175498,35 @@ module.exports = {
       },
       'locations': {
         '0': {
+          '3': [
+            {
+              'route': 231,
+              'requirements': {
+                'requiredValue': 2,
+                'option': 2,
+                'requirements': [
+                  {
+                    'requiredValue': 1,
+                    'option': 1,
+                    'index': 32,
+                    'total': 33,
+                    'select': 3,
+                    'hint': 'Try again another day.',
+                    '__class': 'SeededDateSelectNRequirement',
+                  },
+                  {
+                    'requiredValue': 1,
+                    'option': 2,
+                    'pokemon': 'Toxel',
+                    'hint': 'Toxel needs to be owned.',
+                    '__class': 'ObtainedPokemonRequirement',
+                  },
+                ],
+                'hint': 'Try again another day and Toxel needs to be owned.',
+                '__class': 'MultiRequirement',
+              },
+            },
+          ],
           '7': [
             {
               'route': 16,
@@ -168696,11 +175880,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -168847,7 +176026,16 @@ module.exports = {
         '6': ['Fire_egg'],
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Sizzlipede',
+              'hint': 'Sizzlipede needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Tanga'],
@@ -168986,11 +176174,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -170060,11 +177243,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -170580,11 +177758,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -174662,11 +181835,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -174947,7 +182115,16 @@ module.exports = {
         },
         '10': {
           '1': {
-            '0': 3.23,
+            'chances': {
+              '0': 1.85,
+            },
+            'requirement': {
+              'requiredValue': 1,
+              'option': 2,
+              'pokemon': 'Snom',
+              'hint': 'Snom needs to be owned.',
+              '__class': 'ObtainedPokemonRequirement',
+            },
           },
         },
         '12': ['Yache'],
@@ -175724,11 +182901,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -176014,11 +183186,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -176524,11 +183691,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Sword and Shield',
               'questIndex': 18,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Sword and Shield',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Sword and Shield.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -176639,6 +183801,69 @@ module.exports = {
       'eggSteps': 4800,
     },
     {
+      'id': 888.02,
+      'name': 'Captain Zacian',
+      'type': [
+        15,
+        16,
+      ],
+      'base': {
+        'hitpoints': 92,
+        'attack': 150,
+        'specialAttack': 80,
+        'defense': 115,
+        'specialDefense': 115,
+        'speed': 148,
+      },
+      'eggCycles': 120,
+      'levelType': 4,
+      'exp': 335,
+      'catchRate': 10,
+      'heldItem': {
+        'type': 1,
+        'id': 'Relic_gold',
+        'amount': 25,
+      },
+      'gender': {
+        'type': 0,
+        'femaleRatio': 0.5,
+        'visualDifference': false,
+      },
+      'attack': 210,
+      'nativeRegion': 7,
+      'locations': {
+        '3': [
+          {
+            'dungeon': 'Pirate Island',
+            'requirements': {
+              'requiredValue': 2,
+              'option': 2,
+              'requirements': [
+                {
+                  'requiredValue': 7,
+                  'option': 2,
+                  'hint': 'You need to reach the Galar region.',
+                  '__class': 'MaxRegionRequirement',
+                },
+                {
+                  'requiredValue': 100,
+                  'option': 2,
+                  'achievementType': 10,
+                  'dungeonIndex': 138,
+                  'hint': 'Pirate Island needs to be completed 100 times.',
+                  '__class': 'ClearDungeonRequirement',
+                },
+              ],
+              'hint': 'You need to reach the Galar region and Pirate Island needs to be completed 100 times.',
+              '__class': 'MultiRequirement',
+            },
+          },
+        ],
+      },
+      'catchRatePercent': 5,
+      'eggSteps': 4800,
+    },
+    {
       'id': 889,
       'name': 'Zamazenta (Battle Hero)',
       'type': [6],
@@ -176727,11 +183952,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Sword and Shield',
               'questIndex': 18,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Sword and Shield',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Sword and Shield.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -176876,11 +184096,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Lair of Giants',
               'questIndex': 36,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Lair of Giants',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Lair of Giants.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -176952,12 +184167,8 @@ module.exports = {
             'requirements': {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'The Lair of Giants',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Lair of Giants',
-                'quest': 0,
-              },
               'hint': 'Questline The Lair of Giants needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -177200,7 +184411,7 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'achievementType': 10,
-                  'dungeonIndex': 178,
+                  'dungeonIndex': 179,
                   'hint': 'Tower of Darkness needs to be completed.',
                   '__class': 'ClearDungeonRequirement',
                 },
@@ -177318,7 +184529,7 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 2,
                   'achievementType': 10,
-                  'dungeonIndex': 179,
+                  'dungeonIndex': 180,
                   'hint': 'Tower of Waters needs to be completed.',
                   '__class': 'ClearDungeonRequirement',
                 },
@@ -177436,11 +184647,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -177509,11 +184715,6 @@ module.exports = {
                   'requiredValue': 1,
                   'option': 1,
                   'questLineName': 'The Lair of Giants',
-                  'cachedQuest': {
-                    'state': 0,
-                    'name': 'The Lair of Giants',
-                    'quest': 0,
-                  },
                   'hint': 'Progress further in questline The Lair of Giants.',
                   '__class': 'QuestLineStepCompletedRequirement',
                 },
@@ -177579,11 +184780,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Secrets of the Jungle',
               'questIndex': 1,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Secrets of the Jungle',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Secrets of the Jungle.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -177731,11 +184927,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Crown of Galar',
               'questIndex': 6,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Crown of Galar',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Crown of Galar.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -177785,11 +184976,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Crown of Galar',
               'questIndex': 6,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Crown of Galar',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Crown of Galar.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -177900,11 +185086,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'The Crown of Galar',
               'questIndex': 8,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Crown of Galar',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline The Crown of Galar.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -184699,66 +191880,6 @@ module.exports = {
       'eggSteps': 16160,
     },
     {
-      'id': -793,
-      'name': '???',
-      'nativeRegion': 6,
-      'type': [
-        12,
-        7,
-      ],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 257,
-      'catchRate': 45,
-      'base': {
-        'hitpoints': 109,
-        'attack': 53,
-        'specialAttack': 127,
-        'defense': 47,
-        'specialDefense': 131,
-        'speed': 103,
-      },
-      'gender': {
-        'type': 0,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'attack': 144,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 4800,
-    },
-    {
-      'id': -793.01,
-      'name': 'You hateful little Trainer!',
-      'nativeRegion': 6,
-      'type': [
-        12,
-        7,
-      ],
-      'eggCycles': 120,
-      'levelType': 4,
-      'exp': 257,
-      'catchRate': 45,
-      'base': {
-        'hitpoints': 109,
-        'attack': 53,
-        'specialAttack': 127,
-        'defense': 47,
-        'specialDefense': 131,
-        'speed': 103,
-      },
-      'gender': {
-        'type': 0,
-        'femaleRatio': 0.5,
-        'visualDifference': false,
-      },
-      'attack': 144,
-      'locations': {},
-      'catchRatePercent': 17,
-      'eggSteps': 4800,
-    },
-    {
       'id': -966.01,
       'name': 'Segin Starmobile',
       'nativeRegion': 9,
@@ -185110,6 +192231,8 @@ module.exports = {
       'PowerPlant': 'power-plant',
       'Mansion': 'mansion',
       'Graveyard': 'graveyard',
+      'Battlefield': 'battlefield',
+      'Space': 'space',
       'Default': '',
     },
     'BattleBackgrounds': {
@@ -185204,6 +192327,26 @@ module.exports = {
         '7': {},
       },
       'Graveyard': {
+        '0': {},
+        '1': {},
+        '2': {},
+        '3': {},
+        '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
+      },
+      'Battlefield': {
+        '0': {},
+        '1': {},
+        '2': {},
+        '3': {},
+        '4': {},
+        '5': {},
+        '6': {},
+        '7': {},
+      },
+      'Space': {
         '0': {},
         '1': {},
         '2': {},
@@ -185550,12 +192693,14 @@ module.exports = {
       '11': 'sevii',
       '12': 'orre',
       '13': 'magikarpJump',
-      '14': 'secret',
+      '14': 'events',
+      '15': 'secret',
       'global': 10,
       'sevii': 11,
       'orre': 12,
       'magikarpJump': 13,
-      'secret': 14,
+      'events': 14,
+      'secret': 15,
     },
     'FARM_PLOT_HEIGHT': 5,
     'FARM_PLOT_WIDTH': 5,
@@ -185873,6 +193018,7 @@ module.exports = {
       'Terminus Cave',
       'Pokémon Village',
       'Victory Road Kalos',
+      'Pirate Island',
     ],
     'KalosGyms': [
       'Santalune City',
@@ -185958,6 +193104,7 @@ module.exports = {
     'MAX_GEM_UPGRADES': 10,
     'MAX_HIRES': 1,
     'MAX_LOAD_TIME': 20000,
+    'MAX_QUEST_SLOTS': 4,
     'MEGA_REQUIRED_ATTACK_MULTIPLIER': 500,
     'MINE_ITEMS_BASE_REWARD': 210,
     'MINE_LAYERS_BASE_REWARD': 720,
@@ -186407,6 +193554,7 @@ module.exports = {
     },
     'QUESTS_PER_SET': 10,
     'QUEST_CLICKS_PER_SECOND': 5,
+    'RELIC_GOLD_ITEM_CHANCE': 64,
     'REPEATBALL_EP_MODIFIER': 5,
     'REWARD_RETENTION_BASE': 0.6,
     'REWARD_RETENTION_DECREASE_PER_LEVEL': 0.01,
@@ -186595,6 +193743,7 @@ module.exports = {
         'Terminus Cave',
         'Pokémon Village',
         'Victory Road Kalos',
+        'Pirate Island',
       ],
       [
         "Trainers' School",
@@ -187902,6 +195051,7 @@ module.exports = {
       'Destiny Deoxys Rayquaza',
       'Destiny Deoxys Army',
       'Destiny Rayquaza',
+      'Gyarados Crew',
       'Volo 1',
       'Akari 1',
       'Warden Mai',
@@ -188065,6 +195215,24 @@ module.exports = {
       '0': 'Unova',
       'Unova': 0,
     },
+    'VeteranUnlock': {
+      '0': 'PokerusVirus',
+      '1': 'EventCalendar',
+      '2': 'ExplorerKit',
+      '3': 'HoloCaster',
+      '4': 'WailmerPail',
+      '5': 'SuperRod',
+      '6': 'GemCase',
+      '7': 'CeruleanBerryShopPermit',
+      'PokerusVirus': 0,
+      'EventCalendar': 1,
+      'ExplorerKit': 2,
+      'HoloCaster': 3,
+      'WailmerPail': 4,
+      'SuperRod': 5,
+      'GemCase': 6,
+      'CeruleanBerryShopPermit': 7,
+    },
     'VitaminType': {
       '0': 'Protein',
       '1': 'Calcium',
@@ -188078,6 +195246,7 @@ module.exports = {
     'WANDER_SHINY_FP_MODIFIER': 5,
     'WANDER_TICK': 1500,
     'WEEK': 604800000,
+    'WITHER_WARNING_TIME': 300,
     'WORKCYCLE_TIMEOUT_BASE': 60,
     'WORKCYCLE_TIMEOUT_DECREASE_PER_LEVEL': 1.1,
     'WORKCYCLE_TIMEOUT_MINIMUM': 5,
@@ -188646,11 +195815,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Team Rocket',
           'questIndex': 3,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Team Rocket',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Team Rocket.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -188761,7 +195925,7 @@ module.exports = {
       ],
       'badgeReward': 5,
       'moneyReward': 3500,
-      'defeatMessage': 'Humph! You have proven your worth! Here! Take the Soul Badge!',
+      'defeatMessage': 'Humph! You have proven your worth! Here! Take the SoulBadge!',
       'optionalArgs': {},
       'flags': {
         'quest': true,
@@ -188853,12 +196017,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': "Bill's Errand",
-          'cachedQuest': {
-            'state': 0,
-            'name': "Bill's Errand",
-            'quest': 0,
-          },
           'hint': "Questline Bill's Errand needs to be completed.",
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -188903,7 +196063,7 @@ module.exports = {
       ],
       'badgeReward': 8,
       'moneyReward': 6000,
-      'defeatMessage': 'Ha! That was a truly intense fight. You have won! As proof, here is the Earth Badge!',
+      'defeatMessage': 'Ha! That was a truly intense fight. You have won! As proof, here is the EarthBadge!',
       'optionalArgs': {
         'imageName': 'Team Rocket Boss Giovanni',
       },
@@ -188985,7 +196145,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 9,
-          'hint': 'Requires the Elite Lorelei badge.',
+          'hint': 'Requires having beaten Elite Lorelei.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -189048,7 +196208,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 10,
-          'hint': 'Requires the Elite Bruno badge.',
+          'hint': 'Requires having beaten Elite Bruno.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -189111,7 +196271,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 11,
-          'hint': 'Requires the Elite Agatha badge.',
+          'hint': 'Requires having beaten Elite Agatha.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -189174,7 +196334,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 12,
-          'hint': 'Requires the Elite Lance badge.',
+          'hint': 'Requires having beaten Elite Lance.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -189397,9 +196557,7 @@ module.exports = {
       'badgeReward': 13,
       'moneyReward': 10000,
       'defeatMessage': "NO! That can't be! You beat me at my best! After all that work to become the League Champ? My reign is over already? It's not fair!",
-      'optionalArgs': {
-        'battleBackground': 'GemCave',
-      },
+      'optionalArgs': {},
       'flags': {
         'quest': true,
         'achievement': true,
@@ -189601,11 +196759,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'The Sick Ampharos',
           'questIndex': 2,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'The Sick Ampharos',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline The Sick Ampharos.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -189645,12 +196798,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'The Sick Ampharos',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'The Sick Ampharos',
-            'quest': 0,
-          },
           'hint': 'Questline The Sick Ampharos needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -189846,7 +196995,9 @@ module.exports = {
       'badgeReward': 22,
       'moneyReward': 10000,
       'defeatMessage': "Even though I was defeated, I won't change my course. I will continue battling until I stand above all Trainers! Now move on and experience the true ferocity of the Elite Four.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Space',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -189862,7 +197013,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 22,
-          'hint': 'Requires the Elite Will badge.',
+          'hint': 'Requires having beaten Elite Will.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -189909,6 +197060,7 @@ module.exports = {
       'defeatMessage': 'I subjected you to everything I could muster. But my efforts failed. I must hone my skills. Go on to the next room, and put your abilities to the test!',
       'optionalArgs': {
         'displayName': 'Elite Koga',
+        'battleBackground': 'forest',
       },
       'flags': {
         'quest': true,
@@ -189925,7 +197077,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 23,
-          'hint': 'Requires the Elite Koga badge.',
+          'hint': 'Requires having beaten Elite Koga.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -189972,6 +197124,7 @@ module.exports = {
       'defeatMessage': 'Having lost, I have no right to say anything… Go face your next challenge!',
       'optionalArgs': {
         'displayName': 'Elite Bruno',
+        'battleBackground': 'Cave',
       },
       'flags': {
         'quest': true,
@@ -189988,7 +197141,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 24,
-          'hint': 'Requires the Elite Bruno2 badge.',
+          'hint': 'Requires having beaten Elite Bruno.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -190033,7 +197186,9 @@ module.exports = {
       'badgeReward': 25,
       'moneyReward': 10000,
       'defeatMessage': "Strong Pokémon. Weak Pokémon. That is only the selfish perception of people. Truly skilled Trainers should try to win with the Pokémon they love best. I like your style. You understand what's important. Go on — — the Champion is waiting.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Mansion',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -190049,7 +197204,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 25,
-          'hint': 'Requires the Elite Karen badge.',
+          'hint': 'Requires having beaten Elite Karen.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -190117,7 +197272,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 26,
-          'hint': 'Requires the Elite Johto Champion badge.',
+          'hint': 'Requires having beaten Champion Lance.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -190616,7 +197771,9 @@ module.exports = {
       'badgeReward': 35,
       'moneyReward': 15000,
       'defeatMessage': "Well, listen to what this loser has to say. You've got what it takes to go far. Now, go on to the next room and enjoy your next battle!",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Mansion',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -190632,7 +197789,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 35,
-          'hint': 'Requires the Elite Sidney badge.',
+          'hint': 'Requires having beaten Elite Sidney.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -190677,7 +197834,9 @@ module.exports = {
       'badgeReward': 36,
       'moneyReward': 15000,
       'defeatMessage': "There's a definite bond between you and your Pokémon, too. I didn't recognize it, so it's only natural that I lost. Yup, I'd like to see how far your bond will carry you. Go ahead, move to the next room.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Graveyard',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -190693,7 +197852,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 36,
-          'hint': 'Requires the Elite Phoebe badge.',
+          'hint': 'Requires having beaten Elite Phoebe.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -190738,7 +197897,9 @@ module.exports = {
       'badgeReward': 37,
       'moneyReward': 15000,
       'defeatMessage': 'Advance to the next room. And there, confirm the truly fearsome side of the Pokémon League.',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Ice',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -190754,7 +197915,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 37,
-          'hint': 'Requires the Elite Glacia badge.',
+          'hint': 'Requires having beaten Elite Glacia.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -190799,7 +197960,9 @@ module.exports = {
       'badgeReward': 38,
       'moneyReward': 15000,
       'defeatMessage': 'You deserve every credit for coming this far as a Trainer of Pokémon. You do seem to know what is needed. Yes, what a Trainer needs is a virtuous heart. Pokémon touch the good hearts of Trainers and learn good from wrong. They touch the good hearts of Trainers and grow strong. Go! Go onwards! The Champion is waiting!',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'GemCave',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -190815,7 +197978,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 38,
-          'hint': 'Requires the Elite Drake badge.',
+          'hint': 'Requires having beaten Elite Drake.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -191164,12 +198327,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Shadows in the Desert',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Questline Shadows in the Desert needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -191232,12 +198391,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Shadows in the Desert',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Questline Shadows in the Desert needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -191300,12 +198455,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Shadows in the Desert',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Questline Shadows in the Desert needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -191368,12 +198519,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Shadows in the Desert',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Shadows in the Desert',
-            'quest': 0,
-          },
           'hint': 'Questline Shadows in the Desert needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -191436,12 +198583,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Gale of Darkness',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Gale of Darkness',
-            'quest': 0,
-          },
           'hint': 'Questline Gale of Darkness needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -191512,7 +198655,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 49,
-          'hint': 'Requires the Elite Colosseum Lovrina badge.',
+          'hint': 'Requires having beaten Challenge Lovrina.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -191582,7 +198725,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 50,
-          'hint': 'Requires the Elite Colosseum Snattle badge.',
+          'hint': 'Requires having beaten Challenge Snattle.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -191652,7 +198795,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 51,
-          'hint': 'Requires the Elite Colosseum Gorigan badge.',
+          'hint': 'Requires having beaten Challenge Gorigan.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -191722,7 +198865,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 52,
-          'hint': 'Requires the Elite Colosseum Ardos badge.',
+          'hint': 'Requires having beaten Challenge Ardos.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -191792,7 +198935,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 39,
-          'hint': 'Requires the Elite Hoenn Champion badge.',
+          'hint': 'Requires having beaten Champion Wallace.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -192230,7 +199373,9 @@ module.exports = {
       'badgeReward': 62,
       'moneyReward': 18000,
       'defeatMessage': "I lost with the most beautiful and toughest of the bug Pokémon... We lost because I wasn't good enough... That's it! Back to training camp! Let's hear it for me! No... That was wrong... Anyway... Go on to the next room! Three Trainers are waiting for you. They are all tougher than me.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Forest',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -192246,7 +199391,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 62,
-          'hint': 'Requires the Elite Aaron badge.',
+          'hint': 'Requires having beaten Elite Aaron.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -192291,7 +199436,9 @@ module.exports = {
       'badgeReward': 63,
       'moneyReward': 18000,
       'defeatMessage': "You're quite something, youngster. I like how you and your Pokémon earned the win by working as one. That's what makes you so strong. Ahahaha! I think that you can go as far as you want.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Desert',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -192307,7 +199454,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 63,
-          'hint': 'Requires the Elite Bertha badge.',
+          'hint': 'Requires having beaten Elite Bertha.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -192352,7 +199499,9 @@ module.exports = {
       'badgeReward': 64,
       'moneyReward': 18000,
       'defeatMessage': '.........Keep going...I know your spirit burns hot. Your whole team does.',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Fire',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -192368,7 +199517,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 64,
-          'hint': 'Requires the Elite Flint badge.',
+          'hint': 'Requires having beaten Elite Flint.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -192413,7 +199562,9 @@ module.exports = {
       'badgeReward': 65,
       'moneyReward': 18000,
       'defeatMessage': "Congratulations. You have beaten the Elite Four. However, that doesn't mean you're done with the Pokémon league. There remains the Champion. I should warn you—the Champion is far stronger than the Elite Four. Now, go on. Step through the doorway to your final battle.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Space',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -192429,7 +199580,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 65,
-          'hint': 'Requires the Elite Lucian badge.',
+          'hint': 'Requires having beaten Elite Lucian.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -192962,7 +200113,9 @@ module.exports = {
       'badgeReward': 75,
       'moneyReward': 32000,
       'defeatMessage': "My Pokémon and the challenger's Pokémon. Everyone battled even though they were hurt... Thank you.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Graveyard',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193023,7 +200176,9 @@ module.exports = {
       'badgeReward': 76,
       'moneyReward': 32000,
       'defeatMessage': 'Whew! Well done! As your battles continue, aim for even greater heights!',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Cave',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193084,7 +200239,9 @@ module.exports = {
       'badgeReward': 77,
       'moneyReward': 32000,
       'defeatMessage': 'Whether or not you get to fight at full strength, whether or not luck smiles on you--none of that matters. Only results matter. And a loss is a loss. See, victory shines like a bright light. And right now, you and your Pokémon are shining brilliantly.',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Mansion',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193145,7 +200302,9 @@ module.exports = {
       'badgeReward': 78,
       'moneyReward': 32000,
       'defeatMessage': 'You and your Pokémon are both excellent and elegant. To have been able to battle against such a splendid team... My Pokémon and I learned a lot! I offer you my thanks.',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Space',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193161,28 +200320,28 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 75,
-          'hint': 'Requires the Elite Shauntal badge.',
+          'hint': 'Requires having beaten Elite Shauntal.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 76,
-          'hint': 'Requires the Elite Marshal badge.',
+          'hint': 'Requires having beaten Elite Marshal.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 77,
-          'hint': 'Requires the Elite Grimsley badge.',
+          'hint': 'Requires having beaten Elite Grimsley.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 78,
-          'hint': 'Requires the Elite Caitlin badge.',
+          'hint': 'Requires having beaten Elite Caitlin.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -193429,11 +200588,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'A Beautiful World',
           'questIndex': 11,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'A Beautiful World',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline A Beautiful World.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -193662,7 +200816,9 @@ module.exports = {
       'badgeReward': 88,
       'moneyReward': 64000,
       'defeatMessage': 'What news... So a new challenger has defeated Malva of the Elite Four!',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Fire',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193716,7 +200872,9 @@ module.exports = {
       'badgeReward': 89,
       'moneyReward': 64000,
       'defeatMessage': 'I shall store my memory of you and your Pokémon forever away within my heart.',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Water',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193770,7 +200928,9 @@ module.exports = {
       'badgeReward': 90,
       'moneyReward': 64000,
       'defeatMessage': 'Glorious! The trust that you share with your honorable Pokémon surpasses even mine!',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'PowerPlant',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193824,7 +200984,9 @@ module.exports = {
       'badgeReward': 91,
       'moneyReward': 64000,
       'defeatMessage': "Oh, dear me. That sure was a quick battle... I do hope you'll come back again sometime!",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'GemCave',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -193840,28 +201002,28 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 88,
-          'hint': 'Requires the Elite Malva badge.',
+          'hint': 'Requires having beaten Elite Malva.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 89,
-          'hint': 'Requires the Elite Siebold badge.',
+          'hint': 'Requires having beaten Elite Siebold.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 90,
-          'hint': 'Requires the Elite Wikstrom badge.',
+          'hint': 'Requires having beaten Elite Wikstrom.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 91,
-          'hint': 'Requires the Elite Drasna badge.',
+          'hint': 'Requires having beaten Elite Drasna.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -193934,11 +201096,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Welcome to Paradise, Cousin!',
               'questIndex': 10,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Welcome to Paradise, Cousin!',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Welcome to Paradise, Cousin!.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194001,11 +201158,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'Symbiotic Relations',
           'questIndex': 8,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Symbiotic Relations',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline Symbiotic Relations.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -194104,12 +201256,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': 'Emissary of Light',
-          'cachedQuest': {
-            'state': 0,
-            'name': 'Emissary of Light',
-            'quest': 0,
-          },
           'hint': 'Questline Emissary of Light needs to be completed.',
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -194126,11 +201274,6 @@ module.exports = {
               'option': 0,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Questline Emissary of Light has progressed past this point.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194147,11 +201290,6 @@ module.exports = {
               'option': 0,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Questline Emissary of Light has progressed past this point.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194168,11 +201306,6 @@ module.exports = {
               'option': 0,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Questline Emissary of Light has progressed past this point.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194189,11 +201322,6 @@ module.exports = {
               'option': 0,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Questline Emissary of Light has progressed past this point.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194210,11 +201338,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194231,11 +201354,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194252,11 +201370,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194273,11 +201386,6 @@ module.exports = {
               'option': 1,
               'questLineName': 'Emissary of Light',
               'questIndex': 4,
-              'cachedQuest': {
-                'state': 0,
-                'name': 'Emissary of Light',
-                'quest': 0,
-              },
               'hint': 'Progress further in questline Emissary of Light.',
               '__class': 'QuestLineStepCompletedRequirement',
             },
@@ -194351,7 +201459,9 @@ module.exports = {
       'badgeReward': 99,
       'moneyReward': 100000,
       'defeatMessage': 'That Kukui... He certainly found an interesting Trainer for me to face!',
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'PowerPlant',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -194412,7 +201522,9 @@ module.exports = {
       'badgeReward': 97,
       'moneyReward': 100000,
       'defeatMessage': "I don't see the same look in your eyes that I saw when we first met on Akala Island. Have you had some experiences that you'll carry with you in your heart forever? Well, it's time for you to move on.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Cave',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -194473,7 +201585,9 @@ module.exports = {
       'badgeReward': 98,
       'moneyReward': 100000,
       'defeatMessage': "I'm...I'm speechless! You've done me in!",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Graveyard',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -194534,7 +201648,9 @@ module.exports = {
       'badgeReward': 100,
       'moneyReward': 100000,
       'defeatMessage': "It's frustrating to me as a member of the Elite Four, but it seems your strength is the real deal.",
-      'optionalArgs': {},
+      'optionalArgs': {
+        'battleBackground': 'Default',
+      },
       'flags': {
         'quest': true,
         'achievement': true,
@@ -194550,28 +201666,28 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 99,
-          'hint': 'Requires the Elite Molayne badge.',
+          'hint': 'Requires having beaten Elite Molayne.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 97,
-          'hint': 'Requires the Elite Olivia badge.',
+          'hint': 'Requires having beaten Elite Olivia.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 98,
-          'hint': 'Requires the Elite Acerola badge.',
+          'hint': 'Requires having beaten Elite Acerola.',
           '__class': 'GymBadgeRequirement',
         },
         {
           'requiredValue': 1,
           'option': 2,
           'badge': 100,
-          'hint': 'Requires the Elite Kahili badge.',
+          'hint': 'Requires having beaten Elite Kahili.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -195337,7 +202453,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 171,
+          'dungeonIndex': 172,
           'hint': 'Glimwood Tangle needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -195714,7 +202830,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 122,
-          'hint': 'Requires the Elite Marnie badge.',
+          'hint': 'Requires having beaten Elite Trainer Marnie.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -195777,7 +202893,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 123,
-          'hint': 'Requires the Elite Bede badge.',
+          'hint': 'Requires having beaten Elite Gym Leader Bede.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -195880,11 +202996,6 @@ module.exports = {
           'option': 1,
           'questLineName': 'The Darkest Day',
           'questIndex': 19,
-          'cachedQuest': {
-            'state': 0,
-            'name': 'The Darkest Day',
-            'quest': 0,
-          },
           'hint': 'Progress further in questline The Darkest Day.',
           '__class': 'QuestLineStepCompletedRequirement',
         },
@@ -196034,12 +203145,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': "The Dojo's Armor",
-          'cachedQuest': {
-            'state': 0,
-            'name': "The Dojo's Armor",
-            'quest': 0,
-          },
           'hint': "Questline The Dojo's Armor needs to be completed.",
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -196100,12 +203207,8 @@ module.exports = {
         {
           'requiredValue': 1,
           'option': 1,
+          'achievementType': 11,
           'questLineName': "The Dojo's Armor",
-          'cachedQuest': {
-            'state': 0,
-            'name': "The Dojo's Armor",
-            'quest': 0,
-          },
           'hint': "Questline The Dojo's Armor needs to be completed.",
           '__class': 'QuestLineCompletedRequirement',
         },
@@ -196171,18 +203274,18 @@ module.exports = {
               'requiredValue': 1,
               'option': 2,
               'badge': 126,
-              'hint': 'Requires the Elite Armor Poison badge.',
+              'hint': 'Requires having beaten Elite Gym Leader Klara.',
               '__class': 'GymBadgeRequirement',
             },
             {
               'requiredValue': 1,
               'option': 2,
               'badge': 127,
-              'hint': 'Requires the Elite Armor Psychic badge.',
+              'hint': 'Requires having beaten Elite Gym Leader Avery.',
               '__class': 'GymBadgeRequirement',
             },
           ],
-          'hint': 'Requires the Elite Armor Poison badge and Requires the Elite Armor Psychic badge.',
+          'hint': 'Requires having beaten Elite Gym Leader Klara and Requires having beaten Elite Gym Leader Avery.',
           '__class': 'MultiRequirement',
         },
       ],
@@ -196250,7 +203353,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 128,
-          'hint': 'Requires the Elite Armor Matron badge.',
+          'hint': 'Requires having beaten Elite Dojo Matron Honey.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -196323,36 +203426,24 @@ module.exports = {
             {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'The Crown of Galar',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Crown of Galar',
-                'quest': 0,
-              },
               'hint': 'Questline The Crown of Galar needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'The Birds of the Dyna Tree',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Birds of the Dyna Tree',
-                'quest': 0,
-              },
               'hint': 'Questline The Birds of the Dyna Tree needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
             {
               'requiredValue': 1,
               'option': 1,
+              'achievementType': 11,
               'questLineName': 'The Ancient Golems',
-              'cachedQuest': {
-                'state': 0,
-                'name': 'The Ancient Golems',
-                'quest': 0,
-              },
               'hint': 'Questline The Ancient Golems needs to be completed.',
               '__class': 'QuestLineCompletedRequirement',
             },
@@ -197078,7 +204169,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'achievementType': 10,
-          'dungeonIndex': 214,
+          'dungeonIndex': 215,
           'hint': 'Glaseado Mountain needs to be completed.',
           '__class': 'ClearDungeonRequirement',
         },
@@ -197243,7 +204334,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 145,
-          'hint': 'Requires the Elite Rika badge.',
+          'hint': 'Requires having beaten Elite Rika.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -197304,7 +204395,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 146,
-          'hint': 'Requires the Elite Poppy badge.',
+          'hint': 'Requires having beaten Elite Poppy.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -197365,7 +204456,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 147,
-          'hint': 'Requires the Elite Larry badge.',
+          'hint': 'Requires having beaten Elite Larry.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -197426,7 +204517,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 148,
-          'hint': 'Requires the Elite Hassel badge.',
+          'hint': 'Requires having beaten Elite Hassel.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -197494,7 +204585,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 149,
-          'hint': 'Requires the Elite Paldea Champion badge.',
+          'hint': 'Requires having beaten Top Champion Geeta.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -198070,7 +205161,7 @@ module.exports = {
           'requiredValue': 1,
           'option': 2,
           'badge': 156,
-          'hint': 'Requires the Elite Clavell badge.',
+          'hint': 'Requires having beaten Director Clavell.',
           '__class': 'GymBadgeRequirement',
         },
       ],
@@ -201043,8 +208134,16 @@ module.exports = {
       'firmness': 1,
       'description': [
         'This Berry has a disagreeable "green" flavor and scent typical of vegetables. It is rich in health-promoting fiber.',
-        'It has a tendency to expand into nearby plots.',
+        'It has a tendency to expand into nearby plots, but attracts Pokémon that are holding items.',
       ],
+      'aura': {
+        'auraType': 13,
+        'auraMultipliers': [
+          1.005,
+          1.01,
+          1.015,
+        ],
+      },
       'flavors': [
         {
           'type': 0,
@@ -201240,7 +208339,7 @@ module.exports = {
         'Scraggy',
         'Crabrawler',
       ],
-      'hint': "I've heard that using the Magma Stone can cause Spelon Berries to change!",
+      'hint': "I've heard that growing a Spelon Berry beside exactly three of its kind, with nothing else growing nearby, will cause it to change, especially when using the Magma Stone!",
     },
     {
       'type': 42,
@@ -201315,7 +208414,7 @@ module.exports = {
         'Salandit',
         'Toxel',
       ],
-      'hint': "I've heard that using the Rocky Helmet can cause Pamtre Berries to change!",
+      'hint': "I've heard that growing a Pamtre Berry beside exactly three of its kind, with nothing else growing nearby, will cause it to change, especially when using the Rocky Helmet!",
     },
     {
       'type': 43,
@@ -201336,7 +208435,7 @@ module.exports = {
       'firmness': 1,
       'description': [
         'The sweetness-laden pulp has just the hint of a hard-edged and fragrant bite to it.',
-        'Growing these Berries will soften the ground around it, increasing the chances of replanting.',
+        'Growing this Berry will soften the ground around it, increasing the chances of replanting.',
       ],
       'aura': {
         'auraType': 1,
@@ -201389,7 +208488,7 @@ module.exports = {
         'Numel',
         'Hippopotas',
       ],
-      'hint': "I've heard that using the Sprinklotad can cause Watmel Berries to change!",
+      'hint': "I've heard that growing a Watmel Berry beside exactly three of its kind, with nothing else growing nearby, will cause it to change, especially when using the Sprinklotad!",
     },
     {
       'type': 44,
@@ -201673,7 +208772,7 @@ module.exports = {
         'Bonsly',
         'Rockruff',
       ],
-      'hint': "I've heard that using the Cell Battery can cause Cornn Berries to change!",
+      'hint': "I've heard that growing a Cornn Berry beside exactly three of its kind, with nothing else growing nearby, will cause it to change, especially when using the Cell Battery!",
     },
     {
       'type': 48,
@@ -202311,11 +209410,11 @@ module.exports = {
     {
       'type': 57,
       'growthTime': [
-        4320,
-        8640,
-        16560,
-        33480,
-        66960,
+        1875,
+        3750,
+        7500,
+        15000,
+        30000,
       ],
       'harvestAmount': 1,
       'replantRate': 0.05,
@@ -202332,9 +209431,9 @@ module.exports = {
       'aura': {
         'auraType': 9,
         'auraMultipliers': [
-          1.005,
           1.01,
-          1.015,
+          1.02,
+          1.03,
         ],
       },
       'flavors': [
@@ -202622,7 +209721,7 @@ module.exports = {
         'Oricorio (Baile)',
         'Manaphy',
       ],
-      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Passho Berries.',
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Passho Berries and that the power of Kyogre helps reveal.',
     },
     {
       'type': 62,
@@ -202680,7 +209779,7 @@ module.exports = {
         'Illumise',
         'Oricorio (Sensu)',
       ],
-      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Shuca Berries.',
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Shuca Berries and that the power of Groudon helps reveal.',
     },
     {
       'type': 63,
@@ -202737,7 +209836,7 @@ module.exports = {
         'Gossifleur',
         'Burmy (Plant)',
       ],
-      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Coba Berries.',
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Coba Berries and that the power of Rayquaza helps reveal.',
     },
     {
       'type': 64,
@@ -202857,7 +209956,7 @@ module.exports = {
         'Volbeat',
         'Flabébé (Blue)',
       ],
-      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Chilan Berries.',
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Chilan Berries and that the power of Palkia helps reveal.',
     },
     {
       'type': 66,
@@ -202916,7 +210015,7 @@ module.exports = {
         'Flabébé (Red)',
         'Oricorio (Baile)',
       ],
-      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Roseli Berries.',
+      'hint': 'Legends tell of a mysterious Berry that only appears in a field of Roseli Berries and that the power of Dialga helps reveal.',
     },
     {
       'type': 67,
@@ -203357,6 +210456,7 @@ module.exports = {
       'Terminus Cave',
       'Pokémon Village',
       'Victory Road Kalos',
+      'Pirate Island',
     ],
     [
       "Trainers' School",
@@ -204746,7 +211846,6 @@ module.exports = {
       'Iron Boulder': 'Eisenfels',
       'Iron Crown': 'Eisenhaupt',
       'Pecharunt': 'Infamomo',
-      'You hateful little Trainer!': 'Er hat dich verdorben',
       'Segin Starmobile': 'Segin-Starmobil',
       'Schedar Starmobile': 'Schedir-Starmobil',
       'Navi Starmobile': 'Tsih-Starmobil',
@@ -206087,7 +213186,6 @@ module.exports = {
       'Iron Boulder': 'Roc-de-Fer',
       'Iron Crown': 'Chef-de-Fer',
       'Pecharunt': 'Pêchaminus',
-      'You hateful little Trainer!': 'Espèce de petit dresseur détestable !',
       'Segin Starmobile': 'Starmobile Segin',
       'Schedar Starmobile': 'Starmobile Schedar',
       'Navi Starmobile': 'Starmobile Tsih',
@@ -207087,7 +214185,6 @@ module.exports = {
       'MissingNo.': 'KayıpNo',
       'Oinkologne (Male)': 'Oinkologne ♂',
       'Oinkologne (Female)': 'Oinkologne ♀',
-      'You hateful little Trainer!': 'Seni nefret dolu küçük eğitmen!',
     },
     'ja': {
       'Bulbasaur': 'フシギダネ',
@@ -208703,7 +215800,6 @@ module.exports = {
       'Terapagos (Terastal)': 'テラパゴス (テラスタルフォルム)',
       'Terapagos (Stellar)': 'テラパゴス (ステラフォルム)',
       'Pecharunt': 'モモワロウ',
-      '???': '？？？',
       'Segin Starmobile': 'セギン・スターモービル',
       'Schedar Starmobile': 'シェダル・スターモービル',
       'Navi Starmobile': 'シー・スターモービル',

@@ -1,7 +1,7 @@
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const { website, serverIcons } = require('../../config.js');
 const {
-  pokemonList,
+  pokemonList: allPokemon,
   PokemonType,
   randomFromArray,
   enumStrings,
@@ -67,8 +67,7 @@ const normalizations = [
   [/Marill/gu, 'Marill|Pikablu'],
   [/Omanyte/gu, 'Omanyte|Lord Helix'],
   [/Nihilego/gu, 'Nihilego|Gustavo'],
-  [/Muk/gu, '(Muk|Milk)'],
-  [/\.\?\.\?\.\?/gu, '.*'],
+  [/Muk/gu, '(Muk|Milk|🥛)'],
 ];
 
 String.prototype.addNormalizations = function () {
@@ -78,6 +77,9 @@ String.prototype.addNormalizations = function () {
   }
   return out;
 };
+
+const pokemonList = allPokemon.filter(pkmn => pkmn.id > 0);
+
 const getPokemonByName = name => pokemonList.find(p => p.name == name);
 const pokemonNameNormalized = (name) => translatePokemonName(name).normalize('NFD').addNormalizations();
 const evolutionsNormalized = (evolution) => evolution.replace(/\W|_/g, '.?').replace(/(Level)\s*/gi, '($1)?');
@@ -86,9 +88,21 @@ const berryNameList = Object.keys(berryType).filter(b => isNaN(b) && b != 'None'
 const berryWanderers = berryList.map(berry => berry.wander);
 const baseWanderers = ['Tangela', 'Scyther', 'Pineco', 'Heracross', 'Cherubi', 'Sewaddle', 'Karrablast', 'Scatterbug', 'Cutiefly', 'Bounsweet', 'Blipbug', 'Gossifleur'];
 const colourWanderers = ['Ledyba', 'Flabébé (Red)', 'Oricorio (Baile)', 'Illumise', 'Oricorio (Sensu)', 'Spewpa', 'Oricorio (Pa\'u)', 'Burmy (Plant)', 'Combee', 'Flabébé (Yellow)', 'Oricorio (Pom-Pom)', 'Volbeat', 'Flabébé (Blue)', 'Flabébé (Orange)', 'Flabébé (White)'];
-
 const regionListWithoutFinalAndNone = enumStrings(GameConstants.Region).filter(t => t != 'final' && t != 'none');
-const pokemonListWithEvolution = pokemonList.filter(p => p.evolutions && p.evolutions.length);
+
+const pokemonAnswerKey = (name) => name
+  .normalize('NFD')
+  .replace(/\p{Diacritic}/gu, '')
+  .replace(/\s?\([^|)]+\)/g, '')
+  .replace(/[^\p{L}\p{N}]/gu, '')
+  .toLowerCase();
+const isDistinctEvolutionAnswer = (pokemon, evolution) => pokemonAnswerKey(pokemon.name) !== pokemonAnswerKey(evolution.evolvedPokemon);
+const pokemonListWithEvolution = pokemonList
+  .filter(p => p.evolutions && p.evolutions.some(e => isDistinctEvolutionAnswer(p, e)))
+  .map(p => ({
+    ...p,
+    evolutions: p.evolutions.filter(e => isDistinctEvolutionAnswer(p, e)),
+  }));
 const pokemonEvolutionMethods = {};
 pokemonListWithEvolution.forEach(p => {
   p.evolutions.forEach(e => {
@@ -129,7 +143,6 @@ const whosThatPokemon = () => new Promise(resolve => {
   (async () => {
     const pokemon = getRandomPokemon();
     const answer = pokemonNameAnswer(pokemon.name);
-
     let amount = getAmount();
 
     const shiny = isShiny();

@@ -179,7 +179,7 @@ const cli = new ESLint({
       BadgeEnums,
       GymList: gyms,
       berryType: BerryType,
-      berryList: App.game.farming.berryData.map(b => {
+      berryList: BerryList.map(b => {
         const mutation = App.game.farming.mutations.find(m => m.mutatedBerry == b.type);
         if (mutation) b.hint = mutation.hint;
         return b;
